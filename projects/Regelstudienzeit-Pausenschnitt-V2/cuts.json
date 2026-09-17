@@ -1,0 +1,529 @@
+{
+  "minimumSilence": 0.28,
+  "edgePadding": 0.06,
+  "removals": [
+    {
+      "start": 0,
+      "end": 0.57925,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        0,
+        0.63925
+      ],
+      "bridges": []
+    },
+    {
+      "start": 0.821062,
+      "end": 1.0605,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        0.761062,
+        1.1205
+      ],
+      "bridges": []
+    },
+    {
+      "start": 3.71563,
+      "end": 4.475630000000001,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        3.65563,
+        4.53563
+      ],
+      "bridges": []
+    },
+    {
+      "start": 4.66062,
+      "end": 5.102250000000001,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        4.60062,
+        5.16225
+      ],
+      "bridges": []
+    },
+    {
+      "start": 7.17556,
+      "end": 9.234129999999999,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        7.11556,
+        9.29413
+      ],
+      "bridges": []
+    },
+    {
+      "start": 11.5851,
+      "end": 14.5237,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        11.5251,
+        14.5837
+      ],
+      "bridges": []
+    },
+    {
+      "start": 17.5751,
+      "end": 19.558200000000003,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        17.5151,
+        19.6182
+      ],
+      "bridges": []
+    },
+    {
+      "start": 22.3481,
+      "end": 22.933600000000002,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        22.2881,
+        22.9936
+      ],
+      "bridges": []
+    },
+    {
+      "start": 23.9941,
+      "end": 24.396600000000003,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        23.9341,
+        24.4566
+      ],
+      "bridges": []
+    },
+    {
+      "start": 24.5639,
+      "end": 24.841900000000003,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        24.5039,
+        24.9019
+      ],
+      "bridges": []
+    },
+    {
+      "start": 25.835099999999997,
+      "end": 26.3812,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        25.7751,
+        26.4412
+      ],
+      "bridges": []
+    },
+    {
+      "start": 27.5388,
+      "end": 30.0732,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        27.4788,
+        30.1332
+      ],
+      "bridges": []
+    },
+    {
+      "start": 34.057700000000004,
+      "end": 35.891,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        33.9977,
+        35.951
+      ],
+      "bridges": [
+        [
+          35.1791,
+          35.1805
+        ],
+        [
+          35.5801,
+          35.6002
+        ]
+      ]
+    },
+    {
+      "start": 38.8706,
+      "end": 39.4329,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        38.8106,
+        39.4929
+      ],
+      "bridges": [
+        [
+          39.3039,
+          39.3052
+        ]
+      ]
+    },
+    {
+      "start": 39.6445,
+      "end": 39.838899999999995,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        39.5845,
+        39.8989
+      ],
+      "bridges": []
+    },
+    {
+      "start": 40.3052,
+      "end": 40.6115,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        40.2452,
+        40.6715
+      ],
+      "bridges": []
+    },
+    {
+      "start": 43.405100000000004,
+      "end": 44.7708,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        43.3451,
+        44.8308
+      ],
+      "bridges": []
+    },
+    {
+      "start": 50.9936,
+      "end": 52.1051,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        50.9336,
+        52.1651
+      ],
+      "bridges": []
+    },
+    {
+      "start": 56.7661,
+      "end": 57.783,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        56.7061,
+        57.843
+      ],
+      "bridges": [
+        [
+          56.9038,
+          56.9041
+        ]
+      ]
+    },
+    {
+      "start": 60.5088,
+      "end": 61.0291,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        60.4488,
+        61.0891
+      ],
+      "bridges": []
+    },
+    {
+      "start": 63.629200000000004,
+      "end": 63.806599999999996,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        63.5692,
+        63.8666
+      ],
+      "bridges": []
+    },
+    {
+      "start": 65.59830000000001,
+      "end": 67.1527,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        65.5383,
+        67.2127
+      ],
+      "bridges": [
+        [
+          67.019,
+          67.0191
+        ]
+      ]
+    },
+    {
+      "start": 74.8191,
+      "end": 75.7029,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        74.7591,
+        75.7629
+      ],
+      "bridges": []
+    },
+    {
+      "start": 78.4895,
+      "end": 78.6781,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        78.4295,
+        78.7381
+      ],
+      "bridges": []
+    },
+    {
+      "start": 81.1708,
+      "end": 81.5266,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        81.1108,
+        81.5866
+      ],
+      "bridges": []
+    },
+    {
+      "start": 82.48740000000001,
+      "end": 84.4632,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        82.4274,
+        84.5232
+      ],
+      "bridges": [
+        [
+          84.0808,
+          84.1043
+        ]
+      ]
+    },
+    {
+      "start": 88.4789,
+      "end": 88.6628,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        88.4189,
+        88.7228
+      ],
+      "bridges": []
+    },
+    {
+      "start": 90.0665,
+      "end": 90.80409999999999,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        90.0065,
+        90.8641
+      ],
+      "bridges": []
+    },
+    {
+      "start": 92.2031,
+      "end": 93.2324,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        92.1431,
+        93.2924
+      ],
+      "bridges": []
+    },
+    {
+      "start": 97.2398,
+      "end": 98.2558,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        97.1798,
+        98.3158
+      ],
+      "bridges": []
+    },
+    {
+      "start": 99.0718,
+      "end": 100.967,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        99.0118,
+        101.027
+      ],
+      "bridges": []
+    },
+    {
+      "start": 102.679,
+      "end": 103.009,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        102.619,
+        103.069
+      ],
+      "bridges": []
+    },
+    {
+      "start": 103.724,
+      "end": 111.259,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        103.664,
+        111.319
+      ],
+      "bridges": []
+    },
+    {
+      "start": 112.369,
+      "end": 114.033,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        112.309,
+        114.093
+      ],
+      "bridges": []
+    },
+    {
+      "start": 115.882,
+      "end": 116.253,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        115.822,
+        116.313
+      ],
+      "bridges": []
+    },
+    {
+      "start": 117.06700000000001,
+      "end": 117.28099999999999,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        117.007,
+        117.341
+      ],
+      "bridges": []
+    },
+    {
+      "start": 119.126,
+      "end": 119.748,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        119.066,
+        119.808
+      ],
+      "bridges": []
+    },
+    {
+      "start": 121.577,
+      "end": 122.983,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        121.517,
+        123.043
+      ],
+      "bridges": []
+    },
+    {
+      "start": 126.14,
+      "end": 126.953,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        126.08,
+        127.013
+      ],
+      "bridges": []
+    },
+    {
+      "start": 133.115,
+      "end": 134.521,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        133.055,
+        134.581
+      ],
+      "bridges": []
+    },
+    {
+      "start": 136.617,
+      "end": 137.126,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        136.557,
+        137.186
+      ],
+      "bridges": []
+    },
+    {
+      "start": 140.329,
+      "end": 143.424,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        140.269,
+        143.484
+      ],
+      "bridges": []
+    },
+    {
+      "start": 143.68200000000002,
+      "end": 145.322,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        143.622,
+        145.382
+      ],
+      "bridges": []
+    },
+    {
+      "start": 150.342,
+      "end": 151.685,
+      "type": "silence",
+      "reason": "Pausenschnitt nach Prüfung der Mono-Sprachspur. 0,06 Sekunden Schutz je Sprachrand. Sämtliche Satzvarianten erhalten.",
+      "detectedInterval": [
+        150.282,
+        151.745
+      ],
+      "bridges": [
+        [
+          150.891,
+          150.891
+        ]
+      ]
+    }
+  ],
+  "reviewNotes": [
+    "Nutzer wünscht deutlich kürzere Stillen. Keine Auswahl zwischen Satzvarianten.",
+    "Mono-Sprachspur zusätzlich analysiert, da einzelne Kanalgeräusche echte Pausen verdecken.",
+    "Kurze Pegelimpulse bis 0,04 Sekunden zusammengefasst."
+  ]
+}

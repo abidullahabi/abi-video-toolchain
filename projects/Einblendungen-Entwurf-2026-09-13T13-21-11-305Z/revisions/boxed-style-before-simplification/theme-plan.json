@@ -1,0 +1,100 @@
+{
+  "duration": 26.866667,
+  "status": "Vorschlag, noch nicht als Standard freigegeben",
+  "sections": [
+    {
+      "id": "thema-sap",
+      "number": "1",
+      "text": "SAP",
+      "start": 0,
+      "end": 19.166667
+    },
+    {
+      "id": "thema-compliance",
+      "number": "3",
+      "text": "Compliance",
+      "fontSize": 66,
+      "start": 19.166667,
+      "end": 26.866667
+    }
+  ],
+  "overlays": [
+    {
+      "id": "sap-kurz",
+      "kind": "support",
+      "text": "Software für Unternehmen",
+      "start": 2.5,
+      "end": 4.95
+    },
+    {
+      "id": "einkauf-finanzen",
+      "kind": "chips",
+      "items": [
+        {
+          "icon": "cart",
+          "text": "Einkauf"
+        },
+        {
+          "icon": "finance",
+          "text": "Finanzen"
+        }
+      ],
+      "start": 5,
+      "end": 8.8
+    },
+    {
+      "id": "prozesse",
+      "kind": "support",
+      "text": "Prozesse verbessern",
+      "start": 9,
+      "end": 13.35
+    },
+    {
+      "id": "gehalt-sap",
+      "kind": "stat",
+      "role": "SAP-BERATUNG",
+      "kicker": "Zum Einstieg",
+      "value": "51.000 €",
+      "unit": "brutto/Jahr",
+      "country": "Deutschland",
+      "source": "Stepstone · 09/2026",
+      "start": 13.55,
+      "end": 19.1
+    },
+    {
+      "id": "compliance-beispiele",
+      "kind": "support",
+      "text": "Governance & Regeln",
+      "start": 19.65,
+      "end": 22
+    },
+    {
+      "id": "compliance-ironie",
+      "kind": "aside",
+      "text": "Sexy? Eher nicht.",
+      "start": 22.45,
+      "end": 25.35
+    }
+  ],
+  "layoutNotes": [
+    "Aus den vier Nutzerreferenzen abgeleitet: weiße konturierte Überschrift, blau/türkise Akzente, wenige Wörter.",
+    "Eigene Arbeitsränder für organische 9:16-Vorschau: links 96 px, rechts 192 px, Text oben ab 210 px. Keine universelle Plattformgarantie.",
+    "Stichpunkte bei y=320 oberhalb des Kopfes im SAP-Ausschnitt; Ironie bei y=1110. Der untere Bereich bleibt für spätere Untertitel und App-UI frei.",
+    "SAP-Gehaltskarte rechts neben dem Gesicht. Am konkreten Ausschnitt visuell prüfen.",
+    "Gehaltswert ist ein Orientierungswert von Stepstone für den Einstieg. Kein individuelles Angebot."
+  ],
+  "sources": [
+    {
+      "title": "Stepstone: SAP-Berater/in Gehalt",
+      "url": "https://www.stepstone.de/gehalt/SAP-Berater-in.html",
+      "accessed": "2026-09-13",
+      "usedClaim": "Einstiegsgehalt ca. 51.000 Euro brutto/Jahr in Deutschland."
+    },
+    {
+      "title": "TikTok: In-Feed Ads, Safe Zone",
+      "url": "https://ads.tiktok.com/resources/help/article/tiktok-auction-in-feed-ads?lang=en",
+      "accessed": "2026-09-13",
+      "usedClaim": "Safe Zone hängt von Format, Captionlänge und Zusatzformaten ab. Vorschau kann vom Endgerät abweichen."
+    }
+  ]
+}

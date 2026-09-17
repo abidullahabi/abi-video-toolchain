@@ -1,0 +1,414 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 0
+			},
+			"text": "",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.980558,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,160"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 160
+			},
+			"text": " Du",
+			"tokens": [
+				{
+					"text": " Du",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 100
+					},
+					"id": 5153,
+					"p": 0.779357,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,160",
+				"to": "00:00:00,320"
+			},
+			"offsets": {
+				"from": 160,
+				"to": 320
+			},
+			"text": " bist",
+			"tokens": [
+				{
+					"text": " bist",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,260"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 260
+					},
+					"id": 18209,
+					"p": 0.997771,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,320",
+				"to": "00:00:00,470"
+			},
+			"offsets": {
+				"from": 320,
+				"to": 470
+			},
+			"text": " ein",
+			"tokens": [
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 470
+					},
+					"id": 1343,
+					"p": 0.536025,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,470",
+				"to": "00:00:00,980"
+			},
+			"offsets": {
+				"from": 470,
+				"to": 980
+			},
+			"text": " Spezialist",
+			"tokens": [
+				{
+					"text": " Spe",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 540
+					},
+					"id": 3550,
+					"p": 0.678881,
+					"t_dtw": -1
+				},
+				{
+					"text": "zial",
+					"timestamps": {
+						"from": "00:00:00,630",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 630,
+						"to": 840
+					},
+					"id": 17787,
+					"p": 0.991079,
+					"t_dtw": -1
+				},
+				{
+					"text": "ist",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 980
+					},
+					"id": 468,
+					"p": 0.99572,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:00,980",
+				"to": "00:00:01,150"
+			},
+			"offsets": {
+				"from": 980,
+				"to": 1150
+			},
+			"text": " für",
+			"tokens": [
+				{
+					"text": " für",
+					"timestamps": {
+						"from": "00:00:00,980",
+						"to": "00:00:01,150"
+					},
+					"offsets": {
+						"from": 980,
+						"to": 1150
+					},
+					"id": 2959,
+					"p": 0.957561,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,150",
+				"to": "00:00:01,620"
+			},
+			"offsets": {
+				"from": 1150,
+				"to": 1620
+			},
+			"text": " bestimmte",
+			"tokens": [
+				{
+					"text": " bestimm",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1520
+					},
+					"id": 35180,
+					"p": 0.971008,
+					"t_dtw": -1
+				},
+				{
+					"text": "te",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,610"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1610
+					},
+					"id": 975,
+					"p": 0.998228,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,620",
+				"to": "00:00:02,240"
+			},
+			"offsets": {
+				"from": 1620,
+				"to": 2240
+			},
+			"text": " Regulariten",
+			"tokens": [
+				{
+					"text": " Regular",
+					"timestamps": {
+						"from": "00:00:01,620",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1620,
+						"to": 1990
+					},
+					"id": 45659,
+					"p": 0.446194,
+					"t_dtw": -1
+				},
+				{
+					"text": "iten",
+					"timestamps": {
+						"from": "00:00:01,990",
+						"to": "00:00:02,240"
+					},
+					"offsets": {
+						"from": 1990,
+						"to": 2240
+					},
+					"id": 6009,
+					"p": 0.465225,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,240",
+				"to": "00:00:02,440"
+			},
+			"offsets": {
+				"from": 2240,
+				"to": 2440
+			},
+			"text": " oder",
+			"tokens": [
+				{
+					"text": " oder",
+					"timestamps": {
+						"from": "00:00:02,240",
+						"to": "00:00:02,430"
+					},
+					"offsets": {
+						"from": 2240,
+						"to": 2430
+					},
+					"id": 4513,
+					"p": 0.896769,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,440",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 2440,
+				"to": 3000
+			},
+			"text": " Richtlinien.",
+			"tokens": [
+				{
+					"text": " Richt",
+					"timestamps": {
+						"from": "00:00:02,440",
+						"to": "00:00:02,690"
+					},
+					"offsets": {
+						"from": 2440,
+						"to": 2690
+					},
+					"id": 22659,
+					"p": 0.867272,
+					"t_dtw": -1
+				},
+				{
+					"text": "lin",
+					"timestamps": {
+						"from": "00:00:02,690",
+						"to": "00:00:02,840"
+					},
+					"offsets": {
+						"from": 2690,
+						"to": 2840
+					},
+					"id": 5045,
+					"p": 0.999045,
+					"t_dtw": -1
+				},
+				{
+					"text": "ien",
+					"timestamps": {
+						"from": "00:00:02,840",
+						"to": "00:00:02,960"
+					},
+					"offsets": {
+						"from": 2840,
+						"to": 2960
+					},
+					"id": 1053,
+					"p": 0.997004,
+					"t_dtw": -1
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,980",
+						"to": "00:00:02,980"
+					},
+					"offsets": {
+						"from": 2980,
+						"to": 2980
+					},
+					"id": 13,
+					"p": 0.811922,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_150]",
+					"timestamps": {
+						"from": "00:00:03,000",
+						"to": "00:00:03,000"
+					},
+					"offsets": {
+						"from": 3000,
+						"to": 3000
+					},
+					"id": 50514,
+					"p": 0.159911,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

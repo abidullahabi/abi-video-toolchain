@@ -1,0 +1,39 @@
+# Sicherung der Produktionskette.
+# Versioniert wird ausschliesslich, woraus sich ein Video reproduzieren laesst:
+# Skripte, Vorlagen und je Projekt die Plan- und Wortdaten. Alles Grosse und
+# Wiederherstellbare bleibt draussen - Medien, Modelle, Binaries, Caches.
+#
+# Vorgehen: erst alles ausschliessen, dann gezielt zurueckholen. Eine reine
+# Ausschlussliste hat am 17.09.2026 13.160 Dateien durchgelassen, darunter eine
+# komplette CMake-Installation und den npm-Cache.
+
+# 1. Alles raus, Verzeichnisse aber durchlaufbar lassen
+*
+!*/
+
+# 2. Gezielt zurueckholen
+!.gitignore
+!*.mjs
+!*.py
+!*.swift
+!*.json
+!*.md
+!*.txt
+!*.srt
+
+# 3. Grosse und abgeleitete Orte endgueltig raus
+/node_modules/
+/.npm-cache/
+/analysis/
+/tools/
+**/exports/
+**/logs/
+**/word-alignment-*/
+**/word-review-*/
+**/frames/
+**/review/*.json
+.DS_Store
+
+# 4. Ausnahmen davon: Modellherkunft und Pruefsummen sind klein und wichtig
+!tools/models/*provenance*.json
+!tools/*.json

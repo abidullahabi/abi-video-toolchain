@@ -1,0 +1,11 @@
+import fs from 'node:fs';import path from 'node:path';import {spawnSync} from 'node:child_process';
+const root=path.resolve(import.meta.dirname,'..'),key=process.argv[2],p=fs.readFileSync(path.join(root,`experiments/project-${key}.txt`),'utf8').trim();
+const qa=JSON.parse(fs.readFileSync(path.join(p,'review/experiment-layout-check.json')));if(qa.errors.length)throw Error('Layout check failed');
+fs.mkdirSync(path.join(p,'exports'),{recursive:true});
+const output=path.join(p,'exports','Experiment_Master.mp4');if(fs.existsSync(output))throw Error('Export exists');
+const cli=path.join(root,'node_modules/hyperframes/bin/hyperframes.mjs');
+const env={...process.env,PATH:path.join(root,'tools/bin')+path.delimiter+process.env.PATH,HYPERFRAMES_NO_TELEMETRY:'1',HYPERFRAMES_NO_UPDATE_CHECK:'1'};
+const lint=spawnSync(process.execPath,[cli,'lint',p],{cwd:root,env,encoding:'utf8'});fs.writeFileSync(path.join(p,'review/lint.txt'),lint.stdout+lint.stderr);if(lint.status!==0)throw Error(lint.stdout+lint.stderr);
+const fd=fs.openSync(path.join(p,'review/render.log'),'w');console.log('Rendering '+key+' to '+output);
+const r=spawnSync(process.execPath,[cli,'render',p,'--output',output,'--fps','30','--quality','high','--workers','1','--low-memory-mode','--sdr'],{cwd:root,env,stdio:['ignore',fd,fd]});fs.closeSync(fd);
+if(r.status!==0){console.error(fs.readFileSync(path.join(p,'review/render.log'),'utf8').slice(-6000));process.exit(r.status||1);}console.log('Completed '+key);

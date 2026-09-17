@@ -1,0 +1,353 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,900"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3900
+			},
+			"text": " Der Arbeitsmarkt ist angespannt, KI klaut unsere Jobs, aber das muss so nicht sein.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997432,
+					"t_dtw": -1
+				},
+				{
+					"text": " Der",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 160
+					},
+					"id": 5618,
+					"p": 0.990544,
+					"t_dtw": 16
+				},
+				{
+					"text": " Arbeits",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 530
+					},
+					"id": 23262,
+					"p": 0.997217,
+					"t_dtw": 42
+				},
+				{
+					"text": "markt",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,790"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 790
+					},
+					"id": 38552,
+					"p": 0.99861,
+					"t_dtw": 62
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,790",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 790,
+						"to": 950
+					},
+					"id": 1418,
+					"p": 0.995672,
+					"t_dtw": 76
+				},
+				{
+					"text": " anges",
+					"timestamps": {
+						"from": "00:00:00,950",
+						"to": "00:00:01,210"
+					},
+					"offsets": {
+						"from": 950,
+						"to": 1210
+					},
+					"id": 31138,
+					"p": 0.975749,
+					"t_dtw": 102
+				},
+				{
+					"text": "pannt",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1340
+					},
+					"id": 36424,
+					"p": 0.999363,
+					"t_dtw": 126
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1600
+					},
+					"id": 11,
+					"p": 0.816766,
+					"t_dtw": 166
+				},
+				{
+					"text": " KI",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1740
+					},
+					"id": 47261,
+					"p": 0.295866,
+					"t_dtw": 186
+				},
+				{
+					"text": " kla",
+					"timestamps": {
+						"from": "00:00:01,740",
+						"to": "00:00:01,910"
+					},
+					"offsets": {
+						"from": 1740,
+						"to": 1910
+					},
+					"id": 33337,
+					"p": 0.85928,
+					"t_dtw": 206
+				},
+				{
+					"text": "ut",
+					"timestamps": {
+						"from": "00:00:01,960",
+						"to": "00:00:02,090"
+					},
+					"offsets": {
+						"from": 1960,
+						"to": 2090
+					},
+					"id": 325,
+					"p": 0.50907,
+					"t_dtw": 212
+				},
+				{
+					"text": " unsere",
+					"timestamps": {
+						"from": "00:00:02,140",
+						"to": "00:00:02,540"
+					},
+					"offsets": {
+						"from": 2140,
+						"to": 2540
+					},
+					"id": 14339,
+					"p": 0.983888,
+					"t_dtw": 230
+				},
+				{
+					"text": " Jobs",
+					"timestamps": {
+						"from": "00:00:02,540",
+						"to": "00:00:02,630"
+					},
+					"offsets": {
+						"from": 2540,
+						"to": 2630
+					},
+					"id": 29169,
+					"p": 0.9911,
+					"t_dtw": 266
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:03,000",
+						"to": "00:00:03,000"
+					},
+					"offsets": {
+						"from": 3000,
+						"to": 3000
+					},
+					"id": 11,
+					"p": 0.807807,
+					"t_dtw": 302
+				},
+				{
+					"text": " aber",
+					"timestamps": {
+						"from": "00:00:03,090",
+						"to": "00:00:03,140"
+					},
+					"offsets": {
+						"from": 3090,
+						"to": 3140
+					},
+					"id": 4340,
+					"p": 0.929662,
+					"t_dtw": 318
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:03,140",
+						"to": "00:00:03,240"
+					},
+					"offsets": {
+						"from": 3140,
+						"to": 3240
+					},
+					"id": 1482,
+					"p": 0.990486,
+					"t_dtw": 328
+				},
+				{
+					"text": " muss",
+					"timestamps": {
+						"from": "00:00:03,240",
+						"to": "00:00:03,380"
+					},
+					"offsets": {
+						"from": 3240,
+						"to": 3380
+					},
+					"id": 6425,
+					"p": 0.764534,
+					"t_dtw": 340
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:03,380",
+						"to": "00:00:03,410"
+					},
+					"offsets": {
+						"from": 3380,
+						"to": 3410
+					},
+					"id": 370,
+					"p": 0.903875,
+					"t_dtw": 354
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:03,450",
+						"to": "00:00:03,610"
+					},
+					"offsets": {
+						"from": 3450,
+						"to": 3610
+					},
+					"id": 1979,
+					"p": 0.966405,
+					"t_dtw": 362
+				},
+				{
+					"text": " sein",
+					"timestamps": {
+						"from": "00:00:03,610",
+						"to": "00:00:03,740"
+					},
+					"offsets": {
+						"from": 3610,
+						"to": 3740
+					},
+					"id": 6195,
+					"p": 0.997602,
+					"t_dtw": 386
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,750",
+						"to": "00:00:03,830"
+					},
+					"offsets": {
+						"from": 3750,
+						"to": 3830
+					},
+					"id": 13,
+					"p": 0.886962,
+					"t_dtw": 386
+				},
+				{
+					"text": "[_TT_195]",
+					"timestamps": {
+						"from": "00:00:03,900",
+						"to": "00:00:03,900"
+					},
+					"offsets": {
+						"from": 3900,
+						"to": 3900
+					},
+					"id": 50559,
+					"p": 0.0540542,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

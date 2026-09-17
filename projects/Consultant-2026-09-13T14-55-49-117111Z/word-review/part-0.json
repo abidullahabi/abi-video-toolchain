@@ -1,0 +1,730 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,600"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4600
+			},
+			"text": " Was machen wir Consultants eigentlich? Warum arbeiten wir so viel und warum verdienen wir so viel Geld?",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.996137,
+					"t_dtw": -1
+				},
+				{
+					"text": " Was",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 140
+					},
+					"id": 3027,
+					"p": 0.96504,
+					"t_dtw": 24
+				},
+				{
+					"text": " machen",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 420
+					},
+					"id": 7069,
+					"p": 0.988659,
+					"t_dtw": 52
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 560
+					},
+					"id": 1987,
+					"p": 0.994452,
+					"t_dtw": 64
+				},
+				{
+					"text": " Consult",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 860
+					},
+					"id": 40057,
+					"p": 0.471721,
+					"t_dtw": 98
+				},
+				{
+					"text": "ants",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:01,050"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 1050
+					},
+					"id": 1719,
+					"p": 0.624649,
+					"t_dtw": 118
+				},
+				{
+					"text": " eigentlich",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,550"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1550
+					},
+					"id": 10926,
+					"p": 0.762835,
+					"t_dtw": 146
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:01,550",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1550,
+						"to": 1680
+					},
+					"id": 30,
+					"p": 0.656304,
+					"t_dtw": 178
+				},
+				{
+					"text": " Warum",
+					"timestamps": {
+						"from": "00:00:01,790",
+						"to": "00:00:02,010"
+					},
+					"offsets": {
+						"from": 1790,
+						"to": 2010
+					},
+					"id": 25541,
+					"p": 0.658672,
+					"t_dtw": 192
+				},
+				{
+					"text": " arbeiten",
+					"timestamps": {
+						"from": "00:00:02,010",
+						"to": "00:00:02,470"
+					},
+					"offsets": {
+						"from": 2010,
+						"to": 2470
+					},
+					"id": 23162,
+					"p": 0.986278,
+					"t_dtw": 232
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:02,470",
+						"to": "00:00:02,630"
+					},
+					"offsets": {
+						"from": 2470,
+						"to": 2630
+					},
+					"id": 1987,
+					"p": 0.989823,
+					"t_dtw": 248
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:02,630",
+						"to": "00:00:02,640"
+					},
+					"offsets": {
+						"from": 2630,
+						"to": 2640
+					},
+					"id": 370,
+					"p": 0.983322,
+					"t_dtw": 264
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:02,760",
+						"to": "00:00:02,990"
+					},
+					"offsets": {
+						"from": 2760,
+						"to": 2990
+					},
+					"id": 5891,
+					"p": 0.916413,
+					"t_dtw": 288
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:03,090",
+						"to": "00:00:03,330"
+					},
+					"offsets": {
+						"from": 3090,
+						"to": 3330
+					},
+					"id": 674,
+					"p": 0.57138,
+					"t_dtw": 328
+				},
+				{
+					"text": " warum",
+					"timestamps": {
+						"from": "00:00:03,430",
+						"to": "00:00:03,610"
+					},
+					"offsets": {
+						"from": 3430,
+						"to": 3610
+					},
+					"id": 24331,
+					"p": 0.89473,
+					"t_dtw": 380
+				},
+				{
+					"text": " verd",
+					"timestamps": {
+						"from": "00:00:03,610",
+						"to": "00:00:03,780"
+					},
+					"offsets": {
+						"from": 3610,
+						"to": 3780
+					},
+					"id": 6387,
+					"p": 0.979707,
+					"t_dtw": 400
+				},
+				{
+					"text": "ienen",
+					"timestamps": {
+						"from": "00:00:03,780",
+						"to": "00:00:03,990"
+					},
+					"offsets": {
+						"from": 3780,
+						"to": 3990
+					},
+					"id": 22461,
+					"p": 0.888988,
+					"t_dtw": 404
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:03,990",
+						"to": "00:00:04,140"
+					},
+					"offsets": {
+						"from": 3990,
+						"to": 4140
+					},
+					"id": 1987,
+					"p": 0.958521,
+					"t_dtw": 418
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:04,140",
+						"to": "00:00:04,160"
+					},
+					"offsets": {
+						"from": 4140,
+						"to": 4160
+					},
+					"id": 370,
+					"p": 0.881635,
+					"t_dtw": 424
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:04,160",
+						"to": "00:00:04,310"
+					},
+					"offsets": {
+						"from": 4160,
+						"to": 4310
+					},
+					"id": 5891,
+					"p": 0.967711,
+					"t_dtw": 434
+				},
+				{
+					"text": " Geld",
+					"timestamps": {
+						"from": "00:00:04,310",
+						"to": "00:00:04,480"
+					},
+					"offsets": {
+						"from": 4310,
+						"to": 4480
+					},
+					"id": 16535,
+					"p": 0.964051,
+					"t_dtw": 450
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:04,480",
+						"to": "00:00:04,520"
+					},
+					"offsets": {
+						"from": 4480,
+						"to": 4520
+					},
+					"id": 30,
+					"p": 0.966433,
+					"t_dtw": 470
+				},
+				{
+					"text": "[_TT_230]",
+					"timestamps": {
+						"from": "00:00:04,600",
+						"to": "00:00:04,600"
+					},
+					"offsets": {
+						"from": 4600,
+						"to": 4600
+					},
+					"id": 50594,
+					"p": 0.10327,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,600",
+				"to": "00:00:09,100"
+			},
+			"offsets": {
+				"from": 4600,
+				"to": 9100
+			},
+			"text": " Lass uns mal direkt starten mit, was machen wir eigentlich? Einfach gesagt, lösen Consultants Probleme.",
+			"tokens": [
+				{
+					"text": " L",
+					"timestamps": {
+						"from": "00:00:04,640",
+						"to": "00:00:04,640"
+					},
+					"offsets": {
+						"from": 4640,
+						"to": 4640
+					},
+					"id": 441,
+					"p": 0.857634,
+					"t_dtw": 476
+				},
+				{
+					"text": "ass",
+					"timestamps": {
+						"from": "00:00:04,670",
+						"to": "00:00:04,780"
+					},
+					"offsets": {
+						"from": 4670,
+						"to": 4780
+					},
+					"id": 640,
+					"p": 0.954527,
+					"t_dtw": 480
+				},
+				{
+					"text": " uns",
+					"timestamps": {
+						"from": "00:00:04,780",
+						"to": "00:00:04,920"
+					},
+					"offsets": {
+						"from": 4780,
+						"to": 4920
+					},
+					"id": 2693,
+					"p": 0.987135,
+					"t_dtw": 488
+				},
+				{
+					"text": " mal",
+					"timestamps": {
+						"from": "00:00:04,920",
+						"to": "00:00:05,050"
+					},
+					"offsets": {
+						"from": 4920,
+						"to": 5050
+					},
+					"id": 2806,
+					"p": 0.941429,
+					"t_dtw": 504
+				},
+				{
+					"text": " direkt",
+					"timestamps": {
+						"from": "00:00:05,070",
+						"to": "00:00:05,350"
+					},
+					"offsets": {
+						"from": 5070,
+						"to": 5350
+					},
+					"id": 20315,
+					"p": 0.765823,
+					"t_dtw": 522
+				},
+				{
+					"text": " start",
+					"timestamps": {
+						"from": "00:00:05,350",
+						"to": "00:00:05,590"
+					},
+					"offsets": {
+						"from": 5350,
+						"to": 5590
+					},
+					"id": 722,
+					"p": 0.945135,
+					"t_dtw": 548
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:05,590",
+						"to": "00:00:05,650"
+					},
+					"offsets": {
+						"from": 5590,
+						"to": 5650
+					},
+					"id": 268,
+					"p": 0.999588,
+					"t_dtw": 566
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:05,720",
+						"to": "00:00:05,880"
+					},
+					"offsets": {
+						"from": 5720,
+						"to": 5880
+					},
+					"id": 2194,
+					"p": 0.892213,
+					"t_dtw": 580
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:05,880",
+						"to": "00:00:05,940"
+					},
+					"offsets": {
+						"from": 5880,
+						"to": 5940
+					},
+					"id": 11,
+					"p": 0.368898,
+					"t_dtw": 604
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:05,940",
+						"to": "00:00:05,980"
+					},
+					"offsets": {
+						"from": 5940,
+						"to": 5980
+					},
+					"id": 390,
+					"p": 0.918941,
+					"t_dtw": 608
+				},
+				{
+					"text": " machen",
+					"timestamps": {
+						"from": "00:00:06,050",
+						"to": "00:00:06,230"
+					},
+					"offsets": {
+						"from": 6050,
+						"to": 6230
+					},
+					"id": 7069,
+					"p": 0.989712,
+					"t_dtw": 628
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:06,270",
+						"to": "00:00:06,270"
+					},
+					"offsets": {
+						"from": 6270,
+						"to": 6270
+					},
+					"id": 1987,
+					"p": 0.998213,
+					"t_dtw": 638
+				},
+				{
+					"text": " eigentlich",
+					"timestamps": {
+						"from": "00:00:06,390",
+						"to": "00:00:06,680"
+					},
+					"offsets": {
+						"from": 6390,
+						"to": 6680
+					},
+					"id": 10926,
+					"p": 0.9872,
+					"t_dtw": 660
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:06,680",
+						"to": "00:00:06,790"
+					},
+					"offsets": {
+						"from": 6680,
+						"to": 6790
+					},
+					"id": 30,
+					"p": 0.840206,
+					"t_dtw": 684
+				},
+				{
+					"text": " Ein",
+					"timestamps": {
+						"from": "00:00:06,810",
+						"to": "00:00:06,970"
+					},
+					"offsets": {
+						"from": 6810,
+						"to": 6970
+					},
+					"id": 6391,
+					"p": 0.591451,
+					"t_dtw": 696
+				},
+				{
+					"text": "fach",
+					"timestamps": {
+						"from": "00:00:06,970",
+						"to": "00:00:07,200"
+					},
+					"offsets": {
+						"from": 6970,
+						"to": 7200
+					},
+					"id": 6749,
+					"p": 0.977728,
+					"t_dtw": 710
+				},
+				{
+					"text": " gesagt",
+					"timestamps": {
+						"from": "00:00:07,200",
+						"to": "00:00:07,550"
+					},
+					"offsets": {
+						"from": 7200,
+						"to": 7550
+					},
+					"id": 12260,
+					"p": 0.983793,
+					"t_dtw": 738
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:07,550",
+						"to": "00:00:07,580"
+					},
+					"offsets": {
+						"from": 7550,
+						"to": 7580
+					},
+					"id": 11,
+					"p": 0.640052,
+					"t_dtw": 774
+				},
+				{
+					"text": " lö",
+					"timestamps": {
+						"from": "00:00:07,690",
+						"to": "00:00:07,770"
+					},
+					"offsets": {
+						"from": 7690,
+						"to": 7770
+					},
+					"id": 25209,
+					"p": 0.909343,
+					"t_dtw": 782
+				},
+				{
+					"text": "sen",
+					"timestamps": {
+						"from": "00:00:07,770",
+						"to": "00:00:07,930"
+					},
+					"offsets": {
+						"from": 7770,
+						"to": 7930
+					},
+					"id": 6748,
+					"p": 0.997792,
+					"t_dtw": 800
+				},
+				{
+					"text": " Consult",
+					"timestamps": {
+						"from": "00:00:08,180",
+						"to": "00:00:08,350"
+					},
+					"offsets": {
+						"from": 8180,
+						"to": 8350
+					},
+					"id": 40057,
+					"p": 0.842317,
+					"t_dtw": 840
+				},
+				{
+					"text": "ants",
+					"timestamps": {
+						"from": "00:00:08,350",
+						"to": "00:00:08,580"
+					},
+					"offsets": {
+						"from": 8350,
+						"to": 8580
+					},
+					"id": 1719,
+					"p": 0.726953,
+					"t_dtw": 860
+				},
+				{
+					"text": " Probleme",
+					"timestamps": {
+						"from": "00:00:08,580",
+						"to": "00:00:09,100"
+					},
+					"offsets": {
+						"from": 8580,
+						"to": 9100
+					},
+					"id": 32891,
+					"p": 0.989417,
+					"t_dtw": 900
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:09,100",
+						"to": "00:00:09,100"
+					},
+					"offsets": {
+						"from": 9100,
+						"to": 9100
+					},
+					"id": 13,
+					"p": 0.803986,
+					"t_dtw": 906
+				},
+				{
+					"text": "[_TT_455]",
+					"timestamps": {
+						"from": "00:00:09,100",
+						"to": "00:00:09,100"
+					},
+					"offsets": {
+						"from": 9100,
+						"to": 9100
+					},
+					"id": 50819,
+					"p": 0.180831,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

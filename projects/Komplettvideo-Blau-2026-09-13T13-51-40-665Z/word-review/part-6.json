@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3120
+			},
+			"text": " MyTakeIsDesign wird gefragt hat den je sein.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.995984,
+					"t_dtw": -1
+				},
+				{
+					"text": " My",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 160
+					},
+					"id": 1222,
+					"p": 0.620671,
+					"t_dtw": 32
+				},
+				{
+					"text": "Take",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,490"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 490
+					},
+					"id": 25891,
+					"p": 0.565271,
+					"t_dtw": 56
+				},
+				{
+					"text": "Is",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 600
+					},
+					"id": 6802,
+					"p": 0.447836,
+					"t_dtw": 90
+				},
+				{
+					"text": "Des",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 870
+					},
+					"id": 29543,
+					"p": 0.48728,
+					"t_dtw": 128
+				},
+				{
+					"text": "ign",
+					"timestamps": {
+						"from": "00:00:00,870",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 870,
+						"to": 950
+					},
+					"id": 788,
+					"p": 0.997798,
+					"t_dtw": 156
+				},
+				{
+					"text": " wird",
+					"timestamps": {
+						"from": "00:00:01,180",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1180,
+						"to": 1460
+					},
+					"id": 4578,
+					"p": 0.904776,
+					"t_dtw": 174
+				},
+				{
+					"text": " gefragt",
+					"timestamps": {
+						"from": "00:00:01,460",
+						"to": "00:00:02,030"
+					},
+					"offsets": {
+						"from": 1460,
+						"to": 2030
+					},
+					"id": 42638,
+					"p": 0.782158,
+					"t_dtw": 216
+				},
+				{
+					"text": " hat",
+					"timestamps": {
+						"from": "00:00:02,040",
+						"to": "00:00:02,290"
+					},
+					"offsets": {
+						"from": 2040,
+						"to": 2290
+					},
+					"id": 2385,
+					"p": 0.590241,
+					"t_dtw": 238
+				},
+				{
+					"text": " den",
+					"timestamps": {
+						"from": "00:00:02,290",
+						"to": "00:00:02,540"
+					},
+					"offsets": {
+						"from": 2290,
+						"to": 2540
+					},
+					"id": 1441,
+					"p": 0.441263,
+					"t_dtw": 252
+				},
+				{
+					"text": " je",
+					"timestamps": {
+						"from": "00:00:02,540",
+						"to": "00:00:02,700"
+					},
+					"offsets": {
+						"from": 2540,
+						"to": 2700
+					},
+					"id": 1506,
+					"p": 0.731017,
+					"t_dtw": 266
+				},
+				{
+					"text": " sein",
+					"timestamps": {
+						"from": "00:00:02,700",
+						"to": "00:00:02,970"
+					},
+					"offsets": {
+						"from": 2700,
+						"to": 2970
+					},
+					"id": 6195,
+					"p": 0.850057,
+					"t_dtw": 296
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,070",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 3070,
+						"to": 3080
+					},
+					"id": 13,
+					"p": 0.769655,
+					"t_dtw": 310
+				},
+				{
+					"text": "[_TT_156]",
+					"timestamps": {
+						"from": "00:00:03,120",
+						"to": "00:00:03,120"
+					},
+					"offsets": {
+						"from": 3120,
+						"to": 3120
+					},
+					"id": 50520,
+					"p": 0.0869189,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

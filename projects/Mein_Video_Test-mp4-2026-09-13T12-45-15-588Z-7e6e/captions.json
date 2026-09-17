@@ -1,0 +1,901 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,840"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1840
+			},
+			"text": " Damit du nicht so endest nach deinem"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,840",
+				"to": "00:00:03,640"
+			},
+			"offsets": {
+				"from": 1840,
+				"to": 3640
+			},
+			"text": " Studium, sind hier vier Bereich,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,640",
+				"to": "00:00:03,960"
+			},
+			"offsets": {
+				"from": 3640,
+				"to": 3960
+			},
+			"text": " auf die du"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,960",
+				"to": "00:00:05,900"
+			},
+			"offsets": {
+				"from": 3960,
+				"to": 5900
+			},
+			"text": " fokussieren solltest, während deines"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,900",
+				"to": "00:00:07,650"
+			},
+			"offsets": {
+				"from": 5900,
+				"to": 7650
+			},
+			"text": " Studiums. Der Arbeitsmarkt ist"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,650",
+				"to": "00:00:08,280"
+			},
+			"offsets": {
+				"from": 7650,
+				"to": 8280
+			},
+			"text": " angespannt,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,280",
+				"to": "00:00:10,220"
+			},
+			"offsets": {
+				"from": 8280,
+				"to": 10220
+			},
+			"text": " KI klaut unsere Jobs, aber das muss"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,220",
+				"to": "00:00:11,890"
+			},
+			"offsets": {
+				"from": 10220,
+				"to": 11890
+			},
+			"text": " so nicht sein. Der erste Bereich"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,890",
+				"to": "00:00:13,320"
+			},
+			"offsets": {
+				"from": 11890,
+				"to": 13320
+			},
+			"text": " ist Bereich SAP."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,320",
+				"to": "00:00:15,800"
+			},
+			"offsets": {
+				"from": 13320,
+				"to": 15800
+			},
+			"text": " Fast jedes Unternehmen hat SAP im Laufen,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,800",
+				"to": "00:00:17,710"
+			},
+			"offsets": {
+				"from": 15800,
+				"to": 17710
+			},
+			"text": " damit regnet die ihren Einkäufe,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,710",
+				"to": "00:00:17,880"
+			},
+			"offsets": {
+				"from": 17710,
+				"to": 17880
+			},
+			"text": " ihre"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,880",
+				"to": "00:00:20,050"
+			},
+			"offsets": {
+				"from": 17880,
+				"to": 20050
+			},
+			"text": " Finanzen, Buchhaltung, fast alles."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,050",
+				"to": "00:00:22,090"
+			},
+			"offsets": {
+				"from": 20050,
+				"to": 22090
+			},
+			"text": " Du würdest zum Beispiel helfen, die"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,090",
+				"to": "00:00:22,560"
+			},
+			"offsets": {
+				"from": 22090,
+				"to": 22560
+			},
+			"text": " Prozesse"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,560",
+				"to": "00:00:24,400"
+			},
+			"offsets": {
+				"from": 22560,
+				"to": 24400
+			},
+			"text": " zu verbessern oder generell die"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:24,400",
+				"to": "00:00:26,480"
+			},
+			"offsets": {
+				"from": 24400,
+				"to": 26480
+			},
+			"text": " Software einzuführen. Und ich als"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:26,480",
+				"to": "00:00:27,240"
+			},
+			"offsets": {
+				"from": 26480,
+				"to": 27240
+			},
+			"text": " Konsalten merke"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,240",
+				"to": "00:00:28,810"
+			},
+			"offsets": {
+				"from": 27240,
+				"to": 28810
+			},
+			"text": " einfach, wie krass das Angebot oder"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:28,810",
+				"to": "00:00:30,280"
+			},
+			"offsets": {
+				"from": 28810,
+				"to": 30280
+			},
+			"text": " die Nachfrage danach ist und wie"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,280",
+				"to": "00:00:30,960"
+			},
+			"offsets": {
+				"from": 30280,
+				"to": 30960
+			},
+			"text": " wenig Angebot"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,960",
+				"to": "00:00:32,800"
+			},
+			"offsets": {
+				"from": 30960,
+				"to": 32800
+			},
+			"text": " es dafür gibt. Genauso spannend ist"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:32,800",
+				"to": "00:00:34,960"
+			},
+			"offsets": {
+				"from": 32800,
+				"to": 34960
+			},
+			"text": " der zweite Bereich, Bereich Data."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,960",
+				"to": "00:00:37,020"
+			},
+			"offsets": {
+				"from": 34960,
+				"to": 37020
+			},
+			"text": " Data Science, Data Analytics,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,020",
+				"to": "00:00:39,050"
+			},
+			"offsets": {
+				"from": 37020,
+				"to": 39050
+			},
+			"text": " Data Engineers. Und du jetzt Data"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:39,050",
+				"to": "00:00:41,320"
+			},
+			"offsets": {
+				"from": 39050,
+				"to": 41320
+			},
+			"text": " Pipelines baust, Daten analysierst"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:41,320",
+				"to": "00:00:42,840"
+			},
+			"offsets": {
+				"from": 41320,
+				"to": 42840
+			},
+			"text": " oder basierend auf Daten neue"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:42,840",
+				"to": "00:00:44,730"
+			},
+			"offsets": {
+				"from": 42840,
+				"to": 44730
+			},
+			"text": " Modelle generierst, ist das alles"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:44,730",
+				"to": "00:00:46,450"
+			},
+			"offsets": {
+				"from": 44730,
+				"to": 46450
+			},
+			"text": " gefragter denn je. Voll viele"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:46,450",
+				"to": "00:00:48,120"
+			},
+			"offsets": {
+				"from": 46450,
+				"to": 48120
+			},
+			"text": " Unternehmen sitzen auf Daten,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:48,120",
+				"to": "00:00:49,980"
+			},
+			"offsets": {
+				"from": 48120,
+				"to": 49980
+			},
+			"text": " die einfach nicht genutzt werden."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:49,980",
+				"to": "00:00:51,530"
+			},
+			"offsets": {
+				"from": 49980,
+				"to": 51530
+			},
+			"text": " Und für AI brauchbare Daten ist"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:51,530",
+				"to": "00:00:52,480"
+			},
+			"offsets": {
+				"from": 51530,
+				"to": 52480
+			},
+			"text": " deswegen gefragter"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:52,480",
+				"to": "00:00:54,350"
+			},
+			"offsets": {
+				"from": 52480,
+				"to": 54350
+			},
+			"text": " denn je. Der dritte Bereich ist der"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:54,350",
+				"to": "00:00:56,350"
+			},
+			"offsets": {
+				"from": 54350,
+				"to": 56350
+			},
+			"text": " Bereich Compliance und Governance."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:56,350",
+				"to": "00:00:58,040"
+			},
+			"offsets": {
+				"from": 56350,
+				"to": 58040
+			},
+			"text": " Klingt trocken, ist es auch,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:58,040",
+				"to": "00:01:00,210"
+			},
+			"offsets": {
+				"from": 58040,
+				"to": 60210
+			},
+			"text": " aber wird sich keiner trauen, durch"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:00,210",
+				"to": "00:01:02,320"
+			},
+			"offsets": {
+				"from": 60210,
+				"to": 62320
+			},
+			"text": " AI zu ersetzen. Du bist dann quasi"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:02,320",
+				"to": "00:01:03,520"
+			},
+			"offsets": {
+				"from": 62320,
+				"to": 63520
+			},
+			"text": " Spezialist für bestimmte"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:03,520",
+				"to": "00:01:05,550"
+			},
+			"offsets": {
+				"from": 63520,
+				"to": 65550
+			},
+			"text": " Regulariten oder Richtlinien, meistens"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:05,550",
+				"to": "00:01:07,340"
+			},
+			"offsets": {
+				"from": 65550,
+				"to": 67340
+			},
+			"text": " auch für eine bestimmte Branche."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:07,340",
+				"to": "00:01:08,280"
+			},
+			"offsets": {
+				"from": 67340,
+				"to": 68280
+			},
+			"text": " Und dann berätest du halt"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:08,280",
+				"to": "00:01:09,360"
+			},
+			"offsets": {
+				"from": 68280,
+				"to": 69360
+			},
+			"text": " Firmen und sagst, okay, dass es"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:09,360",
+				"to": "00:01:10,450"
+			},
+			"offsets": {
+				"from": 69360,
+				"to": 70450
+			},
+			"text": " okay was ihr macht oder nein, ihr"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:10,450",
+				"to": "00:01:11,920"
+			},
+			"offsets": {
+				"from": 70450,
+				"to": 71920
+			},
+			"text": " müsst es anders machen und zwar so"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:11,920",
+				"to": "00:01:12,200"
+			},
+			"offsets": {
+				"from": 71920,
+				"to": 72200
+			},
+			"text": " und so."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:12,200",
+				"to": "00:01:14,040"
+			},
+			"offsets": {
+				"from": 72200,
+				"to": 74040
+			},
+			"text": " Und da das alles gesetz und richtlinisiert"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:14,040",
+				"to": "00:01:15,810"
+			},
+			"offsets": {
+				"from": 74040,
+				"to": 75810
+			},
+			"text": " wird, wird AI dafür nicht genutzt."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:15,810",
+				"to": "00:01:17,400"
+			},
+			"offsets": {
+				"from": 75810,
+				"to": 77400
+			},
+			"text": " Und jetzt zum vierten"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:17,400",
+				"to": "00:01:19,320"
+			},
+			"offsets": {
+				"from": 77400,
+				"to": 79320
+			},
+			"text": " Bereich Cyber Security und AI"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:19,320",
+				"to": "00:01:21,920"
+			},
+			"offsets": {
+				"from": 79320,
+				"to": 81920
+			},
+			"text": " Security. Im Grunde genommen schützt"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:21,920",
+				"to": "00:01:24,200"
+			},
+			"offsets": {
+				"from": 81920,
+				"to": 84200
+			},
+			"text": " du Systeme und Daten vor Angriffe."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:24,200",
+				"to": "00:01:26,660"
+			},
+			"offsets": {
+				"from": 84200,
+				"to": 86660
+			},
+			"text": " Vor allem jetzt, wo man so liest AI"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:26,660",
+				"to": "00:01:29,270"
+			},
+			"offsets": {
+				"from": 86660,
+				"to": 89270
+			},
+			"text": " hektas oder jenes, ist die Nachfrage"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:29,270",
+				"to": "00:01:30,520"
+			},
+			"offsets": {
+				"from": 89270,
+				"to": 90520
+			},
+			"text": " und Angst größter"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:30,520",
+				"to": "00:01:32,210"
+			},
+			"offsets": {
+				"from": 90520,
+				"to": 92210
+			},
+			"text": " denn je. Da jeder Vogel aktuell"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:32,210",
+				"to": "00:01:34,210"
+			},
+			"offsets": {
+				"from": 92210,
+				"to": 94210
+			},
+			"text": " irgendwas programmieren kann, sieht"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:34,210",
+				"to": "00:01:35,100"
+			},
+			"offsets": {
+				"from": 94210,
+				"to": 95100
+			},
+			"text": " man einfach die"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:35,100",
+				"to": "00:01:36,780"
+			},
+			"offsets": {
+				"from": 95100,
+				"to": 96780
+			},
+			"text": " KI Anwendungen, haben gar keine"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:36,780",
+				"to": "00:01:38,920"
+			},
+			"offsets": {
+				"from": 96780,
+				"to": 98920
+			},
+			"text": " Schutzmechanismen. Deswegen gibt es"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:38,920",
+				"to": "00:01:41,400"
+			},
+			"offsets": {
+				"from": 98920,
+				"to": 101400
+			},
+			"text": " auch reichlich zu tun. Und"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:41,400",
+				"to": "00:01:43,510"
+			},
+			"offsets": {
+				"from": 101400,
+				"to": 103510
+			},
+			"text": " hier noch ein weiterer Bonus, was"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:43,510",
+				"to": "00:01:45,910"
+			},
+			"offsets": {
+				"from": 103510,
+				"to": 105910
+			},
+			"text": " gefragt wird. Mindtake ist, Design"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:45,910",
+				"to": "00:01:47,560"
+			},
+			"offsets": {
+				"from": 105910,
+				"to": 107560
+			},
+			"text": " wird gefragter denn je sein."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:47,560",
+				"to": "00:01:49,190"
+			},
+			"offsets": {
+				"from": 107560,
+				"to": 109190
+			},
+			"text": " Jede Website, jede neue App, sieht"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:49,190",
+				"to": "00:01:50,800"
+			},
+			"offsets": {
+				"from": 109190,
+				"to": 110800
+			},
+			"text": " eigentlich fast identisch aus."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:50,800",
+				"to": "00:01:51,920"
+			},
+			"offsets": {
+				"from": 110800,
+				"to": 111920
+			},
+			"text": " Selbst Speisekarten und"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:51,920",
+				"to": "00:01:54,730"
+			},
+			"offsets": {
+				"from": 111920,
+				"to": 114730
+			},
+			"text": " Freibad sehen aus, wie AI generiert."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:54,730",
+				"to": "00:01:56,560"
+			},
+			"offsets": {
+				"from": 114730,
+				"to": 116560
+			},
+			"text": " Und dadurch werden sehr gute"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:56,560",
+				"to": "00:01:58,680"
+			},
+			"offsets": {
+				"from": 116560,
+				"to": 118680
+			},
+			"text": " Designer sehr viel mehr gefragt."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:58,680",
+				"to": "00:02:00,030"
+			},
+			"offsets": {
+				"from": 118680,
+				"to": 120030
+			},
+			"text": " Das Gute ist, du musst halt nicht"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:00,030",
+				"to": "00:02:01,460"
+			},
+			"offsets": {
+				"from": 120030,
+				"to": 121460
+			},
+			"text": " mehr so technisch sein. Du kannst"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:01,460",
+				"to": "00:02:02,160"
+			},
+			"offsets": {
+				"from": 121460,
+				"to": 122160
+			},
+			"text": " die Ideen haben,"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:02,160",
+				"to": "00:02:04,000"
+			},
+			"offsets": {
+				"from": 122160,
+				"to": 124000
+			},
+			"text": " aber von AI übersetzen lassen. Wenn"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:04,000",
+				"to": "00:02:05,560"
+			},
+			"offsets": {
+				"from": 124000,
+				"to": 125560
+			},
+			"text": " du noch irgendwelche Fragen hast"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:05,560",
+				"to": "00:02:06,720"
+			},
+			"offsets": {
+				"from": 125560,
+				"to": 126720
+			},
+			"text": " zum Thema Bewerben oder"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:06,720",
+				"to": "00:02:08,560"
+			},
+			"offsets": {
+				"from": 126720,
+				"to": 128560
+			},
+			"text": " woher soll ich mich spezialisieren,"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:08,560",
+				"to": "00:02:09,900"
+			},
+			"offsets": {
+				"from": 128560,
+				"to": 129900
+			},
+			"text": " schreib mir in die DM oder den"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:09,900",
+				"to": "00:02:11,960"
+			},
+			"offsets": {
+				"from": 129900,
+				"to": 131960
+			},
+			"text": " Kommentar. Und voll nicht vergessen."
+		}
+	]
+}

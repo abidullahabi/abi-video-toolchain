@@ -1,0 +1,63 @@
+{
+  "mode": "theme-and-subtle-zooms",
+  "source": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Archiv/Rohvideos/2026-09-17 - Länger studieren oder schneller abschließen - Rohvideo.MOV",
+  "sourceSha256": "60fe5c32f7b55d523ecf557c3d9175edd5b0a29f4f63d8029cc7bfcac92e5cf0",
+  "originalDuration": 153.993333,
+  "cutDuration": 154.004,
+  "status": "workflow_test_not_for_posting",
+  "createdAt": "2026-09-15T16:19:45+00:00",
+  "captureMethod": "Native iPhone Kamera-App, per AirDrop übertragen, erste Aufnahme nach dem seit 15.09.2026 neuen Aufnahmeweg (Abschnitt 3a).",
+  "sourceProperties": {
+    "resolution": "2160x3840",
+    "codec": "hevc",
+    "frameRate": "24/1 (avg 554400/23099)",
+    "colorSpace": "bt709",
+    "colorRange": "tv",
+    "hdr": false,
+    "audioStreams": "AAC 48kHz Stereo (0:a:0, verwendet) + zusätzlicher 4-Kanal apac/Spatial-Audio-Stream (0:a:1, nicht dekodierbar, nicht verwendet)"
+  },
+  "mediaConversion": "media.mp4 ist eine dokumentierte Arbeitskopie aus dem unveränderten Original: Skalierung 2160x3840 -> 1080x1920 (glatter Faktor 2, gleiches Seitenverhältnis), HEVC -> H.264 (CRF 16, yuv420p), Originaltempo und 24 fps unverändert übernommen, BT.709 explizit gesetzt, Ton unverändert als AAC 192kbit/s 48kHz neu codiert. Keine Kürzung, keine Stillen-/Füllwortentfernung. Vollständige Decodierprüfung bestanden, Audiopegel geprüft (kein Stille-Fehler). Das Original in 01_Rohvideos bleibt unverändert.",
+  "scope": {
+    "thematicOverlays": true,
+    "wordCaptions": true,
+    "removeSilence": false,
+    "removeFillers": false,
+    "zooms": true,
+    "speed": 1
+  },
+  "captionStandard": {
+    "fontSize": 56,
+    "top": 1280,
+    "maxWords": 3
+  },
+  "notionPage": "https://app.notion.com/p/3dc8cb917b3b816e89dad0f1532f8b8d",
+  "notionTitle": "Länger studieren oder schneller abschließen?",
+  "postingDateStatus": "zurueckgezogen_am_16.09.2026",
+  "limitations": [
+    "Keine automatische Auswahl der besten Takes. Abi wählt nach Durchsicht des vollständigen, ungekürzten Videos aus.",
+    "Erste Aufnahme über den neuen nativen iPhone-Aufnahmeweg, daher abweichende Quelleigenschaften gegenüber früheren CapCut-Rohvideos."
+  ],
+  "latestExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Studiendauer-2026-09-15T16-19-45Z/exports/final-2026-09-15T16-34-59-000Z.mp4",
+  "exportedAt": "2026-09-15T16:45:34+00:00",
+  "renderNote": "render-html brach am check-theme-layout-Gate (face_caption_overlap) ab. Nach Nutzerentscheidung direkt über HyperFrames CLI gerendert, gleiche Validierung (Format/Dauer/Decodierung) manuell nachgeholt.",
+  "codeChanges": [
+    "assemble-full-video.mjs: groupCaptions faengt jetzt Einzelwoerter ab, die breiter als captionMaxWidth sind, und reduziert nur fuer diese Cues die Schriftgroesse (minimal 34px), statt abzustuerzen.",
+    "theme-composition.mjs: Untertitel-Rendering uebernimmt jetzt ein optionales cue.fontSize pro Cue."
+  ],
+  "postingHold": "Abi hat am 16.09.2026 ausdruecklich angeordnet: dieses Video NICHT einplanen und NICHT veroeffentlichen. Es dient der Kalibrierung des Schnitt-Workflows. Erst nach Freigabe des ueberarbeiteten Workflows neu entscheiden. Nicht nach 03_Bereit_zum_Posten kopieren, keinen Zernio-Post anlegen, Notion-Status nicht aendern.",
+  "designVersion": "veraltet-vor-1.9",
+  "designObsolete": {
+    "checkedAgainst": "DESIGN.md 1.9 vom 16.09.2026",
+    "abweichungen": [
+      "Mittelachse 540 statt 510",
+      "Textbereich x180-900/y300-1500 statt x90-930/y250-1660",
+      "Markenblau #349feb statt #1668b5 (alter Wert erreichte nur 2,87:1 Kontrast)",
+      "H1 frei gewaehlte Groessen statt der Stufen 72/66/60/56",
+      "H2 feste Position top 440 statt 20px unter der H1-Unterkante, Groesse frei statt fest 46px",
+      "Untertitelbreite 684px statt 620px, aktives Wort #349feb statt #5eb3f5",
+      "Outro mit Road to 10K und roter Flaeche statt Fortschrittskarte mit TikTok-Followerstand"
+    ],
+    "folge": "Diese Exporte entsprechen nicht dem gueltigen Design. Nicht als Vorlage, Referenz oder Ausgangspunkt verwenden. Nur als Verlaufsbeleg aufbewahren."
+  },
+  "pauseCalibration": "Lueckenmessung dieses Projekts beruhte auf einer Pegelschwelle von -38 dBFS und ist unbrauchbar. Bei -30 dB gemessen: 0,250/0,270/0,460 s gegen Abdullahs 0,100/0,217/0,139 s. Siehe TESTPROTOKOLL.md."
+}

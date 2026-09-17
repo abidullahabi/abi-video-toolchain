@@ -1,0 +1,8 @@
+◆  Linting Consulting-Experiment-2026-09-13T18-04-23Z/index.html
+
+  ⚠ caption_text_overflow_risk: Caption selector ".caption-line" has white-space: nowrap but no max-width. Long phrases will clip off-screen.
+    Fix: Add max-width: 1600px (landscape) or max-width: 900px (portrait). Keep overflow visible so scaled emphasis words are not clipped.
+  ⚠ composition_file_too_large: This HTML composition file has 643 lines. Smaller sub-compositions are easier to read, iterate on, and diff.
+    Fix: Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently.
+
+◇  0 error(s), 2 warning(s)

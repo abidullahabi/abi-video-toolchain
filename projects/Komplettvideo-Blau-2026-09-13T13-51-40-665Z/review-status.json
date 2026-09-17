@@ -1,0 +1,40 @@
+{
+  "status": "ready_for_user_review",
+  "export": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Komplettvideo-Blau-2026-09-13T13-51-40-665Z/exports/final-2026-09-13T14-09-05-289Z.mp4",
+  "checkedAt": "2026-09-13T14:17:54.018Z",
+  "duration": 118.833333,
+  "width": 1080,
+  "height": 1920,
+  "frames": 3565,
+  "captionGroups": 129,
+  "spokenWords": 387,
+  "zoomSections": 16,
+  "checks": [
+    "30 Standbilder aus der fertigen MP4 visuell geprüft.",
+    "237 Stichproben mit lokaler Gesichtserkennung und Überdeckungsprüfung. Keine Überdeckung erkannter Gesichter durch Texte.",
+    "Alle Untertitel haben höchstens vier Wörter und passen bei gleicher Schriftgröße in eine Zeile.",
+    "Keine zeitliche Überlappung von Untertiteln. Höchstens ein blau markiertes Wort pro Videoframe.",
+    "Wortwechsel und Rücksprung im Live-Editor visuell geprüft.",
+    "Alle Zoom-Rücksprünge liegen an vorhandenen Schnittpunkten.",
+    "Bild, Ton, Dauer und vollständige Dateidecodierung geprüft.",
+    "Tonspur mit dem freigegebenen Schnitt verglichen. Keine messbare zusätzliche Verschiebung in 1-ms-Schritten."
+  ],
+  "audioComparison": {
+    "sampleRate": 16000,
+    "sourceSeconds": 118.83975,
+    "finalSeconds": 118.848,
+    "zeroLagCorrelation": 0.9995332432033046,
+    "best": {
+      "lagMs": 0,
+      "correlation": 0.9995332432033046
+    },
+    "method": "Wellenformvergleich in 1-ms-Schritten von -40 bis +40 ms, keine Hörkontrolle.",
+    "pass": true
+  },
+  "limits": [
+    "Wortzeiten sind aus lokaler Spracherkennung abgeleitet. Keine manuelle Hörkontrolle jedes einzelnen Wortes.",
+    "Keine Prüfung der tatsächlichen Plattformoberflächen auf dem Zieltelefon.",
+    "Inhalt des gesprochenen Videos erhalten. Keine zusätzliche Recherche zu seinen inhaltlichen Aussagen.",
+    "Die vorhandene Aufnahme hat bereits wechselnde Nähe zur Kamera. Zusätzliche Zooms sind dezent und verwenden keine Handverfolgung."
+  ]
+}

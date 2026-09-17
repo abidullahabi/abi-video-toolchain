@@ -1,0 +1,180 @@
+{
+  "mode": "theme-and-subtle-zooms",
+  "source": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Archiv/Rohvideos/2026-09-17 - Länger studieren oder schneller abschließen - Rohvideo.MOV",
+  "sourceSha256": "60fe5c32f7b55d523ecf557c3d9175edd5b0a29f4f63d8029cc7bfcac92e5cf0",
+  "sourceProject": "projects/Studiendauer-2026-09-15T16-19-45Z",
+  "supersedes": "projects/Studiendauer-Schnitt-2026-09-16T07-14-54Z",
+  "originalDuration": 153.993333,
+  "cutDuration": 51.833333,
+  "removedSeconds": 102.16,
+  "status": "workflow_test_not_for_posting",
+  "createdAt": "2026-09-16T07:34:42+00:00",
+  "cutBasis": "Zweiter Schnitt, kalibriert an Abis eigenem Referenzschnitt (~/Desktop/0916.mp4, 49.63s) vom 16.09.2026.",
+  "calibration": {
+    "referenceFile": "/Users/abi/Desktop/0916.mp4",
+    "referenceDuration": 49.633,
+    "referenceGapMedian": 0.18,
+    "referenceGapMax": 0.28,
+    "referenceLead": 0.0,
+    "referenceTail": 0.16,
+    "appliedGapTarget": 0.18,
+    "appliedGapAtTransitions": 0.26,
+    "appliedLead": 0.06,
+    "appliedTail": 0.2,
+    "resultGapMedian": 0.18,
+    "resultGapMax": 0.26,
+    "resultLead": 0.0,
+    "resultTail": 0.2,
+    "lessonsLearned": [
+      "Nicht nur woertliche Anlaeufe entfernen, sondern inhaltliche Dopplungen: sagen zwei Passagen dasselbe, bleibt nur die knackigste.",
+      "Zielluecke 0.18s statt 0.36s, Obergrenze 0.26s. Nie ueber 0.28s.",
+      "Kein Vorlauf am Anfang, Nachlauf rund 0.2s.",
+      "Frame-Rundung unverzerrt (round), nicht floor/ceil - sonst waechst jedes Segment um bis zu 0.083s.",
+      "Abis Referenz liegt rund 2 dB lauter, deshalb ist sein gemessener Stille-Anteil scheinbar niedriger. Kein Schnittunterschied."
+    ]
+  },
+  "keepIntervals": [
+    [
+      1.625,
+      3.29167
+    ],
+    [
+      14.5,
+      17.58333
+    ],
+    [
+      19.54167,
+      22.375
+    ],
+    [
+      35.83333,
+      38.875
+    ],
+    [
+      40.58333,
+      43.375
+    ],
+    [
+      44.75,
+      50.91667
+    ],
+    [
+      61.0,
+      63.66667
+    ],
+    [
+      63.79167,
+      65.58333
+    ],
+    [
+      75.66667,
+      78.45833
+    ],
+    [
+      81.5,
+      82.5
+    ],
+    [
+      93.20833,
+      97.16667
+    ],
+    [
+      98.20833,
+      99.04167
+    ],
+    [
+      100.95833,
+      102.66667
+    ],
+    [
+      114.04167,
+      115.91667
+    ],
+    [
+      116.20833,
+      117.08333
+    ],
+    [
+      117.25,
+      119.08333
+    ],
+    [
+      119.70833,
+      121.58333
+    ],
+    [
+      134.625,
+      136.58333
+    ],
+    [
+      137.20833,
+      140.33333
+    ],
+    [
+      145.25,
+      149.5
+    ],
+    [
+      149.75,
+      150.375
+    ],
+    [
+      152.08333,
+      153.16667
+    ]
+  ],
+  "scope": {
+    "thematicOverlays": true,
+    "wordCaptions": true,
+    "removeSilence": true,
+    "removeFillers": false,
+    "removeRetakes": true,
+    "removeRedundantPassages": true,
+    "zooms": true,
+    "speed": 1
+  },
+  "captionStandard": {
+    "fontSize": 56,
+    "top": 1280,
+    "maxWords": 3
+  },
+  "notionPage": "https://app.notion.com/p/3dc8cb917b3b816e89dad0f1532f8b8d",
+  "notionTitle": "Länger studieren oder schneller abschließen?",
+  "postingDateStatus": "zurueckgezogen_am_16.09.2026",
+  "latestExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Studiendauer-Schnitt-v2-2026-09-16T07-34-42Z/exports/Laenger_studieren_v2_FINAL_V2_Buffer.mp4",
+  "renderedExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Studiendauer-Schnitt-v2-2026-09-16T07-34-42Z/exports/final-2026-09-16T07-38-26-000Z.mp4",
+  "audioHandling": "Original audio re-encoded once as AAC-LC at 120 kbit/s and 48 kHz, without tempo or level changes.",
+  "deliveryProfile": "Zernio/Buffer-Profil: H264 High, 1080x1920p30, BT709, 12M Ziel / 14M Maxrate, AAC-LC 120k, faststart",
+  "layoutVersion": "tiktok-safe-v1",
+  "uploadExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Studiendauer-Schnitt-v2-2026-09-16T07-34-42Z/exports/Laenger_studieren_v2_FINAL_V2_Buffer.mp4",
+  "deliveryVerified": true,
+  "qualityChecks": {
+    "vmafVsMaster": 99.247503,
+    "audioLagMs": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "videoBitrate": 12015469,
+    "audioBitrate": 121330,
+    "sizeBytes": 78691719
+  },
+  "seamCheck": "21 von 21 Nahtstellen unter -38 dBFS (Pruefung +/-0.03s um den Schnittpunkt)",
+  "layoutFindings": "Nur face_caption_overlap (29 Stichproben). Bekannte Framing-Abweichung, von Abi akzeptiert.",
+  "postingHold": "Abi hat am 16.09.2026 ausdruecklich angeordnet: dieses Video NICHT einplanen und NICHT veroeffentlichen. Es dient der Kalibrierung des Schnitt-Workflows. Erst nach Freigabe des ueberarbeiteten Workflows neu entscheiden. Nicht nach 03_Bereit_zum_Posten kopieren, keinen Zernio-Post anlegen, Notion-Status nicht aendern.",
+  "designVersion": "veraltet-vor-1.9",
+  "designObsolete": {
+    "checkedAgainst": "DESIGN.md 1.9 vom 16.09.2026",
+    "abweichungen": [
+      "Mittelachse 540 statt 510",
+      "Textbereich x180-900/y300-1500 statt x90-930/y250-1660",
+      "Markenblau #349feb statt #1668b5 (alter Wert erreichte nur 2,87:1 Kontrast)",
+      "H1 frei gewaehlte Groessen statt der Stufen 72/66/60/56",
+      "H2 feste Position top 440 statt 20px unter der H1-Unterkante, Groesse frei statt fest 46px",
+      "Untertitelbreite 684px statt 620px, aktives Wort #349feb statt #5eb3f5",
+      "Outro mit Road to 10K und roter Flaeche statt Fortschrittskarte mit TikTok-Followerstand"
+    ],
+    "folge": "Diese Exporte entsprechen nicht dem gueltigen Design. Nicht als Vorlage, Referenz oder Ausgangspunkt verwenden. Nur als Verlaufsbeleg aufbewahren."
+  },
+  "pauseCalibration": "Lueckenmessung dieses Projekts beruhte auf einer Pegelschwelle von -38 dBFS und ist unbrauchbar. Bei -30 dB gemessen: 0,250/0,270/0,460 s gegen Abdullahs 0,100/0,217/0,139 s. Siehe TESTPROTOKOLL.md."
+}

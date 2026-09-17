@@ -1,0 +1,565 @@
+{
+  "minimumSilence": 0.3,
+  "removals": [
+    {
+      "start": 0,
+      "end": 0.569167,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        0,
+        0.639167
+      ],
+      "bridges": []
+    },
+    {
+      "start": 0.8458749999999999,
+      "end": 1.05013,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        0.775875,
+        1.12013
+      ],
+      "bridges": []
+    },
+    {
+      "start": 3.7256199999999997,
+      "end": 4.26898,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        3.65562,
+        4.33898
+      ],
+      "bridges": []
+    },
+    {
+      "start": 4.79535,
+      "end": 5.090059999999999,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        4.72535,
+        5.16006
+      ],
+      "bridges": []
+    },
+    {
+      "start": 7.19412,
+      "end": 9.22406,
+      "type": "silence",
+      "reason": "Zusammenhängende Pause mit sehr kurzen Pegelimpulsen. Sprachränder erhalten.",
+      "detectedInterval": [
+        7.12412,
+        9.29406
+      ],
+      "bridges": [
+        [
+          8.73627,
+          8.73646
+        ]
+      ]
+    },
+    {
+      "start": 11.5951,
+      "end": 14.5137,
+      "type": "silence",
+      "reason": "Zusammenhängende Pause mit sehr kurzen Pegelimpulsen. Sprachränder erhalten.",
+      "detectedInterval": [
+        11.5251,
+        14.5837
+      ],
+      "bridges": [
+        [
+          13.7751,
+          13.7752
+        ]
+      ]
+    },
+    {
+      "start": 17.6146,
+      "end": 19.548099999999998,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        17.5446,
+        19.6181
+      ],
+      "bridges": []
+    },
+    {
+      "start": 22.3749,
+      "end": 22.9236,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        22.3049,
+        22.9936
+      ],
+      "bridges": []
+    },
+    {
+      "start": 24.0041,
+      "end": 24.3863,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        23.9341,
+        24.4563
+      ],
+      "bridges": []
+    },
+    {
+      "start": 24.5738,
+      "end": 24.8319,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        24.5038,
+        24.9019
+      ],
+      "bridges": []
+    },
+    {
+      "start": 25.845200000000002,
+      "end": 26.3711,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        25.7752,
+        26.4411
+      ],
+      "bridges": []
+    },
+    {
+      "start": 27.5532,
+      "end": 30.0631,
+      "type": "silence",
+      "reason": "Zusammenhängende Pause mit sehr kurzen Pegelimpulsen. Sprachränder erhalten.",
+      "detectedInterval": [
+        27.4832,
+        30.1331
+      ],
+      "bridges": [
+        [
+          28.3035,
+          28.3035
+        ],
+        [
+          29.15,
+          29.1591
+        ]
+      ]
+    },
+    {
+      "start": 34.068,
+      "end": 35.0576,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        33.998,
+        35.1276
+      ],
+      "bridges": []
+    },
+    {
+      "start": 35.2505,
+      "end": 35.881,
+      "type": "silence",
+      "reason": "Zusammenhängende Pause mit sehr kurzen Pegelimpulsen. Sprachränder erhalten.",
+      "detectedInterval": [
+        35.1805,
+        35.951
+      ],
+      "bridges": [
+        [
+          35.5799,
+          35.6001
+        ]
+      ]
+    },
+    {
+      "start": 38.8992,
+      "end": 39.4229,
+      "type": "silence",
+      "reason": "Zusammenhängende Pause mit sehr kurzen Pegelimpulsen. Sprachränder erhalten.",
+      "detectedInterval": [
+        38.8292,
+        39.4929
+      ],
+      "bridges": [
+        [
+          39.3038,
+          39.3052
+        ]
+      ]
+    },
+    {
+      "start": 40.3348,
+      "end": 40.5869,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        40.2648,
+        40.6569
+      ],
+      "bridges": []
+    },
+    {
+      "start": 43.4336,
+      "end": 44.7607,
+      "type": "silence",
+      "reason": "Zusammenhängende Pause mit sehr kurzen Pegelimpulsen. Sprachränder erhalten.",
+      "detectedInterval": [
+        43.3636,
+        44.8307
+      ],
+      "bridges": [
+        [
+          44.3941,
+          44.3941
+        ]
+      ]
+    },
+    {
+      "start": 51.1148,
+      "end": 52.0319,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        51.0448,
+        52.1019
+      ],
+      "bridges": []
+    },
+    {
+      "start": 56.7846,
+      "end": 57.773,
+      "type": "silence",
+      "reason": "Zusammenhängende Pause mit sehr kurzen Pegelimpulsen. Sprachränder erhalten.",
+      "detectedInterval": [
+        56.7146,
+        57.843
+      ],
+      "bridges": [
+        [
+          56.9037,
+          56.9041
+        ]
+      ]
+    },
+    {
+      "start": 60.5188,
+      "end": 61.019,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        60.4488,
+        61.089
+      ],
+      "bridges": []
+    },
+    {
+      "start": 65.6083,
+      "end": 66.70410000000001,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        65.5383,
+        66.7741
+      ],
+      "bridges": []
+    },
+    {
+      "start": 74.82929999999999,
+      "end": 75.6928,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        74.7593,
+        75.7628
+      ],
+      "bridges": []
+    },
+    {
+      "start": 81.18839999999999,
+      "end": 81.51660000000001,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        81.1184,
+        81.5866
+      ],
+      "bridges": []
+    },
+    {
+      "start": 82.559,
+      "end": 83.9649,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        82.489,
+        84.0349
+      ],
+      "bridges": []
+    },
+    {
+      "start": 84.1853,
+      "end": 84.4531,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        84.1153,
+        84.5231
+      ],
+      "bridges": []
+    },
+    {
+      "start": 90.1188,
+      "end": 90.7921,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        90.0488,
+        90.8621
+      ],
+      "bridges": []
+    },
+    {
+      "start": 92.2156,
+      "end": 93.22240000000001,
+      "type": "silence",
+      "reason": "Zusammenhängende Pause mit sehr kurzen Pegelimpulsen. Sprachränder erhalten.",
+      "detectedInterval": [
+        92.1456,
+        93.2924
+      ],
+      "bridges": [
+        [
+          92.5618,
+          92.5622
+        ]
+      ]
+    },
+    {
+      "start": 97.2769,
+      "end": 98.2458,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        97.2069,
+        98.3158
+      ],
+      "bridges": []
+    },
+    {
+      "start": 99.0817,
+      "end": 100.95700000000001,
+      "type": "silence",
+      "reason": "Zusammenhängende Pause mit sehr kurzen Pegelimpulsen. Sprachränder erhalten.",
+      "detectedInterval": [
+        99.0117,
+        101.027
+      ],
+      "bridges": [
+        [
+          100.505,
+          100.506
+        ]
+      ]
+    },
+    {
+      "start": 102.69399999999999,
+      "end": 102.93,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        102.624,
+        103
+      ],
+      "bridges": []
+    },
+    {
+      "start": 103.74199999999999,
+      "end": 111.24900000000001,
+      "type": "silence",
+      "reason": "Zusammenhängende Pause mit sehr kurzen Pegelimpulsen. Sprachränder erhalten.",
+      "detectedInterval": [
+        103.672,
+        111.319
+      ],
+      "bridges": [
+        [
+          104.153,
+          104.169
+        ]
+      ]
+    },
+    {
+      "start": 112.40599999999999,
+      "end": 113.99000000000001,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        112.336,
+        114.06
+      ],
+      "bridges": []
+    },
+    {
+      "start": 115.92999999999999,
+      "end": 116.24300000000001,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        115.86,
+        116.313
+      ],
+      "bridges": []
+    },
+    {
+      "start": 117.077,
+      "end": 117.271,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        117.007,
+        117.341
+      ],
+      "bridges": []
+    },
+    {
+      "start": 119.154,
+      "end": 119.73800000000001,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        119.084,
+        119.808
+      ],
+      "bridges": []
+    },
+    {
+      "start": 121.607,
+      "end": 122.97300000000001,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        121.537,
+        123.043
+      ],
+      "bridges": []
+    },
+    {
+      "start": 126.14999999999999,
+      "end": 126.69500000000001,
+      "type": "silence",
+      "reason": "Zusammenhängende Pause mit sehr kurzen Pegelimpulsen. Sprachränder erhalten.",
+      "detectedInterval": [
+        126.08,
+        126.765
+      ],
+      "bridges": [
+        [
+          126.252,
+          126.252
+        ]
+      ]
+    },
+    {
+      "start": 133.14499999999998,
+      "end": 134.05700000000002,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        133.075,
+        134.127
+      ],
+      "bridges": []
+    },
+    {
+      "start": 134.304,
+      "end": 134.511,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        134.234,
+        134.581
+      ],
+      "bridges": []
+    },
+    {
+      "start": 136.664,
+      "end": 137.116,
+      "type": "silence",
+      "reason": "Sprechpause ab 0,3 Sekunden. Je Sprachrand 0,07 Sekunden erhalten.",
+      "detectedInterval": [
+        136.594,
+        137.186
+      ],
+      "bridges": []
+    },
+    {
+      "start": 140.44899999999998,
+      "end": 143.40900000000002,
+      "type": "silence",
+      "reason": "Zusammenhängende Pause mit sehr kurzen Pegelimpulsen. Sprachränder erhalten.",
+      "detectedInterval": [
+        140.379,
+        143.479
+      ],
+      "bridges": [
+        [
+          141.903,
+          141.904
+        ]
+      ]
+    },
+    {
+      "start": 143.692,
+      "end": 145.233,
+      "type": "silence",
+      "reason": "Zusammenhängende Pause mit sehr kurzen Pegelimpulsen. Sprachränder erhalten.",
+      "detectedInterval": [
+        143.622,
+        145.303
+      ],
+      "bridges": [
+        [
+          144.609,
+          144.609
+        ]
+      ]
+    },
+    {
+      "start": 150.506,
+      "end": 151.67100000000002,
+      "type": "silence",
+      "reason": "Zusammenhängende Pause mit sehr kurzen Pegelimpulsen. Sprachränder erhalten.",
+      "detectedInterval": [
+        150.436,
+        151.741
+      ],
+      "bridges": [
+        [
+          150.891,
+          150.891
+        ],
+        [
+          151.043,
+          151.044
+        ],
+        [
+          151.586,
+          151.587
+        ]
+      ]
+    }
+  ],
+  "reviewNotes": [
+    "Nur Pausenschnitt. Keine Satzvarianten, Versprecher oder Füllwörter auswählen oder entfernen.",
+    "Original als Quelle. V1 unverändert erhalten.",
+    "Prüfe Stillen im tatsächlichen Export zusätzlich."
+  ]
+}

@@ -1,0 +1,394 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,900"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4900
+			},
+			"text": " und jetzt die frage was war der unterschied bei bewerbungen",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.914899,
+					"t_dtw": -1
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 280
+					},
+					"id": 674,
+					"p": 0.210933,
+					"t_dtw": 102
+				},
+				{
+					"text": " jetzt",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 750
+					},
+					"id": 4354,
+					"p": 0.998256,
+					"t_dtw": 116
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,950",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 950,
+						"to": 1030
+					},
+					"id": 978,
+					"p": 0.994042,
+					"t_dtw": 128
+				},
+				{
+					"text": " fra",
+					"timestamps": {
+						"from": "00:00:01,030",
+						"to": "00:00:01,290"
+					},
+					"offsets": {
+						"from": 1030,
+						"to": 1290
+					},
+					"id": 6600,
+					"p": 0.912045,
+					"t_dtw": 146
+				},
+				{
+					"text": "ge",
+					"timestamps": {
+						"from": "00:00:01,350",
+						"to": "00:00:01,490"
+					},
+					"offsets": {
+						"from": 1350,
+						"to": 1490
+					},
+					"id": 432,
+					"p": 0.999943,
+					"t_dtw": 162
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:01,490",
+						"to": "00:00:01,770"
+					},
+					"offsets": {
+						"from": 1490,
+						"to": 1770
+					},
+					"id": 390,
+					"p": 0.821953,
+					"t_dtw": 208
+				},
+				{
+					"text": " war",
+					"timestamps": {
+						"from": "00:00:01,770",
+						"to": "00:00:02,050"
+					},
+					"offsets": {
+						"from": 1770,
+						"to": 2050
+					},
+					"id": 1516,
+					"p": 0.997084,
+					"t_dtw": 224
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:02,050",
+						"to": "00:00:02,360"
+					},
+					"offsets": {
+						"from": 2050,
+						"to": 2360
+					},
+					"id": 1163,
+					"p": 0.99847,
+					"t_dtw": 236
+				},
+				{
+					"text": " unterschied",
+					"timestamps": {
+						"from": "00:00:02,360",
+						"to": "00:00:02,840"
+					},
+					"offsets": {
+						"from": 2360,
+						"to": 2840
+					},
+					"id": 30058,
+					"p": 0.955863,
+					"t_dtw": 276
+				},
+				{
+					"text": " bei",
+					"timestamps": {
+						"from": "00:00:02,840",
+						"to": "00:00:03,000"
+					},
+					"offsets": {
+						"from": 2840,
+						"to": 3000
+					},
+					"id": 4643,
+					"p": 0.933698,
+					"t_dtw": 308
+				},
+				{
+					"text": " be",
+					"timestamps": {
+						"from": "00:00:03,000",
+						"to": "00:00:03,340"
+					},
+					"offsets": {
+						"from": 3000,
+						"to": 3340
+					},
+					"id": 312,
+					"p": 0.886518,
+					"t_dtw": 330
+				},
+				{
+					"text": "wer",
+					"timestamps": {
+						"from": "00:00:03,340",
+						"to": "00:00:03,680"
+					},
+					"offsets": {
+						"from": 3340,
+						"to": 3680
+					},
+					"id": 1554,
+					"p": 0.999005,
+					"t_dtw": 342
+				},
+				{
+					"text": "b",
+					"timestamps": {
+						"from": "00:00:03,790",
+						"to": "00:00:04,010"
+					},
+					"offsets": {
+						"from": 3790,
+						"to": 4010
+					},
+					"id": 65,
+					"p": 0.957308,
+					"t_dtw": 352
+				},
+				{
+					"text": "ungen",
+					"timestamps": {
+						"from": "00:00:04,010",
+						"to": "00:00:04,900"
+					},
+					"offsets": {
+						"from": 4010,
+						"to": 4900
+					},
+					"id": 5084,
+					"p": 0.999449,
+					"t_dtw": 370
+				},
+				{
+					"text": "[_TT_245]",
+					"timestamps": {
+						"from": "00:00:04,900",
+						"to": "00:00:04,900"
+					},
+					"offsets": {
+						"from": 4900,
+						"to": 4900
+					},
+					"id": 50610,
+					"p": 0.0915658,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,900",
+				"to": "00:00:09,300"
+			},
+			"offsets": {
+				"from": 4900,
+				"to": 9300
+			},
+			"text": " fetter spoiler es gibt keinen unterschied",
+			"tokens": [
+				{
+					"text": " fet",
+					"timestamps": {
+						"from": "00:00:04,900",
+						"to": "00:00:05,260"
+					},
+					"offsets": {
+						"from": 4900,
+						"to": 5260
+					},
+					"id": 15136,
+					"p": 0.766453,
+					"t_dtw": 574
+				},
+				{
+					"text": "ter",
+					"timestamps": {
+						"from": "00:00:05,260",
+						"to": "00:00:05,610"
+					},
+					"offsets": {
+						"from": 5260,
+						"to": 5610
+					},
+					"id": 391,
+					"p": 0.987336,
+					"t_dtw": 588
+				},
+				{
+					"text": " spoiler",
+					"timestamps": {
+						"from": "00:00:05,850",
+						"to": "00:00:06,470"
+					},
+					"offsets": {
+						"from": 5850,
+						"to": 6470
+					},
+					"id": 26927,
+					"p": 0.964895,
+					"t_dtw": 622
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:06,470",
+						"to": "00:00:06,670"
+					},
+					"offsets": {
+						"from": 6470,
+						"to": 6670
+					},
+					"id": 785,
+					"p": 0.962436,
+					"t_dtw": 678
+				},
+				{
+					"text": " gibt",
+					"timestamps": {
+						"from": "00:00:06,790",
+						"to": "00:00:07,190"
+					},
+					"offsets": {
+						"from": 6790,
+						"to": 7190
+					},
+					"id": 6089,
+					"p": 0.998675,
+					"t_dtw": 704
+				},
+				{
+					"text": " keinen",
+					"timestamps": {
+						"from": "00:00:07,190",
+						"to": "00:00:07,920"
+					},
+					"offsets": {
+						"from": 7190,
+						"to": 7920
+					},
+					"id": 20624,
+					"p": 0.649932,
+					"t_dtw": 756
+				},
+				{
+					"text": " unterschied",
+					"timestamps": {
+						"from": "00:00:07,920",
+						"to": "00:00:08,700"
+					},
+					"offsets": {
+						"from": 7920,
+						"to": 8700
+					},
+					"id": 30058,
+					"p": 0.991402,
+					"t_dtw": 818
+				},
+				{
+					"text": "[_TT_465]",
+					"timestamps": {
+						"from": "00:00:09,300",
+						"to": "00:00:09,300"
+					},
+					"offsets": {
+						"from": 9300,
+						"to": 9300
+					},
+					"id": 50830,
+					"p": 0.77734,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

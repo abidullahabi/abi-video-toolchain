@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3120
+			},
+			"text": " Jede Website, die je neue App, sieht eigentlich fast identisch aus.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.980022,
+					"t_dtw": -1
+				},
+				{
+					"text": " J",
+					"timestamps": {
+						"from": "00:00:00,080",
+						"to": "00:00:00,080"
+					},
+					"offsets": {
+						"from": 80,
+						"to": 80
+					},
+					"id": 508,
+					"p": 0.178313,
+					"t_dtw": 14
+				},
+				{
+					"text": "ede",
+					"timestamps": {
+						"from": "00:00:00,110",
+						"to": "00:00:00,310"
+					},
+					"offsets": {
+						"from": 110,
+						"to": 310
+					},
+					"id": 4858,
+					"p": 0.99635,
+					"t_dtw": 24
+				},
+				{
+					"text": " Webs",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 630
+					},
+					"id": 45347,
+					"p": 0.793247,
+					"t_dtw": 44
+				},
+				{
+					"text": "ite",
+					"timestamps": {
+						"from": "00:00:00,630",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 630,
+						"to": 850
+					},
+					"id": 642,
+					"p": 0.997217,
+					"t_dtw": 80
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,860",
+						"to": "00:00:01,010"
+					},
+					"offsets": {
+						"from": 860,
+						"to": 1010
+					},
+					"id": 11,
+					"p": 0.826821,
+					"t_dtw": 84
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:01,010",
+						"to": "00:00:01,250"
+					},
+					"offsets": {
+						"from": 1010,
+						"to": 1250
+					},
+					"id": 978,
+					"p": 0.632241,
+					"t_dtw": 96
+				},
+				{
+					"text": " je",
+					"timestamps": {
+						"from": "00:00:01,250",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 1250,
+						"to": 1410
+					},
+					"id": 1506,
+					"p": 0.247022,
+					"t_dtw": 110
+				},
+				{
+					"text": " neue",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,640"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1640
+					},
+					"id": 16842,
+					"p": 0.981865,
+					"t_dtw": 140
+				},
+				{
+					"text": " App",
+					"timestamps": {
+						"from": "00:00:01,960",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1960,
+						"to": 2000
+					},
+					"id": 3132,
+					"p": 0.963898,
+					"t_dtw": 172
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,010"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2010
+					},
+					"id": 11,
+					"p": 0.467136,
+					"t_dtw": 196
+				},
+				{
+					"text": " sieht",
+					"timestamps": {
+						"from": "00:00:02,070",
+						"to": "00:00:02,210"
+					},
+					"offsets": {
+						"from": 2070,
+						"to": 2210
+					},
+					"id": 14289,
+					"p": 0.918105,
+					"t_dtw": 206
+				},
+				{
+					"text": " eigentlich",
+					"timestamps": {
+						"from": "00:00:02,210",
+						"to": "00:00:02,500"
+					},
+					"offsets": {
+						"from": 2210,
+						"to": 2500
+					},
+					"id": 10926,
+					"p": 0.796411,
+					"t_dtw": 230
+				},
+				{
+					"text": " fast",
+					"timestamps": {
+						"from": "00:00:02,580",
+						"to": "00:00:02,640"
+					},
+					"offsets": {
+						"from": 2580,
+						"to": 2640
+					},
+					"id": 2370,
+					"p": 0.950199,
+					"t_dtw": 250
+				},
+				{
+					"text": " ident",
+					"timestamps": {
+						"from": "00:00:02,640",
+						"to": "00:00:02,790"
+					},
+					"offsets": {
+						"from": 2640,
+						"to": 2790
+					},
+					"id": 2473,
+					"p": 0.974879,
+					"t_dtw": 274
+				},
+				{
+					"text": "isch",
+					"timestamps": {
+						"from": "00:00:02,790",
+						"to": "00:00:02,880"
+					},
+					"offsets": {
+						"from": 2790,
+						"to": 2880
+					},
+					"id": 5494,
+					"p": 0.997038,
+					"t_dtw": 296
+				},
+				{
+					"text": " aus",
+					"timestamps": {
+						"from": "00:00:02,900",
+						"to": "00:00:03,000"
+					},
+					"offsets": {
+						"from": 2900,
+						"to": 3000
+					},
+					"id": 3437,
+					"p": 0.988971,
+					"t_dtw": 310
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,000",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 3000,
+						"to": 3080
+					},
+					"id": 13,
+					"p": 0.885069,
+					"t_dtw": 310
+				},
+				{
+					"text": "[_TT_156]",
+					"timestamps": {
+						"from": "00:00:03,120",
+						"to": "00:00:03,120"
+					},
+					"offsets": {
+						"from": 3120,
+						"to": 3120
+					},
+					"id": 50520,
+					"p": 0.0856908,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

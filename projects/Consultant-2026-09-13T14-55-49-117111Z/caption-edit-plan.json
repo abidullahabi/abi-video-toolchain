@@ -1,0 +1,45 @@
+{
+  "replaceFromReview": [
+    1,
+    5
+  ],
+  "reviewReplacements": [
+    {
+      "folder": "word-review",
+      "index": 2,
+      "from": 48.5,
+      "to": 52.05,
+      "basis": "Kleines Modell erkennt Consultant in Financial Services. Vollständige erste Transkription bestätigt die Präposition."
+    },
+    {
+      "folder": "word-review",
+      "index": 2,
+      "from": 55.3,
+      "to": 59.24,
+      "basis": "Gegenprüfung erkennt sprichst mit den Mitarbeitern mit Wortankern."
+    }
+  ],
+  "corrections": [
+    {
+      "from": 4.1,
+      "to": 5,
+      "before": "Consultant",
+      "after": "Consultants",
+      "basis": "Zweitmodell erkennt den Plural in Was machen wir Consultants."
+    },
+    {
+      "from": 11.5,
+      "to": 12.5,
+      "before": "Consultant",
+      "after": "Consultants",
+      "basis": "Zweitmodell erkennt den Plural in lösen Consultants Probleme."
+    },
+    {
+      "from": 101.3,
+      "to": 101.9,
+      "before": "folge",
+      "after": "Folgen",
+      "basis": "Vom Nutzer ausdrücklich bestätigte Abschlussformulierung Folgen nicht vergessen. Varianten der Spracherkennung lauten folge, folgt, voll."
+    }
+  ]
+}

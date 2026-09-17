@@ -1,0 +1,200 @@
+{
+  "mode": "cut-and-design",
+  "designVersion": "1.9",
+  "designSource": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/DESIGN.md",
+  "workflowVersion": "1.13",
+  "source": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Archiv/Rohvideos/2026-09-17 - Länger studieren oder schneller abschließen - Rohvideo.MOV",
+  "sourceSha256": "60fe5c32f7b55d523ecf557c3d9175edd5b0a29f4f63d8029cc7bfcac92e5cf0",
+  "originalDuration": 153.993333,
+  "cutDuration": 48.208333,
+  "removedSeconds": 105.66,
+  "status": "awaiting_user_review",
+  "createdAt": "2026-09-16T13:20:00+00:00",
+  "cutBasis": "Eigenstaendiger Neuschnitt nach Abdullahs Auftrag vom 16.09.2026. Clipauswahl blind entschieden, Pausen an seiner Referenz 0916.mp4 kalibriert.",
+  "cutMethod": "Silero VAD 6.2.0 findet die Sprechluecken. Die Schnittgrenze wird am Pegel (-30 dB) bestimmt und um eine feste Schutzreserve erweitert (40ms vorne, 80ms hinten), damit leise Wortanfaenge und Endsilben erhalten bleiben. Zusaetzliche Luecke je Anschluss nach Funktion: Phrase 0.02s, Satz 0.06s, Themenwechsel 0.12s. Frameraster 24fps kaufmaennisch gerundet, 5ms Tonblenden.",
+  "pauseCalibration": {
+    "referenz": "/Users/abi/Desktop/0916.mp4",
+    "methode": "-30 dB, Luecken ab 0.08s",
+    "abi": {
+      "luecken": 80,
+      "median": 0.13,
+      "max": 0.36,
+      "stilleProzent": 25
+    },
+    "dieseFassung": {
+      "luecken": 81,
+      "median": 0.13,
+      "max": 0.3,
+      "stilleProzent": 23
+    },
+    "grundsatz": "Ziel ist Genauigkeit, nicht Kuerze. Final-V2 mit 0.105-0.125s wurde von Abdullah als zu kurz bewertet."
+  },
+  "keepIntervals": [
+    [
+      1.58333,
+      3.29167
+    ],
+    [
+      14.5,
+      17.5
+    ],
+    [
+      19.58333,
+      22.16667
+    ],
+    [
+      35.875,
+      36.75
+    ],
+    [
+      36.83333,
+      38.75
+    ],
+    [
+      40.58333,
+      41.45833
+    ],
+    [
+      41.625,
+      42.70833
+    ],
+    [
+      42.79167,
+      43.33333
+    ],
+    [
+      44.75,
+      47.5
+    ],
+    [
+      47.625,
+      49.25
+    ],
+    [
+      49.33333,
+      50.04167
+    ],
+    [
+      50.20833,
+      50.91667
+    ],
+    [
+      61,
+      63.58333
+    ],
+    [
+      63.83333,
+      65.08333
+    ],
+    [
+      65.20833,
+      65.54167
+    ],
+    [
+      75.70833,
+      77.33333
+    ],
+    [
+      77.5,
+      78.41667
+    ],
+    [
+      81.58333,
+      82.5
+    ],
+    [
+      93.20833,
+      96.75
+    ],
+    [
+      96.83333,
+      97.125
+    ],
+    [
+      98.29167,
+      98.95833
+    ],
+    [
+      101,
+      102.625
+    ],
+    [
+      114.08333,
+      115.83333
+    ],
+    [
+      116.25,
+      116.95833
+    ],
+    [
+      117.29167,
+      119.04167
+    ],
+    [
+      119.79167,
+      121.5
+    ],
+    [
+      134.66667,
+      136.5
+    ],
+    [
+      137.25,
+      140.16667
+    ],
+    [
+      145.33333,
+      147.91667
+    ],
+    [
+      148,
+      149.41667
+    ],
+    [
+      149.75,
+      150.29167
+    ],
+    [
+      152.29167,
+      153.16667
+    ]
+  ],
+  "scope": {
+    "removeRetakes": true,
+    "removeRedundantPassages": true,
+    "removeSilence": true,
+    "speed": 1
+  },
+  "notionPage": "https://app.notion.com/p/3dc8cb917b3b816e89dad0f1532f8b8d",
+  "notionTitle": "Länger studieren oder schneller abschließen?",
+  "postingHold": "Nicht einplanen und nicht veroeffentlichen ohne ausdrueckliche Freigabe.",
+  "latestExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Regelstudienzeit-Claude-Neuschnitt-2026-09-16/exports/Regelstudienzeit_Claude_Neuschnitt_FINAL_V2_Buffer.mp4",
+  "exportedAt": "2026-09-16T13:27:16.028Z",
+  "renderedExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Regelstudienzeit-Claude-Neuschnitt-2026-09-16/exports/final-2026-09-16T13-25-45-210Z.mp4",
+  "audioHandling": "Original audio re-encoded once as AAC-LC at 120 kbit/s and 48 kHz, without tempo or level changes.",
+  "deliveryProfile": "MP4 H264 High 1080x1920p30 BT709 12M Ziel, AAC-LC 120k, faststart",
+  "layoutVersion": "tiktok-safe-v1",
+  "uploadExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Regelstudienzeit-Claude-Neuschnitt-2026-09-16/exports/Regelstudienzeit_Claude_Neuschnitt_FINAL_V2_Buffer.mp4",
+  "designCheck": {
+    "pruefer": "check-design19.mjs",
+    "abweichungen": 0,
+    "frames": 1447,
+    "gesichtsproben": 96,
+    "einstiegGeprueft": true,
+    "zaehler": "4.240",
+    "balkenfuellung": 0.424
+  },
+  "qualityChecks": {
+    "vmafVsMaster": 99.263545,
+    "audioLagMs": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "grenzen": [
+    "Keine Hoerabnahme nachgewiesen. Die Tonvergleiche sind technisch, nicht akustisch.",
+    "Clipauswahl war nicht sauber blind: Abdullahs Schnitt wurde zuvor in derselben Sitzung analysiert.",
+    "Kein Uebertragungstest auf neuem Material. Dieses Video hat eine Referenzfassung."
+  ]
+}

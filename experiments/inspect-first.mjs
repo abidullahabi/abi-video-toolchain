@@ -1,0 +1,5 @@
+import fs from 'node:fs';import path from 'node:path';import {pathToFileURL} from 'node:url';import {execFileSync} from 'node:child_process';import puppeteer from 'puppeteer-core';
+const root=path.resolve(import.meta.dirname,'..'),p=fs.readFileSync(path.join(root,'experiments/project-werki.txt'),'utf8').trim();
+const bp=execFileSync(process.execPath,[path.join(root,'node_modules/hyperframes/bin/hyperframes.mjs'),'browser','path'],{encoding:'utf8'}).trim();
+const browser=await puppeteer.launch({executablePath:bp,headless:true,args:['--no-sandbox']});
+try{const page=await browser.newPage();await page.goto(pathToFileURL(path.join(p,'index.html')).href);console.log(JSON.stringify(await page.evaluate(()=>{const out=[];for(const t of [0,.01,.7,1,1.49,1.51,5,38,.7]){window.__timelines.root.seek(t,false);out.push({t,scenes:window.experiment.scenes.slice(0,3).map(s=>({id:s.id,start:s.start,end:s.end,opacity:getComputedStyle(document.getElementById(s.id)).opacity,children:[...document.querySelectorAll('#'+s.id+' .enter')].map(e=>getComputedStyle(e).opacity)}))});}return out;}),null,2));}finally{await browser.close();}

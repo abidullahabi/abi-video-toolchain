@@ -1,0 +1,15 @@
+[0:v]select='gte(n,220)*lt(n,280)+gte(n,346)*lt(n,425)+gte(n,467)*lt(n,539)+gte(n,858)*lt(n,936)+gte(n,972)*lt(n,1044)+gte(n,2024)*lt(n,2150)+gte(n,2234)*lt(n,2335)+gte(n,2355)*lt(n,2382)+gte(n,2420)*lt(n,2468)+gte(n,2948)*lt(n,3031)+gte(n,3044)*lt(n,3199)+gte(n,3484)*lt(n,3612)+gte(n,3650)*lt(n,3677)',setpts=N/(24.001039006017578*TB)[vout];
+[0:a]atrim=start=9.166269841269841:end=11.666161616161615,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=2.494891774891774:d=0.005[a0];
+[0:a]atrim=start=14.416042568542567:end=17.707566738816737,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=3.2865241702741708:d=0.005[a1];
+[0:a]atrim=start=19.45749098124098:end=22.45736111111111,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=2.9948701298701286:d=0.005[a2];
+[0:a]atrim=start=35.74845238095238:end=38.99831168831169,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=3.2448593073593086:d=0.005[a3];
+[0:a]atrim=start=40.498246753246754:end=43.49811688311688,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=2.994870129870125:d=0.005[a4];
+[0:a]atrim=start=84.32968253968254:end=89.57945526695526,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=5.244772727272728:d=0.005[a5];
+[0:a]atrim=start=93.07930375180375:end=97.2874549062049,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=4.203151154401151:d=0.005[a6];
+[0:a]atrim=start=98.12075216450216:end=99.24570346320345,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=1.1199512987012907:d=0.005[a7];
+[0:a]atrim=start=100.82896825396824:end=102.82888167388167,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=1.9949134199134262:d=0.005[a8];
+[0:a]atrim=start=122.82801587301587:end=126.28619949494949,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=3.453183621933614:d=0.005[a9];
+[0:a]atrim=start=126.82784271284271:end=133.28589646464647,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=6.45305375180376:d=0.005[a10];
+[0:a]atrim=start=145.16038239538238:end=150.49348484848483,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=5.328102453102441:d=0.005[a11];
+[0:a]atrim=start=152.07674963924964:end=153.20170093795093,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=1.1199512987012907:d=0.005[a12];
+[a0][a1][a2][a3][a4][a5][a6][a7][a8][a9][a10][a11][a12]concat=n=13:v=0:a=1[aout]
