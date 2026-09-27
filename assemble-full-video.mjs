@@ -166,9 +166,11 @@ export function assembleDesign22(project,meta,opts={}) {
   // Kopf und Kappe: Personenmaske (review/kopf-profil.json, DESIGN.md 12) oder, falls sie fehlt, Schätzung aus der Gesichtserkennung.
   const profil=fs.existsSync(path.join(project,'review/kopf-profil.json'));
   const samples=profil?read('review/kopf-profil.json').proben:read('review/source-faces.json');
-  const box=q=>profil?{x:q.x-4,y:q.y-4,w:q.width+8,h:q.height+8}:{x:q.x-.12*q.width,y:q.y-.5*q.height,w:1.24*q.width,h:1.5*q.height};
-  const heads=(a,b)=>samples.filter(f=>f.time>=a-.25&&f.time<=b+.25).flatMap(f=>(f.faces||[]).map(box));
-  const faces=read('review/source-faces.json');
+  const faces=read('review/source-faces.json'),faceAt=t=>faces.find(f=>Math.abs(f.time-t)<.01);
+  // Oberkante (Kappe) aus der Maske; seitlich auf den Kopf begrenzt (Gesicht ± 30 % für die Krempe), sonst zählen Hände und Schultern mit.
+  const clampX=(q,t)=>{const f=(faceAt(t)?.faces||[])[0];if(!f)return q;const l=Math.max(q.x,f.x-.3*f.width),r=Math.min(q.x+q.width,f.x+1.3*f.width);return {...q,x:l,width:Math.max(0,r-l)};};
+  const box=(q,t)=>{if(!profil)return {x:q.x-.12*q.width,y:q.y-.5*q.height,w:1.24*q.width,h:1.5*q.height};const c=clampX(q,t);return {x:c.x-4,y:c.y-4,w:c.width+8,h:c.height+8};};
+  const heads=(a,b)=>samples.filter(f=>f.time>=a-.25&&f.time<=b+.25).flatMap(f=>(f.faces||[]).map(q=>box(q,f.time)));
   const faceWidth=t=>{const f=faces.reduce((b,x)=>Math.abs(x.time-t)<Math.abs(b.time-t)?x:b);return Math.max(0,...(f.faces||[]).map(q=>q.width));};
   const followers=read('follower-source.json').wert;
   const plan=layoutDesign22(input,{measure,heads,errors,warnings,notes,duration,followers});

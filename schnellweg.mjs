@@ -77,7 +77,7 @@ async function standbilder(project, root, plan, zeiten, dir) {
       // Chrome spielt kein ProRes: Personenebene einer Grafik als Einzelbild einsetzen (im Render übernimmt das HyperFrames).
       const g = (plan.grafiken || []).find(g => t >= g.start && t < g.end);
       let still = null;
-      if (g && fs.existsSync(path.join(project, g.person))) { still = path.join(dir, `_person-${i}.png`); execFileSync(path.join(root, 'tools/bin/ffmpeg'), ['-v', 'error', '-y', '-ss', (t - g.start).toFixed(4), '-i', path.join(project, g.person), '-frames:v', '1', '-pix_fmt', 'rgba', still]); }
+      if (g && g.person && fs.existsSync(path.join(project, g.person))) { still = path.join(dir, `_person-${i}.png`); execFileSync(path.join(root, 'tools/bin/ffmpeg'), ['-v', 'error', '-y', '-ss', (t - g.start).toFixed(4), '-i', path.join(project, g.person), '-frames:v', '1', '-pix_fmt', 'rgba', still]); }
       await page.evaluate(async (t, gid, still) => {
         const v = document.getElementById('footage'); v.currentTime = t; await new Promise(r => { v.onseeked = r; setTimeout(r, 1500); });
         window.__timelines.root.seek(t, false);
@@ -152,7 +152,7 @@ export async function build(project, { root, run, assemble, check }) {
   const metaFile = path.join(project, 'workflow.json'), meta = J(metaFile), bericht = { projekt: project, begonnen: new Date().toISOString(), schritte: {} };
   if (String(meta.designVersion) !== '2.2') throw Error('build ist für designVersion 2.2 gebaut.');
   const plan = await zeit(project, 'build: zusammensetzen', () => assemble(project));
-  for (const g of plan.grafiken || []) if (!fs.existsSync(path.join(project, g.person))) await zeit(project, 'build: green screen ' + g.id, () => run(path.join(root, 'tools/venv-rvm/bin/python'), [path.join(root, 'green-screen-maske.py'), project, '--nur', g.id], root, path.join(project, 'logs/green-screen.log')));
+  for (const g of plan.grafiken || []) if (g.person && !fs.existsSync(path.join(project, g.person))) await zeit(project, 'build: green screen ' + g.id, () => run(path.join(root, 'tools/venv-rvm/bin/python'), [path.join(root, 'green-screen-maske.py'), project, '--nur', g.id], root, path.join(project, 'logs/green-screen.log')));
   const pruefung = await zeit(project, 'build: designprüfung (jedes Bild)', () => check(project));
   bericht.designpruefung = { bilder: pruefung.framesChecked, blockierend: pruefung.blocking, maxEbenen: pruefung.maxLayers, hinweise: pruefung.warnings.length };
   await zeit(project, 'build: lint', () => run(process.execPath, [path.join(root, 'node_modules/hyperframes/bin/hyperframes.mjs'), 'lint', project], root, path.join(project, 'logs/05-lint.log')));
@@ -191,7 +191,7 @@ export async function build(project, { root, run, assemble, check }) {
     ['6 Pink nur Schlagwort und Durchstreichen (Emojis ausgenommen)', fehler(['pink_ausserhalb', 'farbe']) === 0],
     ['7 Gochi Hand nur für Zahlen und Akronyme', fehler('gochi_nicht_zahl') === 0],
     ['8 Höchstens zwei Textebenen zusätzlich zum Untertitel', fehler('drei_textebenen') === 0],
-    ['9 Green Screen mit Robust Video Matting', !(plan.grafiken || []).length || !!gs, gs ? `Deckungssprung Mittel ${gs.abschnitte.map(a => a.deckungSprungMittel).join(', ')}` : null],
+    ['9 Green Screen mit Robust Video Matting', !(plan.grafiken || []).some(g => g.person) || !!gs, gs ? `Deckungssprung Mittel ${gs.abschnitte.map(a => a.deckungSprungMittel).join(', ')}` : null],
     ['10 Followerstand aus aktuellem Zernio-Abruf', fol.lastUpdated && plan.outro.followers === fol.wert, `${fol.wert}, Stand ${fol.lastUpdated}`],
     ['11 Nichts aus Abschnitt 17 ohne Testauftrag, nichts aus 18', true, 'Vorlage enthält keine Soundeffekte, B-Roll, Memes, Musik, Sticker'],
     ['12 Fertiges Video einmal vollständig angesehen (Handy)', null, 'offen: Abdullah'],

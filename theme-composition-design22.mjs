@@ -210,7 +210,7 @@ function chart22(g, { A, errors }) {
   if (270 + height + 12 > 900) errors.push(`Grafik ${g.id}: Karte samt Schatten bis y ${270 + height + 12} (rechts ab x 930 unter y 900 gesperrt)`);
   if (A(c.titel, 34, 800) > W) errors.push(`Grafik ${g.id}: Titel breiter als 700 px`);
   const x0 = 40, x1 = 660, X = x => x0 + (x - c.xMin) / (c.xMax - c.xMin) * (x1 - x0), Y = y => axisY - y / c.yMax * (axisY - 25);
-  const pts = a => a.map(([x, y]) => `${X(x).toFixed(1)},${Y(y).toFixed(1)}`).join(' ');
+  const pts = a => a.map(([x, y], i) => `${i ? 'L' : 'M'} ${X(x).toFixed(1)} ${Y(y).toFixed(1)}`).join(' ');
   const ticks = c.ticks.map(t => { const w = A(String(t.text), 24, 700); if (X(t.x) - w / 2 < 0 || X(t.x) + w / 2 > W) errors.push(`Grafik ${g.id}: Achsenbeschriftung „${t.text}" ragt aus der Karte`); return `<text x="${X(t.x).toFixed(1)}" y="${axisY + 34}" text-anchor="middle">${esc(t.text)}</text>`; }).join('');
   const legend = (c.legende || []).map((l, i) => { const y = 30 + 44 * i; return (l.art === 'haupt' ? `<line x1="${x0}" y1="${y}" x2="${x0 + 44}" y2="${y}" stroke="${C.ink}" stroke-width="15" stroke-linecap="round"/><line x1="${x0}" y1="${y}" x2="${x0 + 44}" y2="${y}" stroke="${C.blue}" stroke-width="9" stroke-linecap="round"/>` : `<line x1="${x0}" y1="${y}" x2="${x0 + 44}" y2="${y}" stroke="${C.ink}" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 12"/>`) + `<text x="${x0 + 62}" y="${y + 9}">${esc(l.text)}</text>`; }).join('');
   const labels = (c.beschriftungen || []).map((l, i) => { const w = A(l.text, 24, 700), x = X(l.x) + (l.dx || 0); const left = l.anker === 'end' ? x - w : l.anker === 'middle' ? x - w / 2 : x; if (left < 0 || left + w > W) errors.push(`Grafik ${g.id}: Beschriftung „${l.text}" ragt aus der Karte`); return `<text id="${g.id}-b${i}" x="${x.toFixed(1)}" y="${(Y(l.y) + (l.dy || 0)).toFixed(1)}" text-anchor="${l.anker || 'start'}">${esc(l.text)}</text>`; }).join('');
@@ -219,9 +219,9 @@ function chart22(g, { A, errors }) {
   const circle = `M ${hx - 32} ${hy + 25} C ${hx - 46} ${hy - 3} ${hx - 20} ${hy - 29} ${hx + 6} ${hy - 27} C ${hx + 34} ${hy - 25} ${hx + 46} ${hy + 3} ${hx + 34} ${hy + 25} C ${hx + 22} ${hy + 45} ${hx - 12} ${hy + 43} ${hx - 26} ${hy + 27} C ${hx - 34} ${hy + 17} ${hx - 28} ${hy + 1} ${hx - 14} ${hy - 7}`;
   const svg = `<svg width="${W}" height="${plotH}" viewBox="0 0 ${W} ${plotH}" overflow="visible" style="display:block">
 <line x1="${x0}" y1="${axisY}" x2="${x1}" y2="${axisY}" stroke="${C.ink}" stroke-width="4"/>${ticks}
-<polyline class="cmp-line" points="${pts(c.vergleich)}" fill="none" stroke="${C.ink}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 12"/>
-<polyline class="main-line" points="${pts(c.haupt)}" pathLength="1" fill="none" stroke="${C.ink}" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>
-<polyline class="main-line" points="${pts(c.haupt)}" pathLength="1" fill="none" stroke="${C.blue}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>
+<path class="cmp-line" d="${pts(c.vergleich)}" fill="none" stroke="${C.ink}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 12"/>
+<path class="main-line" d="${pts(c.haupt)}" pathLength="1" fill="none" stroke="${C.ink}" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>
+<path class="main-line" d="${pts(c.haupt)}" pathLength="1" fill="none" stroke="${C.blue}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>
 <path class="hl-circle" d="${circle}" pathLength="1" fill="none" stroke="${C.ink}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>
 ${legend}${labels}</svg>`;
   // 15: Karte Pop 0,35 s; Linie ab 0,3 s nach der Karte (Referenz) in 1,0 s; Vergleichslinie zugleich 0,30 s; Kreis danach 0,30 s.
@@ -269,7 +269,7 @@ export function makeDesign22Composition(plan, opts = {}) {
   const seig = `<svg width="1080" height="1920" style="position:absolute;inset:0"><defs><pattern id="seigaiha" width="80" height="40" patternUnits="userSpaceOnUse"><g fill="${C.off}" stroke="${C.ink}" stroke-width="2.5">${[[40, 0], [0, 20], [80, 20], [40, 40]].map(([x, y]) => [40, 31, 22, 13, 5].map(r => `<circle cx="${x}" cy="${y}" r="${r}"/>`).join('')).join('')}</g></pattern></defs><rect width="1080" height="1920" fill="${C.off}"/><rect width="1080" height="1920" fill="url(#seigaiha)" opacity="0.12"/></svg>`;
   for (const g of grafiken) html.push(`<div ${clip(g.id + '-bg', g.start, g.end, 10, 'gs-bg')} style="inset:0">${seig}</div>`,
     `<div ${clip(g.id, g.start, g.end, 11, 'grafik')} style="left:150px;top:270px;width:780px;height:${g.height}px"><div class="card"><div class="card-title">${escEmoji(g.title)}</div>${g.svg}</div></div>`,
-    `<video id="${g.id}-person" class="clip" src="${g.person}" data-start="${g.start}" data-duration="${+(g.end - g.start).toFixed(4)}" data-track-index="12" data-volume="0" muted playsinline style="position:absolute;inset:0;width:1080px;height:1920px"></video>`);
+    ...(g.person ? [] : []), g.person ? `<video id="${g.id}-person" class="clip" src="${g.person}" data-start="${g.start}" data-duration="${+(g.end - g.start).toFixed(4)}" data-track-index="12" data-volume="0" muted playsinline style="position:absolute;inset:0;width:1080px;height:1920px"></video>` : '');
   const top = [];
   top.push(`<div ${clip('einstieg-h1', 0, e.end, 2, 'h1', ' data-einstieg="1"')} style="top:250px;font-size:${e.h1.fontSize}px;opacity:1"><span class="h1" style="visibility:visible">${lines(e.h1.lines)}</span></div>`);
   if (e.h2) top.push(`<div ${clip('einstieg-h2', 0, e.end + 0.06, 3, 'h2', ' data-einstieg="1"')} style="top:${e.h2.top}px;opacity:1"><span class="h2" style="visibility:visible">${lines(e.h2.lines)}</span></div>`);
@@ -368,7 +368,9 @@ const out=(s,end)=>tl.to(s,{opacity:0,y:-8,duration:.18,ease:LIN},end-.18);     
 const up=(s,at,dy=14)=>{tl.set(s,{opacity:0,y:dy},0);tl.fromTo(s,{opacity:0,y:dy},{opacity:1,y:0,duration:.22,ease:OUT,immediateRender:false},at);};
 const pop=(s,at,from,dur)=>{tl.set(s,{opacity:0,scale:from},0);tl.set(s,{opacity:1},at);tl.fromTo(s,{scale:from},{scale:1,duration:dur,ease:BACK,immediateRender:false},at);};
 const wipe=(s,at,dur,m)=>{tl.set(s,{clipPath:'inset(-'+m+'px 100% -'+m+'px -'+m+'px)'},0);tl.fromTo(s,{clipPath:'inset(-'+m+'px 100% -'+m+'px -'+m+'px)'},{clipPath:'inset(-'+m+'px -'+m+'px -'+m+'px -'+m+'px)',duration:dur,ease:OUT,immediateRender:false},at);};
-const draw=(s,at,dur)=>tl.to(s,{strokeDashoffset:0,duration:dur,ease:OUT},at);
+// Zeichnen über das SVG-Attribut: GSAP rundet die CSS-Eigenschaft strokeDashoffset auf ganze Pixel, bei pathLength 1
+// sprang jede Linie dadurch von unsichtbar auf fertig (Fast 30, 27.09.2026: Durchstreichen und ETF-Linie „zu schnell“).
+const draw=(s,at,dur)=>tl.to(s,{attr:{'stroke-dashoffset':0},duration:dur,ease:OUT},at);
 // 5: Einstieg steht ab dem ersten Bild; H1 blendet aus, H2 0,06 s später.
 show('#einstieg-h1',0,D.e.end);out('#einstieg-h1',D.e.end);if(D.e.h2){show('#einstieg-h2',0,D.e.end+.06);out('#einstieg-h2',D.e.end+.06);}
 // 15: H1 im Video Stoß 112 → 100 %, 0,22 s (Referenz h1in: zugleich Deckkraft 0 → 1).

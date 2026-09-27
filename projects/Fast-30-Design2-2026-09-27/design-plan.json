@@ -108,6 +108,17 @@
    "end": 55.9,
    "unter": "kapitel:k3",
    "ausnahme": "Abdullah 27.09.2026: Insider-Joke bei „Popelstadt“, ausdrücklich gewünscht, obwohl in Kapitel 3 Pillen stehen (DESIGN.md 8: H2 und Pillen sonst nie gleichzeitig; drei Textebenen für 2,8 s)"
+  },
+  {
+   "id": "h2-steh-ein",
+   "lines": [
+    "… oder steh für etwas ein",
+    "🍉🍉🍉"
+   ],
+   "start": 166.34,
+   "end": 171.0,
+   "unter": "kapitel:k10",
+   "ausnahme": "Abdullah 27.09.2026: „stehe für etwas ein“ mit drei Melonen wie im Video vom 26.09., obwohl in Kapitel 10 Pillen stehen (DESIGN.md 8)"
   }
  ],
  "pillen": [
@@ -131,50 +142,6 @@
     }
    ],
    "end": 72.58,
-   "punkt": true
-  },
-  {
-   "id": "p5-ziele",
-   "kapitel": "k5",
-   "nummeriert": false,
-   "anordnung": "auto",
-   "items": [
-    {
-     "text": "Wohnung",
-     "at": 98.73
-    },
-    {
-     "text": "Partnerin",
-     "at": 100.34
-    },
-    {
-     "text": "Bachelor",
-     "at": 102.09
-    }
-   ],
-   "end": 109.4,
-   "punkt": true
-  },
-  {
-   "id": "p6-retter",
-   "kapitel": "k6",
-   "nummeriert": false,
-   "anordnung": "auto",
-   "items": [
-    {
-     "text": "Mentor",
-     "at": 115.8
-    },
-    {
-     "text": "Frau",
-     "at": 116.76
-    },
-    {
-     "text": "Retter",
-     "at": 117.47
-    }
-   ],
-   "end": 129.12,
    "punkt": true
   },
   {
@@ -229,7 +196,7 @@
    "id": "sparen",
    "start": 138.84,
    "end": 147.42,
-   "person": "person-sparen.mov",
+   "person": null,
    "zeichnenAb": 141.01,
    "vergleichAb": 142.01,
    "kreisAb": 145.55,
@@ -1238,7 +1205,7 @@
       "y": 12000,
       "anker": "end",
       "dx": -6,
-      "dy": 38,
+      "dy": 75,
       "at": 142.01
      },
      {
@@ -1262,13 +1229,13 @@
  "randnotizen": [
   {
    "id": "rn-ahnung",
-   "start": 75.55,
-   "end": 79.45,
-   "seite": "rechts",
+   "start": 73.93,
+   "end": 85.0,
+   "seite": "auto",
    "zeilen": [
     {
      "text": "Ich weiß alles",
-     "at": 75.55,
+     "at": 73.93,
      "streichenAb": 76.39
     },
     {
@@ -1278,6 +1245,66 @@
     {
      "text": "mit 20",
      "at": 77.11
+    }
+   ]
+  },
+  {
+   "id": "rn-ziele",
+   "start": 98.73,
+   "end": 109.4,
+   "seite": "auto",
+   "zeilen": [
+    {
+     "text": "Wohnung",
+     "at": 98.73,
+     "streichenAb": 106.64
+    },
+    {
+     "text": "Partnerin",
+     "at": 100.34,
+     "streichenAb": 106.64
+    },
+    {
+     "text": "Bachelor",
+     "at": 102.09,
+     "streichenAb": 106.64
+    },
+    {
+     "text": "Master",
+     "at": 103.13,
+     "streichenAb": 106.64
+    },
+    {
+     "text": "Abgabe",
+     "at": 104.61,
+     "streichenAb": 106.64
+    }
+   ]
+  },
+  {
+   "id": "rn-retter",
+   "start": 115.54,
+   "end": 129.12,
+   "seite": "auto",
+   "zeilen": [
+    {
+     "text": "Ein Mentor",
+     "at": 115.54,
+     "streichenAb": 119.15
+    },
+    {
+     "text": "Eine Frau",
+     "at": 116.4,
+     "streichenAb": 119.15
+    },
+    {
+     "text": "Ein Retter",
+     "at": 117.2,
+     "streichenAb": 119.15
+    },
+    {
+     "text": "Du selbst",
+     "at": 123.48
     }
    ]
   }
@@ -1336,6 +1363,18 @@
     "Punkte vor allen Pillen, auch nebeneinander (Plan-Option punkt)",
     "Lebensbalken bei 3:06 entfernt; „Genieß deine 20er“ bleibt bis 193,49 s",
     "H2 „Stell dir vor, du wohnst in Mülheim.“ bei „Popelstadt“ (53,10–55,90 s), Ausnahme"
+   ]
+  },
+  {
+   "datum": "2026-09-27",
+   "von": "Abdullah",
+   "video": "Test gesichtet, Design final",
+   "aenderungen": [
+    "Punkt 4: „Ich weiß alles“ früher, Durchstreichen später und länger sichtbar",
+    "Punkt 5: alle fünf Ziele mit Durchstreichen (Randnotiz wie 26.09.)",
+    "Punkt 6: Mentor/Frau/Retter durchgestrichen, „Du selbst“ (wie 26.09.)",
+    "Grafik ohne Green Screen, Linie zeichnet sich",
+    "Punkt 10: „… oder steh für etwas ein“ 🍉🍉🍉"
    ]
   }
  ]

@@ -68,8 +68,11 @@ export async function checkDesign22(project, { step = 1 } = {}) {
       const LAYER = new Set(['h1', 'h2', 'kapitel', 'pillen', 'akronym', 'schlagwort', 'randnotiz', 'balken', 'logo', 'grafik', 'follow', 'outro-card', 'bubble']);
       const CENTER = { h1: '.h1', h2: '.h2', kapitel: '.kap', schlagwort: '.sw-word', caption: '.cap-line', follow: '.follow', logo: '.logo', akronym: '.ak-row' };
       const BLUE = 'rgb(94, 170, 238)', WHITE = 'rgb(255, 255, 255)';
-      const src = profil || faces, kopfBox = q => profil ? { x: q.x - 4, y: q.y - 4, w: q.width + 8, h: q.height + 8 } : { x: q.x - 0.12 * q.width, y: q.y - 0.5 * q.height, w: 1.24 * q.width, h: 1.5 * q.height };
-      const heads = t => { const f = src.reduce((b, x) => Math.abs(x.time - t) < Math.abs(b.time - t) ? x : b); return Math.abs(f.time - t) > 0.26 ? [] : (f.faces || []).map(kopfBox); };
+      // Wie die Vorlage: Oberkante aus der Maske, seitlich Gesicht ± 30 % (Krempe).
+      const faceAt = t => faces.find(f => Math.abs(f.time - t) < 0.01);
+      const kopfBox = (q, t) => { if (!profil) return { x: q.x - 0.12 * q.width, y: q.y - 0.5 * q.height, w: 1.24 * q.width, h: 1.5 * q.height }; const f = (faceAt(t)?.faces || [])[0]; const l = f ? Math.max(q.x, f.x - 0.3 * f.width) : q.x, r = f ? Math.min(q.x + q.width, f.x + 1.3 * f.width) : q.x + q.width; return { x: l - 4, y: q.y - 4, w: Math.max(0, r - l) + 8, h: q.height + 8 }; };
+      const src = profil || faces;
+      const heads = t => { const f = src.reduce((b, x) => Math.abs(x.time - t) < Math.abs(b.time - t) ? x : b); return Math.abs(f.time - t) > 0.26 ? [] : (f.faces || []).map(q => kopfBox(q, f.time)); };
       const green = t => (plan.grafiken || []).some(g => t >= g.start && t < g.end);
       const frames = Math.ceil(plan.duration * 30); let maxLayers = 0, capFrames = 0;
       for (let f = 0; f < frames; f += step) {
@@ -140,7 +143,7 @@ export async function checkDesign22(project, { step = 1 } = {}) {
       for (const el of card.querySelectorAll('.oc-head,.oc-bed,.oc-grid')) { const b = R(el); if (b.x < cb.x + 21.9 || b.x + b.w > cb.x + cb.w - 21.9 || b.y < cb.y + 21.9 || b.y + b.h > cb.y + cb.h - 21.9) err('outro_innenabstand', { cls: el.className }); }
       const standzeit = plan.duration - (o.start + 1.85); if (standzeit < 4 - 1e-3 || standzeit > 5 + 1e-3) warn('outro_standzeit', { s: +standzeit.toFixed(2) });
       // 11: Grafik-Karte x 150, y 270, Breite 780; Personenebene vorhanden.
-      for (const g of plan.grafiken || []) { tl.seek(g.start + 0.5, false); const b = R(document.querySelector('#' + g.id + ' .card')); if (Math.abs(b.x - 150) > 0.5 || Math.abs(b.y - 270) > 0.5 || Math.abs(b.w - 780) > 0.5) err('grafik_karte', { b }); if (!document.getElementById(g.id + '-person')) err('grafik_person_fehlt', { id: g.id }); }
+      for (const g of plan.grafiken || []) { tl.seek(g.start + 0.5, false); const b = R(document.querySelector('#' + g.id + ' .card')); if (Math.abs(b.x - 150) > 0.5 || Math.abs(b.y - 270) > 0.5 || Math.abs(b.w - 780) > 0.5) err('grafik_karte', { b }); if (g.person && !document.getElementById(g.id + '-person')) err('grafik_person_fehlt', { id: g.id }); }
       // 10: höchstens zwei Schlagworte, Standzeit 0,8–1,3 s.
       if ((plan.schlagworte || []).length > 2) err('schlagworte_anzahl');
       return { designVersion: plan.designVersion, kopfQuelle: profil ? 'Personenmaske' : 'Schätzung', framesChecked: Math.ceil(frames / step), step, maxLayers, capFrames, errors, warnings };
