@@ -85,8 +85,9 @@ export function layoutDesign22(input, ctx) {
   const { A, G } = ctx.measure, errors = ctx.errors, notes = ctx.notes, heads = ctx.heads;
   const hits = (b, a, e) => heads(a, e).filter(h => b.x < h.x + h.w && b.x + b.w > h.x && b.y < h.y + h.h && b.y + b.h > h.y);
   // 6: H1 so groß wie möglich, höchstens 160 px, Zeile inkl. Kontur ≤ 864 px; unter 90 px zwei Zeilen gleich groß.
-  const h1Fit = text => {
-    const t = upper(text), size = l => Math.min(160, Math.floor((864 - 16) / A(l, 1, 900, 125)));
+  // H1 im Video startet mit einem Stoß von 112 % (DESIGN.md 15): dann auch im ersten Bild ≤ 864 px, also für 112 % bemessen.
+  const h1Fit = (text, stoss = 1) => {
+    const t = upper(text), size = l => Math.min(160, Math.floor((864 - 16) / stoss / A(l, 1, 900, 125)));
     if (size(t) >= 90) return { lines: [t], fontSize: size(t) };
     let best = null; const w = t.split(' ');
     for (let i = 1; i < w.length; i++) { const l = [w.slice(0, i).join(' '), w.slice(i).join(' ')]; const s = Math.min(...l.map(size)); if (!best || s > best.fontSize) best = { lines: l, fontSize: s }; }
@@ -114,7 +115,7 @@ export function layoutDesign22(input, ctx) {
   for (let i = 1; i < kapitel.length; i++) if (kapitel[i].start < kapitel[i - 1].end - 1e-6) errors.push(`Kapitel überlappen: ${kapitel[i - 1].id} / ${kapitel[i].id}`);
   const kapById = id => kapitel.find(k => k.id === id);
 
-  const h1 = (input.h1 || []).map(h => ({ id: h.id, ...h1Fit(h.text), start: h.start, end: h.end }));
+  const h1 = (input.h1 || []).map(h => ({ id: h.id, ...h1Fit(h.text, 1.12), start: h.start, end: h.end }));
 
   // 9: Pillen. Höhe je Pille: Ring 3 + Rand 5 + 8 + 54 × 1,1 + 10 + Rand 5 + Ring 3 (Zeilenhöhe 1,1: Referenz).
   const PILL = 5 + 8 + 54 * 1.1 + 10 + 5, ROW = 5 + 8 + 42 * 1.1 + 10 + 5, OFFS = [[-44, -2], [40, 1.5], [-16, -1]];
@@ -286,7 +287,7 @@ export function makeDesign22Composition(plan, opts = {}) {
   for (const n of randnotizen) top.push(`<div ${clip(n.id, n.start, n.end, 7, 'randnotiz')} style="left:${n.left}px;top:${n.top}px">${n.lines.map((l, j) => `<div class="note-line" id="${n.id}-l${j}" style="margin-top:${l.gapBefore}px">${l.html}${l.strikeAt != null ? `<svg class="note-strike" id="${n.id}-s${j}" height="20" style="left:-8px;top:calc(54% - 10px);width:calc(100% + 16px)" overflow="visible" preserveAspectRatio="none"><path pathLength="1" fill="none" stroke="${C.ink}" stroke-width="11" stroke-linecap="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/><path pathLength="1" fill="none" stroke="${C.pink}" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></svg>` : ''}</div>`).join('')}</div>`);
   for (const b of lebensbalken) top.push(`<div ${clip(b.id, b.start, b.end, 9, 'balken')} style="left:190px;top:${370 - 58}px;width:700px;height:${58 + 26}px">${b.segments.map((s, i) => `<span class="bal-label" id="${b.id}-l${i}" style="left:${s.labelLeft}px">${escEmoji(s.label)}</span>`).join('')}<div class="bal-bed">${b.segments.map((s, i) => `<div class="bal-fill" id="${b.id}-f${i}" style="left:${s.from * 700}px;width:${(s.to - s.from) * 700}px"></div>`).join('')}</div></div>`);
   for (const l of logos) top.push(`<div ${clip(l.id, l.start, l.end, 13, 'logo')} style="top:250px"><img class="logo" src="${esc(l.src)}" style="height:${l.height}px${l.width ? `;width:${l.width}px` : ''}" alt=""></div>`);
-  for (const s of schlagworte) top.push(`<div ${clip(s.id, s.start, s.end, 8, 'schlagwort')} style="top:330px"><span class="sw-pop"><span class="sw"><span class="sw-word" style="font-size:${s.fontSize}px">${esc(s.text)}</span><svg class="sw-lines" viewBox="0 0 700 70" preserveAspectRatio="none" style="width:${s.width}px;height:70px" overflow="visible">${[['M 14 30 C 150 12, 300 40, 450 22 S 640 30, 688 16', 22, 12], ['M 60 54 C 210 40, 380 62, 560 46 S 650 50, 672 46', 20, 10]].map(([d, wi, wp], j) => `<path id="${s.id}-u${j}i" d="${d}" pathLength="1" fill="none" stroke="${C.ink}" stroke-width="${wi}" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/><path id="${s.id}-u${j}p" d="${d}" pathLength="1" fill="none" stroke="${C.pink}" stroke-width="${wp}" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>`).join('')}</svg></span></span></div>`);
+  for (const s of schlagworte) top.push(`<div ${clip(s.id, s.start, s.end, 8, 'schlagwort')} style="top:330px"><span class="sw-pop"><span class="sw" style="transform-origin:50% ${(s.fontSize * 1.02 / 2).toFixed(1)}px"><span class="sw-word" style="font-size:${s.fontSize}px">${esc(s.text)}</span><svg class="sw-lines" viewBox="0 0 700 70" preserveAspectRatio="none" style="width:${s.width}px;height:70px" overflow="visible">${[['M 14 30 C 150 12, 300 40, 450 22 S 640 30, 688 16', 22, 12], ['M 60 54 C 210 40, 380 62, 560 46 S 650 50, 672 46', 20, 10]].map(([d, wi, wp], j) => `<path id="${s.id}-u${j}i" d="${d}" pathLength="1" fill="none" stroke="${C.ink}" stroke-width="${wi}" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/><path id="${s.id}-u${j}p" d="${d}" pathLength="1" fill="none" stroke="${C.pink}" stroke-width="${wp}" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>`).join('')}</svg></span></span></div>`);
   const caps = captions.map((c, i) => `<div ${clip('cap-' + i, c.start, c.end, 20, 'caption')} style="top:1280px"><span class="cap-line">${c.words.map((w, j) => `<span id="w-${i}-${j}">${escEmoji(w.text)}</span>`).join(' ')}</span></div>`).join('');
   const bubbles = sprechblasen.map(b => `<div ${clip(b.id, b.start, b.start + 4.25, 22, 'bubble')} style="left:90px;top:${b.top}px"><div class="grp" id="${b.id}-grp"><div class="msg-pop" id="${b.id}-msg"><div class="msg">${escEmoji(b.text)}</div></div><div class="ind-slide" id="${b.id}-slide"><div class="ind-pop" id="${b.id}-ind"><div class="ind">${[0, 1, 2].map(k => `<i id="${b.id}-d${k}"></i>`).join('')}</div></div></div></div></div>`).join('');
   const profiles = [['youtube', '@itsabidullahabi'], ['tiktok', '@abidullahabi'], ['instagram', '@abidullahabi'], ['linkedin', 'Abdullah Bachtari']];
@@ -308,6 +309,7 @@ export function makeDesign22Composition(plan, opts = {}) {
 #root .emoji{font-family:"Apple Color Emoji"!important;-webkit-text-stroke:0;paint-order:normal;font-size:1em;line-height:1;font-weight:400;font-stretch:100%;color:initial}
 [data-kind=h1],[data-kind=h2],[data-kind=kapitel],[data-kind=pillen],[data-kind=akronym],[data-kind=schlagwort],[data-kind=caption],[data-kind=follow],[data-kind=logo]{left:0;width:1080px;text-align:center}
 .h1{display:inline-block;font-weight:900;font-stretch:125%;text-transform:uppercase;line-height:1.02;white-space:nowrap;${stroke(8)}}.h1 .ln,.h2 .ln{display:block}
+[data-kind=h1]:not([data-einstieg]) .h1{transform-origin:50% 0}
 .h2{display:inline-block;background:${C.blue};font-weight:800;font-size:58px;line-height:1.12;padding:8px 28px 14px;border-radius:12px;transform:rotate(-2deg);white-space:nowrap}
 .kap{display:inline-flex;align-items:center;gap:28px;white-space:nowrap}
 .kap-numw{display:inline-block}.kap-num{display:inline-block;font-family:"ABI Gochi";font-size:140px;line-height:1;color:${C.blue};${stroke(7)};transform:rotate(-4deg)}

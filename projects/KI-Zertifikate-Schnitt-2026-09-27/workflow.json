@@ -1,16 +1,51 @@
 {
-  "mode": "cut",
-  "title": "KI-Zertifikate für Anfänger",
-  "source": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/IMG_1967.MOV",
-  "workingCopy": "sources/IMG_1967.MOV",
-  "notion": "https://app.notion.com/p/3db8cb917b3b8044a462cd48c2d2c2c6",
-  "status": "analyse",
-  "createdAt": "2026-09-27",
-  "bearbeitung": {
-    "agent": "Claude Code (Desktop), Sitzung 505e1d2c",
-    "aufgabe": "Redaktioneller Schnitt IMG_1967: flüssige Takes, Versprecher raus, Pausen nach Abschnitt 5, Hook und Outro",
-    "begonnen": "2026-09-27T15:05:00Z",
-    "status": "in_arbeit"
+ "mode": "cut",
+ "title": "KI-Zertifikate für Anfänger",
+ "source": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/IMG_1967.MOV",
+ "workingCopy": "sources/IMG_1967.MOV",
+ "notion": "https://app.notion.com/p/3db8cb917b3b8044a462cd48c2d2c2c6",
+ "status": "schnitt_zur_abnahme",
+ "createdAt": "2026-09-27",
+ "bearbeitung": {
+  "agent": "claude",
+  "sitzung": "Claude Code Desktop 505e1d2c",
+  "aufgabe": "Redaktioneller Schnitt IMG_1967: flüssige Anläufe, Versprecher raus, Pausen nach Abschnitt 5, Hook und Outro",
+  "begonnen": "2026-09-27T14:47:00Z",
+  "status": "angehalten",
+  "stand": "Schnitt v1 liegt zur Abnahme bei Abdullah; Gestaltung erst nach Freigabe"
+ },
+ "vorgaenger": "Codex-Versuch verworfen, archiviert unter revisions/archiv/2026-09-27-Ruecksetzung-01a0e28f",
+ "sourceSha256": "4c12f33d2057cb179548b08de45a05569a7d831cc4139b64cf59c7e69a33c9ce",
+ "originalDuration": 321.575,
+ "guidelinesRead": [
+  {
+   "file": "CONTENT_WORKFLOW.md",
+   "version": "1.27"
   },
-  "vorgaenger": "Codex-Versuch verworfen, archiviert unter revisions/archiv/2026-09-27-Ruecksetzung-01a0e28f"
+  {
+   "file": "DESIGN.md",
+   "version": "2.2"
+  },
+  {
+   "file": "toolchain CLAUDE.md, ABLAUF_KURZ.md",
+   "note": "nach Umzug 27.09.2026 17:13 gelesen"
+  }
+ ],
+ "cutDuration": 101.875,
+ "aktuell": {
+  "datei": "exports/KI-Zertifikate-Schnitt_v1.mp4",
+  "sha256": "dd37652bf26678084a436a718af4e75e996b200a1d224a47c8daade67a4c5cf0",
+  "bytes": 182851948,
+  "erzeugt": "2026-09-27T16:02:00Z"
+ },
+ "ablage": "02_Bearbeitete_Videos/Datum offen - KI-Zertifikate für Anfänger - Schnitt v1.mp4",
+ "pruefung": {
+  "dekodierung": "vollständig ohne Fehler",
+  "bild": "1080x1920, 30 fps konstant, 3056 Bilder, BT.709",
+  "ton": "AAC 48 kHz mono aus Originalton, 5-ms-Blenden, 30 ms am 'Ng', 80 ms am Ende",
+  "synchron": "Bildvergleich an 9 Stellen: Versatz -30..+10 ms, keine Drift (review/sync-bildvergleich.json)",
+  "pausen": "Silero-Median 64 ms (57 % im Band) - bewusste Abweichung, siehe review/SCHNITTLISTE.md; hörbar Median 160 ms (review/pausen-vergleich.json)",
+  "worte": "Schnittton zweifach transkribiert (review/asr-v3): alle geplanten Sätze, keine Füllwörter/Doppelanläufe erkannt; 'Ng' und 'Boah' im Zusammenhang nicht sicher erkannt -> Gegenhören",
+  "hoerpruefung": "nicht möglich (Agent kann nicht hören)"
+ }
 }

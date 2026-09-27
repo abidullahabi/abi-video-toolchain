@@ -6,7 +6,7 @@ for k in keep[:-1]:
     t+=k['end']-k['start']; junc.append(t)
 res=[]
 for j in junc:
-    m=[x for x in g if x['start']-0.02<=j<=x['end']+0.02]
+    m=[x for x in g if x['start']-0.10<=j<=x['end']+0.10]
     res.append(round(m[0]['duration']*1000) if m else 0)
 band=sum(64<=r<=96 for r in res)
 print('Anschluesse',len(res),'Median',statistics.median(res),'ms, im Band 64-96:',band,f'({100*band/len(res):.0f} %)')
