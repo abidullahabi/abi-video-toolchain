@@ -7,6 +7,11 @@ import { SOCIAL_LAYOUT, boxViolations } from './social-layout.mjs';
 const project=path.resolve(process.argv[2]);
 const root=path.resolve(project,'../..');
 const plan=JSON.parse(fs.readFileSync(path.join(project,'theme-plan.json')));
+if(['1.11','1.12'].includes(plan.designVersion)){
+ const {checkDesign111}=await import('./check-design111.mjs');
+ await checkDesign111(project);
+ process.exit(0);
+}
 if(plan.designVersion==='1.9'){
  const {checkDesign19}=await import('./check-design19.mjs');
  await checkDesign19(project);

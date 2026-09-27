@@ -1,10 +1,12 @@
 import { SOCIAL_LAYOUT } from './social-layout.mjs';
 import { makeDesign19Composition } from './theme-composition-design19.mjs';
+import { makeDesign111Composition } from './theme-composition-design111.mjs';
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const lines = item => (item.lines || [item.text]).map(escape).join('<br>');
 
 // Draft identity. Content and timing remain separate from the visual template.
 export function makeThemeComposition(plan) {
+  if(['1.11','1.12'].includes(plan.designVersion))return makeDesign111Composition(plan);
   if(plan.designVersion==='1.9')return makeDesign19Composition(plan);
   const {duration, sections, overlays, captions = [], zooms = [], logos = [], socialCtas = []} = plan;
   if (!(duration > 0)) throw Error('Dauer fehlt.');

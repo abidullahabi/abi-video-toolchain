@@ -37,3 +37,8 @@
 # 4. Ausnahmen davon: Modellherkunft und Pruefsummen sind klein und wichtig
 !tools/models/*provenance*.json
 !tools/*.json
+
+# 5. Seit 27.09.2026: Vorlagen und Agentenbefehle vollstaendig versionieren.
+#    Icons (PNG) und GSAP (JS) fehlten vorher in der Sicherung.
+!templates/**
+!.claude/**

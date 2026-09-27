@@ -163,10 +163,13 @@ function render(project, opts, regenerate = true) {
   if(!regenerate)run(process.execPath,[path.join(ROOT,'check-theme-layout.mjs'),project],ROOT,path.join(project,'logs/04-layout-check.log'));
   run(process.execPath, [HF, 'lint', project], ROOT, path.join(project, 'logs/05-lint.log'));
   fs.mkdirSync(path.join(project, 'exports'), { recursive: true });
-  const output = path.join(project, 'exports', `final-${stamp()}.mp4`);
+  // renderMaster "prores": HyperFrames captures PNG frames only for alpha formats; MP4 output uses JPEG quality 80.
+  const prores = meta.renderMaster === 'prores';
+  const output = path.join(project, 'exports', `final-${stamp()}.${prores ? 'mov' : 'mp4'}`);
   const safeStreaming = meta.cutDuration > 60 || meta.renderLowMemory === true;
   const renderArgs = [HF, 'render', project, '--output', output, '--fps', '30', '--quality', opts.draft ? 'draft' : 'high', '--workers', safeStreaming ? '1' : '2', '--sdr'];
   if (safeStreaming) renderArgs.push('--low-memory-mode');
+  if (prores) renderArgs.push('--format', 'mov');
   run(process.execPath, renderArgs, ROOT, path.join(project, 'logs/06-render.log'));
   const result = probe(output);
   const v = result.streams.find(x => x.codec_type === 'video');

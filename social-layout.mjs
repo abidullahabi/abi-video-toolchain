@@ -10,7 +10,13 @@ export const DESIGN19_LAYOUT = Object.freeze({
   width:1080,height:1920,centerX:510,safeLeft:90,safeRight:930,safeTop:250,safeBottom:1660,
   textWidth:840,captionMaxWidth:620,captionFontSize:56,captionTop:1280,captionMaxWords:4,
 });
-export const layoutFor = plan => plan.designVersion === '1.9' ? DESIGN19_LAYOUT : SOCIAL_LAYOUT;
+// DESIGN.md 1.11 (17.09.2026): all centred elements on the full-frame centre x = 540.
+// textWidth is the maximum blue H1 surface (736 px text + 2 x 22 px padding).
+export const DESIGN111_LAYOUT = Object.freeze({
+  width:1080,height:1920,centerX:540,safeLeft:90,safeRight:930,safeTop:250,safeBottom:1660,
+  textWidth:780,captionMaxWidth:620,captionFontSize:56,captionTop:1280,captionMaxWords:4,
+});
+export const layoutFor = plan => ['1.11','1.12'].includes(plan.designVersion) ? DESIGN111_LAYOUT : plan.designVersion === '1.9' ? DESIGN19_LAYOUT : SOCIAL_LAYOUT;
 export function boxViolations(box, {stroke=0, centered=true}={}) {
   const p=stroke/2, issues=[];
   if(box.x-p<SOCIAL_LAYOUT.safeLeft-0.1 || box.x+box.width+p>SOCIAL_LAYOUT.safeRight+0.1 || box.y-p<SOCIAL_LAYOUT.safeTop-0.1 || box.y+box.height+p>SOCIAL_LAYOUT.safeBottom+0.1)issues.push('danger_zone');

@@ -130,7 +130,7 @@ export function assembleFullVideo(project) {
     if(placement)cue.top=placement.top;
   }
   for(const section of plan.sections)for(const line of section.lines||[section.text])if(measure((section.number?section.number+'. ':'')+line,section.fontSize||80)+44>SOCIAL_LAYOUT.textWidth)throw Error('H1 zu breit: '+line);
-  for(const overlay of plan.overlays)for(const line of overlay.lines||[overlay.text])if(measure(line,overlay.fontSize||52)>(plan.designVersion==='1.9'?560:SOCIAL_LAYOUT.textWidth-10))throw Error('H2 zu breit: '+line);
+  for(const overlay of plan.overlays)for(const line of overlay.lines||[overlay.text])if(measure(line,overlay.fontSize||52)>(['1.9','1.11','1.12'].includes(plan.designVersion)?(overlay.wide?780:560):SOCIAL_LAYOUT.textWidth-10))throw Error('H2 zu breit: '+line);
   const report={words:timed.length,cues:plan.captions.length,maxWords:Math.max(...plan.captions.map(c=>c.words.length)),maxWidth:Math.max(...plan.captions.map(c=>measure(c.words.map(w=>w.text).join(' '),c.fontSize||plan.captionFontSize))),availableWidth:SOCIAL_LAYOUT.textWidth,font:'Arial Bold',fontSize:plan.captionFontSize,corrections};
   const write=(name,value)=>fs.writeFileSync(path.join(project,name),JSON.stringify(value,null,2)+'\n');
   write('word-timing.json',timed);write('caption-review.json',report);write('theme-plan.json',plan);
