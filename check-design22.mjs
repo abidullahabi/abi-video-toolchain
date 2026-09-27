@@ -12,6 +12,7 @@ export async function checkDesign22(project, { step = 1 } = {}) {
   const plan = JSON.parse(fs.readFileSync(path.join(project, 'theme-plan.json')));
   const faces = JSON.parse(fs.readFileSync(path.join(project, 'review/source-faces.json')));
   if (!faces.length || faces.some(s => s.error)) throw Error('Gesichtsprüfung unvollständig (review/source-faces.json).');
+  const pf = path.join(project, 'review/kopf-profil.json'), profil = fs.existsSync(pf) ? JSON.parse(fs.readFileSync(pf)).proben : null;
   const exe = execFileSync(process.execPath, [path.join(root, 'node_modules/hyperframes/bin/hyperframes.mjs'), 'browser', 'path'], { encoding: 'utf8', env: { ...process.env, HYPERFRAMES_NO_TELEMETRY: '1', HYPERFRAMES_NO_UPDATE_CHECK: '1' } }).trim();
   const browser = await puppeteer.launch({ executablePath: exe, headless: true, args: ['--no-sandbox'] });
   let report;
@@ -20,15 +21,25 @@ export async function checkDesign22(project, { step = 1 } = {}) {
     await page.setViewport({ width: 1080, height: 1920, deviceScaleFactor: 1 });
     await page.goto(pathToFileURL(path.join(project, 'index.html')).href, { waitUntil: 'load' });
     await page.evaluate(() => document.fonts.ready);
-    report = await page.evaluate(({ plan, faces, step }) => {
+    report = await page.evaluate(({ plan, faces, profil, step }) => {
       const errors = [], warnings = [], seen = new Set();
       const add = (list, type, d = {}) => { const k = type + JSON.stringify({ ...d, t: undefined, b: undefined }); if (seen.has(k) || list.length > 400) return; seen.add(k); list.push({ type, ...d }); };
       const err = (t, d) => add(errors, t, d), warn = (t, d) => add(warnings, t, d);
       const tl = window.__timelines.root, cs = el => getComputedStyle(el);
       const R = (el, p = 0) => { const b = el.getBoundingClientRect(); return { x: b.x - p, y: b.y - p, w: b.width + 2 * p, h: b.height + 2 * p }; };
+      const T = (el, p = 0) => { const b = el.getBoundingClientRect(); return { x: b.x - p, y: b.y, w: b.width + 2 * p, h: b.height }; }; // Text: Kontur nur seitlich
+      const UT = (els, p = 0) => { const u = U(els); return { x: u.x - p, y: u.y, w: u.w + 2 * p, h: u.h }; };
+      // Tintenkante statt Zeilenbox für Texte an der Sperrgrenze y 250 (H1, „Folgen nicht vergessen"): Grundlinie aus den Schriftmetriken,
+      // Glyphenhöhe per measureText, Kontur oben und unten; seitlich wie T. Berücksichtigt die aktuelle Verschiebung (Ausblenden 8 px).
+      const cv = document.createElement('canvas').getContext('2d');
+      const ink = (el, stroke) => { const s = cs(el), b = el.getBoundingClientRect(); cv.font = `${s.fontWeight} ${s.fontSize} "ABI Archivo"`; cv.fontStretch = parseFloat(s.fontStretch) >= 125 ? 'expanded' : 'normal';
+        const m = cv.measureText(el.textContent), lh = parseFloat(s.lineHeight), base = b.top + (lh - (m.fontBoundingBoxAscent + m.fontBoundingBoxDescent)) / 2 + m.fontBoundingBoxAscent;
+        return { x: b.x - stroke, y: base - m.actualBoundingBoxAscent - stroke, w: b.width + 2 * stroke, h: m.actualBoundingBoxAscent + m.actualBoundingBoxDescent + 2 * stroke }; };
+      const INK = (els, stroke) => { const r = els.map(e => ink(e, stroke)); const x = Math.min(...r.map(b => b.x)), y = Math.min(...r.map(b => b.y)); return { x, y, w: Math.max(...r.map(b => b.x + b.w)) - x, h: Math.max(...r.map(b => b.y + b.h)) - y }; };
       const U = (els, p = 0) => { const r = els.map(e => e.getBoundingClientRect()); const x = Math.min(...r.map(b => b.x)), y = Math.min(...r.map(b => b.y)); return { x: x - p, y: y - p, w: Math.max(...r.map(b => b.right)) - x + 2 * p, h: Math.max(...r.map(b => b.bottom)) - y + 2 * p }; };
       const meet = (a, b) => a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
-      const shown = el => { for (let e = el; e && e.id !== 'root'; e = e.parentElement) { const s = cs(e); if (s.display === 'none' || +s.opacity < 0.001) return false; if (e.classList.contains('clip') && s.visibility !== 'visible') return false; } return cs(el).visibility === 'visible'; };
+      // Sichtbar, wenn der Inhalt des Clips sichtbar ist (die Vorlage schaltet die Sichtbarkeit am Kind, HyperFrames den Clip).
+      const shown = el => { const c = el.firstElementChild; if (!c || cs(c).visibility !== 'visible') return false; for (let e = el; e && e.id !== 'root'; e = e.parentElement) { const s = cs(e); if (s.display === 'none' || +s.opacity < 0.001) return false; } return true; };
       const vis = els => [...els].filter(x => +cs(x).opacity > 0.001);
       // 4: Schriften geladen, keine Ersatzschrift.
       for (const f of ['900 64px "ABI Archivo"', '800 64px "ABI Archivo"', '700 24px "ABI Archivo"', '400 140px "ABI Gochi"']) if (!document.fonts.check(f)) err('schrift_fehlt', { f });
@@ -37,18 +48,18 @@ export async function checkDesign22(project, { step = 1 } = {}) {
       const box = el => {
         const k = el.dataset.kind, q = s => el.querySelector(s);
         switch (k) {
-          case 'h1': return R(q('.h1'), 8);
+          case 'h1': return INK([...el.querySelectorAll('.h1 .ln')], 8);
           case 'h2': return R(q('.h2'));
-          case 'kapitel': return U([...el.querySelectorAll('.kap-num,.kap-title')], 7);
+          case 'kapitel': return UT([...el.querySelectorAll('.kap-num,.kap-title')], 7);
           case 'pillen': { const p = vis(el.querySelectorAll('.pill-pop')).map(x => x.firstElementChild); return p.length ? U(p, 3) : null; }
-          case 'akronym': { const p = [...el.querySelectorAll('.ak-letter'), ...vis(el.querySelectorAll('.ak-pill-pop')).map(x => x.firstElementChild)]; return U(p, 8); }
-          case 'schlagwort': return U([q('.sw-word'), q('.sw-lines')], 11);
-          case 'randnotiz': { const l = vis(el.querySelectorAll('.note-line')); return l.length ? U(l, 8) : null; }
-          case 'balken': return U([...vis(el.querySelectorAll('.bal-label')), q('.bal-bed')], 5);
+          case 'akronym': { const p = [...el.querySelectorAll('.ak-letter'), ...vis(el.querySelectorAll('.ak-pill-pop')).map(x => x.firstElementChild)]; return UT(p, 8); }
+          case 'schlagwort': return UT([q('.sw-word'), q('.sw-lines')], 11);
+          case 'randnotiz': { const l = vis(el.querySelectorAll('.note-line')); return l.length ? UT(l, 8) : null; }
+          case 'balken': return UT([...vis(el.querySelectorAll('.bal-label')), q('.bal-bed')], 5);
           case 'logo': return R(q('.logo'));
           case 'grafik': { const b = R(q('.card')); return { x: b.x, y: b.y, w: b.w + 12, h: b.h + 12 }; }
-          case 'caption': return R(q('.cap-line'), 6);
-          case 'follow': return R(q('.follow'), 5);
+          case 'caption': return T(q('.cap-line'), 6);
+          case 'follow': return INK([q('.follow')], 5);
           case 'outro-card': return R(el);
           case 'bubble': { const p = vis(el.querySelectorAll('.msg-pop,.ind-pop')).map(x => x.firstElementChild); return p.length ? U(p, 0) && (b => ({ x: b.x, y: b.y, w: b.w + 6, h: b.h + 6 }))(U(p)) : null; }
         }
@@ -57,7 +68,8 @@ export async function checkDesign22(project, { step = 1 } = {}) {
       const LAYER = new Set(['h1', 'h2', 'kapitel', 'pillen', 'akronym', 'schlagwort', 'randnotiz', 'balken', 'logo', 'grafik', 'follow', 'outro-card', 'bubble']);
       const CENTER = { h1: '.h1', h2: '.h2', kapitel: '.kap', schlagwort: '.sw-word', caption: '.cap-line', follow: '.follow', logo: '.logo', akronym: '.ak-row' };
       const BLUE = 'rgb(94, 170, 238)', WHITE = 'rgb(255, 255, 255)';
-      const heads = t => { const f = faces.reduce((b, x) => Math.abs(x.time - t) < Math.abs(b.time - t) ? x : b); return Math.abs(f.time - t) > 0.26 ? [] : f.faces.map(q => ({ x: q.x - 0.12 * q.width, y: q.y - 0.5 * q.height, w: 1.24 * q.width, h: 1.5 * q.height })); };
+      const src = profil || faces, kopfBox = q => profil ? { x: q.x - 4, y: q.y - 4, w: q.width + 8, h: q.height + 8 } : { x: q.x - 0.12 * q.width, y: q.y - 0.5 * q.height, w: 1.24 * q.width, h: 1.5 * q.height };
+      const heads = t => { const f = src.reduce((b, x) => Math.abs(x.time - t) < Math.abs(b.time - t) ? x : b); return Math.abs(f.time - t) > 0.26 ? [] : (f.faces || []).map(kopfBox); };
       const green = t => (plan.grafiken || []).some(g => t >= g.start && t < g.end);
       const frames = Math.ceil(plan.duration * 30); let maxLayers = 0, capFrames = 0;
       for (let f = 0; f < frames; f += step) {
@@ -72,7 +84,7 @@ export async function checkDesign22(project, { step = 1 } = {}) {
           if (b.y + b.h > 900.5 && b.x + b.w > 930.5) err('aktionsleiste', { id: el.id, t: +t.toFixed(2), b });
           if (b.y < 900 && !['caption', 'outro-card', 'bubble'].includes(k) && (b.x < 107.5 || b.x + b.w > 972.5)) err('obere_zone', { id: el.id, t: +t.toFixed(2), b });
           if (CENTER[k]) { const c = R(el.querySelector(CENTER[k])); if (Math.abs(c.x + c.w / 2 - 540) > 0.75) err('mittelachse', { id: el.id, mitte: +(c.x + c.w / 2).toFixed(2) }); }
-          if (k === 'pillen' && el.dataset.layout === 'row') { const u = U([...el.querySelectorAll('.pill')]); if (Math.abs(u.x + u.w / 2 - 540) > 0.75) err('mittelachse', { id: el.id }); }
+          if (k === 'pillen' && el.dataset.layout === 'row') { const c = [...el.children], l = Math.min(...c.map(x => x.offsetLeft)), r = Math.max(...c.map(x => x.offsetLeft + x.offsetWidth)); if (Math.abs((l + r) / 2 - 540) > 0.75) err('mittelachse', { id: el.id, mitte: (l + r) / 2 }); }
           if (k === 'caption') {
             capFrames++;
             const line = el.querySelector('.cap-line'), ws = [...line.children].filter(s => s.tagName === 'SPAN' && s.id);
@@ -84,16 +96,17 @@ export async function checkDesign22(project, { step = 1 } = {}) {
         }
         const layers = act.filter(a => LAYER.has(a.k)); maxLayers = Math.max(maxLayers, layers.length);
         // 1: höchstens zwei Textebenen zusätzlich zum Untertitel.
-        if (layers.length > 2) err('drei_textebenen', { t: +t.toFixed(2), ids: layers.map(a => a.id) });
+        const ausnahme = (plan.h2 || []).find(h => h.ausnahme && t >= h.start && t < h.end);
+        if (layers.length > 2) (ausnahme ? warn : err)(ausnahme ? 'ausnahme_drei_textebenen' : 'drei_textebenen', { t: +t.toFixed(2), ids: layers.map(a => a.id), ...(ausnahme ? { grund: ausnahme.ausnahme } : {}) });
         for (let i = 0; i < act.length; i++) for (let j = i + 1; j < act.length; j++) if (meet(act[i].b, act[j].b)) err('ueberlappung', { a: act[i].id, b: act[j].id, t: +t.toFixed(2) });
         // 8: H2 und Pillen nie gleichzeitig unter einem Kapitel.
-        if (act.some(a => a.k === 'h2' && !a.id.startsWith('einstieg')) && act.some(a => a.k === 'pillen') && act.some(a => a.k === 'kapitel')) err('h2_und_pillen', { t: +t.toFixed(2) });
+        if (act.some(a => a.k === 'h2' && !a.id.startsWith('einstieg')) && act.some(a => a.k === 'pillen') && act.some(a => a.k === 'kapitel')) (ausnahme ? warn : err)(ausnahme ? 'ausnahme_h2_und_pillen' : 'h2_und_pillen', { t: +t.toFixed(2) });
         // 9/12: Pillen und Randnotiz nie über Kopf/Kappe; andere obere Elemente als Hinweis.
         if (!green(t)) for (const h of heads(t)) for (const a of act) if (meet(a.b, h)) { if (['pillen', 'randnotiz'].includes(a.k)) err('kopf_verdeckt', { id: a.id, t: +t.toFixed(2) }); else if (!['caption', 'follow', 'outro-card', 'h1'].includes(a.k)) warn('kopf_beruehrt', { id: a.id, t: +t.toFixed(2), kopfOben: Math.round(h.y), unten: Math.round(a.b.y + a.b.h) }); }
       }
       // 5: Einstieg am ersten Frame vollständig, ohne Animation.
       tl.seek(0, false);
-      for (const el of document.querySelectorAll('[data-einstieg]')) { const s = cs(el), m = new DOMMatrix(s.transform); if (s.visibility !== 'visible' || +s.opacity < 0.999 || Math.abs(m.f) > 0.01 || Math.abs(m.a - 1) > 1e-4) err('einstieg_frame0', { id: el.id }); }
+      for (const el of document.querySelectorAll('[data-einstieg]')) { const s = cs(el), m = new DOMMatrix(s.transform); if (cs(el.firstElementChild).visibility !== 'visible' || +s.opacity < 0.999 || Math.abs(m.f) > 0.01 || Math.abs(m.a - 1) > 1e-4) err('einstieg_frame0', { id: el.id }); }
       const eh1 = R(document.querySelector('#einstieg-h1 .h1')); if (Math.abs(eh1.y - 250) > 1) warn('einstieg_oberkante', { y: eh1.y });
       const eh2 = document.querySelector('#einstieg-h2 .h2'); if (eh2) { const d = document.querySelector('#einstieg-h2').getBoundingClientRect().top - document.querySelector('#einstieg-h1').getBoundingClientRect().bottom; if (Math.abs(d - 24) > 1) err('einstieg_h2_abstand', { d }); }
       // 6/8/9/10: Größen und Breiten.
@@ -103,7 +116,7 @@ export async function checkDesign22(project, { step = 1 } = {}) {
       for (const el of document.querySelectorAll('[data-kind=pillen][data-layout=row]')) { const w = [...el.children].reduce((s, c) => s + c.firstElementChild.offsetWidth + 6, 0) + 16 * (el.children.length - 1); if (w > 864.5) err('pillen_reihe_breite', { id: el.id, w }); }
       for (const el of document.querySelectorAll('.sw-word')) { const fs = parseFloat(cs(el).fontSize); if (fs < 120 || fs > 160) err('schlagwort_groesse', { fs }); if (el.offsetWidth + 18 > 864.5) err('schlagwort_breite', { w: el.offsetWidth + 18 }); }
       // 8: H2 während eines Kapitels 24 px unter der Unterkante der Kapitelgruppe (Zahl eingeschlossen).
-      for (const h of plan.h2 || []) { const k = (plan.kapitel || []).find(k => k.start < h.end && k.end > h.start); if (!k) continue; tl.seek(Math.min(h.end - 0.2, h.start + 0.5), false); const kb = U([...document.querySelectorAll('#' + k.id + ' .kap-num,#' + k.id + ' .kap-title')]); const top = document.getElementById(h.id).getBoundingClientRect().top; if (Math.abs(top - (kb.y + kb.h + 24)) > 3) warn('h2_unter_kapitel', { id: h.id, soll: Math.round(kb.y + kb.h + 24), ist: Math.round(top) }); }
+      for (const h of plan.h2 || []) { const k = (plan.kapitel || []).find(k => k.start < h.end && k.end > h.start); if (!k || h.ausnahme) continue; tl.seek(Math.min(h.end - 0.2, h.start + 0.5), false); const kb = R(document.querySelector('#' + k.id + ' .kap')); const top = document.getElementById(h.id).getBoundingClientRect().top; if (Math.abs(top - (kb.y + kb.h + 24)) > 3) warn('h2_unter_kapitel', { id: h.id, soll: Math.round(kb.y + kb.h + 24), ist: Math.round(top) }); }
       // 3/18: Farben. Pink nur Schlagwort und Durchstreichen, Emojis und offizielle Logos ausgenommen.
       const ok = new Set(['rgb(17, 17, 17)', WHITE, 'rgb(246, 241, 233)', BLUE, 'rgb(255, 138, 194)', 'rgb(248, 249, 251)', 'rgb(22, 24, 28)', 'rgb(122, 126, 134)', 'rgb(222, 225, 231)', 'rgba(0, 0, 0, 0)', 'none', 'rgb(0, 0, 0)']);
       for (const el of document.querySelectorAll('#root *')) {
@@ -130,8 +143,8 @@ export async function checkDesign22(project, { step = 1 } = {}) {
       for (const g of plan.grafiken || []) { tl.seek(g.start + 0.5, false); const b = R(document.querySelector('#' + g.id + ' .card')); if (Math.abs(b.x - 150) > 0.5 || Math.abs(b.y - 270) > 0.5 || Math.abs(b.w - 780) > 0.5) err('grafik_karte', { b }); if (!document.getElementById(g.id + '-person')) err('grafik_person_fehlt', { id: g.id }); }
       // 10: höchstens zwei Schlagworte, Standzeit 0,8–1,3 s.
       if ((plan.schlagworte || []).length > 2) err('schlagworte_anzahl');
-      return { designVersion: plan.designVersion, framesChecked: Math.ceil(frames / step), step, maxLayers, capFrames, errors, warnings };
-    }, { plan, faces, step });
+      return { designVersion: plan.designVersion, kopfQuelle: profil ? 'Personenmaske' : 'Schätzung', framesChecked: Math.ceil(frames / step), step, maxLayers, capFrames, errors, warnings };
+    }, { plan, faces, profil, step });
   } finally { await browser.close(); }
   report.blocking = report.errors.length; report.checkedAt = new Date().toISOString();
   report.themePlan = fs.statSync(path.join(project, 'theme-plan.json')).mtime.toISOString(); report.indexHtml = fs.statSync(path.join(project, 'index.html')).mtime.toISOString();

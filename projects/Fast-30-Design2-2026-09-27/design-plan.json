@@ -84,7 +84,7 @@
    "nummer": null,
    "titel": "Genieß deine 20er",
    "start": 171.88,
-   "end": 182.39
+   "end": 193.49
   }
  ],
  "h1": [],
@@ -97,6 +97,17 @@
    "start": 19.7,
    "end": 21.71,
    "unter": "kapitel:k1"
+  },
+  {
+   "id": "h2-muelheim",
+   "lines": [
+    "Stell dir vor, du",
+    "wohnst in Mülheim."
+   ],
+   "start": 53.1,
+   "end": 55.9,
+   "unter": "kapitel:k3",
+   "ausnahme": "Abdullah 27.09.2026: Insider-Joke bei „Popelstadt“, ausdrücklich gewünscht, obwohl in Kapitel 3 Pillen stehen (DESIGN.md 8: H2 und Pillen sonst nie gleichzeitig; drei Textebenen für 2,8 s)"
   }
  ],
  "pillen": [
@@ -119,7 +130,8 @@
      "at": 62.75
     }
    ],
-   "end": 72.58
+   "end": 72.58,
+   "punkt": true
   },
   {
    "id": "p5-ziele",
@@ -140,7 +152,8 @@
      "at": 102.09
     }
    ],
-   "end": 109.4
+   "end": 109.4,
+   "punkt": true
   },
   {
    "id": "p6-retter",
@@ -161,7 +174,8 @@
      "at": 117.47
     }
    ],
-   "end": 129.12
+   "end": 129.12,
+   "punkt": true
   },
   {
    "id": "p8-schriftlich",
@@ -182,7 +196,8 @@
      "at": 152.74
     }
    ],
-   "end": 163.09
+   "end": 163.09,
+   "punkt": true
   },
   {
    "id": "p10-glaube",
@@ -203,7 +218,8 @@
      "at": 168.53
     }
    ],
-   "end": 171.42
+   "end": 171.42,
+   "punkt": true
   }
  ],
  "akronyme": [],
@@ -1266,27 +1282,7 @@
    ]
   }
  ],
- "lebensbalken": [
-  {
-   "id": "lb-20-30",
-   "start": 183.72,
-   "end": 193.49,
-   "abschnitte": [
-    {
-     "von": 0,
-     "bis": 0.5,
-     "beschriftung": "mit 20",
-     "at": 183.72
-    },
-    {
-     "von": 0.5,
-     "bis": 1,
-     "beschriftung": "mit 30",
-     "at": 184.93
-    }
-   ]
-  }
- ],
+ "lebensbalken": [],
  "logos": [],
  "sprechblasen": [],
  "outroStart": 195.68,
@@ -1330,5 +1326,17 @@
   "Lebensbalken: Eine Eingangsanimation des Betts ist nicht geregelt. Annahme: Das Bett erscheint mit dem ersten Abschnitt bei 183,72 wie eine Randnotiz-Zeile (14 px von unten, 0,22 s), Ausblenden 0,18 s Linear. Beschriftungen in Archivo 800 nach Abschnitt 13, Abschnitt 4 nennt den Lebensbalken nicht für Gochi Hand.",
   "Der Bezugspunkt der Outro-Standzeit ist unklar: bis Videoende 202,367 oder bis zum Beginn des Buchzuklappens 200,867. Geplant ist bis Videoende.",
   "Der Followerstand fürs Outro muss vor dem Bau per Zernio abgerufen und in follower-source.json belegt werden. Das gehört nicht zu dieser Planung, es wurde kein Dienst aufgerufen."
+ ],
+ "abnahmen": [
+  {
+   "datum": "2026-09-27",
+   "von": "Abdullah",
+   "storyboard": "freigegeben",
+   "aenderungen": [
+    "Punkte vor allen Pillen, auch nebeneinander (Plan-Option punkt)",
+    "Lebensbalken bei 3:06 entfernt; „Genieß deine 20er“ bleibt bis 193,49 s",
+    "H2 „Stell dir vor, du wohnst in Mülheim.“ bei „Popelstadt“ (53,10–55,90 s), Ausnahme"
+   ]
+  }
  ]
 }

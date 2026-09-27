@@ -38,7 +38,7 @@ Diese Datei enthält **keine eigenen Gestaltungswerte** und keine Regeln, die do
 
 ### Sichern
 
-Nach jedem fertigen Video und nach jeder Werkzeugänderung: `git add`, `git commit`, `git push`. Was versioniert wird, regelt `.gitignore` (Skripte, Vorlagen, Plan- und Wortdaten; keine Medien, Modelle, Binaries, Caches).
+Nach jedem fertigen Video und nach jeder Werkzeugänderung: `git add <eigene Pfade>`, `git commit`, `git push`. Nie `git add -A`: Mehrere Sitzungen schreiben im selben Repo, sonst landet fremde, laufende Arbeit im eigenen Commit (passiert am 27.09.2026). Was versioniert wird, regelt `.gitignore` (Skripte, Vorlagen, Plan- und Wortdaten; keine Medien, Modelle, Binaries, Caches).
 
 ## Vorlagen und Designversion
 

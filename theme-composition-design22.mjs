@@ -108,6 +108,7 @@ export function layoutDesign22(input, ctx) {
     const w = (k.nummer ? G(k.nummer, 140) + 14 + 28 : 0) + A(k.titel, 64, 900, 100, 6) + 12;
     if (w > 864) errors.push(`Kapitel ${k.id} breiter als 864 px (${Math.round(w)}): ${k.nummer || ''} ${k.titel}`);
     const pills = (input.pillen || []).some(p => p.kapitel === k.id);
+    // Unterkante der Kapitelgruppe = Layoutbox der Gruppe (Zahl mit Zeilenhöhe 1); die Drehung −4° ist nur Darstellung.
     return { id: k.id, nummer: k.nummer || null, titel: k.titel, start: k.start, end: k.end, top: pills ? 270 : 300, height: k.nummer ? KAP_H : Math.round(64 * 1.1) };
   });
   for (let i = 1; i < kapitel.length; i++) if (kapitel[i].start < kapitel[i - 1].end - 1e-6) errors.push(`Kapitel überlappen: ${kapitel[i - 1].id} / ${kapitel[i].id}`);
@@ -123,7 +124,10 @@ export function layoutDesign22(input, ctx) {
     const top = k.top + k.height + 34, end = p.end ?? k.end, start = p.items[0].at, num = p.nummeriert !== false;
     // Sichtbare Breite: Ring 3 + Rand 5 + Innenabstand 12 links / 32 rechts (DESIGN.md 9) + Text; die Textkontur liegt im Innenabstand.
     const sw = it => 3 + 5 + 12 + (num ? 56 : 26) + 14 + A(it.text, 54, 800) + 32 + 5 + 3; // Abstand Punkt–Text 14 px: Referenz
-    const rw = it => 3 + 5 + 12 + A(it.text, 42, 800) + 32 + 5 + 3;
+    // Nebeneinander (Nahaufnahme) laut DESIGN.md 9 ohne Punkt. Plan-Option punkt: true (Abdullahs Wunsch 27.09.2026) setzt ihn
+    // proportional zur 42-px-Schrift (Faktor 42/54): Kreis 44 px mit Nummer 37 px bzw. 20 px ohne Nummer, Abstand 11 px.
+    const rowDot = p.punkt ? (num ? 44 : 20) + 11 : 0;
+    const rw = it => 3 + 5 + 12 + rowDot + A(it.text, 42, 800) + 32 + 5 + 3;
     const sb = p.items.map((it, i) => { const w = sw(it); return { x: 540 + OFFS[i][0] - w / 2, y: top + i * (PILL + 20) - 3, w, h: PILL + 6 }; });
     const total = p.items.reduce((s, it) => s + rw(it), 0) + 16 * (p.items.length - 1), rb = { x: 540 - total / 2, y: top - 3, w: total, h: ROW + 6 };
     const stackHits = sb.flatMap((b, i) => hits(b, p.items[i].at, end));
@@ -132,7 +136,8 @@ export function layoutDesign22(input, ctx) {
     if (layout === 'stack') { if (stackHits.length) errors.push(`Pillen ${p.id} untereinander verdecken Kopf/Kappe (${stackHits.length} Stichproben)`); sb.forEach((b, i) => { if (b.x < 108 || b.x + b.w > 972) errors.push(`Pille ${p.id}-${i} außerhalb x 108–972`); }); }
     else { if (total > 864) errors.push(`Pillen ${p.id} nebeneinander ${Math.round(total)} px > 864`); const rh = hits(rb, start, end); if (rh.length) errors.push(`Pillen ${p.id} nebeneinander verdecken Kopf/Kappe (Kopf ab y ${Math.round(Math.min(...rh.map(h => h.y)))})`); }
     if (!wish && layout === 'row') notes.push(`Pillen ${p.id}: nebeneinander (Nahaufnahme, DESIGN.md 9)`);
-    return { id: p.id, kapitel: k.id, numbered: num, layout, top: Math.round(top), start, end, items: p.items.map((it, i) => ({ text: it.text, at: it.at, dx: OFFS[i][0], rot: OFFS[i][1] })) };
+    const bottom = layout === 'stack' ? top + p.items.length * PILL + (p.items.length - 1) * 20 : top + ROW;
+    return { id: p.id, kapitel: k.id, numbered: num, rowDot: !!p.punkt, layout, top: Math.round(top), bottom: Math.round(bottom), start, end, items: p.items.map((it, i) => ({ text: it.text, at: it.at, dx: OFFS[i][0], rot: OFFS[i][1] })) };
   }).filter(Boolean);
 
   // 6 und 8: H2. Unter Einstieg/H1 24 px unter der H1, allein y = 250, während eines Kapitels 24 px unter der Kapitelgruppe.
@@ -144,12 +149,13 @@ export function layoutDesign22(input, ctx) {
     if (u.startsWith('kapitel:')) {
       const k = kapById(u.slice(8)); top = k.top + k.height + 24;
       const p = pillen.find(p => p.kapitel === k.id && p.end > h.start && p.start < h.end);
-      if (p) { if (p.start <= h.start) errors.push(`H2 ${h.id} während Pillen ${p.id}`); else { end = r2(Math.min(end, p.start - 0.02)); notes.push(`H2 ${h.id} endet vor Pillen ${p.id} (${end} s)`); } }
+      if (p && h.ausnahme) { top = p.bottom + 24; notes.push(`H2 ${h.id} steht als abgenommene Ausnahme unter den Pillen ${p.id}: ${h.ausnahme}`); }
+      else if (p) { if (p.start <= h.start) errors.push(`H2 ${h.id} während Pillen ${p.id}`); else { end = r2(Math.min(end, p.start - 0.02)); notes.push(`H2 ${h.id} endet vor Pillen ${p.id} (${end} s)`); } }
     } else if (u.startsWith('h1:')) top = 250 + h1H(h1.find(x => x.id === u.slice(3))) + 24;
     else if (kapitel.some(k => k.start < h.end && k.end > h.start)) errors.push(`H2 ${h.id} „allein" bei y 250, während ein Kapitel läuft`);
     const w = Math.max(...h.lines.map(l => A(l, 58, 800))) + 56, hb = hits({ x: 540 - w / 2, y: top, w, h: h2H(h.lines) }, h.start, end);
     if (hb.length) ctx.warnings.push(`H2 ${h.id} berührt Kopf/Kappe (${hb.length} Stichproben)`);
-    return { id: h.id, lines: h.lines, start: h.start, end, top: Math.round(top) };
+    return { id: h.id, lines: h.lines, start: h.start, end, top: Math.round(top), ...(h.ausnahme ? { ausnahme: h.ausnahme } : {}) };
   });
 
   // 9: Akronym. Gochi Hand 230 px, Abstand 64, Drehungen −4/+3/−2, Oberkante 240; Pille 18 px darunter, 46 px, −2°.
@@ -265,12 +271,12 @@ export function makeDesign22Composition(plan, opts = {}) {
     `<div ${clip(g.id, g.start, g.end, 11, 'grafik')} style="left:150px;top:270px;width:780px;height:${g.height}px"><div class="card"><div class="card-title">${escEmoji(g.title)}</div>${g.svg}</div></div>`,
     `<video id="${g.id}-person" class="clip" src="${g.person}" data-start="${g.start}" data-duration="${+(g.end - g.start).toFixed(4)}" data-track-index="12" data-volume="0" muted playsinline style="position:absolute;inset:0;width:1080px;height:1920px"></video>`);
   const top = [];
-  top.push(`<div ${clip('einstieg-h1', 0, e.end, 2, 'h1', ' data-einstieg="1"')} style="top:250px;font-size:${e.h1.fontSize}px;visibility:visible;opacity:1"><span class="h1">${lines(e.h1.lines)}</span></div>`);
-  if (e.h2) top.push(`<div ${clip('einstieg-h2', 0, e.end + 0.06, 3, 'h2', ' data-einstieg="1"')} style="top:${e.h2.top}px;visibility:visible;opacity:1"><span class="h2">${lines(e.h2.lines)}</span></div>`);
+  top.push(`<div ${clip('einstieg-h1', 0, e.end, 2, 'h1', ' data-einstieg="1"')} style="top:250px;font-size:${e.h1.fontSize}px;opacity:1"><span class="h1" style="visibility:visible">${lines(e.h1.lines)}</span></div>`);
+  if (e.h2) top.push(`<div ${clip('einstieg-h2', 0, e.end + 0.06, 3, 'h2', ' data-einstieg="1"')} style="top:${e.h2.top}px;opacity:1"><span class="h2" style="visibility:visible">${lines(e.h2.lines)}</span></div>`);
   for (const k of kapitel) top.push(`<div ${clip(k.id, k.start, k.end, 4, 'kapitel')} style="top:${k.top}px"><span class="kap">${k.nummer ? `<span class="kap-numw" id="${k.id}-num"><span class="kap-num">${esc(k.nummer)}</span></span>` : ''}<span class="kap-title" id="${k.id}-title">${escEmoji(k.titel)}</span></span></div>`);
   for (const h of h1) top.push(`<div ${clip(h.id, h.start, h.end, 2, 'h1')} style="top:250px;font-size:${h.fontSize}px"><span class="h1">${lines(h.lines)}</span></div>`);
   for (const h of h2) top.push(`<div ${clip(h.id, h.start, h.end, 3, 'h2')} style="top:${h.top}px"><span class="h2">${lines(h.lines)}</span></div>`);
-  for (const p of pillen) top.push(`<div ${clip(p.id, p.start, p.end, 5, 'pillen', ` data-layout="${p.layout}"`)} style="top:${p.top}px">${p.items.map((it, i) => `<span class="pill-pop" id="${p.id}-${i}"><span class="pill${p.layout === 'row' ? ' pill-row' : ''}" style="${p.layout === 'stack' ? `transform:translateX(${it.dx}px) rotate(${it.rot}deg)` : ''}">${p.layout === 'row' ? '' : p.numbered ? `<span class="pill-dot"><span class="pill-no">${i + 1}</span></span>` : '<span class="pill-dot pill-dot-s"></span>'}<span class="pill-text">${escEmoji(it.text)}</span></span></span>`).join('')}</div>`);
+  for (const p of pillen) top.push(`<div ${clip(p.id, p.start, p.end, 5, 'pillen', ` data-layout="${p.layout}"`)} style="top:${p.top}px">${p.items.map((it, i) => `<span class="pill-pop" id="${p.id}-${i}"><span class="pill${p.layout === 'row' ? ' pill-row' : ''}" style="${p.layout === 'stack' ? `transform:translateX(${it.dx}px) rotate(${it.rot}deg)` : ''}">${p.layout === 'row' && !p.rowDot ? '' : p.numbered ? `<span class="pill-dot"><span class="pill-no">${i + 1}</span></span>` : '<span class="pill-dot pill-dot-s"></span>'}<span class="pill-text">${escEmoji(it.text)}</span></span></span>`).join('')}</div>`);
   for (const a of akronyme) top.push(`<div ${clip(a.id, a.start, a.end, 6, 'akronym')} style="top:240px"><div class="ak-row">${a.letters.map((l, i) => `<span class="ak-pop" id="${a.id}-p${i}"><span class="ak-letter" id="${a.id}-l${i}" style="transform:rotate(${l.rot}deg)">${esc(l.b)}</span></span>`).join('')}</div><div class="ak-pills" style="top:${a.pillTop - 240}px">${a.letters.map((l, i) => `<span class="ak-pill-pop" id="${a.id}-q${i}"><span class="pill ak-pill"><span class="pill-text">${escEmoji(l.text)}</span></span></span>`).join('')}</div></div>`);
   for (const n of randnotizen) top.push(`<div ${clip(n.id, n.start, n.end, 7, 'randnotiz')} style="left:${n.left}px;top:${n.top}px">${n.lines.map((l, j) => `<div class="note-line" id="${n.id}-l${j}" style="margin-top:${l.gapBefore}px">${l.html}${l.strikeAt != null ? `<svg class="note-strike" id="${n.id}-s${j}" height="20" style="left:-8px;top:calc(54% - 10px);width:calc(100% + 16px)" overflow="visible" preserveAspectRatio="none"><path pathLength="1" fill="none" stroke="${C.ink}" stroke-width="11" stroke-linecap="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/><path pathLength="1" fill="none" stroke="${C.pink}" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></svg>` : ''}</div>`).join('')}</div>`);
   for (const b of lebensbalken) top.push(`<div ${clip(b.id, b.start, b.end, 9, 'balken')} style="left:190px;top:${370 - 58}px;width:700px;height:${58 + 26}px">${b.segments.map((s, i) => `<span class="bal-label" id="${b.id}-l${i}" style="left:${s.labelLeft}px">${escEmoji(s.label)}</span>`).join('')}<div class="bal-bed">${b.segments.map((s, i) => `<div class="bal-fill" id="${b.id}-f${i}" style="left:${s.from * 700}px;width:${(s.to - s.from) * 700}px"></div>`).join('')}</div></div>`);
@@ -289,7 +295,10 @@ export function makeDesign22Composition(plan, opts = {}) {
 *{box-sizing:border-box}html,body{margin:0;background:${C.ink}}
 #root{position:relative;width:1080px;height:1920px;overflow:hidden;color:${C.white};font-family:"ABI Archivo";font-synthesis:none}
 #footage{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover;transform-origin:42% 28%}
-.clip[data-kind]{position:absolute;visibility:hidden}
+.clip[data-kind]{position:absolute}
+.clip[data-kind]>*{visibility:hidden}
+[data-kind=h1],[data-kind=h2],[data-kind=kapitel],[data-kind=schlagwort],[data-kind=caption],[data-kind=follow],[data-kind=logo],[data-kind=akronym]{line-height:0}
+[data-kind]>span,[data-kind]>img{vertical-align:top}
 #top{position:absolute;inset:0;clip-path:polygon(90px 250px,1024px 250px,1024px 900px,930px 900px,930px 1660px,90px 1660px)}
 #root .emoji{font-family:"Apple Color Emoji"!important;-webkit-text-stroke:0;paint-order:normal;font-size:1em;line-height:1;font-weight:400;font-stretch:100%;color:initial}
 [data-kind=h1],[data-kind=h2],[data-kind=kapitel],[data-kind=pillen],[data-kind=akronym],[data-kind=schlagwort],[data-kind=caption],[data-kind=follow],[data-kind=logo]{left:0;width:1080px;text-align:center}
@@ -303,7 +312,8 @@ export function makeDesign22Composition(plan, opts = {}) {
 .pill{display:inline-flex;align-items:center;gap:14px;padding:8px 32px 10px 12px;border:5px solid ${C.white};border-radius:999px;box-shadow:0 0 0 3px ${C.ink},inset 0 0 0 3px ${C.ink};white-space:nowrap}
 .pill-dot{width:56px;height:56px;flex:0 0 56px;border-radius:50%;background:${C.blue};border:3px solid ${C.ink};display:inline-flex;align-items:center;justify-content:center}.pill-dot-s{width:26px;height:26px;flex-basis:26px}
 .pill-no{font-family:"ABI Gochi";font-size:48px;line-height:1;color:${C.ink}}
-.pill-text{font-weight:800;font-size:54px;line-height:1.1;${stroke(5)}}.pill-row .pill-text{font-size:42px}.ak-pill .pill-text{font-size:46px}
+.pill-text{font-weight:800;font-size:54px;line-height:1.1;${stroke(5)}}.pill-row .pill-text{font-size:42px}
+.pill-row{gap:11px}.pill-row .pill-dot{width:44px;height:44px;flex-basis:44px}.pill-row .pill-dot-s{width:20px;height:20px;flex-basis:20px}.pill-row .pill-no{font-size:37px}.ak-pill .pill-text{font-size:46px}
 .ak-row{display:flex;justify-content:center;align-items:flex-end;gap:64px}.ak-letter{display:inline-block;font-family:"ABI Gochi";font-size:230px;line-height:.95;${stroke(8)}}
 .ak-pills{position:absolute;left:0;width:1080px;display:grid;justify-items:center}.ak-pill-pop{grid-area:1/1;display:inline-block;opacity:0}.ak-pill{transform:rotate(-2deg)}
 .sw-pop{display:inline-block}.sw{display:inline-flex;flex-direction:column;align-items:center;transform:rotate(-3deg)}
@@ -352,7 +362,8 @@ function timeline22(plan) {
 function bezier(x1,y1,x2,y2){const f=(s,a,b)=>3*(1-s)*(1-s)*s*a+3*(1-s)*s*s*b+s*s*s;return x=>{if(x<=0)return 0;if(x>=1)return 1;let lo=0,hi=1;for(let i=0;i<30;i++){const m=(lo+hi)/2;if(f(m,x1,x2)<x)lo=m;else hi=m;}return f((lo+hi)/2,y1,y2);};}
 const OUT=bezier(${EASE.out}),BACK=bezier(${EASE.back}),LIN='none',D=${JSON.stringify(D)};
 const tl=gsap.timeline({paused:true});tl.to({},{duration:${plan.duration}});
-const show=(s,a,b)=>{tl.set(s,{visibility:'visible'},a);tl.set(s,{visibility:'hidden'},b);};
+// Sichtbarkeit am Inhalt des Clips; den Clip selbst verwaltet HyperFrames.
+const show=(s,a,b)=>{const c=s+' > *';tl.set(c,{visibility:'visible'},a);tl.set(c,{visibility:'hidden'},b);};
 const out=(s,end)=>tl.to(s,{opacity:0,y:-8,duration:.18,ease:LIN},end-.18);           // 15: Ausblenden 0,18 s, Linear, 8 px nach oben
 const up=(s,at,dy=14)=>{tl.set(s,{opacity:0,y:dy},0);tl.fromTo(s,{opacity:0,y:dy},{opacity:1,y:0,duration:.22,ease:OUT,immediateRender:false},at);};
 const pop=(s,at,from,dur)=>{tl.set(s,{opacity:0,scale:from},0);tl.set(s,{opacity:1},at);tl.fromTo(s,{scale:from},{scale:1,duration:dur,ease:BACK,immediateRender:false},at);};
@@ -383,7 +394,7 @@ for(const x of D.logoH1){tl.to(x.sel,{opacity:0,duration:.1,ease:LIN},x.out);tl.
 // 10: Schlagwort. Stoßzoom hart auf 112 % (Ursprung 42/28), Wort Pop 55 → 100 % 0,30 s; Striche ab 0,25 s, je 0,25 s, der zweite 0,15 s später (Referenz).
 for(const s of D.s){show('#'+s.id,s.start,s.end);pop('#'+s.id+' .sw-pop',s.start,.55,.3);draw(['#'+s.id+'-u0i','#'+s.id+'-u0p'],s.start+.25,.25);draw(['#'+s.id+'-u1i','#'+s.id+'-u1p'],s.start+.4,.25);tl.set('#footage',{scale:1.12},s.start);tl.set('#footage',{scale:1},s.end);out('#'+s.id,s.end);}
 // Ausblenden anderer oberer Ebenen während Schlagwort und Grafik (über die Sichtbarkeit, Deckkraft-Animationen bleiben unberührt).
-for(const h of D.hide){tl.set(h.sel,{visibility:'hidden'},h.from);if(h.to!=null)tl.set(h.sel,{visibility:'visible'},h.to);}
+for(const h of D.hide){tl.set(h.sel+' > *',{visibility:'hidden'},h.from);if(h.to!=null)tl.set(h.sel+' > *',{visibility:'visible'},h.to);}
 // 15: Grafik. Karte Pop 90 → 100 % 0,35 s; Hauptlinie 1,0 s; Vergleichslinie blendet 0,30 s ein; Kreis danach 0,30 s.
 for(const g of D.g){show('#'+g.id+'-bg',g.start,g.end);show('#'+g.id,g.start,g.end);pop('#'+g.id,g.start,.9,.35);draw('#'+g.id+' .main-line',g.drawAt,1);tl.set('#'+g.id+' .cmp-line',{opacity:0},0);tl.to('#'+g.id+' .cmp-line',{opacity:1,duration:.3,ease:OUT},g.cmpAt);draw('#'+g.id+' .hl-circle',g.circleAt,.3);for(const x of g.labels){tl.set('#'+x.id,{opacity:0},0);tl.to('#'+x.id,{opacity:1,duration:.22,ease:OUT},x.at);}}
 // 7: Untertitel hart; genau ein Wort blau; das letzte bleibt blau, bis die nächste Gruppe beginnt.

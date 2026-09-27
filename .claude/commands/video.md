@@ -4,21 +4,12 @@ description: Kompletter Videodurchlauf von der Rohaufnahme bis zur Zernio-Einpla
 
 # Videodurchlauf
 
-Führe die Schritte in dieser Reihenfolge aus. Lies zuerst `CONTENT_WORKFLOW.md` im Drive-Ordner vollständig, sie ist die maßgebliche Anleitung. Diese Datei regelt nur den Ablauf und die Übergabepunkte.
+Führe die Schritte in dieser Reihenfolge aus. Für einen normalen Durchlauf reicht `ABLAUF_KURZ.md` im Repo (Befehle je Schritt). `CONTENT_WORKFLOW.md` und `DESIGN.md` im Drive-Ordner sind maßgeblich; lies sie nur bei Unklarheit nach. Diese Datei regelt nur den Ablauf und die Übergabepunkte.
+
+Der Notion-Nachlauf älterer Videos (veröffentlicht? → POSTED) gehört nicht mehr hierher, er ist eine eigene regelmäßige Aufgabe.
 
 Kurzform der Ordner: `DRIVE` steht für
 `/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation`
-
-## Schritt 0: Nachlauf der offenen Videos
-
-Bevor du ein neues Video anfasst, räume die alten auf.
-
-1. Lies `CONTENT_WORKFLOW.md` ENTSCHEIDUNGEN.md und die Notion-Datenbank „Master Contentplanung".
-2. Für jedes Video mit Status Ready to Post, dessen geplantes Postingdatum durch ist: prüfe, ob es tatsächlich veröffentlicht wurde.
-3. Ist es veröffentlicht: Notion auf POSTED mit dem tatsächlichen Datum, Datei nach `DRIVE/04_Gepostet/JJJJ-MM-TT - Titel.mp4` mit dem tatsächlichen Datum im Namen.
-4. Ist es nicht veröffentlicht oder unklar: nichts ändern, Abi fragen.
-
-Melde das Ergebnis in zwei bis drei Zeilen, dann weiter.
 
 ## Schritt 1: Auftrag aus dem Dateinamen lesen
 
@@ -44,35 +35,21 @@ Bearbeite nur das Video, das Abi meint. Verarbeite nie ungefragt alle wartenden 
 
 Stimmt etwas nicht, melde es und höre auf. Arbeite nicht auf einer Datei, die du nicht vollständig lesen konntest.
 
-## Schritt 3: Produktion
+## Schritt 3: Produktion (DESIGN.md 2.2)
 
-Standard ist ein reiner Gestaltungsauftrag. Die Aufnahme bleibt in Länge, Tempo und Inhalt unverändert. Führe einen Pausen- oder Füllwortschnitt nur aus, wenn Abi ihn für dieses Video ausdrücklich beauftragt hat.
+Standard ist ein reiner Gestaltungsauftrag. Die Aufnahme bleibt in Länge, Tempo und Inhalt unverändert. Einen Pausen- oder Füllwortschnitt nur, wenn Abi ihn für dieses Video ausdrücklich beauftragt hat.
 
-Nach `CONTENT_WORKFLOW.md` Abschnitt 9 B bis D:
+Nach `ABLAUF_KURZ.md` Schritt 2 bis 5:
 
-1. Neues Gestaltungsprojekt unter `projects/` anlegen, Referenzprojekte unverändert lassen.
-2. Transkribieren, Wortzeiten bestimmen, unsichere Stellen gegenprüfen. Den Whisper-Wortschatz in `word-captions.mjs` an dieses Video anpassen, nicht die alten Fachbegriffe übernehmen.
-3. Themen, H1 und H2 aus dem tatsächlich gesprochenen Inhalt ableiten. Keine Zeiten oder Themen aus anderen Videos kopieren.
-4. Einstiegs-H1 und zugehörige H2 mit `start: 0`, volle Deckkraft, keine Einblendanimation.
-5. Passende Logo-Einblendungen und einzelne Textblasen an inhaltlich passenden Stellen, nach Abschnitt 6 und 6b.
-6. Gemeinsames Social-Outro über `buildSocialOutro(start, end)`, alle vier Profile gleichzeitig.
-7. Dezente Zooms.
-8. Grobe Ausdrücke in den finalen Untertiteln nach Abschnitt 7 abmildern und die Abweichungen gegen das wortgetreue Originaltranskript dokumentieren.
-9. `render-html`, danach Upload-Export nach Abschnitt 10.
+1. Gestaltungsprojekt mit `designVersion: "2.2"`, Wörter mit `transcribe-words`, Korrekturen und Abmilderungen in `caption-edit-plan.json`, Followerstand in `follower-source.json`.
+2. **Plan statt Code:** nur `design-plan.json` (Texte, Zeiten, Elementtyp, Variante). Kein videospezifischer Code; fehlt ein Baustein, kommt er in `theme-composition-design22.mjs`.
+3. Bei Grafiken: `node workflow.mjs green-screen "<P>" --review`.
+4. `node workflow.mjs storyboard "<P>"` → Kontaktblatt und Textliste an Abi. **Erst nach seinem OK weiter.**
+5. `node workflow.mjs build "<P>"` → ein Master, Upload-Export, Prüfungen, Kontaktblatt (≤ 12 Bilder), `review/build-bericht.json`.
 
 ## Schritt 4: Prüfung, harter Abbruchpunkt
 
-Prüfe die tatsächliche Exportdatei, nicht den Plan:
-
-- erster codierter Frame bei 0:00, Einstiegsüberschrift vollständig sichtbar und lesbar
-- Danger Zone und Zentrierung über alle Animationsphasen
-- Outro: alle vier Profile gleichzeitig, Handles exakt, nichts verdeckt
-- Untertitel: eine Zeile, höchstens drei Wörter, höchstens ein blaues Wort, keine Überlappungen
-- Länge und Tempo entsprechen der Vorlage
-- Bild und Ton synchron, Stimme verständlich, keine Musik
-- Datei vollständig decodierbar, 1080 × 1920, 30 fps
-
-Fällt ein Punkt durch, korrigiere ihn und prüfe erneut. Übergib niemals ein Video, das durchgefallen ist, auch nicht mit Hinweis.
+`build` prüft per Skript jedes Bild gegen DESIGN.md 2.2 (Prüfliste Abschnitt 20 im Bericht), dekodiert die Datei vollständig, misst VMAF und Tonversatz. Zusätzlich das Kontaktblatt `review/kontaktblatt.jpg` ansehen, nicht über 100 Einzelbilder. Blockierende Befunde: korrigieren, erneut `build`. Übergib niemals ein Video, das durchgefallen ist.
 
 ## Schritt 5: Freigabepaket an Abi
 
@@ -81,7 +58,7 @@ Liefere immer genau diese fünf Dinge, kurz und ohne Ausschmückung:
 1. **Pfad** zur fertigen MP4
 2. **Transkript**, geprüft und wortgetreu
 3. **Beschreibung** nach Abschnitt 11, höchstens fünf Hashtags, einer davon exakt `#abidullahabi`
-4. **Prüfprotokoll** als Liste mit den Punkten aus Schritt 4, je Punkt bestanden oder Befund
+4. **Prüfprotokoll**: die Prüfliste aus `review/build-bericht.json`, je Punkt bestanden, Befund oder offen
 5. **Die Frage**, ob Abi freigibt oder Korrekturen nennt
 
 Warte hier. Plane nichts ein, bevor Abi freigegeben hat.
@@ -103,6 +80,7 @@ Solange dieser Ablauf in der Erprobung ist, hänge nach jedem Durchlauf an `DRIV
 
 ```
 ## JJJJ-MM-TT - Titel
+- Dauer je Schritt (aus logs/zeiten.json):
 - Dauer des Durchlaufs:
 - Wo musste Abi eingreifen:
 - Was hat gehakt:

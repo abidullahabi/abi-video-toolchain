@@ -30,11 +30,14 @@ export async function zeit(project, schritt, fn) {
 // ---------- Render-Prozesse nach Kernen und Arbeitsspeicher ----------
 // Je Chrome-Prozess rund 256 MB laut HyperFrames, dazu Bildextraktion und Kodierung. Faustregel: 4 GB je Prozess
 // Reserve für System, Drive und andere Sitzungen, höchstens Kerne − 2. --low-memory-mode nur bei ≤ 8 GB oder auf Wunsch.
+// Zusätzlich nach dem gerade freien Speicher (≈ 1,5 GB je Prozess inkl. Encoder-Anteil): Am 27.09.2026 brach der Encoder
+// bei 4 Prozessen unter Speicherdruck ab (9,3 von 10 GB Swap belegt, write EPIPE bei Bild 5.730 von 6.071).
 export function renderProfil(meta = {}) {
-  const kerne = os.cpus().length, gb = os.totalmem() / 2 ** 30;
+  const kerne = os.cpus().length, gb = os.totalmem() / 2 ** 30, freiGB = os.freemem() / 2 ** 30;
   const lowMemory = meta.renderLowMemory === true || gb <= 8;
-  const workers = lowMemory ? 1 : Math.max(1, Math.min(kerne - 2, Math.floor(gb / 4)));
-  return { kerne, arbeitsspeicherGB: Math.round(gb), workers, lowMemory };
+  const nachKernen = Math.max(1, Math.min(kerne - 2, Math.floor(gb / 4)));
+  const workers = lowMemory ? 1 : Math.max(1, Math.min(nachKernen, Math.floor(freiGB / 1.5), meta.renderWorkers ?? 99));
+  return { kerne, arbeitsspeicherGB: Math.round(gb), freiGB: Math.round(freiGB * 10) / 10, workers, lowMemory };
 }
 
 // ---------- Momente voller Sichtbarkeit (DESIGN.md 15: Aufbauzeiten) ----------

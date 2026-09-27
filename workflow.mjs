@@ -18,6 +18,10 @@ const ENV = {
   HYPERFRAMES_NO_TELEMETRY: '1',
   HYPERFRAMES_NO_UPDATE_CHECK: '1',
   HYPERFRAMES_NO_AUTO_INSTALL: '1',
+  // Tempo-Auftrag 27.09.2026: mehrere Render-Prozesse, Bilder trotzdem direkt in den Encoder (kein Zwischenspeicher von
+  // ~50 GB für 200 s). HyperFrames streamt sonst nur mit einem Prozess; bis 600 s Videodauer.
+  HF_DE_PARALLEL_STREAM: 'true',
+  PRODUCER_STREAMING_ENCODE_MAX_DURATION_SECONDS: '600',
 };
 
 function run(exe, args, cwd = ROOT, log) {
