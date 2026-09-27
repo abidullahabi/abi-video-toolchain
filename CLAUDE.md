@@ -1,53 +1,72 @@
-# ABI Content-Workflow: Wegweiser
+# ABI Video-Toolchain: Wegweiser für Claude und Codex
 
-Dieses Verzeichnis enthält die Werkzeuge für Abdullah Bachtaris Social-Media-Videos (TikTok, Instagram Reels, YouTube Shorts, 9:16).
+Dieser Text steht wortgleich in `CLAUDE.md` (liest Claude Code) und `AGENTS.md` (liest Codex). Wer ihn ändert, ändert beide Dateien im selben Commit.
 
 **Sprache Deutsch.** Abdullah soll keine technischen Befehle selbst eingeben müssen.
 
-## Diese Datei enthält keine Regeln
+## Orte
 
-Die verbindlichen Regeln stehen in der Arbeitsanleitung, nicht hier:
+| Was | Wo |
+|---|---|
+| Werkzeuge, Vorlagen, Projekte (dieses Repo) | `/Users/abi/Projekte/abi-video-toolchain`, Git-Remote `github.com/abidullahabi/abi-video-toolchain` (privat) |
+| Alter Pfad, nur noch Verweis | `~/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow` ist ein Symlink auf dieses Repo, damit alte absolute Pfade in Projektdateien weiter stimmen. Der Stand vor dem Umzug liegt daneben in `content-workflow.vor-umzug-2026-09-27`. Neue Pfade immer mit dem neuen Ort schreiben. |
+| Videoablage und maßgebliche Anleitung | `/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation` |
 
-`/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/CONTENT_WORKFLOW.md`
+Lege keine Projektordner in Google Drive an. Render- und Zwischendateien bleiben in `projects/`.
 
-**Lies sie, bevor du an einem Video arbeitest.** Der Abschnitt „Harte Regeln, immer“ steht gleich am Anfang.
+## Maßgeblich sind zwei Dateien im Drive-Ordner `Content_Creation/Anleitung`
 
-Wenn du dich im Drive-Ordner orientieren willst: `00_START_HIER.md` erklärt dort jede Datei und jeden Stufenordner.
+- `CONTENT_WORKFLOW.md`: Verfahren, harte Regeln, Export, Ablage, Posting. **Lies sie vor jeder Arbeit an einem Video.** Die harten Regeln stehen gleich am Anfang.
+- `DESIGN.md`: allein maßgeblich für das Aussehen. Lies sie vor jeder Gestaltung.
 
-Bis zum 16.09.2026 standen die harten Regeln in dieser Datei. Das war ein Fehler: `CLAUDE.md` liest nur Claude Code automatisch. Wird der Workflow in ein anderes Werkzeug übertragen — und genau das ist Abdullahs Anspruch —, fallen die Regeln lautlos weg. Ausserdem nannte diese Datei vier Gestaltungswerte, die `DESIGN.md` 1.9 längst anders festlegte, darunter eine Untertitelfarbe, die wegen zu geringen Kontrasts verworfen worden war.
+Diese Datei enthält **keine eigenen Gestaltungswerte** und keine Regeln, die dort schon stehen. Bei Widersprüchen gelten `CONTENT_WORKFLOW.md` und `DESIGN.md`. Die Arbeitsanleitung nennt an manchen Stellen „Codex“ als ausführenden Agenten; das ist eine Rollenbezeichnung und meint die jeweils arbeitende KI.
 
-**Trage hier keine Regeln und keine Gestaltungswerte ein.** Sie gehören in `CONTENT_WORKFLOW.md`, Gestaltung ausschliesslich in `DESIGN.md`. Die alte Fassung liegt als `revisions/CLAUDE.vor-regelumzug-2026-09-16.md`.
+## Zwei KIs nebeneinander
 
-## Zwei Orte, nicht vermischen
+### Pro Video
 
-**Hier, Werkzeuge und Projekte:** Skripte, Binaries, Sprachmodelle, `projects/`.
+1. Vor Beginn: `node pruefungen.mjs kollision "<Quelldatei>"`. Meldet die Prüfung eine laufende Bearbeitung, nicht anfangen und Abdullah fragen.
+2. Direkt danach in `projects/<Projekt>/workflow.json` eintragen:
+   `"bearbeitung": {"agent": "claude" | "codex", "aufgabe": "<kurz>", "begonnen": "<ISO-Zeit>", "status": "in_arbeit"}`
+3. Am Ende `bearbeitung.status` setzen: `"fertig"`, `"angehalten"` (mit Stand) oder `"abgebrochen"`.
 
-**Videoablage und maßgebliche Anleitung:** der Google-Drive-Ordner oben. Dort liegen `CONTENT_WORKFLOW.md`, `DESIGN.md`, `TESTPROTOKOLL.md`, `AENDERUNGSSTAPEL.md` und die Stufenordner `01_Rohvideos`, `02_Bearbeitete_Videos`, `03_Bereit_zum_Posten`, `04_Gepostet`, `Archiv`.
+### Werkzeugcode (alles außerhalb von `projects/`)
 
-Lege keine Projektordner in Google Drive an. Render- und Zwischendateien bleiben hier.
+1. Vor jeder Änderung `werkzeug-status.json` lesen. Steht dort `"status": "in_arbeit"` mit einem anderen `agent`, nichts ändern und Abdullah fragen.
+2. Dann setzen: `{"status": "in_arbeit", "agent": "claude" | "codex", "zweig": "<Zweig>", "seit": "<ISO-Zeit>", "aufgabe": "<kurz>"}`. Nach Abschluss `"status": "frei"` mit Agent, Zweig und Zeit. Die Datei wird **nie gelöscht**, nur überschrieben.
+3. Geändert wird auf einem eigenen Zweig: `claude/<thema>` oder `codex/<thema>`. In `main` kommt eine Änderung erst nach bestandenem Test; den Test im Commit nennen.
 
-## Einordnung weiterer Dateien in diesem Ordner
+### Sichern
 
-- `DESIGN.md` im Drive-Ordner ist allein maßgeblich für das Aussehen. Bei Widersprüchen zu irgendeiner anderen Quelle gilt sie.
-- `Setup/CLAUDE_CODE_SETUP.md` im Drive-Ordner regelt nur die Einrichtung. Bei Widersprüchen zu `CONTENT_WORKFLOW.md` gilt letztere.
-- `AGENTS.md` ist eine frühere Codex-Datei und verweist auf den überholten Pfad `Desktop/Social Media/Content_Videos`, den es nicht mehr gibt. Nicht als maßgeblich verwenden.
-- Die Arbeitsanleitung nennt an mehreren Stellen „Codex“ als ausführenden Agenten. Das ist eine Rollenbezeichnung und meint dich. Schreibe diese Stellen nicht um.
+Nach jedem fertigen Video und nach jeder Werkzeugänderung: `git add`, `git commit`, `git push`. Was versioniert wird, regelt `.gitignore` (Skripte, Vorlagen, Plan- und Wortdaten; keine Medien, Modelle, Binaries, Caches).
 
-## Schutzprüfungen vor dem Bauen und vor dem Ausliefern
+## Vorlagen und Designversion
+
+`workflow.json` jedes Projekts nennt `designVersion`. `render-html` wählt danach Vorlage und Layoutprüfung. Alte Projekte behalten ihre Vorlage; ein neues Projekt bekommt die Version, die in `DESIGN.md` gerade gilt.
+
+| designVersion | Vorlage | Prüfung |
+|---|---|---|
+| 2.2 | `theme-composition-design22.mjs` | `check-design22.mjs` |
+| 1.11, 1.12 | `theme-composition-design111.mjs` | `check-design111.mjs` |
+| 1.9 | `theme-composition-design19.mjs` | `check-design19.mjs` |
+| ohne | `theme-composition.mjs` | `check-theme-layout.mjs` |
+
+Schriften liegen in `templates/fonts/`, Modelle in `tools/models/` mit Herkunftsdatei und Prüfsumme (`*provenance*.json`).
+
+## Schutzprüfungen
 
 ```
 node pruefungen.mjs kollision    "<Quelldatei>"      # arbeitet eine andere Sitzung daran?
 node pruefungen.mjs auslieferung "<Projektordner>"   # liegt ein sauberer Gestaltungsbericht vor?
+node workflow.mjs doctor                             # Werkzeuge und Modelle vorhanden?
 ```
 
-Beide lesen nur JSON und sind ohne dieses Skript nachbildbar. Begründung in `CONTENT_WORKFLOW.md` und im Änderungsstapel.
+Referenzprojekte aus `CONTENT_WORKFLOW.md` Abschnitt 12 nie ändern und nie darüber rendern.
 
-## Offene Punkte
+## Frühere Fassungen
 
-- HyperFrames 0.8.34 rendert Arial/Helvetica als Inter, aber `assemble-full-video.mjs` misst Untertitelbreiten mit Arial Bold. Die Entscheidung liegt bei Abdullah. Bis dahin Schrift und Messung nicht eigenmächtig ändern.
-- `projects/Rendertest-ClaudeCode-2026-09-15T07-59-06Z` ist eine Funktionsprobe, kein Posting-Projekt.
-- Der Änderungsstapel aus der Nachbesprechung vom 16.09.2026 ist noch nicht vollständig in die Arbeitsanleitung eingearbeitet. Stand siehe `AENDERUNGSSTAPEL.md` im Drive-Ordner.
+`revisions/CLAUDE.vor-regelumzug-2026-09-16.md`, `revisions/CLAUDE.vor-zwei-ki-regeln-2026-09-27.md` und `revisions/AGENTS.vor-zwei-ki-regeln-2026-09-27.md`. Sie gelten nicht mehr.
 
 ## Videoproduktion
 
-Für einen kompletten Durchlauf von der Rohaufnahme bis zur Einplanung: `/video`.
+Für einen kompletten Durchlauf von der Rohaufnahme bis zur Einplanung: `/video` (Claude Code).
