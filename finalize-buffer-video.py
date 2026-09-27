@@ -16,7 +16,10 @@ assert abs(source_duration-plan['duration'])<.1,'Dieses Hilfsskript setzt unver�
 # HyperFrames kodiert seinen Master (MP4 wie ProRes) mit der BT.601-Matrix, kennzeichnet MP4 aber als BT.709
 # (gemessen 26.09.2026 an der H1-Flaeche #1668b5). Mit masterColorMatrix "bt601" wird echt nach BT.709 umgerechnet.
 conv='scale=in_color_matrix=bt601:in_range=tv:out_color_matrix=bt709:out_range=tv,format=yuv420p,setsar=1' if m.get('masterColorMatrix')=='bt601' else None
-args=[ff,'-v','error','-n','-i',str(master),'-i',str(source),'-map','0:v:0','-map','1:a:0']+(['-vf',conv] if conv else [])+['-c:v','libx264','-preset','slow','-threads','4','-b:v','12M','-maxrate','14M','-bufsize','28M','-profile:v','high','-level:v','4.1','-g','60','-bf','2','-pix_fmt','yuv420p','-color_range','tv','-colorspace','bt709','-color_primaries','bt709','-color_trc','bt709','-c:a','aac','-b:a','120k','-ar','48000','-ac','2','-map_metadata','-1','-movflags','+faststart',str(out)]
+# Ziel 12 Mbit/s, aber nie über die 300-MB-Grenze des Zernio-Wegs (Abschnitt 10): bei langen Videos automatisch knapper
+# (Fast 30, 202 s: 12 Mbit/s ergaben 308 MB). 3 % Reserve für Container und Ratenschwankung, Ton 120 kbit/s.
+vb=min(12000,int((300e6*0.97*8/plan['duration']-120e3)/1000))
+args=[ff,'-v','error','-n','-i',str(master),'-i',str(source),'-map','0:v:0','-map','1:a:0']+(['-vf',conv] if conv else [])+['-c:v','libx264','-preset','slow','-threads','4','-b:v',f'{vb}k','-maxrate','14M','-bufsize','28M','-profile:v','high','-level:v','4.1','-g','60','-bf','2','-pix_fmt','yuv420p','-color_range','tv','-colorspace','bt709','-color_primaries','bt709','-color_trc','bt709','-c:a','aac','-b:a','120k','-ar','48000','-ac','2','-map_metadata','-1','-movflags','+faststart',str(out)]
 subprocess.run(args,check=True)
 info=json.loads(subprocess.check_output([probe,'-v','error','-show_streams','-show_format','-of','json',str(out)]));v=next(s for s in info['streams'] if s['codec_type']=='video');a=next(s for s in info['streams'] if s['codec_type']=='audio')
 assert (v['width'],v['height'],v['avg_frame_rate'],v['codec_name'],v['pix_fmt'])==(1080,1920,'30/1','h264','yuv420p')
@@ -51,7 +54,7 @@ report={'file':str(out),'renderedMaster':str(master),'duration':float(info['form
 jetzt=datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds').replace('+00:00','Z')
 # Ein Zeiger statt vier (Nachbesprechung Punkt 7). Traegt die Pruefsumme mit,
 # damit er nicht stillschweigend veralten kann.
-m.update(latestExport=str(out),renderedExport=str(master),status='complete',audioHandling=report['audioHandling'],deliveryProfile='Buffer Web: H264, 1080x1920p30, BT709, 12M video target / 14M VBV, AAC-LC 120k, faststart',layoutVersion='tiktok-safe-v1',
+m.update(latestExport=str(out),renderedExport=str(master),status='complete',audioHandling=report['audioHandling'],deliveryProfile=f'Zernio/Buffer: H264, 1080x1920p30, BT709, {vb}k video target (max. 12M, 300-MB-Grenze) / 14M VBV, AAC-LC 120k, faststart',layoutVersion='tiktok-safe-v1',
          aktuell={'datei':str(out),'sha256':report['sha256'],'bytes':report['sizeBytes'],'erzeugt':jetzt,'gesetztAm':jetzt})
 (p/'workflow.json').write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({k:report[k] for k in ['file','duration','sizeBytes','videoBitrate','audioBitrate','vmafMeanVsRenderedMaster','audioAlignmentChecks']},indent=2),flush=True)

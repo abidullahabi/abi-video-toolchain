@@ -1,0 +1,147 @@
+// Layoutprüfung gegen DESIGN.md 2.2 (Abschnitte 1–15, Prüfliste 20), Bild für Bild im Browser.
+//   node check-design22.mjs "<Projektordner>"      (STEP=n prüft nur jedes n-te Bild, nur für Entwürfe)
+// Schreibt review/layout-check.json. Befunde, die DESIGN.md nicht zweifelsfrei regelt, stehen als Hinweise (warnings).
+import fs from 'node:fs';
+import path from 'node:path';
+import { pathToFileURL, fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
+import puppeteer from 'puppeteer-core';
+
+export async function checkDesign22(project, { step = 1 } = {}) {
+  const root = path.dirname(fileURLToPath(import.meta.url));
+  const plan = JSON.parse(fs.readFileSync(path.join(project, 'theme-plan.json')));
+  const faces = JSON.parse(fs.readFileSync(path.join(project, 'review/source-faces.json')));
+  if (!faces.length || faces.some(s => s.error)) throw Error('Gesichtsprüfung unvollständig (review/source-faces.json).');
+  const exe = execFileSync(process.execPath, [path.join(root, 'node_modules/hyperframes/bin/hyperframes.mjs'), 'browser', 'path'], { encoding: 'utf8', env: { ...process.env, HYPERFRAMES_NO_TELEMETRY: '1', HYPERFRAMES_NO_UPDATE_CHECK: '1' } }).trim();
+  const browser = await puppeteer.launch({ executablePath: exe, headless: true, args: ['--no-sandbox'] });
+  let report;
+  try {
+    const page = await browser.newPage();
+    await page.setViewport({ width: 1080, height: 1920, deviceScaleFactor: 1 });
+    await page.goto(pathToFileURL(path.join(project, 'index.html')).href, { waitUntil: 'load' });
+    await page.evaluate(() => document.fonts.ready);
+    report = await page.evaluate(({ plan, faces, step }) => {
+      const errors = [], warnings = [], seen = new Set();
+      const add = (list, type, d = {}) => { const k = type + JSON.stringify({ ...d, t: undefined, b: undefined }); if (seen.has(k) || list.length > 400) return; seen.add(k); list.push({ type, ...d }); };
+      const err = (t, d) => add(errors, t, d), warn = (t, d) => add(warnings, t, d);
+      const tl = window.__timelines.root, cs = el => getComputedStyle(el);
+      const R = (el, p = 0) => { const b = el.getBoundingClientRect(); return { x: b.x - p, y: b.y - p, w: b.width + 2 * p, h: b.height + 2 * p }; };
+      const U = (els, p = 0) => { const r = els.map(e => e.getBoundingClientRect()); const x = Math.min(...r.map(b => b.x)), y = Math.min(...r.map(b => b.y)); return { x: x - p, y: y - p, w: Math.max(...r.map(b => b.right)) - x + 2 * p, h: Math.max(...r.map(b => b.bottom)) - y + 2 * p }; };
+      const meet = (a, b) => a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
+      const shown = el => { for (let e = el; e && e.id !== 'root'; e = e.parentElement) { const s = cs(e); if (s.display === 'none' || +s.opacity < 0.001) return false; if (e.classList.contains('clip') && s.visibility !== 'visible') return false; } return cs(el).visibility === 'visible'; };
+      const vis = els => [...els].filter(x => +cs(x).opacity > 0.001);
+      // 4: Schriften geladen, keine Ersatzschrift.
+      for (const f of ['900 64px "ABI Archivo"', '800 64px "ABI Archivo"', '700 24px "ABI Archivo"', '400 140px "ABI Gochi"']) if (!document.fonts.check(f)) err('schrift_fehlt', { f });
+      for (const img of document.images) if (!img.complete || !img.naturalWidth) err('asset_fehlt', { src: img.getAttribute('src') });
+      // Sichtbare Box mit Kontur, Ring oder Schatten.
+      const box = el => {
+        const k = el.dataset.kind, q = s => el.querySelector(s);
+        switch (k) {
+          case 'h1': return R(q('.h1'), 8);
+          case 'h2': return R(q('.h2'));
+          case 'kapitel': return U([...el.querySelectorAll('.kap-num,.kap-title')], 7);
+          case 'pillen': { const p = vis(el.querySelectorAll('.pill-pop')).map(x => x.firstElementChild); return p.length ? U(p, 3) : null; }
+          case 'akronym': { const p = [...el.querySelectorAll('.ak-letter'), ...vis(el.querySelectorAll('.ak-pill-pop')).map(x => x.firstElementChild)]; return U(p, 8); }
+          case 'schlagwort': return U([q('.sw-word'), q('.sw-lines')], 11);
+          case 'randnotiz': { const l = vis(el.querySelectorAll('.note-line')); return l.length ? U(l, 8) : null; }
+          case 'balken': return U([...vis(el.querySelectorAll('.bal-label')), q('.bal-bed')], 5);
+          case 'logo': return R(q('.logo'));
+          case 'grafik': { const b = R(q('.card')); return { x: b.x, y: b.y, w: b.w + 12, h: b.h + 12 }; }
+          case 'caption': return R(q('.cap-line'), 6);
+          case 'follow': return R(q('.follow'), 5);
+          case 'outro-card': return R(el);
+          case 'bubble': { const p = vis(el.querySelectorAll('.msg-pop,.ind-pop')).map(x => x.firstElementChild); return p.length ? U(p, 0) && (b => ({ x: b.x, y: b.y, w: b.w + 6, h: b.h + 6 }))(U(p)) : null; }
+        }
+        return null;
+      };
+      const LAYER = new Set(['h1', 'h2', 'kapitel', 'pillen', 'akronym', 'schlagwort', 'randnotiz', 'balken', 'logo', 'grafik', 'follow', 'outro-card', 'bubble']);
+      const CENTER = { h1: '.h1', h2: '.h2', kapitel: '.kap', schlagwort: '.sw-word', caption: '.cap-line', follow: '.follow', logo: '.logo', akronym: '.ak-row' };
+      const BLUE = 'rgb(94, 170, 238)', WHITE = 'rgb(255, 255, 255)';
+      const heads = t => { const f = faces.reduce((b, x) => Math.abs(x.time - t) < Math.abs(b.time - t) ? x : b); return Math.abs(f.time - t) > 0.26 ? [] : f.faces.map(q => ({ x: q.x - 0.12 * q.width, y: q.y - 0.5 * q.height, w: 1.24 * q.width, h: 1.5 * q.height })); };
+      const green = t => (plan.grafiken || []).some(g => t >= g.start && t < g.end);
+      const frames = Math.ceil(plan.duration * 30); let maxLayers = 0, capFrames = 0;
+      for (let f = 0; f < frames; f += step) {
+        const t = f / 30; tl.seek(t, false);
+        const act = [];
+        for (const el of document.querySelectorAll('.clip[data-kind]')) {
+          const k = el.dataset.kind; if (k === 'gs-bg' || !shown(el)) continue;
+          const b = box(el); if (!b || b.w < 1) continue;
+          act.push({ id: el.id, k, b });
+          // 2: gesperrte Zonen samt Kontur, Schatten und Animation; obere Zone (bis y 900) nutzbar x 108–972.
+          if (b.y < 249.5 || b.y + b.h > 1660.5 || b.x < 89.5) err('gesperrte_zone', { id: el.id, t: +t.toFixed(2), b });
+          if (b.y + b.h > 900.5 && b.x + b.w > 930.5) err('aktionsleiste', { id: el.id, t: +t.toFixed(2), b });
+          if (b.y < 900 && !['caption', 'outro-card', 'bubble'].includes(k) && (b.x < 107.5 || b.x + b.w > 972.5)) err('obere_zone', { id: el.id, t: +t.toFixed(2), b });
+          if (CENTER[k]) { const c = R(el.querySelector(CENTER[k])); if (Math.abs(c.x + c.w / 2 - 540) > 0.75) err('mittelachse', { id: el.id, mitte: +(c.x + c.w / 2).toFixed(2) }); }
+          if (k === 'pillen' && el.dataset.layout === 'row') { const u = U([...el.querySelectorAll('.pill')]); if (Math.abs(u.x + u.w / 2 - 540) > 0.75) err('mittelachse', { id: el.id }); }
+          if (k === 'caption') {
+            capFrames++;
+            const line = el.querySelector('.cap-line'), ws = [...line.children].filter(s => s.tagName === 'SPAN' && s.id);
+            if (R(line).w + 12 > 780.5) err('untertitel_breite', { id: el.id, w: Math.round(R(line).w + 12) });
+            if (new Set(ws.map(s => Math.round(s.getBoundingClientRect().top))).size !== 1) err('untertitel_umbruch', { id: el.id });
+            const blue = ws.filter(s => cs(s).color === BLUE).length; if (blue !== 1) err('untertitel_blau', { id: el.id, t: +t.toFixed(2), blue });
+            if (Math.abs(el.getBoundingClientRect().top - 1280) > 0.75) err('untertitel_position', { id: el.id });
+          }
+        }
+        const layers = act.filter(a => LAYER.has(a.k)); maxLayers = Math.max(maxLayers, layers.length);
+        // 1: höchstens zwei Textebenen zusätzlich zum Untertitel.
+        if (layers.length > 2) err('drei_textebenen', { t: +t.toFixed(2), ids: layers.map(a => a.id) });
+        for (let i = 0; i < act.length; i++) for (let j = i + 1; j < act.length; j++) if (meet(act[i].b, act[j].b)) err('ueberlappung', { a: act[i].id, b: act[j].id, t: +t.toFixed(2) });
+        // 8: H2 und Pillen nie gleichzeitig unter einem Kapitel.
+        if (act.some(a => a.k === 'h2' && !a.id.startsWith('einstieg')) && act.some(a => a.k === 'pillen') && act.some(a => a.k === 'kapitel')) err('h2_und_pillen', { t: +t.toFixed(2) });
+        // 9/12: Pillen und Randnotiz nie über Kopf/Kappe; andere obere Elemente als Hinweis.
+        if (!green(t)) for (const h of heads(t)) for (const a of act) if (meet(a.b, h)) { if (['pillen', 'randnotiz'].includes(a.k)) err('kopf_verdeckt', { id: a.id, t: +t.toFixed(2) }); else if (!['caption', 'follow', 'outro-card', 'h1'].includes(a.k)) warn('kopf_beruehrt', { id: a.id, t: +t.toFixed(2), kopfOben: Math.round(h.y), unten: Math.round(a.b.y + a.b.h) }); }
+      }
+      // 5: Einstieg am ersten Frame vollständig, ohne Animation.
+      tl.seek(0, false);
+      for (const el of document.querySelectorAll('[data-einstieg]')) { const s = cs(el), m = new DOMMatrix(s.transform); if (s.visibility !== 'visible' || +s.opacity < 0.999 || Math.abs(m.f) > 0.01 || Math.abs(m.a - 1) > 1e-4) err('einstieg_frame0', { id: el.id }); }
+      const eh1 = R(document.querySelector('#einstieg-h1 .h1')); if (Math.abs(eh1.y - 250) > 1) warn('einstieg_oberkante', { y: eh1.y });
+      const eh2 = document.querySelector('#einstieg-h2 .h2'); if (eh2) { const d = document.querySelector('#einstieg-h2').getBoundingClientRect().top - document.querySelector('#einstieg-h1').getBoundingClientRect().bottom; if (Math.abs(d - 24) > 1) err('einstieg_h2_abstand', { d }); }
+      // 6/8/9/10: Größen und Breiten.
+      for (const el of document.querySelectorAll('.h1 .ln')) { if (parseFloat(cs(el).fontSize) > 160) err('h1_groesse'); if (R(el).w + 16 > 864.5) err('h1_breite', { w: R(el).w + 16 }); }
+      for (const el of document.querySelectorAll('.h2')) { if (el.offsetWidth > 780.5) err('h2_breite', { id: el.parentElement.id, w: el.offsetWidth }); if (el.querySelectorAll('.ln').length > 2) err('h2_zeilen', { id: el.parentElement.id }); }
+      for (const el of document.querySelectorAll('.kap')) if (el.offsetWidth + 14 > 864.5) err('kapitel_breite', { id: el.parentElement.id, w: el.offsetWidth + 14 });
+      for (const el of document.querySelectorAll('[data-kind=pillen][data-layout=row]')) { const w = [...el.children].reduce((s, c) => s + c.firstElementChild.offsetWidth + 6, 0) + 16 * (el.children.length - 1); if (w > 864.5) err('pillen_reihe_breite', { id: el.id, w }); }
+      for (const el of document.querySelectorAll('.sw-word')) { const fs = parseFloat(cs(el).fontSize); if (fs < 120 || fs > 160) err('schlagwort_groesse', { fs }); if (el.offsetWidth + 18 > 864.5) err('schlagwort_breite', { w: el.offsetWidth + 18 }); }
+      // 8: H2 während eines Kapitels 24 px unter der Unterkante der Kapitelgruppe (Zahl eingeschlossen).
+      for (const h of plan.h2 || []) { const k = (plan.kapitel || []).find(k => k.start < h.end && k.end > h.start); if (!k) continue; tl.seek(Math.min(h.end - 0.2, h.start + 0.5), false); const kb = U([...document.querySelectorAll('#' + k.id + ' .kap-num,#' + k.id + ' .kap-title')]); const top = document.getElementById(h.id).getBoundingClientRect().top; if (Math.abs(top - (kb.y + kb.h + 24)) > 3) warn('h2_unter_kapitel', { id: h.id, soll: Math.round(kb.y + kb.h + 24), ist: Math.round(top) }); }
+      // 3/18: Farben. Pink nur Schlagwort und Durchstreichen, Emojis und offizielle Logos ausgenommen.
+      const ok = new Set(['rgb(17, 17, 17)', WHITE, 'rgb(246, 241, 233)', BLUE, 'rgb(255, 138, 194)', 'rgb(248, 249, 251)', 'rgb(22, 24, 28)', 'rgb(122, 126, 134)', 'rgb(222, 225, 231)', 'rgba(0, 0, 0, 0)', 'none', 'rgb(0, 0, 0)']);
+      for (const el of document.querySelectorAll('#root *')) {
+        if (['VIDEO', 'AUDIO', 'IMG', 'SCRIPT'].includes(el.tagName) || el.closest('.emoji,.oc-icon')) continue;
+        const s = cs(el);
+        for (const p of ['color', 'backgroundColor', 'fill', 'stroke', 'webkitTextStrokeColor', 'borderTopColor']) { const v = s[p]; if (!v || v.startsWith('url(') || ok.has(v)) continue; if (p === 'borderTopColor' && s.borderTopWidth === '0px') continue; err('farbe', { el: el.tagName + (el.id ? '#' + el.id : '') + '.' + (el.getAttribute('class') || ''), p, v }); }
+        if (['fill', 'stroke', 'backgroundColor', 'color'].some(p => s[p] === 'rgb(255, 138, 194)') && !el.closest('.sw-lines,.note-strike')) err('pink_ausserhalb', { el: el.tagName + '#' + el.id });
+      }
+      // 3: Emojis ohne Kontur, so groß wie der umgebende Text.
+      for (const e of document.querySelectorAll('.emoji')) { if (parseFloat(cs(e).webkitTextStrokeWidth) > 0) err('emoji_kontur'); if (Math.abs(parseFloat(cs(e).fontSize) - parseFloat(cs(e.parentElement).fontSize)) > 0.5) err('emoji_groesse'); }
+      // 4: Gochi Hand nur für Zahlen im Inhalt und Akronym-Buchstaben.
+      for (const el of document.querySelectorAll('#root *')) if (cs(el).fontFamily.includes('Gochi') && !el.children.length && el.textContent.trim() && !el.classList.contains('ak-letter') && !/^[\d.,+−%\s-]+$/.test(el.textContent.trim())) err('gochi_nicht_zahl', { text: el.textContent });
+      // 14: Outro.
+      const o = plan.outro; tl.seek(Math.min(o.start + 2, plan.duration - 0.05), false);
+      const card = document.getElementById('outro-card'), cb = R(card);
+      if (Math.abs(cb.x - 90) > 0.2 || Math.abs(cb.y + cb.h - 1660) > 0.2 || Math.abs(cb.w - 700) > 0.2 || Math.abs(cb.h - 237) > 0.2) err('outro_karte', { cb });
+      const cnt = [...document.querySelectorAll('.cnt')].find(x => cs(x).visibility === 'visible')?.textContent, fill = new DOMMatrix(cs(document.getElementById('oc-fill')).transform).a;
+      if (cnt !== o.followers.toLocaleString('de-DE') || Math.abs(fill - o.followers / 10000) > 1e-4) err('outro_zaehler', { cnt, fill });
+      if (Math.abs(R(document.querySelector('#follow .follow')).y - 250) > 1.5) warn('follow_oberkante', { y: R(document.querySelector('#follow .follow')).y });
+      const handles = [...card.querySelectorAll('.oc-handle')].map(h => h.textContent); if (JSON.stringify(handles) !== JSON.stringify(['@itsabidullahabi', '@abidullahabi', '@abidullahabi', 'Abdullah Bachtari'])) err('handles', { handles });
+      for (const el of card.querySelectorAll('.oc-head,.oc-bed,.oc-grid')) { const b = R(el); if (b.x < cb.x + 21.9 || b.x + b.w > cb.x + cb.w - 21.9 || b.y < cb.y + 21.9 || b.y + b.h > cb.y + cb.h - 21.9) err('outro_innenabstand', { cls: el.className }); }
+      const standzeit = plan.duration - (o.start + 1.85); if (standzeit < 4 - 1e-3 || standzeit > 5 + 1e-3) warn('outro_standzeit', { s: +standzeit.toFixed(2) });
+      // 11: Grafik-Karte x 150, y 270, Breite 780; Personenebene vorhanden.
+      for (const g of plan.grafiken || []) { tl.seek(g.start + 0.5, false); const b = R(document.querySelector('#' + g.id + ' .card')); if (Math.abs(b.x - 150) > 0.5 || Math.abs(b.y - 270) > 0.5 || Math.abs(b.w - 780) > 0.5) err('grafik_karte', { b }); if (!document.getElementById(g.id + '-person')) err('grafik_person_fehlt', { id: g.id }); }
+      // 10: höchstens zwei Schlagworte, Standzeit 0,8–1,3 s.
+      if ((plan.schlagworte || []).length > 2) err('schlagworte_anzahl');
+      return { designVersion: plan.designVersion, framesChecked: Math.ceil(frames / step), step, maxLayers, capFrames, errors, warnings };
+    }, { plan, faces, step });
+  } finally { await browser.close(); }
+  report.blocking = report.errors.length; report.checkedAt = new Date().toISOString();
+  report.themePlan = fs.statSync(path.join(project, 'theme-plan.json')).mtime.toISOString(); report.indexHtml = fs.statSync(path.join(project, 'index.html')).mtime.toISOString();
+  fs.writeFileSync(path.join(project, 'review/layout-check.json'), JSON.stringify(report, null, 2) + '\n');
+  const byType = a => Object.fromEntries(Object.entries(a.reduce((m, e) => (m[e.type] = (m[e.type] || 0) + 1, m), {})));
+  console.log(JSON.stringify({ bilder: report.framesChecked, maxEbenen: report.maxLayers, blockierend: report.blocking, fehler: byType(report.errors), hinweise: byType(report.warnings), beispiele: report.errors.slice(0, 10) }, null, 1));
+  if (report.blocking) throw Error('Designprüfung 2.2: ' + report.blocking + ' Abweichungen.');
+  return report;
+}
+
+if (process.argv[1]?.endsWith('check-design22.mjs')) {
+  checkDesign22(path.resolve(process.argv[2]), { step: Number(process.env.STEP || 1) }).catch(e => { console.error(e.message); process.exitCode = 1; });
+}

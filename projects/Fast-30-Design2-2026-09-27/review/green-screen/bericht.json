@@ -1,0 +1,24 @@
+{
+ "werkzeug": "Robust Video Matting v1.0.0 (rvm_mobilenetv3_fp32.onnx)",
+ "modellSha256": "88d4531297118f595bf2fd60f6f566aec2e559393802d1f436c380f0cbbd2828",
+ "onnxruntime": "1.30.0",
+ "downsample_ratio": 0.25,
+ "vorlaufBilder": 20,
+ "kontur_px": 6,
+ "grundlage": "DESIGN.md 2.2 Abschnitt 11",
+ "abschnitte": [
+  {
+   "id": "sparen",
+   "datei": "person-sparen.mov",
+   "sha256": "aa6b5b2ae9aa9817fef4d692c89f0d018be3369d04ae54988b739dc8d6be7a18",
+   "erstesBild": 4165,
+   "bilder": 258,
+   "start": 138.83333333333334,
+   "ende": 147.43333333333334,
+   "vorlauf": 20,
+   "sekunden": 180.7,
+   "deckungMittel": 0.4043,
+   "deckungSprungMittel": 0.00063
+  }
+ ]
+}
