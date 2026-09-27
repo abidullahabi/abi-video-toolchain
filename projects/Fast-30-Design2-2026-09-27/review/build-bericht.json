@@ -1,68 +1,68 @@
 {
   "projekt": "/Users/abi/Projekte/abi-video-toolchain/projects/Fast-30-Design2-2026-09-27",
-  "begonnen": "2026-09-27T15:48:55.947Z",
+  "begonnen": "2026-09-27T17:40:12.502Z",
   "schritte": [
     {
       "schritt": "build: zusammensetzen",
-      "sekunden": 0.1
+      "sekunden": 0.2
     },
     {
       "schritt": "build: designprüfung (jedes Bild)",
-      "sekunden": 3
+      "sekunden": 4.9
     },
     {
       "schritt": "build: lint",
-      "sekunden": 1
+      "sekunden": 1.8
     },
     {
       "schritt": "build: rendern (mp4, ein Master)",
-      "sekunden": 852.2
+      "sekunden": 468.3
     },
     {
       "schritt": "build: master decodieren",
-      "sekunden": 17.7
+      "sekunden": 8.1
     },
     {
       "schritt": "build: upload-export (Abschnitt 10) + VMAF + Ton",
-      "sekunden": 431.4
+      "sekunden": 382.7
     },
     {
       "schritt": "build: kontaktblatt (≤ 12)",
-      "sekunden": 3.2
+      "sekunden": 2.6
     }
   ],
   "designpruefung": {
     "bilder": 6072,
     "blockierend": 0,
     "maxEbenen": 3,
-    "hinweise": 2
+    "hinweise": 3
   },
   "render": {
-    "datei": "/Users/abi/Projekte/abi-video-toolchain/projects/Fast-30-Design2-2026-09-27/exports/final-2026-09-27T15-49-00-047Z.mp4",
+    "datei": "/Users/abi/Projekte/abi-video-toolchain/projects/Fast-30-Design2-2026-09-27/exports/final-2026-09-27T17-40-19-483Z.mp4",
     "format": "mp4",
     "quality": "high",
     "kerne": 10,
     "arbeitsspeicherGB": 16,
-    "freiGB": 1.5,
+    "freiGB": 1.3,
     "workers": 1,
     "lowMemory": false,
     "bilder": 6071,
-    "sekunden": 852,
-    "msProBild": 140,
-    "aufnahmeMsProBild": 137,
+    "sekunden": 468,
+    "msProBild": 77,
+    "aufnahmeMsProBild": 75,
     "aufnahmeModus": "drawelement"
   },
   "export": {
-    "datei": "/Users/abi/Projekte/abi-video-toolchain/projects/Fast-30-Design2-2026-09-27/exports/Fast-30_v1.mp4",
-    "mb": 292.9,
-    "videoKbit": 11451,
+    "datei": "/Users/abi/Projekte/abi-video-toolchain/projects/Fast-30-Design2-2026-09-27/exports/Fast-30_v2.mp4",
+    "mb": 293,
+    "videoKbit": 11455,
     "vmaf": 98.5,
     "tonVersatzMs": [
       0,
       0,
       0
     ],
-    "sha256": "d49e4cabbee2e22e0a87913e8700565642ca3b5dfcf83bd4197f496585d701e5"
+    "sha256": "74dbd3fc843a1eda294ed317c24c783a2ad77d95f08adaa0ac02f265fd7205bd"
   },
   "pruefliste20": [
     {
@@ -118,7 +118,7 @@
       "notiz": "offen: Abdullah"
     }
   ],
-  "dauerSekunden": 1309,
+  "dauerSekunden": 869,
   "kontaktblatt": "/Users/abi/Projekte/abi-video-toolchain/projects/Fast-30-Design2-2026-09-27/review/kontaktblatt.jpg",
-  "fertig": "2026-09-27T16:10:44.655Z"
+  "fertig": "2026-09-27T17:54:41.177Z"
 }
