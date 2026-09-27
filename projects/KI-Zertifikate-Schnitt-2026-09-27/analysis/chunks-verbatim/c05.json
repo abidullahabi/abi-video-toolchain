@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,560"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1560
+			},
+			"text": " Hinteran Tropic steht der Cloud.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.933833,
+					"t_dtw": -1
+				},
+				{
+					"text": " Hinter",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,340"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 340
+					},
+					"id": 35006,
+					"p": 0.825936,
+					"t_dtw": 26
+				},
+				{
+					"text": "an",
+					"timestamps": {
+						"from": "00:00:00,340",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 340,
+						"to": 450
+					},
+					"id": 282,
+					"p": 0.529275,
+					"t_dtw": 36
+				},
+				{
+					"text": " T",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,490"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 490
+					},
+					"id": 314,
+					"p": 0.142261,
+					"t_dtw": 46
+				},
+				{
+					"text": "ropic",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 750
+					},
+					"id": 39173,
+					"p": 0.93493,
+					"t_dtw": 58
+				},
+				{
+					"text": " steht",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 1060
+					},
+					"id": 16361,
+					"p": 0.862779,
+					"t_dtw": 78
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,150"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1150
+					},
+					"id": 1163,
+					"p": 0.832368,
+					"t_dtw": 92
+				},
+				{
+					"text": " Cloud",
+					"timestamps": {
+						"from": "00:00:01,230",
+						"to": "00:00:01,270"
+					},
+					"offsets": {
+						"from": 1230,
+						"to": 1270
+					},
+					"id": 8061,
+					"p": 0.594568,
+					"t_dtw": 114
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,540"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1540
+					},
+					"id": 13,
+					"p": 0.551183,
+					"t_dtw": 138
+				},
+				{
+					"text": "[_TT_78]",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1560
+					},
+					"id": 50443,
+					"p": 0.404046,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

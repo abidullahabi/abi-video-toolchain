@@ -1,0 +1,423 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,500"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4500
+			},
+			"text": " Wir hatten alle eine Scheißkindheit, unsere Eltern waren auch alle zum ersten Mal Menschen, die haben auch Fehler gemacht.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.971766,
+					"t_dtw": -1
+				},
+				{
+					"text": " Wir",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 130
+					},
+					"id": 4347,
+					"p": 0.83245,
+					"t_dtw": 14
+				},
+				{
+					"text": " hatten",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 400
+					},
+					"id": 20441,
+					"p": 0.995788,
+					"t_dtw": 32
+				},
+				{
+					"text": " alle",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 580
+					},
+					"id": 5430,
+					"p": 0.98078,
+					"t_dtw": 52
+				},
+				{
+					"text": " eine",
+					"timestamps": {
+						"from": "00:00:00,580",
+						"to": "00:00:00,760"
+					},
+					"offsets": {
+						"from": 580,
+						"to": 760
+					},
+					"id": 3018,
+					"p": 0.875831,
+					"t_dtw": 64
+				},
+				{
+					"text": " Sche",
+					"timestamps": {
+						"from": "00:00:00,760",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 760,
+						"to": 940
+					},
+					"id": 25321,
+					"p": 0.915648,
+					"t_dtw": 74
+				},
+				{
+					"text": "iß",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1020
+					},
+					"id": 6230,
+					"p": 0.988834,
+					"t_dtw": 84
+				},
+				{
+					"text": "kind",
+					"timestamps": {
+						"from": "00:00:01,030",
+						"to": "00:00:01,210"
+					},
+					"offsets": {
+						"from": 1030,
+						"to": 1210
+					},
+					"id": 14445,
+					"p": 0.889175,
+					"t_dtw": 96
+				},
+				{
+					"text": "heit",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,310"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1310
+					},
+					"id": 8480,
+					"p": 0.998839,
+					"t_dtw": 124
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,480"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1480
+					},
+					"id": 11,
+					"p": 0.375738,
+					"t_dtw": 158
+				},
+				{
+					"text": " unsere",
+					"timestamps": {
+						"from": "00:00:01,540",
+						"to": "00:00:01,730"
+					},
+					"offsets": {
+						"from": 1540,
+						"to": 1730
+					},
+					"id": 14339,
+					"p": 0.564035,
+					"t_dtw": 176
+				},
+				{
+					"text": " Eltern",
+					"timestamps": {
+						"from": "00:00:01,740",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1740,
+						"to": 2000
+					},
+					"id": 29101,
+					"p": 0.994779,
+					"t_dtw": 198
+				},
+				{
+					"text": " waren",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,190"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2190
+					},
+					"id": 11931,
+					"p": 0.963352,
+					"t_dtw": 220
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:02,190",
+						"to": "00:00:02,400"
+					},
+					"offsets": {
+						"from": 2190,
+						"to": 2400
+					},
+					"id": 2168,
+					"p": 0.892838,
+					"t_dtw": 240
+				},
+				{
+					"text": " alle",
+					"timestamps": {
+						"from": "00:00:02,500",
+						"to": "00:00:02,700"
+					},
+					"offsets": {
+						"from": 2500,
+						"to": 2700
+					},
+					"id": 5430,
+					"p": 0.955216,
+					"t_dtw": 266
+				},
+				{
+					"text": " zum",
+					"timestamps": {
+						"from": "00:00:02,700",
+						"to": "00:00:02,840"
+					},
+					"offsets": {
+						"from": 2700,
+						"to": 2840
+					},
+					"id": 5919,
+					"p": 0.965837,
+					"t_dtw": 286
+				},
+				{
+					"text": " ersten",
+					"timestamps": {
+						"from": "00:00:02,840",
+						"to": "00:00:03,020"
+					},
+					"offsets": {
+						"from": 2840,
+						"to": 3020
+					},
+					"id": 17324,
+					"p": 0.907353,
+					"t_dtw": 306
+				},
+				{
+					"text": " Mal",
+					"timestamps": {
+						"from": "00:00:03,100",
+						"to": "00:00:03,220"
+					},
+					"offsets": {
+						"from": 3100,
+						"to": 3220
+					},
+					"id": 5746,
+					"p": 0.934488,
+					"t_dtw": 320
+				},
+				{
+					"text": " Menschen",
+					"timestamps": {
+						"from": "00:00:03,220",
+						"to": "00:00:03,430"
+					},
+					"offsets": {
+						"from": 3220,
+						"to": 3430
+					},
+					"id": 8397,
+					"p": 0.975417,
+					"t_dtw": 346
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:03,440",
+						"to": "00:00:03,480"
+					},
+					"offsets": {
+						"from": 3440,
+						"to": 3480
+					},
+					"id": 11,
+					"p": 0.931052,
+					"t_dtw": 352
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:03,500",
+						"to": "00:00:03,660"
+					},
+					"offsets": {
+						"from": 3500,
+						"to": 3660
+					},
+					"id": 978,
+					"p": 0.85029,
+					"t_dtw": 368
+				},
+				{
+					"text": " haben",
+					"timestamps": {
+						"from": "00:00:03,660",
+						"to": "00:00:03,780"
+					},
+					"offsets": {
+						"from": 3660,
+						"to": 3780
+					},
+					"id": 3084,
+					"p": 0.953691,
+					"t_dtw": 378
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:03,810",
+						"to": "00:00:03,950"
+					},
+					"offsets": {
+						"from": 3810,
+						"to": 3950
+					},
+					"id": 2168,
+					"p": 0.992294,
+					"t_dtw": 396
+				},
+				{
+					"text": " Fehler",
+					"timestamps": {
+						"from": "00:00:04,050",
+						"to": "00:00:04,150"
+					},
+					"offsets": {
+						"from": 4050,
+						"to": 4150
+					},
+					"id": 48101,
+					"p": 0.987569,
+					"t_dtw": 414
+				},
+				{
+					"text": " gemacht",
+					"timestamps": {
+						"from": "00:00:04,150",
+						"to": "00:00:04,380"
+					},
+					"offsets": {
+						"from": 4150,
+						"to": 4380
+					},
+					"id": 12293,
+					"p": 0.999813,
+					"t_dtw": 448
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:04,380",
+						"to": "00:00:04,460"
+					},
+					"offsets": {
+						"from": 4380,
+						"to": 4460
+					},
+					"id": 13,
+					"p": 0.930871,
+					"t_dtw": 448
+				},
+				{
+					"text": "[_TT_225]",
+					"timestamps": {
+						"from": "00:00:04,500",
+						"to": "00:00:04,500"
+					},
+					"offsets": {
+						"from": 4500,
+						"to": 4500
+					},
+					"id": 50590,
+					"p": 0.114068,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

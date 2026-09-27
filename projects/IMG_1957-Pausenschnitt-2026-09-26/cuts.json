@@ -1,0 +1,3143 @@
+{
+ "basis": "Originalzeit IMG_1957.MOV, echte Bildzeitstempel",
+ "detection": {
+  "tool": "Silero VAD 6.2.0 (silero-probabilities)",
+  "threshold": 0.7,
+  "release": 0.55,
+  "minGapMs": 64,
+  "hopMs": 32
+ },
+ "rule": {
+  "cutGapsFromMs": 150.0,
+  "leadMs": 40.0,
+  "tailMs": 56.0,
+  "leadMinMs": 24.0,
+  "tailMinMs": 40.0,
+  "startTailMs": 100.0,
+  "endLeadMs": 200.0,
+  "wordEdgeGuard": "Pegelanstieg/-ausklang direkt an der Sprachgrenze bleibt stehen (Grundpegel der Luecke +15 dB, mind. -65 dBFS, max. 64 ms). Nur Wortschutz, keine Messung der Luecke.",
+  "guardedEdges": 34,
+  "note": "Ziel nach Abschnitt 5: Restluecke 64-96 ms Silero-Nicht-Sprache, Median 96 ms"
+ },
+ "minimumSilence": 0.15,
+ "removals": [
+  {
+   "start": 0.0,
+   "end": 1.866667,
+   "type": "silence",
+   "sileroGap": [
+    0.0,
+    1.952
+   ],
+   "keptBefore": 0.0,
+   "keptAfter": 0.085,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 3.768333,
+   "end": 5.501667,
+   "type": "silence",
+   "sileroGap": [
+    3.744,
+    5.6
+   ],
+   "keptBefore": 0.024,
+   "keptAfter": 0.098,
+   "gapFloorDb": -84.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 7.768333,
+   "end": 7.868333,
+   "type": "silence",
+   "sileroGap": [
+    7.744,
+    7.968
+   ],
+   "keptBefore": 0.024,
+   "keptAfter": 0.1,
+   "gapFloorDb": -80.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 10.168333,
+   "end": 10.235,
+   "type": "silence",
+   "sileroGap": [
+    10.144,
+    10.336
+   ],
+   "keptBefore": 0.024,
+   "keptAfter": 0.101,
+   "gapFloorDb": -69.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 11.303333,
+   "end": 11.703333,
+   "type": "silence",
+   "sileroGap": [
+    11.264,
+    11.776
+   ],
+   "keptBefore": 0.039,
+   "keptAfter": 0.073,
+   "gapFloorDb": -75.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 13.036667,
+   "end": 21.338333,
+   "type": "silence",
+   "sileroGap": [
+    12.992,
+    21.44
+   ],
+   "keptBefore": 0.045,
+   "keptAfter": 0.102,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 23.605,
+   "end": 23.671667,
+   "type": "silence",
+   "sileroGap": [
+    23.552,
+    23.712
+   ],
+   "keptBefore": 0.053,
+   "keptAfter": 0.04,
+   "gapFloorDb": -82.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 24.138333,
+   "end": 24.238333,
+   "type": "silence",
+   "sileroGap": [
+    24.096,
+    24.288
+   ],
+   "keptBefore": 0.042,
+   "keptAfter": 0.05,
+   "gapFloorDb": -64.9,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 26.506667,
+   "end": 26.64,
+   "type": "silence",
+   "sileroGap": [
+    26.464,
+    26.688
+   ],
+   "keptBefore": 0.043,
+   "keptAfter": 0.048,
+   "gapFloorDb": -81.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 27.773333,
+   "end": 28.206667,
+   "type": "silence",
+   "sileroGap": [
+    27.744,
+    28.256
+   ],
+   "keptBefore": 0.029,
+   "keptAfter": 0.049,
+   "gapFloorDb": -81.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 29.606667,
+   "end": 32.641667,
+   "type": "silence",
+   "sileroGap": [
+    29.568,
+    32.704
+   ],
+   "keptBefore": 0.039,
+   "keptAfter": 0.062,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 34.008333,
+   "end": 34.208333,
+   "type": "silence",
+   "sileroGap": [
+    33.984,
+    34.272
+   ],
+   "keptBefore": 0.024,
+   "keptAfter": 0.064,
+   "gapFloorDb": -80.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 35.675,
+   "end": 36.241667,
+   "type": "silence",
+   "sileroGap": [
+    35.648,
+    36.288
+   ],
+   "keptBefore": 0.027,
+   "keptAfter": 0.046,
+   "gapFloorDb": -84.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 38.176667,
+   "end": 38.543333,
+   "type": "silence",
+   "sileroGap": [
+    38.144,
+    38.592
+   ],
+   "keptBefore": 0.033,
+   "keptAfter": 0.049,
+   "gapFloorDb": -80.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 42.476667,
+   "end": 42.643333,
+   "type": "silence",
+   "sileroGap": [
+    42.432,
+    42.688
+   ],
+   "keptBefore": 0.045,
+   "keptAfter": 0.045,
+   "gapFloorDb": -78.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 43.71,
+   "end": 43.81,
+   "type": "silence",
+   "sileroGap": [
+    43.68,
+    43.872
+   ],
+   "keptBefore": 0.03,
+   "keptAfter": 0.062,
+   "gapFloorDb": -78.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 45.245,
+   "end": 48.078333,
+   "type": "silence",
+   "sileroGap": [
+    45.216,
+    48.128
+   ],
+   "keptBefore": 0.029,
+   "keptAfter": 0.05,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 49.145,
+   "end": 49.778333,
+   "type": "silence",
+   "sileroGap": [
+    49.088,
+    49.824
+   ],
+   "keptBefore": 0.057,
+   "keptAfter": 0.046,
+   "gapFloorDb": -63.9,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 50.511667,
+   "end": 52.513333,
+   "type": "silence",
+   "sileroGap": [
+    50.464,
+    52.608
+   ],
+   "keptBefore": 0.048,
+   "keptAfter": 0.095,
+   "gapFloorDb": -90.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 56.013333,
+   "end": 59.381667,
+   "type": "silence",
+   "sileroGap": [
+    55.968,
+    59.488
+   ],
+   "keptBefore": 0.045,
+   "keptAfter": 0.106,
+   "gapFloorDb": -88.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 60.615,
+   "end": 63.015,
+   "type": "silence",
+   "sileroGap": [
+    60.512,
+    63.072
+   ],
+   "keptBefore": 0.103,
+   "keptAfter": 0.057,
+   "gapFloorDb": -87.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 64.081667,
+   "end": 64.548333,
+   "type": "silence",
+   "sileroGap": [
+    64.0,
+    64.608
+   ],
+   "keptBefore": 0.082,
+   "keptAfter": 0.06,
+   "gapFloorDb": -84.9,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 69.216667,
+   "end": 69.583333,
+   "type": "silence",
+   "sileroGap": [
+    69.184,
+    69.632
+   ],
+   "keptBefore": 0.033,
+   "keptAfter": 0.049,
+   "gapFloorDb": -86.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 70.216667,
+   "end": 70.55,
+   "type": "silence",
+   "sileroGap": [
+    70.176,
+    70.592
+   ],
+   "keptBefore": 0.041,
+   "keptAfter": 0.042,
+   "gapFloorDb": -83.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 70.983333,
+   "end": 71.216667,
+   "type": "silence",
+   "sileroGap": [
+    70.944,
+    71.264
+   ],
+   "keptBefore": 0.039,
+   "keptAfter": 0.047,
+   "gapFloorDb": -81.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 73.285,
+   "end": 73.385,
+   "type": "silence",
+   "sileroGap": [
+    73.248,
+    73.44
+   ],
+   "keptBefore": 0.037,
+   "keptAfter": 0.055,
+   "gapFloorDb": -80.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 73.918333,
+   "end": 74.185,
+   "type": "silence",
+   "sileroGap": [
+    73.888,
+    74.24
+   ],
+   "keptBefore": 0.03,
+   "keptAfter": 0.055,
+   "gapFloorDb": -83.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 74.951667,
+   "end": 75.185,
+   "type": "silence",
+   "sileroGap": [
+    74.912,
+    75.264
+   ],
+   "keptBefore": 0.04,
+   "keptAfter": 0.079,
+   "gapFloorDb": -79.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 75.785,
+   "end": 76.151667,
+   "type": "silence",
+   "sileroGap": [
+    75.744,
+    76.192
+   ],
+   "keptBefore": 0.041,
+   "keptAfter": 0.04,
+   "gapFloorDb": -85.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 77.218333,
+   "end": 77.285,
+   "type": "silence",
+   "sileroGap": [
+    77.184,
+    77.344
+   ],
+   "keptBefore": 0.034,
+   "keptAfter": 0.059,
+   "gapFloorDb": -81.9,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 78.851667,
+   "end": 80.853333,
+   "type": "silence",
+   "sileroGap": [
+    78.816,
+    80.896
+   ],
+   "keptBefore": 0.036,
+   "keptAfter": 0.043,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 82.853333,
+   "end": 84.353333,
+   "type": "silence",
+   "sileroGap": [
+    82.784,
+    84.416
+   ],
+   "keptBefore": 0.069,
+   "keptAfter": 0.063,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 84.82,
+   "end": 85.386667,
+   "type": "silence",
+   "sileroGap": [
+    84.768,
+    85.44
+   ],
+   "keptBefore": 0.052,
+   "keptAfter": 0.053,
+   "gapFloorDb": -86.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 88.088333,
+   "end": 89.288333,
+   "type": "silence",
+   "sileroGap": [
+    88.032,
+    89.344
+   ],
+   "keptBefore": 0.056,
+   "keptAfter": 0.056,
+   "gapFloorDb": -90.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 90.988333,
+   "end": 92.655,
+   "type": "silence",
+   "sileroGap": [
+    90.944,
+    92.704
+   ],
+   "keptBefore": 0.044,
+   "keptAfter": 0.049,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 94.09,
+   "end": 94.59,
+   "type": "silence",
+   "sileroGap": [
+    93.984,
+    94.656
+   ],
+   "keptBefore": 0.106,
+   "keptAfter": 0.066,
+   "gapFloorDb": -86.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 96.19,
+   "end": 97.09,
+   "type": "silence",
+   "sileroGap": [
+    96.096,
+    97.152
+   ],
+   "keptBefore": 0.094,
+   "keptAfter": 0.062,
+   "gapFloorDb": -88.9,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 99.523333,
+   "end": 101.891667,
+   "type": "silence",
+   "sileroGap": [
+    99.488,
+    101.952
+   ],
+   "keptBefore": 0.035,
+   "keptAfter": 0.06,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 104.191667,
+   "end": 107.525,
+   "type": "silence",
+   "sileroGap": [
+    104.16,
+    107.584
+   ],
+   "keptBefore": 0.032,
+   "keptAfter": 0.059,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 108.76,
+   "end": 109.326667,
+   "type": "silence",
+   "sileroGap": [
+    108.704,
+    109.376
+   ],
+   "keptBefore": 0.056,
+   "keptAfter": 0.049,
+   "gapFloorDb": -81.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 113.593333,
+   "end": 114.626667,
+   "type": "silence",
+   "sileroGap": [
+    113.568,
+    114.688
+   ],
+   "keptBefore": 0.025,
+   "keptAfter": 0.061,
+   "gapFloorDb": -89.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 117.628333,
+   "end": 118.028333,
+   "type": "silence",
+   "sileroGap": [
+    117.6,
+    118.08
+   ],
+   "keptBefore": 0.028,
+   "keptAfter": 0.052,
+   "gapFloorDb": -85.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 119.495,
+   "end": 120.328333,
+   "type": "silence",
+   "sileroGap": [
+    119.456,
+    120.384
+   ],
+   "keptBefore": 0.039,
+   "keptAfter": 0.056,
+   "gapFloorDb": -85.9,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 120.628333,
+   "end": 121.495,
+   "type": "silence",
+   "sileroGap": [
+    120.576,
+    121.568
+   ],
+   "keptBefore": 0.052,
+   "keptAfter": 0.073,
+   "gapFloorDb": -79.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 123.696667,
+   "end": 129.065,
+   "type": "silence",
+   "sileroGap": [
+    123.648,
+    129.12
+   ],
+   "keptBefore": 0.049,
+   "keptAfter": 0.055,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 131.831667,
+   "end": 132.298333,
+   "type": "silence",
+   "sileroGap": [
+    131.776,
+    132.352
+   ],
+   "keptBefore": 0.056,
+   "keptAfter": 0.054,
+   "gapFloorDb": -80.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 133.498333,
+   "end": 139.8,
+   "type": "silence",
+   "sileroGap": [
+    133.472,
+    139.872
+   ],
+   "keptBefore": 0.026,
+   "keptAfter": 0.072,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 140.933333,
+   "end": 141.0,
+   "type": "silence",
+   "sileroGap": [
+    140.896,
+    141.056
+   ],
+   "keptBefore": 0.037,
+   "keptAfter": 0.056,
+   "gapFloorDb": -75.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 141.633333,
+   "end": 142.2,
+   "type": "silence",
+   "sileroGap": [
+    141.6,
+    142.272
+   ],
+   "keptBefore": 0.033,
+   "keptAfter": 0.072,
+   "gapFloorDb": -86.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 144.701667,
+   "end": 145.068333,
+   "type": "silence",
+   "sileroGap": [
+    144.672,
+    145.12
+   ],
+   "keptBefore": 0.03,
+   "keptAfter": 0.052,
+   "gapFloorDb": -76.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 146.168333,
+   "end": 148.668333,
+   "type": "silence",
+   "sileroGap": [
+    146.112,
+    148.736
+   ],
+   "keptBefore": 0.056,
+   "keptAfter": 0.068,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 151.703333,
+   "end": 153.436667,
+   "type": "silence",
+   "sileroGap": [
+    151.648,
+    153.504
+   ],
+   "keptBefore": 0.055,
+   "keptAfter": 0.067,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 155.136667,
+   "end": 155.236667,
+   "type": "silence",
+   "sileroGap": [
+    155.104,
+    155.296
+   ],
+   "keptBefore": 0.033,
+   "keptAfter": 0.059,
+   "gapFloorDb": -65.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 157.571667,
+   "end": 159.638333,
+   "type": "silence",
+   "sileroGap": [
+    157.536,
+    159.712
+   ],
+   "keptBefore": 0.036,
+   "keptAfter": 0.074,
+   "gapFloorDb": -89.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 160.338333,
+   "end": 160.405,
+   "type": "silence",
+   "sileroGap": [
+    160.288,
+    160.448
+   ],
+   "keptBefore": 0.05,
+   "keptAfter": 0.043,
+   "gapFloorDb": -81.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 162.405,
+   "end": 167.14,
+   "type": "silence",
+   "sileroGap": [
+    162.368,
+    167.2
+   ],
+   "keptBefore": 0.037,
+   "keptAfter": 0.06,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 171.641667,
+   "end": 171.741667,
+   "type": "silence",
+   "sileroGap": [
+    171.616,
+    171.808
+   ],
+   "keptBefore": 0.026,
+   "keptAfter": 0.066,
+   "gapFloorDb": -77.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 173.108333,
+   "end": 173.441667,
+   "type": "silence",
+   "sileroGap": [
+    173.056,
+    173.504
+   ],
+   "keptBefore": 0.052,
+   "keptAfter": 0.062,
+   "gapFloorDb": -83.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 177.241667,
+   "end": 179.876667,
+   "type": "silence",
+   "sileroGap": [
+    177.216,
+    179.968
+   ],
+   "keptBefore": 0.026,
+   "keptAfter": 0.091,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 182.61,
+   "end": 182.91,
+   "type": "silence",
+   "sileroGap": [
+    182.56,
+    182.976
+   ],
+   "keptBefore": 0.05,
+   "keptAfter": 0.066,
+   "gapFloorDb": -85.9,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 184.711667,
+   "end": 185.411667,
+   "type": "silence",
+   "sileroGap": [
+    184.64,
+    185.504
+   ],
+   "keptBefore": 0.072,
+   "keptAfter": 0.092,
+   "gapFloorDb": -86.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 187.511667,
+   "end": 187.578333,
+   "type": "silence",
+   "sileroGap": [
+    187.456,
+    187.648
+   ],
+   "keptBefore": 0.056,
+   "keptAfter": 0.07,
+   "gapFloorDb": -67.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 188.311667,
+   "end": 191.578333,
+   "type": "silence",
+   "sileroGap": [
+    188.256,
+    191.648
+   ],
+   "keptBefore": 0.056,
+   "keptAfter": 0.07,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 192.946667,
+   "end": 193.113333,
+   "type": "silence",
+   "sileroGap": [
+    192.896,
+    193.184
+   ],
+   "keptBefore": 0.051,
+   "keptAfter": 0.071,
+   "gapFloorDb": -77.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 194.113333,
+   "end": 194.38,
+   "type": "silence",
+   "sileroGap": [
+    194.08,
+    194.432
+   ],
+   "keptBefore": 0.033,
+   "keptAfter": 0.052,
+   "gapFloorDb": -76.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 194.813333,
+   "end": 196.58,
+   "type": "silence",
+   "sileroGap": [
+    194.784,
+    196.64
+   ],
+   "keptBefore": 0.029,
+   "keptAfter": 0.06,
+   "gapFloorDb": -91.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 200.381667,
+   "end": 201.315,
+   "type": "silence",
+   "sileroGap": [
+    200.352,
+    201.376
+   ],
+   "keptBefore": 0.03,
+   "keptAfter": 0.061,
+   "gapFloorDb": -89.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 201.915,
+   "end": 201.981667,
+   "type": "silence",
+   "sileroGap": [
+    201.888,
+    202.048
+   ],
+   "keptBefore": 0.027,
+   "keptAfter": 0.066,
+   "gapFloorDb": -79.9,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 202.881667,
+   "end": 203.548333,
+   "type": "silence",
+   "sileroGap": [
+    202.848,
+    203.616
+   ],
+   "keptBefore": 0.034,
+   "keptAfter": 0.068,
+   "gapFloorDb": -88.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 206.85,
+   "end": 207.783333,
+   "type": "silence",
+   "sileroGap": [
+    206.816,
+    207.84
+   ],
+   "keptBefore": 0.034,
+   "keptAfter": 0.057,
+   "gapFloorDb": -88.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 210.15,
+   "end": 210.416667,
+   "type": "silence",
+   "sileroGap": [
+    210.112,
+    210.464
+   ],
+   "keptBefore": 0.038,
+   "keptAfter": 0.047,
+   "gapFloorDb": -70.9,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 214.385,
+   "end": 216.418333,
+   "type": "silence",
+   "sileroGap": [
+    214.336,
+    216.48
+   ],
+   "keptBefore": 0.049,
+   "keptAfter": 0.062,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 218.151667,
+   "end": 218.551667,
+   "type": "silence",
+   "sileroGap": [
+    218.112,
+    218.624
+   ],
+   "keptBefore": 0.04,
+   "keptAfter": 0.072,
+   "gapFloorDb": -87.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 220.22,
+   "end": 220.353333,
+   "type": "silence",
+   "sileroGap": [
+    220.192,
+    220.416
+   ],
+   "keptBefore": 0.028,
+   "keptAfter": 0.063,
+   "gapFloorDb": -81.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 221.72,
+   "end": 222.486667,
+   "type": "silence",
+   "sileroGap": [
+    221.696,
+    222.56
+   ],
+   "keptBefore": 0.024,
+   "keptAfter": 0.073,
+   "gapFloorDb": -85.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 223.32,
+   "end": 225.453333,
+   "type": "silence",
+   "sileroGap": [
+    223.296,
+    225.504
+   ],
+   "keptBefore": 0.024,
+   "keptAfter": 0.051,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 227.221667,
+   "end": 229.021667,
+   "type": "silence",
+   "sileroGap": [
+    227.168,
+    229.088
+   ],
+   "keptBefore": 0.054,
+   "keptAfter": 0.066,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 230.988333,
+   "end": 232.921667,
+   "type": "silence",
+   "sileroGap": [
+    230.944,
+    232.992
+   ],
+   "keptBefore": 0.044,
+   "keptAfter": 0.07,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 234.956667,
+   "end": 236.356667,
+   "type": "silence",
+   "sileroGap": [
+    234.912,
+    236.416
+   ],
+   "keptBefore": 0.045,
+   "keptAfter": 0.059,
+   "gapFloorDb": -90.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 236.99,
+   "end": 237.923333,
+   "type": "silence",
+   "sileroGap": [
+    236.928,
+    237.984
+   ],
+   "keptBefore": 0.062,
+   "keptAfter": 0.061,
+   "gapFloorDb": -88.9,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 239.79,
+   "end": 240.29,
+   "type": "silence",
+   "sileroGap": [
+    239.744,
+    240.352
+   ],
+   "keptBefore": 0.046,
+   "keptAfter": 0.062,
+   "gapFloorDb": -71.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 241.858333,
+   "end": 242.058333,
+   "type": "silence",
+   "sileroGap": [
+    241.792,
+    242.112
+   ],
+   "keptBefore": 0.066,
+   "keptAfter": 0.054,
+   "gapFloorDb": -80.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 243.591667,
+   "end": 243.658333,
+   "type": "silence",
+   "sileroGap": [
+    243.552,
+    243.712
+   ],
+   "keptBefore": 0.04,
+   "keptAfter": 0.054,
+   "gapFloorDb": -79.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 245.258333,
+   "end": 248.593333,
+   "type": "silence",
+   "sileroGap": [
+    245.216,
+    248.64
+   ],
+   "keptBefore": 0.042,
+   "keptAfter": 0.047,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 251.326667,
+   "end": 251.693333,
+   "type": "silence",
+   "sileroGap": [
+    251.296,
+    251.744
+   ],
+   "keptBefore": 0.031,
+   "keptAfter": 0.051,
+   "gapFloorDb": -80.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 253.926667,
+   "end": 256.595,
+   "type": "silence",
+   "sileroGap": [
+    253.888,
+    256.64
+   ],
+   "keptBefore": 0.039,
+   "keptAfter": 0.045,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 259.261667,
+   "end": 259.661667,
+   "type": "silence",
+   "sileroGap": [
+    259.232,
+    259.712
+   ],
+   "keptBefore": 0.03,
+   "keptAfter": 0.05,
+   "gapFloorDb": -82.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 261.73,
+   "end": 262.696667,
+   "type": "silence",
+   "sileroGap": [
+    261.696,
+    262.752
+   ],
+   "keptBefore": 0.034,
+   "keptAfter": 0.055,
+   "gapFloorDb": -89.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 263.696667,
+   "end": 267.096667,
+   "type": "silence",
+   "sileroGap": [
+    263.648,
+    267.168
+   ],
+   "keptBefore": 0.049,
+   "keptAfter": 0.071,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 269.698333,
+   "end": 269.998333,
+   "type": "silence",
+   "sileroGap": [
+    269.664,
+    270.048
+   ],
+   "keptBefore": 0.034,
+   "keptAfter": 0.05,
+   "gapFloorDb": -82.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 270.631667,
+   "end": 270.831667,
+   "type": "silence",
+   "sileroGap": [
+    270.592,
+    270.88
+   ],
+   "keptBefore": 0.04,
+   "keptAfter": 0.048,
+   "gapFloorDb": -72.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 271.498333,
+   "end": 273.398333,
+   "type": "silence",
+   "sileroGap": [
+    271.456,
+    273.44
+   ],
+   "keptBefore": 0.042,
+   "keptAfter": 0.042,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 275.833333,
+   "end": 276.833333,
+   "type": "silence",
+   "sileroGap": [
+    275.808,
+    276.896
+   ],
+   "keptBefore": 0.025,
+   "keptAfter": 0.063,
+   "gapFloorDb": -89.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 279.733333,
+   "end": 280.466667,
+   "type": "silence",
+   "sileroGap": [
+    279.68,
+    280.512
+   ],
+   "keptBefore": 0.053,
+   "keptAfter": 0.045,
+   "gapFloorDb": -87.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 281.0,
+   "end": 281.266667,
+   "type": "silence",
+   "sileroGap": [
+    280.96,
+    281.312
+   ],
+   "keptBefore": 0.04,
+   "keptAfter": 0.045,
+   "gapFloorDb": -70.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 282.601667,
+   "end": 289.57,
+   "type": "silence",
+   "sileroGap": [
+    282.56,
+    289.632
+   ],
+   "keptBefore": 0.042,
+   "keptAfter": 0.062,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 291.303333,
+   "end": 291.636667,
+   "type": "silence",
+   "sileroGap": [
+    291.264,
+    291.68
+   ],
+   "keptBefore": 0.039,
+   "keptAfter": 0.043,
+   "gapFloorDb": -84.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 293.003333,
+   "end": 293.27,
+   "type": "silence",
+   "sileroGap": [
+    292.96,
+    293.312
+   ],
+   "keptBefore": 0.043,
+   "keptAfter": 0.042,
+   "gapFloorDb": -72.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 294.27,
+   "end": 294.903333,
+   "type": "silence",
+   "sileroGap": [
+    294.208,
+    294.976
+   ],
+   "keptBefore": 0.062,
+   "keptAfter": 0.073,
+   "gapFloorDb": -87.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 296.203333,
+   "end": 296.805,
+   "type": "silence",
+   "sileroGap": [
+    296.096,
+    296.864
+   ],
+   "keptBefore": 0.107,
+   "keptAfter": 0.059,
+   "gapFloorDb": -84.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 297.371667,
+   "end": 297.738333,
+   "type": "silence",
+   "sileroGap": [
+    297.344,
+    297.792
+   ],
+   "keptBefore": 0.028,
+   "keptAfter": 0.054,
+   "gapFloorDb": -84.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 299.038333,
+   "end": 299.338333,
+   "type": "silence",
+   "sileroGap": [
+    299.008,
+    299.392
+   ],
+   "keptBefore": 0.03,
+   "keptAfter": 0.054,
+   "gapFloorDb": -79.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 300.638333,
+   "end": 301.671667,
+   "type": "silence",
+   "sileroGap": [
+    300.608,
+    301.728
+   ],
+   "keptBefore": 0.03,
+   "keptAfter": 0.056,
+   "gapFloorDb": -88.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 303.273333,
+   "end": 303.673333,
+   "type": "silence",
+   "sileroGap": [
+    303.232,
+    303.744
+   ],
+   "keptBefore": 0.041,
+   "keptAfter": 0.071,
+   "gapFloorDb": -85.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 304.873333,
+   "end": 305.506667,
+   "type": "silence",
+   "sileroGap": [
+    304.832,
+    305.568
+   ],
+   "keptBefore": 0.041,
+   "keptAfter": 0.061,
+   "gapFloorDb": -87.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 306.54,
+   "end": 307.14,
+   "type": "silence",
+   "sileroGap": [
+    306.496,
+    307.2
+   ],
+   "keptBefore": 0.044,
+   "keptAfter": 0.06,
+   "gapFloorDb": -87.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 308.74,
+   "end": 309.24,
+   "type": "silence",
+   "sileroGap": [
+    308.672,
+    309.312
+   ],
+   "keptBefore": 0.068,
+   "keptAfter": 0.072,
+   "gapFloorDb": -87.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 310.241667,
+   "end": 311.441667,
+   "type": "silence",
+   "sileroGap": [
+    310.208,
+    311.488
+   ],
+   "keptBefore": 0.034,
+   "keptAfter": 0.046,
+   "gapFloorDb": -89.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 312.108333,
+   "end": 312.241667,
+   "type": "silence",
+   "sileroGap": [
+    312.064,
+    312.288
+   ],
+   "keptBefore": 0.044,
+   "keptAfter": 0.046,
+   "gapFloorDb": -75.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 313.341667,
+   "end": 313.641667,
+   "type": "silence",
+   "sileroGap": [
+    313.312,
+    313.696
+   ],
+   "keptBefore": 0.03,
+   "keptAfter": 0.054,
+   "gapFloorDb": -76.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 315.108333,
+   "end": 315.241667,
+   "type": "silence",
+   "sileroGap": [
+    315.072,
+    315.296
+   ],
+   "keptBefore": 0.036,
+   "keptAfter": 0.054,
+   "gapFloorDb": -81.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 317.243333,
+   "end": 317.876667,
+   "type": "silence",
+   "sileroGap": [
+    317.184,
+    317.92
+   ],
+   "keptBefore": 0.059,
+   "keptAfter": 0.043,
+   "gapFloorDb": -88.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 322.543333,
+   "end": 322.743333,
+   "type": "silence",
+   "sileroGap": [
+    322.496,
+    322.784
+   ],
+   "keptBefore": 0.047,
+   "keptAfter": 0.041,
+   "gapFloorDb": -81.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 324.811667,
+   "end": 327.511667,
+   "type": "silence",
+   "sileroGap": [
+    324.768,
+    327.552
+   ],
+   "keptBefore": 0.044,
+   "keptAfter": 0.04,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 329.311667,
+   "end": 330.178333,
+   "type": "silence",
+   "sileroGap": [
+    329.28,
+    330.24
+   ],
+   "keptBefore": 0.032,
+   "keptAfter": 0.062,
+   "gapFloorDb": -86.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 330.645,
+   "end": 331.011667,
+   "type": "silence",
+   "sileroGap": [
+    330.592,
+    331.072
+   ],
+   "keptBefore": 0.053,
+   "keptAfter": 0.06,
+   "gapFloorDb": -84.9,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 332.746667,
+   "end": 332.813333,
+   "type": "silence",
+   "sileroGap": [
+    332.704,
+    332.864
+   ],
+   "keptBefore": 0.043,
+   "keptAfter": 0.051,
+   "gapFloorDb": -77.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 333.646667,
+   "end": 333.88,
+   "type": "silence",
+   "sileroGap": [
+    333.6,
+    333.952
+   ],
+   "keptBefore": 0.047,
+   "keptAfter": 0.072,
+   "gapFloorDb": -84.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 335.68,
+   "end": 336.446667,
+   "type": "silence",
+   "sileroGap": [
+    335.648,
+    336.512
+   ],
+   "keptBefore": 0.032,
+   "keptAfter": 0.065,
+   "gapFloorDb": -82.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 337.28,
+   "end": 338.415,
+   "type": "silence",
+   "sileroGap": [
+    337.248,
+    338.464
+   ],
+   "keptBefore": 0.032,
+   "keptAfter": 0.049,
+   "gapFloorDb": -89.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 339.348333,
+   "end": 339.681667,
+   "type": "silence",
+   "sileroGap": [
+    339.296,
+    339.744
+   ],
+   "keptBefore": 0.052,
+   "keptAfter": 0.062,
+   "gapFloorDb": -78.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 341.381667,
+   "end": 341.615,
+   "type": "silence",
+   "sileroGap": [
+    341.344,
+    341.664
+   ],
+   "keptBefore": 0.038,
+   "keptAfter": 0.049,
+   "gapFloorDb": -77.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 342.881667,
+   "end": 344.248333,
+   "type": "silence",
+   "sileroGap": [
+    342.848,
+    344.32
+   ],
+   "keptBefore": 0.034,
+   "keptAfter": 0.072,
+   "gapFloorDb": -90.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 345.516667,
+   "end": 345.783333,
+   "type": "silence",
+   "sileroGap": [
+    345.472,
+    345.824
+   ],
+   "keptBefore": 0.045,
+   "keptAfter": 0.041,
+   "gapFloorDb": -84.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 347.416667,
+   "end": 349.516667,
+   "type": "silence",
+   "sileroGap": [
+    347.392,
+    349.568
+   ],
+   "keptBefore": 0.025,
+   "keptAfter": 0.051,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 354.818333,
+   "end": 355.185,
+   "type": "silence",
+   "sileroGap": [
+    354.784,
+    355.232
+   ],
+   "keptBefore": 0.034,
+   "keptAfter": 0.047,
+   "gapFloorDb": -85.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 356.551667,
+   "end": 359.32,
+   "type": "silence",
+   "sileroGap": [
+    356.512,
+    359.392
+   ],
+   "keptBefore": 0.04,
+   "keptAfter": 0.072,
+   "gapFloorDb": -95.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 361.32,
+   "end": 361.72,
+   "type": "silence",
+   "sileroGap": [
+    361.28,
+    361.792
+   ],
+   "keptBefore": 0.04,
+   "keptAfter": 0.072,
+   "gapFloorDb": -85.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 363.486667,
+   "end": 363.62,
+   "type": "silence",
+   "sileroGap": [
+    363.456,
+    363.68
+   ],
+   "keptBefore": 0.031,
+   "keptAfter": 0.06,
+   "gapFloorDb": -82.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 365.953333,
+   "end": 366.388333,
+   "type": "silence",
+   "sileroGap": [
+    365.92,
+    366.432
+   ],
+   "keptBefore": 0.033,
+   "keptAfter": 0.044,
+   "gapFloorDb": -84.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 368.321667,
+   "end": 369.788333,
+   "type": "silence",
+   "sileroGap": [
+    368.288,
+    369.856
+   ],
+   "keptBefore": 0.034,
+   "keptAfter": 0.068,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 370.555,
+   "end": 373.623333,
+   "type": "silence",
+   "sileroGap": [
+    370.528,
+    373.664
+   ],
+   "keptBefore": 0.027,
+   "keptAfter": 0.041,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 374.056667,
+   "end": 374.156667,
+   "type": "silence",
+   "sileroGap": [
+    374.016,
+    374.208
+   ],
+   "keptBefore": 0.041,
+   "keptAfter": 0.051,
+   "gapFloorDb": -67.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 378.256667,
+   "end": 378.456667,
+   "type": "silence",
+   "sileroGap": [
+    378.208,
+    378.528
+   ],
+   "keptBefore": 0.049,
+   "keptAfter": 0.071,
+   "gapFloorDb": -65.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 380.258333,
+   "end": 380.691667,
+   "type": "silence",
+   "sileroGap": [
+    380.224,
+    380.736
+   ],
+   "keptBefore": 0.034,
+   "keptAfter": 0.044,
+   "gapFloorDb": -86.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 381.291667,
+   "end": 381.591667,
+   "type": "silence",
+   "sileroGap": [
+    381.248,
+    381.632
+   ],
+   "keptBefore": 0.044,
+   "keptAfter": 0.04,
+   "gapFloorDb": -82.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 383.325,
+   "end": 383.758333,
+   "type": "silence",
+   "sileroGap": [
+    383.296,
+    383.808
+   ],
+   "keptBefore": 0.029,
+   "keptAfter": 0.05,
+   "gapFloorDb": -85.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 384.591667,
+   "end": 385.225,
+   "type": "silence",
+   "sileroGap": [
+    384.544,
+    385.28
+   ],
+   "keptBefore": 0.048,
+   "keptAfter": 0.055,
+   "gapFloorDb": -87.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 386.225,
+   "end": 388.726667,
+   "type": "silence",
+   "sileroGap": [
+    386.176,
+    388.768
+   ],
+   "keptBefore": 0.049,
+   "keptAfter": 0.041,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 392.193333,
+   "end": 392.626667,
+   "type": "silence",
+   "sileroGap": [
+    392.16,
+    392.672
+   ],
+   "keptBefore": 0.033,
+   "keptAfter": 0.045,
+   "gapFloorDb": -87.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 393.893333,
+   "end": 394.195,
+   "type": "silence",
+   "sileroGap": [
+    393.824,
+    394.24
+   ],
+   "keptBefore": 0.069,
+   "keptAfter": 0.045,
+   "gapFloorDb": -80.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 395.195,
+   "end": 395.828333,
+   "type": "silence",
+   "sileroGap": [
+    395.136,
+    395.872
+   ],
+   "keptBefore": 0.059,
+   "keptAfter": 0.044,
+   "gapFloorDb": -86.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 397.495,
+   "end": 397.695,
+   "type": "silence",
+   "sileroGap": [
+    397.44,
+    397.76
+   ],
+   "keptBefore": 0.055,
+   "keptAfter": 0.065,
+   "gapFloorDb": -85.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 399.028333,
+   "end": 400.461667,
+   "type": "silence",
+   "sileroGap": [
+    398.976,
+    400.512
+   ],
+   "keptBefore": 0.052,
+   "keptAfter": 0.05,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 404.93,
+   "end": 405.23,
+   "type": "silence",
+   "sileroGap": [
+    404.896,
+    405.28
+   ],
+   "keptBefore": 0.034,
+   "keptAfter": 0.05,
+   "gapFloorDb": -82.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 408.565,
+   "end": 410.865,
+   "type": "silence",
+   "sileroGap": [
+    408.512,
+    410.944
+   ],
+   "keptBefore": 0.053,
+   "keptAfter": 0.079,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 412.965,
+   "end": 413.031667,
+   "type": "silence",
+   "sileroGap": [
+    412.928,
+    413.088
+   ],
+   "keptBefore": 0.037,
+   "keptAfter": 0.056,
+   "gapFloorDb": -71.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 414.231667,
+   "end": 414.265,
+   "type": "silence",
+   "sileroGap": [
+    414.176,
+    414.336
+   ],
+   "keptBefore": 0.056,
+   "keptAfter": 0.071,
+   "gapFloorDb": -83.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 415.0,
+   "end": 415.8,
+   "type": "silence",
+   "sileroGap": [
+    414.976,
+    415.872
+   ],
+   "keptBefore": 0.024,
+   "keptAfter": 0.072,
+   "gapFloorDb": -87.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 418.233333,
+   "end": 418.3,
+   "type": "silence",
+   "sileroGap": [
+    418.208,
+    418.368
+   ],
+   "keptBefore": 0.025,
+   "keptAfter": 0.068,
+   "gapFloorDb": -74.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 419.3,
+   "end": 420.233333,
+   "type": "silence",
+   "sileroGap": [
+    419.264,
+    420.288
+   ],
+   "keptBefore": 0.036,
+   "keptAfter": 0.055,
+   "gapFloorDb": -89.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 424.868333,
+   "end": 425.868333,
+   "type": "silence",
+   "sileroGap": [
+    424.832,
+    425.92
+   ],
+   "keptBefore": 0.036,
+   "keptAfter": 0.052,
+   "gapFloorDb": -89.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 428.468333,
+   "end": 429.07,
+   "type": "silence",
+   "sileroGap": [
+    428.416,
+    429.12
+   ],
+   "keptBefore": 0.052,
+   "keptAfter": 0.05,
+   "gapFloorDb": -86.9,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 430.136667,
+   "end": 430.17,
+   "type": "silence",
+   "sileroGap": [
+    430.08,
+    430.24
+   ],
+   "keptBefore": 0.057,
+   "keptAfter": 0.07,
+   "gapFloorDb": -78.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 433.203333,
+   "end": 434.37,
+   "type": "silence",
+   "sileroGap": [
+    433.152,
+    434.432
+   ],
+   "keptBefore": 0.051,
+   "keptAfter": 0.062,
+   "gapFloorDb": -91.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 435.636667,
+   "end": 435.736667,
+   "type": "silence",
+   "sileroGap": [
+    435.584,
+    435.808
+   ],
+   "keptBefore": 0.053,
+   "keptAfter": 0.071,
+   "gapFloorDb": -81.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 436.971667,
+   "end": 439.771667,
+   "type": "silence",
+   "sileroGap": [
+    436.928,
+    439.84
+   ],
+   "keptBefore": 0.044,
+   "keptAfter": 0.068,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 442.305,
+   "end": 442.538333,
+   "type": "silence",
+   "sileroGap": [
+    442.24,
+    442.592
+   ],
+   "keptBefore": 0.065,
+   "keptAfter": 0.054,
+   "gapFloorDb": -78.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 444.773333,
+   "end": 445.84,
+   "type": "silence",
+   "sileroGap": [
+    444.736,
+    445.888
+   ],
+   "keptBefore": 0.037,
+   "keptAfter": 0.048,
+   "gapFloorDb": -89.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 446.74,
+   "end": 447.173333,
+   "type": "silence",
+   "sileroGap": [
+    446.688,
+    447.232
+   ],
+   "keptBefore": 0.052,
+   "keptAfter": 0.059,
+   "gapFloorDb": -84.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 451.008333,
+   "end": 451.775,
+   "type": "silence",
+   "sileroGap": [
+    450.976,
+    451.84
+   ],
+   "keptBefore": 0.032,
+   "keptAfter": 0.065,
+   "gapFloorDb": -84.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 453.741667,
+   "end": 454.641667,
+   "type": "silence",
+   "sileroGap": [
+    453.696,
+    454.688
+   ],
+   "keptBefore": 0.046,
+   "keptAfter": 0.046,
+   "gapFloorDb": -83.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 455.708333,
+   "end": 455.741667,
+   "type": "silence",
+   "sileroGap": [
+    455.648,
+    455.808
+   ],
+   "keptBefore": 0.06,
+   "keptAfter": 0.066,
+   "gapFloorDb": -69.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 456.408333,
+   "end": 457.343333,
+   "type": "silence",
+   "sileroGap": [
+    456.352,
+    457.408
+   ],
+   "keptBefore": 0.056,
+   "keptAfter": 0.065,
+   "gapFloorDb": -89.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 459.343333,
+   "end": 460.21,
+   "type": "silence",
+   "sileroGap": [
+    459.296,
+    460.256
+   ],
+   "keptBefore": 0.047,
+   "keptAfter": 0.046,
+   "gapFloorDb": -89.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 465.811667,
+   "end": 466.845,
+   "type": "silence",
+   "sileroGap": [
+    465.76,
+    466.912
+   ],
+   "keptBefore": 0.052,
+   "keptAfter": 0.067,
+   "gapFloorDb": -90.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 469.445,
+   "end": 469.811667,
+   "type": "silence",
+   "sileroGap": [
+    469.408,
+    469.856
+   ],
+   "keptBefore": 0.037,
+   "keptAfter": 0.044,
+   "gapFloorDb": -81.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 470.711667,
+   "end": 471.38,
+   "type": "silence",
+   "sileroGap": [
+    470.656,
+    471.424
+   ],
+   "keptBefore": 0.056,
+   "keptAfter": 0.044,
+   "gapFloorDb": -87.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 472.313333,
+   "end": 472.68,
+   "type": "silence",
+   "sileroGap": [
+    472.288,
+    472.736
+   ],
+   "keptBefore": 0.025,
+   "keptAfter": 0.056,
+   "gapFloorDb": -86.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 474.446667,
+   "end": 478.948333,
+   "type": "silence",
+   "sileroGap": [
+    474.4,
+    479.008
+   ],
+   "keptBefore": 0.047,
+   "keptAfter": 0.06,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 480.681667,
+   "end": 482.648333,
+   "type": "silence",
+   "sileroGap": [
+    480.64,
+    482.72
+   ],
+   "keptBefore": 0.042,
+   "keptAfter": 0.072,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 484.248333,
+   "end": 485.116667,
+   "type": "silence",
+   "sileroGap": [
+    484.192,
+    485.184
+   ],
+   "keptBefore": 0.056,
+   "keptAfter": 0.067,
+   "gapFloorDb": -89.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 487.45,
+   "end": 487.683333,
+   "type": "silence",
+   "sileroGap": [
+    487.392,
+    487.744
+   ],
+   "keptBefore": 0.058,
+   "keptAfter": 0.061,
+   "gapFloorDb": -82.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 488.15,
+   "end": 488.383333,
+   "type": "silence",
+   "sileroGap": [
+    488.096,
+    488.448
+   ],
+   "keptBefore": 0.054,
+   "keptAfter": 0.065,
+   "gapFloorDb": -78.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 489.483333,
+   "end": 489.95,
+   "type": "silence",
+   "sileroGap": [
+    489.44,
+    490.016
+   ],
+   "keptBefore": 0.043,
+   "keptAfter": 0.066,
+   "gapFloorDb": -83.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 491.25,
+   "end": 491.316667,
+   "type": "silence",
+   "sileroGap": [
+    491.2,
+    491.36
+   ],
+   "keptBefore": 0.05,
+   "keptAfter": 0.043,
+   "gapFloorDb": -80.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 492.385,
+   "end": 492.518333,
+   "type": "silence",
+   "sileroGap": [
+    492.352,
+    492.576
+   ],
+   "keptBefore": 0.033,
+   "keptAfter": 0.058,
+   "gapFloorDb": -75.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 498.185,
+   "end": 499.52,
+   "type": "silence",
+   "sileroGap": [
+    498.144,
+    499.584
+   ],
+   "keptBefore": 0.041,
+   "keptAfter": 0.064,
+   "gapFloorDb": -90.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 502.453333,
+   "end": 503.12,
+   "type": "silence",
+   "sileroGap": [
+    502.4,
+    503.168
+   ],
+   "keptBefore": 0.053,
+   "keptAfter": 0.048,
+   "gapFloorDb": -88.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 503.786667,
+   "end": 509.721667,
+   "type": "silence",
+   "sileroGap": [
+    503.744,
+    509.792
+   ],
+   "keptBefore": 0.043,
+   "keptAfter": 0.07,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 512.055,
+   "end": 513.023333,
+   "type": "silence",
+   "sileroGap": [
+    512.0,
+    513.088
+   ],
+   "keptBefore": 0.055,
+   "keptAfter": 0.065,
+   "gapFloorDb": -89.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 514.123333,
+   "end": 518.49,
+   "type": "silence",
+   "sileroGap": [
+    514.08,
+    518.56
+   ],
+   "keptBefore": 0.043,
+   "keptAfter": 0.07,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 519.523333,
+   "end": 519.59,
+   "type": "silence",
+   "sileroGap": [
+    519.456,
+    519.648
+   ],
+   "keptBefore": 0.067,
+   "keptAfter": 0.058,
+   "gapFloorDb": -78.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 520.525,
+   "end": 520.925,
+   "type": "silence",
+   "sileroGap": [
+    520.48,
+    520.992
+   ],
+   "keptBefore": 0.045,
+   "keptAfter": 0.067,
+   "gapFloorDb": -86.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 521.791667,
+   "end": 525.658333,
+   "type": "silence",
+   "sileroGap": [
+    521.76,
+    525.728
+   ],
+   "keptBefore": 0.032,
+   "keptAfter": 0.07,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 527.96,
+   "end": 530.026667,
+   "type": "silence",
+   "sileroGap": [
+    527.936,
+    530.08
+   ],
+   "keptBefore": 0.024,
+   "keptAfter": 0.053,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 531.093333,
+   "end": 533.393333,
+   "type": "silence",
+   "sileroGap": [
+    531.04,
+    533.44
+   ],
+   "keptBefore": 0.053,
+   "keptAfter": 0.047,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 534.928333,
+   "end": 536.395,
+   "type": "silence",
+   "sileroGap": [
+    534.88,
+    536.448
+   ],
+   "keptBefore": 0.048,
+   "keptAfter": 0.053,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 537.461667,
+   "end": 540.128333,
+   "type": "silence",
+   "sileroGap": [
+    537.408,
+    540.192
+   ],
+   "keptBefore": 0.054,
+   "keptAfter": 0.064,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 543.296667,
+   "end": 555.2,
+   "type": "silence",
+   "sileroGap": [
+    543.264,
+    555.264
+   ],
+   "keptBefore": 0.033,
+   "keptAfter": 0.064,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 558.133333,
+   "end": 560.666667,
+   "type": "silence",
+   "sileroGap": [
+    558.08,
+    560.736
+   ],
+   "keptBefore": 0.053,
+   "keptAfter": 0.069,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 562.168333,
+   "end": 562.235,
+   "type": "silence",
+   "sileroGap": [
+    562.144,
+    562.304
+   ],
+   "keptBefore": 0.024,
+   "keptAfter": 0.069,
+   "gapFloorDb": -68.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 563.568333,
+   "end": 563.835,
+   "type": "silence",
+   "sileroGap": [
+    563.52,
+    563.904
+   ],
+   "keptBefore": 0.048,
+   "keptAfter": 0.069,
+   "gapFloorDb": -82.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 565.068333,
+   "end": 565.335,
+   "type": "silence",
+   "sileroGap": [
+    565.024,
+    565.376
+   ],
+   "keptBefore": 0.044,
+   "keptAfter": 0.041,
+   "gapFloorDb": -78.9,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 566.801667,
+   "end": 566.935,
+   "type": "silence",
+   "sileroGap": [
+    566.752,
+    566.976
+   ],
+   "keptBefore": 0.05,
+   "keptAfter": 0.041,
+   "gapFloorDb": -82.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 569.036667,
+   "end": 569.536667,
+   "type": "silence",
+   "sileroGap": [
+    568.992,
+    569.6
+   ],
+   "keptBefore": 0.045,
+   "keptAfter": 0.063,
+   "gapFloorDb": -85.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 571.536667,
+   "end": 571.903333,
+   "type": "silence",
+   "sileroGap": [
+    571.488,
+    571.968
+   ],
+   "keptBefore": 0.049,
+   "keptAfter": 0.065,
+   "gapFloorDb": -85.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 572.803333,
+   "end": 573.736667,
+   "type": "silence",
+   "sileroGap": [
+    572.768,
+    573.792
+   ],
+   "keptBefore": 0.035,
+   "keptAfter": 0.055,
+   "gapFloorDb": -88.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 574.77,
+   "end": 578.471667,
+   "type": "silence",
+   "sileroGap": [
+    574.72,
+    578.528
+   ],
+   "keptBefore": 0.05,
+   "keptAfter": 0.056,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 582.806667,
+   "end": 582.906667,
+   "type": "silence",
+   "sileroGap": [
+    582.752,
+    582.976
+   ],
+   "keptBefore": 0.055,
+   "keptAfter": 0.069,
+   "gapFloorDb": -76.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 585.273333,
+   "end": 585.506667,
+   "type": "silence",
+   "sileroGap": [
+    585.248,
+    585.568
+   ],
+   "keptBefore": 0.025,
+   "keptAfter": 0.061,
+   "gapFloorDb": -81.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 587.706667,
+   "end": 588.04,
+   "type": "silence",
+   "sileroGap": [
+    587.68,
+    588.096
+   ],
+   "keptBefore": 0.027,
+   "keptAfter": 0.056,
+   "gapFloorDb": -79.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 589.14,
+   "end": 590.441667,
+   "type": "silence",
+   "sileroGap": [
+    589.088,
+    590.496
+   ],
+   "keptBefore": 0.052,
+   "keptAfter": 0.054,
+   "gapFloorDb": -89.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 591.675,
+   "end": 592.108333,
+   "type": "silence",
+   "sileroGap": [
+    591.584,
+    592.16
+   ],
+   "keptBefore": 0.091,
+   "keptAfter": 0.052,
+   "gapFloorDb": -83.3,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 592.808333,
+   "end": 593.008333,
+   "type": "silence",
+   "sileroGap": [
+    592.768,
+    593.056
+   ],
+   "keptBefore": 0.04,
+   "keptAfter": 0.048,
+   "gapFloorDb": -83.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 593.875,
+   "end": 593.908333,
+   "type": "silence",
+   "sileroGap": [
+    593.824,
+    593.984
+   ],
+   "keptBefore": 0.051,
+   "keptAfter": 0.076,
+   "gapFloorDb": -79.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 595.675,
+   "end": 596.676667,
+   "type": "silence",
+   "sileroGap": [
+    595.648,
+    596.736
+   ],
+   "keptBefore": 0.027,
+   "keptAfter": 0.059,
+   "gapFloorDb": -86.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 599.043333,
+   "end": 599.476667,
+   "type": "silence",
+   "sileroGap": [
+    599.008,
+    599.52
+   ],
+   "keptBefore": 0.035,
+   "keptAfter": 0.043,
+   "gapFloorDb": -85.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 600.576667,
+   "end": 600.843333,
+   "type": "silence",
+   "sileroGap": [
+    600.544,
+    600.928
+   ],
+   "keptBefore": 0.033,
+   "keptAfter": 0.085,
+   "gapFloorDb": -81.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 603.411667,
+   "end": 605.811667,
+   "type": "silence",
+   "sileroGap": [
+    603.36,
+    605.856
+   ],
+   "keptBefore": 0.052,
+   "keptAfter": 0.044,
+   "gapFloorDb": -94.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 608.078333,
+   "end": 608.145,
+   "type": "silence",
+   "sileroGap": [
+    608.032,
+    608.192
+   ],
+   "keptBefore": 0.046,
+   "keptAfter": 0.047,
+   "gapFloorDb": -75.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 610.946667,
+   "end": 614.246667,
+   "type": "silence",
+   "sileroGap": [
+    610.912,
+    614.304
+   ],
+   "keptBefore": 0.035,
+   "keptAfter": 0.057,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 617.246667,
+   "end": 617.348333,
+   "type": "silence",
+   "sileroGap": [
+    617.216,
+    617.408
+   ],
+   "keptBefore": 0.031,
+   "keptAfter": 0.06,
+   "gapFloorDb": -71.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 619.715,
+   "end": 619.848333,
+   "type": "silence",
+   "sileroGap": [
+    619.68,
+    619.904
+   ],
+   "keptBefore": 0.035,
+   "keptAfter": 0.056,
+   "gapFloorDb": -70.8,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 622.815,
+   "end": 623.915,
+   "type": "silence",
+   "sileroGap": [
+    622.784,
+    623.968
+   ],
+   "keptBefore": 0.031,
+   "keptAfter": 0.053,
+   "gapFloorDb": -90.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 625.883333,
+   "end": 626.016667,
+   "type": "silence",
+   "sileroGap": [
+    625.856,
+    626.08
+   ],
+   "keptBefore": 0.027,
+   "keptAfter": 0.063,
+   "gapFloorDb": -70.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 628.083333,
+   "end": 628.316667,
+   "type": "silence",
+   "sileroGap": [
+    628.032,
+    628.384
+   ],
+   "keptBefore": 0.051,
+   "keptAfter": 0.067,
+   "gapFloorDb": -83.1,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 630.85,
+   "end": 633.451667,
+   "type": "silence",
+   "sileroGap": [
+    630.816,
+    633.504
+   ],
+   "keptBefore": 0.034,
+   "keptAfter": 0.052,
+   "gapFloorDb": -96.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 635.185,
+   "end": 638.32,
+   "type": "silence",
+   "sileroGap": [
+    635.136,
+    638.368
+   ],
+   "keptBefore": 0.049,
+   "keptAfter": 0.048,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 640.42,
+   "end": 641.82,
+   "type": "silence",
+   "sileroGap": [
+    640.384,
+    641.888
+   ],
+   "keptBefore": 0.036,
+   "keptAfter": 0.068,
+   "gapFloorDb": -86.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 642.92,
+   "end": 643.02,
+   "type": "silence",
+   "sileroGap": [
+    642.88,
+    643.072
+   ],
+   "keptBefore": 0.04,
+   "keptAfter": 0.052,
+   "gapFloorDb": -82.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 644.886667,
+   "end": 645.188333,
+   "type": "silence",
+   "sileroGap": [
+    644.832,
+    645.248
+   ],
+   "keptBefore": 0.055,
+   "keptAfter": 0.06,
+   "gapFloorDb": -85.7,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 648.888333,
+   "end": 649.655,
+   "type": "silence",
+   "sileroGap": [
+    648.832,
+    649.728
+   ],
+   "keptBefore": 0.056,
+   "keptAfter": 0.073,
+   "gapFloorDb": -88.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 649.921667,
+   "end": 651.088333,
+   "type": "silence",
+   "sileroGap": [
+    649.888,
+    651.136
+   ],
+   "keptBefore": 0.034,
+   "keptAfter": 0.048,
+   "gapFloorDb": -89.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 654.623333,
+   "end": 654.89,
+   "type": "silence",
+   "sileroGap": [
+    654.592,
+    654.944
+   ],
+   "keptBefore": 0.031,
+   "keptAfter": 0.054,
+   "gapFloorDb": -81.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 656.556667,
+   "end": 656.99,
+   "type": "silence",
+   "sileroGap": [
+    656.512,
+    657.056
+   ],
+   "keptBefore": 0.045,
+   "keptAfter": 0.066,
+   "gapFloorDb": -85.6,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 658.29,
+   "end": 660.958333,
+   "type": "silence",
+   "sileroGap": [
+    658.24,
+    661.024
+   ],
+   "keptBefore": 0.05,
+   "keptAfter": 0.066,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 666.193333,
+   "end": 667.193333,
+   "type": "silence",
+   "sileroGap": [
+    666.144,
+    667.264
+   ],
+   "keptBefore": 0.049,
+   "keptAfter": 0.071,
+   "gapFloorDb": -90.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 667.86,
+   "end": 667.926667,
+   "type": "silence",
+   "sileroGap": [
+    667.808,
+    668.0
+   ],
+   "keptBefore": 0.052,
+   "keptAfter": 0.073,
+   "gapFloorDb": -70.5,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 668.826667,
+   "end": 670.026667,
+   "type": "silence",
+   "sileroGap": [
+    668.736,
+    670.08
+   ],
+   "keptBefore": 0.091,
+   "keptAfter": 0.053,
+   "gapFloorDb": -85.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 672.56,
+   "end": 673.961667,
+   "type": "silence",
+   "sileroGap": [
+    672.512,
+    674.016
+   ],
+   "keptBefore": 0.048,
+   "keptAfter": 0.054,
+   "gapFloorDb": -90.9,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 674.695,
+   "end": 677.461667,
+   "type": "silence",
+   "sileroGap": [
+    674.656,
+    677.504
+   ],
+   "keptBefore": 0.039,
+   "keptAfter": 0.042,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 681.796667,
+   "end": 682.163333,
+   "type": "silence",
+   "sileroGap": [
+    681.76,
+    682.208
+   ],
+   "keptBefore": 0.037,
+   "keptAfter": 0.045,
+   "gapFloorDb": -83.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 684.13,
+   "end": 689.631667,
+   "type": "silence",
+   "sileroGap": [
+    684.096,
+    689.696
+   ],
+   "keptBefore": 0.034,
+   "keptAfter": 0.064,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 693.331667,
+   "end": 697.2,
+   "type": "silence",
+   "sileroGap": [
+    693.28,
+    697.248
+   ],
+   "keptBefore": 0.052,
+   "keptAfter": 0.048,
+   "gapFloorDb": -120.0,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 698.266667,
+   "end": 698.366667,
+   "type": "silence",
+   "sileroGap": [
+    698.24,
+    698.432
+   ],
+   "keptBefore": 0.027,
+   "keptAfter": 0.065,
+   "gapFloorDb": -76.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 699.633333,
+   "end": 699.8,
+   "type": "silence",
+   "sileroGap": [
+    699.584,
+    699.872
+   ],
+   "keptBefore": 0.049,
+   "keptAfter": 0.072,
+   "gapFloorDb": -67.2,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  },
+  {
+   "start": 701.235,
+   "end": 703.933333,
+   "type": "silence",
+   "sileroGap": [
+    701.024,
+    703.933
+   ],
+   "keptBefore": 0.211,
+   "keptAfter": 0.0,
+   "gapFloorDb": -82.4,
+   "reason": "Sprechluecke nach Silero gekuerzt, Sprache beidseitig erhalten"
+  }
+ ],
+ "skipped": [],
+ "mergedNoiseIslands": [
+  [
+   4.064,
+   4.128
+  ],
+  [
+   56.224,
+   56.32
+  ],
+  [
+   641.024,
+   641.056
+  ]
+ ],
+ "reviewNotes": [
+  "Nur Pausen gekuerzt. Alle Anlaeufe/Takes erhalten (Auftrag 26.09.2026)."
+ ],
+ "summary": {
+  "gapsFound": 276,
+  "cuts": 238,
+  "removedSeconds": 272.5,
+  "expectedDuration": 431.433
+ }
+}

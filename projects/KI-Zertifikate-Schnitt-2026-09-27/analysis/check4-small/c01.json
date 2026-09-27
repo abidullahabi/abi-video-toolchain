@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,880"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2880
+			},
+			"text": " Gen AI für alle, von Andrew Engel.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.953524,
+					"t_dtw": -1
+				},
+				{
+					"text": " Gen",
+					"timestamps": {
+						"from": "00:00:00,080",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 80,
+						"to": 270
+					},
+					"id": 3632,
+					"p": 0.0435319,
+					"t_dtw": 50
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 450
+					},
+					"id": 7318,
+					"p": 0.258554,
+					"t_dtw": 66
+				},
+				{
+					"text": " für",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 720
+					},
+					"id": 2959,
+					"p": 0.499059,
+					"t_dtw": 96
+				},
+				{
+					"text": " alle",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:01,090"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 1090
+					},
+					"id": 5430,
+					"p": 0.64362,
+					"t_dtw": 124
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,270"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1270
+					},
+					"id": 11,
+					"p": 0.16708,
+					"t_dtw": 142
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:01,270",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 1270,
+						"to": 1420
+					},
+					"id": 2957,
+					"p": 0.3259,
+					"t_dtw": 162
+				},
+				{
+					"text": " Andrew",
+					"timestamps": {
+						"from": "00:00:01,550",
+						"to": "00:00:02,090"
+					},
+					"offsets": {
+						"from": 1550,
+						"to": 2090
+					},
+					"id": 10110,
+					"p": 0.984979,
+					"t_dtw": 214
+				},
+				{
+					"text": " Eng",
+					"timestamps": {
+						"from": "00:00:02,090",
+						"to": "00:00:02,310"
+					},
+					"offsets": {
+						"from": 2090,
+						"to": 2310
+					},
+					"id": 2469,
+					"p": 0.706613,
+					"t_dtw": 272
+				},
+				{
+					"text": "el",
+					"timestamps": {
+						"from": "00:00:02,540",
+						"to": "00:00:02,540"
+					},
+					"offsets": {
+						"from": 2540,
+						"to": 2540
+					},
+					"id": 338,
+					"p": 0.315163,
+					"t_dtw": 282
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,560",
+						"to": "00:00:02,850"
+					},
+					"offsets": {
+						"from": 2560,
+						"to": 2850
+					},
+					"id": 13,
+					"p": 0.519155,
+					"t_dtw": 282
+				},
+				{
+					"text": "[_TT_144]",
+					"timestamps": {
+						"from": "00:00:02,880",
+						"to": "00:00:02,880"
+					},
+					"offsets": {
+						"from": 2880,
+						"to": 2880
+					},
+					"id": 50508,
+					"p": 0.152275,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

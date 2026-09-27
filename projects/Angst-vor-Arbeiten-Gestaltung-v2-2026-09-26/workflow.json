@@ -1,0 +1,93 @@
+{
+  "mode": "design-only",
+  "title": "Angst vor Arbeiten",
+  "designVersion": "1.12",
+  "designSource": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/DESIGN.md",
+  "designReadAt": "2026-09-26T13:44:47Z",
+  "workflowVersion": "1.23",
+  "source": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Angst-vor-Arbeiten-Schnitt-2026-09-26/exports/Angst-vor-Arbeiten-Schnitt_v7_1-1x.mp4",
+  "sourceSha256": "3e9f2f9a3ddcd29382d3752abc4b01a2ef59ac5604fe46d93e7852d119b4a701",
+  "sourceProject": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Angst-vor-Arbeiten-Schnitt-2026-09-26",
+  "cutDuration": 81.233333,
+  "cutChanges": false,
+  "sourceCutPreserved": true,
+  "speed": 1.1,
+  "basis": "Schnitt v7 (1,1x): abgenommene Variante ohne den Consulting-Clip (Block 33), auf Abdullahs Wunsch vom 26.09.2026. Zeiten nach 66,939 s um 3,758 s vorgezogen.",
+  "gestaltungsauftrag": "Abdullah am 26.09.2026: Animationen, Untertitel, Zooms (sichtbar), gern ganz Neues, z. B. einzelne Wörter bei krassen Aussagen ganz groß, Regelbruch erlaubt. Bei „auch du findest dich in so einer Situation wieder“ einblenden: „Du weißt genau, dass ich dich meine.“",
+  "status": "complete",
+  "createdAt": "2026-09-26T14:28:47Z",
+  "renderLowMemory": true,
+  "bearbeitung": {
+    "agent": "Claude Code (Desktop), Sitzung 26.09.2026",
+    "aufgabe": "Gestaltung v2 Angst vor Arbeiten",
+    "begonnen": "2026-09-26T14:28:47Z",
+    "status": "abgeschlossen"
+  },
+  "vorgaenger": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Angst-vor-Arbeiten-Gestaltung-2026-09-26",
+  "rueckmeldungV1": "Abdullah 26.09.2026: weniger große blaue Überschriften (z. B. statt „Damals im Studium“ eher „Angst im Studium“); bei „Master aus Angst“ stattdessen „Grüße gehen raus an Never Ready, Always Done-Team“ (Insider); „2 Monate Consultant“ überflüssig; Consulting-Clip raus.",
+  "latestExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Angst-vor-Arbeiten-Gestaltung-v2-2026-09-26/exports/Angst-vor-Arbeiten_v3.mp4",
+  "exportedAt": "2026-09-26T14:56:58.607Z",
+  "renderedExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Angst-vor-Arbeiten-Gestaltung-v2-2026-09-26/exports/final-2026-09-26T14-44-46-298Z.mov",
+  "audioHandling": "Original audio re-encoded once as AAC-LC at 120 kbit/s and 48 kHz, without tempo or level changes.",
+  "deliveryProfile": "Buffer Web: H264, 1080x1920p30, BT709, 12M video target / 14M VBV, AAC-LC 120k, faststart",
+  "layoutVersion": "tiktok-safe-v1",
+  "aktuell": {
+    "datei": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Angst-vor-Arbeiten-Gestaltung-v2-2026-09-26/exports/Angst-vor-Arbeiten_v3.mp4",
+    "sha256": "a45e281b849bda23692e6a768ff56ebfedff3db48626edd45b8864d19dd42bfd",
+    "bytes": 123435277,
+    "erzeugt": "2026-09-26T15:11:24Z",
+    "gesetztAm": "2026-09-26T15:11:24Z"
+  },
+  "farbkorrektur": {
+    "variante": "A dezent",
+    "entscheidung": "Abdullah am 26.09.2026: „auf jedenfall A, alles in bestmöglicher Qualität“",
+    "filter": "eq=gamma=0.96:saturation=1.12:brightness=-0.015; RGB (BT.709): colorbalance rm=0.03 gm=0.005 bm=-0.03 rh=0.01 bh=-0.02; curves all 0/0 0.5/0.49 1/0.95",
+    "weg": "build-graded-media.py: Schnittliste + 1,1-fach + Farbe in einem Durchgang direkt aus der Originalaufnahme (source.mp4 des Schnittprojekts), x264 CRF 10 slow; spart zwei Kodiergenerationen",
+    "zeitgleichheit": "Bildsprünge auf denselben Bildern wie die bisherige media.mp4; Ton über 1-ms-Hüllkurve ±3 ms (Korrelation 0,85–0,92)",
+    "mediaSha256": "849b6722467cb1ef1fd26a3e3c685145aec9916511e05b5b7687baf50c6d133a",
+    "ungraded": "media-ungraded.mp4"
+  },
+  "renderMaster": "prores",
+  "renderMasterGrund": "HyperFrames nimmt bei MP4-Ausgabe jedes Bild als JPEG Qualität 80 auf; bei MOV (ProRes 4444) als PNG. Master deshalb als ProRes, Upload-Datei daraus.",
+  "masterColorMatrix": "bt601",
+  "masterColorMatrixBeleg": "H1-Fläche im ProRes-Master: nur BT.601/tv ergibt exakt #1668b5 (22/104/181); BT.709 ergäbe 14/101/185.",
+  "reviewCopy": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Angst vor Arbeiten - Gestaltung v2.mp4",
+  "reviewCopySha256": "a45e281b849bda23692e6a768ff56ebfedff3db48626edd45b8864d19dd42bfd",
+  "pruefung": {
+    "layout": "check-design111 inkl. Kopfprüfung: 0 Befunde, 2437 Bilder, 162 Gesichtsstichproben, keine Ausnahmen",
+    "ersterFrame": "H1 „Angst vor Arbeiten“ ab Bild 0 voll deckend",
+    "farbe": "Variante A; Master BT.601 (HyperFrames) korrekt nach BT.709 umgerechnet; H1-Fläche 18/103/178 bei Soll 22/104/181 (ohne Umrechnung wären es 12/99/184)",
+    "datei": "H.264 High 1080x1920, SAR 1:1, CFR 30 (2437 Bilder), BT.709 tv, 12,0 Mbit/s, AAC-LC 119 kbit/s 48 kHz, Fast Start, 123,4 MB, vollständig decodiert, VMAF 99,09 zum ProRes-Master",
+    "synchronitaet": "Ton 0 ms an 3 Stellen; Bild an 14 zoomfreien Stellen 0 Bilder Versatz zur Vorlage",
+    "zooms": "gemessen: Punch-ins 1,12, Fahrten 1,07/1,08",
+    "hoerpruefung": "nicht erfolgt"
+  },
+  "postingFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/04_Gepostet/2026-09-28 - Angst vor Arbeiten.mp4",
+  "postingSha256": "a45e281b849bda23692e6a768ff56ebfedff3db48626edd45b8864d19dd42bfd",
+  "postingDate": "2026-09-28",
+  "freigabe": "Abdullah am 26.09.2026: „ja freigeben für montag einmal planen so gegen 12 uhr“",
+  "postingTime": "12:00 Europe/Berlin",
+  "postingDateStatus": "bei_zernio_eingeplant",
+  "notionPage": "https://app.notion.com/p/3e68cb917b3b8140bbeefd7dc329454c",
+  "zernio": {
+    "postId": "6ab7e386c0a402c2bc7e8193",
+    "plattformen": [
+      "instagram",
+      "tiktok"
+    ],
+    "geplantFuer": "2026-09-28T12:00:00+02:00",
+    "status": "scheduled",
+    "mediaUrl": "https://media.zernio.com/temp/1790435971344_845lwd2a_2026-09-28---Angst-vor-Arbeiten.mp4",
+    "bytes": 123435277,
+    "sha256": "a45e281b849bda23692e6a768ff56ebfedff3db48626edd45b8864d19dd42bfd",
+    "shaGleichPostingdatei": true
+  },
+  "sourceArchived": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Archiv/Rohvideos/2026-09-28 - Angst vor Arbeiten - Rohvideo.mp4",
+  "videomaterialVerschoben": {
+    "am": "2026-09-26",
+    "nach": "/Users/abi/Löschbar",
+    "manifest": "/Users/abi/Löschbar/MANIFEST.tsv",
+    "zurueck": "python3 ~/Löschbar/zurueckholen.py Angst-vor-Arbeiten-Gestaltung-v2-2026-09-26",
+    "grund": "Speicherplatz (Abdullahs Auftrag 26.09.2026); nichts gelöscht"
+  }
+}

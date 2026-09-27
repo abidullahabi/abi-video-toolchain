@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,300"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1300
+			},
+			"text": " damit er glücklich nicht durch die Lehne geht.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.95337,
+					"t_dtw": -1
+				},
+				{
+					"text": " damit",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 150
+					},
+					"id": 9479,
+					"p": 0.897024,
+					"t_dtw": 18
+				},
+				{
+					"text": " er",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 210
+					},
+					"id": 1189,
+					"p": 0.476256,
+					"t_dtw": 28
+				},
+				{
+					"text": " gl",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 270
+					},
+					"id": 1563,
+					"p": 0.580866,
+					"t_dtw": 46
+				},
+				{
+					"text": "ücklich",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 470
+					},
+					"id": 38483,
+					"p": 0.646075,
+					"t_dtw": 60
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:00,640"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 640
+					},
+					"id": 1979,
+					"p": 0.0316792,
+					"t_dtw": 72
+				},
+				{
+					"text": " durch",
+					"timestamps": {
+						"from": "00:00:00,640",
+						"to": "00:00:00,790"
+					},
+					"offsets": {
+						"from": 640,
+						"to": 790
+					},
+					"id": 7131,
+					"p": 0.838162,
+					"t_dtw": 86
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,790",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 790,
+						"to": 860
+					},
+					"id": 978,
+					"p": 0.558305,
+					"t_dtw": 94
+				},
+				{
+					"text": " Leh",
+					"timestamps": {
+						"from": "00:00:00,910",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 910,
+						"to": 970
+					},
+					"id": 42631,
+					"p": 0.256104,
+					"t_dtw": 104
+				},
+				{
+					"text": "ne",
+					"timestamps": {
+						"from": "00:00:00,970",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 970,
+						"to": 1030
+					},
+					"id": 716,
+					"p": 0.258738,
+					"t_dtw": 104
+				},
+				{
+					"text": " geht",
+					"timestamps": {
+						"from": "00:00:01,030",
+						"to": "00:00:01,150"
+					},
+					"offsets": {
+						"from": 1030,
+						"to": 1150
+					},
+					"id": 7095,
+					"p": 0.575203,
+					"t_dtw": 128
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,290"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1290
+					},
+					"id": 13,
+					"p": 0.856676,
+					"t_dtw": 128
+				},
+				{
+					"text": "[_TT_65]",
+					"timestamps": {
+						"from": "00:00:01,300",
+						"to": "00:00:01,300"
+					},
+					"offsets": {
+						"from": 1300,
+						"to": 1300
+					},
+					"id": 50430,
+					"p": 0.0808735,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,129 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1100
+			},
+			"text": " Voll weit hinten.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.80616,
+					"t_dtw": -1
+				},
+				{
+					"text": " Voll",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,310"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 310
+					},
+					"id": 39602,
+					"p": 0.810515,
+					"t_dtw": 32
+				},
+				{
+					"text": " weit",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,620"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 620
+					},
+					"id": 15306,
+					"p": 0.972261,
+					"t_dtw": 50
+				},
+				{
+					"text": " hinten",
+					"timestamps": {
+						"from": "00:00:00,620",
+						"to": "00:00:00,830"
+					},
+					"offsets": {
+						"from": 620,
+						"to": 830
+					},
+					"id": 36417,
+					"p": 0.993288,
+					"t_dtw": 76
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,090"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1090
+					},
+					"id": 13,
+					"p": 0.774097,
+					"t_dtw": 96
+				},
+				{
+					"text": "[_TT_55]",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1100
+					},
+					"id": 50420,
+					"p": 0.608859,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

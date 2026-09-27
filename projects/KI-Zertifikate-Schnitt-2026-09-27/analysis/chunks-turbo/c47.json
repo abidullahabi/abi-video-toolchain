@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,880"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1880
+			},
+			"text": " Es ist noch nicht so spät.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.556753,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 180
+					},
+					"id": 2313,
+					"p": 0.959644,
+					"t_dtw": 22
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 460
+					},
+					"id": 1418,
+					"p": 0.999403,
+					"t_dtw": 36
+				},
+				{
+					"text": " noch",
+					"timestamps": {
+						"from": "00:00:00,460",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 460,
+						"to": 560
+					},
+					"id": 3514,
+					"p": 0.886954,
+					"t_dtw": 132
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,290"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1290
+					},
+					"id": 1979,
+					"p": 0.997717,
+					"t_dtw": 144
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:01,290",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1290,
+						"to": 1450
+					},
+					"id": 370,
+					"p": 0.72542,
+					"t_dtw": 156
+				},
+				{
+					"text": " sp",
+					"timestamps": {
+						"from": "00:00:01,510",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1510,
+						"to": 1600
+					},
+					"id": 637,
+					"p": 0.995474,
+					"t_dtw": 172
+				},
+				{
+					"text": "ät",
+					"timestamps": {
+						"from": "00:00:01,690",
+						"to": "00:00:01,850"
+					},
+					"offsets": {
+						"from": 1690,
+						"to": 1850
+					},
+					"id": 3628,
+					"p": 0.999962,
+					"t_dtw": 186
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,880",
+						"to": "00:00:01,880"
+					},
+					"offsets": {
+						"from": 1880,
+						"to": 1880
+					},
+					"id": 13,
+					"p": 0.933892,
+					"t_dtw": 186
+				},
+				{
+					"text": "[_TT_94]",
+					"timestamps": {
+						"from": "00:00:01,880",
+						"to": "00:00:01,880"
+					},
+					"offsets": {
+						"from": 1880,
+						"to": 1880
+					},
+					"id": 50459,
+					"p": 0.576385,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

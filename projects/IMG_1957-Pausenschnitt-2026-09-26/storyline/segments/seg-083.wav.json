@@ -1,0 +1,297 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,740"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2740
+			},
+			"text": " Und der dritte, meist einer der wichtigsten Punkte überhaupt in dem Leben,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.809772,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 180
+					},
+					"id": 2719,
+					"p": 0.398393,
+					"t_dtw": 12
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 360
+					},
+					"id": 1163,
+					"p": 0.949237,
+					"t_dtw": 24
+				},
+				{
+					"text": " dr",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 480
+					},
+					"id": 1224,
+					"p": 0.781067,
+					"t_dtw": 34
+				},
+				{
+					"text": "itte",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,710"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 710
+					},
+					"id": 9786,
+					"p": 0.98998,
+					"t_dtw": 52
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,710",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 710,
+						"to": 840
+					},
+					"id": 11,
+					"p": 0.315729,
+					"t_dtw": 76
+				},
+				{
+					"text": " meist",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:01,050"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 1050
+					},
+					"id": 36894,
+					"p": 0.84375,
+					"t_dtw": 106
+				},
+				{
+					"text": " einer",
+					"timestamps": {
+						"from": "00:00:01,170",
+						"to": "00:00:01,320"
+					},
+					"offsets": {
+						"from": 1170,
+						"to": 1320
+					},
+					"id": 6850,
+					"p": 0.896222,
+					"t_dtw": 136
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:01,320",
+						"to": "00:00:01,470"
+					},
+					"offsets": {
+						"from": 1320,
+						"to": 1470
+					},
+					"id": 1163,
+					"p": 0.924025,
+					"t_dtw": 146
+				},
+				{
+					"text": " wichtig",
+					"timestamps": {
+						"from": "00:00:01,470",
+						"to": "00:00:01,730"
+					},
+					"offsets": {
+						"from": 1470,
+						"to": 1730
+					},
+					"id": 13621,
+					"p": 0.9638,
+					"t_dtw": 164
+				},
+				{
+					"text": "sten",
+					"timestamps": {
+						"from": "00:00:01,730",
+						"to": "00:00:01,830"
+					},
+					"offsets": {
+						"from": 1730,
+						"to": 1830
+					},
+					"id": 6266,
+					"p": 0.980602,
+					"t_dtw": 184
+				},
+				{
+					"text": " Punkte",
+					"timestamps": {
+						"from": "00:00:01,930",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1930,
+						"to": 2000
+					},
+					"id": 47352,
+					"p": 0.871552,
+					"t_dtw": 208
+				},
+				{
+					"text": " überhaupt",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,470"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2470
+					},
+					"id": 20023,
+					"p": 0.411571,
+					"t_dtw": 226
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:02,470",
+						"to": "00:00:02,570"
+					},
+					"offsets": {
+						"from": 2470,
+						"to": 2570
+					},
+					"id": 294,
+					"p": 0.434229,
+					"t_dtw": 238
+				},
+				{
+					"text": " dem",
+					"timestamps": {
+						"from": "00:00:02,570",
+						"to": "00:00:02,620"
+					},
+					"offsets": {
+						"from": 2570,
+						"to": 2620
+					},
+					"id": 1371,
+					"p": 0.789301,
+					"t_dtw": 248
+				},
+				{
+					"text": " Leben",
+					"timestamps": {
+						"from": "00:00:02,730",
+						"to": "00:00:02,730"
+					},
+					"offsets": {
+						"from": 2730,
+						"to": 2730
+					},
+					"id": 15399,
+					"p": 0.510805,
+					"t_dtw": 262
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,730",
+						"to": "00:00:02,730"
+					},
+					"offsets": {
+						"from": 2730,
+						"to": 2730
+					},
+					"id": 11,
+					"p": 0.417179,
+					"t_dtw": 270
+				},
+				{
+					"text": "[_TT_137]",
+					"timestamps": {
+						"from": "00:00:02,740",
+						"to": "00:00:02,740"
+					},
+					"offsets": {
+						"from": 2740,
+						"to": 2740
+					},
+					"id": 50502,
+					"p": 0.601418,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

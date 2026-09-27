@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1100
+			},
+			"text": " in welcher Stadt du ziehst.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.976645,
+					"t_dtw": -1
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 100
+					},
+					"id": 294,
+					"p": 0.937342,
+					"t_dtw": 12
+				},
+				{
+					"text": " wel",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 250
+					},
+					"id": 2214,
+					"p": 0.999399,
+					"t_dtw": 26
+				},
+				{
+					"text": "cher",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 390
+					},
+					"id": 6759,
+					"p": 0.999933,
+					"t_dtw": 36
+				},
+				{
+					"text": " Stadt",
+					"timestamps": {
+						"from": "00:00:00,440",
+						"to": "00:00:00,680"
+					},
+					"offsets": {
+						"from": 440,
+						"to": 680
+					},
+					"id": 20550,
+					"p": 0.998443,
+					"t_dtw": 56
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 780
+					},
+					"id": 1581,
+					"p": 0.98682,
+					"t_dtw": 68
+				},
+				{
+					"text": " zie",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,930"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 930
+					},
+					"id": 16503,
+					"p": 0.982386,
+					"t_dtw": 84
+				},
+				{
+					"text": "hst",
+					"timestamps": {
+						"from": "00:00:00,930",
+						"to": "00:00:00,990"
+					},
+					"offsets": {
+						"from": 930,
+						"to": 990
+					},
+					"id": 38857,
+					"p": 0.99779,
+					"t_dtw": 100
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,090"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1090
+					},
+					"id": 13,
+					"p": 0.74818,
+					"t_dtw": 106
+				},
+				{
+					"text": "[_TT_55]",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1100
+					},
+					"id": 50420,
+					"p": 0.955694,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,520"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2520
+			},
+			"text": " Du hast bereits Ziele erreicht.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.97648,
+					"t_dtw": -1
+				},
+				{
+					"text": " Du",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 160
+					},
+					"id": 5153,
+					"p": 0.932659,
+					"t_dtw": 12
+				},
+				{
+					"text": " hast",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 430
+					},
+					"id": 6581,
+					"p": 0.999203,
+					"t_dtw": 46
+				},
+				{
+					"text": " bereits",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 1030
+					},
+					"id": 23703,
+					"p": 0.975041,
+					"t_dtw": 108
+				},
+				{
+					"text": " Z",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1190
+					},
+					"id": 1176,
+					"p": 0.974238,
+					"t_dtw": 154
+				},
+				{
+					"text": "iele",
+					"timestamps": {
+						"from": "00:00:01,190",
+						"to": "00:00:01,530"
+					},
+					"offsets": {
+						"from": 1190,
+						"to": 1530
+					},
+					"id": 15949,
+					"p": 0.999851,
+					"t_dtw": 170
+				},
+				{
+					"text": " erreicht",
+					"timestamps": {
+						"from": "00:00:01,530",
+						"to": "00:00:02,170"
+					},
+					"offsets": {
+						"from": 1530,
+						"to": 2170
+					},
+					"id": 46250,
+					"p": 0.996884,
+					"t_dtw": 228
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,170",
+						"to": "00:00:02,410"
+					},
+					"offsets": {
+						"from": 2170,
+						"to": 2410
+					},
+					"id": 13,
+					"p": 0.591311,
+					"t_dtw": 250
+				},
+				{
+					"text": "[_TT_126]",
+					"timestamps": {
+						"from": "00:00:02,520",
+						"to": "00:00:02,520"
+					},
+					"offsets": {
+						"from": 2520,
+						"to": 2520
+					},
+					"id": 50491,
+					"p": 0.508873,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

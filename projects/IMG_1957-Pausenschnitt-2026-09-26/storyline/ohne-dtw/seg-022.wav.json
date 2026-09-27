@@ -1,0 +1,129 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,520"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 520
+			},
+			"text": " Alles fein.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.916453,
+					"t_dtw": -1
+				},
+				{
+					"text": " Alles",
+					"timestamps": {
+						"from": "00:00:00,020",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 20,
+						"to": 200
+					},
+					"id": 27633,
+					"p": 0.945493,
+					"t_dtw": -1
+				},
+				{
+					"text": " fe",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,240"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 240
+					},
+					"id": 579,
+					"p": 0.892622,
+					"t_dtw": -1
+				},
+				{
+					"text": "in",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 370
+					},
+					"id": 259,
+					"p": 0.984457,
+					"t_dtw": -1
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,490"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 490
+					},
+					"id": 13,
+					"p": 0.951686,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_26]",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 520
+					},
+					"id": 50391,
+					"p": 0.422082,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

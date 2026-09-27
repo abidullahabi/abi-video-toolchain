@@ -1,0 +1,297 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,300"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3300
+			},
+			"text": " Auch wenn man glaubt, man ist mit dem Thema AI voll weit hinten,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.865311,
+					"t_dtw": -1
+				},
+				{
+					"text": " Auch",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 170
+					},
+					"id": 13382,
+					"p": 0.761643,
+					"t_dtw": 32
+				},
+				{
+					"text": " wenn",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,310"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 310
+					},
+					"id": 4797,
+					"p": 0.637746,
+					"t_dtw": 42
+				},
+				{
+					"text": " man",
+					"timestamps": {
+						"from": "00:00:00,350",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 350,
+						"to": 470
+					},
+					"id": 587,
+					"p": 0.984113,
+					"t_dtw": 52
+				},
+				{
+					"text": " glaub",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,690"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 690
+					},
+					"id": 23210,
+					"p": 0.992309,
+					"t_dtw": 70
+				},
+				{
+					"text": "t",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,730"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 730
+					},
+					"id": 83,
+					"p": 0.943308,
+					"t_dtw": 80
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,730",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 730,
+						"to": 840
+					},
+					"id": 11,
+					"p": 0.968865,
+					"t_dtw": 84
+				},
+				{
+					"text": " man",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,990"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 990
+					},
+					"id": 587,
+					"p": 0.946589,
+					"t_dtw": 90
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1200
+					},
+					"id": 1418,
+					"p": 0.985248,
+					"t_dtw": 104
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1380
+					},
+					"id": 2194,
+					"p": 0.932086,
+					"t_dtw": 120
+				},
+				{
+					"text": " dem",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1560
+					},
+					"id": 1371,
+					"p": 0.991571,
+					"t_dtw": 126
+				},
+				{
+					"text": " Thema",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1860
+					},
+					"id": 16306,
+					"p": 0.993861,
+					"t_dtw": 148
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:01,890"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 1890
+					},
+					"id": 7318,
+					"p": 0.97343,
+					"t_dtw": 174
+				},
+				{
+					"text": " voll",
+					"timestamps": {
+						"from": "00:00:02,370",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2370,
+						"to": 2370
+					},
+					"id": 15593,
+					"p": 0.901317,
+					"t_dtw": 244
+				},
+				{
+					"text": " weit",
+					"timestamps": {
+						"from": "00:00:02,390",
+						"to": "00:00:02,740"
+					},
+					"offsets": {
+						"from": 2390,
+						"to": 2740
+					},
+					"id": 15306,
+					"p": 0.984222,
+					"t_dtw": 262
+				},
+				{
+					"text": " hinten",
+					"timestamps": {
+						"from": "00:00:02,740",
+						"to": "00:00:02,970"
+					},
+					"offsets": {
+						"from": 2740,
+						"to": 2970
+					},
+					"id": 36417,
+					"p": 0.994063,
+					"t_dtw": 288
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:03,270",
+						"to": "00:00:03,290"
+					},
+					"offsets": {
+						"from": 3270,
+						"to": 3290
+					},
+					"id": 11,
+					"p": 0.565316,
+					"t_dtw": 308
+				},
+				{
+					"text": "[_TT_165]",
+					"timestamps": {
+						"from": "00:00:03,300",
+						"to": "00:00:03,300"
+					},
+					"offsets": {
+						"from": 3300,
+						"to": 3300
+					},
+					"id": 50530,
+					"p": 0.771853,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

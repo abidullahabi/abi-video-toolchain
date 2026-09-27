@@ -1,0 +1,129 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,240"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1240
+			},
+			"text": " Heilung der...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.630456,
+					"t_dtw": -1
+				},
+				{
+					"text": " Heil",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,690"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 690
+					},
+					"id": 45650,
+					"p": 0.960495,
+					"t_dtw": 34
+				},
+				{
+					"text": "ung",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,990"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 990
+					},
+					"id": 1063,
+					"p": 0.994579,
+					"t_dtw": 52
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:01,230",
+						"to": "00:00:01,230"
+					},
+					"offsets": {
+						"from": 1230,
+						"to": 1230
+					},
+					"id": 1163,
+					"p": 0.224928,
+					"t_dtw": 80
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:01,230",
+						"to": "00:00:01,230"
+					},
+					"offsets": {
+						"from": 1230,
+						"to": 1230
+					},
+					"id": 485,
+					"p": 0.447939,
+					"t_dtw": 98
+				},
+				{
+					"text": "[_TT_62]",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1240
+					},
+					"id": 50427,
+					"p": 0.685187,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

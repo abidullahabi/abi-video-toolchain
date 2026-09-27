@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,600"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2600
+			},
+			"text": " Es entscheidet... Dein Partner entscheidet...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.943029,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,090"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 90
+					},
+					"id": 2313,
+					"p": 0.806439,
+					"t_dtw": 12
+				},
+				{
+					"text": " entsche",
+					"timestamps": {
+						"from": "00:00:00,090",
+						"to": "00:00:00,410"
+					},
+					"offsets": {
+						"from": 90,
+						"to": 410
+					},
+					"id": 28398,
+					"p": 0.993214,
+					"t_dtw": 34
+				},
+				{
+					"text": "idet",
+					"timestamps": {
+						"from": "00:00:00,410",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 410,
+						"to": 530
+					},
+					"id": 39741,
+					"p": 0.99685,
+					"t_dtw": 56
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:00,760",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 760,
+						"to": 770
+					},
+					"id": 485,
+					"p": 0.110596,
+					"t_dtw": 78
+				},
+				{
+					"text": " De",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 940
+					},
+					"id": 1346,
+					"p": 0.586443,
+					"t_dtw": 90
+				},
+				{
+					"text": "in",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1020
+					},
+					"id": 259,
+					"p": 0.993809,
+					"t_dtw": 98
+				},
+				{
+					"text": " Partner",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,670"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1670
+					},
+					"id": 32736,
+					"p": 0.987651,
+					"t_dtw": 132
+				},
+				{
+					"text": " entsche",
+					"timestamps": {
+						"from": "00:00:01,670",
+						"to": "00:00:02,240"
+					},
+					"offsets": {
+						"from": 1670,
+						"to": 2240
+					},
+					"id": 28398,
+					"p": 0.987748,
+					"t_dtw": 156
+				},
+				{
+					"text": "idet",
+					"timestamps": {
+						"from": "00:00:02,240",
+						"to": "00:00:02,480"
+					},
+					"offsets": {
+						"from": 2240,
+						"to": 2480
+					},
+					"id": 39741,
+					"p": 0.998921,
+					"t_dtw": 194
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:02,600",
+						"to": "00:00:02,600"
+					},
+					"offsets": {
+						"from": 2600,
+						"to": 2600
+					},
+					"id": 485,
+					"p": 0.552963,
+					"t_dtw": 216
+				},
+				{
+					"text": "[_TT_130]",
+					"timestamps": {
+						"from": "00:00:02,600",
+						"to": "00:00:02,600"
+					},
+					"offsets": {
+						"from": 2600,
+						"to": 2600
+					},
+					"id": 50495,
+					"p": 0.972452,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

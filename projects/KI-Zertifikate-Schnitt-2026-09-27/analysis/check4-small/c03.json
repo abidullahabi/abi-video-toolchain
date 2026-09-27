@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,960"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2960
+			},
+			"text": " Jena AI für alle, von Andrew Nguyen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.954384,
+					"t_dtw": -1
+				},
+				{
+					"text": " J",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,090"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 90
+					},
+					"id": 508,
+					"p": 0.0441777,
+					"t_dtw": 46
+				},
+				{
+					"text": "ena",
+					"timestamps": {
+						"from": "00:00:00,230",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 230,
+						"to": 330
+					},
+					"id": 4118,
+					"p": 0.25046,
+					"t_dtw": 56
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 520
+					},
+					"id": 7318,
+					"p": 0.79537,
+					"t_dtw": 76
+				},
+				{
+					"text": " für",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 780
+					},
+					"id": 2959,
+					"p": 0.420779,
+					"t_dtw": 96
+				},
+				{
+					"text": " alle",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:01,130"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 1130
+					},
+					"id": 5430,
+					"p": 0.4558,
+					"t_dtw": 122
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,130",
+						"to": "00:00:01,300"
+					},
+					"offsets": {
+						"from": 1130,
+						"to": 1300
+					},
+					"id": 11,
+					"p": 0.158409,
+					"t_dtw": 142
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:01,300",
+						"to": "00:00:01,550"
+					},
+					"offsets": {
+						"from": 1300,
+						"to": 1550
+					},
+					"id": 2957,
+					"p": 0.31983,
+					"t_dtw": 162
+				},
+				{
+					"text": " Andrew",
+					"timestamps": {
+						"from": "00:00:01,550",
+						"to": "00:00:02,090"
+					},
+					"offsets": {
+						"from": 1550,
+						"to": 2090
+					},
+					"id": 10110,
+					"p": 0.977672,
+					"t_dtw": 214
+				},
+				{
+					"text": " N",
+					"timestamps": {
+						"from": "00:00:02,090",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 2090,
+						"to": 2180
+					},
+					"id": 426,
+					"p": 0.42107,
+					"t_dtw": 270
+				},
+				{
+					"text": "gu",
+					"timestamps": {
+						"from": "00:00:02,180",
+						"to": "00:00:02,310"
+					},
+					"offsets": {
+						"from": 2180,
+						"to": 2310
+					},
+					"id": 2794,
+					"p": 0.0929066,
+					"t_dtw": 284
+				},
+				{
+					"text": "yen",
+					"timestamps": {
+						"from": "00:00:02,550",
+						"to": "00:00:02,610"
+					},
+					"offsets": {
+						"from": 2550,
+						"to": 2610
+					},
+					"id": 16580,
+					"p": 0.542568,
+					"t_dtw": 290
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,610",
+						"to": "00:00:02,920"
+					},
+					"offsets": {
+						"from": 2610,
+						"to": 2920
+					},
+					"id": 13,
+					"p": 0.522519,
+					"t_dtw": 290
+				},
+				{
+					"text": "[_TT_148]",
+					"timestamps": {
+						"from": "00:00:02,960",
+						"to": "00:00:02,960"
+					},
+					"offsets": {
+						"from": 2960,
+						"to": 2960
+					},
+					"id": 50512,
+					"p": 0.0793365,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

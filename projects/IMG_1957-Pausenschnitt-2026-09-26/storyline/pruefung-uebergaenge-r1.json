@@ -1,0 +1,23 @@
+{
+ "summary": "Kein Blocker. Formal stimmt die Schnittliste. Alle Abschnitte S000 bis S236 kommen genau einmal vor (95 behalten, 142 gestrichen). Alle text-Felder stimmen wörtlich mit inventory.md überein. Die Summe aus segs-args.json ergibt 187,1 s, die Werte je Abschnitt stimmen. Die Reihenfolge folgt der Aufnahme, mit einer Ausnahme: S095 bis S098 steht vor S065, und diese Umstellung ist im note-Feld begründet. Die beiden inneren Schnitte habe ich am Ton geprüft. S153[a] liegt in etwa 60 ms Stille direkt nach \"machen\". S226[a] liegt nach \"also\": whisper liest den behaltenen Teil als \"Die 20er, würde ich sagen, sind die geilsten Zeiten im Leben.\" Ich habe die behaltenen Abschnitte je Kapitel aneinandergehängt und mit whisper large-v3-turbo transkribiert. Alle Übergänge lesen sich grammatisch vollständig, kein Wort steht doppelt, keins fehlt, kein Satz beginnt mitten drin. Auch die Stellen S053→S055, S067→S070, S098→S065, S073→S113, S145→S149, S150→S152, S160→S164, S188→S189, S209→S213 und S218→S220 lesen sich flüssig. Die Wahl des früheren Hook-Anlaufs ist berechtigt. Der spätere Anlauf S013 bis S015 liest sich auch am Stück als \"einprüllen … damit der Glückliche durch Leben geht\". \"zehn\" (S006) und \"Kindheit\" (S039) erkennt whisper im Zusammenhang sauber. Drei Stellen fehlen aber in der Liste \"Beim Abhören prüfen\", jeweils mit Ausweichlösung, siehe unten. Kleinigkeit: In der offenen Frage zu S020/S021 steht \"+0,3 s\", richtig sind +0,2 s (5,74 s statt 5,51 s).",
+ "issues": [
+  {
+   "severity": "verbesserung",
+   "where": "Punkt 2 → Punkt 3, Übergang S057→S095; rationale, Liste \"Beim Abhören prüfen\"",
+   "problem": "Laut rationale ist S057→S095 ein Anlaufwechsel, geprüft werden sollen aber nur S098→S065 und S073→S113. S095 kommt laut inventory.md nach 7,1 s Pause direkt nach S094, dem Ende des ersten Partner-Durchgangs. Das ist im Schnitt v1 bei 2:48,9, S057 endet bei 1:43,4. Abdullah war also schon durch Punkt 3 durch (Notizbuchseite und Haltung können abweichen). Auch der Pegel springt hier am stärksten: S057 −24,5 dB zu S095 −20,9 dB (90. Perzentil). Bei S098→S065 sind es 1,2 dB, bei S073→S113 2,1 dB.",
+   "fix": "S057→S095 in die Liste \"Beim Abhören prüfen\" aufnehmen (Bild, Notizbuch, Lautstärke). Springt es, S095, S096 und S098 durch S059 \"Und dann kommen wir zum dritten Punkt schon.\" ersetzen (p 0,92, −2,6 s). Dann läuft S053 bis S073 in einem Anlauf, und die Naht S098→S065 fällt auch weg."
+  },
+  {
+   "severity": "verbesserung",
+   "where": "Punkt 1 Therapie, S050",
+   "problem": "In inventory.md ist \"gewünscht,?\" in S050 als unsicher markiert (Anfangs-Token \"gew\" p 0,17). Das fehlt in der Liste der unsicheren Einzelwörter. Am Stück hört whisper eine zusätzliche Silbe: in ganz Punkt 1 \"Ich hätte für mich solche gewünscht\", in S043+S050–S052 \"für mich zu euch gewünscht\". Nur einzeln liest es sich sauber. Das deutet auf ein Dehnen oder Stolpern zwischen \"mich\" und \"gewünscht\" hin.",
+   "fix": "S050 \"für mich gewünscht\" in die Liste \"Beim Abhören prüfen\" aufnehmen. Ist ein Stolperer hörbar: statt S050–S052 nur S048 nehmen, \"Ich hätte für mich gewünscht, dass ich das einfach früher anfange.\" (p 0,88, \"gewünscht\" p 1,00). Das spart 4,6 s, gesamt dann 182,5 s. Dabei das Satzende von S048 anhören, denn im Original folgte S049 nach nur 0,45 s."
+  },
+  {
+   "severity": "verbesserung",
+   "where": "Punkt 7 Investieren, S197",
+   "problem": "Die note wertet S197 \"Gleich?\" (p 0,34) als Erkennungsfehler für \"Vielleicht\". whisper hört aber auch einzeln \"Gleich eins bis zwei nur.\" und in ganz Punkt 7 \"gleich 1 bis 2 nur\". \"Vielleicht\" erkennt es nur, wenn S195 direkt davor steht. Das ironische \"Vielleicht\" ist also womöglich verschluckt, und dann ergibt \"Ich bereue keine einzige Reise davon. Gleich eins bis zwei nur.\" keinen Sinn.",
+   "fix": "S197 in die Liste \"Beim Abhören prüfen\" aufnehmen. Ist \"Vielleicht\" nicht klar hörbar, S196 \"Vielleicht eins und zwei.\" statt S197 nehmen (\"Vielleicht\" p 0,68; whisper liest einzeln wie nach S195 \"Vielleicht eins und zwei.\"; −0,1 s)."
+  }
+ ]
+}

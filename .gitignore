@@ -42,3 +42,7 @@
 #    Icons (PNG) und GSAP (JS) fehlten vorher in der Sicherung.
 !templates/**
 !.claude/**
+
+# 6. Seit 27.09.2026: Referenzen zum Design versionieren, das Freistellungsmodell nicht.
+!referenz/**
+referenz/**/*.onnx

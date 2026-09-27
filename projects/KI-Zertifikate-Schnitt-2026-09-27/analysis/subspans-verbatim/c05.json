@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,720"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1720
+			},
+			"text": " Es gibt zig verschiedene Kirchen,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.856517,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 160
+					},
+					"id": 2313,
+					"p": 0.882162,
+					"t_dtw": 18
+				},
+				{
+					"text": " gibt",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 430
+					},
+					"id": 6089,
+					"p": 0.982924,
+					"t_dtw": 28
+				},
+				{
+					"text": " zig",
+					"timestamps": {
+						"from": "00:00:00,620",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 620,
+						"to": 720
+					},
+					"id": 38290,
+					"p": 0.39234,
+					"t_dtw": 68
+				},
+				{
+					"text": " verschiedene",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 1420
+					},
+					"id": 35411,
+					"p": 0.98144,
+					"t_dtw": 108
+				},
+				{
+					"text": " Kir",
+					"timestamps": {
+						"from": "00:00:01,690",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1690,
+						"to": 1700
+					},
+					"id": 11305,
+					"p": 0.375276,
+					"t_dtw": 134
+				},
+				{
+					"text": "chen",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 1700
+					},
+					"id": 2470,
+					"p": 0.365764,
+					"t_dtw": 150
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 1700
+					},
+					"id": 11,
+					"p": 0.372249,
+					"t_dtw": 150
+				},
+				{
+					"text": "[_TT_86]",
+					"timestamps": {
+						"from": "00:00:01,720",
+						"to": "00:00:01,720"
+					},
+					"offsets": {
+						"from": 1720,
+						"to": 1720
+					},
+					"id": 50451,
+					"p": 0.457991,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

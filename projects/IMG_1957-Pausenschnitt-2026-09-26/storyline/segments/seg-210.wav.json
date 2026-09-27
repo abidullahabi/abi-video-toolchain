@@ -1,0 +1,297 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,800"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2800
+			},
+			"text": " Wenn die Leute irgendwas versprechen, wenn die Leute irgendwie Geld schulden,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.976056,
+					"t_dtw": -1
+				},
+				{
+					"text": " Wenn",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 130
+					},
+					"id": 7899,
+					"p": 0.687966,
+					"t_dtw": 14
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,230"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 230
+					},
+					"id": 978,
+					"p": 0.966418,
+					"t_dtw": 24
+				},
+				{
+					"text": " Leute",
+					"timestamps": {
+						"from": "00:00:00,230",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 230,
+						"to": 400
+					},
+					"id": 13495,
+					"p": 0.999535,
+					"t_dtw": 46
+				},
+				{
+					"text": " irgendwas",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,710"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 710
+					},
+					"id": 47090,
+					"p": 0.953193,
+					"t_dtw": 70
+				},
+				{
+					"text": " vers",
+					"timestamps": {
+						"from": "00:00:00,710",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 710,
+						"to": 840
+					},
+					"id": 1774,
+					"p": 0.998017,
+					"t_dtw": 96
+				},
+				{
+					"text": "prechen",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 1080
+					},
+					"id": 38951,
+					"p": 0.999495,
+					"t_dtw": 122
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,130"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1130
+					},
+					"id": 11,
+					"p": 0.878212,
+					"t_dtw": 136
+				},
+				{
+					"text": " wenn",
+					"timestamps": {
+						"from": "00:00:01,190",
+						"to": "00:00:01,330"
+					},
+					"offsets": {
+						"from": 1190,
+						"to": 1330
+					},
+					"id": 4797,
+					"p": 0.750435,
+					"t_dtw": 144
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:01,330",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1330,
+						"to": 1440
+					},
+					"id": 978,
+					"p": 0.996521,
+					"t_dtw": 154
+				},
+				{
+					"text": " Leute",
+					"timestamps": {
+						"from": "00:00:01,440",
+						"to": "00:00:01,630"
+					},
+					"offsets": {
+						"from": 1440,
+						"to": 1630
+					},
+					"id": 13495,
+					"p": 0.997025,
+					"t_dtw": 174
+				},
+				{
+					"text": " irgendwie",
+					"timestamps": {
+						"from": "00:00:01,630",
+						"to": "00:00:01,950"
+					},
+					"offsets": {
+						"from": 1630,
+						"to": 1950
+					},
+					"id": 20759,
+					"p": 0.776592,
+					"t_dtw": 194
+				},
+				{
+					"text": " Geld",
+					"timestamps": {
+						"from": "00:00:02,050",
+						"to": "00:00:02,250"
+					},
+					"offsets": {
+						"from": 2050,
+						"to": 2250
+					},
+					"id": 16535,
+					"p": 0.985111,
+					"t_dtw": 220
+				},
+				{
+					"text": " sch",
+					"timestamps": {
+						"from": "00:00:02,250",
+						"to": "00:00:02,450"
+					},
+					"offsets": {
+						"from": 2250,
+						"to": 2450
+					},
+					"id": 956,
+					"p": 0.996661,
+					"t_dtw": 238
+				},
+				{
+					"text": "uld",
+					"timestamps": {
+						"from": "00:00:02,450",
+						"to": "00:00:02,650"
+					},
+					"offsets": {
+						"from": 2450,
+						"to": 2650
+					},
+					"id": 13432,
+					"p": 0.998272,
+					"t_dtw": 252
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:02,650",
+						"to": "00:00:02,690"
+					},
+					"offsets": {
+						"from": 2650,
+						"to": 2690
+					},
+					"id": 268,
+					"p": 0.999872,
+					"t_dtw": 264
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,800",
+						"to": "00:00:02,800"
+					},
+					"offsets": {
+						"from": 2800,
+						"to": 2800
+					},
+					"id": 11,
+					"p": 0.634343,
+					"t_dtw": 276
+				},
+				{
+					"text": "[_TT_140]",
+					"timestamps": {
+						"from": "00:00:02,800",
+						"to": "00:00:02,800"
+					},
+					"offsets": {
+						"from": 2800,
+						"to": 2800
+					},
+					"id": 50505,
+					"p": 0.956854,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

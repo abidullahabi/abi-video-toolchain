@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1000
+			},
+			"text": " Keine Ahnung, was ich gemacht habe.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.929502,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ke",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,060"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 60
+					},
+					"id": 3189,
+					"p": 0.917863,
+					"t_dtw": 12
+				},
+				{
+					"text": "ine",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 150
+					},
+					"id": 533,
+					"p": 0.999012,
+					"t_dtw": 20
+				},
+				{
+					"text": " Ah",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 210
+					},
+					"id": 2438,
+					"p": 0.997086,
+					"t_dtw": 30
+				},
+				{
+					"text": "nung",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 330
+					},
+					"id": 15539,
+					"p": 0.999733,
+					"t_dtw": 34
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,330",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 330,
+						"to": 390
+					},
+					"id": 11,
+					"p": 0.922585,
+					"t_dtw": 44
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:00,390",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 390,
+						"to": 460
+					},
+					"id": 390,
+					"p": 0.993362,
+					"t_dtw": 44
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,570"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 570
+					},
+					"id": 1893,
+					"p": 0.998479,
+					"t_dtw": 52
+				},
+				{
+					"text": " gemacht",
+					"timestamps": {
+						"from": "00:00:00,570",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 570,
+						"to": 780
+					},
+					"id": 12293,
+					"p": 0.996789,
+					"t_dtw": 70
+				},
+				{
+					"text": " habe",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 870
+					},
+					"id": 6015,
+					"p": 0.953301,
+					"t_dtw": 90
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 900
+					},
+					"id": 13,
+					"p": 0.98065,
+					"t_dtw": 96
+				},
+				{
+					"text": "[_TT_50]",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1000
+					},
+					"id": 50415,
+					"p": 0.262605,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

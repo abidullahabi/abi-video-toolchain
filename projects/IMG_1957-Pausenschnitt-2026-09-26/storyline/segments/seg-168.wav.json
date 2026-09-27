@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,580"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1580
+			},
+			"text": " Nur der Weg, nie das Ziel.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.874303,
+					"t_dtw": -1
+				},
+				{
+					"text": " Nur",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,190"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 190
+					},
+					"id": 17612,
+					"p": 0.551676,
+					"t_dtw": 28
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:00,190",
+						"to": "00:00:00,380"
+					},
+					"offsets": {
+						"from": 190,
+						"to": 380
+					},
+					"id": 1163,
+					"p": 0.991633,
+					"t_dtw": 42
+				},
+				{
+					"text": " Weg",
+					"timestamps": {
+						"from": "00:00:00,380",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 380,
+						"to": 560
+					},
+					"id": 18919,
+					"p": 0.997666,
+					"t_dtw": 66
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 630
+					},
+					"id": 11,
+					"p": 0.853786,
+					"t_dtw": 84
+				},
+				{
+					"text": " nie",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 890
+					},
+					"id": 2838,
+					"p": 0.989549,
+					"t_dtw": 108
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,910",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 910,
+						"to": 1080
+					},
+					"id": 1482,
+					"p": 0.998138,
+					"t_dtw": 128
+				},
+				{
+					"text": " Ziel",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1260
+					},
+					"id": 25391,
+					"p": 0.999424,
+					"t_dtw": 156
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,570"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1570
+					},
+					"id": 13,
+					"p": 0.805098,
+					"t_dtw": 156
+				},
+				{
+					"text": "[_TT_79]",
+					"timestamps": {
+						"from": "00:00:01,580",
+						"to": "00:00:01,580"
+					},
+					"offsets": {
+						"from": 1580,
+						"to": 1580
+					},
+					"id": 50444,
+					"p": 0.331263,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

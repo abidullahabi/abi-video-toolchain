@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,720"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 720
+			},
+			"text": " Und das ist gut.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.9737,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,030",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 30,
+						"to": 140
+					},
+					"id": 2719,
+					"p": 0.893167,
+					"t_dtw": 10
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,260"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 260
+					},
+					"id": 1482,
+					"p": 0.781847,
+					"t_dtw": 20
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 420
+					},
+					"id": 1418,
+					"p": 0.998321,
+					"t_dtw": 30
+				},
+				{
+					"text": " gut",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 540
+					},
+					"id": 5228,
+					"p": 0.997231,
+					"t_dtw": 52
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,550",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 550,
+						"to": 630
+					},
+					"id": 13,
+					"p": 0.918447,
+					"t_dtw": 70
+				},
+				{
+					"text": "[_TT_36]",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 720
+					},
+					"id": 50401,
+					"p": 0.574062,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

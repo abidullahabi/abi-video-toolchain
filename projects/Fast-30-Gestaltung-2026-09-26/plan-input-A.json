@@ -1,0 +1,342 @@
+{
+ "sections": [
+  {
+   "id": "h1-einstieg",
+   "text": "Fast 30: 10 Lektionen",
+   "start": 0,
+   "end": 7.96
+  },
+  {
+   "id": "h1-p1",
+   "text": "1. Früher in Therapie",
+   "start": 7.96,
+   "end": 28.49
+  },
+  {
+   "id": "h1-p2",
+   "text": "2. Zieh früh aus",
+   "start": 28.49,
+   "end": 41.67
+  },
+  {
+   "id": "h1-p3",
+   "text": "3. Die großen Drei",
+   "start": 41.67,
+   "end": 72.82
+  },
+  {
+   "id": "h1-p4",
+   "text": "4. Kein Druck",
+   "start": 72.82,
+   "end": 86.36
+  },
+  {
+   "id": "h1-p5",
+   "text": "5. Der Weg zählt",
+   "start": 86.36,
+   "end": 110.2
+  },
+  {
+   "id": "h1-p6",
+   "text": "6. Rette dich selbst",
+   "start": 110.2,
+   "end": 130.44
+  },
+  {
+   "id": "h1-p7",
+   "text": "7. Früh investieren",
+   "start": 130.44,
+   "end": 147.66
+  },
+  {
+   "id": "h1-p8",
+   "text": "8. Alles schriftlich",
+   "start": 147.66,
+   "end": 163.47
+  },
+  {
+   "id": "h1-p9",
+   "text": "9. Trau niemals HR",
+   "start": 163.47,
+   "end": 165.33
+  },
+  {
+   "id": "h1-p10",
+   "text": "10. Glaub an etwas",
+   "start": 165.33,
+   "end": 171.42
+  },
+  {
+   "id": "h1-schluss",
+   "text": "Genieß deine 20er",
+   "start": 171.42,
+   "end": 193.49
+  }
+ ],
+ "overlays": [
+  {
+   "id": "gruss",
+   "lines": [
+    "Grüße gehen raus an",
+    "[Name]"
+   ],
+   "start": 39.12,
+   "end": 41.67,
+   "note": "Wunsch 2, Platzhalter. Beginnt bei „Am besten ziehst du auch eine andere Stadt“ (39,12, Schnitt 39,067) und steht bis zum H1-Morph auf Punkt 3, also etwas länger als der Satz. Kleine Indien-Flagge direkt hinter [Name] in Zeile 2 (ca. 34 px hoch, 12 px Abstand); Zeile 2 samt Flagge ≤ 560 px. Einzeilig „Grüße gehen raus an [Name]“ = 628,8 px, daher zweizeilig (Zeile 1 = 460,1 px)."
+  },
+  {
+   "id": "h2-entscheidungen",
+   "lines": [
+    "Stadt · Umfeld · Partner"
+   ],
+   "start": 44.8,
+   "end": 66.87,
+   "parts": [
+    {
+     "text": "Stadt",
+     "active": [
+      [
+       46.21,
+       55.32
+      ]
+     ]
+    },
+    {
+     "text": "Umfeld",
+     "active": [
+      [
+       55.32,
+       62.75
+      ]
+     ]
+    },
+    {
+     "text": "Partner",
+     "active": [
+      [
+       62.75,
+       66.87
+      ]
+     ]
+    }
+   ],
+   "note": "Aufzählung der drei wichtigsten Entscheidungen. Erscheint bei „drei“ (44,80), Aktivwechsel bei „Erstens“, „Zweitens“, „dritte“. 513,7 px. „Wohnort · Umfeld · Partner“ = 586,9 px reißt die 560."
+  },
+  {
+   "id": "beziehungen-h2",
+   "lines": [
+    "Paar Beziehungen zu viel",
+    "[Zusatz folgt]"
+   ],
+   "start": 66.87,
+   "end": 72.82,
+   "lineAt": [
+    66.87,
+    69.6
+   ],
+   "note": "Wunsch 1, Platzhalter. Übernimmt direkt die Stelle von h2-entscheidungen (einziger H2-Wechsel ohne H1-Wechsel). Zeile 1 = 552,2 px; Zeile 2 kommt als Nachsatz bei „ich“ (69,60) nach dem Schnitt 69,5. Endet mit dem H1-Morph auf Punkt 4."
+  },
+  {
+   "id": "h2-retter",
+   "lines": [
+    "Mentor · Frau · Retter"
+   ],
+   "start": 115.54,
+   "end": 119.15,
+   "parts": [
+    {
+     "text": "Mentor",
+     "active": [
+      [
+       115.8,
+       116.76
+      ]
+     ]
+    },
+    {
+     "text": "Frau",
+     "active": [
+      [
+       116.76,
+       117.47
+      ]
+     ]
+    },
+    {
+     "text": "Retter",
+     "active": [
+      [
+       117.47,
+       119.15
+      ]
+     ]
+    }
+   ],
+   "note": "Aufzählung „Ein Mentor, eine Frau, ein Retter“. 467,7 px. Endet genau dort, wo das Großwort „Niemand“ aufploppt, damit Abgang und Einschlag ein einziger Moment sind."
+  },
+  {
+   "id": "finger-weg",
+   "lines": [
+    "Finger weg: Kreditkarte,",
+    "Leasing und Dispo"
+   ],
+   "start": 138.84,
+   "end": 147.66,
+   "note": "Wunsch 3, nicht gesprochener Zusatztext. Erscheint beim Wechsel vom Reisen zum Sparen („Aber wenn du jetzt mit 20 anfängst“, 138,84, Schnitt 138,833) und steht 8,8 s bis zum Morph auf Punkt 8, genug Zeit zum Lesen. Zeile 1 = 526,6 px, Zeile 2 = 411,5 px. Einzeilig wären es 945,7 px; „Kreditkarte · Leasing · Dispo“ allein sind 626,2 px, deshalb gibt es hier keine parts."
+  },
+  {
+   "id": "p10-zusatz",
+   "lines": [
+    "… oder steh für etwas ein"
+   ],
+   "start": 166.34,
+   "end": 171.42,
+   "note": "Wunsch 4. Erscheint direkt nach dem gesprochenen „glaub an etwas“ (166,34) und liest sich so als Nachsatz zur H1. 559,8 px, knapp unter 560."
+  }
+ ],
+ "notes": [
+  {
+   "id": "notiz-p4",
+   "start": 75.55,
+   "end": 85.28,
+   "side": "rechts",
+   "lines": [
+    {
+     "text": "Ich weiß alles",
+     "at": 75.55,
+     "strikeAt": 77.11
+    },
+    {
+     "text": "Keine Ahnung",
+     "at": 77.11
+    },
+    {
+     "text": "Fehler erlaubt",
+     "at": 82.57
+    }
+   ]
+  },
+  {
+   "id": "notiz-p5",
+   "start": 98.73,
+   "end": 110.2,
+   "side": "rechts",
+   "lines": [
+    {
+     "text": "Wohnung",
+     "at": 98.73,
+     "strikeAt": 106.64
+    },
+    {
+     "text": "Partnerin",
+     "at": 100.34,
+     "strikeAt": 106.74
+    },
+    {
+     "text": "Bachelor",
+     "at": 102.09,
+     "strikeAt": 106.84
+    },
+    {
+     "text": "Master",
+     "at": 103.13,
+     "strikeAt": 106.94
+    },
+    {
+     "text": "Abgabe",
+     "at": 104.61,
+     "strikeAt": 107.04
+    }
+   ]
+  },
+  {
+   "id": "notiz-p8",
+   "start": 150.46,
+   "end": 156.3,
+   "side": "rechts",
+   "lines": [
+    {
+     "text": "Versprechen",
+     "at": 150.46
+    },
+    {
+     "text": "Schulden",
+     "at": 151.89
+    },
+    {
+     "text": "Abmachungen",
+     "at": 152.74
+    }
+   ]
+  }
+ ],
+ "bigwords": [
+  {
+   "id": "gw-niemand",
+   "text": "Niemand",
+   "start": 119.15,
+   "end": 120.24
+  },
+  {
+   "id": "gw-freepass",
+   "text": "Free Pass",
+   "start": 178.91,
+   "end": 179.96
+  }
+ ],
+ "zooms": [
+  {
+   "start": 19.6,
+   "end": 21.667,
+   "scale": 1.04
+  },
+  {
+   "start": 36.51,
+   "end": 39.067,
+   "scale": 1.045
+  },
+  {
+   "start": 57.02,
+   "end": 62.433,
+   "scale": 1.05
+  },
+  {
+   "start": 92.65,
+   "end": 96.367,
+   "scale": 1.045
+  },
+  {
+   "start": 119.15,
+   "end": 121.033,
+   "scale": 1.1,
+   "punch": true
+  },
+  {
+   "start": 143.55,
+   "end": 146.533,
+   "scale": 1.04
+  },
+  {
+   "start": 158.99,
+   "end": 163.367,
+   "scale": 1.05
+  },
+  {
+   "start": 185.19,
+   "end": 189.733,
+   "scale": 1.045
+  }
+ ],
+ "outroStart": 193.49,
+ "rationale": "Leitidee: Die H1 ist der ruhige Anker. Es gibt genau 12 H1 (Einstieg, Punkte 1 bis 10, Schluss). Sie liegen lückenlos aneinander, jeder Wechsel ist also ein Morph. Alle Titel habe ich so formuliert, dass sie bei 72 px höchstens 736 px breit sind (gemessen: 732,2 / 712,2 / 532,1 / 616,1 / 460,2 / 554,8 / 656,2 / 640,2 / 613,5 / 644,2 / 648,2 / 620,3). Damit bleibt die Fläche über das ganze Video 112 px hoch, und nur die Breite morpht, nie die Schriftgröße. Die H2 steht immer bei y 382. Die H1-Wechsel liegen am Wort, das die Nummer ansagt („Punkt“, „Zweitens“, „dritten“, „vierte“, „Weg Nummer 6“, „Achtens“, „Neuntens“). Punkt 7 hat keine gesprochene Nummer und wechselt deshalb bei „Fang früh an zu investieren“. Acht der elf Wechsel fallen 0,03 bis 0,13 s nach einem Schnitt und sind damit fast unsichtbar. Die Titel sind Merksätze im Imperativ und in Abdullahs Ton. Wo der Originalsatz zu breit war, habe ich gekürzt: „Fang früher an mit Therapie“ wird zu „Früher in Therapie“ (1032 px bei 72), „Vertrau niemals HR“ (740) zu „Trau niemals HR“, „Nimm den Druck raus“ (824) zu „Kein Druck“, „Die 3 wichtigsten Entscheidungen“ zu „Die großen Drei“. Die Aufzählung löst dann die H2 auf. Der Einstiegs-Titel steht ab Frame 0 und enthält den Videotitel.\n\nH2 gibt es nur zweimal für echte Aufzählungen (drei Entscheidungen; Mentor/Frau/Retter, jeweils als parts mit hellblauem Aktivpunkt) und viermal für die Wünsche. Jede H2 bleibt in ihrem H1-Abschnitt, nie laufen zwei gleichzeitig, und nie steht eine Notiz zusammen mit einer H2.\n\nAnimationen: nur drei Randnotizen, jeweils dort, wo das Gesagte wirklich ein Vorher/Nachher oder eine Liste ist.\n- P4: „Ich weiß alles“ wird bei „keine“ rot gestrichen, darunter „Keine Ahnung“, dann „Fehler erlaubt“ bei „erlaubt“.\n- P5 ist Abdullahs Lieblingspunkt und die stärkste Stelle: Wohnung, Partnerin, Bachelor, Master, Abgabe erscheinen jeweils am Wort. Bei „Alles Quatsch“ werden alle fünf nacheinander rot gestrichen, im 0,1-s-Takt nach DESIGN 11.7 (explizit angegeben, weil der Renderer nicht selbst staffelt).\n- P8: Versprechen, Schulden, Abmachungen. Als H2 wären es 882,7 px.\n\nAlle Notizen stehen rechts. Der Block bleibt komplett oberhalb der Kappe: y 390 bis 566 / 655 / 549, Kopf frühestens bei y 708 / 724 / 709, also mindestens 69 px Luft. Horizontal kann es deshalb keinen Konflikt geben. Empfohlene linke Kante wie in der Referenz x 590 bis 600. Die breiteste Zeile „Abmachungen“ hat 319,5 px und endet damit samt Kontur spätestens bei x 925. In P4 braucht Zeile 2 die 17 px Abstand nach der gestrichenen Zeile.\n\nZwei Großwörter für die härtesten Sätze: „Niemand“ bei „es kommt niemand, um dich zu retten“ mit Punch-Zoom 1,10 bis zum Schnitt 121,033. Die H2 mit den Rettern endet im selben Moment, das ergibt einen einzigen Einschlag. Dazu „Free Pass“, die Kernaussage des Schlusses. Das Großwort „Free Pass“ passt auch bei 140 px (661,6 px). Dort gibt es bewusst keinen Punch, weil 178 bis 182 s eine nahe Einstellung ist (Gesicht 452 bis 472 px breit).\n\nSieben langsame Zooms (1,04 bis 1,05; 2,1 bis 5,4 s) unterstreichen Sätze ohne Text: Heilung braucht Zeit, Kinderzimmer, 99 % Lutscher, die Wiederholung „Ich sage es noch einmal“, fette Summe, mieseres Gefühl, 30-Jähriger komisch angucken. Alle enden an einem Schnitt, keiner hat einen Schnitt in der Mitte, alle laufen in normalen Einstellungen (Gesicht höchstens 324 px breit; nur bei 19 s zählt der Wert von 377 px noch zur Einstellung vor dem Schnitt 19,6). Das Outro startet bei „Weil“ 193,49, direkt nach dem Schnitt 193,467. Damit bleiben 7,38 s bis 200,867. Punkt 1 (20 s) und der Schluss (22 s) bleiben bewusst bis auf Zoom und Großwort ruhig.\n\nAlle Zeiten habe ich per Skript gegen words-raw.json geprüft. Jede sitzt auf einem Wortstart oder einem Schnitt, außer den gewollten Staffelzeiten 106,74 / 106,84 / 106,94 / 107,04.",
+ "changes": "H1: 12 Titel, 11 Wechsel, alle als Morph (lückenlos), alle bei 72 px, keine Größen- oder Höhensprünge. H1 blendet nur zweimal kurz für ein Großwort aus.\nH2: 6 Einblendungen (2 Aufzählungen mit parts, 4 Wünsche). Davon 1 direkter H2-Wechsel ohne H1-Wechsel (66,87: Aufzählung wird zur Beziehungen-H2). Aktivpunkt-Wechsel: 3 je Aufzählung.\nRandnotizen: 3 mit zusammen 11 Zeilen, davon 6 rot gestrichen (1 in P4, 5 in P5).\nGroßwörter: 2 (Niemand, Free Pass).\nZooms: 8 (7 langsam, 1 Punch).\noutroStart: 193,49.\nKein Logo, keine Sprechblase.",
+ "openQuestions": [
+  "Gruß (id gruss): Welcher Name? Passt die Flagge hinter dem Namen in Zeile 2, oder soll der Gruß lieber einzeilig und kürzer als „Grüße an [Name]“ kommen (370,6 px plus Flagge)?",
+  "Beziehungen (id beziehungen-h2): Wie lautet der Zusatz für Zeile 2? Ist „Paar Beziehungen zu viel“ als Kurzform von „Ein paar Beziehungen hätte ich mir sparen können“ okay? Die Originalformulierung passt in keiner sinnvollen Kürzung in eine Zeile mit höchstens 560 px, zum Beispiel „Paar Beziehungen: unnötig“ = 595,5 px.",
+  "Finger weg (id finger-weg): Ist die Aufteilung „Finger weg: Kreditkarte, / Leasing und Dispo“ okay (das „von“ fällt weg)? Und passt der Zeitpunkt ab „Aber wenn du jetzt mit 20 anfängst“ (138,84 bis 147,66), oder soll es schon ab den 20.000 Euro für Reisen (131,59) stehen?",
+  "Punkt 8: Die Aufzählung Versprechen / Schulden / Abmachungen läuft als Randnotiz, weil sie als H2 mit 882,7 px viel zu breit wäre. Falls Abdullah für Aufzählungen strikt H2 will, ginge nur „Freunde · Job · Geld“ (447,2 px), aber dann springt der Aktivpunkt im 0,4-s-Takt.",
+  "Free Pass: Soll trotz der nahen Einstellung ein Punch-Zoom dazu? Dafür wäre 1,08 von 178,91 bis zum Schnitt 182,333 möglich.",
+  "H1-Wortlaut: Sind „4. Kein Druck“, „6. Rette dich selbst“ und „9. Trau niemals HR“ okay? Die wörtlicheren Fassungen „Nimm den Druck raus“ und „Vertrau niemals HR“ gehen nur auf einer kleineren Stufe und würden die gleichmäßige 72-px-Fläche brechen.",
+  "Punkt 9 steht naturgemäß nur 1,86 s (163,47 bis 165,33), weil Abdullah danach sofort zu Punkt 10 geht. Das ist akzeptiert, oder soll Punkt 9 mit Punkt 10 kombiniert werden?"
+ ]
+}

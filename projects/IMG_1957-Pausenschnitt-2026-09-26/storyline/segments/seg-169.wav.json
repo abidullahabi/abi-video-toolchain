@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,740"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1740
+			},
+			"text": " Und gehen wir weiter in den Weg Nummer 6.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.968451,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 100
+					},
+					"id": 2719,
+					"p": 0.626099,
+					"t_dtw": 10
+				},
+				{
+					"text": " gehen",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 270
+					},
+					"id": 13230,
+					"p": 0.972715,
+					"t_dtw": 24
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 370
+					},
+					"id": 1987,
+					"p": 0.983324,
+					"t_dtw": 34
+				},
+				{
+					"text": " weiter",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 600
+					},
+					"id": 8988,
+					"p": 0.947657,
+					"t_dtw": 56
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,730"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 730
+					},
+					"id": 294,
+					"p": 0.330001,
+					"t_dtw": 70
+				},
+				{
+					"text": " den",
+					"timestamps": {
+						"from": "00:00:00,730",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 730,
+						"to": 860
+					},
+					"id": 1441,
+					"p": 0.934341,
+					"t_dtw": 74
+				},
+				{
+					"text": " Weg",
+					"timestamps": {
+						"from": "00:00:00,970",
+						"to": "00:00:01,110"
+					},
+					"offsets": {
+						"from": 970,
+						"to": 1110
+					},
+					"id": 18919,
+					"p": 0.985585,
+					"t_dtw": 90
+				},
+				{
+					"text": " Nummer",
+					"timestamps": {
+						"from": "00:00:01,110",
+						"to": "00:00:01,480"
+					},
+					"offsets": {
+						"from": 1110,
+						"to": 1480
+					},
+					"id": 47034,
+					"p": 0.876246,
+					"t_dtw": 112
+				},
+				{
+					"text": " 6",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1620
+					},
+					"id": 1386,
+					"p": 0.799801,
+					"t_dtw": 154
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,730",
+						"to": "00:00:01,730"
+					},
+					"offsets": {
+						"from": 1730,
+						"to": 1730
+					},
+					"id": 13,
+					"p": 0.795658,
+					"t_dtw": 170
+				},
+				{
+					"text": "[_TT_87]",
+					"timestamps": {
+						"from": "00:00:01,740",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1740,
+						"to": 1740
+					},
+					"id": 50452,
+					"p": 0.401509,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

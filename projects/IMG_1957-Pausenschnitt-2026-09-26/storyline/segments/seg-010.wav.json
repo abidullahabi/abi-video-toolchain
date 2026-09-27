@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,180"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1180
+			},
+			"text": " Er braucht man wirklich nicht jünger werden.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.977474,
+					"t_dtw": -1
+				},
+				{
+					"text": " Er",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,050"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 50
+					},
+					"id": 3300,
+					"p": 0.282297,
+					"t_dtw": 14
+				},
+				{
+					"text": " braucht",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 250
+					},
+					"id": 22623,
+					"p": 0.662014,
+					"t_dtw": 28
+				},
+				{
+					"text": " man",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 330
+					},
+					"id": 587,
+					"p": 0.734165,
+					"t_dtw": 44
+				},
+				{
+					"text": " wirklich",
+					"timestamps": {
+						"from": "00:00:00,330",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 330,
+						"to": 560
+					},
+					"id": 9696,
+					"p": 0.367577,
+					"t_dtw": 62
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 700
+					},
+					"id": 1979,
+					"p": 0.608333,
+					"t_dtw": 80
+				},
+				{
+					"text": " j",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,710"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 710
+					},
+					"id": 361,
+					"p": 0.967051,
+					"t_dtw": 84
+				},
+				{
+					"text": "üng",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,800"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 800
+					},
+					"id": 36216,
+					"p": 0.999243,
+					"t_dtw": 90
+				},
+				{
+					"text": "er",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 850
+					},
+					"id": 260,
+					"p": 0.985438,
+					"t_dtw": 100
+				},
+				{
+					"text": " werden",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 1020
+					},
+					"id": 4604,
+					"p": 0.215219,
+					"t_dtw": 110
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1180
+					},
+					"id": 13,
+					"p": 0.777234,
+					"t_dtw": 116
+				},
+				{
+					"text": "[_TT_59]",
+					"timestamps": {
+						"from": "00:00:01,180",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1180,
+						"to": 1180
+					},
+					"id": 50424,
+					"p": 0.0816233,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

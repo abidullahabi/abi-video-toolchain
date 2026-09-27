@@ -1,0 +1,297 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,540"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3540
+			},
+			"text": " Dieses Gefühl von Selbstwirksamkeit, Selbstbewusstsein, Selbstvertrauen",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.964633,
+					"t_dtw": -1
+				},
+				{
+					"text": " Dieses",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,350"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 350
+					},
+					"id": 39201,
+					"p": 0.769729,
+					"t_dtw": 20
+				},
+				{
+					"text": " Gefühl",
+					"timestamps": {
+						"from": "00:00:00,350",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 350,
+						"to": 700
+					},
+					"id": 29715,
+					"p": 0.994983,
+					"t_dtw": 98
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 870
+					},
+					"id": 2957,
+					"p": 0.989679,
+					"t_dtw": 116
+				},
+				{
+					"text": " Selbst",
+					"timestamps": {
+						"from": "00:00:00,870",
+						"to": "00:00:01,220"
+					},
+					"offsets": {
+						"from": 870,
+						"to": 1220
+					},
+					"id": 29712,
+					"p": 0.973858,
+					"t_dtw": 140
+				},
+				{
+					"text": "wir",
+					"timestamps": {
+						"from": "00:00:01,220",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1220,
+						"to": 1360
+					},
+					"id": 43327,
+					"p": 0.992511,
+					"t_dtw": 154
+				},
+				{
+					"text": "ksam",
+					"timestamps": {
+						"from": "00:00:01,390",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1390,
+						"to": 1600
+					},
+					"id": 28665,
+					"p": 0.999743,
+					"t_dtw": 172
+				},
+				{
+					"text": "keit",
+					"timestamps": {
+						"from": "00:00:01,640",
+						"to": "00:00:01,780"
+					},
+					"offsets": {
+						"from": 1640,
+						"to": 1780
+					},
+					"id": 9238,
+					"p": 0.998123,
+					"t_dtw": 196
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 2000
+					},
+					"id": 11,
+					"p": 0.969176,
+					"t_dtw": 206
+				},
+				{
+					"text": " Selbst",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,220"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2220
+					},
+					"id": 29712,
+					"p": 0.562035,
+					"t_dtw": 224
+				},
+				{
+					"text": "bew",
+					"timestamps": {
+						"from": "00:00:02,320",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2320,
+						"to": 2370
+					},
+					"id": 47465,
+					"p": 0.997484,
+					"t_dtw": 244
+				},
+				{
+					"text": "usst",
+					"timestamps": {
+						"from": "00:00:02,370",
+						"to": "00:00:02,530"
+					},
+					"offsets": {
+						"from": 2370,
+						"to": 2530
+					},
+					"id": 26340,
+					"p": 0.986323,
+					"t_dtw": 260
+				},
+				{
+					"text": "sein",
+					"timestamps": {
+						"from": "00:00:02,530",
+						"to": "00:00:02,690"
+					},
+					"offsets": {
+						"from": 2530,
+						"to": 2690
+					},
+					"id": 33042,
+					"p": 0.987658,
+					"t_dtw": 270
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,690",
+						"to": "00:00:02,800"
+					},
+					"offsets": {
+						"from": 2690,
+						"to": 2800
+					},
+					"id": 11,
+					"p": 0.907176,
+					"t_dtw": 278
+				},
+				{
+					"text": " Selbst",
+					"timestamps": {
+						"from": "00:00:02,800",
+						"to": "00:00:03,040"
+					},
+					"offsets": {
+						"from": 2800,
+						"to": 3040
+					},
+					"id": 29712,
+					"p": 0.744429,
+					"t_dtw": 292
+				},
+				{
+					"text": "vert",
+					"timestamps": {
+						"from": "00:00:03,170",
+						"to": "00:00:03,280"
+					},
+					"offsets": {
+						"from": 3170,
+						"to": 3280
+					},
+					"id": 3281,
+					"p": 0.998527,
+					"t_dtw": 312
+				},
+				{
+					"text": "rauen",
+					"timestamps": {
+						"from": "00:00:03,280",
+						"to": "00:00:03,380"
+					},
+					"offsets": {
+						"from": 3280,
+						"to": 3380
+					},
+					"id": 46640,
+					"p": 0.999882,
+					"t_dtw": 334
+				},
+				{
+					"text": "[_TT_177]",
+					"timestamps": {
+						"from": "00:00:03,540",
+						"to": "00:00:03,540"
+					},
+					"offsets": {
+						"from": 3540,
+						"to": 3540
+					},
+					"id": 50542,
+					"p": 0.306345,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

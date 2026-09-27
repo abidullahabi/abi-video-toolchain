@@ -1,0 +1,52 @@
+[
+ {
+  "issue": "1. Naht S057→S095 in \"Beim Abhören prüfen\", Ersatz S059 statt S095, S096 und S098",
+  "decision": "übernommen",
+  "reason": "Selbst geprüft. Laut inventory.md beginnt S095 bei 2:48,9 nach 7,1 s Pause direkt nach S094, S057 endet bei 1:43,4. Meine eigene Pegelmessung an cut-speech.wav (90. Perzentil) ergibt S057 −25,0 dB und S095 −20,7 dB. Das ist der größte Sprung der Liste (S073→S113 etwa 2,2 dB, S098→S065 kaum). Die Naht steht jetzt als Pflichtprüfung auf der Liste. Als Ersatz nehme ich S059 allein: p 0,92, Pegel −24,7 dB wie S057, keine Dopplung. S053 bis S073 kommen dann aus einem Anlauf, und die Naht S098→S065 fällt auch weg (−2,6 s). Das widerspricht Befund 5, dort begründet."
+ },
+ {
+  "issue": "2. S050 \"gewünscht\" prüfen, Ersatz S048 statt S050–S052",
+  "decision": "übernommen",
+  "reason": "Bestätigt. In segments/seg-050 hat das Anfangs-Token \"gew\" p 0,17. ohne-dtw/seg-050 hört \"für mich für euch gewünscht\" (\"euch\" 0,96), also zusätzliches Material zwischen \"mich\" und \"gewünscht\". Roh- und v1-Durchtranskription lesen die Stelle allerdings sauber, deshalb bleibt S050–S052 Standard, jetzt mit Pflichtprüfung. Feste Ersatzregel: S048 (\"gewünscht\" 1,00) statt S050, S051 und S052, −4,6 s. Dabei das Satzende von S048 anhören, weil S049 nach 0,45 s folgte. Zusammen mit Befund 9 eingearbeitet."
+ },
+ {
+  "issue": "3. S197 \"Gleich\"/\"Vielleicht\" prüfen, Ersatz S196",
+  "decision": "teilweise",
+  "reason": "Die Prüfung mit dem Ersatz S196 (−0,1 s) ist übernommen, denn ohne hörbares \"Vielleicht\" ergibt der Satz keinen Sinn. Die Begründung stimmt aber nur zum Teil. Die Rohtranskription (Zeile 123, \"Vielleicht 1 bis 2 nur\", Vielleicht 0,66) und die v1-Durchtranskription (cut-detection.txt Z. 108) lesen S197 beide als \"Vielleicht\". Nur die Einzeltranskription liest \"Gleich\" (0,34). Die Behauptung aus dem Befund, \"Vielleicht\" werde nur mit S195 davor erkannt, kann ich nicht bestätigen. Deshalb bleibt S197 Standard: Es ist der spätere, fertige Anlauf mit \"bis … nur\". Die note ist entsprechend präzisiert."
+ },
+ {
+  "issue": "4. S020–S021 vs. S038–S039: falscher Streichgrund, Pflichtprüfung \"-heit\" mit fester Ersatzregel",
+  "decision": "übernommen",
+  "reason": "Bestätigt. In segments/seg-021 und ohne-dtw/seg-021 liegen Sche/iß/kind/heit bei 0,89 bis 1,00, die 0,38 gehört zum Komma. Die v1-Durchtranskription Z. 14 und ohne-dtw/seg-039 lesen S039 als \"ein scheiß Kind gehabt\" (Kind 0,97). Roh (\"eine scheiß Kindheit\", heit 0,94) und segments (\"Scheiß-Kinderheit\") hören \"-heit\". Das sind zwei von vier ohne \"-heit\". Streichgrund, note Punkt 1 und rationale Punkt 5 sind korrigiert. Die offene Frage 2 ist in \"Beim Abhören prüfen\" verschoben, als Pflichtprüfung mit fester Ersatzregel S037, S020, S021, S040 … (+0,2 s, 21,8 s). Die Umstellung ist in der note begründet. S038–S039 bleibt Standard, weil Punkt 1 so aus einem Durchgang kommt und die Rohtranskription \"-heit\" sicher hört."
+ },
+ {
+  "issue": "5. Naht S057→S095 prüfen, Ersatz S058 + S059",
+  "decision": "teilweise",
+  "reason": "Die Pflichtprüfung (Bild, Notizbuch, Lautstärke, Satzmelodie) ist übernommen und mit Befund 1 zusammengelegt. Den Ersatz S058 + S059 lehne ich ab. \"Zieh aus von zu Hause\" doppelt das unmittelbar vorher gesagte \"früh von zu Hause ausziehen\", und \"am besten ziehst du auch eine andere Stadt\" ist grammatisch holprig (\"eine\" p 0,57). Abdullah hat genau diesen Satz später als S095–S096 neu gesprochen. S059 allein ist sauberer und 2,7 s kürzer. Beide Anlaufwechsel fallen damit ebenso weg. Es geht zwar die Stadt-Brücke verloren, aber \"Erstens, wo du wohnst\" und die Popelstadt-Pointe tragen das Thema."
+ },
+ {
+  "issue": "6. Naht S132→S134 prüfen, Ersatz S133 wieder einsetzen",
+  "decision": "übernommen",
+  "reason": "Bestätigt. S133 folgte im Original nach 0,3 s. Die Rohtranskription (Z. 63) setzt nach \"erlebt\" ein Komma mit p 0,99, die v1-Durchtranskription ebenfalls. In S132 hat der Schlusspunkt nur 0,77. Die Naht steht jetzt auf der Prüfliste, mit fester Ersatzregel S133 zwischen S132 und S134 (+1,8 s, Punkt 4 dann 24,4 s). Streichgrund und note sind ergänzt."
+ },
+ {
+  "issue": "7. Punkt 8: S210–S212 komplett zwischen S209 und S213 einsetzen (+8,2 s)",
+  "decision": "teilweise",
+  "reason": "Das Klarheitsargument übernehme ich. Erst das Beispiel zeigt, dass \"alles schriftlich\" die Zusagen anderer meint. Sonst wirkt es wie ein Widerspruch zu \"so wenig schriftlich preis\", und das Skript sagt \"Lass dir Abmachungen schriftlich geben\". Auch der Streichgrund ist korrigiert, denn die Wiederholung betrifft nur die letzten Wörter. S211 setze ich aber nicht ein: 3,4 s Denkpause davor, \"Job\" p 0,32, und eine dritte Aufzählungsstufe verstößt gegen Abdullahs Regel gegen Häufung. Umgesetzt ist die kürzere Variante aus Befund 10 (+4,7 s). S211 und S212 komplett stehen als Ersatz für eine hakende Naht und als offene Frage."
+ },
+ {
+  "issue": "8. Punkt 3: S071 \"was für Abschlüsse\" als offene Frage",
+  "decision": "übernommen",
+  "reason": "Geprüft: S071 hat p 0,72, \"Abschlüsse\" 0,21, davor 2,1 s Pause, und S071→S072 lief im Original mit 0,5 s durch. Beide Durchtranskriptionen hören \"was für einen Abschluss du auch erreichen wirst\". Der Bezug zu Lea (Studentin) und zu \"Uni\" im Skript ist stichhaltig. Wegen des unsicheren Kernworts und des nachgeschobenen Charakters nehme ich S071 nicht in den Standard, sondern als offene Frage (+1,7 s) mit Abhörhinweis. S112 ist ausdrücklich ausgeschlossen, und der Streichgrund von S071 verweist jetzt darauf."
+ },
+ {
+  "issue": "9. S050–S052: Prüfung \"gewünscht\" und Übergang S050→S051, Ersatz S048, Kürzungsoption",
+  "decision": "übernommen",
+  "reason": "Bestätigt: \"gewünscht,?\" hat Einzel-p 0,17, \"früher\" 0,40, vor S051 lagen 1,86 s Suchpause, und S052 ist grammatisch schief. ohne-dtw hört außerdem ein zusätzliches \"für euch\". S050–S052 bleibt Standard. Prüfliste und note nennen jetzt S050 \"gewünscht\" und den Übergang S050→S051, mit der festen Ersatzregel S048 statt S050, S051 und S052. S049 bleibt gestrichen. Der Ersatz liegt im selben Durchgang ohne Anlaufwechsel und spart 4,6 s (Punkt 1 dann 17,0 s). In der Längenfrage steht er an erster Stelle der Kürzungsreihenfolge."
+ },
+ {
+  "issue": "10. Punkt 8 als Standard: S209, S210, S212[a→end], S213, S215, S216",
+  "decision": "übernommen",
+  "reason": "Geprüft: S212 hat den inneren Schnittpunkt [a] bei 0,487 s nach \"Geld,\" (64 ms Lücke), und S213 folgte im Original 0,2 s auf S212. Punkt 8 läuft damit in einem Anlauf in Aufnahmereihenfolge. \"… Geld schulden, egal was, hab es immer schriftlich und gib du selber …\" ist grammatisch nahtlos, und die künstliche Naht S209→S213 fällt weg. Nachgerechnet: +4,68 s, Punkt 8 dauert 14,5 s, gesamt 191,8 s. Weil die Lücke bei [a] nur 64 ms hat, steht die neue Naht S210→S212[a] als Pflichtprüfung auf der Liste. Hakt sie, S211 und S212 komplett nehmen (+3,5 s)."
+ }
+]

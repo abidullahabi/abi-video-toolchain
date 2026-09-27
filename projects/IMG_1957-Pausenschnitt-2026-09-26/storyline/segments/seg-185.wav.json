@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,860"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 860
+			},
+			"text": " Und das ist gar nicht schlimm.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.946442,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,020",
+						"to": "00:00:00,090"
+					},
+					"offsets": {
+						"from": 20,
+						"to": 90
+					},
+					"id": 2719,
+					"p": 0.844001,
+					"t_dtw": 12
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,090",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 90,
+						"to": 180
+					},
+					"id": 1482,
+					"p": 0.974029,
+					"t_dtw": 24
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 270
+					},
+					"id": 1418,
+					"p": 0.999714,
+					"t_dtw": 34
+				},
+				{
+					"text": " gar",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 360
+					},
+					"id": 3691,
+					"p": 0.999609,
+					"t_dtw": 52
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 510
+					},
+					"id": 1979,
+					"p": 0.999725,
+					"t_dtw": 64
+				},
+				{
+					"text": " schlimm",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,710"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 710
+					},
+					"id": 48821,
+					"p": 0.999504,
+					"t_dtw": 84
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,710",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 710,
+						"to": 850
+					},
+					"id": 13,
+					"p": 0.985466,
+					"t_dtw": 84
+				},
+				{
+					"text": "[_TT_43]",
+					"timestamps": {
+						"from": "00:00:00,860",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 860,
+						"to": 860
+					},
+					"id": 50408,
+					"p": 0.484314,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

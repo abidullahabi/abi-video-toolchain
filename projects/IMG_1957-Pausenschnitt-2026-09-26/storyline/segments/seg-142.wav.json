@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,340"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1340
+			},
+			"text": " viel mehr Druck rauszunehmen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.951821,
+					"t_dtw": -1
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 210
+					},
+					"id": 5891,
+					"p": 0.950026,
+					"t_dtw": 24
+				},
+				{
+					"text": " mehr",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,410"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 410
+					},
+					"id": 5417,
+					"p": 0.99713,
+					"t_dtw": 38
+				},
+				{
+					"text": " Druck",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,680"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 680
+					},
+					"id": 33320,
+					"p": 0.992411,
+					"t_dtw": 58
+				},
+				{
+					"text": " raus",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 870
+					},
+					"id": 17202,
+					"p": 0.733021,
+					"t_dtw": 78
+				},
+				{
+					"text": "z",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 940
+					},
+					"id": 89,
+					"p": 0.983731,
+					"t_dtw": 92
+				},
+				{
+					"text": "une",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1100
+					},
+					"id": 2613,
+					"p": 0.999352,
+					"t_dtw": 102
+				},
+				{
+					"text": "hmen",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1180
+					},
+					"id": 9547,
+					"p": 0.999846,
+					"t_dtw": 116
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,330",
+						"to": "00:00:01,330"
+					},
+					"offsets": {
+						"from": 1330,
+						"to": 1330
+					},
+					"id": 13,
+					"p": 0.44881,
+					"t_dtw": 130
+				},
+				{
+					"text": "[_TT_67]",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1340
+					},
+					"id": 50432,
+					"p": 0.523035,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

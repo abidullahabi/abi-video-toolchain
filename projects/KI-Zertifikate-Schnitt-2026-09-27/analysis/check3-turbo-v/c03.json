@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,140"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3140
+			},
+			"text": " Gen. AI for Everyone von Andrew NG oder so.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.364842,
+					"t_dtw": -1
+				},
+				{
+					"text": " Gen",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,260"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 260
+					},
+					"id": 3632,
+					"p": 0.905329,
+					"t_dtw": 46
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,260",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 260,
+						"to": 520
+					},
+					"id": 13,
+					"p": 0.670557,
+					"t_dtw": 58
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,690"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 690
+					},
+					"id": 7318,
+					"p": 0.350614,
+					"t_dtw": 70
+				},
+				{
+					"text": " for",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 950
+					},
+					"id": 337,
+					"p": 0.943895,
+					"t_dtw": 98
+				},
+				{
+					"text": " Everyone",
+					"timestamps": {
+						"from": "00:00:00,950",
+						"to": "00:00:01,640"
+					},
+					"offsets": {
+						"from": 950,
+						"to": 1640
+					},
+					"id": 5198,
+					"p": 0.608582,
+					"t_dtw": 134
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:01,640",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1640,
+						"to": 1900
+					},
+					"id": 2957,
+					"p": 0.962764,
+					"t_dtw": 162
+				},
+				{
+					"text": " Andrew",
+					"timestamps": {
+						"from": "00:00:01,900",
+						"to": "00:00:02,310"
+					},
+					"offsets": {
+						"from": 1900,
+						"to": 2310
+					},
+					"id": 10110,
+					"p": 0.927228,
+					"t_dtw": 214
+				},
+				{
+					"text": " N",
+					"timestamps": {
+						"from": "00:00:02,500",
+						"to": "00:00:02,500"
+					},
+					"offsets": {
+						"from": 2500,
+						"to": 2500
+					},
+					"id": 426,
+					"p": 0.895411,
+					"t_dtw": 268
+				},
+				{
+					"text": "G",
+					"timestamps": {
+						"from": "00:00:02,550",
+						"to": "00:00:02,580"
+					},
+					"offsets": {
+						"from": 2550,
+						"to": 2580
+					},
+					"id": 38,
+					"p": 0.527358,
+					"t_dtw": 282
+				},
+				{
+					"text": " oder",
+					"timestamps": {
+						"from": "00:00:02,580",
+						"to": "00:00:02,920"
+					},
+					"offsets": {
+						"from": 2580,
+						"to": 2920
+					},
+					"id": 4513,
+					"p": 0.974602,
+					"t_dtw": 302
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:02,920",
+						"to": "00:00:03,130"
+					},
+					"offsets": {
+						"from": 2920,
+						"to": 3130
+					},
+					"id": 370,
+					"p": 0.988642,
+					"t_dtw": 310
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,130",
+						"to": "00:00:03,130"
+					},
+					"offsets": {
+						"from": 3130,
+						"to": 3130
+					},
+					"id": 13,
+					"p": 0.670295,
+					"t_dtw": 310
+				},
+				{
+					"text": "[_TT_157]",
+					"timestamps": {
+						"from": "00:00:03,140",
+						"to": "00:00:03,140"
+					},
+					"offsets": {
+						"from": 3140,
+						"to": 3140
+					},
+					"id": 50522,
+					"p": 0.971387,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

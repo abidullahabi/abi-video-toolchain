@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1060
+			},
+			"text": " die Erlaubnis einfach",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.980074,
+					"t_dtw": -1
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,260"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 260
+					},
+					"id": 978,
+					"p": 0.490833,
+					"t_dtw": 12
+				},
+				{
+					"text": " Er",
+					"timestamps": {
+						"from": "00:00:00,260",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 260,
+						"to": 430
+					},
+					"id": 3300,
+					"p": 0.829492,
+					"t_dtw": 22
+				},
+				{
+					"text": "laub",
+					"timestamps": {
+						"from": "00:00:00,430",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 430,
+						"to": 780
+					},
+					"id": 20798,
+					"p": 0.998942,
+					"t_dtw": 38
+				},
+				{
+					"text": "nis",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 890
+					},
+					"id": 10661,
+					"p": 0.998245,
+					"t_dtw": 50
+				},
+				{
+					"text": " einfach",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1060
+					},
+					"id": 7281,
+					"p": 0.829884,
+					"t_dtw": 90
+				},
+				{
+					"text": "[_TT_53]",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1060
+					},
+					"id": 50418,
+					"p": 0.386175,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

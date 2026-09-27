@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2100
+			},
+			"text": " Stell dir vor, alles, was du mit 20 machst,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.960085,
+					"t_dtw": -1
+				},
+				{
+					"text": " Stell",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,260"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 260
+					},
+					"id": 37364,
+					"p": 0.853862,
+					"t_dtw": 16
+				},
+				{
+					"text": " dir",
+					"timestamps": {
+						"from": "00:00:00,260",
+						"to": "00:00:00,410"
+					},
+					"offsets": {
+						"from": 260,
+						"to": 410
+					},
+					"id": 4746,
+					"p": 0.988416,
+					"t_dtw": 28
+				},
+				{
+					"text": " vor",
+					"timestamps": {
+						"from": "00:00:00,410",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 410,
+						"to": 540
+					},
+					"id": 4245,
+					"p": 0.989623,
+					"t_dtw": 42
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,580",
+						"to": "00:00:00,660"
+					},
+					"offsets": {
+						"from": 580,
+						"to": 660
+					},
+					"id": 11,
+					"p": 0.910035,
+					"t_dtw": 60
+				},
+				{
+					"text": " alles",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 890
+					},
+					"id": 7874,
+					"p": 0.966364,
+					"t_dtw": 74
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 1020
+					},
+					"id": 11,
+					"p": 0.507066,
+					"t_dtw": 82
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,160"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1160
+					},
+					"id": 390,
+					"p": 0.996583,
+					"t_dtw": 90
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:01,190",
+						"to": "00:00:01,210"
+					},
+					"offsets": {
+						"from": 1190,
+						"to": 1210
+					},
+					"id": 1581,
+					"p": 0.996187,
+					"t_dtw": 102
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:01,270",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 1270,
+						"to": 1420
+					},
+					"id": 2194,
+					"p": 0.99607,
+					"t_dtw": 116
+				},
+				{
+					"text": " 20",
+					"timestamps": {
+						"from": "00:00:01,420",
+						"to": "00:00:01,710"
+					},
+					"offsets": {
+						"from": 1420,
+						"to": 1710
+					},
+					"id": 945,
+					"p": 0.974033,
+					"t_dtw": 144
+				},
+				{
+					"text": " machst",
+					"timestamps": {
+						"from": "00:00:01,710",
+						"to": "00:00:01,880"
+					},
+					"offsets": {
+						"from": 1710,
+						"to": 1880
+					},
+					"id": 43350,
+					"p": 0.967247,
+					"t_dtw": 184
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,090",
+						"to": "00:00:02,090"
+					},
+					"offsets": {
+						"from": 2090,
+						"to": 2090
+					},
+					"id": 11,
+					"p": 0.730967,
+					"t_dtw": 206
+				},
+				{
+					"text": "[_TT_105]",
+					"timestamps": {
+						"from": "00:00:02,100",
+						"to": "00:00:02,100"
+					},
+					"offsets": {
+						"from": 2100,
+						"to": 2100
+					},
+					"id": 50470,
+					"p": 0.906582,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

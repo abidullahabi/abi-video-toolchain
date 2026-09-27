@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,200"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1200
+			},
+			"text": " Andrew N. G.O.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.830671,
+					"t_dtw": -1
+				},
+				{
+					"text": " Andrew",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 470
+					},
+					"id": 10110,
+					"p": 0.661882,
+					"t_dtw": 40
+				},
+				{
+					"text": " N",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 530
+					},
+					"id": 426,
+					"p": 0.745619,
+					"t_dtw": 92
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 540
+					},
+					"id": 13,
+					"p": 0.27885,
+					"t_dtw": 96
+				},
+				{
+					"text": " G",
+					"timestamps": {
+						"from": "00:00:00,770",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 770,
+						"to": 840
+					},
+					"id": 460,
+					"p": 0.364982,
+					"t_dtw": 104
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 1100
+					},
+					"id": 13,
+					"p": 0.948762,
+					"t_dtw": 116
+				},
+				{
+					"text": "O",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1120
+					},
+					"id": 46,
+					"p": 0.323252,
+					"t_dtw": 116
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1190
+					},
+					"id": 13,
+					"p": 0.824845,
+					"t_dtw": 116
+				},
+				{
+					"text": "[_TT_60]",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1200
+					},
+					"id": 50425,
+					"p": 0.953113,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,840"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2840
+			},
+			"text": " Jena AI für alle von Andrew Engage.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.954423,
+					"t_dtw": -1
+				},
+				{
+					"text": " J",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,090"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 90
+					},
+					"id": 508,
+					"p": 0.0329942,
+					"t_dtw": 48
+				},
+				{
+					"text": "ena",
+					"timestamps": {
+						"from": "00:00:00,230",
+						"to": "00:00:00,350"
+					},
+					"offsets": {
+						"from": 230,
+						"to": 350
+					},
+					"id": 4118,
+					"p": 0.213087,
+					"t_dtw": 56
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 540
+					},
+					"id": 7318,
+					"p": 0.798862,
+					"t_dtw": 76
+				},
+				{
+					"text": " für",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 780
+					},
+					"id": 2959,
+					"p": 0.403477,
+					"t_dtw": 96
+				},
+				{
+					"text": " alle",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:01,170"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 1170
+					},
+					"id": 5430,
+					"p": 0.548399,
+					"t_dtw": 122
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:01,170",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 1170,
+						"to": 1420
+					},
+					"id": 2957,
+					"p": 0.405368,
+					"t_dtw": 160
+				},
+				{
+					"text": " Andrew",
+					"timestamps": {
+						"from": "00:00:01,550",
+						"to": "00:00:01,960"
+					},
+					"offsets": {
+						"from": 1550,
+						"to": 1960
+					},
+					"id": 10110,
+					"p": 0.960215,
+					"t_dtw": 214
+				},
+				{
+					"text": " Eng",
+					"timestamps": {
+						"from": "00:00:01,980",
+						"to": "00:00:02,250"
+					},
+					"offsets": {
+						"from": 1980,
+						"to": 2250
+					},
+					"id": 2469,
+					"p": 0.703633,
+					"t_dtw": 274
+				},
+				{
+					"text": "age",
+					"timestamps": {
+						"from": "00:00:02,250",
+						"to": "00:00:02,320"
+					},
+					"offsets": {
+						"from": 2250,
+						"to": 2320
+					},
+					"id": 609,
+					"p": 0.056775,
+					"t_dtw": 280
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,550",
+						"to": "00:00:02,820"
+					},
+					"offsets": {
+						"from": 2550,
+						"to": 2820
+					},
+					"id": 13,
+					"p": 0.554997,
+					"t_dtw": 280
+				},
+				{
+					"text": "[_TT_142]",
+					"timestamps": {
+						"from": "00:00:02,840",
+						"to": "00:00:02,840"
+					},
+					"offsets": {
+						"from": 2840,
+						"to": 2840
+					},
+					"id": 50506,
+					"p": 0.151055,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

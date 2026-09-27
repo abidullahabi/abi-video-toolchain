@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,740"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 740
+			},
+			"text": " Mach es mit 30.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.834877,
+					"t_dtw": -1
+				},
+				{
+					"text": " Mach",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 160
+					},
+					"id": 12089,
+					"p": 0.621193,
+					"t_dtw": 22
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 220
+					},
+					"id": 785,
+					"p": 0.68199,
+					"t_dtw": 30
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:00,330",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 330,
+						"to": 360
+					},
+					"id": 2194,
+					"p": 0.992004,
+					"t_dtw": 46
+				},
+				{
+					"text": " 30",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 600
+					},
+					"id": 2217,
+					"p": 0.982578,
+					"t_dtw": 72
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,710"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 710
+					},
+					"id": 13,
+					"p": 0.763966,
+					"t_dtw": 72
+				},
+				{
+					"text": "[_TT_37]",
+					"timestamps": {
+						"from": "00:00:00,740",
+						"to": "00:00:00,740"
+					},
+					"offsets": {
+						"from": 740,
+						"to": 740
+					},
+					"id": 50402,
+					"p": 0.209233,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

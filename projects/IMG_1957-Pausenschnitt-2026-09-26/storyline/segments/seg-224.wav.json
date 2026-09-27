@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,680"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1680
+			},
+			"text": " ist ein sehr starkes Gefühl, was",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.987421,
+					"t_dtw": -1
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 140
+					},
+					"id": 1418,
+					"p": 0.799873,
+					"t_dtw": 20
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 280
+					},
+					"id": 1343,
+					"p": 0.991488,
+					"t_dtw": 32
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 460
+					},
+					"id": 5499,
+					"p": 0.990012,
+					"t_dtw": 48
+				},
+				{
+					"text": " stark",
+					"timestamps": {
+						"from": "00:00:00,460",
+						"to": "00:00:00,690"
+					},
+					"offsets": {
+						"from": 460,
+						"to": 690
+					},
+					"id": 17417,
+					"p": 0.96498,
+					"t_dtw": 74
+				},
+				{
+					"text": "es",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 770
+					},
+					"id": 279,
+					"p": 0.999781,
+					"t_dtw": 86
+				},
+				{
+					"text": " Gefühl",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 970
+					},
+					"id": 29715,
+					"p": 0.995853,
+					"t_dtw": 116
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1180
+					},
+					"id": 11,
+					"p": 0.942628,
+					"t_dtw": 130
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:01,180",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1180,
+						"to": 1520
+					},
+					"id": 390,
+					"p": 0.835111,
+					"t_dtw": 146
+				},
+				{
+					"text": "[_TT_84]",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1680
+					},
+					"id": 50449,
+					"p": 0.531425,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

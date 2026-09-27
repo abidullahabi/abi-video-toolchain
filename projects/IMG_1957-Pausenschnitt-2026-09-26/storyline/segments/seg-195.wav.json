@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,800"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1800
+			},
+			"text": " Ich bereue euch keine einzige Reise davon.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.92601,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 140
+					},
+					"id": 3141,
+					"p": 0.806951,
+					"t_dtw": 16
+				},
+				{
+					"text": " bere",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 320
+					},
+					"id": 13375,
+					"p": 0.98293,
+					"t_dtw": 36
+				},
+				{
+					"text": "ue",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,410"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 410
+					},
+					"id": 622,
+					"p": 0.999518,
+					"t_dtw": 44
+				},
+				{
+					"text": " euch",
+					"timestamps": {
+						"from": "00:00:00,410",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 410,
+						"to": 560
+					},
+					"id": 10403,
+					"p": 0.376795,
+					"t_dtw": 62
+				},
+				{
+					"text": " keine",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:00,820"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 820
+					},
+					"id": 9252,
+					"p": 0.986487,
+					"t_dtw": 84
+				},
+				{
+					"text": " einzige",
+					"timestamps": {
+						"from": "00:00:00,820",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 820,
+						"to": 1140
+					},
+					"id": 47743,
+					"p": 0.982462,
+					"t_dtw": 124
+				},
+				{
+					"text": " Re",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1240
+					},
+					"id": 1300,
+					"p": 0.98994,
+					"t_dtw": 140
+				},
+				{
+					"text": "ise",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1380
+					},
+					"id": 908,
+					"p": 0.999855,
+					"t_dtw": 150
+				},
+				{
+					"text": " davon",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1600
+					},
+					"id": 18574,
+					"p": 0.994165,
+					"t_dtw": 178
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,800"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1800
+					},
+					"id": 13,
+					"p": 0.962278,
+					"t_dtw": 178
+				},
+				{
+					"text": "[_TT_90]",
+					"timestamps": {
+						"from": "00:00:01,800",
+						"to": "00:00:01,800"
+					},
+					"offsets": {
+						"from": 1800,
+						"to": 1800
+					},
+					"id": 50455,
+					"p": 0.262747,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

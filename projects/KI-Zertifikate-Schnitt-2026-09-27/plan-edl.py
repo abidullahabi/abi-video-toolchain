@@ -1,0 +1,115 @@
+#!/usr/bin/env python3
+"""Redaktioneller Schnitt IMG_1967 nach CONTENT_WORKFLOW.md Abschnitt 5.
+
+selection.json legt fest, WELCHE Anlaeufe bleiben (Originalzeit, Reihenfolge wie
+aufgenommen). Dieses Skript setzt daraus die Schnittpunkte:
+- Sprechluecken ab 150 ms (innerhalb eines Anlaufs und zwischen Anlaeufen) behalten
+  40 ms nach dem Sprachende und 56 ms vor dem Sprachanfang (Ziel: Median 96 ms).
+- Wortschutz wie IMG_1957 plan-cuts.py: Pegelausklang/-anstieg an der Grenze bleibt (max. 64 ms).
+- Nie in einen verworfenen Nachbaranlauf hineinschneiden (Abstand >= 20 ms zur Nachbarsprache).
+- Schnittgrenzen liegen auf echten Bildzeitstempeln (Quelle ist nicht exakt 30 fps).
+Ergebnis: edl.json (keep-Intervalle).
+"""
+import json, math, wave, array
+from bisect import bisect_left
+
+MIN_GAP, LEAD, TAIL = 0.150, 0.040, 0.056
+LEAD_MIN, TAIL_MIN, START_TAIL = 0.024, 0.040, 0.100
+GUARD_MAX, GUARD_MARGIN, NEIGHBOUR = 0.064, 0.010, 0.020
+
+sel = json.load(open('selection.json'))
+gaps = [(g['start'], g['end']) for g in json.load(open('analysis/speech-boundaries.json'))['candidates']]
+frames = [float(v) for v in open('analysis/video-pts.txt') if v.strip()]
+w = wave.open('speech.wav'); sr = w.getframerate(); pcm = array.array('h', w.readframes(w.getnframes()))
+
+def level(t):
+    s = pcm[max(0, int(t * sr)):max(0, int((t + 0.010) * sr))]
+    return 10 * math.log10(sum(v * v for v in s) / len(s) / 32768 ** 2 + 1e-12) if s else -120.0
+
+def floor_db(gs, ge):
+    steps = [gs + k * 0.010 for k in range(max(1, int((ge - gs) / 0.010)))]
+    return sorted(level(t) for t in steps)[len(steps) // 2]
+
+def need_after_end(t, ge):   # Ausklang nach Sprachende t (Luecke bis ge)
+    lim = max(floor_db(t, ge) + 15, -65.0); x = t
+    while x - t < GUARD_MAX and x < ge and level(x) > lim: x += 0.010
+    return (x - t + GUARD_MARGIN) if x > t else 0.0
+
+def need_before_start(gs, t):  # Anstieg vor Sprachanfang t (Luecke ab gs)
+    lim = max(floor_db(gs, t) + 15, -65.0); x = t
+    while t - x < GUARD_MAX and x > gs and level(x - 0.010) > lim: x -= 0.010
+    return (t - x + GUARD_MARGIN) if x < t else 0.0
+
+def gap_after(t):   # Quellluecke, die bei t (Sprachende) beginnt
+    for gs, ge in gaps:
+        if abs(gs - t) < 0.02 or (gs <= t < ge): return gs, ge
+    return t, t + 0.3
+def gap_before(t):
+    for gs, ge in gaps:
+        if abs(ge - t) < 0.02 or (gs < t <= ge): return gs, ge
+    return t - 0.3, t
+
+def frame_at_or_after(t):
+    i = bisect_left(frames, t - 1e-6); return frames[min(i, len(frames) - 1)]
+def frame_nearest(t):
+    i = bisect_left(frames, t); c = [j for j in (i - 1, i) if 0 <= j < len(frames)]
+    return frames[min(c, key=lambda j: abs(frames[j] - t))]
+def frame_at_or_before(t):
+    i = bisect_left(frames, t + 1e-6) - 1; return frames[max(i, 0)]
+
+# 1) Sprechstuecke: jeder Bereich an inneren Luecken >= MIN_GAP geteilt
+pieces = []
+for r in sel['ranges']:
+    a, b = r['a'], r['b']
+    inner = [(gs, ge) for gs, ge in gaps if gs > a + 0.01 and ge < b - 0.01 and ge - gs >= MIN_GAP]
+    pts = [a] + [x for g in inner for x in g] + [b]
+    for k in range(0, len(pts), 2):
+        pieces.append({'range': r['id'], 's': pts[k], 'e': pts[k + 1],
+                       'hardStart': r.get('hardStart', False) and k == 0,
+                       'hardEnd': r.get('hardEnd', False) and k == len(pts) - 2})
+
+# 2) Schnittgrenzen je Stueck
+keeps = []
+for i, p in enumerate(pieces):
+    s, e = p['s'], p['e']
+    if p['hardStart']:
+        ks = s
+    elif i == 0:
+        ks = frame_at_or_before(s - START_TAIL)
+    else:
+        gs, ge = gap_before(s)
+        guard = max(TAIL_MIN, need_before_start(gs, s))
+        ks = frame_nearest(s - TAIL)
+        if s - ks < guard: ks = frame_at_or_before(s - guard)
+        ks = max(ks, frame_at_or_after(gs + NEIGHBOUR)) if pieces[i-1]['range'] != p['range'] else ks
+    if p['hardEnd']:
+        ke = e
+    else:
+        gs, ge = gap_after(e)
+        guard = max(LEAD_MIN, need_after_end(e, ge))
+        ke = frame_nearest(e + LEAD)
+        if ke - e < guard: ke = frame_at_or_after(e + guard)
+        if i + 1 < len(pieces) and pieces[i+1]['range'] != p['range']:
+            ke = min(ke, frame_at_or_before(ge - NEIGHBOUR))
+    keeps.append({'range': p['range'], 'start': round(ks, 6), 'end': round(ke, 6),
+                  'speech': [round(s, 3), round(e, 3)]})
+
+# 3) Ueberlappende/aneinanderstossende Intervalle zusammenfassen
+merged = []
+for k in keeps:
+    if merged and k['start'] <= merged[-1]['end'] + 1e-6:
+        merged[-1]['end'] = max(merged[-1]['end'], k['end']); merged[-1]['ranges'].append(k['range'])
+    else:
+        merged.append({'start': k['start'], 'end': k['end'], 'ranges': [k['range']]})
+dur = sum(m['end'] - m['start'] for m in merged)
+res = []
+for i in range(len(keeps) - 1):
+    res.append(round((keeps[i]['end'] - keeps[i]['speech'][1]) + (keeps[i+1]['speech'][0] - keeps[i+1]['start']), 3))
+out = {'basis': sel['basis'], 'rule': {'minGap': MIN_GAP, 'lead': LEAD, 'tail': TAIL, 'guardMax': GUARD_MAX,
+       'neighbourMargin': NEIGHBOUR, 'frames': 'echte Bildzeitstempel'},
+       'pieces': keeps, 'keep': merged, 'plannedResidualGaps': res, 'cutDuration': round(dur, 3)}
+json.dump(out, open('edl.json', 'w'), indent=1, ensure_ascii=False)
+import statistics
+print('Stuecke', len(keeps), 'Intervalle', len(merged), 'Dauer', round(dur, 2), 's')
+print('geplante Restluecken: median', statistics.median(res), 'min', min(res), 'max', max(res))
+print('ueber 0.13 s:', [(keeps[i]['range'], keeps[i+1]['range'], g) for i, g in enumerate(res) if g > 0.13])

@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,960"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1960
+			},
+			"text": " Der zweite Punkt sind die Leute um dich herum.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.977248,
+					"t_dtw": -1
+				},
+				{
+					"text": " Der",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 150
+					},
+					"id": 5618,
+					"p": 0.963423,
+					"t_dtw": 16
+				},
+				{
+					"text": " zweite",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 420
+					},
+					"id": 37456,
+					"p": 0.924415,
+					"t_dtw": 38
+				},
+				{
+					"text": " Punkt",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 720
+					},
+					"id": 25487,
+					"p": 0.997954,
+					"t_dtw": 60
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,930"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 930
+					},
+					"id": 3290,
+					"p": 0.981484,
+					"t_dtw": 78
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,930",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 930,
+						"to": 1080
+					},
+					"id": 978,
+					"p": 0.947677,
+					"t_dtw": 92
+				},
+				{
+					"text": " Leute",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1340
+					},
+					"id": 13495,
+					"p": 0.995384,
+					"t_dtw": 116
+				},
+				{
+					"text": " um",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1440
+					},
+					"id": 1105,
+					"p": 0.835991,
+					"t_dtw": 136
+				},
+				{
+					"text": " dich",
+					"timestamps": {
+						"from": "00:00:01,440",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 1440,
+						"to": 1650
+					},
+					"id": 10390,
+					"p": 0.984487,
+					"t_dtw": 150
+				},
+				{
+					"text": " herum",
+					"timestamps": {
+						"from": "00:00:01,650",
+						"to": "00:00:01,830"
+					},
+					"offsets": {
+						"from": 1650,
+						"to": 1830
+					},
+					"id": 49675,
+					"p": 0.998289,
+					"t_dtw": 182
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,960",
+						"to": "00:00:01,960"
+					},
+					"offsets": {
+						"from": 1960,
+						"to": 1960
+					},
+					"id": 13,
+					"p": 0.947419,
+					"t_dtw": 194
+				},
+				{
+					"text": "[_TT_98]",
+					"timestamps": {
+						"from": "00:00:01,960",
+						"to": "00:00:01,960"
+					},
+					"offsets": {
+						"from": 1960,
+						"to": 1960
+					},
+					"id": 50463,
+					"p": 0.927402,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

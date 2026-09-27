@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,900"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1900
+			},
+			"text": " In 11 Monaten werde ich 30 und",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.989698,
+					"t_dtw": -1
+				},
+				{
+					"text": " In",
+					"timestamps": {
+						"from": "00:00:00,020",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 20,
+						"to": 130
+					},
+					"id": 682,
+					"p": 0.674566,
+					"t_dtw": 10
+				},
+				{
+					"text": " 11",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 510
+					},
+					"id": 2975,
+					"p": 0.58831,
+					"t_dtw": 26
+				},
+				{
+					"text": " Monaten",
+					"timestamps": {
+						"from": "00:00:00,550",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 550,
+						"to": 970
+					},
+					"id": 46193,
+					"p": 0.997721,
+					"t_dtw": 54
+				},
+				{
+					"text": " werde",
+					"timestamps": {
+						"from": "00:00:00,970",
+						"to": "00:00:01,290"
+					},
+					"offsets": {
+						"from": 970,
+						"to": 1290
+					},
+					"id": 24866,
+					"p": 0.984725,
+					"t_dtw": 74
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:01,290",
+						"to": "00:00:01,370"
+					},
+					"offsets": {
+						"from": 1290,
+						"to": 1370
+					},
+					"id": 1893,
+					"p": 0.998532,
+					"t_dtw": 84
+				},
+				{
+					"text": " 30",
+					"timestamps": {
+						"from": "00:00:01,540",
+						"to": "00:00:01,750"
+					},
+					"offsets": {
+						"from": 1540,
+						"to": 1750
+					},
+					"id": 2217,
+					"p": 0.997135,
+					"t_dtw": 120
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:01,900",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1900,
+						"to": 1900
+					},
+					"id": 674,
+					"p": 0.853966,
+					"t_dtw": 172
+				},
+				{
+					"text": "[_TT_95]",
+					"timestamps": {
+						"from": "00:00:01,900",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1900,
+						"to": 1900
+					},
+					"id": 50460,
+					"p": 0.605766,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

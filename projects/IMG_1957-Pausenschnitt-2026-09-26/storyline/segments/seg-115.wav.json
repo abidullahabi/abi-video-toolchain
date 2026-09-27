@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,740"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1740
+			},
+			"text": " 99% der Menschen um dich herum",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.943914,
+					"t_dtw": -1
+				},
+				{
+					"text": " 99",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,380"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 380
+					},
+					"id": 11803,
+					"p": 0.676006,
+					"t_dtw": 36
+				},
+				{
+					"text": "%",
+					"timestamps": {
+						"from": "00:00:00,380",
+						"to": "00:00:00,440"
+					},
+					"offsets": {
+						"from": 380,
+						"to": 440
+					},
+					"id": 4,
+					"p": 0.592748,
+					"t_dtw": 70
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:00,440",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 440,
+						"to": 610
+					},
+					"id": 1163,
+					"p": 0.984097,
+					"t_dtw": 90
+				},
+				{
+					"text": " Menschen",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 1080
+					},
+					"id": 8397,
+					"p": 0.971628,
+					"t_dtw": 110
+				},
+				{
+					"text": " um",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1240
+					},
+					"id": 1105,
+					"p": 0.891823,
+					"t_dtw": 124
+				},
+				{
+					"text": " dich",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1450
+					},
+					"id": 10390,
+					"p": 0.777738,
+					"t_dtw": 136
+				},
+				{
+					"text": " herum",
+					"timestamps": {
+						"from": "00:00:01,450",
+						"to": "00:00:01,580"
+					},
+					"offsets": {
+						"from": 1450,
+						"to": 1580
+					},
+					"id": 49675,
+					"p": 0.987893,
+					"t_dtw": 156
+				},
+				{
+					"text": "[_TT_87]",
+					"timestamps": {
+						"from": "00:00:01,740",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1740,
+						"to": 1740
+					},
+					"id": 50452,
+					"p": 0.363568,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

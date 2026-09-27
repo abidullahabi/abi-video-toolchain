@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,980"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 980
+			},
+			"text": " Keine Sorge.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.797728,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ke",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 150
+					},
+					"id": 3189,
+					"p": 0.94914,
+					"t_dtw": 20
+				},
+				{
+					"text": "ine",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 370
+					},
+					"id": 533,
+					"p": 0.987121,
+					"t_dtw": 30
+				},
+				{
+					"text": " S",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,440"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 440
+					},
+					"id": 318,
+					"p": 0.214478,
+					"t_dtw": 42
+				},
+				{
+					"text": "orge",
+					"timestamps": {
+						"from": "00:00:00,440",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 440,
+						"to": 650
+					},
+					"id": 4685,
+					"p": 0.982071,
+					"t_dtw": 54
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,970",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 970,
+						"to": 970
+					},
+					"id": 13,
+					"p": 0.851557,
+					"t_dtw": 84
+				},
+				{
+					"text": "[_TT_49]",
+					"timestamps": {
+						"from": "00:00:00,980",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 980,
+						"to": 980
+					},
+					"id": 50414,
+					"p": 0.560247,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

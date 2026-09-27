@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,940"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1940
+			},
+			"text": " A.I. Fluency in Frameworks.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.86447,
+					"t_dtw": -1
+				},
+				{
+					"text": " A",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,070"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 70
+					},
+					"id": 316,
+					"p": 0.0829143,
+					"t_dtw": 28
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 270
+					},
+					"id": 13,
+					"p": 0.621629,
+					"t_dtw": 30
+				},
+				{
+					"text": "I",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,350"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 350
+					},
+					"id": 40,
+					"p": 0.914591,
+					"t_dtw": 46
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,350",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 350,
+						"to": 450
+					},
+					"id": 13,
+					"p": 0.845213,
+					"t_dtw": 54
+				},
+				{
+					"text": " Flu",
+					"timestamps": {
+						"from": "00:00:00,590",
+						"to": "00:00:00,760"
+					},
+					"offsets": {
+						"from": 590,
+						"to": 760
+					},
+					"id": 33612,
+					"p": 0.856659,
+					"t_dtw": 66
+				},
+				{
+					"text": "ency",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 1030
+					},
+					"id": 3020,
+					"p": 0.983325,
+					"t_dtw": 84
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:01,160",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 1160,
+						"to": 1190
+					},
+					"id": 294,
+					"p": 0.563648,
+					"t_dtw": 102
+				},
+				{
+					"text": " Frame",
+					"timestamps": {
+						"from": "00:00:01,190",
+						"to": "00:00:01,510"
+					},
+					"offsets": {
+						"from": 1190,
+						"to": 1510
+					},
+					"id": 31628,
+					"p": 0.879005,
+					"t_dtw": 126
+				},
+				{
+					"text": "works",
+					"timestamps": {
+						"from": "00:00:01,530",
+						"to": "00:00:01,660"
+					},
+					"offsets": {
+						"from": 1530,
+						"to": 1660
+					},
+					"id": 18357,
+					"p": 0.858471,
+					"t_dtw": 164
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,930",
+						"to": "00:00:01,930"
+					},
+					"offsets": {
+						"from": 1930,
+						"to": 1930
+					},
+					"id": 13,
+					"p": 0.634554,
+					"t_dtw": 190
+				},
+				{
+					"text": "[_TT_97]",
+					"timestamps": {
+						"from": "00:00:01,940",
+						"to": "00:00:01,940"
+					},
+					"offsets": {
+						"from": 1940,
+						"to": 1940
+					},
+					"id": 50462,
+					"p": 0.244147,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,129 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,700"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 700
+			},
+			"text": " Zeit ist das ...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.98515,
+					"t_dtw": -1
+				},
+				{
+					"text": " Zeit",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 270
+					},
+					"id": 9394,
+					"p": 0.433697,
+					"t_dtw": 16
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 470
+					},
+					"id": 1418,
+					"p": 0.983912,
+					"t_dtw": 32
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 530
+					},
+					"id": 1482,
+					"p": 0.934245,
+					"t_dtw": 46
+				},
+				{
+					"text": " ...",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,690"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 690
+					},
+					"id": 1097,
+					"p": 0.0702029,
+					"t_dtw": 66
+				},
+				{
+					"text": "[_TT_35]",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 700
+					},
+					"id": 50400,
+					"p": 0.869484,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

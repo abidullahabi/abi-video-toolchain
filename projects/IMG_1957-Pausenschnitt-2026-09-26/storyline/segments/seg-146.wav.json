@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,200"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1200
+			},
+			"text": " Du deine Reisen...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.98375,
+					"t_dtw": -1
+				},
+				{
+					"text": " Du",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 180
+					},
+					"id": 5153,
+					"p": 0.227474,
+					"t_dtw": 10
+				},
+				{
+					"text": " deine",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 630
+					},
+					"id": 28395,
+					"p": 0.696098,
+					"t_dtw": 28
+				},
+				{
+					"text": " Re",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,820"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 820
+					},
+					"id": 1300,
+					"p": 0.987991,
+					"t_dtw": 48
+				},
+				{
+					"text": "isen",
+					"timestamps": {
+						"from": "00:00:00,820",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 820,
+						"to": 1020
+					},
+					"id": 11106,
+					"p": 0.884074,
+					"t_dtw": 78
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:01,190",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 1190,
+						"to": 1190
+					},
+					"id": 485,
+					"p": 0.293061,
+					"t_dtw": 116
+				},
+				{
+					"text": "[_TT_60]",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1200
+					},
+					"id": 50425,
+					"p": 0.9602,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

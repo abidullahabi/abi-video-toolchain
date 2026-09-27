@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,700"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1700
+			},
+			"text": " Vielleicht der wichtigste Punkt einem allen ist,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.994325,
+					"t_dtw": -1
+				},
+				{
+					"text": " Vielleicht",
+					"timestamps": {
+						"from": "00:00:00,090",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 90,
+						"to": 330
+					},
+					"id": 29838,
+					"p": 0.607128,
+					"t_dtw": 20
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:00,330",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 330,
+						"to": 430
+					},
+					"id": 1163,
+					"p": 0.998437,
+					"t_dtw": 36
+				},
+				{
+					"text": " wichtig",
+					"timestamps": {
+						"from": "00:00:00,430",
+						"to": "00:00:00,620"
+					},
+					"offsets": {
+						"from": 430,
+						"to": 620
+					},
+					"id": 13621,
+					"p": 0.99842,
+					"t_dtw": 54
+				},
+				{
+					"text": "ste",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:00,760"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 760
+					},
+					"id": 2941,
+					"p": 0.999651,
+					"t_dtw": 74
+				},
+				{
+					"text": " Punkt",
+					"timestamps": {
+						"from": "00:00:00,760",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 760,
+						"to": 940
+					},
+					"id": 25487,
+					"p": 0.996787,
+					"t_dtw": 94
+				},
+				{
+					"text": " einem",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,230"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1230
+					},
+					"id": 6827,
+					"p": 0.149824,
+					"t_dtw": 112
+				},
+				{
+					"text": " allen",
+					"timestamps": {
+						"from": "00:00:01,230",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1230,
+						"to": 1520
+					},
+					"id": 18440,
+					"p": 0.848583,
+					"t_dtw": 132
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,540"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1540
+					},
+					"id": 1418,
+					"p": 0.997516,
+					"t_dtw": 158
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,690",
+						"to": "00:00:01,690"
+					},
+					"offsets": {
+						"from": 1690,
+						"to": 1690
+					},
+					"id": 11,
+					"p": 0.90076,
+					"t_dtw": 166
+				},
+				{
+					"text": "[_TT_85]",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 1700
+					},
+					"id": 50450,
+					"p": 0.954838,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

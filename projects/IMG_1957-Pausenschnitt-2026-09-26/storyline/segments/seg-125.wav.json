@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,360"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1360
+			},
+			"text": " Liebe, die du entwickelst.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.935475,
+					"t_dtw": -1
+				},
+				{
+					"text": " Liebe",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 400
+					},
+					"id": 28790,
+					"p": 0.855346,
+					"t_dtw": 40
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 430
+					},
+					"id": 11,
+					"p": 0.895415,
+					"t_dtw": 54
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:00,710"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 710
+					},
+					"id": 978,
+					"p": 0.476276,
+					"t_dtw": 68
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,710",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 710,
+						"to": 810
+					},
+					"id": 1581,
+					"p": 0.833151,
+					"t_dtw": 76
+				},
+				{
+					"text": " entwic",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 1060
+					},
+					"id": 28449,
+					"p": 0.975162,
+					"t_dtw": 96
+				},
+				{
+					"text": "kel",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,230"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1230
+					},
+					"id": 7124,
+					"p": 0.996559,
+					"t_dtw": 110
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,270"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1270
+					},
+					"id": 372,
+					"p": 0.999144,
+					"t_dtw": 124
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1360
+					},
+					"id": 13,
+					"p": 0.838542,
+					"t_dtw": 134
+				},
+				{
+					"text": "[_TT_68]",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1360
+					},
+					"id": 50433,
+					"p": 0.215752,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

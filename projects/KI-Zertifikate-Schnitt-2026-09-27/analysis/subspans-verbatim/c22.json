@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,880"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1880
+			},
+			"text": " Ist der Kurs von Google sehr dafür geeignet?",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.87295,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ist",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 150
+					},
+					"id": 12810,
+					"p": 0.984197,
+					"t_dtw": 20
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 300
+					},
+					"id": 1163,
+					"p": 0.99548,
+					"t_dtw": 32
+				},
+				{
+					"text": " K",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 320
+					},
+					"id": 591,
+					"p": 0.997756,
+					"t_dtw": 44
+				},
+				{
+					"text": "urs",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 500
+					},
+					"id": 2156,
+					"p": 0.999619,
+					"t_dtw": 52
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,640"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 640
+					},
+					"id": 2957,
+					"p": 0.989506,
+					"t_dtw": 64
+				},
+				{
+					"text": " Google",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 950
+					},
+					"id": 3329,
+					"p": 0.994,
+					"t_dtw": 84
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:00,950",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 950,
+						"to": 1120
+					},
+					"id": 5499,
+					"p": 0.982423,
+					"t_dtw": 98
+				},
+				{
+					"text": " dafür",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,390"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1390
+					},
+					"id": 13747,
+					"p": 0.991323,
+					"t_dtw": 114
+				},
+				{
+					"text": " gee",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1520
+					},
+					"id": 24105,
+					"p": 0.999403,
+					"t_dtw": 130
+				},
+				{
+					"text": "ign",
+					"timestamps": {
+						"from": "00:00:01,540",
+						"to": "00:00:01,570"
+					},
+					"offsets": {
+						"from": 1540,
+						"to": 1570
+					},
+					"id": 788,
+					"p": 0.997725,
+					"t_dtw": 144
+				},
+				{
+					"text": "et",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 1860
+					},
+					"id": 302,
+					"p": 0.99984,
+					"t_dtw": 160
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 1860
+					},
+					"id": 30,
+					"p": 0.880421,
+					"t_dtw": 184
+				},
+				{
+					"text": "[_TT_94]",
+					"timestamps": {
+						"from": "00:00:01,880",
+						"to": "00:00:01,880"
+					},
+					"offsets": {
+						"from": 1880,
+						"to": 1880
+					},
+					"id": 50459,
+					"p": 0.0874085,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

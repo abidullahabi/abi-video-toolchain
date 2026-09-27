@@ -1,0 +1,149 @@
+{
+  "source": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Angst-vor-Arbeiten-Gestaltung-2026-09-26/media.mp4",
+  "model": "Silero VAD 6.2.0",
+  "modelHash": "2aa269b785eeb53a82983a20501ddf7c1d9c48e33ab63a41391ac6c9f7fb6987",
+  "engine": "whisper.cpp 1.9.4 CPU",
+  "createdAt": "2026-09-26T13:44:58.510Z",
+  "status": "calibration_only",
+  "automaticEditing": false,
+  "method": "Raw probabilities, hysteresis, no fixed 200 ms merging. Boundaries are model estimates, not confirmed phonetic boundaries.",
+  "threshold": 0.7,
+  "releaseThreshold": 0.5499999999999999,
+  "minGapMs": 64,
+  "hopSeconds": 0.032,
+  "duration": 85.0133125,
+  "candidates": [
+    {
+      "start": 0,
+      "end": 0.096,
+      "duration": 0.096,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 0.544,
+      "end": 0.608,
+      "duration": 0.06399999999999995,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 1.248,
+      "end": 1.344,
+      "duration": 0.09600000000000009,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 4.256,
+      "end": 4.32,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 4.928,
+      "end": 4.992,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 6.656000000000001,
+      "end": 6.784,
+      "duration": 0.12799999999999923,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 15.36,
+      "end": 15.424,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 16.48,
+      "end": 16.544,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 19.424,
+      "end": 19.52,
+      "duration": 0.09600000000000009,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 28.064,
+      "end": 28.128,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 29.184,
+      "end": 29.248,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 37.92,
+      "end": 37.984,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 40.96,
+      "end": 41.024,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 44.32,
+      "end": 44.384,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 46.272,
+      "end": 46.368,
+      "duration": 0.09600000000000364,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 48.224000000000004,
+      "end": 48.288000000000004,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 48.704,
+      "end": 48.800000000000004,
+      "duration": 0.09600000000000364,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 52.288000000000004,
+      "end": 52.384,
+      "duration": 0.09599999999999653,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 65.984,
+      "end": 66.048,
+      "duration": 0.06400000000000716,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 70.688,
+      "end": 70.752,
+      "duration": 0.06399999999999295,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 77.47200000000001,
+      "end": 77.536,
+      "duration": 0.06399999999999295,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 84.736,
+      "end": 85.0133125,
+      "duration": 0.27731249999999363,
+      "status": "needs_word_boundary_review"
+    }
+  ]
+}

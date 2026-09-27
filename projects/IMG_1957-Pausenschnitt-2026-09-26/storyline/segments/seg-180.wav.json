@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,900"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 900
+			},
+			"text": " Und dann bin ich happy.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.883095,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 120
+					},
+					"id": 2719,
+					"p": 0.832603,
+					"t_dtw": 14
+				},
+				{
+					"text": " dann",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,290"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 290
+					},
+					"id": 3594,
+					"p": 0.99938,
+					"t_dtw": 30
+				},
+				{
+					"text": " bin",
+					"timestamps": {
+						"from": "00:00:00,290",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 290,
+						"to": 400
+					},
+					"id": 5171,
+					"p": 0.999752,
+					"t_dtw": 48
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 530
+					},
+					"id": 1893,
+					"p": 0.999535,
+					"t_dtw": 66
+				},
+				{
+					"text": " happy",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,740"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 740
+					},
+					"id": 2055,
+					"p": 0.986494,
+					"t_dtw": 88
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,740",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 740,
+						"to": 900
+					},
+					"id": 13,
+					"p": 0.962675,
+					"t_dtw": 88
+				},
+				{
+					"text": "[_TT_45]",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 900
+					},
+					"id": 50410,
+					"p": 0.437351,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

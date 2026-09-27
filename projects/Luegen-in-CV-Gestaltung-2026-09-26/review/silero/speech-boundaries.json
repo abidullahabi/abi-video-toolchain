@@ -1,0 +1,77 @@
+{
+  "source": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Luegen-in-CV-Gestaltung-2026-09-26/media.mp4",
+  "model": "Silero VAD 6.2.0",
+  "modelHash": "2aa269b785eeb53a82983a20501ddf7c1d9c48e33ab63a41391ac6c9f7fb6987",
+  "engine": "whisper.cpp 1.9.4 CPU",
+  "createdAt": "2026-09-26T09:53:20.697Z",
+  "status": "calibration_only",
+  "automaticEditing": false,
+  "method": "Raw probabilities, hysteresis, no fixed 200 ms merging. Boundaries are model estimates, not confirmed phonetic boundaries.",
+  "threshold": 0.7,
+  "releaseThreshold": 0.5499999999999999,
+  "minGapMs": 64,
+  "hopSeconds": 0.032,
+  "duration": 56.9803125,
+  "candidates": [
+    {
+      "start": 0,
+      "end": 0.096,
+      "duration": 0.096,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 1.6,
+      "end": 1.696,
+      "duration": 0.09599999999999986,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 20.928,
+      "end": 20.992,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 23.328,
+      "end": 23.552,
+      "duration": 0.2240000000000002,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 27.808,
+      "end": 27.872,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 28.288,
+      "end": 28.384,
+      "duration": 0.09600000000000009,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 30.912,
+      "end": 31.008,
+      "duration": 0.09600000000000009,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 32.832,
+      "end": 32.96,
+      "duration": 0.1280000000000001,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 41.28,
+      "end": 41.344,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 56.64,
+      "end": 56.9803125,
+      "duration": 0.340312499999996,
+      "status": "needs_word_boundary_review"
+    }
+  ]
+}

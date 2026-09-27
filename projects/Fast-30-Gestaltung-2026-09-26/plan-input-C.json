@@ -1,0 +1,377 @@
+{
+ "sections": [
+  {
+   "id": "einstieg",
+   "text": "10 Dinge für die 20er",
+   "start": 0,
+   "end": 7.96
+  },
+  {
+   "id": "p1",
+   "text": "1. Früh zur Therapie",
+   "start": 7.96,
+   "end": 28.49
+  },
+  {
+   "id": "p2",
+   "text": "2. Zieh früh aus",
+   "start": 28.49,
+   "end": 41.67
+  },
+  {
+   "id": "p3",
+   "text": "3. Wähl bewusst",
+   "start": 41.67,
+   "end": 72.82
+  },
+  {
+   "id": "p4",
+   "text": "4. Keiner weiß alles",
+   "start": 72.82,
+   "end": 86.36
+  },
+  {
+   "id": "p5",
+   "text": "5. Glück ist kein Ziel",
+   "start": 86.36,
+   "end": 110.2
+  },
+  {
+   "id": "p6",
+   "text": "6. Keiner rettet dich",
+   "start": 110.2,
+   "end": 130.44
+  },
+  {
+   "id": "p7",
+   "text": "7. Investiere früh",
+   "start": 130.44,
+   "end": 147.66
+  },
+  {
+   "id": "p8",
+   "text": "8. Hol's dir schriftlich",
+   "start": 147.66,
+   "end": 163.47
+  },
+  {
+   "id": "p9",
+   "text": "9. Trau niemals HR",
+   "start": 163.47,
+   "end": 165.33
+  },
+  {
+   "id": "p10",
+   "text": "10. Glaub an etwas",
+   "start": 165.33,
+   "end": 171.88
+  },
+  {
+   "id": "schluss",
+   "text": "Genieß deine 20er",
+   "start": 171.88,
+   "end": 193.467
+  }
+ ],
+ "overlays": [
+  {
+   "id": "gruss",
+   "lines": [
+    "Grüße gehen raus",
+    "an [Name]"
+   ],
+   "start": 39.12,
+   "end": 41.67,
+   "note": "Wunsch 2, Platzhalter. Name offen. Kleine Indien-Flagge direkt hinter dem Namen in Zeile 2. Gemessen bei 46 px: Zeile 1 393,7 px, Zeile 2 222,4 px plus Flagge (ca. 60 px), beide unter 560. Start mit dem Wort „Am“ (Schnitt bei 39,067). Die Zeile steht rund 1,2 s länger als der Satz und endet mit dem H1-Morph zu Punkt 3. Der Kopf beginnt bei y ≥ 688, darüber ist frei."
+  },
+  {
+   "id": "p3-entscheidungen",
+   "lines": [
+    "Stadt · Umfeld · Partner"
+   ],
+   "start": 44.8,
+   "end": 67.8,
+   "parts": [
+    {
+     "text": "Stadt",
+     "active": [
+      [
+       46.21,
+       55.32
+      ]
+     ]
+    },
+    {
+     "text": "Umfeld",
+     "active": [
+      [
+       55.32,
+       62.47
+      ]
+     ]
+    },
+    {
+     "text": "Partner",
+     "active": [
+      [
+       62.47,
+       67.8
+      ]
+     ]
+    }
+   ],
+   "note": "Aufzählung „drei wichtigste Entscheidungen“, 513,7 px. Erscheint bei „drei“ (44,80) als Fahrplan, jeder Punkt leuchtet ab seinem Ordinalwort: „Erstens“ 46,21, „Zweitens“ 55,32, „Und der dritte“ 62,47. Während des Großworts „Lutscher“ (61,22 bis 62,433) kurz ausgeblendet. Übergabe an beziehungen-h2 bei „paar“ 67,80."
+  },
+  {
+   "id": "beziehungen-h2",
+   "lines": [
+    "Paar Beziehungen zu viel",
+    "[Zusatz folgt]"
+   ],
+   "start": 67.8,
+   "end": 72.82,
+   "lineAt": [
+    67.8,
+    68.65
+   ],
+   "note": "Wunsch 1, Platzhalter. „Einige Beziehungen hätte ich mir sparen können“ sind 1000 px und mehr, deshalb gekürzt auf „Paar Beziehungen zu viel“ (552,2 px). Zeile 2 „[Zusatz folgt]“ (288,7 px) erscheint bei „können“ (68,65). Ist der Zusatz breiter als 560 px, kürzen. Endet mit dem H1-Morph zu Punkt 4."
+  },
+  {
+   "id": "finger-weg",
+   "lines": [
+    "Finger weg: Kreditkarte,",
+    "Leasing, Dispo"
+   ],
+   "start": 131.59,
+   "end": 138.84,
+   "lineAt": [
+    131.59,
+    132.33
+   ],
+   "note": "Wunsch 3, Zusatztext, nicht gesprochen. „Kreditkarte, Leasing, Dispo“ in einer Zeile wäre 595,6 px und als parts 626,2 px breit. Deshalb zweizeilig: 526,6 px und 327,2 px. Die Einblendung liegt auf der Reise-Anekdote (Schnitte 131,567 und 138,833) und damit nicht auf dem Spartipp, dem Lea zuhören soll."
+  },
+  {
+   "id": "p8-schriftlich",
+   "lines": [
+    "Zusagen · Geld · Deals"
+   ],
+   "start": 149.65,
+   "end": 156.09,
+   "parts": [
+    {
+     "text": "Zusagen",
+     "active": [
+      [
+       149.65,
+       150.97
+      ]
+     ]
+    },
+    {
+     "text": "Geld",
+     "active": [
+      [
+       150.97,
+       152.34
+      ]
+     ]
+    },
+    {
+     "text": "Deals",
+     "active": [
+      [
+       152.34,
+       153.83
+      ]
+     ]
+    }
+   ],
+   "note": "Aufzählung „versprechen / Geld schulden / Abmachungen“ (495,9 px). „Versprechen · Schulden · Abmachungen“ wäre 882,7 px breit. Start mit dem ersten „wenn“ (Schnitt 149,6). Das Ende bei „und gib du selber“ fällt auf den Schnitt 156,033."
+  },
+  {
+   "id": "p10-ergaenzung",
+   "lines": [
+    "… oder steh für etwas ein"
+   ],
+   "start": 166.34,
+   "end": 171.88,
+   "note": "Wunsch 4. Liest sich als Fortsetzung der H1 „10. Glaub an etwas“ und erscheint deshalb am Ende von „glaub an etwas“ (166,34). 559,8 px, also genau an der Grenze. Rendert die Schrift auch nur minimal breiter, dann die Ausweichfassung „… oder steh für was ein“ (518,9 px) nehmen."
+  }
+ ],
+ "notes": [
+  {
+   "id": "ziele-notiz",
+   "start": 98.73,
+   "end": 109.333,
+   "side": "rechts",
+   "lines": [
+    {
+     "text": "Wohnung",
+     "at": 98.73,
+     "strikeAt": 106.64
+    },
+    {
+     "text": "Partnerin",
+     "at": 100.34,
+     "strikeAt": 106.74
+    },
+    {
+     "text": "Bachelor",
+     "at": 102.09,
+     "strikeAt": 106.84
+    },
+    {
+     "text": "Master",
+     "at": 103.13,
+     "strikeAt": 106.94
+    },
+    {
+     "text": "Abgabe",
+     "at": 104.61,
+     "strikeAt": 107.04
+    },
+    {
+     "text": "Nur der Weg",
+     "at": 108.49,
+     "accentWord": "Weg"
+    }
+   ]
+  },
+  {
+   "id": "retter-notiz",
+   "start": 115.54,
+   "end": 129.067,
+   "side": "rechts",
+   "lines": [
+    {
+     "text": "Ein Mentor",
+     "at": 115.54,
+     "strikeAt": 119.15
+    },
+    {
+     "text": "Eine Frau",
+     "at": 116.4,
+     "strikeAt": 119.25
+    },
+    {
+     "text": "Ein Retter",
+     "at": 117.2,
+     "strikeAt": 119.35
+    },
+    {
+     "text": "Du selbst.",
+     "at": 122.82,
+     "accentWord": "selbst"
+    }
+   ]
+  }
+ ],
+ "bigwords": [
+  {
+   "id": "lutscher",
+   "text": "Lutscher",
+   "start": 61.22,
+   "end": 62.433
+  },
+  {
+   "id": "keine-ahnung",
+   "text": "Keine Ahnung",
+   "start": 77.11,
+   "end": 78.567
+  },
+  {
+   "id": "free-pass",
+   "text": "Free Pass",
+   "start": 178.91,
+   "end": 180.55
+  }
+ ],
+ "zooms": [
+  {
+   "start": 21.667,
+   "end": 24.567,
+   "scale": 1.04
+  },
+  {
+   "start": 35.333,
+   "end": 39.067,
+   "scale": 1.05
+  },
+  {
+   "start": 42.433,
+   "end": 46.067,
+   "scale": 1.04
+  },
+  {
+   "start": 56.9,
+   "end": 61.22,
+   "scale": 1.04
+  },
+  {
+   "start": 61.22,
+   "end": 62.433,
+   "scale": 1.1,
+   "punch": true
+  },
+  {
+   "start": 77.11,
+   "end": 78.567,
+   "scale": 1.1,
+   "punch": true
+  },
+  {
+   "start": 80.633,
+   "end": 85.167,
+   "scale": 1.045
+  },
+  {
+   "start": 92.633,
+   "end": 96.367,
+   "scale": 1.05
+  },
+  {
+   "start": 106.64,
+   "end": 107.233,
+   "scale": 1.1,
+   "punch": true
+  },
+  {
+   "start": 117.933,
+   "end": 121.033,
+   "scale": 1.04
+  },
+  {
+   "start": 142.333,
+   "end": 146.533,
+   "scale": 1.045
+  },
+  {
+   "start": 158.867,
+   "end": 163.367,
+   "scale": 1.05
+  },
+  {
+   "start": 164.3,
+   "end": 165.1,
+   "scale": 1.1,
+   "punch": true
+  },
+  {
+   "start": 184.333,
+   "end": 189.733,
+   "scale": 1.045
+  }
+ ],
+ "outroStart": 193.467,
+ "rationale": "Leitidee für Lea (21): Die H1 ist ein ruhiger Wegweiser. Sie wechselt nur zwölfmal (Einstieg, 1 bis 10, Schluss), liegt lückenlos aneinander und morpht deshalb immer. Jede H1 ist eine kurze Kernaussage im Imperativ oder als Feststellung mit Nummer vorn, damit Lea jederzeit sieht, bei welchem Punkt von zehn sie ist. Alle zwölf H1 laufen einheitlich in Stufe 72 (gemessen: 532 bis 729 px, alle ≤ 736). Beim Morph ändert sich also nur die Breite der blauen Fläche, nie Höhe oder Schriftgröße, und die H2-Oberkante bleibt fest bei y 382. Gemessen bei 72 px: 10 Dinge für die 20er 708,3 · 1. Früh zur Therapie 688,1 · 2. Zieh früh aus 532,1 · 3. Wähl bewusst 560,1 · 4. Keiner weiß alles 664,3 · 5. Glück ist kein Ziel 692,3 · 6. Keiner rettet dich 672,2 · 7. Investiere früh 576,2 · 8. Hol's dir schriftlich 729,3 · 9. Trau niemals HR 644,2 · 10. Glaub an etwas 648,2 · Genieß deine 20er 620,3.\n\nMorph-Zeitpunkte liegen am Ansagewort, meist direkt nach einem Schnitt: „Punkt“ 7,96 (Schnitt 7,9), „Zweitens“ 28,49 (28,433), „dritten“ 41,67, „vierte“ 72,82, „Punkt“ 86,36 (86,233), „Weg (Nummer 6)“ 110,20, „Fang“ 130,44 (130,4), „Achtens“ 147,66 (147,533), „Neuntens“ 163,47 (163,367), „Punkt“ 165,33, „Schluss“ 171,88. Punkt 9 steht nur 1,86 s, weil Abdullah ihn so knapp spricht. Das wird bewusst nicht gestreckt.\n\nH2 nur sechsmal: zwei gesprochene Aufzählungen als parts-Zeile, bei der der besprochene Punkt hellblau leuchtet. Punkt 3 „Stadt · Umfeld · Partner“ erscheint schon bei „drei wichtigsten Entscheidungen“ als Fahrplan, Punkt 8 „Zusagen · Geld · Deals“. Dazu die vier Wünsche: gruss, beziehungen-h2, finger-weg, p10-ergaenzung. Keine H2 als Pflichtzeile, keine zwei H2 hintereinander ohne Anlass. Der einzige direkte H2-Wechsel (Aufzählung → Beziehungen bei 67,80) bleibt inhaltlich beim Thema Partner.\n\nStatt springender Überschriften gibt es zwei Randnotizen im Vorher-Nachher-Muster aus DESIGN 9a, beide rechts vom Kopf. Punkt 5: Die Ziele Wohnung, Partnerin, Bachelor, Master und Abgabe bauen sich am Wort auf und werden bei „Alles Quatsch“ rot durchgestrichen, mit Punch-Zoom im selben Moment. Darunter wächst „Nur der Weg“ (Weg hellblau). Punkt 6: Mentor, Frau und Retter werden bei „niemand“ durchgestrichen, darunter bei „schon da“ „Du selbst.“. Das löst die harte H1 „Keiner rettet dich“ positiv auf. Gesichtsprüfung: Das Gesicht reicht rechts höchstens bis x 604 (98 bis 109 s) bzw. 623 (115 bis 129 s). Die Notizen sitzen deshalb ab x 644 bzw. 663 mit 286 bzw. 267 px Platz. Das ist nicht die Referenzposition x 590, die läge hier am Gesicht. Breiteste Zeilen: „Nur der Weg“ 272,6, „Ein Mentor“ 237,7. Beide Notizen beginnen bei y 390, enden unter y 730 und liegen zeitlich nie mit einer H2 zusammen. Auch mit Punch-Zoom 1,1 (Ursprung 42 %/28 %) wandert die Gesichtskante nur bis x ≈ 619, der Abstand bleibt.\n\nGroßwörter nur für die drei stärksten, gesprochenen Momente. „Lutscher“ ist die Pointe von Punkt 3, „Keine Ahnung“ spricht Lea direkt an, „Free Pass“ ist das Leitbild des Schlusses. Lutscher und Keine Ahnung bekommen einen Punch-Zoom 1,1 bis zum nächsten Schnitt. Free Pass bekommt keinen, weil 172 bis 182 s eine enge Nahaufnahme ist (Gesicht ca. 450 px breit). Breiten: Lutscher 506,8 px bei 120 px, Free Pass 567,1 px bei 120 px, Keine Ahnung 647,1 px bei 96 px bzw. 741,4 px bei 110 px. Keine Ahnung darf also höchstens etwa 109 px groß sein, wenn 736 px die Grenze ist. Weitere Punch-Zooms ohne Großwort: „Alles Quatsch“ (106,64 bis Schnitt 107,233, synchron mit dem Durchstreichen) und „niemals HR“ (164,30 bis Schnitt 165,1).\n\nLangsame Zooms nur auf Kernsätzen, jeweils von Schnitt zu Schnitt und nie in Nahaufnahmen. Der Einstieg (0 bis 7 s) und 12 bis 19 s sind mit etwa 375 bis 400 px Gesichtsbreite nah und bleiben deshalb frei. Die Sätze: früher anfangen (21,667), Kinderzimmer (35,333), drei Entscheidungen (42,433), Aufbau zur Lutscher-Pointe (56,9, geht nahtlos in den Punch über), Druck rausnehmen (80,633), „Ich sage es noch einmal“ (92,633), „es kommt niemand“ (117,933), „fette Summe“ (142,333), „mieseres Gefühl“ (158,867), Free-Pass-Wiederholung (184,333). Alle Elemente liegen innerhalb x 90 bis 930 und y 250 bis 1280. Grobe Wörter kommen in keiner Einblendung vor. Outro ab dem Schnitt 193,467 bei „Weil“, danach keine H1, H2 oder Notizen mehr.",
+ "changes": "H1: 12 Abschnitte, 11 Morph-Wechsel, alle Stufe 72 und lückenlos von 0 bis 193,467. H2: 6 Einblendungen, davon 2 Aufzählungen als parts mit 3 bzw. 3 Leuchtwechseln und 4 Wünsche (gruss, beziehungen-h2, finger-weg, p10-ergaenzung). 2 davon zweizeilig mit lineAt. 1 direkter H2-zu-H2-Wechsel bei 67,80. Randnotizen: 2, beide rechts, mit 9 Zeilen, 8 Durchstreichungen und 2 hellblauen Akzentwörtern. Großwörter: 3. Zooms: 14, davon 10 langsam (1,04 bis 1,05) und 4 Punch (1,1). Outro ab 193,467 (Schnitt).",
+ "openQuestions": [
+  "Gruß (id gruss): Welcher Name steht in Zeile 2? Soll die Indien-Flagge direkt hinter dem Namen stehen (so geplant) oder hinter der ganzen Zeile? Bei einem langen Namen muss Zeile 2 mit Flagge unter 560 px bleiben.",
+  "Beziehungen (id beziehungen-h2): Wie lautet der Zusatz für Zeile 2 (Rückfrage läuft, bisher verstanden als „… die Finger vom Türkehneln lassen“)? Passt die Kürzung von Zeile 1 auf „Paar Beziehungen zu viel“ (552 px)? Die Originalformulierung reißt die 560 px deutlich.",
+  "„Finger weg: Kreditkarte, Leasing, Dispo“ steht auf der Reise-Anekdote (131,59 bis 138,84). Soll es stattdessen beim Ergebnis „fette Summe“ (143,55 bis 147,66) stehen? Als Alternative ginge eine Randnotiz mit roten Durchstreichungen, dafür ist neben dem Kopf aber kaum Platz (ca. 240 px).",
+  "Bewusst nicht eingeblendet sind die gesprochenen Aufzählungen „50, 100, mehrere 100 Euro“ (Punkt 7) und „Allah, Gott, Universum“ (Punkt 10, dort hat die Ergänzung „… oder steh für etwas ein“ den H2-Platz). Soll eine davon trotzdem sichtbar werden?",
+  "H1-Formulierungen prüfen, die vom Wortlaut abweichen: „3. Wähl bewusst“ (mit der H2 „Stadt · Umfeld · Partner“), „4. Keiner weiß alles“, „5. Glück ist kein Ziel“, „6. Keiner rettet dich“, „9. Trau niemals HR“ (gesprochen „Vertraue“, das wäre nur in Stufe 66 möglich) und der Einstieg „10 Dinge für die 20er“ („deine 20er“ passt erst ab Stufe 60).",
+  "Großwort-Schriftgröße: Welche Größe setzt das gebaute Element? „Keine Ahnung“ passt nur bis etwa 109 px in 736 px Breite.",
+  "Randnotizen sitzen wegen der Gesichtsposition ab x 644 (Punkt 5) bzw. x 663 (Punkt 6), nicht an der Referenzkante x 590. Bitte beim Rendern so übernehmen. Die Kappe erfasst die Gesichtserkennung seitlich nicht, deshalb im Standbild bei 106 s und 128 s gegenprüfen."
+ ]
+}

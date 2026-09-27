@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,140",
+				"to": "00:00:01,900"
+			},
+			"offsets": {
+				"from": 140,
+				"to": 1900
+			},
+			"text": " Das Zertifikat heißt, Generator.",
+			"tokens": [
+				{
+					"text": " Das",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 160
+					},
+					"id": 2846,
+					"p": 0.988467,
+					"t_dtw": 26
+				},
+				{
+					"text": " Z",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 210
+					},
+					"id": 1176,
+					"p": 0.777693,
+					"t_dtw": 38
+				},
+				{
+					"text": "ert",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 370
+					},
+					"id": 911,
+					"p": 0.99869,
+					"t_dtw": 42
+				},
+				{
+					"text": "if",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 480
+					},
+					"id": 351,
+					"p": 0.99408,
+					"t_dtw": 50
+				},
+				{
+					"text": "ikat",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 630
+					},
+					"id": 36300,
+					"p": 0.999571,
+					"t_dtw": 68
+				},
+				{
+					"text": " heißt",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 1000
+					},
+					"id": 13139,
+					"p": 0.995682,
+					"t_dtw": 96
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,150"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1150
+					},
+					"id": 11,
+					"p": 0.163604,
+					"t_dtw": 96
+				},
+				{
+					"text": " Gener",
+					"timestamps": {
+						"from": "00:00:01,160",
+						"to": "00:00:01,510"
+					},
+					"offsets": {
+						"from": 1160,
+						"to": 1510
+					},
+					"id": 15409,
+					"p": 0.0371941,
+					"t_dtw": 186
+				},
+				{
+					"text": "ator",
+					"timestamps": {
+						"from": "00:00:01,790",
+						"to": "00:00:01,890"
+					},
+					"offsets": {
+						"from": 1790,
+						"to": 1890
+					},
+					"id": 1639,
+					"p": 0.294251,
+					"t_dtw": 186
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,900",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1900,
+						"to": 1900
+					},
+					"id": 13,
+					"p": 0.657247,
+					"t_dtw": 186
+				},
+				{
+					"text": "[_TT_95]",
+					"timestamps": {
+						"from": "00:00:01,900",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1900,
+						"to": 1900
+					},
+					"id": 50460,
+					"p": 0.991468,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

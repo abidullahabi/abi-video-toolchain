@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1100
+			},
+			"text": " Es muss nicht, also",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.981206,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,070"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 70
+					},
+					"id": 2313,
+					"p": 0.71033,
+					"t_dtw": 12
+				},
+				{
+					"text": " muss",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 220
+					},
+					"id": 6425,
+					"p": 0.985047,
+					"t_dtw": 32
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,410"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 410
+					},
+					"id": 1979,
+					"p": 0.748462,
+					"t_dtw": 48
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,410",
+						"to": "00:00:00,490"
+					},
+					"offsets": {
+						"from": 410,
+						"to": 490
+					},
+					"id": 11,
+					"p": 0.577365,
+					"t_dtw": 64
+				},
+				{
+					"text": " also",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 940
+					},
+					"id": 611,
+					"p": 0.972042,
+					"t_dtw": 86
+				},
+				{
+					"text": "[_TT_55]",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1100
+					},
+					"id": 50420,
+					"p": 0.398536,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

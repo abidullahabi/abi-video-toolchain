@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,660"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1660
+			},
+			"text": " wenn du in seiner Popelstadt bleibst,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.969444,
+					"t_dtw": -1
+				},
+				{
+					"text": " wenn",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 210
+					},
+					"id": 4797,
+					"p": 0.549954,
+					"t_dtw": 14
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,310"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 310
+					},
+					"id": 1581,
+					"p": 0.991386,
+					"t_dtw": 22
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,410"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 410
+					},
+					"id": 294,
+					"p": 0.995881,
+					"t_dtw": 32
+				},
+				{
+					"text": " seiner",
+					"timestamps": {
+						"from": "00:00:00,410",
+						"to": "00:00:00,730"
+					},
+					"offsets": {
+						"from": 410,
+						"to": 730
+					},
+					"id": 23114,
+					"p": 0.867597,
+					"t_dtw": 44
+				},
+				{
+					"text": " Pop",
+					"timestamps": {
+						"from": "00:00:00,730",
+						"to": "00:00:00,830"
+					},
+					"offsets": {
+						"from": 730,
+						"to": 830
+					},
+					"id": 10215,
+					"p": 0.701059,
+					"t_dtw": 68
+				},
+				{
+					"text": "el",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:00,990"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 990
+					},
+					"id": 338,
+					"p": 0.998039,
+					"t_dtw": 80
+				},
+				{
+					"text": "stadt",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:01,250"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 1250
+					},
+					"id": 34511,
+					"p": 0.795077,
+					"t_dtw": 98
+				},
+				{
+					"text": " ble",
+					"timestamps": {
+						"from": "00:00:01,250",
+						"to": "00:00:01,390"
+					},
+					"offsets": {
+						"from": 1250,
+						"to": 1390
+					},
+					"id": 5408,
+					"p": 0.997952,
+					"t_dtw": 130
+				},
+				{
+					"text": "ib",
+					"timestamps": {
+						"from": "00:00:01,420",
+						"to": "00:00:01,500"
+					},
+					"offsets": {
+						"from": 1420,
+						"to": 1500
+					},
+					"id": 897,
+					"p": 0.998468,
+					"t_dtw": 142
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:01,500",
+						"to": "00:00:01,530"
+					},
+					"offsets": {
+						"from": 1500,
+						"to": 1530
+					},
+					"id": 372,
+					"p": 0.99975,
+					"t_dtw": 156
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,660",
+						"to": "00:00:01,660"
+					},
+					"offsets": {
+						"from": 1660,
+						"to": 1660
+					},
+					"id": 11,
+					"p": 0.827662,
+					"t_dtw": 164
+				},
+				{
+					"text": "[_TT_83]",
+					"timestamps": {
+						"from": "00:00:01,660",
+						"to": "00:00:01,660"
+					},
+					"offsets": {
+						"from": 1660,
+						"to": 1660
+					},
+					"id": 50448,
+					"p": 0.996742,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

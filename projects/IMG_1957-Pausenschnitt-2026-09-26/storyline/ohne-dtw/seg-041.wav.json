@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,500"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1500
+			},
+			"text": " Circle zu durchbrechen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.938978,
+					"t_dtw": -1
+				},
+				{
+					"text": " Circle",
+					"timestamps": {
+						"from": "00:00:00,080",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 80,
+						"to": 500
+					},
+					"id": 29381,
+					"p": 0.733314,
+					"t_dtw": -1
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 600
+					},
+					"id": 2164,
+					"p": 0.903548,
+					"t_dtw": -1
+				},
+				{
+					"text": " durch",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,990"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 990
+					},
+					"id": 7131,
+					"p": 0.990427,
+					"t_dtw": -1
+				},
+				{
+					"text": "bre",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 1190
+					},
+					"id": 2672,
+					"p": 0.99875,
+					"t_dtw": -1
+				},
+				{
+					"text": "chen",
+					"timestamps": {
+						"from": "00:00:01,190",
+						"to": "00:00:01,310"
+					},
+					"offsets": {
+						"from": 1190,
+						"to": 1310
+					},
+					"id": 2470,
+					"p": 0.999887,
+					"t_dtw": -1
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,460",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1460,
+						"to": 1460
+					},
+					"id": 13,
+					"p": 0.711251,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_75]",
+					"timestamps": {
+						"from": "00:00:01,500",
+						"to": "00:00:01,500"
+					},
+					"offsets": {
+						"from": 1500,
+						"to": 1500
+					},
+					"id": 50440,
+					"p": 0.0703521,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

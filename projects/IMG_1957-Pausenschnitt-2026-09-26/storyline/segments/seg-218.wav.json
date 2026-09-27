@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2100
+			},
+			"text": " Und Punkt Nummer 10: Glaub an etwas.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.966744,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 140
+					},
+					"id": 2719,
+					"p": 0.833438,
+					"t_dtw": 10
+				},
+				{
+					"text": " Punkt",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 400
+					},
+					"id": 25487,
+					"p": 0.977273,
+					"t_dtw": 28
+				},
+				{
+					"text": " Nummer",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,690"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 690
+					},
+					"id": 47034,
+					"p": 0.866169,
+					"t_dtw": 40
+				},
+				{
+					"text": " 10",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 1000
+					},
+					"id": 1266,
+					"p": 0.539345,
+					"t_dtw": 66
+				},
+				{
+					"text": ":",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1080
+					},
+					"id": 25,
+					"p": 0.485823,
+					"t_dtw": 134
+				},
+				{
+					"text": " G",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,160"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1160
+					},
+					"id": 460,
+					"p": 0.555297,
+					"t_dtw": 138
+				},
+				{
+					"text": "laub",
+					"timestamps": {
+						"from": "00:00:01,160",
+						"to": "00:00:01,470"
+					},
+					"offsets": {
+						"from": 1160,
+						"to": 1470
+					},
+					"id": 20798,
+					"p": 0.999527,
+					"t_dtw": 146
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:01,500",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 1500,
+						"to": 1650
+					},
+					"id": 364,
+					"p": 0.774329,
+					"t_dtw": 160
+				},
+				{
+					"text": " etwas",
+					"timestamps": {
+						"from": "00:00:01,650",
+						"to": "00:00:01,960"
+					},
+					"offsets": {
+						"from": 1650,
+						"to": 1960
+					},
+					"id": 9569,
+					"p": 0.993619,
+					"t_dtw": 186
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,090",
+						"to": "00:00:02,090"
+					},
+					"offsets": {
+						"from": 2090,
+						"to": 2090
+					},
+					"id": 13,
+					"p": 0.722698,
+					"t_dtw": 206
+				},
+				{
+					"text": "[_TT_105]",
+					"timestamps": {
+						"from": "00:00:02,100",
+						"to": "00:00:02,100"
+					},
+					"offsets": {
+						"from": 2100,
+						"to": 2100
+					},
+					"id": 50470,
+					"p": 0.906562,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

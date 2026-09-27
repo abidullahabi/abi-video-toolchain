@@ -1,0 +1,255 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,860"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1860
+			},
+			"text": " Fang so früh an mit der Heilung, wie es geht.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.98239,
+					"t_dtw": -1
+				},
+				{
+					"text": " Fang",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,290"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 290
+					},
+					"id": 25409,
+					"p": 0.323984,
+					"t_dtw": -1
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:00,290",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 290,
+						"to": 430
+					},
+					"id": 370,
+					"p": 0.961672,
+					"t_dtw": -1
+				},
+				{
+					"text": " früh",
+					"timestamps": {
+						"from": "00:00:00,430",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 430,
+						"to": 720
+					},
+					"id": 45029,
+					"p": 0.999474,
+					"t_dtw": -1
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 880
+					},
+					"id": 364,
+					"p": 0.995049,
+					"t_dtw": -1
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 950
+					},
+					"id": 2194,
+					"p": 0.971239,
+					"t_dtw": -1
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:00,980",
+						"to": "00:00:01,050"
+					},
+					"offsets": {
+						"from": 980,
+						"to": 1050
+					},
+					"id": 1163,
+					"p": 0.998002,
+					"t_dtw": -1
+				},
+				{
+					"text": " Heil",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1180
+					},
+					"id": 45650,
+					"p": 0.979512,
+					"t_dtw": -1
+				},
+				{
+					"text": "ung",
+					"timestamps": {
+						"from": "00:00:01,180",
+						"to": "00:00:01,270"
+					},
+					"offsets": {
+						"from": 1180,
+						"to": 1270
+					},
+					"id": 1063,
+					"p": 0.99818,
+					"t_dtw": -1
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,270",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1270,
+						"to": 1360
+					},
+					"id": 11,
+					"p": 0.865499,
+					"t_dtw": -1
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,480"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1480
+					},
+					"id": 3355,
+					"p": 0.939918,
+					"t_dtw": -1
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,550"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1550
+					},
+					"id": 785,
+					"p": 0.997836,
+					"t_dtw": -1
+				},
+				{
+					"text": " geht",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,720"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1720
+					},
+					"id": 7095,
+					"p": 0.99668,
+					"t_dtw": -1
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,720",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1720,
+						"to": 1860
+					},
+					"id": 13,
+					"p": 0.740224,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_93]",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 1860
+					},
+					"id": 50458,
+					"p": 0.186601,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

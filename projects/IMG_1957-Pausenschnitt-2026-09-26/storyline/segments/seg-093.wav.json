@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,440"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 440
+			},
+			"text": " Passt du auf.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.947368,
+					"t_dtw": -1
+				},
+				{
+					"text": " Pas",
+					"timestamps": {
+						"from": "00:00:00,030",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 30,
+						"to": 100
+					},
+					"id": 14199,
+					"p": 0.393824,
+					"t_dtw": 14
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 150
+					},
+					"id": 372,
+					"p": 0.997702,
+					"t_dtw": 22
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 160
+					},
+					"id": 1581,
+					"p": 0.561904,
+					"t_dtw": 32
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:00,230",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 230,
+						"to": 320
+					},
+					"id": 2501,
+					"p": 0.712923,
+					"t_dtw": 42
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 420
+					},
+					"id": 13,
+					"p": 0.725907,
+					"t_dtw": 42
+				},
+				{
+					"text": "[_TT_22]",
+					"timestamps": {
+						"from": "00:00:00,440",
+						"to": "00:00:00,440"
+					},
+					"offsets": {
+						"from": 440,
+						"to": 440
+					},
+					"id": 50387,
+					"p": 0.213874,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

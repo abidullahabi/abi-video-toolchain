@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,240"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1240
+			},
+			"text": " Wer hätte es gedacht?",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.959884,
+					"t_dtw": -1
+				},
+				{
+					"text": " Wer",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,190"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 190
+					},
+					"id": 14255,
+					"p": 0.880104,
+					"t_dtw": -1
+				},
+				{
+					"text": " hätte",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,570"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 570
+					},
+					"id": 20041,
+					"p": 0.724763,
+					"t_dtw": -1
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:00,570",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 570,
+						"to": 650
+					},
+					"id": 785,
+					"p": 0.681089,
+					"t_dtw": -1
+				},
+				{
+					"text": " gedacht",
+					"timestamps": {
+						"from": "00:00:00,770",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 770,
+						"to": 1140
+					},
+					"id": 33296,
+					"p": 0.997783,
+					"t_dtw": -1
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:01,230",
+						"to": "00:00:01,230"
+					},
+					"offsets": {
+						"from": 1230,
+						"to": 1230
+					},
+					"id": 30,
+					"p": 0.634738,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_62]",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1240
+					},
+					"id": 50427,
+					"p": 0.340568,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

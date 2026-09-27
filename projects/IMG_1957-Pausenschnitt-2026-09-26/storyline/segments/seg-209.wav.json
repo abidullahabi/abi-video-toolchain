@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,260"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2260
+			},
+			"text": " Achtens. Hab immer alles schriftlich.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.965162,
+					"t_dtw": -1
+				},
+				{
+					"text": " A",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,050"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 50
+					},
+					"id": 316,
+					"p": 0.557025,
+					"t_dtw": 22
+				},
+				{
+					"text": "cht",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 210
+					},
+					"id": 4701,
+					"p": 0.999336,
+					"t_dtw": 28
+				},
+				{
+					"text": "ens",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 370
+					},
+					"id": 694,
+					"p": 0.982793,
+					"t_dtw": 48
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 500
+					},
+					"id": 13,
+					"p": 0.13527,
+					"t_dtw": 72
+				},
+				{
+					"text": " Hab",
+					"timestamps": {
+						"from": "00:00:00,630",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 630,
+						"to": 770
+					},
+					"id": 14225,
+					"p": 0.524166,
+					"t_dtw": 80
+				},
+				{
+					"text": " immer",
+					"timestamps": {
+						"from": "00:00:00,770",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 770,
+						"to": 1120
+					},
+					"id": 5578,
+					"p": 0.974704,
+					"t_dtw": 114
+				},
+				{
+					"text": " alles",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,470"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1470
+					},
+					"id": 7874,
+					"p": 0.97496,
+					"t_dtw": 150
+				},
+				{
+					"text": " sch",
+					"timestamps": {
+						"from": "00:00:01,470",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1470,
+						"to": 1620
+					},
+					"id": 956,
+					"p": 0.981186,
+					"t_dtw": 170
+				},
+				{
+					"text": "rift",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,960"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1960
+					},
+					"id": 35742,
+					"p": 0.998896,
+					"t_dtw": 182
+				},
+				{
+					"text": "lich",
+					"timestamps": {
+						"from": "00:00:01,960",
+						"to": "00:00:02,110"
+					},
+					"offsets": {
+						"from": 1960,
+						"to": 2110
+					},
+					"id": 1739,
+					"p": 0.994926,
+					"t_dtw": 208
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,260",
+						"to": "00:00:02,260"
+					},
+					"offsets": {
+						"from": 2260,
+						"to": 2260
+					},
+					"id": 13,
+					"p": 0.737786,
+					"t_dtw": 224
+				},
+				{
+					"text": "[_TT_113]",
+					"timestamps": {
+						"from": "00:00:02,260",
+						"to": "00:00:02,260"
+					},
+					"offsets": {
+						"from": 2260,
+						"to": 2260
+					},
+					"id": 50478,
+					"p": 0.591623,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

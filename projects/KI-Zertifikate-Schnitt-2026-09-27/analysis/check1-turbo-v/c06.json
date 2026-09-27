@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,460"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1460
+			},
+			"text": " NG oder so heißt der.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.842726,
+					"t_dtw": -1
+				},
+				{
+					"text": " N",
+					"timestamps": {
+						"from": "00:00:00,090",
+						"to": "00:00:00,090"
+					},
+					"offsets": {
+						"from": 90,
+						"to": 90
+					},
+					"id": 426,
+					"p": 0.82111,
+					"t_dtw": 30
+				},
+				{
+					"text": "G",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 180
+					},
+					"id": 38,
+					"p": 0.82259,
+					"t_dtw": 44
+				},
+				{
+					"text": " oder",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 540
+					},
+					"id": 4513,
+					"p": 0.905744,
+					"t_dtw": 64
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,680"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 680
+					},
+					"id": 370,
+					"p": 0.998687,
+					"t_dtw": 76
+				},
+				{
+					"text": " heißt",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:01,130"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 1130
+					},
+					"id": 13139,
+					"p": 0.975246,
+					"t_dtw": 92
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:01,440",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1440,
+						"to": 1440
+					},
+					"id": 1163,
+					"p": 0.690096,
+					"t_dtw": 106
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,440",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1440,
+						"to": 1440
+					},
+					"id": 13,
+					"p": 0.499087,
+					"t_dtw": 126
+				},
+				{
+					"text": "[_TT_73]",
+					"timestamps": {
+						"from": "00:00:01,460",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1460,
+						"to": 1460
+					},
+					"id": 50438,
+					"p": 0.388975,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

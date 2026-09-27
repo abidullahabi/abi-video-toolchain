@@ -1,0 +1,153 @@
+{
+ "basis": "Blöcke aus blocks.json (Originalzeit, 1/30-s-Raster). Reihenfolge = Ausgabe.",
+ "order": [
+  2,
+  3,
+  4,
+  6,
+  9,
+  10,
+  11,
+  12,
+  13,
+  "16a",
+  "16b",
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  30,
+  31,
+  33,
+  40,
+  41,
+  42,
+  43,
+  48,
+  49,
+  50,
+  51,
+  52,
+  44,
+  45,
+  "46end"
+ ],
+ "split": {
+  "16a": [
+   41.6,
+   42.2
+  ],
+  "16b": [
+   42.5667,
+   45.3
+  ],
+  "46end": [
+   142.567,
+   143.667
+  ]
+ },
+ "removed": [
+  {
+   "blocks": [
+    0,
+    1
+   ],
+   "text": "Angst vor Arbeiten.",
+   "why": "gesprochener Titel vor dem eigentlichen Einstieg; die H1 zeigt das Thema ab Bild 0"
+  },
+  {
+   "blocks": [
+    5,
+    47
+   ],
+   "text": "(ohne Wort)",
+   "why": "Geräusch ohne Sprache"
+  },
+  {
+   "blocks": [
+    7,
+    8
+   ],
+   "text": "Ich habe keinen Bock zu arbeiten.",
+   "why": "Dopplung zu „never in my life habe ich Bock auf 9 to 5“"
+  },
+  {
+   "blocks": [
+    14,
+    15
+   ],
+   "text": "Einige machen sogar nur ihren Master, weil die einfach nicht wissen, was sie arbeiten wollen oder Angst davor haben zu arbeiten.",
+   "why": "verlängert den Punkt „du bist nicht allein“; für die Länge unter 90 s"
+  },
+  {
+   "blocks": [
+    "16 innen"
+   ],
+   "text": "so zwei,",
+   "why": "Versprecher, neu angesetzt mit „seit ein, zwei Monaten“"
+  },
+  {
+   "blocks": [
+    28
+   ],
+   "text": "Und der Glaube von Arbeit, man steckt fest, etc. stimmt nicht.",
+   "why": "Dopplung zu „man steckt fest … nicht mehr die Realität“"
+  },
+  {
+   "blocks": [
+    29
+   ],
+   "text": "Du hast die Möglichkeit, das selber so viel zu gestalten, wie du willst.",
+   "why": "Dopplung zu „du kannst dir das komplett selbst gestalten“ kurz danach"
+  },
+  {
+   "blocks": [
+    32
+   ],
+   "text": "Selbst ich, ich habe vor drei Jahren was anderes gemacht als heute.",
+   "why": "Dopplung zum folgenden „Vor drei Jahren war ich im digitalen Marketing …“"
+  },
+  {
+   "blocks": [
+    34,
+    35,
+    36
+   ],
+   "text": "Und deshalb, je stärker dein Fundament … Deswegen ist auch die Studentenzeit und die Schulzeit so wichtig. Aber nichtsdestotrotz hast du da immer noch ganz viele Gestaltungsmöglichkeiten.",
+   "why": "Nebenstrang zum Fundament, endet in derselben Aussage wie zuvor (gestalten)"
+  },
+  {
+   "blocks": [
+    37,
+    38,
+    39
+   ],
+   "text": "Wenn du so ein Popelunternehmen suchst, … kannst du auch nicht viel erwarten.",
+   "why": "Beispiel zur folgenden Kernaussage „es kommt stark auf das Unternehmen an“; für die Länge unter 90 s"
+  },
+  {
+   "blocks": [
+    53
+   ],
+   "text": "Es wird dir halt nicht in den Schoß fallen, du musst dich aktiv dafür einsetzen und danach suchen.",
+   "why": "wiederholt „so viel ballern, wie es nur geht“; für die Länge unter 90 s"
+  }
+ ],
+ "moved": {
+  "blocks": [
+   44,
+   45,
+   46
+  ],
+  "text": "Wenn du auch gerade da drin steckst … schreib mir gerne DM oder einen Kommentar. Ich helfe dir gerne.",
+  "why": "Aufruf ans Ende gesetzt, damit er mit Outro und Sprechblase zusammenfällt; der Gedanke „Angst kommt von Ungewissheit“ steht davor"
+ },
+ "endPadding": "Letztes Stück bis 143,667 s verlängert: rund 0,3 s Nachlauf nach „Ich helfe dir gerne.“, Quelle dort still (Lücke bis 145,3 s)."
+}

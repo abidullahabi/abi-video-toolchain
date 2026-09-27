@@ -1,0 +1,255 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Und wenn du 20 Jahre deines Lebens so gelebt hast,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.992811,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 120
+					},
+					"id": 2719,
+					"p": 0.915117,
+					"t_dtw": -1
+				},
+				{
+					"text": " wenn",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 270
+					},
+					"id": 4797,
+					"p": 0.99755,
+					"t_dtw": -1
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,290"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 290
+					},
+					"id": 1581,
+					"p": 0.990237,
+					"t_dtw": -1
+				},
+				{
+					"text": " 20",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 580
+					},
+					"id": 945,
+					"p": 0.997063,
+					"t_dtw": -1
+				},
+				{
+					"text": " Jahre",
+					"timestamps": {
+						"from": "00:00:00,640",
+						"to": "00:00:00,820"
+					},
+					"offsets": {
+						"from": 640,
+						"to": 820
+					},
+					"id": 15557,
+					"p": 0.996864,
+					"t_dtw": -1
+				},
+				{
+					"text": " de",
+					"timestamps": {
+						"from": "00:00:00,820",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 820,
+						"to": 880
+					},
+					"id": 368,
+					"p": 0.88031,
+					"t_dtw": -1
+				},
+				{
+					"text": "ines",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 970
+					},
+					"id": 1652,
+					"p": 0.997803,
+					"t_dtw": -1
+				},
+				{
+					"text": " Lebens",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1200
+					},
+					"id": 21530,
+					"p": 0.964571,
+					"t_dtw": -1
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,330"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1330
+					},
+					"id": 370,
+					"p": 0.953416,
+					"t_dtw": -1
+				},
+				{
+					"text": " gele",
+					"timestamps": {
+						"from": "00:00:01,330",
+						"to": "00:00:01,550"
+					},
+					"offsets": {
+						"from": 1330,
+						"to": 1550
+					},
+					"id": 20234,
+					"p": 0.971664,
+					"t_dtw": -1
+				},
+				{
+					"text": "bt",
+					"timestamps": {
+						"from": "00:00:01,630",
+						"to": "00:00:01,720"
+					},
+					"offsets": {
+						"from": 1630,
+						"to": 1720
+					},
+					"id": 4517,
+					"p": 0.999956,
+					"t_dtw": -1
+				},
+				{
+					"text": " hast",
+					"timestamps": {
+						"from": "00:00:01,720",
+						"to": "00:00:01,820"
+					},
+					"offsets": {
+						"from": 1720,
+						"to": 1820
+					},
+					"id": 6581,
+					"p": 0.999535,
+					"t_dtw": -1
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,990",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1990,
+						"to": 1990
+					},
+					"id": 11,
+					"p": 0.789546,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50465,
+					"p": 0.983796,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,440"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1440
+			},
+			"text": " Und ich würde sagen, in der Zeit habe",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.973851,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 160
+					},
+					"id": 2719,
+					"p": 0.863779,
+					"t_dtw": -1
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 320
+					},
+					"id": 1893,
+					"p": 0.998849,
+					"t_dtw": -1
+				},
+				{
+					"text": " würde",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 580
+					},
+					"id": 11942,
+					"p": 0.999653,
+					"t_dtw": -1
+				},
+				{
+					"text": " sagen",
+					"timestamps": {
+						"from": "00:00:00,580",
+						"to": "00:00:00,830"
+					},
+					"offsets": {
+						"from": 580,
+						"to": 830
+					},
+					"id": 8360,
+					"p": 0.999411,
+					"t_dtw": -1
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,830",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 830,
+						"to": 940
+					},
+					"id": 11,
+					"p": 0.880913,
+					"t_dtw": -1
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,040"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1040
+					},
+					"id": 294,
+					"p": 0.94763,
+					"t_dtw": -1
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:01,040",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1040,
+						"to": 1200
+					},
+					"id": 1163,
+					"p": 0.999572,
+					"t_dtw": -1
+				},
+				{
+					"text": " Zeit",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,230"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1230
+					},
+					"id": 9394,
+					"p": 0.971735,
+					"t_dtw": -1
+				},
+				{
+					"text": " habe",
+					"timestamps": {
+						"from": "00:00:01,430",
+						"to": "00:00:01,430"
+					},
+					"offsets": {
+						"from": 1430,
+						"to": 1430
+					},
+					"id": 6015,
+					"p": 0.872308,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_72]",
+					"timestamps": {
+						"from": "00:00:01,440",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1440,
+						"to": 1440
+					},
+					"id": 50437,
+					"p": 0.265825,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

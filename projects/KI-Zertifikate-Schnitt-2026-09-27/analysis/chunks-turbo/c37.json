@@ -1,0 +1,325 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,340"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3340
+			},
+			"text": " Hier gibt es zum Beispiel, wie man AI nutzt, wie man es trainiert.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.933068,
+					"t_dtw": -1
+				},
+				{
+					"text": " Hier",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 200
+					},
+					"id": 10886,
+					"p": 0.777045,
+					"t_dtw": 26
+				},
+				{
+					"text": " gibt",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 360
+					},
+					"id": 6089,
+					"p": 0.297865,
+					"t_dtw": 42
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:00,430",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 430,
+						"to": 470
+					},
+					"id": 785,
+					"p": 0.907275,
+					"t_dtw": 44
+				},
+				{
+					"text": " zum",
+					"timestamps": {
+						"from": "00:00:00,580",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 580,
+						"to": 650
+					},
+					"id": 5919,
+					"p": 0.62547,
+					"t_dtw": 66
+				},
+				{
+					"text": " Beispiel",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 1060
+					},
+					"id": 13772,
+					"p": 0.988783,
+					"t_dtw": 100
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1190
+					},
+					"id": 11,
+					"p": 0.510607,
+					"t_dtw": 122
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1410
+					},
+					"id": 3355,
+					"p": 0.979255,
+					"t_dtw": 132
+				},
+				{
+					"text": " man",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1620
+					},
+					"id": 587,
+					"p": 0.99736,
+					"t_dtw": 146
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:01,620",
+						"to": "00:00:01,760"
+					},
+					"offsets": {
+						"from": 1620,
+						"to": 1760
+					},
+					"id": 7318,
+					"p": 0.925228,
+					"t_dtw": 168
+				},
+				{
+					"text": " nut",
+					"timestamps": {
+						"from": "00:00:01,760",
+						"to": "00:00:01,940"
+					},
+					"offsets": {
+						"from": 1760,
+						"to": 1940
+					},
+					"id": 5393,
+					"p": 0.988036,
+					"t_dtw": 198
+				},
+				{
+					"text": "zt",
+					"timestamps": {
+						"from": "00:00:01,970",
+						"to": "00:00:01,970"
+					},
+					"offsets": {
+						"from": 1970,
+						"to": 1970
+					},
+					"id": 2682,
+					"p": 0.999024,
+					"t_dtw": 218
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,150",
+						"to": "00:00:02,240"
+					},
+					"offsets": {
+						"from": 2150,
+						"to": 2240
+					},
+					"id": 11,
+					"p": 0.865719,
+					"t_dtw": 240
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:02,420",
+						"to": "00:00:02,460"
+					},
+					"offsets": {
+						"from": 2420,
+						"to": 2460
+					},
+					"id": 3355,
+					"p": 0.933549,
+					"t_dtw": 248
+				},
+				{
+					"text": " man",
+					"timestamps": {
+						"from": "00:00:02,460",
+						"to": "00:00:02,610"
+					},
+					"offsets": {
+						"from": 2460,
+						"to": 2610
+					},
+					"id": 587,
+					"p": 0.995883,
+					"t_dtw": 256
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:02,760",
+						"to": "00:00:02,760"
+					},
+					"offsets": {
+						"from": 2760,
+						"to": 2760
+					},
+					"id": 785,
+					"p": 0.961581,
+					"t_dtw": 268
+				},
+				{
+					"text": " train",
+					"timestamps": {
+						"from": "00:00:02,760",
+						"to": "00:00:03,050"
+					},
+					"offsets": {
+						"from": 2760,
+						"to": 3050
+					},
+					"id": 3847,
+					"p": 0.994652,
+					"t_dtw": 282
+				},
+				{
+					"text": "iert",
+					"timestamps": {
+						"from": "00:00:03,050",
+						"to": "00:00:03,090"
+					},
+					"offsets": {
+						"from": 3050,
+						"to": 3090
+					},
+					"id": 4859,
+					"p": 0.998999,
+					"t_dtw": 304
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,330",
+						"to": "00:00:03,330"
+					},
+					"offsets": {
+						"from": 3330,
+						"to": 3330
+					},
+					"id": 13,
+					"p": 0.71514,
+					"t_dtw": 322
+				},
+				{
+					"text": "[_TT_167]",
+					"timestamps": {
+						"from": "00:00:03,340",
+						"to": "00:00:03,340"
+					},
+					"offsets": {
+						"from": 3340,
+						"to": 3340
+					},
+					"id": 50532,
+					"p": 0.298598,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

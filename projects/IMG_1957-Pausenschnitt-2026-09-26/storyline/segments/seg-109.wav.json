@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,460"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1460
+			},
+			"text": " Es macht einen riesen Unterschied.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.945922,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 100
+					},
+					"id": 2313,
+					"p": 0.893174,
+					"t_dtw": 14
+				},
+				{
+					"text": " macht",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 330
+					},
+					"id": 10857,
+					"p": 0.99444,
+					"t_dtw": 32
+				},
+				{
+					"text": " einen",
+					"timestamps": {
+						"from": "00:00:00,390",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 390,
+						"to": 600
+					},
+					"id": 4891,
+					"p": 0.98262,
+					"t_dtw": 56
+				},
+				{
+					"text": " ries",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,790"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 790
+					},
+					"id": 23932,
+					"p": 0.654506,
+					"t_dtw": 76
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 900
+					},
+					"id": 268,
+					"p": 0.838355,
+					"t_dtw": 84
+				},
+				{
+					"text": " Unterschied",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:01,310"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 1310
+					},
+					"id": 41414,
+					"p": 0.989253,
+					"t_dtw": 124
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,460",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1460,
+						"to": 1460
+					},
+					"id": 13,
+					"p": 0.690844,
+					"t_dtw": 144
+				},
+				{
+					"text": "[_TT_73]",
+					"timestamps": {
+						"from": "00:00:01,460",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1460,
+						"to": 1460
+					},
+					"id": 50438,
+					"p": 0.667576,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

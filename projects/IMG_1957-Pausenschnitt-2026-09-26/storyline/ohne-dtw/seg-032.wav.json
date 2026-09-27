@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,700"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2700
+			},
+			"text": " vor allem in den 20ern ein sehr guter Zeitpunkt damit anzufangen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.978486,
+					"t_dtw": -1
+				},
+				{
+					"text": " vor",
+					"timestamps": {
+						"from": "00:00:00,080",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 80,
+						"to": 120
+					},
+					"id": 4245,
+					"p": 0.310931,
+					"t_dtw": -1
+				},
+				{
+					"text": " allem",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 320
+					},
+					"id": 17585,
+					"p": 0.677167,
+					"t_dtw": -1
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 400
+					},
+					"id": 294,
+					"p": 0.994213,
+					"t_dtw": -1
+				},
+				{
+					"text": " den",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,490"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 490
+					},
+					"id": 1441,
+					"p": 0.999617,
+					"t_dtw": -1
+				},
+				{
+					"text": " 20",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 770
+					},
+					"id": 945,
+					"p": 0.781403,
+					"t_dtw": -1
+				},
+				{
+					"text": "ern",
+					"timestamps": {
+						"from": "00:00:00,770",
+						"to": "00:00:00,920"
+					},
+					"offsets": {
+						"from": 770,
+						"to": 920
+					},
+					"id": 1248,
+					"p": 0.996016,
+					"t_dtw": -1
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:00,920",
+						"to": "00:00:01,070"
+					},
+					"offsets": {
+						"from": 920,
+						"to": 1070
+					},
+					"id": 1343,
+					"p": 0.703948,
+					"t_dtw": -1
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:01,070",
+						"to": "00:00:01,270"
+					},
+					"offsets": {
+						"from": 1070,
+						"to": 1270
+					},
+					"id": 5499,
+					"p": 0.997575,
+					"t_dtw": -1
+				},
+				{
+					"text": " gut",
+					"timestamps": {
+						"from": "00:00:01,270",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 1270,
+						"to": 1410
+					},
+					"id": 5228,
+					"p": 0.993753,
+					"t_dtw": -1
+				},
+				{
+					"text": "er",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1520
+					},
+					"id": 260,
+					"p": 0.999868,
+					"t_dtw": -1
+				},
+				{
+					"text": " Zeit",
+					"timestamps": {
+						"from": "00:00:01,550",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1550,
+						"to": 1680
+					},
+					"id": 9394,
+					"p": 0.984821,
+					"t_dtw": -1
+				},
+				{
+					"text": "punkt",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1860
+					},
+					"id": 31744,
+					"p": 0.999811,
+					"t_dtw": -1
+				},
+				{
+					"text": " damit",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:02,140"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 2140
+					},
+					"id": 9479,
+					"p": 0.845525,
+					"t_dtw": -1
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:02,140",
+						"to": "00:00:02,250"
+					},
+					"offsets": {
+						"from": 2140,
+						"to": 2250
+					},
+					"id": 364,
+					"p": 0.996765,
+					"t_dtw": -1
+				},
+				{
+					"text": "zuf",
+					"timestamps": {
+						"from": "00:00:02,250",
+						"to": "00:00:02,280"
+					},
+					"offsets": {
+						"from": 2250,
+						"to": 2280
+					},
+					"id": 39467,
+					"p": 0.99983,
+					"t_dtw": -1
+				},
+				{
+					"text": "angen",
+					"timestamps": {
+						"from": "00:00:02,400",
+						"to": "00:00:02,600"
+					},
+					"offsets": {
+						"from": 2400,
+						"to": 2600
+					},
+					"id": 10784,
+					"p": 0.999779,
+					"t_dtw": -1
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,700",
+						"to": "00:00:02,700"
+					},
+					"offsets": {
+						"from": 2700,
+						"to": 2700
+					},
+					"id": 13,
+					"p": 0.921651,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_135]",
+					"timestamps": {
+						"from": "00:00:02,700",
+						"to": "00:00:02,700"
+					},
+					"offsets": {
+						"from": 2700,
+						"to": 2700
+					},
+					"id": 50500,
+					"p": 0.74659,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

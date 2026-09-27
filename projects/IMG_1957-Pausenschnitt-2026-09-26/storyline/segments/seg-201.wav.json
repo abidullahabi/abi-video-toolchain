@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1100
+			},
+			"text": " lebt es relativ gut schon.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.956216,
+					"t_dtw": -1
+				},
+				{
+					"text": " le",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 100
+					},
+					"id": 476,
+					"p": 0.315581,
+					"t_dtw": 18
+				},
+				{
+					"text": "bt",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 200
+					},
+					"id": 4517,
+					"p": 0.574292,
+					"t_dtw": 20
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 200
+					},
+					"id": 785,
+					"p": 0.906626,
+					"t_dtw": 26
+				},
+				{
+					"text": " relativ",
+					"timestamps": {
+						"from": "00:00:00,290",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 290,
+						"to": 600
+					},
+					"id": 21960,
+					"p": 0.989487,
+					"t_dtw": 52
+				},
+				{
+					"text": " gut",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 810
+					},
+					"id": 5228,
+					"p": 0.995834,
+					"t_dtw": 76
+				},
+				{
+					"text": " schon",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 940
+					},
+					"id": 4981,
+					"p": 0.986333,
+					"t_dtw": 96
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,090"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1090
+					},
+					"id": 13,
+					"p": 0.558405,
+					"t_dtw": 106
+				},
+				{
+					"text": "[_TT_55]",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1100
+					},
+					"id": 50420,
+					"p": 0.849785,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

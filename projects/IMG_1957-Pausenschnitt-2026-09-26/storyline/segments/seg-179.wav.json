@@ -1,0 +1,297 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,340"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2340
+			},
+			"text": " Ich hatte immer die Vorstellung, dass jemand kommt und mich rettet.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.96479,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,090"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 90
+					},
+					"id": 3141,
+					"p": 0.936426,
+					"t_dtw": 14
+				},
+				{
+					"text": " hatte",
+					"timestamps": {
+						"from": "00:00:00,090",
+						"to": "00:00:00,240"
+					},
+					"offsets": {
+						"from": 90,
+						"to": 240
+					},
+					"id": 13299,
+					"p": 0.998331,
+					"t_dtw": 26
+				},
+				{
+					"text": " immer",
+					"timestamps": {
+						"from": "00:00:00,240",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 240,
+						"to": 390
+					},
+					"id": 5578,
+					"p": 0.99794,
+					"t_dtw": 42
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,390",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 390,
+						"to": 480
+					},
+					"id": 978,
+					"p": 0.996065,
+					"t_dtw": 54
+				},
+				{
+					"text": " Vor",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 530
+					},
+					"id": 12231,
+					"p": 0.98074,
+					"t_dtw": 70
+				},
+				{
+					"text": "stellung",
+					"timestamps": {
+						"from": "00:00:00,620",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 620,
+						"to": 780
+					},
+					"id": 30016,
+					"p": 0.997668,
+					"t_dtw": 88
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,820",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 820,
+						"to": 880
+					},
+					"id": 11,
+					"p": 0.987624,
+					"t_dtw": 94
+				},
+				{
+					"text": " dass",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:01,040"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 1040
+					},
+					"id": 2658,
+					"p": 0.963319,
+					"t_dtw": 102
+				},
+				{
+					"text": " jemand",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,300"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1300
+					},
+					"id": 21717,
+					"p": 0.991358,
+					"t_dtw": 120
+				},
+				{
+					"text": " kommt",
+					"timestamps": {
+						"from": "00:00:01,370",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1370,
+						"to": 1520
+					},
+					"id": 10047,
+					"p": 0.988297,
+					"t_dtw": 154
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:01,620",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1620,
+						"to": 1740
+					},
+					"id": 674,
+					"p": 0.98165,
+					"t_dtw": 168
+				},
+				{
+					"text": " mich",
+					"timestamps": {
+						"from": "00:00:01,740",
+						"to": "00:00:01,950"
+					},
+					"offsets": {
+						"from": 1740,
+						"to": 1950
+					},
+					"id": 6031,
+					"p": 0.997095,
+					"t_dtw": 182
+				},
+				{
+					"text": " ret",
+					"timestamps": {
+						"from": "00:00:01,980",
+						"to": "00:00:02,070"
+					},
+					"offsets": {
+						"from": 1980,
+						"to": 2070
+					},
+					"id": 1533,
+					"p": 0.991305,
+					"t_dtw": 198
+				},
+				{
+					"text": "t",
+					"timestamps": {
+						"from": "00:00:02,130",
+						"to": "00:00:02,190"
+					},
+					"offsets": {
+						"from": 2130,
+						"to": 2190
+					},
+					"id": 83,
+					"p": 0.999361,
+					"t_dtw": 204
+				},
+				{
+					"text": "et",
+					"timestamps": {
+						"from": "00:00:02,190",
+						"to": "00:00:02,220"
+					},
+					"offsets": {
+						"from": 2190,
+						"to": 2220
+					},
+					"id": 302,
+					"p": 0.999905,
+					"t_dtw": 216
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,330",
+						"to": "00:00:02,330"
+					},
+					"offsets": {
+						"from": 2330,
+						"to": 2330
+					},
+					"id": 13,
+					"p": 0.923922,
+					"t_dtw": 230
+				},
+				{
+					"text": "[_TT_117]",
+					"timestamps": {
+						"from": "00:00:02,340",
+						"to": "00:00:02,340"
+					},
+					"offsets": {
+						"from": 2340,
+						"to": 2340
+					},
+					"id": 50482,
+					"p": 0.503488,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

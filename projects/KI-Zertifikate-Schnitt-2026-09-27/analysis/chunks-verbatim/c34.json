@@ -1,0 +1,115 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,620"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1620
+			},
+			"text": " Google AI Professional",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.703457,
+					"t_dtw": -1
+				},
+				{
+					"text": " Google",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 480
+					},
+					"id": 3329,
+					"p": 0.784201,
+					"t_dtw": 34
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,640"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 640
+					},
+					"id": 7318,
+					"p": 0.926317,
+					"t_dtw": 58
+				},
+				{
+					"text": " Professional",
+					"timestamps": {
+						"from": "00:00:00,640",
+						"to": "00:00:01,330"
+					},
+					"offsets": {
+						"from": 640,
+						"to": 1330
+					},
+					"id": 30011,
+					"p": 0.924423,
+					"t_dtw": 114
+				},
+				{
+					"text": "[_TT_81]",
+					"timestamps": {
+						"from": "00:00:01,620",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1620,
+						"to": 1620
+					},
+					"id": 50446,
+					"p": 0.140794,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

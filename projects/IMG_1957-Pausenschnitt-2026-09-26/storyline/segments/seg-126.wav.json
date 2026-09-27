@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Und der vierte Punkt ist:",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.988777,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,290"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 290
+					},
+					"id": 2719,
+					"p": 0.88824,
+					"t_dtw": 12
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 600
+					},
+					"id": 1163,
+					"p": 0.997232,
+					"t_dtw": 22
+				},
+				{
+					"text": " vier",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 1000
+					},
+					"id": 17634,
+					"p": 0.959179,
+					"t_dtw": 36
+				},
+				{
+					"text": "te",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,150"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1150
+					},
+					"id": 975,
+					"p": 0.991041,
+					"t_dtw": 48
+				},
+				{
+					"text": " Punkt",
+					"timestamps": {
+						"from": "00:00:01,420",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1420,
+						"to": 1680
+					},
+					"id": 25487,
+					"p": 0.995158,
+					"t_dtw": 70
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,820"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1820
+					},
+					"id": 1418,
+					"p": 0.992355,
+					"t_dtw": 120
+				},
+				{
+					"text": ":",
+					"timestamps": {
+						"from": "00:00:01,990",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1990,
+						"to": 1990
+					},
+					"id": 25,
+					"p": 0.289979,
+					"t_dtw": 142
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50465,
+					"p": 0.973947,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

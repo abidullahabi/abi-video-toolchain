@@ -1,0 +1,62 @@
+{
+  "source": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/Angst vor Arbeiten.mp4",
+  "sourceSha256": "a65f611f9d65c454937f929167d4dc186a81af83b9f17e406ce14f2d0ab9758e",
+  "originalDuration": 170.866667,
+  "mode": "storyline-cut",
+  "status": "abgenommen",
+  "createdAt": "2026-09-26T10:43:00Z",
+  "auftrag": "Abdullah am 26.09.2026: 'Das andere wollte ich schneiden, aber das wollte ich mal dir überlassen.' Schnitt nach CONTENT_WORKFLOW.md Abschnitt 5, keine Gestaltung.",
+  "bearbeitung": {
+    "agent": "Claude Code (Desktop), Sitzung 26.09.2026 mittags",
+    "aufgabe": "Storyline- und Pausenschnitt Angst vor Arbeiten",
+    "begonnen": "2026-09-26T10:43:00Z",
+    "status": "abgeschlossen"
+  },
+  "notionPlan": "https://app.notion.com/p/3e68cb917b3b8140bbeefd7dc329454c",
+  "quelleHinweis": "Quelle ist CFR 30 fps (5126 Bilder, alle Abstände 33,33 ms), 44,1 kHz. Schnitt bildgenau per Bildnummer, Ton samplegenau auf demselben Raster (1470 Samples je Bild).",
+  "werkzeuge": [
+    "blocks.py (Silero-Lücken ab 150 ms auf 40 ms nach / 56 ms vor Sprache, Wortschutz, nächstes Bild)",
+    "edl.json (Auswahl, Reihenfolge, Begründungen)",
+    "build-edl.py"
+  ],
+  "speed": 1.0,
+  "cutDuration": 93.5,
+  "latestExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Angst-vor-Arbeiten-Schnitt-2026-09-26/exports/Angst-vor-Arbeiten-Schnitt_v5.mp4",
+  "aktuell": {
+    "datei": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Angst-vor-Arbeiten-Schnitt-2026-09-26/exports/Angst-vor-Arbeiten-Schnitt_v5_1-1x.mp4",
+    "sha256": "b9b963c1b6f5bb7b502cd6a2a7881dd752e993e77de4e8789a466e5db53e88c6",
+    "erzeugt": "2026-09-26T13:34:46Z",
+    "hinweis": "1,1-fache Vorschau aus v5 (1,0-Fassung = Gestaltungsgrundlage)."
+  },
+  "pruefung": {
+    "pausensignatur": "v5 (1,0): Median 96 ms, 84 % in 64-96 ms, 1 Lücke >160 ms (Nachlauf am Ende)",
+    "wortvollstaendigkeit": "Erkennungsdurchgang (-mc 0 -et 100 -lpt -100) auf dem Schnitt gegen den Text der ausgewählten Blöcke: 353 erwartet, 352 erkannt; alle Abweichungen an sechs Stellen einzeln gegen dieselbe Stelle der Quelle geprüft, Quelle und Schnitt gleich erkannt oder Naht in Stille (broke/Ist: Wortende 133,95 s, Schnitt 134,10 s bei -82 dBFS)",
+    "synchronitaet": "Bildvergleich gegen die Quelle an 10 Stücken: Versatz [0] Bilder; Ton per Konstruktion auf demselben Bildraster",
+    "decodierung": "vollständig ohne Fehler, 2629 Bilder, 30 fps",
+    "hoerpruefung": "nicht erfolgt (kein Abhören durch den Agenten möglich)",
+    "anfangEnde": "Kurztranskription v5: Anfang „Angst vor Arbeiten. Ich habe jetzt meinen Berufseinstieg hinter mir und bin offiziell angestellt.“ (beide Abbrüche 4,3 s „Ich…“ und 5,27–5,80 s „Ich habe das…“ entfernt); Ende „… Ich helfe dir gerne. Folgen nicht vergessen.“"
+  },
+  "exportHinweis": "_v1 fehlerhaft (Videospur 110 s durch trim/concat), _v2 ohne Nachlauf; beide nicht vorgelegt.",
+  "reviewCopy": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Angst vor Arbeiten - Schnitt v3 (1,1x).mp4",
+  "reviewCopySha256": "b9b963c1b6f5bb7b502cd6a2a7881dd752e993e77de4e8789a466e5db53e88c6",
+  "vorgaengerV1": {
+    "export": "exports/Angst-vor-Arbeiten-Schnitt_v3.mp4",
+    "rueckmeldung": "Abdullah 26.09.2026: Folgen nicht vergessen fehlte, Angst vor Arbeiten am Anfang wieder rein, Master-Satz wieder rein, Anfang holprig (zweimal ich), 1,1-fach beschleunigen"
+  },
+  "speedDelivery": 1.1,
+  "variante": {
+    "datei": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Angst vor Arbeiten - Schnitt v3 Variante (1,1x).mp4",
+    "sha256": "23b05de2ee3ae4f9235f66f76fd69c98ea6cd311e9e81fa2d1b42b98d83d0b2f",
+    "export": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Angst-vor-Arbeiten-Schnitt-2026-09-26/exports/Angst-vor-Arbeiten-Schnitt_v6-variante.mp4",
+    "edl": "edl-variante.json",
+    "beschreibung": "Angst-Teil (Blöcke 48-52) direkt nach „Einige machen sogar nur ihren Master …“; sonst identisch mit Schnitt v3. Pausen: Median 96 ms, 77 % im Band. Neue Nähte per Kurztranskription geprüft."
+  },
+  "gewaehlt": "Variante (Abdullah 26.09.2026: „Diese Variante ist es.“)",
+  "videomaterialVerschoben": {
+    "am": "2026-09-26",
+    "nach": "/Users/abi/Löschbar",
+    "manifest": "/Users/abi/Löschbar/MANIFEST.tsv",
+    "zurueck": "python3 ~/Löschbar/zurueckholen.py Angst-vor-Arbeiten-Schnitt-2026-09-26",
+    "grund": "Speicherplatz (Abdullahs Auftrag 26.09.2026); nichts gelöscht"
+  }
+}

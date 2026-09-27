@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,800"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1800
+			},
+			"text": " habe viel Erfahrung gesammelt, habe schon viele",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.943165,
+					"t_dtw": -1
+				},
+				{
+					"text": " habe",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 150
+					},
+					"id": 6015,
+					"p": 0.324896,
+					"t_dtw": 16
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 160
+					},
+					"id": 5891,
+					"p": 0.880187,
+					"t_dtw": 36
+				},
+				{
+					"text": " Erfahrung",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,640"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 640
+					},
+					"id": 49318,
+					"p": 0.97384,
+					"t_dtw": 72
+				},
+				{
+					"text": " ges",
+					"timestamps": {
+						"from": "00:00:00,640",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 640,
+						"to": 750
+					},
+					"id": 5019,
+					"p": 0.994689,
+					"t_dtw": 92
+				},
+				{
+					"text": "amm",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 860
+					},
+					"id": 5136,
+					"p": 0.999443,
+					"t_dtw": 102
+				},
+				{
+					"text": "elt",
+					"timestamps": {
+						"from": "00:00:00,860",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 860,
+						"to": 970
+					},
+					"id": 2018,
+					"p": 0.998028,
+					"t_dtw": 106
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,970",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 970,
+						"to": 1080
+					},
+					"id": 11,
+					"p": 0.972986,
+					"t_dtw": 114
+				},
+				{
+					"text": " habe",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1280
+					},
+					"id": 6015,
+					"p": 0.886242,
+					"t_dtw": 120
+				},
+				{
+					"text": " schon",
+					"timestamps": {
+						"from": "00:00:01,280",
+						"to": "00:00:01,530"
+					},
+					"offsets": {
+						"from": 1280,
+						"to": 1530
+					},
+					"id": 4981,
+					"p": 0.998706,
+					"t_dtw": 134
+				},
+				{
+					"text": " viele",
+					"timestamps": {
+						"from": "00:00:01,530",
+						"to": "00:00:01,660"
+					},
+					"offsets": {
+						"from": 1530,
+						"to": 1660
+					},
+					"id": 9693,
+					"p": 0.507106,
+					"t_dtw": 158
+				},
+				{
+					"text": "[_TT_90]",
+					"timestamps": {
+						"from": "00:00:01,800",
+						"to": "00:00:01,800"
+					},
+					"offsets": {
+						"from": 1800,
+						"to": 1800
+					},
+					"id": 50455,
+					"p": 0.65105,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

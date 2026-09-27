@@ -1,0 +1,283 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,760"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2760
+			},
+			"text": " Die Seele braucht immer ein bisschen länger, bis sie das rafft.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.996028,
+					"t_dtw": -1
+				},
+				{
+					"text": " Die",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,080"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 80
+					},
+					"id": 3229,
+					"p": 0.720219,
+					"t_dtw": 10
+				},
+				{
+					"text": " See",
+					"timestamps": {
+						"from": "00:00:00,080",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 80,
+						"to": 160
+					},
+					"id": 3008,
+					"p": 0.999397,
+					"t_dtw": 24
+				},
+				{
+					"text": "le",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 210
+					},
+					"id": 306,
+					"p": 0.999981,
+					"t_dtw": 32
+				},
+				{
+					"text": " braucht",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,410"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 410
+					},
+					"id": 22623,
+					"p": 0.98201,
+					"t_dtw": 54
+				},
+				{
+					"text": " immer",
+					"timestamps": {
+						"from": "00:00:00,410",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 410,
+						"to": 530
+					},
+					"id": 5578,
+					"p": 0.351427,
+					"t_dtw": 64
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 630
+					},
+					"id": 1343,
+					"p": 0.981921,
+					"t_dtw": 76
+				},
+				{
+					"text": " bisschen",
+					"timestamps": {
+						"from": "00:00:00,630",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 630,
+						"to": 810
+					},
+					"id": 10763,
+					"p": 0.998567,
+					"t_dtw": 86
+				},
+				{
+					"text": " länger",
+					"timestamps": {
+						"from": "00:00:00,870",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 870,
+						"to": 1020
+					},
+					"id": 40935,
+					"p": 0.998821,
+					"t_dtw": 110
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1120
+					},
+					"id": 11,
+					"p": 0.980727,
+					"t_dtw": 124
+				},
+				{
+					"text": " bis",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,470"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1470
+					},
+					"id": 7393,
+					"p": 0.860542,
+					"t_dtw": 132
+				},
+				{
+					"text": " sie",
+					"timestamps": {
+						"from": "00:00:01,470",
+						"to": "00:00:01,770"
+					},
+					"offsets": {
+						"from": 1470,
+						"to": 1770
+					},
+					"id": 2804,
+					"p": 0.943155,
+					"t_dtw": 140
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:01,890",
+						"to": "00:00:02,170"
+					},
+					"offsets": {
+						"from": 1890,
+						"to": 2170
+					},
+					"id": 1482,
+					"p": 0.995149,
+					"t_dtw": 226
+				},
+				{
+					"text": " r",
+					"timestamps": {
+						"from": "00:00:02,170",
+						"to": "00:00:02,260"
+					},
+					"offsets": {
+						"from": 2170,
+						"to": 2260
+					},
+					"id": 367,
+					"p": 0.97097,
+					"t_dtw": 242
+				},
+				{
+					"text": "afft",
+					"timestamps": {
+						"from": "00:00:02,340",
+						"to": "00:00:02,510"
+					},
+					"offsets": {
+						"from": 2340,
+						"to": 2510
+					},
+					"id": 29445,
+					"p": 0.898757,
+					"t_dtw": 260
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,760",
+						"to": "00:00:02,760"
+					},
+					"offsets": {
+						"from": 2760,
+						"to": 2760
+					},
+					"id": 13,
+					"p": 0.788294,
+					"t_dtw": 274
+				},
+				{
+					"text": "[_TT_138]",
+					"timestamps": {
+						"from": "00:00:02,760",
+						"to": "00:00:02,760"
+					},
+					"offsets": {
+						"from": 2760,
+						"to": 2760
+					},
+					"id": 50503,
+					"p": 0.94796,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

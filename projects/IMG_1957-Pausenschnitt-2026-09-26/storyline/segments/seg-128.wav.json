@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,340"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2340
+			},
+			"text": " dachte ich, ich bin der krasseste Fucker",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.976794,
+					"t_dtw": -1
+				},
+				{
+					"text": " dachte",
+					"timestamps": {
+						"from": "00:00:00,080",
+						"to": "00:00:00,230"
+					},
+					"offsets": {
+						"from": 80,
+						"to": 230
+					},
+					"id": 39775,
+					"p": 0.714814,
+					"t_dtw": 30
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 450
+					},
+					"id": 1893,
+					"p": 0.989462,
+					"t_dtw": 52
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 500
+					},
+					"id": 11,
+					"p": 0.74451,
+					"t_dtw": 62
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 670
+					},
+					"id": 1893,
+					"p": 0.923501,
+					"t_dtw": 70
+				},
+				{
+					"text": " bin",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 1000
+					},
+					"id": 5171,
+					"p": 0.997301,
+					"t_dtw": 84
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,220"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1220
+					},
+					"id": 1163,
+					"p": 0.99012,
+					"t_dtw": 98
+				},
+				{
+					"text": " kr",
+					"timestamps": {
+						"from": "00:00:01,220",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1220,
+						"to": 1360
+					},
+					"id": 15913,
+					"p": 0.979955,
+					"t_dtw": 122
+				},
+				{
+					"text": "ass",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,580"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1580
+					},
+					"id": 640,
+					"p": 0.999032,
+					"t_dtw": 136
+				},
+				{
+					"text": "este",
+					"timestamps": {
+						"from": "00:00:01,580",
+						"to": "00:00:01,870"
+					},
+					"offsets": {
+						"from": 1580,
+						"to": 1870
+					},
+					"id": 8887,
+					"p": 0.992591,
+					"t_dtw": 156
+				},
+				{
+					"text": " Fuck",
+					"timestamps": {
+						"from": "00:00:01,870",
+						"to": "00:00:02,150"
+					},
+					"offsets": {
+						"from": 1870,
+						"to": 2150
+					},
+					"id": 10965,
+					"p": 0.901123,
+					"t_dtw": 194
+				},
+				{
+					"text": "er",
+					"timestamps": {
+						"from": "00:00:02,150",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 2150,
+						"to": 2180
+					},
+					"id": 260,
+					"p": 0.990603,
+					"t_dtw": 212
+				},
+				{
+					"text": "[_TT_117]",
+					"timestamps": {
+						"from": "00:00:02,340",
+						"to": "00:00:02,340"
+					},
+					"offsets": {
+						"from": 2340,
+						"to": 2340
+					},
+					"id": 50482,
+					"p": 0.298415,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

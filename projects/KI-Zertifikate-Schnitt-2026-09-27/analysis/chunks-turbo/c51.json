@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,620"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1620
+			},
+			"text": " Themen zur AI wissen willst,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.902515,
+					"t_dtw": -1
+				},
+				{
+					"text": " Themen",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 420
+					},
+					"id": 39229,
+					"p": 0.481659,
+					"t_dtw": 30
+				},
+				{
+					"text": " zur",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 630
+					},
+					"id": 7147,
+					"p": 0.881643,
+					"t_dtw": 46
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:00,630",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 630,
+						"to": 750
+					},
+					"id": 7318,
+					"p": 0.988787,
+					"t_dtw": 66
+				},
+				{
+					"text": " wissen",
+					"timestamps": {
+						"from": "00:00:00,760",
+						"to": "00:00:01,150"
+					},
+					"offsets": {
+						"from": 760,
+						"to": 1150
+					},
+					"id": 16331,
+					"p": 0.9669,
+					"t_dtw": 94
+				},
+				{
+					"text": " willst",
+					"timestamps": {
+						"from": "00:00:01,190",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1190,
+						"to": 1380
+					},
+					"id": 48355,
+					"p": 0.989247,
+					"t_dtw": 124
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,610",
+						"to": "00:00:01,610"
+					},
+					"offsets": {
+						"from": 1610,
+						"to": 1610
+					},
+					"id": 11,
+					"p": 0.250118,
+					"t_dtw": 158
+				},
+				{
+					"text": "[_TT_81]",
+					"timestamps": {
+						"from": "00:00:01,620",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1620,
+						"to": 1620
+					},
+					"id": 50446,
+					"p": 0.64425,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

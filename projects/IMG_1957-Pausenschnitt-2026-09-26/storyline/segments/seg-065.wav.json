@@ -1,0 +1,325 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,800"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3800
+			},
+			"text": " Viel zu wenig junge Menschen verbringen Zeit mit den drei wichtigsten Entscheidungen im Leben.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.975948,
+					"t_dtw": -1
+				},
+				{
+					"text": " Viel",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 200
+					},
+					"id": 35931,
+					"p": 0.889343,
+					"t_dtw": 18
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 300
+					},
+					"id": 2164,
+					"p": 0.995076,
+					"t_dtw": 34
+				},
+				{
+					"text": " wenig",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,550"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 550
+					},
+					"id": 20911,
+					"p": 0.977377,
+					"t_dtw": 62
+				},
+				{
+					"text": " junge",
+					"timestamps": {
+						"from": "00:00:00,550",
+						"to": "00:00:00,800"
+					},
+					"offsets": {
+						"from": 550,
+						"to": 800
+					},
+					"id": 47877,
+					"p": 0.996557,
+					"t_dtw": 92
+				},
+				{
+					"text": " Menschen",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 1240
+					},
+					"id": 8397,
+					"p": 0.997343,
+					"t_dtw": 124
+				},
+				{
+					"text": " ver",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1340
+					},
+					"id": 1306,
+					"p": 0.968826,
+					"t_dtw": 140
+				},
+				{
+					"text": "bringen",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1600
+					},
+					"id": 39455,
+					"p": 0.999333,
+					"t_dtw": 158
+				},
+				{
+					"text": " Zeit",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,910"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1910
+					},
+					"id": 9394,
+					"p": 0.953653,
+					"t_dtw": 192
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:02,010",
+						"to": "00:00:02,110"
+					},
+					"offsets": {
+						"from": 2010,
+						"to": 2110
+					},
+					"id": 2194,
+					"p": 0.720919,
+					"t_dtw": 212
+				},
+				{
+					"text": " den",
+					"timestamps": {
+						"from": "00:00:02,180",
+						"to": "00:00:02,300"
+					},
+					"offsets": {
+						"from": 2180,
+						"to": 2300
+					},
+					"id": 1441,
+					"p": 0.986197,
+					"t_dtw": 226
+				},
+				{
+					"text": " drei",
+					"timestamps": {
+						"from": "00:00:02,340",
+						"to": "00:00:02,520"
+					},
+					"offsets": {
+						"from": 2340,
+						"to": 2520
+					},
+					"id": 16809,
+					"p": 0.936903,
+					"t_dtw": 248
+				},
+				{
+					"text": " wichtig",
+					"timestamps": {
+						"from": "00:00:02,520",
+						"to": "00:00:02,840"
+					},
+					"offsets": {
+						"from": 2520,
+						"to": 2840
+					},
+					"id": 13621,
+					"p": 0.982342,
+					"t_dtw": 278
+				},
+				{
+					"text": "sten",
+					"timestamps": {
+						"from": "00:00:02,840",
+						"to": "00:00:03,030"
+					},
+					"offsets": {
+						"from": 2840,
+						"to": 3030
+					},
+					"id": 6266,
+					"p": 0.999804,
+					"t_dtw": 296
+				},
+				{
+					"text": " Entscheid",
+					"timestamps": {
+						"from": "00:00:03,030",
+						"to": "00:00:03,450"
+					},
+					"offsets": {
+						"from": 3030,
+						"to": 3450
+					},
+					"id": 30862,
+					"p": 0.979839,
+					"t_dtw": 324
+				},
+				{
+					"text": "ungen",
+					"timestamps": {
+						"from": "00:00:03,450",
+						"to": "00:00:03,640"
+					},
+					"offsets": {
+						"from": 3450,
+						"to": 3640
+					},
+					"id": 5084,
+					"p": 0.999718,
+					"t_dtw": 342
+				},
+				{
+					"text": " im",
+					"timestamps": {
+						"from": "00:00:03,670",
+						"to": "00:00:03,720"
+					},
+					"offsets": {
+						"from": 3670,
+						"to": 3720
+					},
+					"id": 566,
+					"p": 0.972516,
+					"t_dtw": 356
+				},
+				{
+					"text": " Leben",
+					"timestamps": {
+						"from": "00:00:03,800",
+						"to": "00:00:03,800"
+					},
+					"offsets": {
+						"from": 3800,
+						"to": 3800
+					},
+					"id": 15399,
+					"p": 0.910795,
+					"t_dtw": 370
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,800",
+						"to": "00:00:03,800"
+					},
+					"offsets": {
+						"from": 3800,
+						"to": 3800
+					},
+					"id": 13,
+					"p": 0.925209,
+					"t_dtw": 376
+				},
+				{
+					"text": "[_TT_190]",
+					"timestamps": {
+						"from": "00:00:03,800",
+						"to": "00:00:03,800"
+					},
+					"offsets": {
+						"from": 3800,
+						"to": 3800
+					},
+					"id": 50555,
+					"p": 0.886538,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

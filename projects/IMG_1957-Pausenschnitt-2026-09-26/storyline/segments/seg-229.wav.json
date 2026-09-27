@@ -1,0 +1,283 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,280"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2280
+			},
+			"text": " Du kannst Fehler machen, keiner juckt es, es ist nicht schlimm.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.982068,
+					"t_dtw": -1
+				},
+				{
+					"text": " Du",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,060"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 60
+					},
+					"id": 5153,
+					"p": 0.800827,
+					"t_dtw": 10
+				},
+				{
+					"text": " kannst",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,260"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 260
+					},
+					"id": 20853,
+					"p": 0.996421,
+					"t_dtw": 24
+				},
+				{
+					"text": " Fehler",
+					"timestamps": {
+						"from": "00:00:00,330",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 330,
+						"to": 460
+					},
+					"id": 48101,
+					"p": 0.992137,
+					"t_dtw": 46
+				},
+				{
+					"text": " machen",
+					"timestamps": {
+						"from": "00:00:00,460",
+						"to": "00:00:00,660"
+					},
+					"offsets": {
+						"from": 460,
+						"to": 660
+					},
+					"id": 7069,
+					"p": 0.997377,
+					"t_dtw": 74
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,760"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 760
+					},
+					"id": 11,
+					"p": 0.730239,
+					"t_dtw": 88
+				},
+				{
+					"text": " keiner",
+					"timestamps": {
+						"from": "00:00:00,760",
+						"to": "00:00:01,090"
+					},
+					"offsets": {
+						"from": 760,
+						"to": 1090
+					},
+					"id": 37767,
+					"p": 0.949615,
+					"t_dtw": 108
+				},
+				{
+					"text": " j",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1140
+					},
+					"id": 361,
+					"p": 0.995188,
+					"t_dtw": 124
+				},
+				{
+					"text": "uckt",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,290"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1290
+					},
+					"id": 47800,
+					"p": 0.998403,
+					"t_dtw": 138
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,470"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1470
+					},
+					"id": 785,
+					"p": 0.936326,
+					"t_dtw": 158
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,470",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1470,
+						"to": 1600
+					},
+					"id": 11,
+					"p": 0.703499,
+					"t_dtw": 164
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,660"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1660
+					},
+					"id": 785,
+					"p": 0.924986,
+					"t_dtw": 174
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,660",
+						"to": "00:00:01,760"
+					},
+					"offsets": {
+						"from": 1660,
+						"to": 1760
+					},
+					"id": 1418,
+					"p": 0.996206,
+					"t_dtw": 186
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:01,760",
+						"to": "00:00:01,930"
+					},
+					"offsets": {
+						"from": 1760,
+						"to": 1930
+					},
+					"id": 1979,
+					"p": 0.992639,
+					"t_dtw": 200
+				},
+				{
+					"text": " schlimm",
+					"timestamps": {
+						"from": "00:00:01,930",
+						"to": "00:00:02,150"
+					},
+					"offsets": {
+						"from": 1930,
+						"to": 2150
+					},
+					"id": 48821,
+					"p": 0.993411,
+					"t_dtw": 226
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,160",
+						"to": "00:00:02,280"
+					},
+					"offsets": {
+						"from": 2160,
+						"to": 2280
+					},
+					"id": 13,
+					"p": 0.863484,
+					"t_dtw": 226
+				},
+				{
+					"text": "[_TT_114]",
+					"timestamps": {
+						"from": "00:00:02,280",
+						"to": "00:00:02,280"
+					},
+					"offsets": {
+						"from": 2280,
+						"to": 2280
+					},
+					"id": 50479,
+					"p": 0.139844,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

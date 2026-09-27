@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,600"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2600
+			},
+			"text": " nicht für komplett idiotische Sachen machen, aber ...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.979875,
+					"t_dtw": -1
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,260"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 260
+					},
+					"id": 1979,
+					"p": 0.651856,
+					"t_dtw": 20
+				},
+				{
+					"text": " für",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 430
+					},
+					"id": 2959,
+					"p": 0.982221,
+					"t_dtw": 36
+				},
+				{
+					"text": " komplett",
+					"timestamps": {
+						"from": "00:00:00,430",
+						"to": "00:00:00,820"
+					},
+					"offsets": {
+						"from": 430,
+						"to": 820
+					},
+					"id": 32261,
+					"p": 0.984826,
+					"t_dtw": 84
+				},
+				{
+					"text": " idiot",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 1140
+					},
+					"id": 14270,
+					"p": 0.9535,
+					"t_dtw": 124
+				},
+				{
+					"text": "ische",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1400
+					},
+					"id": 7864,
+					"p": 0.9964,
+					"t_dtw": 146
+				},
+				{
+					"text": " Sachen",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1740
+					},
+					"id": 26074,
+					"p": 0.989178,
+					"t_dtw": 170
+				},
+				{
+					"text": " machen",
+					"timestamps": {
+						"from": "00:00:01,740",
+						"to": "00:00:01,890"
+					},
+					"offsets": {
+						"from": 1740,
+						"to": 1890
+					},
+					"id": 7069,
+					"p": 0.972233,
+					"t_dtw": 196
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,910",
+						"to": "00:00:01,960"
+					},
+					"offsets": {
+						"from": 1910,
+						"to": 1960
+					},
+					"id": 11,
+					"p": 0.844823,
+					"t_dtw": 212
+				},
+				{
+					"text": " aber",
+					"timestamps": {
+						"from": "00:00:01,960",
+						"to": "00:00:02,440"
+					},
+					"offsets": {
+						"from": 1960,
+						"to": 2440
+					},
+					"id": 4340,
+					"p": 0.811361,
+					"t_dtw": 236
+				},
+				{
+					"text": " ...",
+					"timestamps": {
+						"from": "00:00:02,590",
+						"to": "00:00:02,590"
+					},
+					"offsets": {
+						"from": 2590,
+						"to": 2590
+					},
+					"id": 1097,
+					"p": 0.409239,
+					"t_dtw": 256
+				},
+				{
+					"text": "[_TT_130]",
+					"timestamps": {
+						"from": "00:00:02,600",
+						"to": "00:00:02,600"
+					},
+					"offsets": {
+						"from": 2600,
+						"to": 2600
+					},
+					"id": 50495,
+					"p": 0.847606,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,283 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,880"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2880
+			},
+			"text": " Und das dritte natürlich, wenn AI kommt so an Google nicht vorbei.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.947165,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 280
+					},
+					"id": 2719,
+					"p": 0.400288,
+					"t_dtw": 24
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 520
+					},
+					"id": 1482,
+					"p": 0.944346,
+					"t_dtw": 36
+				},
+				{
+					"text": " dr",
+					"timestamps": {
+						"from": "00:00:00,580",
+						"to": "00:00:00,730"
+					},
+					"offsets": {
+						"from": 580,
+						"to": 730
+					},
+					"id": 1224,
+					"p": 0.554908,
+					"t_dtw": 52
+				},
+				{
+					"text": "itte",
+					"timestamps": {
+						"from": "00:00:00,820",
+						"to": "00:00:01,130"
+					},
+					"offsets": {
+						"from": 820,
+						"to": 1130
+					},
+					"id": 9786,
+					"p": 0.984403,
+					"t_dtw": 58
+				},
+				{
+					"text": " natürlich",
+					"timestamps": {
+						"from": "00:00:01,130",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1130,
+						"to": 2000
+					},
+					"id": 8762,
+					"p": 0.737648,
+					"t_dtw": 98
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,040"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2040
+					},
+					"id": 11,
+					"p": 0.349355,
+					"t_dtw": 114
+				},
+				{
+					"text": " wenn",
+					"timestamps": {
+						"from": "00:00:02,040",
+						"to": "00:00:02,130"
+					},
+					"offsets": {
+						"from": 2040,
+						"to": 2130
+					},
+					"id": 4797,
+					"p": 0.880988,
+					"t_dtw": 136
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:02,130",
+						"to": "00:00:02,170"
+					},
+					"offsets": {
+						"from": 2130,
+						"to": 2170
+					},
+					"id": 7318,
+					"p": 0.694131,
+					"t_dtw": 162
+				},
+				{
+					"text": " kommt",
+					"timestamps": {
+						"from": "00:00:02,170",
+						"to": "00:00:02,280"
+					},
+					"offsets": {
+						"from": 2170,
+						"to": 2280
+					},
+					"id": 10047,
+					"p": 0.609813,
+					"t_dtw": 188
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:02,280",
+						"to": "00:00:02,320"
+					},
+					"offsets": {
+						"from": 2280,
+						"to": 2320
+					},
+					"id": 370,
+					"p": 0.185079,
+					"t_dtw": 200
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:02,320",
+						"to": "00:00:02,360"
+					},
+					"offsets": {
+						"from": 2320,
+						"to": 2360
+					},
+					"id": 364,
+					"p": 0.949629,
+					"t_dtw": 210
+				},
+				{
+					"text": " Google",
+					"timestamps": {
+						"from": "00:00:02,360",
+						"to": "00:00:02,500"
+					},
+					"offsets": {
+						"from": 2360,
+						"to": 2500
+					},
+					"id": 3329,
+					"p": 0.92774,
+					"t_dtw": 220
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:02,500",
+						"to": "00:00:02,610"
+					},
+					"offsets": {
+						"from": 2500,
+						"to": 2610
+					},
+					"id": 1979,
+					"p": 0.945291,
+					"t_dtw": 242
+				},
+				{
+					"text": " vorbei",
+					"timestamps": {
+						"from": "00:00:02,610",
+						"to": "00:00:02,750"
+					},
+					"offsets": {
+						"from": 2610,
+						"to": 2750
+					},
+					"id": 38881,
+					"p": 0.987489,
+					"t_dtw": 268
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,750",
+						"to": "00:00:02,840"
+					},
+					"offsets": {
+						"from": 2750,
+						"to": 2840
+					},
+					"id": 13,
+					"p": 0.458251,
+					"t_dtw": 286
+				},
+				{
+					"text": "[_TT_144]",
+					"timestamps": {
+						"from": "00:00:02,880",
+						"to": "00:00:02,880"
+					},
+					"offsets": {
+						"from": 2880,
+						"to": 2880
+					},
+					"id": 50508,
+					"p": 0.0475878,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

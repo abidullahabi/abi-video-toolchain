@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,540"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 540
+			},
+			"text": " Das ist Quatsch.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.919987,
+					"t_dtw": -1
+				},
+				{
+					"text": " Das",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 100
+					},
+					"id": 2846,
+					"p": 0.537034,
+					"t_dtw": 16
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 200
+					},
+					"id": 1418,
+					"p": 0.993226,
+					"t_dtw": 24
+				},
+				{
+					"text": " Qu",
+					"timestamps": {
+						"from": "00:00:00,260",
+						"to": "00:00:00,260"
+					},
+					"offsets": {
+						"from": 260,
+						"to": 260
+					},
+					"id": 2326,
+					"p": 0.98025,
+					"t_dtw": 36
+				},
+				{
+					"text": "ats",
+					"timestamps": {
+						"from": "00:00:00,260",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 260,
+						"to": 360
+					},
+					"id": 1720,
+					"p": 0.999899,
+					"t_dtw": 48
+				},
+				{
+					"text": "ch",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,410"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 410
+					},
+					"id": 339,
+					"p": 0.999937,
+					"t_dtw": 52
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,410",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 410,
+						"to": 520
+					},
+					"id": 13,
+					"p": 0.880002,
+					"t_dtw": 52
+				},
+				{
+					"text": "[_TT_27]",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 540
+					},
+					"id": 50392,
+					"p": 0.234179,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

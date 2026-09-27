@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2080
+			},
+			"text": " Es gibt kein beschissigeres Gefühl als",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.954037,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 130
+					},
+					"id": 2313,
+					"p": 0.877167,
+					"t_dtw": 16
+				},
+				{
+					"text": " gibt",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 400
+					},
+					"id": 6089,
+					"p": 0.998203,
+					"t_dtw": 30
+				},
+				{
+					"text": " kein",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 670
+					},
+					"id": 13424,
+					"p": 0.98326,
+					"t_dtw": 48
+				},
+				{
+					"text": " besch",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:01,010"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 1010
+					},
+					"id": 17498,
+					"p": 0.895594,
+					"t_dtw": 72
+				},
+				{
+					"text": "iss",
+					"timestamps": {
+						"from": "00:00:01,010",
+						"to": "00:00:01,210"
+					},
+					"offsets": {
+						"from": 1010,
+						"to": 1210
+					},
+					"id": 891,
+					"p": 0.441962,
+					"t_dtw": 82
+				},
+				{
+					"text": "iger",
+					"timestamps": {
+						"from": "00:00:01,280",
+						"to": "00:00:01,470"
+					},
+					"offsets": {
+						"from": 1280,
+						"to": 1470
+					},
+					"id": 4810,
+					"p": 0.281377,
+					"t_dtw": 92
+				},
+				{
+					"text": "es",
+					"timestamps": {
+						"from": "00:00:01,580",
+						"to": "00:00:01,610"
+					},
+					"offsets": {
+						"from": 1580,
+						"to": 1610
+					},
+					"id": 279,
+					"p": 0.988574,
+					"t_dtw": 106
+				},
+				{
+					"text": " Gefühl",
+					"timestamps": {
+						"from": "00:00:01,610",
+						"to": "00:00:01,890"
+					},
+					"offsets": {
+						"from": 1610,
+						"to": 1890
+					},
+					"id": 29715,
+					"p": 0.96916,
+					"t_dtw": 134
+				},
+				{
+					"text": " als",
+					"timestamps": {
+						"from": "00:00:02,060",
+						"to": "00:00:02,060"
+					},
+					"offsets": {
+						"from": 2060,
+						"to": 2060
+					},
+					"id": 3907,
+					"p": 0.739567,
+					"t_dtw": 184
+				},
+				{
+					"text": "[_TT_104]",
+					"timestamps": {
+						"from": "00:00:02,080",
+						"to": "00:00:02,080"
+					},
+					"offsets": {
+						"from": 2080,
+						"to": 2080
+					},
+					"id": 50469,
+					"p": 0.373784,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

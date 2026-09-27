@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,600"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1600
+			},
+			"text": " Auch du ein Lutscher.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.955314,
+					"t_dtw": -1
+				},
+				{
+					"text": " Auch",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 370
+					},
+					"id": 13382,
+					"p": 0.59592,
+					"t_dtw": 22
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 500
+					},
+					"id": 1581,
+					"p": 0.929601,
+					"t_dtw": 42
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,830"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 830
+					},
+					"id": 1343,
+					"p": 0.790067,
+					"t_dtw": 90
+				},
+				{
+					"text": " L",
+					"timestamps": {
+						"from": "00:00:00,830",
+						"to": "00:00:00,910"
+					},
+					"offsets": {
+						"from": 830,
+						"to": 910
+					},
+					"id": 441,
+					"p": 0.916768,
+					"t_dtw": 124
+				},
+				{
+					"text": "uts",
+					"timestamps": {
+						"from": "00:00:00,910",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 910,
+						"to": 1200
+					},
+					"id": 3648,
+					"p": 0.993854,
+					"t_dtw": 132
+				},
+				{
+					"text": "cher",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1460
+					},
+					"id": 6759,
+					"p": 0.998426,
+					"t_dtw": 146
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,590",
+						"to": "00:00:01,590"
+					},
+					"offsets": {
+						"from": 1590,
+						"to": 1590
+					},
+					"id": 13,
+					"p": 0.563469,
+					"t_dtw": 156
+				},
+				{
+					"text": "[_TT_80]",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1600
+					},
+					"id": 50445,
+					"p": 0.521332,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

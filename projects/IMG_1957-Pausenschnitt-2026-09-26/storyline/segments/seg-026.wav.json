@@ -1,0 +1,129 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,580"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 580
+			},
+			"text": " Es braucht Zeit.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.914075,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,030",
+						"to": "00:00:00,070"
+					},
+					"offsets": {
+						"from": 30,
+						"to": 70
+					},
+					"id": 2313,
+					"p": 0.958903,
+					"t_dtw": 14
+				},
+				{
+					"text": " braucht",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,310"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 310
+					},
+					"id": 22623,
+					"p": 0.970829,
+					"t_dtw": 32
+				},
+				{
+					"text": " Zeit",
+					"timestamps": {
+						"from": "00:00:00,380",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 380,
+						"to": 460
+					},
+					"id": 9394,
+					"p": 0.995558,
+					"t_dtw": 56
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,460",
+						"to": "00:00:00,550"
+					},
+					"offsets": {
+						"from": 460,
+						"to": 550
+					},
+					"id": 13,
+					"p": 0.803544,
+					"t_dtw": 56
+				},
+				{
+					"text": "[_TT_29]",
+					"timestamps": {
+						"from": "00:00:00,580",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 580,
+						"to": 580
+					},
+					"id": 50394,
+					"p": 0.424554,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

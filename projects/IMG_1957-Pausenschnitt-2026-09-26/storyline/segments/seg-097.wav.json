@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1000
+			},
+			"text": " Und das ist auch die...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.979882,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,230"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 230
+					},
+					"id": 2719,
+					"p": 0.823823,
+					"t_dtw": 10
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,230",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 230,
+						"to": 450
+					},
+					"id": 1482,
+					"p": 0.997071,
+					"t_dtw": 24
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,460",
+						"to": "00:00:00,690"
+					},
+					"offsets": {
+						"from": 460,
+						"to": 690
+					},
+					"id": 1418,
+					"p": 0.993527,
+					"t_dtw": 32
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 840
+					},
+					"id": 2168,
+					"p": 0.99806,
+					"t_dtw": 46
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:00,990"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 990
+					},
+					"id": 978,
+					"p": 0.926693,
+					"t_dtw": 58
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:00,990"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 990
+					},
+					"id": 485,
+					"p": 0.0785351,
+					"t_dtw": 82
+				},
+				{
+					"text": "[_TT_50]",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1000
+					},
+					"id": 50415,
+					"p": 0.933358,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

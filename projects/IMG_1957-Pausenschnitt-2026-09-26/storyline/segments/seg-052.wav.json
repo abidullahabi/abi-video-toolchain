@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,360"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2360
+			},
+			"text": " mich auf dem Weg viele Dinge auch hätte vermeiden können.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.959358,
+					"t_dtw": -1
+				},
+				{
+					"text": " mich",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 200
+					},
+					"id": 6031,
+					"p": 0.784788,
+					"t_dtw": 22
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,340"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 340
+					},
+					"id": 2501,
+					"p": 0.981008,
+					"t_dtw": 38
+				},
+				{
+					"text": " dem",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 500
+					},
+					"id": 1371,
+					"p": 0.971706,
+					"t_dtw": 48
+				},
+				{
+					"text": " Weg",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 650
+					},
+					"id": 18919,
+					"p": 0.992881,
+					"t_dtw": 64
+				},
+				{
+					"text": " viele",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 890
+					},
+					"id": 9693,
+					"p": 0.708466,
+					"t_dtw": 90
+				},
+				{
+					"text": " Dinge",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 1120
+					},
+					"id": 25102,
+					"p": 0.994884,
+					"t_dtw": 110
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,250"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1250
+					},
+					"id": 2168,
+					"p": 0.887415,
+					"t_dtw": 130
+				},
+				{
+					"text": " hätte",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1560
+					},
+					"id": 20041,
+					"p": 0.989442,
+					"t_dtw": 154
+				},
+				{
+					"text": " verme",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,820"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1820
+					},
+					"id": 40064,
+					"p": 0.970728,
+					"t_dtw": 178
+				},
+				{
+					"text": "iden",
+					"timestamps": {
+						"from": "00:00:01,820",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1820,
+						"to": 1990
+					},
+					"id": 4380,
+					"p": 0.999947,
+					"t_dtw": 196
+				},
+				{
+					"text": " können",
+					"timestamps": {
+						"from": "00:00:02,010",
+						"to": "00:00:02,230"
+					},
+					"offsets": {
+						"from": 2010,
+						"to": 2230
+					},
+					"id": 6310,
+					"p": 0.996843,
+					"t_dtw": 220
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,330",
+						"to": "00:00:02,330"
+					},
+					"offsets": {
+						"from": 2330,
+						"to": 2330
+					},
+					"id": 13,
+					"p": 0.906691,
+					"t_dtw": 230
+				},
+				{
+					"text": "[_TT_118]",
+					"timestamps": {
+						"from": "00:00:02,360",
+						"to": "00:00:02,360"
+					},
+					"offsets": {
+						"from": 2360,
+						"to": 2360
+					},
+					"id": 50483,
+					"p": 0.0688499,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

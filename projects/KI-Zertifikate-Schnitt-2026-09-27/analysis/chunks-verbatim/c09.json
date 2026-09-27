@@ -1,0 +1,325 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,520"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5520
+			},
+			"text": " Es gibt jetzt zig verschiedene Kurse, es gibt jetzt zig verschiedene Kurse zu dem Thema",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.895994,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 280
+					},
+					"id": 2313,
+					"p": 0.933276,
+					"t_dtw": 20
+				},
+				{
+					"text": " gibt",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 850
+					},
+					"id": 6089,
+					"p": 0.997059,
+					"t_dtw": 30
+				},
+				{
+					"text": " jetzt",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 1420
+					},
+					"id": 4354,
+					"p": 0.295408,
+					"t_dtw": 40
+				},
+				{
+					"text": " zig",
+					"timestamps": {
+						"from": "00:00:01,840",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1840,
+						"to": 2000
+					},
+					"id": 38290,
+					"p": 0.978453,
+					"t_dtw": 72
+				},
+				{
+					"text": " verschiedene",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:03,700"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 3700
+					},
+					"id": 35411,
+					"p": 0.990373,
+					"t_dtw": 108
+				},
+				{
+					"text": " Kur",
+					"timestamps": {
+						"from": "00:00:03,760",
+						"to": "00:00:04,160"
+					},
+					"offsets": {
+						"from": 3760,
+						"to": 4160
+					},
+					"id": 16481,
+					"p": 0.80542,
+					"t_dtw": 132
+				},
+				{
+					"text": "se",
+					"timestamps": {
+						"from": "00:00:04,220",
+						"to": "00:00:04,480"
+					},
+					"offsets": {
+						"from": 4220,
+						"to": 4480
+					},
+					"id": 405,
+					"p": 0.93041,
+					"t_dtw": 150
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:04,480",
+						"to": "00:00:04,480"
+					},
+					"offsets": {
+						"from": 4480,
+						"to": 4480
+					},
+					"id": 11,
+					"p": 0.145396,
+					"t_dtw": 150
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:04,480",
+						"to": "00:00:04,480"
+					},
+					"offsets": {
+						"from": 4480,
+						"to": 4480
+					},
+					"id": 785,
+					"p": 0.667143,
+					"t_dtw": 190
+				},
+				{
+					"text": " gibt",
+					"timestamps": {
+						"from": "00:00:04,480",
+						"to": "00:00:04,480"
+					},
+					"offsets": {
+						"from": 4480,
+						"to": 4480
+					},
+					"id": 6089,
+					"p": 0.998955,
+					"t_dtw": 200
+				},
+				{
+					"text": " jetzt",
+					"timestamps": {
+						"from": "00:00:04,480",
+						"to": "00:00:04,490"
+					},
+					"offsets": {
+						"from": 4480,
+						"to": 4490
+					},
+					"id": 4354,
+					"p": 0.932878,
+					"t_dtw": 214
+				},
+				{
+					"text": " zig",
+					"timestamps": {
+						"from": "00:00:04,490",
+						"to": "00:00:04,490"
+					},
+					"offsets": {
+						"from": 4490,
+						"to": 4490
+					},
+					"id": 38290,
+					"p": 0.984495,
+					"t_dtw": 240
+				},
+				{
+					"text": " verschiedene",
+					"timestamps": {
+						"from": "00:00:04,490",
+						"to": "00:00:04,510"
+					},
+					"offsets": {
+						"from": 4490,
+						"to": 4510
+					},
+					"id": 35411,
+					"p": 0.849737,
+					"t_dtw": 406
+				},
+				{
+					"text": " Kur",
+					"timestamps": {
+						"from": "00:00:04,510",
+						"to": "00:00:04,510"
+					},
+					"offsets": {
+						"from": 4510,
+						"to": 4510
+					},
+					"id": 16481,
+					"p": 0.846483,
+					"t_dtw": 436
+				},
+				{
+					"text": "se",
+					"timestamps": {
+						"from": "00:00:04,510",
+						"to": "00:00:04,540"
+					},
+					"offsets": {
+						"from": 4510,
+						"to": 4540
+					},
+					"id": 405,
+					"p": 0.999487,
+					"t_dtw": 450
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:04,670",
+						"to": "00:00:04,750"
+					},
+					"offsets": {
+						"from": 4670,
+						"to": 4750
+					},
+					"id": 2164,
+					"p": 0.791738,
+					"t_dtw": 470
+				},
+				{
+					"text": " dem",
+					"timestamps": {
+						"from": "00:00:04,750",
+						"to": "00:00:05,030"
+					},
+					"offsets": {
+						"from": 4750,
+						"to": 5030
+					},
+					"id": 1371,
+					"p": 0.994918,
+					"t_dtw": 482
+				},
+				{
+					"text": " Thema",
+					"timestamps": {
+						"from": "00:00:05,030",
+						"to": "00:00:05,250"
+					},
+					"offsets": {
+						"from": 5030,
+						"to": 5250
+					},
+					"id": 16306,
+					"p": 0.991912,
+					"t_dtw": 516
+				},
+				{
+					"text": "[_TT_276]",
+					"timestamps": {
+						"from": "00:00:05,520",
+						"to": "00:00:05,520"
+					},
+					"offsets": {
+						"from": 5520,
+						"to": 5520
+					},
+					"id": 50641,
+					"p": 0.0646822,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

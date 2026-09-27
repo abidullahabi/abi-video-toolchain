@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,340"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1340
+			},
+			"text": " Ich sag dir ehrlich, was soll ich machen?",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.961947,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 100
+					},
+					"id": 3141,
+					"p": 0.91244,
+					"t_dtw": 12
+				},
+				{
+					"text": " sag",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 200
+					},
+					"id": 15274,
+					"p": 0.149579,
+					"t_dtw": 28
+				},
+				{
+					"text": " dir",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 270
+					},
+					"id": 4746,
+					"p": 0.87477,
+					"t_dtw": 40
+				},
+				{
+					"text": " ehrlich",
+					"timestamps": {
+						"from": "00:00:00,340",
+						"to": "00:00:00,550"
+					},
+					"offsets": {
+						"from": 340,
+						"to": 550
+					},
+					"id": 40872,
+					"p": 0.933353,
+					"t_dtw": 58
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,550",
+						"to": "00:00:00,590"
+					},
+					"offsets": {
+						"from": 550,
+						"to": 590
+					},
+					"id": 11,
+					"p": 0.780556,
+					"t_dtw": 74
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,640"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 640
+					},
+					"id": 390,
+					"p": 0.986834,
+					"t_dtw": 88
+				},
+				{
+					"text": " soll",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 860
+					},
+					"id": 7114,
+					"p": 0.994562,
+					"t_dtw": 98
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,860",
+						"to": "00:00:00,960"
+					},
+					"offsets": {
+						"from": 860,
+						"to": 960
+					},
+					"id": 1893,
+					"p": 0.997668,
+					"t_dtw": 108
+				},
+				{
+					"text": " machen",
+					"timestamps": {
+						"from": "00:00:00,960",
+						"to": "00:00:01,170"
+					},
+					"offsets": {
+						"from": 960,
+						"to": 1170
+					},
+					"id": 7069,
+					"p": 0.997979,
+					"t_dtw": 132
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:01,170",
+						"to": "00:00:01,310"
+					},
+					"offsets": {
+						"from": 1170,
+						"to": 1310
+					},
+					"id": 30,
+					"p": 0.909026,
+					"t_dtw": 132
+				},
+				{
+					"text": "[_TT_67]",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1340
+					},
+					"id": 50432,
+					"p": 0.170053,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

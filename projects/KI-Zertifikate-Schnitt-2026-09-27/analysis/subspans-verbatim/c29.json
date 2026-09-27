@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,960"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 960
+			},
+			"text": " Mein Ohr, mein Ohr.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.624435,
+					"t_dtw": -1
+				},
+				{
+					"text": " Mein",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 200
+					},
+					"id": 18382,
+					"p": 0.542166,
+					"t_dtw": 36
+				},
+				{
+					"text": " Oh",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 300
+					},
+					"id": 876,
+					"p": 0.0387222,
+					"t_dtw": 50
+				},
+				{
+					"text": "r",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,340"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 340
+					},
+					"id": 81,
+					"p": 0.491073,
+					"t_dtw": 52
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,350",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 350,
+						"to": 450
+					},
+					"id": 11,
+					"p": 0.762278,
+					"t_dtw": 64
+				},
+				{
+					"text": " mein",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 650
+					},
+					"id": 10777,
+					"p": 0.651616,
+					"t_dtw": 68
+				},
+				{
+					"text": " Oh",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 750
+					},
+					"id": 876,
+					"p": 0.963409,
+					"t_dtw": 80
+				},
+				{
+					"text": "r",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:00,800"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 800
+					},
+					"id": 81,
+					"p": 0.990681,
+					"t_dtw": 84
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 940
+					},
+					"id": 13,
+					"p": 0.637454,
+					"t_dtw": 94
+				},
+				{
+					"text": "[_TT_48]",
+					"timestamps": {
+						"from": "00:00:00,960",
+						"to": "00:00:00,960"
+					},
+					"offsets": {
+						"from": 960,
+						"to": 960
+					},
+					"id": 50413,
+					"p": 0.117257,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

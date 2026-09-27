@@ -1,0 +1,115 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,760"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1760
+			},
+			"text": " Mit 20...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.917417,
+					"t_dtw": -1
+				},
+				{
+					"text": " Mit",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,490"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 490
+					},
+					"id": 10821,
+					"p": 0.451193,
+					"t_dtw": 22
+				},
+				{
+					"text": " 20",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:01,480"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 1480
+					},
+					"id": 945,
+					"p": 0.990294,
+					"t_dtw": 140
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1600
+					},
+					"id": 485,
+					"p": 0.568042,
+					"t_dtw": 174
+				},
+				{
+					"text": "[_TT_88]",
+					"timestamps": {
+						"from": "00:00:01,760",
+						"to": "00:00:01,760"
+					},
+					"offsets": {
+						"from": 1760,
+						"to": 1760
+					},
+					"id": 50453,
+					"p": 0.979553,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

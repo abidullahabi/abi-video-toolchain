@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,300"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1300
+			},
+			"text": " Ich dachte immer bei mir...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.907818,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,020",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 20,
+						"to": 180
+					},
+					"id": 3141,
+					"p": 0.942148,
+					"t_dtw": 20
+				},
+				{
+					"text": " dachte",
+					"timestamps": {
+						"from": "00:00:00,260",
+						"to": "00:00:00,570"
+					},
+					"offsets": {
+						"from": 260,
+						"to": 570
+					},
+					"id": 39775,
+					"p": 0.998134,
+					"t_dtw": 46
+				},
+				{
+					"text": " immer",
+					"timestamps": {
+						"from": "00:00:00,570",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 570,
+						"to": 890
+					},
+					"id": 5578,
+					"p": 0.99798,
+					"t_dtw": 66
+				},
+				{
+					"text": " bei",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 1080
+					},
+					"id": 4643,
+					"p": 0.965626,
+					"t_dtw": 82
+				},
+				{
+					"text": " mir",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1120
+					},
+					"id": 3149,
+					"p": 0.997942,
+					"t_dtw": 104
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:01,290",
+						"to": "00:00:01,290"
+					},
+					"offsets": {
+						"from": 1290,
+						"to": 1290
+					},
+					"id": 485,
+					"p": 0.408103,
+					"t_dtw": 126
+				},
+				{
+					"text": "[_TT_65]",
+					"timestamps": {
+						"from": "00:00:01,300",
+						"to": "00:00:01,300"
+					},
+					"offsets": {
+						"from": 1300,
+						"to": 1300
+					},
+					"id": 50430,
+					"p": 0.796522,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

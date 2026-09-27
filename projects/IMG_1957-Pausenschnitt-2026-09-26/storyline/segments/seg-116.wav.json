@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,840"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 840
+			},
+			"text": " Lutscher sind.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.900569,
+					"t_dtw": -1
+				},
+				{
+					"text": " L",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,060"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 60
+					},
+					"id": 441,
+					"p": 0.498597,
+					"t_dtw": 22
+				},
+				{
+					"text": "uts",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 250
+					},
+					"id": 3648,
+					"p": 0.993239,
+					"t_dtw": 32
+				},
+				{
+					"text": "cher",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 540
+					},
+					"id": 6759,
+					"p": 0.990635,
+					"t_dtw": 40
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 650
+					},
+					"id": 3290,
+					"p": 0.989529,
+					"t_dtw": 68
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,830",
+						"to": "00:00:00,830"
+					},
+					"offsets": {
+						"from": 830,
+						"to": 830
+					},
+					"id": 13,
+					"p": 0.487389,
+					"t_dtw": 80
+				},
+				{
+					"text": "[_TT_42]",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 840
+					},
+					"id": 50407,
+					"p": 0.762679,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

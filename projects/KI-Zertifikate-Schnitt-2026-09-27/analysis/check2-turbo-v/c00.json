@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,180"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2180
+			},
+			"text": " Meiner Meinung nach solltest du das machen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.297089,
+					"t_dtw": -1
+				},
+				{
+					"text": " Me",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,110"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 110
+					},
+					"id": 1923,
+					"p": 0.404302,
+					"t_dtw": 44
+				},
+				{
+					"text": "iner",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 330
+					},
+					"id": 4564,
+					"p": 0.982316,
+					"t_dtw": 56
+				},
+				{
+					"text": " Meinung",
+					"timestamps": {
+						"from": "00:00:00,330",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 330,
+						"to": 720
+					},
+					"id": 36519,
+					"p": 0.95053,
+					"t_dtw": 76
+				},
+				{
+					"text": " nach",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 940
+					},
+					"id": 5168,
+					"p": 0.998445,
+					"t_dtw": 114
+				},
+				{
+					"text": " soll",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1100
+					},
+					"id": 7114,
+					"p": 0.84215,
+					"t_dtw": 168
+				},
+				{
+					"text": "test",
+					"timestamps": {
+						"from": "00:00:01,160",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1160,
+						"to": 1180
+					},
+					"id": 31636,
+					"p": 0.840401,
+					"t_dtw": 178
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:01,490",
+						"to": "00:00:01,490"
+					},
+					"offsets": {
+						"from": 1490,
+						"to": 1490
+					},
+					"id": 1581,
+					"p": 0.985478,
+					"t_dtw": 186
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:01,580",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 1580,
+						"to": 1650
+					},
+					"id": 1482,
+					"p": 0.48204,
+					"t_dtw": 198
+				},
+				{
+					"text": " machen",
+					"timestamps": {
+						"from": "00:00:01,650",
+						"to": "00:00:01,930"
+					},
+					"offsets": {
+						"from": 1650,
+						"to": 1930
+					},
+					"id": 7069,
+					"p": 0.995676,
+					"t_dtw": 216
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,150"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2150
+					},
+					"id": 13,
+					"p": 0.994529,
+					"t_dtw": 216
+				},
+				{
+					"text": "[_TT_109]",
+					"timestamps": {
+						"from": "00:00:02,180",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 2180,
+						"to": 2180
+					},
+					"id": 50474,
+					"p": 0.386235,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

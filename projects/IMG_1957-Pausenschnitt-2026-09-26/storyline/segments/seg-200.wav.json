@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,200"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2200
+			},
+			"text": " deinen 20ern auf eine fette Summe gucken und",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.987215,
+					"t_dtw": -1
+				},
+				{
+					"text": " deinen",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 250
+					},
+					"id": 49362,
+					"p": 0.305001,
+					"t_dtw": 18
+				},
+				{
+					"text": " 20",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 520
+					},
+					"id": 945,
+					"p": 0.414727,
+					"t_dtw": 50
+				},
+				{
+					"text": "ern",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,660"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 660
+					},
+					"id": 1248,
+					"p": 0.977113,
+					"t_dtw": 64
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 770
+					},
+					"id": 2501,
+					"p": 0.931742,
+					"t_dtw": 80
+				},
+				{
+					"text": " eine",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 940
+					},
+					"id": 3018,
+					"p": 0.981223,
+					"t_dtw": 92
+				},
+				{
+					"text": " f",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1020
+					},
+					"id": 283,
+					"p": 0.991695,
+					"t_dtw": 108
+				},
+				{
+					"text": "ette",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1200
+					},
+					"id": 3007,
+					"p": 0.999441,
+					"t_dtw": 120
+				},
+				{
+					"text": " Sum",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1340
+					},
+					"id": 8626,
+					"p": 0.990845,
+					"t_dtw": 136
+				},
+				{
+					"text": "me",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,430"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1430
+					},
+					"id": 1398,
+					"p": 0.999506,
+					"t_dtw": 146
+				},
+				{
+					"text": " gucken",
+					"timestamps": {
+						"from": "00:00:01,430",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1430,
+						"to": 1740
+					},
+					"id": 33135,
+					"p": 0.993652,
+					"t_dtw": 174
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:01,740",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1740,
+						"to": 2000
+					},
+					"id": 674,
+					"p": 0.980129,
+					"t_dtw": 206
+				},
+				{
+					"text": "[_TT_110]",
+					"timestamps": {
+						"from": "00:00:02,200",
+						"to": "00:00:02,200"
+					},
+					"offsets": {
+						"from": 2200,
+						"to": 2200
+					},
+					"id": 50475,
+					"p": 0.9278,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

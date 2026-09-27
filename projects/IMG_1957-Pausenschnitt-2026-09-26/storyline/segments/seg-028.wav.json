@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1060
+			},
+			"text": " Das ist ein langer Prozess.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.987156,
+					"t_dtw": -1
+				},
+				{
+					"text": " Das",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 130
+					},
+					"id": 2846,
+					"p": 0.0891319,
+					"t_dtw": 14
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 280
+					},
+					"id": 1418,
+					"p": 0.993498,
+					"t_dtw": 16
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 420
+					},
+					"id": 1343,
+					"p": 0.984769,
+					"t_dtw": 26
+				},
+				{
+					"text": " lang",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 530
+					},
+					"id": 2265,
+					"p": 0.998123,
+					"t_dtw": 40
+				},
+				{
+					"text": "er",
+					"timestamps": {
+						"from": "00:00:00,640",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 640,
+						"to": 700
+					},
+					"id": 260,
+					"p": 0.999321,
+					"t_dtw": 46
+				},
+				{
+					"text": " Pro",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 840
+					},
+					"id": 1705,
+					"p": 0.989436,
+					"t_dtw": 66
+				},
+				{
+					"text": "zess",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,910"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 910
+					},
+					"id": 37575,
+					"p": 0.999073,
+					"t_dtw": 84
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1060
+					},
+					"id": 13,
+					"p": 0.847842,
+					"t_dtw": 104
+				},
+				{
+					"text": "[_TT_53]",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1060
+					},
+					"id": 50418,
+					"p": 0.303509,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

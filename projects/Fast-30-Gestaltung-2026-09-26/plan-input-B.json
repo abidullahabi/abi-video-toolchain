@@ -1,0 +1,333 @@
+{
+ "sections": [
+  {
+   "id": "einstieg",
+   "text": "Fast 30: 10 Lektionen",
+   "start": 0,
+   "end": 7.96
+  },
+  {
+   "id": "p1",
+   "text": "1. Früh zur Therapie",
+   "start": 7.96,
+   "end": 28.49
+  },
+  {
+   "id": "p2",
+   "text": "2. Zieh früh aus",
+   "start": 28.49,
+   "end": 41.67
+  },
+  {
+   "id": "p3",
+   "text": "3. Die großen Drei",
+   "start": 41.67,
+   "end": 72.82
+  },
+  {
+   "id": "p4",
+   "text": "4. Druck raus mit 20",
+   "start": 72.82,
+   "end": 86.36
+  },
+  {
+   "id": "p5",
+   "text": "5. Glück ist kein Ziel",
+   "start": 86.36,
+   "end": 110.2
+  },
+  {
+   "id": "p6",
+   "text": "6. Keiner rettet dich",
+   "start": 110.2,
+   "end": 130.44
+  },
+  {
+   "id": "p7",
+   "text": "7. Früh investieren",
+   "start": 130.44,
+   "end": 147.66
+  },
+  {
+   "id": "p8",
+   "text": "8. Alles schriftlich",
+   "start": 147.66,
+   "end": 163.47
+  },
+  {
+   "id": "p9",
+   "text": "9. Traue niemals HR",
+   "start": 163.47,
+   "end": 165.33
+  },
+  {
+   "id": "p10",
+   "text": "10. Glaub an etwas",
+   "start": 165.33,
+   "end": 171.42
+  },
+  {
+   "id": "schluss",
+   "text": "Genieß deine 20er",
+   "start": 171.42,
+   "end": 193.467
+  }
+ ],
+ "overlays": [
+  {
+   "id": "gruss",
+   "lines": [
+    "Grüße gehen raus",
+    "an [Name]"
+   ],
+   "start": 39.12,
+   "end": 41.67,
+   "note": "Wunsch 2, Platzhalter. Kleine Indien-Flagge direkt hinter [Name] in Zeile 2 (etwa Versalhöhe, 12 px Abstand), Zeile als Ganzes inkl. Flagge auf x 540 zentriert. Zeile 1 393,7 px, Zeile 2 222,4 px + Flagge. Erscheint mit dem Schnitt 39,067 und „Am besten ziehst du …“ und bleibt bis zum H1-Morph bei „dritten“ (2,55 s statt nur bis 40,42)."
+  },
+  {
+   "id": "entscheidungen",
+   "lines": [
+    "Stadt · Umfeld · Partner"
+   ],
+   "start": 44.8,
+   "end": 67.71,
+   "parts": [
+    {
+     "text": "Stadt",
+     "active": [
+      [
+       46.21,
+       55.32
+      ]
+     ]
+    },
+    {
+     "text": "Umfeld",
+     "active": [
+      [
+       55.32,
+       62.47
+      ]
+     ]
+    },
+    {
+     "text": "Partner",
+     "active": [
+      [
+       62.47,
+       67.71
+      ]
+     ]
+    }
+   ],
+   "note": "Einzige gesprochene Aufzählung als H2. 513,7 px. Erscheint bei „drei wichtigsten Entscheidungen“, alle drei stehen sofort, hellblau wandert mit „Erstens“ / „Zweitens“ / „Und der dritte“. „Wohnort · Umfeld · Partner“ (586,9 px) war zu breit."
+  },
+  {
+   "id": "beziehungen-h2",
+   "lines": [
+    "Ein paar Ex zu viel",
+    "[Zusatz folgt]"
+   ],
+   "start": 67.71,
+   "end": 72.82,
+   "lineAt": [
+    67.71,
+    68.82
+   ],
+   "note": "Wunsch 1, Platzhalter. Löst die Aufzählungs-H2 direkt ab (einziger H2-zu-H2-Wechsel), Zeile 1 bei „ein paar Beziehungen“ (403,9 px), Zeile 2 bei „weil“. Zeile 2 = Zusatz, max. 560 px; Zeitpunkt ggf. an den Zusatz anpassen."
+  },
+  {
+   "id": "glaub-ergaenzung",
+   "lines": [
+    "… oder steh für etwas ein"
+   ],
+   "start": 166.34,
+   "end": 171.42,
+   "note": "Wunsch 4. Setzt die H1 „10. Glaub an etwas“ direkt nach dem gesprochenen „etwas“ fort. 559,8 px (Grenze 560), mit echtem Auslassungszeichen; mit drei Punkten 552,1 px."
+  }
+ ],
+ "notes": [
+  {
+   "id": "ziele-quatsch",
+   "start": 98.73,
+   "end": 109.333,
+   "side": "rechts",
+   "lines": [
+    {
+     "text": "Wohnung",
+     "at": 98.73,
+     "strikeAt": 106.64
+    },
+    {
+     "text": "Partnerin",
+     "at": 100.34,
+     "strikeAt": 106.74
+    },
+    {
+     "text": "Bachelor",
+     "at": 102.09,
+     "strikeAt": 106.84
+    },
+    {
+     "text": "Master",
+     "at": 103.13,
+     "strikeAt": 106.94
+    },
+    {
+     "text": "Abgabe",
+     "at": 104.61,
+     "strikeAt": 107.04
+    },
+    {
+     "text": "Nur der Weg",
+     "at": 108.06,
+     "accentWord": "Weg"
+    }
+   ]
+  },
+  {
+   "id": "retter",
+   "start": 115.54,
+   "end": 129.067,
+   "side": "rechts",
+   "lines": [
+    {
+     "text": "Ein Mentor",
+     "at": 115.54,
+     "strikeAt": 119.15
+    },
+    {
+     "text": "Eine Frau",
+     "at": 116.4,
+     "strikeAt": 119.25
+    },
+    {
+     "text": "Ein Retter",
+     "at": 117.2,
+     "strikeAt": 119.35
+    },
+    {
+     "text": "Du selbst",
+     "at": 122.82,
+     "accentWord": "Du"
+    }
+   ]
+  },
+  {
+   "id": "finger-weg",
+   "start": 138.84,
+   "end": 147.66,
+   "side": "rechts",
+   "lines": [
+    {
+     "text": "Finger weg:",
+     "at": 138.84
+    },
+    {
+     "text": "Kreditkarte",
+     "at": 139.31
+    },
+    {
+     "text": "Leasing",
+     "at": 139.66
+    },
+    {
+     "text": "Dispo",
+     "at": 139.94
+    }
+   ]
+  }
+ ],
+ "bigwords": [
+  {
+   "id": "keine-ahnung",
+   "text": "Keine Ahnung",
+   "start": 77.11,
+   "end": 78.567
+  },
+  {
+   "id": "free-pass",
+   "text": "Free Pass",
+   "start": 178.91,
+   "end": 180.55
+  }
+ ],
+ "zooms": [
+  {
+   "start": 19.6,
+   "end": 21.667,
+   "scale": 1.035
+  },
+  {
+   "start": 35.333,
+   "end": 39.067,
+   "scale": 1.045
+  },
+  {
+   "start": 56.9,
+   "end": 61.22,
+   "scale": 1.04
+  },
+  {
+   "start": 61.22,
+   "end": 62.433,
+   "scale": 1.1,
+   "punch": true
+  },
+  {
+   "start": 77.11,
+   "end": 78.567,
+   "scale": 1.08,
+   "punch": true
+  },
+  {
+   "start": 92.633,
+   "end": 96.367,
+   "scale": 1.05
+  },
+  {
+   "start": 106.64,
+   "end": 107.233,
+   "scale": 1.1,
+   "punch": true
+  },
+  {
+   "start": 123.267,
+   "end": 126.2,
+   "scale": 1.04
+  },
+  {
+   "start": 142.333,
+   "end": 146.533,
+   "scale": 1.045
+  },
+  {
+   "start": 158.867,
+   "end": 163.367,
+   "scale": 1.05
+  },
+  {
+   "start": 164.68,
+   "end": 165.1,
+   "scale": 1.12,
+   "punch": true
+  },
+  {
+   "start": 184.333,
+   "end": 189.733,
+   "scale": 1.04
+  }
+ ],
+ "outroStart": 193.467,
+ "rationale": "Grundidee: Die H1 zählt nur noch die zehn Punkte, Einstieg und Schluss mit. Alles andere tragen wenige, gezielt gesetzte Bewegungen, keine springenden Überschriften mehr.\n\n1) Die H1 morpht ruhig. Alle 12 H1 sind so formuliert, dass sie in Stufe 72 passen (gemessen: Einstieg 732,2, 1 688,1, 2 532,1, 3 616,1, 4 684,3, 5 692,3, 6 672,2, 7 640,2, 8 613,5, 9 684,3, 10 648,2, Schluss 620,3 px, alle ≤ 736). Beim Morph ändert die blaue Fläche also nur die Breite (Höhe 112, Unterkante 362 bleibt), und eine H2 steht immer bei y 382. Die H1 liegen lückenlos von 0 bis 193,467. Jede wechselt an dem Wort, das den Punkt ansagt: „Punkt“ bei 7,96 / 86,36 / 165,33, die Ordnungszahl bei „Zweitens“, „dritten“, „vierte“, „Achtens“ und „Neuntens“, „Weg Nummer 6“ bei 110,20, „Fang früh an zu investieren“ bei 130,44 und „Und nochmal zum Schluss“ bei 171,42. Fast alle Wechsel liegen bis zu 0,1 s an einem Schnitt. Drei Titel habe ich umformuliert, weil sie sonst zu breit oder mehrdeutig gewesen wären. „1. Früher in Therapie“ hätte man als „damals in Therapie“ lesen können, deshalb „1. Früh zur Therapie“.\n\n2) H2 gibt es nur für die eine gesprochene Aufzählung, die in eine Zeile passt (Punkt 3: Stadt · Umfeld · Partner, der aktive Punkt leuchtet am Wort), und für drei Wünsche: Gruß, Beziehungen und Ergänzung zu Punkt 10. Den vierten Wunsch, „Finger weg“, trägt eine Randnotiz, weil „Kreditkarte, Leasing, Dispo“ als H2-Zeile 595,6 px bräuchte. Als senkrechte Liste passt es dagegen sauber neben den Kopf.\n\n3) Animation statt Überschrift erzählt die Pointen:\n- Punkt 5: Wohnung, Partnerin, Bachelor, Master und Abgabe bauen sich jeweils am gesprochenen Wort auf. Bei „Alles Quatsch“ werden alle rot durchgestrichen, gestaffelt je 0,1 s, dazu ein Punch-Zoom. Darunter wächst „Nur der Weg“ mit hellblauem „Weg“.\n- Punkt 6: Ein Mentor, eine Frau, ein Retter erscheinen am Wort und werden bei „es kommt niemand“ durchgestrichen. Bei „ist schon da“ erscheint „Du selbst“.\n- Punkt 4: großes Wort „Keine Ahnung“ mit Punch.\n- Schluss: großes Wort „Free Pass“, ohne Zoom, weil die Einstellung dort sehr nah ist.\n- Punkt 3 („Lutscher“) und Punkt 9 („HR“): nur ein harter Punch-Zoom, kein weiteres Element.\nDie rote Durchstreichung kommt bewusst nur zweimal vor, damit sie ihre Wirkung behält. Deshalb wird „Finger weg“ nicht durchgestrichen.\n\n4) Freiraum geprüft. Alle drei Notizen stehen rechts, weil links neben dem Kopf nur 110 bis 190 px frei sind. Gegen source-faces.json (0,5-s-Raster) gerechnet, einschließlich Zoom-Verschiebung um den Ursprung 42 %/28 %:\n- Ziele: y 390–725, mindestens 32 px Abstand zur rechten Gesichtskante; Kopfoberkante dort ≥ 730.\n- Retter: y 390–619, mindestens 50 px.\n- Finger weg: y 390–602, mindestens 38 px.\nEmpfohlene linke Blockkante für alle drei ist x = 650; die breiteste Zeile, „Nur der Weg“ mit 272,6 px, endet dann bei 923. An Standbildern bei 105, 118 und 145 s habe ich nachgesehen: Die Notizen stehen auf der Wand über dem Kopf, Kappe und Gesicht bleiben frei. Keine H2 steht gleichzeitig mit einer Notiz oder einem großen Wort.\n\n5) Zooms: 8 langsame Fahrten (1,035–1,05, 2,1–5,4 s), jede beginnt oder endet an einem Schnitt. Sie liegen auf den stärksten gesprochenen Stellen: „Heilung braucht Zeit“, „Kinderzimmer“, der Aufbau zu „Lutscher“, die Wiederholung „Ich sage es noch einmal“, „Macht über dein eigenes Leben“, „fette Summe“, „kein mieseres Gefühl“ und „Free Pass“ beim zweiten Mal. Dazu kommen 4 Punches (1,08–1,12). Die engen Einstellungen 0–7 s, 12–19 s, 172–182 s und ab 194 s bleiben ohne Zoom. Das Outro beginnt am Schnitt 193,467 direkt vor „Weil“.",
+ "changes": "Überschriften:\n- H1: 12 Titel (Einstieg, Punkte 1–10, Schluss), also 11 Wechsel. Alle liegen lückenlos und morphen. Alle stehen in Stufe 72, damit ändert sich beim Wechsel nur die Breite.\n- H2: 4 Blöcke (Gruß, Aufzählung Punkt 3, Beziehungen, Ergänzung Punkt 10). Davon ist nur ein direkter H2-zu-H2-Wechsel (67,71 s). Es gibt keine Einstiegs-H2 und keine Pflichtzeilen.\n\nAnimationen:\n- Randnotizen: 3, alle rechts. Zwei davon werden rot durchgestrichen (8 Durchstreichungen), zwei enden mit einer Auflösungszeile mit hellblauem Akzent.\n- Große Wörter: 2.\n- Zooms: 12, davon 8 langsam und 4 Punch.\n- Outro ab 193,467 s.\n\nBewusst weggelassen:\n- Die Aufzählungen in Punkt 8 und Punkt 10 bekommen keine Einblendung.\n- „Lutscher“ bekommt nur den Punch, kein großes Wort.",
+ "openQuestions": [
+  "Beziehungs-H2: Zeile 1 lautet als Vorschlag „Ein paar Ex zu viel“ (403,9 px). Nah am Wortlaut, aber knapp an der Grenze wäre „Paar Beziehungen zu viel“ (552,2 px; großes „Paar“ kann als Paarbeziehung gelesen werden), neutral wäre „Zu viele Beziehungen“ (470,3 px). Welche Fassung, und wie lautet der Zusatz für Zeile 2 (max. 560 px)? Deren Einblendzeit 68,82 ggf. anpassen.",
+  "Gruß: Der Name fehlt noch. Zeile 2 „an [Name]“ plus Flagge muss unter 560 px bleiben. Geplant ist eine H2 unter „2. Zieh früh aus“ von 39,12 bis 41,67 s. Wäre eine Randnotiz daneben lieber?",
+  "Großes Wort „Keine Ahnung“ misst 674 px bei 100 px und passt nur bis etwa 108 px Schriftgröße in 736 px. Setzt der Renderer größer, entweder zweizeilig oder die Größe auf 100 px begrenzen. „Free Pass“ passt bis etwa 140 px (567,1 px bei 120 px).",
+  "„Finger weg: Kreditkarte / Leasing / Dispo“ ist als Randnotiz geplant statt als H2, weil die H2-Zeile zu breit wäre. Weil der Text nicht gesprochen wird, erscheinen die Zeilen im Sprechtakt ab dem Schnitt 138,833 bei „Aber wenn du jetzt mit 20 …“. Passt das so?",
+  "Punkt 8: „Versprechen · Schulden · Abmachungen“ ist mit 882,7 px als H2 zu breit, und als Notiz reicht der Platz neben dem Kopf nicht („Abmachungen“ 319,5 px, frei sind etwa 250 px). Deshalb gibt es dort nur H1 und Zoom. Möglich wäre eine kurze H2 „Freunde · Job · Geld“ (447,2 px) von 153,83 bis 156,03 s mit Hervorhebung am Wort. Gewünscht?",
+  "Die Titel für 4 („Druck raus mit 20“), 5 („Glück ist kein Ziel“) und 6 („Keiner rettet dich“) sind verdichtet und nicht wörtlich gesprochen. Sind sie so in Abdullahs Sinn? Wörtliche Fassungen („Du weißt nicht alles“, „Niemand rettet dich“) bräuchten Stufe 66 und würden die Flächenhöhe beim Morph ändern.",
+  "Die Retter-Liste „fällt“ bisher über die rote Durchstreichung. Falls der Renderer ein echtes Herabfallen der Zeilen kann, wäre das bei 119,15 s eine Alternative. Soll die Durchstreichung dann bleiben?"
+ ]
+}

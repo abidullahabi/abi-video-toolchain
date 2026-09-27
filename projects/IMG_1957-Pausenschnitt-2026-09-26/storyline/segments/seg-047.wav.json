@@ -1,0 +1,115 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,620"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 620
+			},
+			"text": " Ich hätte...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.94686,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 220
+					},
+					"id": 3141,
+					"p": 0.773272,
+					"t_dtw": 14
+				},
+				{
+					"text": " hätte",
+					"timestamps": {
+						"from": "00:00:00,230",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 230,
+						"to": 450
+					},
+					"id": 20041,
+					"p": 0.974616,
+					"t_dtw": 28
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:00,620",
+						"to": "00:00:00,620"
+					},
+					"offsets": {
+						"from": 620,
+						"to": 620
+					},
+					"id": 485,
+					"p": 0.460739,
+					"t_dtw": 60
+				},
+				{
+					"text": "[_TT_31]",
+					"timestamps": {
+						"from": "00:00:00,620",
+						"to": "00:00:00,620"
+					},
+					"offsets": {
+						"from": 620,
+						"to": 620
+					},
+					"id": 50396,
+					"p": 0.442852,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

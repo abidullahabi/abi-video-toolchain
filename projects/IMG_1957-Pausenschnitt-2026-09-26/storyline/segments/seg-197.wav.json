@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,860"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 860
+			},
+			"text": " Gleich eins bis zwei nur.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.926559,
+					"t_dtw": -1
+				},
+				{
+					"text": " Gleich",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 220
+					},
+					"id": 33858,
+					"p": 0.337779,
+					"t_dtw": 16
+				},
+				{
+					"text": " eins",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,340"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 340
+					},
+					"id": 21889,
+					"p": 0.66331,
+					"t_dtw": 34
+				},
+				{
+					"text": " bis",
+					"timestamps": {
+						"from": "00:00:00,340",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 340,
+						"to": 470
+					},
+					"id": 7393,
+					"p": 0.958096,
+					"t_dtw": 46
+				},
+				{
+					"text": " zwei",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 610
+					},
+					"id": 12002,
+					"p": 0.994897,
+					"t_dtw": 68
+				},
+				{
+					"text": " nur",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 720
+					},
+					"id": 4343,
+					"p": 0.878357,
+					"t_dtw": 84
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 840
+					},
+					"id": 13,
+					"p": 0.95625,
+					"t_dtw": 84
+				},
+				{
+					"text": "[_TT_43]",
+					"timestamps": {
+						"from": "00:00:00,860",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 860,
+						"to": 860
+					},
+					"id": 50408,
+					"p": 0.119724,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

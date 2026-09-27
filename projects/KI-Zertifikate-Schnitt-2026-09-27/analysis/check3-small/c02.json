@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3080
+			},
+			"text": " Ich wünsche Ihnen einen guten Tag.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.94859,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,090",
+						"to": "00:00:00,290"
+					},
+					"offsets": {
+						"from": 90,
+						"to": 290
+					},
+					"id": 3141,
+					"p": 0.0463808,
+					"t_dtw": 302
+				},
+				{
+					"text": " wün",
+					"timestamps": {
+						"from": "00:00:00,290",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 290,
+						"to": 580
+					},
+					"id": 30841,
+					"p": 0.0358209,
+					"t_dtw": 302
+				},
+				{
+					"text": "sche",
+					"timestamps": {
+						"from": "00:00:00,580",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 580,
+						"to": 950
+					},
+					"id": 12287,
+					"p": 0.894285,
+					"t_dtw": 302
+				},
+				{
+					"text": " Ihnen",
+					"timestamps": {
+						"from": "00:00:01,010",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 1010,
+						"to": 1420
+					},
+					"id": 17280,
+					"p": 0.150819,
+					"t_dtw": 302
+				},
+				{
+					"text": " einen",
+					"timestamps": {
+						"from": "00:00:01,550",
+						"to": "00:00:01,940"
+					},
+					"offsets": {
+						"from": 1550,
+						"to": 1940
+					},
+					"id": 4891,
+					"p": 0.14838,
+					"t_dtw": 302
+				},
+				{
+					"text": " guten",
+					"timestamps": {
+						"from": "00:00:01,950",
+						"to": "00:00:02,310"
+					},
+					"offsets": {
+						"from": 1950,
+						"to": 2310
+					},
+					"id": 31277,
+					"p": 0.225523,
+					"t_dtw": 302
+				},
+				{
+					"text": " Tag",
+					"timestamps": {
+						"from": "00:00:02,550",
+						"to": "00:00:02,720"
+					},
+					"offsets": {
+						"from": 2550,
+						"to": 2720
+					},
+					"id": 11204,
+					"p": 0.567119,
+					"t_dtw": 302
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,740",
+						"to": "00:00:03,050"
+					},
+					"offsets": {
+						"from": 2740,
+						"to": 3050
+					},
+					"id": 13,
+					"p": 0.205015,
+					"t_dtw": 302
+				},
+				{
+					"text": "[_TT_154]",
+					"timestamps": {
+						"from": "00:00:03,080",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 3080,
+						"to": 3080
+					},
+					"id": 50518,
+					"p": 0.165658,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

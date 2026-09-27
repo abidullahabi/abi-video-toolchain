@@ -1,0 +1,3266 @@
+{
+  "designVersion": "1.12",
+  "title": "Bewerbungsgespräch vorbereiten",
+  "duration": 91.533,
+  "h1Background": "#1668b5",
+  "captionAccent": "#5eb3f5",
+  "captionFontSize": 56,
+  "captionTop": 1280,
+  "captionMaxWords": 4,
+  "captionMaxWidth": 620,
+  "captionPlacementRanges": [
+    {
+      "start": 0,
+      "end": 46.455,
+      "top": 1304,
+      "basis": "DESIGN.md 7: bei naher, tiefer Einstellung darf die Zeile etwas tiefer sitzen. Kinn bis y = 1307 (25,5 / 34,0 / 43,5 s); Wechsel auf 1280 am Schnitt 46,455 s, danach sitzt der Kopf höher."
+    }
+  ],
+  "sections": [
+    {
+      "id": "einstieg",
+      "text": "Bewerbungsgespräch",
+      "start": 0,
+      "end": 14.86,
+      "fontSize": 66
+    },
+    {
+      "id": "vorab",
+      "text": "Vorab: Spickzettel",
+      "start": 14.86,
+      "end": 29.37,
+      "fontSize": 72
+    },
+    {
+      "id": "punkt1",
+      "text": "1. Selbstvorstellung",
+      "start": 29.37,
+      "end": 51.07,
+      "fontSize": 72
+    },
+    {
+      "id": "punkt2",
+      "text": "2. Das Unternehmen",
+      "start": 51.07,
+      "end": 63.2,
+      "fontSize": 72
+    },
+    {
+      "id": "gegenueber",
+      "text": "Dein Gesprächspartner",
+      "start": 63.24,
+      "end": 69.2,
+      "fontSize": 66
+    },
+    {
+      "id": "punkt3",
+      "text": "3. Eigene Rückfragen",
+      "start": 69.22,
+      "end": 81.9,
+      "fontSize": 72
+    },
+    {
+      "id": "punkt4",
+      "text": "4. Kritische Momente",
+      "start": 81.91,
+      "end": 85,
+      "fontSize": 72
+    }
+  ],
+  "overlays": [
+    {
+      "id": "vorbereiten-h2",
+      "kind": "support",
+      "lines": [
+        "So bereitest du dich vor"
+      ],
+      "start": 0,
+      "end": 6.35,
+      "fontSize": 46,
+      "top": 375
+    },
+    {
+      "id": "vier-h2",
+      "kind": "support",
+      "lines": [
+        "Immer dieselben 4 Dinge"
+      ],
+      "start": 12.45,
+      "end": 14.8,
+      "fontSize": 46,
+      "top": 375
+    },
+    {
+      "id": "app-h2",
+      "kind": "support",
+      "lines": [
+        "Digital in einer App"
+      ],
+      "start": 17.7,
+      "end": 21.8,
+      "fontSize": 46,
+      "top": 382
+    },
+    {
+      "id": "ueben-h2",
+      "kind": "support",
+      "lines": [
+        "Vorher üben!"
+      ],
+      "start": 34.7,
+      "end": 36.35,
+      "fontSize": 46,
+      "top": 382,
+      "transitionOut": "cut"
+    },
+    {
+      "id": "minuten-h2",
+      "kind": "support",
+      "lines": [
+        "3 bis 7 Minuten"
+      ],
+      "start": 36.35,
+      "end": 38.3,
+      "fontSize": 46,
+      "top": 382,
+      "transitionIn": "cut"
+    },
+    {
+      "id": "geschichte-h2",
+      "kind": "support",
+      "lines": [
+        "Erzähl eine Geschichte"
+      ],
+      "start": 49.15,
+      "end": 51,
+      "fontSize": 46,
+      "top": 382
+    },
+    {
+      "id": "machen-h2",
+      "kind": "support",
+      "lines": [
+        "Was machen sie?"
+      ],
+      "start": 52.6,
+      "end": 54.9,
+      "fontSize": 46,
+      "top": 382,
+      "transitionOut": "cut"
+    },
+    {
+      "id": "werte-h2",
+      "kind": "support",
+      "lines": [
+        "Welche Werte?"
+      ],
+      "start": 54.9,
+      "end": 57.9,
+      "fontSize": 46,
+      "top": 382,
+      "transitionIn": "cut"
+    },
+    {
+      "id": "passt-h2",
+      "kind": "support",
+      "lines": [
+        "Warum passt du zu uns?"
+      ],
+      "start": 58.3,
+      "end": 63.1,
+      "fontSize": 46,
+      "top": 382
+    },
+    {
+      "id": "linkedin-h2",
+      "kind": "support",
+      "lines": [
+        "Auf LinkedIn stalken"
+      ],
+      "start": 66.15,
+      "end": 69.1,
+      "fontSize": 46,
+      "top": 375
+    },
+    {
+      "id": "fragen-h2",
+      "kind": "support",
+      "lines": [
+        "Haben Sie noch Fragen?"
+      ],
+      "start": 70.1,
+      "end": 72.1,
+      "fontSize": 46,
+      "top": 382
+    },
+    {
+      "id": "vorher-h2",
+      "kind": "support",
+      "lines": [
+        "Vorher vorbereiten"
+      ],
+      "start": 73.4,
+      "end": 75.2,
+      "fontSize": 46,
+      "top": 382,
+      "transitionOut": "cut"
+    },
+    {
+      "id": "feedback-h2",
+      "kind": "support",
+      "lines": [
+        "Feedbackkultur?"
+      ],
+      "start": 75.2,
+      "end": 76.62,
+      "fontSize": 46,
+      "top": 382,
+      "transitionIn": "cut",
+      "transitionOut": "cut"
+    },
+    {
+      "id": "entwicklung-h2",
+      "kind": "support",
+      "lines": [
+        "Entwicklung?"
+      ],
+      "start": 76.62,
+      "end": 78.24,
+      "fontSize": 46,
+      "top": 382,
+      "transitionIn": "cut",
+      "transitionOut": "cut"
+    },
+    {
+      "id": "fehler-h2",
+      "kind": "support",
+      "lines": [
+        "Fehlerkultur?"
+      ],
+      "start": 78.24,
+      "end": 79.55,
+      "fontSize": 46,
+      "top": 382,
+      "transitionIn": "cut",
+      "transitionOut": "cut"
+    },
+    {
+      "id": "alltag-h2",
+      "kind": "support",
+      "lines": [
+        "Konkret: Arbeitsalltag"
+      ],
+      "start": 79.55,
+      "end": 81.85,
+      "fontSize": 46,
+      "top": 382,
+      "transitionIn": "cut"
+    }
+  ],
+  "notes": [
+    {
+      "id": "spick-a",
+      "start": 23.42,
+      "end": 29.3,
+      "left": 150,
+      "top": 390,
+      "lines": [
+        {
+          "text": "Unternehmen",
+          "at": 23.42,
+          "active": [
+            [
+              23.42,
+              24.08
+            ]
+          ]
+        },
+        {
+          "text": "Stelle",
+          "at": 24.08,
+          "active": [
+            [
+              24.08,
+              25.2
+            ]
+          ]
+        },
+        {
+          "text": "Gehaltsangabe",
+          "at": 25.2,
+          "active": [
+            [
+              25.2,
+              26.5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spick-b",
+      "start": 23.42,
+      "end": 29.3,
+      "left": 520,
+      "top": 390,
+      "lines": [
+        {
+          "text": "Gesprächspartner",
+          "at": 26.5,
+          "active": [
+            [
+              26.5,
+              27.72
+            ]
+          ]
+        },
+        {
+          "text": "Abteilung",
+          "at": 27.72,
+          "active": [
+            [
+              27.72,
+              28.47
+            ]
+          ]
+        },
+        {
+          "text": "Welcher CV",
+          "at": 28.47,
+          "active": [
+            [
+              28.47,
+              29.3
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "selbst-a",
+      "start": 38.46,
+      "end": 46.35,
+      "left": 150,
+      "top": 390,
+      "lines": [
+        {
+          "text": "Werdegang",
+          "at": 38.46,
+          "active": [
+            [
+              38.46,
+              39.69
+            ]
+          ]
+        },
+        {
+          "text": "Projekte",
+          "at": 39.69,
+          "active": [
+            [
+              39.69,
+              40.64
+            ]
+          ]
+        },
+        {
+          "text": "Uni",
+          "at": 40.64,
+          "active": [
+            [
+              40.64,
+              41.4
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "selbst-b",
+      "start": 38.46,
+      "end": 46.35,
+      "left": 500,
+      "top": 390,
+      "lines": [
+        {
+          "text": "Warum die Stelle?",
+          "at": 43.46,
+          "active": [
+            [
+              43.46,
+              44.25
+            ]
+          ]
+        },
+        {
+          "text": "Warum die Firma?",
+          "at": 44.25,
+          "active": [
+            [
+              44.25,
+              45.66
+            ]
+          ]
+        },
+        {
+          "text": "Wohin willst du?",
+          "at": 45.66,
+          "active": [
+            [
+              45.66,
+              46.3
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "bigwords": [
+    {
+      "id": "aundo-big",
+      "text": "A UND O",
+      "start": 7.3,
+      "end": 8.4,
+      "fontSize": 150
+    },
+    {
+      "id": "freestyle-big",
+      "text": "FREESTYLEN",
+      "start": 33.85,
+      "end": 34.7,
+      "fontSize": 96,
+      "strikeAt": 34.2
+    },
+    {
+      "id": "immerja-big",
+      "text": "IMMER JA!",
+      "start": 72.2,
+      "end": 73.3,
+      "fontSize": 124
+    }
+  ],
+  "bars": [],
+  "zooms": [
+    {
+      "start": 7.3,
+      "end": 8.4,
+      "scale": 1.12,
+      "punch": true,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 8.4,
+      "end": 10.091,
+      "scale": 1.05,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 10.091,
+      "end": 14.879,
+      "scale": 1.07,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 16.939,
+      "end": 20.606,
+      "scale": 1.06,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 20.606,
+      "end": 27.455,
+      "scale": 1.07,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 29.333,
+      "end": 32.879,
+      "scale": 1.06,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 33.85,
+      "end": 34.7,
+      "scale": 1.12,
+      "punch": true,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 35.545,
+      "end": 41.485,
+      "scale": 1.07,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 41.485,
+      "end": 45.121,
+      "scale": 1.05,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 46.455,
+      "end": 51.121,
+      "scale": 1.07,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 51.121,
+      "end": 54.576,
+      "scale": 1.06,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 55.848,
+      "end": 59.394,
+      "scale": 1.07,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 60.909,
+      "end": 63.242,
+      "scale": 1.05,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 63.242,
+      "end": 69.091,
+      "scale": 1.08,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 69.091,
+      "end": 72.061,
+      "scale": 1.06,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 72.2,
+      "end": 73.242,
+      "scale": 1.12,
+      "punch": true,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 73.242,
+      "end": 75.273,
+      "scale": 1.05,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 75.273,
+      "end": 78.364,
+      "scale": 1.07,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 78.364,
+      "end": 81.939,
+      "scale": 1.06,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 81.939,
+      "end": 85,
+      "scale": 1.06,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 85,
+      "end": 89,
+      "scale": 1.05,
+      "origin": "42% 28%"
+    },
+    {
+      "start": 89,
+      "end": 91.533,
+      "scale": 1.06,
+      "origin": "42% 28%"
+    }
+  ],
+  "zoomException": true,
+  "zoomBasis": "Abdullah am 26.09.2026: „gerne schon die Zoom-Effekte mit verwenden“ (wie bei Angst vor Arbeiten: langsame Fahrten 5-8 % über 2-7 s, Rücksprung an den Schnitten, harte Punch-ins 12 % auf die drei Schlagwörter). 0-6,1 s ohne Zoom, weil Abis Vorschnitt dort schon einen eigenen Punch-in bei 3,06 s enthält.",
+  "neueElemente": "Schlagwort (bigwords) und Randnotiz-Liste als 3x2-Raster über dem Kopf. Kopf sitzt in dieser Aufnahme mittig; neben dem Kopf bleiben nur ~200 px, darüber ~280 px ruhige Wand (DESIGN.md 13).",
+  "logos": [
+    {
+      "id": "notizapps-logo",
+      "start": 19.5,
+      "end": 21.6,
+      "top": 250,
+      "gap": 28,
+      "items": [
+        {
+          "src": "assets/logo-notion.png",
+          "width": 108,
+          "height": 112,
+          "alt": "Notion"
+        },
+        {
+          "src": "assets/logo-onenote.png",
+          "width": 112,
+          "height": 112,
+          "alt": "Microsoft OneNote"
+        }
+      ],
+      "basis": "gesprochen „Notion oder OneNote“ (19,59 / 20,14 s)"
+    },
+    {
+      "id": "linkedin-logo",
+      "start": 66.1,
+      "end": 67.9,
+      "top": 250,
+      "items": [
+        {
+          "src": "assets/logo-linkedin.png",
+          "width": 132,
+          "height": 112,
+          "alt": "LinkedIn"
+        }
+      ],
+      "basis": "gesprochen „auf LinkedIn“ (66,22 s)"
+    }
+  ],
+  "logosHerkunft": "assets/logos.json (Notion Media Kit, Microsoft Office Brand Icons CDN, LinkedIn Brand Downloads); Auftrag Abdullah 26.09.2026",
+  "bubbles": [],
+  "bubblesGrund": "Keine Aufforderung zu Kommentar oder DM gesprochen (DESIGN.md 0).",
+  "outro": {
+    "start": 85,
+    "end": 91.533,
+    "followers": 4254,
+    "target": 10000,
+    "followersSource": "Zernio accounts_get_follower_stats, TikTok @abidullahabi (6aa6efb9726ebfe037e60cc6), currentFollowers 4254, Datenstand 2026-09-26T05:56:52Z, abgerufen am 26.09.2026 vor dem Bau",
+    "standzeitHinweis": "v3: Ende nach Abdullahs Rückmeldung gekürzt; Karte ab 85,0 s (Schnitt), steht ab 86,85 s noch 4,7 s."
+  },
+  "captions": [
+    {
+      "start": 0,
+      "end": 0.17,
+      "words": [
+        {
+          "text": "Du",
+          "start": 0,
+          "end": 0.17
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 0.17,
+      "end": 0.75,
+      "words": [
+        {
+          "text": "hast",
+          "start": 0.17,
+          "end": 0.31
+        },
+        {
+          "text": "deine",
+          "start": 0.31,
+          "end": 0.46
+        },
+        {
+          "text": "Bewerbung",
+          "start": 0.46,
+          "end": 0.75
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 0.75,
+      "end": 1.35,
+      "words": [
+        {
+          "text": "abgeschickt,",
+          "start": 0.75,
+          "end": 1.35
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 1.35,
+      "end": 1.89,
+      "words": [
+        {
+          "text": "jetzt",
+          "start": 1.35,
+          "end": 1.57
+        },
+        {
+          "text": "wurdest du",
+          "start": 1.57,
+          "end": 1.73
+        },
+        {
+          "text": "zum",
+          "start": 1.73,
+          "end": 1.89
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 1.89,
+      "end": 2.61,
+      "words": [
+        {
+          "text": "Bewerbungsgespräch",
+          "start": 1.89,
+          "end": 2.61
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 2.61,
+      "end": 3.48,
+      "words": [
+        {
+          "text": "eingeladen",
+          "start": 2.61,
+          "end": 3.15
+        },
+        {
+          "text": "und",
+          "start": 3.15,
+          "end": 3.35
+        },
+        {
+          "text": "jetzt",
+          "start": 3.35,
+          "end": 3.48
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 3.48,
+      "end": 4.66,
+      "words": [
+        {
+          "text": "die",
+          "start": 3.48,
+          "end": 3.66
+        },
+        {
+          "text": "Frage,",
+          "start": 3.66,
+          "end": 3.96
+        },
+        {
+          "text": "wie",
+          "start": 3.96,
+          "end": 4.29
+        },
+        {
+          "text": "bereitest",
+          "start": 4.29,
+          "end": 4.66
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 4.66,
+      "end": 5.19,
+      "words": [
+        {
+          "text": "du",
+          "start": 4.66,
+          "end": 4.78
+        },
+        {
+          "text": "dich",
+          "start": 4.78,
+          "end": 4.92
+        },
+        {
+          "text": "auf",
+          "start": 4.92,
+          "end": 5.06
+        },
+        {
+          "text": "das",
+          "start": 5.06,
+          "end": 5.19
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 5.19,
+      "end": 6.11,
+      "words": [
+        {
+          "text": "Bewerbungsgespräch",
+          "start": 5.19,
+          "end": 6.11
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 6.11,
+      "end": 6.45,
+      "words": [
+        {
+          "text": "vor?",
+          "start": 6.11,
+          "end": 6.45
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 6.45,
+      "end": 7.24,
+      "words": [
+        {
+          "text": "Das",
+          "start": 6.45,
+          "end": 6.68
+        },
+        {
+          "text": "Vorbereiten",
+          "start": 6.68,
+          "end": 7.13
+        },
+        {
+          "text": "ist",
+          "start": 7.13,
+          "end": 7.24
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 7.24,
+      "end": 7.81,
+      "words": [
+        {
+          "text": "das",
+          "start": 7.24,
+          "end": 7.4
+        },
+        {
+          "text": "A",
+          "start": 7.4,
+          "end": 7.56
+        },
+        {
+          "text": "und",
+          "start": 7.56,
+          "end": 7.69
+        },
+        {
+          "text": "O",
+          "start": 7.69,
+          "end": 7.81
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 7.81,
+      "end": 8.41,
+      "words": [
+        {
+          "text": "und",
+          "start": 7.81,
+          "end": 7.93
+        },
+        {
+          "text": "kann",
+          "start": 7.93,
+          "end": 8.14
+        },
+        {
+          "text": "entscheiden,",
+          "start": 8.14,
+          "end": 8.41
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 8.41,
+      "end": 8.98,
+      "words": [
+        {
+          "text": "ob",
+          "start": 8.41,
+          "end": 8.57
+        },
+        {
+          "text": "du",
+          "start": 8.57,
+          "end": 8.65
+        },
+        {
+          "text": "die",
+          "start": 8.65,
+          "end": 8.78
+        },
+        {
+          "text": "Stelle",
+          "start": 8.78,
+          "end": 8.98
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 8.98,
+      "end": 10.17,
+      "words": [
+        {
+          "text": "bekommst",
+          "start": 8.98,
+          "end": 9.47
+        },
+        {
+          "text": "oder",
+          "start": 9.47,
+          "end": 9.76
+        },
+        {
+          "text": "nicht.",
+          "start": 9.76,
+          "end": 10.1
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 10.18,
+      "end": 10.72,
+      "words": [
+        {
+          "text": "Deswegen",
+          "start": 10.18,
+          "end": 10.44
+        },
+        {
+          "text": "zeige",
+          "start": 10.44,
+          "end": 10.62
+        },
+        {
+          "text": "ich",
+          "start": 10.62,
+          "end": 10.72
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 10.72,
+      "end": 11.34,
+      "words": [
+        {
+          "text": "dir",
+          "start": 10.72,
+          "end": 10.94
+        },
+        {
+          "text": "jetzt,",
+          "start": 10.94,
+          "end": 11.19
+        },
+        {
+          "text": "wie",
+          "start": 11.19,
+          "end": 11.34
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 11.34,
+      "end": 12.1,
+      "words": [
+        {
+          "text": "ich",
+          "start": 11.34,
+          "end": 11.48
+        },
+        {
+          "text": "mich",
+          "start": 11.48,
+          "end": 11.7
+        },
+        {
+          "text": "immer",
+          "start": 11.7,
+          "end": 11.94
+        },
+        {
+          "text": "mit",
+          "start": 11.94,
+          "end": 12.1
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 12.1,
+      "end": 12.93,
+      "words": [
+        {
+          "text": "denselben",
+          "start": 12.1,
+          "end": 12.48
+        },
+        {
+          "text": "vier",
+          "start": 12.48,
+          "end": 12.67
+        },
+        {
+          "text": "Dingen",
+          "start": 12.67,
+          "end": 12.93
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 12.93,
+      "end": 14.1,
+      "words": [
+        {
+          "text": "vorbereite",
+          "start": 12.93,
+          "end": 13.52
+        },
+        {
+          "text": "für",
+          "start": 13.52,
+          "end": 13.85
+        },
+        {
+          "text": "das",
+          "start": 13.85,
+          "end": 14.1
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 14.1,
+      "end": 14.86,
+      "words": [
+        {
+          "text": "Bewerbungsgespräch.",
+          "start": 14.1,
+          "end": 14.86
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 14.86,
+      "end": 15.469,
+      "words": [
+        {
+          "text": "Bevor",
+          "start": 14.86,
+          "end": 15.149
+        },
+        {
+          "text": "du",
+          "start": 15.149,
+          "end": 15.289
+        },
+        {
+          "text": "irgendwie",
+          "start": 15.289,
+          "end": 15.469
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 15.469,
+      "end": 15.989,
+      "words": [
+        {
+          "text": "was",
+          "start": 15.469,
+          "end": 15.659
+        },
+        {
+          "text": "anfängst,",
+          "start": 15.659,
+          "end": 15.989
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 15.989,
+      "end": 16.309,
+      "words": [
+        {
+          "text": "du",
+          "start": 15.989,
+          "end": 16.109
+        },
+        {
+          "text": "brauchst",
+          "start": 16.109,
+          "end": 16.309
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 16.309,
+      "end": 16.949,
+      "words": [
+        {
+          "text": "einen",
+          "start": 16.309,
+          "end": 16.449
+        },
+        {
+          "text": "Spickzettel",
+          "start": 16.449,
+          "end": 16.949
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 16.949,
+      "end": 17.439,
+      "words": [
+        {
+          "text": "und",
+          "start": 16.949,
+          "end": 17.099
+        },
+        {
+          "text": "das",
+          "start": 17.099,
+          "end": 17.219
+        },
+        {
+          "text": "machst",
+          "start": 17.219,
+          "end": 17.309
+        },
+        {
+          "text": "du",
+          "start": 17.309,
+          "end": 17.439
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 17.439,
+      "end": 18.319,
+      "words": [
+        {
+          "text": "natürlich",
+          "start": 17.439,
+          "end": 17.719
+        },
+        {
+          "text": "digital,",
+          "start": 17.779,
+          "end": 18.099
+        },
+        {
+          "text": "dafür",
+          "start": 18.099,
+          "end": 18.319
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 18.319,
+      "end": 18.969,
+      "words": [
+        {
+          "text": "nutzt",
+          "start": 18.319,
+          "end": 18.539
+        },
+        {
+          "text": "du",
+          "start": 18.539,
+          "end": 18.669
+        },
+        {
+          "text": "irgendeine",
+          "start": 18.669,
+          "end": 18.969
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 18.969,
+      "end": 19.959,
+      "words": [
+        {
+          "text": "Notizen-App,",
+          "start": 18.969,
+          "end": 19.589
+        },
+        {
+          "text": "Notion",
+          "start": 19.589,
+          "end": 19.959
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 19.959,
+      "end": 20.929,
+      "words": [
+        {
+          "text": "oder",
+          "start": 19.959,
+          "end": 20.139
+        },
+        {
+          "text": "OneNote",
+          "start": 20.139,
+          "end": 20.639
+        },
+        {
+          "text": "Dort",
+          "start": 20.639,
+          "end": 20.929
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 20.929,
+      "end": 21.419,
+      "words": [
+        {
+          "text": "sammelst",
+          "start": 20.929,
+          "end": 21.239
+        },
+        {
+          "text": "du",
+          "start": 21.239,
+          "end": 21.309
+        },
+        {
+          "text": "immer",
+          "start": 21.309,
+          "end": 21.419
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 21.419,
+      "end": 22.139,
+      "words": [
+        {
+          "text": "deine",
+          "start": 21.419,
+          "end": 21.659
+        },
+        {
+          "text": "Informationen,",
+          "start": 21.819,
+          "end": 22.139
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 22.139,
+      "end": 23.159,
+      "words": [
+        {
+          "text": "zum",
+          "start": 22.139,
+          "end": 22.459
+        },
+        {
+          "text": "Beispiel",
+          "start": 22.479,
+          "end": 22.839
+        },
+        {
+          "text": "natürlich",
+          "start": 22.879,
+          "end": 23.159
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 23.159,
+      "end": 23.939,
+      "words": [
+        {
+          "text": "das",
+          "start": 23.159,
+          "end": 23.439
+        },
+        {
+          "text": "Unternehmen,",
+          "start": 23.459,
+          "end": 23.759
+        },
+        {
+          "text": "auf",
+          "start": 23.759,
+          "end": 23.939
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 23.939,
+      "end": 24.379,
+      "words": [
+        {
+          "text": "welche",
+          "start": 23.939,
+          "end": 24.109
+        },
+        {
+          "text": "Stelle",
+          "start": 24.109,
+          "end": 24.249
+        },
+        {
+          "text": "du dich",
+          "start": 24.249,
+          "end": 24.379
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 24.379,
+      "end": 25.079,
+      "words": [
+        {
+          "text": "beworben",
+          "start": 24.379,
+          "end": 24.759
+        },
+        {
+          "text": "hast,",
+          "start": 24.759,
+          "end": 24.949
+        },
+        {
+          "text": "was",
+          "start": 24.949,
+          "end": 25.079
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 25.079,
+      "end": 25.729,
+      "words": [
+        {
+          "text": "für",
+          "start": 25.079,
+          "end": 25.149
+        },
+        {
+          "text": "eine",
+          "start": 25.149,
+          "end": 25.229
+        },
+        {
+          "text": "Gehaltsangabe",
+          "start": 25.229,
+          "end": 25.729
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 25.729,
+      "end": 26.359,
+      "words": [
+        {
+          "text": "du",
+          "start": 25.729,
+          "end": 25.879
+        },
+        {
+          "text": "gegeben",
+          "start": 25.879,
+          "end": 26.069
+        },
+        {
+          "text": "hast,",
+          "start": 26.069,
+          "end": 26.229
+        },
+        {
+          "text": "wer",
+          "start": 26.229,
+          "end": 26.359
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 26.359,
+      "end": 27.179,
+      "words": [
+        {
+          "text": "dein",
+          "start": 26.359,
+          "end": 26.529
+        },
+        {
+          "text": "Gesprächspartner",
+          "start": 26.529,
+          "end": 27.179
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 27.179,
+      "end": 28.199,
+      "words": [
+        {
+          "text": "ist,",
+          "start": 27.179,
+          "end": 27.479
+        },
+        {
+          "text": "welche",
+          "start": 27.479,
+          "end": 27.749
+        },
+        {
+          "text": "Abteilung,",
+          "start": 27.749,
+          "end": 28.199
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 28.199,
+      "end": 28.659,
+      "words": [
+        {
+          "text": "welches",
+          "start": 28.199,
+          "end": 28.499
+        },
+        {
+          "text": "CV",
+          "start": 28.499,
+          "end": 28.659
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 28.659,
+      "end": 29.219,
+      "words": [
+        {
+          "text": "du",
+          "start": 28.659,
+          "end": 28.789
+        },
+        {
+          "text": "abgeschickt",
+          "start": 28.789,
+          "end": 29.219
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 29.219,
+      "end": 29.663,
+      "words": [
+        {
+          "text": "hast",
+          "start": 29.219,
+          "end": 29.366
+        },
+        {
+          "text": "Bei",
+          "start": 29.366,
+          "end": 29.523
+        },
+        {
+          "text": "jedem",
+          "start": 29.523,
+          "end": 29.663
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 29.663,
+      "end": 30.423,
+      "words": [
+        {
+          "text": "Bewerbungsgespräch",
+          "start": 29.663,
+          "end": 30.423
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 30.423,
+      "end": 31.253,
+      "words": [
+        {
+          "text": "wird",
+          "start": 30.423,
+          "end": 30.623
+        },
+        {
+          "text": "immer",
+          "start": 30.623,
+          "end": 30.773
+        },
+        {
+          "text": "die",
+          "start": 30.773,
+          "end": 30.973
+        },
+        {
+          "text": "Frage",
+          "start": 30.973,
+          "end": 31.253
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 31.253,
+      "end": 32.143,
+      "words": [
+        {
+          "text": "kommen,",
+          "start": 31.253,
+          "end": 31.533
+        },
+        {
+          "text": "ja,",
+          "start": 31.533,
+          "end": 31.843
+        },
+        {
+          "text": "stellen",
+          "start": 31.843,
+          "end": 32.063
+        },
+        {
+          "text": "Sie",
+          "start": 32.063,
+          "end": 32.143
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 32.143,
+      "end": 32.653,
+      "words": [
+        {
+          "text": "sich",
+          "start": 32.143,
+          "end": 32.223
+        },
+        {
+          "text": "doch",
+          "start": 32.223,
+          "end": 32.323
+        },
+        {
+          "text": "mal",
+          "start": 32.323,
+          "end": 32.453
+        },
+        {
+          "text": "gerne",
+          "start": 32.453,
+          "end": 32.653
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 32.653,
+      "end": 33.393,
+      "words": [
+        {
+          "text": "vor",
+          "start": 32.653,
+          "end": 32.953
+        },
+        {
+          "text": "Diese",
+          "start": 32.953,
+          "end": 33.213
+        },
+        {
+          "text": "wirst",
+          "start": 33.213,
+          "end": 33.393
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 33.393,
+      "end": 34.013,
+      "words": [
+        {
+          "text": "du",
+          "start": 33.393,
+          "end": 33.483
+        },
+        {
+          "text": "auf",
+          "start": 33.483,
+          "end": 33.633
+        },
+        {
+          "text": "keinen",
+          "start": 33.633,
+          "end": 33.813
+        },
+        {
+          "text": "Fall",
+          "start": 33.813,
+          "end": 34.013
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 34.013,
+      "end": 34.733,
+      "words": [
+        {
+          "text": "freestylen,",
+          "start": 34.013,
+          "end": 34.473
+        },
+        {
+          "text": "sondern",
+          "start": 34.473,
+          "end": 34.713
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 34.733,
+      "end": 35.823,
+      "words": [
+        {
+          "text": "vorher",
+          "start": 34.733,
+          "end": 35.093
+        },
+        {
+          "text": "üben",
+          "start": 35.113,
+          "end": 35.533
+        },
+        {
+          "text": "Versuch",
+          "start": 35.533,
+          "end": 35.823
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 35.823,
+      "end": 36.413,
+      "words": [
+        {
+          "text": "dich",
+          "start": 35.823,
+          "end": 35.943
+        },
+        {
+          "text": "so",
+          "start": 35.943,
+          "end": 36.143
+        },
+        {
+          "text": "zwischen",
+          "start": 36.143,
+          "end": 36.413
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 36.413,
+      "end": 37.153,
+      "words": [
+        {
+          "text": "3",
+          "start": 36.413,
+          "end": 36.643
+        },
+        {
+          "text": "bis",
+          "start": 36.643,
+          "end": 36.873
+        },
+        {
+          "text": "maximal",
+          "start": 36.873,
+          "end": 37.153
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 37.153,
+      "end": 38.313,
+      "words": [
+        {
+          "text": "7",
+          "start": 37.153,
+          "end": 37.433
+        },
+        {
+          "text": "Minuten",
+          "start": 37.433,
+          "end": 37.693
+        },
+        {
+          "text": "aufzuhalten,",
+          "start": 37.693,
+          "end": 38.313
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 38.313,
+      "end": 39.133,
+      "words": [
+        {
+          "text": "deinen",
+          "start": 38.313,
+          "end": 38.493
+        },
+        {
+          "text": "Werdegang",
+          "start": 38.493,
+          "end": 38.893
+        },
+        {
+          "text": "zu",
+          "start": 38.893,
+          "end": 39.133
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 39.133,
+      "end": 39.723,
+      "words": [
+        {
+          "text": "erklären,",
+          "start": 39.133,
+          "end": 39.383
+        },
+        {
+          "text": "was",
+          "start": 39.383,
+          "end": 39.533
+        },
+        {
+          "text": "deine",
+          "start": 39.533,
+          "end": 39.723
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 39.723,
+      "end": 40.523,
+      "words": [
+        {
+          "text": "Projekte",
+          "start": 39.723,
+          "end": 40.123
+        },
+        {
+          "text": "sind,",
+          "start": 40.123,
+          "end": 40.303
+        },
+        {
+          "text": "was",
+          "start": 40.303,
+          "end": 40.443
+        },
+        {
+          "text": "du",
+          "start": 40.443,
+          "end": 40.523
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 40.523,
+      "end": 41.183,
+      "words": [
+        {
+          "text": "in",
+          "start": 40.523,
+          "end": 40.573
+        },
+        {
+          "text": "der",
+          "start": 40.573,
+          "end": 40.673
+        },
+        {
+          "text": "Uni",
+          "start": 40.673,
+          "end": 40.893
+        },
+        {
+          "text": "gemacht",
+          "start": 40.893,
+          "end": 41.183
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 41.183,
+      "end": 41.923,
+      "words": [
+        {
+          "text": "hast",
+          "start": 41.183,
+          "end": 41.453
+        },
+        {
+          "text": "Du",
+          "start": 41.453,
+          "end": 41.653
+        },
+        {
+          "text": "sagst",
+          "start": 41.653,
+          "end": 41.823
+        },
+        {
+          "text": "dann",
+          "start": 41.823,
+          "end": 41.923
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 41.923,
+      "end": 42.773,
+      "words": [
+        {
+          "text": "auch",
+          "start": 41.923,
+          "end": 42.053
+        },
+        {
+          "text": "am",
+          "start": 42.053,
+          "end": 42.223
+        },
+        {
+          "text": "besten",
+          "start": 42.223,
+          "end": 42.443
+        },
+        {
+          "text": "so",
+          "start": 42.443,
+          "end": 42.733
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 42.773,
+      "end": 43.743,
+      "words": [
+        {
+          "text": "unterschwellig,",
+          "start": 42.773,
+          "end": 43.493
+        },
+        {
+          "text": "warum",
+          "start": 43.493,
+          "end": 43.743
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 43.743,
+      "end": 44.483,
+      "words": [
+        {
+          "text": "diese",
+          "start": 43.743,
+          "end": 44.013
+        },
+        {
+          "text": "Stelle,",
+          "start": 44.013,
+          "end": 44.283
+        },
+        {
+          "text": "warum",
+          "start": 44.283,
+          "end": 44.483
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 44.483,
+      "end": 45.103,
+      "words": [
+        {
+          "text": "das",
+          "start": 44.483,
+          "end": 44.733
+        },
+        {
+          "text": "Unternehmen",
+          "start": 44.793,
+          "end": 45.103
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 45.103,
+      "end": 45.573,
+      "words": [
+        {
+          "text": "und",
+          "start": 45.103,
+          "end": 45.283
+        },
+        {
+          "text": "am",
+          "start": 45.283,
+          "end": 45.423
+        },
+        {
+          "text": "besten",
+          "start": 45.423,
+          "end": 45.573
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 45.573,
+      "end": 46.033,
+      "words": [
+        {
+          "text": "auch,",
+          "start": 45.573,
+          "end": 45.693
+        },
+        {
+          "text": "wo",
+          "start": 45.693,
+          "end": 45.803
+        },
+        {
+          "text": "du",
+          "start": 45.803,
+          "end": 45.913
+        },
+        {
+          "text": "hin",
+          "start": 45.913,
+          "end": 46.033
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 46.033,
+      "end": 46.853,
+      "words": [
+        {
+          "text": "möchtest",
+          "start": 46.033,
+          "end": 46.453
+        },
+        {
+          "text": "Und",
+          "start": 46.453,
+          "end": 46.603
+        },
+        {
+          "text": "du",
+          "start": 46.603,
+          "end": 46.683
+        },
+        {
+          "text": "wirst",
+          "start": 46.683,
+          "end": 46.853
+        }
+      ],
+      "top": 1304
+    },
+    {
+      "start": 46.853,
+      "end": 47.423,
+      "words": [
+        {
+          "text": "bestimmt",
+          "start": 46.853,
+          "end": 47.053
+        },
+        {
+          "text": "Rückfragen",
+          "start": 47.053,
+          "end": 47.423
+        }
+      ]
+    },
+    {
+      "start": 47.423,
+      "end": 47.933,
+      "words": [
+        {
+          "text": "dafür",
+          "start": 47.423,
+          "end": 47.683
+        },
+        {
+          "text": "bekommen",
+          "start": 47.683,
+          "end": 47.933
+        }
+      ]
+    },
+    {
+      "start": 47.933,
+      "end": 48.503,
+      "words": [
+        {
+          "text": "und",
+          "start": 47.933,
+          "end": 48.093
+        },
+        {
+          "text": "jedes",
+          "start": 48.093,
+          "end": 48.263
+        },
+        {
+          "text": "Mal,",
+          "start": 48.263,
+          "end": 48.413
+        },
+        {
+          "text": "wenn",
+          "start": 48.413,
+          "end": 48.503
+        }
+      ]
+    },
+    {
+      "start": 48.503,
+      "end": 49.203,
+      "words": [
+        {
+          "text": "du",
+          "start": 48.503,
+          "end": 48.613
+        },
+        {
+          "text": "was",
+          "start": 48.613,
+          "end": 48.783
+        },
+        {
+          "text": "antwortest,",
+          "start": 48.783,
+          "end": 49.203
+        }
+      ]
+    },
+    {
+      "start": 49.203,
+      "end": 49.723,
+      "words": [
+        {
+          "text": "antwortest du",
+          "start": 49.203,
+          "end": 49.513
+        },
+        {
+          "text": "am",
+          "start": 49.513,
+          "end": 49.723
+        }
+      ]
+    },
+    {
+      "start": 49.723,
+      "end": 50.293,
+      "words": [
+        {
+          "text": "besten",
+          "start": 49.723,
+          "end": 50.003
+        },
+        {
+          "text": "mit",
+          "start": 50.003,
+          "end": 50.293
+        }
+      ]
+    },
+    {
+      "start": 50.293,
+      "end": 51.067,
+      "words": [
+        {
+          "text": "einer",
+          "start": 50.293,
+          "end": 50.613
+        },
+        {
+          "text": "Geschichte",
+          "start": 50.713,
+          "end": 51.067
+        }
+      ]
+    },
+    {
+      "start": 51.067,
+      "end": 51.741,
+      "words": [
+        {
+          "text": "Das",
+          "start": 51.067,
+          "end": 51.421
+        },
+        {
+          "text": "Unternehmen,",
+          "start": 51.441,
+          "end": 51.741
+        }
+      ]
+    },
+    {
+      "start": 51.741,
+      "end": 52.351,
+      "words": [
+        {
+          "text": "du",
+          "start": 51.741,
+          "end": 51.931
+        },
+        {
+          "text": "musst",
+          "start": 51.931,
+          "end": 52.121
+        },
+        {
+          "text": "wissen,",
+          "start": 52.121,
+          "end": 52.351
+        }
+      ]
+    },
+    {
+      "start": 52.351,
+      "end": 52.911,
+      "words": [
+        {
+          "text": "was",
+          "start": 52.351,
+          "end": 52.521
+        },
+        {
+          "text": "sie",
+          "start": 52.521,
+          "end": 52.691
+        },
+        {
+          "text": "machen,",
+          "start": 52.691,
+          "end": 52.911
+        }
+      ]
+    },
+    {
+      "start": 52.911,
+      "end": 53.611,
+      "words": [
+        {
+          "text": "was",
+          "start": 52.911,
+          "end": 53.071
+        },
+        {
+          "text": "sie",
+          "start": 53.071,
+          "end": 53.211
+        },
+        {
+          "text": "verkaufen,",
+          "start": 53.211,
+          "end": 53.611
+        }
+      ]
+    },
+    {
+      "start": 53.611,
+      "end": 54.521,
+      "words": [
+        {
+          "text": "was",
+          "start": 53.611,
+          "end": 53.761
+        },
+        {
+          "text": "sie",
+          "start": 53.761,
+          "end": 53.901
+        },
+        {
+          "text": "herstellen,",
+          "start": 53.901,
+          "end": 54.501
+        }
+      ]
+    },
+    {
+      "start": 54.521,
+      "end": 55.011,
+      "words": [
+        {
+          "text": "was",
+          "start": 54.521,
+          "end": 54.801
+        },
+        {
+          "text": "deren",
+          "start": 54.801,
+          "end": 55.011
+        }
+      ]
+    },
+    {
+      "start": 55.011,
+      "end": 55.691,
+      "words": [
+        {
+          "text": "Unternehmenswerte",
+          "start": 55.011,
+          "end": 55.691
+        }
+      ]
+    },
+    {
+      "start": 55.691,
+      "end": 56.241,
+      "words": [
+        {
+          "text": "sind",
+          "start": 55.691,
+          "end": 55.881
+        },
+        {
+          "text": "Bezogen",
+          "start": 55.881,
+          "end": 56.241
+        }
+      ]
+    },
+    {
+      "start": 56.241,
+      "end": 56.781,
+      "words": [
+        {
+          "text": "auf",
+          "start": 56.241,
+          "end": 56.381
+        },
+        {
+          "text": "den",
+          "start": 56.381,
+          "end": 56.551
+        },
+        {
+          "text": "Werten",
+          "start": 56.551,
+          "end": 56.781
+        }
+      ]
+    },
+    {
+      "start": 56.781,
+      "end": 57.491,
+      "words": [
+        {
+          "text": "ist",
+          "start": 56.781,
+          "end": 56.851
+        },
+        {
+          "text": "es",
+          "start": 56.851,
+          "end": 57.041
+        },
+        {
+          "text": "unglaublich",
+          "start": 57.041,
+          "end": 57.491
+        }
+      ]
+    },
+    {
+      "start": 57.491,
+      "end": 57.951,
+      "words": [
+        {
+          "text": "wichtig,",
+          "start": 57.491,
+          "end": 57.671
+        },
+        {
+          "text": "dass",
+          "start": 57.671,
+          "end": 57.811
+        },
+        {
+          "text": "du",
+          "start": 57.811,
+          "end": 57.951
+        }
+      ]
+    },
+    {
+      "start": 57.951,
+      "end": 58.531,
+      "words": [
+        {
+          "text": "auch",
+          "start": 57.951,
+          "end": 58.121
+        },
+        {
+          "text": "die",
+          "start": 58.121,
+          "end": 58.321
+        },
+        {
+          "text": "Frage",
+          "start": 58.321,
+          "end": 58.531
+        }
+      ]
+    },
+    {
+      "start": 58.531,
+      "end": 59.471,
+      "words": [
+        {
+          "text": "beantworten",
+          "start": 58.531,
+          "end": 59.091
+        },
+        {
+          "text": "kannst,",
+          "start": 59.091,
+          "end": 59.401
+        }
+      ]
+    },
+    {
+      "start": 59.501,
+      "end": 60.581,
+      "words": [
+        {
+          "text": "warum",
+          "start": 59.501,
+          "end": 59.811
+        },
+        {
+          "text": "du",
+          "start": 59.811,
+          "end": 60.121
+        },
+        {
+          "text": "dahin",
+          "start": 60.181,
+          "end": 60.581
+        }
+      ]
+    },
+    {
+      "start": 60.581,
+      "end": 61.411,
+      "words": [
+        {
+          "text": "passt",
+          "start": 60.581,
+          "end": 60.871
+        },
+        {
+          "text": "Du",
+          "start": 60.871,
+          "end": 61.081
+        },
+        {
+          "text": "schaust",
+          "start": 61.081,
+          "end": 61.411
+        }
+      ]
+    },
+    {
+      "start": 61.411,
+      "end": 62.011,
+      "words": [
+        {
+          "text": "nach,",
+          "start": 61.411,
+          "end": 61.601
+        },
+        {
+          "text": "in",
+          "start": 61.601,
+          "end": 61.761
+        },
+        {
+          "text": "welchen",
+          "start": 61.761,
+          "end": 62.011
+        }
+      ]
+    },
+    {
+      "start": 62.011,
+      "end": 62.651,
+      "words": [
+        {
+          "text": "Werten",
+          "start": 62.011,
+          "end": 62.261
+        },
+        {
+          "text": "du",
+          "start": 62.261,
+          "end": 62.361
+        },
+        {
+          "text": "dich",
+          "start": 62.361,
+          "end": 62.491
+        },
+        {
+          "text": "auch",
+          "start": 62.491,
+          "end": 62.651
+        }
+      ]
+    },
+    {
+      "start": 62.651,
+      "end": 63.381,
+      "words": [
+        {
+          "text": "wiedererkennst",
+          "start": 62.651,
+          "end": 63.241
+        },
+        {
+          "text": "Und",
+          "start": 63.241,
+          "end": 63.381
+        }
+      ]
+    },
+    {
+      "start": 63.381,
+      "end": 64.081,
+      "words": [
+        {
+          "text": "dann",
+          "start": 63.381,
+          "end": 63.561
+        },
+        {
+          "text": "stalk",
+          "start": 63.561,
+          "end": 63.751
+        },
+        {
+          "text": "ich",
+          "start": 63.751,
+          "end": 63.891
+        },
+        {
+          "text": "meine",
+          "start": 63.891,
+          "end": 64.081
+        }
+      ]
+    },
+    {
+      "start": 64.081,
+      "end": 64.981,
+      "words": [
+        {
+          "text": "Gesprächspartnerin",
+          "start": 64.081,
+          "end": 64.981
+        }
+      ]
+    },
+    {
+      "start": 64.981,
+      "end": 65.711,
+      "words": [
+        {
+          "text": "oder",
+          "start": 64.981,
+          "end": 65.321
+        },
+        {
+          "text": "Partner",
+          "start": 65.381,
+          "end": 65.711
+        }
+      ]
+    },
+    {
+      "start": 65.711,
+      "end": 66.491,
+      "words": [
+        {
+          "text": "entweder",
+          "start": 65.711,
+          "end": 66.021
+        },
+        {
+          "text": "auf",
+          "start": 66.021,
+          "end": 66.221
+        },
+        {
+          "text": "LinkedIn",
+          "start": 66.221,
+          "end": 66.491
+        }
+      ]
+    },
+    {
+      "start": 66.491,
+      "end": 67.231,
+      "words": [
+        {
+          "text": "oder",
+          "start": 66.491,
+          "end": 66.711
+        },
+        {
+          "text": "auf",
+          "start": 66.711,
+          "end": 66.851
+        },
+        {
+          "text": "Social",
+          "start": 66.851,
+          "end": 67.041
+        },
+        {
+          "text": "Media,",
+          "start": 67.041,
+          "end": 67.231
+        }
+      ]
+    },
+    {
+      "start": 67.231,
+      "end": 67.971,
+      "words": [
+        {
+          "text": "um",
+          "start": 67.231,
+          "end": 67.401
+        },
+        {
+          "text": "einfach",
+          "start": 67.401,
+          "end": 67.671
+        },
+        {
+          "text": "auch",
+          "start": 67.671,
+          "end": 67.971
+        }
+      ]
+    },
+    {
+      "start": 67.971,
+      "end": 68.461,
+      "words": [
+        {
+          "text": "vielleicht",
+          "start": 67.971,
+          "end": 68.191
+        },
+        {
+          "text": "mit",
+          "start": 68.191,
+          "end": 68.321
+        },
+        {
+          "text": "der",
+          "start": 68.321,
+          "end": 68.461
+        }
+      ]
+    },
+    {
+      "start": 68.461,
+      "end": 69.206,
+      "words": [
+        {
+          "text": "Person",
+          "start": 68.461,
+          "end": 68.631
+        },
+        {
+          "text": "zu",
+          "start": 68.631,
+          "end": 68.811
+        },
+        {
+          "text": "connecten",
+          "start": 68.811,
+          "end": 69.206
+        }
+      ]
+    },
+    {
+      "start": 69.206,
+      "end": 69.891,
+      "words": [
+        {
+          "text": "Jedes",
+          "start": 69.206,
+          "end": 69.561
+        },
+        {
+          "text": "Mal",
+          "start": 69.561,
+          "end": 69.751
+        },
+        {
+          "text": "wird",
+          "start": 69.751,
+          "end": 69.891
+        }
+      ]
+    },
+    {
+      "start": 69.891,
+      "end": 70.501,
+      "words": [
+        {
+          "text": "dir",
+          "start": 69.891,
+          "end": 69.971
+        },
+        {
+          "text": "die",
+          "start": 69.971,
+          "end": 70.131
+        },
+        {
+          "text": "Frage",
+          "start": 70.131,
+          "end": 70.321
+        },
+        {
+          "text": "am",
+          "start": 70.321,
+          "end": 70.501
+        }
+      ]
+    },
+    {
+      "start": 70.501,
+      "end": 71.311,
+      "words": [
+        {
+          "text": "Ende",
+          "start": 70.501,
+          "end": 70.791
+        },
+        {
+          "text": "gestellt,",
+          "start": 70.791,
+          "end": 71.111
+        },
+        {
+          "text": "haben",
+          "start": 71.111,
+          "end": 71.311
+        }
+      ]
+    },
+    {
+      "start": 71.311,
+      "end": 72.041,
+      "words": [
+        {
+          "text": "Sie",
+          "start": 71.311,
+          "end": 71.461
+        },
+        {
+          "text": "noch",
+          "start": 71.461,
+          "end": 71.731
+        },
+        {
+          "text": "Fragen?",
+          "start": 71.731,
+          "end": 72.041
+        }
+      ]
+    },
+    {
+      "start": 72.041,
+      "end": 73.181,
+      "words": [
+        {
+          "text": "Du",
+          "start": 72.041,
+          "end": 72.281
+        },
+        {
+          "text": "sagst",
+          "start": 72.281,
+          "end": 72.651
+        },
+        {
+          "text": "immer",
+          "start": 72.651,
+          "end": 72.901
+        },
+        {
+          "text": "ja.",
+          "start": 72.901,
+          "end": 73.181
+        }
+      ]
+    },
+    {
+      "start": 73.181,
+      "end": 74.051,
+      "words": [
+        {
+          "text": "Und",
+          "start": 73.181,
+          "end": 73.461
+        },
+        {
+          "text": "diese",
+          "start": 73.461,
+          "end": 73.651
+        },
+        {
+          "text": "Rückfragen",
+          "start": 73.651,
+          "end": 74.051
+        }
+      ]
+    },
+    {
+      "start": 74.051,
+      "end": 74.721,
+      "words": [
+        {
+          "text": "bereitest",
+          "start": 74.051,
+          "end": 74.351
+        },
+        {
+          "text": "du",
+          "start": 74.351,
+          "end": 74.491
+        },
+        {
+          "text": "natürlich",
+          "start": 74.491,
+          "end": 74.721
+        }
+      ]
+    },
+    {
+      "start": 74.721,
+      "end": 75.271,
+      "words": [
+        {
+          "text": "vorher",
+          "start": 74.721,
+          "end": 74.981
+        },
+        {
+          "text": "vor.",
+          "start": 74.981,
+          "end": 75.271
+        }
+      ]
+    },
+    {
+      "start": 75.271,
+      "end": 75.851,
+      "words": [
+        {
+          "text": "Wie",
+          "start": 75.271,
+          "end": 75.501
+        },
+        {
+          "text": "sieht",
+          "start": 75.501,
+          "end": 75.661
+        },
+        {
+          "text": "eure",
+          "start": 75.661,
+          "end": 75.851
+        }
+      ]
+    },
+    {
+      "start": 75.851,
+      "end": 76.711,
+      "words": [
+        {
+          "text": "Feedbackkultur",
+          "start": 75.851,
+          "end": 76.481
+        },
+        {
+          "text": "aus?",
+          "start": 76.481,
+          "end": 76.711
+        }
+      ]
+    },
+    {
+      "start": 76.711,
+      "end": 76.911,
+      "words": [
+        {
+          "text": "Welche",
+          "start": 76.711,
+          "end": 76.911
+        }
+      ]
+    },
+    {
+      "start": 76.911,
+      "end": 77.851,
+      "words": [
+        {
+          "text": "Entwicklungsmöglichkeiten",
+          "start": 76.911,
+          "end": 77.851
+        }
+      ],
+      "fontSize": 47
+    },
+    {
+      "start": 77.851,
+      "end": 78.311,
+      "words": [
+        {
+          "text": "hat",
+          "start": 77.851,
+          "end": 78.051
+        },
+        {
+          "text": "man?",
+          "start": 78.051,
+          "end": 78.311
+        }
+      ]
+    },
+    {
+      "start": 78.311,
+      "end": 78.791,
+      "words": [
+        {
+          "text": "Wie",
+          "start": 78.311,
+          "end": 78.531
+        },
+        {
+          "text": "sieht",
+          "start": 78.531,
+          "end": 78.641
+        },
+        {
+          "text": "die",
+          "start": 78.641,
+          "end": 78.791
+        }
+      ]
+    },
+    {
+      "start": 78.791,
+      "end": 79.591,
+      "words": [
+        {
+          "text": "Fehlerkultur",
+          "start": 78.791,
+          "end": 79.361
+        },
+        {
+          "text": "aus?",
+          "start": 79.361,
+          "end": 79.591
+        }
+      ]
+    },
+    {
+      "start": 79.591,
+      "end": 80.181,
+      "words": [
+        {
+          "text": "Also",
+          "start": 79.591,
+          "end": 79.811
+        },
+        {
+          "text": "wirklich",
+          "start": 79.811,
+          "end": 80.111
+        }
+      ]
+    },
+    {
+      "start": 80.291,
+      "end": 81.061,
+      "words": [
+        {
+          "text": "konkret",
+          "start": 80.291,
+          "end": 80.621
+        },
+        {
+          "text": "nach",
+          "start": 80.621,
+          "end": 80.841
+        },
+        {
+          "text": "dem",
+          "start": 80.841,
+          "end": 81.061
+        }
+      ]
+    },
+    {
+      "start": 81.061,
+      "end": 81.931,
+      "words": [
+        {
+          "text": "Arbeitsalltag",
+          "start": 81.061,
+          "end": 81.681
+        },
+        {
+          "text": "fragen.",
+          "start": 81.681,
+          "end": 81.931
+        }
+      ]
+    },
+    {
+      "start": 81.931,
+      "end": 82.381,
+      "words": [
+        {
+          "text": "Und",
+          "start": 81.931,
+          "end": 82.061
+        },
+        {
+          "text": "der",
+          "start": 82.061,
+          "end": 82.191
+        },
+        {
+          "text": "letzte",
+          "start": 82.191,
+          "end": 82.381
+        }
+      ]
+    },
+    {
+      "start": 82.381,
+      "end": 83.491,
+      "words": [
+        {
+          "text": "Punkt",
+          "start": 82.381,
+          "end": 82.591
+        },
+        {
+          "text": "ist,",
+          "start": 82.591,
+          "end": 82.831
+        },
+        {
+          "text": "du",
+          "start": 82.831,
+          "end": 83.081
+        },
+        {
+          "text": "bereitest",
+          "start": 83.081,
+          "end": 83.491
+        }
+      ]
+    },
+    {
+      "start": 83.491,
+      "end": 84.451,
+      "words": [
+        {
+          "text": "dich",
+          "start": 83.491,
+          "end": 83.701
+        },
+        {
+          "text": "auch",
+          "start": 83.701,
+          "end": 83.911
+        },
+        {
+          "text": "auf",
+          "start": 83.911,
+          "end": 84.101
+        },
+        {
+          "text": "kritische",
+          "start": 84.101,
+          "end": 84.451
+        }
+      ]
+    },
+    {
+      "start": 84.451,
+      "end": 84.991,
+      "words": [
+        {
+          "text": "Momente",
+          "start": 84.451,
+          "end": 84.761
+        },
+        {
+          "text": "vor.",
+          "start": 84.761,
+          "end": 84.991
+        }
+      ]
+    },
+    {
+      "start": 84.991,
+      "end": 85.521,
+      "words": [
+        {
+          "text": "Die",
+          "start": 84.991,
+          "end": 85.181
+        },
+        {
+          "text": "schreibst",
+          "start": 85.181,
+          "end": 85.451
+        },
+        {
+          "text": "du",
+          "start": 85.451,
+          "end": 85.521
+        }
+      ]
+    },
+    {
+      "start": 85.521,
+      "end": 86.481,
+      "words": [
+        {
+          "text": "dir",
+          "start": 85.521,
+          "end": 85.641
+        },
+        {
+          "text": "auf",
+          "start": 85.641,
+          "end": 85.851
+        },
+        {
+          "text": "und",
+          "start": 85.851,
+          "end": 86.121
+        },
+        {
+          "text": "entwickelst",
+          "start": 86.121,
+          "end": 86.481
+        }
+      ]
+    },
+    {
+      "start": 86.481,
+      "end": 87.081,
+      "words": [
+        {
+          "text": "natürlich",
+          "start": 86.481,
+          "end": 86.701
+        },
+        {
+          "text": "mögliche",
+          "start": 86.701,
+          "end": 87.081
+        }
+      ]
+    },
+    {
+      "start": 87.081,
+      "end": 87.541,
+      "words": [
+        {
+          "text": "Antworten",
+          "start": 87.081,
+          "end": 87.361
+        },
+        {
+          "text": "darauf,",
+          "start": 87.361,
+          "end": 87.541
+        }
+      ]
+    },
+    {
+      "start": 87.541,
+      "end": 88.011,
+      "words": [
+        {
+          "text": "damit",
+          "start": 87.541,
+          "end": 87.741
+        },
+        {
+          "text": "du",
+          "start": 87.741,
+          "end": 88.011
+        }
+      ]
+    },
+    {
+      "start": 88.011,
+      "end": 89.05,
+      "words": [
+        {
+          "text": "immer",
+          "start": 88.011,
+          "end": 88.321
+        },
+        {
+          "text": "vorbereitet",
+          "start": 88.321,
+          "end": 88.701
+        },
+        {
+          "text": "bist.",
+          "start": 88.701,
+          "end": 88.991
+        }
+      ]
+    },
+    {
+      "start": 89.05,
+      "end": 90.28,
+      "words": [
+        {
+          "text": "Und",
+          "start": 89.05,
+          "end": 89.41
+        },
+        {
+          "text": "natürlich:",
+          "start": 89.41,
+          "end": 89.77
+        },
+        {
+          "text": "Folgen",
+          "start": 90.05,
+          "end": 90.28
+        }
+      ]
+    },
+    {
+      "start": 90.28,
+      "end": 90.85,
+      "words": [
+        {
+          "text": "nicht",
+          "start": 90.28,
+          "end": 90.48
+        },
+        {
+          "text": "vergessen.",
+          "start": 90.48,
+          "end": 90.78
+        }
+      ]
+    }
+  ]
+}

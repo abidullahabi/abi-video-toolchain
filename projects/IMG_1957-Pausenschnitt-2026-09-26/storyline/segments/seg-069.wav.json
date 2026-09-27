@@ -1,0 +1,339 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,360"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2360
+			},
+			"text": " Es macht einen Riesenunterschied, wenn du in einer großen Stadt wohnst,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.967477,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,070"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 70
+					},
+					"id": 2313,
+					"p": 0.917349,
+					"t_dtw": 12
+				},
+				{
+					"text": " macht",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,260"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 260
+					},
+					"id": 10857,
+					"p": 0.989108,
+					"t_dtw": 26
+				},
+				{
+					"text": " einen",
+					"timestamps": {
+						"from": "00:00:00,260",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 260,
+						"to": 450
+					},
+					"id": 4891,
+					"p": 0.916705,
+					"t_dtw": 40
+				},
+				{
+					"text": " R",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 480
+					},
+					"id": 497,
+					"p": 0.502439,
+					"t_dtw": 46
+				},
+				{
+					"text": "iesen",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 670
+					},
+					"id": 30383,
+					"p": 0.966815,
+					"t_dtw": 56
+				},
+				{
+					"text": "un",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:00,740"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 740
+					},
+					"id": 409,
+					"p": 0.942917,
+					"t_dtw": 70
+				},
+				{
+					"text": "ters",
+					"timestamps": {
+						"from": "00:00:00,740",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 740,
+						"to": 890
+					},
+					"id": 1559,
+					"p": 0.998824,
+					"t_dtw": 82
+				},
+				{
+					"text": "chied",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 1080
+					},
+					"id": 11805,
+					"p": 0.999491,
+					"t_dtw": 92
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,220"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1220
+					},
+					"id": 11,
+					"p": 0.909075,
+					"t_dtw": 96
+				},
+				{
+					"text": " wenn",
+					"timestamps": {
+						"from": "00:00:01,220",
+						"to": "00:00:01,370"
+					},
+					"offsets": {
+						"from": 1220,
+						"to": 1370
+					},
+					"id": 4797,
+					"p": 0.886363,
+					"t_dtw": 106
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:01,370",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1370,
+						"to": 1440
+					},
+					"id": 1581,
+					"p": 0.897415,
+					"t_dtw": 108
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:01,440",
+						"to": "00:00:01,510"
+					},
+					"offsets": {
+						"from": 1440,
+						"to": 1510
+					},
+					"id": 294,
+					"p": 0.8104,
+					"t_dtw": 122
+				},
+				{
+					"text": " einer",
+					"timestamps": {
+						"from": "00:00:01,510",
+						"to": "00:00:01,690"
+					},
+					"offsets": {
+						"from": 1510,
+						"to": 1690
+					},
+					"id": 6850,
+					"p": 0.894655,
+					"t_dtw": 128
+				},
+				{
+					"text": " großen",
+					"timestamps": {
+						"from": "00:00:01,690",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1690,
+						"to": 1900
+					},
+					"id": 23076,
+					"p": 0.884061,
+					"t_dtw": 152
+				},
+				{
+					"text": " Stadt",
+					"timestamps": {
+						"from": "00:00:01,900",
+						"to": "00:00:02,090"
+					},
+					"offsets": {
+						"from": 1900,
+						"to": 2090
+					},
+					"id": 20550,
+					"p": 0.985384,
+					"t_dtw": 176
+				},
+				{
+					"text": " w",
+					"timestamps": {
+						"from": "00:00:02,090",
+						"to": "00:00:02,110"
+					},
+					"offsets": {
+						"from": 2090,
+						"to": 2110
+					},
+					"id": 261,
+					"p": 0.979745,
+					"t_dtw": 196
+				},
+				{
+					"text": "ohn",
+					"timestamps": {
+						"from": "00:00:02,110",
+						"to": "00:00:02,130"
+					},
+					"offsets": {
+						"from": 2110,
+						"to": 2130
+					},
+					"id": 2359,
+					"p": 0.999489,
+					"t_dtw": 204
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:02,300",
+						"to": "00:00:02,350"
+					},
+					"offsets": {
+						"from": 2300,
+						"to": 2350
+					},
+					"id": 372,
+					"p": 0.999274,
+					"t_dtw": 216
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,350",
+						"to": "00:00:02,360"
+					},
+					"offsets": {
+						"from": 2350,
+						"to": 2360
+					},
+					"id": 11,
+					"p": 0.567695,
+					"t_dtw": 234
+				},
+				{
+					"text": "[_TT_118]",
+					"timestamps": {
+						"from": "00:00:02,360",
+						"to": "00:00:02,360"
+					},
+					"offsets": {
+						"from": 2360,
+						"to": 2360
+					},
+					"id": 50483,
+					"p": 0.963159,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

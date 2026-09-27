@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,600"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1600
+			},
+			"text": " Drei wichtigsten Entscheidungen im Leben.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.986047,
+					"t_dtw": -1
+				},
+				{
+					"text": " D",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,040"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 40
+					},
+					"id": 413,
+					"p": 0.197786,
+					"t_dtw": 12
+				},
+				{
+					"text": "rei",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 170
+					},
+					"id": 10271,
+					"p": 0.97582,
+					"t_dtw": 16
+				},
+				{
+					"text": " wichtig",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 480
+					},
+					"id": 13621,
+					"p": 0.981937,
+					"t_dtw": 38
+				},
+				{
+					"text": "sten",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 650
+					},
+					"id": 6266,
+					"p": 0.855938,
+					"t_dtw": 58
+				},
+				{
+					"text": " Entscheid",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:01,040"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 1040
+					},
+					"id": 30862,
+					"p": 0.960376,
+					"t_dtw": 82
+				},
+				{
+					"text": "ungen",
+					"timestamps": {
+						"from": "00:00:01,040",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 1040,
+						"to": 1260
+					},
+					"id": 5084,
+					"p": 0.998228,
+					"t_dtw": 102
+				},
+				{
+					"text": " im",
+					"timestamps": {
+						"from": "00:00:01,260",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1260,
+						"to": 1340
+					},
+					"id": 566,
+					"p": 0.975794,
+					"t_dtw": 114
+				},
+				{
+					"text": " Leben",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,430"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1430
+					},
+					"id": 15399,
+					"p": 0.992895,
+					"t_dtw": 132
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,590",
+						"to": "00:00:01,590"
+					},
+					"offsets": {
+						"from": 1590,
+						"to": 1590
+					},
+					"id": 13,
+					"p": 0.541274,
+					"t_dtw": 156
+				},
+				{
+					"text": "[_TT_80]",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1600
+					},
+					"id": 50445,
+					"p": 0.983015,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

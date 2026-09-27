@@ -1,0 +1,269 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,360"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2360
+			},
+			"text": " Und vor allem beim Investieren macht sich das sehr ausgezahlt.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.872176,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,110"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 110
+					},
+					"id": 2719,
+					"p": 0.862307,
+					"t_dtw": 14
+				},
+				{
+					"text": " vor",
+					"timestamps": {
+						"from": "00:00:00,110",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 110,
+						"to": 170
+					},
+					"id": 4245,
+					"p": 0.947181,
+					"t_dtw": 30
+				},
+				{
+					"text": " allem",
+					"timestamps": {
+						"from": "00:00:00,240",
+						"to": "00:00:00,410"
+					},
+					"offsets": {
+						"from": 240,
+						"to": 410
+					},
+					"id": 17585,
+					"p": 0.991078,
+					"t_dtw": 36
+				},
+				{
+					"text": " beim",
+					"timestamps": {
+						"from": "00:00:00,410",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 410,
+						"to": 560
+					},
+					"id": 13922,
+					"p": 0.996841,
+					"t_dtw": 52
+				},
+				{
+					"text": " Invest",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 780
+					},
+					"id": 14008,
+					"p": 0.978174,
+					"t_dtw": 80
+				},
+				{
+					"text": "ieren",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 1000
+					},
+					"id": 5695,
+					"p": 0.999392,
+					"t_dtw": 98
+				},
+				{
+					"text": " macht",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1100
+					},
+					"id": 10857,
+					"p": 0.854852,
+					"t_dtw": 116
+				},
+				{
+					"text": " sich",
+					"timestamps": {
+						"from": "00:00:01,220",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 1220,
+						"to": 1410
+					},
+					"id": 3041,
+					"p": 0.997348,
+					"t_dtw": 128
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,540"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1540
+					},
+					"id": 1482,
+					"p": 0.998963,
+					"t_dtw": 142
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:01,550",
+						"to": "00:00:01,730"
+					},
+					"offsets": {
+						"from": 1550,
+						"to": 1730
+					},
+					"id": 5499,
+					"p": 0.99501,
+					"t_dtw": 168
+				},
+				{
+					"text": " ausge",
+					"timestamps": {
+						"from": "00:00:01,730",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1730,
+						"to": 1860
+					},
+					"id": 31899,
+					"p": 0.99383,
+					"t_dtw": 200
+				},
+				{
+					"text": "z",
+					"timestamps": {
+						"from": "00:00:01,970",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1970,
+						"to": 2000
+					},
+					"id": 89,
+					"p": 0.885373,
+					"t_dtw": 216
+				},
+				{
+					"text": "ahlt",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2180
+					},
+					"id": 44950,
+					"p": 0.997746,
+					"t_dtw": 226
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,180",
+						"to": "00:00:02,270"
+					},
+					"offsets": {
+						"from": 2180,
+						"to": 2270
+					},
+					"id": 13,
+					"p": 0.982337,
+					"t_dtw": 234
+				},
+				{
+					"text": "[_TT_118]",
+					"timestamps": {
+						"from": "00:00:02,360",
+						"to": "00:00:02,360"
+					},
+					"offsets": {
+						"from": 2360,
+						"to": 2360
+					},
+					"id": 50483,
+					"p": 0.935702,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

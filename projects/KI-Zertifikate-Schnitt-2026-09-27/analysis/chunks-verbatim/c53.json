@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,620"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 620
+			},
+			"text": " Freu nicht vergessen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.360857,
+					"t_dtw": -1
+				},
+				{
+					"text": " Fre",
+					"timestamps": {
+						"from": "00:00:00,080",
+						"to": "00:00:00,080"
+					},
+					"offsets": {
+						"from": 80,
+						"to": 80
+					},
+					"id": 6142,
+					"p": 0.314689,
+					"t_dtw": 22
+				},
+				{
+					"text": "u",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 100
+					},
+					"id": 84,
+					"p": 0.454336,
+					"t_dtw": 22
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,240"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 240
+					},
+					"id": 1979,
+					"p": 0.483485,
+					"t_dtw": 30
+				},
+				{
+					"text": " vergessen",
+					"timestamps": {
+						"from": "00:00:00,240",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 240,
+						"to": 500
+					},
+					"id": 42418,
+					"p": 0.905812,
+					"t_dtw": 60
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 580
+					},
+					"id": 13,
+					"p": 0.886609,
+					"t_dtw": 60
+				},
+				{
+					"text": "[_TT_31]",
+					"timestamps": {
+						"from": "00:00:00,620",
+						"to": "00:00:00,620"
+					},
+					"offsets": {
+						"from": 620,
+						"to": 620
+					},
+					"id": 50396,
+					"p": 0.552592,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

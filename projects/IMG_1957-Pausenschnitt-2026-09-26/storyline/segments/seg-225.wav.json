@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,300"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1300
+			},
+			"text": " wie sehr was im Leben bringen wird.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.901504,
+					"t_dtw": -1
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 130
+					},
+					"id": 3355,
+					"p": 0.797497,
+					"t_dtw": 14
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,310"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 310
+					},
+					"id": 5499,
+					"p": 0.700797,
+					"t_dtw": 24
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,380"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 380
+					},
+					"id": 390,
+					"p": 0.240097,
+					"t_dtw": 38
+				},
+				{
+					"text": " im",
+					"timestamps": {
+						"from": "00:00:00,440",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 440,
+						"to": 530
+					},
+					"id": 566,
+					"p": 0.65099,
+					"t_dtw": 52
+				},
+				{
+					"text": " Leben",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 750
+					},
+					"id": 15399,
+					"p": 0.998654,
+					"t_dtw": 66
+				},
+				{
+					"text": " bringen",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:01,070"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 1070
+					},
+					"id": 27519,
+					"p": 0.970242,
+					"t_dtw": 90
+				},
+				{
+					"text": " wird",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1120
+					},
+					"id": 4578,
+					"p": 0.987907,
+					"t_dtw": 114
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,290",
+						"to": "00:00:01,290"
+					},
+					"offsets": {
+						"from": 1290,
+						"to": 1290
+					},
+					"id": 13,
+					"p": 0.938025,
+					"t_dtw": 126
+				},
+				{
+					"text": "[_TT_65]",
+					"timestamps": {
+						"from": "00:00:01,300",
+						"to": "00:00:01,300"
+					},
+					"offsets": {
+						"from": 1300,
+						"to": 1300
+					},
+					"id": 50430,
+					"p": 0.344525,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

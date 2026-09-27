@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,260"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1260
+			},
+			"text": " Ich hätte mir das Beispiel erlaubt,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.974016,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 120
+					},
+					"id": 3141,
+					"p": 0.789827,
+					"t_dtw": 16
+				},
+				{
+					"text": " hätte",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 320
+					},
+					"id": 20041,
+					"p": 0.986385,
+					"t_dtw": 28
+				},
+				{
+					"text": " mir",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 430
+					},
+					"id": 3149,
+					"p": 0.993464,
+					"t_dtw": 42
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 560
+					},
+					"id": 1482,
+					"p": 0.291112,
+					"t_dtw": 52
+				},
+				{
+					"text": " Beispiel",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 880
+					},
+					"id": 13772,
+					"p": 0.868593,
+					"t_dtw": 70
+				},
+				{
+					"text": " er",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:00,960"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 960
+					},
+					"id": 1189,
+					"p": 0.986896,
+					"t_dtw": 92
+				},
+				{
+					"text": "laub",
+					"timestamps": {
+						"from": "00:00:00,960",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 960,
+						"to": 1100
+					},
+					"id": 20798,
+					"p": 0.991471,
+					"t_dtw": 110
+				},
+				{
+					"text": "t",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1140
+					},
+					"id": 83,
+					"p": 0.98448,
+					"t_dtw": 118
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,260",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 1260,
+						"to": 1260
+					},
+					"id": 11,
+					"p": 0.811963,
+					"t_dtw": 124
+				},
+				{
+					"text": "[_TT_63]",
+					"timestamps": {
+						"from": "00:00:01,260",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 1260,
+						"to": 1260
+					},
+					"id": 50428,
+					"p": 0.114013,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

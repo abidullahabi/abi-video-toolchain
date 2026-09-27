@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,680"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1680
+			},
+			"text": " Ich glaube, auch das kostet ein bisschen Geld.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.900726,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 120
+					},
+					"id": 3141,
+					"p": 0.970358,
+					"t_dtw": 12
+				},
+				{
+					"text": " glaube",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,350"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 350
+					},
+					"id": 13756,
+					"p": 0.757431,
+					"t_dtw": 24
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,410",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 410,
+						"to": 450
+					},
+					"id": 11,
+					"p": 0.620497,
+					"t_dtw": 32
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 500
+					},
+					"id": 2168,
+					"p": 0.985145,
+					"t_dtw": 38
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,710"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 710
+					},
+					"id": 1482,
+					"p": 0.984059,
+					"t_dtw": 54
+				},
+				{
+					"text": " kost",
+					"timestamps": {
+						"from": "00:00:00,770",
+						"to": "00:00:00,910"
+					},
+					"offsets": {
+						"from": 770,
+						"to": 910
+					},
+					"id": 27183,
+					"p": 0.996592,
+					"t_dtw": 74
+				},
+				{
+					"text": "et",
+					"timestamps": {
+						"from": "00:00:00,910",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 910,
+						"to": 980
+					},
+					"id": 302,
+					"p": 0.999112,
+					"t_dtw": 82
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1100
+					},
+					"id": 1343,
+					"p": 0.876496,
+					"t_dtw": 92
+				},
+				{
+					"text": " bisschen",
+					"timestamps": {
+						"from": "00:00:01,110",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1110,
+						"to": 1340
+					},
+					"id": 10763,
+					"p": 0.986925,
+					"t_dtw": 102
+				},
+				{
+					"text": " Geld",
+					"timestamps": {
+						"from": "00:00:01,670",
+						"to": "00:00:01,670"
+					},
+					"offsets": {
+						"from": 1670,
+						"to": 1670
+					},
+					"id": 16535,
+					"p": 0.996405,
+					"t_dtw": 134
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,670",
+						"to": "00:00:01,670"
+					},
+					"offsets": {
+						"from": 1670,
+						"to": 1670
+					},
+					"id": 13,
+					"p": 0.757079,
+					"t_dtw": 150
+				},
+				{
+					"text": "[_TT_84]",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1680
+					},
+					"id": 50449,
+					"p": 0.449263,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

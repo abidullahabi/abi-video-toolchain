@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,560"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1560
+			},
+			"text": " Wenn um dich herum nur Lutscher sind,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.965438,
+					"t_dtw": -1
+				},
+				{
+					"text": " Wenn",
+					"timestamps": {
+						"from": "00:00:00,080",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 80,
+						"to": 200
+					},
+					"id": 7899,
+					"p": 0.718966,
+					"t_dtw": 22
+				},
+				{
+					"text": " um",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 300
+					},
+					"id": 1105,
+					"p": 0.948895,
+					"t_dtw": 34
+				},
+				{
+					"text": " dich",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 500
+					},
+					"id": 10390,
+					"p": 0.974071,
+					"t_dtw": 46
+				},
+				{
+					"text": " herum",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 750
+					},
+					"id": 49675,
+					"p": 0.988141,
+					"t_dtw": 72
+				},
+				{
+					"text": " nur",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 890
+					},
+					"id": 4343,
+					"p": 0.872217,
+					"t_dtw": 86
+				},
+				{
+					"text": " L",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 950
+					},
+					"id": 441,
+					"p": 0.896686,
+					"t_dtw": 98
+				},
+				{
+					"text": "uts",
+					"timestamps": {
+						"from": "00:00:00,950",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 950,
+						"to": 1100
+					},
+					"id": 3648,
+					"p": 0.987287,
+					"t_dtw": 106
+				},
+				{
+					"text": "cher",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,300"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1300
+					},
+					"id": 6759,
+					"p": 0.995036,
+					"t_dtw": 114
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:01,300",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1300,
+						"to": 1380
+					},
+					"id": 3290,
+					"p": 0.995281,
+					"t_dtw": 138
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1560
+					},
+					"id": 11,
+					"p": 0.77655,
+					"t_dtw": 154
+				},
+				{
+					"text": "[_TT_78]",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1560
+					},
+					"id": 50443,
+					"p": 0.866097,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

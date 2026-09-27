@@ -1,0 +1,451 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,300"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5300
+			},
+			"text": " Es hat einen Riesen-Impact auf dein Glücksein, auf deine Zukunft und auch einfach generell die Ansicht auf Glück.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.993986,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,030",
+						"to": "00:00:00,070"
+					},
+					"offsets": {
+						"from": 30,
+						"to": 70
+					},
+					"id": 2313,
+					"p": 0.917221,
+					"t_dtw": 14
+				},
+				{
+					"text": " hat",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 180
+					},
+					"id": 2385,
+					"p": 0.999796,
+					"t_dtw": 26
+				},
+				{
+					"text": " einen",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 370
+					},
+					"id": 4891,
+					"p": 0.90596,
+					"t_dtw": 40
+				},
+				{
+					"text": " R",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 400
+					},
+					"id": 497,
+					"p": 0.595946,
+					"t_dtw": 40
+				},
+				{
+					"text": "iesen",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,590"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 590
+					},
+					"id": 30383,
+					"p": 0.996922,
+					"t_dtw": 54
+				},
+				{
+					"text": "-",
+					"timestamps": {
+						"from": "00:00:00,590",
+						"to": "00:00:00,620"
+					},
+					"offsets": {
+						"from": 590,
+						"to": 620
+					},
+					"id": 12,
+					"p": 0.391816,
+					"t_dtw": 68
+				},
+				{
+					"text": "Imp",
+					"timestamps": {
+						"from": "00:00:00,620",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 620,
+						"to": 700
+					},
+					"id": 43329,
+					"p": 0.991561,
+					"t_dtw": 76
+				},
+				{
+					"text": "act",
+					"timestamps": {
+						"from": "00:00:00,730",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 730,
+						"to": 880
+					},
+					"id": 578,
+					"p": 0.878017,
+					"t_dtw": 88
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:00,910",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 910,
+						"to": 1030
+					},
+					"id": 2501,
+					"p": 0.97437,
+					"t_dtw": 104
+				},
+				{
+					"text": " dein",
+					"timestamps": {
+						"from": "00:00:01,040",
+						"to": "00:00:01,230"
+					},
+					"offsets": {
+						"from": 1040,
+						"to": 1230
+					},
+					"id": 25641,
+					"p": 0.995397,
+					"t_dtw": 120
+				},
+				{
+					"text": " Glück",
+					"timestamps": {
+						"from": "00:00:01,230",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 1230,
+						"to": 1420
+					},
+					"id": 33508,
+					"p": 0.995329,
+					"t_dtw": 144
+				},
+				{
+					"text": "sein",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1650
+					},
+					"id": 33042,
+					"p": 0.688055,
+					"t_dtw": 172
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,650",
+						"to": "00:00:01,760"
+					},
+					"offsets": {
+						"from": 1650,
+						"to": 1760
+					},
+					"id": 11,
+					"p": 0.995708,
+					"t_dtw": 192
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:01,760",
+						"to": "00:00:01,940"
+					},
+					"offsets": {
+						"from": 1760,
+						"to": 1940
+					},
+					"id": 2501,
+					"p": 0.688666,
+					"t_dtw": 200
+				},
+				{
+					"text": " deine",
+					"timestamps": {
+						"from": "00:00:01,940",
+						"to": "00:00:02,200"
+					},
+					"offsets": {
+						"from": 1940,
+						"to": 2200
+					},
+					"id": 28395,
+					"p": 0.999007,
+					"t_dtw": 216
+				},
+				{
+					"text": " Zukunft",
+					"timestamps": {
+						"from": "00:00:02,260",
+						"to": "00:00:02,680"
+					},
+					"offsets": {
+						"from": 2260,
+						"to": 2680
+					},
+					"id": 22782,
+					"p": 0.998321,
+					"t_dtw": 258
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:02,870",
+						"to": "00:00:02,870"
+					},
+					"offsets": {
+						"from": 2870,
+						"to": 2870
+					},
+					"id": 674,
+					"p": 0.681306,
+					"t_dtw": 300
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:02,910",
+						"to": "00:00:03,090"
+					},
+					"offsets": {
+						"from": 2910,
+						"to": 3090
+					},
+					"id": 2168,
+					"p": 0.997756,
+					"t_dtw": 320
+				},
+				{
+					"text": " einfach",
+					"timestamps": {
+						"from": "00:00:03,090",
+						"to": "00:00:03,490"
+					},
+					"offsets": {
+						"from": 3090,
+						"to": 3490
+					},
+					"id": 7281,
+					"p": 0.994898,
+					"t_dtw": 346
+				},
+				{
+					"text": " genere",
+					"timestamps": {
+						"from": "00:00:03,490",
+						"to": "00:00:03,830"
+					},
+					"offsets": {
+						"from": 3490,
+						"to": 3830
+					},
+					"id": 41553,
+					"p": 0.988659,
+					"t_dtw": 382
+				},
+				{
+					"text": "ll",
+					"timestamps": {
+						"from": "00:00:03,830",
+						"to": "00:00:03,960"
+					},
+					"offsets": {
+						"from": 3830,
+						"to": 3960
+					},
+					"id": 285,
+					"p": 0.999592,
+					"t_dtw": 396
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:03,960",
+						"to": "00:00:04,260"
+					},
+					"offsets": {
+						"from": 3960,
+						"to": 4260
+					},
+					"id": 978,
+					"p": 0.965859,
+					"t_dtw": 414
+				},
+				{
+					"text": " Ans",
+					"timestamps": {
+						"from": "00:00:04,260",
+						"to": "00:00:04,560"
+					},
+					"offsets": {
+						"from": 4260,
+						"to": 4560
+					},
+					"id": 14590,
+					"p": 0.997714,
+					"t_dtw": 444
+				},
+				{
+					"text": "icht",
+					"timestamps": {
+						"from": "00:00:04,560",
+						"to": "00:00:04,970"
+					},
+					"offsets": {
+						"from": 4560,
+						"to": 4970
+					},
+					"id": 1405,
+					"p": 0.999014,
+					"t_dtw": 470
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:04,970",
+						"to": "00:00:05,180"
+					},
+					"offsets": {
+						"from": 4970,
+						"to": 5180
+					},
+					"id": 2501,
+					"p": 0.992523,
+					"t_dtw": 520
+				},
+				{
+					"text": " Glück",
+					"timestamps": {
+						"from": "00:00:05,300",
+						"to": "00:00:05,300"
+					},
+					"offsets": {
+						"from": 5300,
+						"to": 5300
+					},
+					"id": 33508,
+					"p": 0.0741047,
+					"t_dtw": 526
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:05,300",
+						"to": "00:00:05,300"
+					},
+					"offsets": {
+						"from": 5300,
+						"to": 5300
+					},
+					"id": 13,
+					"p": 0.735973,
+					"t_dtw": 526
+				},
+				{
+					"text": "[_TT_265]",
+					"timestamps": {
+						"from": "00:00:05,300",
+						"to": "00:00:05,300"
+					},
+					"offsets": {
+						"from": 5300,
+						"to": 5300
+					},
+					"id": 50630,
+					"p": 0.986726,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

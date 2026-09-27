@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,380"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2380
+			},
+			"text": " Das certificat... das certificat... das certificat...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.227439,
+					"t_dtw": -1
+				},
+				{
+					"text": " Das",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 300
+					},
+					"id": 2846,
+					"p": 0.683343,
+					"t_dtw": 28
+				},
+				{
+					"text": " certific",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 1140
+					},
+					"id": 12378,
+					"p": 0.410589,
+					"t_dtw": 52
+				},
+				{
+					"text": "at",
+					"timestamps": {
+						"from": "00:00:01,180",
+						"to": "00:00:01,390"
+					},
+					"offsets": {
+						"from": 1180,
+						"to": 1390
+					},
+					"id": 267,
+					"p": 0.703797,
+					"t_dtw": 74
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:01,390",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 1390,
+						"to": 2370
+					},
+					"id": 485,
+					"p": 0.0869594,
+					"t_dtw": 74
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:02,370",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2370,
+						"to": 2370
+					},
+					"id": 1482,
+					"p": 0.146,
+					"t_dtw": 96
+				},
+				{
+					"text": " certific",
+					"timestamps": {
+						"from": "00:00:02,370",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2370,
+						"to": 2370
+					},
+					"id": 12378,
+					"p": 0.989446,
+					"t_dtw": 116
+				},
+				{
+					"text": "at",
+					"timestamps": {
+						"from": "00:00:02,370",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2370,
+						"to": 2370
+					},
+					"id": 267,
+					"p": 0.948672,
+					"t_dtw": 140
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:02,370",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2370,
+						"to": 2370
+					},
+					"id": 485,
+					"p": 0.711915,
+					"t_dtw": 156
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:02,370",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2370,
+						"to": 2370
+					},
+					"id": 1482,
+					"p": 0.624041,
+					"t_dtw": 156
+				},
+				{
+					"text": " certific",
+					"timestamps": {
+						"from": "00:00:02,370",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2370,
+						"to": 2370
+					},
+					"id": 12378,
+					"p": 0.80553,
+					"t_dtw": 168
+				},
+				{
+					"text": "at",
+					"timestamps": {
+						"from": "00:00:02,370",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2370,
+						"to": 2370
+					},
+					"id": 267,
+					"p": 0.966842,
+					"t_dtw": 168
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:02,370",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2370,
+						"to": 2370
+					},
+					"id": 485,
+					"p": 0.919425,
+					"t_dtw": 168
+				},
+				{
+					"text": "[_TT_119]",
+					"timestamps": {
+						"from": "00:00:02,380",
+						"to": "00:00:02,380"
+					},
+					"offsets": {
+						"from": 2380,
+						"to": 2380
+					},
+					"id": 50484,
+					"p": 0.364643,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,380"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1380
+			},
+			"text": " viel zu wenig junge Menschen",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.984315,
+					"t_dtw": -1
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,230"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 230
+					},
+					"id": 5891,
+					"p": 0.732111,
+					"t_dtw": 16
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 330
+					},
+					"id": 2164,
+					"p": 0.99882,
+					"t_dtw": 30
+				},
+				{
+					"text": " wenig",
+					"timestamps": {
+						"from": "00:00:00,340",
+						"to": "00:00:00,620"
+					},
+					"offsets": {
+						"from": 340,
+						"to": 620
+					},
+					"id": 20911,
+					"p": 0.87489,
+					"t_dtw": 52
+				},
+				{
+					"text": " junge",
+					"timestamps": {
+						"from": "00:00:00,620",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 620,
+						"to": 900
+					},
+					"id": 47877,
+					"p": 0.994447,
+					"t_dtw": 74
+				},
+				{
+					"text": " Menschen",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:01,210"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 1210
+					},
+					"id": 8397,
+					"p": 0.991121,
+					"t_dtw": 108
+				},
+				{
+					"text": "[_TT_69]",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1380
+					},
+					"id": 50434,
+					"p": 0.558864,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

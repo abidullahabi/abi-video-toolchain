@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,500"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1500
+			},
+			"text": " Ist sehr gut angesehen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.946618,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ist",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,230"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 230
+					},
+					"id": 12810,
+					"p": 0.943266,
+					"t_dtw": 30
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:00,230",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 230,
+						"to": 540
+					},
+					"id": 5499,
+					"p": 0.961562,
+					"t_dtw": 44
+				},
+				{
+					"text": " gut",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 770
+					},
+					"id": 5228,
+					"p": 0.995427,
+					"t_dtw": 60
+				},
+				{
+					"text": " ang",
+					"timestamps": {
+						"from": "00:00:00,770",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 770,
+						"to": 1000
+					},
+					"id": 2562,
+					"p": 0.991508,
+					"t_dtw": 78
+				},
+				{
+					"text": "esehen",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,490"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1490
+					},
+					"id": 18380,
+					"p": 0.993661,
+					"t_dtw": 102
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,490",
+						"to": "00:00:01,490"
+					},
+					"offsets": {
+						"from": 1490,
+						"to": 1490
+					},
+					"id": 13,
+					"p": 0.760716,
+					"t_dtw": 132
+				},
+				{
+					"text": "[_TT_75]",
+					"timestamps": {
+						"from": "00:00:01,500",
+						"to": "00:00:01,500"
+					},
+					"offsets": {
+						"from": 1500,
+						"to": 1500
+					},
+					"id": 50440,
+					"p": 0.969593,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

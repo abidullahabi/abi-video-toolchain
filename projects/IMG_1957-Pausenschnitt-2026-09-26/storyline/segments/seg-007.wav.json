@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,260"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2260
+			},
+			"text": " Dinge, die ich meinem 20-jährigen Ich ...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.951987,
+					"t_dtw": -1
+				},
+				{
+					"text": " Dinge",
+					"timestamps": {
+						"from": "00:00:00,090",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 90,
+						"to": 270
+					},
+					"id": 25102,
+					"p": 0.928008,
+					"t_dtw": 30
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 370
+					},
+					"id": 11,
+					"p": 0.993826,
+					"t_dtw": 54
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 420
+					},
+					"id": 978,
+					"p": 0.990773,
+					"t_dtw": 64
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,690"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 690
+					},
+					"id": 1893,
+					"p": 0.992305,
+					"t_dtw": 78
+				},
+				{
+					"text": " meinem",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:01,010"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 1010
+					},
+					"id": 24171,
+					"p": 0.997673,
+					"t_dtw": 104
+				},
+				{
+					"text": " 20",
+					"timestamps": {
+						"from": "00:00:01,010",
+						"to": "00:00:01,330"
+					},
+					"offsets": {
+						"from": 1010,
+						"to": 1330
+					},
+					"id": 945,
+					"p": 0.96931,
+					"t_dtw": 138
+				},
+				{
+					"text": "-",
+					"timestamps": {
+						"from": "00:00:01,330",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1330,
+						"to": 1380
+					},
+					"id": 12,
+					"p": 0.99089,
+					"t_dtw": 138
+				},
+				{
+					"text": "jähr",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,590"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1590
+					},
+					"id": 49418,
+					"p": 0.817033,
+					"t_dtw": 162
+				},
+				{
+					"text": "igen",
+					"timestamps": {
+						"from": "00:00:01,590",
+						"to": "00:00:01,840"
+					},
+					"offsets": {
+						"from": 1590,
+						"to": 1840
+					},
+					"id": 3213,
+					"p": 0.999495,
+					"t_dtw": 182
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:01,840",
+						"to": "00:00:02,080"
+					},
+					"offsets": {
+						"from": 1840,
+						"to": 2080
+					},
+					"id": 3141,
+					"p": 0.856121,
+					"t_dtw": 206
+				},
+				{
+					"text": " ...",
+					"timestamps": {
+						"from": "00:00:02,260",
+						"to": "00:00:02,260"
+					},
+					"offsets": {
+						"from": 2260,
+						"to": 2260
+					},
+					"id": 1097,
+					"p": 0.054088,
+					"t_dtw": 224
+				},
+				{
+					"text": "[_TT_113]",
+					"timestamps": {
+						"from": "00:00:02,260",
+						"to": "00:00:02,260"
+					},
+					"offsets": {
+						"from": 2260,
+						"to": 2260
+					},
+					"id": 50478,
+					"p": 0.976314,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

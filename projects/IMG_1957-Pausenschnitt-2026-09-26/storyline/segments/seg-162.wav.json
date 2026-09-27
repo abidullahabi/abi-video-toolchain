@@ -1,0 +1,129 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,480"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 480
+			},
+			"text": " Bin ich happy.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.945648,
+					"t_dtw": -1
+				},
+				{
+					"text": " Bin",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 100
+					},
+					"id": 18983,
+					"p": 0.832697,
+					"t_dtw": 16
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 200
+					},
+					"id": 1893,
+					"p": 0.992352,
+					"t_dtw": 26
+				},
+				{
+					"text": " happy",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 370
+					},
+					"id": 2055,
+					"p": 0.983192,
+					"t_dtw": 46
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 480
+					},
+					"id": 13,
+					"p": 0.871071,
+					"t_dtw": 46
+				},
+				{
+					"text": "[_TT_24]",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 480
+					},
+					"id": 50389,
+					"p": 0.392687,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

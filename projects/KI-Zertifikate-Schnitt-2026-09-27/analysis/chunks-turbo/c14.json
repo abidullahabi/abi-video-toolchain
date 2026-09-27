@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,240"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3240
+			},
+			"text": " AI Fluency Frameworks & Foundations war ziemlich geil.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.924995,
+					"t_dtw": -1
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 140
+					},
+					"id": 7318,
+					"p": 0.698403,
+					"t_dtw": 36
+				},
+				{
+					"text": " Flu",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 360
+					},
+					"id": 33612,
+					"p": 0.592915,
+					"t_dtw": 62
+				},
+				{
+					"text": "ency",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 650
+					},
+					"id": 3020,
+					"p": 0.996964,
+					"t_dtw": 82
+				},
+				{
+					"text": " Frame",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 890
+					},
+					"id": 31628,
+					"p": 0.880124,
+					"t_dtw": 114
+				},
+				{
+					"text": "works",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,300"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1300
+					},
+					"id": 18357,
+					"p": 0.772649,
+					"t_dtw": 138
+				},
+				{
+					"text": " &",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1440
+					},
+					"id": 3693,
+					"p": 0.415758,
+					"t_dtw": 152
+				},
+				{
+					"text": " Found",
+					"timestamps": {
+						"from": "00:00:01,440",
+						"to": "00:00:01,800"
+					},
+					"offsets": {
+						"from": 1440,
+						"to": 1800
+					},
+					"id": 8207,
+					"p": 0.961957,
+					"t_dtw": 172
+				},
+				{
+					"text": "ations",
+					"timestamps": {
+						"from": "00:00:01,800",
+						"to": "00:00:02,050"
+					},
+					"offsets": {
+						"from": 1800,
+						"to": 2050
+					},
+					"id": 763,
+					"p": 0.999447,
+					"t_dtw": 210
+				},
+				{
+					"text": " war",
+					"timestamps": {
+						"from": "00:00:02,420",
+						"to": "00:00:02,470"
+					},
+					"offsets": {
+						"from": 2420,
+						"to": 2470
+					},
+					"id": 1516,
+					"p": 0.530098,
+					"t_dtw": 246
+				},
+				{
+					"text": " ziemlich",
+					"timestamps": {
+						"from": "00:00:02,470",
+						"to": "00:00:02,960"
+					},
+					"offsets": {
+						"from": 2470,
+						"to": 2960
+					},
+					"id": 28901,
+					"p": 0.966076,
+					"t_dtw": 266
+				},
+				{
+					"text": " geil",
+					"timestamps": {
+						"from": "00:00:02,980",
+						"to": "00:00:02,980"
+					},
+					"offsets": {
+						"from": 2980,
+						"to": 2980
+					},
+					"id": 47165,
+					"p": 0.993571,
+					"t_dtw": 292
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,230",
+						"to": "00:00:03,240"
+					},
+					"offsets": {
+						"from": 3230,
+						"to": 3240
+					},
+					"id": 13,
+					"p": 0.62858,
+					"t_dtw": 322
+				},
+				{
+					"text": "[_TT_162]",
+					"timestamps": {
+						"from": "00:00:03,240",
+						"to": "00:00:03,240"
+					},
+					"offsets": {
+						"from": 3240,
+						"to": 3240
+					},
+					"id": 50527,
+					"p": 0.196604,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

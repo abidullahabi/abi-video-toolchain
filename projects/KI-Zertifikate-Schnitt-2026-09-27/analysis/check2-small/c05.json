@@ -1,0 +1,283 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,520"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2520
+			},
+			"text": " Der Test, das zweite Certificat ist ein bisschen mehr technischer.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.937844,
+					"t_dtw": -1
+				},
+				{
+					"text": " Der",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 130
+					},
+					"id": 5618,
+					"p": 0.0997219,
+					"t_dtw": 32
+				},
+				{
+					"text": " Test",
+					"timestamps": {
+						"from": "00:00:00,230",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 230,
+						"to": 270
+					},
+					"id": 9279,
+					"p": 0.113505,
+					"t_dtw": 42
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,380"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 380
+					},
+					"id": 11,
+					"p": 0.389204,
+					"t_dtw": 64
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,380",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 380,
+						"to": 470
+					},
+					"id": 1482,
+					"p": 0.91937,
+					"t_dtw": 74
+				},
+				{
+					"text": " zweite",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 720
+					},
+					"id": 37456,
+					"p": 0.850536,
+					"t_dtw": 92
+				},
+				{
+					"text": " Cert",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 940
+					},
+					"id": 31036,
+					"p": 0.0903236,
+					"t_dtw": 118
+				},
+				{
+					"text": "ific",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,070"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1070
+					},
+					"id": 1089,
+					"p": 0.651791,
+					"t_dtw": 138
+				},
+				{
+					"text": "at",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1190
+					},
+					"id": 267,
+					"p": 0.98386,
+					"t_dtw": 156
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,190",
+						"to": "00:00:01,320"
+					},
+					"offsets": {
+						"from": 1190,
+						"to": 1320
+					},
+					"id": 1418,
+					"p": 0.948353,
+					"t_dtw": 172
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:01,320",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1320,
+						"to": 1450
+					},
+					"id": 1343,
+					"p": 0.717772,
+					"t_dtw": 182
+				},
+				{
+					"text": " bisschen",
+					"timestamps": {
+						"from": "00:00:01,450",
+						"to": "00:00:01,730"
+					},
+					"offsets": {
+						"from": 1450,
+						"to": 1730
+					},
+					"id": 10763,
+					"p": 0.986466,
+					"t_dtw": 192
+				},
+				{
+					"text": " mehr",
+					"timestamps": {
+						"from": "00:00:01,810",
+						"to": "00:00:01,970"
+					},
+					"offsets": {
+						"from": 1810,
+						"to": 1970
+					},
+					"id": 5417,
+					"p": 0.941834,
+					"t_dtw": 208
+				},
+				{
+					"text": " techn",
+					"timestamps": {
+						"from": "00:00:01,970",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 1970,
+						"to": 2180
+					},
+					"id": 1537,
+					"p": 0.942276,
+					"t_dtw": 228
+				},
+				{
+					"text": "ischer",
+					"timestamps": {
+						"from": "00:00:02,180",
+						"to": "00:00:02,500"
+					},
+					"offsets": {
+						"from": 2180,
+						"to": 2500
+					},
+					"id": 19674,
+					"p": 0.889356,
+					"t_dtw": 250
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,500",
+						"to": "00:00:02,520"
+					},
+					"offsets": {
+						"from": 2500,
+						"to": 2520
+					},
+					"id": 13,
+					"p": 0.748478,
+					"t_dtw": 250
+				},
+				{
+					"text": "[_TT_126]",
+					"timestamps": {
+						"from": "00:00:02,520",
+						"to": "00:00:02,520"
+					},
+					"offsets": {
+						"from": 2520,
+						"to": 2520
+					},
+					"id": 50490,
+					"p": 0.0543863,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

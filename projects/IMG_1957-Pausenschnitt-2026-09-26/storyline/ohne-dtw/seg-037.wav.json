@@ -1,0 +1,269 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,300"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2300
+			},
+			"text": " Punkt Nummer 1, fang früher an mit deiner Therapie.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.970898,
+					"t_dtw": -1
+				},
+				{
+					"text": " Punkt",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 250
+					},
+					"id": 25487,
+					"p": 0.993329,
+					"t_dtw": -1
+				},
+				{
+					"text": " Nummer",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,550"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 550
+					},
+					"id": 47034,
+					"p": 0.951334,
+					"t_dtw": -1
+				},
+				{
+					"text": " 1",
+					"timestamps": {
+						"from": "00:00:00,550",
+						"to": "00:00:00,640"
+					},
+					"offsets": {
+						"from": 550,
+						"to": 640
+					},
+					"id": 502,
+					"p": 0.924292,
+					"t_dtw": -1
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:00,800"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 800
+					},
+					"id": 11,
+					"p": 0.670515,
+					"t_dtw": -1
+				},
+				{
+					"text": " f",
+					"timestamps": {
+						"from": "00:00:00,830",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 830,
+						"to": 850
+					},
+					"id": 283,
+					"p": 0.961043,
+					"t_dtw": -1
+				},
+				{
+					"text": "ang",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 1000
+					},
+					"id": 656,
+					"p": 0.921306,
+					"t_dtw": -1
+				},
+				{
+					"text": " früher",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,300"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1300
+					},
+					"id": 32349,
+					"p": 0.928434,
+					"t_dtw": -1
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:01,300",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1300,
+						"to": 1400
+					},
+					"id": 364,
+					"p": 0.996708,
+					"t_dtw": -1
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,550"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1550
+					},
+					"id": 2194,
+					"p": 0.993841,
+					"t_dtw": -1
+				},
+				{
+					"text": " de",
+					"timestamps": {
+						"from": "00:00:01,550",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 1550,
+						"to": 1650
+					},
+					"id": 368,
+					"p": 0.477204,
+					"t_dtw": -1
+				},
+				{
+					"text": "iner",
+					"timestamps": {
+						"from": "00:00:01,650",
+						"to": "00:00:01,850"
+					},
+					"offsets": {
+						"from": 1650,
+						"to": 1850
+					},
+					"id": 4564,
+					"p": 0.999895,
+					"t_dtw": -1
+				},
+				{
+					"text": " Therap",
+					"timestamps": {
+						"from": "00:00:01,850",
+						"to": "00:00:02,140"
+					},
+					"offsets": {
+						"from": 1850,
+						"to": 2140
+					},
+					"id": 36812,
+					"p": 0.997987,
+					"t_dtw": -1
+				},
+				{
+					"text": "ie",
+					"timestamps": {
+						"from": "00:00:02,150",
+						"to": "00:00:02,170"
+					},
+					"offsets": {
+						"from": 2150,
+						"to": 2170
+					},
+					"id": 414,
+					"p": 0.999899,
+					"t_dtw": -1
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,290",
+						"to": "00:00:02,290"
+					},
+					"offsets": {
+						"from": 2290,
+						"to": 2290
+					},
+					"id": 13,
+					"p": 0.97118,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_115]",
+					"timestamps": {
+						"from": "00:00:02,300",
+						"to": "00:00:02,300"
+					},
+					"offsets": {
+						"from": 2300,
+						"to": 2300
+					},
+					"id": 50480,
+					"p": 0.951859,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

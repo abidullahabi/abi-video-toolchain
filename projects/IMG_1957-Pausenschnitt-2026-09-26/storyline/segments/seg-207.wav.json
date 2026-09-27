@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1100
+			},
+			"text": " auch vor meinem Immizieren.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.984694,
+					"t_dtw": -1
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,030",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 30,
+						"to": 150
+					},
+					"id": 2168,
+					"p": 0.696653,
+					"t_dtw": 16
+				},
+				{
+					"text": " vor",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 330
+					},
+					"id": 4245,
+					"p": 0.594481,
+					"t_dtw": 32
+				},
+				{
+					"text": " meinem",
+					"timestamps": {
+						"from": "00:00:00,330",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 330,
+						"to": 610
+					},
+					"id": 24171,
+					"p": 0.7315,
+					"t_dtw": 50
+				},
+				{
+					"text": " Imm",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,710"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 710
+					},
+					"id": 17322,
+					"p": 0.0533909,
+					"t_dtw": 68
+				},
+				{
+					"text": "iz",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 840
+					},
+					"id": 590,
+					"p": 0.439692,
+					"t_dtw": 82
+				},
+				{
+					"text": "ieren",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 970
+					},
+					"id": 5695,
+					"p": 0.538713,
+					"t_dtw": 94
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,090"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1090
+					},
+					"id": 13,
+					"p": 0.834826,
+					"t_dtw": 106
+				},
+				{
+					"text": "[_TT_55]",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1100
+					},
+					"id": 50420,
+					"p": 0.778824,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

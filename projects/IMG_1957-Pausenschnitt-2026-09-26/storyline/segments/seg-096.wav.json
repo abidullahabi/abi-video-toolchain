@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,360"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1360
+			},
+			"text": " und am besten auch in eine andere Stadt.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.945896,
+					"t_dtw": -1
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 120
+					},
+					"id": 674,
+					"p": 0.602108,
+					"t_dtw": 10
+				},
+				{
+					"text": " am",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 200
+					},
+					"id": 669,
+					"p": 0.967362,
+					"t_dtw": 18
+				},
+				{
+					"text": " besten",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 450
+					},
+					"id": 30930,
+					"p": 0.961773,
+					"t_dtw": 36
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,620"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 620
+					},
+					"id": 2168,
+					"p": 0.940727,
+					"t_dtw": 54
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:00,620",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 620,
+						"to": 700
+					},
+					"id": 294,
+					"p": 0.815167,
+					"t_dtw": 64
+				},
+				{
+					"text": " eine",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 870
+					},
+					"id": 3018,
+					"p": 0.915686,
+					"t_dtw": 66
+				},
+				{
+					"text": " andere",
+					"timestamps": {
+						"from": "00:00:00,870",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 870,
+						"to": 1120
+					},
+					"id": 10490,
+					"p": 0.997678,
+					"t_dtw": 86
+				},
+				{
+					"text": " Stadt",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1180
+					},
+					"id": 20550,
+					"p": 0.997596,
+					"t_dtw": 112
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1360
+					},
+					"id": 13,
+					"p": 0.781384,
+					"t_dtw": 134
+				},
+				{
+					"text": "[_TT_68]",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1360
+					},
+					"id": 50433,
+					"p": 0.76249,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

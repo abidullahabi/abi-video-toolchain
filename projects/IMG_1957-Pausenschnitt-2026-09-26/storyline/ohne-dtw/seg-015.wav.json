@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,280"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1280
+			},
+			"text": " damit er glücklich ist durch die Leninge geht.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.95825,
+					"t_dtw": -1
+				},
+				{
+					"text": " damit",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 150
+					},
+					"id": 9479,
+					"p": 0.891604,
+					"t_dtw": -1
+				},
+				{
+					"text": " er",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 210
+					},
+					"id": 1189,
+					"p": 0.493401,
+					"t_dtw": -1
+				},
+				{
+					"text": " gl",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 270
+					},
+					"id": 1563,
+					"p": 0.557468,
+					"t_dtw": -1
+				},
+				{
+					"text": "ücklich",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 470
+					},
+					"id": 38483,
+					"p": 0.743038,
+					"t_dtw": -1
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:00,570"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 570
+					},
+					"id": 1418,
+					"p": 0.345114,
+					"t_dtw": -1
+				},
+				{
+					"text": " durch",
+					"timestamps": {
+						"from": "00:00:00,570",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 570,
+						"to": 720
+					},
+					"id": 7131,
+					"p": 0.232785,
+					"t_dtw": -1
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 810
+					},
+					"id": 978,
+					"p": 0.499597,
+					"t_dtw": -1
+				},
+				{
+					"text": " L",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 840
+					},
+					"id": 441,
+					"p": 0.150516,
+					"t_dtw": -1
+				},
+				{
+					"text": "ening",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,990"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 990
+					},
+					"id": 4559,
+					"p": 0.420024,
+					"t_dtw": -1
+				},
+				{
+					"text": "e",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 1020
+					},
+					"id": 68,
+					"p": 0.100751,
+					"t_dtw": -1
+				},
+				{
+					"text": " geht",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,130"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1130
+					},
+					"id": 7095,
+					"p": 0.542253,
+					"t_dtw": -1
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,130",
+						"to": "00:00:01,220"
+					},
+					"offsets": {
+						"from": 1130,
+						"to": 1220
+					},
+					"id": 13,
+					"p": 0.852794,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_64]",
+					"timestamps": {
+						"from": "00:00:01,280",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 1280,
+						"to": 1280
+					},
+					"id": 50429,
+					"p": 0.081347,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

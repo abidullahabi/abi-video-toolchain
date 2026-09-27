@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,700"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1700
+			},
+			"text": " Und am Ende des Tages werde ich halt auch 30.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.984221,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,030",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 30,
+						"to": 120
+					},
+					"id": 2719,
+					"p": 0.807451,
+					"t_dtw": -1
+				},
+				{
+					"text": " am",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 200
+					},
+					"id": 669,
+					"p": 0.999575,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ende",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 360
+					},
+					"id": 15152,
+					"p": 0.999805,
+					"t_dtw": -1
+				},
+				{
+					"text": " des",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,440"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 440
+					},
+					"id": 730,
+					"p": 0.999468,
+					"t_dtw": -1
+				},
+				{
+					"text": " Tages",
+					"timestamps": {
+						"from": "00:00:00,550",
+						"to": "00:00:00,680"
+					},
+					"offsets": {
+						"from": 550,
+						"to": 680
+					},
+					"id": 33601,
+					"p": 0.999775,
+					"t_dtw": -1
+				},
+				{
+					"text": " werde",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 810
+					},
+					"id": 24866,
+					"p": 0.965583,
+					"t_dtw": -1
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 1000
+					},
+					"id": 1893,
+					"p": 0.999727,
+					"t_dtw": -1
+				},
+				{
+					"text": " halt",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,160"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1160
+					},
+					"id": 12479,
+					"p": 0.654209,
+					"t_dtw": -1
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:01,160",
+						"to": "00:00:01,320"
+					},
+					"offsets": {
+						"from": 1160,
+						"to": 1320
+					},
+					"id": 2168,
+					"p": 0.979473,
+					"t_dtw": -1
+				},
+				{
+					"text": " 30",
+					"timestamps": {
+						"from": "00:00:01,320",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1320,
+						"to": 1560
+					},
+					"id": 2217,
+					"p": 0.992942,
+					"t_dtw": -1
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,670"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1670
+					},
+					"id": 13,
+					"p": 0.91475,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_85]",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 1700
+					},
+					"id": 50450,
+					"p": 0.387915,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

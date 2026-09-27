@@ -1,0 +1,380 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1080
+			},
+			"text": " früh von zu Hause ausziehen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.973976,
+					"t_dtw": -1
+				},
+				{
+					"text": " früh",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 160
+					},
+					"id": 45029,
+					"p": 0.882398,
+					"t_dtw": -1
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 250
+					},
+					"id": 2957,
+					"p": 0.963229,
+					"t_dtw": -1
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:00,290",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 290,
+						"to": 360
+					},
+					"id": 2164,
+					"p": 0.820623,
+					"t_dtw": -1
+				},
+				{
+					"text": " Hause",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 560
+					},
+					"id": 26217,
+					"p": 0.779096,
+					"t_dtw": -1
+				},
+				{
+					"text": " aus",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,680"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 680
+					},
+					"id": 3437,
+					"p": 0.988545,
+					"t_dtw": -1
+				},
+				{
+					"text": "ziehen",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,910"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 910
+					},
+					"id": 28768,
+					"p": 0.930932,
+					"t_dtw": -1
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,910",
+						"to": "00:00:01,070"
+					},
+					"offsets": {
+						"from": 910,
+						"to": 1070
+					},
+					"id": 13,
+					"p": 0.84952,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_54]",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1080
+					},
+					"id": 50419,
+					"p": 0.317762,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,200",
+				"to": "00:00:03,660"
+			},
+			"offsets": {
+				"from": 1200,
+				"to": 3660
+			},
+			"text": " Du kannst nicht erwachsen werden in deinem Kinderzimmer.",
+			"tokens": [
+				{
+					"text": " Du",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1200
+					},
+					"id": 5153,
+					"p": 0.999478,
+					"t_dtw": -1
+				},
+				{
+					"text": " kannst",
+					"timestamps": {
+						"from": "00:00:01,300",
+						"to": "00:00:01,570"
+					},
+					"offsets": {
+						"from": 1300,
+						"to": 1570
+					},
+					"id": 20853,
+					"p": 0.999519,
+					"t_dtw": -1
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:01,570",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1570,
+						"to": 1900
+					},
+					"id": 1979,
+					"p": 0.999258,
+					"t_dtw": -1
+				},
+				{
+					"text": " erw",
+					"timestamps": {
+						"from": "00:00:01,900",
+						"to": "00:00:02,020"
+					},
+					"offsets": {
+						"from": 1900,
+						"to": 2020
+					},
+					"id": 21715,
+					"p": 0.881849,
+					"t_dtw": -1
+				},
+				{
+					"text": "achsen",
+					"timestamps": {
+						"from": "00:00:02,020",
+						"to": "00:00:02,270"
+					},
+					"offsets": {
+						"from": 2020,
+						"to": 2270
+					},
+					"id": 31625,
+					"p": 0.999897,
+					"t_dtw": -1
+				},
+				{
+					"text": " werden",
+					"timestamps": {
+						"from": "00:00:02,410",
+						"to": "00:00:02,580"
+					},
+					"offsets": {
+						"from": 2410,
+						"to": 2580
+					},
+					"id": 4604,
+					"p": 0.994437,
+					"t_dtw": -1
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:02,580",
+						"to": "00:00:02,670"
+					},
+					"offsets": {
+						"from": 2580,
+						"to": 2670
+					},
+					"id": 294,
+					"p": 0.717825,
+					"t_dtw": -1
+				},
+				{
+					"text": " dein",
+					"timestamps": {
+						"from": "00:00:02,670",
+						"to": "00:00:02,840"
+					},
+					"offsets": {
+						"from": 2670,
+						"to": 2840
+					},
+					"id": 25641,
+					"p": 0.99552,
+					"t_dtw": -1
+				},
+				{
+					"text": "em",
+					"timestamps": {
+						"from": "00:00:02,920",
+						"to": "00:00:02,940"
+					},
+					"offsets": {
+						"from": 2920,
+						"to": 2940
+					},
+					"id": 443,
+					"p": 0.999998,
+					"t_dtw": -1
+				},
+				{
+					"text": " Kinder",
+					"timestamps": {
+						"from": "00:00:02,940",
+						"to": "00:00:03,220"
+					},
+					"offsets": {
+						"from": 2940,
+						"to": 3220
+					},
+					"id": 14193,
+					"p": 0.990788,
+					"t_dtw": -1
+				},
+				{
+					"text": "z",
+					"timestamps": {
+						"from": "00:00:03,220",
+						"to": "00:00:03,260"
+					},
+					"offsets": {
+						"from": 3220,
+						"to": 3260
+					},
+					"id": 89,
+					"p": 0.999954,
+					"t_dtw": -1
+				},
+				{
+					"text": "immer",
+					"timestamps": {
+						"from": "00:00:03,260",
+						"to": "00:00:03,390"
+					},
+					"offsets": {
+						"from": 3260,
+						"to": 3390
+					},
+					"id": 14477,
+					"p": 0.999969,
+					"t_dtw": -1
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,520",
+						"to": "00:00:03,660"
+					},
+					"offsets": {
+						"from": 3520,
+						"to": 3660
+					},
+					"id": 13,
+					"p": 0.894988,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_183]",
+					"timestamps": {
+						"from": "00:00:03,660",
+						"to": "00:00:03,660"
+					},
+					"offsets": {
+						"from": 3660,
+						"to": 3660
+					},
+					"id": 50548,
+					"p": 0.149512,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

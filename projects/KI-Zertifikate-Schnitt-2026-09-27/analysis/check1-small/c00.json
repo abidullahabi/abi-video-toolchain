@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Ich glaube, das sind zig verschiedene Kurschen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.91125,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 140
+					},
+					"id": 3141,
+					"p": 0.358707,
+					"t_dtw": 24
+				},
+				{
+					"text": " glaube",
+					"timestamps": {
+						"from": "00:00:00,190",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 190,
+						"to": 430
+					},
+					"id": 13756,
+					"p": 0.360721,
+					"t_dtw": 34
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,430",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 430,
+						"to": 480
+					},
+					"id": 11,
+					"p": 0.529275,
+					"t_dtw": 46
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,660"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 660
+					},
+					"id": 1482,
+					"p": 0.627995,
+					"t_dtw": 46
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 850
+					},
+					"id": 3290,
+					"p": 0.200748,
+					"t_dtw": 52
+				},
+				{
+					"text": " zig",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 970
+					},
+					"id": 38290,
+					"p": 0.409596,
+					"t_dtw": 76
+				},
+				{
+					"text": " verschiedene",
+					"timestamps": {
+						"from": "00:00:01,010",
+						"to": "00:00:01,470"
+					},
+					"offsets": {
+						"from": 1010,
+						"to": 1470
+					},
+					"id": 35411,
+					"p": 0.984359,
+					"t_dtw": 110
+				},
+				{
+					"text": " K",
+					"timestamps": {
+						"from": "00:00:01,610",
+						"to": "00:00:01,610"
+					},
+					"offsets": {
+						"from": 1610,
+						"to": 1610
+					},
+					"id": 591,
+					"p": 0.592209,
+					"t_dtw": 134
+				},
+				{
+					"text": "urs",
+					"timestamps": {
+						"from": "00:00:01,750",
+						"to": "00:00:01,750"
+					},
+					"offsets": {
+						"from": 1750,
+						"to": 1750
+					},
+					"id": 2156,
+					"p": 0.961623,
+					"t_dtw": 140
+				},
+				{
+					"text": "chen",
+					"timestamps": {
+						"from": "00:00:01,750",
+						"to": "00:00:01,790"
+					},
+					"offsets": {
+						"from": 1750,
+						"to": 1790
+					},
+					"id": 2470,
+					"p": 0.670109,
+					"t_dtw": 164
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,790",
+						"to": "00:00:01,790"
+					},
+					"offsets": {
+						"from": 1790,
+						"to": 1790
+					},
+					"id": 13,
+					"p": 0.736665,
+					"t_dtw": 176
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.102708,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

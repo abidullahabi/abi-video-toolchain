@@ -1,0 +1,255 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,440"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2440
+			},
+			"text": " In der Zeit bildet sich am meisten deine Persönlichkeit.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.964087,
+					"t_dtw": -1
+				},
+				{
+					"text": " In",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 100
+					},
+					"id": 682,
+					"p": 0.490355,
+					"t_dtw": -1
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 250
+					},
+					"id": 1163,
+					"p": 0.994691,
+					"t_dtw": -1
+				},
+				{
+					"text": " Zeit",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,440"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 440
+					},
+					"id": 9394,
+					"p": 0.810387,
+					"t_dtw": -1
+				},
+				{
+					"text": " bild",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,590"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 590
+					},
+					"id": 22105,
+					"p": 0.983808,
+					"t_dtw": -1
+				},
+				{
+					"text": "et",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 750
+					},
+					"id": 302,
+					"p": 0.956563,
+					"t_dtw": -1
+				},
+				{
+					"text": " sich",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 950
+					},
+					"id": 3041,
+					"p": 0.996396,
+					"t_dtw": -1
+				},
+				{
+					"text": " am",
+					"timestamps": {
+						"from": "00:00:00,950",
+						"to": "00:00:01,040"
+					},
+					"offsets": {
+						"from": 950,
+						"to": 1040
+					},
+					"id": 669,
+					"p": 0.384182,
+					"t_dtw": -1
+				},
+				{
+					"text": " meisten",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1410
+					},
+					"id": 29708,
+					"p": 0.990846,
+					"t_dtw": -1
+				},
+				{
+					"text": " deine",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,660"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1660
+					},
+					"id": 28395,
+					"p": 0.845799,
+					"t_dtw": -1
+				},
+				{
+					"text": " Pers",
+					"timestamps": {
+						"from": "00:00:01,660",
+						"to": "00:00:01,840"
+					},
+					"offsets": {
+						"from": 1660,
+						"to": 1840
+					},
+					"id": 14006,
+					"p": 0.995462,
+					"t_dtw": -1
+				},
+				{
+					"text": "ön",
+					"timestamps": {
+						"from": "00:00:01,880",
+						"to": "00:00:01,950"
+					},
+					"offsets": {
+						"from": 1880,
+						"to": 1950
+					},
+					"id": 3239,
+					"p": 0.999813,
+					"t_dtw": -1
+				},
+				{
+					"text": "lichkeit",
+					"timestamps": {
+						"from": "00:00:01,950",
+						"to": "00:00:02,330"
+					},
+					"offsets": {
+						"from": 1950,
+						"to": 2330
+					},
+					"id": 41096,
+					"p": 0.987089,
+					"t_dtw": -1
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,430",
+						"to": "00:00:02,430"
+					},
+					"offsets": {
+						"from": 2430,
+						"to": 2430
+					},
+					"id": 13,
+					"p": 0.875884,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_122]",
+					"timestamps": {
+						"from": "00:00:02,440",
+						"to": "00:00:02,440"
+					},
+					"offsets": {
+						"from": 2440,
+						"to": 2440
+					},
+					"id": 50487,
+					"p": 0.685492,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

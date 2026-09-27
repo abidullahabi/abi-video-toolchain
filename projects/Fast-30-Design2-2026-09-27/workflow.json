@@ -1,0 +1,53 @@
+{
+  "mode": "design-only",
+  "title": "Fast 30",
+  "designVersion": "2.0",
+  "designSource": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/DESIGN.md",
+  "designReadAt": "2026-09-27T14:05Z (DESIGN.md Stand 27.09.2026 16:01, Version 2.0 „Klar mit Kante“; Skill abi-videodesign inhaltsgleich)",
+  "workflowVersion": "CONTENT_WORKFLOW 1.26",
+  "auftrag": "Abdullah 27.09.2026: „Ich will einfach sehen, was passiert, wenn du das Video jetzt basierend auf den aktuellen neuen Design-Guidelines neu editierst.“ Testfassung; der eingeplante Zernio-Post 6ab81ebd0931bc4d7225acfd (27.09. 18:00, Design 1.12) bleibt unverändert.",
+  "status": "angehalten",
+  "createdAt": "2026-09-27T14:15:00Z",
+  "sourceProject": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Fast-30-Gestaltung-2026-09-26",
+  "source": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/fast 30(1).mp4",
+  "sourceSha256": "1ecd13868b3bb48e83098ec808247271e7b1e8a10e19948f2e2c0b151c890df1",
+  "sourceArchived": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Archiv/Rohvideos/2026-09-27 - Fast 30 Lektionen - Abdullahs Schnitt.mp4",
+  "media": {
+    "datei": "media.mp4",
+    "sha256": "3a501b4480129485b6101b8deb5dee65e5cc27ac985c1dfd3b199b5a840f2bb0",
+    "herkunft": "Kopie von media.mp4 aus Fast-30-Gestaltung-2026-09-26 (aus ~/Löschbar kopiert, nicht verschoben): Abdullahs Schnitt + 1,5 s Buch zuklappen, Farbkorrektur A, 1080 × 1920, CRF 10"
+  },
+  "cutDuration": 202.366667,
+  "speed": 1.0,
+  "followers": {
+    "datei": "follower-source.json",
+    "wert": 4258
+  },
+  "renderMaster": "prores",
+  "masterColorMatrix": "bt601",
+  "renderLowMemory": true,
+  "renderMasterGrund": "Abdullah 26.09.2026: Schrift in v2 „nicht crispy clean“. Ursache: HyperFrames nimmt bei MP4-Ausgabe jedes Bild als JPEG q80 auf; ProRes (MOV) nimmt PNG auf. Master als ProRes, Upload-Datei daraus mit finalize-buffer-video.py.",
+  "audioHandling": "Original audio re-encoded once as AAC-LC at 120 kbit/s and 48 kHz, without tempo or level changes.",
+  "bearbeitung": {
+    "agent": "claude",
+    "aufgabe": "Fast 30 testweise nach DESIGN.md neu gestalten",
+    "begonnen": "2026-09-27T14:15:00Z",
+    "status": "angehalten",
+    "angehaltenAm": "2026-09-27T14:46:00Z",
+    "grund": "Abdullahs Auftrag vom 27.09.2026 16:45: Toolchain-Umzug nach ~/Projekte/abi-video-toolchain und DESIGN.md 2.2 als Standardvorlage (theme-composition-design22.mjs). Diese Arbeit wird dort als Test „Fast 30 mit der neuen Vorlage“ fortgesetzt.",
+    "stand": {
+      "fertig": [
+        "Projekt angelegt, media.mp4 bitgleich aus ~/Löschbar kopiert (SHA 3a501b44…)",
+        "follower-source.json (Zernio, 4258, 27.09.2026)",
+        "review/planungsgrundlage.md (Transkript, Wortzeiten, Gesichter)",
+        "Entwürfe nach DESIGN.md 2.0: theme-composition-klar.mjs, build-plan-klar.mjs, chart-klar.mjs, note-klar.mjs, check-design20.mjs, render-klar.mjs, snap-klar.mjs, rvm-matting.py (nicht getestet)"
+      ],
+      "laeuft": "Elementplanung (Workflow wf_7ad60f1f-08f, drei Entwürfe → Bewertung → Synthese → Gegenprüfung) auf Basis DESIGN.md 2.0; muss gegen 2.2 nachgezogen werden (Emojis erlaubt, H2 unter Kapitel geregelt)",
+      "offen": [
+        "nichts gerendert",
+        "Schriften und RVM-Modell liegen jetzt im Repo (templates/fonts, referenz/design-2.2)",
+        "Code-Entwürfe dienen als Vorarbeit für theme-composition-design22.mjs / check-design22.mjs"
+      ]
+    }
+  }
+}

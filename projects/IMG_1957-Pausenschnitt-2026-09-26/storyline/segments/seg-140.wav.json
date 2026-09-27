@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1000
+			},
+			"text": " Ich hätte in meinem Nachtrag...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.993035,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,030",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 30,
+						"to": 120
+					},
+					"id": 3141,
+					"p": 0.675857,
+					"t_dtw": 12
+				},
+				{
+					"text": " hätte",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 320
+					},
+					"id": 20041,
+					"p": 0.960124,
+					"t_dtw": 22
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 400
+					},
+					"id": 294,
+					"p": 0.394253,
+					"t_dtw": 34
+				},
+				{
+					"text": " meinem",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,550"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 550
+					},
+					"id": 24171,
+					"p": 0.886586,
+					"t_dtw": 40
+				},
+				{
+					"text": " Nacht",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 840
+					},
+					"id": 31133,
+					"p": 0.772591,
+					"t_dtw": 62
+				},
+				{
+					"text": "rag",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 880
+					},
+					"id": 3731,
+					"p": 0.993686,
+					"t_dtw": 78
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:00,990"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 990
+					},
+					"id": 485,
+					"p": 0.470417,
+					"t_dtw": 96
+				},
+				{
+					"text": "[_TT_50]",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1000
+					},
+					"id": 50415,
+					"p": 0.968738,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

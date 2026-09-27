@@ -1,0 +1,825 @@
+{
+ "hook": "Ich habe Anlauf 2 (S005–S009) ganz genommen: „In elf Monaten werde ich 30 und hier sind zehn Dinge, die ich meinem 20-jährigen Ich einprügeln würde, damit er glücklich durchs Leben geht.“ (7,5 s). Gründe: Er ist vollständig, aus einem Anlauf und am besten erkannt (S005 p 0,90, S008 p 0,92, S009 p 0,97). Er stellt die Zeitangabe an den Anfang und entspricht damit Hook-Variante 2 aus Notion. „See“ in S006 ist ein Erkennungsfehler für „zehn“; die Durchtranskription liest dort „hier sind zehn Dinge“. Anlauf 3 (S013–S015) ist zwar der spätere, aber er entsteht ohne Pause aus dem Zwischenkommentar heraus, und sein Ende ist unsicher erkannt (S014 p 0,40, S015 p 0,53 mit einem Fremd-Token „nicht“). Nach Abdullahs Regel greift hier die Ausnahme „unsicher erkannt“. Anlauf 1 hat ein schwaches Ende („damit der Glückliche“, p 0,49). „Wir fangen direkt an.“ (S016) habe ich als Meta-Überleitung gestrichen, der Hook geht direkt in „Punkt Nummer 1“ über.",
+ "sections": [
+  {
+   "name": "Hook",
+   "items": [
+    {
+     "seg": 5,
+     "from": "start",
+     "to": "end",
+     "text": "In elf Monaten werde ich 30 und hier sind"
+    },
+    {
+     "seg": 6,
+     "from": "start",
+     "to": "end",
+     "text": "See"
+    },
+    {
+     "seg": 7,
+     "from": "start",
+     "to": "end",
+     "text": "Dinge, die ich meinem 20-jährigen Ich ..."
+    },
+    {
+     "seg": 8,
+     "from": "start",
+     "to": "end",
+     "text": "einprügeln würde"
+    },
+    {
+     "seg": 9,
+     "from": "start",
+     "to": "end",
+     "text": "damit er glücklich durchs Leben geht."
+    }
+   ],
+   "dropped": [
+    {
+     "segs": "S000",
+     "reason": "abgebrochener erster Anlauf („In 11 Monaten werde ich 30 und“)"
+    },
+    {
+     "segs": "S001–S004",
+     "reason": "erster vollständiger Hook-Anlauf (mit „gerne“), Ende unsicher („einprügeln würde.“ p 0,58, „damit der Glückliche“ p 0,49); Anlauf 2 ist klarer"
+    },
+    {
+     "segs": "S010–S012",
+     "reason": "Zwischenkommentar („man wird nicht jünger … am Ende des Tages werde ich halt auch 30“), kein Hook-Inhalt, S010 kaum verständlich (p 0,55), verzögert den Einstieg"
+    },
+    {
+     "segs": "S013–S015",
+     "reason": "dritter Hook-Anlauf, direkt aus dem Zwischenkommentar gesprochen; Ende unsicher erkannt (S014 p 0,40, S015 p 0,53); Alternative, siehe offene Fragen"
+    },
+    {
+     "segs": "S016",
+     "reason": "„Wir fangen direkt an.“ ist eine Meta-Überleitung ohne Inhalt (vgl. Regel 7); der Hook geht ohne sie direkt in Punkt 1 über"
+    }
+   ],
+   "note": "7,5 s. S006 „See“ = „zehn“, S007 „...“ am Ende ist Erkennungsrauschen."
+  },
+  {
+   "name": "Punkt 1 Therapie",
+   "items": [
+    {
+     "seg": 37,
+     "from": "start",
+     "to": "end",
+     "text": "Punkt Nummer 1, fang früher an mit deiner Therapie."
+    },
+    {
+     "seg": 20,
+     "from": "start",
+     "to": "end",
+     "text": "Was für eine Überraschung"
+    },
+    {
+     "seg": 21,
+     "from": "start",
+     "to": "end",
+     "text": "Wir hatten alle eine Scheißkindheit, unsere Eltern waren auch alle zum ersten Mal Menschen, die haben auch Fehler gemacht."
+    },
+    {
+     "seg": 40,
+     "from": "start",
+     "to": "end",
+     "text": "ist alles gut, aber es ist deine Aufgabe, jetzt diesen"
+    },
+    {
+     "seg": 41,
+     "from": "start",
+     "to": "end",
+     "text": "Circle zu durchbrechen."
+    },
+    {
+     "seg": 43,
+     "from": "start",
+     "to": "end",
+     "text": "Heilung braucht Zeit, manchmal sogar lebenslange Zeit."
+    },
+    {
+     "seg": 50,
+     "from": "start",
+     "to": "end",
+     "text": "Ich hätte für mich gewünscht, dass ich viel früher damit anfange, um einfach"
+    },
+    {
+     "seg": 51,
+     "from": "start",
+     "to": "end",
+     "text": "nicht den Prozess zu beschleunigen, sondern"
+    },
+    {
+     "seg": 52,
+     "from": "start",
+     "to": "end",
+     "text": "mich auf dem Weg viele Dinge auch hätte vermeiden können."
+    }
+   ],
+   "dropped": [
+    {
+     "segs": "S017–S018",
+     "reason": "erster Anlauf der Überschrift („Nummer eins: Fang so früh an …, wie es nun geht“); S037 ist die spätere, kürzere Fassung und entspricht der Notizbuch-Überschrift"
+    },
+    {
+     "segs": "S019",
+     "reason": "abgebrochen („Heilung der...“)"
+    },
+    {
+     "segs": "S022–S036",
+     "reason": "Rest von Anlauf A (Alles fein / Fang so früh an mit der Heilung / Es braucht Zeit / langer, lebenslanger Prozess / 20 Jahre so gelebt / guter Zeitpunkt / Persönlichkeit bildet sich), in Anlauf B knapper neu gesprochen; dazwischen Fehlstarts S023, S025, S027, S031, S034, S035"
+    },
+    {
+     "segs": "S038–S039",
+     "reason": "B-Fassung von Ironie und Kindheitssatz; S039 unsicher („eine Scheiß-Kinderheit“ p 0,43, in der Durchtranskription „ein scheiß Kind gehabt“; „sie machen auch Fehler“ p 0,58–0,65), durch S020/S021 ersetzt"
+    },
+    {
+     "segs": "S042",
+     "reason": "Geräusch („Ja.“, p 0,09)"
+    },
+    {
+     "segs": "S044",
+     "reason": "„Die Seele braucht immer ein bisschen länger …“ ist inhaltlich doppelt zu S043 (Heilung braucht Zeit)"
+    },
+    {
+     "segs": "S045–S049",
+     "reason": "Fehlstarts („Und, ähm“, „Ich hätte mir für mich“, „Ich hätte...“, „und sage ich mal“); S048 ist eine Kurzfassung, die Abdullah sofort mit S050–S052 vollständig und mit Begründung neu gesprochen hat"
+    }
+   ],
+   "note": "21,8 s. Die Überschrift kommt aus Anlauf B (S037). Ironie und Kindheitssatz stammen aus Anlauf A (S020/S021, vor S037 aufgenommen). Diese Umstellung ist bewusst, weil S039 unsicher erkannt ist; Abdullahs inhaltliche Reihenfolge bleibt gleich. Ab S040 geht es wieder mit Anlauf B weiter. Beide Übergänge liegen an Satzgrenzen, wo auch im Original Pausen waren (3,4 s bzw. 1,1 s). Fallback ohne Umstellung: S038+S039 statt S020+S021 (+0,4 s)."
+  },
+  {
+   "name": "Punkt 2 Ausziehen",
+   "items": [
+    {
+     "seg": 53,
+     "from": "start",
+     "to": "end",
+     "text": "Zweitens."
+    },
+    {
+     "seg": 55,
+     "from": "start",
+     "to": "end",
+     "text": "So wie ein Vogel sein Nest verlässt, um zu fliegen, musst du als Erwachsener"
+    },
+    {
+     "seg": 57,
+     "from": "start",
+     "to": "end",
+     "text": "früh von zu Hause ausziehen. Du kannst nicht erwachsen werden in deinem Kinderzimmer."
+    },
+    {
+     "seg": 59,
+     "from": "start",
+     "to": "end",
+     "text": "Und dann kommen wir zum dritten Punkt schon."
+    }
+   ],
+   "dropped": [
+    {
+     "segs": "S054",
+     "reason": "„Zieh früh aus von zu Hause.“ ist doppelt zum folgenden Satz (S055+S057 „… musst du … früh von zu Hause ausziehen“)"
+    },
+    {
+     "segs": "S056",
+     "reason": "„oder junger, erwachsener Mensch,“ ist eine Selbstkorrektur; „musst du als Erwachsener früh von zu Hause ausziehen“ ist ohne sie grammatisch nahtlos (gleicher Anlauf)"
+    },
+    {
+     "segs": "S058",
+     "reason": "„Zieh aus von zu Hause, am besten … andere Stadt.“ wiederholt „ausziehen“ ein drittes Mal; die Stadt wird direkt danach in Punkt 3 behandelt"
+    },
+    {
+     "segs": "S095–S098",
+     "reason": "später nachgedrehte Überleitung („Und du musst halt rausgehen aus dem Kinderzimmer … andere Stadt. Und das ist auch der dritte Punkt.“): doppelt zu S057 („Kinderzimmer“), hätte eine Umstellung erfordert; S097 abgebrochen"
+    }
+   ],
+   "note": "10,8 s. S056 fällt innerhalb desselben Anlaufs weg. S059 folgt in Aufnahmereihenfolge."
+  },
+  {
+   "name": "Punkt 3 Drei Entscheidungen",
+   "items": [
+    {
+     "seg": 65,
+     "from": "start",
+     "to": "end",
+     "text": "Viel zu wenig junge Menschen verbringen Zeit mit den drei wichtigsten Entscheidungen im Leben."
+    },
+    {
+     "seg": 66,
+     "from": "start",
+     "to": "end",
+     "text": "Erstens."
+    },
+    {
+     "seg": 67,
+     "from": "start",
+     "to": "end",
+     "text": "wo du wohnst,"
+    },
+    {
+     "seg": 70,
+     "from": "start",
+     "to": "end",
+     "text": "Damit entscheidet sich viel über deine Karriere, wie viel Geld du verdienst, was für Urlaube du machst."
+    },
+    {
+     "seg": 72,
+     "from": "start",
+     "to": "end",
+     "text": "wenn du in seiner Popelstadt bleibst,"
+    },
+    {
+     "seg": 73,
+     "from": "start",
+     "to": "end",
+     "text": "wird sich auch nicht viel ändern in deinem Leben."
+    },
+    {
+     "seg": 77,
+     "from": "start",
+     "to": "end",
+     "text": "Der zweite Punkt sind die Leute um dich herum."
+    },
+    {
+     "seg": 80,
+     "from": "start",
+     "to": "end",
+     "text": "Wenn um dich herum nur Lutscher sind,"
+    },
+    {
+     "seg": 81,
+     "from": "start",
+     "to": "end",
+     "text": "ist zu 99 Prozent"
+    },
+    {
+     "seg": 82,
+     "from": "start",
+     "to": "end",
+     "text": "Auch du ein Lutscher."
+    },
+    {
+     "seg": 119,
+     "from": "start",
+     "to": "end",
+     "text": "Und der dritte."
+    },
+    {
+     "seg": 120,
+     "from": "start",
+     "to": "end",
+     "text": "Vielleicht der wichtigste Punkt einem allen ist,"
+    },
+    {
+     "seg": 121,
+     "from": "start",
+     "to": "end",
+     "text": "die Wahl deines Partners."
+    },
+    {
+     "seg": 122,
+     "from": "start",
+     "to": "end",
+     "text": "Ich hätte mir einige"
+    },
+    {
+     "seg": 123,
+     "from": "start",
+     "to": "end",
+     "text": "Beziehungen um ein 20er sparen können."
+    },
+    {
+     "seg": 124,
+     "from": "start",
+     "to": "end",
+     "text": "Es hat einen Riesen-Impact auf dein Glücksein, auf deine Zukunft und auch einfach generell die Ansicht auf Glück."
+    },
+    {
+     "seg": 125,
+     "from": "start",
+     "to": "end",
+     "text": "Liebe, die du entwickelst."
+    }
+   ],
+   "dropped": [
+    {
+     "segs": "S060–S064",
+     "reason": "Fehlstarts der Einleitung („viel zu wenig junge Menschen … geben / verbringen... / fehlt“), S061/S063/S064 unsicher; S065 ist der saubere vollständige Satz (p 0,95)"
+    },
+    {
+     "segs": "S068",
+     "reason": "abgebrochen („… Großstadt wohnst, basierend“)"
+    },
+    {
+     "segs": "S069",
+     "reason": "„Es macht einen Riesenunterschied, wenn du in einer großen Stadt wohnst“: Ohne ihn schließt „Damit entscheidet sich …“ nahtlos an „wo du wohnst“ an; der Kontrast steckt in der Popelstadt-Pointe"
+    },
+    {
+     "segs": "S071",
+     "reason": "nachgeschobenes „und was für Abschlüsse auch erreichen wirst“ (nach 2,1 s Pause, p 0,72); die Aufzählung Karriere/Geld/Urlaub ist auch ohne es vollständig"
+    },
+    {
+     "segs": "S074–S076",
+     "reason": "Fehlstarts „Der zweite Punkt“ / „Menschen, die Menschen um dich herum“; S076 ist wortgleich mit dem späteren S077 (p 0,96)"
+    },
+    {
+     "segs": "S078–S079",
+     "reason": "Fehlstarts „Wenn …“ / „Wenn um dich herum nur Lutscher sind...“; S080 ist der vollständige Anlauf"
+    },
+    {
+     "segs": "S083–S094",
+     "reason": "Anlauf A zum Partner, holprig und abgebrochen („Es entscheidet... Dein Partner entscheidet... Glück. Verlass. … zeigt... Passt du auf.“), durch den späteren Anlauf B (S119–S125) ersetzt; die Beziehungs-Aussage S085–S087 ist doppelt zu S122–S123"
+    },
+    {
+     "segs": "S099–S118",
+     "reason": "kompletter Neuanlauf von Punkt 3 bis zu den Menschen. S099 ist ein Geräusch. Die Einleitung S100–S106 zerfällt in sieben Stücke mit dreifachem „viel zu wenig junge Leute“, während S065 ein sauberer Satz ist. Die Stadt-Fassung S107–S112 hat keine Popelstadt-Pointe und enthält „in einem Großstadt“. In der Menschen-Fassung S113–S118 gibt es unsichere Stellen (S114 p 0,17, S116 p 0,49). Anlauf A ist jeweils sauberer."
+    }
+   ],
+   "note": "32,5 s, in Aufnahmereihenfolge: Einleitung, Stadt und Menschen aus Anlauf A, Partner aus Anlauf B. S124 „auf Glück.“ am Segmentende (p 0,07) ist laut Durchtranskription wohl nur „auf“; gesprochen ist „die Ansicht auf Liebe, die du entwickelst“. S072 „seiner“ = „deiner“, S120 „einem allen“ = „von allen“, S123 „um ein 20er“ = „in meinen 20ern“."
+  },
+  {
+   "name": "Punkt 4 Keine Ahnung",
+   "items": [
+    {
+     "seg": 126,
+     "from": "start",
+     "to": "end",
+     "text": "Und der vierte Punkt ist:"
+    },
+    {
+     "seg": 132,
+     "from": "start",
+     "to": "end",
+     "text": "Mit 20 ging ich davon aus, ich wüsste schon alles. Ich dachte, ja, ich habe viel erlebt."
+    },
+    {
+     "seg": 134,
+     "from": "start",
+     "to": "end",
+     "text": "Du hast"
+    },
+    {
+     "seg": 135,
+     "from": "start",
+     "to": "end",
+     "text": "Keine Ahnung mit 20."
+    },
+    {
+     "seg": 136,
+     "from": "start",
+     "to": "end",
+     "text": "Und das ist fine."
+    },
+    {
+     "seg": 145,
+     "from": "start",
+     "to": "end",
+     "text": "Stell dir vor, alles, was du mit 20 machst,"
+    },
+    {
+     "seg": 149,
+     "from": "start",
+     "to": "end",
+     "text": "Mach es mit 30."
+    },
+    {
+     "seg": 150,
+     "from": "start",
+     "to": "end",
+     "text": "Viele Leute würden diesen 30-Jährigen ein bisschen komisch angucken, aber du als 20-Jähriger hast du quasi so einen Free-Pass,"
+    },
+    {
+     "seg": 152,
+     "from": "start",
+     "to": "end",
+     "text": "die Erlaubnis einfach"
+    },
+    {
+     "seg": 153,
+     "from": "start",
+     "to": "a",
+     "text": "Dinge auszuprobieren und Fehler zu machen."
+    }
+   ],
+   "dropped": [
+    {
+     "segs": "S127–S131",
+     "reason": "„Mit 20 dachte ich, ich bin der krasseste Fucker“ / „der heftigste Typ jemals“ ist eine frühere Fassung desselben Gedankens, zögerlich gesprochen (S127 „Mit … 20“ p 0,51, S130 p 0,50), S131 ist ein Fehlstart. Abdullah hat den Satz mit S132 neu formuliert (optional wieder einsetzbar, siehe offene Fragen)."
+    },
+    {
+     "segs": "S133",
+     "reason": "„habe viel Erfahrung gesammelt, habe schon viele“ bricht ab, Aufzählung ohne neuen Inhalt"
+    },
+    {
+     "segs": "S137",
+     "reason": "„Und das ist irgendwas Gutes.“ ist doppelt zu S136"
+    },
+    {
+     "segs": "S138–S144",
+     "reason": "Anläufe zu „Druck rausnehmen“: S138 verhaspelt, S139/S140 abgebrochen. S141–S142 sind sauber, inhaltlich aber durch „Free-Pass, die Erlaubnis … Fehler zu machen“ abgedeckt. S143–S144 sind grammatisch holprig, „Du hast ja gar keine Ahnung vom Leben überhaupt“ ist doppelt zu S135."
+    },
+    {
+     "segs": "S146–S148",
+     "reason": "Beispiele mit Stolperern („Du deine Reisen... äh... Dich hier verlieben, das machen, da Studium“, p 0,11–0,69); „alles, was du mit 20 machst, machst du mit 30“ ist ohne sie nahtlos (gleicher Anlauf)"
+    },
+    {
+     "segs": "S151",
+     "reason": "Einschränkung „nicht für komplett idiotische Sachen machen, aber ...“ verzögert; „Free-Pass, die Erlaubnis einfach …“ ist ohne sie nahtlos"
+    },
+    {
+     "segs": "S153 [a]–Ende",
+     "reason": "„Und das ist was Gutes.“ ist doppelt zu S136 „Und das ist fine.“"
+    }
+   ],
+   "note": "19,6 s. S149 „Mach es mit 30.“ ist laut Durchtranskription „machst du mit 30“ und folgte auch im Original auf eine Aufzählung. S153 nur bis [a]."
+  },
+  {
+   "name": "Punkt 5 Weg statt Ziel",
+   "items": [
+    {
+     "seg": 154,
+     "from": "start",
+     "to": "end",
+     "text": "Oh, das ist mein Lieblingspunkt."
+    },
+    {
+     "seg": 155,
+     "from": "start",
+     "to": "end",
+     "text": "Punkt Nummer 5:"
+    },
+    {
+     "seg": 159,
+     "from": "start",
+     "to": "end",
+     "text": "Du hast bereits Ziele erreicht, von denen du gesagt hast, dass sie dich glücklich machen."
+    },
+    {
+     "seg": 160,
+     "from": "start",
+     "to": "end",
+     "text": "Ich in meinen Zwanzigern, ich dachte..."
+    },
+    {
+     "seg": 164,
+     "from": "start",
+     "to": "end",
+     "text": "Wenn ich den Bachelor habe, wenn ich den Master habe, wenn ich diese Arbeit abgebe, dann bin ich endlich glücklich."
+    },
+    {
+     "seg": 166,
+     "from": "start",
+     "to": "end",
+     "text": "Alles Quatsch."
+    },
+    {
+     "seg": 167,
+     "from": "start",
+     "to": "end",
+     "text": "Es ist immer"
+    },
+    {
+     "seg": 168,
+     "from": "start",
+     "to": "end",
+     "text": "Nur der Weg, nie das Ziel."
+    }
+   ],
+   "dropped": [
+    {
+     "segs": "S156–S158",
+     "reason": "Erste Fassung der Kernaussage plus „Ich sage es noch einmal.“: dieselbe Aussage zweimal, eine Fassung reicht. S159 ist die spätere, flüssige Fassung in einem Stück."
+    },
+    {
+     "segs": "S161–S163",
+     "reason": "„wenn ich diese Wohnung habe, bin ich happy“ / „Partnerin … bin ich happy“ wiederholen dieselbe Aussage; Bachelor/Master/Arbeit trägt sie allein und trifft die Zielgruppe (Studentin)"
+    },
+    {
+     "segs": "S165",
+     "reason": "„Dann bin ich entspannt, dann bin ich nicht so gestresst, dann ist alles gut.“ wiederholt „endlich glücklich“ dreifach und verzögert „Alles Quatsch.“"
+    }
+   ],
+   "note": "17,5 s. „Oh, das ist mein Lieblingspunkt.“ bleibt als persönliche Perspektive und Aufmerksamkeitsanker in der Videomitte."
+  },
+  {
+   "name": "Punkt 6 Niemand rettet dich",
+   "items": [
+    {
+     "seg": 169,
+     "from": "start",
+     "to": "end",
+     "text": "Und gehen wir weiter in den Weg Nummer 6."
+    },
+    {
+     "seg": 179,
+     "from": "start",
+     "to": "end",
+     "text": "Ich hatte immer die Vorstellung, dass jemand kommt und mich rettet."
+    },
+    {
+     "seg": 181,
+     "from": "start",
+     "to": "end",
+     "text": "ein Mentor,"
+    },
+    {
+     "seg": 182,
+     "from": "start",
+     "to": "end",
+     "text": "eine Frau"
+    },
+    {
+     "seg": 183,
+     "from": "start",
+     "to": "end",
+     "text": "Einretter."
+    },
+    {
+     "seg": 184,
+     "from": "start",
+     "to": "end",
+     "text": "Der Fakt ist, es kommt niemand, um dich zu retten."
+    },
+    {
+     "seg": 185,
+     "from": "start",
+     "to": "end",
+     "text": "Und das ist gar nicht schlimm."
+    },
+    {
+     "seg": 186,
+     "from": "start",
+     "to": "end",
+     "text": "Die Person, die dich retten kann,"
+    },
+    {
+     "seg": 187,
+     "from": "start",
+     "to": "end",
+     "text": "ist schon da."
+    },
+    {
+     "seg": 188,
+     "from": "start",
+     "to": "end",
+     "text": "Wenn du selber verstehst, wie viel Macht du über dein eigenes Leben hast,"
+    },
+    {
+     "seg": 189,
+     "from": "start",
+     "to": "end",
+     "text": "Dann kannst du erst richtig anfangen, dein eigenes Leben zu gestalten."
+    }
+   ],
+   "dropped": [
+    {
+     "segs": "S170",
+     "reason": "„Es kommt niemand, um dich zu retten.“ ist wortgleich zu S184; die Aussage kommt jetzt einmal, als Pointe nach der eigenen Vorstellung"
+    },
+    {
+     "segs": "S171–S178",
+     "reason": "Anlauf A („Ich weiß, das klingt im ersten Moment so ein bisschen – Mhm – aber es ist was Gutes. Ich dachte immer bei mir … Mentor … Vorbild … Partnerin … Das ist Quatsch.“), durch den späteren, knapperen Anlauf B ersetzt; S172/S175 Geräusche bzw. unsicher (p 0,09/0,17), S177 bricht ab, „aber es ist was Gutes“ ist doppelt zu S185"
+    },
+    {
+     "segs": "S180",
+     "reason": "„Und dann bin ich happy.“ bringt keinen neuen Inhalt"
+    }
+   ],
+   "note": "19,0 s, Anlauf B in Aufnahmereihenfolge. S169 „in den Weg“ ist vermutlich ein Wortspiel auf „nur der Weg“. S183 „Einretter“ = „ein Retter“. Vor S189 lagen im Original 12 s Pause, der Satz geht aber mit „Dann“ weiter."
+  },
+  {
+   "name": "Punkt 7 Investieren",
+   "items": [
+    {
+     "seg": 190,
+     "from": "start",
+     "to": "end",
+     "text": "Und hier nochmal ein paar praktische Tipps,"
+    },
+    {
+     "seg": 191,
+     "from": "start",
+     "to": "end",
+     "text": "Fang früh an zu investieren."
+    },
+    {
+     "seg": 192,
+     "from": "start",
+     "to": "end",
+     "text": "Ich habe glaube ich über"
+    },
+    {
+     "seg": 193,
+     "from": "start",
+     "to": "end",
+     "text": "20.000 Euro"
+    },
+    {
+     "seg": 194,
+     "from": "start",
+     "to": "end",
+     "text": "immer in 20ern ausgeben, nur für Reisen."
+    },
+    {
+     "seg": 195,
+     "from": "start",
+     "to": "end",
+     "text": "Ich bereue euch keine einzige Reise davon."
+    },
+    {
+     "seg": 197,
+     "from": "start",
+     "to": "end",
+     "text": "Gleich eins bis zwei nur."
+    },
+    {
+     "seg": 198,
+     "from": "start",
+     "to": "end",
+     "text": "Aber wenn du jetzt mit 20 anfängst, 50, 100 oder auch mehr, mehrere 100 Euro ..."
+    },
+    {
+     "seg": 199,
+     "from": "start",
+     "to": "end",
+     "text": "pro Monat zur Seite zu legen, kannst du am Ende"
+    },
+    {
+     "seg": 200,
+     "from": "start",
+     "to": "end",
+     "text": "deinen 20ern auf eine fette Summe gucken und"
+    },
+    {
+     "seg": 201,
+     "from": "start",
+     "to": "end",
+     "text": "lebt es relativ gut schon."
+    }
+   ],
+   "dropped": [
+    {
+     "segs": "S196",
+     "reason": "„Vielleicht eins und zwei.“ ist der erste Anlauf der Ironie, S197 der spätere"
+    },
+    {
+     "segs": "S202–S208",
+     "reason": "„Zeit ist die krasseste Ressource … beim Investieren zahlt sich das aus“: allgemeine Moral, die das Beispiel (mit 20 anfangen, Ende der 20er fette Summe) schon trägt; S202–S204 und S207 Fehlstarts/Geräusche, S206 grammatisch schief"
+    }
+   ],
+   "note": "20,7 s. S190 bleibt als Wegweiser zu den praktischen Tipps 7–9; S191 wurde im Original ohne Pause daran angeschlossen und würde allein mitten im Satz einsetzen. S194 = „in meinen 20ern ausgegeben“, S195 „euch“ = „auch“, S197 „Gleich“ = „Vielleicht“, S201 „lebt es“ = „lebst“. Die Reise-Ironie bleibt."
+  },
+  {
+   "name": "Punkt 8 Schriftlich",
+   "items": [
+    {
+     "seg": 209,
+     "from": "start",
+     "to": "end",
+     "text": "Achtens. Hab immer alles schriftlich."
+    },
+    {
+     "seg": 213,
+     "from": "start",
+     "to": "end",
+     "text": "und gib du selber so wenig schriftlich preis wie es nun geht."
+    },
+    {
+     "seg": 215,
+     "from": "start",
+     "to": "end",
+     "text": "Es gibt kein beschissigeres Gefühl als"
+    },
+    {
+     "seg": 216,
+     "from": "start",
+     "to": "end",
+     "text": "dir was vorgelesen zu bekommen, was du selber geschrieben hast."
+    }
+   ],
+   "dropped": [
+    {
+     "segs": "S210–S212",
+     "reason": "Die Beispiele (Versprechen, Geld, Abmachungen, Freunde, Job) enden mit „hab es immer schriftlich“ und wiederholen damit die Überschrift S209; S211 kommt nach 3,4 s Denkpause. Ohne sie schließt „und gib du selber …“ nahtlos an „Hab immer alles schriftlich.“ an."
+    },
+    {
+     "segs": "S214",
+     "reason": "„Es gibt kein beschissenes Gefühl.“ ist der abgebrochene erste Anlauf von S215"
+    }
+   ],
+   "note": "9,8 s. Im Original folgte S213 ebenfalls direkt auf ein „… schriftlich.“ (S212), die Satzmelodie passt also."
+  },
+  {
+   "name": "Punkt 9 HR",
+   "items": [
+    {
+     "seg": 217,
+     "from": "start",
+     "to": "end",
+     "text": "Neuntens, vertrau niemals HR."
+    }
+   ],
+   "dropped": [],
+   "note": "1,7 s. Die bewusst unkommentierte Kürze ist die Pointe."
+  },
+  {
+   "name": "Punkt 10 Glaube",
+   "items": [
+    {
+     "seg": 218,
+     "from": "start",
+     "to": "end",
+     "text": "Und Punkt Nummer 10: Glaub an etwas."
+    },
+    {
+     "seg": 220,
+     "from": "start",
+     "to": "end",
+     "text": "And they are Allah and God"
+    },
+    {
+     "seg": 221,
+     "from": "start",
+     "to": "end",
+     "text": "an das Universum, ist mir egal, aber glaub etwas oder zumindest an dich."
+    }
+   ],
+   "dropped": [
+    {
+     "segs": "S219",
+     "reason": "„Es muss nicht, also“ ist ein abgebrochener Satzanfang; „Glaub an etwas. Entweder an Allah, an Gott …“ ist ohne ihn nahtlos (gleicher Anlauf)"
+    },
+    {
+     "segs": "S222",
+     "reason": "„Vielen Dank.“ (0,27 s, p 0,53) ist ein Geräusch bzw. eine Fehlerkennung"
+    },
+    {
+     "segs": "S223–S225",
+     "reason": "„Dieses Gefühl von Selbstwirksamkeit … im Leben bringen wird“ ist eine abstrakte Nachbemerkung („Gefühl … Gefühl“), S225 unsicher (p 0,76); „oder zumindest an dich“ ist die stärkere Pointe"
+    }
+   ],
+   "note": "7,7 s. S220 „And they are Allah and God“ = „entweder an Allah, an Gott“ (Durchtranskription). S221 „glaub etwas“ = „glaub an etwas“."
+  },
+  {
+   "name": "Schluss",
+   "items": [
+    {
+     "seg": 226,
+     "from": "a",
+     "to": "end",
+     "text": "die 20er würde ich sagen, sind die geilsten Zeiten im Leben."
+    },
+    {
+     "seg": 233,
+     "from": "start",
+     "to": "end",
+     "text": "Weil Selchen in den 20ern es komplett verkackst, kannst du das immer noch alles gerade biegen."
+    },
+    {
+     "seg": 234,
+     "from": "start",
+     "to": "end",
+     "text": "Du musst Fehler machen."
+    },
+    {
+     "seg": 235,
+     "from": "start",
+     "to": "end",
+     "text": "Am besten lernst du noch daraus,"
+    },
+    {
+     "seg": 236,
+     "from": "start",
+     "to": "end",
+     "text": "und genießt die Zeit."
+    }
+   ],
+   "dropped": [
+    {
+     "segs": "S226 Anfang–[a]",
+     "reason": "„Nochmal zum Schluss, die 20er sind einer, also“ ist ein Verhaspler, Neuansatz ab [a]"
+    },
+    {
+     "segs": "S227–S228",
+     "reason": "„ohne drüber nachzudenken“: S228 kaum verständlich (p 0,26)"
+    },
+    {
+     "segs": "S229–S232",
+     "reason": "„Du kannst Fehler machen … Und das ist gut. Du hast quasi so ein Free Pass mit 20 … Gesellschaftlich … in Ordnung.“ ist inhaltlich doppelt zu Punkt 4 (Free Pass, Erlaubnis Fehler zu machen) und zu S234"
+    }
+   ],
+   "note": "9,7 s. S233 „Weil Selchen“ = „Weil selbst wenn du“; das „Weil …“ begründet direkt „die geilsten Zeiten im Leben“. Die Liste endet mit dem letzten Anlauf des Schlusssatzes (S236), danach schließt das Zuklappen des Notizbuchs an."
+  }
+ ],
+ "rationale": "Die Schnittliste hat 88 Elemente und dauert zusammen 178,4 s, also etwa 2:58,4 (v1: 7:11). Die Summe habe ich aus den Segmentdauern und den Schnittpositionen in segs-args.json gerechnet, das Zuklappen des Notizbuchs kommt noch dazu. Nach Teilen: Hook 7,5 | P1 21,8 | P2 10,8 | P3 32,5 | P4 19,6 | P5 17,5 | P6 19,0 | P7 20,7 | P8 9,8 | P9 1,7 | P10 7,7 | Schluss 9,7 s.\n\nVorgehen: Ich habe jeden Abschnitt einem Storyteil und einem Satz zugeordnet, je Satz die Anläufe verglichen und Abdullahs Regeln konsequent angewendet. Inhaltliche Dopplungen sind draußen, zum Beispiel „Ich sage es noch einmal“, die Wohnung-, Partnerin- und entspannt-Reihe sowie die Free-Pass-Wiederholung im Schluss. Draußen sind auch Sätze, die den folgenden Satz nur vorwegnehmen („Zieh früh aus von zu Hause“, „Es kommt niemand …“ als Überschrift vor der wortgleichen Pointe), und Sätze ohne neuen Inhalt oder solche, die die Pointe verzögern („Wir fangen direkt an“, Selbstwirksamkeit, Zeit-Moral, „nicht für komplett idiotische Sachen“). Die Ironie bleibt: „Was für eine Überraschung“, Popelstadt, Lutscher, „Vielleicht eins bis zwei nur“, „vertrau niemals HR“. Ebenso bleibt die persönliche Perspektive je Punkt (Therapie-Wunsch, Beziehungen, „Mit 20 ging ich davon aus“, Bachelor/Master, Retter-Vorstellung, 20.000 € für Reisen).\n\nAnläufe: In der Regel habe ich den späteren vollständigen Anlauf genommen (P1 Anlauf B, P3 Partner B, P4 S132, P5 S159, P6 Anlauf B, S197, S215). Den früheren habe ich nur genommen, wo der spätere zerstückelt oder unsicher erkannt ist (Hook, P1 Kindheitssatz, P3 Einleitung, Stadt, Menschen).\n\nInnerhalb desselben Anlaufs habe ich an diesen Stellen ausgelassen: S056, S069, S146–S148, S151, S219. Jedes Mal ist der Satz grammatisch nahtlos, und die Satzmelodie gehört zur selben Sprechfolge. Einzige Umstellung: S020/S021 hinter S037 (Begründung in P1). Anläufe wechseln nur an Satzgrenzen.\n\nEndskript (geglättet, wie gesprochen): In elf Monaten werde ich 30 und hier sind zehn Dinge, die ich meinem 20-jährigen Ich einprügeln würde, damit er glücklich durchs Leben geht. Punkt Nummer 1, fang früher an mit deiner Therapie. Was für eine Überraschung. Wir hatten alle eine Scheißkindheit, unsere Eltern waren auch alle zum ersten Mal Menschen, die haben auch Fehler gemacht. Ist alles gut, aber es ist deine Aufgabe, jetzt diesen Circle zu durchbrechen. Heilung braucht Zeit, manchmal sogar lebenslange Zeit. Ich hätte für mich gewünscht, dass ich viel früher damit anfange, um einfach nicht den Prozess zu beschleunigen, sondern mich auf dem Weg viele Dinge auch hätte vermeiden können. Zweitens. So wie ein Vogel sein Nest verlässt, um zu fliegen, musst du als Erwachsener früh von zu Hause ausziehen. Du kannst nicht erwachsen werden in deinem Kinderzimmer. Und dann kommen wir zum dritten Punkt schon. Viel zu wenig junge Menschen verbringen Zeit mit den drei wichtigsten Entscheidungen im Leben. Erstens, wo du wohnst: Damit entscheidet sich viel über deine Karriere, wie viel Geld du verdienst, was für Urlaube du machst. Wenn du in deiner Popelstadt bleibst, wird sich auch nicht viel ändern in deinem Leben. Der zweite Punkt sind die Leute um dich herum. Wenn um dich herum nur Lutscher sind, ist zu 99 Prozent auch du ein Lutscher. Und der dritte, vielleicht der wichtigste Punkt von allen, ist die Wahl deines Partners. Ich hätte mir einige Beziehungen in meinen 20ern sparen können. Es hat einen Riesen-Impact auf dein Glücklichsein, auf deine Zukunft und auch einfach generell die Ansicht auf Liebe, die du entwickelst. Und der vierte Punkt ist: Mit 20 ging ich davon aus, ich wüsste schon alles. Ich dachte, ja, ich habe viel erlebt. Du hast keine Ahnung mit 20. Und das ist fine. Stell dir vor, alles, was du mit 20 machst, machst du mit 30. Viele Leute würden diesen 30-Jährigen ein bisschen komisch angucken, aber du als 20-Jähriger hast quasi so einen Free Pass, die Erlaubnis, einfach Dinge auszuprobieren und Fehler zu machen. Oh, das ist mein Lieblingspunkt. Punkt Nummer 5: Du hast bereits Ziele erreicht, von denen du gesagt hast, dass sie dich glücklich machen. Ich in meinen Zwanzigern, ich dachte, wenn ich den Bachelor habe, wenn ich den Master habe, wenn ich diese Arbeit abgebe, dann bin ich endlich glücklich. Alles Quatsch. Es ist immer nur der Weg, nie das Ziel. Und gehen wir weiter den Weg, Nummer 6. Ich hatte immer die Vorstellung, dass jemand kommt und mich rettet. Ein Mentor, eine Frau, ein Retter. Der Fakt ist, es kommt niemand, um dich zu retten. Und das ist gar nicht schlimm. Die Person, die dich retten kann, ist schon da. Wenn du selber verstehst, wie viel Macht du über dein eigenes Leben hast, dann kannst du erst richtig anfangen, dein eigenes Leben zu gestalten. Und hier nochmal ein paar praktische Tipps: Fang früh an zu investieren. Ich habe, glaube ich, über 20.000 Euro in meinen 20ern ausgegeben, nur für Reisen. Ich bereue auch keine einzige Reise davon. Vielleicht eins bis zwei nur. Aber wenn du jetzt mit 20 anfängst, 50, 100 oder auch mehr, mehrere 100 Euro pro Monat zur Seite zu legen, kannst du am Ende deiner 20er auf eine fette Summe gucken und lebst relativ gut schon. Achtens. Hab immer alles schriftlich. Und gib du selber so wenig schriftlich preis, wie es nur geht. Es gibt kein beschisseneres Gefühl, als dir was vorgelesen zu bekommen, was du selber geschrieben hast. Neuntens, vertrau niemals HR. Und Punkt Nummer 10: Glaub an etwas. Entweder an Allah, an Gott, an das Universum, ist mir egal, aber glaub an etwas oder zumindest an dich. Die 20er, würde ich sagen, sind die geilsten Zeiten im Leben. Weil selbst wenn du in den 20ern es komplett verkackst, kannst du das immer noch alles gerade biegen. Du musst Fehler machen. Am besten lernst du noch daraus und genießt die Zeit.\n\nBeim Durchlesen habe ich jeden Übergang geprüft. Kein Satz beginnt oder endet mit fehlendem Wort, keine Aussage steht doppelt. Bewusst stehen lassen habe ich nur die Pointe „Der Fakt ist, es kommt niemand …“ als einzige Nennung von Punkt 6.",
+ "openQuestions": [
+  "Hook: Bitte S006 anhören (Einzelwort „zehn“, als „See“ mit p 0,21 erkannt). Falls es verschluckt klingt, Anlauf 3 nehmen (S013–S015, 6,4 s, „Ich werde in 11 Monaten 30 und das sind 10 Dinge …“, eventuell mit „glücklicher“), dessen Ende allerdings unsicher erkannt ist. Alternative ist Anlauf 1 (S001–S004).",
+  "Punkt 1: Die Übergänge S037→S020 und S021→S040 wechseln zwischen Anlauf B und A. Bitte auf Bildsprung prüfen. Falls störend: reinen Anlauf B nehmen (S038+S039 statt S020+S021, +0,4 s, aber S039 ist unsicher erkannt).",
+  "Optional wieder einsetzbar, falls mehr Persönlichkeit gewünscht ist (alle derzeit für die 3-Minuten-Grenze gestrichen): S127+S128 „Mit 20 dachte ich, ich bin der krasseste Fucker“ (+4,1 s, vor S132; dann steht „Mit 20“ zweimal), S141+S142 „Ich hätte mir im Nachgang erlaubt, viel mehr Druck rauszunehmen.“ (+3,0 s, nach S136), S205+S208 „Zeit ist die krasseste Ressource, die du hast. Vor allem beim Investieren bezahlt sich das sehr stark aus.“ (+4,3 s, nach S201), S210+S212 ab [a] „Wenn die Leute irgendwas versprechen, wenn die Leute irgendwie Geld schulden, egal was, hab es immer schriftlich.“ (+4,7 s, nach S209).",
+  "Punkt 5: War die Doppelung „Du hast bereits Ziele erreicht … Ich sage es noch einmal …“ (S156–S159) als bewusstes Stilmittel gedacht? Hier ist sie nach der Regel „eine Fassung reicht“ gestrichen.",
+  "S124/S125: Bitte hören, ob am Ende von S124 ein angefangenes „Glück“ zu hören ist (erkannt „auf Glück“, p 0,07). Es gibt keinen anderen sauberen Anlauf für diesen Satz.",
+  "Schluss: Er beginnt ohne „Nochmal zum Schluss“ (S226 erst ab [a], um den Verhaspler „die 20er sind einer, also“ zu vermeiden). Falls ein hörbares Schluss-Signal gewünscht ist: S226 komplett (+3,0 s, mit Verhaspler)."
+ ]
+}

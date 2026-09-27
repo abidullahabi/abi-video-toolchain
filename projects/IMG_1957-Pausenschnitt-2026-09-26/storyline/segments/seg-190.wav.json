@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,500"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1500
+			},
+			"text": " Und hier nochmal ein paar praktische Tipps,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.984354,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 120
+					},
+					"id": 2719,
+					"p": 0.943527,
+					"t_dtw": 12
+				},
+				{
+					"text": " hier",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 280
+					},
+					"id": 3296,
+					"p": 0.998763,
+					"t_dtw": 22
+				},
+				{
+					"text": " nochmal",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 540
+					},
+					"id": 26509,
+					"p": 0.530792,
+					"t_dtw": 36
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,690"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 690
+					},
+					"id": 1343,
+					"p": 0.900866,
+					"t_dtw": 62
+				},
+				{
+					"text": " paar",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 850
+					},
+					"id": 16509,
+					"p": 0.999834,
+					"t_dtw": 62
+				},
+				{
+					"text": " prakt",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 980
+					},
+					"id": 33721,
+					"p": 0.997,
+					"t_dtw": 80
+				},
+				{
+					"text": "ische",
+					"timestamps": {
+						"from": "00:00:01,050",
+						"to": "00:00:01,250"
+					},
+					"offsets": {
+						"from": 1050,
+						"to": 1250
+					},
+					"id": 7864,
+					"p": 0.999777,
+					"t_dtw": 96
+				},
+				{
+					"text": " Tipp",
+					"timestamps": {
+						"from": "00:00:01,250",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 1250,
+						"to": 1280
+					},
+					"id": 42102,
+					"p": 0.999794,
+					"t_dtw": 116
+				},
+				{
+					"text": "s",
+					"timestamps": {
+						"from": "00:00:01,280",
+						"to": "00:00:01,490"
+					},
+					"offsets": {
+						"from": 1280,
+						"to": 1490
+					},
+					"id": 82,
+					"p": 0.999933,
+					"t_dtw": 130
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,500",
+						"to": "00:00:01,500"
+					},
+					"offsets": {
+						"from": 1500,
+						"to": 1500
+					},
+					"id": 11,
+					"p": 0.632926,
+					"t_dtw": 140
+				},
+				{
+					"text": "[_TT_75]",
+					"timestamps": {
+						"from": "00:00:01,500",
+						"to": "00:00:01,500"
+					},
+					"offsets": {
+						"from": 1500,
+						"to": 1500
+					},
+					"id": 50440,
+					"p": 0.990991,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

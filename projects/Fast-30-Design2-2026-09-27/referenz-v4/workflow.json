@@ -1,0 +1,151 @@
+{
+  "mode": "design-only",
+  "title": "Fast 30",
+  "designVersion": "1.12",
+  "designSource": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/DESIGN.md",
+  "designReadAt": "2026-09-26T14:55:38Z",
+  "workflowVersion": "1.22",
+  "source": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/fast 30(1).mp4",
+  "sourceSha256": "1ecd13868b3bb48e83098ec808247271e7b1e8a10e19948f2e2c0b151c890df1",
+  "sourceNote": "Abdullahs eigener Schnitt vom 26.09.2026 (fast 30(1).mp4), unverändert als Grundlage; Länge, Tempo 1,0 und Reihenfolge bleiben.",
+  "cutDuration": 202.366667,
+  "cutChanges": false,
+  "speed": 1,
+  "status": "bei_zernio_eingeplant",
+  "createdAt": "2026-09-26T14:55:38Z",
+  "renderLowMemory": true,
+  "gestaltungsauftrag": "Abdullah 26.09.2026: H1 nur für die Punkte, die er aufzählt; Aufzählungen innerhalb eines Punkts als H2. Überschriften sollen nicht sprunghaft wechseln (Feedback: lenkt vom Gesagten ab); lieber Animationen statt springender Überschriften, aber nicht zukleistern. Design darf angepasst werden, orientiert am aktuellen Stand; coole Animationen erwünscht. Erste Version zeigen.",
+  "bearbeitung": {
+    "agent": "Claude Code (Desktop), Sitzung 26.09.2026",
+    "aufgabe": "Gestaltung v1 Fast 30",
+    "begonnen": "2026-09-26T14:55:38Z",
+    "status": "v3_zur_sichtung"
+  },
+  "wuensche": [
+    {
+      "stelle": "Einstieg",
+      "wunsch": "H1 „In 11 Monaten 30“ + H2 „Lektionen für mein / 20-jähriges Ich“ ab Bild 0"
+    },
+    {
+      "stelle": "H1 Punkt 5/9",
+      "wunsch": "„5. Es ist immer der Weg“ (Stufe 60), „9. Vertrau niemals HR“ (Stufe 66)"
+    },
+    {
+      "stelle": "Beziehungen",
+      "wunsch": "H2 „Bro, vertrau niemals Türkinnen“ – v3: auf einmal, 2,0 s"
+    },
+    {
+      "stelle": "Stadt",
+      "wunsch": "„Grüße gehen raus an Diktator 🇮🇳“ (Apple-Emoji)"
+    },
+    {
+      "stelle": "Punkt 4",
+      "wunsch": "v3: großes Wort „0 Ahnung“ entfernt, normale H1 bleibt"
+    },
+    {
+      "stelle": "Punkt 7",
+      "wunsch": "v3: Spar-Grafik ETF · 100 €/Monat · 10 % p. a. → ≈ 20.000 € (19.986), eingezahlt 12.000 €; „Finger weg: Kreditkarte, Leasing, Dispo“ bleibt (131,59–136,0)"
+    },
+    {
+      "stelle": "Punkt 10",
+      "wunsch": "„… oder steh für etwas ein“ + 💯💯💯 (Emoji-Bestätigung offen)"
+    },
+    {
+      "stelle": "Ende",
+      "wunsch": "v3: 1,5 s Original angehängt (Buch zuklappen)"
+    },
+    {
+      "stelle": "Schrift",
+      "wunsch": "v3: Arial Bold bleibt (Abdullah), verlustfrei gerendert (ProRes-Master)"
+    }
+  ],
+  "followers": {
+    "value": 4254,
+    "source": "Zernio accounts_get_follower_stats, TikTok @abidullahabi (6aa6efb9726ebfe037e60cc6), currentFollowers 4254, lastUpdated 2026-09-26T05:56:52Z, abgerufen 26.09.2026 ~15:15Z"
+  },
+  "media": {
+    "datei": "media.mp4 (v4, farbkorrigiert)",
+    "weg": "build-media-v3.sh: fast 30(1).mp4 (4K) + IMG_1957.MOV 701,187–702,687 s (Buch zuklappen), ein Durchgang, 1080 × 1920 lanczos, CRF 10 slow, AAC 320k 48 kHz Stereo",
+    "uebergang": "Tonabgleich letzter Clip: Original = Abdullah + 500,320 s (Hüllkurven-Korrelation 0,998); Sichtprüfung nahtlos",
+    "vorher": "media-v2-ohne-buch.mp4 (v2, 200,867 s)",
+    "tempo": "1,0"
+  },
+  "latestExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Fast-30-Gestaltung-2026-09-26/exports/Fast-30_v2.mp4",
+  "exportedAt": "2026-09-26T19:18:51.179Z",
+  "versionen": {
+    "v1": "Render gestoppt",
+    "v2": {
+      "export": "exports/final-2026-09-26T16-29-03-425Z.mp4",
+      "ansicht": "02/Datum offen - Fast 30 - Gestaltung v2.mp4"
+    },
+    "v3": {
+      "master": "exports/final-2026-09-26T17-27-53-898Z.mov (ProRes 4444, 8,6 GB)",
+      "upload": "exports/Fast-30_v1.mp4",
+      "sha256": "e20c5999502d1c685c305a99eac825bc5b9414ec226ac4a6575a15fa3cc24a56",
+      "bytes": 288290000,
+      "profil": "finalize-fast30.py: 11,2 Mbit/s (12 Mbit/s ergaben 308 MB > 300-MB-Zernio-Grenze), BT.601→BT.709 umgerechnet, AAC 120k 48 kHz",
+      "pruefung": "Layoutprüfung 6072 Bilder/404 Gesichtsproben 0 Abweichungen; Lint 0 Fehler; Gegenprüfung (3 Blickwinkel) eingearbeitet; VMAF 98.4; Ton 0 ms Versatz; vollständig decodiert; 19 Stichbilder inkl. Bild 0 gesichtet",
+      "drive": "02_Bearbeitete_Videos/Datum offen - Fast 30 - Gestaltung v3.mp4",
+      "status": "zur Sichtung an Abdullah"
+    }
+  },
+  "offen": [
+    "Titel und Postingdatum (Dateiname, 03_Bereit_zum_Posten)",
+    "Emoji bei Punkt 10 bestätigen",
+    "Beschreibung nach Abschnitt 11 und Notion",
+    "Neue Elemente nach Abnahme in DESIGN.md aufnehmen",
+    "Aufräumen: Zwischenstände (v2-Render, abgebrochene Render-Ordner, ProRes-Master) nach Abnahme mit aufraeumen.mjs"
+  ],
+  "renderMaster": "prores",
+  "masterColorMatrix": "bt601",
+  "renderMasterGrund": "Abdullah 26.09.2026: Schrift in v2 „nicht crispy clean“. Ursache: HyperFrames nimmt bei MP4-Ausgabe jedes Bild als JPEG q80 auf; ProRes (MOV) nimmt PNG auf. Master als ProRes, Upload-Datei daraus mit finalize-buffer-video.py.",
+  "renderedExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Fast-30-Gestaltung-2026-09-26/exports/final-2026-09-26T18-50-46-766Z.mov",
+  "audioHandling": "Original audio re-encoded once as AAC-LC at 120 kbit/s and 48 kHz, without tempo or level changes.",
+  "deliveryProfile": "Buffer Web: H264, 1080x1920p30, BT709, 11,2M video target (300-MB-Grenze bei 202 s) / 14M VBV, AAC-LC 120k, faststart",
+  "layoutVersion": "tiktok-safe-v1",
+  "aktuell": {
+    "datei": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Fast-30-Gestaltung-2026-09-26/exports/Fast-30_v2.mp4",
+    "sha256": "220ac948fe8d32f27acffbc9c408cd8856d312f91a543f696342435e3a9601f5",
+    "bytes": 288276793,
+    "erzeugt": "2026-09-26T19:26:25Z",
+    "gesetztAm": "2026-09-26T19:26:25Z"
+  },
+  "farbkorrektur": {
+    "variante": "A (DESIGN.md, Ideen aus „Angst vor Arbeiten“)",
+    "entscheidung": "Abdullah 26.09.2026: „farbliche Korrektur machen … schau mal ob in der design md was steht“",
+    "filter": "eq=gamma=0.96:saturation=1.12:brightness=-0.015; RGB BT.709: colorbalance rm=0.03 gm=0.005 bm=-0.03 rh=0.01 bh=-0.02; curves 0/0 0.5/0.49 1/0.95",
+    "weg": "build-media-v4.sh: ein Durchgang aus fast 30(1).mp4 (4K) + Original-Ende, CRF 10",
+    "ungraded": "media-v3-ungraded.mp4",
+    "vergleich": "review/grade/Farbkorrektur-A-Vergleich.jpg"
+  },
+  "postingFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/04_Gepostet/2026-09-27 - Fast 30 Lektionen.mp4",
+  "postingSha256": "220ac948fe8d32f27acffbc9c408cd8856d312f91a543f696342435e3a9601f5",
+  "postingDate": "2026-09-27",
+  "postingTime": "18:00 Europe/Berlin",
+  "postingDateStatus": "bei_zernio_eingeplant",
+  "postingTitle": "Fast 30 Lektionen",
+  "notionPage": "https://app.notion.com/p/3d88cb917b3b807694acd5e463168ba9",
+  "zernio": {
+    "postId": "6ab81ebd0931bc4d7225acfd",
+    "plattformen": [
+      "instagram",
+      "tiktok"
+    ],
+    "geplantFuer": "2026-09-27T18:00:00+02:00",
+    "status": "scheduled",
+    "mediaUrl": "https://media.zernio.com/media/1790450871731_6v7sa9c4_2026-09-27---Fast-30-Lektionen.mp4",
+    "bytes": 288276793,
+    "sha256": "220ac948fe8d32f27acffbc9c408cd8856d312f91a543f696342435e3a9601f5",
+    "shaGleichPostingdatei": true,
+    "dryRunTikTok": "canPublish true (26.09.2026 21:36)",
+    "beschreibung": "beschreibung.txt (1952 Zeichen)"
+  },
+  "sourceArchived": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Archiv/Rohvideos/2026-09-27 - Fast 30 Lektionen - Abdullahs Schnitt.mp4",
+  "sourceProject": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1957-Pausenschnitt-2026-09-26",
+  "videomaterialVerschoben": {
+    "am": "2026-09-26",
+    "nach": "/Users/abi/Löschbar/2026-09-27 - Fast 30 (löschbar ab 28-09)",
+    "bytes": 20868435570,
+    "zurueck": "node aufraeumen.mjs --zurueck \"2026-09-27 - Fast 30 (löschbar ab 28-09)\" \"Fast-30-Gestaltung-2026-09-26\""
+  }
+}

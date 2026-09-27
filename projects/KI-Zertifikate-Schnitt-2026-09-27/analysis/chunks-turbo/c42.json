@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1000
+			},
+			"text": " Das Gute ist,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.889457,
+					"t_dtw": -1
+				},
+				{
+					"text": " Das",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,260"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 260
+					},
+					"id": 2846,
+					"p": 0.593181,
+					"t_dtw": 24
+				},
+				{
+					"text": " G",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 390
+					},
+					"id": 460,
+					"p": 0.77487,
+					"t_dtw": 38
+				},
+				{
+					"text": "ute",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,660"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 660
+					},
+					"id": 1169,
+					"p": 0.999851,
+					"t_dtw": 46
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 700
+					},
+					"id": 1418,
+					"p": 0.998542,
+					"t_dtw": 72
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1000
+					},
+					"id": 11,
+					"p": 0.494542,
+					"t_dtw": 98
+				},
+				{
+					"text": "[_TT_50]",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1000
+					},
+					"id": 50415,
+					"p": 0.935466,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

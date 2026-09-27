@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,940"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2940
+			},
+			"text": " Gen.ai for everyone von Andrew Ngeo.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.666567,
+					"t_dtw": -1
+				},
+				{
+					"text": " Gen",
+					"timestamps": {
+						"from": "00:00:00,080",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 80,
+						"to": 270
+					},
+					"id": 3632,
+					"p": 0.761884,
+					"t_dtw": 50
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 540
+					},
+					"id": 13,
+					"p": 0.570084,
+					"t_dtw": 60
+				},
+				{
+					"text": "ai",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 720
+					},
+					"id": 1301,
+					"p": 0.427295,
+					"t_dtw": 68
+				},
+				{
+					"text": " for",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 950
+					},
+					"id": 337,
+					"p": 0.82743,
+					"t_dtw": 96
+				},
+				{
+					"text": " everyone",
+					"timestamps": {
+						"from": "00:00:01,010",
+						"to": "00:00:01,690"
+					},
+					"offsets": {
+						"from": 1010,
+						"to": 1690
+					},
+					"id": 1518,
+					"p": 0.698905,
+					"t_dtw": 132
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:01,750",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1750,
+						"to": 1990
+					},
+					"id": 2957,
+					"p": 0.644628,
+					"t_dtw": 162
+				},
+				{
+					"text": " Andrew",
+					"timestamps": {
+						"from": "00:00:01,990",
+						"to": "00:00:02,310"
+					},
+					"offsets": {
+						"from": 1990,
+						"to": 2310
+					},
+					"id": 10110,
+					"p": 0.876742,
+					"t_dtw": 214
+				},
+				{
+					"text": " N",
+					"timestamps": {
+						"from": "00:00:02,550",
+						"to": "00:00:02,630"
+					},
+					"offsets": {
+						"from": 2550,
+						"to": 2630
+					},
+					"id": 426,
+					"p": 0.806873,
+					"t_dtw": 268
+				},
+				{
+					"text": "ge",
+					"timestamps": {
+						"from": "00:00:02,630",
+						"to": "00:00:02,810"
+					},
+					"offsets": {
+						"from": 2630,
+						"to": 2810
+					},
+					"id": 432,
+					"p": 0.421913,
+					"t_dtw": 284
+				},
+				{
+					"text": "o",
+					"timestamps": {
+						"from": "00:00:02,810",
+						"to": "00:00:02,920"
+					},
+					"offsets": {
+						"from": 2810,
+						"to": 2920
+					},
+					"id": 78,
+					"p": 0.970731,
+					"t_dtw": 290
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,920",
+						"to": "00:00:02,920"
+					},
+					"offsets": {
+						"from": 2920,
+						"to": 2920
+					},
+					"id": 13,
+					"p": 0.432248,
+					"t_dtw": 290
+				},
+				{
+					"text": "[_TT_147]",
+					"timestamps": {
+						"from": "00:00:02,940",
+						"to": "00:00:02,940"
+					},
+					"offsets": {
+						"from": 2940,
+						"to": 2940
+					},
+					"id": 50512,
+					"p": 0.965051,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

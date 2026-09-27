@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1120
+			},
+			"text": " Ich hätte mir für mich",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.974309,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,030",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 30,
+						"to": 180
+					},
+					"id": 3141,
+					"p": 0.655141,
+					"t_dtw": 14
+				},
+				{
+					"text": " hätte",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,490"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 490
+					},
+					"id": 20041,
+					"p": 0.922746,
+					"t_dtw": 26
+				},
+				{
+					"text": " mir",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 580
+					},
+					"id": 3149,
+					"p": 0.515583,
+					"t_dtw": 42
+				},
+				{
+					"text": " für",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 850
+					},
+					"id": 2959,
+					"p": 0.836905,
+					"t_dtw": 72
+				},
+				{
+					"text": " mich",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 950
+					},
+					"id": 6031,
+					"p": 0.988598,
+					"t_dtw": 90
+				},
+				{
+					"text": "[_TT_56]",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1120
+					},
+					"id": 50421,
+					"p": 0.412797,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

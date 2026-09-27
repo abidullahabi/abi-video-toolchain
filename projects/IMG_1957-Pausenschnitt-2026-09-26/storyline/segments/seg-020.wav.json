@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1060
+			},
+			"text": " Was für eine Überraschung",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.930115,
+					"t_dtw": -1
+				},
+				{
+					"text": " Was",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 140
+					},
+					"id": 3027,
+					"p": 0.821169,
+					"t_dtw": 18
+				},
+				{
+					"text": " für",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 280
+					},
+					"id": 2959,
+					"p": 0.972967,
+					"t_dtw": 26
+				},
+				{
+					"text": " eine",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 470
+					},
+					"id": 3018,
+					"p": 0.952418,
+					"t_dtw": 36
+				},
+				{
+					"text": " Über",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,660"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 660
+					},
+					"id": 18086,
+					"p": 0.995279,
+					"t_dtw": 50
+				},
+				{
+					"text": "ras",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,800"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 800
+					},
+					"id": 3906,
+					"p": 0.999258,
+					"t_dtw": 62
+				},
+				{
+					"text": "ch",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 880
+					},
+					"id": 339,
+					"p": 0.998588,
+					"t_dtw": 70
+				},
+				{
+					"text": "ung",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:00,910"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 910
+					},
+					"id": 1063,
+					"p": 0.994218,
+					"t_dtw": 82
+				},
+				{
+					"text": "[_TT_53]",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1060
+					},
+					"id": 50418,
+					"p": 0.139226,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

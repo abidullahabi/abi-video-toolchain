@@ -1,0 +1,115 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,880"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 880
+			},
+			"text": " Ähm.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.700769,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ä",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,290"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 290
+					},
+					"id": 13700,
+					"p": 0.9792,
+					"t_dtw": 30
+				},
+				{
+					"text": "hm",
+					"timestamps": {
+						"from": "00:00:00,290",
+						"to": "00:00:00,570"
+					},
+					"offsets": {
+						"from": 290,
+						"to": 570
+					},
+					"id": 8587,
+					"p": 0.832685,
+					"t_dtw": 52
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,870",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 870,
+						"to": 870
+					},
+					"id": 13,
+					"p": 0.457894,
+					"t_dtw": 84
+				},
+				{
+					"text": "[_TT_44]",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 880
+					},
+					"id": 50409,
+					"p": 0.237269,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

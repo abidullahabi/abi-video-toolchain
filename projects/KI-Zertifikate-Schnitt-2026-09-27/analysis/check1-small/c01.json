@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,400"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1400
+			},
+			"text": " Es geht aber sehr schwarz.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.938664,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,110",
+						"to": "00:00:00,110"
+					},
+					"offsets": {
+						"from": 110,
+						"to": 110
+					},
+					"id": 2313,
+					"p": 0.492211,
+					"t_dtw": 26
+				},
+				{
+					"text": " geht",
+					"timestamps": {
+						"from": "00:00:00,190",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 190,
+						"to": 330
+					},
+					"id": 7095,
+					"p": 0.163234,
+					"t_dtw": 34
+				},
+				{
+					"text": " aber",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 480
+					},
+					"id": 4340,
+					"p": 0.141106,
+					"t_dtw": 46
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 780
+					},
+					"id": 5499,
+					"p": 0.159076,
+					"t_dtw": 70
+				},
+				{
+					"text": " sch",
+					"timestamps": {
+						"from": "00:00:00,830",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 830,
+						"to": 880
+					},
+					"id": 956,
+					"p": 0.0684473,
+					"t_dtw": 84
+				},
+				{
+					"text": "warz",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 1200
+					},
+					"id": 31991,
+					"p": 0.544353,
+					"t_dtw": 88
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1240
+					},
+					"id": 13,
+					"p": 0.245125,
+					"t_dtw": 114
+				},
+				{
+					"text": "[_TT_70]",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1400
+					},
+					"id": 50434,
+					"p": 0.0352274,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

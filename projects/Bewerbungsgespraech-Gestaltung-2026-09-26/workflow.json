@@ -1,0 +1,86 @@
+{
+  "mode": "storyline-cut-and-design",
+  "title": "Bewerbungsgespräch vorbereiten",
+  "designVersion": "1.12",
+  "designSource": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/DESIGN.md",
+  "designReadAt": "2026-09-26T15:18:00Z",
+  "workflowVersion": "1.23",
+  "source": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Bewerbungsgespraech-Schnitt-2026-09-26/source.mov",
+  "sourceOriginal": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/B95B2E1B-BDC2-4390-9290-F472B9211433.mov",
+  "sourceSha256": "4b94d8d8702f06849d95965e29e8d1f7e1644d7b7a5a02e7c7c9a66dff12cb99",
+  "sourceProject": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Bewerbungsgespraech-Schnitt-2026-09-26",
+  "cutDuration": 91.545,
+  "speed": 1.1,
+  "basis": "Schnitt v3 (edl.json des Schnittprojekts, 100,7 s bei 1,0; Ende nach Abdullahs Rückmeldung gekürzt) mit 1,1x = 91,545 s.",
+  "status": "eingeplant",
+  "createdAt": "2026-09-26T15:33:00Z",
+  "renderLowMemory": true,
+  "bearbeitung": {
+    "agent": "Claude Code (Desktop), Sitzung 26.09.2026 abends",
+    "aufgabe": "Gestaltung v3 Bewerbungsgespräch (Ende)",
+    "begonnen": "2026-09-26T15:33:00Z",
+    "status": "abgeschlossen"
+  },
+  "farbkorrektur": {
+    "variante": "A dezent (wie Angst vor Arbeiten, gleicher Raum)",
+    "weg": "build-graded-media.py: Schnittliste + 1,1x + Farbe in einem Durchgang aus source.mov, x264 CRF 10 slow",
+    "mediaSha256": "f00ec521389b554ed481b9ef4493bfa6d18e5d543a682b17e6236b0d279de3e1"
+  },
+  "renderMaster": "prores",
+  "renderMasterGrund": "v2: ProRes-Master (PNG-Aufnahme statt JPEG q80), nachdem wieder 45 GB frei waren. v1 war MP4-Master wegen Platzmangel.",
+  "latestExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Bewerbungsgespraech-Gestaltung-2026-09-26/exports/Bewerbungsgespraech_v3.mp4",
+  "exportedAt": "2026-09-26T17:40:47.634Z",
+  "masterColorMatrix": "bt601",
+  "masterColorMatrixBeleg": "H1-Fläche im MP4-Master bei Bild 0: als BT.601/tv gelesen 22/103/180 (Soll #1668b5 = 22/104/181), als BT.709 12/100/183. HyperFrames kodiert BT.601 und etikettiert BT.709.",
+  "renderedExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Bewerbungsgespraech-Gestaltung-2026-09-26/exports/final-2026-09-26T17-21-45-483Z.mov",
+  "audioHandling": "Original audio re-encoded once as AAC-LC at 120 kbit/s and 48 kHz, without tempo or level changes.",
+  "deliveryProfile": "Buffer Web: H264, 1080x1920p30, BT709, 12M video target / 14M VBV, AAC-LC 120k, faststart",
+  "layoutVersion": "tiktok-safe-v1",
+  "aktuell": {
+    "datei": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Bewerbungsgespraech-Gestaltung-2026-09-26/exports/Bewerbungsgespraech_v3.mp4",
+    "sha256": "435b3a80ac84d19974e54e41b0e061dead97697b49343042878de0ff3e4e187e",
+    "bytes": 138862705,
+    "erzeugt": "2026-09-26T17:47:30Z",
+    "gesetztAm": "2026-09-26T17:47:30Z"
+  },
+  "pruefung": {
+    "layout": "check-design111 inkl. Kopf- und Logoprüfung: 0 Befunde, 2746 Bilder, 183 Gesichtsstichproben, keine Ausnahmen",
+    "ersterFrame": "H1 „Bewerbungsgespräch“ + H2 ab Bild 0 voll deckend (review/upload-v3-frame0.png)",
+    "farbe": "Variante A; ProRes-Master BT.601 (H1 exakt 22/104/181) nach BT.709 umgerechnet; Upload H1 18/102/179",
+    "datei": "H.264 High L4.1 1080x1920, SAR 1:1, CFR 30 (2746 Bilder, alle Abstände 33,3 ms), BT.709 tv, 12,01 Mbit/s, AAC-LC 120 kbit/s 48 kHz stereo, Fast Start, 138,9 MB, 91,56 s, vollständig decodiert, VMAF 98,98 zum ProRes-Master",
+    "synchronitaet": "Ton 0 ms Versatz an 3 Stellen; bis 89,0 s bildgleich zu v2",
+    "hoerpruefung": "nicht erfolgt (kein Abhören durch den Agenten möglich)"
+  },
+  "rueckmeldungV1": "Abdullah 26.09.2026: „Ich finde das alles gut. Nur das Ende finde ich nicht gut … Vielleicht das Ende noch ein bisschen länger machen. Ansonsten ist alles nahezu perfekt.“ Hook passt. Logos Notion, OneNote, LinkedIn offiziell herunterladen. Posting: nächstmöglicher Termin 12 Uhr, nicht Sonntag → Dienstag 29.09.2026 12:00.",
+  "postingDate": "2026-09-29",
+  "postingZeit": "12:00 Europe/Berlin",
+  "postingFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/04_Gepostet/2026-09-29 - Bewerbungsgespräch vorbereiten.mp4",
+  "postingSha256": "435b3a80ac84d19974e54e41b0e061dead97697b49343042878de0ff3e4e187e",
+  "zernio": {
+    "postId": "6ab7f9d78a3d8f6cb5a52223",
+    "plattformen": [
+      "instagram",
+      "tiktok"
+    ],
+    "geplant": "2026-09-29T10:00:00Z (12:00 Europe/Berlin)",
+    "status": "scheduled",
+    "mediaUrl": "https://media.zernio.com/media/1790445538487_621ukc5l_2026-09-29---Bewerbungsgesprach-vorbereiten.mp4",
+    "uploadSha256": "435b3a80ac84d19974e54e41b0e061dead97697b49343042878de0ff3e4e187e",
+    "verlauf": "v2 eingeplant 18:59 → Entwurf 19:08 (Ende zu lang) → v3 hochgeladen, Medien getauscht, wieder eingeplant 20:00 (26.09.2026, Ortszeit)"
+  },
+  "notion": {
+    "seite": "https://app.notion.com/p/2a08cb917b3b807688eccb2e46b2ded0",
+    "status": "💺 Ready to Post",
+    "postingDate": "2026-09-29T10:00:00.000Z",
+    "beschreibung": "im Abschnitt „Beschreibung & Hashtags“, gegengelesen",
+    "einplanung": "Abschnitt „Zernio-Einplanung“ auf v3 nachgeführt"
+  },
+  "archiv": {
+    "arbeitskopieV3": "Archiv/Vorversionen/2026-09-29 - Bewerbungsgespräch vorbereiten - Arbeitskopie.mp4",
+    "v2": "Archiv/Vorversionen/2026-09-29 - Bewerbungsgespräch vorbereiten - Gestaltung v2 (Ende zu lang).mp4",
+    "v1": "Archiv/Vorversionen/2026-09-29 - Bewerbungsgespräch vorbereiten - Gestaltung v1.mp4",
+    "rohvideo": "Archiv/Rohvideos/2026-09-29 - Bewerbungsgespräch vorbereiten - Abdullahs Vorschnitt.mov"
+  },
+  "rueckmeldungV2": "Abdullah 26.09.2026: Ende verkackt (zu viel Stille nach „vorbereitet bist“, hinten zu lang). Zernio rausnehmen, vor dem Hochladen zeigen. Sonst passt alles.",
+  "freigabe": "Abdullah am 26.09.2026: „Sauber. Genau dieses Video bitte ich dich jetzt zu planen. Ist freigegeben.“ (Gestaltung v3, SHA-256 435b3a80…)"
+}

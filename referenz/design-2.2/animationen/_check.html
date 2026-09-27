@@ -1,0 +1,468 @@
+<!doctype html><html><head><meta charset="utf-8"><style>@font-face{font-family:'Archivo';src:url(file:///tmp/claude-0/-home-claude/5e04cee4-3c8f-5431-ae95-2f0e2dd54dec/scratchpad/fonts/archivo.ttf);font-weight:100 900;font-stretch:62% 125%}@font-face{font-family:'Gochi Hand';src:url(file:///tmp/claude-0/-home-claude/5e04cee4-3c8f-5431-ae95-2f0e2dd54dec/scratchpad/fonts/kid/ofl_gochihand_GochiHand-Regular.ttf)}</style></head><body><title>ABI Animationen</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Gochi+Hand&display=swap">
+<style>
+:root{
+  --bg:#F6F1E9; --panel:#FFFFFF; --ink:#111111; --muted:#5E5B55; --line:#E3DCCF;
+  --accent:#5EAAEE; --accent-ink:#111111; --tag:#EFE8DC;
+  --out:cubic-bezier(0.22,1,0.36,1); --spring:cubic-bezier(0.34,1.56,0.64,1);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --bg:#151515; --panel:#1F1F1F; --ink:#F2EEE7; --muted:#A7A29A; --line:#303030; --tag:#2A2A2A; color-scheme:dark; }
+}
+:root[data-theme="dark"]{ --bg:#151515; --panel:#1F1F1F; --ink:#F2EEE7; --muted:#A7A29A; --line:#303030; --tag:#2A2A2A; color-scheme:dark; }
+
+body{ background:var(--bg); color:var(--ink); font-family:'Archivo',system-ui,sans-serif; font-size:15px; line-height:1.45; }
+.wrap{ max-width:1240px; margin:0 auto; padding-inline:20px; padding-block:28px 56px; display:flex; flex-direction:column; gap:26px; }
+header{ display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:18px; }
+h1{ margin:0; font-weight:900; font-stretch:125%; font-size:clamp(30px,5vw,46px); line-height:1; letter-spacing:-0.5px; text-wrap:balance; }
+.lead{ margin:10px 0 0; max-width:62ch; color:var(--muted); }
+.curves{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+.curves span{ background:var(--tag); border-radius:999px; padding:4px 12px; font-size:13px; }
+button{ font:inherit; font-weight:800; cursor:pointer; border:2px solid var(--ink); background:var(--accent); color:var(--accent-ink); border-radius:999px; padding:9px 18px; }
+button:focus-visible{ outline:3px solid var(--accent); outline-offset:3px; }
+button.ghost{ background:transparent; color:var(--ink); }
+.grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr)); gap:22px; }
+.card{ background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:14px; display:flex; flex-direction:column; gap:12px; }
+.card-head{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.card h2{ margin:0; font-size:18px; font-weight:800; }
+.src{ font-size:12px; font-weight:700; letter-spacing:.4px; text-transform:uppercase; color:var(--muted); background:var(--tag); border-radius:999px; padding:3px 10px; white-space:nowrap; }
+.src.neu{ background:var(--accent); color:#111; }
+.screen{ position:relative; aspect-ratio:9/16; max-width:100%; overflow:hidden; border-radius:14px; background:#111; cursor:pointer; }
+.stage{ position:absolute; left:0; top:0; width:1080px; height:1920px; transform-origin:0 0; transform:scale(var(--k,0.25)); overflow:hidden; font-family:'Archivo',sans-serif; }
+.steps{ margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:6px; font-size:13.5px; }
+.steps li{ display:grid; grid-template-columns:auto 1fr; gap:8px; }
+.steps b{ font-weight:800; }
+.note{ margin:0; font-size:13px; color:var(--muted); }
+.card button{ align-self:flex-start; padding:7px 16px; font-size:14px; }
+
+/* Bühne: feste Markenfarben, unabhängig vom Seitenthema */
+.bg{ position:absolute; left:0; top:0; width:1080px; height:1920px; object-fit:cover; }
+.top{ position:absolute; left:0; width:1080px; display:flex; flex-direction:column; align-items:center; }
+.row{ display:flex; justify-content:center; align-items:center; }
+.h1{ font-weight:900; font-stretch:125%; line-height:1.02; color:#fff; -webkit-text-stroke:16px #111; paint-order:stroke fill; text-align:center; }
+.h2{ padding:8px 28px 14px; border-radius:12px; background:#5EAAEE; transform:rotate(-2deg); font-weight:800; font-size:58px; line-height:1.12; color:#fff; text-align:center; }
+.kid{ font-family:'Gochi Hand',cursive; line-height:1; color:#5EAAEE; -webkit-text-stroke:14px #111; paint-order:stroke fill; }
+.title{ font-weight:900; font-size:64px; line-height:1.1; word-spacing:6px; color:#fff; -webkit-text-stroke:12px #111; paint-order:stroke fill; }
+.sub{ position:absolute; left:0; top:1280px; width:1080px; text-align:center; font-weight:800; font-size:64px; line-height:1.12; color:#fff; -webkit-text-stroke:12px #111; paint-order:stroke fill; }
+.sub b{ font-weight:800; color:#5EAAEE; }
+.chip{ display:flex; align-items:center; gap:14px; padding:8px 32px 10px 12px; border-radius:999px; border:5px solid #fff; box-shadow:0 0 0 3px #111, inset 0 0 0 3px #111; }
+.dot{ width:56px; height:56px; box-sizing:border-box; border-radius:50%; background:#5EAAEE; border:3px solid #111; display:flex; align-items:center; justify-content:center; font-family:'Gochi Hand',cursive; font-size:48px; line-height:1; color:#111; flex-shrink:0; }
+.chiptext{ font-weight:800; font-size:54px; line-height:1.1; color:#fff; -webkit-text-stroke:10px #111; paint-order:stroke fill; }
+.pill{ padding:6px 24px 8px; border-radius:999px; border:5px solid #fff; box-shadow:0 0 0 3px #111, inset 0 0 0 3px #111; font-weight:800; font-size:46px; line-height:1.1; color:#fff; -webkit-text-stroke:9px #111; paint-order:stroke fill; transform:rotate(-2deg); white-space:nowrap; }
+.stack{ display:grid; justify-items:center; }
+.stack > *{ grid-area:1/1; }
+.letter{ font-family:'Gochi Hand',cursive; font-size:230px; line-height:0.95; color:#fff; -webkit-text-stroke:16px #111; paint-order:stroke fill; display:inline-block; }
+.dr{ stroke-dasharray:1; stroke-dashoffset:0; }
+.note-line{ font-weight:800; font-size:46px; line-height:1.3; word-spacing:4px; color:#fff; -webkit-text-stroke:8px #111; paint-order:stroke fill; }
+.note-row{ display:flex; align-items:baseline; gap:12px; }
+.note-row .n{ font-family:'Gochi Hand',cursive; font-size:58px; line-height:1; color:#5EAAEE; -webkit-text-stroke:10px #111; paint-order:stroke fill; }
+.note-row .w{ font-weight:800; font-size:46px; line-height:1.2; word-spacing:4px; color:#fff; -webkit-text-stroke:8px #111; paint-order:stroke fill; }
+.grp{ position:absolute; left:90px; display:flex; flex-direction:column; align-items:flex-start; gap:14px; }
+.msg{ max-width:620px; box-sizing:border-box; padding:12px 20px 14px; border-radius:22px 22px 22px 6px; background:#5EAAEE; border:4px solid #111; box-shadow:6px 6px 0 #111; font-weight:800; font-size:36px; line-height:1.2; color:#fff; }
+.ind{ display:flex; gap:9px; align-items:center; padding:16px 20px; border-radius:22px 22px 22px 6px; background:#fff; border:4px solid #111; box-shadow:6px 6px 0 #111; }
+.ind i{ width:12px; height:12px; border-radius:50%; background:#111; display:block; }
+.ind i:nth-child(2){ opacity:.55; } .ind i:nth-child(3){ opacity:.3; }
+.ocard{ width:700px; height:237px; box-sizing:border-box; padding:22px; background:#F8F9FB; border-radius:20px; display:flex; flex-direction:column; }
+.ocard .head{ display:flex; justify-content:space-between; align-items:baseline; }
+.ocard .cnt{ font-weight:700; font-size:36px; line-height:1; color:#16181C; font-variant-numeric:tabular-nums; }
+.ocard .goal{ font-weight:700; font-size:26px; line-height:1; color:#7A7E86; }
+.ocard .bed{ position:relative; margin-top:12px; height:19px; border-radius:10px; background:#DEE1E7; overflow:hidden; }
+.ocard .fill{ position:absolute; left:0; top:0; bottom:0; width:42.54%; border-radius:10px; background:#5EAAEE; }
+.ocard .profiles{ margin-top:18px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); row-gap:13px; column-gap:16px; }
+.ocard .p{ display:flex; align-items:center; gap:12px; font-weight:700; font-size:25px; line-height:1; color:#16181C; }
+.ocard .p i{ width:34px; height:34px; border-radius:7px; background:#C9CCD2; display:block; flex-shrink:0; }
+
+/* Ruhezustand: Endbild. Beim Abspielen bekommt die Bühne .run */
+.stage:not(.run) .transient{ opacity:0; }
+.stage:not(.run) .final{ color:#5EAAEE; }
+.run .a-h1{ animation:h1in .22s var(--out) both; animation-delay:var(--t,0s); }
+.run .a-wipe{ animation:wipe .28s var(--out) both; animation-delay:var(--t,0s); }
+.run .a-write{ animation:write .4s var(--out) both; animation-delay:var(--t,0s); }
+.run .a-up{ animation:up .22s var(--out) both; animation-delay:var(--t,0s); }
+.run .a-pop{ animation:pop .3s var(--spring) both; animation-delay:var(--t,0s); }
+.run .a-pop55{ animation:pop55 .3s var(--spring) both; animation-delay:var(--t,0s); }
+.run .a-pop90{ animation:pop90 .35s var(--spring) both; animation-delay:var(--t,0s); }
+.run .a-pop88{ animation:pop88 .45s var(--spring) both; animation-delay:var(--t,0s); transform-origin:0 100%; }
+.run .a-fade{ animation:fade .3s var(--out) both; animation-delay:var(--t,0s); }
+.run .a-draw{ animation:draw var(--dur,.25s) var(--out) both; animation-delay:var(--t,0s); }
+.run .a-stoss{ animation:stoss var(--t,.6s) steps(1,end) both; }
+.run .a-life{ animation:life var(--dur,1.4s) linear both; animation-delay:var(--t,0s); }
+.run .a-lit{ animation:lit var(--dur,1.4s) steps(1,end) forwards; animation-delay:var(--t,0s); }
+.run .a-liton{ animation:liton .01s steps(1,start) forwards; animation-delay:var(--t,0s); }
+.run .a-indpop{ animation:indpop .25s var(--spring) both; animation-delay:var(--t,0s); transform-origin:0 100%; }
+.run .a-indslide{ animation:indslide .35s var(--out) both; animation-delay:var(--t,0s); }
+.run .a-msg{ animation:msgpop .8s var(--spring) both; animation-delay:var(--t,0s); transform-origin:0 100%; }
+.run .a-out{ animation:out .18s linear forwards; animation-delay:var(--t,0s); }
+.run .a-vanish{ animation:vanish .25s linear forwards; animation-delay:var(--t,0s); }
+.run .ind i{ animation:typing .9s ease-in-out infinite; }
+.run .ind i:nth-child(2){ animation-delay:.3s; } .run .ind i:nth-child(3){ animation-delay:.6s; }
+
+@keyframes h1in{ from{ opacity:0; transform:scale(1.12); } to{ opacity:1; transform:none; } }
+@keyframes wipe{ from{ clip-path:inset(-20px 100% -20px -20px); } to{ clip-path:inset(-20px -20px -20px -20px); } }
+@keyframes write{ from{ clip-path:inset(-40px 100% -40px -40px); } to{ clip-path:inset(-40px -40px -40px -40px); } }
+@keyframes up{ from{ opacity:0; transform:translateY(14px); } to{ opacity:1; transform:none; } }
+@keyframes pop{ from{ opacity:0; transform:scale(.8); } to{ opacity:1; transform:none; } }
+@keyframes pop55{ from{ opacity:0; transform:scale(.55); } to{ opacity:1; transform:none; } }
+@keyframes pop90{ from{ opacity:0; transform:scale(.9); } to{ opacity:1; transform:none; } }
+@keyframes pop88{ from{ opacity:0; transform:scale(.88); } to{ opacity:1; transform:none; } }
+@keyframes fade{ from{ opacity:0; } to{ opacity:1; } }
+@keyframes draw{ from{ stroke-dashoffset:1; } to{ stroke-dashoffset:0; } }
+@keyframes stoss{ from{ transform:scale(1); } to{ transform:scale(1.12); } }
+@keyframes life{ 0%{ opacity:0; transform:scale(.8); } 15%{ opacity:1; transform:scale(1.03); } 22%{ transform:none; } 93%{ opacity:1; } 100%{ opacity:0; } }
+@keyframes lit{ from{ color:#5EAAEE; } to{ color:#fff; } }
+@keyframes liton{ to{ color:#5EAAEE; } }
+@keyframes indpop{ from{ opacity:0; transform:scale(.7); } to{ opacity:1; transform:none; } }
+@keyframes indslide{ from{ transform:translateY(-91px); } to{ transform:none; } }
+@keyframes msgpop{ 0%{ opacity:0; transform:scale(.82); } 1%{ opacity:.6; } 60%{ transform:scale(1.03); } 100%{ opacity:1; transform:none; } }
+@keyframes out{ to{ opacity:0; transform:translateY(-8px); } }
+@keyframes vanish{ to{ opacity:0; transform:translateY(-10px); } }
+@keyframes typing{ 0%,100%{ opacity:.35; } 50%{ opacity:1; } }
+@media (prefers-reduced-motion: reduce){ .run .ind i{ animation:none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>ABI Animationen</h1>
+      <p class="lead">Jedes Element aus „Klar mit Kante“ auf deinen echten Standbildern. Ein Klick auf das Bild oder auf Abspielen startet die Bewegung. Jede Animation läuft einmal und bleibt dann stehen. Untertitel wechseln hart, ohne Animation.</p>
+      <div class="curves"><span>Ausklingen: cubic-bezier(0.22, 1, 0.36, 1)</span><span>Abfedern: cubic-bezier(0.34, 1.56, 0.64, 1)</span><span>Linear: nur beim Ausblenden</span></div>
+    </div>
+    <button id="all" type="button">Alle abspielen</button>
+  </header>
+
+  <div class="grid">
+
+    <!-- 1 Einstieg -->
+    <article class="card" data-total="1.5">
+      <div class="card-head"><h2>Einstieg bei 0:00</h2><span class="src">DESIGN.md 6 und 11.1</span></div>
+      <div class="screen"><div class="stage">
+        <img class="bg" src="img/frame_einstieg.jpg" alt="">
+        <div class="top" style="top:250px; gap:24px">
+          <div class="a-out" style="--t:1.2s"><div class="h1" style="font-size:156px">FAST 30</div></div>
+          <div class="a-out" style="--t:1.26s"><div class="h2">10 Lektionen für<br>mein 20-jähriges Ich</div></div>
+        </div>
+        <div class="sub">erwachsen <b>werden</b> in</div>
+      </div></div>
+      <ul class="steps">
+        <li><b>Start</b><span>steht ab dem ersten Bild, ohne Bewegung, weil es zugleich das Thumbnail ist</span></li>
+        <li><b>Ende</b><span>H1 blendet in 0,18 s aus, 8 px nach oben, Linear. H2 folgt 0,06 s später</span></li>
+      </ul>
+      <button type="button" class="play">Abspielen</button>
+    </article>
+
+    <!-- 2 Kapitel -->
+    <article class="card" data-total="0.6">
+      <div class="card-head"><h2>Kapitel</h2><span class="src neu">neu</span></div>
+      <div class="screen"><div class="stage">
+        <img class="bg" src="img/frame_normal.jpg" alt="">
+        <div class="top" style="top:300px">
+          <div class="row" style="gap:28px">
+            <div class="a-write" style="--t:0s"><div class="kid" style="font-size:140px; transform:rotate(-4deg)">6.</div></div>
+            <div class="a-up" style="--t:.35s"><div class="title">Keiner rettet dich</div></div>
+          </div>
+        </div>
+        <div class="sub">dass <b>jemand</b> kommt</div>
+      </div></div>
+      <ul class="steps">
+        <li><b>Zahl</b><span>schreibt sich von links nach rechts, 0,40 s, Ausklingen</span></li>
+        <li><b>Titel</b><span>ab 0,35 s, 14 px von unten, 0,22 s, Ausklingen</span></li>
+      </ul>
+      <button type="button" class="play">Abspielen</button>
+    </article>
+
+    <!-- 3 Aufzählung -->
+    <article class="card" data-total="2.4">
+      <div class="card-head"><h2>Aufzählung mit Pillen</h2><span class="src neu">neu</span></div>
+      <div class="screen"><div class="stage">
+        <img class="bg" src="img/frame_aufzaehlung.jpg" alt="">
+        <div class="top" style="top:270px; gap:34px">
+          <div class="row" style="gap:28px">
+            <div class="a-write" style="--t:0s"><div class="kid" style="font-size:140px; transform:rotate(-4deg)">3.</div></div>
+            <div class="a-up" style="--t:.35s"><div class="title">Die großen Drei</div></div>
+          </div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:20px">
+            <div class="a-pop" style="--t:.9s"><div class="chip" style="transform:translateX(-44px) rotate(-2deg)"><div class="dot">1</div><div class="chiptext">Stadt</div></div></div>
+            <div class="a-pop" style="--t:1.5s"><div class="chip" style="transform:translateX(40px) rotate(1.5deg)"><div class="dot">2</div><div class="chiptext">Umfeld</div></div></div>
+            <div class="a-pop" style="--t:2.1s"><div class="chip" style="transform:translateX(-16px) rotate(-1deg)"><div class="dot">3</div><div class="chiptext">Partner</div></div></div>
+          </div>
+        </div>
+        <div class="sub">und <b>meist</b></div>
+      </div></div>
+      <ul class="steps">
+        <li><b>Überschrift</b><span>wie beim Kapitel</span></li>
+        <li><b>Pillen</b><span>einzeln am gesprochenen Wort, Pop von 80 auf 100 %, 0,30 s, Abfedern</span></li>
+      </ul>
+      <p class="note">Die Zeitpunkte 0,9 / 1,5 / 2,1 s sind Beispiele. Im Video zählt das Wort.</p>
+      <button type="button" class="play">Abspielen</button>
+    </article>
+
+    <!-- 4 Akronym -->
+    <article class="card" data-total="4.0">
+      <div class="card-head"><h2>Akronym, große Buchstaben</h2><span class="src neu">neu</span></div>
+      <div class="screen"><div class="stage">
+        <img class="bg" src="img/cv_30.jpg" alt="">
+        <div class="top" style="top:240px; gap:18px">
+          <div class="row" style="gap:64px; align-items:flex-end">
+            <div class="a-pop55" style="--t:0s"><span class="letter a-lit" style="--t:.8s; --dur:1.4s; transform:rotate(-4deg)">A</span></div>
+            <div class="a-pop55" style="--t:.08s"><span class="letter a-lit" style="--t:2.2s; --dur:1.4s; transform:rotate(3deg)">R</span></div>
+            <div class="a-pop55" style="--t:.16s"><span class="letter final a-liton" style="--t:3.6s; transform:rotate(-2deg)">T</span></div>
+          </div>
+          <div class="stack">
+            <div class="transient a-life" style="--t:.8s; --dur:1.4s"><div class="pill">Action · was du genau machst</div></div>
+            <div class="transient a-life" style="--t:2.2s; --dur:1.4s"><div class="pill">Result · am besten eine Zahl</div></div>
+            <div class="a-pop" style="--t:3.6s"><div class="pill">Transformation · was es gebracht hat</div></div>
+          </div>
+        </div>
+        <div class="sub">und <b>Transformation.</b></div>
+      </div></div>
+      <ul class="steps">
+        <li><b>Buchstaben</b><span>Pop von 55 auf 100 %, je 0,08 s versetzt, Abfedern</span></li>
+        <li><b>Aktiv</b><span>harter Wechsel auf Blau am gesprochenen Wort</span></li>
+        <li><b>Pille</b><span>Pop 0,30 s, die alte blendet vorher kurz aus</span></li>
+      </ul>
+      <button type="button" class="play">Abspielen</button>
+    </article>
+
+    <!-- 5 Schlagwort -->
+    <article class="card" data-total="1.3">
+      <div class="card-head"><h2>Schlagwort</h2><span class="src">DESIGN.md 15</span></div>
+      <div class="screen"><div class="stage">
+        <img class="bg a-stoss" src="img/frame_nah.jpg" alt="" style="--t:.6s; transform:scale(1.12); transform-origin:42% 28%">
+        <div class="top" style="top:330px">
+          <div class="a-pop55" style="--t:.6s">
+            <div style="display:flex; flex-direction:column; align-items:center; transform:rotate(-3deg)">
+              <div class="h1" style="font-size:124px; -webkit-text-stroke:18px #111">NIEMALS</div>
+              <svg viewBox="0 0 700 70" style="display:block; width:700px; height:70px; margin-top:-6px; overflow:visible">
+                <path class="dr a-draw" pathLength="1" style="--t:.85s" d="M 14 30 C 150 12, 300 40, 450 22 S 640 30, 688 16" fill="none" stroke="#111" stroke-width="22" stroke-linecap="round"/>
+                <path class="dr a-draw" pathLength="1" style="--t:1s" d="M 60 54 C 210 40, 380 62, 560 46 S 650 50, 672 46" fill="none" stroke="#111" stroke-width="20" stroke-linecap="round"/>
+                <path class="dr a-draw" pathLength="1" style="--t:.85s" d="M 14 30 C 150 12, 300 40, 450 22 S 640 30, 688 16" fill="none" stroke="#FF8AC2" stroke-width="12" stroke-linecap="round"/>
+                <path class="dr a-draw" pathLength="1" style="--t:1s" d="M 60 54 C 210 40, 380 62, 560 46 S 650 50, 672 46" fill="none" stroke="#FF8AC2" stroke-width="10" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div></div>
+      <ul class="steps">
+        <li><b>Stoßzoom</b><span>harter Sprung auf 112 %, ohne Überblendung</span></li>
+        <li><b>Wort</b><span>Pop von 55 auf 100 %, 0,30 s, Abfedern</span></li>
+        <li><b>Striche</b><span>ziehen sich von links, je 0,25 s, der zweite 0,15 s später</span></li>
+      </ul>
+      <button type="button" class="play">Abspielen</button>
+    </article>
+
+    <!-- 6 Grafik -->
+    <article class="card" data-total="1.9">
+      <div class="card-head"><h2>Grafik mit Green Screen</h2><span class="src neu">neu</span></div>
+      <div class="screen"><div class="stage" style="background:#F6F1E9">
+        <svg viewBox="0 0 1080 1920" style="position:absolute; left:0; top:0; width:1080px; height:1920px">
+          <defs><pattern id="sg" width="80" height="40" patternUnits="userSpaceOnUse"><g fill="#F6F1E9" stroke="#111" stroke-width="2.5">
+            <circle cx="40" cy="0" r="40"/><circle cx="40" cy="0" r="31"/><circle cx="40" cy="0" r="22"/><circle cx="40" cy="0" r="13"/><circle cx="40" cy="0" r="5"/>
+            <circle cx="0" cy="20" r="40"/><circle cx="0" cy="20" r="31"/><circle cx="0" cy="20" r="22"/><circle cx="0" cy="20" r="13"/><circle cx="0" cy="20" r="5"/>
+            <circle cx="80" cy="20" r="40"/><circle cx="80" cy="20" r="31"/><circle cx="80" cy="20" r="22"/><circle cx="80" cy="20" r="13"/><circle cx="80" cy="20" r="5"/>
+            <circle cx="40" cy="40" r="40"/><circle cx="40" cy="40" r="31"/><circle cx="40" cy="40" r="22"/><circle cx="40" cy="40" r="13"/><circle cx="40" cy="40" r="5"/>
+          </g></pattern></defs>
+          <rect width="1080" height="1920" fill="url(#sg)" opacity="0.12"/>
+        </svg>
+        <div class="a-pop90" style="--t:.2s; position:absolute; left:150px; top:270px; width:780px">
+          <div style="box-sizing:border-box; width:780px; padding:26px 34px 22px; background:#fff; border:6px solid #111; border-radius:24px; box-shadow:12px 12px 0 #111; display:flex; flex-direction:column; gap:12px">
+            <div style="font-size:34px; font-weight:800; line-height:1.2; color:#111">ETF · 100 €/Monat · 10 % p. a.</div>
+            <svg viewBox="0 0 700 300" style="display:block; width:700px; height:300px; overflow:visible" role="img" aria-label="Sparplan: Start mit 20 wächst deutlich stärker als Start mit 30">
+              <line x1="40" y1="260" x2="660" y2="260" stroke="#111" stroke-width="4"/>
+              <polyline class="a-fade" style="--t:.5s" points="195.0,260.0 210.5,259.5 226.0,259.0 241.5,258.4 257.0,257.8 272.5,257.1 288.0,256.4 303.5,255.5 319.0,254.6 334.5,253.5 350.0,252.4 365.5,251.1 381.0,249.7 396.5,248.2 412.0,246.5 427.5,244.6 443.0,242.5 458.5,240.2 474.0,237.7 489.5,234.9 505.0,231.8 520.5,228.4 536.0,224.6 551.5,220.4 567.0,215.8 582.5,210.7 598.0,205.1 613.5,198.8 629.0,192.0 644.5,184.4 660.0,176.0" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 12"/>
+              <polyline class="dr a-draw" pathLength="1" style="--t:.5s; --dur:1s" points="40.0,260.0 55.5,259.5 71.0,259.0 86.5,258.4 102.0,257.8 117.5,257.1 133.0,256.4 148.5,255.5 164.0,254.6 179.5,253.5 195.0,252.4 210.5,251.1 226.0,249.7 241.5,248.2 257.0,246.5 272.5,244.6 288.0,242.5 303.5,240.2 319.0,237.7 334.5,234.9 350.0,231.8 365.5,228.4 381.0,224.6 396.5,220.4 412.0,215.8 427.5,210.7 443.0,205.1 458.5,198.8 474.0,192.0 489.5,184.4 505.0,176.0 520.5,166.7 536.0,156.5 551.5,145.2 567.0,132.7 582.5,118.9 598.0,103.7 613.5,86.8 629.0,68.2 644.5,47.7 660.0,25.0" fill="none" stroke="#111" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline class="dr a-draw" pathLength="1" style="--t:.5s; --dur:1s" points="40.0,260.0 55.5,259.5 71.0,259.0 86.5,258.4 102.0,257.8 117.5,257.1 133.0,256.4 148.5,255.5 164.0,254.6 179.5,253.5 195.0,252.4 210.5,251.1 226.0,249.7 241.5,248.2 257.0,246.5 272.5,244.6 288.0,242.5 303.5,240.2 319.0,237.7 334.5,234.9 350.0,231.8 365.5,228.4 381.0,224.6 396.5,220.4 412.0,215.8 427.5,210.7 443.0,205.1 458.5,198.8 474.0,192.0 489.5,184.4 505.0,176.0 520.5,166.7 536.0,156.5 551.5,145.2 567.0,132.7 582.5,118.9 598.0,103.7 613.5,86.8 629.0,68.2 644.5,47.7 660.0,25.0" fill="none" stroke="#5EAAEE" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+              <path class="dr a-draw" pathLength="1" style="--t:1.5s; --dur:.3s" d="M 628 50 C 614 22, 640 -4, 666 -2 C 694 0, 706 28, 694 50 C 682 70, 648 68, 634 52 C 626 42, 632 26, 646 18" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <g font-family="Archivo, sans-serif" font-weight="700" font-size="24" fill="#111" text-anchor="middle"><text x="40" y="294">20</text><text x="195" y="294">30</text><text x="350" y="294">40</text><text x="505" y="294">50</text><text x="660" y="294">60</text></g>
+              <line x1="40" y1="30" x2="84" y2="30" stroke="#111" stroke-width="15" stroke-linecap="round"/>
+              <line x1="40" y1="30" x2="84" y2="30" stroke="#5EAAEE" stroke-width="9" stroke-linecap="round"/>
+              <text x="102" y="39" font-family="Archivo, sans-serif" font-weight="700" font-size="26" fill="#111">Start mit 20</text>
+              <line x1="40" y1="74" x2="84" y2="74" stroke="#111" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 12"/>
+              <text x="102" y="83" font-family="Archivo, sans-serif" font-weight="700" font-size="26" fill="#111">Start mit 30</text>
+            </svg>
+          </div>
+        </div>
+        <img class="bg" src="img/gs_cut.png" alt="" style="object-fit:fill; filter:drop-shadow(0 -6px 0 #111) drop-shadow(6px 0 0 #111) drop-shadow(-6px 0 0 #111)">
+        <div class="sub">Aber <b>wenn</b> du</div>
+      </div></div>
+      <ul class="steps">
+        <li><b>Karte</b><span>Pop von 90 auf 100 %, 0,35 s, Abfedern</span></li>
+        <li><b>Linie</b><span>zeichnet sich von links nach rechts, 1,0 s, Ausklingen</span></li>
+        <li><b>Kreis</b><span>danach, 0,30 s</span></li>
+      </ul>
+      <button type="button" class="play">Abspielen</button>
+    </article>
+
+    <!-- 7 Randnotiz -->
+    <article class="card" data-total="2.9">
+      <div class="card-head"><h2>Randnotiz, Vorher und Nachher</h2><span class="src">DESIGN.md 11.7</span></div>
+      <div class="screen"><div class="stage">
+        <img class="bg" src="img/cv_12.jpg" alt="">
+        <div class="top" style="top:270px"><div class="h1" style="font-size:97px; -webkit-text-stroke:14px #111">LÜGEN IM CV</div></div>
+        <div style="position:absolute; left:585px; top:430px; width:345px; display:flex; flex-direction:column; gap:4px">
+          <div class="a-up" style="--t:0s; position:relative; align-self:flex-start">
+            <div class="note-line">Betreuung von</div>
+            <svg class="strike" style="position:absolute; left:-8px; top:calc(54% - 10px); width:calc(100% + 16px); height:20px; overflow:visible">
+              <path class="dr a-draw" pathLength="1" style="--t:.9s; --dur:.28s" d="" fill="none" stroke="#111" stroke-width="11" stroke-linecap="round"/>
+              <path class="dr a-draw" pathLength="1" style="--t:.9s; --dur:.28s" d="" fill="none" stroke="#FF8AC2" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="a-up" style="--t:.15s; position:relative; align-self:flex-start">
+            <div class="note-line">Social Media</div>
+            <svg class="strike" style="position:absolute; left:-8px; top:calc(54% - 10px); width:calc(100% + 16px); height:20px; overflow:visible">
+              <path class="dr a-draw" pathLength="1" style="--t:1s; --dur:.28s" d="" fill="none" stroke="#111" stroke-width="11" stroke-linecap="round"/>
+              <path class="dr a-draw" pathLength="1" style="--t:1s; --dur:.28s" d="" fill="none" stroke="#FF8AC2" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div style="height:22px"></div>
+          <div class="a-up note-row" style="--t:1.4s"><span class="n">10</span><span class="w">Kanäle</span></div>
+          <div class="a-up note-row" style="--t:1.8s"><span class="n">+15 %</span><span class="w">Follower</span></div>
+          <div class="a-up note-row" style="--t:2.2s"><span class="w">in</span><span class="n">90</span><span class="w">Tagen</span></div>
+          <div class="a-up note-row" style="--t:2.6s"><span class="n">+20 %</span><span class="w">Budget</span></div>
+        </div>
+        <div class="sub">Betreuung von <b>10</b></div>
+      </div></div>
+      <ul class="steps">
+        <li><b>Zeile</b><span>am gesprochenen Wort, 14 px von unten, 0,22 s, Ausklingen</span></li>
+        <li><b>Strich</b><span>wächst von links, 0,28 s, jede weitere Zeile 0,1 s später</span></li>
+      </ul>
+      <p class="note">Werte wie bisher, nur mit pinkem, handgezeichnetem Strich.</p>
+      <button type="button" class="play">Abspielen</button>
+    </article>
+
+    <!-- 8 Sprechblase -->
+    <article class="card" data-total="4.25">
+      <div class="card-head"><h2>Sprechblase</h2><span class="src">DESIGN.md 11.5</span></div>
+      <div class="screen"><div class="stage">
+        <img class="bg" src="img/cv_52.jpg" alt="">
+        <div class="grp a-vanish" style="top:300px; --t:4s">
+          <div class="a-msg" style="--t:1.75s"><div class="msg">Yo, hab da mal ne Frage zum CV</div></div>
+          <div class="a-indslide" style="--t:1.75s"><div class="a-indpop" style="--t:0s"><div class="ind"><i></i><i></i><i></i></div></div></div>
+        </div>
+        <div class="sub">mich, <b>schreib</b> mir eine</div>
+      </div></div>
+      <ul class="steps">
+        <li><b>Tippen</b><span>ploppt auf, 0,25 s, die Punkte laufen</span></li>
+        <li><b>Nachricht</b><span>ab 1,75 s, 0,80 s, Pop 82 → 103 → 100 %, das Tippen rutscht darunter</span></li>
+        <li><b>Ende</b><span>ab 4,0 s blenden beide in 0,25 s aus</span></li>
+      </ul>
+      <p class="note">Werte wie bisher, nur jetzt oben.</p>
+      <button type="button" class="play">Abspielen</button>
+    </article>
+
+    <!-- 9 Outro -->
+    <article class="card" data-total="4.25" data-outro="1">
+      <div class="card-head"><h2>Outro</h2><span class="src">DESIGN.md 11.6</span></div>
+      <div class="screen"><div class="stage">
+        <img class="bg" src="img/cv_54.jpg" alt="">
+        <div class="a-up" style="--t:0s; position:absolute; left:0; top:250px; width:1080px; text-align:center; font-weight:800; font-size:50px; line-height:1.15; color:#fff; -webkit-text-stroke:10px #111; paint-order:stroke fill">Folgen nicht vergessen</div>
+        <div class="grp a-vanish" style="top:345px; --t:4s">
+          <div class="a-msg" style="--t:1.75s"><div class="msg">Yo, hab da mal ne Frage zum CV</div></div>
+          <div class="a-indslide" style="--t:1.75s"><div class="a-indpop" style="--t:0s"><div class="ind"><i></i><i></i><i></i></div></div></div>
+        </div>
+        <div class="a-pop88" style="--t:.15s; position:absolute; left:90px; top:1423px">
+          <div class="ocard">
+            <div class="head"><div class="cnt">4.254</div><div class="goal">Ziel 10.000</div></div>
+            <div class="bed"><div class="fill"></div></div>
+            <div class="profiles">
+              <div class="p"><i></i>@itsabidullahabi</div>
+              <div class="p"><i></i>@abidullahabi</div>
+              <div class="p"><i></i>@abidullahabi</div>
+              <div class="p"><i></i>Abdullah Bachtari</div>
+            </div>
+          </div>
+        </div>
+        <div class="sub">nicht <b>vergessen.</b></div>
+      </div></div>
+      <ul class="steps">
+        <li><b>Zeile</b><span>14 px von unten, 0,22 s</span></li>
+        <li><b>Karte</b><span>ab 0,15 s, Pop 88 → 100 %, 0,45 s, Ursprung unten links</span></li>
+        <li><b>Balken</b><span>ab 0,45 s, 1,40 s, Zahl zählt im selben Takt hoch</span></li>
+      </ul>
+      <p class="note">Werte wie bisher. Die Sprechblase läuft parallel. 4.254 ist ein Beispielwert, die Icons sind Platzhalter.</p>
+      <button type="button" class="play">Abspielen</button>
+    </article>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  // Bühne auf Kartenbreite skalieren
+  const screens = document.querySelectorAll('.screen');
+  const fit = el => { const s = el.querySelector('.stage'); s.style.setProperty('--k', el.clientWidth / 1080); };
+  if ('ResizeObserver' in window) {
+    const ro = new ResizeObserver(entries => entries.forEach(e => fit(e.target)));
+    screens.forEach(s => ro.observe(s));
+  }
+  screens.forEach(fit);
+
+  // Ausklingen-Kurve für den Zähler, identisch zur CSS-Kurve
+  function bezier(x1, y1, x2, y2) {
+    const cx = 3 * x1, bx = 3 * (x2 - x1) - cx, ax = 1 - cx - bx;
+    const cy = 3 * y1, by = 3 * (y2 - y1) - cy, ay = 1 - cy - by;
+    const sx = t => ((ax * t + bx) * t + cx) * t;
+    const sy = t => ((ay * t + by) * t + cy) * t;
+    const dx = t => (3 * ax * t + 2 * bx) * t + cx;
+    return x => {
+      let t = x;
+      for (let i = 0; i < 8; i++) { const d = dx(t); if (Math.abs(d) < 1e-6) break; t -= (sx(t) - x) / d; }
+      t = Math.min(1, Math.max(0, t));
+      return sy(t);
+    };
+  }
+  const ease = bezier(0.22, 1, 0.36, 1);
+  const fmt = n => n.toLocaleString('de-DE');
+  const TARGET = 4254, GOAL = 10000;
+
+  function runCounter(card, token) {
+    const cnt = card.querySelector('.cnt'), fill = card.querySelector('.fill');
+    const start = performance.now() + 450, dur = 1400;
+    cnt.textContent = '0'; fill.style.width = '0%';
+    const step = now => {
+      if (card._token !== token) return;
+      const p = Math.min(1, Math.max(0, (now - start) / dur));
+      const e = ease(p);
+      cnt.textContent = fmt(p === 1 ? TARGET : Math.round(TARGET * e));
+      fill.style.width = (TARGET / GOAL * 100 * e).toFixed(2) + '%';
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
+  function play(card) {
+    const stage = card.querySelector('.stage');
+    clearTimeout(card._timer);
+    const token = (card._token || 0) + 1; card._token = token;
+    stage.classList.remove('run');
+    void stage.offsetWidth;
+    stage.classList.add('run');
+    if (card.dataset.outro) runCounter(card, token);
+    const total = parseFloat(card.dataset.total || '2') * 1000 + 1200;
+    card._timer = setTimeout(() => {
+      stage.classList.remove('run');
+      if (card.dataset.outro) { card.querySelector('.cnt').textContent = fmt(TARGET); card.querySelector('.fill').style.width = ''; }
+    }, total);
+  }
+
+  // Durchstreichen: Pfad an die echte Textbreite anpassen, damit der Strich ganz durchgeht
+  function fitStrikes() {
+    document.querySelectorAll('svg.strike').forEach(svg => {
+      const w = svg.clientWidth, h = 20;
+      if (!w) return;
+      svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+      const d = 'M 2 12 C ' + (w * .22).toFixed(1) + ' 7, ' + (w * .48).toFixed(1) + ' 14, ' + (w * .72).toFixed(1) + ' 9 S ' + (w * .94).toFixed(1) + ' 11, ' + (w - 2).toFixed(1) + ' 7';
+      svg.querySelectorAll('path').forEach(p => p.setAttribute('d', d));
+    });
+  }
+  fitStrikes();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitStrikes);
+
+  document.querySelectorAll('.card').forEach(card => {
+    card.querySelector('.play').addEventListener('click', () => play(card));
+    card.querySelector('.screen').addEventListener('click', () => play(card));
+  });
+  document.getElementById('all').addEventListener('click', () => document.querySelectorAll('.card').forEach(play));
+})();
+</script>
+</body></html>

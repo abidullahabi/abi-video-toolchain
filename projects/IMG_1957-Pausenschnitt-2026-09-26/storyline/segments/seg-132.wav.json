@@ -1,0 +1,436 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,400"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2400
+			},
+			"text": " Mit 20 ging ich davon aus, ich wüsste schon alles.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.981279,
+					"t_dtw": -1
+				},
+				{
+					"text": " Mit",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 170
+					},
+					"id": 10821,
+					"p": 0.803388,
+					"t_dtw": 18
+				},
+				{
+					"text": " 20",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 520
+					},
+					"id": 945,
+					"p": 0.97028,
+					"t_dtw": 48
+				},
+				{
+					"text": " ging",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 750
+					},
+					"id": 21924,
+					"p": 0.948479,
+					"t_dtw": 80
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:00,920"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 920
+					},
+					"id": 1893,
+					"p": 0.992296,
+					"t_dtw": 96
+				},
+				{
+					"text": " davon",
+					"timestamps": {
+						"from": "00:00:00,920",
+						"to": "00:00:01,210"
+					},
+					"offsets": {
+						"from": 920,
+						"to": 1210
+					},
+					"id": 18574,
+					"p": 0.985907,
+					"t_dtw": 122
+				},
+				{
+					"text": " aus",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1380
+					},
+					"id": 3437,
+					"p": 0.996681,
+					"t_dtw": 150
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,510"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1510
+					},
+					"id": 11,
+					"p": 0.895943,
+					"t_dtw": 164
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,640"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1640
+					},
+					"id": 1893,
+					"p": 0.887172,
+					"t_dtw": 172
+				},
+				{
+					"text": " w",
+					"timestamps": {
+						"from": "00:00:01,640",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1640,
+						"to": 1680
+					},
+					"id": 261,
+					"p": 0.966815,
+					"t_dtw": 182
+				},
+				{
+					"text": "üs",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,730"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1730
+					},
+					"id": 16608,
+					"p": 0.996685,
+					"t_dtw": 188
+				},
+				{
+					"text": "ste",
+					"timestamps": {
+						"from": "00:00:01,770",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1770,
+						"to": 1860
+					},
+					"id": 2941,
+					"p": 0.997577,
+					"t_dtw": 198
+				},
+				{
+					"text": " schon",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:02,060"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 2060
+					},
+					"id": 4981,
+					"p": 0.986137,
+					"t_dtw": 214
+				},
+				{
+					"text": " alles",
+					"timestamps": {
+						"from": "00:00:02,060",
+						"to": "00:00:02,260"
+					},
+					"offsets": {
+						"from": 2060,
+						"to": 2260
+					},
+					"id": 7874,
+					"p": 0.991797,
+					"t_dtw": 238
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,260",
+						"to": "00:00:02,380"
+					},
+					"offsets": {
+						"from": 2260,
+						"to": 2380
+					},
+					"id": 13,
+					"p": 0.903042,
+					"t_dtw": 258
+				},
+				{
+					"text": "[_TT_120]",
+					"timestamps": {
+						"from": "00:00:02,400",
+						"to": "00:00:02,400"
+					},
+					"offsets": {
+						"from": 2400,
+						"to": 2400
+					},
+					"id": 50485,
+					"p": 0.158015,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,560",
+				"to": "00:00:03,820"
+			},
+			"offsets": {
+				"from": 2560,
+				"to": 3820
+			},
+			"text": " Ich dachte, ja, ich habe viel erlebt.",
+			"tokens": [
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:02,560",
+						"to": "00:00:02,560"
+					},
+					"offsets": {
+						"from": 2560,
+						"to": 2560
+					},
+					"id": 3141,
+					"p": 0.999413,
+					"t_dtw": 260
+				},
+				{
+					"text": " dachte",
+					"timestamps": {
+						"from": "00:00:02,630",
+						"to": "00:00:02,730"
+					},
+					"offsets": {
+						"from": 2630,
+						"to": 2730
+					},
+					"id": 39775,
+					"p": 0.999588,
+					"t_dtw": 280
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,770",
+						"to": "00:00:02,840"
+					},
+					"offsets": {
+						"from": 2770,
+						"to": 2840
+					},
+					"id": 11,
+					"p": 0.952794,
+					"t_dtw": 302
+				},
+				{
+					"text": " ja",
+					"timestamps": {
+						"from": "00:00:02,840",
+						"to": "00:00:02,920"
+					},
+					"offsets": {
+						"from": 2840,
+						"to": 2920
+					},
+					"id": 2784,
+					"p": 0.939447,
+					"t_dtw": 310
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,920",
+						"to": "00:00:02,990"
+					},
+					"offsets": {
+						"from": 2920,
+						"to": 2990
+					},
+					"id": 11,
+					"p": 0.996008,
+					"t_dtw": 318
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:03,000",
+						"to": "00:00:03,110"
+					},
+					"offsets": {
+						"from": 3000,
+						"to": 3110
+					},
+					"id": 1893,
+					"p": 0.998719,
+					"t_dtw": 326
+				},
+				{
+					"text": " habe",
+					"timestamps": {
+						"from": "00:00:03,250",
+						"to": "00:00:03,280"
+					},
+					"offsets": {
+						"from": 3250,
+						"to": 3280
+					},
+					"id": 6015,
+					"p": 0.916474,
+					"t_dtw": 332
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:03,280",
+						"to": "00:00:03,440"
+					},
+					"offsets": {
+						"from": 3280,
+						"to": 3440
+					},
+					"id": 5891,
+					"p": 0.999703,
+					"t_dtw": 346
+				},
+				{
+					"text": " erlebt",
+					"timestamps": {
+						"from": "00:00:03,440",
+						"to": "00:00:03,660"
+					},
+					"offsets": {
+						"from": 3440,
+						"to": 3660
+					},
+					"id": 47372,
+					"p": 0.99991,
+					"t_dtw": 380
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,680",
+						"to": "00:00:03,820"
+					},
+					"offsets": {
+						"from": 3680,
+						"to": 3820
+					},
+					"id": 13,
+					"p": 0.770371,
+					"t_dtw": 380
+				},
+				{
+					"text": "[_TT_191]",
+					"timestamps": {
+						"from": "00:00:03,820",
+						"to": "00:00:03,820"
+					},
+					"offsets": {
+						"from": 3820,
+						"to": 3820
+					},
+					"id": 50556,
+					"p": 0.420325,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

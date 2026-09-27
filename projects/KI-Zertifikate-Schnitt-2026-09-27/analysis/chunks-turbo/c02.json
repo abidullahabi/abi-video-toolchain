@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,400"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1400
+			},
+			"text": " den Anschluss noch zu gewinnen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.699625,
+					"t_dtw": -1
+				},
+				{
+					"text": " den",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 150
+					},
+					"id": 1441,
+					"p": 0.788763,
+					"t_dtw": 24
+				},
+				{
+					"text": " Ansch",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 400
+					},
+					"id": 45062,
+					"p": 0.943557,
+					"t_dtw": 46
+				},
+				{
+					"text": "l",
+					"timestamps": {
+						"from": "00:00:00,460",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 460,
+						"to": 460
+					},
+					"id": 75,
+					"p": 0.960673,
+					"t_dtw": 52
+				},
+				{
+					"text": "uss",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 530
+					},
+					"id": 2023,
+					"p": 0.999861,
+					"t_dtw": 58
+				},
+				{
+					"text": " noch",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 810
+					},
+					"id": 3514,
+					"p": 0.975868,
+					"t_dtw": 70
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:00,910"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 910
+					},
+					"id": 2164,
+					"p": 0.992347,
+					"t_dtw": 84
+				},
+				{
+					"text": " gew",
+					"timestamps": {
+						"from": "00:00:00,910",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 910,
+						"to": 1060
+					},
+					"id": 6906,
+					"p": 0.977582,
+					"t_dtw": 98
+				},
+				{
+					"text": "innen",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,090"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1090
+					},
+					"id": 11399,
+					"p": 0.997046,
+					"t_dtw": 110
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,300",
+						"to": "00:00:01,350"
+					},
+					"offsets": {
+						"from": 1300,
+						"to": 1350
+					},
+					"id": 13,
+					"p": 0.877729,
+					"t_dtw": 132
+				},
+				{
+					"text": "[_TT_70]",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1400
+					},
+					"id": 50435,
+					"p": 0.0321282,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

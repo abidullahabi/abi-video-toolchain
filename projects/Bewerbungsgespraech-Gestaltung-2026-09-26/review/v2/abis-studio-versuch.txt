@@ -1,0 +1,6 @@
+Abdullahs Versuch im HyperFrames-Studio, 26.09.2026 ca. 19:05 (index.html danach durch assemble-full-video v3 neu erzeugt):
+- #footage data-duration 92.366 -> 89.021 (Teilung direkt nach „vorbereitet bist“)
+- neues #footage-split: src media.mp4, data-media-start 89.02, data-start 90.2, data-duration 2.17
+  (Rest nach hinten verschoben statt am Anfang gekürzt; dazwischen 1,18 s ohne Bild)
+- Zoom-Schleife vom Studio auf Zeitpunkt 0 umgeschrieben (Nebenwirkung des Editors)
+Daraus abgeleitet: Schnitt direkt nach „bist“, Stille danach raus; umgesetzt in Schnitt v3 (edl.json „endeV3“).

@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,240"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2240
+			},
+			"text": " Mein und meine Nacht solltest du das machen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.95461,
+					"t_dtw": -1
+				},
+				{
+					"text": " Mein",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 220
+					},
+					"id": 18382,
+					"p": 0.270654,
+					"t_dtw": 48
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 390
+					},
+					"id": 674,
+					"p": 0.277092,
+					"t_dtw": 62
+				},
+				{
+					"text": " meine",
+					"timestamps": {
+						"from": "00:00:00,390",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 390,
+						"to": 670
+					},
+					"id": 10946,
+					"p": 0.53603,
+					"t_dtw": 78
+				},
+				{
+					"text": " Nacht",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 950
+					},
+					"id": 31133,
+					"p": 0.541565,
+					"t_dtw": 116
+				},
+				{
+					"text": " soll",
+					"timestamps": {
+						"from": "00:00:00,950",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 950,
+						"to": 1100
+					},
+					"id": 7114,
+					"p": 0.724217,
+					"t_dtw": 166
+				},
+				{
+					"text": "test",
+					"timestamps": {
+						"from": "00:00:01,160",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1160,
+						"to": 1200
+					},
+					"id": 31636,
+					"p": 0.759383,
+					"t_dtw": 180
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:01,500",
+						"to": "00:00:01,500"
+					},
+					"offsets": {
+						"from": 1500,
+						"to": 1500
+					},
+					"id": 1581,
+					"p": 0.892997,
+					"t_dtw": 186
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:01,580",
+						"to": "00:00:01,670"
+					},
+					"offsets": {
+						"from": 1580,
+						"to": 1670
+					},
+					"id": 1482,
+					"p": 0.905189,
+					"t_dtw": 196
+				},
+				{
+					"text": " machen",
+					"timestamps": {
+						"from": "00:00:01,670",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1670,
+						"to": 2000
+					},
+					"id": 7069,
+					"p": 0.985827,
+					"t_dtw": 216
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,190"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2190
+					},
+					"id": 13,
+					"p": 0.752255,
+					"t_dtw": 222
+				},
+				{
+					"text": "[_TT_112]",
+					"timestamps": {
+						"from": "00:00:02,240",
+						"to": "00:00:02,240"
+					},
+					"offsets": {
+						"from": 2240,
+						"to": 2240
+					},
+					"id": 50476,
+					"p": 0.0370081,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,780"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1780
+			},
+			"text": " Was sie können und was sie auch nicht können.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.76091,
+					"t_dtw": -1
+				},
+				{
+					"text": " Was",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 130
+					},
+					"id": 3027,
+					"p": 0.809992,
+					"t_dtw": 24
+				},
+				{
+					"text": " sie",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,260"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 260
+					},
+					"id": 2804,
+					"p": 0.76325,
+					"t_dtw": 34
+				},
+				{
+					"text": " können",
+					"timestamps": {
+						"from": "00:00:00,260",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 260,
+						"to": 530
+					},
+					"id": 6310,
+					"p": 0.988659,
+					"t_dtw": 54
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 650
+					},
+					"id": 674,
+					"p": 0.922768,
+					"t_dtw": 68
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,790"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 790
+					},
+					"id": 390,
+					"p": 0.987129,
+					"t_dtw": 82
+				},
+				{
+					"text": " sie",
+					"timestamps": {
+						"from": "00:00:00,790",
+						"to": "00:00:00,920"
+					},
+					"offsets": {
+						"from": 790,
+						"to": 920
+					},
+					"id": 2804,
+					"p": 0.993157,
+					"t_dtw": 94
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,920",
+						"to": "00:00:01,090"
+					},
+					"offsets": {
+						"from": 920,
+						"to": 1090
+					},
+					"id": 2168,
+					"p": 0.993747,
+					"t_dtw": 106
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,250"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1250
+					},
+					"id": 1979,
+					"p": 0.996245,
+					"t_dtw": 126
+				},
+				{
+					"text": " können",
+					"timestamps": {
+						"from": "00:00:01,320",
+						"to": "00:00:01,530"
+					},
+					"offsets": {
+						"from": 1320,
+						"to": 1530
+					},
+					"id": 6310,
+					"p": 0.995185,
+					"t_dtw": 152
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,770",
+						"to": "00:00:01,770"
+					},
+					"offsets": {
+						"from": 1770,
+						"to": 1770
+					},
+					"id": 13,
+					"p": 0.982915,
+					"t_dtw": 174
+				},
+				{
+					"text": "[_TT_89]",
+					"timestamps": {
+						"from": "00:00:01,780",
+						"to": "00:00:01,780"
+					},
+					"offsets": {
+						"from": 1780,
+						"to": 1780
+					},
+					"id": 50454,
+					"p": 0.206162,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

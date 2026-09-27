@@ -1,0 +1,269 @@
+{
+  "source": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Angst-vor-Arbeiten-Schnitt-2026-09-26/exports/Angst-vor-Arbeiten-Schnitt_v3.mp4",
+  "model": "Silero VAD 6.2.0",
+  "modelHash": "2aa269b785eeb53a82983a20501ddf7c1d9c48e33ab63a41391ac6c9f7fb6987",
+  "engine": "whisper.cpp 1.9.4 CPU",
+  "createdAt": "2026-09-26T10:53:58.052Z",
+  "status": "calibration_only",
+  "automaticEditing": false,
+  "method": "Raw probabilities, hysteresis, no fixed 200 ms merging. Boundaries are model estimates, not confirmed phonetic boundaries.",
+  "threshold": 0.7,
+  "releaseThreshold": 0.5499999999999999,
+  "minGapMs": 64,
+  "hopSeconds": 0.032,
+  "duration": 87.6373125,
+  "candidates": [
+    {
+      "start": 0,
+      "end": 0.064,
+      "duration": 0.064,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 0.448,
+      "end": 0.64,
+      "duration": 0.192,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 1.1520000000000001,
+      "end": 1.248,
+      "duration": 0.09599999999999986,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 3.072,
+      "end": 3.136,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 4.448,
+      "end": 4.5440000000000005,
+      "duration": 0.09600000000000009,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 5.152,
+      "end": 5.248,
+      "duration": 0.09600000000000009,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 7.072,
+      "end": 7.2,
+      "duration": 0.1280000000000001,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 9.6,
+      "end": 9.696,
+      "duration": 0.09600000000000009,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 12.16,
+      "end": 12.256,
+      "duration": 0.09600000000000009,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 14.944,
+      "end": 15.040000000000001,
+      "duration": 0.09600000000000009,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 16.64,
+      "end": 16.736,
+      "duration": 0.09600000000000009,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 17.888,
+      "end": 17.984,
+      "duration": 0.09600000000000009,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 21.088,
+      "end": 21.216,
+      "duration": 0.1280000000000001,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 23.168,
+      "end": 23.296,
+      "duration": 0.1280000000000001,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 26.496000000000002,
+      "end": 26.624000000000002,
+      "duration": 0.1280000000000001,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 28.704,
+      "end": 28.8,
+      "duration": 0.09600000000000009,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 30.208000000000002,
+      "end": 30.304000000000002,
+      "duration": 0.09600000000000009,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 31.104,
+      "end": 31.2,
+      "duration": 0.09600000000000009,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 32.384,
+      "end": 32.512,
+      "duration": 0.1280000000000001,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 33.6,
+      "end": 33.696,
+      "duration": 0.09599999999999653,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 34.528,
+      "end": 34.624,
+      "duration": 0.09600000000000364,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 35.04,
+      "end": 35.168,
+      "duration": 0.1280000000000001,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 37.504,
+      "end": 37.568,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 39.008,
+      "end": 39.136,
+      "duration": 0.1280000000000001,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 41.664,
+      "end": 41.728,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 44.768,
+      "end": 44.864000000000004,
+      "duration": 0.09600000000000364,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 48.384,
+      "end": 48.480000000000004,
+      "duration": 0.09600000000000364,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 54.048,
+      "end": 54.144,
+      "duration": 0.09599999999999653,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 55.104,
+      "end": 55.168,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 59.232,
+      "end": 59.328,
+      "duration": 0.09600000000000364,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 61.664,
+      "end": 61.728,
+      "duration": 0.06400000000000006,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 64,
+      "end": 64.096,
+      "duration": 0.09600000000000364,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 66.688,
+      "end": 66.784,
+      "duration": 0.09600000000000364,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 67.456,
+      "end": 67.52,
+      "duration": 0.06399999999999295,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 70.048,
+      "end": 70.112,
+      "duration": 0.06399999999999295,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 71.264,
+      "end": 71.36,
+      "duration": 0.09600000000000364,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 74.336,
+      "end": 74.4,
+      "duration": 0.06400000000000716,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 76.48,
+      "end": 76.57600000000001,
+      "duration": 0.09600000000000364,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 77.184,
+      "end": 77.28,
+      "duration": 0.09600000000000364,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 80.864,
+      "end": 80.928,
+      "duration": 0.06399999999999295,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 84.736,
+      "end": 84.8,
+      "duration": 0.06399999999999295,
+      "status": "needs_word_boundary_review"
+    },
+    {
+      "start": 87.36,
+      "end": 87.6373125,
+      "duration": 0.27731249999999363,
+      "status": "needs_word_boundary_review"
+    }
+  ]
+}

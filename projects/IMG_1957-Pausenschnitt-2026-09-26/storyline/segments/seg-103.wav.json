@@ -1,0 +1,129 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,200"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1200
+			},
+			"text": " verbringen die Zeit",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.966956,
+					"t_dtw": -1
+				},
+				{
+					"text": " ver",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 210
+					},
+					"id": 1306,
+					"p": 0.252647,
+					"t_dtw": 14
+				},
+				{
+					"text": "bringen",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 630
+					},
+					"id": 39455,
+					"p": 0.978069,
+					"t_dtw": 36
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 900
+					},
+					"id": 978,
+					"p": 0.990402,
+					"t_dtw": 52
+				},
+				{
+					"text": " Zeit",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:00,930"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 930
+					},
+					"id": 9394,
+					"p": 0.976707,
+					"t_dtw": 98
+				},
+				{
+					"text": "[_TT_60]",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1200
+					},
+					"id": 50425,
+					"p": 0.231637,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

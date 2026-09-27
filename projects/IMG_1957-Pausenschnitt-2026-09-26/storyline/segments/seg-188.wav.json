@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,180"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3180
+			},
+			"text": " Wenn du selber verstehst, wie viel Macht du über dein eigenes Leben hast,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.966139,
+					"t_dtw": -1
+				},
+				{
+					"text": " Wenn",
+					"timestamps": {
+						"from": "00:00:00,090",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 90,
+						"to": 160
+					},
+					"id": 7899,
+					"p": 0.724448,
+					"t_dtw": 16
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,240"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 240
+					},
+					"id": 1581,
+					"p": 0.984359,
+					"t_dtw": 28
+				},
+				{
+					"text": " selber",
+					"timestamps": {
+						"from": "00:00:00,240",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 240,
+						"to": 470
+					},
+					"id": 23888,
+					"p": 0.952803,
+					"t_dtw": 52
+				},
+				{
+					"text": " verste",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,690"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 690
+					},
+					"id": 22442,
+					"p": 0.992517,
+					"t_dtw": 80
+				},
+				{
+					"text": "hst",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 810
+					},
+					"id": 38857,
+					"p": 0.991389,
+					"t_dtw": 88
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:00,920"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 920
+					},
+					"id": 11,
+					"p": 0.971315,
+					"t_dtw": 92
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:00,920",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 920,
+						"to": 1030
+					},
+					"id": 3355,
+					"p": 0.785148,
+					"t_dtw": 102
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:01,030",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1030,
+						"to": 1180
+					},
+					"id": 5891,
+					"p": 0.940749,
+					"t_dtw": 114
+				},
+				{
+					"text": " Macht",
+					"timestamps": {
+						"from": "00:00:01,180",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1180,
+						"to": 1340
+					},
+					"id": 40873,
+					"p": 0.73806,
+					"t_dtw": 134
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:01,450",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1450,
+						"to": 1560
+					},
+					"id": 1581,
+					"p": 0.962359,
+					"t_dtw": 154
+				},
+				{
+					"text": " über",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,780"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1780
+					},
+					"id": 4502,
+					"p": 0.951659,
+					"t_dtw": 178
+				},
+				{
+					"text": " dein",
+					"timestamps": {
+						"from": "00:00:01,780",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1780,
+						"to": 1990
+					},
+					"id": 25641,
+					"p": 0.974138,
+					"t_dtw": 200
+				},
+				{
+					"text": " eigen",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,360"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2360
+					},
+					"id": 10446,
+					"p": 0.972297,
+					"t_dtw": 228
+				},
+				{
+					"text": "es",
+					"timestamps": {
+						"from": "00:00:02,360",
+						"to": "00:00:02,430"
+					},
+					"offsets": {
+						"from": 2360,
+						"to": 2430
+					},
+					"id": 279,
+					"p": 0.999943,
+					"t_dtw": 242
+				},
+				{
+					"text": " Leben",
+					"timestamps": {
+						"from": "00:00:02,490",
+						"to": "00:00:02,860"
+					},
+					"offsets": {
+						"from": 2490,
+						"to": 2860
+					},
+					"id": 15399,
+					"p": 0.992971,
+					"t_dtw": 268
+				},
+				{
+					"text": " hast",
+					"timestamps": {
+						"from": "00:00:02,860",
+						"to": "00:00:02,960"
+					},
+					"offsets": {
+						"from": 2860,
+						"to": 2960
+					},
+					"id": 6581,
+					"p": 0.994431,
+					"t_dtw": 296
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:03,160",
+						"to": "00:00:03,160"
+					},
+					"offsets": {
+						"from": 3160,
+						"to": 3160
+					},
+					"id": 11,
+					"p": 0.672654,
+					"t_dtw": 314
+				},
+				{
+					"text": "[_TT_159]",
+					"timestamps": {
+						"from": "00:00:03,180",
+						"to": "00:00:03,180"
+					},
+					"offsets": {
+						"from": 3180,
+						"to": 3180
+					},
+					"id": 50524,
+					"p": 0.36212,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

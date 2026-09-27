@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Zieh früh aus von zu Hause.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.928506,
+					"t_dtw": -1
+				},
+				{
+					"text": " Zie",
+					"timestamps": {
+						"from": "00:00:00,080",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 80,
+						"to": 280
+					},
+					"id": 46340,
+					"p": 0.470456,
+					"t_dtw": -1
+				},
+				{
+					"text": "h",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 370
+					},
+					"id": 71,
+					"p": 0.99049,
+					"t_dtw": -1
+				},
+				{
+					"text": " früh",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 720
+					},
+					"id": 45029,
+					"p": 0.927616,
+					"t_dtw": -1
+				},
+				{
+					"text": " aus",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 1020
+					},
+					"id": 3437,
+					"p": 0.992383,
+					"t_dtw": -1
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:01,030",
+						"to": "00:00:01,310"
+					},
+					"offsets": {
+						"from": 1030,
+						"to": 1310
+					},
+					"id": 2957,
+					"p": 0.966115,
+					"t_dtw": -1
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:01,310",
+						"to": "00:00:01,500"
+					},
+					"offsets": {
+						"from": 1310,
+						"to": 1500
+					},
+					"id": 2164,
+					"p": 0.819059,
+					"t_dtw": -1
+				},
+				{
+					"text": " Hause",
+					"timestamps": {
+						"from": "00:00:01,500",
+						"to": "00:00:01,820"
+					},
+					"offsets": {
+						"from": 1500,
+						"to": 1820
+					},
+					"id": 26217,
+					"p": 0.746571,
+					"t_dtw": -1
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,990",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1990,
+						"to": 1990
+					},
+					"id": 13,
+					"p": 0.633209,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50465,
+					"p": 0.776577,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

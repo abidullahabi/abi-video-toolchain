@@ -1,0 +1,115 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,040"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1040
+			},
+			"text": " sich über die",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.952479,
+					"t_dtw": -1
+				},
+				{
+					"text": " sich",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 520
+					},
+					"id": 3041,
+					"p": 0.878326,
+					"t_dtw": 22
+				},
+				{
+					"text": " über",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 890
+					},
+					"id": 4502,
+					"p": 0.984292,
+					"t_dtw": 44
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:01,030",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 1030,
+						"to": 1030
+					},
+					"id": 978,
+					"p": 0.940688,
+					"t_dtw": 74
+				},
+				{
+					"text": "[_TT_52]",
+					"timestamps": {
+						"from": "00:00:01,040",
+						"to": "00:00:01,040"
+					},
+					"offsets": {
+						"from": 1040,
+						"to": 1040
+					},
+					"id": 50417,
+					"p": 0.483088,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

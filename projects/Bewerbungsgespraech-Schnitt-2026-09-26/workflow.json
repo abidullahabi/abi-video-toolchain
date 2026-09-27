@@ -1,0 +1,59 @@
+{
+  "source": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/B95B2E1B-BDC2-4390-9290-F472B9211433.mov",
+  "sourceSha256": "4b94d8d8702f06849d95965e29e8d1f7e1644d7b7a5a02e7c7c9a66dff12cb99",
+  "sourceHinweis": "Abis Vorschnitt aus CapCut (HEVC 1080x1920, CFR 30, 4926 Bilder, BT.709 SDR, AAC 44,1 kHz): bereits aus mehreren Takes montiert, Punch-in bei 4,1 s im Hook, CTA-Clip „Folgen nicht vergessen“ (schwarzes Shirt) angehängt.",
+  "originalDuration": 164.2,
+  "title": "Bewerbungsgespräch vorbereiten",
+  "mode": "storyline-cut",
+  "status": "zur_abnahme",
+  "createdAt": "2026-09-26T15:20:00Z",
+  "auftrag": "Abdullah am 26.09.2026: Schnitt nach Skript-Workflow, Ziel 90 Sekunden, saubere Storyline, Zooms gern, Notion nutzen aber nicht blind folgen (ein Punkt mehr aufgenommen), am Ende eine fertig aufbereitete Version sehen.",
+  "bearbeitung": {
+    "agent": "Claude Code (Desktop), Sitzung 26.09.2026 abends",
+    "aufgabe": "Storyline- und Pausenschnitt Bewerbungsgespräch",
+    "begonnen": "2026-09-26T15:20:00Z",
+    "status": "abgeschlossen"
+  },
+  "notionPlan": "https://app.notion.com/p/2a08cb917b3b807688eccb2e46b2ded0",
+  "notionAbgleich": "Notion: Kurz vorweg Übersicht + 4 Punkte (Selbstvorstellung, Unternehmen/Gesprächspartner, Rückfragen, kritische Momente inkl. Case). Aufnahme: Spickzettel als Vorab-Punkt (Notion/OneNote, Liste der Infos) + dieselben 4 Punkte, dazu Werte-Frage „warum du dahin passt“; Case und Notion-CTA nicht aufgenommen. Maßgeblich ist die Aufnahme.",
+  "werkzeuge": [
+    "blocks.py (wie Angst vor Arbeiten, 4926 Bilder)",
+    "edl.json (Auswahl, Reihenfolge, Begründungen)",
+    "build-edl.py (source.mov)",
+    "signature.py"
+  ],
+  "speed": 1.0,
+  "speedDelivery": 1.1,
+  "speedGrund": "Ziel 90 s; v3 mit gekürztem Ende 91,5 s bei 1,1x.",
+  "cutDuration": 100.7,
+  "latestExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Bewerbungsgespraech-Schnitt-2026-09-26/exports/Bewerbungsgespraech-Schnitt_v3.mp4",
+  "aktuell": {
+    "datei": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/Bewerbungsgespraech-Schnitt-2026-09-26/exports/Bewerbungsgespraech-Schnitt_v3.mp4",
+    "sha256": "3585c30c82b5db65dc8602869b7bde9a929e2a677f267bea583bf116569b971f",
+    "bytes": 121492615,
+    "erzeugt": "2026-09-26T17:20:00Z",
+    "hinweis": "1,0-Fassung v3 (Ende gekürzt); Gestaltung baut ihr Kamerabild in einem Durchgang aus source.mov."
+  },
+  "pruefung": {
+    "pausensignatur": "v1 (1,0): Median 96 ms, 81 % in 64-96 ms, 1 Lücke >160 ms (Nachlauf am Ende, 256 ms), 27 Lücken",
+    "wortvollstaendigkeit": "Erkennungsdurchgang (-mc 0 -et 100 -lpt -100, DTW) auf dem Schnitt gegen die ausgewählten Wörter: 359 erwartet, 358 erkannt; Abweichungen nur Lesarten (demselben/denselben, wer/was, antwortest du/antworte, stocke/stalk, vorbereitend/vorbereitet), keine an einer Naht",
+    "naehte": "Kurztranskript der Nähte sauber: „… gerne vor. Diese wirst du …“, „… warum das Unternehmen und am besten auch …“, „… Unternehmenswerte sind. Bezogen auf den Werten …“, „… zu connecten. Jedes Mal wird dir …“",
+    "synchronitaet": "Bildvergleich gegen die Quelle an 8 Stücken: Versatz 0 Bilder; Ton per Konstruktion auf demselben Bildraster (1470 Samples je Bild)",
+    "datei": "2970 Bilder, 99,000 s Bild und Ton",
+    "hoerpruefung": "nicht erfolgt (kein Abhören durch den Agenten möglich)",
+    "pausensignaturV2": "v2 (1,0): Median 96 ms, 75 % in 64-96 ms; 3 Lücken >160 ms, alle bewusst am Ende (672 ms vor „Natürlich“, 352 ms vor „Folgen“, 1237 ms Ausklang mit Daumen hoch)",
+    "dateiV2": "3048 Bilder, 101,600 s Bild / 101,587 s Ton (Quelle endet 13 ms früher)",
+    "pausensignaturV3": "v3 (1,0): Median 96 ms, 75 % in 64-96 ms; >160 ms nur am Ende: 224 ms vor „Und natürlich“ (Clipwechsel), 352 ms vor „Folgen“ (Finger hoch), 843 ms Ausklang (Grinsen, Lacher 163,65-163,8 s)",
+    "dateiV3": "3021 Bilder, 100,700 s Bild und Ton; letzte 80 ms Ton ausgeblendet"
+  },
+  "vorgaengerV1": {
+    "export": "exports/Bewerbungsgespraech-Schnitt_v1.mp4",
+    "edl": "edl-v1.json",
+    "rueckmeldung": "Abdullah 26.09.2026: alles gut, nur das Ende zu abrupt („einfach nur das Folgen-nicht-vergessen dran gemacht“), Ende länger machen. Hook passt."
+  },
+  "vorgaengerV2": {
+    "export": "exports/Bewerbungsgespraech-Schnitt_v2.mp4",
+    "edl": "edl-v2.json",
+    "rueckmeldung": "Abdullah 26.09.2026: Ende verkackt – nach „vorbereitet bist“ zu viel Stille, hinten zu lang. Vorne und hinten den kurzen Lacher drinlassen."
+  }
+}

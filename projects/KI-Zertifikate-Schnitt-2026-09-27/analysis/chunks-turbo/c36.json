@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2120
+			},
+			"text": " \"Google AI Professional Certificate\".",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.698479,
+					"t_dtw": -1
+				},
+				{
+					"text": " \"",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,050"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 50
+					},
+					"id": 503,
+					"p": 0.11865,
+					"t_dtw": 20
+				},
+				{
+					"text": "Go",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 160
+					},
+					"id": 12104,
+					"p": 0.923332,
+					"t_dtw": 28
+				},
+				{
+					"text": "ogle",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 390
+					},
+					"id": 3127,
+					"p": 0.99041,
+					"t_dtw": 40
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:00,390",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 390,
+						"to": 500
+					},
+					"id": 7318,
+					"p": 0.982174,
+					"t_dtw": 64
+				},
+				{
+					"text": " Professional",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 1200
+					},
+					"id": 30011,
+					"p": 0.967783,
+					"t_dtw": 112
+				},
+				{
+					"text": " Cert",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1420
+					},
+					"id": 31036,
+					"p": 0.926926,
+					"t_dtw": 144
+				},
+				{
+					"text": "ific",
+					"timestamps": {
+						"from": "00:00:01,420",
+						"to": "00:00:01,640"
+					},
+					"offsets": {
+						"from": 1420,
+						"to": 1640
+					},
+					"id": 1089,
+					"p": 0.852465,
+					"t_dtw": 168
+				},
+				{
+					"text": "ate",
+					"timestamps": {
+						"from": "00:00:01,650",
+						"to": "00:00:01,780"
+					},
+					"offsets": {
+						"from": 1650,
+						"to": 1780
+					},
+					"id": 473,
+					"p": 0.979542,
+					"t_dtw": 186
+				},
+				{
+					"text": "\".",
+					"timestamps": {
+						"from": "00:00:01,850",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1850,
+						"to": 1860
+					},
+					"id": 1883,
+					"p": 0.358938,
+					"t_dtw": 202
+				},
+				{
+					"text": "[_TT_106]",
+					"timestamps": {
+						"from": "00:00:02,120",
+						"to": "00:00:02,120"
+					},
+					"offsets": {
+						"from": 2120,
+						"to": 2120
+					},
+					"id": 50471,
+					"p": 0.185783,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

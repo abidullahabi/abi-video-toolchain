@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1060
+			},
+			"text": " wenn ich diese Wohnung habe.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.987764,
+					"t_dtw": -1
+				},
+				{
+					"text": " wenn",
+					"timestamps": {
+						"from": "00:00:00,030",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 30,
+						"to": 180
+					},
+					"id": 4797,
+					"p": 0.591334,
+					"t_dtw": 10
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,310"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 310
+					},
+					"id": 1893,
+					"p": 0.99778,
+					"t_dtw": 20
+				},
+				{
+					"text": " diese",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 540
+					},
+					"id": 6705,
+					"p": 0.991867,
+					"t_dtw": 40
+				},
+				{
+					"text": " Wohnung",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 850
+					},
+					"id": 50087,
+					"p": 0.970308,
+					"t_dtw": 66
+				},
+				{
+					"text": " habe",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 890
+					},
+					"id": 6015,
+					"p": 0.877009,
+					"t_dtw": 92
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,980",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 980,
+						"to": 1060
+					},
+					"id": 13,
+					"p": 0.508205,
+					"t_dtw": 104
+				},
+				{
+					"text": "[_TT_53]",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1060
+					},
+					"id": 50418,
+					"p": 0.486735,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

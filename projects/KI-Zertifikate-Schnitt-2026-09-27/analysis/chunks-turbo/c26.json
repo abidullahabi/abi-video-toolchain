@@ -1,0 +1,437 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,760"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4760
+			},
+			"text": " Aktuell ist jeder auf einer AI-Hype und ich gefühlt, jede Tertifikat braucht AI drinne.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.862414,
+					"t_dtw": -1
+				},
+				{
+					"text": " Akt",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 160
+					},
+					"id": 32850,
+					"p": 0.939338,
+					"t_dtw": 32
+				},
+				{
+					"text": "uell",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 370
+					},
+					"id": 13789,
+					"p": 0.998605,
+					"t_dtw": 52
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 530
+					},
+					"id": 1418,
+					"p": 0.992523,
+					"t_dtw": 70
+				},
+				{
+					"text": " jeder",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,790"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 790
+					},
+					"id": 19610,
+					"p": 0.983048,
+					"t_dtw": 86
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:00,790",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 790,
+						"to": 950
+					},
+					"id": 2501,
+					"p": 0.990467,
+					"t_dtw": 102
+				},
+				{
+					"text": " einer",
+					"timestamps": {
+						"from": "00:00:00,950",
+						"to": "00:00:01,210"
+					},
+					"offsets": {
+						"from": 950,
+						"to": 1210
+					},
+					"id": 6850,
+					"p": 0.674078,
+					"t_dtw": 112
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,310"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1310
+					},
+					"id": 7318,
+					"p": 0.989177,
+					"t_dtw": 132
+				},
+				{
+					"text": "-",
+					"timestamps": {
+						"from": "00:00:01,310",
+						"to": "00:00:01,350"
+					},
+					"offsets": {
+						"from": 1310,
+						"to": 1350
+					},
+					"id": 12,
+					"p": 0.897273,
+					"t_dtw": 138
+				},
+				{
+					"text": "Hy",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1460
+					},
+					"id": 38792,
+					"p": 0.993458,
+					"t_dtw": 152
+				},
+				{
+					"text": "pe",
+					"timestamps": {
+						"from": "00:00:01,460",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1460,
+						"to": 1560
+					},
+					"id": 494,
+					"p": 0.999091,
+					"t_dtw": 160
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:01,640",
+						"to": "00:00:01,770"
+					},
+					"offsets": {
+						"from": 1640,
+						"to": 1770
+					},
+					"id": 674,
+					"p": 0.92105,
+					"t_dtw": 182
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:01,830",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1830,
+						"to": 2000
+					},
+					"id": 1893,
+					"p": 0.924084,
+					"t_dtw": 204
+				},
+				{
+					"text": " gef",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,200"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2200
+					},
+					"id": 11271,
+					"p": 0.880105,
+					"t_dtw": 240
+				},
+				{
+					"text": "üh",
+					"timestamps": {
+						"from": "00:00:02,200",
+						"to": "00:00:02,250"
+					},
+					"offsets": {
+						"from": 2200,
+						"to": 2250
+					},
+					"id": 7254,
+					"p": 0.894236,
+					"t_dtw": 246
+				},
+				{
+					"text": "lt",
+					"timestamps": {
+						"from": "00:00:02,390",
+						"to": "00:00:02,460"
+					},
+					"offsets": {
+						"from": 2390,
+						"to": 2460
+					},
+					"id": 2282,
+					"p": 0.883895,
+					"t_dtw": 258
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,460",
+						"to": "00:00:02,570"
+					},
+					"offsets": {
+						"from": 2460,
+						"to": 2570
+					},
+					"id": 11,
+					"p": 0.445587,
+					"t_dtw": 290
+				},
+				{
+					"text": " jede",
+					"timestamps": {
+						"from": "00:00:02,750",
+						"to": "00:00:02,890"
+					},
+					"offsets": {
+						"from": 2750,
+						"to": 2890
+					},
+					"id": 34039,
+					"p": 0.932726,
+					"t_dtw": 304
+				},
+				{
+					"text": " T",
+					"timestamps": {
+						"from": "00:00:02,890",
+						"to": "00:00:02,960"
+					},
+					"offsets": {
+						"from": 2890,
+						"to": 2960
+					},
+					"id": 314,
+					"p": 0.82012,
+					"t_dtw": 318
+				},
+				{
+					"text": "ert",
+					"timestamps": {
+						"from": "00:00:02,960",
+						"to": "00:00:03,180"
+					},
+					"offsets": {
+						"from": 2960,
+						"to": 3180
+					},
+					"id": 911,
+					"p": 0.637675,
+					"t_dtw": 328
+				},
+				{
+					"text": "if",
+					"timestamps": {
+						"from": "00:00:03,180",
+						"to": "00:00:03,320"
+					},
+					"offsets": {
+						"from": 3180,
+						"to": 3320
+					},
+					"id": 351,
+					"p": 0.988929,
+					"t_dtw": 338
+				},
+				{
+					"text": "ikat",
+					"timestamps": {
+						"from": "00:00:03,320",
+						"to": "00:00:03,600"
+					},
+					"offsets": {
+						"from": 3320,
+						"to": 3600
+					},
+					"id": 36300,
+					"p": 0.892374,
+					"t_dtw": 354
+				},
+				{
+					"text": " braucht",
+					"timestamps": {
+						"from": "00:00:03,720",
+						"to": "00:00:04,130"
+					},
+					"offsets": {
+						"from": 3720,
+						"to": 4130
+					},
+					"id": 22623,
+					"p": 0.892602,
+					"t_dtw": 388
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:04,130",
+						"to": "00:00:04,210"
+					},
+					"offsets": {
+						"from": 4130,
+						"to": 4210
+					},
+					"id": 7318,
+					"p": 0.988429,
+					"t_dtw": 412
+				},
+				{
+					"text": " drin",
+					"timestamps": {
+						"from": "00:00:04,260",
+						"to": "00:00:04,520"
+					},
+					"offsets": {
+						"from": 4260,
+						"to": 4520
+					},
+					"id": 24534,
+					"p": 0.667264,
+					"t_dtw": 436
+				},
+				{
+					"text": "ne",
+					"timestamps": {
+						"from": "00:00:04,760",
+						"to": "00:00:04,760"
+					},
+					"offsets": {
+						"from": 4760,
+						"to": 4760
+					},
+					"id": 716,
+					"p": 0.68624,
+					"t_dtw": 452
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:04,760",
+						"to": "00:00:04,760"
+					},
+					"offsets": {
+						"from": 4760,
+						"to": 4760
+					},
+					"id": 13,
+					"p": 0.890887,
+					"t_dtw": 474
+				},
+				{
+					"text": "[_TT_238]",
+					"timestamps": {
+						"from": "00:00:04,760",
+						"to": "00:00:04,760"
+					},
+					"offsets": {
+						"from": 4760,
+						"to": 4760
+					},
+					"id": 50603,
+					"p": 0.363746,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

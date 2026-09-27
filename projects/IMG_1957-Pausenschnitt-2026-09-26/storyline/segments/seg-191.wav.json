@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,320"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1320
+			},
+			"text": " Fang früh an zu investieren.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.962672,
+					"t_dtw": -1
+				},
+				{
+					"text": " Fang",
+					"timestamps": {
+						"from": "00:00:00,090",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 90,
+						"to": 200
+					},
+					"id": 25409,
+					"p": 0.748688,
+					"t_dtw": 18
+				},
+				{
+					"text": " früh",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 400
+					},
+					"id": 45029,
+					"p": 0.801735,
+					"t_dtw": 38
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 500
+					},
+					"id": 364,
+					"p": 0.996799,
+					"t_dtw": 52
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,550"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 550
+					},
+					"id": 2164,
+					"p": 0.95795,
+					"t_dtw": 64
+				},
+				{
+					"text": " invest",
+					"timestamps": {
+						"from": "00:00:00,630",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 630,
+						"to": 870
+					},
+					"id": 1963,
+					"p": 0.993448,
+					"t_dtw": 90
+				},
+				{
+					"text": "ieren",
+					"timestamps": {
+						"from": "00:00:00,920",
+						"to": "00:00:01,130"
+					},
+					"offsets": {
+						"from": 920,
+						"to": 1130
+					},
+					"id": 5695,
+					"p": 0.999327,
+					"t_dtw": 114
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,170"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1170
+					},
+					"id": 13,
+					"p": 0.78734,
+					"t_dtw": 130
+				},
+				{
+					"text": "[_TT_66]",
+					"timestamps": {
+						"from": "00:00:01,320",
+						"to": "00:00:01,320"
+					},
+					"offsets": {
+						"from": 1320,
+						"to": 1320
+					},
+					"id": 50431,
+					"p": 0.454355,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

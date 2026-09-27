@@ -1,0 +1,269 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2100
+			},
+			"text": " Meine Meinung nach, die beste AI, die es da draußen gibt.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.870187,
+					"t_dtw": -1
+				},
+				{
+					"text": " Meine",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 180
+					},
+					"id": 22258,
+					"p": 0.744192,
+					"t_dtw": 28
+				},
+				{
+					"text": " Meinung",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,440"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 440
+					},
+					"id": 36519,
+					"p": 0.939762,
+					"t_dtw": 44
+				},
+				{
+					"text": " nach",
+					"timestamps": {
+						"from": "00:00:00,440",
+						"to": "00:00:00,570"
+					},
+					"offsets": {
+						"from": 440,
+						"to": 570
+					},
+					"id": 5168,
+					"p": 0.977719,
+					"t_dtw": 56
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 650
+					},
+					"id": 11,
+					"p": 0.594783,
+					"t_dtw": 66
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,760"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 760
+					},
+					"id": 978,
+					"p": 0.978185,
+					"t_dtw": 68
+				},
+				{
+					"text": " beste",
+					"timestamps": {
+						"from": "00:00:00,760",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 760,
+						"to": 940
+					},
+					"id": 22245,
+					"p": 0.967146,
+					"t_dtw": 90
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,010"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1010
+					},
+					"id": 7318,
+					"p": 0.889505,
+					"t_dtw": 110
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,010",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 1010,
+						"to": 1120
+					},
+					"id": 11,
+					"p": 0.956187,
+					"t_dtw": 124
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1240
+					},
+					"id": 978,
+					"p": 0.972429,
+					"t_dtw": 124
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:01,280",
+						"to": "00:00:01,330"
+					},
+					"offsets": {
+						"from": 1280,
+						"to": 1330
+					},
+					"id": 785,
+					"p": 0.972361,
+					"t_dtw": 130
+				},
+				{
+					"text": " da",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,480"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1480
+					},
+					"id": 1120,
+					"p": 0.91013,
+					"t_dtw": 136
+				},
+				{
+					"text": " draußen",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,820"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1820
+					},
+					"id": 44602,
+					"p": 0.945688,
+					"t_dtw": 154
+				},
+				{
+					"text": " gibt",
+					"timestamps": {
+						"from": "00:00:01,900",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1900,
+						"to": 1900
+					},
+					"id": 6089,
+					"p": 0.993724,
+					"t_dtw": 178
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,090",
+						"to": "00:00:02,090"
+					},
+					"offsets": {
+						"from": 2090,
+						"to": 2090
+					},
+					"id": 13,
+					"p": 0.716162,
+					"t_dtw": 204
+				},
+				{
+					"text": "[_TT_105]",
+					"timestamps": {
+						"from": "00:00:02,100",
+						"to": "00:00:02,100"
+					},
+					"offsets": {
+						"from": 2100,
+						"to": 2100
+					},
+					"id": 50470,
+					"p": 0.21079,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

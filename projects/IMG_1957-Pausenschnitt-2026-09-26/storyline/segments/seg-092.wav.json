@@ -1,0 +1,283 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,900"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2900
+			},
+			"text": " Die ersten Liebesbeziehungen in den Zwanzigern zeigt...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.989888,
+					"t_dtw": -1
+				},
+				{
+					"text": " Die",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 180
+					},
+					"id": 3229,
+					"p": 0.932709,
+					"t_dtw": 12
+				},
+				{
+					"text": " ersten",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 540
+					},
+					"id": 17324,
+					"p": 0.995875,
+					"t_dtw": 42
+				},
+				{
+					"text": " Lie",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 720
+					},
+					"id": 11197,
+					"p": 0.996227,
+					"t_dtw": 70
+				},
+				{
+					"text": "bes",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 900
+					},
+					"id": 6446,
+					"p": 0.999504,
+					"t_dtw": 102
+				},
+				{
+					"text": "be",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:00,960"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 960
+					},
+					"id": 650,
+					"p": 0.998862,
+					"t_dtw": 122
+				},
+				{
+					"text": "zieh",
+					"timestamps": {
+						"from": "00:00:01,010",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 1010,
+						"to": 1260
+					},
+					"id": 28213,
+					"p": 0.99995,
+					"t_dtw": 134
+				},
+				{
+					"text": "ungen",
+					"timestamps": {
+						"from": "00:00:01,260",
+						"to": "00:00:01,580"
+					},
+					"offsets": {
+						"from": 1260,
+						"to": 1580
+					},
+					"id": 5084,
+					"p": 0.996643,
+					"t_dtw": 156
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:01,580",
+						"to": "00:00:01,670"
+					},
+					"offsets": {
+						"from": 1580,
+						"to": 1670
+					},
+					"id": 294,
+					"p": 0.96966,
+					"t_dtw": 170
+				},
+				{
+					"text": " den",
+					"timestamps": {
+						"from": "00:00:01,670",
+						"to": "00:00:01,810"
+					},
+					"offsets": {
+						"from": 1670,
+						"to": 1810
+					},
+					"id": 1441,
+					"p": 0.991622,
+					"t_dtw": 180
+				},
+				{
+					"text": " Zw",
+					"timestamps": {
+						"from": "00:00:01,810",
+						"to": "00:00:01,880"
+					},
+					"offsets": {
+						"from": 1810,
+						"to": 1880
+					},
+					"id": 29385,
+					"p": 0.16966,
+					"t_dtw": 198
+				},
+				{
+					"text": "anz",
+					"timestamps": {
+						"from": "00:00:01,930",
+						"to": "00:00:02,040"
+					},
+					"offsets": {
+						"from": 1930,
+						"to": 2040
+					},
+					"id": 3910,
+					"p": 0.954784,
+					"t_dtw": 208
+				},
+				{
+					"text": "ig",
+					"timestamps": {
+						"from": "00:00:02,040",
+						"to": "00:00:02,130"
+					},
+					"offsets": {
+						"from": 2040,
+						"to": 2130
+					},
+					"id": 328,
+					"p": 0.962355,
+					"t_dtw": 216
+				},
+				{
+					"text": "ern",
+					"timestamps": {
+						"from": "00:00:02,130",
+						"to": "00:00:02,320"
+					},
+					"offsets": {
+						"from": 2130,
+						"to": 2320
+					},
+					"id": 1248,
+					"p": 0.996365,
+					"t_dtw": 228
+				},
+				{
+					"text": " zeigt",
+					"timestamps": {
+						"from": "00:00:02,320",
+						"to": "00:00:02,730"
+					},
+					"offsets": {
+						"from": 2320,
+						"to": 2730
+					},
+					"id": 29250,
+					"p": 0.838043,
+					"t_dtw": 266
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:02,890",
+						"to": "00:00:02,890"
+					},
+					"offsets": {
+						"from": 2890,
+						"to": 2890
+					},
+					"id": 485,
+					"p": 0.435073,
+					"t_dtw": 286
+				},
+				{
+					"text": "[_TT_145]",
+					"timestamps": {
+						"from": "00:00:02,900",
+						"to": "00:00:02,900"
+					},
+					"offsets": {
+						"from": 2900,
+						"to": 2900
+					},
+					"id": 50510,
+					"p": 0.890346,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

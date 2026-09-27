@@ -1,0 +1,30 @@
+{
+ "erzeugt": "render-social-icons.py",
+ "groesse": "34x34, Eckenradius 7",
+ "tiles": {
+  "youtube": {
+   "datei": "tile-youtube.png",
+   "sha256": "153dcdad9e3aad859a45b4b332e60374126c2ea53b24963af0c3ad9bcbd491b0",
+   "quelle": "youtube-icon.png (brand.youtube Favicon)",
+   "glyph": "weisses Dreieck, Proportion zur roten Flaeche erhalten"
+  },
+  "tiktok": {
+   "datei": "tile-tiktok.png",
+   "sha256": "23e5fba56f160d1b00b071492736505dda3b00154833749dee24f2ecea1ba053",
+   "quelle": "tiktok-icon.png (TikTok_Icon_Black_Square)",
+   "glyph": "weisser Kern der Note, Lage im Quadrat erhalten"
+  },
+  "instagram": {
+   "datei": "tile-instagram.png",
+   "sha256": "66a25e1dcdec9d0bfd507cf1a708b105bab9215c14465c68cbb066175acda2f1",
+   "quelle": "instagram-icon.png (instagram.com)",
+   "glyph": "Alphakanal, 26 von 34 px wie bisher"
+  },
+  "linkedin": {
+   "datei": "tile-linkedin.png",
+   "sha256": "e9485a1fc79a90e3460dcfdd84e72c4637f1a6c48c75d18b61c633beda391e6d",
+   "quelle": "linkedin-in-blue.png (LI-In-Bug)",
+   "glyph": "weisses \"in\", Lage in der quadratischen Flaeche erhalten"
+  }
+ }
+}

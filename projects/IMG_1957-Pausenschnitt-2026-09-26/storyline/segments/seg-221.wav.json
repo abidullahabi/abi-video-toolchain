@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,540"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3540
+			},
+			"text": " an das Universum, ist mir egal, aber glaub etwas oder zumindest an dich.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.956813,
+					"t_dtw": -1
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 140
+					},
+					"id": 364,
+					"p": 0.60969,
+					"t_dtw": 12
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,350"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 350
+					},
+					"id": 1482,
+					"p": 0.998199,
+					"t_dtw": 22
+				},
+				{
+					"text": " Univers",
+					"timestamps": {
+						"from": "00:00:00,350",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 350,
+						"to": 840
+					},
+					"id": 14052,
+					"p": 0.99088,
+					"t_dtw": 44
+				},
+				{
+					"text": "um",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 900
+					},
+					"id": 449,
+					"p": 0.999626,
+					"t_dtw": 84
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1100
+					},
+					"id": 11,
+					"p": 0.549444,
+					"t_dtw": 114
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1260
+					},
+					"id": 1418,
+					"p": 0.875296,
+					"t_dtw": 122
+				},
+				{
+					"text": " mir",
+					"timestamps": {
+						"from": "00:00:01,260",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 1260,
+						"to": 1420
+					},
+					"id": 3149,
+					"p": 0.998803,
+					"t_dtw": 134
+				},
+				{
+					"text": " egal",
+					"timestamps": {
+						"from": "00:00:01,420",
+						"to": "00:00:01,660"
+					},
+					"offsets": {
+						"from": 1420,
+						"to": 1660
+					},
+					"id": 31528,
+					"p": 0.981057,
+					"t_dtw": 164
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,660",
+						"to": "00:00:01,730"
+					},
+					"offsets": {
+						"from": 1660,
+						"to": 1730
+					},
+					"id": 11,
+					"p": 0.753615,
+					"t_dtw": 198
+				},
+				{
+					"text": " aber",
+					"timestamps": {
+						"from": "00:00:01,940",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1940,
+						"to": 2000
+					},
+					"id": 4340,
+					"p": 0.804475,
+					"t_dtw": 204
+				},
+				{
+					"text": " glaub",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,270"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2270
+					},
+					"id": 23210,
+					"p": 0.92712,
+					"t_dtw": 222
+				},
+				{
+					"text": " etwas",
+					"timestamps": {
+						"from": "00:00:02,290",
+						"to": "00:00:02,600"
+					},
+					"offsets": {
+						"from": 2290,
+						"to": 2600
+					},
+					"id": 9569,
+					"p": 0.944781,
+					"t_dtw": 256
+				},
+				{
+					"text": " oder",
+					"timestamps": {
+						"from": "00:00:02,600",
+						"to": "00:00:02,600"
+					},
+					"offsets": {
+						"from": 2600,
+						"to": 2600
+					},
+					"id": 4513,
+					"p": 0.610859,
+					"t_dtw": 290
+				},
+				{
+					"text": " zumindest",
+					"timestamps": {
+						"from": "00:00:02,800",
+						"to": "00:00:03,150"
+					},
+					"offsets": {
+						"from": 2800,
+						"to": 3150
+					},
+					"id": 38082,
+					"p": 0.993203,
+					"t_dtw": 314
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:03,150",
+						"to": "00:00:03,230"
+					},
+					"offsets": {
+						"from": 3150,
+						"to": 3230
+					},
+					"id": 364,
+					"p": 0.99507,
+					"t_dtw": 332
+				},
+				{
+					"text": " dich",
+					"timestamps": {
+						"from": "00:00:03,230",
+						"to": "00:00:03,400"
+					},
+					"offsets": {
+						"from": 3230,
+						"to": 3400
+					},
+					"id": 10390,
+					"p": 0.920138,
+					"t_dtw": 352
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,400",
+						"to": "00:00:03,500"
+					},
+					"offsets": {
+						"from": 3400,
+						"to": 3500
+					},
+					"id": 13,
+					"p": 0.820501,
+					"t_dtw": 352
+				},
+				{
+					"text": "[_TT_177]",
+					"timestamps": {
+						"from": "00:00:03,540",
+						"to": "00:00:03,540"
+					},
+					"offsets": {
+						"from": 3540,
+						"to": 3540
+					},
+					"id": 50542,
+					"p": 0.314677,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,900"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 900
+			},
+			"text": " Vielleicht eins und zwei.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.983789,
+					"t_dtw": -1
+				},
+				{
+					"text": " Vielleicht",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 390
+					},
+					"id": 29838,
+					"p": 0.675607,
+					"t_dtw": 18
+				},
+				{
+					"text": " eins",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 540
+					},
+					"id": 21889,
+					"p": 0.66492,
+					"t_dtw": 40
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,710"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 710
+					},
+					"id": 674,
+					"p": 0.639228,
+					"t_dtw": 48
+				},
+				{
+					"text": " zwei",
+					"timestamps": {
+						"from": "00:00:00,710",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 710,
+						"to": 750
+					},
+					"id": 12002,
+					"p": 0.997624,
+					"t_dtw": 68
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 890
+					},
+					"id": 13,
+					"p": 0.915995,
+					"t_dtw": 86
+				},
+				{
+					"text": "[_TT_45]",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 900
+					},
+					"id": 50410,
+					"p": 0.285394,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

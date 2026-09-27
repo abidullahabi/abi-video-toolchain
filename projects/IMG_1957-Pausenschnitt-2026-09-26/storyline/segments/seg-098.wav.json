@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,300"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1300
+			},
+			"text": " Und das ist auch der dritte Punkt.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.970921,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,080",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 80,
+						"to": 140
+					},
+					"id": 2719,
+					"p": 0.886553,
+					"t_dtw": 14
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 280
+					},
+					"id": 1482,
+					"p": 0.993364,
+					"t_dtw": 26
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 420
+					},
+					"id": 1418,
+					"p": 0.9959,
+					"t_dtw": 34
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 610
+					},
+					"id": 2168,
+					"p": 0.988725,
+					"t_dtw": 44
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,710"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 710
+					},
+					"id": 1163,
+					"p": 0.994839,
+					"t_dtw": 56
+				},
+				{
+					"text": " dr",
+					"timestamps": {
+						"from": "00:00:00,740",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 740,
+						"to": 810
+					},
+					"id": 1224,
+					"p": 0.96831,
+					"t_dtw": 68
+				},
+				{
+					"text": "itte",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 1020
+					},
+					"id": 9786,
+					"p": 0.999277,
+					"t_dtw": 80
+				},
+				{
+					"text": " Punkt",
+					"timestamps": {
+						"from": "00:00:01,030",
+						"to": "00:00:01,090"
+					},
+					"offsets": {
+						"from": 1030,
+						"to": 1090
+					},
+					"id": 25487,
+					"p": 0.997761,
+					"t_dtw": 102
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,290",
+						"to": "00:00:01,290"
+					},
+					"offsets": {
+						"from": 1290,
+						"to": 1290
+					},
+					"id": 13,
+					"p": 0.768234,
+					"t_dtw": 126
+				},
+				{
+					"text": "[_TT_65]",
+					"timestamps": {
+						"from": "00:00:01,300",
+						"to": "00:00:01,300"
+					},
+					"offsets": {
+						"from": 1300,
+						"to": 1300
+					},
+					"id": 50430,
+					"p": 0.884091,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,260"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1260
+			},
+			"text": " Am besten lernst du noch daraus,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.95927,
+					"t_dtw": -1
+				},
+				{
+					"text": " Am",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,090"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 90
+					},
+					"id": 2012,
+					"p": 0.645913,
+					"t_dtw": 12
+				},
+				{
+					"text": " besten",
+					"timestamps": {
+						"from": "00:00:00,090",
+						"to": "00:00:00,380"
+					},
+					"offsets": {
+						"from": 90,
+						"to": 380
+					},
+					"id": 30930,
+					"p": 0.989381,
+					"t_dtw": 30
+				},
+				{
+					"text": " l",
+					"timestamps": {
+						"from": "00:00:00,380",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 380,
+						"to": 420
+					},
+					"id": 287,
+					"p": 0.933716,
+					"t_dtw": 46
+				},
+				{
+					"text": "ern",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,550"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 550
+					},
+					"id": 1248,
+					"p": 0.999062,
+					"t_dtw": 50
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 650
+					},
+					"id": 372,
+					"p": 0.950423,
+					"t_dtw": 60
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:00,740"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 740
+					},
+					"id": 1581,
+					"p": 0.988963,
+					"t_dtw": 64
+				},
+				{
+					"text": " noch",
+					"timestamps": {
+						"from": "00:00:00,740",
+						"to": "00:00:00,930"
+					},
+					"offsets": {
+						"from": 740,
+						"to": 930
+					},
+					"id": 3514,
+					"p": 0.913901,
+					"t_dtw": 76
+				},
+				{
+					"text": " d",
+					"timestamps": {
+						"from": "00:00:00,930",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 930,
+						"to": 970
+					},
+					"id": 274,
+					"p": 0.812317,
+					"t_dtw": 90
+				},
+				{
+					"text": "araus",
+					"timestamps": {
+						"from": "00:00:00,970",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 970,
+						"to": 1060
+					},
+					"id": 46483,
+					"p": 0.999767,
+					"t_dtw": 108
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,250",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 1250,
+						"to": 1260
+					},
+					"id": 11,
+					"p": 0.320521,
+					"t_dtw": 124
+				},
+				{
+					"text": "[_TT_63]",
+					"timestamps": {
+						"from": "00:00:01,260",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 1260,
+						"to": 1260
+					},
+					"id": 50428,
+					"p": 0.780438,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,420"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1420
+			},
+			"text": " Es gibt also zig verschiedene...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.752329,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 210
+					},
+					"id": 2313,
+					"p": 0.961526,
+					"t_dtw": 22
+				},
+				{
+					"text": " gibt",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,640"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 640
+					},
+					"id": 6089,
+					"p": 0.996071,
+					"t_dtw": 32
+				},
+				{
+					"text": " also",
+					"timestamps": {
+						"from": "00:00:00,640",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 640,
+						"to": 1020
+					},
+					"id": 611,
+					"p": 0.697329,
+					"t_dtw": 44
+				},
+				{
+					"text": " zig",
+					"timestamps": {
+						"from": "00:00:01,070",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 1070,
+						"to": 1190
+					},
+					"id": 38290,
+					"p": 0.797715,
+					"t_dtw": 70
+				},
+				{
+					"text": " verschiedene",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1410
+					},
+					"id": 35411,
+					"p": 0.26714,
+					"t_dtw": 100
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1410
+					},
+					"id": 485,
+					"p": 0.539532,
+					"t_dtw": 122
+				},
+				{
+					"text": "[_TT_71]",
+					"timestamps": {
+						"from": "00:00:01,420",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 1420,
+						"to": 1420
+					},
+					"id": 50436,
+					"p": 0.326785,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

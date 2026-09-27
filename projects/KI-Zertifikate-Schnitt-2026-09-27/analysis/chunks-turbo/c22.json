@@ -1,0 +1,367 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,900"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5900
+			},
+			"text": " Das Zertifikat heißt \"Gen AI for Everyone\" von Andrew NG oder so heißt der.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.913773,
+					"t_dtw": -1
+				},
+				{
+					"text": " Das",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,230"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 230
+					},
+					"id": 2846,
+					"p": 0.631417,
+					"t_dtw": 28
+				},
+				{
+					"text": " Z",
+					"timestamps": {
+						"from": "00:00:00,230",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 230,
+						"to": 300
+					},
+					"id": 1176,
+					"p": 0.971222,
+					"t_dtw": 40
+				},
+				{
+					"text": "ert",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 510
+					},
+					"id": 911,
+					"p": 0.999672,
+					"t_dtw": 40
+				},
+				{
+					"text": "if",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,680"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 680
+					},
+					"id": 351,
+					"p": 0.972646,
+					"t_dtw": 52
+				},
+				{
+					"text": "ikat",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,920"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 920
+					},
+					"id": 36300,
+					"p": 0.994907,
+					"t_dtw": 72
+				},
+				{
+					"text": " heißt",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,590"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1590
+					},
+					"id": 13139,
+					"p": 0.747163,
+					"t_dtw": 162
+				},
+				{
+					"text": " \"",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:01,750"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 1750
+					},
+					"id": 503,
+					"p": 0.163088,
+					"t_dtw": 260
+				},
+				{
+					"text": "Gen",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:02,060"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 2060
+					},
+					"id": 26647,
+					"p": 0.942493,
+					"t_dtw": 260
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:02,070",
+						"to": "00:00:02,240"
+					},
+					"offsets": {
+						"from": 2070,
+						"to": 2240
+					},
+					"id": 7318,
+					"p": 0.788734,
+					"t_dtw": 280
+				},
+				{
+					"text": " for",
+					"timestamps": {
+						"from": "00:00:02,360",
+						"to": "00:00:02,610"
+					},
+					"offsets": {
+						"from": 2360,
+						"to": 2610
+					},
+					"id": 337,
+					"p": 0.865846,
+					"t_dtw": 308
+				},
+				{
+					"text": " Everyone",
+					"timestamps": {
+						"from": "00:00:02,610",
+						"to": "00:00:03,470"
+					},
+					"offsets": {
+						"from": 2610,
+						"to": 3470
+					},
+					"id": 5198,
+					"p": 0.770317,
+					"t_dtw": 346
+				},
+				{
+					"text": "\"",
+					"timestamps": {
+						"from": "00:00:03,470",
+						"to": "00:00:03,530"
+					},
+					"offsets": {
+						"from": 3470,
+						"to": 3530
+					},
+					"id": 1,
+					"p": 0.825917,
+					"t_dtw": 358
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:03,660",
+						"to": "00:00:03,810"
+					},
+					"offsets": {
+						"from": 3660,
+						"to": 3810
+					},
+					"id": 2957,
+					"p": 0.931982,
+					"t_dtw": 376
+				},
+				{
+					"text": " Andrew",
+					"timestamps": {
+						"from": "00:00:03,860",
+						"to": "00:00:04,330"
+					},
+					"offsets": {
+						"from": 3860,
+						"to": 4330
+					},
+					"id": 10110,
+					"p": 0.884673,
+					"t_dtw": 424
+				},
+				{
+					"text": " N",
+					"timestamps": {
+						"from": "00:00:04,330",
+						"to": "00:00:04,400"
+					},
+					"offsets": {
+						"from": 4330,
+						"to": 4400
+					},
+					"id": 426,
+					"p": 0.669459,
+					"t_dtw": 478
+				},
+				{
+					"text": "G",
+					"timestamps": {
+						"from": "00:00:04,400",
+						"to": "00:00:04,440"
+					},
+					"offsets": {
+						"from": 4400,
+						"to": 4440
+					},
+					"id": 38,
+					"p": 0.678526,
+					"t_dtw": 496
+				},
+				{
+					"text": " oder",
+					"timestamps": {
+						"from": "00:00:04,670",
+						"to": "00:00:04,810"
+					},
+					"offsets": {
+						"from": 4670,
+						"to": 4810
+					},
+					"id": 4513,
+					"p": 0.763218,
+					"t_dtw": 514
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:04,810",
+						"to": "00:00:04,970"
+					},
+					"offsets": {
+						"from": 4810,
+						"to": 4970
+					},
+					"id": 370,
+					"p": 0.9716,
+					"t_dtw": 526
+				},
+				{
+					"text": " heißt",
+					"timestamps": {
+						"from": "00:00:04,970",
+						"to": "00:00:05,380"
+					},
+					"offsets": {
+						"from": 4970,
+						"to": 5380
+					},
+					"id": 13139,
+					"p": 0.853189,
+					"t_dtw": 546
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:05,380",
+						"to": "00:00:05,620"
+					},
+					"offsets": {
+						"from": 5380,
+						"to": 5620
+					},
+					"id": 1163,
+					"p": 0.602521,
+					"t_dtw": 558
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:05,620",
+						"to": "00:00:05,640"
+					},
+					"offsets": {
+						"from": 5620,
+						"to": 5640
+					},
+					"id": 13,
+					"p": 0.856064,
+					"t_dtw": 586
+				},
+				{
+					"text": "[_TT_295]",
+					"timestamps": {
+						"from": "00:00:05,900",
+						"to": "00:00:05,900"
+					},
+					"offsets": {
+						"from": 5900,
+						"to": 5900
+					},
+					"id": 50660,
+					"p": 0.144506,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

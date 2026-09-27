@@ -1,0 +1,129 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,820"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 820
+			},
+			"text": " Der zweite Punkt:",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.957847,
+					"t_dtw": -1
+				},
+				{
+					"text": " Der",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 160
+					},
+					"id": 5618,
+					"p": 0.900056,
+					"t_dtw": 16
+				},
+				{
+					"text": " zweite",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 520
+					},
+					"id": 37456,
+					"p": 0.976831,
+					"t_dtw": 36
+				},
+				{
+					"text": " Punkt",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 670
+					},
+					"id": 25487,
+					"p": 0.995637,
+					"t_dtw": 66
+				},
+				{
+					"text": ":",
+					"timestamps": {
+						"from": "00:00:00,820",
+						"to": "00:00:00,820"
+					},
+					"offsets": {
+						"from": 820,
+						"to": 820
+					},
+					"id": 25,
+					"p": 0.383464,
+					"t_dtw": 80
+				},
+				{
+					"text": "[_TT_41]",
+					"timestamps": {
+						"from": "00:00:00,820",
+						"to": "00:00:00,820"
+					},
+					"offsets": {
+						"from": 820,
+						"to": 820
+					},
+					"id": 50406,
+					"p": 0.554239,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1000
+			},
+			"text": " auseinanderzusetzen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.951862,
+					"t_dtw": -1
+				},
+				{
+					"text": " a",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,050"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 50
+					},
+					"id": 257,
+					"p": 0.89191,
+					"t_dtw": 12
+				},
+				{
+					"text": "use",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 180
+					},
+					"id": 438,
+					"p": 0.99972,
+					"t_dtw": 22
+				},
+				{
+					"text": "inander",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,440"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 440
+					},
+					"id": 20553,
+					"p": 0.998018,
+					"t_dtw": 38
+				},
+				{
+					"text": "zus",
+					"timestamps": {
+						"from": "00:00:00,570",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 570,
+						"to": 700
+					},
+					"id": 16236,
+					"p": 0.954734,
+					"t_dtw": 62
+				},
+				{
+					"text": "etzen",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 890
+					},
+					"id": 24797,
+					"p": 0.999359,
+					"t_dtw": 84
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1000
+					},
+					"id": 13,
+					"p": 0.906753,
+					"t_dtw": 96
+				},
+				{
+					"text": "[_TT_50]",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1000
+					},
+					"id": 50415,
+					"p": 0.948954,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,880"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1880
+			},
+			"text": " Und du musst halt rausgehen aus dem Kinderzimmer.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.969745,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 120
+					},
+					"id": 2719,
+					"p": 0.520621,
+					"t_dtw": 14
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 200
+					},
+					"id": 1581,
+					"p": 0.985466,
+					"t_dtw": 18
+				},
+				{
+					"text": " musst",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,410"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 410
+					},
+					"id": 31716,
+					"p": 0.986579,
+					"t_dtw": 32
+				},
+				{
+					"text": " halt",
+					"timestamps": {
+						"from": "00:00:00,410",
+						"to": "00:00:00,570"
+					},
+					"offsets": {
+						"from": 410,
+						"to": 570
+					},
+					"id": 12479,
+					"p": 0.945976,
+					"t_dtw": 44
+				},
+				{
+					"text": " raus",
+					"timestamps": {
+						"from": "00:00:00,570",
+						"to": "00:00:00,710"
+					},
+					"offsets": {
+						"from": 570,
+						"to": 710
+					},
+					"id": 17202,
+					"p": 0.993449,
+					"t_dtw": 70
+				},
+				{
+					"text": "gehen",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 940
+					},
+					"id": 24985,
+					"p": 0.955123,
+					"t_dtw": 82
+				},
+				{
+					"text": " aus",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1060
+					},
+					"id": 3437,
+					"p": 0.986869,
+					"t_dtw": 98
+				},
+				{
+					"text": " dem",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1180
+					},
+					"id": 1371,
+					"p": 0.950151,
+					"t_dtw": 106
+				},
+				{
+					"text": " Kinder",
+					"timestamps": {
+						"from": "00:00:01,180",
+						"to": "00:00:01,430"
+					},
+					"offsets": {
+						"from": 1180,
+						"to": 1430
+					},
+					"id": 14193,
+					"p": 0.98948,
+					"t_dtw": 128
+				},
+				{
+					"text": "z",
+					"timestamps": {
+						"from": "00:00:01,430",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1430,
+						"to": 1450
+					},
+					"id": 89,
+					"p": 0.999373,
+					"t_dtw": 146
+				},
+				{
+					"text": "immer",
+					"timestamps": {
+						"from": "00:00:01,470",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1470,
+						"to": 1620
+					},
+					"id": 14477,
+					"p": 0.999895,
+					"t_dtw": 160
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,730",
+						"to": "00:00:01,730"
+					},
+					"offsets": {
+						"from": 1730,
+						"to": 1730
+					},
+					"id": 13,
+					"p": 0.905575,
+					"t_dtw": 170
+				},
+				{
+					"text": "[_TT_94]",
+					"timestamps": {
+						"from": "00:00:01,880",
+						"to": "00:00:01,880"
+					},
+					"offsets": {
+						"from": 1880,
+						"to": 1880
+					},
+					"id": 50459,
+					"p": 0.0649639,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

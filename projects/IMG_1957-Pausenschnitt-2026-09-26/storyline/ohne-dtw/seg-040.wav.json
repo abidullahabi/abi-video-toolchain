@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3000
+			},
+			"text": " Ist alles gut, aber es ist deine Aufgabe jetzt diesen",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.968295,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ist",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 140
+					},
+					"id": 12810,
+					"p": 0.502741,
+					"t_dtw": -1
+				},
+				{
+					"text": " alles",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,350"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 350
+					},
+					"id": 7874,
+					"p": 0.999786,
+					"t_dtw": -1
+				},
+				{
+					"text": " gut",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 520
+					},
+					"id": 5228,
+					"p": 0.999704,
+					"t_dtw": -1
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,640"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 640
+					},
+					"id": 11,
+					"p": 0.965758,
+					"t_dtw": -1
+				},
+				{
+					"text": " aber",
+					"timestamps": {
+						"from": "00:00:00,930",
+						"to": "00:00:01,160"
+					},
+					"offsets": {
+						"from": 930,
+						"to": 1160
+					},
+					"id": 4340,
+					"p": 0.83411,
+					"t_dtw": -1
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:01,160",
+						"to": "00:00:01,220"
+					},
+					"offsets": {
+						"from": 1160,
+						"to": 1220
+					},
+					"id": 785,
+					"p": 0.956224,
+					"t_dtw": -1
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,290",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1290,
+						"to": 1460
+					},
+					"id": 1418,
+					"p": 0.997956,
+					"t_dtw": -1
+				},
+				{
+					"text": " deine",
+					"timestamps": {
+						"from": "00:00:01,510",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1510,
+						"to": 1700
+					},
+					"id": 28395,
+					"p": 0.96229,
+					"t_dtw": -1
+				},
+				{
+					"text": " Aufgabe",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 2000
+					},
+					"id": 40070,
+					"p": 0.99162,
+					"t_dtw": -1
+				},
+				{
+					"text": " jetzt",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,340"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2340
+					},
+					"id": 4354,
+					"p": 0.554554,
+					"t_dtw": -1
+				},
+				{
+					"text": " diesen",
+					"timestamps": {
+						"from": "00:00:02,340",
+						"to": "00:00:02,870"
+					},
+					"offsets": {
+						"from": 2340,
+						"to": 2870
+					},
+					"id": 12862,
+					"p": 0.474585,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_150]",
+					"timestamps": {
+						"from": "00:00:03,000",
+						"to": "00:00:03,000"
+					},
+					"offsets": {
+						"from": 3000,
+						"to": 3000
+					},
+					"id": 50515,
+					"p": 0.0541589,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

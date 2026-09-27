@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,900"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 900
+			},
+			"text": " viel übernach zu stellen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.954592,
+					"t_dtw": -1
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:00,080",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 80,
+						"to": 170
+					},
+					"id": 5891,
+					"p": 0.110298,
+					"t_dtw": 16
+				},
+				{
+					"text": " über",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,340"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 340
+					},
+					"id": 4502,
+					"p": 0.116299,
+					"t_dtw": 22
+				},
+				{
+					"text": "n",
+					"timestamps": {
+						"from": "00:00:00,340",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 340,
+						"to": 370
+					},
+					"id": 77,
+					"p": 0.230779,
+					"t_dtw": 34
+				},
+				{
+					"text": "ach",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 460
+					},
+					"id": 608,
+					"p": 0.54344,
+					"t_dtw": 40
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:00,550",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 550,
+						"to": 580
+					},
+					"id": 2164,
+					"p": 0.75418,
+					"t_dtw": 52
+				},
+				{
+					"text": " stellen",
+					"timestamps": {
+						"from": "00:00:00,580",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 580,
+						"to": 780
+					},
+					"id": 24407,
+					"p": 0.0406565,
+					"t_dtw": 72
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 890
+					},
+					"id": 13,
+					"p": 0.816225,
+					"t_dtw": 86
+				},
+				{
+					"text": "[_TT_45]",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 900
+					},
+					"id": 50410,
+					"p": 0.62453,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

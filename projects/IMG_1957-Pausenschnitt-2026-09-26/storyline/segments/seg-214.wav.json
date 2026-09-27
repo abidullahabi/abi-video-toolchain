@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,960"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1960
+			},
+			"text": " Es gibt kein beschissenes Gefühl.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.967663,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 140
+					},
+					"id": 2313,
+					"p": 0.766906,
+					"t_dtw": 16
+				},
+				{
+					"text": " gibt",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 420
+					},
+					"id": 6089,
+					"p": 0.995545,
+					"t_dtw": 30
+				},
+				{
+					"text": " kein",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 700
+					},
+					"id": 13424,
+					"p": 0.966877,
+					"t_dtw": 52
+				},
+				{
+					"text": " besch",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:01,050"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 1050
+					},
+					"id": 17498,
+					"p": 0.873003,
+					"t_dtw": 74
+				},
+				{
+					"text": "issen",
+					"timestamps": {
+						"from": "00:00:01,050",
+						"to": "00:00:01,390"
+					},
+					"offsets": {
+						"from": 1050,
+						"to": 1390
+					},
+					"id": 10987,
+					"p": 0.575268,
+					"t_dtw": 88
+				},
+				{
+					"text": "es",
+					"timestamps": {
+						"from": "00:00:01,390",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1390,
+						"to": 1520
+					},
+					"id": 279,
+					"p": 0.990656,
+					"t_dtw": 106
+				},
+				{
+					"text": " Gefühl",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1700
+					},
+					"id": 29715,
+					"p": 0.990711,
+					"t_dtw": 140
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:01,960"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 1960
+					},
+					"id": 13,
+					"p": 0.722681,
+					"t_dtw": 156
+				},
+				{
+					"text": "[_TT_98]",
+					"timestamps": {
+						"from": "00:00:01,960",
+						"to": "00:00:01,960"
+					},
+					"offsets": {
+						"from": 1960,
+						"to": 1960
+					},
+					"id": 50463,
+					"p": 0.612739,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,380"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1380
+			},
+			"text": " Ja, warum wird man nicht jünger denn dann?",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.978582,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ja",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,070"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 70
+					},
+					"id": 3530,
+					"p": 0.198294,
+					"t_dtw": -1
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 140
+					},
+					"id": 11,
+					"p": 0.83457,
+					"t_dtw": -1
+				},
+				{
+					"text": " warum",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 330
+					},
+					"id": 24331,
+					"p": 0.823773,
+					"t_dtw": -1
+				},
+				{
+					"text": " wird",
+					"timestamps": {
+						"from": "00:00:00,330",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 330,
+						"to": 470
+					},
+					"id": 4578,
+					"p": 0.390811,
+					"t_dtw": -1
+				},
+				{
+					"text": " man",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 580
+					},
+					"id": 587,
+					"p": 0.780582,
+					"t_dtw": -1
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 780
+					},
+					"id": 1979,
+					"p": 0.957726,
+					"t_dtw": -1
+				},
+				{
+					"text": " j",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 810
+					},
+					"id": 361,
+					"p": 0.984329,
+					"t_dtw": -1
+				},
+				{
+					"text": "üng",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:00,920"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 920
+					},
+					"id": 36216,
+					"p": 0.999359,
+					"t_dtw": -1
+				},
+				{
+					"text": "er",
+					"timestamps": {
+						"from": "00:00:00,920",
+						"to": "00:00:00,990"
+					},
+					"offsets": {
+						"from": 920,
+						"to": 990
+					},
+					"id": 260,
+					"p": 0.99671,
+					"t_dtw": -1
+				},
+				{
+					"text": " denn",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 1140
+					},
+					"id": 10471,
+					"p": 0.262075,
+					"t_dtw": -1
+				},
+				{
+					"text": " dann",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,220"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1220
+					},
+					"id": 3594,
+					"p": 0.0655599,
+					"t_dtw": -1
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1360
+					},
+					"id": 30,
+					"p": 0.850077,
+					"t_dtw": -1
+				},
+				{
+					"text": "[_TT_69]",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1380
+					},
+					"id": 50434,
+					"p": 0.30851,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

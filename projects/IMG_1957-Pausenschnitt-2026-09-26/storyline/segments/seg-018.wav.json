@@ -1,0 +1,283 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,500"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3500
+			},
+			"text": " Fang so früh an mit deiner Therapie, wie es nun geht.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.977135,
+					"t_dtw": -1
+				},
+				{
+					"text": " Fang",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 360
+					},
+					"id": 25409,
+					"p": 0.855322,
+					"t_dtw": 28
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 610
+					},
+					"id": 370,
+					"p": 0.983404,
+					"t_dtw": 64
+				},
+				{
+					"text": " früh",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 1020
+					},
+					"id": 45029,
+					"p": 0.996791,
+					"t_dtw": 96
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,220"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1220
+					},
+					"id": 364,
+					"p": 0.9914,
+					"t_dtw": 134
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:01,220",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1220,
+						"to": 1520
+					},
+					"id": 2194,
+					"p": 0.974797,
+					"t_dtw": 156
+				},
+				{
+					"text": " de",
+					"timestamps": {
+						"from": "00:00:01,570",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1570,
+						"to": 1620
+					},
+					"id": 368,
+					"p": 0.521924,
+					"t_dtw": 164
+				},
+				{
+					"text": "iner",
+					"timestamps": {
+						"from": "00:00:01,620",
+						"to": "00:00:01,760"
+					},
+					"offsets": {
+						"from": 1620,
+						"to": 1760
+					},
+					"id": 4564,
+					"p": 0.999922,
+					"t_dtw": 174
+				},
+				{
+					"text": " Therap",
+					"timestamps": {
+						"from": "00:00:01,760",
+						"to": "00:00:02,110"
+					},
+					"offsets": {
+						"from": 1760,
+						"to": 2110
+					},
+					"id": 36812,
+					"p": 0.980943,
+					"t_dtw": 208
+				},
+				{
+					"text": "ie",
+					"timestamps": {
+						"from": "00:00:02,210",
+						"to": "00:00:02,360"
+					},
+					"offsets": {
+						"from": 2210,
+						"to": 2360
+					},
+					"id": 414,
+					"p": 0.999186,
+					"t_dtw": 232
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,360",
+						"to": "00:00:02,520"
+					},
+					"offsets": {
+						"from": 2360,
+						"to": 2520
+					},
+					"id": 11,
+					"p": 0.589905,
+					"t_dtw": 246
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:02,520",
+						"to": "00:00:02,760"
+					},
+					"offsets": {
+						"from": 2520,
+						"to": 2760
+					},
+					"id": 3355,
+					"p": 0.950734,
+					"t_dtw": 254
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:02,760",
+						"to": "00:00:02,920"
+					},
+					"offsets": {
+						"from": 2760,
+						"to": 2920
+					},
+					"id": 785,
+					"p": 0.993449,
+					"t_dtw": 280
+				},
+				{
+					"text": " nun",
+					"timestamps": {
+						"from": "00:00:02,920",
+						"to": "00:00:03,160"
+					},
+					"offsets": {
+						"from": 2920,
+						"to": 3160
+					},
+					"id": 8905,
+					"p": 0.788428,
+					"t_dtw": 298
+				},
+				{
+					"text": " geht",
+					"timestamps": {
+						"from": "00:00:03,160",
+						"to": "00:00:03,350"
+					},
+					"offsets": {
+						"from": 3160,
+						"to": 3350
+					},
+					"id": 7095,
+					"p": 0.99128,
+					"t_dtw": 332
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,490",
+						"to": "00:00:03,490"
+					},
+					"offsets": {
+						"from": 3490,
+						"to": 3490
+					},
+					"id": 13,
+					"p": 0.965029,
+					"t_dtw": 346
+				},
+				{
+					"text": "[_TT_175]",
+					"timestamps": {
+						"from": "00:00:03,500",
+						"to": "00:00:03,500"
+					},
+					"offsets": {
+						"from": 3500,
+						"to": 3500
+					},
+					"id": 50540,
+					"p": 0.470102,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

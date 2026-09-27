@@ -1,0 +1,297 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,940"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2940
+			},
+			"text": " Dann kannst du erst richtig anfangen, dein eigenes Leben zu gestalten.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.987197,
+					"t_dtw": -1
+				},
+				{
+					"text": " Dann",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 200
+					},
+					"id": 7455,
+					"p": 0.49747,
+					"t_dtw": 18
+				},
+				{
+					"text": " kannst",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 500
+					},
+					"id": 20853,
+					"p": 0.991745,
+					"t_dtw": 44
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 600
+					},
+					"id": 1581,
+					"p": 0.96528,
+					"t_dtw": 50
+				},
+				{
+					"text": " erst",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,800"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 800
+					},
+					"id": 11301,
+					"p": 0.991019,
+					"t_dtw": 64
+				},
+				{
+					"text": " richtig",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:01,150"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 1150
+					},
+					"id": 13129,
+					"p": 0.983656,
+					"t_dtw": 90
+				},
+				{
+					"text": " anf",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,300"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1300
+					},
+					"id": 33709,
+					"p": 0.995431,
+					"t_dtw": 128
+				},
+				{
+					"text": "angen",
+					"timestamps": {
+						"from": "00:00:01,300",
+						"to": "00:00:01,550"
+					},
+					"offsets": {
+						"from": 1300,
+						"to": 1550
+					},
+					"id": 10784,
+					"p": 0.999651,
+					"t_dtw": 148
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,650",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 1650,
+						"to": 1650
+					},
+					"id": 11,
+					"p": 0.941967,
+					"t_dtw": 164
+				},
+				{
+					"text": " dein",
+					"timestamps": {
+						"from": "00:00:01,650",
+						"to": "00:00:01,840"
+					},
+					"offsets": {
+						"from": 1650,
+						"to": 1840
+					},
+					"id": 25641,
+					"p": 0.777264,
+					"t_dtw": 174
+				},
+				{
+					"text": " eigen",
+					"timestamps": {
+						"from": "00:00:01,840",
+						"to": "00:00:02,040"
+					},
+					"offsets": {
+						"from": 1840,
+						"to": 2040
+					},
+					"id": 10446,
+					"p": 0.99071,
+					"t_dtw": 194
+				},
+				{
+					"text": "es",
+					"timestamps": {
+						"from": "00:00:02,110",
+						"to": "00:00:02,160"
+					},
+					"offsets": {
+						"from": 2110,
+						"to": 2160
+					},
+					"id": 279,
+					"p": 0.999933,
+					"t_dtw": 206
+				},
+				{
+					"text": " Leben",
+					"timestamps": {
+						"from": "00:00:02,160",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2160,
+						"to": 2370
+					},
+					"id": 15399,
+					"p": 0.992144,
+					"t_dtw": 226
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:02,380",
+						"to": "00:00:02,480"
+					},
+					"offsets": {
+						"from": 2380,
+						"to": 2480
+					},
+					"id": 2164,
+					"p": 0.990166,
+					"t_dtw": 242
+				},
+				{
+					"text": " gest",
+					"timestamps": {
+						"from": "00:00:02,480",
+						"to": "00:00:02,670"
+					},
+					"offsets": {
+						"from": 2480,
+						"to": 2670
+					},
+					"id": 7219,
+					"p": 0.997858,
+					"t_dtw": 262
+				},
+				{
+					"text": "alten",
+					"timestamps": {
+						"from": "00:00:02,670",
+						"to": "00:00:02,770"
+					},
+					"offsets": {
+						"from": 2670,
+						"to": 2770
+					},
+					"id": 23276,
+					"p": 0.999731,
+					"t_dtw": 284
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,930",
+						"to": "00:00:02,930"
+					},
+					"offsets": {
+						"from": 2930,
+						"to": 2930
+					},
+					"id": 13,
+					"p": 0.950139,
+					"t_dtw": 290
+				},
+				{
+					"text": "[_TT_147]",
+					"timestamps": {
+						"from": "00:00:02,940",
+						"to": "00:00:02,940"
+					},
+					"offsets": {
+						"from": 2940,
+						"to": 2940
+					},
+					"id": 50512,
+					"p": 0.396472,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

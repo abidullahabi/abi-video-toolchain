@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1000
+			},
+			"text": " und genießt die Zeit.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.813395,
+					"t_dtw": -1
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 100
+					},
+					"id": 674,
+					"p": 0.511832,
+					"t_dtw": 18
+				},
+				{
+					"text": " gen",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 300
+					},
+					"id": 1049,
+					"p": 0.989491,
+					"t_dtw": 28
+				},
+				{
+					"text": "ieß",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 420
+					},
+					"id": 39245,
+					"p": 0.97329,
+					"t_dtw": 44
+				},
+				{
+					"text": "t",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 460
+					},
+					"id": 83,
+					"p": 0.717923,
+					"t_dtw": 56
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,460",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 460,
+						"to": 500
+					},
+					"id": 978,
+					"p": 0.988431,
+					"t_dtw": 76
+				},
+				{
+					"text": " Zeit",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,820"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 820
+					},
+					"id": 9394,
+					"p": 0.984994,
+					"t_dtw": 98
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 980
+					},
+					"id": 13,
+					"p": 0.712412,
+					"t_dtw": 98
+				},
+				{
+					"text": "[_TT_50]",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1000
+					},
+					"id": 50415,
+					"p": 0.0770854,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

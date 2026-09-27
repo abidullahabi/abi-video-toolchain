@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,820"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2820
+			},
+			"text": " ist natürlich auch stark auf Cloud ausgerichtet, also wenn du es nutzt.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.91932,
+					"t_dtw": -1
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 140
+					},
+					"id": 1418,
+					"p": 0.176018,
+					"t_dtw": 34
+				},
+				{
+					"text": " natürlich",
+					"timestamps": {
+						"from": "00:00:00,260",
+						"to": "00:00:00,570"
+					},
+					"offsets": {
+						"from": 260,
+						"to": 570
+					},
+					"id": 8762,
+					"p": 0.665332,
+					"t_dtw": 56
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,570",
+						"to": "00:00:00,730"
+					},
+					"offsets": {
+						"from": 570,
+						"to": 730
+					},
+					"id": 2168,
+					"p": 0.951542,
+					"t_dtw": 68
+				},
+				{
+					"text": " stark",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 980
+					},
+					"id": 17417,
+					"p": 0.977586,
+					"t_dtw": 90
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,050"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1050
+					},
+					"id": 2501,
+					"p": 0.9813,
+					"t_dtw": 110
+				},
+				{
+					"text": " Cloud",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1380
+					},
+					"id": 8061,
+					"p": 0.928741,
+					"t_dtw": 128
+				},
+				{
+					"text": " aus",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,490"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1490
+					},
+					"id": 3437,
+					"p": 0.971872,
+					"t_dtw": 152
+				},
+				{
+					"text": "ger",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1650
+					},
+					"id": 1321,
+					"p": 0.998978,
+					"t_dtw": 172
+				},
+				{
+					"text": "ichtet",
+					"timestamps": {
+						"from": "00:00:01,650",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1650,
+						"to": 2000
+					},
+					"id": 40387,
+					"p": 0.991734,
+					"t_dtw": 186
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,080"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2080
+					},
+					"id": 11,
+					"p": 0.527911,
+					"t_dtw": 202
+				},
+				{
+					"text": " also",
+					"timestamps": {
+						"from": "00:00:02,080",
+						"to": "00:00:02,240"
+					},
+					"offsets": {
+						"from": 2080,
+						"to": 2240
+					},
+					"id": 611,
+					"p": 0.613447,
+					"t_dtw": 212
+				},
+				{
+					"text": " wenn",
+					"timestamps": {
+						"from": "00:00:02,240",
+						"to": "00:00:02,340"
+					},
+					"offsets": {
+						"from": 2240,
+						"to": 2340
+					},
+					"id": 4797,
+					"p": 0.966293,
+					"t_dtw": 224
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:02,440",
+						"to": "00:00:02,480"
+					},
+					"offsets": {
+						"from": 2440,
+						"to": 2480
+					},
+					"id": 1581,
+					"p": 0.814563,
+					"t_dtw": 232
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:02,480",
+						"to": "00:00:02,560"
+					},
+					"offsets": {
+						"from": 2480,
+						"to": 2560
+					},
+					"id": 785,
+					"p": 0.843042,
+					"t_dtw": 240
+				},
+				{
+					"text": " nut",
+					"timestamps": {
+						"from": "00:00:02,560",
+						"to": "00:00:02,620"
+					},
+					"offsets": {
+						"from": 2560,
+						"to": 2620
+					},
+					"id": 5393,
+					"p": 0.736879,
+					"t_dtw": 256
+				},
+				{
+					"text": "zt",
+					"timestamps": {
+						"from": "00:00:02,620",
+						"to": "00:00:02,710"
+					},
+					"offsets": {
+						"from": 2620,
+						"to": 2710
+					},
+					"id": 2682,
+					"p": 0.947724,
+					"t_dtw": 272
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,810",
+						"to": "00:00:02,810"
+					},
+					"offsets": {
+						"from": 2810,
+						"to": 2810
+					},
+					"id": 13,
+					"p": 0.552843,
+					"t_dtw": 280
+				},
+				{
+					"text": "[_TT_141]",
+					"timestamps": {
+						"from": "00:00:02,820",
+						"to": "00:00:02,820"
+					},
+					"offsets": {
+						"from": 2820,
+						"to": 2820
+					},
+					"id": 50505,
+					"p": 0.0276222,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

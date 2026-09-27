@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,180"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1180
+			},
+			"text": " damit der Glückliche durchs Leben geht.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.908717,
+					"t_dtw": -1
+				},
+				{
+					"text": " damit",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 170
+					},
+					"id": 9479,
+					"p": 0.919266,
+					"t_dtw": 18
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 270
+					},
+					"id": 1163,
+					"p": 0.75572,
+					"t_dtw": 32
+				},
+				{
+					"text": " Glück",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,440"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 440
+					},
+					"id": 33508,
+					"p": 0.749701,
+					"t_dtw": 46
+				},
+				{
+					"text": "liche",
+					"timestamps": {
+						"from": "00:00:00,440",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 440,
+						"to": 610
+					},
+					"id": 10185,
+					"p": 0.486456,
+					"t_dtw": 60
+				},
+				{
+					"text": " durch",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 780
+					},
+					"id": 7131,
+					"p": 0.994699,
+					"t_dtw": 76
+				},
+				{
+					"text": "s",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,790"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 790
+					},
+					"id": 82,
+					"p": 0.983367,
+					"t_dtw": 82
+				},
+				{
+					"text": " Leben",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 980
+					},
+					"id": 15399,
+					"p": 0.999882,
+					"t_dtw": 98
+				},
+				{
+					"text": " geht",
+					"timestamps": {
+						"from": "00:00:00,980",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 980,
+						"to": 1120
+					},
+					"id": 7095,
+					"p": 0.999201,
+					"t_dtw": 116
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,180",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1180,
+						"to": 1180
+					},
+					"id": 13,
+					"p": 0.95657,
+					"t_dtw": 116
+				},
+				{
+					"text": "[_TT_59]",
+					"timestamps": {
+						"from": "00:00:01,180",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1180,
+						"to": 1180
+					},
+					"id": 50424,
+					"p": 0.710882,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

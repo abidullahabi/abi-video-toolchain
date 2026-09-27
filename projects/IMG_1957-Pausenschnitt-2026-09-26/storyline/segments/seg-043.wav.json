@@ -1,0 +1,255 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "../../../../tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,200"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2200
+			},
+			"text": " Heilung braucht Zeit, manchmal sogar lebenslange Zeit.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.955214,
+					"t_dtw": -1
+				},
+				{
+					"text": " Heil",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 180
+					},
+					"id": 45650,
+					"p": 0.85734,
+					"t_dtw": 22
+				},
+				{
+					"text": "ung",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 300
+					},
+					"id": 1063,
+					"p": 0.968936,
+					"t_dtw": 30
+				},
+				{
+					"text": " braucht",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 630
+					},
+					"id": 22623,
+					"p": 0.994746,
+					"t_dtw": 54
+				},
+				{
+					"text": " Zeit",
+					"timestamps": {
+						"from": "00:00:00,630",
+						"to": "00:00:00,800"
+					},
+					"offsets": {
+						"from": 630,
+						"to": 800
+					},
+					"id": 9394,
+					"p": 0.980303,
+					"t_dtw": 72
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 900
+					},
+					"id": 11,
+					"p": 0.642525,
+					"t_dtw": 84
+				},
+				{
+					"text": " manchmal",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 1260
+					},
+					"id": 32092,
+					"p": 0.9877,
+					"t_dtw": 100
+				},
+				{
+					"text": " sogar",
+					"timestamps": {
+						"from": "00:00:01,260",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1260,
+						"to": 1460
+					},
+					"id": 19485,
+					"p": 0.980916,
+					"t_dtw": 122
+				},
+				{
+					"text": " leb",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,610"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1610
+					},
+					"id": 17111,
+					"p": 0.930093,
+					"t_dtw": 142
+				},
+				{
+					"text": "ens",
+					"timestamps": {
+						"from": "00:00:01,610",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1610,
+						"to": 1740
+					},
+					"id": 694,
+					"p": 0.999224,
+					"t_dtw": 152
+				},
+				{
+					"text": "l",
+					"timestamps": {
+						"from": "00:00:01,740",
+						"to": "00:00:01,770"
+					},
+					"offsets": {
+						"from": 1740,
+						"to": 1770
+					},
+					"id": 75,
+					"p": 0.977256,
+					"t_dtw": 164
+				},
+				{
+					"text": "ange",
+					"timestamps": {
+						"from": "00:00:01,780",
+						"to": "00:00:01,960"
+					},
+					"offsets": {
+						"from": 1780,
+						"to": 1960
+					},
+					"id": 933,
+					"p": 0.994962,
+					"t_dtw": 172
+				},
+				{
+					"text": " Zeit",
+					"timestamps": {
+						"from": "00:00:01,960",
+						"to": "00:00:02,070"
+					},
+					"offsets": {
+						"from": 1960,
+						"to": 2070
+					},
+					"id": 9394,
+					"p": 0.994683,
+					"t_dtw": 200
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,200",
+						"to": "00:00:02,200"
+					},
+					"offsets": {
+						"from": 2200,
+						"to": 2200
+					},
+					"id": 13,
+					"p": 0.899031,
+					"t_dtw": 216
+				},
+				{
+					"text": "[_TT_110]",
+					"timestamps": {
+						"from": "00:00:02,200",
+						"to": "00:00:02,200"
+					},
+					"offsets": {
+						"from": 2200,
+						"to": 2200
+					},
+					"id": 50475,
+					"p": 0.332448,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

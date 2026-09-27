@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,240"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1240
+			},
+			"text": " [MUSIK]",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.968659,
+					"t_dtw": -1
+				},
+				{
+					"text": " [",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 150
+					},
+					"id": 542,
+					"p": 0.0395057,
+					"t_dtw": 116
+				},
+				{
+					"text": "M",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,340"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 340
+					},
+					"id": 44,
+					"p": 0.151501,
+					"t_dtw": 116
+				},
+				{
+					"text": "US",
+					"timestamps": {
+						"from": "00:00:00,340",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 340,
+						"to": 530
+					},
+					"id": 3447,
+					"p": 0.730214,
+					"t_dtw": 116
+				},
+				{
+					"text": "IK",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:01,040"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 1040
+					},
+					"id": 22670,
+					"p": 0.958068,
+					"t_dtw": 116
+				},
+				{
+					"text": "]",
+					"timestamps": {
+						"from": "00:00:01,040",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 1040,
+						"to": 1190
+					},
+					"id": 60,
+					"p": 0.799395,
+					"t_dtw": 116
+				},
+				{
+					"text": "[_TT_62]",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1240
+					},
+					"id": 50426,
+					"p": 0.004949,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

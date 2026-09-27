@@ -1,0 +1,297 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,840"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2840
+			},
+			"text": " Schreiben wir einen Kommentar oder DM, ansonsten voll nicht vergessen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.969186,
+					"t_dtw": -1
+				},
+				{
+					"text": " Sch",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 180
+					},
+					"id": 2065,
+					"p": 0.865434,
+					"t_dtw": 24
+				},
+				{
+					"text": "reiben",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,550"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 550
+					},
+					"id": 25946,
+					"p": 0.580026,
+					"t_dtw": 32
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:00,550",
+						"to": "00:00:00,730"
+					},
+					"offsets": {
+						"from": 550,
+						"to": 730
+					},
+					"id": 1987,
+					"p": 0.286469,
+					"t_dtw": 42
+				},
+				{
+					"text": " einen",
+					"timestamps": {
+						"from": "00:00:00,730",
+						"to": "00:00:01,040"
+					},
+					"offsets": {
+						"from": 730,
+						"to": 1040
+					},
+					"id": 4891,
+					"p": 0.476949,
+					"t_dtw": 46
+				},
+				{
+					"text": " Komment",
+					"timestamps": {
+						"from": "00:00:01,040",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 1040,
+						"to": 1410
+					},
+					"id": 33708,
+					"p": 0.932088,
+					"t_dtw": 62
+				},
+				{
+					"text": "ar",
+					"timestamps": {
+						"from": "00:00:01,510",
+						"to": "00:00:01,590"
+					},
+					"offsets": {
+						"from": 1510,
+						"to": 1590
+					},
+					"id": 289,
+					"p": 0.891252,
+					"t_dtw": 72
+				},
+				{
+					"text": " oder",
+					"timestamps": {
+						"from": "00:00:01,590",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1590,
+						"to": 1700
+					},
+					"id": 4513,
+					"p": 0.389932,
+					"t_dtw": 84
+				},
+				{
+					"text": " DM",
+					"timestamps": {
+						"from": "00:00:01,830",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1830,
+						"to": 2000
+					},
+					"id": 15322,
+					"p": 0.583365,
+					"t_dtw": 104
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,050",
+						"to": "00:00:02,050"
+					},
+					"offsets": {
+						"from": 2050,
+						"to": 2050
+					},
+					"id": 11,
+					"p": 0.388018,
+					"t_dtw": 120
+				},
+				{
+					"text": " ans",
+					"timestamps": {
+						"from": "00:00:02,120",
+						"to": "00:00:02,120"
+					},
+					"offsets": {
+						"from": 2120,
+						"to": 2120
+					},
+					"id": 1567,
+					"p": 0.519172,
+					"t_dtw": 130
+				},
+				{
+					"text": "onst",
+					"timestamps": {
+						"from": "00:00:02,160",
+						"to": "00:00:02,220"
+					},
+					"offsets": {
+						"from": 2160,
+						"to": 2220
+					},
+					"id": 4068,
+					"p": 0.984958,
+					"t_dtw": 136
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:02,220",
+						"to": "00:00:02,270"
+					},
+					"offsets": {
+						"from": 2220,
+						"to": 2270
+					},
+					"id": 268,
+					"p": 0.99281,
+					"t_dtw": 166
+				},
+				{
+					"text": " voll",
+					"timestamps": {
+						"from": "00:00:02,270",
+						"to": "00:00:02,320"
+					},
+					"offsets": {
+						"from": 2270,
+						"to": 2320
+					},
+					"id": 15593,
+					"p": 0.139548,
+					"t_dtw": 224
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:02,430",
+						"to": "00:00:02,500"
+					},
+					"offsets": {
+						"from": 2430,
+						"to": 2500
+					},
+					"id": 1979,
+					"p": 0.944919,
+					"t_dtw": 236
+				},
+				{
+					"text": " vergessen",
+					"timestamps": {
+						"from": "00:00:02,500",
+						"to": "00:00:02,710"
+					},
+					"offsets": {
+						"from": 2500,
+						"to": 2710
+					},
+					"id": 42418,
+					"p": 0.998592,
+					"t_dtw": 262
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,710",
+						"to": "00:00:02,760"
+					},
+					"offsets": {
+						"from": 2710,
+						"to": 2760
+					},
+					"id": 13,
+					"p": 0.655426,
+					"t_dtw": 282
+				},
+				{
+					"text": "[_TT_142]",
+					"timestamps": {
+						"from": "00:00:02,840",
+						"to": "00:00:02,840"
+					},
+					"offsets": {
+						"from": 2840,
+						"to": 2840
+					},
+					"id": 50506,
+					"p": 0.0369054,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}
