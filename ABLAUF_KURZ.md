@@ -1,8 +1,55 @@
 # Kurzablauf: Rohvideo → eingeplanter Post (DESIGN.md 2.2)
 
-Ziel: 60 s Video in etwa 30 min, ohne Abdullahs Prüfzeit. Diese Seite reicht für einen normalen Durchlauf. `CONTENT_WORKFLOW.md` und `DESIGN.md` (Drive, `Content_Creation/Anleitung`) sind maßgeblich und werden **nur bei Unklarheit** nachgelesen. Arbeitsort: `~/Projekte/abi-video-toolchain`. `DRIVE` = `…/Social Media/Content_Creation`.
+**Ziel: ein 60-s-Video in etwa 20 min für KI und Rechner zusammen, höchstens 30 min, ohne Abdullahs Prüfzeit.** Diese Seite reicht für einen normalen Durchlauf. Arbeitsort: `~/Projekte/abi-video-toolchain`. `DRIVE` = `…/Social Media/Content_Creation`.
 
 Jeder Befehl unten schreibt Start und Ende in `projects/<P>/logs/zeiten.json`.
+
+## 0. Regeln für jeden Durchlauf (Gesamtauftrag Tempo, 27.09.2026)
+
+**Lesen.** Nur diese Seite und `DESIGN.md`. `CONTENT_WORKFLOW.md` nur bei Unklarheit, dann gezielt den Abschnitt. Bilder prüfst du über Kontaktblätter (`review/storyboard.jpg`, `review/kontaktblatt.jpg`), nicht über Serien von Einzelbildern.
+
+**Planung.** Ein Planer schreibt `design-plan.json`, danach prüft ein Prüfer. Keine Agentenschwärme, keine Mehrfachentwürfe mit Bewertung und Synthese (Fast 30: 11 Agenten, 27,5 min).
+
+**Zeitbudget je Schritt (60 s Video).** Ist ein Schritt doppelt so lang wie sein Budget oder dauert eine Fehlersuche länger als 10 min: anhalten und Abdullah kurz melden (was hakt, was du vorschlägst). Nicht weiter basteln.
+
+| Schritt | Budget |
+|---|---|
+| 1 Auftrag und Vorprüfung | 1 min |
+| 2 Projekt vorbereiten (Kamerabild, Ton, Wörter, Gesichter) und Transkript prüfen | 4 min |
+| 3 Plan: Entwurf, Planer, Prüfer | 6 min |
+| 4 Storyboard (mit Zwischenbildern) und Freigabepaket | 2 min |
+| 5 Bauen (Render, Export, Prüfungen) | 4 min |
+| 6 Freigabepaket Video | 1 min |
+| 7 Auslieferung und Notion | 2 min |
+
+**Abnahme.**
+- Abdullah bekommt das Storyboard. Bei eigenem Schnitt zusätzlich eine Vorschau in halber Auflösung (`node workflow.mjs vorschau "<P>"`), weil er Anschlüsse und Timing nur im Bewegtbild beurteilen kann.
+- Bitte ihn, seine Rückmeldung gesammelt in **einer** Nachricht zu schicken. Einzelne Nachbesserungsrunden nach fertigem Render kosteten beim Bewerbungsgespräch rund 100 min.
+- Den finalen Build darfst du im Hintergrund starten, während er die Vorschau ansieht. Ändert er etwas, rechnet der nächste Build nur die betroffenen Abschnitte neu.
+- **Eingeplant wird nie vor seinem OK.** Auch ein „soll am Termin X raus“ ist keine Freigabe einer Fassung, die er noch nicht gesehen hat.
+
+**Ende.** Keine Stille vor dem CTA. Der letzte Satz endet knapp nach dem Wort, der CTA folgt ohne Pause. Schluss, bevor die Geste endet (Daumen sinkt, Lacher ist vorbei), bei einem Anhang etwa 0,8 s nach dem letzten Wort.
+
+**Arbeitsspeicher.** Vor jedem Render prüft das Werkzeug den verfügbaren Speicher. Reicht er nicht für zwei Render-Prozesse, hält es an und meldet das. Dann bittest du Abdullah kurz, Programme zu schließen, statt mit einem Prozess doppelt so lange zu rendern.
+
+**Werkzeugcode.** Wer Werkzeugcode ändert, arbeitet in einem eigenen Arbeitsordner (git worktree), siehe `CLAUDE.md`. Videoprojekte bleiben im gemeinsamen `projects/` des Hauptordners.
+
+**Freigaben.** Folgende Befehle kann Abdullah einmalig über `/permissions` freigeben, damit ein Durchlauf ohne Rückfragen läuft. Die KI schlägt die Liste nur vor und trägt sie nie selbst ein.
+
+```
+Bash(node workflow.mjs *)
+Bash(node ausliefern.mjs *)
+Bash(node zernio-upload.mjs *)
+Bash(node pruefungen.mjs *)
+Bash(node aufraeumen.mjs *)
+Bash(tools/bin/ffmpeg *)
+Bash(tools/bin/ffprobe *)
+Bash(git add *)
+Bash(git commit *)
+Bash(git push)
+```
+
+Die Regeln gelten, wenn der Befehl im Hauptordner `~/Projekte/abi-video-toolchain` läuft. `git add` nur mit eigenen Pfaden, nie `-A`.
 
 ## 1. Auftrag und Vorprüfung (≈ 2 min)
 

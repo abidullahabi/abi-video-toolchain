@@ -34,7 +34,8 @@ Diese Datei enthält **keine eigenen Gestaltungswerte** und keine Regeln, die do
 
 1. Vor jeder Änderung `werkzeug-status.json` lesen. Steht dort `"status": "in_arbeit"` mit einem anderen `agent`, nichts ändern und Abdullah fragen.
 2. Dann setzen: `{"status": "in_arbeit", "agent": "claude" | "codex", "zweig": "<Zweig>", "seit": "<ISO-Zeit>", "aufgabe": "<kurz>"}`. Nach Abschluss `"status": "frei"` mit Agent, Zweig und Zeit. Die Datei wird **nie gelöscht**, nur überschrieben.
-3. Geändert wird auf einem eigenen Zweig: `claude/<thema>` oder `codex/<thema>`. In `main` kommt eine Änderung erst nach bestandenem Test; den Test im Commit nennen.
+3. Geändert wird auf einem eigenen Zweig: `claude/<thema>` oder `codex/<thema>`, **in einem eigenen Arbeitsordner**: `git worktree add ../abi-video-toolchain-<thema> -b claude/<thema>`. Der Hauptordner `~/Projekte/abi-video-toolchain` bleibt auf `main`, denn dort laufen die Videos der anderen Sitzungen. `tools`, `node_modules` und `analysis` im Arbeitsordner sind Verweise auf den Hauptordner. Videoprojekte bleiben im gemeinsamen `projects/` des Hauptordners; die Werkzeuge im Arbeitsordner lesen und schreiben dort.
+4. In `main` kommt eine Änderung erst nach bestandenem Test und wenn kein Video `bearbeitung.status: "in_arbeit"` hat und kein Render läuft; den Test im Commit nennen. Danach den Arbeitsordner mit `git worktree remove` schließen.
 
 ### Sichern
 
@@ -69,4 +70,12 @@ Referenzprojekte aus `CONTENT_WORKFLOW.md` Abschnitt 12 nie ändern und nie dar�
 
 ## Videoproduktion
 
-Für einen kompletten Durchlauf von der Rohaufnahme bis zur Einplanung: `/video` (Claude Code).
+Für einen kompletten Durchlauf von der Rohaufnahme bis zur Einplanung: `/video` (Claude Code) bzw. `ABLAUF_KURZ.md`. Ziel: 60 s Video in etwa 20 min für KI und Rechner, höchstens 30 min.
+
+Kurz die Regeln aus `ABLAUF_KURZ.md` Abschnitt 0, die für jede KI gelten:
+
+- Lesen: nur `ABLAUF_KURZ.md` und `DESIGN.md`; `CONTENT_WORKFLOW.md` nur bei Unklarheit. Kontaktblätter statt Serien von Einzelbildern.
+- Planung: ein Planer, dann ein Prüfer. Keine Agentenschwärme.
+- Zeitbudget je Schritt. Doppelt überschritten oder Fehlersuche über 10 min: anhalten und Abdullah kurz melden.
+- Eingeplant wird nie vor Abdullahs OK. Seine Rückmeldung gesammelt in einer Nachricht erbitten.
+- Vor jedem Render den freien Arbeitsspeicher prüfen (das Werkzeug tut es); reicht er nicht für zwei Prozesse, Abdullah bitten, Programme zu schließen.

@@ -1,8 +1,8 @@
 {
-  "status": "frei",
+  "status": "in_arbeit",
   "agent": "claude",
-  "zweig": "main",
-  "seit": "2026-09-27T16:20:00Z",
-  "aufgabe": "Design 2.2 als Standardvorlage, Tempo-Befehle (storyboard, build, vorschau), paralleles Streaming — getestet mit Fast 30 und nach main gemergt",
+  "zweig": "claude/tempo-speicher",
+  "seit": "2026-09-27T18:25:00Z",
+  "aufgabe": "Gesamtauftrag Tempo (27.09.2026): Regeln, Prüfsummen-Cache, Storyboard mit Zwischenbildern, Abschnitts-Render, schlanker Export, Auslieferung in einem Befehl, Planentwurf, Messlauf. Arbeitsbaum ~/Projekte/abi-video-toolchain-tempo; Merge nach main erst nach Messlauf und wenn kein Video in Arbeit ist.",
   "hinweis": "Vor jeder Änderung am Werkzeugcode lesen und setzen (status in_arbeit/frei, agent, zweig, seit). Nie löschen, nur überschreiben."
 }

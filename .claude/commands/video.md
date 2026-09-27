@@ -4,7 +4,15 @@ description: Kompletter Videodurchlauf von der Rohaufnahme bis zur Zernio-Einpla
 
 # Videodurchlauf
 
-Führe die Schritte in dieser Reihenfolge aus. Für einen normalen Durchlauf reicht `ABLAUF_KURZ.md` im Repo (Befehle je Schritt). `CONTENT_WORKFLOW.md` und `DESIGN.md` im Drive-Ordner sind maßgeblich; lies sie nur bei Unklarheit nach. Diese Datei regelt nur den Ablauf und die Übergabepunkte.
+Führe die Schritte in dieser Reihenfolge aus. Für einen normalen Durchlauf reicht `ABLAUF_KURZ.md` im Repo (Befehle je Schritt). Lies dazu `DESIGN.md`; `CONTENT_WORKFLOW.md` nur bei Unklarheit, gezielt den Abschnitt. Diese Datei regelt nur den Ablauf und die Übergabepunkte.
+
+**Ziel: 60 s Video in etwa 20 min für KI und Rechner, höchstens 30 min.** Es gelten die Regeln aus `ABLAUF_KURZ.md` Abschnitt 0, vor allem:
+
+- Zeitbudget je Schritt. Doppelt überschritten oder Fehlersuche über 10 min: anhalten und Abi kurz melden.
+- Planung: ein Planer, dann ein Prüfer. Keine Agentenschwärme.
+- Kontaktblätter statt Serien von Einzelbildern.
+- Vor jedem Render prüft das Werkzeug den Arbeitsspeicher. Reicht er nicht für zwei Prozesse, bitte Abi kurz, Programme zu schließen.
+- Fehlen Freigaben für die Standardbefehle, schlag Abi die Liste aus `ABLAUF_KURZ.md` Abschnitt 0 für `/permissions` vor. Trag sie nie selbst ein.
 
 Der Notion-Nachlauf älterer Videos (veröffentlicht? → POSTED) gehört nicht mehr hierher, er ist eine eigene regelmäßige Aufgabe.
 
@@ -42,9 +50,10 @@ Standard ist ein reiner Gestaltungsauftrag. Die Aufnahme bleibt in Länge, Tempo
 Nach `ABLAUF_KURZ.md` Schritt 2 bis 5:
 
 1. Gestaltungsprojekt mit `designVersion: "2.2"`, Wörter mit `transcribe-words`, Korrekturen und Abmilderungen in `caption-edit-plan.json`, Followerstand in `follower-source.json`.
-2. **Plan statt Code:** nur `design-plan.json` (Texte, Zeiten, Elementtyp, Variante). Kein videospezifischer Code; fehlt ein Baustein, kommt er in `theme-composition-design22.mjs`.
+2. **Plan statt Code:** nur `design-plan.json` (Texte, Zeiten, Elementtyp, Variante). Ein Planer schreibt, ein Prüfer prüft, sonst niemand. Kein videospezifischer Code; fehlt ein Baustein, kommt er in `theme-composition-design22.mjs`.
+   Ende: keine Stille vor dem CTA, Schluss, bevor die Geste endet.
 3. Bei Grafiken: `node workflow.mjs green-screen "<P>" --review`.
-4. `node workflow.mjs storyboard "<P>"` → Kontaktblatt und Textliste an Abi. **Erst nach seinem OK weiter.**
+4. `node workflow.mjs storyboard "<P>"` → Kontaktblatt (mit Zwischenbildern der Animationen) und Textliste an Abi. Bei eigenem Schnitt zusätzlich `node workflow.mjs vorschau "<P>"` (halbe Auflösung). Bitte Abi, alle Änderungen gesammelt in einer Nachricht zu schicken. Den finalen Build darfst du im Hintergrund starten, während er ansieht. **Eingeplant wird erst nach seinem OK.**
 5. `node workflow.mjs build "<P>"` → ein Master, Upload-Export, Prüfungen, Kontaktblatt (≤ 12 Bilder), `review/build-bericht.json`.
 
 ## Schritt 4: Prüfung, harter Abbruchpunkt
