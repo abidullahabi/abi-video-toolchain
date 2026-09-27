@@ -8,7 +8,8 @@ from pathlib import Path
 W = Path('/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow')
 FFMPEG = W / 'tools/bin/ffmpeg'
 src = 'sources/IMG_1967.MOV'
-keep = [(k['start'], k['end']) for k in json.load(open('edl.json'))['keep']]
+EDL = json.load(open('edl.json'))['keep']
+keep = [(k['start'], k['end']) for k in EDL]
 cut_duration = sum(b - a for a, b in keep)
 
 def run(args, log):
@@ -20,9 +21,23 @@ def audio():
     parts, labels = [], []
     for i, (a, b) in enumerate(keep):
         last = i == len(keep) - 1
-        fo = 0.080 if last else 0.005
-        parts.append(f'[0:a:0]atrim=start={a:.6f}:end={b:.6f},asetpts=PTS-STARTPTS,'
-                     f'afade=t=in:st=0:d=0.005,afade=t=out:st={max(0.0, b - a - fo):.6f}:d={fo}[a{i}]')
+        fo = 0.080 if last else EDL[i].get('fadeOut', 0.005)
+        st = EDL[i].get('stretch')
+        if st:   # Laut dehnen (Tonhoehe bleibt): [a,von] + atempo([von,bis]) + [bis,audioEnd], exakt auf Bildlaenge b-a
+            ae = EDL[i]['audioEnd']; v0, v1 = st['von'], st['bis']
+            target = (b - a) - (v0 - a) - (ae - v1)
+            tempo = (v1 - v0) / target
+            EDL[i]['stretchTempo'] = round(tempo, 4)
+            parts.append(f'[0:a:0]atrim=start={a:.6f}:end={v0:.6f},asetpts=PTS-STARTPTS[s{i}a]')
+            parts.append(f'[0:a:0]atrim=start={v0 - 0.02:.6f}:end={v1 + 0.02:.6f},asetpts=PTS-STARTPTS,atempo={tempo:.5f},'
+                         f'atrim=start={0.02 / tempo:.6f}:end={0.02 / tempo + target:.6f},asetpts=PTS-STARTPTS[s{i}b]')
+            parts.append(f'[0:a:0]atrim=start={v1:.6f}:end={ae:.6f},asetpts=PTS-STARTPTS[s{i}c]')
+            parts.append(f'[s{i}a][s{i}b][s{i}c]concat=n=3:v=0:a=1,apad,atrim=end={b - a:.6f},'
+                         f'afade=t=in:st=0:d=0.005,afade=t=out:st={max(0.0, b - a - fo):.6f}:d={fo}[a{i}]')
+            print(json.dumps({'dehnung': {'von': v0, 'bis': v1, 'tempo': round(tempo, 4), 'neu_ms': round(target * 1000)}}))
+        else:
+            parts.append(f'[0:a:0]atrim=start={a:.6f}:end={b:.6f},asetpts=PTS-STARTPTS,'
+                         f'afade=t=in:st=0:d=0.005,afade=t=out:st={max(0.0, b - a - fo):.6f}:d={fo}[a{i}]')
         labels.append(f'[a{i}]')
     parts.append(f"{''.join(labels)}concat=n={len(keep)}:v=0:a=1[aout]")
     Path('cut-audio-filter.txt').write_text(';\n'.join(parts))
@@ -37,7 +52,7 @@ def video(name, width):
     sel, off, out_t = [], [], 0.0
     for a, b in keep:
         cond = f'gte(t,{a - eps:.6f})*lt(t,{b - eps:.6f})'
-        sel.append(cond); off.append(f'{cond}*{a - out_t:.6f}'); out_t += b - a
+        sel.append(cond); off.append(f"{cond.replace('(t,', '(T,')}*{a - out_t:.6f}"); out_t += b - a
     vf = (f"[0:v:0]select='{'+'.join(sel)}',setpts='PTS-({'+'.join(off)})/TB',fps=30,"
           f"scale={width}:-2:flags=lanczos,format=yuv420p[vout]")
     Path('cut-video-filter.txt').write_text(vf)

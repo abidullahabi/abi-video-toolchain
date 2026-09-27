@@ -84,10 +84,16 @@
   {
    "id": "ng-2",
    "a": 150.88,
-   "b": 153.4033,
+   "b": 153.47,
    "hardEnd": true,
    "text": "Gen AI for Everyone von Andrew Ng.",
-   "warum": "Sauberer Neuanfang. Davor 'Das Zertifikat, das Zertifikat heißt, das Gen, äh' (148,7-150,8 s) raus. Danach 'oder so heißt der' raus, Schnitt in der Senke bei 153,40 s."
+   "warum": "Sauberer Neuanfang, davor 'Das Zertifikat, das Zertifikat heißt, das Gen, äh' raus. 'oder so heißt der' raus. v2 (Abdullahs Wunsch 27.09.: 'Andrew Ng ein bisschen verlängern'): Ton bis 153,403 s (Senke vor 'oder'), gleichmäßiger Teil des Nasals 153,25-153,34 s gedehnt (atempo, Tonhöhe bleibt), Bild läuft bis 153,47 s weiter.",
+   "fadeOut": 0.012,
+   "audioEnd": 153.4033,
+   "stretch": {
+    "von": 153.25,
+    "bis": 153.34
+   }
   },
   {
    "id": "ng-3",
@@ -136,7 +142,8 @@
    "a": 208.9,
    "b": 209.82,
    "text": "Boah, hat sich gereimt, Digga.",
-   "warum": "Spontane Pointe, flüssig. Das 'Ähm' danach (210,4 s) raus."
+   "warum": "Spontane Pointe, flüssig. Kunstpause nach 'Boah' bleibt wie gesprochen. Das 'Ähm' danach (210,4 s) raus.",
+   "keepInner": true
   },
   {
    "id": "g-3",
@@ -225,10 +232,11 @@
   {
    "id": "cta-4",
    "a": 315.87,
-   "b": 317.6417,
+   "b": 317.4417,
    "hardEnd": true,
    "text": "Folgen nicht vergessen.",
-   "warum": "CTA mit Daumen hoch. Ende auf dem letzten Bild mit Lächeln und Daumen (317,61 s), bevor Augen und Hand sinken."
+   "warum": "CTA mit Daumen hoch. Ab 316,75 s stehen Daumen und Lächeln. Ende bei 317,44 s: gut 1 s nach dem letzten Wort, 0,7 s gehaltene Pose, deutlich bevor Augen und Hand bei 317,65 s sinken. Keine Pausenkürzung in der Schlusspose.",
+   "endHold": true
   }
  ],
  "raus_ohne_ersatz": [

@@ -39,7 +39,8 @@ export async function checkDesign22(project, { step = 1 } = {}) {
       const U = (els, p = 0) => { const r = els.map(e => e.getBoundingClientRect()); const x = Math.min(...r.map(b => b.x)), y = Math.min(...r.map(b => b.y)); return { x: x - p, y: y - p, w: Math.max(...r.map(b => b.right)) - x + 2 * p, h: Math.max(...r.map(b => b.bottom)) - y + 2 * p }; };
       const meet = (a, b) => a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
       // Sichtbar, wenn der Inhalt des Clips sichtbar ist (die Vorlage schaltet die Sichtbarkeit am Kind, HyperFrames den Clip).
-      const shown = el => { const c = el.firstElementChild; if (!c || cs(c).visibility !== 'visible') return false; for (let e = el; e && e.id !== 'root'; e = e.parentElement) { const s = cs(e); if (s.display === 'none' || +s.opacity < 0.001) return false; } return true; };
+      // Inhalt mit Deckkraft 0 gilt als nicht gezeigt: die Logo-Einblendung blendet den Inhalt von H1/Kapitel aus (DESIGN.md 14/15), der Rahmen bleibt.
+      const shown = el => { const c = el.firstElementChild; if (!c || cs(c).visibility !== 'visible' || +cs(c).opacity < 0.001) return false; for (let e = el; e && e.id !== 'root'; e = e.parentElement) { const s = cs(e); if (s.display === 'none' || +s.opacity < 0.001) return false; } return true; };
       const vis = els => [...els].filter(x => +cs(x).opacity > 0.001);
       // 4: Schriften geladen, keine Ersatzschrift.
       for (const f of ['900 64px "ABI Archivo"', '800 64px "ABI Archivo"', '700 24px "ABI Archivo"', '400 140px "ABI Gochi"']) if (!document.fonts.check(f)) err('schrift_fehlt', { f });
@@ -83,9 +84,12 @@ export async function checkDesign22(project, { step = 1 } = {}) {
           const b = box(el); if (!b || b.w < 1) continue;
           act.push({ id: el.id, k, b });
           // 2: gesperrte Zonen samt Kontur, Schatten und Animation; obere Zone (bis y 900) nutzbar x 108–972.
-          if (b.y < 249.5 || b.y + b.h > 1660.5 || b.x < 89.5) err('gesperrte_zone', { id: el.id, t: +t.toFixed(2), b });
-          if (b.y + b.h > 900.5 && b.x + b.w > 930.5) err('aktionsleiste', { id: el.id, t: +t.toFixed(2), b });
-          if (b.y < 900 && !['caption', 'outro-card', 'bubble'].includes(k) && (b.x < 107.5 || b.x + b.w > 972.5)) err('obere_zone', { id: el.id, t: +t.toFixed(2), b });
+          // Ausnahme nur für das Ausblenden (DESIGN.md 15: 0,18 s, 8 px nach oben): unter 20 % Gesamtdeckkraft ist das Element praktisch
+          // unsichtbar; eine H1 an y = 250 kreuzt die Linie sonst zwangsläufig im letzten Ausblendschritt.
+          let deck = 1; for (let e = el; e && e.id !== 'root'; e = e.parentElement) deck *= +cs(e).opacity; deck *= +cs(el.firstElementChild).opacity;
+          if (deck >= 0.2 && b.y < 249.5 || b.y + b.h > 1660.5 || b.x < 89.5) err('gesperrte_zone', { id: el.id, t: +t.toFixed(2), b });
+          if (deck >= 0.2 && b.y + b.h > 900.5 && b.x + b.w > 930.5) err('aktionsleiste', { id: el.id, t: +t.toFixed(2), b });
+          if (deck >= 0.2 && b.y < 900 && !['caption', 'outro-card', 'bubble'].includes(k) && (b.x < 107.5 || b.x + b.w > 972.5)) err('obere_zone', { id: el.id, t: +t.toFixed(2), b });
           if (CENTER[k]) { const c = R(el.querySelector(CENTER[k])); if (Math.abs(c.x + c.w / 2 - 540) > 0.75) err('mittelachse', { id: el.id, mitte: +(c.x + c.w / 2).toFixed(2) }); }
           if (k === 'pillen' && el.dataset.layout === 'row') { const c = [...el.children], l = Math.min(...c.map(x => x.offsetLeft)), r = Math.max(...c.map(x => x.offsetLeft + x.offsetWidth)); if (Math.abs((l + r) / 2 - 540) > 0.75) err('mittelachse', { id: el.id, mitte: (l + r) / 2 }); }
           if (k === 'caption') {
@@ -97,7 +101,8 @@ export async function checkDesign22(project, { step = 1 } = {}) {
             if (Math.abs(el.getBoundingClientRect().top - 1280) > 0.75) err('untertitel_position', { id: el.id });
           }
         }
-        const layers = act.filter(a => LAYER.has(a.k)); maxLayers = Math.max(maxLayers, layers.length);
+        // DESIGN.md 14: Die Sprechblase läuft parallel zum Outro (y = 345 unter „Folgen nicht vergessen“) und zählt dann nicht als eigene Ebene.
+        const layers = act.filter(a => LAYER.has(a.k) && !(a.k === 'bubble' && act.some(x => x.k === 'follow'))); maxLayers = Math.max(maxLayers, layers.length);
         // 1: höchstens zwei Textebenen zusätzlich zum Untertitel.
         const ausnahme = (plan.h2 || []).find(h => h.ausnahme && t >= h.start && t < h.end);
         if (layers.length > 2) (ausnahme ? warn : err)(ausnahme ? 'ausnahme_drei_textebenen' : 'drei_textebenen', { t: +t.toFixed(2), ids: layers.map(a => a.id), ...(ausnahme ? { grund: ausnahme.ausnahme } : {}) });
