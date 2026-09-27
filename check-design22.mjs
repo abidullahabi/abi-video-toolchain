@@ -71,8 +71,10 @@ export async function checkDesign22(project, { step = 1 } = {}) {
       // Wie die Vorlage: Oberkante aus der Maske, seitlich Gesicht ± 30 % (Krempe).
       const faceAt = t => faces.find(f => Math.abs(f.time - t) < 0.01);
       const kopfBox = (q, t) => { if (!profil) return { x: q.x - 0.12 * q.width, y: q.y - 0.5 * q.height, w: 1.24 * q.width, h: 1.5 * q.height }; const f = (faceAt(t)?.faces || [])[0]; const l = f ? Math.max(q.x, f.x - 0.3 * f.width) : q.x, r = f ? Math.min(q.x + q.width, f.x + 1.3 * f.width) : q.x + q.width; return { x: l - 4, y: q.y - 4, w: Math.max(0, r - l) + 8, h: q.height + 8 }; };
-      const src = profil || faces;
-      const heads = t => { const f = src.reduce((b, x) => Math.abs(x.time - t) < Math.abs(b.time - t) ? x : b); return Math.abs(f.time - t) > 0.26 ? [] : (f.faces || []).map(q => kopfBox(q, f.time)); };
+      // Seit 27.09.2026 (Tempo) misst die Personenmaske nur an den Einblendungsstellen; sonst gilt die Schätzung aus den Gesichtern.
+      const near = (arr, t) => arr?.length ? arr.reduce((b, x) => Math.abs(x.time - t) < Math.abs(b.time - t) ? x : b) : null;
+      const schaetzung = q => ({ x: q.x - 0.12 * q.width, y: q.y - 0.5 * q.height, w: 1.24 * q.width, h: 1.5 * q.height });
+      const heads = t => { const p = near(profil, t); if (p && Math.abs(p.time - t) <= 0.26) return (p.faces || []).map(q => kopfBox(q, p.time)); const f = near(faces, t); return !f || Math.abs(f.time - t) > 0.26 ? [] : (f.faces || []).map(schaetzung); };
       const green = t => (plan.grafiken || []).some(g => t >= g.start && t < g.end);
       const frames = Math.ceil(plan.duration * 30); let maxLayers = 0, capFrames = 0;
       for (let f = 0; f < frames; f += step) {

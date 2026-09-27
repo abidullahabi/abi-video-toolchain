@@ -32,12 +32,31 @@ export async function zeit(project, schritt, fn) {
 // Reserve für System, Drive und andere Sitzungen, höchstens Kerne − 2. --low-memory-mode nur bei ≤ 8 GB oder auf Wunsch.
 // Zusätzlich nach dem gerade freien Speicher (≈ 1,5 GB je Prozess inkl. Encoder-Anteil): Am 27.09.2026 brach der Encoder
 // bei 4 Prozessen unter Speicherdruck ab (9,3 von 10 GB Swap belegt, write EPIPE bei Bild 5.730 von 6.071).
+// Verfügbarer Arbeitsspeicher auf macOS: freie + inaktive + spekulative + löschbare Seiten (vm_stat). os.freemem() zählt
+// nur völlig unbenutzte Seiten (am 27.09.2026: 0,8 GB bei 6,6 GB verfügbar) und drückte jeden Render auf einen Prozess.
+export function verfuegbarGB() {
+  try {
+    const o = execFileSync('vm_stat', { encoding: 'utf8' }), seite = +(o.match(/page size of (\d+)/)?.[1] || 16384);
+    const n = k => +(o.match(new RegExp(`Pages ${k}:\\s+(\\d+)`))?.[1] || 0);
+    return (n('free') + n('inactive') + n('speculative') + n('purgeable')) * seite / 2 ** 30;
+  } catch { return os.freemem() / 2 ** 30; }
+}
+export const GB_JE_PROZESS = 1.5, RESERVE_GB = 1.5;
 export function renderProfil(meta = {}) {
-  const kerne = os.cpus().length, gb = os.totalmem() / 2 ** 30, freiGB = os.freemem() / 2 ** 30;
+  const kerne = os.cpus().length, gb = os.totalmem() / 2 ** 30, freiGB = verfuegbarGB();
   const lowMemory = meta.renderLowMemory === true || gb <= 8;
   const nachKernen = Math.max(1, Math.min(kerne - 2, Math.floor(gb / 4)));
-  const workers = lowMemory ? 1 : Math.max(1, Math.min(nachKernen, Math.floor(freiGB / 1.5), meta.renderWorkers ?? 99));
-  return { kerne, arbeitsspeicherGB: Math.round(gb), freiGB: Math.round(freiGB * 10) / 10, workers, lowMemory };
+  const nachSpeicher = Math.floor((freiGB - RESERVE_GB) / GB_JE_PROZESS);
+  const workers = lowMemory ? 1 : Math.max(1, Math.min(nachKernen, nachSpeicher, meta.renderWorkers ?? 99));
+  return { kerne, arbeitsspeicherGB: Math.round(gb), freiGB: Math.round(freiGB * 10) / 10, workers, lowMemory, reichtFuerZwei: nachSpeicher >= 2 };
+}
+// Phase 1 (Tempo): Reicht der Speicher nicht für zwei Render-Prozesse, anhalten und melden statt mit einem Prozess
+// doppelt so lange zu rendern. meta.renderEinProzess = true (nach Rückmeldung von Abdullah) lässt trotzdem rendern.
+export function speicherPruefen(meta = {}) {
+  const p = renderProfil(meta);
+  if (!p.reichtFuerZwei && !p.lowMemory && meta.renderEinProzess !== true && process.env.RENDER_EIN_PROZESS !== '1')
+    throw Error(`Arbeitsspeicher reicht nicht für zwei Render-Prozesse (verfügbar ${p.freiGB} GB, nötig ${2 * GB_JE_PROZESS + RESERVE_GB} GB). Bitte Abdullah kurz bitten, Programme zu schließen, dann erneut starten. (Mit RENDER_EIN_PROZESS=1 rendert es trotzdem mit einem Prozess.)`);
+  return p;
 }
 
 // ---------- Momente voller Sichtbarkeit (DESIGN.md 15: Aufbauzeiten) ----------
@@ -59,13 +78,39 @@ export function momente(plan) {
   return m.sort((a, b) => a.t - b.t);
 }
 
+// ---------- Zwischenbilder (Gesamtauftrag Tempo, Phase 3) ----------
+// Je animiertem Element ein Zeitpunkt mitten in der Eingangsanimation und einer im Endzustand (DESIGN.md 15). Das
+// Storyboard vergleicht beide Bilder mit ausgeblendetem Rest (nur dieses Element sichtbar). Gleichen sie sich, ist die
+// Animation übersprungen (so sprang am 27.09.2026 jede Zeichnen-Animation sofort fertig, weil GSAP px rundete).
+export function animationen(plan) {
+  const a = [], add = (id, art, text, mitte, ende) => { if (mitte >= 0 && ende > mitte && ende < plan.duration) a.push({ id, art, text, mitte: Math.round(mitte * 1000) / 1000, ende: Math.round(ende * 1000) / 1000 }); };
+  const h1Ids = new Set((plan.h1 || []).map(h => 'h1:' + h.id));
+  for (const k of plan.kapitel || []) add(k.id, 'Kapitel', `${k.nummer || ''} ${k.titel}`.trim(), k.start + 0.2, k.start + 0.62);
+  for (const h of plan.h1 || []) add(h.id, 'H1', h.lines.join(' '), h.start + 0.08, h.start + 0.3);
+  for (const h of plan.h2 || []) { const v = h1Ids.has(h.unter) ? 0.06 : 0; add(h.id, 'H2', h.lines.join(' / '), h.start + v + 0.12, h.start + v + 0.4); }
+  for (const p of plan.pillen || []) p.items.forEach((it, i) => add(p.id, `Pille ${i + 1}`, it.text, it.at + 0.08, Math.min(p.end - 0.2, (p.items[i + 1]?.at ?? Infinity) - 0.01, it.at + 0.35)));
+  for (const x of plan.akronyme || []) add(x.id, 'Akronym', x.letters.map(l => l.b).join(''), x.start + 0.08, x.start + 0.35 + 0.08 * (x.letters.length - 1));
+  for (const x of plan.schlagworte || []) add(x.id, 'Schlagwort', x.text, x.start + 0.35, x.start + 0.7);
+  for (const g of plan.grafiken || []) add(g.id, 'Grafik (Linie)', g.title, g.drawAt + 0.4, Math.min(g.end - 0.25, Math.max(g.drawAt + 1.05, g.circleAt + 0.35)));
+  for (const n of plan.randnotizen || []) {
+    add(n.id, 'Randnotiz', n.lines[0].text, n.lines[0].at + 0.08, Math.min(n.end - 0.2, n.lines[0].at + 0.3));
+    const s = n.lines.find(l => l.strikeAt != null); if (s) add(n.id, 'Randnotiz (Durchstreichen)', s.text, s.strikeAt + 0.12, Math.min(n.end - 0.2, s.strikeAt + 0.32 + 0.1 * (n.lines.filter(l => l.strikeAt != null).length - 1)));
+  }
+  for (const b of plan.lebensbalken || []) b.segments.forEach((sg, i) => add(b.id, `Lebensbalken ${i + 1}`, sg.label, sg.at + 0.3, Math.min(b.end - 0.2, sg.at + 1.05)));
+  for (const l of plan.logos || []) add(l.id, 'Logo', path.basename(l.src), l.start + 0.1, l.start + 0.35);
+  for (const b of plan.sprechblasen || []) add(b.id, 'Sprechblase', b.text, b.start + 1.95, b.start + 2.7);
+  add('outro-card', 'Outro (Karte, Zähler)', `${plan.outro.followers}`, plan.outro.start + 0.3, plan.outro.start + 2);
+  return a.sort((x, y) => x.mitte - y.mitte);
+}
+
 // ---------- Standbilder im Browser (halbe Auflösung) ----------
 async function browser(root) {
   const { default: puppeteer } = await import('puppeteer-core');
   const exe = execFileSync(process.execPath, [path.join(root, 'node_modules/hyperframes/bin/hyperframes.mjs'), 'browser', 'path'], { encoding: 'utf8', env: { ...process.env, HYPERFRAMES_NO_TELEMETRY: '1', HYPERFRAMES_NO_UPDATE_CHECK: '1' } }).trim();
   return puppeteer.launch({ executablePath: exe, headless: true, args: ['--no-sandbox', '--allow-file-access-from-files', '--autoplay-policy=no-user-gesture-required'] });
 }
-async function standbilder(project, root, plan, zeiten, dir) {
+// auftraege: Zeitpunkte (Zahl) oder {t, nur: '<clip-id>'}; mit nur wird alles außer diesem Element ausgeblendet.
+async function standbilder(project, root, plan, auftraege, dir, prefix = 'bild') {
   fs.mkdirSync(dir, { recursive: true });
   const b = await browser(root), out = [];
   try {
@@ -73,22 +118,42 @@ async function standbilder(project, root, plan, zeiten, dir) {
     await page.setViewport({ width: 1080, height: 1920, deviceScaleFactor: 0.5 });
     await page.goto(pathToFileURL(path.join(project, 'index.html')).href, { waitUntil: 'load' });
     await page.evaluate(() => document.fonts.ready);
-    for (const [i, t] of zeiten.entries()) {
+    for (const [i, a] of auftraege.entries()) {
+      const t = typeof a === 'number' ? a : a.t, nur = typeof a === 'number' ? null : a.nur;
       // Chrome spielt kein ProRes: Personenebene einer Grafik als Einzelbild einsetzen (im Render übernimmt das HyperFrames).
       const g = (plan.grafiken || []).find(g => t >= g.start && t < g.end);
       let still = null;
-      if (g && g.person && fs.existsSync(path.join(project, g.person))) { still = path.join(dir, `_person-${i}.png`); execFileSync(path.join(root, 'tools/bin/ffmpeg'), ['-v', 'error', '-y', '-ss', (t - g.start).toFixed(4), '-i', path.join(project, g.person), '-frames:v', '1', '-pix_fmt', 'rgba', still]); }
-      await page.evaluate(async (t, gid, still) => {
-        const v = document.getElementById('footage'); v.currentTime = t; await new Promise(r => { v.onseeked = r; setTimeout(r, 1500); });
+      if (!nur && g && g.person && fs.existsSync(path.join(project, g.person))) { still = path.join(dir, `_person-${i}.png`); execFileSync(path.join(root, 'tools/bin/ffmpeg'), ['-v', 'error', '-y', '-ss', (t - g.start).toFixed(4), '-i', path.join(project, g.person), '-frames:v', '1', '-pix_fmt', 'rgba', still]); }
+      await page.evaluate(async (t, gid, still, nur) => {
+        let st = document.getElementById('__nur');
+        if (nur) { if (!st) { st = document.createElement('style'); st.id = '__nur'; document.head.append(st); } st.textContent = `.clip:not(#${CSS.escape(nur)}){opacity:0!important}`; }
+        else if (st) st.remove();
+        const v = document.getElementById('footage');
+        if (!nur) { v.currentTime = t; await new Promise(r => { v.onseeked = r; setTimeout(r, 1500); }); }
         window.__timelines.root.seek(t, false);
         document.querySelectorAll('.snap-person').forEach(x => x.remove());
         if (gid && still) { const img = document.createElement('img'); img.className = 'snap-person'; img.src = still; img.style.cssText = 'position:absolute;inset:0;width:1080px;height:1920px'; document.getElementById(gid + '-person').after(img); await img.decode(); }
-      }, t, g?.id, still ? pathToFileURL(still).href : null);
-      const f = path.join(dir, `bild-${String(i).padStart(3, '0')}.png`);
+      }, t, g?.id, still ? pathToFileURL(still).href : null, nur);
+      const f = path.join(dir, `${prefix}-${String(i).padStart(3, '0')}.png`);
       await page.screenshot({ path: f }); out.push(f);
     }
   } finally { await b.close(); }
   return out;
+}
+
+// Anteil geänderter Bildpunkte zwischen Zwischen- und Endbild, bezogen auf die Fläche des Elements im Endbild.
+async function unterschied(a, b) {
+  const { default: sharp } = await import('sharp');
+  const [x, y] = await Promise.all([a, b].map(f => sharp(f).removeAlpha().raw().toBuffer({ resolveWithObject: true })));
+  const bg = [0x11, 0x11, 0x11], n = x.info.width * x.info.height;
+  let flaeche = 0, anders = 0;
+  for (let i = 0; i < n; i++) {
+    const o = i * 3, dx = Math.max(Math.abs(x.data[o] - y.data[o]), Math.abs(x.data[o + 1] - y.data[o + 1]), Math.abs(x.data[o + 2] - y.data[o + 2]));
+    const sichtbar = Math.max(Math.abs(y.data[o] - bg[0]), Math.abs(y.data[o + 1] - bg[1]), Math.abs(y.data[o + 2] - bg[2])) > 24 || Math.max(Math.abs(x.data[o] - bg[0]), Math.abs(x.data[o + 1] - bg[1]), Math.abs(x.data[o + 2] - bg[2])) > 24;
+    if (sichtbar) flaeche++;
+    if (dx > 24) anders++;
+  }
+  return { flaeche, anteil: flaeche ? anders / flaeche : 0 };
 }
 
 // Kontaktblatt: Raster mit Zeit und Beschriftung, im Browser gesetzt (Archivo aus templates/fonts).
@@ -110,15 +175,33 @@ async function kontaktblatt(root, bilder, labels, ziel, spalten = 6) {
 const mmss = t => `${Math.floor(t / 60)}:${(t % 60).toFixed(1).padStart(4, '0')}`;
 
 export async function storyboard(project, { root, assemble }) {
+  const { kopfprofil } = await import('./vorbereiten.mjs');
+  await kopfprofil(project);
   await zeit(project, 'storyboard: zusammensetzen', () => assemble(project));
-  const plan = J(path.join(project, 'theme-plan.json')), ms = momente(plan);
+  const plan = J(path.join(project, 'theme-plan.json')), ms = momente(plan), an = animationen(plan);
   const dir = path.join(project, 'review/storyboard');
-  const bilder = await zeit(project, 'storyboard: standbilder', () => standbilder(project, root, plan, ms.map(m => m.t), dir));
-  await zeit(project, 'storyboard: kontaktblatt', () => kontaktblatt(root, bilder, ms.map(m => [`${mmss(m.t)} · ${m.art}`, m.text]), path.join(project, 'review/storyboard.jpg')));
-  const txt = ms.map(m => `${mmss(m.t).padStart(7)}  ${m.art.padEnd(28)} ${m.text}`).join('\n');
-  fs.writeFileSync(path.join(project, 'review/storyboard.txt'), `Storyboard ${plan.title || ''} · DESIGN.md ${plan.designVersion} · ${ms.length} Einblendungen · Kopf/Kappe: ${plan.kopfQuelle || '–'}\n\n${txt}\n\nHinweise: ${JSON.stringify(plan.hinweise || {}, null, 0)}\n`);
-  console.log(`Storyboard: ${path.join(project, 'review/storyboard.jpg')} (${ms.length} Bilder)\n${txt}`);
-  return ms;
+  if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir)) if (/\.png$/.test(f)) fs.rmSync(path.join(dir, f));   // Zwischenstand, wird überschrieben
+  // Ein Kontaktblatt: Standbilder bei voller Sichtbarkeit und Zwischenbilder mitten in der Animation, nach Zeit sortiert.
+  const alle = [...ms.map(m => ({ t: m.t, label: [`${mmss(m.t)} · ${m.art}`, m.text] })), ...an.map(x => ({ t: x.mitte, label: [`${mmss(x.mitte)} · Zwischenbild ${x.art}`, x.text] }))].sort((a, b) => a.t - b.t);
+  const bilder = await zeit(project, 'storyboard: standbilder und zwischenbilder', () => standbilder(project, root, plan, alle.map(x => x.t), dir));
+  // Prüfung: je Animation Zwischen- und Endzustand des Elements allein.
+  const befunde = [];
+  await zeit(project, 'storyboard: animationsprüfung', async () => {
+    const iso = await standbilder(project, root, plan, an.flatMap(x => [{ t: x.mitte, nur: x.id }, { t: x.ende, nur: x.id }]), path.join(dir, 'animation'), 'iso');
+    for (const [i, x] of an.entries()) {
+      const u = await unterschied(iso[2 * i], iso[2 * i + 1]);
+      x.unterschied = Math.round(u.anteil * 1000) / 10;
+      if (u.flaeche < 50) befunde.push({ ...x, befund: 'Element im Endzustand nicht sichtbar' });
+      else if (u.anteil < 0.01) befunde.push({ ...x, befund: 'Animation übersprungen: Zwischenbild gleicht dem Endzustand' });
+    }
+  });
+  await zeit(project, 'storyboard: kontaktblatt', () => kontaktblatt(root, bilder, alle.map(x => x.label), path.join(project, 'review/storyboard.jpg')));
+  const txt = alle.map(x => `${x.label[0].padEnd(40)} ${x.label[1]}`).join('\n');
+  const bef = befunde.map(b => `BEFUND ${mmss(b.mitte)} ${b.art} (${b.id}): ${b.befund} (Unterschied ${b.unterschied} %)`).join('\n');
+  fs.writeFileSync(path.join(project, 'review/storyboard.txt'), `Storyboard ${plan.title || ''} · DESIGN.md ${plan.designVersion} · ${ms.length} Einblendungen, ${an.length} Zwischenbilder · Kopf/Kappe: ${plan.kopfQuelle || '–'}\n\n${txt}\n\nAnimationsprüfung: ${befunde.length ? befunde.length + ' Befund(e)\n' + bef : 'alle ' + an.length + ' Animationen laufen (Zwischenbild ≠ Endzustand)'}\n\nHinweise: ${JSON.stringify(plan.hinweise || {}, null, 0)}\n`);
+  W(path.join(project, 'review/storyboard-animationen.json'), { geprueft: new Date().toISOString(), animationen: an, befunde });
+  console.log(`Storyboard: ${path.join(project, 'review/storyboard.jpg')} (${alle.length} Bilder, davon ${an.length} Zwischenbilder)\n${txt}\n\n${befunde.length ? bef : `Animationsprüfung: alle ${an.length} Animationen laufen.`}`);
+  return { momente: ms, animationen: an, befunde };
 }
 
 // ---------- Rendern ----------

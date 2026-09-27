@@ -95,45 +95,74 @@ def matte(project, g, sess, offsets):
             'deckungMittel': round(float(np.mean(cover)), 4), 'deckungSprungMittel': round(jitter, 5)}
 
 
-def kopfprofil(project, sess):
-    """Box aus Kopf und Kappe je 0,5 s aus der RVM-Maske (gleiche Einstellungen, ein Zustand über das ganze Video)."""
+def kopfprofil(project, sess, bereiche=None, halb=False, sha=None):
+    """Box aus Kopf und Kappe je 0,5 s aus der RVM-Maske.
+
+    Ohne bereiche: ganzes Video, jedes Bild, volle Auflösung (bisheriger Weg). Mit bereiche (Gesamtauftrag Tempo,
+    27.09.2026): nur an den Einblendungsstellen, je Bereich 20 verarbeitete Bilder Vorlauf. halb: Eingang 540 × 960 mit
+    downsample_ratio 0,5 (gleiche innere Auflösung wie 1080 × 1920 bei 0,25), nur jedes zweite Bild plus die Bilder der
+    0,5-s-Proben. Bereits gemessene Proben derselben media.mp4 (Prüfsumme) werden weiterverwendet."""
     faces = json.load(open(project / 'review' / 'source-faces.json'))
     by_frame = {round(f['time'] * FPS): f for f in faces}
     dur = json.load(open(project / 'workflow.json'))['cutDuration']
-    n = int(dur * FPS)
-    dec = subprocess.Popen([str(FF), '-v', 'error', '-i', str(project / 'media.mp4'), '-frames:v', str(n),
-                            '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], stdout=subprocess.PIPE)
-    rec = [np.zeros([1, 1, 1, 1], dtype=np.float32)] * 4
-    ratio = np.array([RATIO], dtype=np.float32)
-    out, t0 = [], time.time()
-    for i in range(n):
-        buf = dec.stdout.read(W * H * 3)
-        if len(buf) < W * H * 3:
-            break
-        src = (np.frombuffer(buf, dtype=np.uint8).reshape(H, W, 3).astype(np.float32) / 255.0).transpose(2, 0, 1)[None]
-        _, pha, *rec = sess.run(None, {'src': src, 'r1i': rec[0], 'r2i': rec[1], 'r3i': rec[2], 'r4i': rec[3], 'downsample_ratio': ratio})
-        f = by_frame.get(i)
-        if not f or not f.get('faces'):
-            continue
-        m = pha[0, 0] > 0.5
-        boxes = []
-        for q in f['faces']:
-            x0, x1 = int(max(0, q['x'] - 0.8 * q['width'])), int(min(W, q['x'] + 1.8 * q['width']))
-            y1 = int(min(H, q['y'] + q['height']))
-            reg = m[:y1, x0:x1]
-            rows = np.where(reg.sum(axis=1) >= 3)[0]
-            if not len(rows):
+    n_all = int(dur * FPS)
+    ziel = project / 'review' / 'kopf-profil.json'
+    einst = {'halb': bool(halb), 'schwelle': 0.5, 'ratio': RATIO, 'vorlauf': WARMUP}
+    alt = json.load(open(ziel)) if ziel.exists() else {}
+    proben = {round(p['time'] * FPS): p for p in alt.get('proben', [])} if (alt.get('mediaSha256') == sha and alt.get('einstellungen') == einst and sha) else {}
+    if bereiche is None:
+        spans = [(0, n_all)]
+    else:
+        spans = []
+        for a, b in sorted(bereiche):
+            fa, fb = max(0, int((a - 0.25) * FPS)), min(n_all, int((b + 0.25) * FPS) + 1)
+            if any(f in by_frame and by_frame[f].get('faces') and f not in proben for f in range(fa, fb)):
+                if spans and fa <= spans[-1][1] + 2 * WARMUP * (2 if halb else 1):
+                    spans[-1] = (spans[-1][0], max(spans[-1][1], fb))
+                else:
+                    spans.append((fa, fb))
+    w, h = (W // 2, H // 2) if halb else (W, H)
+    ratio = np.array([RATIO * (2 if halb else 1)], dtype=np.float32)
+    k = 2 if halb else 1
+    t0, gerechnet = time.time(), 0
+    for fa, fb in spans:
+        pre = min(WARMUP * k, fa)
+        start = fa - pre
+        vf = ['-vf', f'scale={w}:{h}:flags=area'] if halb else []
+        dec = subprocess.Popen([str(FF), '-v', 'error', '-ss', f'{start / FPS:.6f}', '-i', str(project / 'media.mp4'), '-frames:v', str(fb - start)]
+                               + vf + ['-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], stdout=subprocess.PIPE)
+        rec = [np.zeros([1, 1, 1, 1], dtype=np.float32)] * 4
+        for i in range(start, fb):
+            buf = dec.stdout.read(w * h * 3)
+            if len(buf) < w * h * 3:
+                break
+            probe = by_frame.get(i)
+            if (i - start) % k and not probe:
                 continue
-            top = int(rows[0])
-            cols = np.where(reg[top:y1].any(axis=0))[0]
-            boxes.append({'x': x0 + int(cols[0]), 'y': top, 'width': int(cols[-1] - cols[0] + 1), 'height': y1 - top})
-        out.append({'time': f['time'], 'faces': boxes})
-        if i % 900 == 0:
-            print(f'Kopfprofil {i / FPS:.0f} s …', flush=True)
-    dec.wait()
+            src = (np.frombuffer(buf, dtype=np.uint8).reshape(h, w, 3).astype(np.float32) / 255.0).transpose(2, 0, 1)[None]
+            _, pha, *rec = sess.run(None, {'src': src, 'r1i': rec[0], 'r2i': rec[1], 'r3i': rec[2], 'r4i': rec[3], 'downsample_ratio': ratio})
+            gerechnet += 1
+            if i < fa or not probe or not probe.get('faces') or i in proben:
+                continue
+            m = pha[0, 0] > 0.5
+            boxes = []
+            for q in probe['faces']:
+                x0, x1 = int(max(0, q['x'] - 0.8 * q['width'])) // k, int(min(W, q['x'] + 1.8 * q['width'])) // k
+                y1 = int(min(H, q['y'] + q['height'])) // k
+                reg = m[:y1, x0:x1]
+                rows = np.where(reg.sum(axis=1) >= (3 if k == 1 else 2))[0]
+                if not len(rows):
+                    continue
+                top = int(rows[0])
+                cols = np.where(reg[top:y1].any(axis=0))[0]
+                boxes.append({'x': (x0 + int(cols[0])) * k, 'y': top * k, 'width': int(cols[-1] - cols[0] + 1) * k, 'height': (y1 - top) * k})
+            proben[i] = {'time': probe['time'], 'faces': boxes}
+        dec.stdout.close(); dec.wait()
+    out = [proben[f] for f in sorted(proben)]
     json.dump({'grundlage': 'RVM-Personenmaske (DESIGN.md 11/12), Schwelle 0,5; Box = oberster Maskenpunkt über dem Gesicht bis Gesichtsunterkante, seitlich die Maske in diesem Band',
-               'sekunden': round(time.time() - t0, 1), 'proben': out}, open(project / 'review' / 'kopf-profil.json', 'w'), indent=1)
-    print(f'Kopfprofil: {len(out)} Proben in {time.time() - t0:.0f} s → review/kopf-profil.json')
+               'mediaSha256': sha, 'einstellungen': einst, 'bereiche': bereiche, 'sekunden': round(time.time() - t0, 1),
+               'bilderGerechnet': gerechnet, 'proben': out}, open(ziel, 'w'), indent=1)
+    print(f'Kopfprofil: {len(out)} Proben ({gerechnet} Bilder gerechnet) in {time.time() - t0:.1f} s → review/kopf-profil.json')
 
 
 def main():
@@ -141,6 +170,9 @@ def main():
     ap.add_argument('project')
     ap.add_argument('--nur')
     ap.add_argument('--kopfprofil', action='store_true')
+    ap.add_argument('--bereiche', help='JSON-Liste [[start, ende], …] in Sekunden: Kopfprofil nur dort')
+    ap.add_argument('--halb', action='store_true', help='halbe Auflösung, jedes zweite Bild')
+    ap.add_argument('--media-sha', help='Prüfsumme von media.mp4, damit gemessene Proben weiterverwendet werden')
     a = ap.parse_args()
     project = Path(a.project).resolve()
     plan = json.load(open(project / 'theme-plan.json')) if (project / 'theme-plan.json').exists() else {}
@@ -150,7 +182,7 @@ def main():
     import onnxruntime as ort
     sess = ort.InferenceSession(str(MODEL), providers=['CPUExecutionProvider'])
     if a.kopfprofil:
-        kopfprofil(project, sess)
+        kopfprofil(project, sess, json.loads(a.bereiche) if a.bereiche else None, a.halb, a.media_sha)
         return
     if not grafiken:
         print('Keine Grafikabschnitte im Plan.'); return

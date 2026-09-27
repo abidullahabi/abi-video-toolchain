@@ -165,16 +165,18 @@ export function assembleDesign22(project,meta,opts={}) {
   const measure=makeMeasure(ROOT),errors=[],warnings=[],notes=[];
   // Kopf und Kappe: Personenmaske (review/kopf-profil.json, DESIGN.md 12) oder, falls sie fehlt, Schätzung aus der Gesichtserkennung.
   const profil=fs.existsSync(path.join(project,'review/kopf-profil.json'));
-  const samples=profil?read('review/kopf-profil.json').proben:read('review/source-faces.json');
+  // Seit 27.09.2026 (Tempo): Personenmaske nur an den Einblendungsstellen; wo sie fehlt, gilt die Schätzung aus den Gesichtern.
   const faces=read('review/source-faces.json'),faceAt=t=>faces.find(f=>Math.abs(f.time-t)<.01);
+  const proben=profil?read('review/kopf-profil.json').proben:[],ausMaske=new Set(proben.map(p=>Math.round(p.time*30)));
+  const samples=[...proben.map(p=>({...p,maske:true})),...faces.filter(f=>!ausMaske.has(Math.round(f.time*30)))];
   // Oberkante (Kappe) aus der Maske; seitlich auf den Kopf begrenzt (Gesicht ± 30 % für die Krempe), sonst zählen Hände und Schultern mit.
   const clampX=(q,t)=>{const f=(faceAt(t)?.faces||[])[0];if(!f)return q;const l=Math.max(q.x,f.x-.3*f.width),r=Math.min(q.x+q.width,f.x+1.3*f.width);return {...q,x:l,width:Math.max(0,r-l)};};
-  const box=(q,t)=>{if(!profil)return {x:q.x-.12*q.width,y:q.y-.5*q.height,w:1.24*q.width,h:1.5*q.height};const c=clampX(q,t);return {x:c.x-4,y:c.y-4,w:c.width+8,h:c.height+8};};
-  const heads=(a,b)=>samples.filter(f=>f.time>=a-.25&&f.time<=b+.25).flatMap(f=>(f.faces||[]).map(q=>box(q,f.time)));
+  const box=(q,t,maske)=>{if(!maske)return {x:q.x-.12*q.width,y:q.y-.5*q.height,w:1.24*q.width,h:1.5*q.height};const c=clampX(q,t);return {x:c.x-4,y:c.y-4,w:c.width+8,h:c.height+8};};
+  const heads=(a,b)=>samples.filter(f=>f.time>=a-.25&&f.time<=b+.25).flatMap(f=>(f.faces||[]).map(q=>box(q,f.time,f.maske)));
   const faceWidth=t=>{const f=faces.reduce((b,x)=>Math.abs(x.time-t)<Math.abs(b.time-t)?x:b);return Math.max(0,...(f.faces||[]).map(q=>q.width));};
   const followers=read('follower-source.json').wert;
   const plan=layoutDesign22(input,{measure,heads,errors,warnings,notes,duration,followers});
-  plan.title=meta.title;plan.kopfQuelle=profil?'Personenmaske (review/kopf-profil.json)':'Schätzung aus review/source-faces.json';
+  plan.title=meta.title;plan.kopfQuelle=profil?`Personenmaske an ${proben.length} Proben (review/kopf-profil.json), sonst Schätzung aus review/source-faces.json`:'Schätzung aus review/source-faces.json';
   plan.captions=groupCaptions22(timed,measure,duration);
   const cutFile=path.join(project,'review/cut-points.json'),cuts=fs.existsSync(cutFile)?read('review/cut-points.json').cuts.map(c=>c.time):[];
   plan.zooms=input.zooms??planZooms22({resets:[...cuts,...plan.kapitel.map(k=>k.start),...plan.h1.map(h=>h.start)],blocked:[...plan.schlagworte.map(s=>[s.start-.3,s.end+.3]),...plan.grafiken.map(g=>[g.start,g.end]),[plan.outro.start,duration],...(input.zoomSperren||[])],faceWidth,closeFrom:input.nahaufnahmeAbBreite??420,duration});
