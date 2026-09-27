@@ -53,7 +53,7 @@ export function momente(plan) {
   for (const g of plan.grafiken || []) add(Math.min(g.end - 0.25, g.circleAt + 0.35), 'Grafik', g.title);
   for (const n of plan.randnotizen || []) add(Math.min(n.end - 0.25, Math.max(...n.lines.map(l => (l.strikeAt ?? l.at) + 0.35))), 'Randnotiz', n.lines.map(l => l.text).join(' / '));
   for (const b of plan.lebensbalken || []) add(Math.min(b.end - 0.25, b.segments.at(-1).at + 1.05), 'Lebensbalken', b.segments.map(s => s.label).join(' | '));
-  for (const l of plan.logos || []) add(l.start + 0.35, 'Logo', path.basename(l.src));
+  for (const l of plan.logos || []) add(l.start + 0.35, 'Logo', (l.files || [{ src: l.src }]).map(f => path.basename(f.src)).join(' · '));
   for (const b of plan.sprechblasen || []) add(b.start + 2.7, 'Sprechblase', b.text);
   add(plan.outro.start + 2, 'Outro', `Folgen nicht vergessen · ${plan.outro.followers.toLocaleString('de-DE')}`);
   return m.sort((a, b) => a.t - b.t);

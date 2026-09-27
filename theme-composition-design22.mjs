@@ -188,7 +188,19 @@ export function layoutDesign22(input, ctx) {
   const lebensbalken = (input.lebensbalken || []).map(b => ({ id: b.id, start: b.start, end: b.end, segments: b.abschnitte.map(s => { const w = A(s.beschriftung, 40, 800) + 10, mid = (s.von + s.bis) / 2 * 700; return { from: s.von, to: s.bis, label: s.beschriftung, at: s.at, labelLeft: Math.round(Math.max(0, Math.min(700 - w, mid - w / 2))) }; }) }));
 
   // 14: Logo ersetzt die H1 an der H1-Position; eine H2 bleibt stehen.
-  const logos = (input.logos || []).map(l => ({ id: l.id, src: l.datei, start: l.start, end: l.end, height: l.hoehe, width: l.breite }));
+  // 14: Logo-Einblendung. Standard: allein an der H1-Position und ersetzt die H1. Option `unter: "kapitel:<id>"` (Abdullahs Wunsch
+  // 27.09.2026): unter der Kapitelgruppe (24 px), die Überschrift bleibt stehen; `dateien` stellt mehrere Logos nebeneinander (Abstand 32 px).
+  const LOGO_GAP = 32;
+  const logos = (input.logos || []).map(l => {
+    const files = (l.dateien || [{ datei: l.datei, hoehe: l.hoehe, breite: l.breite }]).map(f => ({ src: f.datei, height: f.hoehe, width: f.breite }));
+    let top = 250, unter = null;
+    if (l.unter?.startsWith('kapitel:')) { const k = kapById(l.unter.slice(8)); if (!k) errors.push(`Logo ${l.id}: Kapitel fehlt`); else { top = k.top + k.height + 24; unter = k.id; } }
+    const w = files.reduce((s, f) => s + (f.width || 0), 0) + LOGO_GAP * (files.length - 1);
+    if (w > 864) errors.push(`Logos ${l.id} breiter als 864 px (${w})`);
+    const hb = hits({ x: 540 - w / 2, y: top, w, h: Math.max(...files.map(f => f.height)) }, l.start, l.end);
+    if (hb.length) ctx.warnings.push(`Logos ${l.id} berühren Kopf/Kappe (${hb.length} Stichproben)`);
+    return { id: l.id, files, top: Math.round(top), unter, start: l.start, end: l.end };
+  });
   // 14: Sprechblase nur bei Aufforderung zu Kommentar oder DM; im Outro y = 345, sonst 300. Dauer 4,25 s.
   const sprechblasen = (input.sprechblasen || []).map((b, i) => ({ id: 'bubble-' + i, text: b.text, start: b.start, top: Math.abs(b.start - input.outroStart) < 2 || b.start >= input.outroStart ? 345 : 300 }));
   for (const b of sprechblasen) if (A(b.text, 36, 800) + 40 + 8 > 620) errors.push('Sprechblase breiter als 620 px');
@@ -199,7 +211,7 @@ export function layoutDesign22(input, ctx) {
   const ausblenden = [], oben = [...kapitel, ...h1, ...h2, ...pillen, ...randnotizen, ...lebensbalken, ...akronyme];
   for (const w of [...schlagworte, ...grafiken]) for (const x of oben) if (x.start < w.end && x.end > w.start) ausblenden.push({ sel: '#' + x.id, from: Math.max(x.start, w.start), to: x.end > w.end + 0.25 ? w.end : null });
   const logoH1 = [];
-  for (const l of logos) for (const x of [...h1, ...kapitel]) if (x.start < l.end && x.end > l.start) logoH1.push({ sel: '#' + x.id + ' > span', out: l.start - 0.1, in: l.end + 0.1 });
+  for (const l of logos.filter(l => !l.unter)) for (const x of [...h1, ...kapitel]) if (x.start < l.end && x.end > l.start) logoH1.push({ sel: '#' + x.id + ' > span', out: l.start - 0.1, in: l.end + 0.1 });
 
   return { designVersion: '2.2', duration: ctx.duration, einstieg, kapitel, h1, h2, pillen, akronyme, schlagworte, grafiken, randnotizen, lebensbalken, logos, sprechblasen, ausblenden, logoH1, outro: { start: input.outroStart, end: ctx.duration, followers: ctx.followers } };
 }
@@ -281,7 +293,7 @@ export function makeDesign22Composition(plan, opts = {}) {
   for (const a of akronyme) top.push(`<div ${clip(a.id, a.start, a.end, 6, 'akronym')} style="top:240px"><div class="ak-row">${a.letters.map((l, i) => `<span class="ak-pop" id="${a.id}-p${i}"><span class="ak-letter" id="${a.id}-l${i}" style="transform:rotate(${l.rot}deg)">${esc(l.b)}</span></span>`).join('')}</div><div class="ak-pills" style="top:${a.pillTop - 240}px">${a.letters.map((l, i) => `<span class="ak-pill-pop" id="${a.id}-q${i}"><span class="pill ak-pill"><span class="pill-text">${escEmoji(l.text)}</span></span></span>`).join('')}</div></div>`);
   for (const n of randnotizen) top.push(`<div ${clip(n.id, n.start, n.end, 7, 'randnotiz')} style="left:${n.left}px;top:${n.top}px">${n.lines.map((l, j) => `<div class="note-line" id="${n.id}-l${j}" style="margin-top:${l.gapBefore}px">${l.html}${l.strikeAt != null ? `<svg class="note-strike" id="${n.id}-s${j}" height="20" style="left:-8px;top:calc(54% - 10px);width:calc(100% + 16px)" overflow="visible" preserveAspectRatio="none"><path pathLength="1" fill="none" stroke="${C.ink}" stroke-width="11" stroke-linecap="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/><path pathLength="1" fill="none" stroke="${C.pink}" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></svg>` : ''}</div>`).join('')}</div>`);
   for (const b of lebensbalken) top.push(`<div ${clip(b.id, b.start, b.end, 9, 'balken')} style="left:190px;top:${370 - 58}px;width:700px;height:${58 + 26}px">${b.segments.map((s, i) => `<span class="bal-label" id="${b.id}-l${i}" style="left:${s.labelLeft}px">${escEmoji(s.label)}</span>`).join('')}<div class="bal-bed">${b.segments.map((s, i) => `<div class="bal-fill" id="${b.id}-f${i}" style="left:${s.from * 700}px;width:${(s.to - s.from) * 700}px"></div>`).join('')}</div></div>`);
-  for (const l of logos) top.push(`<div ${clip(l.id, l.start, l.end, 13, 'logo')} style="top:250px"><img class="logo" src="${esc(l.src)}" style="height:${l.height}px${l.width ? `;width:${l.width}px` : ''}" alt=""></div>`);
+  for (const l of logos) top.push(`<div ${clip(l.id, l.start, l.end, 13, 'logo')} style="top:${l.top ?? 250}px"><span class="logo">${(l.files || [{ src: l.src, height: l.height, width: l.width }]).map(f => `<img src="${esc(f.src)}" style="height:${f.height}px${f.width ? `;width:${f.width}px` : ''}" alt="">`).join('')}</span></div>`);
   for (const s of schlagworte) top.push(`<div ${clip(s.id, s.start, s.end, 8, 'schlagwort')} style="top:330px"><span class="sw-pop"><span class="sw" style="transform-origin:50% ${(s.fontSize * 1.02 / 2).toFixed(1)}px"><span class="sw-word" style="font-size:${s.fontSize}px">${esc(s.text)}</span><svg class="sw-lines" viewBox="0 0 700 70" preserveAspectRatio="none" style="width:${s.width}px;height:70px" overflow="visible">${[['M 14 30 C 150 12, 300 40, 450 22 S 640 30, 688 16', 22, 12], ['M 60 54 C 210 40, 380 62, 560 46 S 650 50, 672 46', 20, 10]].map(([d, wi, wp], j) => `<path id="${s.id}-u${j}i" d="${d}" pathLength="1" fill="none" stroke="${C.ink}" stroke-width="${wi}" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/><path id="${s.id}-u${j}p" d="${d}" pathLength="1" fill="none" stroke="${C.pink}" stroke-width="${wp}" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>`).join('')}</svg></span></span></div>`);
   const caps = captions.map((c, i) => `<div ${clip('cap-' + i, c.start, c.end, 20, 'caption')} style="top:1280px"><span class="cap-line">${c.words.map((w, j) => `<span id="w-${i}-${j}">${escEmoji(w.text)}</span>`).join(' ')}</span></div>`).join('');
   const bubbles = sprechblasen.map(b => `<div ${clip(b.id, b.start, b.start + 4.25, 22, 'bubble')} style="left:90px;top:${b.top}px"><div class="grp" id="${b.id}-grp"><div class="msg-pop" id="${b.id}-msg"><div class="msg">${escEmoji(b.text)}</div></div><div class="ind-slide" id="${b.id}-slide"><div class="ind-pop" id="${b.id}-ind"><div class="ind">${[0, 1, 2].map(k => `<i id="${b.id}-d${k}"></i>`).join('')}</div></div></div></div></div>`).join('');
@@ -326,7 +338,7 @@ export function makeDesign22Composition(plan, opts = {}) {
 .bal-bed{position:absolute;left:0;top:58px;width:700px;height:26px;border-radius:13px;background:${C.off};box-shadow:0 0 0 3px ${C.ink};overflow:hidden}
 .bal-fill{position:absolute;top:0;height:100%;background:${C.blue};transform-origin:0 50%;transform:scaleX(0)}
 .bal-label{position:absolute;top:0;font-weight:800;font-size:40px;line-height:1.2;${stroke(5)};white-space:nowrap}
-.logo{display:inline-block}
+.logo{display:inline-flex;align-items:center;gap:32px}.logo img{display:block}
 [data-kind=grafik]{transform-origin:50% 50%}
 .card{width:780px;height:100%;padding:26px 34px 22px;background:${C.white};border:6px solid ${C.ink};border-radius:24px;box-shadow:12px 12px 0 ${C.ink};color:${C.ink};display:flex;flex-direction:column;gap:12px}
 .card-title{font-weight:800;font-size:34px;line-height:1.2;white-space:nowrap}

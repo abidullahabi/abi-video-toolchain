@@ -11,21 +11,21 @@
   {
    "id": "k1",
    "nummer": "1.",
-   "titel": "Anthropic",
+   "titel": "AI Fluency",
    "start": 8.23,
    "end": 36.3
   },
   {
    "id": "k2",
    "nummer": "2.",
-   "titel": "Andrew Ng",
+   "titel": "Gen AI for Everyone",
    "start": 36.32,
    "end": 52.2
   },
   {
    "id": "k3",
    "nummer": "3.",
-   "titel": "Google",
+   "titel": "Google AI",
    "start": 60.51,
    "end": 76.6
   }
@@ -44,7 +44,27 @@
    "end": 86.55
   }
  ],
- "h2": [],
+ "h2": [
+  {
+   "id": "h2-k1",
+   "lines": [
+    "Framework &",
+    "Foundations"
+   ],
+   "start": 16.83,
+   "end": 29.2,
+   "unter": "kapitel:k1"
+  },
+  {
+   "id": "h2-k3",
+   "lines": [
+    "Professional Certificate"
+   ],
+   "start": 67.54,
+   "end": 73.1,
+   "unter": "kapitel:k3"
+  }
+ ],
  "pillen": [
   {
    "id": "p1",
@@ -119,28 +139,35 @@
  "lebensbalken": [],
  "logos": [
   {
-   "id": "logo-anthropic",
-   "datei": "assets/logo-anthropic.png",
+   "id": "logos-k1",
+   "unter": "kapitel:k1",
    "start": 11.8,
-   "end": 12.95,
-   "hoehe": 76,
-   "breite": 659
+   "end": 16.6,
+   "dateien": [
+    {
+     "datei": "assets/logo-anthropic-klein.png",
+     "hoehe": 40,
+     "breite": 347
+    },
+    {
+     "datei": "assets/logo-claude-klein.png",
+     "hoehe": 54,
+     "breite": 247
+    }
+   ]
   },
   {
-   "id": "logo-claude",
-   "datei": "assets/logo-claude.png",
-   "start": 13.2,
-   "end": 14.6,
-   "hoehe": 100,
-   "breite": 458
-  },
-  {
-   "id": "logo-google",
-   "datei": "assets/logo-google.png",
+   "id": "logo-k3",
+   "unter": "kapitel:k3",
    "start": 62.3,
-   "end": 63.2,
-   "hoehe": 104,
-   "breite": 102
+   "end": 67.3,
+   "dateien": [
+    {
+     "datei": "assets/logo-google-klein.png",
+     "hoehe": 56,
+     "breite": 55
+    }
+   ]
   }
  ],
  "sprechblasen": [
@@ -165,6 +192,16 @@
     "Logos gesucht und eingebaut (Abdullah: „Bitte erst mal die Logos suchen“)",
     "30 $ passt; DICKE behalten"
    ]
+  },
+  {
+   "datum": "2026-09-27",
+   "von": "Abdullah",
+   "gestaltung_v1": "Änderungen",
+   "aenderungen": [
+    "Kapitelüberschriften tragen den Kursnamen (AI Fluency · Framework & Foundations, Gen AI for Everyone, Google AI · Professional Certificate)",
+    "Logos unter den Überschriften, nebeneinander, statt anstelle der Überschrift"
+   ],
+   "danach": "freigegeben, einplanen nächster freier Tag 18:00"
   }
  ]
 }
