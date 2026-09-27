@@ -6,6 +6,7 @@ import { spawnSync } from 'node:child_process';
 import { createHash, randomBytes } from 'node:crypto';
 import { parseArgs } from 'node:util';
 import { parseSrt, makeComposition } from './composition.mjs';
+import { renderProfil } from './schnellweg.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const BIN = path.join(ROOT, 'tools/bin');
@@ -17,6 +18,10 @@ const ENV = {
   HYPERFRAMES_NO_TELEMETRY: '1',
   HYPERFRAMES_NO_UPDATE_CHECK: '1',
   HYPERFRAMES_NO_AUTO_INSTALL: '1',
+  // Tempo-Auftrag 27.09.2026: mehrere Render-Prozesse, Bilder trotzdem direkt in den Encoder (kein Zwischenspeicher von
+  // ~50 GB für 200 s). HyperFrames streamt sonst nur mit einem Prozess; bis 600 s Videodauer.
+  HF_DE_PARALLEL_STREAM: 'true',
+  PRODUCER_STREAMING_ENCODE_MAX_DURATION_SECONDS: '600',
 };
 
 function run(exe, args, cwd = ROOT, log) {
@@ -59,6 +64,15 @@ function doctor() {
   if (!fs.existsSync(MODEL) || fs.statSync(MODEL).size < 480000000) throw new Error('Das Whisper-Modell fehlt oder ist unvollständig.');
   console.log('Mehrsprachiges Whisper-Modell: OK');
   console.log(`Render-Browser: ${run(process.execPath, [HF, 'browser', 'path']).trim()}`);
+  // DESIGN.md 2.2: Schriften (templates/fonts), Freistellungsmodell mit Herkunftsdatei, onnxruntime in tools/venv-rvm.
+  for (const f of ['Archivo[wdth,wght].ttf', 'GochiHand-Regular.ttf']) if (!fs.existsSync(path.join(ROOT, 'templates/fonts', f))) throw new Error(`Schrift fehlt: templates/fonts/${f}`);
+  console.log('Schriften Archivo und Gochi Hand: OK');
+  const rvm = path.join(ROOT, 'tools/models/rvm_mobilenetv3_fp32.onnx'), rvmInfo = path.join(ROOT, 'tools/models/rvm-mobilenetv3-provenance.json');
+  if (!fs.existsSync(rvm) || !fs.existsSync(rvmInfo)) throw new Error('Freistellungsmodell oder Herkunftsdatei fehlt (tools/models).');
+  const want = JSON.parse(fs.readFileSync(rvmInfo, 'utf8')).sha256, got = createHash('sha256').update(fs.readFileSync(rvm)).digest('hex');
+  if (want !== got) throw new Error('Freistellungsmodell: Prüfsumme weicht von der Herkunftsdatei ab.');
+  console.log('Freistellungsmodell RVM: OK');
+  console.log(`onnxruntime: ${run(path.join(ROOT, 'tools/venv-rvm/bin/python'), ['-c', 'import onnxruntime as o; print(o.__version__)']).trim()}`);
 }
 
 async function prepare(input, opts) {
@@ -160,15 +174,22 @@ function render(project, opts, regenerate = true) {
   if (regenerate) buildComposition(project);
   const meta = JSON.parse(fs.readFileSync(path.join(project, 'workflow.json'), 'utf8'));
   console.log('Gestaltung prüfen und Video rendern');
-  if(!regenerate)run(process.execPath,[path.join(ROOT,'check-theme-layout.mjs'),project],ROOT,path.join(project,'logs/04-layout-check.log'));
+  // Seit 27.09.2026 wählt designVersion in workflow.json Vorlage und Prüfung; ohne Eintrag gilt die Version aus theme-plan.json.
+  const planFile = path.join(project, 'theme-plan.json');
+  const version = String(meta.designVersion ?? (fs.existsSync(planFile) ? JSON.parse(fs.readFileSync(planFile, 'utf8')).designVersion : '') ?? '');
+  if (!regenerate && version === '2.2') {
+    run(process.execPath, [path.join(ROOT, 'assemble-full-video.mjs'), project], ROOT, path.join(project, 'logs/03-assemble.log'));
+    run(process.execPath, [path.join(ROOT, 'check-design22.mjs'), project], ROOT, path.join(project, 'logs/04-layout-check.log'));
+  } else if (!regenerate) run(process.execPath, [path.join(ROOT, 'check-theme-layout.mjs'), project], ROOT, path.join(project, 'logs/04-layout-check.log'));
   run(process.execPath, [HF, 'lint', project], ROOT, path.join(project, 'logs/05-lint.log'));
   fs.mkdirSync(path.join(project, 'exports'), { recursive: true });
   // renderMaster "prores": HyperFrames captures PNG frames only for alpha formats; MP4 output uses JPEG quality 80.
   const prores = meta.renderMaster === 'prores';
   const output = path.join(project, 'exports', `final-${stamp()}.${prores ? 'mov' : 'mp4'}`);
-  const safeStreaming = meta.cutDuration > 60 || meta.renderLowMemory === true;
-  const renderArgs = [HF, 'render', project, '--output', output, '--fps', '30', '--quality', opts.draft ? 'draft' : 'high', '--workers', safeStreaming ? '1' : '2', '--sdr'];
-  if (safeStreaming) renderArgs.push('--low-memory-mode');
+  // Seit 27.09.2026 (Tempo-Auftrag): Prozesse nach Kernen und Arbeitsspeicher, --low-memory-mode nur bei ≤ 8 GB oder renderLowMemory.
+  const prof = renderProfil(meta);
+  const renderArgs = [HF, 'render', project, '--output', output, '--fps', '30', '--quality', opts.draft ? 'draft' : 'high', '--workers', String(prof.workers), '--sdr'];
+  if (prof.lowMemory) renderArgs.push('--low-memory-mode');
   if (prores) renderArgs.push('--format', 'mov');
   run(process.execPath, renderArgs, ROOT, path.join(project, 'logs/06-render.log'));
   const result = probe(output);
@@ -231,6 +252,19 @@ try {
   else if (action === 'render') render(existingProject(target), opts);
   else if (action === 'render-html') render(existingProject(target), opts, false);
   else if (action === 'speed') changeSpeed(existingProject(target), opts);
+  else if (['storyboard', 'vorschau', 'build'].includes(action)) {
+    const sw = await import('./schnellweg.mjs');
+    const { assembleFullVideo } = await import('./assemble-full-video.mjs');
+    const { checkDesign22 } = await import('./check-design22.mjs');
+    const ctx = { root: ROOT, run, assemble: (p, o) => assembleFullVideo(p, o), check: p => checkDesign22(p) };
+    await sw[action](existingProject(target), ctx);
+  }
+  else if (action === 'green-screen') {
+    // DESIGN.md 11: Personenebene je Grafikabschnitt (Robust Video Matting); --review misst zusätzlich das Kopfprofil.
+    const args = [path.join(ROOT, 'green-screen-maske.py'), existingProject(target)];
+    if (opts.review) args.push('--kopfprofil');
+    console.log(run(path.join(ROOT, 'tools/venv-rvm/bin/python'), args, ROOT));
+  }
   else if (action === 'transcribe-words') {
     const { transcribeWords } = await import('./word-captions.mjs');
     transcribeWords(existingProject(target), { BIN, MODEL, run, opts });
@@ -244,7 +278,7 @@ try {
     buildComposition(p);
     console.log(run(process.execPath, [HF, 'preview', p, '--background', '--no-open']));
   } else {
-    console.log('Verwendung:\n  node workflow.mjs doctor\n  node workflow.mjs prepare "/Pfad/Video.mov" --title "Deine Überschrift"\n  node workflow.mjs preview "/Pfad/Projekt"\n  node workflow.mjs render "/Pfad/Projekt"\n\nOptionen für prepare: --language de --threshold 3 --margin 0.25 --cpu --no-cut --no-normalize\nOption für render: --draft');
+    console.log('Verwendung:\n  node workflow.mjs doctor\n  node workflow.mjs prepare "/Pfad/Video.mov" --title "Deine Überschrift"\n  node workflow.mjs preview "/Pfad/Projekt"\n  node workflow.mjs render "/Pfad/Projekt"\n  node workflow.mjs render-html "/Pfad/Projekt"\n  node workflow.mjs green-screen "/Pfad/Projekt" [--review]\n  node workflow.mjs storyboard "/Pfad/Projekt"\n  node workflow.mjs vorschau "/Pfad/Projekt"\n  node workflow.mjs build "/Pfad/Projekt"\n\nOptionen für prepare: --language de --threshold 3 --margin 0.25 --cpu --no-cut --no-normalize\nOption für render: --draft');
     if (action) process.exitCode = 1;
   }
 } catch (error) {

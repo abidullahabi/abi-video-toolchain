@@ -3,6 +3,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import * as fontkit from 'fontkit';
 import { makeThemeComposition } from './theme-composition.mjs';
+import { fileURLToPath } from 'node:url';
+import { makeMeasure, groupCaptions22, planZooms22, layoutDesign22, makeDesign22Composition } from './theme-composition-design22.mjs';
+
+const ROOT = path.dirname(fileURLToPath(import.meta.url));
 
 export function readWhisperWords(file, offset = 0) {
   const data = JSON.parse(fs.readFileSync(file));
@@ -83,13 +87,8 @@ export function groupCaptions(words, measure, maxWidth=SOCIAL_LAYOUT.captionMaxW
   return cues;
 }
 
-export function assembleFullVideo(project) {
-  const plan=JSON.parse(fs.readFileSync(path.join(project,'theme-plan.json')));
-  const SOCIAL_LAYOUT=layoutFor(plan);
-  plan.captionFontSize=plan.captionFontSize||SOCIAL_LAYOUT.captionFontSize;
-  plan.captionTop=plan.captionTop||SOCIAL_LAYOUT.captionTop;
-  plan.captionMaxWords=Math.min(plan.captionMaxWords||SOCIAL_LAYOUT.captionMaxWords,SOCIAL_LAYOUT.captionMaxWords);
-  plan.captionMaxWidth=Math.min(plan.captionMaxWidth||SOCIAL_LAYOUT.captionMaxWidth,SOCIAL_LAYOUT.captionMaxWidth);
+// Geprüfte Wortzeiten aus word-alignment-turbo, word-review-turbo und caption-edit-plan.json (für alle Designversionen gleich).
+export function readTimedWords(project, duration) {
   const chunks=JSON.parse(fs.readFileSync(path.join(project,'word-alignment-turbo/chunks.json')));
   let words=chunks.flatMap(([start],i)=>readWhisperWords(path.join(project,`word-alignment-turbo/part-${i}.json`),start));
   const editFile=path.join(project,'caption-edit-plan.json');
@@ -117,11 +116,28 @@ export function assembleFullVideo(project) {
     const w=matches[0];corrections.push({time:center(w),before:w.text,after:correction.after,basis:correction.basis});w.text=correction.after;
   }
   words=words.filter(w=>w.text);
-  let timed=timeWords(words,plan.duration);
+  let timed=timeWords(words,duration);
   for(let i=1;i<timed.length;i++) {
     if(timed[i].start<timed[i-1].end){const seam=rounded((timed[i].start+timed[i-1].end)/2);timed[i-1].end=seam;timed[i].start=seam;}
     if(timed[i].end<=timed[i].start)throw Error('Wortzeiten prüfen: '+timed[i].text);
   }
+  return {timed,corrections};
+}
+
+export function assembleFullVideo(project, opts = {}) {
+  // Seit 27.09.2026: workflow.json nennt designVersion. 2.2 misst mit Archivo und baut mit theme-composition-design22.mjs;
+  // ältere Projekte behalten ihre Vorlage und die Arial-Messung, damit sich ihre Untertitelgruppen nicht verschieben.
+  const metaFile=path.join(project,'workflow.json');
+  const meta=fs.existsSync(metaFile)?JSON.parse(fs.readFileSync(metaFile)):{};
+  if(String(meta.designVersion)==='2.2')return assembleDesign22(project,meta,opts);
+  const plan=JSON.parse(fs.readFileSync(path.join(project,'theme-plan.json')));
+
+  const SOCIAL_LAYOUT=layoutFor(plan);
+  plan.captionFontSize=plan.captionFontSize||SOCIAL_LAYOUT.captionFontSize;
+  plan.captionTop=plan.captionTop||SOCIAL_LAYOUT.captionTop;
+  plan.captionMaxWords=Math.min(plan.captionMaxWords||SOCIAL_LAYOUT.captionMaxWords,SOCIAL_LAYOUT.captionMaxWords);
+  plan.captionMaxWidth=Math.min(plan.captionMaxWidth||SOCIAL_LAYOUT.captionMaxWidth,SOCIAL_LAYOUT.captionMaxWidth);
+  const {timed,corrections}=readTimedWords(project,plan.duration);
   const font=fontkit.openSync('/System/Library/Fonts/Supplemental/Arial Bold.ttf');
   const measure=(text,size=plan.captionFontSize)=>font.layout(text).positions.reduce((sum,x)=>sum+x.xAdvance,0)/font.unitsPerEm*size;
   plan.captions=groupCaptions(timed,measure,plan.captionMaxWidth,plan.captionMaxWords);
@@ -139,6 +155,43 @@ export function assembleFullVideo(project) {
   fs.writeFileSync(path.join(project,'captions-reviewed.txt'),timed.map(w=>w.text).join(' ')+'\n');
   fs.writeFileSync(path.join(project,'index.html'),makeThemeComposition(plan));
   console.log(JSON.stringify(report,null,2));
+}
+
+// DESIGN.md 2.2: Eingabe design-plan.json (Elementplanung ohne Maße), Ausgabe theme-plan.json und index.html.
+export function assembleDesign22(project,meta,opts={}) {
+  const read=f=>JSON.parse(fs.readFileSync(path.join(project,f)));
+  const input=read('design-plan.json'),duration=meta.cutDuration;
+  const {timed,corrections}=readTimedWords(project,duration);
+  const measure=makeMeasure(ROOT),errors=[],warnings=[],notes=[];
+  // Kopf und Kappe: Personenmaske (review/kopf-profil.json, DESIGN.md 12) oder, falls sie fehlt, Schätzung aus der Gesichtserkennung.
+  const profil=fs.existsSync(path.join(project,'review/kopf-profil.json'));
+  const samples=profil?read('review/kopf-profil.json').proben:read('review/source-faces.json');
+  const box=q=>profil?{x:q.x-4,y:q.y-4,w:q.width+8,h:q.height+8}:{x:q.x-.12*q.width,y:q.y-.5*q.height,w:1.24*q.width,h:1.5*q.height};
+  const heads=(a,b)=>samples.filter(f=>f.time>=a-.25&&f.time<=b+.25).flatMap(f=>(f.faces||[]).map(box));
+  const faces=read('review/source-faces.json');
+  const faceWidth=t=>{const f=faces.reduce((b,x)=>Math.abs(x.time-t)<Math.abs(b.time-t)?x:b);return Math.max(0,...(f.faces||[]).map(q=>q.width));};
+  const followers=read('follower-source.json').wert;
+  const plan=layoutDesign22(input,{measure,heads,errors,warnings,notes,duration,followers});
+  plan.title=meta.title;plan.kopfQuelle=profil?'Personenmaske (review/kopf-profil.json)':'Schätzung aus review/source-faces.json';
+  plan.captions=groupCaptions22(timed,measure,duration);
+  const cutFile=path.join(project,'review/cut-points.json'),cuts=fs.existsSync(cutFile)?read('review/cut-points.json').cuts.map(c=>c.time):[];
+  plan.zooms=input.zooms??planZooms22({resets:[...cuts,...plan.kapitel.map(k=>k.start),...plan.h1.map(h=>h.start)],blocked:[...plan.schlagworte.map(s=>[s.start-.3,s.end+.3]),...plan.grafiken.map(g=>[g.start,g.end]),[plan.outro.start,duration],...(input.zoomSperren||[])],faceWidth,closeFrom:input.nahaufnahmeAbBreite??420,duration});
+  plan.hinweise={warnings,notes};
+  if(errors.length)throw Error('DESIGN.md 2.2:\n- '+errors.join('\n- '));
+  // HyperFrames lädt nur Dateien im Projekt: Schriften, Profil-Icons und GSAP aus templates/ kopieren.
+  fs.mkdirSync(path.join(project,'assets/fonts'),{recursive:true});fs.mkdirSync(path.join(project,'vendor'),{recursive:true});
+  for(const f of fs.readdirSync(path.join(ROOT,'templates/fonts')))fs.copyFileSync(path.join(ROOT,'templates/fonts',f),path.join(project,'assets/fonts',f));
+  for(const f of fs.readdirSync(path.join(ROOT,'templates/social-icons')).filter(f=>f.startsWith('tile-')))fs.copyFileSync(path.join(ROOT,'templates/social-icons',f),path.join(project,'assets',f));
+  fs.copyFileSync(path.join(ROOT,'templates/vendor/gsap.min.js'),path.join(project,'vendor/gsap.min.js'));
+  const report={words:timed.length,cues:plan.captions.length,maxWords:Math.max(...plan.captions.map(c=>c.words.length)),maxWidth:Math.max(...plan.captions.map(c=>c.width)),availableWidth:780,font:'Archivo 800',fontSize:64,corrections,zooms:plan.zooms.length,hinweise:plan.hinweise};
+  const write=(name,value)=>fs.writeFileSync(path.join(project,name),JSON.stringify(value,null,2)+'\n');
+  write('word-timing.json',timed);write('caption-review.json',report);write('theme-plan.json',plan);
+  const stamp=t=>new Date(Math.round(t*1000)).toISOString().slice(11,23).replace('.',',');
+  fs.writeFileSync(path.join(project,'captions.srt'),plan.captions.map((c,i)=>`${i+1}\n${stamp(c.start)} --> ${stamp(c.end)}\n${c.words.map(w=>w.text).join(' ')}\n`).join('\n'));
+  fs.writeFileSync(path.join(project,'captions-reviewed.txt'),timed.map(w=>w.text).join(' ')+'\n');
+  fs.writeFileSync(path.join(project,'index.html'),makeDesign22Composition(plan,{vorschau:!!opts.vorschau}));
+  console.log(JSON.stringify(report,null,2));
+  return plan;
 }
 
 if(process.argv[1]?.endsWith('assemble-full-video.mjs'))assembleFullVideo(path.resolve(process.argv[2]));

@@ -1,0 +1,124 @@
+{
+  "projekt": "/Users/abi/Projekte/abi-video-toolchain/projects/Fast-30-Design2-2026-09-27",
+  "begonnen": "2026-09-27T15:48:55.947Z",
+  "schritte": [
+    {
+      "schritt": "build: zusammensetzen",
+      "sekunden": 0.1
+    },
+    {
+      "schritt": "build: designprüfung (jedes Bild)",
+      "sekunden": 3
+    },
+    {
+      "schritt": "build: lint",
+      "sekunden": 1
+    },
+    {
+      "schritt": "build: rendern (mp4, ein Master)",
+      "sekunden": 852.2
+    },
+    {
+      "schritt": "build: master decodieren",
+      "sekunden": 17.7
+    },
+    {
+      "schritt": "build: upload-export (Abschnitt 10) + VMAF + Ton",
+      "sekunden": 431.4
+    },
+    {
+      "schritt": "build: kontaktblatt (≤ 12)",
+      "sekunden": 3.2
+    }
+  ],
+  "designpruefung": {
+    "bilder": 6072,
+    "blockierend": 0,
+    "maxEbenen": 3,
+    "hinweise": 2
+  },
+  "render": {
+    "datei": "/Users/abi/Projekte/abi-video-toolchain/projects/Fast-30-Design2-2026-09-27/exports/final-2026-09-27T15-49-00-047Z.mp4",
+    "format": "mp4",
+    "quality": "high",
+    "kerne": 10,
+    "arbeitsspeicherGB": 16,
+    "freiGB": 1.5,
+    "workers": 1,
+    "lowMemory": false,
+    "bilder": 6071,
+    "sekunden": 852,
+    "msProBild": 140,
+    "aufnahmeMsProBild": 137,
+    "aufnahmeModus": "drawelement"
+  },
+  "export": {
+    "datei": "/Users/abi/Projekte/abi-video-toolchain/projects/Fast-30-Design2-2026-09-27/exports/Fast-30_v1.mp4",
+    "mb": 292.9,
+    "videoKbit": 11451,
+    "vmaf": 98.5,
+    "tonVersatzMs": [
+      0,
+      0,
+      0
+    ],
+    "sha256": "d49e4cabbee2e22e0a87913e8700565642ca3b5dfcf83bd4197f496585d701e5"
+  },
+  "pruefliste20": [
+    {
+      "punkt": "1 Einstieg am ersten codierten Frame vollständig, ohne Animation",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "2 Zentrierte Elemente auf x = 540",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "3 Nichts in gesperrten Zonen (inkl. Kontur, Schatten, Animation)",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "4 Breitengrenzen, Untertitel einzeilig",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "5 Genau ein Wort blau im Untertitel",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "6 Pink nur Schlagwort und Durchstreichen (Emojis ausgenommen)",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "7 Gochi Hand nur für Zahlen und Akronyme",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "8 Höchstens zwei Textebenen zusätzlich zum Untertitel",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "9 Green Screen mit Robust Video Matting",
+      "ergebnis": "bestanden",
+      "notiz": "Deckungssprung Mittel 0.00063"
+    },
+    {
+      "punkt": "10 Followerstand aus aktuellem Zernio-Abruf",
+      "ergebnis": "bestanden",
+      "notiz": "4258, Stand 2026-09-27T05:09:14.855Z"
+    },
+    {
+      "punkt": "11 Nichts aus Abschnitt 17 ohne Testauftrag, nichts aus 18",
+      "ergebnis": "bestanden",
+      "notiz": "Vorlage enthält keine Soundeffekte, B-Roll, Memes, Musik, Sticker"
+    },
+    {
+      "punkt": "12 Fertiges Video einmal vollständig angesehen (Handy)",
+      "ergebnis": "offen",
+      "notiz": "offen: Abdullah"
+    }
+  ],
+  "dauerSekunden": 1309,
+  "kontaktblatt": "/Users/abi/Projekte/abi-video-toolchain/projects/Fast-30-Design2-2026-09-27/review/kontaktblatt.jpg",
+  "fertig": "2026-09-27T16:10:44.655Z"
+}
