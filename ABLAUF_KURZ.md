@@ -32,6 +32,8 @@ Jeder Befehl unten schreibt Start und Ende in `projects/<P>/logs/zeiten.json`.
 
 **Arbeitsspeicher.** Vor jedem Render prüft das Werkzeug den verfügbaren Speicher. Reicht er nicht für zwei Render-Prozesse, hält es an und meldet das. Dann bittest du Abdullah kurz, Programme zu schließen, statt mit einem Prozess doppelt so lange zu rendern.
 
+**Löschordner.** Löschbares nur nach ~/Löschbar. Keine anderen Löschordner, keine Fristen. INHALT.md dort aktuell halten.
+
 **Werkzeugcode.** Wer Werkzeugcode ändert, arbeitet in einem eigenen Arbeitsordner (git worktree), siehe `CLAUDE.md`. Videoprojekte bleiben im gemeinsamen `projects/` des Hauptordners.
 
 **Freigaben.** Folgende Befehle kann Abdullah einmalig über `/permissions` freigeben, damit ein Durchlauf ohne Rückfragen läuft. Die KI schlägt die Liste nur vor und trägt sie nie selbst ein.

@@ -186,6 +186,7 @@ export async function stufe2(projekt, postId, { commit = true } = {}) {
   // Lokales Videomaterial nach ~/Löschbar (nichts löschen, Manifest mit Rückholweg).
   const { aufraeumen } = await import('./aufraeumen.mjs');
   r.loeschbar = aufraeumen([p]);
+  r.loeschbarHinweis = `${r.loeschbar.gb} nach ~/Löschbar/${path.basename(r.loeschbar.ziel)}, sofort löschbar`;
   m = lies(p); m.bearbeitung = { ...(m.bearbeitung || {}), status: 'fertig', beendet: new Date().toISOString() }; schreib(p, m);
   if (commit) {
     const { HAUPT } = await import('./projekte.mjs');
