@@ -107,7 +107,7 @@ def kopfprofil(project, sess, bereiche=None, halb=False, sha=None):
     dur = json.load(open(project / 'workflow.json'))['cutDuration']
     n_all = int(dur * FPS)
     ziel = project / 'review' / 'kopf-profil.json'
-    einst = {'halb': bool(halb), 'schwelle': 0.5, 'ratio': RATIO, 'vorlauf': WARMUP}
+    einst = {'halb': halb or False, 'schwelle': 0.5, 'ratio': RATIO * (2 if halb == 'fein' else 1), 'vorlauf': WARMUP}
     alt = json.load(open(ziel)) if ziel.exists() else {}
     proben = {round(p['time'] * FPS): p for p in alt.get('proben', [])} if (alt.get('mediaSha256') == sha and alt.get('einstellungen') == einst and sha) else {}
     if bereiche is None:
@@ -122,7 +122,9 @@ def kopfprofil(project, sess, bereiche=None, halb=False, sha=None):
                 else:
                     spans.append((fa, fb))
     w, h = (W // 2, H // 2) if halb else (W, H)
-    ratio = np.array([RATIO * (2 if halb else 1)], dtype=np.float32)
+    # Halbe Auflösung mit downsample_ratio 0,25 (innere Auflösung 135 × 240): 16 statt 54 ms je Bild, Oberkante im
+    # Vergleich mit dem bisherigen Weg siehe Testprotokoll (27.09.2026). Mit halb='fein' wie bisher innen 270 × 480.
+    ratio = np.array([RATIO * (2 if halb == 'fein' else 1)], dtype=np.float32)
     k = 2 if halb else 1
     t0, gerechnet = time.time(), 0
     for fa, fb in spans:
@@ -171,7 +173,7 @@ def main():
     ap.add_argument('--nur')
     ap.add_argument('--kopfprofil', action='store_true')
     ap.add_argument('--bereiche', help='JSON-Liste [[start, ende], …] in Sekunden: Kopfprofil nur dort')
-    ap.add_argument('--halb', action='store_true', help='halbe Auflösung, jedes zweite Bild')
+    ap.add_argument('--halb', nargs='?', const='schnell', choices=['schnell', 'fein'], help='halbe Auflösung, jedes zweite Bild (schnell: innen 135 × 240, fein: 270 × 480)')
     ap.add_argument('--media-sha', help='Prüfsumme von media.mp4, damit gemessene Proben weiterverwendet werden')
     a = ap.parse_args()
     project = Path(a.project).resolve()

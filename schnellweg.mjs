@@ -87,7 +87,7 @@ export function animationen(plan) {
   const h1Ids = new Set((plan.h1 || []).map(h => 'h1:' + h.id));
   for (const k of plan.kapitel || []) add(k.id, 'Kapitel', `${k.nummer || ''} ${k.titel}`.trim(), k.start + 0.2, k.start + 0.62);
   for (const h of plan.h1 || []) add(h.id, 'H1', h.lines.join(' '), h.start + 0.08, h.start + 0.3);
-  for (const h of plan.h2 || []) { const v = h1Ids.has(h.unter) ? 0.06 : 0; add(h.id, 'H2', h.lines.join(' / '), h.start + v + 0.12, h.start + v + 0.4); }
+  for (const h of plan.h2 || []) { const v = h1Ids.has(h.unter) ? 0.06 : 0; add(h.id, 'H2', h.lines.join(' / '), h.start + v + 0.06, h.start + v + 0.4); }
   for (const p of plan.pillen || []) p.items.forEach((it, i) => add(p.id, `Pille ${i + 1}`, it.text, it.at + 0.08, Math.min(p.end - 0.2, (p.items[i + 1]?.at ?? Infinity) - 0.01, it.at + 0.35)));
   for (const x of plan.akronyme || []) add(x.id, 'Akronym', x.letters.map(l => l.b).join(''), x.start + 0.08, x.start + 0.35 + 0.08 * (x.letters.length - 1));
   for (const x of plan.schlagworte || []) add(x.id, 'Schlagwort', x.text, x.start + 0.35, x.start + 0.7);

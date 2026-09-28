@@ -12,6 +12,7 @@
 // Die Wörter werden dann einmal auf dem ungeschnittenen Ton erkannt und über die Schnittliste in die
 // Schnittzeit umgerechnet, statt ein zweites Mal zu transkribieren.
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { spawnSync, execFileSync } from 'node:child_process';
 import { ROOT, PROJEKTE, CACHE, schritt, pruefsumme, schreibeJson, hash } from './projekte.mjs';
@@ -28,7 +29,8 @@ function ff(args, cwd, log) {
   return r.stdout;
 }
 const probe = f => JSON.parse(execFileSync(FP, ['-v', 'error', '-show_format', '-show_streams', '-of', 'json', f], { encoding: 'utf8' }));
-const dauer = f => Number(probe(f).format.duration);
+// Dauer aus der Bildspur (Bilder / 30): Der Container zählt die AAC-Auffüllung des Tons mit (55,24 statt 55,233 s).
+const dauer = f => { const v = probe(f).streams.find(s => s.codec_type === 'video'); return +v.nb_frames > 0 ? +v.nb_frames / FPS : Number(v.duration); };
 
 // 16: Farbkorrektur A im YUV- bzw. RGB-Raum mit ausdrücklicher BT.709-Matrix (wie build-graded-media.py, abgenommen 26.09.2026).
 const FARBKORREKTUR = {
@@ -110,10 +112,12 @@ export async function vorbereiten(project, opts = {}) {
   const erzwingen = !!opts.neu;
 
   // 1. Kamerabild: in einem Durchgang aus dem Rohvideo (Schnitt, HDR→SDR, Hochkant, 30 fps, Farbkorrektur).
-  const kb = await schritt(project, 'vorbereiten: kamerabild', { eingaben: [meta.source, ...(keep ? ['schnitt.json'] : [])], werte: { grade: meta.farbkorrektur, KAMERABILD, v: 2 }, ausgaben: ['media.mp4'] }, () => {
+  const kb = await schritt(project, 'vorbereiten: kamerabild', { eingaben: [meta.source, ...(keep ? ['schnitt.json'] : [])], werte: { grade: meta.farbkorrektur, KAMERABILD, v: 3 }, ausgaben: ['media.mp4'] }, () => {
     const v = [], a = [];
     const hdr = meta.sourceVideo?.hdr ? 'zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,' : '';
-    const bild = `${hdr}scale=1080:1920:force_original_aspect_ratio=decrease:force_divisible_by=2,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fps=${FPS}${grade ? ',' + grade : ',format=yuv420p'}`;
+    // Hochkant 1080 × 1920 nur, wenn die Aufnahme es nicht schon ist (spart einen Filterdurchgang je Bild).
+    const sv = meta.sourceVideo || {}, passt = sv.width === 1080 && sv.height === 1920;
+    const bild = `${hdr}${passt ? '' : 'scale=1080:1920:force_original_aspect_ratio=decrease:force_divisible_by=2,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,'}setsar=1,fps=${FPS}${grade ? ',' + grade : ',format=yuv420p'}`;
     let filter;
     if (keep) {
       keep.forEach(([s, e], i) => {
@@ -124,7 +128,7 @@ export async function vorbereiten(project, opts = {}) {
     } else filter = `[0:v:0]${bild}[vout];[0:a:0]aresample=48000[aout]`;
     fs.writeFileSync(path.join(project, 'logs/kamerabild-filter.txt'), filter);
     const tmp = path.join(project, 'media.unfertig.mp4');
-    ff(['-y', '-i', meta.source, '-filter_complex_script', path.join(project, 'logs/kamerabild-filter.txt'), '-map', '[vout]', '-map', '[aout]',
+    ff(['-y', '-filter_complex_threads', String(os.cpus().length), '-i', meta.source, '-filter_complex_script', path.join(project, 'logs/kamerabild-filter.txt'), '-map', '[vout]', '-map', '[aout]',
       '-c:v', 'libx264', '-preset', KAMERABILD.preset, '-crf', String(KAMERABILD.crf), '-g', String(KAMERABILD.gop), '-profile:v', 'high', '-pix_fmt', 'yuv420p',
       '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-color_range', 'tv',
       '-c:a', 'aac', '-b:a', KAMERABILD.audio, '-ar', '48000', '-map_metadata', '-1', '-movflags', '+faststart', tmp], project, path.join(project, 'logs/kamerabild.log'));
@@ -144,12 +148,12 @@ export async function vorbereiten(project, opts = {}) {
   // 3. Wörter: ein Whisper-Durchgang (large-v3-turbo, DTW-Wortzeiten) auf speech.wav.
   const ordner = keep ? 'woerter-roh' : 'word-alignment-turbo';
   const chunks = path.join(project, 'transcription-chunks.json');
-  await schritt(project, 'vorbereiten: wörter (ein Durchgang)', { eingaben: ['speech.wav', ...(fs.existsSync(path.join(project, 'transcription-prompt.txt')) ? ['transcription-prompt.txt'] : []), ...(fs.existsSync(chunks) && !keep ? ['transcription-chunks.json'] : [])], werte: { ordner, modell: 'large-v3-turbo-q5_0', v: 1 }, ausgaben: [`${ordner}/chunks.json`] }, () => transkribieren(project, ordner, keep ? meta.sourceDuration : d));
-  if (keep) await schritt(project, 'vorbereiten: wörter in Schnittzeit', { eingaben: ['woerter-roh/chunks.json', 'schnitt.json'], werte: { v: 1 }, ausgaben: ['word-alignment-turbo/chunks.json'] }, () => woerterUmrechnen(project, keep));
+  await schritt(project, 'vorbereiten: wörter (ein Durchgang)', { eingaben: ['speech.wav', ...(fs.existsSync(path.join(project, 'transcription-prompt.txt')) ? ['transcription-prompt.txt'] : []), ...(fs.existsSync(chunks) && !keep ? ['transcription-chunks.json'] : [])], werte: { ordner, modell: 'large-v3-turbo-q5_0', v: 1 }, ausgaben: [`${ordner}/chunks.json`] }, () => transkribieren(project, ordner, keep ? meta.sourceDuration : d), { erzwingen });
+  if (keep) await schritt(project, 'vorbereiten: wörter in Schnittzeit', { eingaben: ['woerter-roh/chunks.json', 'schnitt.json'], werte: { v: 1 }, ausgaben: ['word-alignment-turbo/chunks.json'] }, () => woerterUmrechnen(project, keep), { erzwingen });
 
   // 4. Gesichter alle 0,5 s (Vision), 5. Schnittpunkte (Bildsprünge und Schnittliste).
-  await schritt(project, 'vorbereiten: gesichter', { eingaben: ['media.mp4'], werte: { v: 1 }, ausgaben: ['review/source-faces.json'] }, () => gesichter(project));
-  await schritt(project, 'vorbereiten: schnittpunkte', { eingaben: ['media.mp4', ...(keep ? ['schnitt.json'] : [])], werte: { v: 1 }, ausgaben: ['review/cut-points.json'] }, () => schnittpunkte(project, keep));
+  await schritt(project, 'vorbereiten: gesichter', { eingaben: ['media.mp4'], werte: { v: 1 }, ausgaben: ['review/source-faces.json'] }, () => gesichter(project), { erzwingen });
+  await schritt(project, 'vorbereiten: schnittpunkte', { eingaben: ['media.mp4', ...(keep ? ['schnitt.json'] : [])], werte: { v: 1 }, ausgaben: ['review/cut-points.json'] }, () => schnittpunkte(project, keep), { erzwingen });
   console.log(`Vorbereitet: ${project} (${d.toFixed(2)} s)`);
 }
 

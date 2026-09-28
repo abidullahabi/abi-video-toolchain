@@ -374,7 +374,10 @@ const show=(s,a,b)=>{const c=s+' > *';tl.set(c,{visibility:'visible'},a);tl.set(
 const out=(s,end)=>tl.to(s,{opacity:0,y:-8,duration:.18,ease:LIN},end-.18);           // 15: Ausblenden 0,18 s, Linear, 8 px nach oben
 const up=(s,at,dy=14)=>{tl.set(s,{opacity:0,y:dy},0);tl.fromTo(s,{opacity:0,y:dy},{opacity:1,y:0,duration:.22,ease:OUT,immediateRender:false},at);};
 const pop=(s,at,from,dur)=>{tl.set(s,{opacity:0,scale:from},0);tl.set(s,{opacity:1},at);tl.fromTo(s,{scale:from},{scale:1,duration:dur,ease:BACK,immediateRender:false},at);};
-const wipe=(s,at,dur,m)=>{tl.set(s,{clipPath:'inset(-'+m+'px 100% -'+m+'px -'+m+'px)'},0);tl.fromTo(s,{clipPath:'inset(-'+m+'px 100% -'+m+'px -'+m+'px)'},{clipPath:'inset(-'+m+'px -'+m+'px -'+m+'px -'+m+'px)',duration:dur,ease:OUT,immediateRender:false},at);};
+// Wischblende in px (27.09.2026, Tempo Phase 3): Von „100 %“ auf „-20px“ rechnet GSAP ohne Einheit um, die Blende sprang
+// im ersten Bild fast ganz auf. Breite deshalb beim ersten Abspielen messen (Schriften sind dann geladen).
+const hidR=(s,m)=>()=>{const e=document.querySelector(s);return 'inset(-'+m+'px '+((e?e.offsetWidth:0)+m)+'px -'+m+'px -'+m+'px)';};
+const wipe=(s,at,dur,m)=>{const vis='inset(-'+m+'px -'+m+'px -'+m+'px -'+m+'px)';tl.set(s,{clipPath:hidR(s,m)},0);tl.fromTo(s,{clipPath:hidR(s,m)},{clipPath:vis,duration:dur,ease:OUT,immediateRender:false},at);};
 // Zeichnen über das SVG-Attribut: GSAP rundet die CSS-Eigenschaft strokeDashoffset auf ganze Pixel, bei pathLength 1
 // sprang jede Linie dadurch von unsichtbar auf fertig (Fast 30, 27.09.2026: Durchstreichen und ETF-Linie „zu schnell“).
 const draw=(s,at,dur)=>tl.to(s,{attr:{'stroke-dashoffset':0},duration:dur,ease:OUT},at);
@@ -398,7 +401,7 @@ for(const n of D.n){show('#'+n.id,n.start,n.end);let k=0;n.lines.forEach((l,j)=>
 // 15: Lebensbalken. Abschnitt füllt sich in 1,0 s; Beschriftung wie Randnotiz-Zeile.
 for(const b of D.b){show('#'+b.id,b.start,b.end);up('#'+b.id+' .bal-bed',b.start);b.segments.forEach((s,i)=>{up('#'+b.id+'-l'+i,s.at);tl.to('#'+b.id+'-f'+i,{scaleX:1,duration:1,ease:OUT},s.at);});out('#'+b.id,b.end);}
 // 15: Logo. Wischblende von links 0,28 s, Ausblenden 0,22 s in gleicher Richtung; H1/Kapitel 0,1 s vorher aus, 0,1 s danach wieder an.
-for(const l of D.l){show('#'+l.id,l.start,l.end);wipe('#'+l.id+' .logo',l.start,.28,0);tl.to('#'+l.id+' .logo',{clipPath:'inset(0px 0px 0px 100%)',duration:.22,ease:LIN},l.end-.22);}
+for(const l of D.l){show('#'+l.id,l.start,l.end);wipe('#'+l.id+' .logo',l.start,.28,0);tl.to('#'+l.id+' .logo',{clipPath:()=>'inset(-0px -0px -0px '+document.querySelector('#'+l.id+' .logo').offsetWidth+'px)',duration:.22,ease:LIN},l.end-.22);}
 for(const x of D.logoH1){tl.to(x.sel,{opacity:0,duration:.1,ease:LIN},x.out);tl.to(x.sel,{opacity:1,duration:.1,ease:LIN},x.in);}
 // 10: Schlagwort. Stoßzoom hart auf 112 % (Ursprung 42/28), Wort Pop 55 → 100 % 0,30 s; Striche ab 0,25 s, je 0,25 s, der zweite 0,15 s später (Referenz).
 for(const s of D.s){show('#'+s.id,s.start,s.end);pop('#'+s.id+' .sw-pop',s.start,.55,.3);draw(['#'+s.id+'-u0i','#'+s.id+'-u0p'],s.start+.25,.25);draw(['#'+s.id+'-u1i','#'+s.id+'-u1p'],s.start+.4,.25);tl.set('#footage',{scale:1.12},s.start);tl.set('#footage',{scale:1},s.end);out('#'+s.id,s.end);}
