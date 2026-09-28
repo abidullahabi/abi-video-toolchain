@@ -1,0 +1,170 @@
+[
+  {
+    "schritt": "vorher: kamerabild (Farbkorrektur A, x264 slow CRF 10, wie build-graded-media.py)",
+    "start": "2026-09-27T18:29:24.856Z",
+    "ende": "2026-09-27T18:30:33.052Z",
+    "sekunden": 68.2,
+    "ok": true
+  },
+  {
+    "schritt": "vorher: tonspur speech.wav",
+    "start": "2026-09-27T18:30:33.052Z",
+    "ende": "2026-09-27T18:30:33.128Z",
+    "sekunden": 0.1,
+    "ok": true
+  },
+  {
+    "schritt": "vorher: transkription (turbo, 24-s-Abschnitte)",
+    "start": "2026-09-27T18:30:33.128Z",
+    "ende": "2026-09-27T18:30:57.694Z",
+    "sekunden": 24.6,
+    "ok": true
+  },
+  {
+    "schritt": "vorher: gesichter (Vision, alle 0,5 s)",
+    "start": "2026-09-27T18:30:57.694Z",
+    "ende": "2026-09-27T18:30:58.245Z",
+    "sekunden": 0.6,
+    "ok": true
+  },
+  {
+    "schritt": "vorher: kopfprofil (RVM, ganzes Video, jedes Bild, volle Auflösung)",
+    "start": "2026-09-27T18:30:58.245Z",
+    "ende": "2026-09-27T18:30:58.522Z",
+    "sekunden": 0.3,
+    "ok": false
+  },
+  {
+    "schritt": "vorher: gesichter (Vision, alle 0,5 s)",
+    "start": "2026-09-27T18:32:45.138Z",
+    "ende": "2026-09-27T18:33:23.769Z",
+    "sekunden": 38.6,
+    "ok": true
+  },
+  {
+    "schritt": "vorher: kopfprofil (RVM, ganzes Video, jedes Bild, volle Auflösung)",
+    "start": "2026-09-27T18:33:23.769Z",
+    "ende": "2026-09-27T18:35:05.282Z",
+    "sekunden": 101.5,
+    "ok": true
+  },
+  {
+    "schritt": "storyboard: zusammensetzen",
+    "start": "2026-09-27T18:35:57.507Z",
+    "ende": "2026-09-27T18:35:57.543Z",
+    "sekunden": 0,
+    "ok": false
+  },
+  {
+    "schritt": "storyboard: zusammensetzen",
+    "start": "2026-09-27T18:36:07.991Z",
+    "ende": "2026-09-27T18:36:08.026Z",
+    "sekunden": 0,
+    "ok": false
+  },
+  {
+    "schritt": "storyboard: zusammensetzen",
+    "start": "2026-09-27T18:36:14.407Z",
+    "ende": "2026-09-27T18:36:14.448Z",
+    "sekunden": 0,
+    "ok": true
+  },
+  {
+    "schritt": "storyboard: standbilder",
+    "start": "2026-09-27T18:36:14.456Z",
+    "ende": "2026-09-27T18:36:19.309Z",
+    "sekunden": 4.9,
+    "ok": true
+  },
+  {
+    "schritt": "storyboard: kontaktblatt",
+    "start": "2026-09-27T18:36:19.310Z",
+    "ende": "2026-09-27T18:36:20.464Z",
+    "sekunden": 1.2,
+    "ok": true
+  },
+  {
+    "schritt": "build: zusammensetzen",
+    "start": "2026-09-27T18:36:31.181Z",
+    "ende": "2026-09-27T18:36:31.222Z",
+    "sekunden": 0,
+    "ok": true
+  },
+  {
+    "schritt": "build: designprüfung (jedes Bild)",
+    "start": "2026-09-27T18:36:31.222Z",
+    "ende": "2026-09-27T18:36:32.556Z",
+    "sekunden": 1.3,
+    "ok": false
+  },
+  {
+    "schritt": "build: zusammensetzen",
+    "start": "2026-09-27T18:37:24.458Z",
+    "ende": "2026-09-27T18:37:24.493Z",
+    "sekunden": 0,
+    "ok": false
+  },
+  {
+    "schritt": "build: zusammensetzen",
+    "start": "2026-09-27T18:38:48.763Z",
+    "ende": "2026-09-27T18:38:48.802Z",
+    "sekunden": 0,
+    "ok": true
+  },
+  {
+    "schritt": "build: designprüfung (jedes Bild)",
+    "start": "2026-09-27T18:38:48.802Z",
+    "ende": "2026-09-27T18:38:50.090Z",
+    "sekunden": 1.3,
+    "ok": false
+  },
+  {
+    "schritt": "build: zusammensetzen",
+    "start": "2026-09-27T18:40:19.496Z",
+    "ende": "2026-09-27T18:40:19.542Z",
+    "sekunden": 0,
+    "ok": true
+  },
+  {
+    "schritt": "build: designprüfung (jedes Bild)",
+    "start": "2026-09-27T18:40:19.542Z",
+    "ende": "2026-09-27T18:40:20.792Z",
+    "sekunden": 1.3,
+    "ok": true
+  },
+  {
+    "schritt": "build: lint",
+    "start": "2026-09-27T18:40:20.792Z",
+    "ende": "2026-09-27T18:40:21.849Z",
+    "sekunden": 1.1,
+    "ok": true
+  },
+  {
+    "schritt": "build: rendern (mp4, ein Master)",
+    "start": "2026-09-27T18:40:21.849Z",
+    "ende": "2026-09-27T18:42:11.794Z",
+    "sekunden": 109.9,
+    "ok": true
+  },
+  {
+    "schritt": "build: master decodieren",
+    "start": "2026-09-27T18:42:11.794Z",
+    "ende": "2026-09-27T18:42:14.382Z",
+    "sekunden": 2.6,
+    "ok": true
+  },
+  {
+    "schritt": "build: upload-export (Abschnitt 10) + VMAF + Ton",
+    "start": "2026-09-27T18:42:14.383Z",
+    "ende": "2026-09-27T18:44:17.226Z",
+    "sekunden": 122.8,
+    "ok": true
+  },
+  {
+    "schritt": "build: kontaktblatt (≤ 12)",
+    "start": "2026-09-27T18:44:17.226Z",
+    "ende": "2026-09-27T18:44:20.224Z",
+    "sekunden": 3,
+    "ok": true
+  }
+]

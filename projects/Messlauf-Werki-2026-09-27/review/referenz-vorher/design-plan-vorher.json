@@ -1,0 +1,90 @@
+{
+ "_quelle": "Messlauf Tempo 27.09.2026, Ausgangsplan für die Vorher-Messung (Sitzung Tempo und Speicher)",
+ "einstieg": {
+  "h1": "WERKI VS. PRAKTI",
+  "h2": [
+   "Was passt zu dir?"
+  ],
+  "end": 5.0
+ },
+ "kapitel": [
+  {
+   "id": "k1",
+   "nummer": "1.",
+   "titel": "Praktikum",
+   "start": 5.12,
+   "end": 19.95
+  },
+  {
+   "id": "k2",
+   "nummer": "2.",
+   "titel": "Werkstudent",
+   "start": 20.2,
+   "end": 29.95
+  },
+  {
+   "id": "k3",
+   "nummer": "3.",
+   "titel": "Übernahme",
+   "start": 30.19,
+   "end": 35.95
+  },
+  {
+   "id": "k4",
+   "nummer": "4.",
+   "titel": "Steuer",
+   "start": 36.16,
+   "end": 40.1
+  },
+  {
+   "id": "k5",
+   "nummer": "5.",
+   "titel": "Merk dir",
+   "start": 40.28,
+   "end": 49.2
+  }
+ ],
+ "h1": [],
+ "h2": [
+  {
+   "id": "h2-p1",
+   "lines": [
+    "3–6 Monate, Vollzeit"
+   ],
+   "start": 7.88,
+   "end": 19.95,
+   "unter": "kapitel:k1"
+  },
+  {
+   "id": "h2-w1",
+   "lines": [
+    "Teilzeit neben",
+    "dem Studium"
+   ],
+   "start": 21.54,
+   "end": 29.95,
+   "unter": "kapitel:k2"
+  },
+  {
+   "id": "h2-f1",
+   "lines": [
+    "Werki: Geld",
+    "Prakti: entdecken"
+   ],
+   "start": 44.94,
+   "end": 49.2,
+   "unter": "kapitel:k5"
+  }
+ ],
+ "pillen": [],
+ "akronyme": [],
+ "schlagworte": [],
+ "grafiken": [],
+ "randnotizen": [],
+ "lebensbalken": [],
+ "logos": [],
+ "sprechblasen": [],
+ "outroStart": 49.3,
+ "nahaufnahmeAbBreite": 420,
+ "_vorher_anpassung": "Für die Vorher-Messung: Kapitel nummeriert (Fehlalarm schrift_fehlt Gochi), H1 statt H2 allein (Fehlalarm gesperrte_zone durch Drehung), ohne Sprechblase (drei_textebenen im Outro, Behebung in claude/design22-fixes). Kapitel statt H1 im Video (H1-Stoß 112 % scheitert an h1_breite, Behebung in claude/design22-fixes)."
+}
