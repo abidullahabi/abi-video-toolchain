@@ -10,6 +10,8 @@ const logos = [
   { name: 'claude', src: 'assets/quellen/claude-logo-slate.svg', w: 9156, h: 2000, H: 100, herkunft: { ...PK, datei: 'Claude logos/1 Claude logo/SVG/Claude logo - Slate.svg' } },
   { name: 'google', src: 'assets/quellen/GoogleG_FullColor_RGB-ohne-Schutzraum.png', w: 920, h: 940, H: 104, herkunft: { seite: 'https://partnermarketinghub.withgoogle.com/brands/google/branding-guidelines/how-to-show-googles-brand/ (Nachfolger about.google/brand-resource-center, „Google G – Digital“)', datei: 'GoogleG_FullColor_RGB.png (2820×2820), nur der transparente Schutzraum abgeschnitten (Alpha-Begrenzung), Form und Seitenverhältnis unverändert', hinweis: 'Vollfarbiges Google G, unverändert; Google: nicht verändern, auf hellem Grund, nicht in Marketingmaterial – hier redaktionelle Nennung des Kurses' } },
 ];
+// Kleine Fassungen für Logos unter der Kapitelüberschrift, nebeneinander (Abdullah 27.09.2026)
+for (const [n, H] of [['anthropic', 40], ['claude', 54], ['google', 56]]) { const b = logos.find(l => l.name === n); logos.push({ ...b, name: n + '-klein', H }); }
 const exe = execFileSync(process.execPath, [path.join(root, 'node_modules/hyperframes/bin/hyperframes.mjs'), 'browser', 'path'], { encoding: 'utf8', env: { ...process.env, HYPERFRAMES_NO_TELEMETRY: '1', HYPERFRAMES_NO_UPDATE_CHECK: '1' } }).trim();
 const browser = await puppeteer.launch({ executablePath: exe, headless: true, args: ['--no-sandbox', '--allow-file-access-from-files'] });
 const sha = f => crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex');
@@ -29,6 +31,6 @@ try {
 } finally { await browser.close(); }
 out.pakete = { 'anthropic-press-kit.zip': sha(path.join(project, 'assets/quellen/anthropic-press-kit.zip')) };
 out.abgerufen = '2026-09-27';
-out.auftrag = 'Abdullah am 27.09.2026: „Bitte erst mal die Logos suchen“ (Anthropic, Claude, Google)';
+out.auftrag = 'Abdullah am 27.09.2026: „Bitte erst mal die Logos suchen“ (Anthropic, Claude, Google); dann „Die Logos sollen bitte unter den H1-Überschriften eingeblendet werden … nebeneinander“';
 fs.writeFileSync(path.join(project, 'assets/logos.json'), JSON.stringify(out, null, 2) + '\n');
 console.log(JSON.stringify(Object.fromEntries(Object.entries(out.logos).map(([k, v]) => [k, `${v.breite}x${v.hoehe}`]))));

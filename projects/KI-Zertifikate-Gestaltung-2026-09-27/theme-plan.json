@@ -20,7 +20,7 @@
     {
       "id": "k1",
       "nummer": "1.",
-      "titel": "Anthropic",
+      "titel": "AI Fluency",
       "start": 8.23,
       "end": 36.3,
       "top": 270,
@@ -29,7 +29,7 @@
     {
       "id": "k2",
       "nummer": "2.",
-      "titel": "Andrew Ng",
+      "titel": "Gen AI for Everyone",
       "start": 36.32,
       "end": 52.2,
       "top": 270,
@@ -38,7 +38,7 @@
     {
       "id": "k3",
       "nummer": "3.",
-      "titel": "Google",
+      "titel": "Google AI",
       "start": 60.51,
       "end": 76.6,
       "top": 270,
@@ -67,7 +67,27 @@
       "end": 86.55
     }
   ],
-  "h2": [],
+  "h2": [
+    {
+      "id": "h2-k1",
+      "lines": [
+        "Framework &",
+        "Foundations"
+      ],
+      "start": 16.83,
+      "end": 29.2,
+      "top": 434
+    },
+    {
+      "id": "h2-k3",
+      "lines": [
+        "Professional Certificate"
+      ],
+      "start": 67.54,
+      "end": 73.1,
+      "top": 434
+    }
+  ],
   "pillen": [
     {
       "id": "p1",
@@ -167,28 +187,37 @@
   "lebensbalken": [],
   "logos": [
     {
-      "id": "logo-anthropic",
-      "src": "assets/logo-anthropic.png",
+      "id": "logos-k1",
+      "files": [
+        {
+          "src": "assets/logo-anthropic-klein.png",
+          "height": 40,
+          "width": 347
+        },
+        {
+          "src": "assets/logo-claude-klein.png",
+          "height": 54,
+          "width": 247
+        }
+      ],
+      "top": 434,
+      "unter": "k1",
       "start": 11.8,
-      "end": 12.95,
-      "height": 76,
-      "width": 659
+      "end": 16.6
     },
     {
-      "id": "logo-claude",
-      "src": "assets/logo-claude.png",
-      "start": 13.2,
-      "end": 14.6,
-      "height": 100,
-      "width": 458
-    },
-    {
-      "id": "logo-google",
-      "src": "assets/logo-google.png",
+      "id": "logo-k3",
+      "files": [
+        {
+          "src": "assets/logo-google-klein.png",
+          "height": 56,
+          "width": 55
+        }
+      ],
+      "top": 434,
+      "unter": "k3",
       "start": 62.3,
-      "end": 63.2,
-      "height": 104,
-      "width": 102
+      "end": 67.3
     }
   ],
   "sprechblasen": [
@@ -200,23 +229,7 @@
     }
   ],
   "ausblenden": [],
-  "logoH1": [
-    {
-      "sel": "#k1 > span",
-      "out": 11.700000000000001,
-      "in": 13.049999999999999
-    },
-    {
-      "sel": "#k1 > span",
-      "out": 13.1,
-      "in": 14.7
-    },
-    {
-      "sel": "#k3 > span",
-      "out": 62.199999999999996,
-      "in": 63.300000000000004
-    }
-  ],
+  "logoH1": [],
   "outro": {
     "start": 86.6,
     "end": 92.686,
@@ -3553,7 +3566,12 @@
     }
   ],
   "hinweise": {
-    "warnings": [],
+    "warnings": [
+      "H2 h2-k1 berührt Kopf/Kappe (14 Stichproben)",
+      "H2 h2-k3 berührt Kopf/Kappe (2 Stichproben)",
+      "Logos logos-k1 berühren Kopf/Kappe (10 Stichproben)",
+      "Logos logo-k3 berühren Kopf/Kappe (6 Stichproben)"
+    ],
     "notes": []
   }
 }

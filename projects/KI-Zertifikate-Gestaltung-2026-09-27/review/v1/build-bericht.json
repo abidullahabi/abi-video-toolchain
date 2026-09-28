@@ -1,0 +1,123 @@
+{
+  "projekt": "/Users/abi/Projekte/abi-video-toolchain/projects/KI-Zertifikate-Gestaltung-2026-09-27",
+  "begonnen": "2026-09-27T18:19:25.682Z",
+  "schritte": [
+    {
+      "schritt": "build: zusammensetzen",
+      "sekunden": 0.1
+    },
+    {
+      "schritt": "build: designprüfung (jedes Bild)",
+      "sekunden": 1.6
+    },
+    {
+      "schritt": "build: lint",
+      "sekunden": 1.1
+    },
+    {
+      "schritt": "build: rendern (mp4, ein Master)",
+      "sekunden": 200.3
+    },
+    {
+      "schritt": "build: master decodieren",
+      "sekunden": 4.1
+    },
+    {
+      "schritt": "build: upload-export (Abschnitt 10) + VMAF + Ton",
+      "sekunden": 184.2
+    },
+    {
+      "schritt": "build: kontaktblatt (≤ 12)",
+      "sekunden": 3.1
+    }
+  ],
+  "designpruefung": {
+    "bilder": 2781,
+    "blockierend": 0,
+    "maxEbenen": 2,
+    "hinweise": 28
+  },
+  "render": {
+    "datei": "/Users/abi/Projekte/abi-video-toolchain/projects/KI-Zertifikate-Gestaltung-2026-09-27/exports/final-2026-09-27T18-19-28-362Z.mp4",
+    "format": "mp4",
+    "quality": "high",
+    "kerne": 10,
+    "arbeitsspeicherGB": 16,
+    "freiGB": 0.7,
+    "workers": 1,
+    "lowMemory": false,
+    "bilder": 2781,
+    "sekunden": 200,
+    "msProBild": 72,
+    "aufnahmeMsProBild": 66,
+    "aufnahmeModus": "drawelement"
+  },
+  "export": {
+    "datei": "/Users/abi/Projekte/abi-video-toolchain/projects/KI-Zertifikate-Gestaltung-2026-09-27/exports/KI-Zertifikate-für-Anfänger_v1.mp4",
+    "mb": 141.6,
+    "videoKbit": 12092,
+    "vmaf": 99.5,
+    "tonVersatzMs": [
+      0,
+      0,
+      0
+    ],
+    "sha256": "00a04df727ad3522f3eb93509f35106ba4ff409ac60219d176c591b1d8513330"
+  },
+  "pruefliste20": [
+    {
+      "punkt": "1 Einstieg am ersten codierten Frame vollständig, ohne Animation",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "2 Zentrierte Elemente auf x = 540",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "3 Nichts in gesperrten Zonen (inkl. Kontur, Schatten, Animation)",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "4 Breitengrenzen, Untertitel einzeilig",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "5 Genau ein Wort blau im Untertitel",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "6 Pink nur Schlagwort und Durchstreichen (Emojis ausgenommen)",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "7 Gochi Hand nur für Zahlen und Akronyme",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "8 Höchstens zwei Textebenen zusätzlich zum Untertitel",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "9 Green Screen mit Robust Video Matting",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "10 Followerstand aus aktuellem Zernio-Abruf",
+      "ergebnis": "bestanden",
+      "notiz": "4258, Stand 2026-09-27T05:09:14.855Z"
+    },
+    {
+      "punkt": "11 Nichts aus Abschnitt 17 ohne Testauftrag, nichts aus 18",
+      "ergebnis": "bestanden",
+      "notiz": "Vorlage enthält keine Soundeffekte, B-Roll, Memes, Musik, Sticker"
+    },
+    {
+      "punkt": "12 Fertiges Video einmal vollständig angesehen (Handy)",
+      "ergebnis": "offen",
+      "notiz": "offen: Abdullah"
+    }
+  ],
+  "dauerSekunden": 395,
+  "kontaktblatt": "/Users/abi/Projekte/abi-video-toolchain/projects/KI-Zertifikate-Gestaltung-2026-09-27/review/kontaktblatt.jpg",
+  "fertig": "2026-09-27T18:26:00.121Z"
+}
