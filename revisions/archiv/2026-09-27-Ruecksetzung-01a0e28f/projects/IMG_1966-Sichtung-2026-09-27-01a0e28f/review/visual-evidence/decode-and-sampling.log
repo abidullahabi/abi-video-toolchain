@@ -1,0 +1,353 @@
+-vsync is deprecated. Use -fps_mode
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/IMG_1966.MOV':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    creation_time   : 2026-09-27T10:48:52.000000Z
+    com.apple.quicktime.location.accuracy.horizontal: 9.461636
+    com.apple.quicktime.full-frame-rate-playback-intent: 0
+    com.apple.quicktime.metadata.1: 1
+    com.apple.quicktime.location.ISO6709: +51.2250+006.7893+039.305/
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 17 Pro
+    com.apple.quicktime.software: 27.0
+    com.apple.quicktime.creationdate: 2026-09-27T12:48:52+0200
+  Duration: 00:04:11.07, start: 0.000000, bitrate: 22711 kb/s
+  Stream #0:0[0x1](und): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 3840x2160, 22547 kb/s, 30 fps, 30 tbr, 600 tbn (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+      encoder         : HEVC
+    Side data:
+      displaymatrix: rotation of -90.00 degrees
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 72 kb/s (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Audio
+      vendor_id       : [0][0][0][0]
+  Stream #0:2[0x3](und): Data: none (mebx / 0x7862656D) (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Metadata
+  Stream #0:3[0x4](und): Data: none (mebx / 0x7862656D), 23 kb/s (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Metadata
+  Stream #0:4[0x5](und): Data: none (mebx / 0x7862656D), 53 kb/s (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Metadata
+  Stream #0:5[0x6](und): Data: none (mebx / 0x7862656D), 0 kb/s (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Metadata
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> mjpeg (native))
+  Stream #0:1 -> #1:0 (aac (native) -> pcm_s16le (native))
+[swscaler @ 0x118008000] deprecated pixel format used, make sure you did set range correctly
+[Parsed_showinfo_2 @ 0x12c005260] config in time_base: 1/600, frame_rate: 30/1
+[Parsed_showinfo_2 @ 0x12c005260] config out time_base: 0/0, frame_rate: 0/0
+[swscaler @ 0x118008000] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 2 times
+[Parsed_showinfo_2 @ 0x12c005260] n:   0 pts:      0 pts_time:0       duration:     20 duration_time:0.0333333 pos:       36 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:1 type:I checksum:EBFA26E2 plane_checksum:[738A36FC C85EA8DE AD7C46F9] mean:[124 124 131] stdev:[52.7 9.1 8.7]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b4010000000103000000030201575d340f544e527f01e8120212000000000000800000000000004000000001c7ae14000b000000000000aea60c03912b010dffffffff
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+Output #0, image2, to '/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1966/sample_%03d.jpg':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    com.apple.quicktime.creationdate: 2026-09-27T12:48:52+0200
+    com.apple.quicktime.location.accuracy.horizontal: 9.461636
+    com.apple.quicktime.full-frame-rate-playback-intent: 0
+    com.apple.quicktime.metadata.1: 1
+    com.apple.quicktime.location.ISO6709: +51.2250+006.7893+039.305/
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 17 Pro
+    com.apple.quicktime.software: 27.0
+    encoder         : Lavf60.3.100
+  Stream #0:0(und): Video: mjpeg, yuvj420p(pc, bt709, progressive), 540x960, q=2-31, 200 kb/s, 30 fps, 30 tbn (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.3.100 mjpeg
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+      displaymatrix: rotation of -0.00 degrees
+Output #1, null, to 'pipe:':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    com.apple.quicktime.creationdate: 2026-09-27T12:48:52+0200
+    com.apple.quicktime.location.accuracy.horizontal: 9.461636
+    com.apple.quicktime.full-frame-rate-playback-intent: 0
+    com.apple.quicktime.metadata.1: 1
+    com.apple.quicktime.location.ISO6709: +51.2250+006.7893+039.305/
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 17 Pro
+    com.apple.quicktime.software: 27.0
+    encoder         : Lavf60.3.100
+  Stream #1:0(und): Audio: pcm_s16le, 48000 Hz, mono, s16, 768 kb/s (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Audio
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.3.100 pcm_s16le
+frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:00.93 bitrate=   0.0kbits/s speed=1.06x    frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:01.44 bitrate=   0.0kbits/s speed=1.04x    frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:02.45 bitrate=   0.0kbits/s speed=1.28x    frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:02.94 bitrate=   0.0kbits/s speed=1.21x    frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:03.94 bitrate=   0.0kbits/s speed=1.33x    frame=    0 fps=0.0 q=0.0 size=       0kB time=00:00:04.43 bitrate=   0.0kbits/s speed=1.28x    [Parsed_showinfo_2 @ 0x12c005260] n:   1 pts:   3000 pts_time:5       duration:     20 duration_time:0.0333333 pos: 14277399 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:57A3269B plane_checksum:[C94A0255 78C6A605 BB917E32] mean:[133 123 132] stdev:[49.4 6.7 8.2]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    1 fps=0.3 q=3.0 size=N/A time=00:00:04.94 bitrate=N/A speed=1.24x    frame=    1 fps=0.2 q=3.0 size=N/A time=00:00:05.48 bitrate=N/A speed=1.22x    frame=    1 fps=0.2 q=3.0 size=N/A time=00:00:06.44 bitrate=N/A speed=1.28x    frame=    1 fps=0.2 q=3.0 size=N/A time=00:00:06.95 bitrate=N/A speed=1.25x    frame=    1 fps=0.2 q=3.0 size=N/A time=00:00:07.44 bitrate=N/A speed=1.23x    frame=    1 fps=0.2 q=3.0 size=N/A time=00:00:07.95 bitrate=N/A speed=1.21x    frame=    1 fps=0.1 q=3.0 size=N/A time=00:00:08.93 bitrate=N/A speed=1.26x    frame=    1 fps=0.1 q=3.0 size=N/A time=00:00:09.44 bitrate=N/A speed=1.24x    [Parsed_showinfo_2 @ 0x12c005260] n:   2 pts:   6000 pts_time:10      duration:     20 duration_time:0.0333333 pos: 28243417 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:P checksum:7596D420 plane_checksum:[0B21828B 1043C80F 7CD68977] mean:[133 123 132] stdev:[51.5 6.4 8.2]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    2 fps=0.2 q=3.0 size=N/A time=00:00:10.47 bitrate=N/A speed=1.28x    frame=    2 fps=0.2 q=3.0 size=N/A time=00:00:10.94 bitrate=N/A speed=1.26x    frame=    2 fps=0.2 q=3.0 size=N/A time=00:00:11.45 bitrate=N/A speed=1.25x    frame=    2 fps=0.2 q=3.0 size=N/A time=00:00:12.43 bitrate=N/A speed=1.28x    frame=    2 fps=0.2 q=3.0 size=N/A time=00:00:12.94 bitrate=N/A speed=1.27x    frame=    2 fps=0.2 q=3.0 size=N/A time=00:00:13.43 bitrate=N/A speed=1.25x    frame=    2 fps=0.2 q=3.0 size=N/A time=00:00:13.95 bitrate=N/A speed=1.24x    frame=    2 fps=0.2 q=3.0 size=N/A time=00:00:14.95 bitrate=N/A speed=1.26x    [Parsed_showinfo_2 @ 0x12c005260] n:   3 pts:   9000 pts_time:15      duration:     20 duration_time:0.0333333 pos: 42833068 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:E65AE428 plane_checksum:[6169DACA 77473F86 4F87C9C9] mean:[130 123 132] stdev:[50.6 6.3 8.2]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    3 fps=0.2 q=3.0 size=N/A time=00:00:15.46 bitrate=N/A speed=1.25x    frame=    3 fps=0.2 q=3.0 size=N/A time=00:00:15.93 bitrate=N/A speed=1.24x    frame=    3 fps=0.2 q=3.0 size=N/A time=00:00:16.93 bitrate=N/A speed=1.27x    frame=    3 fps=0.2 q=3.0 size=N/A time=00:00:17.44 bitrate=N/A speed=1.26x    frame=    3 fps=0.2 q=3.0 size=N/A time=00:00:17.94 bitrate=N/A speed=1.25x    frame=    3 fps=0.2 q=3.0 size=N/A time=00:00:18.94 bitrate=N/A speed=1.27x    frame=    3 fps=0.2 q=3.0 size=N/A time=00:00:19.45 bitrate=N/A speed=1.26x    [Parsed_showinfo_2 @ 0x12c005260] n:   4 pts:  12020 pts_time:20.0333 duration:     20 duration_time:0.0333333 pos: 57189391 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:3E7B084D plane_checksum:[C81A0776 4B2C0D20 3000F3A8] mean:[129 123 132] stdev:[50.9 6.5 8.5]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    4 fps=0.3 q=3.0 size=N/A time=00:00:19.94 bitrate=N/A speed=1.25x    frame=    4 fps=0.2 q=3.0 size=N/A time=00:00:20.43 bitrate=N/A speed=1.24x    frame=    4 fps=0.2 q=3.0 size=N/A time=00:00:20.94 bitrate=N/A speed=1.23x    frame=    4 fps=0.2 q=3.0 size=N/A time=00:00:21.95 bitrate=N/A speed=1.25x    frame=    4 fps=0.2 q=3.0 size=N/A time=00:00:22.44 bitrate=N/A speed=1.24x    frame=    4 fps=0.2 q=3.0 size=N/A time=00:00:22.95 bitrate=N/A speed=1.23x    frame=    4 fps=0.2 q=3.0 size=N/A time=00:00:23.44 bitrate=N/A speed=1.23x    frame=    4 fps=0.2 q=3.0 size=N/A time=00:00:23.95 bitrate=N/A speed=1.22x    frame=    4 fps=0.2 q=3.0 size=N/A time=00:00:24.93 bitrate=N/A speed=1.24x    [Parsed_showinfo_2 @ 0x12c005260] n:   5 pts:  15020 pts_time:25.0333 duration:     20 duration_time:0.0333333 pos: 71299818 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:595E8BD2 plane_checksum:[9FE59E5B 2C1D86F9 622A666F] mean:[119 124 132] stdev:[52.8 8.5 8.8]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    5 fps=0.2 q=3.0 size=N/A time=00:00:25.47 bitrate=N/A speed=1.23x    frame=    5 fps=0.2 q=3.0 size=N/A time=00:00:25.94 bitrate=N/A speed=1.22x    frame=    5 fps=0.2 q=3.0 size=N/A time=00:00:26.45 bitrate=N/A speed=1.22x    frame=    5 fps=0.2 q=3.0 size=N/A time=00:00:27.45 bitrate=N/A speed=1.23x    frame=    5 fps=0.2 q=3.0 size=N/A time=00:00:27.94 bitrate=N/A speed=1.23x    frame=    5 fps=0.2 q=3.0 size=N/A time=00:00:28.43 bitrate=N/A speed=1.22x    frame=    5 fps=0.2 q=3.0 size=N/A time=00:00:28.94 bitrate=N/A speed=1.22x    frame=    5 fps=0.2 q=3.0 size=N/A time=00:00:29.43 bitrate=N/A speed=1.21x    [Parsed_showinfo_2 @ 0x12c005260] n:   6 pts:  18020 pts_time:30.0333 duration:     20 duration_time:0.0333333 pos: 85775540 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:8CFDEAF1 plane_checksum:[EE916E32 D2B422FF AB9159C0] mean:[128 123 132] stdev:[49.8 6.4 8.7]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    6 fps=0.2 q=3.0 size=N/A time=00:00:29.95 bitrate=N/A speed= 1.2x    frame=    6 fps=0.2 q=3.0 size=N/A time=00:00:30.46 bitrate=N/A speed= 1.2x    frame=    6 fps=0.2 q=3.0 size=N/A time=00:00:31.44 bitrate=N/A speed=1.21x    frame=    6 fps=0.2 q=3.0 size=N/A time=00:00:31.95 bitrate=N/A speed=1.21x    frame=    6 fps=0.2 q=3.0 size=N/A time=00:00:32.44 bitrate=N/A speed= 1.2x    frame=    6 fps=0.2 q=3.0 size=N/A time=00:00:33.44 bitrate=N/A speed=1.21x    frame=    6 fps=0.2 q=3.0 size=N/A time=00:00:33.94 bitrate=N/A speed=1.21x    frame=    6 fps=0.2 q=3.0 size=N/A time=00:00:34.45 bitrate=N/A speed=1.21x    [Parsed_showinfo_2 @ 0x12c005260] n:   7 pts:  21021 pts_time:35.035  duration:     20 duration_time:0.0333333 pos: 99743508 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:C64BAE2C plane_checksum:[521FA7D8 F4EC15EB 4858F05A] mean:[125 123 132] stdev:[51.7 6.4 9.2]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    7 fps=0.2 q=3.0 size=N/A time=00:00:35.45 bitrate=N/A speed=1.22x    frame=    7 fps=0.2 q=3.0 size=N/A time=00:00:35.94 bitrate=N/A speed=1.21x    frame=    7 fps=0.2 q=3.0 size=N/A time=00:00:36.43 bitrate=N/A speed=1.21x    frame=    7 fps=0.2 q=3.0 size=N/A time=00:00:36.96 bitrate=N/A speed=1.21x    frame=    7 fps=0.2 q=3.0 size=N/A time=00:00:37.43 bitrate=N/A speed= 1.2x    frame=    7 fps=0.2 q=3.0 size=N/A time=00:00:37.95 bitrate=N/A speed= 1.2x    frame=    7 fps=0.2 q=3.0 size=N/A time=00:00:38.95 bitrate=N/A speed=1.21x    frame=    7 fps=0.2 q=3.0 size=N/A time=00:00:39.44 bitrate=N/A speed= 1.2x    [Parsed_showinfo_2 @ 0x12c005260] n:   8 pts:  24021 pts_time:40.035  duration:     20 duration_time:0.0333333 pos:114300246 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:274C448C plane_checksum:[023A793B 8BE11915 F665B22D] mean:[130 123 132] stdev:[50.8 6.3 8.1]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    8 fps=0.2 q=3.0 size=N/A time=00:00:39.93 bitrate=N/A speed= 1.2x    frame=    8 fps=0.2 q=3.0 size=N/A time=00:00:40.44 bitrate=N/A speed=1.19x    frame=    8 fps=0.2 q=3.0 size=N/A time=00:00:41.44 bitrate=N/A speed= 1.2x    frame=    8 fps=0.2 q=3.0 size=N/A time=00:00:41.96 bitrate=N/A speed= 1.2x    frame=    8 fps=0.2 q=3.0 size=N/A time=00:00:42.45 bitrate=N/A speed= 1.2x    frame=    8 fps=0.2 q=3.0 size=N/A time=00:00:42.94 bitrate=N/A speed=1.19x    frame=    8 fps=0.2 q=3.0 size=N/A time=00:00:43.45 bitrate=N/A speed=1.19x    frame=    8 fps=0.2 q=3.0 size=N/A time=00:00:43.94 bitrate=N/A speed=1.19x    frame=    8 fps=0.2 q=3.0 size=N/A time=00:00:44.43 bitrate=N/A speed=1.18x    [Parsed_showinfo_2 @ 0x12c005260] n:   9 pts:  27021 pts_time:45.035  duration:     20 duration_time:0.0333333 pos:128467587 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:9C37E5E5 plane_checksum:[78D645E0 BEFE9457 84FB0BAE] mean:[134 123 132] stdev:[50.4 5.9 8.2]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    9 fps=0.2 q=3.0 size=N/A time=00:00:44.94 bitrate=N/A speed=1.18x    frame=    9 fps=0.2 q=3.0 size=N/A time=00:00:45.43 bitrate=N/A speed=1.18x    frame=    9 fps=0.2 q=3.0 size=N/A time=00:00:45.95 bitrate=N/A speed=1.17x    frame=    9 fps=0.2 q=3.0 size=N/A time=00:00:46.97 bitrate=N/A speed=1.18x    frame=    9 fps=0.2 q=3.0 size=N/A time=00:00:47.44 bitrate=N/A speed=1.18x    frame=    9 fps=0.2 q=3.0 size=N/A time=00:00:47.93 bitrate=N/A speed=1.18x    frame=    9 fps=0.2 q=3.0 size=N/A time=00:00:48.44 bitrate=N/A speed=1.17x    frame=    9 fps=0.2 q=3.0 size=N/A time=00:00:48.93 bitrate=N/A speed=1.17x    frame=    9 fps=0.2 q=3.0 size=N/A time=00:00:49.44 bitrate=N/A speed=1.17x    [Parsed_showinfo_2 @ 0x12c005260] n:  10 pts:  30021 pts_time:50.035  duration:     20 duration_time:0.0333333 pos:142526487 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:DE1219BF plane_checksum:[C8EB83C6 E6207E9B 5770174F] mean:[125 124 131] stdev:[51.0 8.1 9.2]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e0110013006400000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   10 fps=0.2 q=3.0 size=N/A time=00:00:50.45 bitrate=N/A speed=1.18x    frame=   10 fps=0.2 q=3.0 size=N/A time=00:00:50.94 bitrate=N/A speed=1.17x    frame=   10 fps=0.2 q=3.0 size=N/A time=00:00:51.45 bitrate=N/A speed=1.17x    frame=   10 fps=0.2 q=3.0 size=N/A time=00:00:51.96 bitrate=N/A speed=1.17x    frame=   10 fps=0.2 q=3.0 size=N/A time=00:00:52.43 bitrate=N/A speed=1.17x    frame=   10 fps=0.2 q=3.0 size=N/A time=00:00:52.96 bitrate=N/A speed=1.17x    frame=   10 fps=0.2 q=3.0 size=N/A time=00:00:53.95 bitrate=N/A speed=1.17x    frame=   10 fps=0.2 q=3.0 size=N/A time=00:00:54.44 bitrate=N/A speed=1.17x    [Parsed_showinfo_2 @ 0x12c005260] n:  11 pts:  33021 pts_time:55.035  duration:     20 duration_time:0.0333333 pos:156263921 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:DD0B8008 plane_checksum:[A4C2AF4C E6B7E44A CD9AEC54] mean:[129 123 132] stdev:[51.8 7.8 9.4]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   11 fps=0.2 q=3.0 size=N/A time=00:00:54.95 bitrate=N/A speed=1.17x    frame=   11 fps=0.2 q=3.0 size=N/A time=00:00:55.44 bitrate=N/A speed=1.17x    frame=   11 fps=0.2 q=3.0 size=N/A time=00:00:55.93 bitrate=N/A speed=1.16x    frame=   11 fps=0.2 q=3.0 size=N/A time=00:00:56.44 bitrate=N/A speed=1.16x    frame=   11 fps=0.2 q=3.0 size=N/A time=00:00:56.93 bitrate=N/A speed=1.16x    frame=   11 fps=0.2 q=3.0 size=N/A time=00:00:57.44 bitrate=N/A speed=1.16x    frame=   11 fps=0.2 q=3.0 size=N/A time=00:00:57.94 bitrate=N/A speed=1.16x    frame=   11 fps=0.2 q=3.0 size=N/A time=00:00:58.45 bitrate=N/A speed=1.15x    frame=   11 fps=0.2 q=3.0 size=N/A time=00:00:59.45 bitrate=N/A speed=1.16x    frame=   11 fps=0.2 q=3.0 size=N/A time=00:00:59.94 bitrate=N/A speed=1.16x    [Parsed_showinfo_2 @ 0x12c005260] n:  12 pts:  36021 pts_time:60.035  duration:     20 duration_time:0.0333333 pos:171341119 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:1DA5078B plane_checksum:[AD720C55 03CB7404 06EC8723] mean:[125 124 131] stdev:[51.2 7.9 8.9]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   12 fps=0.2 q=3.0 size=N/A time=00:01:00.43 bitrate=N/A speed=1.16x    frame=   12 fps=0.2 q=3.0 size=N/A time=00:01:00.94 bitrate=N/A speed=1.15x    frame=   12 fps=0.2 q=3.0 size=N/A time=00:01:01.46 bitrate=N/A speed=1.15x    frame=   12 fps=0.2 q=3.0 size=N/A time=00:01:02.44 bitrate=N/A speed=1.16x    frame=   12 fps=0.2 q=3.0 size=N/A time=00:01:02.95 bitrate=N/A speed=1.16x    frame=   12 fps=0.2 q=3.0 size=N/A time=00:01:03.46 bitrate=N/A speed=1.16x    frame=   12 fps=0.2 q=3.0 size=N/A time=00:01:03.93 bitrate=N/A speed=1.16x    frame=   12 fps=0.2 q=3.0 size=N/A time=00:01:04.44 bitrate=N/A speed=1.15x    [Parsed_showinfo_2 @ 0x12c005260] n:  13 pts:  39021 pts_time:65.035  duration:     20 duration_time:0.0333333 pos:185363076 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:EFAFF1A3 plane_checksum:[36227158 BD530B26 FA1B7525] mean:[121 123 133] stdev:[51.4 9.0 10.7]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   13 fps=0.2 q=3.0 size=N/A time=00:01:04.93 bitrate=N/A speed=1.15x    frame=   13 fps=0.2 q=3.0 size=N/A time=00:01:05.94 bitrate=N/A speed=1.16x    frame=   13 fps=0.2 q=3.0 size=N/A time=00:01:05.96 bitrate=N/A speed=1.15x    frame=   13 fps=0.2 q=3.0 size=N/A time=00:01:06.94 bitrate=N/A speed=1.15x    frame=   13 fps=0.2 q=3.0 size=N/A time=00:01:07.45 bitrate=N/A speed=1.15x    frame=   13 fps=0.2 q=3.0 size=N/A time=00:01:07.94 bitrate=N/A speed=1.15x    frame=   13 fps=0.2 q=3.0 size=N/A time=00:01:08.45 bitrate=N/A speed=1.15x    frame=   13 fps=0.2 q=3.0 size=N/A time=00:01:09.43 bitrate=N/A speed=1.16x    [Parsed_showinfo_2 @ 0x12c005260] n:  14 pts:  42021 pts_time:70.035  duration:     20 duration_time:0.0333333 pos:199490101 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:36B5DC6E plane_checksum:[2DBEF440 CA9209D5 E599DE4A] mean:[117 124 132] stdev:[53.4 8.7 9.4]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   14 fps=0.2 q=3.0 size=N/A time=00:01:09.95 bitrate=N/A speed=1.15x    frame=   14 fps=0.2 q=3.0 size=N/A time=00:01:10.44 bitrate=N/A speed=1.15x    frame=   14 fps=0.2 q=3.0 size=N/A time=00:01:10.95 bitrate=N/A speed=1.15x    frame=   14 fps=0.2 q=3.0 size=N/A time=00:01:11.93 bitrate=N/A speed=1.16x    frame=   14 fps=0.2 q=3.0 size=N/A time=00:01:12.44 bitrate=N/A speed=1.15x    frame=   14 fps=0.2 q=3.0 size=N/A time=00:01:12.93 bitrate=N/A speed=1.15x    frame=   14 fps=0.2 q=3.0 size=N/A time=00:01:13.49 bitrate=N/A speed=1.15x    frame=   14 fps=0.2 q=3.0 size=N/A time=00:01:14.45 bitrate=N/A speed=1.16x    [Parsed_showinfo_2 @ 0x12c005260] n:  15 pts:  45021 pts_time:75.035  duration:     20 duration_time:0.0333333 pos:213347457 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:6A8A7C50 plane_checksum:[E39AE95A 50EFDD82 A949B556] mean:[124 124 131] stdev:[51.8 7.8 8.8]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   15 fps=0.2 q=3.0 size=N/A time=00:01:14.94 bitrate=N/A speed=1.16x    frame=   15 fps=0.2 q=3.0 size=N/A time=00:01:15.45 bitrate=N/A speed=1.16x    frame=   15 fps=0.2 q=3.0 size=N/A time=00:01:15.94 bitrate=N/A speed=1.15x    frame=   15 fps=0.2 q=3.0 size=N/A time=00:01:16.43 bitrate=N/A speed=1.15x    frame=   15 fps=0.2 q=3.0 size=N/A time=00:01:16.94 bitrate=N/A speed=1.15x    frame=   15 fps=0.2 q=3.0 size=N/A time=00:01:17.43 bitrate=N/A speed=1.15x    frame=   15 fps=0.2 q=3.0 size=N/A time=00:01:17.95 bitrate=N/A speed=1.15x    frame=   15 fps=0.2 q=3.0 size=N/A time=00:01:18.46 bitrate=N/A speed=1.15x    frame=   15 fps=0.2 q=3.0 size=N/A time=00:01:18.46 bitrate=N/A speed=1.14x    frame=   15 fps=0.2 q=3.0 size=N/A time=00:01:18.95 bitrate=N/A speed=1.13x    frame=   15 fps=0.2 q=3.0 size=N/A time=00:01:19.44 bitrate=N/A speed=1.13x    [Parsed_showinfo_2 @ 0x12c005260] n:  16 pts:  48021 pts_time:80.035  duration:     20 duration_time:0.0333333 pos:227870189 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:2477B8D8 plane_checksum:[A961E01B 9DFAD1C5 FE0906E9] mean:[134 123 131] stdev:[51.1 6.7 7.3]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   16 fps=0.2 q=3.0 size=N/A time=00:01:19.93 bitrate=N/A speed=1.13x    frame=   16 fps=0.2 q=3.0 size=N/A time=00:01:20.44 bitrate=N/A speed=1.13x    frame=   16 fps=0.2 q=3.0 size=N/A time=00:01:20.93 bitrate=N/A speed=1.13x    frame=   16 fps=0.2 q=3.0 size=N/A time=00:01:21.44 bitrate=N/A speed=1.13x    frame=   16 fps=0.2 q=3.0 size=N/A time=00:01:21.94 bitrate=N/A speed=1.12x    frame=   16 fps=0.2 q=3.0 size=N/A time=00:01:22.45 bitrate=N/A speed=1.12x    frame=   16 fps=0.2 q=3.0 size=N/A time=00:01:23.47 bitrate=N/A speed=1.13x    frame=   16 fps=0.2 q=3.0 size=N/A time=00:01:23.94 bitrate=N/A speed=1.13x    frame=   16 fps=0.2 q=3.0 size=N/A time=00:01:24.43 bitrate=N/A speed=1.12x    [Parsed_showinfo_2 @ 0x12c005260] n:  17 pts:  51021 pts_time:85.035  duration:     20 duration_time:0.0333333 pos:241855667 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:396682E0 plane_checksum:[F1215BEB 818029A8 38DCFD3E] mean:[132 123 132] stdev:[54.3 6.3 8.8]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   17 fps=0.2 q=3.0 size=N/A time=00:01:25.43 bitrate=N/A speed=1.13x    frame=   17 fps=0.2 q=3.0 size=N/A time=00:01:25.95 bitrate=N/A speed=1.13x    frame=   17 fps=0.2 q=3.0 size=N/A time=00:01:26.44 bitrate=N/A speed=1.13x    frame=   17 fps=0.2 q=3.0 size=N/A time=00:01:26.95 bitrate=N/A speed=1.13x    frame=   17 fps=0.2 q=3.0 size=N/A time=00:01:27.44 bitrate=N/A speed=1.12x    frame=   17 fps=0.2 q=3.0 size=N/A time=00:01:27.93 bitrate=N/A speed=1.12x    frame=   17 fps=0.2 q=3.0 size=N/A time=00:01:28.44 bitrate=N/A speed=1.12x    frame=   17 fps=0.2 q=3.0 size=N/A time=00:01:28.93 bitrate=N/A speed=1.12x    frame=   17 fps=0.2 q=3.0 size=N/A time=00:01:29.44 bitrate=N/A speed=1.12x    [Parsed_showinfo_2 @ 0x12c005260] n:  18 pts:  54021 pts_time:90.035  duration:     20 duration_time:0.0333333 pos:256904037 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:885A7C69 plane_checksum:[F93C04F8 1297D01B F662A747] mean:[138 123 132] stdev:[54.2 7.5 9.5]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e0110013006400000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   18 fps=0.2 q=3.0 size=N/A time=00:01:29.96 bitrate=N/A speed=1.12x    frame=   18 fps=0.2 q=3.0 size=N/A time=00:01:30.45 bitrate=N/A speed=1.12x    frame=   18 fps=0.2 q=3.0 size=N/A time=00:01:30.96 bitrate=N/A speed=1.12x    frame=   18 fps=0.2 q=3.0 size=N/A time=00:01:31.94 bitrate=N/A speed=1.12x    frame=   18 fps=0.2 q=3.0 size=N/A time=00:01:32.43 bitrate=N/A speed=1.12x    frame=   18 fps=0.2 q=3.0 size=N/A time=00:01:32.94 bitrate=N/A speed=1.12x    frame=   18 fps=0.2 q=3.0 size=N/A time=00:01:33.43 bitrate=N/A speed=1.12x    frame=   18 fps=0.2 q=3.0 size=N/A time=00:01:33.95 bitrate=N/A speed=1.12x    frame=   18 fps=0.2 q=3.0 size=N/A time=00:01:34.44 bitrate=N/A speed=1.12x    [Parsed_showinfo_2 @ 0x12c005260] n:  19 pts:  57021 pts_time:95.035  duration:     20 duration_time:0.0333333 pos:270147726 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:422D9770 plane_checksum:[9B5D2AF0 728DF41E 69DD7853] mean:[133 123 132] stdev:[51.4 6.8 8.3]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   19 fps=0.2 q=3.0 size=N/A time=00:01:34.95 bitrate=N/A speed=1.12x    frame=   19 fps=0.2 q=3.0 size=N/A time=00:01:35.44 bitrate=N/A speed=1.12x    frame=   19 fps=0.2 q=3.0 size=N/A time=00:01:36.44 bitrate=N/A speed=1.12x    frame=   19 fps=0.2 q=3.0 size=N/A time=00:01:36.93 bitrate=N/A speed=1.12x    frame=   19 fps=0.2 q=3.0 size=N/A time=00:01:37.44 bitrate=N/A speed=1.12x    frame=   19 fps=0.2 q=3.0 size=N/A time=00:01:38.45 bitrate=N/A speed=1.12x    frame=   19 fps=0.2 q=3.0 size=N/A time=00:01:38.94 bitrate=N/A speed=1.12x    frame=   19 fps=0.2 q=3.0 size=N/A time=00:01:39.96 bitrate=N/A speed=1.13x    [Parsed_showinfo_2 @ 0x12c005260] n:  20 pts:  60022 pts_time:100.037 duration:     20 duration_time:0.0333333 pos:284325097 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:85110969 plane_checksum:[BF46A97D 0CFEB45A AB58AB74] mean:[135 123 131] stdev:[53.2 5.9 7.9]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   20 fps=0.2 q=3.0 size=N/A time=00:01:40.43 bitrate=N/A speed=1.13x    frame=   20 fps=0.2 q=3.0 size=N/A time=00:01:40.94 bitrate=N/A speed=1.13x    frame=   20 fps=0.2 q=3.0 size=N/A time=00:01:41.95 bitrate=N/A speed=1.13x    frame=   20 fps=0.2 q=3.0 size=N/A time=00:01:42.44 bitrate=N/A speed=1.13x    frame=   20 fps=0.2 q=3.0 size=N/A time=00:01:42.95 bitrate=N/A speed=1.13x    frame=   20 fps=0.2 q=3.0 size=N/A time=00:01:43.93 bitrate=N/A speed=1.13x    frame=   20 fps=0.2 q=3.0 size=N/A time=00:01:44.44 bitrate=N/A speed=1.13x    [Parsed_showinfo_2 @ 0x12c005260] n:  21 pts:  63022 pts_time:105.037 duration:     20 duration_time:0.0333333 pos:298485562 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:E0F71C4B plane_checksum:[A41F83A8 9845477B E67C5119] mean:[133 123 132] stdev:[53.6 6.1 8.8]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   21 fps=0.2 q=3.0 size=N/A time=00:01:45.44 bitrate=N/A speed=1.14x    frame=   21 fps=0.2 q=3.0 size=N/A time=00:01:45.94 bitrate=N/A speed=1.14x    frame=   21 fps=0.2 q=3.0 size=N/A time=00:01:46.94 bitrate=N/A speed=1.14x    frame=   21 fps=0.2 q=3.0 size=N/A time=00:01:47.45 bitrate=N/A speed=1.14x    frame=   21 fps=0.2 q=3.0 size=N/A time=00:01:47.96 bitrate=N/A speed=1.14x    frame=   21 fps=0.2 q=3.0 size=N/A time=00:01:48.94 bitrate=N/A speed=1.14x    frame=   21 fps=0.2 q=3.0 size=N/A time=00:01:49.43 bitrate=N/A speed=1.14x    [Parsed_showinfo_2 @ 0x12c005260] n:  22 pts:  66022 pts_time:110.037 duration:     20 duration_time:0.0333333 pos:313395392 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:C95C53DC plane_checksum:[70A10442 216D1CD9 B97632C1] mean:[133 123 132] stdev:[53.3 6.3 8.6]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   22 fps=0.2 q=3.0 size=N/A time=00:01:50.44 bitrate=N/A speed=1.15x    frame=   22 fps=0.2 q=3.0 size=N/A time=00:01:50.95 bitrate=N/A speed=1.14x    frame=   22 fps=0.2 q=3.0 size=N/A time=00:01:51.44 bitrate=N/A speed=1.14x    frame=   22 fps=0.2 q=3.0 size=N/A time=00:01:52.44 bitrate=N/A speed=1.15x    frame=   22 fps=0.2 q=3.0 size=N/A time=00:01:52.93 bitrate=N/A speed=1.15x    frame=   22 fps=0.2 q=3.0 size=N/A time=00:01:53.94 bitrate=N/A speed=1.15x    frame=   22 fps=0.2 q=3.0 size=N/A time=00:01:54.45 bitrate=N/A speed=1.15x    [Parsed_showinfo_2 @ 0x12c005260] n:  23 pts:  69022 pts_time:115.037 duration:     20 duration_time:0.0333333 pos:327419206 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:D0D68F99 plane_checksum:[EC65590B C66AE842 09204E3D] mean:[132 122 133] stdev:[52.5 6.5 9.0]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   23 fps=0.2 q=3.0 size=N/A time=00:01:55.45 bitrate=N/A speed=1.15x    frame=   23 fps=0.2 q=3.0 size=N/A time=00:01:55.94 bitrate=N/A speed=1.15x    frame=   23 fps=0.2 q=3.0 size=N/A time=00:01:56.94 bitrate=N/A speed=1.16x    frame=   23 fps=0.2 q=3.0 size=N/A time=00:01:57.43 bitrate=N/A speed=1.16x    frame=   23 fps=0.2 q=3.0 size=N/A time=00:01:58.44 bitrate=N/A speed=1.16x    frame=   23 fps=0.2 q=3.0 size=N/A time=00:01:58.95 bitrate=N/A speed=1.16x    [Parsed_showinfo_2 @ 0x12c005260] n:  24 pts:  72022 pts_time:120.037 duration:     20 duration_time:0.0333333 pos:341287161 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:FA54C740 plane_checksum:[CBA8E575 1D034C79 7E079543] mean:[136 122 132] stdev:[49.5 7.8 8.5]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   24 fps=0.2 q=3.0 size=N/A time=00:01:59.93 bitrate=N/A speed=1.16x    frame=   24 fps=0.2 q=3.0 size=N/A time=00:02:00.44 bitrate=N/A speed=1.16x    frame=   24 fps=0.2 q=3.0 size=N/A time=00:02:01.44 bitrate=N/A speed=1.16x    frame=   24 fps=0.2 q=3.0 size=N/A time=00:02:01.94 bitrate=N/A speed=1.16x    frame=   24 fps=0.2 q=3.0 size=N/A time=00:02:02.94 bitrate=N/A speed=1.17x    frame=   24 fps=0.2 q=3.0 size=N/A time=00:02:03.45 bitrate=N/A speed=1.17x    frame=   24 fps=0.2 q=3.0 size=N/A time=00:02:04.43 bitrate=N/A speed=1.17x    [Parsed_showinfo_2 @ 0x12c005260] n:  25 pts:  75022 pts_time:125.037 duration:     20 duration_time:0.0333333 pos:355179127 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:B823651B plane_checksum:[481667DF 524681A1 E6397B8C] mean:[126 122 134] stdev:[54.8 6.7 10.2]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   25 fps=0.2 q=3.0 size=N/A time=00:02:04.94 bitrate=N/A speed=1.17x    frame=   25 fps=0.2 q=3.0 size=N/A time=00:02:05.95 bitrate=N/A speed=1.17x    frame=   25 fps=0.2 q=3.0 size=N/A time=00:02:06.46 bitrate=N/A speed=1.17x    frame=   25 fps=0.2 q=3.0 size=N/A time=00:02:06.97 bitrate=N/A speed=1.17x    frame=   25 fps=0.2 q=3.0 size=N/A time=00:02:07.93 bitrate=N/A speed=1.17x    frame=   25 fps=0.2 q=3.0 size=N/A time=00:02:08.93 bitrate=N/A speed=1.18x    frame=   25 fps=0.2 q=3.0 size=N/A time=00:02:09.44 bitrate=N/A speed=1.18x    [Parsed_showinfo_2 @ 0x12c005260] n:  26 pts:  78042 pts_time:130.07  duration:     20 duration_time:0.0333333 pos:369702677 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:77D06A95 plane_checksum:[E29C5C77 E424AF87 8AFD5E88] mean:[129 123 133] stdev:[54.2 6.3 9.5]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   26 fps=0.2 q=3.0 size=N/A time=00:02:09.96 bitrate=N/A speed=1.17x    frame=   26 fps=0.2 q=3.0 size=N/A time=00:02:10.94 bitrate=N/A speed=1.18x    frame=   26 fps=0.2 q=3.0 size=N/A time=00:02:11.45 bitrate=N/A speed=1.18x    frame=   26 fps=0.2 q=3.0 size=N/A time=00:02:11.96 bitrate=N/A speed=1.18x    frame=   26 fps=0.2 q=3.0 size=N/A time=00:02:12.94 bitrate=N/A speed=1.18x    frame=   26 fps=0.2 q=3.0 size=N/A time=00:02:13.43 bitrate=N/A speed=1.18x    frame=   26 fps=0.2 q=3.0 size=N/A time=00:02:13.95 bitrate=N/A speed=1.18x    frame=   26 fps=0.2 q=3.0 size=N/A time=00:02:14.95 bitrate=N/A speed=1.18x    [Parsed_showinfo_2 @ 0x12c005260] n:  27 pts:  81042 pts_time:135.07  duration:     20 duration_time:0.0333333 pos:383392405 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:P checksum:4E96054F plane_checksum:[ACB9D153 B6E4AE9B 5EDE8543] mean:[132 123 133] stdev:[54.7 6.2 9.6]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   27 fps=0.2 q=3.0 size=N/A time=00:02:15.44 bitrate=N/A speed=1.18x    frame=   27 fps=0.2 q=3.0 size=N/A time=00:02:16.46 bitrate=N/A speed=1.18x    frame=   27 fps=0.2 q=3.0 size=N/A time=00:02:16.93 bitrate=N/A speed=1.18x    frame=   27 fps=0.2 q=3.0 size=N/A time=00:02:17.94 bitrate=N/A speed=1.19x    frame=   27 fps=0.2 q=3.0 size=N/A time=00:02:18.45 bitrate=N/A speed=1.18x    frame=   27 fps=0.2 q=3.0 size=N/A time=00:02:18.96 bitrate=N/A speed=1.18x    [Parsed_showinfo_2 @ 0x12c005260] n:  28 pts:  84042 pts_time:140.07  duration:     20 duration_time:0.0333333 pos:398277294 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:30E611A8 plane_checksum:[9BE805E2 78F28D47 5E757E70] mean:[132 123 133] stdev:[57.3 6.5 9.7]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   28 fps=0.2 q=3.0 size=N/A time=00:02:19.94 bitrate=N/A speed=1.19x    frame=   28 fps=0.2 q=3.0 size=N/A time=00:02:20.45 bitrate=N/A speed=1.19x    frame=   28 fps=0.2 q=3.0 size=N/A time=00:02:21.43 bitrate=N/A speed=1.19x    frame=   28 fps=0.2 q=3.0 size=N/A time=00:02:21.95 bitrate=N/A speed=1.19x    frame=   28 fps=0.2 q=3.0 size=N/A time=00:02:22.95 bitrate=N/A speed=1.19x    frame=   28 fps=0.2 q=3.0 size=N/A time=00:02:23.44 bitrate=N/A speed=1.19x    frame=   28 fps=0.2 q=3.0 size=N/A time=00:02:24.44 bitrate=N/A speed=1.19x    [Parsed_showinfo_2 @ 0x12c005260] n:  29 pts:  87042 pts_time:145.07  duration:     20 duration_time:0.0333333 pos:411566562 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:1 type:I checksum:37AB1988 plane_checksum:[A9AC95A6 7A184DBA 44183619] mean:[130 124 133] stdev:[55.3 6.5 9.8]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b403000000030f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   29 fps=0.2 q=3.0 size=N/A time=00:02:24.93 bitrate=N/A speed=1.19x    frame=   29 fps=0.2 q=3.0 size=N/A time=00:02:25.94 bitrate=N/A speed= 1.2x    frame=   29 fps=0.2 q=3.0 size=N/A time=00:02:26.47 bitrate=N/A speed=1.19x    frame=   29 fps=0.2 q=3.0 size=N/A time=00:02:27.45 bitrate=N/A speed= 1.2x    frame=   29 fps=0.2 q=3.0 size=N/A time=00:02:27.96 bitrate=N/A speed= 1.2x    frame=   29 fps=0.2 q=3.0 size=N/A time=00:02:28.94 bitrate=N/A speed= 1.2x    frame=   29 fps=0.2 q=3.0 size=N/A time=00:02:29.43 bitrate=N/A speed= 1.2x    [Parsed_showinfo_2 @ 0x12c005260] n:  30 pts:  90042 pts_time:150.07  duration:     20 duration_time:0.0333333 pos:426183186 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:ADEE921D plane_checksum:[387A104F 2A5F9665 6664EB5A] mean:[127 123 133] stdev:[52.5 6.5 10.0]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   30 fps=0.2 q=3.0 size=N/A time=00:02:30.44 bitrate=N/A speed= 1.2x    frame=   30 fps=0.2 q=3.0 size=N/A time=00:02:31.44 bitrate=N/A speed= 1.2x    frame=   30 fps=0.2 q=3.0 size=N/A time=00:02:31.93 bitrate=N/A speed= 1.2x    frame=   30 fps=0.2 q=3.0 size=N/A time=00:02:32.95 bitrate=N/A speed=1.21x    frame=   30 fps=0.2 q=3.0 size=N/A time=00:02:33.44 bitrate=N/A speed= 1.2x    frame=   30 fps=0.2 q=3.0 size=N/A time=00:02:34.45 bitrate=N/A speed=1.21x    [Parsed_showinfo_2 @ 0x12c005260] n:  31 pts:  93042 pts_time:155.07  duration:     20 duration_time:0.0333333 pos:440262874 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:P checksum:71974459 plane_checksum:[DE7B98B0 6A4FAAD0 0C5300CA] mean:[149 126 128] stdev:[49.9 5.3 4.4]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   31 fps=0.2 q=3.0 size=N/A time=00:02:34.94 bitrate=N/A speed=1.21x    frame=   31 fps=0.2 q=3.0 size=N/A time=00:02:35.94 bitrate=N/A speed=1.21x    frame=   31 fps=0.2 q=3.0 size=N/A time=00:02:36.43 bitrate=N/A speed=1.21x    frame=   31 fps=0.2 q=3.0 size=N/A time=00:02:37.43 bitrate=N/A speed=1.21x    frame=   31 fps=0.2 q=3.0 size=N/A time=00:02:37.97 bitrate=N/A speed=1.21x    frame=   31 fps=0.2 q=3.0 size=N/A time=00:02:38.95 bitrate=N/A speed=1.21x    frame=   31 fps=0.2 q=3.0 size=N/A time=00:02:39.44 bitrate=N/A speed=1.21x    [Parsed_showinfo_2 @ 0x12c005260] n:  32 pts:  96043 pts_time:160.072 duration:     20 duration_time:0.0333333 pos:454107926 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:E5B8B1FE plane_checksum:[92F5259A 1B6BE428 5FB3A82D] mean:[128 124 131] stdev:[49.9 6.8 8.1]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   32 fps=0.2 q=3.0 size=N/A time=00:02:40.44 bitrate=N/A speed=1.22x    frame=   32 fps=0.2 q=3.0 size=N/A time=00:02:41.44 bitrate=N/A speed=1.22x    frame=   32 fps=0.2 q=3.0 size=N/A time=00:02:41.94 bitrate=N/A speed=1.22x    frame=   32 fps=0.2 q=3.0 size=N/A time=00:02:42.45 bitrate=N/A speed=1.22x    frame=   32 fps=0.2 q=3.0 size=N/A time=00:02:43.45 bitrate=N/A speed=1.22x    frame=   32 fps=0.2 q=3.0 size=N/A time=00:02:43.94 bitrate=N/A speed=1.22x    [Parsed_showinfo_2 @ 0x12c005260] n:  33 pts:  99043 pts_time:165.072 duration:     20 duration_time:0.0333333 pos:468389503 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:P checksum:4ACD219B plane_checksum:[178A69AD EC1ED810 5F42DFC0] mean:[133 124 131] stdev:[52.5 6.2 7.6]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   32 fps=0.2 q=3.0 size=N/A time=00:02:44.94 bitrate=N/A speed=1.22x    frame=   33 fps=0.2 q=3.0 size=N/A time=00:02:45.43 bitrate=N/A speed=1.22x    frame=   33 fps=0.2 q=3.0 size=N/A time=00:02:46.44 bitrate=N/A speed=1.22x    frame=   33 fps=0.2 q=3.0 size=N/A time=00:02:46.95 bitrate=N/A speed=1.22x    frame=   33 fps=0.2 q=3.0 size=N/A time=00:02:47.93 bitrate=N/A speed=1.22x    frame=   33 fps=0.2 q=3.0 size=N/A time=00:02:48.44 bitrate=N/A speed=1.22x    frame=   33 fps=0.2 q=3.0 size=N/A time=00:02:49.44 bitrate=N/A speed=1.22x    [Parsed_showinfo_2 @ 0x12c005260] n:  34 pts: 102043 pts_time:170.072 duration:     20 duration_time:0.0333333 pos:482979454 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:792972E3 plane_checksum:[252882B2 4D34C47F CE902BA3] mean:[131 124 132] stdev:[55.5 6.1 9.1]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   34 fps=0.2 q=3.0 size=N/A time=00:02:49.96 bitrate=N/A speed=1.22x    frame=   34 fps=0.2 q=3.0 size=N/A time=00:02:50.94 bitrate=N/A speed=1.23x    frame=   34 fps=0.2 q=3.0 size=N/A time=00:02:51.45 bitrate=N/A speed=1.23x    frame=   34 fps=0.2 q=3.0 size=N/A time=00:02:52.43 bitrate=N/A speed=1.23x    frame=   34 fps=0.2 q=3.0 size=N/A time=00:02:52.96 bitrate=N/A speed=1.23x    frame=   34 fps=0.2 q=3.0 size=N/A time=00:02:53.95 bitrate=N/A speed=1.23x    frame=   34 fps=0.2 q=3.0 size=N/A time=00:02:54.44 bitrate=N/A speed=1.23x    [Parsed_showinfo_2 @ 0x12c005260] n:  35 pts: 105043 pts_time:175.072 duration:     20 duration_time:0.0333333 pos:497318616 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:P checksum:252750C6 plane_checksum:[B2B88EBE 2CA72A0B 984297EE] mean:[130 124 132] stdev:[54.0 6.2 9.1]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   35 fps=0.2 q=3.0 size=N/A time=00:02:54.95 bitrate=N/A speed=1.23x    frame=   35 fps=0.2 q=3.0 size=N/A time=00:02:55.93 bitrate=N/A speed=1.23x    frame=   35 fps=0.2 q=3.0 size=N/A time=00:02:56.44 bitrate=N/A speed=1.23x    frame=   35 fps=0.2 q=3.0 size=N/A time=00:02:57.44 bitrate=N/A speed=1.23x    frame=   35 fps=0.2 q=3.0 size=N/A time=00:02:57.96 bitrate=N/A speed=1.23x    frame=   35 fps=0.2 q=3.0 size=N/A time=00:02:58.94 bitrate=N/A speed=1.23x    frame=   35 fps=0.2 q=3.0 size=N/A time=00:02:59.45 bitrate=N/A speed=1.23x    [Parsed_showinfo_2 @ 0x12c005260] n:  36 pts: 108043 pts_time:180.072 duration:     20 duration_time:0.0333333 pos:511974380 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:F0773920 plane_checksum:[A962D372 DA6C8F74 4343D61C] mean:[130 123 133] stdev:[57.1 5.9 9.8]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   36 fps=0.2 q=3.0 size=N/A time=00:03:00.43 bitrate=N/A speed=1.23x    frame=   36 fps=0.2 q=3.0 size=N/A time=00:03:00.96 bitrate=N/A speed=1.23x    frame=   36 fps=0.2 q=3.0 size=N/A time=00:03:01.95 bitrate=N/A speed=1.24x    frame=   36 fps=0.2 q=3.0 size=N/A time=00:03:02.97 bitrate=N/A speed=1.24x    frame=   36 fps=0.2 q=3.0 size=N/A time=00:03:03.44 bitrate=N/A speed=1.24x    frame=   36 fps=0.2 q=3.0 size=N/A time=00:03:03.93 bitrate=N/A speed=1.24x    [Parsed_showinfo_2 @ 0x12c005260] n:  37 pts: 111043 pts_time:185.072 duration:     20 duration_time:0.0333333 pos:525952567 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:P checksum:E1F30C33 plane_checksum:[B7457E04 B579A0B0 C1D1ED61] mean:[133 124 132] stdev:[55.7 6.2 9.1]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   37 fps=0.2 q=3.0 size=N/A time=00:03:04.93 bitrate=N/A speed=1.24x    frame=   37 fps=0.2 q=3.0 size=N/A time=00:03:05.44 bitrate=N/A speed=1.24x    frame=   37 fps=0.2 q=3.0 size=N/A time=00:03:06.45 bitrate=N/A speed=1.24x    frame=   37 fps=0.2 q=3.0 size=N/A time=00:03:07.45 bitrate=N/A speed=1.24x    frame=   37 fps=0.2 q=3.0 size=N/A time=00:03:07.94 bitrate=N/A speed=1.24x    frame=   37 fps=0.2 q=3.0 size=N/A time=00:03:08.94 bitrate=N/A speed=1.24x    frame=   37 fps=0.2 q=3.0 size=N/A time=00:03:09.46 bitrate=N/A speed=1.24x    [Parsed_showinfo_2 @ 0x12c005260] n:  38 pts: 114043 pts_time:190.072 duration:     20 duration_time:0.0333333 pos:540376974 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:9F83A247 plane_checksum:[E8C605C1 0CE1C5E0 58F5D697] mean:[136 124 133] stdev:[56.4 7.0 10.7]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   38 fps=0.2 q=3.0 size=N/A time=00:03:09.97 bitrate=N/A speed=1.24x    frame=   38 fps=0.2 q=3.0 size=N/A time=00:03:10.95 bitrate=N/A speed=1.24x    frame=   38 fps=0.2 q=3.0 size=N/A time=00:03:11.44 bitrate=N/A speed=1.24x    frame=   38 fps=0.2 q=3.0 size=N/A time=00:03:12.44 bitrate=N/A speed=1.24x    frame=   38 fps=0.2 q=3.0 size=N/A time=00:03:12.93 bitrate=N/A speed=1.24x    frame=   38 fps=0.2 q=3.0 size=N/A time=00:03:13.94 bitrate=N/A speed=1.25x    frame=   38 fps=0.2 q=3.0 size=N/A time=00:03:14.47 bitrate=N/A speed=1.24x    [Parsed_showinfo_2 @ 0x12c005260] n:  39 pts: 117043 pts_time:195.072 duration:     20 duration_time:0.0333333 pos:554522150 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:P checksum:53D102F3 plane_checksum:[22271E48 6616B19D B3A132FF] mean:[139 124 133] stdev:[55.4 6.8 10.5]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   39 fps=0.2 q=3.0 size=N/A time=00:03:14.94 bitrate=N/A speed=1.24x    frame=   39 fps=0.2 q=3.0 size=N/A time=00:03:15.94 bitrate=N/A speed=1.25x    frame=   39 fps=0.2 q=3.0 size=N/A time=00:03:16.43 bitrate=N/A speed=1.24x    frame=   39 fps=0.2 q=3.0 size=N/A time=00:03:17.43 bitrate=N/A speed=1.25x    frame=   39 fps=0.2 q=3.0 size=N/A time=00:03:18.44 bitrate=N/A speed=1.25x    frame=   39 fps=0.2 q=3.0 size=N/A time=00:03:18.95 bitrate=N/A speed=1.25x    [Parsed_showinfo_2 @ 0x12c005260] n:  40 pts: 120043 pts_time:200.072 duration:     20 duration_time:0.0333333 pos:568734957 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:47952C10 plane_checksum:[964CC37F 2F81ECD5 BB7E7B9E] mean:[131 124 131] stdev:[53.4 7.2 8.3]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   40 fps=0.3 q=3.0 size=N/A time=00:03:19.93 bitrate=N/A speed=1.25x    frame=   40 fps=0.2 q=3.0 size=N/A time=00:03:20.93 bitrate=N/A speed=1.25x    frame=   40 fps=0.2 q=3.0 size=N/A time=00:03:21.44 bitrate=N/A speed=1.25x    frame=   40 fps=0.2 q=3.0 size=N/A time=00:03:22.45 bitrate=N/A speed=1.25x    frame=   40 fps=0.2 q=3.0 size=N/A time=00:03:22.96 bitrate=N/A speed=1.25x    frame=   40 fps=0.2 q=3.0 size=N/A time=00:03:23.94 bitrate=N/A speed=1.26x    frame=   40 fps=0.2 q=3.0 size=N/A time=00:03:24.94 bitrate=N/A speed=1.26x    [Parsed_showinfo_2 @ 0x12c005260] n:  41 pts: 123043 pts_time:205.072 duration:     20 duration_time:0.0333333 pos:582915791 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:P checksum:74978CC1 plane_checksum:[DF2CC643 C55F8416 0D334259] mean:[128 123 133] stdev:[52.7 6.2 9.7]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   41 fps=0.3 q=3.0 size=N/A time=00:03:25.43 bitrate=N/A speed=1.26x    frame=   41 fps=0.2 q=3.0 size=N/A time=00:03:26.44 bitrate=N/A speed=1.26x    frame=   41 fps=0.2 q=3.0 size=N/A time=00:03:26.95 bitrate=N/A speed=1.26x    frame=   41 fps=0.2 q=3.0 size=N/A time=00:03:27.93 bitrate=N/A speed=1.26x    frame=   41 fps=0.2 q=3.0 size=N/A time=00:03:28.44 bitrate=N/A speed=1.26x    frame=   41 fps=0.2 q=3.0 size=N/A time=00:03:29.47 bitrate=N/A speed=1.26x    [Parsed_showinfo_2 @ 0x12c005260] n:  42 pts: 126043 pts_time:210.072 duration:     20 duration_time:0.0333333 pos:597254982 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:9F4AEF38 plane_checksum:[872A7610 F8277275 56ED06B3] mean:[132 124 132] stdev:[53.9 6.5 10.0]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   42 fps=0.3 q=3.0 size=N/A time=00:03:29.94 bitrate=N/A speed=1.26x    frame=   42 fps=0.3 q=3.0 size=N/A time=00:03:30.94 bitrate=N/A speed=1.26x    frame=   42 fps=0.3 q=3.0 size=N/A time=00:03:31.45 bitrate=N/A speed=1.26x    frame=   42 fps=0.2 q=3.0 size=N/A time=00:03:32.43 bitrate=N/A speed=1.26x    frame=   42 fps=0.2 q=3.0 size=N/A time=00:03:32.94 bitrate=N/A speed=1.26x    frame=   42 fps=0.2 q=3.0 size=N/A time=00:03:33.95 bitrate=N/A speed=1.26x    frame=   42 fps=0.2 q=3.0 size=N/A time=00:03:34.44 bitrate=N/A speed=1.26x    [Parsed_showinfo_2 @ 0x12c005260] n:  43 pts: 129043 pts_time:215.072 duration:     20 duration_time:0.0333333 pos:610802621 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:P checksum:ABC82402 plane_checksum:[EA5A7857 F7477382 9602381A] mean:[127 124 132] stdev:[52.8 6.2 9.1]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   43 fps=0.3 q=3.0 size=N/A time=00:03:35.44 bitrate=N/A speed=1.26x    frame=   43 fps=0.3 q=3.0 size=N/A time=00:03:35.95 bitrate=N/A speed=1.26x    frame=   43 fps=0.3 q=3.0 size=N/A time=00:03:36.93 bitrate=N/A speed=1.27x    frame=   43 fps=0.3 q=3.0 size=N/A time=00:03:37.44 bitrate=N/A speed=1.27x    frame=   43 fps=0.2 q=3.0 size=N/A time=00:03:38.45 bitrate=N/A speed=1.27x    frame=   43 fps=0.2 q=3.0 size=N/A time=00:03:38.94 bitrate=N/A speed=1.27x    [Parsed_showinfo_2 @ 0x12c005260] n:  44 pts: 132043 pts_time:220.072 duration:     20 duration_time:0.0333333 pos:625445546 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:268A45BF plane_checksum:[AE4718F3 02498CA2 EEDAA01B] mean:[130 125 132] stdev:[55.7 6.3 9.9]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   44 fps=0.3 q=3.0 size=N/A time=00:03:39.94 bitrate=N/A speed=1.27x    frame=   44 fps=0.3 q=3.0 size=N/A time=00:03:40.96 bitrate=N/A speed=1.27x    frame=   44 fps=0.3 q=3.0 size=N/A time=00:03:41.43 bitrate=N/A speed=1.27x    frame=   44 fps=0.3 q=3.0 size=N/A time=00:03:41.97 bitrate=N/A speed=1.27x    frame=   44 fps=0.3 q=3.0 size=N/A time=00:03:42.95 bitrate=N/A speed=1.27x    frame=   44 fps=0.2 q=3.0 size=N/A time=00:03:43.44 bitrate=N/A speed=1.27x    frame=   44 fps=0.2 q=3.0 size=N/A time=00:03:44.44 bitrate=N/A speed=1.27x    [Parsed_showinfo_2 @ 0x12c005260] n:  45 pts: 135044 pts_time:225.073 duration:     20 duration_time:0.0333333 pos:638560318 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:1 type:I checksum:DF9C8F28 plane_checksum:[F07EED7E E600F9CD 8C7EA7BF] mean:[133 126 130] stdev:[55.4 6.0 9.1]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=000000000002321a2e03000000030f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   45 fps=0.3 q=3.0 size=N/A time=00:03:44.93 bitrate=N/A speed=1.27x    frame=   45 fps=0.3 q=3.0 size=N/A time=00:03:45.96 bitrate=N/A speed=1.27x    frame=   45 fps=0.3 q=3.0 size=N/A time=00:03:46.45 bitrate=N/A speed=1.27x    frame=   45 fps=0.3 q=3.0 size=N/A time=00:03:47.45 bitrate=N/A speed=1.27x    frame=   45 fps=0.3 q=3.0 size=N/A time=00:03:47.94 bitrate=N/A speed=1.27x    frame=   45 fps=0.3 q=3.0 size=N/A time=00:03:48.94 bitrate=N/A speed=1.27x    frame=   45 fps=0.2 q=3.0 size=N/A time=00:03:49.43 bitrate=N/A speed=1.27x    [Parsed_showinfo_2 @ 0x12c005260] n:  46 pts: 138044 pts_time:230.073 duration:     20 duration_time:0.0333333 pos:653639546 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:27CB6597 plane_checksum:[0AD2AD7F DAE4C5FE C160F1FC] mean:[131 126 130] stdev:[53.8 5.8 8.9]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000023ee1bd0f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   46 fps=0.3 q=3.0 size=N/A time=00:03:50.44 bitrate=N/A speed=1.27x    frame=   46 fps=0.3 q=3.0 size=N/A time=00:03:50.97 bitrate=N/A speed=1.27x    frame=   46 fps=0.3 q=3.0 size=N/A time=00:03:51.93 bitrate=N/A speed=1.27x    frame=   46 fps=0.3 q=3.0 size=N/A time=00:03:52.44 bitrate=N/A speed=1.27x    frame=   46 fps=0.3 q=3.0 size=N/A time=00:03:53.44 bitrate=N/A speed=1.28x    frame=   46 fps=0.3 q=3.0 size=N/A time=00:03:53.94 bitrate=N/A speed=1.27x    frame=   46 fps=0.2 q=3.0 size=N/A time=00:03:54.94 bitrate=N/A speed=1.28x    [Parsed_showinfo_2 @ 0x12c005260] n:  47 pts: 141044 pts_time:235.073 duration:     20 duration_time:0.0333333 pos:667389478 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:P checksum:A21D7319 plane_checksum:[F8CE9AA4 C21DCAD5 33880D91] mean:[130 127 129] stdev:[53.9 6.4 9.2]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=000000000002773e240f544e527f01e0110013006400000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   47 fps=0.3 q=3.0 size=N/A time=00:03:55.45 bitrate=N/A speed=1.28x    frame=   47 fps=0.3 q=3.0 size=N/A time=00:03:56.43 bitrate=N/A speed=1.28x    frame=   47 fps=0.3 q=3.0 size=N/A time=00:03:56.94 bitrate=N/A speed=1.28x    frame=   47 fps=0.3 q=3.0 size=N/A time=00:03:57.95 bitrate=N/A speed=1.28x    frame=   47 fps=0.3 q=3.0 size=N/A time=00:03:58.44 bitrate=N/A speed=1.28x    frame=   47 fps=0.3 q=3.0 size=N/A time=00:03:58.95 bitrate=N/A speed=1.28x    frame=   47 fps=0.3 q=3.0 size=N/A time=00:03:59.93 bitrate=N/A speed=1.28x    [Parsed_showinfo_2 @ 0x12c005260] n:  48 pts: 144044 pts_time:240.073 duration:     20 duration_time:0.0333333 pos:681866653 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:1D6851A4 plane_checksum:[DB2B855F 334FB7A2 84461494] mean:[128 126 130] stdev:[52.1 6.7 10.3]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=000000000002a033e70f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   48 fps=0.3 q=3.0 size=N/A time=00:04:00.44 bitrate=N/A speed=1.28x    frame=   48 fps=0.3 q=3.0 size=N/A time=00:04:00.93 bitrate=N/A speed=1.28x    frame=   48 fps=0.3 q=3.0 size=N/A time=00:04:01.94 bitrate=N/A speed=1.28x    frame=   48 fps=0.3 q=3.0 size=N/A time=00:04:02.45 bitrate=N/A speed=1.28x    frame=   48 fps=0.3 q=3.0 size=N/A time=00:04:02.94 bitrate=N/A speed=1.28x    frame=   48 fps=0.3 q=3.0 size=N/A time=00:04:03.94 bitrate=N/A speed=1.28x    frame=   48 fps=0.3 q=3.0 size=N/A time=00:04:04.94 bitrate=N/A speed=1.28x    [Parsed_showinfo_2 @ 0x12c005260] n:  49 pts: 147044 pts_time:245.073 duration:     20 duration_time:0.0333333 pos:695316692 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:P checksum:1EB10B22 plane_checksum:[05BF3027 A2892DE5 A08FAD07] mean:[126 126 131] stdev:[52.4 6.8 10.4]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=000000000002b4b72c0f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   49 fps=0.3 q=3.0 size=N/A time=00:04:05.43 bitrate=N/A speed=1.28x    frame=   49 fps=0.3 q=3.0 size=N/A time=00:04:05.95 bitrate=N/A speed=1.28x    frame=   49 fps=0.3 q=3.0 size=N/A time=00:04:06.46 bitrate=N/A speed=1.28x    frame=   49 fps=0.3 q=3.0 size=N/A time=00:04:07.46 bitrate=N/A speed=1.28x    frame=   49 fps=0.3 q=3.0 size=N/A time=00:04:07.93 bitrate=N/A speed=1.28x    frame=   49 fps=0.3 q=3.0 size=N/A time=00:04:08.93 bitrate=N/A speed=1.28x    frame=   49 fps=0.3 q=3.0 size=N/A time=00:04:09.94 bitrate=N/A speed=1.28x    [Parsed_showinfo_2 @ 0x12c005260] n:  50 pts: 150044 pts_time:250.073 duration:     20 duration_time:0.0333333 pos:709618144 fmt:yuvj420p sar:0/1 s:540x960 i:P iskey:0 type:B checksum:6C2BCCCC plane_checksum:[9CB81CDE C68408B6 64EEA738] mean:[84 138 120] stdev:[58.7 10.0 8.5]
+[Parsed_showinfo_2 @ 0x12c005260]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_2 @ 0x12c005260] User Data=0000000000021be2b40f544e527f01e0110013006400000000800000000000004000000001c7ae1400
+[Parsed_showinfo_2 @ 0x12c005260] 
+[Parsed_showinfo_2 @ 0x12c005260] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=   50 fps=0.3 q=3.0 size=N/A time=00:04:10.45 bitrate=N/A speed=1.28x    frame=   51 fps=0.3 q=3.0 Lsize=N/A time=00:04:11.07 bitrate=N/A speed=1.28x    
+video:3151kB audio:23540kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown

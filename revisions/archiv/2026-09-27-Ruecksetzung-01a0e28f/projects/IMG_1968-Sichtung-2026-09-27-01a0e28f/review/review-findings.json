@@ -1,0 +1,141 @@
+{
+  "stage": "1_source_review_and_proposal",
+  "completedAt": "2026-09-27T11:32:23.655169+00:00",
+  "proposal": {
+    "intent": "Wohnort, berufliche Richtung und soziale Umgebung bewusst waehlen. Persoenliche Reflexion.",
+    "status": "provisionally_usable_editorial_tone_choice_required",
+    "durationEstimateSeconds": [
+      60,
+      80
+    ],
+    "sourceBlocksApprox": [
+      {
+        "seconds": [
+          7.8,
+          11.8
+        ],
+        "purpose": "Erster vollstaendiger Hook, gezielt wiedergefunden"
+      },
+      {
+        "seconds": [
+          56,
+          60
+        ],
+        "purpose": "Persoenliche Haltung zur Wichtigkeit",
+        "optional": true
+      },
+      {
+        "seconds": [
+          63.3,
+          65.4
+        ],
+        "purpose": "Frage 1"
+      },
+      {
+        "seconds": [
+          73.1,
+          96.7
+        ],
+        "purpose": "Wohnort, Karriere und Umfeld. Lange Pause und Ortsname noch pruefen."
+      },
+      {
+        "seconds": [
+          115.4,
+          123.4
+        ],
+        "purpose": "Frage 2"
+      },
+      {
+        "seconds": [
+          131.1,
+          142
+        ],
+        "purpose": "Aktiv herausfinden, was man will und nicht will"
+      },
+      {
+        "seconds": [
+          155.1,
+          157.2
+        ],
+        "purpose": "Frage 3 als eigene Ueberschrift"
+      },
+      {
+        "seconds": [
+          182.5,
+          198.3
+        ],
+        "purpose": "Persoenliches Freundschaftsbeispiel, interne Wiederholung noch pruefen"
+      },
+      {
+        "seconds": [
+          202,
+          214.6
+        ],
+        "purpose": "Kommentarfrage",
+        "optional": true
+      },
+      {
+        "seconds": [
+          218,
+          226
+        ],
+        "purpose": "Eigene Gestaltungsmoeglichkeiten"
+      }
+    ],
+    "editorialExclusionsProposed": [
+      "123.6-131 s: Versprechen konkreter Methoden wird im Material nicht eingeloest.",
+      "Pauschale Schuldzuweisungen ab ca.160.8 bis179 s auslassen. Ueberschrift155.1-157.2 bleibt eigener Kandidat.",
+      "Zweiter Hook mit Anfang30/20-Versprecher und unvollstaendiger dritter Hook auslassen.",
+      "Kein Ikigai oder erfundene Schreibuebung ergaenzen."
+    ],
+    "visualRisks": [
+      "Durchgehende Datei ist kein durchgehend sauberer Take. Blick-/Positionswechsel und Neustarts sind sichtbar."
+    ],
+    "asrErrorsCaught": [
+      "Full detection omitted clean first hook, recovered in two targeted recognition models.",
+      "Full detection appended hallucinated text beyond actual234.038s duration. Tail check does not contain that text. Discarded."
+    ]
+  },
+  "checks": {
+    "sourceSha256Unchanged": true,
+    "entireVideoAndAudioDecoded": true,
+    "decodeExitCode": 0,
+    "visualSampleCount": 47,
+    "visualSampleIntervalApproxSeconds": 5,
+    "detailImageCount": 3,
+    "wholeTrackAutomaticRecognition": true,
+    "targetedRecognitionCount": 9,
+    "recognitionCompletenessVerified": false,
+    "auditoryReviewPerformed": false,
+    "auditoryReviewLimitation": "Audio input tool explicitly reports that audio input is unsupported. No claim of listening, natural rhythm or final sound QA.",
+    "notionIntentCompared": true,
+    "proposalIndependentlyReviewed": true
+  },
+  "scope": {
+    "sourceModified": false,
+    "notionModified": false,
+    "videoCutOrExportCreated": false,
+    "selectionFrozen": false,
+    "userApprovalRequiredBeforeCut": true,
+    "allTimesApproximateSourceSecondsNotCutEdges": true
+  },
+  "nextCutValidation": {
+    "speed": 1,
+    "sileroMedianNonSpeechMs": 96,
+    "sileroBandMs": [
+      64,
+      96
+    ],
+    "minimumBandFraction": 0.6,
+    "gapsOver160ms": "Only intentional beats with reason",
+    "noFixedGapAtEveryCut": true,
+    "wordAndPhoneticProtectionRequired": true,
+    "naturalJoinsAndSoundNotYetVerified": true
+  },
+  "priorErrorsExplicitlyChecked": [
+    "Unauthorized storyline after pause-only request: current scope reviewed and selection remains proposal awaiting OK.",
+    "Technical tests passed misrepresented as heard/approved: no auditory approval claimed.",
+    "Old fixed0.7s/-35dB settings: not used.",
+    "ASR treated as ground truth: demonstrated omissions/hallucination recorded and targeted checks performed."
+  ]
+}

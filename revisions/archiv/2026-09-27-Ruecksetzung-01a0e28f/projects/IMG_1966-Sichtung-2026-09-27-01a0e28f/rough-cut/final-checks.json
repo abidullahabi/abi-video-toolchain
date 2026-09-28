@@ -1,0 +1,49 @@
+{
+  "createdAt": "2026-09-27T11:57:01.313713+00:00",
+  "file": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1966-Sichtung-2026-09-27-01a0e28f/exports/Consulting-Zertifikate-Rohschnitt-v1.mp4",
+  "sourceUnchanged": true,
+  "sourceSha256": "c7e7d36812879d5c0cf8ee9ae712294a23362c300b2cc81913865c35429e0632",
+  "speed": 1,
+  "durationSeconds": 73.4,
+  "videoFrameCount": 2202,
+  "maximumFrameTimestampErrorSeconds": 3.333333467026023e-07,
+  "pcmSamples": 3523200,
+  "aacDecodedSamples": 3523584,
+  "aacPeakDbFS": -2.0501190301321475,
+  "aacRmsDbFS": -27.031970935596608,
+  "aacAlignmentSamples": [
+    {
+      "cutTimeStart": 1,
+      "seconds": 0.5,
+      "zeroLagCorrelation": 0.9999888599361297,
+      "bestLagSamplesAt4SampleResolution": 0,
+      "bestCorrelation": 0.9999888599361297
+    },
+    {
+      "cutTimeStart": 30,
+      "seconds": 0.5,
+      "zeroLagCorrelation": 0.9999888887929896,
+      "bestLagSamplesAt4SampleResolution": 0,
+      "bestCorrelation": 0.9999888887929896
+    },
+    {
+      "cutTimeStart": 70,
+      "seconds": 0.5,
+      "zeroLagCorrelation": 0.9999798826159912,
+      "bestLagSamplesAt4SampleResolution": 0,
+      "bestCorrelation": 0.9999798826159912
+    }
+  ],
+  "sourcePcmPreservationFile": "pcm-preservation-check.json",
+  "pauseSignatureFile": "pause-signature-final.json",
+  "completeDecoding": "passed in render-rough-cut.py",
+  "fullCutASR": "recognition/candidate-v2-full.txt",
+  "asrContentReview": "All seven selected meaning blocks and qualifying statements represented. Transcript differences are not treated as evidence of edits. The omitted second das in ASR lies at original134.26 inside untouched132.1–135.3 interval. No source phonemes changed inside kept segments except5ms boundary fades.",
+  "hearingPerformed": false,
+  "qualitativeApproval": false,
+  "limitations": [
+    "No auditory input supported, therefore no listening approval for word endings, jump cuts or natural pacing.",
+    "ASR, DTW and VAD are model estimates. Technical agreement does not prove all syllables are intact.",
+    "SAP assertions retained under explicit user direction, together with personal framing and Finance qualifier."
+  ]
+}

@@ -1,0 +1,10 @@
+--- AGENTS.md bisher
++++ AGENTS.md neu
+@@ -41,3 +41,7 @@
+ - Ergänzung vom 14.09.2026: Neue Videos mit der nativen iPhone-Kamera aufnehmen und per AirDrop auf den Mac übertragen. CapCut-Aufnahme und CapCut-App-Cloud nicht mehr als Eingangsweg verlangen. Originalformat erhalten und die tatsächlichen Metadaten einschließlich HDR/SDR prüfen. Alte CapCut-Dateien bleiben historische Quellen.
+ - Einstiegs-H1 und direkt zugehörige H2 ab 0:00 vollständig sichtbar. `start: 0`, volle Deckkraft und endgültige Position, kein anfängliches Fade-in oder Wischen. `theme-composition.mjs` behandelt diese Texte ohne Einblendanimation, `check-theme-layout.mjs` prüft Frame 0. Vor Übergabe zusätzlich den ersten tatsächlich codierten Frame ansehen.
+ - Bei wenig temporärem Speicher kann `workflow.json` die Option `renderLowMemory: true` setzen, auch bei Videos unter 60 Sekunden.
++
++- LinkedIn-Abschluss nach Nutzerangabe vom 14.09.2026: „Folge mir auf LinkedIn“ über offiziellem [in]-Logo und „Abdullah Bachtari“. Kleine sanfte Animation unter dem Gesicht, getrennt von Überschriften und Untertiteln. `socialCtas` in Themenplan und Komposition verwenden, ganze Gruppe bei jedem Frame prüfen. Keine ungeprüften URLs oder zusätzlichen Profile.
++- Grobe Ausdrücke in finalen Untertiteln und neuen Texten sinngemäß mild und bei passendem Kontext leicht humorvoll formulieren. Originaltranskript wortgetreu erhalten, redaktionelle Ersetzungen mit Zeit, Vorher/Nachher und Nutzergrundlage gesondert speichern. Untertitel bleiben maximal drei Wörter. Bestehenden gesprochenen Ton nicht automatisch ersetzen. Bereits gepostete Videos nicht rückwirkend ändern.
++- Sichtbare Videoablage flach, keine Unterordner je Video. Finale Dateien `JJJJ-MM-TT - Videotitel.mp4`: in 03 geplantes Datum, in 04 tatsächlicher Postingtag. Beim bestätigten Posting verschieben und entsprechend umbenennen. Projekt-/Exportdatum nicht als Postingdatum ausgeben. Fehlende Termine erfragen, vorläufig höchstens „Datum offen - Videotitel.mp4“. Die interne technische Projektablage bleibt separat. Pfade nachführen und Umzüge mit Prüfsummen dokumentieren.

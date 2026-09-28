@@ -1,0 +1,173 @@
+{
+  "method": "Silero hysteresis0.70/0.55 plus targeted DTW anchors, not dB calibration",
+  "removals": [
+    {
+      "start": 13.9,
+      "end": 14.066666666666666,
+      "type": "silence",
+      "block": "hook",
+      "vadGap": [
+        13.856,
+        14.112
+      ],
+      "reason": "Reviewed non-speech between retained words, DTW anchors outside removal. Source edge protection retained; residual determined individually by 30fps boundary grid.",
+      "sourceResidualMs": 89.33
+    },
+    {
+      "start": 15.666666666666666,
+      "end": 15.866666666666667,
+      "type": "silence",
+      "block": "hook",
+      "vadGap": [
+        15.616,
+        15.936
+      ],
+      "reason": "Reviewed non-speech between retained words, DTW anchors outside removal. Source edge protection retained; residual determined individually by 30fps boundary grid.",
+      "sourceResidualMs": 120.0
+    },
+    {
+      "start": 19.666666666666668,
+      "end": 19.8,
+      "type": "silence",
+      "block": "hook",
+      "vadGap": [
+        19.616,
+        19.872
+      ],
+      "reason": "Reviewed non-speech between retained words, DTW anchors outside removal. Source edge protection retained; residual determined individually by 30fps boundary grid.",
+      "sourceResidualMs": 122.67
+    },
+    {
+      "start": 20.266666666666666,
+      "end": 22.766666666666666,
+      "type": "silence",
+      "block": "hook",
+      "vadGap": [
+        20.224,
+        22.816
+      ],
+      "reason": "Reviewed non-speech between retained words, DTW anchors outside removal. Source edge protection retained; residual determined individually by 30fps boundary grid.",
+      "sourceResidualMs": 92.0
+    },
+    {
+      "start": 48.7,
+      "end": 49.06666666666667,
+      "type": "silence",
+      "block": "anthropic-fit",
+      "vadGap": [
+        48.64,
+        49.120000000000005
+      ],
+      "reason": "Reviewed non-speech between retained words, DTW anchors outside removal. Source edge protection retained; residual determined individually by 30fps boundary grid.",
+      "sourceResidualMs": 113.33
+    },
+    {
+      "start": 50.56666666666667,
+      "end": 50.733333333333334,
+      "type": "silence",
+      "block": "anthropic-fit",
+      "vadGap": [
+        50.528,
+        50.784
+      ],
+      "reason": "Reviewed non-speech between retained words, DTW anchors outside removal. Source edge protection retained; residual determined individually by 30fps boundary grid.",
+      "sourceResidualMs": 89.33
+    },
+    {
+      "start": 76.66666666666667,
+      "end": 76.73333333333333,
+      "type": "silence",
+      "block": "anthropic-name",
+      "vadGap": [
+        76.608,
+        76.8
+      ],
+      "reason": "Reviewed non-speech between retained words, DTW anchors outside removal. Source edge protection retained; residual determined individually by 30fps boundary grid.",
+      "sourceResidualMs": 125.33
+    },
+    {
+      "start": 214.43333333333334,
+      "end": 214.6,
+      "type": "silence",
+      "block": "google-intro",
+      "vadGap": [
+        214.368,
+        214.656
+      ],
+      "reason": "Reviewed non-speech between retained words, DTW anchors outside removal. Source edge protection retained; residual determined individually by 30fps boundary grid.",
+      "sourceResidualMs": 121.33
+    },
+    {
+      "start": 216.06666666666666,
+      "end": 216.23333333333332,
+      "type": "silence",
+      "block": "google-intro",
+      "vadGap": [
+        216.0,
+        216.288
+      ],
+      "reason": "Reviewed non-speech between retained words, DTW anchors outside removal. Source edge protection retained; residual determined individually by 30fps boundary grid.",
+      "sourceResidualMs": 121.33
+    },
+    {
+      "start": 226.03333333333333,
+      "end": 226.1,
+      "type": "silence",
+      "block": "google-name",
+      "vadGap": [
+        225.984,
+        226.17600000000002
+      ],
+      "reason": "Reviewed non-speech between retained words, DTW anchors outside removal. Source edge protection retained; residual determined individually by 30fps boundary grid.",
+      "sourceResidualMs": 125.33
+    },
+    {
+      "start": 226.36666666666667,
+      "end": 226.86666666666667,
+      "type": "silence",
+      "block": "google-name",
+      "vadGap": [
+        226.304,
+        226.912
+      ],
+      "reason": "Reviewed non-speech between retained words, DTW anchors outside removal. Source edge protection retained; residual determined individually by 30fps boundary grid.",
+      "sourceResidualMs": 108.0
+    },
+    {
+      "start": 308.96666666666664,
+      "end": 309.06666666666666,
+      "type": "silence",
+      "block": "outro",
+      "vadGap": [
+        308.928,
+        309.12
+      ],
+      "reason": "Reviewed non-speech between retained words, DTW anchors outside removal. Source edge protection retained; residual determined individually by 30fps boundary grid.",
+      "sourceResidualMs": 92.0
+    },
+    {
+      "start": 310.8666666666667,
+      "end": 311.93333333333334,
+      "type": "silence",
+      "block": "outro",
+      "vadGap": [
+        310.81600000000003,
+        312.0
+      ],
+      "reason": "Reviewed non-speech between retained words, DTW anchors outside removal. Source edge protection retained; residual determined individually by 30fps boundary grid.",
+      "sourceResidualMs": 117.33
+    },
+    {
+      "start": 313.3666666666667,
+      "end": 313.8666666666667,
+      "type": "silence",
+      "block": "outro",
+      "vadGap": [
+        313.312,
+        313.92
+      ],
+      "reason": "Reviewed non-speech between retained words, DTW anchors outside removal. Source edge protection retained; residual determined individually by 30fps boundary grid.",
+      "sourceResidualMs": 108.0
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/bin/ffmpeg",
+  "-v",
+  "warning",
+  "-threads",
+  "2",
+  "-i",
+  "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/exports/KI-Einstieg-Schnitt-v1.mp4",
+  "-vf",
+  "select='eq(n,0)+eq(n,1)+eq(n,2)+eq(n,3)+eq(n,61)+eq(n,62)+eq(n,63)+eq(n,64)+eq(n,109)+eq(n,110)+eq(n,111)+eq(n,112)+eq(n,223)+eq(n,224)+eq(n,225)+eq(n,226)+eq(n,236)+eq(n,237)+eq(n,238)+eq(n,239)+eq(n,272)+eq(n,273)+eq(n,274)+eq(n,275)+eq(n,407)+eq(n,408)+eq(n,409)+eq(n,410)+eq(n,485)+eq(n,486)+eq(n,487)+eq(n,488)+eq(n,530)+eq(n,531)+eq(n,532)+eq(n,533)+eq(n,555)+eq(n,556)+eq(n,557)+eq(n,558)+eq(n,620)+eq(n,621)+eq(n,622)+eq(n,623)+eq(n,643)+eq(n,644)+eq(n,645)+eq(n,646)+eq(n,799)+eq(n,800)+eq(n,801)+eq(n,802)+eq(n,967)+eq(n,968)+eq(n,969)+eq(n,970)+eq(n,1139)+eq(n,1140)+eq(n,1141)+eq(n,1142)+eq(n,1242)+eq(n,1243)+eq(n,1244)+eq(n,1245)+eq(n,1289)+eq(n,1290)+eq(n,1291)+eq(n,1292)+eq(n,1351)+eq(n,1352)+eq(n,1353)+eq(n,1354)+eq(n,1377)+eq(n,1378)+eq(n,1379)+eq(n,1380)+eq(n,1419)+eq(n,1420)+eq(n,1421)+eq(n,1422)+eq(n,1472)+eq(n,1473)+eq(n,1474)+eq(n,1475)+eq(n,1502)+eq(n,1503)+eq(n,1504)+eq(n,1505)+eq(n,1510)+eq(n,1511)+eq(n,1512)+eq(n,1513)+eq(n,1568)+eq(n,1569)+eq(n,1570)+eq(n,1571)+eq(n,1687)+eq(n,1688)+eq(n,1689)+eq(n,1690)+eq(n,1758)+eq(n,1759)+eq(n,1760)+eq(n,1761)+eq(n,1811)+eq(n,1812)+eq(n,1813)+eq(n,1814)+eq(n,1854)+eq(n,1855)+eq(n,1856)+eq(n,1857)+eq(n,1904)+eq(n,1905)+eq(n,1906)+eq(n,1907)+eq(n,1924)+eq(n,1925)+eq(n,1926)+eq(n,1927)',scale=324:576",
+  "-fps_mode",
+  "vfr",
+  "-threads",
+  "1",
+  "-q:v",
+  "2",
+  "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/review/visual-evidence/ki-final-v1/frame_%03d.jpg"
+]

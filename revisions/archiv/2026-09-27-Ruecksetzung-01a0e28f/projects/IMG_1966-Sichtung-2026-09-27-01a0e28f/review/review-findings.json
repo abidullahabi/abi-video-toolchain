@@ -1,0 +1,114 @@
+{
+  "stage": "1_source_review_and_proposal",
+  "completedAt": "2026-09-27T11:32:22.547741+00:00",
+  "proposal": {
+    "intent": "Persoenliche Orientierung: Zertifikate passend zur Consulting-Spezialisierung auswaehlen.",
+    "status": "conditionally_usable_sap_pickup_or_scope_choice_required",
+    "durationEstimateSeconds": [
+      60,
+      90
+    ],
+    "sourceBlocksApprox": [
+      {
+        "seconds": [
+          43.2,
+          65.9
+        ],
+        "purpose": "Einordnung Zertifikat und Fachwissen"
+      },
+      {
+        "seconds": [
+          73.2,
+          87.5
+        ],
+        "purpose": "Persoenliche Arbeitsbeobachtung",
+        "optional": true
+      },
+      {
+        "seconds": [
+          91,
+          104
+        ],
+        "purpose": "Scrum und agiles Projektmanagement"
+      },
+      {
+        "seconds": null,
+        "purpose": "SAP: sachliche kurze Nachaufnahme empfohlen, alternativ ausdrueckliche Themenverengung"
+      },
+      {
+        "seconds": [
+          156.5,
+          179.3
+        ],
+        "purpose": "KI und persoenliche Anthropic-Partnerzertifizierung"
+      },
+      {
+        "seconds": [
+          236.7,
+          245.2
+        ],
+        "purpose": "Abschluss",
+        "optional": true
+      }
+    ],
+    "editorialExclusionsProposed": [
+      "SAP-Pflicht und Finance-Rangfolge aus 122-147 s nicht als gesicherte Fakten uebernehmen.",
+      "Vage AWS-/Google-Aufzaehlung fuer diese kompakte Variante auslassen.",
+      "Allgemeinen Bewerbungsvorteil nicht als nachgewiesene Wirkung darstellen."
+    ],
+    "anthropicClarification": {
+      "user": "Den Anthropic-Architekt fuer Beginners und Developer. Die Beide",
+      "interpretedOfficialNames": [
+        "Claude Certified Architect - Foundations",
+        "Claude Certified Developer - Foundations"
+      ],
+      "source": "https://anthropic-partners.skilljar.com/page/partner-certifications",
+      "access": "Official search-index excerpt read. Direct page returned 403. Names match user clarification. Prices/preparation time not finalized for overlays."
+    },
+    "visualRisks": [
+      "Nahaufnahme um 130 s: Kappe erreicht H1-Bereich. Kein Text ueber Kopf."
+    ]
+  },
+  "checks": {
+    "sourceSha256Unchanged": true,
+    "entireVideoAndAudioDecoded": true,
+    "decodeExitCode": 0,
+    "visualSampleCount": 51,
+    "visualSampleIntervalApproxSeconds": 5,
+    "detailImageCount": 3,
+    "wholeTrackAutomaticRecognition": true,
+    "targetedRecognitionCount": 3,
+    "recognitionCompletenessVerified": false,
+    "auditoryReviewPerformed": false,
+    "auditoryReviewLimitation": "Audio input tool explicitly reports that audio input is unsupported. No claim of listening, natural rhythm or final sound QA.",
+    "notionIntentCompared": true,
+    "proposalIndependentlyReviewed": true
+  },
+  "scope": {
+    "sourceModified": false,
+    "notionModified": false,
+    "videoCutOrExportCreated": false,
+    "selectionFrozen": false,
+    "userApprovalRequiredBeforeCut": true,
+    "allTimesApproximateSourceSecondsNotCutEdges": true
+  },
+  "nextCutValidation": {
+    "speed": 1,
+    "sileroMedianNonSpeechMs": 96,
+    "sileroBandMs": [
+      64,
+      96
+    ],
+    "minimumBandFraction": 0.6,
+    "gapsOver160ms": "Only intentional beats with reason",
+    "noFixedGapAtEveryCut": true,
+    "wordAndPhoneticProtectionRequired": true,
+    "naturalJoinsAndSoundNotYetVerified": true
+  },
+  "priorErrorsExplicitlyChecked": [
+    "Unauthorized storyline after pause-only request: current scope reviewed and selection remains proposal awaiting OK.",
+    "Technical tests passed misrepresented as heard/approved: no auditory approval claimed.",
+    "Old fixed0.7s/-35dB settings: not used.",
+    "ASR treated as ground truth: demonstrated omissions/hallucination recorded and targeted checks performed."
+  ]
+}

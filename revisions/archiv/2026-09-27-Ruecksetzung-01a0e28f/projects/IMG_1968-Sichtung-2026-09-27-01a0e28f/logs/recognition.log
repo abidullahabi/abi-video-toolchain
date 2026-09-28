@@ -1,0 +1,132 @@
+whisper_init_from_file_with_params_no_state: loading model from '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 1
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
+ggml_metal_library_init: using embedded metal library
+ggml_metal_library_compile_all: compiled 'fa' library in 0.012 sec
+ggml_metal_library_compile_all: compiled 'mul_mv' library in 0.013 sec
+ggml_metal_library_compile_all: compiled 'mul_mm' library in 0.003 sec
+ggml_metal_library_compile_all: compiled 'quantize' library in 0.002 sec
+ggml_metal_library_compile_all: compiled 'softmax' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'norm' library in 0.002 sec
+ggml_metal_library_compile_all: compiled 'unary' library in 0.013 sec
+ggml_metal_library_compile_all: compiled 'binbcast' library in 0.012 sec
+ggml_metal_library_compile_all: compiled 'reduce' library in 0.013 sec
+ggml_metal_library_compile_all: compiled 'tri' library in 0.012 sec
+ggml_metal_library_compile_all: compiled 'ssm' library in 0.013 sec
+ggml_metal_library_compile_all: compiled 'wkv' library in 0.013 sec
+ggml_metal_library_compile_all: compiled 'gated_delta_net' library in 0.012 sec
+ggml_metal_library_compile_all: compiled 'solve_tri' library in 0.013 sec
+ggml_metal_library_compile_all: compiled 'rope' library in 0.012 sec
+ggml_metal_library_compile_all: compiled 'conv' library in 0.013 sec
+ggml_metal_library_compile_all: compiled 'upscale' library in 0.013 sec
+ggml_metal_library_compile_all: compiled 'argsort' library in 0.012 sec
+ggml_metal_library_compile_all: compiled 'pool' library in 0.012 sec
+ggml_metal_library_compile_all: compiled 'misc' library in 0.012 sec
+ggml_metal_library_compile_all: loaded 20 libraries from embedded data in 0.013 sec (max single = 0.013 sec)
+ggml_metal_rsets_init: creating a residency set collection (keep_alive = 180 s)
+ggml_metal_device_init: GPU name:   MTL0 (Apple M4)
+ggml_metal_device_init: GPU family: MTLGPUFamilyApple9  (1009)
+ggml_metal_device_init: GPU family: MTLGPUFamilyCommon3 (3003)
+ggml_metal_device_init: GPU family: MTLGPUFamilyMetal4  (5002)
+ggml_metal_device_init: simdgroup reduction   = true
+ggml_metal_device_init: simdgroup matrix mul. = true
+ggml_metal_device_init: has unified memory    = true
+ggml_metal_device_init: has bfloat            = true
+ggml_metal_device_init: has tensor            = false
+ggml_metal_device_init: use residency sets    = true
+ggml_metal_device_init: use shared buffers    = true
+ggml_metal_device_init: recommendedMaxWorkingSetSize  = 12713.12 MB
+whisper_init_with_params_no_state: devices    = 3
+whisper_init_with_params_no_state: backends   = 3
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51866
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 1280
+whisper_model_load: n_audio_head  = 20
+whisper_model_load: n_audio_layer = 32
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 1280
+whisper_model_load: n_text_head   = 20
+whisper_model_load: n_text_layer  = 4
+whisper_model_load: n_mels        = 128
+whisper_model_load: ftype         = 8
+whisper_model_load: qntvr         = 2
+whisper_model_load: type          = 5 (large v3)
+whisper_model_load: adding 1609 extra tokens
+whisper_model_load: n_langs       = 100
+whisper_model_load:         MTL0 total size =   573.40 MB
+whisper_model_load: model size    =  573.40 MB
+whisper_backend_init_gpu: device 0: MTL0 (type: 1)
+whisper_backend_init_gpu: found GPU device 0: MTL0 (type: 1, cnt: 0)
+whisper_backend_init_gpu: using MTL0 backend
+ggml_metal_init: allocating
+ggml_metal_init: found device: Apple M4
+ggml_metal_init: picking default device: Apple M4
+ggml_metal_init: use fusion         = true
+ggml_metal_init: use concurrency    = true
+ggml_metal_init: use graph optimize = true
+whisper_backend_init: using BLAS backend
+whisper_init_state: kv self size  =   10.49 MB
+whisper_init_state: kv cross size =   31.46 MB
+whisper_init_state: kv pad  size  =    7.86 MB
+whisper_init_state: compute buffer (conv)   =   37.69 MB
+whisper_init_state: compute buffer (encode) =   67.49 MB
+whisper_init_state: compute buffer (cross)  =   63.03 MB
+whisper_init_state: compute buffer (decode) =  100.04 MB
+read_audio_data: reading audio data from '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/speech.wav' ...
+read_audio_data: trying to decode with miniaudio
+
+system_info: n_threads = 6 / 10 | WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | 
+
+main: processing '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/speech.wav' (3744747 samples, 234.0 sec), 6 threads, 1 processors, 5 beams + best of 5, lang = de, task = transcribe, timestamps = 1 ...
+
+
+[00:00:00.000 --> 00:00:29.980]   Wie ist die Frage der Erwachsenen?
+[00:00:30.000 --> 00:00:43.680]   Die drei wichtigsten Fragen, die sich ein junger Mensch beantworten muss, sind
+[00:00:43.680 --> 00:00:45.140]   Wo lebe ich?
+[00:00:45.680 --> 00:00:46.780]   Was mache ich?
+[00:00:50.280 --> 00:00:52.080]   Und mit wem umgebe ich mich?
+[00:00:56.080 --> 00:00:59.940]   Mit diesen drei großen Fragen, finde ich, wird sich einfach zu wenig beschäftigt.
+[00:01:00.000 --> 00:01:03.220]   Das erste ist, was mache ich?
+[00:01:03.220 --> 00:01:05.340]   Die erste Frage ist, wo lebe ich?
+[00:01:05.340 --> 00:01:11.160]   Es macht einen riesen Unterschied, wenn du in einer Popelstadt wohnen bleibst, wie Lemko
+[00:01:11.160 --> 00:01:12.160]   oder Mühlheim.
+[00:01:12.160 --> 00:01:26.080]   Es macht einen riesen Unterschied, wenn du in einer Popelstadt Mühlheim wohnst oder
+[00:01:26.080 --> 00:01:27.080]   in einer Großstadt.
+[00:01:27.080 --> 00:01:36.540]   Es hat riesen Auswirkungen auf deinen Beruf, auf deine Karriere, welche Bildung du genießt und auch natürlich auch, was du Menschen betrifft.
+[00:01:42.780 --> 00:01:45.280]   Dann der zweite Punkt ist, was du machst in deinem Leben.
+[00:01:46.000 --> 00:01:53.600]   Ich glaube, viele junge Menschen sind auch einfach befordert, weil sie nicht wissen, was sie machen wollen, weil sie einfach Angst davor haben, sich zu entscheiden oder zu zetteln.
+[00:01:55.620 --> 00:02:03.200]   Und die zweite Frage ist, was mache ich genau mit meinem Leben? Ich glaube, das ist eine riesengroße Frage, wo man weiß nicht genau, wo man anfangen soll.
+[00:02:03.600 --> 00:02:10.980]   Hier sind einige Methoden, die mir dabei geholfen haben, um das irgendwie rauszufinden. Aber die ehrliche Antwort dazu ist, es wird dir nicht in den Schoß fallen.
+[00:02:11.240 --> 00:02:17.380]   Man muss sich aktiv damit auseinandersetzen, was man aus seinem Leben machen will, wo man beruflich hin möchte oder auch, wo man nicht hin möchte.
+[00:02:17.720 --> 00:02:21.760]   Weil je mehr du weißt, was du nicht willst, umso eher weißt du irgendwann, was du möchtest.
+[00:02:25.620 --> 00:02:48.460]   Und drittens, wenn um dich herum, und drittens die Menschen, die dich umgeben, wenn du in einer furchtbaren Beziehung bist oder Freundschaften hast, auf die du dich einfach nicht verlassen kannst, dann ist es sehr wahrscheinlich auch ein Großteil wegen dir.
+[00:02:52.140 --> 00:02:58.820]   Einfacher gesagt, wenn um dich herum Menschen, wenn um dich herum nur Lutscher sind, bist du sehr wahrscheinlich auch ein Lutscher.
+[00:03:02.300 --> 00:03:07.700]   Ich habe selber viel zu lange versucht, Freundschaften aufrechtzuerhalten, die man eigentlich auch cutten kann.
+[00:03:08.180 --> 00:03:18.160]   Gar nicht in einem großen Konflikt, gar nicht in einem großen, gar nicht mit ganz viel Zirkus, sondern einfach nur sein lassen.
+[00:03:22.140 --> 00:03:30.200]   Mit welcher dieser drei Fragen
+[00:03:30.200 --> 00:03:31.200]   struggelst du am meisten?
+[00:03:32.560 --> 00:03:34.360]   Schreib es mir gerne in einen Kommentar oder ein DM.
+[00:03:38.120 --> 00:03:39.480]   Und auch wenn das alles ein bisschen
+[00:03:39.480 --> 00:03:41.280]   groß und schwer wirkt,
+[00:03:41.740 --> 00:03:43.600]   haben wir dann doch sehr viel Gestaltungsmöglichkeit
+[00:03:43.600 --> 00:03:45.820]   über das Leben, als wir denken können.
+[00:03:46.860 --> 00:03:47.720]   Voll nicht vergessen.
+[00:03:52.140 --> 00:04:22.120]   Vertraue und glaube, es hilft, es heilt die göttliche Kraft!
+output_txt: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/source-detection.txt'
+output_srt: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/source-detection.srt'
+output_json: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/source-detection.json'
+
+whisper_print_timings:     load time =   374.52 ms
+whisper_print_timings:     fallbacks =  37 p / 224 h
+whisper_print_timings:      mel time =    80.27 ms
+whisper_print_timings:   sample time =  4177.01 ms / 19923 runs (     0.21 ms per run)
+whisper_print_timings:   encode time = 12360.58 ms /     9 runs (  1373.40 ms per run)
+whisper_print_timings:   decode time =   156.14 ms /    52 runs (     3.00 ms per run)
+whisper_print_timings:   batchd time = 32630.64 ms / 19779 runs (     1.65 ms per run)
+whisper_print_timings:   prompt time =     0.00 ms /     1 runs (     0.00 ms per run)
+whisper_print_timings:    total time = 50042.85 ms
+ggml_metal_free: deallocating

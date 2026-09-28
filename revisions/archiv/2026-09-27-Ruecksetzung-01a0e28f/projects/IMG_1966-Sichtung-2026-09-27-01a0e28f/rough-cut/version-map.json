@@ -1,0 +1,31 @@
+{
+  "currentSemanticSelection": "semantic-selection-v2.json",
+  "currentAudioCandidate": "candidate-v4-plan.json",
+  "currentExport": "../exports/Consulting-Zertifikate-Rohschnitt-v3.mp4",
+  "mapping": [
+    {
+      "audio": "candidate-v2",
+      "export": "Rohschnitt-v1",
+      "duration": 73.4,
+      "status": "superseded",
+      "reason": "Conventional median was80ms PCM and64ms AAC, unlike previously quoted upper median96ms."
+    },
+    {
+      "audio": "candidate-v3",
+      "export": "Rohschnitt-v2",
+      "duration": 73.6,
+      "status": "superseded",
+      "reason": "Audio passed calibration; visual QA found cropped face during original Scrum naming take91.133–95.067."
+    },
+    {
+      "audio": "candidate-v4",
+      "export": "Rohschnitt-v3",
+      "duration": 73.5,
+      "status": "current",
+      "reason": "Selection revision2 replaces the cropped take by consecutive full source sentences98.967–108.367. Same six source envelopes confirmed by root before render. No further semantic or audio change since this confirmation."
+    }
+  ],
+  "audioMeasurements": "candidate-v4-signature.json",
+  "pcmPreservation": "pcm-preservation-check-v4.json",
+  "asr": "recognition/candidate-v4-full.txt"
+}

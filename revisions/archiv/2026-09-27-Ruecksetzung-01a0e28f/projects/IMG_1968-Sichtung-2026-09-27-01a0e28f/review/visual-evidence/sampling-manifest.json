@@ -1,0 +1,317 @@
+{
+  "source": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/IMG_1968.MOV",
+  "decode_exit_code": 0,
+  "decode_entire_video_and_audio": true,
+  "sample_rule": "first frame and first frame >=5 s after prior sample",
+  "command": [
+    "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/bin/ffmpeg",
+    "-hide_banner",
+    "-nostdin",
+    "-n",
+    "-xerror",
+    "-threads",
+    "2",
+    "-i",
+    "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/IMG_1968.MOV",
+    "-filter_threads",
+    "1",
+    "-map",
+    "0:v:0",
+    "-vf",
+    "select='isnan(prev_selected_t)+gte(t-prev_selected_t,5)',scale=540:-2,showinfo",
+    "-vsync",
+    "vfr",
+    "-q:v",
+    "3",
+    "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_%03d.jpg",
+    "-map",
+    "0:a:0",
+    "-f",
+    "null",
+    "-"
+  ],
+  "samples": [
+    {
+      "index": 1,
+      "pts": 0,
+      "source_seconds": 0.0,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_001.jpg"
+    },
+    {
+      "index": 2,
+      "pts": 3000,
+      "source_seconds": 5.0,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_002.jpg"
+    },
+    {
+      "index": 3,
+      "pts": 6000,
+      "source_seconds": 10.0,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_003.jpg"
+    },
+    {
+      "index": 4,
+      "pts": 9000,
+      "source_seconds": 15.0,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_004.jpg"
+    },
+    {
+      "index": 5,
+      "pts": 12020,
+      "source_seconds": 20.0333,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_005.jpg"
+    },
+    {
+      "index": 6,
+      "pts": 15020,
+      "source_seconds": 25.0333,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_006.jpg"
+    },
+    {
+      "index": 7,
+      "pts": 18020,
+      "source_seconds": 30.0333,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_007.jpg"
+    },
+    {
+      "index": 8,
+      "pts": 21021,
+      "source_seconds": 35.035,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_008.jpg"
+    },
+    {
+      "index": 9,
+      "pts": 24021,
+      "source_seconds": 40.035,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_009.jpg"
+    },
+    {
+      "index": 10,
+      "pts": 27021,
+      "source_seconds": 45.035,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_010.jpg"
+    },
+    {
+      "index": 11,
+      "pts": 30021,
+      "source_seconds": 50.035,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_011.jpg"
+    },
+    {
+      "index": 12,
+      "pts": 33021,
+      "source_seconds": 55.035,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_012.jpg"
+    },
+    {
+      "index": 13,
+      "pts": 36021,
+      "source_seconds": 60.035,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_013.jpg"
+    },
+    {
+      "index": 14,
+      "pts": 39021,
+      "source_seconds": 65.035,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_014.jpg"
+    },
+    {
+      "index": 15,
+      "pts": 42021,
+      "source_seconds": 70.035,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_015.jpg"
+    },
+    {
+      "index": 16,
+      "pts": 45021,
+      "source_seconds": 75.035,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_016.jpg"
+    },
+    {
+      "index": 17,
+      "pts": 48021,
+      "source_seconds": 80.035,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_017.jpg"
+    },
+    {
+      "index": 18,
+      "pts": 51021,
+      "source_seconds": 85.035,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_018.jpg"
+    },
+    {
+      "index": 19,
+      "pts": 54021,
+      "source_seconds": 90.035,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_019.jpg"
+    },
+    {
+      "index": 20,
+      "pts": 57021,
+      "source_seconds": 95.035,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_020.jpg"
+    },
+    {
+      "index": 21,
+      "pts": 60022,
+      "source_seconds": 100.037,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_021.jpg"
+    },
+    {
+      "index": 22,
+      "pts": 63022,
+      "source_seconds": 105.037,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_022.jpg"
+    },
+    {
+      "index": 23,
+      "pts": 66022,
+      "source_seconds": 110.037,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_023.jpg"
+    },
+    {
+      "index": 24,
+      "pts": 69022,
+      "source_seconds": 115.037,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_024.jpg"
+    },
+    {
+      "index": 25,
+      "pts": 72022,
+      "source_seconds": 120.037,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_025.jpg"
+    },
+    {
+      "index": 26,
+      "pts": 75022,
+      "source_seconds": 125.037,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_026.jpg"
+    },
+    {
+      "index": 27,
+      "pts": 78042,
+      "source_seconds": 130.07,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_027.jpg"
+    },
+    {
+      "index": 28,
+      "pts": 81042,
+      "source_seconds": 135.07,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_028.jpg"
+    },
+    {
+      "index": 29,
+      "pts": 84042,
+      "source_seconds": 140.07,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_029.jpg"
+    },
+    {
+      "index": 30,
+      "pts": 87042,
+      "source_seconds": 145.07,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_030.jpg"
+    },
+    {
+      "index": 31,
+      "pts": 90042,
+      "source_seconds": 150.07,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_031.jpg"
+    },
+    {
+      "index": 32,
+      "pts": 93042,
+      "source_seconds": 155.07,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_032.jpg"
+    },
+    {
+      "index": 33,
+      "pts": 96043,
+      "source_seconds": 160.072,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_033.jpg"
+    },
+    {
+      "index": 34,
+      "pts": 99043,
+      "source_seconds": 165.072,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_034.jpg"
+    },
+    {
+      "index": 35,
+      "pts": 102043,
+      "source_seconds": 170.072,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_035.jpg"
+    },
+    {
+      "index": 36,
+      "pts": 105043,
+      "source_seconds": 175.072,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_036.jpg"
+    },
+    {
+      "index": 37,
+      "pts": 108043,
+      "source_seconds": 180.072,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_037.jpg"
+    },
+    {
+      "index": 38,
+      "pts": 111043,
+      "source_seconds": 185.072,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_038.jpg"
+    },
+    {
+      "index": 39,
+      "pts": 114043,
+      "source_seconds": 190.072,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_039.jpg"
+    },
+    {
+      "index": 40,
+      "pts": 117043,
+      "source_seconds": 195.072,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_040.jpg"
+    },
+    {
+      "index": 41,
+      "pts": 120043,
+      "source_seconds": 200.072,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_041.jpg"
+    },
+    {
+      "index": 42,
+      "pts": 123043,
+      "source_seconds": 205.072,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_042.jpg"
+    },
+    {
+      "index": 43,
+      "pts": 126043,
+      "source_seconds": 210.072,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_043.jpg"
+    },
+    {
+      "index": 44,
+      "pts": 129043,
+      "source_seconds": 215.072,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_044.jpg"
+    },
+    {
+      "index": 45,
+      "pts": 132043,
+      "source_seconds": 220.072,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_045.jpg"
+    },
+    {
+      "index": 46,
+      "pts": 135044,
+      "source_seconds": 225.073,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_046.jpg"
+    },
+    {
+      "index": 47,
+      "pts": 138044,
+      "source_seconds": 230.073,
+      "frame_file": "/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1968/sample_047.jpg"
+    }
+  ]
+}

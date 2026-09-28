@@ -1,0 +1,122 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/IMG_1966.MOV':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    creation_time   : 2026-09-27T10:48:52.000000Z
+    com.apple.quicktime.location.accuracy.horizontal: 9.461636
+    com.apple.quicktime.full-frame-rate-playback-intent: 0
+    com.apple.quicktime.metadata.1: 1
+    com.apple.quicktime.location.ISO6709: +51.2250+006.7893+039.305/
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 17 Pro
+    com.apple.quicktime.software: 27.0
+    com.apple.quicktime.creationdate: 2026-09-27T12:48:52+0200
+  Duration: 00:04:11.07, start: 0.000000, bitrate: 22711 kb/s
+  Stream #0:0[0x1](und): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 3840x2160, 22547 kb/s, 30 fps, 30 tbr, 600 tbn (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+      encoder         : HEVC
+    Side data:
+      displaymatrix: rotation of -90.00 degrees
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 72 kb/s (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Audio
+      vendor_id       : [0][0][0][0]
+  Stream #0:2[0x3](und): Data: none (mebx / 0x7862656D) (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Metadata
+  Stream #0:3[0x4](und): Data: none (mebx / 0x7862656D), 23 kb/s (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Metadata
+  Stream #0:4[0x5](und): Data: none (mebx / 0x7862656D), 53 kb/s (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Metadata
+  Stream #0:5[0x6](und): Data: none (mebx / 0x7862656D), 0 kb/s (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Metadata
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+[Parsed_showinfo_1 @ 0x12e204db0] config in time_base: 1/600, frame_rate: 30/1
+[Parsed_showinfo_1 @ 0x12e204db0] config out time_base: 0/0, frame_rate: 0/0
+[swscaler @ 0x10bd20000] deprecated pixel format used, make sure you did set range correctly
+[Parsed_showinfo_1 @ 0x12e204db0] n:   0 pts:  62582 pts_time:104.303 duration:     20 duration_time:0.0333333 pos:296348716 fmt:yuv420p sar:0/1 s:2160x3840 i:P iskey:0 type:B checksum:DF588E77 plane_checksum:[C7298C8E 1DEABDC0 E4C8441A] mean:[130 124 132] stdev:[46.8 5.4 8.0]
+[Parsed_showinfo_1 @ 0x12e204db0]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_1 @ 0x12e204db0] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_1 @ 0x12e204db0] 
+[Parsed_showinfo_1 @ 0x12e204db0] color_range:tv color_space:bt709 color_primaries:bt709 color_trc:bt709
+[swscaler @ 0x10bd20000] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 2 times
+Output #0, image2, to '/private/tmp/abi-bildpruefung-20260927-01a0e28f/1966-scrum-alternative/frame_%02d.jpg':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    com.apple.quicktime.creationdate: 2026-09-27T12:48:52+0200
+    com.apple.quicktime.location.accuracy.horizontal: 9.461636
+    com.apple.quicktime.full-frame-rate-playback-intent: 0
+    com.apple.quicktime.metadata.1: 1
+    com.apple.quicktime.location.ISO6709: +51.2250+006.7893+039.305/
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 17 Pro
+    com.apple.quicktime.software: 27.0
+    encoder         : Lavf60.3.100
+  Stream #0:0(und): Video: mjpeg, yuvj420p(pc, bt709, progressive), 270x480, q=2-31, 200 kb/s, 30 fps, 30 tbn (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.3.100 mjpeg
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+      displaymatrix: rotation of -0.00 degrees
+frame=    0 fps=0.0 q=1.6 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=    1 fps=0.6 q=1.6 size=N/A time=00:00:00.00 bitrate=N/A speed=   0x    [Parsed_showinfo_1 @ 0x12e204db0] n:   1 pts:  62862 pts_time:104.77  duration:     20 duration_time:0.0333333 pos:297806871 fmt:yuv420p sar:0/1 s:2160x3840 i:P iskey:0 type:B checksum:CF4C5A65 plane_checksum:[FA8C72F0 D0F4A26A 290A44FC] mean:[131 124 132] stdev:[47.1 5.4 7.9]
+[Parsed_showinfo_1 @ 0x12e204db0]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_1 @ 0x12e204db0] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_1 @ 0x12e204db0] 
+[Parsed_showinfo_1 @ 0x12e204db0] color_range:tv color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    2 fps=0.9 q=1.6 size=N/A time=00:00:00.46 bitrate=N/A speed=0.221x    [Parsed_showinfo_1 @ 0x12e204db0] n:   2 pts:  63142 pts_time:105.237 duration:     20 duration_time:0.0333333 pos:299081394 fmt:yuv420p sar:0/1 s:2160x3840 i:P iskey:0 type:B checksum:EC52E7F3 plane_checksum:[4E91EC6C 69F4FC7B 0354FEEE] mean:[130 124 132] stdev:[47.0 5.4 7.9]
+[Parsed_showinfo_1 @ 0x12e204db0]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_1 @ 0x12e204db0] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_1 @ 0x12e204db0] 
+[Parsed_showinfo_1 @ 0x12e204db0] color_range:tv color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    3 fps=1.1 q=1.6 size=N/A time=00:00:00.93 bitrate=N/A speed=0.356x    [Parsed_showinfo_1 @ 0x12e204db0] n:   3 pts:  63422 pts_time:105.703 duration:     20 duration_time:0.0333333 pos:300582875 fmt:yuv420p sar:0/1 s:2160x3840 i:P iskey:0 type:B checksum:B8489365 plane_checksum:[536F062F 79736341 12D829F5] mean:[130 124 132] stdev:[47.0 5.4 7.8]
+[Parsed_showinfo_1 @ 0x12e204db0]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_1 @ 0x12e204db0] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_1 @ 0x12e204db0] 
+[Parsed_showinfo_1 @ 0x12e204db0] color_range:tv color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    4 fps=1.3 q=1.6 size=N/A time=00:00:01.40 bitrate=N/A speed=0.448x    [Parsed_showinfo_1 @ 0x12e204db0] n:   4 pts:  63702 pts_time:106.17  duration:     20 duration_time:0.0333333 pos:301917686 fmt:yuv420p sar:0/1 s:2160x3840 i:P iskey:0 type:B checksum:DD4BCFB4 plane_checksum:[11616784 9200A6E2 F220C13F] mean:[130 124 132] stdev:[47.0 5.4 7.9]
+[Parsed_showinfo_1 @ 0x12e204db0]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_1 @ 0x12e204db0] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_1 @ 0x12e204db0] 
+[Parsed_showinfo_1 @ 0x12e204db0] color_range:tv color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    5 fps=1.3 q=1.6 size=N/A time=00:00:01.86 bitrate=N/A speed=0.502x    [Parsed_showinfo_1 @ 0x12e204db0] n:   5 pts:  63982 pts_time:106.637 duration:     20 duration_time:0.0333333 pos:303406351 fmt:yuv420p sar:0/1 s:2160x3840 i:P iskey:0 type:B checksum:51831DD4 plane_checksum:[A15A1643 35E5B961 2B704E21] mean:[131 124 132] stdev:[46.8 5.2 7.8]
+[Parsed_showinfo_1 @ 0x12e204db0]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_1 @ 0x12e204db0] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_1 @ 0x12e204db0] 
+[Parsed_showinfo_1 @ 0x12e204db0] color_range:tv color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    6 fps=1.4 q=2.1 size=N/A time=00:00:02.33 bitrate=N/A speed=0.551x    [Parsed_showinfo_1 @ 0x12e204db0] n:   6 pts:  64262 pts_time:107.103 duration:     20 duration_time:0.0333333 pos:304906898 fmt:yuv420p sar:0/1 s:2160x3840 i:P iskey:0 type:B checksum:5F44CAFC plane_checksum:[5549D6CE EBBBF579 D08AFE97] mean:[128 124 132] stdev:[46.8 5.3 7.7]
+[Parsed_showinfo_1 @ 0x12e204db0]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_1 @ 0x12e204db0] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_1 @ 0x12e204db0] 
+[Parsed_showinfo_1 @ 0x12e204db0] color_range:tv color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    7 fps=1.5 q=3.1 size=N/A time=00:00:02.80 bitrate=N/A speed=0.584x    [Parsed_showinfo_1 @ 0x12e204db0] n:   7 pts:  64542 pts_time:107.57  duration:     20 duration_time:0.0333333 pos:305925607 fmt:yuv420p sar:0/1 s:2160x3840 i:P iskey:0 type:B checksum:4A2DECEB plane_checksum:[CED28BF9 421935E6 C7852B0C] mean:[130 124 132] stdev:[47.0 5.4 7.7]
+[Parsed_showinfo_1 @ 0x12e204db0]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_1 @ 0x12e204db0] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_1 @ 0x12e204db0] 
+[Parsed_showinfo_1 @ 0x12e204db0] color_range:tv color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    8 fps=1.5 q=4.1 size=N/A time=00:00:03.26 bitrate=N/A speed=0.613x    [Parsed_showinfo_1 @ 0x12e204db0] n:   8 pts:  64822 pts_time:108.037 duration:     20 duration_time:0.0333333 pos:307450798 fmt:yuv420p sar:0/1 s:2160x3840 i:P iskey:0 type:B checksum:E2A0D879 plane_checksum:[1AEC1C24 5924823F 0EB13A16] mean:[130 124 132] stdev:[46.8 5.4 7.8]
+[Parsed_showinfo_1 @ 0x12e204db0]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_1 @ 0x12e204db0] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_1 @ 0x12e204db0] 
+[Parsed_showinfo_1 @ 0x12e204db0] color_range:tv color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    9 fps=1.6 q=5.0 Lsize=N/A time=00:00:03.73 bitrate=N/A speed=0.68x    
+video:215kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown

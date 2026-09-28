@@ -1,0 +1,119 @@
+{
+  "selectionFile": "selection-frozen.json",
+  "removals": [
+    {
+      "start": 57.8,
+      "end": 57.87,
+      "reason": "Kurze Sprechlücke nach Fragen, vor finde ich. Wortanker57.56 und58.06 bleiben geschützt."
+    },
+    {
+      "start": 76.22,
+      "end": 85.87,
+      "reason": "Lange Denkpause nach wohnst, vor oder in einer Großstadt. Beide Satzteile bleiben original und vollständig."
+    },
+    {
+      "start": 86.94,
+      "end": 87.66,
+      "reason": "Satzwechsel Großstadt zu Es hat."
+    },
+    {
+      "start": 89.5,
+      "end": 90.73,
+      "reason": "Aufzählung Beruf zu auf deine Karriere."
+    },
+    {
+      "start": 91.77,
+      "end": 92.8,
+      "reason": "Aufzählung Karriere zu welche Bildung."
+    },
+    {
+      "start": 94.0,
+      "end": 95.0,
+      "reason": "Sprechlücke nach genießt vor und auch."
+    },
+    {
+      "start": 134.5,
+      "end": 134.53,
+      "reason": "Kurze Sprechlücke nach will vor wo man beruflich."
+    },
+    {
+      "start": 135.94,
+      "end": 135.98,
+      "reason": "Kurze Lücke zwischen möchte und oder auch, Wortanker erhalten."
+    },
+    {
+      "start": 137.52,
+      "end": 137.72,
+      "reason": "Satzanschluss möchte zu Weil je mehr."
+    },
+    {
+      "start": 139.76,
+      "end": 140.22,
+      "reason": "Sprechlücke zwischen willst und umso eher."
+    },
+    {
+      "start": 185.46,
+      "end": 185.68,
+      "reason": "Sprechlücke nach aufrechtzuerhalten vor die man."
+    },
+    {
+      "start": 186.71,
+      "end": 187.19,
+      "reason": "Sprechlücke nach auch vor cutten."
+    },
+    {
+      "start": 197.04,
+      "end": 197.72,
+      "reason": "Sprechlücke nach nur vor sein lassen."
+    },
+    {
+      "start": 211.49,
+      "end": 212.54,
+      "reason": "Satzwechsel nach am meisten zur Kommentaraufforderung. PCM zeigt Sch-Anlauf vor Silero212.64. Ende der Entfernung auf212.54 vorgezogen."
+    },
+    {
+      "start": 213.7,
+      "end": 213.94,
+      "reason": "Sprechlücke nach Kommentar vor oder ein DM."
+    },
+    {
+      "start": 219.77,
+      "end": 219.9,
+      "reason": "Sprechlücke nach bisschen vor groß."
+    },
+    {
+      "start": 221.37,
+      "end": 221.72,
+      "reason": "Satzanschluss nach wirkt vor haben wir."
+    },
+    {
+      "start": 224.32,
+      "end": 225.04,
+      "reason": "Zusammenhängende Sprechlücke nach Leben vor als einschließlich kurzem VAD-Impuls ohne Wortanker. PCM prüfen, keine Pegelkalibrierung."
+    }
+  ],
+  "method": "Individual gap selection from source Silero hysteresis, DTW anchors and PCM edge verification. Mixed residual gap sizes. No fixed target per cut.",
+  "intentionalBeats": [
+    {
+      "sourceStart": 155.008,
+      "sourceEnd": 155.552,
+      "reason": "Bewusster Absatz vor dem dritten Punkt. Und-Wort ist zwischen DTW und VAD zeitlich unsicher. Vollständig geschützt, kein riskanter Wortinnenschnitt."
+    }
+  ],
+  "wordProtectionBoundaryOverrides": {
+    "wohnort": {
+      "sourceRange": [
+        73.2,
+        96.66
+      ],
+      "reason": "PCM zeigt leisen Wortbeginn Es bereits73.22 vor dem Silero-Beginn73.312. Wortschutz erweitert Vorlauf um70ms, Inhalt gleich."
+    },
+    "frage1": {
+      "sourceRange": [
+        63.63,
+        65.33
+      ],
+      "reason": "Auslauf des fragenden ich bis65.30 geschützt. Folgendes Es beginnt erst65.36."
+    }
+  }
+}

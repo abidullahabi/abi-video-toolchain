@@ -1,0 +1,545 @@
+{
+  "video": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/exports/KI-Einstieg-Schnitt-v1.mp4",
+  "sha256": "a3cf7037d4c2a38eb4e1783f96c02fe646bab46c97a21eea2fb7781782784322",
+  "scope": "120 still frames around all28 joins (12 thematic and16 pause joins) plus first4 and last4 frames. Each seam shows immediately consecutive frames n-2,n-1,n,n+1. No original video accessed.",
+  "frameCount": 1928,
+  "rows": [
+    {
+      "title": "Anfang",
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "type": "start"
+    },
+    {
+      "title": "hook pause",
+      "type": "pause",
+      "frames": [
+        61,
+        62,
+        63,
+        64
+      ],
+      "joinFrame": 63,
+      "outputSeconds": 2.1,
+      "sourceBefore": 13.9,
+      "sourceAfter": 14.066666666666666
+    },
+    {
+      "title": "hook pause",
+      "type": "pause",
+      "frames": [
+        109,
+        110,
+        111,
+        112
+      ],
+      "joinFrame": 111,
+      "outputSeconds": 3.7,
+      "sourceBefore": 15.666666666666666,
+      "sourceAfter": 15.866666666666667
+    },
+    {
+      "title": "hook pause",
+      "type": "pause",
+      "frames": [
+        223,
+        224,
+        225,
+        226
+      ],
+      "joinFrame": 225,
+      "outputSeconds": 7.5,
+      "sourceBefore": 19.666666666666668,
+      "sourceAfter": 19.8333333333
+    },
+    {
+      "title": "hook pause",
+      "type": "pause",
+      "frames": [
+        236,
+        237,
+        238,
+        239
+      ],
+      "joinFrame": 238,
+      "outputSeconds": 7.933333333333334,
+      "sourceBefore": 20.266666666666666,
+      "sourceAfter": 22.766666666666666
+    },
+    {
+      "title": "hook > anthropic-intro",
+      "type": "theme",
+      "frames": [
+        272,
+        273,
+        274,
+        275
+      ],
+      "joinFrame": 274,
+      "outputSeconds": 9.133333333333333,
+      "sourceBefore": 23.966666666666665,
+      "sourceAfter": 30.0
+    },
+    {
+      "title": "anthropic-intro > anthropic-fit",
+      "type": "theme",
+      "frames": [
+        407,
+        408,
+        409,
+        410
+      ],
+      "joinFrame": 409,
+      "outputSeconds": 13.633333333333333,
+      "sourceBefore": 34.5,
+      "sourceAfter": 46.1
+    },
+    {
+      "title": "anthropic-fit pause",
+      "type": "pause",
+      "frames": [
+        485,
+        486,
+        487,
+        488
+      ],
+      "joinFrame": 487,
+      "outputSeconds": 16.233333333333334,
+      "sourceBefore": 48.7,
+      "sourceAfter": 49.06666666666667
+    },
+    {
+      "title": "anthropic-fit pause",
+      "type": "pause",
+      "frames": [
+        530,
+        531,
+        532,
+        533
+      ],
+      "joinFrame": 532,
+      "outputSeconds": 17.733333333333334,
+      "sourceBefore": 50.56666666666667,
+      "sourceAfter": 50.733333333333334
+    },
+    {
+      "title": "anthropic-fit > anthropic-name",
+      "type": "theme",
+      "frames": [
+        555,
+        556,
+        557,
+        558
+      ],
+      "joinFrame": 557,
+      "outputSeconds": 18.566666666666666,
+      "sourceBefore": 51.56666666666667,
+      "sourceAfter": 74.5
+    },
+    {
+      "title": "anthropic-name pause",
+      "type": "pause",
+      "frames": [
+        620,
+        621,
+        622,
+        623
+      ],
+      "joinFrame": 622,
+      "outputSeconds": 20.733333333333334,
+      "sourceBefore": 76.66666666666667,
+      "sourceAfter": 76.73333333333333
+    },
+    {
+      "title": "anthropic-name > anthropic-content",
+      "type": "theme",
+      "frames": [
+        643,
+        644,
+        645,
+        646
+      ],
+      "joinFrame": 645,
+      "outputSeconds": 21.5,
+      "sourceBefore": 77.5,
+      "sourceAfter": 83.4
+    },
+    {
+      "title": "anthropic-content > andrew-intro",
+      "type": "theme",
+      "frames": [
+        799,
+        800,
+        801,
+        802
+      ],
+      "joinFrame": 801,
+      "outputSeconds": 26.7,
+      "sourceBefore": 88.6,
+      "sourceAfter": 138.36666666666667
+    },
+    {
+      "title": "andrew-intro > andrew-name",
+      "type": "theme",
+      "frames": [
+        967,
+        968,
+        969,
+        970
+      ],
+      "joinFrame": 969,
+      "outputSeconds": 32.3,
+      "sourceBefore": 143.96666666666667,
+      "sourceAfter": 148.66666666666666
+    },
+    {
+      "title": "andrew-name > andrew-content",
+      "type": "theme",
+      "frames": [
+        1139,
+        1140,
+        1141,
+        1142
+      ],
+      "joinFrame": 1141,
+      "outputSeconds": 38.03333333333333,
+      "sourceBefore": 154.4,
+      "sourceAfter": 158.7333333333
+    },
+    {
+      "title": "andrew-content > andrew-limits",
+      "type": "theme",
+      "frames": [
+        1242,
+        1243,
+        1244,
+        1245
+      ],
+      "joinFrame": 1244,
+      "outputSeconds": 41.46666666666667,
+      "sourceBefore": 162.1666666667,
+      "sourceAfter": 167.4
+    },
+    {
+      "title": "andrew-limits > google-intro",
+      "type": "theme",
+      "frames": [
+        1289,
+        1290,
+        1291,
+        1292
+      ],
+      "joinFrame": 1291,
+      "outputSeconds": 43.03333333333333,
+      "sourceBefore": 168.9666666667,
+      "sourceAfter": 211.4
+    },
+    {
+      "title": "google-intro pause",
+      "type": "pause",
+      "frames": [
+        1351,
+        1352,
+        1353,
+        1354
+      ],
+      "joinFrame": 1353,
+      "outputSeconds": 45.1,
+      "sourceBefore": 213.4666666667,
+      "sourceAfter": 213.5333333333
+    },
+    {
+      "title": "google-intro pause",
+      "type": "pause",
+      "frames": [
+        1377,
+        1378,
+        1379,
+        1380
+      ],
+      "joinFrame": 1379,
+      "outputSeconds": 45.96666666666667,
+      "sourceBefore": 214.4,
+      "sourceAfter": 214.6333333333
+    },
+    {
+      "title": "google-intro pause",
+      "type": "pause",
+      "frames": [
+        1419,
+        1420,
+        1421,
+        1422
+      ],
+      "joinFrame": 1421,
+      "outputSeconds": 47.36666666666667,
+      "sourceBefore": 216.0333333333,
+      "sourceAfter": 216.23333333333332
+    },
+    {
+      "title": "google-intro > google-name",
+      "type": "theme",
+      "frames": [
+        1472,
+        1473,
+        1474,
+        1475
+      ],
+      "joinFrame": 1474,
+      "outputSeconds": 49.13333333333333,
+      "sourceBefore": 218.0,
+      "sourceAfter": 225.03333333333333
+    },
+    {
+      "title": "google-name pause",
+      "type": "pause",
+      "frames": [
+        1502,
+        1503,
+        1504,
+        1505
+      ],
+      "joinFrame": 1504,
+      "outputSeconds": 50.13333333333333,
+      "sourceBefore": 226.03333333333333,
+      "sourceAfter": 226.1
+    },
+    {
+      "title": "google-name pause",
+      "type": "pause",
+      "frames": [
+        1510,
+        1511,
+        1512,
+        1513
+      ],
+      "joinFrame": 1512,
+      "outputSeconds": 50.4,
+      "sourceBefore": 226.36666666666667,
+      "sourceAfter": 226.86666666666667
+    },
+    {
+      "title": "google-name > google-content",
+      "type": "theme",
+      "frames": [
+        1568,
+        1569,
+        1570,
+        1571
+      ],
+      "joinFrame": 1570,
+      "outputSeconds": 52.333333333333336,
+      "sourceBefore": 228.8,
+      "sourceAfter": 250.5
+    },
+    {
+      "title": "google-content > outro",
+      "type": "theme",
+      "frames": [
+        1687,
+        1688,
+        1689,
+        1690
+      ],
+      "joinFrame": 1689,
+      "outputSeconds": 56.3,
+      "sourceBefore": 254.4666666667,
+      "sourceAfter": 306.6
+    },
+    {
+      "title": "outro pause",
+      "type": "pause",
+      "frames": [
+        1758,
+        1759,
+        1760,
+        1761
+      ],
+      "joinFrame": 1760,
+      "outputSeconds": 58.666666666666664,
+      "sourceBefore": 308.96666666666664,
+      "sourceAfter": 309.06666666666666
+    },
+    {
+      "title": "outro pause",
+      "type": "pause",
+      "frames": [
+        1811,
+        1812,
+        1813,
+        1814
+      ],
+      "joinFrame": 1813,
+      "outputSeconds": 60.43333333333333,
+      "sourceBefore": 310.8333333333,
+      "sourceAfter": 311.93333333333334
+    },
+    {
+      "title": "outro pause",
+      "type": "pause",
+      "frames": [
+        1854,
+        1855,
+        1856,
+        1857
+      ],
+      "joinFrame": 1856,
+      "outputSeconds": 61.86666666666667,
+      "sourceBefore": 313.3666666666667,
+      "sourceAfter": 313.8666666666667
+    },
+    {
+      "title": "outro pause",
+      "type": "pause",
+      "frames": [
+        1904,
+        1905,
+        1906,
+        1907
+      ],
+      "joinFrame": 1906,
+      "outputSeconds": 63.53333333333333,
+      "sourceBefore": 315.5333333333,
+      "sourceAfter": 315.8333333333
+    },
+    {
+      "title": "Ende",
+      "frames": [
+        1924,
+        1925,
+        1926,
+        1927
+      ],
+      "type": "end"
+    }
+  ],
+  "frameIds": [
+    0,
+    1,
+    2,
+    3,
+    61,
+    62,
+    63,
+    64,
+    109,
+    110,
+    111,
+    112,
+    223,
+    224,
+    225,
+    226,
+    236,
+    237,
+    238,
+    239,
+    272,
+    273,
+    274,
+    275,
+    407,
+    408,
+    409,
+    410,
+    485,
+    486,
+    487,
+    488,
+    530,
+    531,
+    532,
+    533,
+    555,
+    556,
+    557,
+    558,
+    620,
+    621,
+    622,
+    623,
+    643,
+    644,
+    645,
+    646,
+    799,
+    800,
+    801,
+    802,
+    967,
+    968,
+    969,
+    970,
+    1139,
+    1140,
+    1141,
+    1142,
+    1242,
+    1243,
+    1244,
+    1245,
+    1289,
+    1290,
+    1291,
+    1292,
+    1351,
+    1352,
+    1353,
+    1354,
+    1377,
+    1378,
+    1379,
+    1380,
+    1419,
+    1420,
+    1421,
+    1422,
+    1472,
+    1473,
+    1474,
+    1475,
+    1502,
+    1503,
+    1504,
+    1505,
+    1510,
+    1511,
+    1512,
+    1513,
+    1568,
+    1569,
+    1570,
+    1571,
+    1687,
+    1688,
+    1689,
+    1690,
+    1758,
+    1759,
+    1760,
+    1761,
+    1811,
+    1812,
+    1813,
+    1814,
+    1854,
+    1855,
+    1856,
+    1857,
+    1904,
+    1905,
+    1906,
+    1907,
+    1924,
+    1925,
+    1926,
+    1927
+  ],
+  "visualReviewCompleted": false,
+  "motionReviewPerformed": false,
+  "auditoryReviewPerformed": false
+}

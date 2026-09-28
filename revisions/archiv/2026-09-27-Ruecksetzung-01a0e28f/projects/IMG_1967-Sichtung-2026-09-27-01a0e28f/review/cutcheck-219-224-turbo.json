@@ -1,0 +1,170 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Google AI",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.895658,
+					"t_dtw": -1
+				},
+				{
+					"text": " Google",
+					"timestamps": {
+						"from": "00:00:00,430",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 430,
+						"to": 1650
+					},
+					"id": 3329,
+					"p": 0.745199,
+					"t_dtw": 66
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 7318,
+					"p": 0.434552,
+					"t_dtw": 152
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50465,
+					"p": 0.153688,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,120",
+				"to": "00:00:05,120"
+			},
+			"offsets": {
+				"from": 3120,
+				"to": 5120
+			},
+			"text": " Google AI professional",
+			"tokens": [
+				{
+					"text": " Google",
+					"timestamps": {
+						"from": "00:00:03,550",
+						"to": "00:00:03,870"
+					},
+					"offsets": {
+						"from": 3550,
+						"to": 3870
+					},
+					"id": 3329,
+					"p": 0.910881,
+					"t_dtw": 350
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:04,110",
+						"to": "00:00:04,770"
+					},
+					"offsets": {
+						"from": 4110,
+						"to": 4770
+					},
+					"id": 7318,
+					"p": 0.884028,
+					"t_dtw": 384
+				},
+				{
+					"text": " professional",
+					"timestamps": {
+						"from": "00:00:05,120",
+						"to": "00:00:05,120"
+					},
+					"offsets": {
+						"from": 5120,
+						"to": 5120
+					},
+					"id": 4843,
+					"p": 0.65819,
+					"t_dtw": 438
+				},
+				{
+					"text": "[_TT_256]",
+					"timestamps": {
+						"from": "00:00:05,120",
+						"to": "00:00:05,120"
+					},
+					"offsets": {
+						"from": 5120,
+						"to": 5120
+					},
+					"id": 50621,
+					"p": 0.78552,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

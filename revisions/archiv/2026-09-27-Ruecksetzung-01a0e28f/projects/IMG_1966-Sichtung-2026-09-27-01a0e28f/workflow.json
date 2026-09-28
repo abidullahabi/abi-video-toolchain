@@ -1,0 +1,266 @@
+{
+  "mode": "rough-cut",
+  "source": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1966-Sichtung-2026-09-27-01a0e28f/sources/IMG_1966.MOV",
+  "status": "rejected_by_user_do_not_continue",
+  "createdAt": "2026-09-27T11:16:35.662669+00:00",
+  "bearbeitung": {
+    "agent": "Codex workflow_pruefung IMG1966",
+    "aufgabe": "Abschnitt2: wortgeschuetzter Rohschnitt inklusive SAP aus vorhandener Aufnahme, keine Gestaltung.",
+    "begonnen": "2026-09-27T11:39:45.868145+00:00",
+    "status": "vom_nutzer_verworfen"
+  },
+  "speed": 1,
+  "editsAuthorizedThisStage": true,
+  "guidelinesRead": [
+    {
+      "path": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/CONTENT_WORKFLOW.md",
+      "sha256": "33ffc5ce7893b27b3ff0fe217250aaf3a1a9211dcab0dfd7a110adf2c8ae26c9",
+      "lines": 837,
+      "readScope": "complete"
+    },
+    {
+      "path": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/CONTENT_SCRIPT_WORKFLOW.md",
+      "sha256": "dec5f15913fa10798d6f9f624bddd2d37098929f75df2e8e70bbc9a866287cd8",
+      "lines": 278,
+      "readScope": "complete"
+    },
+    {
+      "path": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/DESIGN.md",
+      "sha256": "c3b20cce61ce9ea932084f8e2212c7788bbaf823204c431ed6d3f577208caae0",
+      "lines": 526,
+      "readScope": "complete"
+    },
+    {
+      "path": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/Belege/TESTPROTOKOLL.md",
+      "sha256": "30542b24fb069367347a03190bc8a58e69e9696e01a41950168faa39749a1f9e",
+      "lines": 128,
+      "readScope": "complete"
+    },
+    {
+      "path": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/Belege/ENTSCHEIDUNGEN.md",
+      "sha256": "46fe413a82e05d9c86136763bb11587a4f3e375e1e7c6bd2f016d0a41e49f859",
+      "lines": 291,
+      "readScope": "complete"
+    }
+  ],
+  "sourceSha256": "c7e7d36812879d5c0cf8ee9ae712294a23362c300b2cc81913865c35429e0632",
+  "recognition": {
+    "model": "large-v3-turbo-q5_0",
+    "method": "full recording -mc 0 -et 100 -lpt -100",
+    "file": "source-detection.json",
+    "status": "automatic_not_manually_verified",
+    "seconds": 251.0944375
+  },
+  "reviewReport": "review/review-findings.json",
+  "qualitativeFinalApproval": false,
+  "updatedAt": "2026-09-27T12:15:40.684256+00:00",
+  "originalDuration": 251.071667,
+  "stage2Selection": "rough-cut/semantic-selection-v2.json",
+  "latestExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1966-Sichtung-2026-09-27-01a0e28f/exports/Consulting-Zertifikate-Rohschnitt-v3.mp4",
+  "cutDuration": 73.5,
+  "keepIntervals": [
+    [
+      43.2,
+      44.1
+    ],
+    [
+      44.2,
+      45.6
+    ],
+    [
+      45.7,
+      47.3
+    ],
+    [
+      47.9,
+      48.833333333333336
+    ],
+    [
+      48.9,
+      51.36666666666667
+    ],
+    [
+      51.56666666666667,
+      53.266666666666666
+    ],
+    [
+      56.93333333333333,
+      58.06666666666667
+    ],
+    [
+      58.666666666666664,
+      63.833333333333336
+    ],
+    [
+      63.93333333333333,
+      64.93333333333334
+    ],
+    [
+      65.0,
+      65.9666666667
+    ],
+    [
+      73.4333333333,
+      73.9
+    ],
+    [
+      75.53333333333333,
+      76.56666666666666
+    ],
+    [
+      76.96666666666667,
+      78.43333333333334
+    ],
+    [
+      79.4,
+      82.26666666666667
+    ],
+    [
+      82.46666666666667,
+      84.5
+    ],
+    [
+      84.8,
+      87.5333333333
+    ],
+    [
+      98.9666666667,
+      103.93333333333334
+    ],
+    [
+      104.23333333333333,
+      104.66666666666667
+    ],
+    [
+      105.26666666666667,
+      108.36666666666666
+    ],
+    [
+      122.0333333333,
+      127.7
+    ],
+    [
+      128.1,
+      131.96666666666667
+    ],
+    [
+      132.1,
+      135.3
+    ],
+    [
+      135.7,
+      136.8333333333
+    ],
+    [
+      156.8666666667,
+      158.33333333333334
+    ],
+    [
+      158.56666666666666,
+      159.13333333333333
+    ],
+    [
+      159.56666666666666,
+      161.0
+    ],
+    [
+      161.3,
+      161.76666666666668
+    ],
+    [
+      161.86666666666667,
+      162.4
+    ],
+    [
+      162.5,
+      164.2
+    ],
+    [
+      164.46666666666667,
+      165.86666666666667
+    ],
+    [
+      166.06666666666666,
+      167.93333333333334
+    ],
+    [
+      169.2,
+      172.3
+    ],
+    [
+      172.66666666666666,
+      176.8
+    ],
+    [
+      177.66666666666666,
+      179.3333333333
+    ],
+    [
+      239.5,
+      243.6
+    ],
+    [
+      244.66666666666666,
+      245.5
+    ]
+  ],
+  "removedSeconds": 177.57166700006655,
+  "cutPlan": "cuts.json",
+  "timelineMap": "timeline-map.json",
+  "sourceAudioExport": "rough-cut/candidate-v4.wav",
+  "exportedAt": "2026-09-27T12:13:34.989322+00:00",
+  "aktuell": {
+    "datei": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1966-Sichtung-2026-09-27-01a0e28f/exports/Consulting-Zertifikate-Rohschnitt-v3.mp4",
+    "sha256": "f9384ce0e91dca9b42d1a203d475c4c6ac10a4ec7852ccbdc8dadd42301a4f19",
+    "bytes": 112943676,
+    "erzeugt": "2026-09-27T12:13:34.989524+00:00"
+  },
+  "sourceAudioEncoded": "rough-cut/candidate-v4-aac.m4a",
+  "semanticSelection": "rough-cut/semantic-selection-v2.json",
+  "finalChecks": "rough-cut/final-checks-v3.json",
+  "pauseSignature": "rough-cut/pause-signature-final-v3.json",
+  "asrComparison": "rough-cut/asr-comparison-v4.json",
+  "versionMap": "rough-cut/version-map.json",
+  "listeningReview": "not_performed_unsupported_audio_input",
+  "originalSource": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/IMG_1966.MOV",
+  "sourceCopy": {
+    "originalPath": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/IMG_1966.MOV",
+    "workingCopyPath": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1966-Sichtung-2026-09-27-01a0e28f/sources/IMG_1966.MOV",
+    "expectedSha256": "c7e7d36812879d5c0cf8ee9ae712294a23362c300b2cc81913865c35429e0632",
+    "originalAvailable": true,
+    "copyVerified": true,
+    "createdAt": "2026-09-27T12:17:58.423228+00:00",
+    "sha256": "c7e7d36812879d5c0cf8ee9ae712294a23362c300b2cc81913865c35429e0632",
+    "bytes": 712765317,
+    "independentFile": true
+  },
+  "sourceHandling": {
+    "policy": "working_copy_only",
+    "originalWriteAllowed": false,
+    "originalDeleteAllowed": false,
+    "processingRequiresVerifiedCopy": true,
+    "userInstruction": "Immer eine separate Kopie erstellen und damit arbeiten. Originale weder löschen noch verändern."
+  },
+  "technicalChecksPassed": true,
+  "visualSamplingCompleted": true,
+  "auditoryReviewPerformed": false,
+  "postingReady": false,
+  "finalTechnicalQA": "rough-cut/final-checks-v3.json",
+  "finalVisualQA": "review/visual-evidence/consulting-final-v3/bildpruefung.md",
+  "roughCutReviewCopy": {
+    "path": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Archiv/Vorversionen/Datum offen - Consulting-Zertifikate - Schnitt v3 - verworfen.mp4",
+    "sha256": "f9384ce0e91dca9b42d1a203d475c4c6ac10a4ec7852ccbdc8dadd42301a4f19",
+    "copyVerified": true,
+    "status": "rejected_by_user",
+    "postingReady": false,
+    "createdAt": "2026-09-27T12:19:14.912968+00:00",
+    "previousPath": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Consulting-Zertifikate - Schnitt v3.mp4",
+    "archiveVerified": true
+  },
+  "userRejection": {
+    "at": "2026-09-27T13:51:23.499229+00:00",
+    "reason": "Nutzer verwirft Video wegen Versprechern und eigener Kamerawirkung. Für das Fragenvideo anschließend ausdrücklich bestätigt: Gesamte Schnittfassung archivieren. Nur Ursachenanalyse, keine weitere Schnittbearbeitung beauftragt.",
+    "originalsPreserved": true,
+    "workingCopiesPreserved": true
+  }
+}

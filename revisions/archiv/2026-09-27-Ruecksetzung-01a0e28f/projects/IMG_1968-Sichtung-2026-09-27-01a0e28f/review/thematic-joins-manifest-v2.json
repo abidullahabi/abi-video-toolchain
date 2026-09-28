@@ -1,0 +1,67 @@
+{
+  "export": "exports/DreiFragen-Schnitt-v2.mp4",
+  "sampling": "Four consecutive coded frames for each of10semantic cuts: n-2,n-1,n,n+1. Two sheets, five rows each, chronological rows.",
+  "joins": [
+    {
+      "from": "hook",
+      "to": "haltung",
+      "time": 3.8333330000000005,
+      "frameAfter": 115
+    },
+    {
+      "from": "haltung",
+      "to": "frage1",
+      "time": 7.300000999999999,
+      "frameAfter": 219
+    },
+    {
+      "from": "frage1",
+      "to": "wohnort",
+      "time": 9.000000999999994,
+      "frameAfter": 270
+    },
+    {
+      "from": "wohnort",
+      "to": "frage2",
+      "time": 18.835000999999988,
+      "frameAfter": 565
+    },
+    {
+      "from": "frage2",
+      "to": "beruf",
+      "time": 23.601667999999986,
+      "frameAfter": 708
+    },
+    {
+      "from": "beruf",
+      "to": "frage3",
+      "time": 33.60166800000002,
+      "frameAfter": 1008
+    },
+    {
+      "from": "frage3",
+      "to": "freundschaft",
+      "time": 36.30166800000001,
+      "frameAfter": 1089
+    },
+    {
+      "from": "freundschaft",
+      "to": "freundschaft_ende",
+      "time": 40.868335,
+      "frameAfter": 1226
+    },
+    {
+      "from": "freundschaft_ende",
+      "to": "cta",
+      "time": 43.435001,
+      "frameAfter": 1303
+    },
+    {
+      "from": "cta",
+      "to": "schluss",
+      "time": 47.56833499999999,
+      "frameAfter": 1427
+    }
+  ],
+  "auditoryReviewPerformed": false
+}

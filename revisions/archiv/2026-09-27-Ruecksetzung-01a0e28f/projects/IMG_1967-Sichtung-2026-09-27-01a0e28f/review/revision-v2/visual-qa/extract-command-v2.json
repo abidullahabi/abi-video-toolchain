@@ -1,0 +1,18 @@
+[
+  "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/bin/ffmpeg",
+  "-v",
+  "warning",
+  "-threads",
+  "2",
+  "-i",
+  "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/exports/KI-Einstieg-Schnitt-v2.mp4",
+  "-vf",
+  "select='eq(n,967)+eq(n,968)+eq(n,969)+eq(n,970)+eq(n,1009)+eq(n,1010)+eq(n,1011)+eq(n,1012)+eq(n,1112)+eq(n,1113)+eq(n,1114)+eq(n,1115)+eq(n,1160)+eq(n,1161)+eq(n,1162)+eq(n,1163)+eq(n,1223)+eq(n,1224)+eq(n,1225)+eq(n,1226)+eq(n,1249)+eq(n,1250)+eq(n,1251)+eq(n,1252)+eq(n,1291)+eq(n,1292)+eq(n,1293)+eq(n,1294)+eq(n,1344)+eq(n,1345)+eq(n,1346)+eq(n,1347)+eq(n,1463)+eq(n,1464)+eq(n,1465)+eq(n,1466)+eq(n,1590)+eq(n,1591)+eq(n,1592)+eq(n,1593)+eq(n,1633)+eq(n,1634)+eq(n,1635)+eq(n,1636)+eq(n,1680)+eq(n,1681)+eq(n,1682)+eq(n,1683)+eq(n,1684)+eq(n,1685)+eq(n,1686)+eq(n,1687)+eq(n,1688)+eq(n,1689)+eq(n,1690)+eq(n,1691)+eq(n,1692)+eq(n,1693)+eq(n,1694)+eq(n,1695)+eq(n,1696)+eq(n,1697)+eq(n,1698)+eq(n,1699)+eq(n,1700)+eq(n,1701)+eq(n,1702)+eq(n,1703)+eq(n,1704)+eq(n,1705)+eq(n,1706)+eq(n,1707)+eq(n,1708)+eq(n,1709)+eq(n,1710)+eq(n,1711)+eq(n,1712)+eq(n,1713)+eq(n,1714)+eq(n,1715)+eq(n,1716)+eq(n,1717)+eq(n,1718)+eq(n,1719)+eq(n,1720)+eq(n,1721)+eq(n,1722)+eq(n,1723)+eq(n,1724)+eq(n,1725)+eq(n,1726)+eq(n,1727)+eq(n,1728)+eq(n,1729)+eq(n,1730)+eq(n,1731)+eq(n,1732)+eq(n,1733)+eq(n,1734)+eq(n,1735)+eq(n,1736)+eq(n,1737)+eq(n,1738)+eq(n,1739)',scale=324:576",
+  "-fps_mode",
+  "vfr",
+  "-threads",
+  "1",
+  "-q:v",
+  "2",
+  "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/review/revision-v2/visual-qa/v2/frame_%03d.jpg"
+]

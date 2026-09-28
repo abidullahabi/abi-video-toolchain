@@ -1,0 +1,86 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '01_Rohvideos/IMG_1966.MOV':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    creation_time   : 2026-09-27T10:48:52.000000Z
+    com.apple.quicktime.location.accuracy.horizontal: 9.461636
+    com.apple.quicktime.full-frame-rate-playback-intent: 0
+    com.apple.quicktime.metadata.1: 1
+    com.apple.quicktime.location.ISO6709: +51.2250+006.7893+039.305/
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 17 Pro
+    com.apple.quicktime.software: 27.0
+    com.apple.quicktime.creationdate: 2026-09-27T12:48:52+0200
+  Duration: 00:04:11.07, start: 0.000000, bitrate: 22711 kb/s
+  Stream #0:0[0x1](und): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 3840x2160, 22547 kb/s, 30 fps, 30 tbr, 600 tbn (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+      encoder         : HEVC
+    Side data:
+      displaymatrix: rotation of -90.00 degrees
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 72 kb/s (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Audio
+      vendor_id       : [0][0][0][0]
+  Stream #0:2[0x3](und): Data: none (mebx / 0x7862656D) (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Metadata
+  Stream #0:3[0x4](und): Data: none (mebx / 0x7862656D), 23 kb/s (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Metadata
+  Stream #0:4[0x5](und): Data: none (mebx / 0x7862656D), 53 kb/s (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Metadata
+  Stream #0:5[0x6](und): Data: none (mebx / 0x7862656D), 0 kb/s (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Metadata
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> mjpeg (native))
+[swscaler @ 0x148108000] deprecated pixel format used, make sure you did set range correctly
+[Parsed_showinfo_1 @ 0x140704c20] config in time_base: 1/600, frame_rate: 30/1
+[Parsed_showinfo_1 @ 0x140704c20] config out time_base: 0/0, frame_rate: 0/0
+[swscaler @ 0x138068000] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 2 times
+[Parsed_showinfo_1 @ 0x140704c20] n:   0 pts:  78042 pts_time:130.07  duration:     20 duration_time:0.0333333 pos:369702677 fmt:yuvj420p sar:0/1 s:1080x1920 i:P iskey:0 type:B checksum:0934A951 plane_checksum:[A25278A6 3917BDD5 469072C7] mean:[129 123 133] stdev:[54.8 6.3 9.5]
+[Parsed_showinfo_1 @ 0x140704c20]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_1 @ 0x140704c20] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_1 @ 0x140704c20] 
+[Parsed_showinfo_1 @ 0x140704c20] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+Output #0, image2, to '/private/tmp/abi-bildpruefung-20260927-01a0e28f/IMG_1966/detail_130s.jpg':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    com.apple.quicktime.creationdate: 2026-09-27T12:48:52+0200
+    com.apple.quicktime.location.accuracy.horizontal: 9.461636
+    com.apple.quicktime.full-frame-rate-playback-intent: 0
+    com.apple.quicktime.metadata.1: 1
+    com.apple.quicktime.location.ISO6709: +51.2250+006.7893+039.305/
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 17 Pro
+    com.apple.quicktime.software: 27.0
+    encoder         : Lavf60.3.100
+  Stream #0:0(und): Video: mjpeg, yuvj420p(pc, bt709, progressive), 1080x1920, q=2-31, 200 kb/s, 30 fps, 30 tbn (default)
+    Metadata:
+      creation_time   : 2026-09-27T10:48:52.000000Z
+      handler_name    : Core Media Video
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc60.3.100 mjpeg
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A
+      displaymatrix: rotation of -0.00 degrees
+frame=    0 fps=0.0 q=2.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    [Parsed_showinfo_1 @ 0x140704c20] n:   1 pts:  78062 pts_time:130.103 duration:     20 duration_time:0.0333333 pos:369856304 fmt:yuvj420p sar:0/1 s:1080x1920 i:P iskey:0 type:B checksum:26DE39B7 plane_checksum:[6371F281 E1CFEAA9 9CAD5C6F] mean:[129 123 133] stdev:[54.8 6.3 9.5]
+[Parsed_showinfo_1 @ 0x140704c20]   side data - H.26[45] User Data Unregistered SEI message: UUID=47564adc-5c4c-433f-94ef-c5113cd143a8
+[Parsed_showinfo_1 @ 0x140704c20] User Data=0000000000021be2b40f544e527f01e8110212000000000000800000000000004000000001c7ae1400
+[Parsed_showinfo_1 @ 0x140704c20] 
+[Parsed_showinfo_1 @ 0x140704c20] color_range:pc color_space:bt709 color_primaries:bt709 color_trc:bt709
+frame=    1 fps=0.9 q=2.0 Lsize=N/A time=00:00:00.00 bitrate=N/A speed=   0x    
+video:337kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown

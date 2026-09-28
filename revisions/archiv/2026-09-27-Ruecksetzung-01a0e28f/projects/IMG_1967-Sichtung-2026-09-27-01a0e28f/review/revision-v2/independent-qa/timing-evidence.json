@@ -1,0 +1,28 @@
+{
+  "videoFrameCount": 1740,
+  "videoFirstPts": 0.0,
+  "videoLastPts": 57.966667,
+  "maxCfrTimestampErrorSeconds": 3.3333333604446125e-07,
+  "minFrameStepSeconds": 0.03333299999999895,
+  "maxFrameStepSeconds": 0.03333400000000353,
+  "audioPacketCount": 2720,
+  "firstAudioPacket": {
+    "pts_time": "-0.021333",
+    "duration_time": "0.021333",
+    "side_data_list": [
+      {
+        "side_data_type": "Skip Samples",
+        "skip_samples": 1024,
+        "discard_padding": 0,
+        "skip_reason": 0,
+        "discard_reason": 0
+      }
+    ]
+  },
+  "lastAudioPacket": {
+    "pts_time": "57.984000",
+    "duration_time": "0.016000"
+  },
+  "maximumAudioPacketContinuityErrorSeconds": 1.0000000030714606e-06,
+  "lastVideoFramePresentationEnd": 58.00000033333333
+}

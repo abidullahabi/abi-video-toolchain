@@ -1,0 +1,146 @@
+{
+  "stage": "1_source_review_and_proposal",
+  "completedAt": "2026-09-27T11:32:23.239081+00:00",
+  "proposal": {
+    "intent": "Anfaengern Angst vor einem verpassten KI-Einstieg nehmen und drei Kurse nach Lernziel unterscheiden.",
+    "status": "provisionally_usable_with_whole_sentence_exclusions",
+    "durationEstimateSeconds": [
+      65,
+      85
+    ],
+    "sourceBlocksApprox": [
+      {
+        "seconds": [
+          11.4,
+          24
+        ],
+        "purpose": "Einstieg"
+      },
+      {
+        "seconds": [
+          30,
+          34.5
+        ],
+        "purpose": "Anthropic-Einfuehrung"
+      },
+      {
+        "seconds": [
+          45.8,
+          51.5
+        ],
+        "purpose": "Persoenliche Erfahrung und Claude-Fokus",
+        "optional": true
+      },
+      {
+        "seconds": [
+          74.3,
+          88.5
+        ],
+        "purpose": "AI-Fluency-Name und Aufgabenverteilung, interne Anlaeufe noch pruefen"
+      },
+      {
+        "seconds": [
+          138.1,
+          143.9
+        ],
+        "purpose": "Lernziel zweiter Kurs",
+        "optional": true
+      },
+      {
+        "seconds": [
+          148.6,
+          169
+        ],
+        "purpose": "Andrew Ng: Kursname, technische Grundlagen und Grenzen. Anlaeufe/Pausen noch pruefen."
+      },
+      {
+        "seconds": [
+          211.3,
+          228.9
+        ],
+        "purpose": "Google fuer Berufsalltag und Kursname. Wiederholung im Namen zwischen ASR-Durchgaengen uneindeutig."
+      },
+      {
+        "seconds": [
+          249.6,
+          254.5
+        ],
+        "purpose": "Daten auswerten und Texte schreiben"
+      },
+      {
+        "seconds": [
+          306.2,
+          316.5
+        ],
+        "purpose": "Nicht zu spaet und Abschluss"
+      }
+    ],
+    "editorialExclusionsProposed": [
+      "96-101 s: Anthropic-Kurszertifikat kostet mehr/gut angesehen nicht belegt.",
+      "178-182 s: 30 Euro monatlich nicht belegt.",
+      "228.7-243.9 s: Google-Modelltraining nicht durch Lehrplan gedeckt. Ganze Aussage auslassen, nicht nur Untertitel korrigieren."
+    ],
+    "visualRisks": [
+      "H2 mit zwei Zeilen bei Nahaufnahmen um 80 s zu knapp.",
+      "Bild um 170 s zeigt Bewegungsunschaerfe ausserhalb des vorgeschlagenen Sprechblocks."
+    ],
+    "audioMeasurement": {
+      "nativeSampleRate": 48000,
+      "peakDbFS": 0.827,
+      "absSamplesAbove1": 10,
+      "localizedSeconds": [
+        [
+          3.0266,
+          3.0303
+        ],
+        [
+          4.0518,
+          4.0556
+        ]
+      ],
+      "interpretation": "AAC decoded overshoots in setup before proposed hook. Does not prove audible distortion; no listening performed."
+    }
+  },
+  "checks": {
+    "sourceSha256Unchanged": true,
+    "entireVideoAndAudioDecoded": true,
+    "decodeExitCode": 0,
+    "visualSampleCount": 65,
+    "visualSampleIntervalApproxSeconds": 5,
+    "detailImageCount": 3,
+    "wholeTrackAutomaticRecognition": true,
+    "targetedRecognitionCount": 4,
+    "recognitionCompletenessVerified": false,
+    "auditoryReviewPerformed": false,
+    "auditoryReviewLimitation": "Audio input tool explicitly reports that audio input is unsupported. No claim of listening, natural rhythm or final sound QA.",
+    "notionIntentCompared": true,
+    "proposalIndependentlyReviewed": true
+  },
+  "scope": {
+    "sourceModified": false,
+    "notionModified": false,
+    "videoCutOrExportCreated": false,
+    "selectionFrozen": false,
+    "userApprovalRequiredBeforeCut": true,
+    "allTimesApproximateSourceSecondsNotCutEdges": true
+  },
+  "nextCutValidation": {
+    "speed": 1,
+    "sileroMedianNonSpeechMs": 96,
+    "sileroBandMs": [
+      64,
+      96
+    ],
+    "minimumBandFraction": 0.6,
+    "gapsOver160ms": "Only intentional beats with reason",
+    "noFixedGapAtEveryCut": true,
+    "wordAndPhoneticProtectionRequired": true,
+    "naturalJoinsAndSoundNotYetVerified": true
+  },
+  "priorErrorsExplicitlyChecked": [
+    "Unauthorized storyline after pause-only request: current scope reviewed and selection remains proposal awaiting OK.",
+    "Technical tests passed misrepresented as heard/approved: no auditory approval claimed.",
+    "Old fixed0.7s/-35dB settings: not used.",
+    "ASR treated as ground truth: demonstrated omissions/hallucination recorded and targeted checks performed."
+  ]
+}

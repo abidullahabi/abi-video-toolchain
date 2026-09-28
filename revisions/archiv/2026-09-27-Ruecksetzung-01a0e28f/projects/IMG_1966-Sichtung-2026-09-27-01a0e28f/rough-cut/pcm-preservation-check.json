@@ -1,0 +1,336 @@
+{
+  "method": "Independent sample-by-sample comparison of source-decoded48k PCM and kept-segment interiors, excluding6ms at each5ms fade edge.",
+  "expectedSamples": 3523200,
+  "actualSamples": 3523200,
+  "expectedDuration": 73.4,
+  "actualDuration": 73.4,
+  "maximumAbsoluteSampleDifference": 1.1897554941242561e-07,
+  "preservationPass": true,
+  "segments": [
+    {
+      "source": [
+        43.2,
+        44.1
+      ],
+      "samples": 43200,
+      "comparedInteriorSamples": 42624,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1895826901309192e-07
+    },
+    {
+      "source": [
+        44.2,
+        45.6
+      ],
+      "samples": 67200,
+      "comparedInteriorSamples": 66624,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1896190699189901e-07
+    },
+    {
+      "source": [
+        45.7,
+        47.266666666666666
+      ],
+      "samples": 75200,
+      "comparedInteriorSamples": 74624,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1896190699189901e-07
+    },
+    {
+      "source": [
+        47.9,
+        48.833333333333336
+      ],
+      "samples": 44800,
+      "comparedInteriorSamples": 44224,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.189255272038281e-07
+    },
+    {
+      "source": [
+        48.9,
+        51.333333333333336
+      ],
+      "samples": 116800,
+      "comparedInteriorSamples": 116224,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1894917406607419e-07
+    },
+    {
+      "source": [
+        51.56666666666667,
+        53.266666666666666
+      ],
+      "samples": 81600,
+      "comparedInteriorSamples": 81024,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1894917406607419e-07
+    },
+    {
+      "source": [
+        56.93333333333333,
+        58.06666666666667
+      ],
+      "samples": 54400,
+      "comparedInteriorSamples": 53824,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1895826901309192e-07
+    },
+    {
+      "source": [
+        58.666666666666664,
+        63.833333333333336
+      ],
+      "samples": 248000,
+      "comparedInteriorSamples": 247424,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1896190699189901e-07
+    },
+    {
+      "source": [
+        63.93333333333333,
+        64.93333333333334
+      ],
+      "samples": 48000,
+      "comparedInteriorSamples": 47424,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1897282092832029e-07
+    },
+    {
+      "source": [
+        65.0,
+        65.9666666667
+      ],
+      "samples": 46400,
+      "comparedInteriorSamples": 45824,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1897509466507472e-07
+    },
+    {
+      "source": [
+        73.4333333333,
+        73.9
+      ],
+      "samples": 22400,
+      "comparedInteriorSamples": 21824,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1894735507667065e-07
+    },
+    {
+      "source": [
+        75.53333333333333,
+        76.56666666666666
+      ],
+      "samples": 49600,
+      "comparedInteriorSamples": 49024,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.189655449707061e-07
+    },
+    {
+      "source": [
+        76.96666666666667,
+        78.43333333333334
+      ],
+      "samples": 70400,
+      "comparedInteriorSamples": 69824,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1896190699189901e-07
+    },
+    {
+      "source": [
+        79.4,
+        82.23333333333333
+      ],
+      "samples": 136000,
+      "comparedInteriorSamples": 135424,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1897554941242561e-07
+    },
+    {
+      "source": [
+        82.46666666666667,
+        84.5
+      ],
+      "samples": 97600,
+      "comparedInteriorSamples": 97024,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1893280316144228e-07
+    },
+    {
+      "source": [
+        84.8,
+        87.5333333333
+      ],
+      "samples": 131200,
+      "comparedInteriorSamples": 130624,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1896190699189901e-07
+    },
+    {
+      "source": [
+        91.1333333333,
+        92.46666666666667
+      ],
+      "samples": 64000,
+      "comparedInteriorSamples": 63424,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1894735507667065e-07
+    },
+    {
+      "source": [
+        92.73333333333333,
+        95.0666666667
+      ],
+      "samples": 112000,
+      "comparedInteriorSamples": 111424,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1896190699189901e-07
+    },
+    {
+      "source": [
+        98.9666666667,
+        103.9
+      ],
+      "samples": 236800,
+      "comparedInteriorSamples": 236224,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.189655449707061e-07
+    },
+    {
+      "source": [
+        122.0333333333,
+        127.66666666666667
+      ],
+      "samples": 270400,
+      "comparedInteriorSamples": 269824,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1897191143361852e-07
+    },
+    {
+      "source": [
+        128.1,
+        131.96666666666667
+      ],
+      "samples": 185600,
+      "comparedInteriorSamples": 185024,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.189691829495132e-07
+    },
+    {
+      "source": [
+        132.1,
+        135.3
+      ],
+      "samples": 153600,
+      "comparedInteriorSamples": 153024,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1897463991772383e-07
+    },
+    {
+      "source": [
+        135.7,
+        136.8333333333
+      ],
+      "samples": 54400,
+      "comparedInteriorSamples": 53824,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1894462659256533e-07
+    },
+    {
+      "source": [
+        156.8666666667,
+        158.33333333333334
+      ],
+      "samples": 70400,
+      "comparedInteriorSamples": 69824,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.189655449707061e-07
+    },
+    {
+      "source": [
+        158.56666666666666,
+        159.13333333333333
+      ],
+      "samples": 27200,
+      "comparedInteriorSamples": 26624,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1891825124621391e-07
+    },
+    {
+      "source": [
+        159.56666666666666,
+        161.0
+      ],
+      "samples": 68800,
+      "comparedInteriorSamples": 68224,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1896190699189901e-07
+    },
+    {
+      "source": [
+        161.3,
+        161.76666666666668
+      ],
+      "samples": 22400,
+      "comparedInteriorSamples": 21824,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1894735507667065e-07
+    },
+    {
+      "source": [
+        161.86666666666667,
+        162.4
+      ],
+      "samples": 25600,
+      "comparedInteriorSamples": 25024,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1896190699189901e-07
+    },
+    {
+      "source": [
+        162.5,
+        164.2
+      ],
+      "samples": 81600,
+      "comparedInteriorSamples": 81024,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1896372598130256e-07
+    },
+    {
+      "source": [
+        164.46666666666667,
+        165.83333333333334
+      ],
+      "samples": 65600,
+      "comparedInteriorSamples": 65024,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1891825124621391e-07
+    },
+    {
+      "source": [
+        166.06666666666666,
+        167.93333333333334
+      ],
+      "samples": 89600,
+      "comparedInteriorSamples": 89024,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1897554941242561e-07
+    },
+    {
+      "source": [
+        169.2,
+        172.3
+      ],
+      "samples": 148800,
+      "comparedInteriorSamples": 148224,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1896190699189901e-07
+    },
+    {
+      "source": [
+        172.66666666666666,
+        176.8
+      ],
+      "samples": 198400,
+      "comparedInteriorSamples": 197824,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1896190699189901e-07
+    },
+    {
+      "source": [
+        177.66666666666666,
+        179.3333333333
+      ],
+      "samples": 80000,
+      "comparedInteriorSamples": 79424,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1896281648660079e-07
+    },
+    {
+      "source": [
+        239.5,
+        243.56666666666666
+      ],
+      "samples": 195200,
+      "comparedInteriorSamples": 194624,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1896190699189901e-07
+    },
+    {
+      "source": [
+        244.66666666666666,
+        245.5
+      ],
+      "samples": 40000,
+      "comparedInteriorSamples": 39424,
+      "maximumAbsoluteSampleDifferenceOutsideFades": 1.1896190699189901e-07
+    }
+  ],
+  "interpretation": "Proves sample preservation inside selected intervals, not semantic completeness or listening quality."
+}

@@ -1,0 +1,412 @@
+{
+  "source": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/IMG_1966.MOV",
+  "fps": 30,
+  "speed": 1,
+  "speechMethod": "Silero6.2 + reviewed DTW + PCM evidence",
+  "removals": [
+    {
+      "start": 0,
+      "end": 43.2,
+      "type": "editorial",
+      "reason": "Outside user-approved complete content blocks, excludes alternative takes, repeated assertions, broad AWS/Google list or unselected content."
+    },
+    {
+      "start": 44.1,
+      "end": 44.2,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 44.064,
+        "end": 44.256
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.09199999999999875
+    },
+    {
+      "start": 45.6,
+      "end": 45.7,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 45.568,
+        "end": 45.728
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.060000000000002274
+    },
+    {
+      "start": 47.3,
+      "end": 47.9,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps. One extra source frame retained before cut to protect preceding word decay and calibrate the measured AAC pause signature. No additional speech removal.",
+      "sourceGap": {
+        "start": 47.232,
+        "end": 47.936
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.1039999999999992
+    },
+    {
+      "start": 48.833333333333336,
+      "end": 48.9,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 48.800000000000004,
+        "end": 48.96
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.09333333333333371
+    },
+    {
+      "start": 51.36666666666667,
+      "end": 51.56666666666667,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps. One extra source frame retained before cut to protect preceding word decay and calibrate the measured AAC pause signature. No additional speech removal.",
+      "sourceGap": {
+        "start": 51.296,
+        "end": 51.616
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.11999999999999744
+    },
+    {
+      "start": 53.266666666666666,
+      "end": 56.93333333333333,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 53.216,
+        "end": 56.992000000000004
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.10933333333333906
+    },
+    {
+      "start": 58.06666666666667,
+      "end": 58.666666666666664,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 58.016,
+        "end": 58.72
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.10400000000000631
+    },
+    {
+      "start": 63.833333333333336,
+      "end": 63.93333333333333,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 63.808,
+        "end": 63.968
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.06000000000000938
+    },
+    {
+      "start": 64.93333333333334,
+      "end": 65.0,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 64.896,
+        "end": 65.056
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.09333333333333371
+    },
+    {
+      "start": 65.9666666667,
+      "end": 73.4333333333,
+      "type": "editorial",
+      "reason": "Outside user-approved complete content blocks, excludes alternative takes, repeated assertions, broad AWS/Google list or unselected content."
+    },
+    {
+      "start": 73.9,
+      "end": 75.53333333333333,
+      "type": "silence",
+      "reason": "persoenliche_beobachtung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 73.856,
+        "end": 75.584
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.09466666666668289
+    },
+    {
+      "start": 76.56666666666666,
+      "end": 76.96666666666667,
+      "type": "silence",
+      "reason": "persoenliche_beobachtung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 76.544,
+        "end": 77.024
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.0799999999999983
+    },
+    {
+      "start": 78.43333333333334,
+      "end": 79.4,
+      "type": "silence",
+      "reason": "persoenliche_beobachtung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 78.4,
+        "end": 79.456
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08933333333332882
+    },
+    {
+      "start": 82.26666666666667,
+      "end": 82.46666666666667,
+      "type": "silence",
+      "reason": "persoenliche_beobachtung: Silero non-speech core, DTW anchors protected, aligned to 30fps. One extra source frame retained before cut to protect preceding word decay and calibrate the measured AAC pause signature. No additional speech removal.",
+      "sourceGap": {
+        "start": 82.208,
+        "end": 82.496
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08799999999999386
+    },
+    {
+      "start": 84.5,
+      "end": 84.8,
+      "type": "silence",
+      "reason": "persoenliche_beobachtung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 84.44800000000001,
+        "end": 84.83200000000001
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08400000000000318
+    },
+    {
+      "start": 87.5333333333,
+      "end": 98.9666666667,
+      "type": "editorial",
+      "reason": "Outside user-approved complete content blocks, excludes alternative takes, repeated assertions, broad AWS/Google list or unselected content."
+    },
+    {
+      "start": 103.93333333333334,
+      "end": 104.23333333333333,
+      "type": "silence",
+      "reason": "After machen, before und: source VAD gap, whole-token DTW anchors±55ms protected. An extra source frame preserves the preceding word decay. No speech content removed.",
+      "sourceGap": {
+        "start": 103.872,
+        "end": 104.288
+      },
+      "sourceRemainingNonSpeech": 0.11599999999999966,
+      "protectedWords": []
+    },
+    {
+      "start": 104.66666666666667,
+      "end": 105.26666666666667,
+      "type": "silence",
+      "reason": "After und, before das Go-To: source VAD gap, whole-token DTW anchors±55ms protected. An extra source frame preserves the preceding word decay. No speech content removed.",
+      "sourceGap": {
+        "start": 104.608,
+        "end": 105.312
+      },
+      "sourceRemainingNonSpeech": 0.1039999999999992,
+      "protectedWords": []
+    },
+    {
+      "start": 108.36666666666666,
+      "end": 122.0333333333,
+      "type": "editorial",
+      "reason": "Outside user-approved complete content blocks, excludes alternative takes, repeated assertions, broad AWS/Google list or unselected content."
+    },
+    {
+      "start": 127.7,
+      "end": 128.1,
+      "type": "silence",
+      "reason": "sap: Silero non-speech core, DTW anchors protected, aligned to 30fps. One extra source frame retained before cut to protect preceding word decay and calibrate the measured AAC pause signature. No additional speech removal.",
+      "sourceGap": {
+        "start": 127.616,
+        "end": 128.12800000000001
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.11200000000002319
+    },
+    {
+      "start": 131.96666666666667,
+      "end": 132.1,
+      "type": "silence",
+      "reason": "sap: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 131.936,
+        "end": 132.16
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.09066666666666379
+    },
+    {
+      "start": 135.3,
+      "end": 135.7,
+      "type": "silence",
+      "reason": "sap: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 135.264,
+        "end": 135.744
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.0800000000000125
+    },
+    {
+      "start": 136.8333333333,
+      "end": 156.8666666667,
+      "type": "editorial",
+      "reason": "Outside user-approved complete content blocks, excludes alternative takes, repeated assertions, broad AWS/Google list or unselected content."
+    },
+    {
+      "start": 158.33333333333334,
+      "end": 158.56666666666666,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 158.304,
+        "end": 158.624
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08666666666667311
+    },
+    {
+      "start": 159.13333333333333,
+      "end": 159.56666666666666,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 159.104,
+        "end": 159.616
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.07866666666666333
+    },
+    {
+      "start": 161.0,
+      "end": 161.3,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 160.96,
+        "end": 161.344
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08399999999997476
+    },
+    {
+      "start": 161.76666666666668,
+      "end": 161.86666666666667,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 161.728,
+        "end": 161.92000000000002
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.09200000000001296
+    },
+    {
+      "start": 162.4,
+      "end": 162.5,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 162.368,
+        "end": 162.56
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.09200000000001296
+    },
+    {
+      "start": 164.2,
+      "end": 164.46666666666667,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 164.16,
+        "end": 164.512
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08533333333332394
+    },
+    {
+      "start": 165.86666666666667,
+      "end": 166.06666666666666,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps. One extra source frame retained before cut to protect preceding word decay and calibrate the measured AAC pause signature. No additional speech removal.",
+      "sourceGap": {
+        "start": 165.792,
+        "end": 166.112
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.12000000000000455
+    },
+    {
+      "start": 167.93333333333334,
+      "end": 169.2,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 167.904,
+        "end": 169.248
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.07733333333334258
+    },
+    {
+      "start": 172.3,
+      "end": 172.66666666666666,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 172.256,
+        "end": 172.704
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08133333333336168
+    },
+    {
+      "start": 176.8,
+      "end": 177.66666666666666,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 176.768,
+        "end": 177.696
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.06133333333335145
+    },
+    {
+      "start": 179.3333333333,
+      "end": 239.5,
+      "type": "editorial",
+      "reason": "Outside user-approved complete content blocks, excludes alternative takes, repeated assertions, broad AWS/Google list or unselected content."
+    },
+    {
+      "start": 243.6,
+      "end": 244.66666666666666,
+      "type": "silence",
+      "reason": "Abschluss: conflicting long-chunk DTW replaced by focused turbo anchors (ansonsten243.06-243.38), corroborated by PCM word decay ending ca243.44 and Silero non-speech243.52-244.704. Removal starts243.5667 and ends244.6667, preserving following speech onsetca244.68. Small model syllable anchor243.62 falls into near-digital silence and is not treated as ground truth. One extra source frame retained before cut to protect preceding word decay and calibrate the measured AAC pause signature. No additional speech removal.",
+      "sourceGap": {
+        "start": 243.52,
+        "end": 244.704
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.11733333333333462
+    },
+    {
+      "start": 245.5,
+      "end": 251.071667,
+      "type": "tail",
+      "reason": "Unselected recording tail after full CTA."
+    }
+  ],
+  "selectionPlan": "rough-cut/candidate-v4-plan.json",
+  "hearingPerformed": false
+}

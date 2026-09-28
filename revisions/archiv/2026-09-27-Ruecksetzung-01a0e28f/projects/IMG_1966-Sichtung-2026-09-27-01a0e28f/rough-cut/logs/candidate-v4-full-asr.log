@@ -1,0 +1,121 @@
+whisper_init_from_file_with_params_no_state: loading model from '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 1
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
+ggml_metal_library_init: using embedded metal library
+ggml_metal_library_compile_all: compiled 'fa' library in 0.050 sec
+ggml_metal_library_compile_all: compiled 'mul_mv' library in 0.010 sec
+ggml_metal_library_compile_all: compiled 'mul_mm' library in 0.066 sec
+ggml_metal_library_compile_all: compiled 'quantize' library in 0.070 sec
+ggml_metal_library_compile_all: compiled 'softmax' library in 0.005 sec
+ggml_metal_library_compile_all: compiled 'norm' library in 0.004 sec
+ggml_metal_library_compile_all: compiled 'unary' library in 0.055 sec
+ggml_metal_library_compile_all: compiled 'binbcast' library in 0.067 sec
+ggml_metal_library_compile_all: compiled 'reduce' library in 0.004 sec
+ggml_metal_library_compile_all: compiled 'tri' library in 0.003 sec
+ggml_metal_library_compile_all: compiled 'ssm' library in 0.056 sec
+ggml_metal_library_compile_all: compiled 'wkv' library in 0.053 sec
+ggml_metal_library_compile_all: compiled 'gated_delta_net' library in 0.070 sec
+ggml_metal_library_compile_all: compiled 'solve_tri' library in 0.053 sec
+ggml_metal_library_compile_all: compiled 'rope' library in 0.066 sec
+ggml_metal_library_compile_all: compiled 'conv' library in 0.068 sec
+ggml_metal_library_compile_all: compiled 'upscale' library in 0.057 sec
+ggml_metal_library_compile_all: compiled 'argsort' library in 0.053 sec
+ggml_metal_library_compile_all: compiled 'pool' library in 0.057 sec
+ggml_metal_library_compile_all: compiled 'misc' library in 0.005 sec
+ggml_metal_library_compile_all: loaded 20 libraries from embedded data in 0.071 sec (max single = 0.070 sec)
+ggml_metal_rsets_init: creating a residency set collection (keep_alive = 180 s)
+ggml_metal_device_init: GPU name:   MTL0 (Apple M4)
+ggml_metal_device_init: GPU family: MTLGPUFamilyApple9  (1009)
+ggml_metal_device_init: GPU family: MTLGPUFamilyCommon3 (3003)
+ggml_metal_device_init: GPU family: MTLGPUFamilyMetal4  (5002)
+ggml_metal_device_init: simdgroup reduction   = true
+ggml_metal_device_init: simdgroup matrix mul. = true
+ggml_metal_device_init: has unified memory    = true
+ggml_metal_device_init: has bfloat            = true
+ggml_metal_device_init: has tensor            = false
+ggml_metal_device_init: use residency sets    = true
+ggml_metal_device_init: use shared buffers    = true
+ggml_metal_device_init: recommendedMaxWorkingSetSize  = 12713.12 MB
+whisper_init_with_params_no_state: devices    = 3
+whisper_init_with_params_no_state: backends   = 3
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51866
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 1280
+whisper_model_load: n_audio_head  = 20
+whisper_model_load: n_audio_layer = 32
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 1280
+whisper_model_load: n_text_head   = 20
+whisper_model_load: n_text_layer  = 4
+whisper_model_load: n_mels        = 128
+whisper_model_load: ftype         = 8
+whisper_model_load: qntvr         = 2
+whisper_model_load: type          = 5 (large v3)
+whisper_model_load: adding 1609 extra tokens
+whisper_model_load: n_langs       = 100
+whisper_model_load:         MTL0 total size =   573.40 MB
+whisper_model_load: model size    =  573.40 MB
+whisper_backend_init_gpu: device 0: MTL0 (type: 1)
+whisper_backend_init_gpu: found GPU device 0: MTL0 (type: 1, cnt: 0)
+whisper_backend_init_gpu: using MTL0 backend
+ggml_metal_init: allocating
+ggml_metal_init: found device: Apple M4
+ggml_metal_init: picking default device: Apple M4
+ggml_metal_init: use fusion         = true
+ggml_metal_init: use concurrency    = true
+ggml_metal_init: use graph optimize = true
+whisper_backend_init: using BLAS backend
+whisper_init_state: kv self size  =   10.49 MB
+whisper_init_state: kv cross size =   31.46 MB
+whisper_init_state: kv pad  size  =    7.86 MB
+whisper_init_state: compute buffer (conv)   =   37.69 MB
+whisper_init_state: compute buffer (encode) =   67.49 MB
+whisper_init_state: compute buffer (cross)  =   63.03 MB
+whisper_init_state: compute buffer (decode) =  100.04 MB
+read_audio_data: reading audio data from '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1966-Sichtung-2026-09-27-01a0e28f/rough-cut/candidate-v4-aac-silero.wav' ...
+read_audio_data: trying to decode with miniaudio
+
+system_info: n_threads = 2 / 10 | WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | 
+
+main: processing '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1966-Sichtung-2026-09-27-01a0e28f/rough-cut/candidate-v4-aac-silero.wav' (1176235 samples, 73.5 sec), 2 threads, 1 processors, 5 beams + best of 5, lang = de, task = transcribe, timestamps = 1 ...
+
+
+[00:00:00.000 --> 00:00:03.700]   Einmal kurz vorweg, es gibt nicht das Consultant-Zertifikat.
+[00:00:04.160 --> 00:00:06.780]   Bedeutet, du kannst jetzt nicht irgendwie ein Zertifikat machen und sagen,
+[00:00:06.920 --> 00:00:09.940]   okay, Consultant one-on-one und du bist dann direkt überall genommen.
+[00:00:10.140 --> 00:00:13.360]   Ein Unternehmensberater, das ist genau das Besondere, der kann bestimmte Skills
+[00:00:13.360 --> 00:00:17.080]   oder ist in einer bestimmten Branche tätig und hat dort einfach krasses Wissen.
+[00:00:17.320 --> 00:00:22.500]   Aber so, wie ich jetzt so ein bisschen arbeite, so wie ich jetzt ein bisschen auf der Arbeit mitbekommen habe
+[00:00:22.500 --> 00:00:24.920]   und sehe, was so ein bisschen verlangt wird, auch von den Kunden her,
+[00:00:24.920 --> 00:00:27.740]   gibt es einige Zertifikate, die auch immer wieder kommen.
+[00:00:27.900 --> 00:00:36.220]   Es gibt viele Projektmanagement-Consultants, die so agiles Projektmanagement machen und das Go-To da ist einfach dieses Scrum-Master-Ding, was man machen soll.
+[00:00:36.360 --> 00:00:41.780]   Zweitens, wenn du zum Beispiel SAP-Consultant werden willst, kommst du nicht drum herum, SAP-Zertifikate zu sammeln.
+[00:00:42.020 --> 00:00:45.640]   Es gibt jetzt zig verschiedene Zertifikate für die verschiedenen Apps, Möglichkeiten, Anwendungen.
+[00:00:45.640 --> 00:00:48.920]   Ich glaube, das Beste oder was man am meisten fragt, ist im Bereich Finance.
+[00:00:49.140 --> 00:00:50.060]   Nagel mich nicht drauf fest.
+[00:00:50.280 --> 00:00:56.260]   Und jetzt natürlich aktuell das heißeste Thema ist KI und da gibt es reichlich Zertifikate, die du machen kannst.
+[00:00:56.460 --> 00:00:59.500]   Ich aktuell mache das Anthropic-Zertifikat.
+[00:00:59.680 --> 00:01:01.560]   Das ist sehr interessant für verschiedene Consulting-Häuser.
+[00:01:01.860 --> 00:01:02.020]   Warum?
+[00:01:02.300 --> 00:01:04.520]   Weil viele wollen halt Partner werden für Anthropic.
+[00:01:04.680 --> 00:01:08.440]   Und damit du das werden kannst, brauchst du eine bestimmte Anzahl von Kollegen, die dieses Zertifikat haben.
+[00:01:08.580 --> 00:01:11.920]   Wenn du Fragen hast oder irgendwas über Consulting-Wissen willst, schreib mir in die DM oder einen Kommentar.
+[00:01:12.060 --> 00:01:13.160]   Ansonsten folge nicht vergessen.
+output_txt: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1966-Sichtung-2026-09-27-01a0e28f/rough-cut/recognition/candidate-v4-full.txt'
+output_srt: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1966-Sichtung-2026-09-27-01a0e28f/rough-cut/recognition/candidate-v4-full.srt'
+output_json: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1966-Sichtung-2026-09-27-01a0e28f/rough-cut/recognition/candidate-v4-full.json'
+
+whisper_print_timings:     load time =   401.74 ms
+whisper_print_timings:     fallbacks =  15 p /  90 h
+whisper_print_timings:      mel time =    36.93 ms
+whisper_print_timings:   sample time =  2994.54 ms / 13196 runs (     0.23 ms per run)
+whisper_print_timings:   encode time =  3752.76 ms /     3 runs (  1250.92 ms per run)
+whisper_print_timings:   decode time =    19.75 ms /     7 runs (     2.82 ms per run)
+whisper_print_timings:   batchd time = 20106.88 ms / 13153 runs (     1.53 ms per run)
+whisper_print_timings:   prompt time =     0.00 ms /     1 runs (     0.00 ms per run)
+whisper_print_timings:    total time = 27446.17 ms
+ggml_metal_free: deallocating
