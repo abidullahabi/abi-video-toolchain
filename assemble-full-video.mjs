@@ -179,7 +179,7 @@ export function assembleDesign22(project,meta,opts={}) {
   plan.title=meta.title;plan.kopfQuelle=profil?`Personenmaske an ${proben.length} Proben (review/kopf-profil.json), sonst Schätzung aus review/source-faces.json`:'Schätzung aus review/source-faces.json';
   plan.captions=groupCaptions22(timed,measure,duration);
   const cutFile=path.join(project,'review/cut-points.json'),cuts=fs.existsSync(cutFile)?read('review/cut-points.json').cuts.map(c=>c.time):[];
-  plan.zooms=input.zooms??planZooms22({resets:[...cuts,...plan.kapitel.map(k=>k.start),...plan.h1.map(h=>h.start)],blocked:[...plan.schlagworte.map(s=>[s.start-.3,s.end+.3]),...plan.grafiken.map(g=>[g.start,g.end]),[plan.outro.start,duration],...(input.zoomSperren||[])],faceWidth,closeFrom:input.nahaufnahmeAbBreite??420,duration});
+  plan.zooms=input.zooms??planZooms22({resets:[...cuts,...plan.kapitel.map(k=>k.start),...plan.h1.map(h=>h.start),plan.outro.start],blocked:[...plan.schlagworte.map(s=>[s.start-.3,s.end+.3]),...plan.grafiken.map(g=>[g.start,g.end]),[plan.outro.start,duration],...(input.zoomSperren||[])],faceWidth,closeFrom:input.nahaufnahmeAbBreite??420,duration});
   plan.hinweise={warnings,notes};
   if(errors.length)throw Error('DESIGN.md 2.2:\n- '+errors.join('\n- '));
   // HyperFrames lädt nur Dateien im Projekt: Schriften, Profil-Icons und GSAP aus templates/ kopieren.

@@ -35,7 +35,7 @@ Diese Datei enthält **keine eigenen Gestaltungswerte** und keine Regeln, die do
 1. Vor jeder Änderung `werkzeug-status.json` lesen. Steht dort `"status": "in_arbeit"` mit einem anderen `agent`, nichts ändern und Abdullah fragen.
 2. Dann setzen: `{"status": "in_arbeit", "agent": "claude" | "codex", "zweig": "<Zweig>", "seit": "<ISO-Zeit>", "aufgabe": "<kurz>"}`. Nach Abschluss `"status": "frei"` mit Agent, Zweig und Zeit. Die Datei wird **nie gelöscht**, nur überschrieben.
 3. Geändert wird auf einem eigenen Zweig: `claude/<thema>` oder `codex/<thema>`, **in einem eigenen Arbeitsordner**: `git worktree add ../abi-video-toolchain-<thema> -b claude/<thema>`. Der Hauptordner `~/Projekte/abi-video-toolchain` bleibt auf `main`, denn dort laufen die Videos der anderen Sitzungen. `tools`, `node_modules` und `analysis` im Arbeitsordner sind Verweise auf den Hauptordner. Videoprojekte bleiben im gemeinsamen `projects/` des Hauptordners; die Werkzeuge im Arbeitsordner lesen und schreiben dort.
-4. In `main` kommt eine Änderung erst nach bestandenem Test und wenn kein Video `bearbeitung.status: "in_arbeit"` hat und kein Render läuft; den Test im Commit nennen. Danach den Arbeitsordner mit `git worktree remove` schließen.
+4. In `main` kommt eine Änderung erst nach bestandenem Test und wenn kein Video `bearbeitung.status: "in_arbeit"` hat und kein Render läuft; den Test im Commit nennen. Danach kann der Arbeitsordner geschlossen werden (`git worktree remove`, nur wenn alles committet ist; Abdullah entscheidet, wie bei jeder Löschung).
 
 ### Sichern
 

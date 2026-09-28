@@ -85,7 +85,8 @@ export function momente(plan) {
 export function animationen(plan) {
   const a = [], add = (id, art, text, mitte, ende) => { if (mitte >= 0 && ende > mitte && ende < plan.duration) a.push({ id, art, text, mitte: Math.round(mitte * 1000) / 1000, ende: Math.round(ende * 1000) / 1000 }); };
   const h1Ids = new Set((plan.h1 || []).map(h => 'h1:' + h.id));
-  for (const k of plan.kapitel || []) add(k.id, 'Kapitel', `${k.nummer || ''} ${k.titel}`.trim(), k.start + 0.2, k.start + 0.62);
+  // Mit Nummer: Zahl wischt 0,40 s, Titel ab 0,35 s. Ohne Nummer: nur der Titel, 0,22 s ab Beginn (DESIGN.md 15).
+  for (const k of plan.kapitel || []) k.nummer ? add(k.id, 'Kapitel', `${k.nummer} ${k.titel}`, k.start + 0.2, k.start + 0.62) : add(k.id, 'Kapitel', k.titel, k.start + 0.06, k.start + 0.3);
   for (const h of plan.h1 || []) add(h.id, 'H1', h.lines.join(' '), h.start + 0.08, h.start + 0.3);
   for (const h of plan.h2 || []) { const v = h1Ids.has(h.unter) ? 0.06 : 0; add(h.id, 'H2', h.lines.join(' / '), h.start + v + 0.06, h.start + v + 0.4); }
   for (const p of plan.pillen || []) p.items.forEach((it, i) => add(p.id, `Pille ${i + 1}`, it.text, it.at + 0.08, Math.min(p.end - 0.2, (p.items[i + 1]?.at ?? Infinity) - 0.01, it.at + 0.35)));

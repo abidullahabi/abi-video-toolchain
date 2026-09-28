@@ -52,7 +52,8 @@ export async function anlegen(roh, opts = {}) {
   if (fremd.length) throw Error(`Andere Sitzung arbeitet an dieser Aufnahme: ${fremd.map(x => `${x.projekt} (${x.agent}, seit ${x.begonnen})`).join('; ')}. Nicht anfangen, Abdullah fragen.`);
   const sha = pruefsumme(quelle);
   // Ein Projekt pro Video: Gibt es schon ein Projekt (Design 2.2) für genau diese Aufnahme, wird es weiterverwendet.
-  for (const name of fs.readdirSync(PROJEKTE)) {
+  // --neu: trotzdem ein neues Projekt (nur für Messläufe; sonst gilt „ein Projekt pro Video“).
+  for (const name of opts.neu ? [] : fs.readdirSync(PROJEKTE)) {
     const f = path.join(PROJEKTE, name, 'workflow.json');
     if (!fs.existsSync(f)) continue;
     let m; try { m = J(f); } catch { continue; }

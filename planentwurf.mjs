@@ -148,6 +148,7 @@ export function planentwurf(project) {
   // Zoomfahrten (DESIGN.md 15): Rücksprung an Schnittpunkten und Themenwechseln, nie über einen Schnitt hinweg.
   const faceWidth = t => { if (!faces.length) return 0; const f = faces.reduce((b, x) => Math.abs(x.time - t) < Math.abs(b.time - t) ? x : b); return Math.max(0, ...(f.faces || []).map(q => q.width)); };
   const zooms = planZooms22({ resets: [...cuts, ...kapitel.map(k => k.start), outroStart], blocked: [[outroStart, duration]], faceWidth, closeFrom: 420, duration });
+  offen.push('Zoomfahrten sind aus Schnittpunkten und den erkannten Kapiteln berechnet. Änderst du Kapitel oder H1, lösche "zooms"; storyboard berechnet sie dann neu (DESIGN.md 15).');
   if (zooms.length < duration / 15) offen.push(`Nur ${zooms.length} Zoomfahrten: wenige Schnittpunkte/Themenwechsel. Weitere nur an echten Übergängen (DESIGN.md 15).`);
 
   const plan = {
