@@ -79,3 +79,4 @@ Kurz die Regeln aus `ABLAUF_KURZ.md` Abschnitt 0, die für jede KI gelten:
 - Zeitbudget je Schritt. Doppelt überschritten oder Fehlersuche über 10 min: anhalten und Abdullah kurz melden.
 - Eingeplant wird nie vor Abdullahs OK. Seine Rückmeldung gesammelt in einer Nachricht erbitten.
 - Vor jedem Render den freien Arbeitsspeicher prüfen (das Werkzeug tut es); reicht er nicht für zwei Prozesse, Abdullah bitten, Programme zu schließen.
+- Rendern und Exportieren laufen unter einer rechnerweiten Render-Sperre (`~/Library/Caches/abi-video-toolchain/render-sperre`): immer nur ein Render gleichzeitig, auch über Sitzungen und Arbeitsordner hinweg. Wartet ein Befehl auf die Sperre, sagt er, auf wen.

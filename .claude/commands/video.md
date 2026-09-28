@@ -49,12 +49,12 @@ Standard ist ein reiner Gestaltungsauftrag. Die Aufnahme bleibt in Länge, Tempo
 
 Nach `ABLAUF_KURZ.md` Schritt 2 bis 5:
 
-1. Gestaltungsprojekt mit `designVersion: "2.2"`, Wörter mit `transcribe-words`, Korrekturen und Abmilderungen in `caption-edit-plan.json`, Followerstand in `follower-source.json`.
-2. **Plan statt Code:** nur `design-plan.json` (Texte, Zeiten, Elementtyp, Variante). Ein Planer schreibt, ein Prüfer prüft, sonst niemand. Kein videospezifischer Code; fehlt ein Baustein, kommt er in `theme-composition-design22.mjs`.
+1. `node workflow.mjs anlegen "<Rohvideo>" --title "<Titel>"` (ein Projekt pro Video, Kollisionsprüfung, Anspruch), bei Schnitt `schnitt.json` ins Projekt, dann `node workflow.mjs vorbereiten "<P>"` (Kamerabild, Ton, Wörter in einem Durchgang, Gesichter, Schnittpunkte; unveränderte Schritte werden übersprungen). Korrekturen und Abmilderungen in `caption-edit-plan.json`, Followerstand in `follower-source.json`.
+2. **Plan statt Code:** `node workflow.mjs planentwurf "<P>"` schreibt den Entwurf von `design-plan.json`; ein Planer prüft und ergänzt (`_offen` abarbeiten), ein Prüfer prüft gegen, sonst niemand. Kein videospezifischer Code; fehlt ein Baustein, kommt er in `theme-composition-design22.mjs`.
    Ende: keine Stille vor dem CTA, Schluss, bevor die Geste endet.
-3. Bei Grafiken: `node workflow.mjs green-screen "<P>" --review`.
+3. Kopfprofil und Freistellung rechnen `storyboard` und `build` selbst, nur wo nötig.
 4. `node workflow.mjs storyboard "<P>"` → Kontaktblatt (mit Zwischenbildern der Animationen) und Textliste an Abi. Bei eigenem Schnitt zusätzlich `node workflow.mjs vorschau "<P>"` (halbe Auflösung). Bitte Abi, alle Änderungen gesammelt in einer Nachricht zu schicken. Den finalen Build darfst du im Hintergrund starten, während er ansieht. **Eingeplant wird erst nach seinem OK.**
-5. `node workflow.mjs build "<P>"` → ein Master, Upload-Export, Prüfungen, Kontaktblatt (≤ 12 Bilder), `review/build-bericht.json`.
+5. `node workflow.mjs build "<P>"` (im Hintergrund starten) → Render in Abschnitten (nur Geändertes), `exports/master.mp4`, `exports/upload.mp4`, Prüfungen, Kontaktblatt (≤ 12 Bilder), `review/build-bericht.json`.
 
 ## Schritt 4: Prüfung, harter Abbruchpunkt
 
@@ -76,12 +76,14 @@ Nennt Abi Korrekturen: verschiebe die bisherige Fassung nach `DRIVE/Archiv/Vorve
 
 ## Schritt 6: Nach der Freigabe, ohne weitere Rückfrage
 
-1. Datei nach `DRIVE/03_Bereit_zum_Posten/JJJJ-MM-TT - Titel.mp4`, Quelle und Kopie per SHA-256 vergleichen.
-2. Notion-Eintrag in „Master Contentplanung" über Titel und Inhalt eindeutig zuordnen, Beschreibung im Abschnitt „Beschreibung & Hashtags" ablegen, Seite erneut lesen und prüfen, Status auf Ready to Post.
-3. Über Zernio für **Instagram und TikTok** auf das Postingdatum, 19:00 Uhr, einplanen. Zernio-ID protokollieren.
-4. Auf Abis Wunsch wandert die Datei danach bereits nach `04_Gepostet`. Der Status in Notion bleibt Ready to Post.
+Nach `ABLAUF_KURZ.md` Schritt 7, in einem Rutsch:
 
-Melde: Ablageort, Notion-Link, Zernio-ID, geplante Zeit. Mehr nicht.
+1. Upload-Token über Zernio `media_generate_upload_link`, dann `node ausliefern.mjs "<P>" "<Titel>" --datum JJJJ-MM-TT --token <token>` (Drive-Ablage mit SHA-256, Upload, Einplanungsauftrag).
+2. `posts_create_post` über `call_tool` mit `review/zernio-post.json` (Instagram und TikTok, ein Beitrag, 19:00 Europe/Berlin), erst `dry_run`. Bei Abbruch erst `posts_list`.
+3. `node ausliefern.mjs "<P>" --post-id <id>` (04_Gepostet, Rohvideo ins Archiv, ~/Löschbar, Commit).
+4. Notion-Eintrag in „Master Contentplanung": Beschreibung ablegen, zurücklesen, Status Ready to Post, Post-ID.
+
+Melde: Ablageort, Notion-Link, Zernio-ID, geplante Zeit, frei gewordene GB. Mehr nicht.
 
 ## Schritt 7: Testprotokoll
 
