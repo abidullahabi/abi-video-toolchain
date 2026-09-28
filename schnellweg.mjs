@@ -223,31 +223,43 @@ export async function vorschau(project, { root, run, assemble }) {
   await zeit(project, 'vorschau: zusammensetzen (halbe Auflösung)', () => assemble(project, { vorschau: true }));
   try {
     fs.mkdirSync(path.join(project, 'exports'), { recursive: true });
-    const out = path.join(project, 'exports', `vorschau-${new Date().toISOString().replace(/[:.]/g, '-')}.mp4`);
-    const r = await zeit(project, 'vorschau: rendern', () => renderHF(project, { root, run, out, format: 'mp4', quality: 'draft', meta }));
+    const out = path.join(project, 'exports', 'vorschau.mp4');   // fester Name, wird überschrieben
+    speicherPruefen(meta);
+    const { mitRenderSperre } = await import('./projekte.mjs');
+    const r = await mitRenderSperre(project, 'vorschau', () => zeit(project, 'vorschau: rendern', () => renderHF(project, { root, run, out, format: 'mp4', quality: 'draft', meta })));
     console.log(JSON.stringify(r, null, 1));
     return r;
   } finally { await zeit(project, 'vorschau: zusammensetzen (voll)', () => assemble(project)); }
 }
 
 // ---------- build ----------
-export async function build(project, { root, run, assemble, check }) {
+export async function build(project, { root, run, assemble, check, env }) {
   const metaFile = path.join(project, 'workflow.json'), meta = J(metaFile), bericht = { projekt: project, begonnen: new Date().toISOString(), schritte: {} };
   if (String(meta.designVersion) !== '2.2') throw Error('build ist für designVersion 2.2 gebaut.');
+  const { kopfprofil, freistellung } = await import('./vorbereiten.mjs');
+  await kopfprofil(project);
   const plan = await zeit(project, 'build: zusammensetzen', () => assemble(project));
-  for (const g of plan.grafiken || []) if (g.person && !fs.existsSync(path.join(project, g.person))) await zeit(project, 'build: green screen ' + g.id, () => run(path.join(root, 'tools/venv-rvm/bin/python'), [path.join(root, 'green-screen-maske.py'), project, '--nur', g.id], root, path.join(project, 'logs/green-screen.log')));
+  for (const g of plan.grafiken || []) if (g.person) await freistellung(project, g);
   const pruefung = await zeit(project, 'build: designprüfung (jedes Bild)', () => check(project));
   bericht.designpruefung = { bilder: pruefung.framesChecked, blockierend: pruefung.blocking, maxEbenen: pruefung.maxLayers, hinweise: pruefung.warnings.length };
   await zeit(project, 'build: lint', () => run(process.execPath, [path.join(root, 'node_modules/hyperframes/bin/hyperframes.mjs'), 'lint', project], root, path.join(project, 'logs/05-lint.log')));
   const format = meta.renderMaster === 'prores' ? 'mov' : 'mp4';
-  const out = path.join(project, 'exports', `final-${new Date().toISOString().replace(/[:.]/g, '-')}.${format}`);
+  // Eine Arbeitskopie pro Video (CONTENT_WORKFLOW 1.28): fester Name, wird überschrieben.
+  const out = path.join(project, 'exports', `master.${format}`);
   fs.mkdirSync(path.dirname(out), { recursive: true });
-  bericht.render = await zeit(project, `build: rendern (${format}, ein Master)`, () => renderHF(project, { root, run, out, format, quality: 'high', meta }));
-  await zeit(project, 'build: master decodieren', () => {
-    const info = JSON.parse(run(path.join(root, 'tools/bin/ffprobe'), ['-v', 'error', '-show_streams', '-show_format', '-of', 'json', out]));
-    const v = info.streams.find(s => s.codec_type === 'video');
-    if (!v || v.width !== 1080 || v.height !== 1920 || Math.abs(+info.format.duration - meta.cutDuration) > 0.25) throw Error('Master: Format oder Dauer stimmt nicht.');
-    run(path.join(root, 'tools/bin/ffmpeg'), ['-v', 'error', '-xerror', '-i', out, '-f', 'null', '-'], root, path.join(project, 'logs/07-decode.log'));
+  const prof = speicherPruefen(meta);
+  const { mitRenderSperre } = await import('./projekte.mjs');
+  const { renderAbschnitte } = await import('./abschnitte.mjs');
+  await mitRenderSperre(project, 'build', async () => {
+    bericht.render = await zeit(project, `build: rendern in Abschnitten (${format}, ${prof.workers} parallel)`, () => renderAbschnitte(project, { root, env, plan, format, quality: 'high', ziel: out, parallel: prof.workers }));
+    bericht.render.profil = prof;
+    if (bericht.render.naehte.befunde.length) throw Error('Nahtprüfung: ' + bericht.render.naehte.befunde.join('; '));
+    await zeit(project, 'build: master decodieren', () => {
+      const info = JSON.parse(run(path.join(root, 'tools/bin/ffprobe'), ['-v', 'error', '-show_streams', '-show_format', '-of', 'json', out]));
+      const v = info.streams.find(s => s.codec_type === 'video');
+      if (!v || v.width !== 1080 || v.height !== 1920 || Math.abs(+v.nb_frames / 30 - meta.cutDuration) > 0.04) throw Error('Master: Format oder Dauer stimmt nicht.');
+      run(path.join(root, 'tools/bin/ffmpeg'), ['-v', 'error', '-xerror', '-i', out, '-f', 'null', '-'], root, path.join(project, 'logs/07-decode.log'));
+    });
   });
   const m2 = J(metaFile); Object.assign(m2, { latestExport: out, renderedExport: out, status: 'exported', exportedAt: new Date().toISOString() }); W(metaFile, m2);
   const name = (meta.title || path.basename(project)).replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '');

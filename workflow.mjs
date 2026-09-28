@@ -256,7 +256,7 @@ try {
     const sw = await import('./schnellweg.mjs');
     const { assembleFullVideo } = await import('./assemble-full-video.mjs');
     const { checkDesign22 } = await import('./check-design22.mjs');
-    const ctx = { root: ROOT, run, assemble: (p, o) => assembleFullVideo(p, o), check: p => checkDesign22(p) };
+    const ctx = { root: ROOT, run, env: ENV, assemble: (p, o) => assembleFullVideo(p, o), check: p => checkDesign22(p) };
     await sw[action](existingProject(target), ctx);
   }
   else if (action === 'green-screen') {

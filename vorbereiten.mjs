@@ -267,10 +267,21 @@ export async function kopfprofil(project) {
   const plan = J(path.join(project, 'design-plan.json')), bereiche = kopfBereiche(plan);
   if (!bereiche.length) return { bereiche: 0 };
   const sha = pruefsumme(path.join(project, 'media.mp4'));
-  return (await schritt(project, 'kopfprofil (Einblendungsstellen, halbe Auflösung)', { eingaben: ['media.mp4', 'review/source-faces.json'], werte: { bereiche, v: 1 }, ausgaben: ['review/kopf-profil.json'] }, () => {
+  return (await schritt(project, 'kopfprofil (Einblendungsstellen, halbe Auflösung)', { eingaben: ['media.mp4', 'review/source-faces.json'], werte: { bereiche, v: 2 }, ausgaben: ['review/kopf-profil.json'] }, () => {
     const r = spawnSync(path.join(ROOT, 'tools/venv-rvm/bin/python'), [path.join(ROOT, 'green-screen-maske.py'), project, '--kopfprofil', '--halb', '--bereiche', JSON.stringify(bereiche), '--media-sha', sha], { encoding: 'utf8' });
     fs.writeFileSync(path.join(project, 'logs/kopfprofil.log'), (r.stdout || '') + (r.stderr || ''));
     if (r.status) throw Error('Kopfprofil fehlgeschlagen:\n' + (r.stderr || '').slice(-2000));
     return { bereiche: bereiche.length, sekunden: bereiche.reduce((s, [a, e]) => s + e - a, 0) };
+  })).ergebnis;
+}
+
+// ---------- Freistellung (Green Screen) je Grafik ----------
+// Rechnet nur neu, wenn sich Kamerabild, Abschnitt der Grafik oder das Freistellungsskript geändert haben.
+export async function freistellung(project, g) {
+  const skript = path.join(ROOT, 'green-screen-maske.py');
+  return (await schritt(project, `freistellung ${g.id}`, { eingaben: ['media.mp4', skript], werte: { start: g.start, end: g.end, person: g.person, v: 1 }, ausgaben: [g.person] }, () => {
+    const r = spawnSync(path.join(ROOT, 'tools/venv-rvm/bin/python'), [skript, project, '--nur', g.id], { encoding: 'utf8' });
+    fs.writeFileSync(path.join(project, 'logs/green-screen.log'), (r.stdout || '') + (r.stderr || ''));
+    if (r.status) throw Error(`Freistellung ${g.id} fehlgeschlagen:\n` + (r.stderr || '').slice(-2000));
   })).ergebnis;
 }

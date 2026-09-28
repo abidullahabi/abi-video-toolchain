@@ -2,7 +2,8 @@
   "status": "in_arbeit",
   "agent": "claude",
   "zweig": "claude/tempo-speicher",
-  "seit": "2026-09-27T18:25:00Z",
-  "aufgabe": "Gesamtauftrag Tempo (27.09.2026): Regeln, Prüfsummen-Cache, Storyboard mit Zwischenbildern, Abschnitts-Render, schlanker Export, Auslieferung in einem Befehl, Planentwurf, Messlauf. Arbeitsbaum ~/Projekte/abi-video-toolchain-tempo; Merge nach main erst nach Messlauf und wenn kein Video in Arbeit ist.",
-  "hinweis": "Vor jeder Änderung am Werkzeugcode lesen und setzen (status in_arbeit/frei, agent, zweig, seit). Nie löschen, nur überschreiben."
+  "seit": "2026-09-28T06:40:00Z",
+  "aufgabe": "Gesamtauftrag Tempo (27.09.2026), Arbeitsordner ~/Projekte/abi-video-toolchain-tempo (Sitzung „Video-Workflow: Tempo und Speicher“). Werkzeugcode im Hauptordner nicht ändern; Videos im Hauptordner (main) laufen normal weiter.",
+  "hinweis": "Vor jeder Änderung am Werkzeugcode lesen und setzen (status in_arbeit/frei, agent, zweig, seit). Nie löschen, nur überschreiben.",
+  "notiz": "28.09.2026 08:40: claude/fast30-korrekturen und claude/design22-fixes (bis 1170d39) sind in main (Tempo-Sitzung, Schritt 0). Der Hauptordner steht wieder auf main."
 }

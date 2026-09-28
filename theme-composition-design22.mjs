@@ -437,7 +437,8 @@ for(const b of D.sb){const s=b.start;show('#'+b.id,s,s+4.25);tl.set('#'+b.id+'-i
  for(let i=0;i<=42;i++){const f=OUT(i/42),at=o.start+.45+1.4*i/42;document.getElementById('cnt-'+i).textContent=(i===42?o.followers:Math.round(o.followers*f)).toLocaleString('de-DE');tl.set('#cnt-'+i,{visibility:'visible'},at);if(i)tl.set('#cnt-'+(i-1),{visibility:'hidden'},at);tl.set('#oc-fill',{scaleX:Math.min(1,o.followers/10000)*f},at);}}
 ${abschnitt ? `// Abschnitt ${abschnitt.t0}–${+(abschnitt.t0 + abschnitt.dauer).toFixed(4)} s: dieselbe absolute Zeitleiste, auf 1/30 s eingerastet,
 // damit jedes Bild genau dem Bild der vollen Komposition entspricht.
-const seg=gsap.timeline({paused:true});seg.fromTo(tl,{totalTime:${abschnitt.t0}},{totalTime:${+(abschnitt.t0 + abschnitt.dauer).toFixed(6)},duration:${abschnitt.dauer},ease:'none',snap:{totalTime:1/30}},0);
+// Erst direkt auf den Abschnittsbeginn setzen: sonst greifen die Anfangszustände (tl.set bei 0) im Sprung nicht (28.09.2026).
+tl.totalTime(${abschnitt.t0},true);const seg=gsap.timeline({paused:true});seg.fromTo(tl,{totalTime:${abschnitt.t0}},{totalTime:${+(abschnitt.t0 + abschnitt.dauer).toFixed(6)},duration:${abschnitt.dauer},ease:'none',snap:{totalTime:1/30}},0);
 window.__timelines={root:seg};` : 'window.__timelines={root:tl};'}
 `;
 }
