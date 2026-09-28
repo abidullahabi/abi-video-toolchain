@@ -1,0 +1,75 @@
+{
+  "createdAt": "2026-09-27T12:14:08.600422+00:00",
+  "file": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1966-Sichtung-2026-09-27-01a0e28f/exports/Consulting-Zertifikate-Rohschnitt-v3.mp4",
+  "sourceUnchanged": true,
+  "sourceSha256": "c7e7d36812879d5c0cf8ee9ae712294a23362c300b2cc81913865c35429e0632",
+  "speed": 1,
+  "durationSeconds": 73.5,
+  "videoFrameCount": 2205,
+  "maximumFrameTimestampErrorSeconds": 3.333333467026023e-07,
+  "pcmSamples": 3528000,
+  "aacDecodedSamples": 3528704,
+  "aacPeakDbFS": -2.0500914974218802,
+  "aacRmsDbFS": -27.153121165584714,
+  "aacAlignmentSamples": [
+    {
+      "cutTimeStart": 1,
+      "seconds": 0.5,
+      "zeroLagCorrelation": 0.9999888599361297,
+      "bestLagSamplesAt4SampleResolution": 0,
+      "bestCorrelation": 0.9999888599361297
+    },
+    {
+      "cutTimeStart": 30,
+      "seconds": 0.5,
+      "zeroLagCorrelation": 0.999992566208347,
+      "bestLagSamplesAt4SampleResolution": 0,
+      "bestCorrelation": 0.999992566208347
+    },
+    {
+      "cutTimeStart": 70,
+      "seconds": 0.5,
+      "zeroLagCorrelation": 0.9999854594795817,
+      "bestLagSamplesAt4SampleResolution": 0,
+      "bestCorrelation": 0.9999854594795817
+    }
+  ],
+  "sourcePcmPreservationFile": "pcm-preservation-check-v4.json",
+  "pauseSignatureFile": "pause-signature-final-v3.json",
+  "completeDecoding": "passed in render-rough-cut-v3.py",
+  "fullCutASR": "recognition/candidate-v4-full.txt",
+  "asrContentReview": "All six selected meaning blocks and qualifying statements represented. Transcript differences are not treated as evidence of edits. The omitted second das in ASR lies at original134.26 inside untouched132.1–135.3 interval. No source phonemes changed inside kept segments except5ms boundary fades.",
+  "hearingPerformed": false,
+  "qualitativeApproval": false,
+  "limitations": [
+    "No auditory input supported, therefore no listening approval for word endings, jump cuts or natural pacing.",
+    "ASR, DTW and VAD are model estimates. Technical agreement does not prove all syllables are intact.",
+    "SAP assertions retained under explicit user direction, together with personal framing and Finance qualifier."
+  ],
+  "aacPayloadBitIdenticalToMeasuredFile": true,
+  "aacPayloadSha256": "6eb66c36f11d76419dbb14ea5018fb080407992d2e529d98c445cc209e9a2b4f",
+  "tailSecondFrameCount": 30,
+  "tailSecondUniqueFrameHashes": 30,
+  "streamDurationsSeconds": {
+    "video": 73.5,
+    "audio": 73.5
+  },
+  "artifactHashes": {
+    "semantic-selection-v2.json": "22ab32beed7b5c7fbd1137afb80f2bf6a976422d72ad317d49c0634678bbcfb7",
+    "candidate-v4-plan.json": "cf0ae96339f5005953b95e9113cebde07689e65b805a9088e1bf41c7a934ad02",
+    "candidate-v4.wav": "d7bdad81439f6f24fff0567694e2b2cd47d2502c43bf9b5af50a371534cf3faf",
+    "candidate-v4-aac.m4a": "6cb5b207aca1b65449e21e2abec2f2226531ee2e9d1c32fc5e8926c10e8fd68d",
+    "video-filter-v3.txt": "28c02f68056fdc6322ad016ee2e2f8915979e5b3baf1a095cd3b2fbfe9c61426"
+  },
+  "visualSpotCheck": {
+    "file": "export-contact-sheet-v3.jpg",
+    "method": "15 ordered still samples via fps1/5 from actual final MP4.",
+    "observed": "Upright portrait framing, normal source colours, no added graphics or visible black frames in sampled images. Scrum now fully framed in sampled image.",
+    "limitations": "Still samples do not prove uninterrupted motion or natural audiovisual joins. Independent detailed Scrum boundary review pending."
+  },
+  "independentVisualReport": "../review/visual-evidence/consulting-final-v3/bildpruefung.md",
+  "visualScope": "80 sampled coded frames, covering5semantic joins,2newScrum pause joins,11other pause joins, head and tail. Not continuous playback or auditory review.",
+  "technicalPass": true,
+  "userCutApprovalPending": true,
+  "postingReady": false
+}

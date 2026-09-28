@@ -1,0 +1,100 @@
+whisper_init_from_file_with_params_no_state: loading model from '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-small.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 0
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 1
+ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
+ggml_metal_library_init: using embedded metal library
+ggml_metal_library_compile_all: compiled 'fa' library in 0.018 sec
+ggml_metal_library_compile_all: compiled 'mul_mv' library in 0.021 sec
+ggml_metal_library_compile_all: compiled 'mul_mm' library in 0.019 sec
+ggml_metal_library_compile_all: compiled 'quantize' library in 0.022 sec
+ggml_metal_library_compile_all: compiled 'softmax' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'norm' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'unary' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'binbcast' library in 0.022 sec
+ggml_metal_library_compile_all: compiled 'reduce' library in 0.019 sec
+ggml_metal_library_compile_all: compiled 'tri' library in 0.019 sec
+ggml_metal_library_compile_all: compiled 'ssm' library in 0.021 sec
+ggml_metal_library_compile_all: compiled 'wkv' library in 0.019 sec
+ggml_metal_library_compile_all: compiled 'gated_delta_net' library in 0.022 sec
+ggml_metal_library_compile_all: compiled 'solve_tri' library in 0.022 sec
+ggml_metal_library_compile_all: compiled 'rope' library in 0.022 sec
+ggml_metal_library_compile_all: compiled 'conv' library in 0.022 sec
+ggml_metal_library_compile_all: compiled 'upscale' library in 0.021 sec
+ggml_metal_library_compile_all: compiled 'argsort' library in 0.021 sec
+ggml_metal_library_compile_all: compiled 'pool' library in 0.022 sec
+ggml_metal_library_compile_all: compiled 'misc' library in 0.021 sec
+ggml_metal_library_compile_all: loaded 20 libraries from embedded data in 0.023 sec (max single = 0.022 sec)
+ggml_metal_rsets_init: creating a residency set collection (keep_alive = 180 s)
+ggml_metal_device_init: GPU name:   MTL0 (Apple M4)
+ggml_metal_device_init: GPU family: MTLGPUFamilyApple9  (1009)
+ggml_metal_device_init: GPU family: MTLGPUFamilyCommon3 (3003)
+ggml_metal_device_init: GPU family: MTLGPUFamilyMetal4  (5002)
+ggml_metal_device_init: simdgroup reduction   = true
+ggml_metal_device_init: simdgroup matrix mul. = true
+ggml_metal_device_init: has unified memory    = true
+ggml_metal_device_init: has bfloat            = true
+ggml_metal_device_init: has tensor            = false
+ggml_metal_device_init: use residency sets    = true
+ggml_metal_device_init: use shared buffers    = true
+ggml_metal_device_init: recommendedMaxWorkingSetSize  = 12713.12 MB
+whisper_init_with_params_no_state: devices    = 3
+whisper_init_with_params_no_state: backends   = 3
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51865
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 768
+whisper_model_load: n_audio_head  = 12
+whisper_model_load: n_audio_layer = 12
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 768
+whisper_model_load: n_text_head   = 12
+whisper_model_load: n_text_layer  = 12
+whisper_model_load: n_mels        = 80
+whisper_model_load: ftype         = 1
+whisper_model_load: qntvr         = 0
+whisper_model_load: type          = 3 (small)
+whisper_model_load: adding 1608 extra tokens
+whisper_model_load: n_langs       = 99
+whisper_model_load:         MTL0 total size =   487.01 MB
+whisper_model_load: model size    =  487.01 MB
+whisper_backend_init_gpu: device 0: MTL0 (type: 1)
+whisper_backend_init_gpu: found GPU device 0: MTL0 (type: 1, cnt: 0)
+whisper_backend_init_gpu: using MTL0 backend
+ggml_metal_init: allocating
+ggml_metal_init: found device: Apple M4
+ggml_metal_init: picking default device: Apple M4
+ggml_metal_init: use fusion         = true
+ggml_metal_init: use concurrency    = true
+ggml_metal_init: use graph optimize = true
+whisper_backend_init: using BLAS backend
+whisper_init_state: kv self size  =   18.87 MB
+whisper_init_state: kv cross size =   56.62 MB
+whisper_init_state: kv pad  size  =    4.72 MB
+whisper_init_state: alignment heads masks size = 480 B
+whisper_init_state: compute buffer (conv)   =   23.38 MB
+whisper_init_state: compute buffer (encode) =  132.63 MB
+whisper_init_state: compute buffer (cross)  =   66.10 MB
+whisper_init_state: compute buffer (decode) =  168.84 MB
+read_audio_data: reading audio data from '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/review/countercheck-188-200-small.wav' ...
+read_audio_data: trying to decode with miniaudio
+
+system_info: n_threads = 6 / 10 | WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | 
+
+main: processing '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/review/countercheck-188-200-small.wav' (192000 samples, 12.0 sec), 6 threads, 1 processors, 5 beams + best of 5, lang = de, task = transcribe, timestamps = 1 ...
+
+output_txt: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/review/countercheck-188-200-small.txt'
+output_srt: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/review/countercheck-188-200-small.srt'
+output_json: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/review/countercheck-188-200-small.json'
+
+whisper_print_timings:     load time =   320.04 ms
+whisper_print_timings:     fallbacks =   5 p /  25 h
+whisper_print_timings:      mel time =     7.69 ms
+whisper_print_timings:   sample time =   368.97 ms /  1028 runs (     0.36 ms per run)
+whisper_print_timings:   encode time =   305.07 ms /     1 runs (   305.07 ms per run)
+whisper_print_timings:   decode time =    28.62 ms /     4 runs (     7.16 ms per run)
+whisper_print_timings:   batchd time =  2636.34 ms /  1012 runs (     2.61 ms per run)
+whisper_print_timings:   prompt time =    21.86 ms /    28 runs (     0.78 ms per run)
+whisper_print_timings:    total time =  3837.81 ms
+ggml_metal_free: deallocating

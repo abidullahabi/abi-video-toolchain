@@ -1,0 +1,38 @@
+--- v1.13
++++ v1.14
+@@ -1,6 +1,6 @@
+ # ABI Content-Workflow: freigegebener Videostandard
+ 
+-Version 1.13 · Stand 16.09.2026 · Google Drive als maßgebliche Videoablage
++Version 1.14 · Stand 16.09.2026 · Google Drive als maßgebliche Videoablage
+ 
+ ## Verbindliche Designquelle
+ 
+@@ -273,6 +273,21 @@
+ Lies die Abschnitte zu Grundraster, Farben, Schrift, H1, H2 und Einstieg in [DESIGN.md](DESIGN.md). Leite Themen und Einblendzeiten aus der tatsächlich verwendeten Video- und Tonfassung ab. Übernimm keine Inhalte oder Zeiten eines fremden Referenzvideos.
+ 
+ Speichere die Umsetzung dauerhaft im Themenplan und in der Komposition. Prüfe den ersten tatsächlich codierten Frame der Upload-MP4 gegen die Einstiegsvorgaben. Eine spätere Stichprobe ersetzt diese Prüfung nicht. Kontrolliere beim Veröffentlichen auch die separate Cover-Auswahl, falls vorhanden.
++
++### Inhaltliche Planung der Überschriften
++
++Nutze die am 16.09.2026 bestätigte Trennung:
++
++- Formuliere in der H1 die konkrete Frage oder Aussage des Abschnitts. Vermeide allgemeine Zwischenüberschriften wie „Meine Erwartung“.
++- Nutze die H2 für den Grund, die Antwort oder die tatsächlich genannten Aufzählungspunkte. Beschränke sie nicht auf einen allgemeinen Kontext wie „Meine Bewerbungen“.
++- Ordne Aufzählungspunkte den gesprochenen Stellen zu. Ergänze den nächsten Punkt, sobald Abdullah ihn nennt. Halte zusammengehörige Punkte anschließend gemeinsam sichtbar, soweit die Vorgaben in DESIGN.md das zulassen.
++- Erhalte die persönliche Perspektive. Nutze bei eigenen Erfahrungen Formulierungen wie „Was bei mir zählte“. Mache daraus keine allgemeine Garantie.
++- Prüfe alle Überschriftentexte gegen den tatsächlichen Schnitt. Ergänze keine Punkte, die nur im früheren Skript vorkamen.
++- Zeige den Textentwurf mit Einsatzstellen zur Abnahme. Behandle neue Effekte und Zooms als getrennten Arbeitsschritt. Eine Freigabe der Überschriftentexte erteilt keinen Auftrag für weitere Effekte.
++
++Bestätigte Anwendung: „Bachelor: Warum länger?“ mit „Wegen Corona“. Bei „Was bei mir zählte“ zuerst „Fähigkeiten“, beim Nennen der Noten „Fähigkeiten · gute Noten“. „Über der Regelstudienzeit?“ ersetzt die allgemeine Überschrift „Keine Panik“.
++
++Das von Abdullah bereitgestellte Referenzvideo `/Users/abi/Downloads/export_1789564046085.MOV` stützt zwischen 00:22 und 00:33 die schnelle Verständlichkeit des Titels und seine Unterstützung des gesprochenen Einstiegs. Die konkreten H1/H2-Regeln und Aufzählungen stammen aus Abdullahs Feedback und seiner Freigabe. Die Hinweise des Referenzvideos zu Effekten wurden in diesem Schritt nicht übernommen.
+ 
+ ## 6a. Freizonen und Layout prüfen
+ 
+@@ -602,3 +617,5 @@
+ Der Auftrag vom 16.09.2026, das am besten nutzbare kostenlose Werkzeug einzusetzen, begründet Version 1.11. Silero wurde lokal ergänzt und an beiden vorhandenen Fassungen ausgeführt. Die tatsächlich festgestellte 200-ms-Zusammenführung, die Anbindung ohne diesen Schritt, die Testergebnisse und ihre Grenzen sind in Abschnitt 5a dokumentiert. Die lokalen Einstiegshinweise wurden auf diese aktuelle Anleitung ausgerichtet.
+ 
+ Der ausdrückliche Auftrag vom 16.09.2026 zur verbindlichen Verwendung der aktuellen DESIGN.md begründet Version 1.13. Die Vorrangregel, der Einstieg für neue Chats, die Gestaltungsabschnitte und die Exportprüfung verweisen auf diese einzige Designquelle. Ersetzte visuelle Tabellen sind in der Sicherung von Version 1.12 erhalten. Die Änderung erteilt keine Freigabe für offene Widersprüche innerhalb der Designquelle.
++
++Die Freigabe der überarbeiteten Überschriftentexte vom 16.09.2026 begründet Version 1.14. Abschnitt 6 hält die inhaltliche Aufgabe von H1 und H2, die zeitliche Zuordnung von Aufzählungen und die getrennte Behandlung neuer Effekte fest. DESIGN.md bleibt unverändert die einzige Quelle für die visuelle Gestaltung.

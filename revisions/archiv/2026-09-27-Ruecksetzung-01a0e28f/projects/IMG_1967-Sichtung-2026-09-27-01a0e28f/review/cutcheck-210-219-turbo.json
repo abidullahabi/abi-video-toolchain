@@ -1,0 +1,423 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:08,700"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 8700
+			},
+			"text": " Wenn du AI vor allem im Berufsalltag nutzen willst, ist der Kurs von Google sehr dafür geeignet?",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.732758,
+					"t_dtw": -1
+				},
+				{
+					"text": " Wenn",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 860
+					},
+					"id": 7899,
+					"p": 0.501722,
+					"t_dtw": 148
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,910",
+						"to": "00:00:00,920"
+					},
+					"offsets": {
+						"from": 910,
+						"to": 920
+					},
+					"id": 1581,
+					"p": 0.986207,
+					"t_dtw": 158
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:01,420",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1420,
+						"to": 1860
+					},
+					"id": 7318,
+					"p": 0.919397,
+					"t_dtw": 184
+				},
+				{
+					"text": " vor",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 1900
+					},
+					"id": 4245,
+					"p": 0.863204,
+					"t_dtw": 206
+				},
+				{
+					"text": " allem",
+					"timestamps": {
+						"from": "00:00:02,010",
+						"to": "00:00:02,160"
+					},
+					"offsets": {
+						"from": 2010,
+						"to": 2160
+					},
+					"id": 17585,
+					"p": 0.993277,
+					"t_dtw": 218
+				},
+				{
+					"text": " im",
+					"timestamps": {
+						"from": "00:00:02,160",
+						"to": "00:00:02,260"
+					},
+					"offsets": {
+						"from": 2160,
+						"to": 2260
+					},
+					"id": 566,
+					"p": 0.906545,
+					"t_dtw": 226
+				},
+				{
+					"text": " Beruf",
+					"timestamps": {
+						"from": "00:00:02,260",
+						"to": "00:00:02,410"
+					},
+					"offsets": {
+						"from": 2260,
+						"to": 2410
+					},
+					"id": 36688,
+					"p": 0.983268,
+					"t_dtw": 240
+				},
+				{
+					"text": "s",
+					"timestamps": {
+						"from": "00:00:02,480",
+						"to": "00:00:02,480"
+					},
+					"offsets": {
+						"from": 2480,
+						"to": 2480
+					},
+					"id": 82,
+					"p": 0.991136,
+					"t_dtw": 250
+				},
+				{
+					"text": "all",
+					"timestamps": {
+						"from": "00:00:02,480",
+						"to": "00:00:02,590"
+					},
+					"offsets": {
+						"from": 2480,
+						"to": 2590
+					},
+					"id": 336,
+					"p": 0.997495,
+					"t_dtw": 262
+				},
+				{
+					"text": "tag",
+					"timestamps": {
+						"from": "00:00:02,590",
+						"to": "00:00:02,710"
+					},
+					"offsets": {
+						"from": 2590,
+						"to": 2710
+					},
+					"id": 25030,
+					"p": 0.999091,
+					"t_dtw": 272
+				},
+				{
+					"text": " nutzen",
+					"timestamps": {
+						"from": "00:00:02,720",
+						"to": "00:00:03,000"
+					},
+					"offsets": {
+						"from": 2720,
+						"to": 3000
+					},
+					"id": 36905,
+					"p": 0.953048,
+					"t_dtw": 292
+				},
+				{
+					"text": " willst",
+					"timestamps": {
+						"from": "00:00:03,000",
+						"to": "00:00:03,280"
+					},
+					"offsets": {
+						"from": 3000,
+						"to": 3280
+					},
+					"id": 48355,
+					"p": 0.975615,
+					"t_dtw": 328
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:03,600",
+						"to": "00:00:03,880"
+					},
+					"offsets": {
+						"from": 3600,
+						"to": 3880
+					},
+					"id": 11,
+					"p": 0.952028,
+					"t_dtw": 368
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:03,880",
+						"to": "00:00:04,740"
+					},
+					"offsets": {
+						"from": 3880,
+						"to": 4740
+					},
+					"id": 1418,
+					"p": 0.612146,
+					"t_dtw": 370
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:04,780",
+						"to": "00:00:04,880"
+					},
+					"offsets": {
+						"from": 4780,
+						"to": 4880
+					},
+					"id": 1163,
+					"p": 0.950728,
+					"t_dtw": 486
+				},
+				{
+					"text": " K",
+					"timestamps": {
+						"from": "00:00:04,940",
+						"to": "00:00:04,940"
+					},
+					"offsets": {
+						"from": 4940,
+						"to": 4940
+					},
+					"id": 591,
+					"p": 0.990964,
+					"t_dtw": 500
+				},
+				{
+					"text": "urs",
+					"timestamps": {
+						"from": "00:00:04,970",
+						"to": "00:00:05,080"
+					},
+					"offsets": {
+						"from": 4970,
+						"to": 5080
+					},
+					"id": 2156,
+					"p": 0.999809,
+					"t_dtw": 510
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:05,150",
+						"to": "00:00:05,220"
+					},
+					"offsets": {
+						"from": 5150,
+						"to": 5220
+					},
+					"id": 2957,
+					"p": 0.976203,
+					"t_dtw": 520
+				},
+				{
+					"text": " Google",
+					"timestamps": {
+						"from": "00:00:05,220",
+						"to": "00:00:05,840"
+					},
+					"offsets": {
+						"from": 5220,
+						"to": 5840
+					},
+					"id": 3329,
+					"p": 0.982508,
+					"t_dtw": 544
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:06,290",
+						"to": "00:00:07,080"
+					},
+					"offsets": {
+						"from": 6290,
+						"to": 7080
+					},
+					"id": 5499,
+					"p": 0.919834,
+					"t_dtw": 708
+				},
+				{
+					"text": " dafür",
+					"timestamps": {
+						"from": "00:00:07,080",
+						"to": "00:00:07,260"
+					},
+					"offsets": {
+						"from": 7080,
+						"to": 7260
+					},
+					"id": 13747,
+					"p": 0.865795,
+					"t_dtw": 726
+				},
+				{
+					"text": " gee",
+					"timestamps": {
+						"from": "00:00:07,290",
+						"to": "00:00:07,650"
+					},
+					"offsets": {
+						"from": 7290,
+						"to": 7650
+					},
+					"id": 24105,
+					"p": 0.909392,
+					"t_dtw": 744
+				},
+				{
+					"text": "ign",
+					"timestamps": {
+						"from": "00:00:07,650",
+						"to": "00:00:07,710"
+					},
+					"offsets": {
+						"from": 7650,
+						"to": 7710
+					},
+					"id": 788,
+					"p": 0.9996,
+					"t_dtw": 758
+				},
+				{
+					"text": "et",
+					"timestamps": {
+						"from": "00:00:07,990",
+						"to": "00:00:08,310"
+					},
+					"offsets": {
+						"from": 7990,
+						"to": 8310
+					},
+					"id": 302,
+					"p": 0.999901,
+					"t_dtw": 774
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:08,310",
+						"to": "00:00:08,700"
+					},
+					"offsets": {
+						"from": 8310,
+						"to": 8700
+					},
+					"id": 30,
+					"p": 0.907177,
+					"t_dtw": 794
+				},
+				{
+					"text": "[_TT_435]",
+					"timestamps": {
+						"from": "00:00:08,700",
+						"to": "00:00:08,700"
+					},
+					"offsets": {
+						"from": 8700,
+						"to": 8700
+					},
+					"id": 50800,
+					"p": 0.494776,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

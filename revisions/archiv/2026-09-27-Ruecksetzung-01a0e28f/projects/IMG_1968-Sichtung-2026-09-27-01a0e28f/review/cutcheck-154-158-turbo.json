@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,700"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3700
+			},
+			"text": " Und drittens die Menschen, die dich umgeben.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.818318,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 540
+					},
+					"id": 2719,
+					"p": 0.268766,
+					"t_dtw": 160
+				},
+				{
+					"text": " dr",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 870
+					},
+					"id": 1224,
+					"p": 0.903787,
+					"t_dtw": 178
+				},
+				{
+					"text": "ittens",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 1990
+					},
+					"id": 39449,
+					"p": 0.990922,
+					"t_dtw": 194
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:02,060",
+						"to": "00:00:02,090"
+					},
+					"offsets": {
+						"from": 2060,
+						"to": 2090
+					},
+					"id": 978,
+					"p": 0.661263,
+					"t_dtw": 212
+				},
+				{
+					"text": " Menschen",
+					"timestamps": {
+						"from": "00:00:02,090",
+						"to": "00:00:02,320"
+					},
+					"offsets": {
+						"from": 2090,
+						"to": 2320
+					},
+					"id": 8397,
+					"p": 0.940916,
+					"t_dtw": 240
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,330",
+						"to": "00:00:02,400"
+					},
+					"offsets": {
+						"from": 2330,
+						"to": 2400
+					},
+					"id": 11,
+					"p": 0.544665,
+					"t_dtw": 242
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:02,400",
+						"to": "00:00:02,620"
+					},
+					"offsets": {
+						"from": 2400,
+						"to": 2620
+					},
+					"id": 978,
+					"p": 0.981035,
+					"t_dtw": 254
+				},
+				{
+					"text": " dich",
+					"timestamps": {
+						"from": "00:00:02,620",
+						"to": "00:00:02,900"
+					},
+					"offsets": {
+						"from": 2620,
+						"to": 2900
+					},
+					"id": 10390,
+					"p": 0.359592,
+					"t_dtw": 264
+				},
+				{
+					"text": " um",
+					"timestamps": {
+						"from": "00:00:02,910",
+						"to": "00:00:03,020"
+					},
+					"offsets": {
+						"from": 2910,
+						"to": 3020
+					},
+					"id": 1105,
+					"p": 0.962879,
+					"t_dtw": 274
+				},
+				{
+					"text": "geben",
+					"timestamps": {
+						"from": "00:00:03,070",
+						"to": "00:00:03,070"
+					},
+					"offsets": {
+						"from": 3070,
+						"to": 3070
+					},
+					"id": 16702,
+					"p": 0.917239,
+					"t_dtw": 294
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,070",
+						"to": "00:00:03,700"
+					},
+					"offsets": {
+						"from": 3070,
+						"to": 3700
+					},
+					"id": 13,
+					"p": 0.922698,
+					"t_dtw": 322
+				},
+				{
+					"text": "[_TT_185]",
+					"timestamps": {
+						"from": "00:00:03,700",
+						"to": "00:00:03,700"
+					},
+					"offsets": {
+						"from": 3700,
+						"to": 3700
+					},
+					"id": 50550,
+					"p": 0.349994,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

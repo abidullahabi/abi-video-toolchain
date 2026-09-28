@@ -1,0 +1,108 @@
+{
+  "stage": "2_approved_selection",
+  "approvedBy": "User: ok passt, relayed by root. Approved source proposal in review/review-findings.json",
+  "frozenAt": "2026-09-27T11:42:35.321875+00:00",
+  "speed": 1,
+  "order": "original chronological order",
+  "blocks": [
+    {
+      "id": "hook",
+      "sourceRange": [
+        7.8,
+        11.65
+      ],
+      "expectedWordsAsrOnly": "Jeder junge Erwachsene sollte sich mindestens mit diesen drei Fragen auseinandersetzen."
+    },
+    {
+      "id": "haltung",
+      "sourceRange": [
+        56.47,
+        60.0
+      ],
+      "expectedWordsAsrOnly": "Mit diesen drei großen Fragen, finde ich, wird sich einfach zu wenig beschäftigt."
+    },
+    {
+      "id": "frage1",
+      "sourceRange": [
+        63.63,
+        65.25
+      ],
+      "expectedWordsAsrOnly": "Die erste Frage ist, wo lebe ich?"
+    },
+    {
+      "id": "wohnort",
+      "sourceRange": [
+        73.27,
+        96.66
+      ],
+      "expectedWordsAsrOnly": "Es macht einen Riesenunterschied, wenn du in einer Popelstadt wie Mühlheim wohnst oder in einer Großstadt. Es hat eine Riesenauswirkung auf deinen Beruf, auf deine Karriere, welche Bildung du genießt und auch natürlich auch, was du Menschen triffst."
+    },
+    {
+      "id": "frage2",
+      "sourceRange": [
+        118.7,
+        123.47
+      ],
+      "expectedWordsAsrOnly": "Die zweite Frage ist: Was mache ich genau mit meinem Leben? Ich glaube, das ist eine riesengroße Frage, wo man weiß nicht genau, wo man anfangen soll."
+    },
+    {
+      "id": "beruf",
+      "sourceRange": [
+        131.23,
+        141.9
+      ],
+      "expectedWordsAsrOnly": "Man muss sich aktiv damit auseinandersetzen, was man aus seinem Leben machen will, wo man beruflich hin möchte oder auch, wo man nicht hin möchte. Weil je mehr du weißt, was du nicht willst, umso eher weißt du irgendwann, was du möchtest."
+    },
+    {
+      "id": "frage3",
+      "sourceRange": [
+        154.43,
+        157.15
+      ],
+      "expectedWordsAsrOnly": "Und drittens die Menschen, die dich umgeben."
+    },
+    {
+      "id": "freundschaft",
+      "sourceRange": [
+        182.6,
+        187.87
+      ],
+      "expectedWordsAsrOnly": "Ich habe selber viel zu lange versucht, Freundschaften aufrechtzuerhalten, die man eigentlich auch cutten kann."
+    },
+    {
+      "id": "freundschaft_ende",
+      "sourceRange": [
+        195.1,
+        198.35
+      ],
+      "expectedWordsAsrOnly": "Gar nicht mit ganz viel Zirkus, sondern einfach nur sein lassen."
+    },
+    {
+      "id": "cta",
+      "sourceRange": [
+        209.23,
+        214.65
+      ],
+      "expectedWordsAsrOnly": "Mit welcher dieser drei Fragen struggelst du am meisten? Schreib mir gerne einen Kommentar oder ein DM."
+    },
+    {
+      "id": "schluss",
+      "sourceRange": [
+        218.45,
+        225.97
+      ],
+      "expectedWordsAsrOnly": "Und auch wenn das alles ein bisschen groß und schwer wirkt, haben wir dann doch sehr viel Gestaltungsmöglichkeiten über das Leben, als wir denken können."
+    }
+  ],
+  "wordingStatus": "Automatic recognition only. No listening review. Source wording unchanged. Locations, social sentence grammar and Gestaltungsmöglichkeiten remain ASR uncertainties.",
+  "decisions": [
+    "Use complete second career take at118.7. Prior take115-118 is incomplete and omitted.",
+    "Use complete friendship sentence195.1-198.35. Incomplete/repeated188-190 material omitted.",
+    "Use complete CTA at209.23. Whole-file ASR incorrectly placed its beginning at202.",
+    "Omit blame passage160.8-179 and unfulfilled methods promise123.6-131.1.",
+    "No sentence reordering, invented words, speed-up, captions, effects, music or Notion changes.",
+    "Frage3 start widened to154.43: protect Und across differing DTW/VAD estimates. No additional statement included."
+  ],
+  "rawVideoModified": false,
+  "auditoryReviewPerformed": false
+}

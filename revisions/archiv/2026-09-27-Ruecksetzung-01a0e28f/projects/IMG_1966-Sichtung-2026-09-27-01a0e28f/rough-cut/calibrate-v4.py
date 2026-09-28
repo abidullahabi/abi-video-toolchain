@@ -1,0 +1,27 @@
+import json,pathlib,subprocess,datetime
+r=pathlib.Path(__file__).resolve().parents[3];p=pathlib.Path(__file__).resolve().parents[1];w=p/'rough-cut';meta=json.load(open(p/'workflow.json'));plan=json.load(open(w/'candidate-v3-plan.json'));plan['version']=4
+plan['blocks']=[b for b in plan['blocks']if b['id']!='scrum_name']
+for b in plan['blocks']:
+ if b['id']=='scrum_einsatz':b.update({'id':'scrum_einsatz_und_name','end':108+11/30})
+selection={'revision':2,'frozenAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'previousSelection':'semantic-selection.json','reason':'Independent visual QA found the speakers face cut off at the right edge in the91.133–95.067 name sentence. Replaced by complete consecutive source statements98.967–108.367, preserving the Scrum recommendation while retaining a fully visible face. This is an explicit selection revision, not pause calibration.','blocks':plan['blocks'],'scrumWording':'Es gibt viele Projektmanagement-Consultants, die so agiles Projektmanagement machen. Und das Go-To da ist einfach dieses Scrum-Master-Ding, was man machen soll.','evidence':['recognition/scrum-alternative.json offset103.3s','source VAD speech ends108.288 before next Ich at108.76 DTW','independent visual QA sampled9 frames104.303–108.037: full face and stable scale'],'scope':'Same approved consulting topics. SAP kept as instructed. No design, captions, generated voice or synthetic sentences.'}
+(w/'semantic-selection-v2.json').write_text(json.dumps(selection,indent=2,ensure_ascii=False)+'\n');plan['semanticSelection']='semantic-selection-v2.json'
+plan['removalsWithinBlocks']=[x for x in plan['removalsWithinBlocks']if not(91<=x['start']<99)]
+for start,end,gs,ge,label in [(103+28/30,104+7/30,103.872,104.288,'After machen, before und'),(104+20/30,105+8/30,104.608,105.312,'After und, before das Go-To')]:
+ plan['removalsWithinBlocks'].append({'start':start,'end':end,'type':'silence','reason':label+': source VAD gap, whole-token DTW anchors±55ms protected. An extra source frame preserves the preceding word decay. No speech content removed.','sourceGap':{'start':gs,'end':ge},'sourceRemainingNonSpeech':ge-gs-(end-start),'protectedWords':[]})
+plan['removalsWithinBlocks'].sort(key=lambda x:x['start']);keep=[]
+for block in plan['blocks']:
+ cursor=block['start']
+ for x in plan['removalsWithinBlocks']:
+  if x['start']>=block['start'] and x['end']<=block['end']:keep.append([cursor,x['start']]);cursor=x['end']
+ keep.append([cursor,block['end']])
+plan['keepIntervals']=keep;plan['duration']=sum(b-a for a,b in keep);plan['createdAt']=datetime.datetime.now(datetime.timezone.utc).isoformat();(w/'candidate-v4-plan.json').write_text(json.dumps(plan,indent=2,ensure_ascii=False)+'\n')
+f=[];labels=[]
+for i,(a,b)in enumerate(keep):f.append(f'[0:a:0]atrim=start={a:.9f}:end={b:.9f},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st={b-a-.005:.9f}:d=0.005[a{i}]');labels.append(f'[a{i}]')
+f.append(''.join(labels)+f'concat=n={len(keep)}:v=0:a=1[aout]');(w/'candidate-v4-audio-filter.txt').write_text(';\n'.join(f));ff=str(r/'tools/bin/ffmpeg')
+subprocess.run([ff,'-v','error','-n','-threads','2','-i',meta['source'],'-filter_complex_threads','1','-filter_complex_script',str(w/'candidate-v4-audio-filter.txt'),'-map','[aout]','-vn','-c:a','pcm_s24le','-ar','48000','-ac','1','-map_metadata','-1',str(w/'candidate-v4.wav')],check=True)
+subprocess.run([ff,'-v','error','-n','-i',str(w/'candidate-v4.wav'),'-c:a','aac','-b:a','192k','-ar','48000','-ac','1','-map_metadata','-1',str(w/'candidate-v4-aac.m4a')],check=True)
+for tag,file in [('pcm','candidate-v4.wav'),('aac','candidate-v4-aac.m4a')]:
+ wav=w/f'candidate-v4-{tag}-silero.wav';subprocess.run([ff,'-v','error','-n','-i',str(w/file),'-ar','16000','-ac','1','-c:a','pcm_s16le',str(wav)],check=True)
+ a=subprocess.run([str(r/'tools/bin/silero-probabilities'),str(r/'tools/models/ggml-silero-v6.2.0.bin'),str(wav)],capture_output=True,text=True,check=True);(w/f'candidate-v4-{tag}-probabilities.json').write_text(a.stdout)
+node="""import fs from 'node:fs';import {nonSpeechCandidates} from './silero-review.mjs';const dir=process.argv[1];let results={};for(const name of ['pcm','aac']){let a=nonSpeechCandidates(JSON.parse(fs.readFileSync(dir+'/candidate-v4-'+name+'-probabilities.json','utf8')));let inner=a.candidates.filter(g=>g.start>.2&&g.end<a.duration-.2);let ms=inner.map(g=>Math.round(g.duration*1000)).sort((a,b)=>a-b);let median=ms.length%2?ms[(ms.length-1)/2]:(ms[ms.length/2-1]+ms[ms.length/2])/2;let target=ms.filter(x=>x>=64&&x<=96).length;results[name]={...a,innerCount:inner.length,excludedEdgeCandidates:a.candidates.filter(g=>!inner.includes(g)),innerMilliseconds:ms,medianMs:median,target64to96Count:target,target64to96Share:target/ms.length,over160ms:inner.filter(x=>x.duration>.1600001),pass:median===96&&target/ms.length>=.6&&inner.every(x=>x.duration<=.1600001)};}fs.writeFileSync(dir+'/candidate-v4-signature.json',JSON.stringify(results,null,2)+'\\n');console.log(JSON.stringify(Object.fromEntries(Object.entries(results).map(([k,v])=>[k,{count:v.innerCount,median:v.medianMs,share:v.target64to96Share,over160:v.over160ms.length,pass:v.pass}]))));"""
+a=subprocess.run(['/usr/local/bin/node','--input-type=module','-e',node,str(w)],cwd=r,capture_output=True,text=True,check=True);print(a.stdout);print({'duration':plan['duration'],'frames':sum(round(b*30)-round(a*30)for a,b in keep)})

@@ -1,0 +1,308 @@
+--- CONTENT_WORKFLOW v1.12
++++ CONTENT_WORKFLOW v1.13
+@@ -1,16 +1,30 @@
+ # ABI Content-Workflow: freigegebener Videostandard
+ 
+-Version 1.12 · Stand 16.09.2026 · Google Drive als maßgebliche Videoablage
++Version 1.13 · Stand 16.09.2026 · Google Drive als maßgebliche Videoablage
++
++## Verbindliche Designquelle
++
++**Nutze für jede Videobearbeitung ausschließlich die aktuelle [DESIGN.md](DESIGN.md) im selben Google-Drive-Ordner als verbindliche Quelle für alle Gestaltungsvorgaben.** Diese Festlegung folgt Abdullahs ausdrücklichem Auftrag vom 16.09.2026.
++
++- Lies DESIGN.md vor jeder Gestaltung und prüfe vor dem Export, ob sie weiterhin aktuell ist. Wende ihre Vorgaben immer an. Nutze keine eingefrorene Kopie aus einem früheren Projekt.
++- Entnimm Farben, Schriften, Größen, Textbreiten, Positionen, Mittelachsen, Freizonen, Abstände, Konturen, Hintergründe, H1/H2, Untertitel, Logos, Sprechblasen, Outro, Zoomgestaltung und Animationen ausschließlich dieser Datei.
++- Bei abweichenden Designangaben in diesem Workflow, älteren Anleitungen, lokalen Einstiegshinweisen, Vorlagen, Skripten oder Referenzvideos hat die aktuelle DESIGN.md Vorrang. Historische Freigaben ersetzen ihren aktuellen Stand nicht.
++- Speichere Designänderungen nur in DESIGN.md. Verweise in anderen Anleitungen darauf, statt visuelle Werte als zweiten Standard zu wiederholen. Die zur Umsetzung nötigen Projekt- und Softwarewerte müssen nachweisbar dem dortigen Stand entsprechen.
++- Prüfe vorhandene Vorlagen und Layoutprüfungen gegen DESIGN.md. Passe sie bei der beauftragten Umsetzung an, bevor sie einen neuen Export erzeugen oder freigeben. Ein alter bestandener Test belegt keine Übereinstimmung mit dem neuen Design.
++- Dokumentiere die gelesene Designversion und den Prüfzeitpunkt im jeweiligen Projekt. Bei späteren Änderungen gleiche die betroffene Umsetzung erneut ab.
++- Falls DESIGN.md nicht erreichbar ist, benenne den fehlenden Zugriff vor Beginn der Gestaltung. Falls Angaben innerhalb der Datei einander widersprechen, benenne die konkrete Stelle und kläre sie mit Abdullah. Erfinde keine Ersatzwerte und leite aus dieser Vorrangregel keine Freigabe einer noch offenen Designentscheidung ab.
++
++CONTENT_WORKFLOW.md regelt das Vorgehen, den Schnitt, die Prüfung, die Ablage, das Posting und die Historie. DESIGN.md regelt das Aussehen. Eine neue Designfassung ist allein kein Auftrag für zusätzliche Schnitte oder Veröffentlichungen.
+ 
+ ## 1. Zweck und aktueller Stand
+ 
+ Diese Anleitung beschreibt den tatsächlich umgesetzten und von Abdullah freigegebenen Ablauf. Sie soll einem neuen Chat ermöglichen, weitere eigene Aufnahmen mit demselben Schnitt und Erscheinungsbild zu bearbeiten. Zielplattformen sind TikTok, Instagram Reels und YouTube Shorts. Das Zielformat ist 9:16.
+ 
+-Freigegeben sind die bisherigen Schnittfassungen, die schlichten thematischen Texte, Schriftart, Farben, Positionen, einzeiligen Wortuntertitel und dezenten Zooms. Bei einer Gestaltung oder Überarbeitung bleiben vorhandene Länge, Inhalt und Tempo erhalten. Die historische Referenz wurde auf ausdrücklichen Wunsch auf 1,1-fache Geschwindigkeit gebracht. Das war eine Entscheidung für dieses lange Video, keine pauschale Vorgabe für künftige Videos.
++Die bisherigen Schnittfreigaben bleiben projektbezogen dokumentiert. Der aktuelle Gestaltungsstandard steht ausschließlich in DESIGN.md. Bei einer Gestaltung oder Überarbeitung bleiben vorhandene Länge, Inhalt und Tempo erhalten. Die historische Referenz wurde auf ausdrücklichen Wunsch auf 1,1-fache Geschwindigkeit gebracht. Das war eine Entscheidung für dieses lange Video, keine pauschale Vorgabe für künftige Videos.
+ 
+ Aktuell gehören passende Logo-Einblendungen, das einheitliche Outro mit allen vier Social-Profilen, eine Videobeschreibung nach den drei Nutzerbeispielen, die Ablage der geprüften Upload-Datei im Posting-Ordner und die fertige Beschreibung im zugehörigen Notion-Eintrag zum Ablauf. Es gelten höchstens fünf Hashtags einschließlich #abidullahabi. Die vollständigen Beschreibungsregeln stehen in Abschnitt 11. Abdullah veröffentlicht selbst.
+ 
+-Diese Datei ist die maßgebliche Arbeitsanleitung. Die vorhandenen Skripte und Referenzprojekte sind ihre technische Grundlage. Ältere grüne Vorlagen und Auto-Editor-Voreinstellungen sind nicht der freigegebene Ablauf. Beachte für neue Schnittaufträge die aktuelle Kalibrierung in Abschnitt 5a. Dort sind bestätigte Nutzerwünsche und noch offene technische Prüfungen getrennt dokumentiert.
++Diese Datei ist die maßgebliche Verfahrensanleitung. Die vorhandenen Skripte und Referenzprojekte sind technische Hilfsmittel und müssen vor einer Wiederverwendung mit DESIGN.md abgeglichen werden. Ältere grüne Vorlagen und Auto-Editor-Voreinstellungen sind nicht der freigegebene Ablauf. Beachte für neue Schnittaufträge die aktuelle Kalibrierung in Abschnitt 5a. Dort sind bestätigte Nutzerwünsche und noch offene technische Prüfungen getrennt dokumentiert.
+ 
+ ## 1a. Abschließende Entscheidungen nach dem Schnitt-Experiment
+ 
+@@ -18,10 +32,10 @@
+ 
+ - **Länge beibehalten.** Die bisherigen Längen von Werkstudent vs. Praktikum, Berufserfahrung und Consulting waren passend. Die Kürzungen der Experimente werden nicht übernommen. Eine bessere Gestaltung ist kein Auftrag, Geschichten, Beispiele, Überleitungen, Pausen oder Füllwörter zu entfernen. Bereits freigegebene Schnittfassungen und ihr Tempo bleiben die Grundlage. Kürzungen oder Tempoänderungen nur bei einem konkreten neuen Auftrag.
+ - **Aufnahme und Hintergrund bleiben sichtbar.** Keine bildfüllende blaue Fläche, kein Wechsel auf einen anderen farbigen Hintergrund und keine Grafik, die die gesamte Aufnahme ersetzt. Vorerst kein zusätzliches B-Roll, etwa Stockmaterial, generierte Szenen, Bildschirmaufnahmen oder alternative Videoausschnitte. Der bestehende blaue Hintergrund unmittelbar hinter einer H1 bleibt erhalten. Er ist keine Erlaubnis für einen bildfüllenden Hintergrund.
+-- **Kleine Animationen direkt im Video.** Passende Logos, einzelne Text- oder Sprechblasen und kleine inhaltliche Hinweise dürfen kurz auf der Originalaufnahme erscheinen. Sie unterstützen den gesprochenen Inhalt. Sie ersetzen weder die Person noch die Szene. Vorbild ist das YouTube-Logo im ursprünglichen Berufserfahrungsvideo. Die Regeln und das konkrete Textblasen-Beispiel stehen in Abschnitt 6b.
++- **Kleine Animationen direkt im Video.** Passende Logos, einzelne Text- oder Sprechblasen und kleine inhaltliche Hinweise dürfen kurz auf der Originalaufnahme erscheinen. Sie unterstützen den gesprochenen Inhalt. Sie ersetzen weder die Person noch die Szene. Vorbild ist das YouTube-Logo im ursprünglichen Berufserfahrungsvideo. Die aktuellen Gestaltungsregeln und Beispiele stehen in DESIGN.md. Abschnitt 6b beschreibt die Umsetzung.
+ - **Keine Übernahme aus dem Consulting-Experiment.** Keine dort entwickelten Gestaltungs-, Schnitt- oder Tonelemente in den Standard übernehmen. Die zuvor freigegebene Consulting-Fassung bleibt die Referenz. Die Aussage, dass zwei Animationen beim Berufserfahrungsvideo gefallen haben, ist keine pauschale Freigabe aller dortigen Grafiken. Maßgeblich sind die konkret beschriebenen kleinen Einblendungen ohne umgebende Szene.
+ - **Keine zusätzliche Musik.** Die Musik der Experimente ist abgelehnt. Der Standard bleibt ohne Musikbett. Soundeffekte nur punktuell als kurze, passende Begleitung einer Logo- oder Textblasenanimation. Nicht jeden Schnitt oder jede Untertitelgruppe vertonen. Die Stimme bleibt deutlich im Vordergrund. Mehr Effekte sind kein eigenes Ziel.
+-- **Bestehenden Standard weiterführen.** Schrift, H1/H2, Outro, Wortuntertitel mit maximal drei Wörtern, Danger Zone, Zentrierung, dezente Zooms, Exportprüfung und Posting-Beschreibungen bleiben gültig. Die Experimentdateien sind keine freigegebenen Posting-Dateien und keine allgemeine Stilvorlage.
++- **Aktuellen Standard anwenden.** Nutze DESIGN.md für die Gestaltung. Die Verfahren für Exportprüfung und Posting-Beschreibungen bleiben gültig. Die Experimentdateien sind keine freigegebenen Posting-Dateien und keine allgemeine Stilvorlage.
+ 
+ ## 1b. Aufnahme, Einstieg und Posting: Ergänzung vom 14.09.2026
+ 
+@@ -32,7 +46,7 @@
+ 
+ ## 1c. Weitere Ergänzungen vom 14.09.2026
+ 
+-- **Einheitliches Social-Outro:** Alle vier Plattformen gleichzeitig anzeigen, zusammen mit der blauen Überschrift „Road to 10K“, dem roten „Folgen nicht vergessen“ und dem Fragen-/Kommentar-/DM-Hinweis. Eine gemeinsame kompakte Profilübersicht ersetzt die bisherige reine LinkedIn-Einblendung. Keine nacheinander wechselnden Plattformkarten. Bestätigte Namen: YouTube **@itsabidullahabi**, TikTok und Instagram jeweils **@abidullahabi**, LinkedIn **Abdullah Bachtari**. Details in Abschnitt 6b.
++- **Einheitliches Social-Outro:** Verwende den aktuellen Abschluss einschließlich seiner Bestandteile, Profilnamen und Gestaltung aus DESIGN.md. Die früheren Farb- und Textzuordnungen dieser Ergänzung sind ersetzt. Prüfe die technische Umsetzung nach Abschnitt 6b.
+ - **Grobe Ausdrücke abmildern:** In finalen Untertiteln und neuen Texten sinngemäß, natürlich und bei passendem Kontext leicht humorvoll formulieren. Das geprüfte Originaltranskript erhält den tatsächlich gesprochenen Wortlaut. Änderungen am Ton sind gesondert zu behandeln. Details in Abschnitt 7a.
+ - **Flache Videoablage:** Keine Unterordner je Video in der sichtbaren Ablage. Finale Dateinamen bestehen aus Postingdatum und Videotitel. Nach Veröffentlichung das tatsächliche Datum verwenden und nach `04_Gepostet` verschieben. Details in Abschnitt 3.
+ 
+@@ -49,9 +63,9 @@
+ 
+ ## 2. So verwendest Du die Anleitung in einem neuen Chat
+ 
+-Hänge diese MD-Datei an oder nenne ihren vollständigen Pfad. Nenne außerdem die konkrete neue Videodatei. Verwende dazu diese Startanweisung:
+-
+-> Lies die angehängte CONTENT_WORKFLOW.md vollständig und prüfe zuerst Deinen Zugriff auf mein Video und die vorhandenen Werkzeuge. Mein Video liegt hier: [VOLLSTÄNDIGEN DATEIPFAD EINFÜGEN]. Neue Aufnahmen kommen direkt aus der iPhone-Kamera per AirDrop auf den Mac, ohne CapCut-Aufnahme oder CapCut-Cloud. Prüfe die tatsächlich empfangene Originaldatei. Bearbeite sie nach dem freigegebenen ABI-Standard. Erhalte die vorhandene Länge, das Tempo, den Inhalt, die Reihenfolge und meinen Sprachstil. Kürze oder beschleunige nur, wenn ich es für dieses Video ausdrücklich beauftrage. Verwende weiße H1 auf Blau, schlichte H2, einzeilige Wortuntertitel mit maximal drei Wörtern und dezente Zooms. Die Einstiegsüberschrift und ihre zugehörige H2 müssen ab 0:00 im ersten Videobild vollständig sichtbar sein, ohne Einblendanimation. Prüfe dafür das erste Bild des tatsächlichen Exports. Ergänze an passenden gesprochenen Stellen kurze Logo-Einblendungen oder einzelne aufploppende Textblasen direkt in der Aufnahme, wie beim angenommenen YouTube-Logo. Die Originalaufnahme und ihr Hintergrund bleiben sichtbar. Keine bildfüllenden Grafiken, keine zusätzlichen Hintergründe, kein B-Roll und keine Musik. Soundeffekte höchstens kurz und passend zu einer solchen Einblendung. Beachte die Danger Zone und die echte Zentrierung auch während der Animation. Entwickle Themen und Zeiten aus dieser Aufnahme. Übernimm nichts aus dem abgelehnten Consulting-Experiment und keine fremden Inhalte oder Zeitmarken aus Referenzvideos. Verwende im Abschluss das einheitliche Social-Outro: „Road to 10K“ auf Blau, „Folgen nicht vergessen“ auf Rot und den Fragen-/DM-Hinweis. Zeige gleichzeitig die Icons und Profile von YouTube (@itsabidullahabi), TikTok (@abidullahabi), Instagram (@abidullahabi) und LinkedIn (Abdullah Bachtari). Keine wechselnden Plattformkarten. Die kompakte Übersicht bleibt unterhalb der Untertitel und außerhalb des Gesichts. Mildere grobe Ausdrücke in finalen Untertiteln sinngemäß ab und dokumentiere Abweichungen vom wortgetreuen Originaltranskript. Gib mir das geprüfte Transkript und erstelle anschließend eine ausführliche, natürlich formulierte TikTok-Beschreibung nach meinen Beispielen, mit höchstens fünf Hashtags, darunter immer #abidullahabi. Lege die abgenommene Upload-MP4 direkt unter 03_Bereit_zum_Posten als JJJJ-MM-TT - Videotitel.mp4 ab, ohne Video-Unterordner, und prüfe die Kopie. Das Datum ist das geplante Postingdatum. Fehlt es, frage danach und erfinde kein Datum. Speichere die finale Beschreibung im passenden Notion-Eintrag, lies sie zur Prüfung erneut und setze den vollständigen Eintrag auf Ready to Post. Ich veröffentliche selbst. Frage nur nach tatsächlich fehlenden Angaben oder neuen Gestaltungsentscheidungen.
++Gib CONTENT_WORKFLOW.md und die aktuelle DESIGN.md an oder nenne ihre vollständigen Pfade. Nenne außerdem die konkrete Videodatei. Verwende dazu diese Startanweisung:
++
++> Lies CONTENT_WORKFLOW.md und die aktuelle DESIGN.md vollständig. Prüfe den Zugriff auf beide Dateien, meine übergebene Videodatei und die vorhandenen Werkzeuge. Verwende DESIGN.md als einzige verbindliche Quelle für sämtliche Gestaltungsvorgaben. Gleiche Vorlagen und Prüfungen vor dem Export damit ab. Erhalte die übergebene Schnittfassung, ihre Länge, ihr Tempo, ihren Inhalt und ihre Reihenfolge. Kürze oder beschleunige nur bei meinem ausdrücklichen Auftrag. Bestimme Themen, Transkript und Zeiten aus genau dieser Fassung. Dokumentiere notwendige Wortkorrekturen und bewahre das Originaltranskript. Prüfe das erste codierte Bild und die vollständige Exportdatei nach beiden Anleitungen. Erstelle die Posting-Beschreibung nach Abschnitt 11. Lege die abgenommene Upload-Datei im passenden Stufenordner ab und prüfe die Kopie. Verwende das bestätigte Postingdatum. Speichere die finale Beschreibung in der passenden Notion-Seite und lies sie zur Prüfung erneut. Setze Ready to Post erst bei vollständigem Paket. Ich veröffentliche selbst. Frage nach tatsächlich fehlenden Angaben und ungeklärten Widersprüchen.
+ 
+ Wenn Du alle Schritte ohne Zwischenabnahme durchführen lassen willst, ergänze ausdrücklich: „Führe alle Schritte bis zur fertigen Vorschau zusammen aus.“ Bestehende Stilentscheidungen müssen nicht erneut grundsätzlich entworfen werden.
+ 
+@@ -70,6 +84,7 @@
+ ```text
+ /Users/abi/Google Drive/Meine Ablage/50_Projekte/Social Media/Content_Creation/
+ ├── CONTENT_WORKFLOW.md
++├── DESIGN.md
+ ├── 01_Rohvideos/
+ ├── 02_Bearbeitete_Videos/
+ ├── 03_Bereit_zum_Posten/
+@@ -242,7 +257,7 @@
+ 
+ Die 138 Wörter und ihre Reihenfolge stimmen nach dokumentierten Erkennungskorrekturen mit V4 überein. Alle 22 Tonsegmente wurden mit der Quelle verglichen. Die fertige MP4 wurde vollständig decodiert. Die Bildprüfung erfasst 1.155 Ausgabezeitpunkte und 77 Gesichtsstichproben. Eine verlässliche direkte Hörabnahme ist damit weiterhin nicht nachgewiesen.
+ 
+-Die Nahaufnahme erforderte eine abweichende Untertitelhöhe, damit der Bart frei bleibt. In dieser Vorschau liegt sie bei y=1418. Ab Beginn des Outros bei 33,949 Sekunden liegt sie bei y=1312. Die Profilübersicht bleibt darunter bei y=1396 und ist 100 px hoch. Namen, vier Profile, Schriftgröße 32 px, zwei Spalten und sichere Bildränder bleiben erhalten. `theme-composition.mjs` unterstützt diese projektspezifische Variante über `profiles-grid-compact`. Behalte den bisherigen Standard für andere Aufnahmen. Übernimm diese Ausnahme erst nach Rückmeldung als zusätzliche Referenz.
++Die Vorschau enthielt eine noch nicht angenommene Layoutvariante für die Nahaufnahme. Ihre konkreten Werte sind im zugehörigen Projekt unter `review/layout-adjustment.json` dokumentiert. Sie sind keine aktuelle Designvorgabe. Für die nächste Umsetzung gilt ausschließlich DESIGN.md.
+ 
+ Die Beschreibung ist in der vorhandenen Notion-Vorlage als „Beschreibung zur Videoabnahme“ gespeichert. Die fertige Vorschau liegt in `02_Bearbeitete_Videos`. Erst nach Abdullahs Abnahme die Posting-Kopie und den Status „Ready to Post“ setzen. Ein Veröffentlichungsdatum ist noch nicht eingetragen.
+ 
+@@ -253,117 +268,29 @@
+ - Die vollständige Vorschau ist technisch geprüft. Abdullahs abschließende Abnahme und ein weiterer Übertragungstest mit neuem Material stehen noch aus.
+ - WhisperX und eine Audio-Anbindung zur zusätzlichen Tonbewertung bleiben recherchierte, noch nicht eingerichtete Ergänzungen. Prüfe sie nur bei entsprechendem Bedarf. Aus der Recherche folgt keine Freigabe einer kostenpflichtigen oder zusätzlichen Cloud-Nutzung. Prüfe vor einer späteren Nutzung den dann aktuellen Werkzeugstand.
+ 
+-## 6. Wiedererkennbarer Textstil
+-
+-Alle folgenden Pixelwerte gelten für **1080 × 1920**. Koordinaten beginnen links oben. Bei anderer Arbeitsauflösung proportional umrechnen und visuell prüfen.
+-
+-| Element | Freigegebene Gestaltung |
+-|---|---|
+-| Schriftfamilie | Arial, Helvetica, sans-serif. Verwendete Mess- und Referenzschrift: Arial Bold. |
+-| Akzentfarbe | Blau **#349feb**. |
+-| Weiß | **#ffffff**. Schwarze Kontur: **#000000**. |
+-| Gemeinsamer Textbereich | x=180 bis x=900, Breite 720. Alle Textgruppen an der tatsächlichen Bildmitte x=540 zentrieren. Einschließlich Kontur innerhalb dieses Bereichs bleiben. |
+-| H1 / Thema | Standardstart y=320, nie oberhalb y=300. Weiß auf Blau, Gewicht 800. Größe passend zur Breite und zum freien Raum zwischen Plattformoberfläche und Gesicht wählen. |
+-| H1 bei längeren Titeln | Im Referenzvideo Compliance und Cyber Security: 66 px. Bonus Design: 72 px. Breite messen, Titel möglichst knapp halten. |
+-| Blauer H1-Hintergrund | Nur hinter dem Text. Innenabstand oben 12 px, horizontal 22 px, unten 14 px. Eckenradius 12 px. Keine schwarze Textkontur. |
+-| H2 / Stichwort | Standardstart y=440 unter einer einzeiligen H1. Weiß, schwarze Kontur 5 px, Gewicht 700, normalerweise 52 px. Keine Hintergrundkästen. Bei mehrzeiliger H1 gesondert platzieren. |
+-| Lange H2 | Im Referenzvideo „Science · Analytics · Engineering“: 44 px. Besser kurze Formulierungen als kleine, dicht gedrängte Texte. |
+-| Einstiegsüberschrift bei 0:00 | H1 und direkt zugehörige Einstiegs-H2 ab dem ersten Videoframe vollständig sichtbar, volle Deckkraft und endgültige Position. Keine Einblendanimation am Anfang. |
+-| Spätere Einblendbewegung | Dezentes Erscheinen über 0,22 Sekunden mit 14 px vertikaler Bewegung und sanftem Abbremsen. Gilt nur für später einsetzende Themen. |
+-
+-Die Einstiegsüberschrift benennt das Video sofort, damit auch der erste Frame als verständliche Profilvorschau genutzt werden kann. Im Themenplan beginnt sie exakt bei `start: 0`. `theme-composition.mjs` setzt H1/H2 mit Start 0 auf volle Deckkraft und die endgültige Position, ohne die sonstige Einblendanimation. `check-theme-layout.mjs` prüft eine vorhandene H1 bei 0 und die sofortige Sichtbarkeit der Einstiegstexte. Zusätzlich den ersten tatsächlich codierten Frame der Upload-MP4 extrahieren und ansehen. Eine spätere Stichprobe bei 0,3 oder 1 Sekunde reicht dafür nicht. Bei der Veröffentlichung auch das gewählte Cover kontrollieren, falls der Dienst eine eigene Cover-Auswahl anbietet.
+-
+-H1 benennt das aktuelle Thema. H2 hebt kurz einen passenden Begriff oder eine verständliche Zusammenfassung hervor. Beispiel: H1 „1. SAP“, H2 „Einkauf · Finanzen“ genau beim entsprechenden gesprochenen Abschnitt. Nummerierung nach der tatsächlichen Reihenfolge im neuen Video, nicht nach alten Beispielen.
+-
+-Überschriften sind keine dauernde Wiederholung des gesamten Untertitels. Keine Gehaltskarten, bunten H2-Kästen oder aufwendigen Animationen als Standard hinzufügen. Die YouTube-Wischanimation zur gesprochenen Nennung von YouTube-Tutorials ist angenommen. Inhaltlich passende Logo-Einblendungen künftig häufiger einsetzen, nach den Regeln in Abschnitt 6a. Einzelne Textblasen und kleine Animationen direkt in der Aufnahme sind nach Abschnitt 6b erlaubt. Bildfüllende Grafikwechsel und zusätzliche B-Roll sind ausgeschlossen. Zusätzliche Informationen nur, wenn sie sinnvoll sind, belegt werden können und inhaltlich gewünscht sind. Die SAP-Gehaltsinformation wurde bewusst aus der finalen Gestaltung entfernt.
+-
+-Der bereits in der Aufnahme enthaltene Einstieg mit Artikel blieb erhalten. In diesem Ablauf wurde dafür kein neues Green-Screen-Element erstellt.
+-
+-Kopf, Hände und relevante Bildinhalte prüfen. Die angegebenen Abstände haben für diese Aufnahme funktioniert. Sie sind keine Garantie für jede TikTok-, Instagram- oder YouTube-Oberfläche. Vor Veröffentlichung auf dem eigenen Handy kontrollieren, ob Bedienflächen, Beschreibung oder Profilinformationen etwas verdecken.
+-
+-**Erwartetes Ergebnis:** Schlichte, gut lesbare Themenführung mit gleicher Schrift, Farbe und Platzierung über mehrere Videos hinweg. Inhalte und Einblendzeiten werden für jede Aufnahme neu bestimmt.
+-
+-## 6a. Danger Zone und echte Zentrierung
+-
+-**Verbindlicher Produktionsstandard seit der Nutzerkorrektur vom 13.09.2026.** Diese Regeln ersetzen die früheren Positionen x=96, y=180 und den 792-px-Textbereich. Der alte Bereich hatte seine Mitte bei x=492 und war dadurch 48 Pixel nach links verschoben.
+-
+-Grundlage sind der vom Nutzer gelieferte TikTok-UI-Screenshot und konservative Reserven. Die Grenzen sind ein eigener Arbeitsstandard, keine universelle TikTok-Pixelgarantie. TikTok weist darauf hin, dass Freizonen von Format, Beschreibung und zusätzlichen Bedienelementen abhängen und Vorschau und reale Geräte abweichen können: [TikTok Safe Zone](https://ads.tiktok.com/resources/help/article/tiktok-auction-in-feed-ads?lang=en-GB).
+-
+-Koordinaten für 1080 × 1920, Ursprung links oben:
+-
+-| Bereich | Gesperrte Zone |
+-|---|---|
+-| Obere Navigation, Statusleiste | y < 300 |
+-| Beschreibung, Profilname, Audiozeile, untere Bedienflächen | y > 1500, also die unteren 420 Pixel |
+-| Rechte Aktionsleiste | x > 900, also die rechten 180 Pixel |
+-| Linker Bildrand | x < 90 |
+-| Symmetrische zusätzliche Textreserve | x=90 bis x=180 bleibt ebenfalls textfrei, damit zentrierte Texte rechts sicher enden |
+-
+-**Nutzbarer Textbereich: x=180 bis 900 und y=300 bis 1500. Mittelpunkt jeder Textgruppe: x=540.** Titel, Untertitel, H2, Outro, Logo und alle Konturen müssen vollständig darin liegen. Die Grenzen gelten auch während sämtlicher Ein- und Ausblendungen. Ein Logo darf innerhalb dieser Fläche per Wischblende erscheinen, aber nicht aus dem gesperrten Rand ins Bild fliegen. Die Freizonen dürfen durch eine Vorschaugrafik sichtbar gemacht werden, werden jedoch nie in die finale MP4 eingebrannt.
+-
+-Untertitel bleiben bei maximal drei Wörtern, Arial Bold 56 px und y=1280. Die maximal gemessene Textbreite ist 684 px. Bei langen Wörtern kleinere Gruppen bilden. Bei sehr nahen Einstellungen darf die Zeile etwas tiefer sitzen, sofern sie oberhalb y=1500 endet. Die Gesichtslage und alle anderen Einblendungen erneut prüfen.
+-
+-Bei Platzmangel zuerst die Themenformulierung kürzen, die Darstellung zeitlich staffeln oder maßvoll die Schrift anpassen. Nicht einfach in eine Danger Zone ausweichen. Überschriften, Gesichtsbereich und Untertitel dürfen sich nicht überdecken. Die tatsächliche Aufnahme gesondert ansehen, denn die Gesichtserkennung erfasst eine Kappe oder ausgestreckte Hände nicht zuverlässig.
+-
+-**Für neue Aufnahmen:** 9:16 aufnehmen. Zwischen y=300 und ungefähr y=620 möglichst ruhigen Hintergrund für Titel und H2 freihalten. Den Kopf entsprechend tiefer im Bild platzieren. Im Bereich y=1280 bis etwa y=1390 soll genügend Platz für Untertitel bleiben. Vor einer längeren Aufnahme einen kurzen Test mit den geplanten Texten und der aktuellen Plattformoberfläche ansehen.
+-
+-**Automatische Umsetzung:** `social-layout.mjs` enthält die gemeinsamen Grenzen. `assemble-full-video.mjs` begrenzt die Untertitelbreite. `check-theme-layout.mjs` prüft die tatsächlichen Text- und Logoabmessungen einschließlich Konturen bei jedem Frame, die Mitte x=540, Grafiküberschneidungen, maximal drei Wörter und die gespeicherten Gesichtsstichproben einschließlich Zoom. `workflow.mjs render-html` ruft diese Prüfung zwingend vor dem Export auf und bricht bei einem Fehler ab. Ein bestandener Test ersetzt die Sichtprüfung mit einer UI-Vorschau nicht.
+-
+-### Wiederkehrende Logo-Einblendungen, freigegebener Stil
+-
+-Der Nutzer hat die YouTube-Wischanimation ausdrücklich angenommen und wünscht solche Logo-Einblendungen künftig häufiger. Bei passenden gesprochenen Erwähnungen von Plattformen, Marken oder Werkzeugen diesen Stil eigenständig wiederverwenden. Keine erneute Stilfreigabe allein für dieselbe Art von Animation einholen. Die Auswahl muss zum Inhalt passen, nicht zu einer starren Anzahl pro Video.
+-
+-Offizielle lokale Assets bevorzugen und Herkunft dokumentieren. Kurz und gezielt einsetzen. Ein Logo kann vorübergehend die H1 ersetzen, statt zusätzlichen Platz über dem Kopf zu beanspruchen. Gesicht, Text und Danger Zone einschließlich der gesamten Bewegung prüfen. Eine kurze Wischblende innerhalb der Freizone oder eine dezente Einblendung verwenden. Keine dauernde Markierung und keine Behauptung einer Partnerschaft.
+-
+-Freigegebene Referenz: Das offizielle YouTube-Icon ersetzt von 23,15 bis 24,85 Sekunden die H1 im Video über Berufserfahrung. Es erscheint innerhalb von 0,28 Sekunden von links nach rechts per Wischblende und verschwindet vor dem nächsten Thema. Die Zeiten nur für dieses Beispiel verwenden. Neue Logos am tatsächlichen gesprochenen Begriff ausrichten. Referenzdatei: `02_Bearbeitete_Videos/2026-09-15 - Berufserfahrung - YouTube-Vorschau.mp4`.
+-
+-## 6b. Kleine Animationen in der Aufnahme
+-
+-**Freigegebene Richtung nach dem Experiment:** Eine einzelne passende Einblendung erscheint kurz über der laufenden Aufnahme. Die Person und der vorhandene Hintergrund bleiben sichtbar. Kein blauer Vollbildhintergrund, keine zusätzliche Kulisse und kein komplett nachgebautes App-Fenster.
+-
+-### Text- oder Sprechblase als Beispiel
+-
+-Wenn Abdullah sinngemäß sagt „Schreibt mir auf LinkedIn“, kann eine einzelne Textblase mit **„Hey Abi, ich habe eine Frage“** aufploppen. Die Blase erscheint passend zur gesprochenen Einladung und verschwindet nach ausreichender Lesezeit. Kein Profilkopf, keine Kontaktliste, kein Chatfenster und kein Drumherum. Der Text ist eine beispielhafte Nachricht, keine angeblich tatsächlich eingegangene DM. Bei anderen Inhalten den Blasentext passend formulieren, statt dieses Beispiel überall zu wiederholen.
+-
+-### Gestaltung und Timing
+-
+-- Die angenommene YouTube-Wischblende im Originalvideo ist das Vorbild für Logo-Einblendungen. Andere kleine Elemente können dezent aufploppen oder erscheinen. Keine komplette Szene aus einem Experiment übernehmen.
+-- Kleine, klar lesbare Elemente einsetzen und sparsam an inhaltlich passenden Stellen platzieren. Keine feste Anzahl von Animationen erzwingen. Sie sollen die Aussage unterstützen und kurz Aufmerksamkeit auf die genannte Information lenken.
+-- Außerhalb des Logos oder der einzelnen Blase bleibt die Überlagerung transparent. Ein lokaler Hintergrund innerhalb einer Textblase ist möglich. Er darf nicht zu einer großen Karte oder bildfüllenden Farbfläche werden. Die blaue H1 bleibt wie bisher nur hinter der Überschrift.
+-- Text kurz halten. Die Beispielnachricht darf innerhalb einer einzelnen Textblase auf lesbare Zeilen verteilt sein. Die Grenze von maximal drei Wörtern gilt weiterhin für die gesprochenen Untertitel, nicht für eine beispielhafte Nachricht.
+-- Mit den bestehenden H1/H2 und Untertiteln abstimmen. Bei Platzmangel eine thematische Einblendung kurz ersetzen oder zeitlich versetzen, statt zusätzliche Ebenen übereinanderzustapeln. Gesicht, Gestik und Untertitel bleiben frei.
+-- Textblase und Logo einschließlich Kontur und Bewegung vollständig innerhalb x=180 bis 900 und y=300 bis 1500 halten. Die ganze Einblendung an x=540 zentrieren. Nicht aus der Danger Zone ins Bild fliegen lassen.
+-- Vor dem Export müssen auch neu eingeführte Textblasen in der Layoutprüfung erfasst sein. Nicht annehmen, dass ein neuer Animationstyp bereits automatisch unterstützt wird. Texte, Zeiten und Bewegungen dauerhaft im bearbeitbaren Themenplan und in der Komposition hinterlegen. Gesamte Bewegung in der Vorschau prüfen.
+-
+-### Einheitliches Outro mit vier Social-Profilen
+-
+-**Verbindliche Präzisierung vom 14.09.2026:** Abdullah wünscht alle vier Plattformen **gleichzeitig** im selben Outro. Der Vorschlag mit zwei zeitlich getrennten Einblendungen wurde ausdrücklich verworfen. Die vorherige reine LinkedIn-Karte ist die gestalterische Grundlage, wird aber durch die gemeinsame Übersicht ersetzt. Dieser gemeinsame Abschluss ist der Standard für neue Videos und gilt nach der finalen Nutzerfreigabe auch für alle bereits bearbeiteten, noch nicht veröffentlichten Videos. Vor der Abschlussmeldung jede offene Posting-Datei einzeln prüfen. Eine aktualisierte Vorlage allein bedeutet nicht, dass vorhandene Exporte bereits angepasst sind.
+-
+-| Bestandteil | Inhalt |
+-|---|---|
+-| Hauptüberschrift, blau | Road to 10K |
+-| Folge-Aufruf, rot | Folgen nicht vergessen |
+-| Fragen-Hinweis | Bei Fragen einen Kommentar oder DM schreiben |
+-| YouTube-Icon und Profil | @itsabidullahabi |
+-| TikTok-Icon und Profil | @abidullahabi |
+-| Instagram-Icon und Profil | @abidullahabi |
+-| LinkedIn-Icon und Name | Abdullah Bachtari |
+-
+-Die Profilnamen stammen ausdrücklich aus Abdullahs Antwort. **Nicht die Schreibweisen angleichen:** YouTube unterscheidet sich von TikTok und Instagram. Der Pflicht-Hashtag in Videobeschreibungen bleibt unabhängig davon **#abidullahabi**. Ein bestätigter Profilname ist keine Aufforderung, neue oder abweichende URLs zu erfinden.
+-
+-- **Alles zusammen:** Überschrift, Folge-Aufruf, Fragen-Hinweis und komplette Profilübersicht haben denselben Start und dasselbe Ende. Alle vier Icons und Namen erscheinen als eine Gruppe. Kein Karussell, kein Wechsel zwischen LinkedIn und den übrigen Plattformen, keine zeitversetzten einzelnen Profile.
+-- **Gestaltung:** Vorhandenen H1/H2-Stil erhalten. Kleine weiße Fläche mit abgerundeten Ecken, dunkler Arial-Bold-Schrift und den Plattform-Icons. Darin eine Übersicht aus zwei Reihen und zwei Spalten: oben YouTube und TikTok, unten Instagram und LinkedIn. Die Übersicht als Gesamtgruppe zentrieren. Keine große App-Ansicht, kein Hintergrundwechsel, kein zusätzliches B-Roll und keine Musik.
+-- **Platzierung:** Gesicht, Überschriften, Wortuntertitel und die Danger Zone bleiben frei. Die Profilübersicht liegt unterhalb der Untertitel. Die Breite der längsten Namen prüfen. Keine abgeschnittenen Handles und kein Umbrechen eines Namens. Der Zoom betrifft nur die Aufnahme.
+-- **Animation:** Ein sanftes gemeinsames Aufploppen mit leichtem Abfedern, danach ruhig stehen lassen. Alle Profile bewegen sich als dieselbe Fläche. Kein laufendes Pulsieren und keine zusätzlichen Animationen je Icon. In der aktuellen Fassung bleibt der Originalton ohne zusätzlichen Soundeffekt.
+-- **Timing:** Am gesprochenen Schlussabschnitt ausrichten. Alle Bestandteile bis zum Ende lesbar halten. Bestehende Videolänge und Tempo erhalten. Bei neuen Aufnahmen ungefähr vier bis fünf Sekunden für den gemeinsamen Abschluss vorsehen. Kurze vorhandene Schlussabschnitte nicht ungeprüft verlängern oder vier Profile hektisch durchwechseln.
+-
+-**Referenzmaße bei 1080 × 1920:** „Road to 10K“ y=310, 60 px. Fragen-Hinweis y=409, 34 px. Roter Folge-Aufruf y=494, 44 px. Profilübersicht x=190, y=1374, Breite 700, Höhe 116 px, Name 32 px, Icons 38 × 38 px mit erhaltener Proportion. 12 px Innenabstand, 20 px Spaltenabstand, 8 px Reihenabstand. Untertitel bleiben bei y=1280 und 56 px. Die gesamte Fläche einschließlich des kurzen Aufploppens bleibt innerhalb x=180–900 und y=300–1500. Diese Positionen bei jeder neuen Aufnahme gegen Gesicht und Gestik prüfen.
+-
+-**Konkrete Werki-Fassung:** Gemeinsames Outro von 50,58 bis 55,233 Sekunden. Alle vier Profile stehen durchgehend zusammen in der Übersicht. Die vorherige LinkedIn-Einblendung erst ab 53,10 Sekunden wird damit ersetzt. Auch „Folgen nicht vergessen“ beginnt nun gemeinsam mit dem übrigen Outro. Die Einstiegsüberschrift bleibt ab Frame 0 vollständig sichtbar. Sprachinhalt, Untertitel und Gesamtlänge bleiben erhalten.
+-
+-**Übernahme in alle offenen Videos, 14.09.2026:** „Werki vs. Prakti“ und „Berufserfahrung“ sind die beiden noch offenen Videos der aktuellen Sammlung. Beide verwenden nach der finalen Prüfung dieselbe gemeinsame Profilübersicht. Bei „Berufserfahrung“ beginnt das vollständige Outro bei 80,16 Sekunden und endet mit dem bestehenden Video bei 83,801 Sekunden. Länge, Tempo, Untertitel und die angenommene YouTube-Einblendung bleiben erhalten. Karrierebereiche und Consulting sind bereits veröffentlicht. Die Posting-Dateien werden erst nach bestandenem Layout-, Bild-, Ton- und Exportcheck ersetzt. Alte Fassungen bleiben als Vorversion erhalten. Die Prüfung der tatsächlich kopierten Dateien wird mit Pfad und Prüfsumme protokolliert.
+-
+-**Wiederverwendung:** `social-outro.mjs` speichert die bestätigten Profile und liefert mit `buildSocialOutro(start, end)` die gemeinsamen Texte, Maße und Zeiten. `start` am tatsächlich gesprochenen Abschluss festlegen, `end` aus der Videodauer übernehmen. Die erzeugten Abschnitte, `socialCtas` und `outroGroup` dauerhaft im `theme-plan.json` speichern. Alte Outro-Elemente gezielt ersetzen, damit nicht zusätzlich eine zweite LinkedIn-Karte erscheint. Alle vier benötigten Dateien in `assets/` des neuen Projekts übernehmen. `theme-composition.mjs` rendert die gemeinsame Übersicht. `check-theme-layout.mjs` prüft alle vier Profile, geladene Icons, gleiche Zeitfenster, Textbreiten, die vollständige Bewegung, Überdeckungen und die Freizone. Vor Übergabe das tatsächlich exportierte Outro ansehen.
++## 6. Gestaltung aus DESIGN.md umsetzen
++
++Lies die Abschnitte zu Grundraster, Farben, Schrift, H1, H2 und Einstieg in [DESIGN.md](DESIGN.md). Leite Themen und Einblendzeiten aus der tatsächlich verwendeten Video- und Tonfassung ab. Übernimm keine Inhalte oder Zeiten eines fremden Referenzvideos.
++
++Speichere die Umsetzung dauerhaft im Themenplan und in der Komposition. Prüfe den ersten tatsächlich codierten Frame der Upload-MP4 gegen die Einstiegsvorgaben. Eine spätere Stichprobe ersetzt diese Prüfung nicht. Kontrolliere beim Veröffentlichen auch die separate Cover-Auswahl, falls vorhanden.
++
++## 6a. Freizonen und Layout prüfen
++
++Entnimm alle Grenzen und Mittelachsen dem Grundraster in DESIGN.md. Gleiche `social-layout.mjs`, die Breitenmessung in `assemble-full-video.mjs` und `check-theme-layout.mjs` vor der Verwendung mit dieser Quelle ab.
++
++Prüfe Text- und Grafikabmessungen einschließlich Konturen in allen Animationsphasen. Kontrolliere Überdeckungen, Gesicht, Kopf, Hände und wichtige Bildinhalte. Die Gesichtserkennung allein erfasst beispielsweise eine Kappe nicht zuverlässig. `workflow.mjs render-html` ruft die Layoutprüfung vor dem Export auf. Ein bestandener Test ersetzt die Sichtprüfung der tatsächlichen MP4 und der Plattformoberfläche nicht.
++
++Nutze für neue Aufnahmen die Aufnahmehinweise in DESIGN.md. Zeige nötigenfalls einen kurzen Test mit den vorgesehenen Texten.
++
++## 6b. Logos, Sprechblasen und Outro vorbereiten
++
++Verwende die Vorgaben für Logos, Textblasen, Outro und Bewegungen ausschließlich aus DESIGN.md. Wähle passende Einblendungen anhand des gesprochenen Inhalts. Kennzeichne beispielhafte Nachrichten als Beispiele. Erfinde keine tatsächlich eingegangenen Kommentare oder Nachrichten.
++
++Bewahre offizielle lokale Assets mit Herkunft und Prüfsumme auf. Übernimm bestätigte Profilnamen aus DESIGN.md unverändert. Die früheren Vorschauen und deren Zeitangaben sind historische Referenzen, keine Quelle für aktuelle Designwerte.
++
++Prüfe `social-outro.mjs` und `buildSocialOutro(start, end)` vor der Wiederverwendung gegen DESIGN.md. Speichere Bestandteile und Zeiten im `theme-plan.json`, einschließlich `socialCtas` und `outroGroup`. Entferne ersetzte Elemente gezielt, damit keine doppelten Abschlüsse entstehen. Übernimm benötigte Assets in das Projekt und prüfe ihre Ladung.
++
++Erfasse neue Einblendungsarten in der Layoutprüfung. Prüfe danach den tatsächlich exportierten Abschluss. Eine Änderung an der Vorlage passt vorhandene MP4-Dateien nicht automatisch an. Bearbeite weitere Videos nur im beauftragten Umfang.
+ 
+ **Icon-Quellen:** YouTube aus der bereits angenommenen Einblendung mit Herkunft [YouTube Brand](https://brand.youtube/). TikTok-Icon aus dem offiziellen [Asset-Paket im Developer-Bereich](https://developers.tiktok.com/docs/en/getting-started-design-guidelines). Instagram-Icon von der öffentlichen [Instagram-Seite](https://www.instagram.com/). LinkedIn [in]-Logo aus der offiziellen [Downloadseite](https://brand.linkedin.com/downloads). Lokale Quellen und Prüfsummen stehen im Referenzprojekt unter `assets/`. Formen, Seitenverhältnisse und Markennamen erhalten. Eine Einladung zum eigenen Profil ist keine Behauptung einer Partnerschaft.
+ 
+@@ -377,11 +304,8 @@
+ 2. Lokales Whisper-Modell **large-v3-turbo-q5_0** verwenden. Für Wortzeiten DTW verwenden, also eine Ausrichtung an den Sprachsignalen. Das kleinere Modell kann als Gegenprüfung dienen.
+ 3. Fachbegriffe und unklare Stellen in kurzen Ausschnitten prüfen. Erkennungsfehler berichtigen. Das Originaltranskript wortgetreu halten. Nur die vom Nutzer gewünschten milden Formulierungen in finalen Untertiteln nach Abschnitt 7a gesondert bearbeiten.
+ 4. Wortzeiten und Korrekturen speichern. Nicht die Zeiten des Originals auf das gekürzte Video übertragen.
+-5. Gruppen mit ein bis drei Wörtern bilden. **Höchstens drei Wörter, niemals zwei Zeilen.** Bei langen Wörtern oder Satzenden sind auch ein oder zwei Wörter zulässig.
+-6. Die tatsächliche Schriftbreite messen. Der Gruppierungsalgorithmus begrenzt auf 684 px innerhalb des 720-px-Bereichs. Zuerst Gruppen kürzen, statt die Schriftgröße ständig zu verändern.
+-7. Nur das gerade gesprochene Wort wird **#349feb**. Vor und nach seinem aktiven Zeitfenster ist es wieder weiß. Es dürfen nicht mehrere bereits gesprochene Wörter blau bleiben.
+-
+-**Position und Darstellung:** x=180, y=1280, Breite 720, Höhe 92, Arial Bold, 56 px, Schriftgewicht 800, schwarze Kontur 6 px. Horizontal zentriert und eine einzige Zeile. Die Position bleibt auch bei Zooms fest.
++5. Bilde Wortgruppen nach den aktuellen Untertitelvorgaben in DESIGN.md. Miss die tatsächlichen Textbreiten und prüfe die Gruppierung auf Lesbarkeit.
++6. Übernimm Position, Schrift, Kontur, Breitenbegrenzung und Wortmarkierung aus DESIGN.md. Prüfe die Darstellung am tatsächlich gesprochenen Wort und am Bildaufbau.
+ 
+ Ausgaben sind `captions-reviewed.txt`, `word-timing.json`, `captions.srt` und die eingebetteten Untertitel in der Komposition. Die SRT enthält die Textgruppen und Zeiten. Die blaue Wortmarkierung wird durch die Komposition erzeugt, nicht durch die SRT allein.
+ 
+@@ -398,7 +322,7 @@
+ - Bei neuen Textentwürfen, Einblendungen und Beschreibungen milde Alternativen wählen. In vorhandenen Aufnahmen zunächst die finale Untertitelfassung anpassen. Bedeutung, Betonung und Satzbau erhalten. Keine neue Pointe oder zusätzliche Aussage erfinden.
+ - Kontextbezogene Beispiele: „Scheiße!“ → „Mist!“ oder „Das ist scheiße“ → „Das ist Käse“. Das sind mögliche Alternativen, keine automatische Ersetzungsliste. Ein neutraler Ausdruck wie „krass“ muss nicht verändert werden.
+ - Das geprüfte Originaltranskript enthält weiterhin das Gesagte. Redaktionelle Abmilderungen getrennt dokumentieren, mit Zeitbereich, Originalwortlaut, neuem Text und Grundlage „Nutzerwunsch: mildere Formulierung“. Nicht als Fehler der Spracherkennung ausgeben.
+-- Finalen Untertiteltext und Wortzeiten gemeinsam prüfen. Weiterhin höchstens drei Wörter in einer Zeile. Bei mehrteiligen Ersetzungen die Zeitfenster und Wortmarkierung sinnvoll neu zuordnen. Keine fremden Korrekturen aus anderen Videos übernehmen.
++- Finalen Untertiteltext und Wortzeiten gemeinsam prüfen. Gruppierung und Darstellung nach DESIGN.md prüfen. Bei mehrteiligen Ersetzungen die Zeitfenster und Wortmarkierung sinnvoll neu zuordnen. Keine fremden Korrekturen aus anderen Videos übernehmen.
+ - Ersetzungen dauerhaft im `caption-edit-plan.json` und den finalen Wortdaten bzw. im Themenplan speichern. Wortgetreues Originaltranskript separat erhalten. Nicht nur die erzeugte SRT oder HTML ändern.
+ - Die gesprochene Tonspur bleibt bei einer bloßen Untertiteländerung hörbar im Original. Wenn auch der Ton abgemildert werden soll, den konkreten Eingriff gesondert festlegen. Keine künstlich nachgesprochenen Wörter als Originalaufnahme ausgeben. Keine automatische Kürzung und keine pauschalen Pieptöne.
+ - Bereits veröffentlichte Videos nicht rückwirkend allein wegen dieser neuen Stilregel bearbeiten. Im aktuellen Werki-Transkript wurde kein Ausdruck gefunden, der diese Abmilderung benötigt.
+@@ -407,12 +331,7 @@
+ 
+ ### Zooms
+ 
+-- Nur die Videoebene langsam skalieren. H1, H2 und Untertitel bleiben unbewegt.
+-- Bewährter Bereich: **1,025 bis 1,055**, also 2,5 bis 5,5 Prozent Vergrößerung.
+-- Referenzursprung: **42 % horizontal, 28 % vertikal**. Bei anderem Bildaufbau neu prüfen.
+-- An vorhandenen Schnittpunkten bzw. passenden Themenübergängen auf den Ausgangsausschnitt zurücksetzen.
+-- Bereits enge Nahaufnahmen aussparen. Nicht in Augen, Mund oder Hände hineinschneiden.
+-- Keine automatische Handverfolgung oder kontinuierliche Gesichtsverfolgung behaupten. Verwendet wurden geplante Zoomabschnitte.
++Entnimm die Zoomgestaltung dem Bewegungsabschnitt in DESIGN.md. Bestimme passende Abschnitte anhand der konkreten Aufnahme und prüfe Gesicht, Gestik und Textüberlagerungen. Speichere die Zeiten im Themenplan. Behaupte keine automatische Gesichts- oder Handverfolgung, wenn geplante Zoomabschnitte verwendet werden.
+ 
+ ### Geschwindigkeit
+ 
+@@ -493,7 +412,7 @@
+ 2. `logs/`, `exports/` und `vendor/` anlegen. `templates/vendor/gsap.min.js` nach `vendor/gsap.min.js` kopieren.
+ 3. `workflow.json` mit mindestens `mode`, `source`, `cutDuration`, `status` und `createdAt` schreiben. Dauer aus dem tatsächlichen Schnitt bestimmen. Keine alten Exportpfade übernehmen.
+ 4. Die Tonspur dieses Schnitts als `speech.wav`, mono, 16 kHz, PCM 16 bit extrahieren. Nicht die `speech.wav` des ungekürzten Originals verwenden.
+-5. `theme-plan.json` mit `duration`, `h1Background`, `captionAccent`, `captionFontSize`, `captionTop`, `sections`, `overlays`, `captions` und `zooms` anlegen. Designwerte aus dieser Anleitung übernehmen. Inhalte und Zeiten neu bestimmen.
++5. `theme-plan.json` mit `duration`, `h1Background`, `captionAccent`, `captionFontSize`, `captionTop`, `sections`, `overlays`, `captions` und `zooms` anlegen. Designwerte ausschließlich aus der aktuellen DESIGN.md übernehmen. Inhalte und Zeiten neu bestimmen. Die verwendete Designversion und den Prüfzeitpunkt im Projekt dokumentieren.
+ 
+ Eine H1 hat `id`, `text`, `start`, `end` und optional `number`/`fontSize`. Eine H2 hat zusätzlich `kind: "support"`. Ein Zoom hat `start`, `end`, `scale` und `origin`. IDs müssen eindeutige Kleinbuchstaben/Ziffern/Bindestriche verwenden und mit einem Buchstaben beginnen. Alle Zeiten beziehen sich auf den Schnitt bei 1,0-fachem Tempo.
+ 
+@@ -521,7 +440,7 @@
+ node assemble-full-video.mjs "/ABSOLUTER/PFAD/ZUM/GESTALTUNGSPROJEKT"
+ ```
+ 
+-Dies erzeugt `word-timing.json`, `caption-review.json`, `captions.srt`, `captions-reviewed.txt`, aktualisiert `theme-plan.json` und baut `index.html` mit `theme-composition.mjs`. Schriftbreite, Gruppengröße und Wortzeiten werden dabei geprüft. Die dauerhafte Gestaltung liegt in `theme-composition.mjs` und dem Themenplan.
++Dies erzeugt `word-timing.json`, `caption-review.json`, `captions.srt`, `captions-reviewed.txt`, aktualisiert `theme-plan.json` und baut `index.html` mit `theme-composition.mjs`. Schriftbreite, Gruppengröße und Wortzeiten werden dabei geprüft. Die technische Umsetzung liegt in `theme-composition.mjs` und dem Themenplan. Verbindliche Gestaltungsvorgaben stammen ausschließlich aus DESIGN.md.
+ 
+ ### D. Vorschau, Export und optional Tempo
+ 
+@@ -549,6 +468,8 @@
+ ## 10. Prüfung und erwartete Übergabe
+ 
+ Vor Übergabe prüfen:
++
++- Die verwendete DESIGN.md ist aktuell. Themenplan, Vorlagen, Prüfkriterien und tatsächlicher Export entsprechen ihr. Alte Softwarevoreinstellungen gelten nicht als Freigabe.
+ 
+ - Länge, Inhalt und Tempo entsprechen der übergebenen Aufnahme bzw. der abgenommenen Schnittfassung. Abweichungen gibt es nur bei ausdrücklich beauftragten und dokumentierten Kürzungen oder Tempoänderungen.
+ - Anfang, Ende, leise Wörter und Schnittanschlüsse klingen natürlich.
+@@ -559,7 +480,7 @@
+ - Im gemeinsamen Outro sind alle vier bestätigten Profile zusammen mit Überschrift und Folge-Aufruf sichtbar. Handles exakt prüfen, keine zeitlich wechselnden Karten und keine Überdeckung von Gesicht oder Untertiteln.
+ - Logos und Textblasen sind kurz, inhaltlich passend und in sämtlichen Animationsphasen geprüft. Keine komplette App-Oberfläche um eine einzelne Beispielnachricht bauen.
+ - Keine Musik hinzugefügt. Etwaige Soundeffekte begleiten nur passende Einblendungen und überdecken die Stimme nicht.
+-- Untertitel geben die Aufnahme sinngemäß korrekt wieder. Beabsichtigte Abmilderungen nach Abschnitt 7a sind gegen das erhaltene Originaltranskript dokumentiert. Eine Zeile, höchstens drei Wörter, höchstens ein blaues Wort, keine überlappenden Gruppen.
++- Untertitel geben die Aufnahme sinngemäß korrekt wieder. Beabsichtigte Abmilderungen nach Abschnitt 7a sind gegen das erhaltene Originaltranskript dokumentiert. Gruppierung, Darstellung und Wortmarkierung entsprechen DESIGN.md. Keine überlappenden Gruppen.
+ - Textbreiten passen. Gesicht und wichtige Bildinhalte werden nicht verdeckt. Zooms bewegen nur das Bild.
+ - MP4 hat Bild und Ton, 1080 × 1920 und 30 fps. Die Dauer entspricht dem Schnitt bzw. dem gewählten Tempo.
+ - Die komplette Exportdatei lässt sich decodieren. Nicht nur die ersten Sekunden oder Dateimetadaten prüfen.
+@@ -679,3 +600,5 @@
+ Die Nutzerpräzisierungen und der Referenzvergleich vom 16.09.2026 begründen Version 1.10. Abschnitt 5a hält die Zuständigkeit für den Schnitt, das gewünschte Tempo der Übergänge, die bestätigte Clipauswahl, die Grenzen der bisherigen Messung und die noch offene technische Kalibrierung fest. Grundlage sind Abdullahs ausdrücklicher Auftrag zur Aufnahme dieser Punkte und die dort genannten lokalen Prüfdaten. Die historische Pausenregel und das technische Beispiel sind entsprechend eingeordnet.
+ 
+ Der Auftrag vom 16.09.2026, das am besten nutzbare kostenlose Werkzeug einzusetzen, begründet Version 1.11. Silero wurde lokal ergänzt und an beiden vorhandenen Fassungen ausgeführt. Die tatsächlich festgestellte 200-ms-Zusammenführung, die Anbindung ohne diesen Schritt, die Testergebnisse und ihre Grenzen sind in Abschnitt 5a dokumentiert. Die lokalen Einstiegshinweise wurden auf diese aktuelle Anleitung ausgerichtet.
++
++Der ausdrückliche Auftrag vom 16.09.2026 zur verbindlichen Verwendung der aktuellen DESIGN.md begründet Version 1.13. Die Vorrangregel, der Einstieg für neue Chats, die Gestaltungsabschnitte und die Exportprüfung verweisen auf diese einzige Designquelle. Ersetzte visuelle Tabellen sind in der Sicherung von Version 1.12 erhalten. Die Änderung erteilt keine Freigabe für offene Widersprüche innerhalb der Designquelle.

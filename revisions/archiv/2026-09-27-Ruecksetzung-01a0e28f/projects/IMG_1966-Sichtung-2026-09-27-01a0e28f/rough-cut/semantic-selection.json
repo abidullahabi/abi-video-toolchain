@@ -1,0 +1,75 @@
+{
+  "stage": "2_rough_cut",
+  "agent": "workflow_pruefung_IMG1966",
+  "createdAt": "2026-09-27T11:39:45.866444+00:00",
+  "authorization": [
+    "Abschnitt2: ok passt",
+    "SAP: einfach lassen so und damit arbeitne"
+  ],
+  "source": "../workflow.json:source",
+  "speed": 1,
+  "semanticSelectionFrozen": true,
+  "sourceBlocks": [
+    {
+      "id": "einordnung",
+      "start": 43.15,
+      "end": 66.05,
+      "text": "Einmal kurz vorweg: Es gibt nicht das Consultant-Zertifikat ... bestimmtes Fach- oder Branchenwissen.",
+      "reason": "Vollstaendige Einordnung inklusive Erklaerung, dass ein Zertifikat keine allgemeine Jobgarantie ist."
+    },
+    {
+      "id": "persoenliche_beobachtung",
+      "start": 73.15,
+      "end": 87.6,
+      "text": "Aber, so wie ich ... auf der Arbeit mitbekommen habe ... einige Zertifikate ...",
+      "reason": "Persoenlicher Beobachtungsrahmen vor den Beispielen bleibt erhalten."
+    },
+    {
+      "id": "scrum_name",
+      "start": 91.05,
+      "end": 95.12,
+      "text": "Das erste Zertifikat ist Scrum Master.",
+      "reason": "Eigenstaendige vollstaendige Kurs-/Qualifikationsnennung."
+    },
+    {
+      "id": "scrum_einsatz",
+      "start": 98.4,
+      "end": 104.02,
+      "text": "Es gibt viele Projektmanagement-Consultants, die so agiles Projektmanagement machen.",
+      "reason": "Vollstaendiger Einsatzkontext. Unsichere Kosten und pauschales Ansehen entfallen."
+    },
+    {
+      "id": "sap",
+      "start": 122.0,
+      "end": 136.95,
+      "text": "Zweitens, wenn du zum Beispiel SAP-Consultant werden willst ... Ich glaube ... Finance. Nagel mich nicht drauf fest.",
+      "reason": "Aktuelle Nutzerfreigabe: SAP mit bestehendem Material behalten. Persoenliche Relativierung zusammen mit Finance. Doppelte Pflichtaussage ab 139 s entfaellt."
+    },
+    {
+      "id": "ki_anthropic",
+      "start": 156.45,
+      "end": 179.45,
+      "text": "Und jetzt ... KI ... Ich aktuell mache das Anthropic Zertifikat ... Partner werden ... Kollegen mit Zertifikat.",
+      "reason": "Vollstaendiger KI-/Anthropic-Kern. Nutzernennung konkretisiert zwei Pruefungen intern, keine neuen Saetze erzeugt."
+    },
+    {
+      "id": "abschluss",
+      "start": 239.45,
+      "end": 245.58,
+      "text": "Wenn du Fragen hast ... Kommentar ... Folgen nicht vergessen.",
+      "reason": "CTA beginnt nach gezieltem DTW erst bei etwa239.55, nicht bei der groben ASR-Grenze236.7."
+    }
+  ],
+  "approxBlockDuration": 91.12,
+  "boundaryStatus": "initial_review_envelopes_to_refine_using_DTW_VAD_PCM",
+  "audioReviewPerformed": false,
+  "audioReviewLimitation": "Audioinput unsupported, no perceptual listening claim",
+  "internalFactWarnings": [
+    "SAP mandatory and Finance ranking not independently established; user explicitly retains existing material; personal caveats retained.",
+    "Anthropic partner eligibility not represented as independently verified by editing."
+  ],
+  "anthropicNamesUserConfirmed": [
+    "Claude Certified Architect - Foundations",
+    "Claude Certified Developer - Foundations"
+  ]
+}

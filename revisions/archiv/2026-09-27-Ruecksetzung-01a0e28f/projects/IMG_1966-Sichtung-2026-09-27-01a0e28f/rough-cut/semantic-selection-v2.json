@@ -1,0 +1,45 @@
+{
+  "revision": 2,
+  "frozenAt": "2026-09-27T12:05:27.597894+00:00",
+  "previousSelection": "semantic-selection.json",
+  "reason": "Independent visual QA found the speakers face cut off at the right edge in the91.133–95.067 name sentence. Replaced by complete consecutive source statements98.967–108.367, preserving the Scrum recommendation while retaining a fully visible face. This is an explicit selection revision, not pause calibration.",
+  "blocks": [
+    {
+      "id": "einordnung",
+      "start": 43.2,
+      "end": 65.9666666667
+    },
+    {
+      "id": "persoenliche_beobachtung",
+      "start": 73.4333333333,
+      "end": 87.5333333333
+    },
+    {
+      "id": "scrum_einsatz_und_name",
+      "start": 98.9666666667,
+      "end": 108.36666666666666
+    },
+    {
+      "id": "sap",
+      "start": 122.0333333333,
+      "end": 136.8333333333
+    },
+    {
+      "id": "ki_anthropic",
+      "start": 156.8666666667,
+      "end": 179.3333333333
+    },
+    {
+      "id": "abschluss",
+      "start": 239.5,
+      "end": 245.5
+    }
+  ],
+  "scrumWording": "Es gibt viele Projektmanagement-Consultants, die so agiles Projektmanagement machen. Und das Go-To da ist einfach dieses Scrum-Master-Ding, was man machen soll.",
+  "evidence": [
+    "recognition/scrum-alternative.json offset103.3s",
+    "source VAD speech ends108.288 before next Ich at108.76 DTW",
+    "independent visual QA sampled9 frames104.303–108.037: full face and stable scale"
+  ],
+  "scope": "Same approved consulting topics. SAP kept as instructed. No design, captions, generated voice or synthetic sentences."
+}

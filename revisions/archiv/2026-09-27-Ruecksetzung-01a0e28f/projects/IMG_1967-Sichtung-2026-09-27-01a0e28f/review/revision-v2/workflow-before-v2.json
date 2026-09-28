@@ -1,0 +1,244 @@
+{
+  "mode": "cut-only",
+  "source": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/sources/IMG_1967.MOV",
+  "status": "cut_exported_for_review",
+  "createdAt": "2026-09-27T11:16:35.664641+00:00",
+  "bearbeitung": {
+    "agent": "Codex 01a0e28f",
+    "aufgabe": "Abschnitt2: freigegebener Rohschnitt. KI-Tonfassung und Auswahl fertig, Videoexport wartet auf Originaldatei.",
+    "begonnen": "2026-09-27T11:16:35.664643+00:00",
+    "status": "rohschnitt_zur_abnahme"
+  },
+  "speed": 1,
+  "editsAuthorizedThisStage": true,
+  "guidelinesRead": [
+    {
+      "path": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/CONTENT_WORKFLOW.md",
+      "sha256": "33ffc5ce7893b27b3ff0fe217250aaf3a1a9211dcab0dfd7a110adf2c8ae26c9",
+      "lines": 837,
+      "readScope": "complete"
+    },
+    {
+      "path": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/CONTENT_SCRIPT_WORKFLOW.md",
+      "sha256": "dec5f15913fa10798d6f9f624bddd2d37098929f75df2e8e70bbc9a866287cd8",
+      "lines": 278,
+      "readScope": "complete"
+    },
+    {
+      "path": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/DESIGN.md",
+      "sha256": "c3b20cce61ce9ea932084f8e2212c7788bbaf823204c431ed6d3f577208caae0",
+      "lines": 526,
+      "readScope": "complete"
+    },
+    {
+      "path": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/Belege/TESTPROTOKOLL.md",
+      "sha256": "30542b24fb069367347a03190bc8a58e69e9696e01a41950168faa39749a1f9e",
+      "lines": 128,
+      "readScope": "complete"
+    },
+    {
+      "path": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/Belege/ENTSCHEIDUNGEN.md",
+      "sha256": "2845d7d45b051db0c128be0056a552950b3557b6b1decf01b1ee17a081147c0c",
+      "lines": 320,
+      "readScope": "complete",
+      "priorSha256": "46fe413a82e05d9c86136763bb11587a4f3e375e1e7c6bd2f016d0a41e49f859",
+      "recheckedAt": "2026-09-27T12:41:39.062292+00:00",
+      "recheckedBy": "workflow_pruefung independently read the complete current file."
+    }
+  ],
+  "sourceSha256": "4c12f33d2057cb179548b08de45a05569a7d831cc4139b64cf59c7e69a33c9ce",
+  "recognition": {
+    "model": "large-v3-turbo-q5_0",
+    "method": "full recording -mc 0 -et 100 -lpt -100",
+    "file": "source-detection.json",
+    "status": "automatic_not_manually_verified",
+    "seconds": 321.57975
+  },
+  "reviewReport": "review/review-findings.json",
+  "qualitativeFinalApproval": false,
+  "updatedAt": "2026-09-27T11:32:23.239081+00:00",
+  "selectionFrozen": true,
+  "sourceSelectionFile": "review/selection-locked.json",
+  "cutAudio": "review/calibration-v3.wav",
+  "proposedCutDuration": 64.2666666667,
+  "auditoryReviewPerformed": false,
+  "sourceAvailability": {
+    "available": true,
+    "originalPath": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/IMG_1967.MOV",
+    "workingCopyPath": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/sources/IMG_1967.MOV",
+    "checkedAt": "2026-09-27T12:30:06.252073+00:00",
+    "detail": "Restored original matches initial hash. A separate byte-identical working copy is now the only processing source."
+  },
+  "originalSource": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/IMG_1967.MOV",
+  "sourceCopy": {
+    "originalPath": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/IMG_1967.MOV",
+    "workingCopyPath": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/sources/IMG_1967.MOV",
+    "expectedSha256": "4c12f33d2057cb179548b08de45a05569a7d831cc4139b64cf59c7e69a33c9ce",
+    "originalAvailable": true,
+    "copyVerified": true,
+    "sha256": "4c12f33d2057cb179548b08de45a05569a7d831cc4139b64cf59c7e69a33c9ce",
+    "bytes": 912434378,
+    "independentFile": true,
+    "createdAt": "2026-09-27T12:30:06.252073+00:00"
+  },
+  "sourceHandling": {
+    "policy": "working_copy_only",
+    "originalWriteAllowed": false,
+    "originalDeleteAllowed": false,
+    "processingRequiresVerifiedCopy": true,
+    "userInstruction": "Immer eine separate Kopie erstellen und damit arbeiten. Originale weder löschen noch verändern."
+  },
+  "latestExport": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/exports/KI-Einstieg-Schnitt-v1.mp4",
+  "cutDuration": 64.266667,
+  "removedSeconds": 257.30833333333334,
+  "keepIntervals": [
+    [
+      11.8,
+      13.9
+    ],
+    [
+      14.066666666666666,
+      15.666666666666666
+    ],
+    [
+      15.866666666666667,
+      19.666666666666668
+    ],
+    [
+      19.8333333333,
+      20.266666666666666
+    ],
+    [
+      22.766666666666666,
+      23.966666666666665
+    ],
+    [
+      30.0,
+      34.5
+    ],
+    [
+      46.1,
+      48.7
+    ],
+    [
+      49.06666666666667,
+      50.56666666666667
+    ],
+    [
+      50.733333333333334,
+      51.56666666666667
+    ],
+    [
+      74.5,
+      76.66666666666667
+    ],
+    [
+      76.73333333333333,
+      77.5
+    ],
+    [
+      83.4,
+      88.6
+    ],
+    [
+      138.36666666666667,
+      143.96666666666667
+    ],
+    [
+      148.66666666666666,
+      154.4
+    ],
+    [
+      158.7333333333,
+      162.1666666667
+    ],
+    [
+      167.4,
+      168.9666666667
+    ],
+    [
+      211.4,
+      213.4666666667
+    ],
+    [
+      213.5333333333,
+      214.4
+    ],
+    [
+      214.6333333333,
+      216.0333333333
+    ],
+    [
+      216.23333333333332,
+      218.0
+    ],
+    [
+      225.03333333333333,
+      226.03333333333333
+    ],
+    [
+      226.1,
+      226.36666666666667
+    ],
+    [
+      226.86666666666667,
+      228.8
+    ],
+    [
+      250.5,
+      254.4666666667
+    ],
+    [
+      306.6,
+      308.96666666666664
+    ],
+    [
+      309.06666666666666,
+      310.8333333333
+    ],
+    [
+      311.93333333333334,
+      313.3666666666667
+    ],
+    [
+      313.8666666666667,
+      315.5333333333
+    ],
+    [
+      315.8333333333,
+      316.56666666666666
+    ]
+  ],
+  "exportSha256": "a3cf7037d4c2a38eb4e1783f96c02fe646bab46c97a21eea2fb7781782784322",
+  "technicalChecksPassed": true,
+  "visualSamplingCompleted": true,
+  "postingReady": false,
+  "finalTechnicalQA": "review/independent-aac-v1/actual-export-checks.json",
+  "finalVisualEvidence": "review/visual-evidence/ki-final-v1/",
+  "roughCutReviewCopy": {
+    "path": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - KI-Einstieg - Schnitt v1.mp4",
+    "sha256": "a3cf7037d4c2a38eb4e1783f96c02fe646bab46c97a21eea2fb7781782784322",
+    "copyVerified": true,
+    "status": "awaiting_user_cut_review",
+    "postingReady": false,
+    "createdAt": "2026-09-27T12:41:39.062292+00:00"
+  },
+  "qualitativeReview": {
+    "status": "open",
+    "auditoryReviewPerformed": false,
+    "visualScope": "120 adjoining coded frames at all28joins plus beginning/end. Root additionally viewed3contact sheets and2full-resolution edge images. Not continuous-motion review.",
+    "sourceFramingFindings": [
+      "Start: outer cap/ear at left edge, central face visible.",
+      "37.9667–38.0000s: cap peak partly outside left edge, face remains visible.",
+      "49.1333s: visible source take and pose change before Google course name."
+    ],
+    "userCutApprovalPending": true
+  },
+  "originalIntegrityAfterExport": {
+    "unchanged": true,
+    "sha256": "4c12f33d2057cb179548b08de45a05569a7d831cc4139b64cf59c7e69a33c9ce",
+    "checkedAt": "2026-09-27T12:42:28.875394+00:00",
+    "purpose": "Read-only preservation check, no processing of original."
+  },
+  "finalVisualQA": "review/visual-evidence/ki-final-v1/root-bildpruefung.md"
+}

@@ -1,0 +1,290 @@
+whisper_init_from_file_with_params_no_state: loading model from '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 0
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 1
+ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
+ggml_metal_library_init: using embedded metal library
+ggml_metal_library_compile_all: compiled 'fa' library in 0.051 sec
+ggml_metal_library_compile_all: compiled 'mul_mv' library in 0.011 sec
+ggml_metal_library_compile_all: compiled 'mul_mm' library in 0.059 sec
+ggml_metal_library_compile_all: compiled 'quantize' library in 0.055 sec
+ggml_metal_library_compile_all: compiled 'softmax' library in 0.006 sec
+ggml_metal_library_compile_all: compiled 'norm' library in 0.005 sec
+ggml_metal_library_compile_all: compiled 'unary' library in 0.053 sec
+ggml_metal_library_compile_all: compiled 'binbcast' library in 0.006 sec
+ggml_metal_library_compile_all: compiled 'reduce' library in 0.055 sec
+ggml_metal_library_compile_all: compiled 'tri' library in 0.005 sec
+ggml_metal_library_compile_all: compiled 'ssm' library in 0.054 sec
+ggml_metal_library_compile_all: compiled 'wkv' library in 0.005 sec
+ggml_metal_library_compile_all: compiled 'gated_delta_net' library in 0.006 sec
+ggml_metal_library_compile_all: compiled 'solve_tri' library in 0.006 sec
+ggml_metal_library_compile_all: compiled 'rope' library in 0.052 sec
+ggml_metal_library_compile_all: compiled 'conv' library in 0.052 sec
+ggml_metal_library_compile_all: compiled 'upscale' library in 0.051 sec
+ggml_metal_library_compile_all: compiled 'argsort' library in 0.059 sec
+ggml_metal_library_compile_all: compiled 'pool' library in 0.052 sec
+ggml_metal_library_compile_all: compiled 'misc' library in 0.052 sec
+ggml_metal_library_compile_all: loaded 20 libraries from embedded data in 0.059 sec (max single = 0.059 sec)
+ggml_metal_rsets_init: creating a residency set collection (keep_alive = 180 s)
+ggml_metal_device_init: GPU name:   MTL0 (Apple M4)
+ggml_metal_device_init: GPU family: MTLGPUFamilyApple9  (1009)
+ggml_metal_device_init: GPU family: MTLGPUFamilyCommon3 (3003)
+ggml_metal_device_init: GPU family: MTLGPUFamilyMetal4  (5002)
+ggml_metal_device_init: simdgroup reduction   = true
+ggml_metal_device_init: simdgroup matrix mul. = true
+ggml_metal_device_init: has unified memory    = true
+ggml_metal_device_init: has bfloat            = true
+ggml_metal_device_init: has tensor            = false
+ggml_metal_device_init: use residency sets    = true
+ggml_metal_device_init: use shared buffers    = true
+ggml_metal_device_init: recommendedMaxWorkingSetSize  = 12713.12 MB
+whisper_init_with_params_no_state: devices    = 3
+whisper_init_with_params_no_state: backends   = 3
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51866
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 1280
+whisper_model_load: n_audio_head  = 20
+whisper_model_load: n_audio_layer = 32
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 1280
+whisper_model_load: n_text_head   = 20
+whisper_model_load: n_text_layer  = 4
+whisper_model_load: n_mels        = 128
+whisper_model_load: ftype         = 8
+whisper_model_load: qntvr         = 2
+whisper_model_load: type          = 5 (large v3)
+whisper_model_load: adding 1609 extra tokens
+whisper_model_load: n_langs       = 100
+whisper_model_load:         MTL0 total size =   573.40 MB
+whisper_model_load: model size    =  573.40 MB
+whisper_backend_init_gpu: device 0: MTL0 (type: 1)
+whisper_backend_init_gpu: found GPU device 0: MTL0 (type: 1, cnt: 0)
+whisper_backend_init_gpu: using MTL0 backend
+ggml_metal_init: allocating
+ggml_metal_init: found device: Apple M4
+ggml_metal_init: picking default device: Apple M4
+ggml_metal_init: use fusion         = true
+ggml_metal_init: use concurrency    = true
+ggml_metal_init: use graph optimize = true
+whisper_backend_init: using BLAS backend
+whisper_init_state: kv self size  =   10.49 MB
+whisper_init_state: kv cross size =   31.46 MB
+whisper_init_state: kv pad  size  =    7.86 MB
+whisper_init_state: alignment heads masks size = 480 B
+whisper_init_state: compute buffer (conv)   =   37.69 MB
+whisper_init_state: compute buffer (encode) =  219.99 MB
+whisper_init_state: compute buffer (cross)  =   63.03 MB
+whisper_init_state: compute buffer (decode) =  139.34 MB
+read_audio_data: reading audio data from '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/review/cutcheck-114-143-turbo.wav' ...
+read_audio_data: trying to decode with miniaudio
+
+system_info: n_threads = 2 / 10 | WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | 
+
+main: processing '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/review/cutcheck-114-143-turbo.wav' (464000 samples, 29.0 sec), 2 threads, 1 processors, 5 beams + best of 5, lang = de, task = transcribe, timestamps = 1 ...
+
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:20.240 --> 00:00:21.620]   wo man beruflich hin möchte
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:18.760 --> 00:00:20.240]   was man aus seinem Leben machen will
+[00:00:20.240 --> 00:00:21.620]   wo man beruflich hin möchte
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:16.980 --> 00:00:18.760]   man muss sich aktiv damit auseinandersetzen
+[00:00:18.760 --> 00:00:20.240]   was man aus seinem Leben machen will
+[00:00:20.240 --> 00:00:21.620]   wo man beruflich hin möchte
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:15.400 --> 00:00:16.980]   es wird dir nicht in den Schoß fallen
+[00:00:16.980 --> 00:00:18.760]   man muss sich aktiv damit auseinandersetzen
+[00:00:18.760 --> 00:00:20.240]   was man aus seinem Leben machen will
+[00:00:20.240 --> 00:00:21.620]   wo man beruflich hin möchte
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:12.600 --> 00:00:15.400]   aber die ehrliche Antwort dazu ist
+[00:00:15.400 --> 00:00:16.980]   es wird dir nicht in den Schoß fallen
+[00:00:16.980 --> 00:00:18.760]   man muss sich aktiv damit auseinandersetzen
+[00:00:18.760 --> 00:00:20.240]   was man aus seinem Leben machen will
+[00:00:20.240 --> 00:00:21.620]   wo man beruflich hin möchte
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:11.500 --> 00:00:12.600]   um das irgendwie rauszufinden
+[00:00:12.600 --> 00:00:15.400]   aber die ehrliche Antwort dazu ist
+[00:00:15.400 --> 00:00:16.980]   es wird dir nicht in den Schoß fallen
+[00:00:16.980 --> 00:00:18.760]   man muss sich aktiv damit auseinandersetzen
+[00:00:18.760 --> 00:00:20.240]   was man aus seinem Leben machen will
+[00:00:20.240 --> 00:00:21.620]   wo man beruflich hin möchte
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:10.480 --> 00:00:11.500]   die mir dabei geholfen haben
+[00:00:11.500 --> 00:00:12.600]   um das irgendwie rauszufinden
+[00:00:12.600 --> 00:00:15.400]   aber die ehrliche Antwort dazu ist
+[00:00:15.400 --> 00:00:16.980]   es wird dir nicht in den Schoß fallen
+[00:00:16.980 --> 00:00:18.760]   man muss sich aktiv damit auseinandersetzen
+[00:00:18.760 --> 00:00:20.240]   was man aus seinem Leben machen will
+[00:00:20.240 --> 00:00:21.620]   wo man beruflich hin möchte
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:09.240 --> 00:00:10.480]   hier sind einige Methoden
+[00:00:10.480 --> 00:00:11.500]   die mir dabei geholfen haben
+[00:00:11.500 --> 00:00:12.600]   um das irgendwie rauszufinden
+[00:00:12.600 --> 00:00:15.400]   aber die ehrliche Antwort dazu ist
+[00:00:15.400 --> 00:00:16.980]   es wird dir nicht in den Schoß fallen
+[00:00:16.980 --> 00:00:18.760]   man muss sich aktiv damit auseinandersetzen
+[00:00:18.760 --> 00:00:20.240]   was man aus seinem Leben machen will
+[00:00:20.240 --> 00:00:21.620]   wo man beruflich hin möchte
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:08.500 --> 00:00:09.240]   wo man anfangen soll
+[00:00:09.240 --> 00:00:10.480]   hier sind einige Methoden
+[00:00:10.480 --> 00:00:11.500]   die mir dabei geholfen haben
+[00:00:11.500 --> 00:00:12.600]   um das irgendwie rauszufinden
+[00:00:12.600 --> 00:00:15.400]   aber die ehrliche Antwort dazu ist
+[00:00:15.400 --> 00:00:16.980]   es wird dir nicht in den Schoß fallen
+[00:00:16.980 --> 00:00:18.760]   man muss sich aktiv damit auseinandersetzen
+[00:00:18.760 --> 00:00:20.240]   was man aus seinem Leben machen will
+[00:00:20.240 --> 00:00:21.620]   wo man beruflich hin möchte
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:07.780 --> 00:00:08.500]   wo man weiß nicht genau
+[00:00:08.500 --> 00:00:09.240]   wo man anfangen soll
+[00:00:09.240 --> 00:00:10.480]   hier sind einige Methoden
+[00:00:10.480 --> 00:00:11.500]   die mir dabei geholfen haben
+[00:00:11.500 --> 00:00:12.600]   um das irgendwie rauszufinden
+[00:00:12.600 --> 00:00:15.400]   aber die ehrliche Antwort dazu ist
+[00:00:15.400 --> 00:00:16.980]   es wird dir nicht in den Schoß fallen
+[00:00:16.980 --> 00:00:18.760]   man muss sich aktiv damit auseinandersetzen
+[00:00:18.760 --> 00:00:20.240]   was man aus seinem Leben machen will
+[00:00:20.240 --> 00:00:21.620]   wo man beruflich hin möchte
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:06.460 --> 00:00:07.780]   ich glaube das ist eine riesengroße Frage
+[00:00:07.780 --> 00:00:08.500]   wo man weiß nicht genau
+[00:00:08.500 --> 00:00:09.240]   wo man anfangen soll
+[00:00:09.240 --> 00:00:10.480]   hier sind einige Methoden
+[00:00:10.480 --> 00:00:11.500]   die mir dabei geholfen haben
+[00:00:11.500 --> 00:00:12.600]   um das irgendwie rauszufinden
+[00:00:12.600 --> 00:00:15.400]   aber die ehrliche Antwort dazu ist
+[00:00:15.400 --> 00:00:16.980]   es wird dir nicht in den Schoß fallen
+[00:00:16.980 --> 00:00:18.760]   man muss sich aktiv damit auseinandersetzen
+[00:00:18.760 --> 00:00:20.240]   was man aus seinem Leben machen will
+[00:00:20.240 --> 00:00:21.620]   wo man beruflich hin möchte
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:05.480 --> 00:00:06.460]   was mache ich genau mit meinem Leben
+[00:00:06.460 --> 00:00:07.780]   ich glaube das ist eine riesengroße Frage
+[00:00:07.780 --> 00:00:08.500]   wo man weiß nicht genau
+[00:00:08.500 --> 00:00:09.240]   wo man anfangen soll
+[00:00:09.240 --> 00:00:10.480]   hier sind einige Methoden
+[00:00:10.480 --> 00:00:11.500]   die mir dabei geholfen haben
+[00:00:11.500 --> 00:00:12.600]   um das irgendwie rauszufinden
+[00:00:12.600 --> 00:00:15.400]   aber die ehrliche Antwort dazu ist
+[00:00:15.400 --> 00:00:16.980]   es wird dir nicht in den Schoß fallen
+[00:00:16.980 --> 00:00:18.760]   man muss sich aktiv damit auseinandersetzen
+[00:00:18.760 --> 00:00:20.240]   was man aus seinem Leben machen will
+[00:00:20.240 --> 00:00:21.620]   wo man beruflich hin möchte
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:03.880 --> 00:00:05.480]   die zweite Frage ist
+[00:00:05.480 --> 00:00:06.460]   was mache ich genau mit meinem Leben
+[00:00:06.460 --> 00:00:07.780]   ich glaube das ist eine riesengroße Frage
+[00:00:07.780 --> 00:00:08.500]   wo man weiß nicht genau
+[00:00:08.500 --> 00:00:09.240]   wo man anfangen soll
+[00:00:09.240 --> 00:00:10.480]   hier sind einige Methoden
+[00:00:10.480 --> 00:00:11.500]   die mir dabei geholfen haben
+[00:00:11.500 --> 00:00:12.600]   um das irgendwie rauszufinden
+[00:00:12.600 --> 00:00:15.400]   aber die ehrliche Antwort dazu ist
+[00:00:15.400 --> 00:00:16.980]   es wird dir nicht in den Schoß fallen
+[00:00:16.980 --> 00:00:18.760]   man muss sich aktiv damit auseinandersetzen
+[00:00:18.760 --> 00:00:20.240]   was man aus seinem Leben machen will
+[00:00:20.240 --> 00:00:21.620]   wo man beruflich hin möchte
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+[00:00:02.940 --> 00:00:03.880]   was macht man genau
+[00:00:03.880 --> 00:00:05.480]   die zweite Frage ist
+[00:00:05.480 --> 00:00:06.460]   was mache ich genau mit meinem Leben
+[00:00:06.460 --> 00:00:07.780]   ich glaube das ist eine riesengroße Frage
+[00:00:07.780 --> 00:00:08.500]   wo man weiß nicht genau
+[00:00:08.500 --> 00:00:09.240]   wo man anfangen soll
+[00:00:09.240 --> 00:00:10.480]   hier sind einige Methoden
+[00:00:10.480 --> 00:00:11.500]   die mir dabei geholfen haben
+[00:00:11.500 --> 00:00:12.600]   um das irgendwie rauszufinden
+[00:00:12.600 --> 00:00:15.400]   aber die ehrliche Antwort dazu ist
+[00:00:15.400 --> 00:00:16.980]   es wird dir nicht in den Schoß fallen
+[00:00:16.980 --> 00:00:18.760]   man muss sich aktiv damit auseinandersetzen
+[00:00:18.760 --> 00:00:20.240]   was man aus seinem Leben machen will
+[00:00:20.240 --> 00:00:21.620]   wo man beruflich hin möchte
+[00:00:21.620 --> 00:00:23.400]   oder auch wo man nicht hin möchte
+[00:00:23.400 --> 00:00:24.820]   weil je mehr du weißt
+[00:00:24.820 --> 00:00:25.600]   was du nicht willst
+[00:00:25.600 --> 00:00:27.120]   umso eher weißt du irgendwann
+[00:00:27.120 --> 00:00:29.000]   was du möchtest
+output_txt: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/review/cutcheck-114-143-turbo.txt'
+output_srt: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/review/cutcheck-114-143-turbo.srt'
+output_json: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/review/cutcheck-114-143-turbo.json'
+
+whisper_print_timings:     load time =   349.43 ms
+whisper_print_timings:     fallbacks =   5 p /  30 h
+whisper_print_timings:      mel time =    15.23 ms
+whisper_print_timings:   sample time =  1091.84 ms /  5014 runs (     0.22 ms per run)
+whisper_print_timings:   encode time =  1405.86 ms /     1 runs (  1405.86 ms per run)
+whisper_print_timings:   decode time =     0.00 ms /     1 runs (     0.00 ms per run)
+whisper_print_timings:   batchd time =  9035.73 ms /  5002 runs (     1.81 ms per run)
+whisper_print_timings:   prompt time =    41.49 ms /   133 runs (     0.31 ms per run)
+whisper_print_timings:    total time = 12081.99 ms
+ggml_metal_free: deallocating

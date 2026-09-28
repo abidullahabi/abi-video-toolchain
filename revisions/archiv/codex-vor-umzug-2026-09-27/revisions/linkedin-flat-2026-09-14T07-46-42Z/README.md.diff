@@ -1,0 +1,19 @@
+--- README.md bisher
++++ README.md neu
+@@ -31,7 +31,7 @@
+ 
+ ## Abschluss vor dem Posten
+ 
+-Die aktuelle freigegebene Upload-Datei in `03_Bereit_zum_Posten/<Videoordner>/` kopieren und per SHA-256 prüfen. Aus dem geprüften Transkript eine ausführliche, natürliche Beschreibung nach den Nutzerbeispielen erstellen. Höchstens fünf Hashtags, immer exakt #abidullahabi. Die Beschreibung im passenden Notion-Eintrag ergänzen, zurücklesen und erst bei vollständigem Paket auf Ready to Post setzen. Die vollständigen Regeln stehen in Abschnitt 11 der Hauptanleitung.
++Die aktuelle freigegebene Upload-Datei in `03_Bereit_zum_Posten/JJJJ-MM-TT - Videotitel.mp4` kopieren und per SHA-256 prüfen. Aus dem geprüften Transkript eine ausführliche, natürliche Beschreibung nach den Nutzerbeispielen erstellen. Höchstens fünf Hashtags, immer exakt #abidullahabi. Die Beschreibung im passenden Notion-Eintrag ergänzen, zurücklesen und erst bei vollständigem Paket auf Ready to Post setzen. Die vollständigen Regeln stehen in Abschnitt 11 der Hauptanleitung.
+ 
+ ## Ablage
+ 
+@@ -44,3 +44,7 @@
+ - Originalaufnahme und Hintergrund bleiben sichtbar. Keine bildfüllenden Grafikflächen und vorerst kein zusätzliches B-Roll. Kleine Logos und einzelne Textblasen dürfen kurz direkt auf der Aufnahme erscheinen, etwa „Hey Abi, ich habe eine Frage“. Keine Musik. Soundeffekte nur punktuell zur passenden Animation. Nichts aus dem Consulting-Experiment übernehmen.
+ - Vor der Übergabe den ersten codierten Frame der MP4 prüfen. Die Hauptüberschrift muss bei 0:00 vollständig lesbar sein. Die Layoutprüfung enthält zusätzlich eine Prüfung der Einstiegstexte.
+ - Zernio wurde laut Nutzer am 14.09.2026 als erfolgreich verwendeter Veröffentlichungsweg gemeldet. Nicht automatisch Buffer voraussetzen. Der Nutzer veröffentlicht selbst. Der Tag dieser Rückmeldung ist nicht automatisch das Veröffentlichungsdatum.
++
++- LinkedIn-Abschluss nach Nutzerangabe vom 14.09.2026: „Folge mir auf LinkedIn“ über offiziellem [in]-Logo und „Abdullah Bachtari“. Kleine sanfte Animation unter dem Gesicht, getrennt von Überschriften und Untertiteln. `socialCtas` in Themenplan und Komposition verwenden, ganze Gruppe bei jedem Frame prüfen. Keine ungeprüften URLs oder zusätzlichen Profile.
++- Grobe Ausdrücke in finalen Untertiteln und neuen Texten sinngemäß mild und bei passendem Kontext leicht humorvoll formulieren. Originaltranskript wortgetreu erhalten, redaktionelle Ersetzungen mit Zeit, Vorher/Nachher und Nutzergrundlage gesondert speichern. Untertitel bleiben maximal drei Wörter. Bestehenden gesprochenen Ton nicht automatisch ersetzen. Bereits gepostete Videos nicht rückwirkend ändern.
++- Sichtbare Videoablage flach, keine Unterordner je Video. Finale Dateien `JJJJ-MM-TT - Videotitel.mp4`: in 03 geplantes Datum, in 04 tatsächlicher Postingtag. Beim bestätigten Posting verschieben und entsprechend umbenennen. Projekt-/Exportdatum nicht als Postingdatum ausgeben. Fehlende Termine erfragen, vorläufig höchstens „Datum offen - Videotitel.mp4“. Die interne technische Projektablage bleibt separat. Pfade nachführen und Umzüge mit Prüfsummen dokumentieren.

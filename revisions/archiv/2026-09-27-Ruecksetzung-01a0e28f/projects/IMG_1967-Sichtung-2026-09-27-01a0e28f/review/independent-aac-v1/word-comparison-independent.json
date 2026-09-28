@@ -1,0 +1,42 @@
+{
+  "createdAt": "2026-09-27T12:36:10.246758+00:00",
+  "baselines": [
+    "../selected-before-pauses-recognition.txt",
+    "../calibration-v2-recognition.txt"
+  ],
+  "actualAacRecognition": "precheck-full-asr.txt",
+  "normalization": "Unicode word tokens, lowercase, punctuation/hyphens ignored. No lexical substitutions.",
+  "wordCounts": {
+    "beforePauses": 235,
+    "previousPcmAsr": 237,
+    "aacAsr": 237
+  },
+  "beforePausesToAac": [
+    {
+      "operation": "insert",
+      "before": [],
+      "after": [
+        "zum",
+        "beispiel"
+      ]
+    },
+    {
+      "operation": "replace",
+      "before": [
+        "die"
+      ],
+      "after": [
+        "hier"
+      ]
+    }
+  ],
+  "previousPcmToAac": [],
+  "previousPcmAndAacLexicallyIdentical": true,
+  "assessment": "All selected statements represented. No new model-detected missing words compared with previous PCM ASR. Differences from before-pauses ASR are the already documented added zum Beispiel and Die/Hier recognition variants.",
+  "limitations": [
+    "All compared texts are automatic transcriptions, not ground truth.",
+    "Stable Cloud/Claude and voll/Folgen recognition errors are not evidence that these are the spoken words.",
+    "No listening performed. Comparison alone cannot prove every syllable survives cuts.",
+    "Applicability to actual MP4 requires verified identical AAC payload and decoded ASR PCM."
+  ]
+}

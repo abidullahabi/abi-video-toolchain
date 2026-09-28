@@ -1,0 +1,100 @@
+{
+  "export": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/exports/KI-Einstieg-Schnitt-v2.mp4",
+  "sha256": "3469ada63f5a6111898ed980d90f16cd8bf2e02081f715035cfa135c1e874bc2",
+  "version": "KI-V2",
+  "status": "raw_cut_for_user_review",
+  "scope": "Only approved cut corrections. No graphics, music, captions, speed change or publishing.",
+  "auditoryReviewPerformed": false,
+  "qualitativeFinalApproval": false,
+  "approvalBasis": "User ok following staged KI-V2 correction plan. Quality and fluent speech have priority over duration. Whole Google name may be omitted if no clean complete take established.",
+  "evidence": {
+    "selection": "keep-v2.json",
+    "pcm": "pcm-checks.json",
+    "actualExportTechnical": "independent-qa/technical-report.json",
+    "actualExportAutomaticTranscript": "actual-export-asr.txt",
+    "visual": "visual-qa/bildpruefung-v2.md"
+  },
+  "selfCheckAgainstPriorFailures": [
+    {
+      "priorFailure": "Bad takes were frozen and later counted as preserved words.",
+      "correction": "Selection re-evaluated before new plan. Removed Andrew attribution/aside and all selected Google name attempts. No word-count quality claim."
+    },
+    {
+      "priorFailure": "Whole ASR collapsed repeated starts into a clean-looking transcript.",
+      "correction": "Existing short local recognition and unmapped Google speech block reviewed. Whole Google name omitted rather than stitched from uncertain fragments."
+    },
+    {
+      "priorFailure": "VAD-only cuts reached quiet speech or uncertain quiet sound.",
+      "correction": "Added onset frames at167.3667 and211.3667, restored100ms source308.9667–309.0667, retained more lead into schreib by starting313.8."
+    },
+    {
+      "priorFailure": "Metric optimization displaced quality and final gesture.",
+      "correction": "No fixed-duration or hard pause-median gate. Two measured192ms gaps retained. Final31frames are natural movement and held smile/thumb pose."
+    },
+    {
+      "priorFailure": "Frame uniqueness was treated as proof of a finished gesture.",
+      "correction": "Direct V1/V2 ending image sequences reviewed. V2 holds visible smile/thumb at57.5–57.9667. No continuous-motion or listening review claimed."
+    }
+  ],
+  "textReview": {
+    "intendedRemovalsAbsent": true,
+    "titleRecognizedComplete": true,
+    "unexpectedTextLossFound": false,
+    "remainingAsrVariation": "Dir versus Hier wird gezeigt at44.92 occurs in unchanged source250.5–254.4667. Recognition variation is not a demonstrated edit error. Voll versus user-confirmed Folgen also existed in V1."
+  },
+  "rootVisualReview": {
+    "viewed": [
+      "visual-qa/v1-last2s-overview.jpg",
+      "visual-qa/v2-last2s-overview.jpg",
+      "visual-qa/changed-seams-01.jpg",
+      "visual-qa/changed-seams-02.jpg",
+      "visual-qa/changed-seams-03.jpg",
+      "visual-qa/changed-seams-04.jpg",
+      "visual-qa/v2-last2s-full-05.jpg"
+    ],
+    "findings": [
+      "Held smile and thumb visible at end.",
+      "Take, gaze and hand changes remain at32.3,33.7,38.7333,44.8667,53.0667. No black or unrelated frames seen in these samples.",
+      "First32.3s source/frame selection retained, prepared PCM byte-identical."
+    ],
+    "independentReview": "visual-qa/bildpruefung-v2.md",
+    "independentScope": "104 V2 and60 V1 still frames including all12 changed joins and every final60frame from each export.",
+    "continuousPlaybackReviewed": false
+  },
+  "openListeningChecks": [
+    {
+      "timeSeconds": 33.7,
+      "issue": "Everyone/von phonetic separation. Isolated and whole-export ASR recognize Everyone, but adjacent low-level phonetics cannot be certified without listening."
+    },
+    {
+      "timeSeconds": 54.5,
+      "issue": "schreib onset and CTA joins after restored lead-in."
+    },
+    {
+      "timeSeconds": 56.2333333333,
+      "issue": "Folgen nicht vergessen. ASR spelling voll is inconsistent with user-confirmed intended speech. No synthetic replacement."
+    }
+  ],
+  "originalIntegrity": {
+    "unchanged": true,
+    "sha256": "4c12f33d2057cb179548b08de45a05569a7d831cc4139b64cf59c7e69a33c9ce",
+    "bytes": 912434378,
+    "independentWorkingCopy": true,
+    "originalUsedForMediaProcessing": false,
+    "checkedAt": "2026-09-27T14:27:32.519843+00:00"
+  },
+  "technicalProfile": "1080x1920 CFR30 H264 CRF18, native48k mono AAC192k review file. Not a posting-profile delivery.",
+  "designChecklistStatus": "Not applicable at current raw-cut stage. Design not started.",
+  "nextStep": "User reviews this concrete raw cut before any design stage.",
+  "createdAt": "2026-09-27T14:27:32.519843+00:00",
+  "reviewCopy": {
+    "path": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - KI-Einstieg - Schnitt v2.mp4",
+    "sha256": "3469ada63f5a6111898ed980d90f16cd8bf2e02081f715035cfa135c1e874bc2",
+    "copyVerified": true
+  },
+  "previousReviewVersion": {
+    "path": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Archiv/Vorversionen/Datum offen - KI-Einstieg - Schnitt v1.mp4",
+    "sha256": "a3cf7037d4c2a38eb4e1783f96c02fe646bab46c97a21eea2fb7781782784322",
+    "preserved": true
+  }
+}

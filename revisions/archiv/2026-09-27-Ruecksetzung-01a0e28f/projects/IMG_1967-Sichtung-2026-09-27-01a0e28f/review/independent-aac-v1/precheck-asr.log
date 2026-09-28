@@ -1,0 +1,113 @@
+whisper_init_from_file_with_params_no_state: loading model from '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/models/ggml-large-v3-turbo-q5_0.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 1
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
+ggml_metal_library_init: using embedded metal library
+ggml_metal_library_compile_all: compiled 'fa' library in 0.011 sec
+ggml_metal_library_compile_all: compiled 'mul_mv' library in 0.012 sec
+ggml_metal_library_compile_all: compiled 'mul_mm' library in 0.004 sec
+ggml_metal_library_compile_all: compiled 'quantize' library in 0.012 sec
+ggml_metal_library_compile_all: compiled 'softmax' library in 0.002 sec
+ggml_metal_library_compile_all: compiled 'norm' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'unary' library in 0.002 sec
+ggml_metal_library_compile_all: compiled 'binbcast' library in 0.002 sec
+ggml_metal_library_compile_all: compiled 'reduce' library in 0.002 sec
+ggml_metal_library_compile_all: compiled 'tri' library in 0.012 sec
+ggml_metal_library_compile_all: compiled 'ssm' library in 0.002 sec
+ggml_metal_library_compile_all: compiled 'wkv' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'gated_delta_net' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'solve_tri' library in 0.011 sec
+ggml_metal_library_compile_all: compiled 'rope' library in 0.002 sec
+ggml_metal_library_compile_all: compiled 'conv' library in 0.002 sec
+ggml_metal_library_compile_all: compiled 'upscale' library in 0.012 sec
+ggml_metal_library_compile_all: compiled 'argsort' library in 0.012 sec
+ggml_metal_library_compile_all: compiled 'pool' library in 0.002 sec
+ggml_metal_library_compile_all: compiled 'misc' library in 0.002 sec
+ggml_metal_library_compile_all: loaded 20 libraries from embedded data in 0.012 sec (max single = 0.012 sec)
+ggml_metal_rsets_init: creating a residency set collection (keep_alive = 180 s)
+ggml_metal_device_init: GPU name:   MTL0 (Apple M4)
+ggml_metal_device_init: GPU family: MTLGPUFamilyApple9  (1009)
+ggml_metal_device_init: GPU family: MTLGPUFamilyCommon3 (3003)
+ggml_metal_device_init: GPU family: MTLGPUFamilyMetal4  (5002)
+ggml_metal_device_init: simdgroup reduction   = true
+ggml_metal_device_init: simdgroup matrix mul. = true
+ggml_metal_device_init: has unified memory    = true
+ggml_metal_device_init: has bfloat            = true
+ggml_metal_device_init: has tensor            = false
+ggml_metal_device_init: use residency sets    = true
+ggml_metal_device_init: use shared buffers    = true
+ggml_metal_device_init: recommendedMaxWorkingSetSize  = 12713.12 MB
+whisper_init_with_params_no_state: devices    = 3
+whisper_init_with_params_no_state: backends   = 3
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51866
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 1280
+whisper_model_load: n_audio_head  = 20
+whisper_model_load: n_audio_layer = 32
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 1280
+whisper_model_load: n_text_head   = 20
+whisper_model_load: n_text_layer  = 4
+whisper_model_load: n_mels        = 128
+whisper_model_load: ftype         = 8
+whisper_model_load: qntvr         = 2
+whisper_model_load: type          = 5 (large v3)
+whisper_model_load: adding 1609 extra tokens
+whisper_model_load: n_langs       = 100
+whisper_model_load:         MTL0 total size =   573.40 MB
+whisper_model_load: model size    =  573.40 MB
+whisper_backend_init_gpu: device 0: MTL0 (type: 1)
+whisper_backend_init_gpu: found GPU device 0: MTL0 (type: 1, cnt: 0)
+whisper_backend_init_gpu: using MTL0 backend
+ggml_metal_init: allocating
+ggml_metal_init: found device: Apple M4
+ggml_metal_init: picking default device: Apple M4
+ggml_metal_init: use fusion         = true
+ggml_metal_init: use concurrency    = true
+ggml_metal_init: use graph optimize = true
+whisper_backend_init: using BLAS backend
+whisper_init_state: kv self size  =   10.49 MB
+whisper_init_state: kv cross size =   31.46 MB
+whisper_init_state: kv pad  size  =    7.86 MB
+whisper_init_state: compute buffer (conv)   =   37.69 MB
+whisper_init_state: compute buffer (encode) =   67.49 MB
+whisper_init_state: compute buffer (cross)  =   63.03 MB
+whisper_init_state: compute buffer (decode) =  100.04 MB
+read_audio_data: reading audio data from '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/review/independent-aac-v1/precheck-asr16.wav' ...
+read_audio_data: trying to decode with miniaudio
+
+system_info: n_threads = 2 / 10 | WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | 
+
+main: processing '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/review/independent-aac-v1/precheck-asr16.wav' (1028437 samples, 64.3 sec), 2 threads, 1 processors, 5 beams + best of 5, lang = de, task = transcribe, timestamps = 1 ...
+
+
+[00:00:00.000 --> 00:00:08.940]   Wenn du Student bist oder das Gefühl hast, ey, ich verpasse den Anschluss zu AI, keine Sorge, hier sind AI Zertifikate für Anfänger, die du machen kannst, um den Anschluss noch zu gewinnen.
+[00:00:09.180 --> 00:00:13.440]   Das erste Zertifikat, was ich aktuell auch mache, ist das Zertifikat oder komplette Schulung von Anthropic.
+[00:00:13.620 --> 00:00:18.400]   Ist natürlich auch stark auf Cloud ausgerichtet, also wenn du es nutzt, super, wenn du es nutzen willst, sehr guter Einstieg.
+[00:00:18.620 --> 00:00:21.300]   AI Fluency Frameworks and Foundations, war ziemlich geil.
+[00:00:21.520 --> 00:00:26.440]   Du lernst da auch wirklich was, die wird gezeigt, welche Aufgaben du an AI weitergeben solltest und welche du selber machen solltest zum Beispiel.
+[00:00:26.440 --> 00:00:32.080]   Das zweite Zertifikat ist ein bisschen mehr technischer, also wenn du ein bisschen mehr die technischen Grenzen von AI wissen willst, ist das für dich gedacht.
+[00:00:32.320 --> 00:00:37.760]   Das Zertifikat heißt Gen AI for Everyone von Andrew NG oder so heißt der.
+[00:00:38.020 --> 00:00:42.880]   Da siehst du ein bisschen mehr die technische Seite, zum Beispiel, wie Sprachmodelle trainiert werden, was sie können und was sie auch nicht können.
+[00:00:43.040 --> 00:00:48.860]   Wenn du AI vor allem im Berufsalltag nutzen willst, ist der Kurs von Google sehr dafür geeignet.
+[00:00:49.160 --> 00:00:52.160]   Google AI Professional Certificate.
+[00:00:52.160 --> 00:00:56.160]   Hier wird gezeigt, wie du Daten auswertest, Texte schreibst, also einfach voll das Basic.
+[00:00:56.300 --> 00:01:01.600]   Es ist noch nicht zu spät, du kannst in den AI-Train einsteigen und wenn du noch Fragen hast oder irgendwelche Themen zur AI wissen willst,
+[00:01:01.880 --> 00:01:04.040]   schreib mir einen Kommentar oder DM, ansonsten voll nicht vergessen.
+output_txt: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/review/independent-aac-v1/precheck-full-asr.txt'
+output_srt: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/review/independent-aac-v1/precheck-full-asr.srt'
+output_json: saving output to '/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/review/independent-aac-v1/precheck-full-asr.json'
+
+whisper_print_timings:     load time =   382.91 ms
+whisper_print_timings:     fallbacks =  15 p /  90 h
+whisper_print_timings:      mel time =    37.15 ms
+whisper_print_timings:   sample time =  3170.75 ms / 11586 runs (     0.27 ms per run)
+whisper_print_timings:   encode time =  3984.68 ms /     3 runs (  1328.23 ms per run)
+whisper_print_timings:   decode time =    25.80 ms /     6 runs (     4.30 ms per run)
+whisper_print_timings:   batchd time = 22622.70 ms / 11544 runs (     1.96 ms per run)
+whisper_print_timings:   prompt time =     0.00 ms /     1 runs (     0.00 ms per run)
+whisper_print_timings:    total time = 30336.59 ms
+ggml_metal_free: deallocating

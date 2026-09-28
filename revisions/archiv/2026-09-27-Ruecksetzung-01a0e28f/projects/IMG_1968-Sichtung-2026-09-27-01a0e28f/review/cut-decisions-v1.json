@@ -1,0 +1,51 @@
+{
+  "selectionSha256": "37a6ffc788421a6253b3a44fe965992e4597c982d536c8f50ad37085a019c59f",
+  "revision": "v1",
+  "lengthDecision": "53.903s PCM, complete approved topics and CTA. No artificial extension to60s.",
+  "intentionalBeats": [
+    {
+      "outputRange": [
+        8.896,
+        9.12
+      ],
+      "sourceContext": "End of Wo lebe ich to Es macht einen Riesenunterschied",
+      "durationMs": 224,
+      "reason": "Bewusster Frage-Antwort-Absatz und Schutz von ich-Auslauf sowie leiser Es-Einleitung. Keine Restluecke aus starrer Kalibrierung."
+    },
+    {
+      "outputRange": [
+        34.208,
+        34.72
+      ],
+      "sourceContext": "Und to drittens",
+      "durationMs": 512,
+      "reason": "Kurzer Absatz vor dem dritten Thema bewusst konservativ erhalten. DTW ordnet Und inkonsistent zu, PCM/VAD zeigen frueheren Sprachblock. Kein riskanter Wortinnenschnitt ohne Hoermoeglichkeit."
+    }
+  ],
+  "recognitionOnActualCut": "review/cut-recognition-v1.txt",
+  "automaticCoverage": "All11selected semantic blocks present, no omitted complete idea observed by transcript comparison. This is not exact word completeness validation.",
+  "asrDisagreements": [
+    "Es/Was at woonort start",
+    "wie/in Muehlheim",
+    "was du Menschen triffst/betriffst",
+    "Schreib mir/Schreib es mir",
+    "Gestaltungsmoeglichkeiten/Gestaltungsmoeglichkeit",
+    "das/unser Leben"
+  ],
+  "noSubtitleOrSpeechChangesFromAsr": true,
+  "auditoryReviewPerformed": false,
+  "renderRetry": {
+    "firstAttempt": "Filter parse error and FFmpeg SIGSEGV before any MP4 created",
+    "fix": "Quoted setpts expression containing gte comma arguments",
+    "scope": "Helper syntax only, same selection and audio"
+  },
+  "frameMappingCheck": {
+    "sourceFrameCount": 7021,
+    "selectedFrames": 1617,
+    "strictlyIncreasing": true,
+    "minFrameDeltaSeconds": 0.031666,
+    "maxFrameDeltaSeconds": 0.035,
+    "medianFrameDeltaSeconds": 0.033333
+  },
+  "createdAt": "2026-09-27T11:51:16.655152+00:00"
+}

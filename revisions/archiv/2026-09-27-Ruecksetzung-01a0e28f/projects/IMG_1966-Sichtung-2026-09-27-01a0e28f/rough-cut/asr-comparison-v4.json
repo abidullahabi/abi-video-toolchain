@@ -1,0 +1,22 @@
+{
+  "createdAt": "2026-09-27T12:09:25.662104+00:00",
+  "input": "candidate-v4-aac-silero.wav",
+  "fullOutput": "recognition/candidate-v4-full.txt",
+  "result": "All six selected meaning blocks represented including complete Scrum alternative, Ich glaube, Nagel mich nicht drauf fest, Anthropic partner context, and CTA.",
+  "uncertainties": [
+    {
+      "variant": "Full ASR omits jetzt in das ist jetzt genau das Besondere",
+      "evidence": "Source short DTW has jetzt at59.82, inside unchanged interval58.6667–63.8333. PCM preservation independently passed."
+    },
+    {
+      "variant": "Full ASR omits second das before ist im Bereich Finance",
+      "evidence": "Source DTW das134.26 lies within unchanged132.1–135.3 kept interval. PCM preservation independently passed."
+    },
+    {
+      "variant": "CTA DM and Folgen wording varies between recognizers",
+      "evidence": "Full source utterance kept239.5–243.6 and244.6667–245.5. Only the silent gap after Ansonsten was shortened; anchors and PCM were checked."
+    }
+  ],
+  "hearingPerformed": false,
+  "conclusion": "No technical evidence of a missing selected statement. This is not a listening approval or proof of complete phonetic preservation."
+}

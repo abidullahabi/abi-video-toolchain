@@ -1,0 +1,39 @@
+{
+  "status": "automatic_comparison_completed_not_auditory_approval",
+  "selectedBeforePauseWordCount": 235,
+  "afterPauseWordCount": 237,
+  "differences": [
+    {
+      "operation": "insert",
+      "before": [],
+      "after": [
+        "zum",
+        "beispiel"
+      ]
+    },
+    {
+      "operation": "replace",
+      "before": [
+        "die"
+      ],
+      "after": [
+        "hier"
+      ]
+    }
+  ],
+  "interpretation": [
+    "No words are missing from after-pause ASR compared with before-pause ASR.",
+    "zum Beispiel recovered after cutting; also present in original targeted83-89s recognition.",
+    "Die/Hier is recognizer variation already seen in original targeted248-256s; original audio word unchanged.",
+    "Final change v2-to-v3 only removes315.5333-315.8333s from a targeted verified non-speech interval, preserving otherwise identical audio."
+  ],
+  "excludedClaimsPreservedAsExclusions": [
+    "Paid AIFluency completion certificate",
+    "30EUR exact price",
+    "Google model training"
+  ],
+  "auditoryReviewPerformed": false,
+  "remaining": "Actual AAC technical and automatic word checks completed. Human auditory review and user cut approval remain open.",
+  "finalAacComparison": "independent-aac-v1/word-comparison-independent.json",
+  "finalExportQA": "independent-aac-v1/actual-export-checks.json"
+}

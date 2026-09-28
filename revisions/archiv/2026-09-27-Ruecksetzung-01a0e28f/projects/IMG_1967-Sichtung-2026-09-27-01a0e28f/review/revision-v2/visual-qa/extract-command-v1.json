@@ -1,0 +1,18 @@
+[
+  "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/tools/bin/ffmpeg",
+  "-v",
+  "warning",
+  "-threads",
+  "2",
+  "-i",
+  "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/exports/KI-Einstieg-Schnitt-v1.mp4",
+  "-vf",
+  "select='eq(n,1868)+eq(n,1869)+eq(n,1870)+eq(n,1871)+eq(n,1872)+eq(n,1873)+eq(n,1874)+eq(n,1875)+eq(n,1876)+eq(n,1877)+eq(n,1878)+eq(n,1879)+eq(n,1880)+eq(n,1881)+eq(n,1882)+eq(n,1883)+eq(n,1884)+eq(n,1885)+eq(n,1886)+eq(n,1887)+eq(n,1888)+eq(n,1889)+eq(n,1890)+eq(n,1891)+eq(n,1892)+eq(n,1893)+eq(n,1894)+eq(n,1895)+eq(n,1896)+eq(n,1897)+eq(n,1898)+eq(n,1899)+eq(n,1900)+eq(n,1901)+eq(n,1902)+eq(n,1903)+eq(n,1904)+eq(n,1905)+eq(n,1906)+eq(n,1907)+eq(n,1908)+eq(n,1909)+eq(n,1910)+eq(n,1911)+eq(n,1912)+eq(n,1913)+eq(n,1914)+eq(n,1915)+eq(n,1916)+eq(n,1917)+eq(n,1918)+eq(n,1919)+eq(n,1920)+eq(n,1921)+eq(n,1922)+eq(n,1923)+eq(n,1924)+eq(n,1925)+eq(n,1926)+eq(n,1927)',scale=324:576",
+  "-fps_mode",
+  "vfr",
+  "-threads",
+  "1",
+  "-q:v",
+  "2",
+  "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/review/revision-v2/visual-qa/v1/frame_%03d.jpg"
+]

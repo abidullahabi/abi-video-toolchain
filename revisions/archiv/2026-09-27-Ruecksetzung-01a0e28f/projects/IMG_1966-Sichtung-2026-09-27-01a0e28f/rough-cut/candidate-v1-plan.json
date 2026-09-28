@@ -1,0 +1,552 @@
+{
+  "version": 1,
+  "createdAt": "2026-09-27T11:42:47.223380+00:00",
+  "fps": 30,
+  "speed": 1,
+  "blocks": [
+    {
+      "id": "einordnung",
+      "start": 43.2,
+      "end": 65.9666666667
+    },
+    {
+      "id": "persoenliche_beobachtung",
+      "start": 73.4333333333,
+      "end": 87.5333333333
+    },
+    {
+      "id": "scrum_name",
+      "start": 91.1333333333,
+      "end": 95.0666666667
+    },
+    {
+      "id": "scrum_einsatz",
+      "start": 98.9666666667,
+      "end": 103.9
+    },
+    {
+      "id": "sap",
+      "start": 122.0333333333,
+      "end": 136.8333333333
+    },
+    {
+      "id": "ki_anthropic",
+      "start": 156.8666666667,
+      "end": 179.3333333333
+    },
+    {
+      "id": "abschluss",
+      "start": 239.5,
+      "end": 245.5
+    }
+  ],
+  "keepIntervals": [
+    [
+      43.2,
+      44.1
+    ],
+    [
+      44.2,
+      45.6
+    ],
+    [
+      45.7,
+      47.266666666666666
+    ],
+    [
+      47.9,
+      48.833333333333336
+    ],
+    [
+      48.9,
+      51.333333333333336
+    ],
+    [
+      51.56666666666667,
+      53.266666666666666
+    ],
+    [
+      56.93333333333333,
+      58.06666666666667
+    ],
+    [
+      58.666666666666664,
+      63.833333333333336
+    ],
+    [
+      63.93333333333333,
+      64.93333333333334
+    ],
+    [
+      65.0,
+      65.9666666667
+    ],
+    [
+      73.4333333333,
+      73.9
+    ],
+    [
+      75.53333333333333,
+      76.56666666666666
+    ],
+    [
+      76.96666666666667,
+      78.43333333333334
+    ],
+    [
+      79.4,
+      82.23333333333333
+    ],
+    [
+      82.46666666666667,
+      84.5
+    ],
+    [
+      84.8,
+      87.5333333333
+    ],
+    [
+      91.1333333333,
+      92.46666666666667
+    ],
+    [
+      92.73333333333333,
+      95.0666666667
+    ],
+    [
+      98.9666666667,
+      103.9
+    ],
+    [
+      122.0333333333,
+      127.66666666666667
+    ],
+    [
+      128.1,
+      131.96666666666667
+    ],
+    [
+      132.1,
+      135.3
+    ],
+    [
+      135.7,
+      136.8333333333
+    ],
+    [
+      156.8666666667,
+      158.33333333333334
+    ],
+    [
+      158.56666666666666,
+      159.13333333333333
+    ],
+    [
+      159.56666666666666,
+      161.0
+    ],
+    [
+      161.3,
+      161.76666666666668
+    ],
+    [
+      161.86666666666667,
+      162.4
+    ],
+    [
+      162.5,
+      164.2
+    ],
+    [
+      164.46666666666667,
+      165.83333333333334
+    ],
+    [
+      166.06666666666666,
+      167.93333333333334
+    ],
+    [
+      169.2,
+      172.3
+    ],
+    [
+      172.66666666666666,
+      176.8
+    ],
+    [
+      177.66666666666666,
+      179.3333333333
+    ],
+    [
+      239.5,
+      244.56666666666666
+    ],
+    [
+      244.66666666666666,
+      245.5
+    ]
+  ],
+  "removalsWithinBlocks": [
+    {
+      "start": 44.1,
+      "end": 44.2,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 44.064,
+        "end": 44.256
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.09199999999999875
+    },
+    {
+      "start": 45.6,
+      "end": 45.7,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 45.568,
+        "end": 45.728
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.060000000000002274
+    },
+    {
+      "start": 47.266666666666666,
+      "end": 47.9,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 47.232,
+        "end": 47.936
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.07066666666666777
+    },
+    {
+      "start": 48.833333333333336,
+      "end": 48.9,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 48.800000000000004,
+        "end": 48.96
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.09333333333333371
+    },
+    {
+      "start": 51.333333333333336,
+      "end": 51.56666666666667,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 51.296,
+        "end": 51.616
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.086666666666666
+    },
+    {
+      "start": 53.266666666666666,
+      "end": 56.93333333333333,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 53.216,
+        "end": 56.992000000000004
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.10933333333333906
+    },
+    {
+      "start": 58.06666666666667,
+      "end": 58.666666666666664,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 58.016,
+        "end": 58.72
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.10400000000000631
+    },
+    {
+      "start": 63.833333333333336,
+      "end": 63.93333333333333,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 63.808,
+        "end": 63.968
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.06000000000000938
+    },
+    {
+      "start": 64.93333333333334,
+      "end": 65.0,
+      "type": "silence",
+      "reason": "einordnung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 64.896,
+        "end": 65.056
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.09333333333333371
+    },
+    {
+      "start": 73.9,
+      "end": 75.53333333333333,
+      "type": "silence",
+      "reason": "persoenliche_beobachtung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 73.856,
+        "end": 75.584
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.09466666666668289
+    },
+    {
+      "start": 76.56666666666666,
+      "end": 76.96666666666667,
+      "type": "silence",
+      "reason": "persoenliche_beobachtung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 76.544,
+        "end": 77.024
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.0799999999999983
+    },
+    {
+      "start": 78.43333333333334,
+      "end": 79.4,
+      "type": "silence",
+      "reason": "persoenliche_beobachtung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 78.4,
+        "end": 79.456
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08933333333332882
+    },
+    {
+      "start": 82.23333333333333,
+      "end": 82.46666666666667,
+      "type": "silence",
+      "reason": "persoenliche_beobachtung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 82.208,
+        "end": 82.496
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.05466666666666242
+    },
+    {
+      "start": 84.5,
+      "end": 84.8,
+      "type": "silence",
+      "reason": "persoenliche_beobachtung: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 84.44800000000001,
+        "end": 84.83200000000001
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08400000000000318
+    },
+    {
+      "start": 92.46666666666667,
+      "end": 92.73333333333333,
+      "type": "silence",
+      "reason": "scrum_name: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 92.416,
+        "end": 92.768
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08533333333333815
+    },
+    {
+      "start": 127.66666666666667,
+      "end": 128.1,
+      "type": "silence",
+      "reason": "sap: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 127.616,
+        "end": 128.12800000000001
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.07866666666669175
+    },
+    {
+      "start": 131.96666666666667,
+      "end": 132.1,
+      "type": "silence",
+      "reason": "sap: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 131.936,
+        "end": 132.16
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.09066666666666379
+    },
+    {
+      "start": 135.3,
+      "end": 135.7,
+      "type": "silence",
+      "reason": "sap: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 135.264,
+        "end": 135.744
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.0800000000000125
+    },
+    {
+      "start": 158.33333333333334,
+      "end": 158.56666666666666,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 158.304,
+        "end": 158.624
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08666666666667311
+    },
+    {
+      "start": 159.13333333333333,
+      "end": 159.56666666666666,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 159.104,
+        "end": 159.616
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.07866666666666333
+    },
+    {
+      "start": 161.0,
+      "end": 161.3,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 160.96,
+        "end": 161.344
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08399999999997476
+    },
+    {
+      "start": 161.76666666666668,
+      "end": 161.86666666666667,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 161.728,
+        "end": 161.92000000000002
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.09200000000001296
+    },
+    {
+      "start": 162.4,
+      "end": 162.5,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 162.368,
+        "end": 162.56
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.09200000000001296
+    },
+    {
+      "start": 164.2,
+      "end": 164.46666666666667,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 164.16,
+        "end": 164.512
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08533333333332394
+    },
+    {
+      "start": 165.83333333333334,
+      "end": 166.06666666666666,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 165.792,
+        "end": 166.112
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08666666666667311
+    },
+    {
+      "start": 167.93333333333334,
+      "end": 169.2,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 167.904,
+        "end": 169.248
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.07733333333334258
+    },
+    {
+      "start": 172.3,
+      "end": 172.66666666666666,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 172.256,
+        "end": 172.704
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.08133333333336168
+    },
+    {
+      "start": 176.8,
+      "end": 177.66666666666666,
+      "type": "silence",
+      "reason": "ki_anthropic: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 176.768,
+        "end": 177.696
+      },
+      "protectedWords": [],
+      "sourceRemainingNonSpeech": 0.06133333333335145
+    },
+    {
+      "start": 244.56666666666666,
+      "end": 244.66666666666666,
+      "type": "silence",
+      "reason": "abschluss: Silero non-speech core, DTW anchors protected, aligned to 30fps.",
+      "sourceGap": {
+        "start": 243.52,
+        "end": 244.704
+      },
+      "protectedWords": [
+        {
+          "text": "ansonsten",
+          "start": 243.07999999999998,
+          "end": 244.5,
+          "source": "check-218-247-turbo.json"
+        }
+      ],
+      "sourceRemainingNonSpeech": 1.0840000000000032
+    }
+  ],
+  "retainedCandidates": [],
+  "duration": 74.40000000000013,
+  "limitations": [
+    "DTW anchors and VAD boundaries are estimates, not listening or phonetic ground truth.",
+    "No qualitative auditory review possible in this session."
+  ]
+}

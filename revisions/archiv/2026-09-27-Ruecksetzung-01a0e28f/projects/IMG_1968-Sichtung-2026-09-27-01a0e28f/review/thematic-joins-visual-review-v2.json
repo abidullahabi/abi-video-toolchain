@@ -1,0 +1,144 @@
+{
+  "file": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/exports/DreiFragen-Schnitt-v2.mp4",
+  "sha256": "eaa40ed77136863f0a21c8cb756b80f62246c4de59b531d65839505da58649f5",
+  "exportUnchanged": true,
+  "scope": "Independent visual inspection of all10semantic joins, 40coded frames total, n-2/n-1/n/n+1. Not a continuous-motion or listening review.",
+  "sheets": [
+    "review/thematic-joins-v2-1.png",
+    "review/thematic-joins-v2-2.png"
+  ],
+  "joins": [
+    {
+      "from": "hook",
+      "to": "haltung",
+      "time": 3.8333330000000005,
+      "frameAfter": 115,
+      "visualChange": "deutlich",
+      "observation": "Hand am Mund verschwindet und Abi steht nach dem Schnitt naeher. Sichtbarer Gestik- und Groessenwechsel.",
+      "emptyFrame": false,
+      "blackFrame": false,
+      "extremeFaceCrop": false
+    },
+    {
+      "from": "haltung",
+      "to": "frage1",
+      "time": 7.300000999999999,
+      "frameAfter": 219,
+      "visualChange": "sichtbar",
+      "observation": "Blick und Kopf drehen von frontal zu seitlich. Bildgroesse und Position bleiben aehnlich.",
+      "emptyFrame": false,
+      "blackFrame": false,
+      "extremeFaceCrop": false
+    },
+    {
+      "from": "frage1",
+      "to": "wohnort",
+      "time": 9.000000999999994,
+      "frameAfter": 270,
+      "visualChange": "stark",
+      "observation": "Sprung von naeherer zu deutlich weiter entfernter Koerperposition. Oberkoerper wird sichtbar kleiner, Hintergrund bleibt fest.",
+      "emptyFrame": false,
+      "blackFrame": false,
+      "extremeFaceCrop": false
+    },
+    {
+      "from": "wohnort",
+      "to": "frage2",
+      "time": 18.835000999999988,
+      "frameAfter": 565,
+      "visualChange": "sichtbar",
+      "observation": "Abi steht etwas weiter hinten und hebt zwei Finger. Haltung und Handposition wechseln deutlich.",
+      "emptyFrame": false,
+      "blackFrame": false,
+      "extremeFaceCrop": false
+    },
+    {
+      "from": "frage2",
+      "to": "beruf",
+      "time": 23.601667999999986,
+      "frameAfter": 708,
+      "visualChange": "stark",
+      "observation": "Sprung vom linken Bildrand zur Bildmitte. Vor dem Schnitt beruehrt die Kappenkrempe links den Bildrand, Gesicht bleibt sichtbar.",
+      "emptyFrame": false,
+      "blackFrame": false,
+      "extremeFaceCrop": false
+    },
+    {
+      "from": "beruf",
+      "to": "frage3",
+      "time": 33.60166800000002,
+      "frameAfter": 1008,
+      "visualChange": "deutlich",
+      "observation": "Frontaler Blick wechselt abrupt zu Blick nach unten und geaenderter Armhaltung. Kein leerer Bildbereich anstelle der Person.",
+      "emptyFrame": false,
+      "blackFrame": false,
+      "extremeFaceCrop": false
+    },
+    {
+      "from": "frage3",
+      "to": "freundschaft",
+      "time": 36.30166800000001,
+      "frameAfter": 1089,
+      "visualChange": "sichtbar",
+      "observation": "Finger-/Handgeste wechselt, bei aehnlicher Koerpergroesse und Bildposition.",
+      "emptyFrame": false,
+      "blackFrame": false,
+      "extremeFaceCrop": false
+    },
+    {
+      "from": "freundschaft",
+      "to": "freundschaft_ende",
+      "time": 40.868335,
+      "frameAfter": 1226,
+      "visualChange": "gering",
+      "observation": "Leichter Wechsel von Blick und Handposition. Bildausschnitt bleibt weitgehend gleich.",
+      "emptyFrame": false,
+      "blackFrame": false,
+      "extremeFaceCrop": false
+    },
+    {
+      "from": "freundschaft_ende",
+      "to": "cta",
+      "time": 43.435001,
+      "frameAfter": 1303,
+      "visualChange": "deutlich",
+      "observation": "Frontaler Blick wechselt zu Blick nach unten mit leichter Vorwaertsneigung. Kein extremer Anschnitt.",
+      "emptyFrame": false,
+      "blackFrame": false,
+      "extremeFaceCrop": false
+    },
+    {
+      "from": "cta",
+      "to": "schluss",
+      "time": 47.56833499999999,
+      "frameAfter": 1427,
+      "visualChange": "gering",
+      "observation": "Kopfneigung und Mundstellung wechseln. Koerperposition, Mikrofonausrichtung und Bildgroesse bleiben aehnlich.",
+      "emptyFrame": false,
+      "blackFrame": false,
+      "extremeFaceCrop": false
+    }
+  ],
+  "findings": {
+    "all10Reviewed": true,
+    "strongVisualDiscontinuitiesAtSeconds": [
+      9.0,
+      23.601668
+    ],
+    "additionalNoticeableChangesAtSeconds": [
+      3.833333,
+      33.601668,
+      43.435001
+    ],
+    "extremeFaceCrop": false,
+    "emptyFrames": false,
+    "blackFrames": false,
+    "unplannedDigitalZoom": false,
+    "sourcePositionAndGestureJumps": true,
+    "edgeTouch": "Kappenkrempe am linken Rand direkt vor23.60s."
+  },
+  "decision": "Root informed. Cut remains provisional for user approval. No silent edit or replacement. Strong source-position jumps need explicit qualitative consideration.",
+  "videoModified": false,
+  "auditoryReviewPerformed": false,
+  "createdAt": "2026-09-27T12:06:06.886389+00:00"
+}

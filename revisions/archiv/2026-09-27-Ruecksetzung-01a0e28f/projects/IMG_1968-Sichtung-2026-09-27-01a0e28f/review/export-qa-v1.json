@@ -1,0 +1,89 @@
+{
+  "file": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1968-Sichtung-2026-09-27-01a0e28f/exports/DreiFragen-Schnitt-v1.mp4",
+  "sha256": "dd2e8e2efa7b069771dcba13cbdd65c3f6a7b2c990e27d6628ec5573dc74866d",
+  "bytes": 83240015,
+  "duration": 61.966667,
+  "sourceSha256Unchanged": true,
+  "fullDecodeExitCode": 0,
+  "speed": 1,
+  "width": 1080,
+  "height": 1920,
+  "videoCodec": "h264",
+  "fps": "30/1",
+  "pixelFormat": "yuv420p",
+  "colors": {
+    "color_range": "tv",
+    "color_space": "bt709",
+    "color_transfer": "bt709",
+    "color_primaries": "bt709"
+  },
+  "audio": {
+    "codec_name": "aac",
+    "sample_rate": "48000",
+    "channels": 1,
+    "duration": "53.903000"
+  },
+  "frameTiming": {
+    "packetCount": 1859,
+    "minDelta": 0.03333299999999895,
+    "maxDelta": 0.03333400000000353,
+    "constant30FpsWithin1Microsecond": true
+  },
+  "cutAudioTransferComparison": [
+    {
+      "windowStartSeconds": 1,
+      "windowDurationSeconds": 0.5,
+      "bestLagSamples16k": 0,
+      "bestLagMs": 0.0,
+      "correlation": 0.9999836201135572
+    },
+    {
+      "windowStartSeconds": 26,
+      "windowDurationSeconds": 0.5,
+      "bestLagSamples16k": 0,
+      "bestLagMs": 0.0,
+      "correlation": 0.9999853698298328
+    },
+    {
+      "windowStartSeconds": 51,
+      "windowDurationSeconds": 0.5,
+      "bestLagSamples16k": 0,
+      "bestLagMs": 0.0,
+      "correlation": 0.9999833070616339
+    }
+  ],
+  "transferCheckLimitation": "Correlation and zero added lag compare encoded export with selected PCM. They do not validate source speech, natural edits or human listening quality.",
+  "exportPauseCheck": {
+    "duration": 53.9093125,
+    "count": 28,
+    "medianMs": 96.0,
+    "fraction64to96": 0.6071428571428571,
+    "over160": [
+      {
+        "start": 8.896,
+        "end": 9.120000000000001,
+        "duration": 0.2240000000000002
+      },
+      {
+        "start": 34.208,
+        "end": 34.72,
+        "duration": 0.5120000000000005
+      }
+    ],
+    "auditoryReviewPerformed": false
+  },
+  "visualContactSheet": "review/cut-contact-sheet-v1.png",
+  "visualReviewPerformed": true,
+  "auditoryReviewPerformed": false,
+  "postingReady": false,
+  "userCutApprovalPending": true,
+  "createdAt": "2026-09-27T11:54:31.110163+00:00",
+  "technicalPass": false,
+  "blocking": [
+    "Video 61.966667s, audio53.903s. fps EOF extended last picture after final selected interval. Do not deliver."
+  ],
+  "visualObservations": [
+    "Portrait orientation correct, full image retained, no graphics. Six frames inspected.",
+    "No claim of natural motion continuity."
+  ]
+}

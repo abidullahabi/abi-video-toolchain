@@ -1,0 +1,216 @@
+{
+  "purpose": "Word-boundary protection only. PCM amplitude is not used as speaking-gap metric.",
+  "source": "speech.wav derived mono16k from original, PCM48k cut rendered separately from full originalAAC",
+  "evidence": [
+    {
+      "block": "hook",
+      "sourceStart": 7.8,
+      "sourceEnd": 11.633333,
+      "startEdge10msRmsDbfs": -88.9,
+      "endEdge10msRmsDbfs": -83.9
+    },
+    {
+      "block": "haltung",
+      "sourceStart": 56.468333,
+      "sourceEnd": 57.801667,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -73.7
+    },
+    {
+      "block": "haltung",
+      "sourceStart": 57.868333,
+      "sourceEnd": 60.001667,
+      "startEdge10msRmsDbfs": -72.2,
+      "endEdge10msRmsDbfs": -83.3
+    },
+    {
+      "block": "frage1",
+      "sourceStart": 63.635,
+      "sourceEnd": 65.335,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -80.9
+    },
+    {
+      "block": "wohnort",
+      "sourceStart": 73.201667,
+      "sourceEnd": 76.235,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -87.0
+    },
+    {
+      "block": "wohnort",
+      "sourceStart": 85.868333,
+      "sourceEnd": 86.935,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -83.7
+    },
+    {
+      "block": "wohnort",
+      "sourceStart": 87.668333,
+      "sourceEnd": 89.501667,
+      "startEdge10msRmsDbfs": -85.5,
+      "endEdge10msRmsDbfs": -85.3
+    },
+    {
+      "block": "wohnort",
+      "sourceStart": 90.735,
+      "sourceEnd": 91.768333,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -74.3
+    },
+    {
+      "block": "wohnort",
+      "sourceStart": 92.801667,
+      "sourceEnd": 94.001667,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -79.0
+    },
+    {
+      "block": "wohnort",
+      "sourceStart": 95.001667,
+      "sourceEnd": 96.67,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -85.5
+    },
+    {
+      "block": "frage2",
+      "sourceStart": 118.703333,
+      "sourceEnd": 123.47,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -74.0
+    },
+    {
+      "block": "beruf",
+      "sourceStart": 131.236667,
+      "sourceEnd": 134.503333,
+      "startEdge10msRmsDbfs": -85.4,
+      "endEdge10msRmsDbfs": -80.5
+    },
+    {
+      "block": "beruf",
+      "sourceStart": 134.536667,
+      "sourceEnd": 135.936667,
+      "startEdge10msRmsDbfs": -82.6,
+      "endEdge10msRmsDbfs": -75.1
+    },
+    {
+      "block": "beruf",
+      "sourceStart": 135.97,
+      "sourceEnd": 137.536667,
+      "startEdge10msRmsDbfs": -85.3,
+      "endEdge10msRmsDbfs": -86.1
+    },
+    {
+      "block": "beruf",
+      "sourceStart": 137.703333,
+      "sourceEnd": 139.77,
+      "startEdge10msRmsDbfs": -87.0,
+      "endEdge10msRmsDbfs": -83.7
+    },
+    {
+      "block": "beruf",
+      "sourceStart": 140.203333,
+      "sourceEnd": 141.903333,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -86.0
+    },
+    {
+      "block": "frage3",
+      "sourceStart": 154.436667,
+      "sourceEnd": 157.136667,
+      "startEdge10msRmsDbfs": -87.3,
+      "endEdge10msRmsDbfs": -81.4
+    },
+    {
+      "block": "freundschaft",
+      "sourceStart": 182.605,
+      "sourceEnd": 185.471667,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -71.2
+    },
+    {
+      "block": "freundschaft",
+      "sourceStart": 185.671667,
+      "sourceEnd": 186.705,
+      "startEdge10msRmsDbfs": -83.0,
+      "endEdge10msRmsDbfs": -84.1
+    },
+    {
+      "block": "freundschaft",
+      "sourceStart": 187.205,
+      "sourceEnd": 187.871667,
+      "startEdge10msRmsDbfs": -87.1,
+      "endEdge10msRmsDbfs": -82.1
+    },
+    {
+      "block": "freundschaft_ende",
+      "sourceStart": 195.105,
+      "sourceEnd": 197.038333,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -76.9
+    },
+    {
+      "block": "freundschaft_ende",
+      "sourceStart": 197.705,
+      "sourceEnd": 198.338333,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -66.6
+    },
+    {
+      "block": "cta",
+      "sourceStart": 209.238333,
+      "sourceEnd": 211.505,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -61.2
+    },
+    {
+      "block": "cta",
+      "sourceStart": 212.538333,
+      "sourceEnd": 213.705,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -72.8
+    },
+    {
+      "block": "cta",
+      "sourceStart": 213.938333,
+      "sourceEnd": 214.638333,
+      "startEdge10msRmsDbfs": -87.7,
+      "endEdge10msRmsDbfs": -85.6
+    },
+    {
+      "block": "schluss",
+      "sourceStart": 218.438333,
+      "sourceEnd": 219.771667,
+      "startEdge10msRmsDbfs": -90.3,
+      "endEdge10msRmsDbfs": -64.3
+    },
+    {
+      "block": "schluss",
+      "sourceStart": 219.905,
+      "sourceEnd": 221.371667,
+      "startEdge10msRmsDbfs": -86.5,
+      "endEdge10msRmsDbfs": -79.3
+    },
+    {
+      "block": "schluss",
+      "sourceStart": 221.705,
+      "sourceEnd": 224.306667,
+      "startEdge10msRmsDbfs": -86.9,
+      "endEdge10msRmsDbfs": -84.1
+    },
+    {
+      "block": "schluss",
+      "sourceStart": 225.04,
+      "sourceEnd": 225.973333,
+      "startEdge10msRmsDbfs": -86.1,
+      "endEdge10msRmsDbfs": -86.4
+    }
+  ],
+  "manualFindings": [
+    "Quiet Es onset73.22 occurs before Silero73.312; source start73.201667 preserves it.",
+    "Schreib fricative onset212.59 occurs before Silero212.64; resumed source at212.538333 preserves it.",
+    "Und has audible-energy region154.46-155.06 whereas DTW assigns token center155.20. Whole154.436667-157.136667 preserved pending targeted word check.",
+    "No perceptual audition possible. No global dB pause threshold used."
+  ],
+  "auditoryReviewPerformed": false
+}

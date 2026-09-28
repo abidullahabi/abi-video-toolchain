@@ -1,0 +1,135 @@
+{
+  "createdAt": "2026-09-27T14:17:59.587201+00:00",
+  "inputHashes": {
+    "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/review/revision-v2/keep-v2.json": "921067b81eb24792c4c8b78774050fb93d138c430b48886ab20f4eb4ae2735a7",
+    "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/review/revision-v2/cut-audio.wav": "0d9ddf0a32874ae07860291987ca4cdef05e16cea1cf1f1e9e4d67d8b6dc2a30",
+    "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/exports/KI-Einstieg-Schnitt-v2.mp4": "3469ada63f5a6111898ed980d90f16cd8bf2e02081f715035cfa135c1e874bc2"
+  },
+  "export": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/exports/KI-Einstieg-Schnitt-v2.mp4",
+  "exportBytes": 83757456,
+  "audioCodec": "aac",
+  "audioProfile": "LC",
+  "audioChannels": 1,
+  "audioSampleRate": 48000,
+  "audioDurationSeconds": 58.0,
+  "videoDurationSeconds": 58.0,
+  "containerDurationSeconds": 58.0,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "averageFrameRate": "30/1",
+  "expectedDurationSeconds": 58.0,
+  "expectedFrames": 1740,
+  "actualFrames": 1740,
+  "expectedPcmSamples": 2784000,
+  "actualPcmSamples": 2784000,
+  "decodedAacSamples": 2784256,
+  "decodedAacExtraSamples": 256,
+  "maximumCfrTimestampErrorSeconds": 3.3333333604446125e-07,
+  "fullDecodeExitCode": 0,
+  "alignmentWindows": [
+    {
+      "region": "begin",
+      "startSeconds": 0.35,
+      "durationSeconds": 0.5,
+      "pcmRmsDbFs": -19.98996839799872,
+      "zeroLagCorrelation": 0.9999786806264421,
+      "bestCorrelation": 0.9999786806264421,
+      "bestLagSamples": 0,
+      "bestLagMilliseconds": 0.0,
+      "searchRangeSamples": [
+        -960,
+        960
+      ],
+      "sampleStride": 8,
+      "refinedLagStepSamples": 1
+    },
+    {
+      "region": "middle",
+      "startSeconds": 29.0,
+      "durationSeconds": 0.5,
+      "pcmRmsDbFs": -23.98910312400687,
+      "zeroLagCorrelation": 0.9999895606672179,
+      "bestCorrelation": 0.9999895606672179,
+      "bestLagSamples": 0,
+      "bestLagMilliseconds": 0.0,
+      "searchRangeSamples": [
+        -960,
+        960
+      ],
+      "sampleStride": 8,
+      "refinedLagStepSamples": 1
+    },
+    {
+      "region": "end",
+      "startSeconds": 55.0,
+      "durationSeconds": 0.5,
+      "pcmRmsDbFs": -28.80436486065708,
+      "zeroLagCorrelation": 0.9999889949489132,
+      "bestCorrelation": 0.9999889949489132,
+      "bestLagSamples": 0,
+      "bestLagMilliseconds": 0.0,
+      "searchRangeSamples": [
+        -960,
+        960
+      ],
+      "sampleStride": 8,
+      "refinedLagStepSamples": 1
+    }
+  ],
+  "aacPeakDbFs": -2.80942105783475,
+  "aacSamplesAtOrAboveFullScale": 0,
+  "lastSecondFrameCount": 30,
+  "lastSecondDistinctScaledFrameHashes": 30,
+  "lastSecondAudioRmsDbFs": -91.84817355971843,
+  "pauses": {
+    "medianMs": 95.99999999999653,
+    "innerCount": 27,
+    "count64to96": 20,
+    "fraction64to96": 0.7407407407407407,
+    "innerOver160ms": [
+      {
+        "start": 44.736000000000004,
+        "end": 44.928000000000004,
+        "duration": 0.19200000000000017,
+        "status": "needs_word_boundary_review"
+      },
+      {
+        "start": 51.168,
+        "end": 51.36,
+        "duration": 0.19200000000000017,
+        "status": "needs_word_boundary_review"
+      }
+    ]
+  },
+  "hearingPerformed": false,
+  "wordRecognitionPerformed": false,
+  "visualMotionReviewPerformed": false,
+  "originalReadOrModified": false,
+  "workflowJsonChanged": false,
+  "limitations": [
+    "No listening, word-completeness or naturalness approval.",
+    "Frame hashes report temporal variation only, not perceptual motion quality.",
+    "Mapping verifies temporal arithmetic and AAC-to-cut-PCM alignment, not semantic source selection.",
+    "Pausenwerte are descriptive and never an editing trigger."
+  ],
+  "checks": {
+    "planSettings": true,
+    "declaredPlanCounts": true,
+    "fullDecode": true,
+    "layout": true,
+    "audioFormat": true,
+    "pcmFormat": true,
+    "durationWithinOneMillisecond": true,
+    "frameSampleArithmetic": true,
+    "frameSampleCounts": true,
+    "cfr30": true,
+    "audioPacketContinuity": true,
+    "aacPaddingWithinOneFrame": true,
+    "sampledAacPcmAlignment": true,
+    "inputFilesUnchanged": true
+  },
+  "technicalChecksAllPassed": true,
+  "qualitativeApproval": null
+}

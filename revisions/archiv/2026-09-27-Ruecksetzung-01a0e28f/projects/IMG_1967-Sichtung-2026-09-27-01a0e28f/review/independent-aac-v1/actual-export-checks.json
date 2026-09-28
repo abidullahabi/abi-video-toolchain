@@ -1,0 +1,95 @@
+{
+  "file": "/Users/abi/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow/projects/IMG_1967-Sichtung-2026-09-27-01a0e28f/exports/KI-Einstieg-Schnitt-v1.mp4",
+  "sha256": "a3cf7037d4c2a38eb4e1783f96c02fe646bab46c97a21eea2fb7781782784322",
+  "bytes": 92830934,
+  "createdAt": "2026-09-27T12:36:58.974877+00:00",
+  "audioDuration": 64.266,
+  "videoDuration": 64.266667,
+  "containerDuration": 64.266667,
+  "audioChannels": 1,
+  "audioSampleRate": 48000,
+  "videoDimensions": [
+    1080,
+    1920
+  ],
+  "nominalFps": "30/1",
+  "expectedFrames": 1928,
+  "actualFrames": 1928,
+  "expectedPcmSamples": 3084800,
+  "actualPcmSamples": 3084800,
+  "decodedAacSamples": 3085312,
+  "maximumCfrTimestampErrorSeconds": 3.333333467026023e-07,
+  "fullDecodePassed": true,
+  "aacPayloadHashes": {
+    "precheck": "df93760318634b77d700238c5e4b5076a9fa691e9aa69cf24ac5f2c685757754",
+    "actual": "df93760318634b77d700238c5e4b5076a9fa691e9aa69cf24ac5f2c685757754"
+  },
+  "aacPayloadIdentical": true,
+  "asrPcmHashes": {
+    "precheck": {
+      "sampleRate": 16000,
+      "samples": 1028437,
+      "rawPcmSha256": "a0b920b450089de60ab2dadae66890b8038af44f46533c010b416581ae9b4e16"
+    },
+    "actual": {
+      "sampleRate": 16000,
+      "samples": 1028437,
+      "rawPcmSha256": "a0b920b450089de60ab2dadae66890b8038af44f46533c010b416581ae9b4e16"
+    }
+  },
+  "asrPcmIdentical": true,
+  "asrReference": "precheck-full-asr.txt",
+  "asrComparison": "word-comparison-independent.json",
+  "alignmentSamples": [
+    {
+      "startSeconds": 1,
+      "durationSeconds": 0.5,
+      "zeroLagCorrelation": 0.9999879076603282,
+      "bestLagSamples": 0,
+      "lagGridSamples": 4
+    },
+    {
+      "startSeconds": 30,
+      "durationSeconds": 0.5,
+      "zeroLagCorrelation": 0.9999814476708118,
+      "bestLagSamples": 0,
+      "lagGridSamples": 4
+    },
+    {
+      "startSeconds": 62,
+      "durationSeconds": 0.5,
+      "zeroLagCorrelation": 0.9999804097190502,
+      "bestLagSamples": 0,
+      "lagGridSamples": 4
+    }
+  ],
+  "aacPeakDbFs": -2.80942105783475,
+  "aacRmsDbFs": -25.033142290274903,
+  "lastSecondFrames": 30,
+  "lastSecondDistinctFrames": 30,
+  "silero": {
+    "medianMs": 96.0,
+    "innerCount": 33,
+    "count64to96": 22,
+    "fraction64to96": 0.6666666666666666,
+    "innerOver160ms": [],
+    "pass": true
+  },
+  "hearingPerformed": false,
+  "originalReadOrModified": false,
+  "workflowJsonChanged": false,
+  "scope": "Independent technical actual-export check. No listening approval, no automatic recut.",
+  "checks": {
+    "layout": true,
+    "audioFormat": true,
+    "duration": true,
+    "frameSampleMapping": true,
+    "cfr": true,
+    "noExtendedFreeze": true,
+    "aacPayload": true,
+    "asrInput": true,
+    "alignment": true,
+    "pauseSignature": true
+  },
+  "technicalPass": true
+}
