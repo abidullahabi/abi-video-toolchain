@@ -56,7 +56,7 @@ function lies(p) {
   return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : null;
 }
 
-function aufraeumen(projekte) {
+export function aufraeumen(projekte) {
   const [haupt, ...weitere] = projekte.map(p => path.resolve(p));
   for (const p of [haupt, ...weitere]) {
     if (REFERENZ.has(path.basename(p)) || lies(p)?.referenz) throw Error(`Referenzprojekt, bleibt unverändert: ${p}`);
@@ -112,6 +112,7 @@ function aufraeumen(projekte) {
   console.log(`${anzahl} Dateien, ${gb(summe)} nach ${ziel}`);
   console.log(`Postingdatei in Drive: ${m.postingFile}`);
   for (const w of warnungen) console.log('Achtung: ' + w);
+  return { dateien: anzahl, bytes: summe, gb: gb(summe), ziel, warnungen };
 }
 
 function stand() {

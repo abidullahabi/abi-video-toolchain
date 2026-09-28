@@ -262,10 +262,10 @@ export async function build(project, { root, run, assemble, check, env }) {
     });
   });
   const m2 = J(metaFile); Object.assign(m2, { latestExport: out, renderedExport: out, status: 'exported', exportedAt: new Date().toISOString() }); W(metaFile, m2);
-  const name = (meta.title || path.basename(project)).replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '');
-  await zeit(project, 'build: upload-export (Abschnitt 10) + VMAF + Ton', () => run('python3', [path.join(root, 'finalize-buffer-video.py'), project, name], root, path.join(project, 'logs/08-export.log')));
+  // Phase 5: ein Upload-Export (exports/upload.mp4), Voreinstellung medium, VMAF an Stichproben; ebenfalls unter der Render-Sperre.
+  await mitRenderSperre(project, 'export', () => zeit(project, 'build: upload-export (Abschnitt 10) + VMAF-Stichproben + Ton', () => run('python3', [path.join(root, 'finalize-buffer-video.py'), project], root, path.join(project, 'logs/08-export.log'))));
   const exp = J(path.join(project, 'review/final-export-check.json'));
-  bericht.export = { datei: exp.file, mb: Math.round(exp.sizeBytes / 1e5) / 10, videoKbit: Math.round(exp.videoBitrate / 1000), vmaf: Math.round(exp.vmafMeanVsRenderedMaster * 10) / 10, tonVersatzMs: exp.audioAlignmentChecks.map(c => c.bestLagMilliseconds), sha256: exp.sha256 };
+  bericht.export = { datei: exp.file, mb: Math.round(exp.sizeBytes / 1e5) / 10, videoKbit: Math.round(exp.videoBitrate / 1000), voreinstellung: exp.encoderPreset, vmaf: Math.round(exp.vmafMeanVsRenderedMaster * 10) / 10, vmafMin: Math.round(exp.vmafMinVsRenderedMaster * 10) / 10, vmafBilder: exp.vmafStichproben?.bilder, tonVersatzMs: exp.audioAlignmentChecks.map(c => c.bestLagMilliseconds), sha256: exp.sha256 };
   // Kontaktblatt aus der Exportdatei: erster Frame + wichtigste Einblendungen, höchstens 12 Bilder.
   await zeit(project, 'build: kontaktblatt (≤ 12)', async () => {
     const all = momente(plan), pick = [all[0], ...all.slice(1).filter((_, i, a) => a.length <= 11 || i % Math.ceil(a.length / 11) === 0)].slice(0, 12);

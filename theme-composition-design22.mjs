@@ -154,7 +154,11 @@ export function layoutDesign22(input, ctx) {
       else if (p) { if (p.start <= h.start) errors.push(`H2 ${h.id} während Pillen ${p.id}`); else { end = r2(Math.min(end, p.start - 0.02)); notes.push(`H2 ${h.id} endet vor Pillen ${p.id} (${end} s)`); } }
     } else if (u.startsWith('h1:')) top = 250 + h1H(h1.find(x => x.id === u.slice(3))) + 24;
     else if (kapitel.some(k => k.start < h.end && k.end > h.start)) errors.push(`H2 ${h.id} „allein" bei y 250, während ein Kapitel läuft`);
-    const w = Math.max(...h.lines.map(l => A(l, 58, 800))) + 56, hb = hits({ x: 540 - w / 2, y: top, w, h: h2H(h.lines) }, h.start, end);
+    const w = Math.max(...h.lines.map(l => A(l, 58, 800))) + 56;
+    // H2 allein bei y = 250: Die Drehung um −2° hebt die linke Ecke um (w/2)·sin 2° an; sonst ragte sie in die gesperrte
+    // Zone über y = 250 (DESIGN.md 20.3, Befund der Prüfung). Die gedrehte Fläche beginnt deshalb genau bei 250.
+    if (u === 'allein') top = 250 + Math.ceil((w / 2) * Math.sin(Math.PI / 90) + (h2H(h.lines) / 2) * (1 - Math.cos(Math.PI / 90)));
+    const hb = hits({ x: 540 - w / 2, y: top, w, h: h2H(h.lines) }, h.start, end);
     if (hb.length) ctx.warnings.push(`H2 ${h.id} berührt Kopf/Kappe (${hb.length} Stichproben)`);
     return { id: h.id, lines: h.lines, start: h.start, end, top: Math.round(top), ...(h.ausnahme ? { ausnahme: h.ausnahme } : {}) };
   });

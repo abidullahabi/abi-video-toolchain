@@ -20,7 +20,9 @@ export async function checkDesign22(project, { step = 1 } = {}) {
     const page = await browser.newPage();
     await page.setViewport({ width: 1080, height: 1920, deviceScaleFactor: 1 });
     await page.goto(pathToFileURL(path.join(project, 'index.html')).href, { waitUntil: 'load' });
-    await page.evaluate(() => document.fonts.ready);
+    // Schriften ausdrücklich laden: Ohne Kapitelnummer oder Akronym lädt der Browser Gochi nie, und die Prüfung meldete
+    // „Schrift fehlt“ (Fehlalarm, Tempo Phase 5). Fehlt die Datei wirklich, schlägt das Laden fehl und der Befund bleibt.
+    await page.evaluate(async () => { await Promise.all(['900 64px "ABI Archivo"', '800 64px "ABI Archivo"', '700 24px "ABI Archivo"', '400 140px "ABI Gochi"'].map(f => document.fonts.load(f).catch(() => null))); await document.fonts.ready; });
     report = await page.evaluate(({ plan, faces, profil, step }) => {
       const errors = [], warnings = [], seen = new Set();
       const add = (list, type, d = {}) => { const k = type + JSON.stringify({ ...d, t: undefined, b: undefined }); if (seen.has(k) || list.length > 400) return; seen.add(k); list.push({ type, ...d }); };
@@ -89,7 +91,10 @@ export async function checkDesign22(project, { step = 1 } = {}) {
           // Ausnahme nur für das Ausblenden (DESIGN.md 15: 0,18 s, 8 px nach oben): unter 20 % Gesamtdeckkraft ist das Element praktisch
           // unsichtbar; eine H1 an y = 250 kreuzt die Linie sonst zwangsläufig im letzten Ausblendschritt.
           let deck = 1; for (let e = el; e && e.id !== 'root'; e = e.parentElement) deck *= +cs(e).opacity; deck *= +cs(el.firstElementChild).opacity;
-          if (deck >= 0.2 && b.y < 249.5 || b.y + b.h > 1660.5 || b.x < 89.5) err('gesperrte_zone', { id: el.id, t: +t.toFixed(2), b });
+          // Ausblenden (DESIGN.md 15: letzte 0,18 s, 8 px nach oben): Ein Element mit Oberkante 250 (DESIGN.md 5/6) kreuzt die
+          // Linie dabei zwangsläufig; nur die Oberkante ist in dieser Zeit ausgenommen (Tempo Phase 5, Fehlalarm H2 allein).
+          const ende = +el.dataset.start + +el.dataset.duration, ausblenden = t >= ende - 0.19 && t < ende;
+          if ((deck >= 0.2 && !ausblenden && b.y < 249.5) || b.y + b.h > 1660.5 || b.x < 89.5) err('gesperrte_zone', { id: el.id, t: +t.toFixed(2), b });
           if (deck >= 0.2 && b.y + b.h > 900.5 && b.x + b.w > 930.5) err('aktionsleiste', { id: el.id, t: +t.toFixed(2), b });
           if (deck >= 0.2 && b.y < 900 && !['caption', 'outro-card', 'bubble'].includes(k) && (b.x < 107.5 || b.x + b.w > 972.5)) err('obere_zone', { id: el.id, t: +t.toFixed(2), b });
           if (CENTER[k]) { const c = R(el.querySelector(CENTER[k])); if (Math.abs(c.x + c.w / 2 - 540) > 0.75) err('mittelachse', { id: el.id, mitte: +(c.x + c.w / 2).toFixed(2) }); }
