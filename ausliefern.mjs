@@ -97,13 +97,55 @@ function verschiebe(von, nach, erwarteteSha) {
   return s;
 }
 
-export async function stufe1(projekt, titel, datum, { zeit = '19:00', token }) {
+// Einplanung über die Zernio-API mit dem Schlüssel aus dem Schlüsselbund (seit 28.09.2026). Ein Zeitpunkt in der
+// Vergangenheit würde sofort veröffentlichen (Zernio-Doku) und wird deshalb abgelehnt. Die Anfrage-ID steht vor dem
+// Senden im Projekt; eine Wiederholung liefert denselben Beitrag statt eines Doppelposts.
+async function einplanen(p, text, publicUrl, datum, zeit, { probe = false } = {}) {
+  const { zernioApi } = await import('./zernio-upload.mjs');
+  const wann = new Date(berlin(datum, zeit));
+  if (!(wann - Date.now() > 10 * 60e3)) throw Error(`Termin ${datum} ${zeit} liegt nicht mindestens 10 min in der Zukunft; Zernio würde sofort veröffentlichen. Nicht eingeplant.`);
+  const body = { content: text, mediaItems: [{ type: 'video', url: publicUrl }], platforms: KONTEN, scheduledFor: `${datum}T${zeit}:00`, timezone: 'Europe/Berlin' };
+  const v = await zernioApi('/tools/validate/post', { method: 'POST', body });
+  const fehler = v.data?.errors ?? [];
+  if (!v.ok || fehler.length) throw Error(`Zernio-Prüfung: ${v.status} ${JSON.stringify(fehler.length ? fehler : v.data).slice(0, 400)}`);
+  if (probe) return { probe: true, pruefung: 'bestanden', hinweise: v.data?.warnings ?? [], geplantFuer: berlin(datum, zeit) };
+  let m = lies(p);
+  const requestId = m.zernio?.requestId ?? crypto.randomUUID();
+  m.zernio = { ...(m.zernio || {}), requestId, geplantFuer: berlin(datum, zeit) }; schreib(p, m);
+  const r = await zernioApi('/posts', { method: 'POST', body, headers: { 'x-request-id': requestId } });
+  const post = r.data?.post ?? r.data?.existingPost;
+  if (r.status === 409) throw Error('Zernio meldet 409: gleicher Inhalt an dieselben Konten in den letzten 24 h. Nicht doppelt eingeplant; Beitrag in Zernio prüfen.');
+  if (!r.ok || !post?._id) throw Error(`Einplanung fehlgeschlagen (${r.status}): ${JSON.stringify(r.data).slice(0, 400)}`);
+  const g = await zernioApi(`/posts/${post._id}`);
+  const status = g.data?.post?.status ?? post.status;
+  if (status !== 'scheduled') throw Error(`Beitrag ${post._id} hat Status „${status}“ statt „scheduled“. Sofort in Zernio prüfen.`);
+  return { postId: post._id, status, scheduledFor: g.data?.post?.scheduledFor ?? post.scheduledFor, wiederholung: !!r.data?.existingPost };
+}
+
+export async function stufe1(projekt, titel, datum, { zeit = '19:00', token, probe = false, abschluss = true }) {
   const p = path.resolve(projekt), m = lies(p);
   const beschreibung = path.join(p, 'beschreibung.txt');
   if (!fs.existsSync(beschreibung)) throw Error('beschreibung.txt fehlt (Beschreibung aus dem Freigabepaket, höchstens 5 Hashtags, einer #abidullahabi).');
   const text = fs.readFileSync(beschreibung, 'utf8').trim(), tags = text.match(/#[\p{L}\p{N}_]+/gu) || [];
   if (tags.length > 5 || !tags.includes('#abidullahabi')) throw Error(`Beschreibung: ${tags.length} Hashtags, #abidullahabi ${tags.includes('#abidullahabi') ? 'vorhanden' : 'fehlt'} (CONTENT_WORKFLOW 11).`);
+  const { zernioSchluessel } = await import('./zernio-upload.mjs');
+  const schluessel = !token && zernioSchluessel();
+  if (probe) {
+    if (!schluessel) throw Error('Probe braucht den API-Schlüssel im Schlüsselbund (zernio-api-key).');
+    return { probe: await einplanen(p, text, 'https://media.zernio.com/temp/probe.mp4', datum, zeit, { probe: true }) };
+  }
   const r = { ablage: ausliefernNach(p, titel, datum) };
+  if (schluessel) {
+    // Ein Befehl: Upload mit Schlüssel, Einplanung, Prüfung des Status, dann Abschluss (Stufe 2).
+    const { uploadToZernio } = await import('./zernio-upload.mjs');
+    const up = await uploadToZernio(r.ablage.datei, null);
+    if (up.sha256 !== r.ablage.sha256) throw Error('Hochgeladene Datei ist nicht die abgelegte (Prüfsumme).');
+    r.upload = { publicUrl: up.publicUrl, bytes: up.bytes, sha256: up.sha256 };
+    const m2 = lies(p); m2.zernio = { ...(m2.zernio || {}), upload: { publicUrl: up.publicUrl, sha256: up.sha256, am: new Date().toISOString() } }; schreib(p, m2);
+    r.einplanung = await einplanen(p, text, up.publicUrl, datum, zeit);
+    if (abschluss) r.abschluss = await stufe2(p, r.einplanung.postId);
+    return r;
+  }
   if (token) {
     const { uploadToZernio } = await import('./zernio-upload.mjs');
     const up = await uploadToZernio(r.ablage.datei, token);
@@ -163,11 +205,11 @@ if (process.argv[1]?.endsWith('ausliefern.mjs')) {
   const ziel = arg('--ziel') ?? '03_Bereit_zum_Posten';
   try {
     if (projekt && postId) console.log(JSON.stringify(await stufe2(projekt, postId, { commit: !process.argv.includes('--ohne-commit') }), null, 2));
-    else if (projekt && titel && datum && /^\d{4}-\d{2}-\d{2}$/.test(datum) && (arg('--token') || process.argv.includes('--nur-ablage'))) {
+    else if (projekt && titel && datum && /^\d{4}-\d{2}-\d{2}$/.test(datum)) {
       if (process.argv.includes('--nur-ablage')) console.log(JSON.stringify(ausliefernNach(projekt, titel, datum, { ziel }), null, 2));
-      else console.log(JSON.stringify(await stufe1(projekt, titel, datum, { zeit: arg('--zeit') ?? '19:00', token: arg('--token') }), null, 2));
+      else console.log(JSON.stringify(await stufe1(projekt, titel, datum, { zeit: arg('--zeit') ?? '19:00', token: arg('--token'), probe: process.argv.includes('--probe'), abschluss: !process.argv.includes('--ohne-abschluss') }), null, 2));
     } else {
-      console.error('Aufruf:\n  node ausliefern.mjs "<Projekt>" "<Titel>" --datum JJJJ-MM-TT [--zeit 19:00] --token <upload-token>\n  node ausliefern.mjs "<Projekt>" --post-id <id> [--ohne-commit]\n  node ausliefern.mjs "<Projekt>" "<Titel>" --datum JJJJ-MM-TT --nur-ablage [--ziel 04_Gepostet]');
+      console.error('Aufruf:\n  node ausliefern.mjs "<Projekt>" "<Titel>" --datum JJJJ-MM-TT [--zeit 19:00]            (mit API-Schlüssel: alles in einem Befehl)\n  node ausliefern.mjs "<Projekt>" "<Titel>" --datum JJJJ-MM-TT --probe                   (nur prüfen: Schlüssel, Termin, Inhalt)\n  node ausliefern.mjs "<Projekt>" "<Titel>" --datum JJJJ-MM-TT [--zeit 19:00] --token <upload-token>\n  node ausliefern.mjs "<Projekt>" --post-id <id> [--ohne-commit]\n  node ausliefern.mjs "<Projekt>" "<Titel>" --datum JJJJ-MM-TT --nur-ablage [--ziel 04_Gepostet]');
       process.exit(2);
     }
   } catch (e) { console.error(e.message); process.exit(1); }

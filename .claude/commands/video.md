@@ -78,10 +78,10 @@ Nennt Abi Korrekturen: verschiebe die bisherige Fassung nach `DRIVE/Archiv/Vorve
 
 Nach `ABLAUF_KURZ.md` Schritt 7, in einem Rutsch:
 
-1. Upload-Token über Zernio `media_generate_upload_link`, dann `node ausliefern.mjs "<P>" "<Titel>" --datum JJJJ-MM-TT --token <token>` (Drive-Ablage mit SHA-256, Upload, Einplanungsauftrag).
-2. `posts_create_post` über `call_tool` mit `review/zernio-post.json` (Instagram und TikTok, ein Beitrag, 19:00 Europe/Berlin), erst `dry_run`. Bei Abbruch erst `posts_list`.
-3. `node ausliefern.mjs "<P>" --post-id <id>` (04_Gepostet, Rohvideo ins Archiv, ~/Löschbar, Commit).
-4. Notion-Eintrag in „Master Contentplanung": Beschreibung ablegen, zurücklesen, Status Ready to Post, Post-ID.
+1. `node ausliefern.mjs "<P>" "<Titel>" --datum JJJJ-MM-TT` (Zernio-API-Schlüssel aus dem Schlüsselbund): Drive-Ablage mit SHA-256, Upload, Einplanung Instagram und TikTok 19:00 Europe/Berlin, 04_Gepostet, Rohvideo ins Archiv, ~/Löschbar, Commit.
+2. Notion-Eintrag in „Master Contentplanung": Beschreibung ablegen, zurücklesen, Status Ready to Post, Post-ID.
+
+Fehlt der Schlüssel, gilt der Ersatzweg aus `ABLAUF_KURZ.md` Schritt 7 (Upload-Token, `posts_create_post` über MCP, `--post-id`).
 
 Melde: Ablageort, Notion-Link, Zernio-ID, geplante Zeit, frei gewordene GB. Mehr nicht.
 

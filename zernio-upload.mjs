@@ -22,8 +22,24 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 
 const API = 'https://zernio.com/api/v1';
+
+// Seit 28.09.2026: API-Schlüssel im macOS-Schlüsselbund (Eintrag „zernio-api-key“, von Abdullah angelegt). Er wird nur
+// zur Laufzeit gelesen und nie ausgegeben oder gespeichert. Ohne Schlüssel bleibt der Weg über das MCP-Upload-Token.
+export function zernioSchluessel() {
+  try { return execFileSync('security', ['find-generic-password', '-s', 'zernio-api-key', '-w'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim() || null; }
+  catch { return null; }
+}
+export async function zernioApi(pfad, { method = 'GET', body, headers = {} } = {}) {
+  const key = zernioSchluessel();
+  if (!key) throw Error('Kein Zernio-API-Schlüssel im Schlüsselbund (Eintrag „zernio-api-key“).');
+  const r = await fetch(`${API}${pfad}`, { method, headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json', ...headers }, body: body ? JSON.stringify(body) : undefined });
+  const text = await r.text();
+  let data; try { data = JSON.parse(text); } catch { data = { text: text.slice(0, 500) }; }
+  return { status: r.status, ok: r.ok, data };
+}
 
 const CONTENT_TYPES = {'.mp4':'video/mp4','.mov':'video/quicktime','.jpg':'image/jpeg','.jpeg':'image/jpeg','.png':'image/png'};
 
@@ -38,11 +54,10 @@ export async function uploadToZernio(file, token) {
   const safeName = path.basename(file, ext).normalize('NFD').replace(/[̀-ͯ]/g, '')
     .replace(/[^A-Za-z0-9._-]+/g, '-').replace(/^-+|-+$/g, '') + ext;
 
-  const presignResponse = await fetch(`${API}/media/upload/presign?token=${encodeURIComponent(token)}`, {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({filename: safeName, contentType}),
-  });
+  // Mit Upload-Token (MCP media_generate_upload_link) oder, ohne Token, mit dem API-Schlüssel aus dem Schlüsselbund.
+  const presignResponse = token
+    ? await fetch(`${API}/media/upload/presign?token=${encodeURIComponent(token)}`, { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({filename: safeName, contentType}) })
+    : await fetch(`${API}/media/presign`, { method: 'POST', headers: {'Content-Type': 'application/json', Authorization: `Bearer ${zernioSchluessel() ?? ''}`}, body: JSON.stringify({filename: safeName, contentType, size: bytes}) });
   if (!presignResponse.ok) throw Error(`Presign fehlgeschlagen (${presignResponse.status}): ${await presignResponse.text()}`);
   const presign = await presignResponse.json();
   if (!presign.uploadUrl || !presign.publicUrl) throw Error('Presign ohne uploadUrl/publicUrl: ' + JSON.stringify(presign));
@@ -64,6 +79,16 @@ export async function uploadToZernio(file, token) {
   if (served !== bytes) throw Error(`Längen weichen ab: hochgeladen ${bytes}, ausgeliefert ${served}.`);
 
   return {publicUrl: presign.publicUrl, key: presign.key, filename: safeName, bytes, sha256, contentType, verifiedServedBytes: served};
+}
+
+if (process.argv[1]?.endsWith('zernio-upload.mjs') && process.argv[2] === '--konten') {
+  // Nur lesend: prüft den Schlüssel und zeigt die verbundenen Konten (ohne den Schlüssel).
+  const r = await zernioApi('/accounts');
+  if (!r.ok) { console.error(`Zernio antwortet ${r.status}: ${JSON.stringify(r.data).slice(0, 300)}`); process.exit(1); }
+  const konten = r.data.accounts ?? r.data.data ?? r.data;
+  console.log(`Schlüssel gültig. ${konten.length} Konten:`);
+  for (const k of konten) console.log(`  ${k.platform.padEnd(10)} ${k._id}  ${k.username ?? k.displayName ?? ''}`);
+  process.exit(0);
 }
 
 if (process.argv[1]?.endsWith('zernio-upload.mjs')) {

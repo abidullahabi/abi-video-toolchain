@@ -87,12 +87,15 @@ Pfad zur MP4 (`exports/upload.mp4`), geprüftes Transkript, Beschreibung in `bes
 
 ## 7. Nach der Freigabe, ohne Rückfrage (≈ 2 min)
 
-1. Upload-Token holen: Zernio `media_generate_upload_link` (MCP, 1 h gültig).
-2. `node ausliefern.mjs "<P>" "<Titel>" --datum JJJJ-MM-TT [--zeit 19:00] --token <token>`: Auslieferungssperre, Drive-Ablage `03_Bereit_zum_Posten` mit Prüfsumme, Zernio-Upload mit Längenprobe, Einplanungsauftrag `review/zernio-post.json`.
-3. `call_tool("posts_create_post", <argumente aus review/zernio-post.json>)`, erst mit `dry_run: true`, dann echt. Bei Verbindungsabbruch erst `posts_list` prüfen (Doppelpost vermeiden).
-4. `node ausliefern.mjs "<P>" --post-id <id>`: Post-ID ins Projekt, Datei nach `04_Gepostet`, Rohvideo nach `Archiv/Rohvideos` (Zuordnungsprotokoll mit Prüfsumme), Videomaterial nach `~/Löschbar` (Größe steht in der Ausgabe), `bearbeitung.status: "fertig"`, `git add`/`commit`/`push` des Projekts.
-5. Notion „Master Contentplanung": Beschreibung ablegen, zurücklesen, Status Ready to Post, Post-ID eintragen.
-6. Abdullah melden: Ablageort, Zernio-ID, geplante Zeit, frei gewordene GB. Dauer je Schritt aus `logs/zeiten.json` ins Testprotokoll.
+1. `node ausliefern.mjs "<P>" "<Titel>" --datum JJJJ-MM-TT [--zeit 19:00]` erledigt alles in einem Rutsch mit dem Zernio-API-Schlüssel aus dem Schlüsselbund (Eintrag `zernio-api-key`):
+   - Auslieferungssperre, Drive-Ablage mit Prüfsumme,
+   - Upload mit Längenprobe, Zernio-Prüfung, Einplanung für Instagram und TikTok (ein Beitrag, Europe/Berlin), Status „scheduled“ gegengelesen. Ein Termin in der Vergangenheit wird abgelehnt, weil Zernio sonst sofort veröffentlicht. Die Anfrage-ID steht im Projekt, eine Wiederholung erzeugt keinen Doppelpost.
+   - Datei nach `04_Gepostet`, Rohvideo nach `Archiv/Rohvideos` (Zuordnungsprotokoll), Videomaterial nach `~/Löschbar`, `bearbeitung.status: "fertig"`, `git add`/`commit`/`push` des Projekts.
+   Vorher prüfen, ohne etwas anzulegen: derselbe Befehl mit `--probe`.
+2. Notion „Master Contentplanung": Beschreibung ablegen, zurücklesen, Status Ready to Post, Post-ID eintragen.
+3. Abdullah melden: Ablageort, Zernio-ID, geplante Zeit, frei gewordene GB. Dauer je Schritt aus `logs/zeiten.json` ins Testprotokoll.
+
+Ohne Schlüssel (Ersatzweg): Upload-Token über `media_generate_upload_link`, `node ausliefern.mjs … --token <token>`, dann `posts_create_post` über `call_tool` mit `review/zernio-post.json` (erst `dry_run`, bei Abbruch erst `posts_list`), dann `node ausliefern.mjs "<P>" --post-id <id>`.
 
 ## Nicht Teil des Durchlaufs
 
