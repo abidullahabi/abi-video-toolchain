@@ -154,7 +154,11 @@ export function layoutDesign22(input, ctx) {
       else if (p) { if (p.start <= h.start) errors.push(`H2 ${h.id} während Pillen ${p.id}`); else { end = r2(Math.min(end, p.start - 0.02)); notes.push(`H2 ${h.id} endet vor Pillen ${p.id} (${end} s)`); } }
     } else if (u.startsWith('h1:')) top = 250 + h1H(h1.find(x => x.id === u.slice(3))) + 24;
     else if (kapitel.some(k => k.start < h.end && k.end > h.start)) errors.push(`H2 ${h.id} „allein" bei y 250, während ein Kapitel läuft`);
-    const w = Math.max(...h.lines.map(l => A(l, 58, 800))) + 56, hb = hits({ x: 540 - w / 2, y: top, w, h: h2H(h.lines) }, h.start, end);
+    const w = Math.max(...h.lines.map(l => A(l, 58, 800))) + 56;
+    // H2 allein bei y = 250: Die Drehung um −2° hebt die linke Ecke um (w/2)·sin 2° an; sonst ragte sie in die gesperrte
+    // Zone über y = 250 (DESIGN.md 20.3, Befund der Prüfung). Die gedrehte Fläche beginnt deshalb genau bei 250.
+    if (u === 'allein') top = 250 + Math.ceil((w / 2) * Math.sin(Math.PI / 90) + (h2H(h.lines) / 2) * (1 - Math.cos(Math.PI / 90)));
+    const hb = hits({ x: 540 - w / 2, y: top, w, h: h2H(h.lines) }, h.start, end);
     if (hb.length) ctx.warnings.push(`H2 ${h.id} berührt Kopf/Kappe (${hb.length} Stichproben)`);
     return { id: h.id, lines: h.lines, start: h.start, end, top: Math.round(top), ...(h.ausnahme ? { ausnahme: h.ausnahme } : {}) };
   });
@@ -275,14 +279,19 @@ export function makeDesign22Composition(plan, opts = {}) {
   const { duration, einstieg: e, kapitel = [], h1 = [], h2 = [], pillen = [], akronyme = [], schlagworte = [], grafiken = [], randnotizen = [], lebensbalken = [], logos = [], sprechblasen = [], captions = [], outro } = plan;
   if (!outro || !Number.isInteger(outro.followers) || outro.followers < 0) throw Error('Followerstand fehlt (DESIGN.md 14: follower-source.json).');
   for (const z of plan.zooms || []) if (!(z.scale >= 1.05 && z.scale <= 1.07 && z.end - z.start >= 2 - 1e-6 && z.end - z.start <= 4 + 1e-6)) throw Error('Zoom außerhalb DESIGN.md 15: ' + JSON.stringify(z));
-  const clip = (id, a, b, track, kind, extra = '') => `id="${id}" class="clip" data-start="${a}" data-duration="${+(b - a).toFixed(4)}" data-track-index="${track}" data-kind="${kind}"${extra}`;
+  // opts.abschnitt {t0, dauer} (Tempo Phase 4): Komposition nur für diesen Zeitbereich. Clips werden auf den Abschnitt
+  // verschoben und beschnitten, Videos über data-media-start versetzt; die Zeitleiste bleibt absolut (siehe timeline22).
+  const T0 = opts.abschnitt?.t0 ?? 0, LEN = opts.abschnitt?.dauer ?? duration;
+  const lage = (a, b) => { if (!opts.abschnitt) return [a, +(b - a).toFixed(4)]; const x = Math.max(0, a - T0), y = Math.min(LEN, b - T0); return y - x < 0.0005 ? [LEN, 0.001] : [+x.toFixed(4), +(y - x).toFixed(4)]; };   // außerhalb: hinter dem Abschnittsende, nie aktiv
+  const clip = (id, a, b, track, kind, extra = '') => { const [x, d] = lage(a, b); return `id="${id}" class="clip" data-start="${x}" data-duration="${d}" data-track-index="${track}" data-kind="${kind}"${extra}`; };
+  const mediaStart = a => a < T0 ? ` data-media-start="${+(T0 - a).toFixed(4)}"` : '';
   const lines = arr => arr.map(l => `<span class="ln">${escEmoji(l)}</span>`).join('');
   const html = [];
   // Grafik: Hintergrund (Off-White + Seigaiha), Karte, Person (eigene Alpha-Ebene) — unter den oberen Texten und Untertiteln.
   const seig = `<svg width="1080" height="1920" style="position:absolute;inset:0"><defs><pattern id="seigaiha" width="80" height="40" patternUnits="userSpaceOnUse"><g fill="${C.off}" stroke="${C.ink}" stroke-width="2.5">${[[40, 0], [0, 20], [80, 20], [40, 40]].map(([x, y]) => [40, 31, 22, 13, 5].map(r => `<circle cx="${x}" cy="${y}" r="${r}"/>`).join('')).join('')}</g></pattern></defs><rect width="1080" height="1920" fill="${C.off}"/><rect width="1080" height="1920" fill="url(#seigaiha)" opacity="0.12"/></svg>`;
   for (const g of grafiken) html.push(`<div ${clip(g.id + '-bg', g.start, g.end, 10, 'gs-bg')} style="inset:0">${seig}</div>`,
     `<div ${clip(g.id, g.start, g.end, 11, 'grafik')} style="left:150px;top:270px;width:780px;height:${g.height}px"><div class="card"><div class="card-title">${escEmoji(g.title)}</div>${g.svg}</div></div>`,
-    ...(g.person ? [] : []), g.person ? `<video id="${g.id}-person" class="clip" src="${g.person}" data-start="${g.start}" data-duration="${+(g.end - g.start).toFixed(4)}" data-track-index="12" data-volume="0" muted playsinline style="position:absolute;inset:0;width:1080px;height:1920px"></video>` : '');
+    ...(g.person ? [] : []), g.person ? `<video id="${g.id}-person" class="clip" src="${g.person}" data-start="${lage(g.start, g.end)[0]}" data-duration="${lage(g.start, g.end)[1]}"${mediaStart(g.start)} data-track-index="12" data-volume="0" muted playsinline style="position:absolute;inset:0;width:1080px;height:1920px"></video>` : '');
   const top = [];
   top.push(`<div ${clip('einstieg-h1', 0, e.end, 2, 'h1', ' data-einstieg="1"')} style="top:250px;font-size:${e.h1.fontSize}px;opacity:1"><span class="h1" style="visibility:visible">${lines(e.h1.lines)}</span></div>`);
   if (e.h2) top.push(`<div ${clip('einstieg-h2', 0, e.end + 0.06, 3, 'h2', ' data-einstieg="1"')} style="top:${e.h2.top}px;opacity:1"><span class="h2" style="visibility:visible">${lines(e.h2.lines)}</span></div>`);
@@ -359,18 +368,18 @@ export function makeDesign22Composition(plan, opts = {}) {
 .ind i{width:12px;height:12px;border-radius:50%;background:${C.ink};display:block}.ind i:nth-child(2){opacity:.55}.ind i:nth-child(3){opacity:.3}
 `;
   return `<!doctype html><html lang="de"><head><meta charset="utf-8"><title>${esc(plan.title || 'Video')}</title><style>${css}</style><script src="vendor/gsap.min.js"></script></head><body>
-<main id="root" data-composition-id="root" data-width="${opts.vorschau ? 540 : 1080}" data-height="${opts.vorschau ? 960 : 1920}" data-fps="30" data-duration="${duration}"${opts.vorschau ? ' style="zoom:.5"' : ''}>
-<video id="footage" class="clip" src="media.mp4" data-start="0" data-duration="${duration}" data-track-index="0" data-volume="0" muted playsinline></video>
-<audio id="voice" class="clip" src="media.mp4" data-start="0" data-duration="${duration}" data-track-index="1" data-volume="1"></audio>
+<main id="root" data-composition-id="root" data-width="${opts.vorschau ? 540 : 1080}" data-height="${opts.vorschau ? 960 : 1920}" data-fps="30" data-duration="${opts.abschnitt ? LEN : duration}"${opts.vorschau ? ' style="zoom:.5"' : ''}>
+<video id="footage" class="clip" src="media.mp4" data-start="0" data-duration="${opts.abschnitt ? LEN : duration}"${T0 ? ` data-media-start="${+T0.toFixed(4)}"` : ''} data-track-index="0" data-volume="0" muted playsinline></video>
+${opts.abschnitt ? '' : `<audio id="voice" class="clip" src="media.mp4" data-start="0" data-duration="${duration}" data-track-index="1" data-volume="1"></audio>`}
 ${html.join('\n')}
 <div id="top">${top.join('\n')}</div>
 ${caps}
 ${outroHtml}
 ${bubbles}
-</main><script>${timeline22(plan)}</script></body></html>`;
+</main><script>${timeline22(plan, opts.abschnitt)}</script></body></html>`;
 }
 
-function timeline22(plan) {
+function timeline22(plan, abschnitt) {
   const D = { e: plan.einstieg, k: plan.kapitel || [], h1: plan.h1 || [], h2: plan.h2 || [], p: plan.pillen || [], a: plan.akronyme || [], s: plan.schlagworte || [], g: plan.grafiken || [], n: plan.randnotizen || [], b: plan.lebensbalken || [], l: plan.logos || [], sb: plan.sprechblasen || [], c: plan.captions || [], z: plan.zooms || [], o: plan.outro, hide: plan.ausblenden || [], logoH1: plan.logoH1 || [] };
   return `
 function bezier(x1,y1,x2,y2){const f=(s,a,b)=>3*(1-s)*(1-s)*s*a+3*(1-s)*s*s*b+s*s*s;return x=>{if(x<=0)return 0;if(x>=1)return 1;let lo=0,hi=1;for(let i=0;i<30;i++){const m=(lo+hi)/2;if(f(m,x1,x2)<x)lo=m;else hi=m;}return f((lo+hi)/2,y1,y2);};}
@@ -381,7 +390,10 @@ const show=(s,a,b)=>{const c=s+' > *';tl.set(c,{visibility:'visible'},a);tl.set(
 const out=(s,end)=>tl.to(s,{opacity:0,y:-8,duration:.18,ease:LIN},end-.18);           // 15: Ausblenden 0,18 s, Linear, 8 px nach oben
 const up=(s,at,dy=14)=>{tl.set(s,{opacity:0,y:dy},0);tl.fromTo(s,{opacity:0,y:dy},{opacity:1,y:0,duration:.22,ease:OUT,immediateRender:false},at);};
 const pop=(s,at,from,dur)=>{tl.set(s,{opacity:0,scale:from},0);tl.set(s,{opacity:1},at);tl.fromTo(s,{scale:from},{scale:1,duration:dur,ease:BACK,immediateRender:false},at);};
-const wipe=(s,at,dur,m)=>{tl.set(s,{clipPath:'inset(-'+m+'px 100% -'+m+'px -'+m+'px)'},0);tl.fromTo(s,{clipPath:'inset(-'+m+'px 100% -'+m+'px -'+m+'px)'},{clipPath:'inset(-'+m+'px -'+m+'px -'+m+'px -'+m+'px)',duration:dur,ease:OUT,immediateRender:false},at);};
+// Wischblende in px (27.09.2026, Tempo Phase 3): Von „100 %“ auf „-20px“ rechnet GSAP ohne Einheit um, die Blende sprang
+// im ersten Bild fast ganz auf. Breite deshalb beim ersten Abspielen messen (Schriften sind dann geladen).
+const hidR=(s,m)=>()=>{const e=document.querySelector(s);return 'inset(-'+m+'px '+((e?e.offsetWidth:0)+m)+'px -'+m+'px -'+m+'px)';};
+const wipe=(s,at,dur,m)=>{const vis='inset(-'+m+'px -'+m+'px -'+m+'px -'+m+'px)';tl.set(s,{clipPath:hidR(s,m)},0);tl.fromTo(s,{clipPath:hidR(s,m)},{clipPath:vis,duration:dur,ease:OUT,immediateRender:false},at);};
 // Zeichnen über das SVG-Attribut: GSAP rundet die CSS-Eigenschaft strokeDashoffset auf ganze Pixel, bei pathLength 1
 // sprang jede Linie dadurch von unsichtbar auf fertig (Fast 30, 27.09.2026: Durchstreichen und ETF-Linie „zu schnell“).
 const draw=(s,at,dur)=>tl.to(s,{attr:{'stroke-dashoffset':0},duration:dur,ease:OUT},at);
@@ -405,7 +417,7 @@ for(const n of D.n){show('#'+n.id,n.start,n.end);let k=0;n.lines.forEach((l,j)=>
 // 15: Lebensbalken. Abschnitt füllt sich in 1,0 s; Beschriftung wie Randnotiz-Zeile.
 for(const b of D.b){show('#'+b.id,b.start,b.end);up('#'+b.id+' .bal-bed',b.start);b.segments.forEach((s,i)=>{up('#'+b.id+'-l'+i,s.at);tl.to('#'+b.id+'-f'+i,{scaleX:1,duration:1,ease:OUT},s.at);});out('#'+b.id,b.end);}
 // 15: Logo. Wischblende von links 0,28 s, Ausblenden 0,22 s in gleicher Richtung; H1/Kapitel 0,1 s vorher aus, 0,1 s danach wieder an.
-for(const l of D.l){show('#'+l.id,l.start,l.end);wipe('#'+l.id+' .logo',l.start,.28,0);tl.to('#'+l.id+' .logo',{clipPath:'inset(0px 0px 0px 100%)',duration:.22,ease:LIN},l.end-.22);}
+for(const l of D.l){show('#'+l.id,l.start,l.end);wipe('#'+l.id+' .logo',l.start,.28,0);tl.to('#'+l.id+' .logo',{clipPath:()=>'inset(-0px -0px -0px '+document.querySelector('#'+l.id+' .logo').offsetWidth+'px)',duration:.22,ease:LIN},l.end-.22);}
 for(const x of D.logoH1){tl.to(x.sel,{opacity:0,duration:.1,ease:LIN},x.out);tl.to(x.sel,{opacity:1,duration:.1,ease:LIN},x.in);}
 // 10: Schlagwort. Stoßzoom hart auf 112 % (Ursprung 42/28), Wort Pop 55 → 100 % 0,30 s; Striche ab 0,25 s, je 0,25 s, der zweite 0,15 s später (Referenz).
 for(const s of D.s){show('#'+s.id,s.start,s.end);pop('#'+s.id+' .sw-pop',s.start,.55,.3);draw(['#'+s.id+'-u0i','#'+s.id+'-u0p'],s.start+.25,.25);draw(['#'+s.id+'-u1i','#'+s.id+'-u1p'],s.start+.4,.25);tl.set('#footage',{scale:1.12},s.start);tl.set('#footage',{scale:1},s.end);out('#'+s.id,s.end);}
@@ -427,6 +439,10 @@ for(const b of D.sb){const s=b.start;show('#'+b.id,s,s+4.25);tl.set('#'+b.id+'-i
 // 15: Outro. Folgen 0,22 s von unten; Karte ab 0,15 s Pop 88 → 100 % 0,45 s (Ursprung unten links); Balken und Zähler ab 0,45 s 1,40 s synchron.
 {const o=D.o;show('#follow',o.start,o.end);show('#outro-card',o.start,o.end);up('#follow .follow',o.start);pop('#outro-card',o.start+.15,.88,.45);
  for(let i=0;i<=42;i++){const f=OUT(i/42),at=o.start+.45+1.4*i/42;document.getElementById('cnt-'+i).textContent=(i===42?o.followers:Math.round(o.followers*f)).toLocaleString('de-DE');tl.set('#cnt-'+i,{visibility:'visible'},at);if(i)tl.set('#cnt-'+(i-1),{visibility:'hidden'},at);tl.set('#oc-fill',{scaleX:Math.min(1,o.followers/10000)*f},at);}}
-window.__timelines={root:tl};
+${abschnitt ? `// Abschnitt ${abschnitt.t0}–${+(abschnitt.t0 + abschnitt.dauer).toFixed(4)} s: dieselbe absolute Zeitleiste, auf 1/30 s eingerastet,
+// damit jedes Bild genau dem Bild der vollen Komposition entspricht.
+// Erst direkt auf den Abschnittsbeginn setzen: sonst greifen die Anfangszustände (tl.set bei 0) im Sprung nicht (28.09.2026).
+tl.totalTime(${abschnitt.t0},true);const seg=gsap.timeline({paused:true});seg.fromTo(tl,{totalTime:${abschnitt.t0}},{totalTime:${+(abschnitt.t0 + abschnitt.dauer).toFixed(6)},duration:${abschnitt.dauer},ease:'none',snap:{totalTime:1/30}},0);
+window.__timelines={root:seg};` : 'window.__timelines={root:tl};'}
 `;
 }

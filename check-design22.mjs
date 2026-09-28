@@ -20,7 +20,9 @@ export async function checkDesign22(project, { step = 1 } = {}) {
     const page = await browser.newPage();
     await page.setViewport({ width: 1080, height: 1920, deviceScaleFactor: 1 });
     await page.goto(pathToFileURL(path.join(project, 'index.html')).href, { waitUntil: 'load' });
-    await page.evaluate(() => document.fonts.ready);
+    // Schriften ausdrücklich laden: Ohne Kapitelnummer oder Akronym lädt der Browser Gochi nie, und die Prüfung meldete
+    // „Schrift fehlt“ (Fehlalarm, Tempo Phase 5). Fehlt die Datei wirklich, schlägt das Laden fehl und der Befund bleibt.
+    await page.evaluate(async () => { await Promise.all(['900 64px "ABI Archivo"', '800 64px "ABI Archivo"', '700 24px "ABI Archivo"', '400 140px "ABI Gochi"'].map(f => document.fonts.load(f).catch(() => null))); await document.fonts.ready; });
     report = await page.evaluate(({ plan, faces, profil, step }) => {
       const errors = [], warnings = [], seen = new Set();
       const add = (list, type, d = {}) => { const k = type + JSON.stringify({ ...d, t: undefined, b: undefined }); if (seen.has(k) || list.length > 400) return; seen.add(k); list.push({ type, ...d }); };
@@ -72,8 +74,10 @@ export async function checkDesign22(project, { step = 1 } = {}) {
       // Wie die Vorlage: Oberkante aus der Maske, seitlich Gesicht ± 30 % (Krempe).
       const faceAt = t => faces.find(f => Math.abs(f.time - t) < 0.01);
       const kopfBox = (q, t) => { if (!profil) return { x: q.x - 0.12 * q.width, y: q.y - 0.5 * q.height, w: 1.24 * q.width, h: 1.5 * q.height }; const f = (faceAt(t)?.faces || [])[0]; const l = f ? Math.max(q.x, f.x - 0.3 * f.width) : q.x, r = f ? Math.min(q.x + q.width, f.x + 1.3 * f.width) : q.x + q.width; return { x: l - 4, y: q.y - 4, w: Math.max(0, r - l) + 8, h: q.height + 8 }; };
-      const src = profil || faces;
-      const heads = t => { const f = src.reduce((b, x) => Math.abs(x.time - t) < Math.abs(b.time - t) ? x : b); return Math.abs(f.time - t) > 0.26 ? [] : (f.faces || []).map(q => kopfBox(q, f.time)); };
+      // Seit 27.09.2026 (Tempo) misst die Personenmaske nur an den Einblendungsstellen; sonst gilt die Schätzung aus den Gesichtern.
+      const near = (arr, t) => arr?.length ? arr.reduce((b, x) => Math.abs(x.time - t) < Math.abs(b.time - t) ? x : b) : null;
+      const schaetzung = q => ({ x: q.x - 0.12 * q.width, y: q.y - 0.5 * q.height, w: 1.24 * q.width, h: 1.5 * q.height });
+      const heads = t => { const p = near(profil, t); if (p && Math.abs(p.time - t) <= 0.26) return (p.faces || []).map(q => kopfBox(q, p.time)); const f = near(faces, t); return !f || Math.abs(f.time - t) > 0.26 ? [] : (f.faces || []).map(schaetzung); };
       const green = t => (plan.grafiken || []).some(g => t >= g.start && t < g.end);
       const frames = Math.ceil(plan.duration * 30); let maxLayers = 0, capFrames = 0;
       for (let f = 0; f < frames; f += step) {
@@ -87,7 +91,10 @@ export async function checkDesign22(project, { step = 1 } = {}) {
           // Ausnahme nur für das Ausblenden (DESIGN.md 15: 0,18 s, 8 px nach oben): unter 20 % Gesamtdeckkraft ist das Element praktisch
           // unsichtbar; eine H1 an y = 250 kreuzt die Linie sonst zwangsläufig im letzten Ausblendschritt.
           let deck = 1; for (let e = el; e && e.id !== 'root'; e = e.parentElement) deck *= +cs(e).opacity; deck *= +cs(el.firstElementChild).opacity;
-          if (deck >= 0.2 && b.y < 249.5 || b.y + b.h > 1660.5 || b.x < 89.5) err('gesperrte_zone', { id: el.id, t: +t.toFixed(2), b });
+          // Ausblenden (DESIGN.md 15: letzte 0,18 s, 8 px nach oben): Ein Element mit Oberkante 250 (DESIGN.md 5/6) kreuzt die
+          // Linie dabei zwangsläufig; nur die Oberkante ist in dieser Zeit ausgenommen (Tempo Phase 5, Fehlalarm H2 allein).
+          const ende = +el.dataset.start + +el.dataset.duration, ausblenden = t >= ende - 0.19 && t < ende;
+          if ((deck >= 0.2 && !ausblenden && b.y < 249.5) || b.y + b.h > 1660.5 || b.x < 89.5) err('gesperrte_zone', { id: el.id, t: +t.toFixed(2), b });
           if (deck >= 0.2 && b.y + b.h > 900.5 && b.x + b.w > 930.5) err('aktionsleiste', { id: el.id, t: +t.toFixed(2), b });
           if (deck >= 0.2 && b.y < 900 && !['caption', 'outro-card', 'bubble'].includes(k) && (b.x < 107.5 || b.x + b.w > 972.5)) err('obere_zone', { id: el.id, t: +t.toFixed(2), b });
           if (CENTER[k]) { const c = R(el.querySelector(CENTER[k])); if (Math.abs(c.x + c.w / 2 - 540) > 0.75) err('mittelachse', { id: el.id, mitte: +(c.x + c.w / 2).toFixed(2) }); }

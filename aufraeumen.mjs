@@ -56,7 +56,7 @@ function lies(p) {
   return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : null;
 }
 
-function aufraeumen(projekte) {
+export function aufraeumen(projekte) {
   const [haupt, ...weitere] = projekte.map(p => path.resolve(p));
   for (const p of [haupt, ...weitere]) {
     if (REFERENZ.has(path.basename(p)) || lies(p)?.referenz) throw Error(`Referenzprojekt, bleibt unverändert: ${p}`);
@@ -65,16 +65,19 @@ function aufraeumen(projekte) {
   if (!m) throw Error(`Keine workflow.json in ${haupt}`);
 
   // Erst wenn die Postingdatei nachweislich in Drive liegt, ist das lokale Material entbehrlich.
-  if (!m.postingFile || !fs.existsSync(m.postingFile)) throw Error('postingFile fehlt oder zeigt ins Leere. Erst ausliefern und einplanen.');
-  if (!m.postingSha256 || sha(m.postingFile) !== m.postingSha256) throw Error('Postingdatei in Drive stimmt nicht mit postingSha256 überein. Nicht aufräumen.');
+  // Testprojekte (workflow.json „testmodus“, etwa Messläufe) werden nie ausgeliefert; ihr Material ist sofort entbehrlich.
   const warnungen = [];
-  if (!m.sourceArchived || !fs.existsSync(m.sourceArchived)) warnungen.push('Rohvideo ist nicht als sourceArchived in Drive belegt. Quellkopien im Projekt sind dann womöglich die einzige Kopie, bitte prüfen.');
+  if (!m.testmodus) {
+    if (!m.postingFile || !fs.existsSync(m.postingFile)) throw Error('postingFile fehlt oder zeigt ins Leere. Erst ausliefern und einplanen.');
+    if (!m.postingSha256 || sha(m.postingFile) !== m.postingSha256) throw Error('Postingdatei in Drive stimmt nicht mit postingSha256 überein. Nicht aufräumen.');
+    if (!m.sourceArchived || !fs.existsSync(m.sourceArchived)) warnungen.push('Rohvideo ist nicht als sourceArchived in Drive belegt. Quellkopien im Projekt sind dann womöglich die einzige Kopie, bitte prüfen.');
+  }
 
-  const datum = m.postingDate ?? new Date().toISOString().slice(0, 10);
+  const datum = m.testmodus ? new Date().toISOString().slice(0, 10) : (m.postingDate ?? new Date().toISOString().slice(0, 10));
   const heute = new Date().toISOString().slice(0, 10);
   const titel = (m.title ?? path.basename(haupt)).replace(/[/:]/g, '-');
   let ab = 'sofort löschbar';
-  if (datum >= heute) {
+  if (datum >= heute && !m.testmodus) {
     const t = new Date(datum + 'T12:00:00Z'); t.setUTCDate(t.getUTCDate() + 1);
     ab = `löschbar ab ${t.toISOString().slice(8, 10)}-${t.toISOString().slice(5, 7)}`;
   }
@@ -110,8 +113,9 @@ function aufraeumen(projekte) {
   fs.writeFileSync(path.join(ziel, 'MANIFEST.tsv'),
     'MB\tOriginal\tSHA-256\n' + manifest.map(e => `${(e.bytes / 1e6).toFixed(1)}\t${e.original}\t${e.sha256}`).join('\n') + '\n');
   console.log(`${anzahl} Dateien, ${gb(summe)} nach ${ziel}`);
-  console.log(`Postingdatei in Drive: ${m.postingFile}`);
+  if (m.postingFile) console.log(`Postingdatei in Drive: ${m.postingFile}`);
   for (const w of warnungen) console.log('Achtung: ' + w);
+  return { dateien: anzahl, bytes: summe, gb: gb(summe), ziel, warnungen };
 }
 
 function stand() {

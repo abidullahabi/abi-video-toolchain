@@ -7,6 +7,7 @@ import { createHash, randomBytes } from 'node:crypto';
 import { parseArgs } from 'node:util';
 import { parseSrt, makeComposition } from './composition.mjs';
 import { renderProfil } from './schnellweg.mjs';
+import { projektOrdner, PROJEKTE } from './projekte.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const BIN = path.join(ROOT, 'tools/bin');
@@ -93,7 +94,7 @@ async function prepare(input, opts) {
     console.warn(`Achtung: ${x.projekt} arbeitet seit ${x.begonnen} an derselben Quelle (${x.agent}: ${x.aufgabe}).`);
   }
   const name = path.basename(source, path.extname(source)).normalize('NFKD').replace(/[^a-zA-Z0-9_-]/g, '-').slice(0, 55) || 'video';
-  const project = path.join(ROOT, 'projects', `${name}-${stamp()}-${randomBytes(2).toString('hex')}`);
+  const project = path.join(PROJEKTE, `${name}-${stamp()}-${randomBytes(2).toString('hex')}`);
   fs.mkdirSync(path.join(project, 'logs'), { recursive: true });
   const manifest = { version: 1, created: new Date().toISOString(), source, sourceBytes: fs.statSync(source).size, originalDuration, threshold, margin, status: 'in_progress', language: opts.language || 'de',
     // Nachbesprechung Punkt 3: Anspruch auf diese Quelle, damit parallele Sitzungen einander sehen.
@@ -162,13 +163,9 @@ function buildComposition(project) {
   fs.writeFileSync(path.join(project, 'index.html'), makeComposition({ duration: meta.cutDuration, cues, design }));
 }
 
-function existingProject(value) {
-  if (!value) throw new Error('Bitte den Projektordner angeben.');
-  const p = fs.realpathSync(path.resolve(value));
-  const base = fs.realpathSync(path.join(ROOT, 'projects')) + path.sep;
-  if (!p.startsWith(base) || !fs.existsSync(path.join(p, 'workflow.json'))) throw new Error('Bitte einen Projektordner aus content-workflow/projects verwenden.');
-  return p;
-}
+// Seit 27.09.2026 (Tempo): Projekte liegen im gemeinsamen projects/ des Hauptordners, auch wenn dieses Werkzeug in einem
+// Arbeitsordner (git worktree) läuft. Ein Projektname ohne Pfad genügt.
+function existingProject(value) { return projektOrdner(value); }
 
 function render(project, opts, regenerate = true) {
   if (regenerate) buildComposition(project);
@@ -212,7 +209,7 @@ function changeSpeed(sourceProject, opts) {
   if (!source || !fs.existsSync(source)) throw Error('Der fertige Export fehlt.');
   const info = probe(source);
   const originalDuration = duration(info);
-  const project = path.join(ROOT, 'projects', `Video-${String(rate).replace('.', '-')}x-${stamp()}`);
+  const project = path.join(PROJEKTE, `Video-${String(rate).replace('.', '-')}x-${stamp()}`);
   fs.mkdirSync(path.join(project, 'logs'), {recursive: true});
   fs.mkdirSync(path.join(project, 'exports'), {recursive: true});
   const output = path.join(project, 'exports', `Video-${String(rate).replace('.', '-')}x.mp4`);
@@ -233,7 +230,7 @@ function changeSpeed(sourceProject, opts) {
 
 try {
   const { values: opts, positionals } = parseArgs({ allowPositionals: true, options: {
-    title: { type: 'string' }, language: { type: 'string' }, threshold: { type: 'string' }, margin: { type: 'string' }, 'speech-model': { type: 'string' }, speed: { type: 'string' },
+    title: { type: 'string' }, farbkorrektur: { type: 'string' }, datum: { type: 'string' }, aufgabe: { type: 'string' }, neu: { type: 'boolean' }, language: { type: 'string' }, threshold: { type: 'string' }, margin: { type: 'string' }, 'speech-model': { type: 'string' }, speed: { type: 'string' },
     'no-cut': { type: 'boolean' }, 'no-normalize': { type: 'boolean' }, cpu: { type: 'boolean' }, draft: { type: 'boolean' }, review: { type: 'boolean' },
   }});
   const [action, target] = positionals;
@@ -248,6 +245,10 @@ try {
     else if (action === 'preview-cut') previewCut(existingProject(target), { ROOT, HF, run });
     else await exportCut(existingProject(target), { ROOT, BIN, MODEL, run, probe, opts });
   }
+  else if (action === 'anlegen') { const { anlegen } = await import('./vorbereiten.mjs'); await anlegen(target, opts); }
+  else if (action === 'vorbereiten') { const { vorbereiten } = await import('./vorbereiten.mjs'); await vorbereiten(existingProject(target), opts); }
+  else if (action === 'planentwurf') { const { planentwurf } = await import('./planentwurf.mjs'); const P = existingProject(target), { zeit } = await import('./projekte.mjs'); console.log(JSON.stringify(await zeit(P, 'planentwurf', () => planentwurf(P)), null, 1)); }
+  else if (action === 'kopfprofil') { const { kopfprofil } = await import('./vorbereiten.mjs'); console.log(JSON.stringify(await kopfprofil(existingProject(target)))); }
   else if (action === 'prepare') await prepare(target, opts);
   else if (action === 'render') render(existingProject(target), opts);
   else if (action === 'render-html') render(existingProject(target), opts, false);
@@ -256,7 +257,7 @@ try {
     const sw = await import('./schnellweg.mjs');
     const { assembleFullVideo } = await import('./assemble-full-video.mjs');
     const { checkDesign22 } = await import('./check-design22.mjs');
-    const ctx = { root: ROOT, run, assemble: (p, o) => assembleFullVideo(p, o), check: p => checkDesign22(p) };
+    const ctx = { root: ROOT, run, env: ENV, assemble: (p, o) => assembleFullVideo(p, o), check: p => checkDesign22(p) };
     await sw[action](existingProject(target), ctx);
   }
   else if (action === 'green-screen') {
@@ -278,7 +279,7 @@ try {
     buildComposition(p);
     console.log(run(process.execPath, [HF, 'preview', p, '--background', '--no-open']));
   } else {
-    console.log('Verwendung:\n  node workflow.mjs doctor\n  node workflow.mjs prepare "/Pfad/Video.mov" --title "Deine Überschrift"\n  node workflow.mjs preview "/Pfad/Projekt"\n  node workflow.mjs render "/Pfad/Projekt"\n  node workflow.mjs render-html "/Pfad/Projekt"\n  node workflow.mjs green-screen "/Pfad/Projekt" [--review]\n  node workflow.mjs storyboard "/Pfad/Projekt"\n  node workflow.mjs vorschau "/Pfad/Projekt"\n  node workflow.mjs build "/Pfad/Projekt"\n\nOptionen für prepare: --language de --threshold 3 --margin 0.25 --cpu --no-cut --no-normalize\nOption für render: --draft');
+    console.log('Verwendung:\n  node workflow.mjs doctor\n  node workflow.mjs anlegen "/Pfad/Rohvideo.mp4" --title "Titel" [--farbkorrektur A] [--datum JJJJ-MM-TT]\n  node workflow.mjs vorbereiten "<Projekt>" [--neu]\n  node workflow.mjs kopfprofil "<Projekt>"\n  node workflow.mjs planentwurf "<Projekt>"\n  node workflow.mjs prepare "/Pfad/Video.mov" --title "Deine Überschrift"\n  node workflow.mjs preview "/Pfad/Projekt"\n  node workflow.mjs render "/Pfad/Projekt"\n  node workflow.mjs render-html "/Pfad/Projekt"\n  node workflow.mjs green-screen "/Pfad/Projekt" [--review]\n  node workflow.mjs storyboard "/Pfad/Projekt"\n  node workflow.mjs vorschau "/Pfad/Projekt"\n  node workflow.mjs build "/Pfad/Projekt"\n\nOptionen für prepare: --language de --threshold 3 --margin 0.25 --cpu --no-cut --no-normalize\nOption für render: --draft');
     if (action) process.exitCode = 1;
   }
 } catch (error) {

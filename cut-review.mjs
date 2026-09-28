@@ -8,7 +8,7 @@ export async function analyzeCut(input, { ROOT, BIN, MODEL, run, probe, opts }) 
   const source = fs.realpathSync(path.resolve(input));
   const info = probe(source);
   if (!info.streams.some(x => x.codec_type === 'video') || !info.streams.some(x => x.codec_type === 'audio')) throw Error('Bild oder Ton fehlt.');
-  const project = path.join(ROOT, 'projects', `Schnitttest-07s-${new Date().toISOString().replace(/[:.]/g, '-')}`);
+  const project = path.join((await import('./projekte.mjs')).PROJEKTE, `Schnitttest-07s-${new Date().toISOString().replace(/[:.]/g, '-')}`);
   fs.mkdirSync(path.join(project, 'logs'), { recursive: true });
   const hash = createHash('sha256');
   for await (const chunk of fs.createReadStream(source)) hash.update(chunk);

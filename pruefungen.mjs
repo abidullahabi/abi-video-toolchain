@@ -13,7 +13,8 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
-const PROJEKTE = path.join(ROOT, 'projects');
+// Seit 27.09.2026: gemeinsamer projects/ des Hauptordners, auch aus einem Arbeitsordner (git worktree).
+import { PROJEKTE } from './projekte.mjs';
 const FRIST_STUNDEN = 6;
 
 const lies = f => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return null; } };
