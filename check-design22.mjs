@@ -53,7 +53,13 @@ export async function checkDesign22(project, { step = 1 } = {}) {
         switch (k) {
           case 'h1': return INK([...el.querySelectorAll('.h1 .ln')], 8);
           case 'h2': return R(q('.h2'));
-          case 'kapitel': return UT([...el.querySelectorAll('.kap-num,.kap-title')], 7);
+          case 'kapitel': {
+            // 17 (Test Buchcover): Cover samt Schatten (12 px im großen Zustand) und die schon sichtbaren Textteile.
+            if (el.dataset.buch) { const c = R(q('.buch-cover')), rs = [{ x: c.x, y: c.y, w: c.w + 12, h: c.h + 12 }], t = vis(el.querySelectorAll('.buch-row,.buch-de'));
+              if (t.length) rs.push(UT(t, 7)); const a = q('.buch-autor'); if (a) rs.push(R(a));   // Autor zählt immer (steht an seinem Platz, auch solange die Blende ihn verdeckt)
+              const x = Math.min(...rs.map(b => b.x)), y = Math.min(...rs.map(b => b.y)); return { x, y, w: Math.max(...rs.map(b => b.x + b.w)) - x, h: Math.max(...rs.map(b => b.y + b.h)) - y }; }
+            return UT([...el.querySelectorAll('.kap-num,.kap-title')], 7);
+          }
           case 'pillen': { const p = vis(el.querySelectorAll('.pill-pop')).map(x => x.firstElementChild); return p.length ? U(p, 3) : null; }
           case 'akronym': { const p = [...el.querySelectorAll('.ak-letter'), ...vis(el.querySelectorAll('.ak-pill-pop')).map(x => x.firstElementChild)]; return UT(p, 8); }
           case 'schlagwort': return UT([q('.sw-word'), q('.sw-lines')], 11);

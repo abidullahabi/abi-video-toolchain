@@ -63,7 +63,8 @@ export function speicherPruefen(meta = {}) {
 export function momente(plan) {
   const m = [], add = (t, art, text) => { if (t >= 0 && t < plan.duration) m.push({ t: Math.round(t * 100) / 100, art, text }); };
   const e = plan.einstieg; add(0, 'Einstieg', [...e.h1.lines, ...(e.h2?.lines || [])].join(' / '));
-  for (const k of plan.kapitel || []) add(k.start + 0.62, 'Kapitel', `${k.nummer || ''} ${k.titel}`.trim());
+  for (const k of plan.kapitel || []) if (k.buch) { add(k.start + 0.6, 'Buchcover groß (Test 17)', k.titel); add(Math.min(k.end - 0.25, k.buch.autorAt + 0.4), 'Kapitel mit Buchcover', `${k.nummer || ''} ${k.titel} / ${k.buch.de || ''} / ${k.buch.autor || ''}`.trim()); }
+    else add(k.start + 0.62, 'Kapitel', `${k.nummer || ''} ${k.titel}`.trim());
   for (const h of plan.h1 || []) add(h.start + 0.3, 'H1', h.lines.join(' '));
   for (const h of plan.h2 || []) add(h.start + 0.4, 'H2', h.lines.join(' / '));
   for (const p of plan.pillen || []) add(Math.min(p.end - 0.25, p.items.at(-1).at + 0.35), `Pillen (${p.layout === 'row' ? 'nebeneinander' : 'untereinander'})`, p.items.map(i => i.text).join(' · '));
@@ -86,7 +87,8 @@ export function animationen(plan) {
   const a = [], add = (id, art, text, mitte, ende) => { if (mitte >= 0 && ende > mitte && ende < plan.duration) a.push({ id, art, text, mitte: Math.round(mitte * 1000) / 1000, ende: Math.round(ende * 1000) / 1000 }); };
   const h1Ids = new Set((plan.h1 || []).map(h => 'h1:' + h.id));
   // Mit Nummer: Zahl wischt 0,40 s, Titel ab 0,35 s. Ohne Nummer: nur der Titel, 0,22 s ab Beginn (DESIGN.md 15).
-  for (const k of plan.kapitel || []) k.nummer ? add(k.id, 'Kapitel', `${k.nummer} ${k.titel}`, k.start + 0.2, k.start + 0.62) : add(k.id, 'Kapitel', k.titel, k.start + 0.06, k.start + 0.3);
+  for (const k of plan.kapitel || []) if (k.buch) { add(k.id, 'Buchcover (Pop)', k.titel, k.start + 0.1, Math.min(k.buch.grossBis - 0.05, k.start + 0.6)); add(k.id, 'Buchcover (verkleinern, Titel, Autor)', k.titel, k.buch.grossBis + 0.2, Math.min(k.end - 0.2, k.buch.autorAt + 0.35)); }
+    else k.nummer ? add(k.id, 'Kapitel', `${k.nummer} ${k.titel}`, k.start + 0.2, k.start + 0.62) : add(k.id, 'Kapitel', k.titel, k.start + 0.06, k.start + 0.3);
   for (const h of plan.h1 || []) add(h.id, 'H1', h.lines.join(' '), h.start + 0.08, h.start + 0.3);
   for (const h of plan.h2 || []) { const v = h1Ids.has(h.unter) ? 0.06 : 0; add(h.id, 'H2', h.lines.join(' / '), h.start + v + 0.06, h.start + v + 0.4); }
   for (const p of plan.pillen || []) p.items.forEach((it, i) => add(p.id, `Pille ${i + 1}`, it.text, it.at + 0.08, Math.min(p.end - 0.2, (p.items[i + 1]?.at ?? Infinity) - 0.01, it.at + 0.35)));

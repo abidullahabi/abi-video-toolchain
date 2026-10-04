@@ -106,6 +106,7 @@ export function layoutDesign22(input, ctx) {
   // 8: Kapitel. Gruppenhöhe = Zahl 140 px (Zeilenhöhe 1). Mit Pillen Oberkante 270, sonst 300.
   const KAP_H = 140;
   const kapitel = (input.kapitel || []).map(k => {
+    if (k.buch) return buch22(k, { A, G, errors, notes, warnings: ctx.warnings, hits });
     const w = (k.nummer ? G(k.nummer, 140) + 14 + 28 : 0) + A(k.titel, 64, 900, 100, 6) + 12;
     if (w > 864) errors.push(`Kapitel ${k.id} breiter als 864 px (${Math.round(w)}): ${k.nummer || ''} ${k.titel}`);
     const pills = (input.pillen || []).some(p => p.kapitel === k.id);
@@ -209,6 +210,15 @@ export function layoutDesign22(input, ctx) {
   const sprechblasen = (input.sprechblasen || []).map((b, i) => ({ id: 'bubble-' + i, text: b.text, start: b.start, top: Math.abs(b.start - input.outroStart) < 2 || b.start >= input.outroStart ? 345 : 300 }));
   for (const b of sprechblasen) if (A(b.text, 36, 800) + 40 + 8 > 620) errors.push('Sprechblase breiter als 620 px');
 
+  // 17 Buchcover: Während der großen Phase (bis grossBis + 0,5 s) reicht das Cover bis y 882. Pillen, H2, Logo und Randnotiz unter
+  // dem Kapitel lägen darunter (Befund Code-Prüfung): erst nach der Verkleinerung erlaubt.
+  for (const k of kapitel.filter(k => k.buch)) {
+    const frei = k.buch.grossBis + 0.5, ueber = x => x.start < frei && x.end > k.start;
+    for (const p of pillen.filter(p => p.kapitel === k.id && p.start < frei)) errors.push(`Pillen ${p.id} beginnen während das Cover von ${k.id} groß steht (erst ab ${r2(frei)} s)`);
+    for (const h of h2.filter(h => (input.h2 || []).find(x => x.id === h.id)?.unter === 'kapitel:' + k.id && h.start < frei)) errors.push(`H2 ${h.id} unter ${k.id} beginnt während das Cover groß steht (erst ab ${r2(frei)} s)`);
+    for (const l of logos.filter(l => l.unter === k.id && l.start < frei)) errors.push(`Logo ${l.id} unter ${k.id} beginnt während das Cover groß steht (erst ab ${r2(frei)} s)`);
+    for (const n of randnotizen.filter(ueber)) errors.push(`Randnotiz ${n.id} läuft, während das Cover von ${k.id} groß steht`);
+  }
   // Ausblenden: 10 Schlagwort blendet H1, H2 und Randnotiz aus; Kapitel und Pillen ebenfalls, weil das Wort an ihrer Stelle steht
   // (in der abgenommenen Branding-Probe so umgesetzt). Grafik: Karte bei y 270 ersetzt alle oberen Textebenen.
   // 14 Logo: H1 blendet 0,1 s vorher aus und 0,1 s danach wieder ein.
@@ -218,6 +228,61 @@ export function layoutDesign22(input, ctx) {
   for (const l of logos.filter(l => !l.unter)) for (const x of [...h1, ...kapitel]) if (x.start < l.end && x.end > l.start) logoH1.push({ sel: '#' + x.id + ' > span', out: l.start - 0.1, in: l.end + 0.1 });
 
   return { designVersion: '2.2', duration: ctx.duration, einstieg, kapitel, h1, h2, pillen, akronyme, schlagworte, grafiken, randnotizen, lebensbalken, logos, sprechblasen, ausblenden, logoH1, outro: { start: input.outroStart, end: ctx.duration, followers: ctx.followers } };
+}
+
+// 17 (In Erprobung, Testauftrag Abdullah 04.10.2026, Video „Bücher die so gut sind wie Therapie“): Kapitel mit Buchcover.
+// Beim Kapitelbeginn steht das Cover groß als B-Roll-Karte in der oberen Zone (Rand und Schatten wie 11, höchstens 3 s),
+// dann verkleinert es sich animiert nach links, rechts daneben erscheinen Nummer und Titel, darunter der deutsche Titel (🇩🇪)
+// und der Autor in der H2-Fläche. Gruppe auf x = 540 zentriert, Oberkante 270, höchstens 850 px breit (Prüfung + 14 ≤ 864).
+// Plan: kapitel[].buch = { datei, breite, hoehe (Pixel der Bilddatei), autor, deutsch, grossBis?, autorAb? }.
+// CSS des Buchcovers, nur eingefügt, wenn ein Kapitel ein Cover hat.
+const BUCH_CSS = () => `.kap-buch{gap:${BUCH.luecke}px;text-align:left}.buch-slot{display:inline-block;flex:0 0 auto}
+.buch-col{display:inline-flex;flex-direction:column;align-items:flex-start}.buch-row{display:inline-flex;align-items:center;gap:18px}
+.buch-num{font-size:${BUCH.zahl}px}.buch-title{display:inline-block;font-weight:900;font-size:${BUCH.titel}px;line-height:1.05;word-spacing:6px;${stroke(6)}}.buch-title .ln{display:block}
+.buch-de{display:inline-block;margin-top:10px;font-weight:800;font-size:${BUCH.de}px;line-height:1.2;white-space:nowrap;${stroke(4)}}
+.buch-autor{display:inline-block;margin-top:16px;background:${C.blue};font-weight:800;font-size:${BUCH.autor}px;line-height:1.12;padding:6px 22px 10px;border-radius:10px;transform:rotate(-2deg);white-space:nowrap}
+.buch-cw{position:absolute;display:block}.buch-cover{display:block;width:100%;height:100%;object-fit:cover;border:4px solid ${C.ink};border-radius:6px;box-shadow:8px 8px 0 ${C.ink};transform:rotate(-3deg)}`;
+const BUCH = { klein: 250, gross: 600, top: 270, luecke: 36, maxW: 850, zahl: 110, titel: 60, de: 40, autor: 44 };
+function buch22(k, { A, G, errors, notes, warnings, hits }) {
+  const b = k.buch, r = b.breite / b.hoehe;
+  if (b.datei && (!b.datei.startsWith('assets/') || /\s/.test(b.datei))) errors.push(`Kapitel ${k.id}: buch.datei muss unter assets/ liegen und darf keine Leerzeichen enthalten (Abschnitts-Cache): ${b.datei}`);
+  if (!b.datei || !(r > 0)) { errors.push(`Kapitel ${k.id}: buch.datei, buch.breite und buch.hoehe fehlen`); return { id: k.id, nummer: k.nummer || null, titel: k.titel, start: k.start, end: k.end, top: BUCH.top, height: BUCH.klein }; }
+  const sw = Math.round(BUCH.klein * r), bw = Math.round(BUCH.gross * r);
+  // Breiten wie im Browser (Layoutbreite), rechts Kontur bzw. Drehung als Zuschlag. Die Spaltenbreite wird im HTML ausdrücklich
+  // gesetzt, damit die Gruppe im Browser genau so breit ist wie hier gerechnet und das kleine Cover genau im Platzhalter landet.
+  const zahlW = k.nummer ? G(k.nummer, BUCH.zahl) + 18 : 0;
+  const rowW = l => zahlW + Math.max(...l.map(x => A(x, BUCH.titel, 900, 100, 6))) + 6;
+  const colMax = BUCH.maxW - sw - BUCH.luecke;
+  let lines = [k.titel];
+  if (rowW(lines) > colMax) {
+    const w = k.titel.split(' '); let best = null;
+    for (let i = 1; i < w.length; i++) { const l = [w.slice(0, i).join(' '), w.slice(i).join(' ')], m = rowW(l); if (!best || m < best.m) best = { l, m }; }
+    if (best) lines = best.l;
+  }
+  const de = b.deutsch ? '🇩🇪 ' + b.deutsch : null;
+  const titleW = rowW(lines), deW = de ? A(de, BUCH.de, 800) + 4 : 0, autorW = b.autor ? A(b.autor, BUCH.autor, 800) + 44 + 4 : 0;
+  if (titleW > colMax) errors.push(`Kapitel ${k.id}: Titel neben dem Cover breiter als ${Math.round(colMax)} px (${Math.round(titleW)}): ${k.titel}`);
+  if (deW > colMax) errors.push(`Kapitel ${k.id}: deutscher Titel breiter als ${Math.round(colMax)} px: ${b.deutsch}`);
+  if (autorW > colMax) errors.push(`Kapitel ${k.id}: Autor breiter als ${Math.round(colMax)} px: ${b.autor}`);
+  const colW = Math.ceil(Math.max(titleW, deW, autorW));
+  const groupW = sw + BUCH.luecke + colW;
+  const rowH = Math.max(k.nummer ? BUCH.zahl : 0, lines.length * BUCH.titel * 1.05);
+  const colH = rowH + (de ? 10 + BUCH.de * 1.2 : 0) + (b.autor ? 16 + BUCH.autor * 1.12 + 16 : 0);
+  const height = Math.round(Math.max(BUCH.klein, colH)), left = (1080 - groupW) / 2;
+  const small = { left, top: Math.round((height - BUCH.klein) / 2), w: sw, h: BUCH.klein };
+  const big = { left: Math.round(540 - bw / 2), top: 0, w: bw, h: BUCH.gross };
+  if (BUCH.top + BUCH.gross + 12 > 900 || bw + 12 > 864) errors.push(`Kapitel ${k.id}: großes Cover passt nicht in die obere Zone`);
+  const grossBis = r2(b.grossBis ?? k.start + 2.4);
+  if (grossBis - k.start > 3 + 1e-6) errors.push(`Kapitel ${k.id}: Cover groß ${(grossBis - k.start).toFixed(2)} s (DESIGN.md 17: höchstens 3 s am Stück)`);
+  if (grossBis - k.start < 0.8) errors.push(`Kapitel ${k.id}: Cover groß nur ${(grossBis - k.start).toFixed(2)} s`);
+  const titleAt = r2(grossBis + 0.3), deAt = r2(titleAt + 0.1), autorAt = r2(Math.max(grossBis + 0.5, b.autorAb ?? 0));
+  if (autorAt > k.end - 0.5) errors.push(`Kapitel ${k.id}: Autor erscheint erst kurz vor Kapitelende`);
+  const gb = { x: big.left, y: BUCH.top, w: bw + 12, h: BUCH.gross + 12 };
+  if (hits(gb, k.start, grossBis).length) notes.push(`Kapitel ${k.id}: großes Cover liegt über dem Kopf (DESIGN.md 17 erlaubt „über dem Gesicht“, höchstens 3 s)`);
+  const hk = hits({ x: left, y: BUCH.top, w: groupW, h: height }, grossBis + 0.5, k.end);
+  if (hk.length) warnings.push(`Kapitel ${k.id} mit Cover berührt Kopf/Kappe (${hk.length} Stichproben)`);
+  return { id: k.id, nummer: k.nummer || null, titel: k.titel, start: k.start, end: k.end, top: BUCH.top, height,
+    buch: { src: b.datei, lines, de, autor: b.autor || null, small, big, groupW, colW, grossBis, titleAt, deAt, autorAt } };
 }
 
 // 11: Karte x 150, y 270, Breite 780, Rand 6, Radius 24, Schatten 12, Innenabstand 26/34/22, Titel 34 px, Abstand Titel–Diagramm 12 (Referenz).
@@ -295,7 +360,10 @@ export function makeDesign22Composition(plan, opts = {}) {
   const top = [];
   top.push(`<div ${clip('einstieg-h1', 0, e.end, 2, 'h1', ' data-einstieg="1"')} style="top:250px;font-size:${e.h1.fontSize}px;opacity:1"><span class="h1" style="visibility:visible">${lines(e.h1.lines)}</span></div>`);
   if (e.h2) top.push(`<div ${clip('einstieg-h2', 0, e.end + 0.06, 3, 'h2', ' data-einstieg="1"')} style="top:${e.h2.top}px;opacity:1"><span class="h2" style="visibility:visible">${lines(e.h2.lines)}</span></div>`);
-  for (const k of kapitel) top.push(`<div ${clip(k.id, k.start, k.end, 4, 'kapitel')} style="top:${k.top}px"><span class="kap">${k.nummer ? `<span class="kap-numw" id="${k.id}-num"><span class="kap-num">${esc(k.nummer)}</span></span>` : ''}<span class="kap-title" id="${k.id}-title">${escEmoji(k.titel)}</span></span></div>`);
+  // 17: Kapitel mit Buchcover. Platzhalter in der Gruppe hält den Platz des kleinen Covers; das Cover selbst steht absolut und
+  // wandert vom großen in den kleinen Zustand.
+  const buchHtml = k => { const b = k.buch; return `<div ${clip(k.id, k.start, k.end, 4, 'kapitel', ' data-buch="1"')} style="top:${k.top}px;height:${k.height}px"><span class="kap kap-buch"><span class="buch-slot" style="width:${b.small.w}px;height:${k.height}px"></span><span class="buch-col" style="width:${b.colW}px"><span class="buch-row" id="${k.id}-title">${k.nummer ? `<span class="kap-num buch-num">${esc(k.nummer)}</span>` : ''}<span class="buch-title">${lines(b.lines)}</span></span>${b.de ? `<span class="buch-de" id="${k.id}-de">${escEmoji(b.de)}</span>` : ''}${b.autor ? `<span class="buch-autor" id="${k.id}-autor">${escEmoji(b.autor)}</span>` : ''}</span></span><span class="buch-cw" id="${k.id}-cw" style="left:${b.small.left}px;top:${b.small.top}px;width:${b.small.w}px;height:${b.small.h}px"><img class="buch-cover" id="${k.id}-cover" src="${esc(b.src)}" alt=""></span></div>`; };
+  for (const k of kapitel) if (k.buch) top.push(buchHtml(k)); else top.push(`<div ${clip(k.id, k.start, k.end, 4, 'kapitel')} style="top:${k.top}px"><span class="kap">${k.nummer ? `<span class="kap-numw" id="${k.id}-num"><span class="kap-num">${esc(k.nummer)}</span></span>` : ''}<span class="kap-title" id="${k.id}-title">${escEmoji(k.titel)}</span></span></div>`);
   for (const h of h1) top.push(`<div ${clip(h.id, h.start, h.end, 2, 'h1')} style="top:250px;font-size:${h.fontSize}px"><span class="h1">${lines(h.lines)}</span></div>`);
   for (const h of h2) top.push(`<div ${clip(h.id, h.start, h.end, 3, 'h2')} style="top:${h.top}px"><span class="h2">${lines(h.lines)}</span></div>`);
   for (const p of pillen) top.push(`<div ${clip(p.id, p.start, p.end, 5, 'pillen', ` data-layout="${p.layout}"`)} style="top:${p.top}px">${p.items.map((it, i) => `<span class="pill-pop" id="${p.id}-${i}"><span class="pill${p.layout === 'row' ? ' pill-row' : ''}" style="${p.layout === 'stack' ? `transform:translateX(${it.dx}px) rotate(${it.rot}deg)` : ''}">${p.layout === 'row' && !p.rowDot ? '' : p.numbered ? `<span class="pill-dot"><span class="pill-no">${i + 1}</span></span>` : '<span class="pill-dot pill-dot-s"></span>'}<span class="pill-text">${escEmoji(it.text)}</span></span></span>`).join('')}</div>`);
@@ -329,7 +397,7 @@ export function makeDesign22Composition(plan, opts = {}) {
 .h2{display:inline-block;background:${C.blue};font-weight:800;font-size:58px;line-height:1.12;padding:8px 28px 14px;border-radius:12px;transform:rotate(-2deg);white-space:nowrap}
 .kap{display:inline-flex;align-items:center;gap:28px;white-space:nowrap}
 .kap-numw{display:inline-block}.kap-num{display:inline-block;font-family:"ABI Gochi";font-size:140px;line-height:1;color:${C.blue};${stroke(7)};transform:rotate(-4deg)}
-.kap-title{display:inline-block;font-weight:900;font-size:64px;line-height:1.1;word-spacing:6px;${stroke(6)}}
+.kap-title{display:inline-block;font-weight:900;font-size:64px;line-height:1.1;word-spacing:6px;${stroke(6)}}${kapitel.some(k => k.buch) ? '\n' + BUCH_CSS() : ''}
 [data-kind=pillen]{display:flex;flex-direction:column;align-items:center;gap:20px}[data-kind=pillen][data-layout=row]{flex-direction:row;justify-content:center;gap:16px}
 .pill-pop{display:inline-block}
 .pill{display:inline-flex;align-items:center;gap:14px;padding:8px 32px 10px 12px;border:5px solid ${C.white};border-radius:999px;box-shadow:0 0 0 3px ${C.ink},inset 0 0 0 3px ${C.ink};white-space:nowrap}
@@ -379,7 +447,17 @@ ${bubbles}
 </main><script>${timeline22(plan, opts.abschnitt)}</script></body></html>`;
 }
 
+// 17 Buchcover: Zeitleisten-Teil, nur eingefügt, wenn ein Kapitel ein Cover hat (alte Kompositionen bleiben bytegleich).
+const BUCH_TL = `// 17: Kapitel mit Buchcover. Cover groß Pop 90 → 100 % 0,35 s (wie Grafik), ab grossBis 0,5 s Ausklingen in den kleinen Platz
+// (Rand 6 → 4, Schatten 12 → 8, Drehung −2° → −3°); Titelzeile ab +0,3 s von unten 0,22 s, deutscher Titel 0,1 s später, Autor wischt 0,28 s.
+for(const k of D.k){if(!k.buch)continue;const b=k.buch,cw='#'+k.id+'-cw',cv='#'+k.id+'-cover';show('#'+k.id,k.start,k.end);
+ tl.set(cw,{left:b.big.left,top:b.big.top,width:b.big.w,height:b.big.h},0);tl.set(cv,{borderWidth:6,borderRadius:8,boxShadow:'12px 12px 0 ${C.ink}',rotation:-2},0);
+ pop(cw,k.start,.9,.35);tl.to(cw,{left:b.small.left,top:b.small.top,width:b.small.w,height:b.small.h,duration:.5,ease:OUT},b.grossBis);
+ tl.to(cv,{borderWidth:4,borderRadius:6,boxShadow:'8px 8px 0 ${C.ink}',rotation:-3,duration:.5,ease:OUT},b.grossBis);
+ up('#'+k.id+'-title',b.titleAt);if(b.de)up('#'+k.id+'-de',b.deAt);if(b.autor){const au='#'+k.id+'-autor';tl.set(au,{opacity:0},0);tl.set(au,{opacity:1},b.autorAt);wipe(au,b.autorAt,.28,20);}out('#'+k.id,k.end);}
+`;
 function timeline22(plan, abschnitt) {
+  const hatBuch = (plan.kapitel || []).some(k => k.buch);
   const D = { e: plan.einstieg, k: plan.kapitel || [], h1: plan.h1 || [], h2: plan.h2 || [], p: plan.pillen || [], a: plan.akronyme || [], s: plan.schlagworte || [], g: plan.grafiken || [], n: plan.randnotizen || [], b: plan.lebensbalken || [], l: plan.logos || [], sb: plan.sprechblasen || [], c: plan.captions || [], z: plan.zooms || [], o: plan.outro, hide: plan.ausblenden || [], logoH1: plan.logoH1 || [] };
   return `
 function bezier(x1,y1,x2,y2){const f=(s,a,b)=>3*(1-s)*(1-s)*s*a+3*(1-s)*s*s*b+s*s*s;return x=>{if(x<=0)return 0;if(x>=1)return 1;let lo=0,hi=1;for(let i=0;i<30;i++){const m=(lo+hi)/2;if(f(m,x1,x2)<x)lo=m;else hi=m;}return f((lo+hi)/2,y1,y2);};}
@@ -404,7 +482,7 @@ for(const h of D.h1){show('#'+h.id,h.start,h.end);tl.set('#'+h.id+' .h1',{opacit
 // 15: H2 wischt in 0,28 s von links auf; 0,06 s nach einer gleichzeitig beginnenden H1.
 for(const h of D.h2){const at=h.start+(D.h1.some(x=>Math.abs(x.start-h.start)<.01)?.06:0);show('#'+h.id,h.start,h.end);wipe('#'+h.id+' .h2',at,.28,20);out('#'+h.id,h.end);}
 // 15: Kapitel. Zahl schreibt sich von links (Maske) 0,40 s, Titel ab 0,35 s von unten 0,22 s.
-for(const k of D.k){show('#'+k.id,k.start,k.end);if(k.nummer)wipe('#'+k.id+'-num',k.start,.4,40);up('#'+k.id+'-title',k.start+(k.nummer?.35:0));out('#'+k.id,k.end);}
+${hatBuch ? BUCH_TL : ''}for(const k of D.k){${hatBuch ? 'if(k.buch)continue;' : ''}show('#'+k.id,k.start,k.end);if(k.nummer)wipe('#'+k.id+'-num',k.start,.4,40);up('#'+k.id+'-title',k.start+(k.nummer?.35:0));out('#'+k.id,k.end);}
 // 15: Pillen einzeln am Wort, Pop 80 → 100 %, 0,30 s, Abfedern; bleiben bis Kapitelende.
 for(const p of D.p){show('#'+p.id,p.start,p.end);p.items.forEach((it,i)=>pop('#'+p.id+'-'+i,it.at,.8,.3));out('#'+p.id,p.end);}
 // 15: Akronym. Buchstaben Pop 55 → 100 %, 0,30 s, je 0,08 s versetzt; aktiver Buchstabe hart blau; neue Pille Pop 0,30 s, alte vorher 0,10 s aus.
