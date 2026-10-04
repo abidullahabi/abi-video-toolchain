@@ -241,7 +241,7 @@ export function layoutDesign22(input, ctx) {
 // 17 (In Erprobung, Testauftrag Abdullah 04.10.2026, Video „Bücher die so gut sind wie Therapie“): Kapitel mit Buchcover.
 // Beim Kapitelbeginn steht das Cover groß als B-Roll-Karte in der oberen Zone (Rand und Schatten wie 11, höchstens 3 s),
 // dann verkleinert es sich animiert nach links, rechts daneben erscheinen Nummer und Titel, darunter der deutsche Titel (🇩🇪)
-// und der Autor in der H2-Fläche. Gruppe auf x = 540 zentriert, Oberkante 270, höchstens 850 px breit (Prüfung + 14 ≤ 864).
+// und der Autor in der H2-Fläche. Gruppe auf x = 540 zentriert, Oberkante 270, höchstens 840 px breit (gedrehtes Cover samt Rand bleibt rechts von x = 108).
 // Plan: kapitel[].buch = { datei, breite, hoehe (Pixel der Bilddatei), autor, deutsch, grossBis?, autorAb? }.
 // CSS des Buchcovers, nur eingefügt, wenn ein Kapitel ein Cover hat.
 const BUCH_CSS = () => `.kap-buch{gap:${BUCH.luecke}px;text-align:left}.buch-slot{display:inline-block;flex:0 0 auto}
@@ -250,7 +250,7 @@ const BUCH_CSS = () => `.kap-buch{gap:${BUCH.luecke}px;text-align:left}.buch-slo
 .buch-de .ln{display:block}.buch-de{display:inline-block;margin-top:10px;font-weight:800;font-size:${BUCH.de}px;line-height:1.2;white-space:nowrap;${stroke(4)}}
 .buch-autor{display:inline-block;margin-top:16px;background:${C.blue};font-weight:800;font-size:${BUCH.autor}px;line-height:1.12;padding:6px 22px 10px;border-radius:10px;transform:rotate(-2deg);white-space:nowrap}
 .buch-cw{position:absolute;display:block;transform-origin:0 0}.buch-cover{display:block;width:100%;height:100%;object-fit:cover;border-radius:6px;box-shadow:0 0 0 4px ${C.ink},8px 8px 0 4px ${C.ink};transform:rotate(-3deg)}`;
-const BUCH = { klein: 250, gross: 600, top: 270, luecke: 36, maxW: 850, zahl: 110, titel: 60, de: 40, autor: 44 };
+const BUCH = { klein: 250, gross: 600, top: 270, luecke: 28, maxW: 840, zahl: 110, titel: 60, de: 40, autor: 44 };
 function buch22(k, { A, G, errors, notes, warnings, hits }) {
   const b = k.buch, r = b.breite / b.hoehe;
   if (b.datei && (!b.datei.startsWith('assets/') || /\s/.test(b.datei))) errors.push(`Kapitel ${k.id}: buch.datei muss unter assets/ liegen und darf keine Leerzeichen enthalten (Abschnitts-Cache): ${b.datei}`);
