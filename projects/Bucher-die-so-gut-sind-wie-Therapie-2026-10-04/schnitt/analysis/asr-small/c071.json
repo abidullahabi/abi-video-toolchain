@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " In diesem Sinne, aber...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.991709,
+					"t_dtw": -1
+				},
+				{
+					"text": " In",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 210
+					},
+					"id": 682,
+					"p": 0.988783,
+					"t_dtw": 24
+				},
+				{
+					"text": " diesem",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 810
+					},
+					"id": 10975,
+					"p": 0.985338,
+					"t_dtw": 46
+				},
+				{
+					"text": " Sinne",
+					"timestamps": {
+						"from": "00:00:00,970",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 970,
+						"to": 1360
+					},
+					"id": 47041,
+					"p": 0.952859,
+					"t_dtw": 74
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1450
+					},
+					"id": 11,
+					"p": 0.390396,
+					"t_dtw": 102
+				},
+				{
+					"text": " aber",
+					"timestamps": {
+						"from": "00:00:01,590",
+						"to": "00:00:01,640"
+					},
+					"offsets": {
+						"from": 1590,
+						"to": 1640
+					},
+					"id": 4340,
+					"p": 0.790545,
+					"t_dtw": 120
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:01,640",
+						"to": "00:00:01,640"
+					},
+					"offsets": {
+						"from": 1640,
+						"to": 1640
+					},
+					"id": 485,
+					"p": 0.225158,
+					"t_dtw": 162
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.0736505,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

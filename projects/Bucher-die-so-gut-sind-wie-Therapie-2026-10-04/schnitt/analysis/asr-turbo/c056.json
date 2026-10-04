@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,020"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2020
+			},
+			"text": " Geht natürlich auch viel um Liebe.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.922588,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ge",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 140
+					},
+					"id": 2876,
+					"p": 0.631652,
+					"t_dtw": 22
+				},
+				{
+					"text": "ht",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 280
+					},
+					"id": 357,
+					"p": 0.981536,
+					"t_dtw": 30
+				},
+				{
+					"text": " natürlich",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 810
+					},
+					"id": 8762,
+					"p": 0.97865,
+					"t_dtw": 54
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,930",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 930,
+						"to": 1200
+					},
+					"id": 2168,
+					"p": 0.972153,
+					"t_dtw": 70
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,480"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1480
+					},
+					"id": 5891,
+					"p": 0.979338,
+					"t_dtw": 100
+				},
+				{
+					"text": " um",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1620
+					},
+					"id": 1105,
+					"p": 0.988602,
+					"t_dtw": 116
+				},
+				{
+					"text": " Liebe",
+					"timestamps": {
+						"from": "00:00:01,620",
+						"to": "00:00:01,780"
+					},
+					"offsets": {
+						"from": 1620,
+						"to": 1780
+					},
+					"id": 28790,
+					"p": 0.992804,
+					"t_dtw": 150
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,020"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2020
+					},
+					"id": 13,
+					"p": 0.412636,
+					"t_dtw": 186
+				},
+				{
+					"text": "[_TT_101]",
+					"timestamps": {
+						"from": "00:00:02,020",
+						"to": "00:00:02,020"
+					},
+					"offsets": {
+						"from": 2020,
+						"to": 2020
+					},
+					"id": 50466,
+					"p": 0.626509,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

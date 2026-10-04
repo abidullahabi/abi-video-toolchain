@@ -1,0 +1,113 @@
+# Schnittliste „Bücher die so gut sind wie Therapie“, Schnitt v1 (04.10.2026)
+
+Quelle: IMG_2012.MOV (SHA-256 d8343ccf…). Zeiten = Rohzeit in Sekunden. Reihenfolge wie aufgenommen. Grundlage: `schnitt/selection.json`.
+
+## Verwendete Anläufe
+
+| Teil | Original | Gesprochen | Warum |
+|---|---|---|---|
+| hook | 26.42–29.63 | Diese fünf Bücher waren genauso gut wie meine fünfjährige Therapie. | Dritter Hook-Anlauf. Flüssig, „waren“ wie geplant, gleichmäßig laut. Blick vom ersten Bild an in die Kamera, E-Reader dreht sich ins Bild (gutes Vorschaubild). Anlauf 1 (9,57 s) beginnt mit zusammengekniffenem Auge und Grimasse, Anlauf 2 (18,14 s) sagt „sind“ statt „waren“. |
+| intro | 33.97–45.86 | Ich glaub, Therapie ist das Beste, was ich jemals gemacht habe. Aber Therapie alleine reicht nicht. Für den richtigen Prozess sind das gerade mal 40 % und den restlichen 60 % musst du selbst machen. Und diese Bücher haben mir dabei geholfen. | Einziger Anlauf, flüssig. Denkpausen darin werden automatisch gekürzt. |
+| b1-1 | 54.06–56.90 | Wir fangen mit dem ersten Buch an, Anthony de Mello, The Way to Love. | Dritter Anlauf, der erste vollständige. Raus: „Das erste Buch ist“ (48,3 s) und „Das Buch hat …“ (51,9 s). |
+| b1-2 | 58.42–61.28 | Und wie der Titel schon verrät, es geht um Liebe, aber | Einziger Anlauf. Das „aber“ bleibt, weil es direkt in „das Buch ist gerade so auf dieser Schwelle …“ übergeht (Gegenprobe der Verbindung: „Es geht um Liebe. Aber das Buch ist gerade so …“). |
+| b1-3 | 66.53–71.01 | das Buch ist gerade so auf dieser Schwelle von super hilfreich und ein bisschen Hokuspokus. | Zweiter Anlauf. Raus: „Ich find’s gut, das Buch ist genauso, ist gerade …“ (62,0–66,2 s). „Hokuspokus“ bleibt. |
+| b1-4 | 73.12–92.95 | Der redet um nicht nur Liebe, sondern generell Beziehung, Beziehung zu sich selbst. Was das Gegenteil von Liebe ist, worum die meisten davon ausgeben, das ist Liebe. Und es war eine Challenge zu lesen, weil es hat alles verändert, was ich gedacht hab darüber, | Einziger Anlauf. Lange Denkpause (80,8–87,4 s) und die Pause vor „verändert“ werden automatisch gekürzt. Endet vor dem angehängten „aber …“ (93,5 s), Schnitt in der Stille. |
+| b1-5 | 95.20–96.70 | Aber es ist auf einem sehr positiven Weg. | Das doppelte „aber … Aber“ ist auf eins reduziert; dieses ist der vollständige Satz. |
+| b2-1 | 98.11–107.36 | Das zweite Buch, auch wieder von Anthony de Mello, Awareness. Bei Awareness geht es um das Thema Achtsamkeit. Und der sagt, dass viele Menschen einfach nur schlafen im Leben, | Einziger Anlauf. Ende hart nach „Leben,“, weil das verworfene „dass sie einfach da sich …“ schon bei 107,39 s beginnt. (hardEnd) |
+| b2-2 | 110.15–141.54 | dass sie einfach vor sich hin leben und gar nicht wirklich aufwachen. Also, ich penn nicht. Der zeigt, wie man seine Gedanken beobachtet, was die Gefühle sind, was sie sagen und ich hatte zum Beispiel viel gestruggelt mit meinen Gefühlen, weil ich nicht wusste, was das ist, wie ich damit umzugehen habe, und dass sie auch normal sind. Und vor allem dachte ich immer, wenn ich meine Gefühle alle weg mache, dann bin ich glücklich. | Zweiter Anlauf der Satzhälfte („dass sie einfach da sich …“, 107,4 s, raus). Danach flüssig; Abis persönlicher Satz zum Buch bleibt vollständig. Pausen darin (bis 5,7 s) werden automatisch gekürzt. |
+| b2-3 | 142.50–143.71 | Was falsch ist. | Pointe. Kurze Kunstpause zwischen „Was“ und „falsch ist“ (ca. 0,35 s) bleibt wie gesprochen; die Pause davor wird gekürzt. (keepInner) |
+| b3-1 | 147.84–155.20 | Das nächste Buch habe ich erst vor ein paar Tagen durchgelesen, das heißt Reconciliation, Reconciliation. Ich kann es nicht aussprechen. | Einziger Anlauf. Doppeltes „Reconciliation“ plus „Ich kann es nicht aussprechen“ ist Abis Witz und bleibt. Ende hart vor dem ersten „Und der Autor“ (ab 155,27 s). (hardEnd) |
+| b3-2 | 158.63–170.62 | Und der Autor, keine Ahnung, wie man das ausspricht. Das war ein sehr angenehmes Buch zum Lesen. Ich habe das, glaube ich, in einem Zug gelesen. Dauert, glaube ich, drei bis fünf Stunden. | Zweite Fassung des Autor-Satzes; Abi hat „wie der heißt“ selbst zu „wie man das ausspricht“ korrigiert (der Name steht ja im Kapitel). Danach flüssig. |
+| b3-3 | 173.03–175.50 | Ich glaube, ich würde auch empfehlen, ein bisschen Pause dazwischen zu machen. | Abgebrochenes „Wenn du möchtest,“ (172,3 s) davor raus, Schnitt in der Stille vor „ich“. Ende hart vor „Und es ist auch ein sehr praktisches Buch“ (ab 175,56 s). (hardStart, hardEnd) |
+| b3-4 | 177.67–203.10 | Es geht rein in das Thema inneres Kind. Und ich find’s ganz gut, bei dem Buch war das so, dass man nicht nur auf sich geschaut hat. Bei meiner Therapie oder generell finde ich bei diesen westlichen psychologischen Ansätzen ist man immer um sich, aber es gibt ja auch das Umfeld und deine Herkunft. Und das steckt ja auch in dir drin. | Einziger Anlauf, Abis persönlicher Gedanke zum Buch bleibt vollständig. Pausen darin werden automatisch gekürzt. |
+| b3-5 | 207.17–220.00 | Hat mir da auch ein bisschen die Augen geöffnet. Und es ist sehr praktisch. Am Ende gibt’s richtig gute Übungen, wie man anwenden kann. Kann auch sein, dass du ein bisschen heulen musst beim Buch. Habe ich auch gemacht. | Zweiter Anlauf („hat mir echt b…“ bei 205,3 s bricht ab). „anwenden kann“ (214,2–214,8 s) ist schnell und mit Achselzucken gesprochen; beide Modelle erkennen es im Zusammenhang. „Kann auch sein … Habe ich auch gemacht.“ bleibt. |
+| b4-1 | 222.50–224.33 | Dann Buch Nummer vier, | Einziger Anlauf. Ende hart nach „vier“, das direkt angehängte „äh, äh“ (ab 224,35 s) raus. (hardEnd) |
+| b4-2 | 225.84–227.70 | The Untethered Soul von | Einziger Anlauf des Titels. |
+| b4-3 | 229.34–236.27 | Michael Singer. Es geht hier primär um die Stimme in deinem Kopf | Zweites „Michael“; das erste „Michael.“ (228,0–228,8 s) mit Absetzen raus. Ende hart nach „Kopf“, weil das verworfene „und dass wir diese Stimme nicht blind gehören“ bei 236,30 s ohne Pause anschließt. (hardEnd) |
+| b4-4 | 239.55–241.79 | und dass wir diese Stimme nicht blind zuhören müssen. | Zweiter Anlauf der Satzhälfte. Der erste (236,3–238,9 s) endet mit dem Versprecher „nicht blind gehören“. |
+| b4-5 | 249.83–262.62 | Er meint so, stell dir vor, diese Stimme wäre dein Mitbewohner und der würde einfach rausklappern, was er so sagt. Dem würdest du auch sagen, ey Bro, bisschen weird, dass du das gerade sagst. Und genau so geht er im Buch an. Geht natürlich auch viel um Liebe, | Zweiter Anlauf des Bildes. Der erste („Er sagt quasi, diese Stimme ist quasi so ein … Stell dir mal vor, diese Stimme wäre …“, 245,9 s) bricht ab. Mitbewohner-Vergleich bleibt vollständig. |
+| b4-6 | 266.08–272.03 | Ankommen, etc. Ist ein sehr schönes Buch, ist ein bisschen zäh zu lesen, aber hat mir auch sehr geholfen. | Fortsetzung der Aufzählung („Liebe, Ankommen, etc.“). Denklaut „hm/ja“ mit Blick zur Seite (263,8 s) und 3,5 s Pause davor raus. Pause vor „hat mir“ wird gekürzt. |
+| b5-1 | 281.34–287.49 | Und das letzte Buch, was ich immer noch lese, von Gabor Maté, den Typ ich liebe, da kannst du jeden Podcast von ihm anhören. | Dritter Anlauf, der einzige, der in den Autor übergeht. Raus: „Und das letzte Buch, wo ich immer noch ein bisschen dran zu nagen habe, aber es ist ziemlich gut.“ (273,9 s) und „Und das letzte Buch, was,“ (279,8 s). |
+| b5-2 | 288.33–313.47 | The Myth of Being Normal. Er sagt, vieles, was wir normal nennen, ist nicht wirklich normal. Und macht uns so krank. Er zeigt, wie Stress, Trauma und Krankheit so miteinander zusammenhängen. Also, ist auch sehr theoretisch. | Einziger Anlauf. „Ähm“ vor dem Titel raus (Anfang hart, „The“ setzt bei 288,36 s ein). „macht uns so krank“ ist undeutlich (Whisper hört „macht den Song krank“), siehe Gegenhören. Lange Pausen darin werden gekürzt. (hardStart) |
+| b5-3 | 324.61–328.90 | Und zielt eher darauf ab, wenn du besser verstehen willst, wieso du gerade so bist, wie du bist. | Zweiter Anlauf, der vollständige mit „für wen“. Der erste („… wenn du das bisschen besser verstehen willst.“, 317,7 s) ist Dopplung. |
+| bonus-1 | 333.30–348.77 | Und ein weiteres Bonusbuch, das ich habe, ist von Khalil Gibran, Der Prophet. Es ist jetzt kein Fachbuch in diesem Sinne, aber es ist immer wieder schön zu lesen. Es gibt so einen Typen, der Prophet ist, und | Dritter Anlauf des Satzanfangs. Raus: „Und ein, und ein,“ (331,9–333,2 s). Ende hart nach dem gedehnten „und“, weil das verworfene „keine Sorge an, aber“ bei 348,89 s beginnt. (hardEnd) |
+| bonus-2 | 349.86–354.80 | keine Sorge an alle meine Ungläubigen. Auch ihr könnt das lesen, | Zweiter Anlauf. Raus: „keine Sorge an, aber“ (348,9–349,75 s). Abis Witz bleibt. Das „ähm“ danach (355,1 s) raus. |
+| bonus-3 | 356.13–382.59 | Der war auf einer Insel und er erzählt so in sehr poetischer Sprache über Liebe, Familie, Freunde, Eigentum. Ist ein sehr schönes Buch zum Lesen und ich lese das, glaube ich, seit fast zehn Jahren immer wieder neu. Und jedes Mal bedeutet der Satz was Neues für mich. Macht echt Spaß. Und generell zu dem Thema Heilen. Heilen ist ein Prozess. | Einziger Anlauf, flüssig, mit Überleitung zum Abschluss. Pausen darin (bis 3,7 s) werden gekürzt. |
+| schluss | 385.89–437.50 | Die 40 %, die du in deiner Therapie machst, ist schon ziemlich gut und solltest du durchziehen. Aber das ist nicht genug. Damit du heilst, brauchst du erstmal Sicherheit. Also, du kannst nicht in einer komischen Situation heilen. Dann machst du in deiner Therapie, dass du dich halt daran erinnerst und dann heulst du einfach ganz viel. Wir heilen, wenn wir ganz viel geheult haben und uns gehalten haben. Und dann checkst du meistens die Dinge, die du gemacht hast oder die Schmerzen, die du, oder die Sorgen, die du jetzt hast, dass sie aktuell gar nicht mehr relevant sind, weil du ein erwachsener Mensch geworden bist und dass alles gut ist. Und das sind die letzten 60 %, die du halt selber aufbringen musst. Ich bin auch nicht ganz drüber, aber ich bin ganz nah dran. | Zweiter Anlauf; der erste („Die 40 %, die du“, 384,3 s) bricht ab. Danach flüssig. „oder die Schmerzen, die du, oder die Sorgen“ ist eine gesprochene Aufzählung ohne Pause, ohne sauberen Schnittpunkt, bleibt. Lange Pausen (bis 6,6 s) werden gekürzt, auch die vor dem CTA. |
+| cta | 438.34–439.75 | Folgen nicht vergessen. | Festgelegtes Ende: „Folgen nicht vergessen“ 438,37–438,95 s, danach Lächeln, ab 439,14 s kommt der E-Reader ins Bild, ab 439,4 s hält Abi ihn lächelnd hoch. Schluss 0,8 s nach dem letzten Wort, bevor die Geste endet. (hardEnd, endHold) |
+
+## Ohne Ersatz entfernt
+
+| Original | Gesprochen | Art | Warum |
+|---|---|---|---|
+| 0.00–26.42 | „Ja.“ (1,9 s), Hook-Anlauf 1 (9,57 s) und Hook-Anlauf 2 (18,14 s, „sind“) | anlauf | Bester Hook ist Anlauf 3. Kein „Ja.“ davor. |
+| 29.63–33.97 | (Stille, Positionswechsel) | pause | Pause nach dem Hook. |
+| 48.29–52.61 | Das erste Buch ist … Das Buch hat … | anlauf | Zwei abgebrochene Anläufe vor „Wir fangen mit dem ersten Buch an“. |
+| 62.02–66.24 | Ich find’s gut, das Buch ist genauso, ist gerade … | anlauf | Abgebrochener Anlauf, danach sauber neu: „Das Buch ist gerade so auf dieser Schwelle …“. |
+| 93.48–94.05 | aber … | dopplung | Doppeltes „aber … Aber“; das zweite steht im vollständigen Satz. |
+| 107.39–108.93 | dass sie einfach da sich … | anlauf | Abgebrochener Anlauf, gleich danach „dass sie einfach vor sich hin leben“. |
+| 155.27–157.12 | Und der Autor, keine Ahnung, wie der heißt, | dopplung | Dopplung. Abi wiederholt den Satz selbst mit „wie man das ausspricht“ (158,7 s). Zum Zurückholen: b3-2 ab 155,27 statt 158,63 beginnen lassen und bei 157,12 enden lassen. |
+| 172.29–172.99 | Wenn du möchtest, | anlauf | Abgebrochener Satzanfang, Abi setzt mit „ich glaube, ich würde auch empfehlen …“ neu an. |
+| 175.56–177.12 | Und es ist auch ein sehr praktisches Buch. | dopplung | Inhaltliche Dopplung mit „Und es ist sehr praktisch. Am Ende gibt’s richtig gute Übungen …“ (209,2 s), das konkreter ist. |
+| 203.39–206.66 | Und das Buch fand ich ziemlich gut zu lesen, hat mir echt b… | anlauf | Satz bricht ab („hat mir echt b…“); Abi setzt mit „Hat mir da auch ein bisschen die Augen geöffnet“ neu an. Zwischen „lesen,“ und „hat“ gibt es keine Pause, ein sauberer Schnitt nach „lesen“ ist nicht möglich. „Gut zu lesen“ steht schon in „Das war ein sehr angenehmes Buch zum Lesen“. |
+| 224.35–225.47 | äh, äh | versprecher | Füllwörter vor dem Titel. |
+| 228.00–228.80 | Michael. | anlauf | Erstes „Michael“ mit Absetzen, danach sauber „Michael Singer“. |
+| 236.30–238.91 | und dass wir diese Stimme nicht blind gehören. | versprecher | Versprecher („gehören“), gleich danach korrekt „… nicht blind zuhören müssen“. |
+| 245.95–249.38 | Er sagt quasi, diese Stimme ist quasi so ein … Stell dir mal vor, diese Stimme wäre … | anlauf | Abgebrochener Anlauf des Mitbewohner-Vergleichs. |
+| 262.62–266.08 | (hm/ja, Blick zur Seite) | pause | Denklaut und Denkpause mitten in der Aufzählung. |
+| 273.89–278.78 | Und das letzte Buch, wo ich immer noch ein bisschen dran zu nagen habe, aber es ist ziemlich gut. | dopplung | Erste Fassung des Satzes, Abi setzt zweimal neu an. Die behaltene Fassung („was ich immer noch lese“) führt direkt zum Autor. Verloren geht nur „aber es ist ziemlich gut“; zurückholbar als eigener Bereich 273,86–278,80 vor b5-1. |
+| 279.84–281.10 | Und das letzte Buch, was, | anlauf | Abgebrochener Anlauf, gleich danach komplett. |
+| 288.00–288.30 | Ähm, | versprecher | Füllwort vor dem Titel. |
+| 317.70–320.70 | Und zielt eher darauf ab, wenn du das bisschen besser verstehen willst. | dopplung | Dopplung, die zweite Fassung (324,6 s) ist vollständiger („wieso du gerade so bist, wie du bist“). |
+| 331.90–333.18 | Und ein, und ein, | anlauf | Zwei abgebrochene Anläufe. |
+| 348.89–349.75 | keine Sorge an, aber | anlauf | Erster Anlauf, gleich danach „keine Sorge an alle meine Ungläubigen“. |
+| 355.09–355.84 | ähm | versprecher | Füllwort. |
+| 384.29–385.50 | Die 40 %, die du | anlauf | Abgebrochener Anlauf, danach vollständig. |
+| 439.75–442.70 | (Schlusspose ausklingend, „Hm.“ 441,8 s) | pause | Festgelegtes Ende 439,75 s. |
+
+Inhaltliche Kürzungen im engeren Sinn gibt es keine. Zwei Dopplungen nehmen etwas Inhalt mit, beide sind leicht zurückzuholen:
+- 273,89–278,78 „… wo ich immer noch ein bisschen dran zu nagen habe, aber es ist ziemlich gut.“: Verloren geht nur „aber es ist ziemlich gut“.
+- 203,39–206,66 „Und das Buch fand ich ziemlich gut zu lesen, …“: bricht ab; „gut zu lesen“ steht schon in b3-2.
+
+## Gegenhören
+
+- **26.42 s**: Hook-Wahl: Anlauf 3. Erstes Bild (Vorschaubild) mit Blick in die Kamera, der E-Reader dreht sich gerade ins Bild. Vergleich: Anlauf 2 (18,14 s) ist auch flüssig, sagt aber „sind“.
+- **61.00 s**: „es geht um Liebe, aber | das Buch ist gerade so …“: Klingt das gedehnte „aber“ (60,74–61,28 s) im Anschluss natürlich? Sonst b1-2 bei 60,45 enden lassen (ohne „aber“).
+- **73.20 s**: „Der redet um nicht nur Liebe …“ und „worum die meisten davon ausgeben“ (78,8 s): leicht verdreht gesprochen, aber einziger Anlauf. Bleibt.
+- **107.36 s**: Harter Schnitt nach „Leben,“: das verworfene „dass“ beginnt 30 ms später (107,39 s). Darauf achten, dass kein Anlaut mitkommt.
+- **116.70 s**: „Also, ich penn nicht.“ (oder „die pennen nicht“?): Erkennung unsicher, kurz und schnell gesprochen. Bleibt drin.
+- **142.90 s**: Kunstpause „Was … falsch ist.“ bleibt (keepInner). Wenn sie zu lang wirkt, keepInner entfernen.
+- **154.60 s**: „Ich kann es nicht aussprechen“ ist genuschelt (Whisper hört „ausfreschen“/„ausbrechen“). Zusammen mit „keine Ahnung, wie man das ausspricht“ kommt „aussprechen“ zweimal; gewollt als Running Gag, sonst Fassung „wie der heißt“ (155,27 s) nehmen.
+- **173.03 s**: Einstieg „Ich glaube, ich würde auch empfehlen …“ nach entferntem „Wenn du möchtest,“: Satzmelodie prüfen.
+- **175.50 s**: Hartes Ende nach „machen.“: das verworfene „Und“ beginnt bei 175,56 s.
+- **214.20 s**: „wie man [Achselzucken] anwenden kann“: „anwenden kann“ ist schnell und undeutlich gemurmelt (214,2–214,8 s). Wenn es nicht verständlich ist, b3-5 aufteilen: 207,17–211,57 („… richtig gute Übungen“ endet ohne Pause in „wie“, daher nur mit hartem Ende) und 216,77–220,00.
+- **218.30 s**: Pointe „Kann auch sein, dass du ein bisschen heulen musst beim Buch. | Habe ich auch gemacht.“: Die Pause (1,15 s) wird auf ca. 150 ms gekürzt. Soll der Beat länger bleiben?
+- **224.33 s**: Hartes Ende nach „vier“: das angehängte „äh“ setzt 20 ms später ein (224,35 s).
+- **236.27 s**: Hartes Ende nach „Kopf“: das verworfene „und“ beginnt bei 236,30 s ohne Pause.
+- **288.33 s**: Harter Anfang bei „The Myth“: das „Ähm“ endet ca. 30 ms davor (288,30 s) und geht ohne Stille über.
+- **301.20 s**: „Und macht uns so krank“: beide Modelle hören „macht den Song krank“. Bitte anhören, was gesagt ist (fürs Untertitel-/Textbild).
+- **348.40 s**: Gedehntes „und“ (348,19–348,75 s) vor „keine Sorge an alle meine Ungläubigen“: Ende hart bei 348,77 s, das verworfene „keine“ beginnt bei 348,89 s.
+- **417.60 s**: „oder die Schmerzen, die du, oder die Sorgen, die du jetzt hast“: gesprochene Selbstkorrektur ohne Pause, bleibt. Kein sauberer Schnittpunkt.
+
+## Pausen
+
+- Pausen ab 150 ms werden in `plan-edl.py` automatisch gekürzt, innerhalb eines Bereichs und zwischen Bereichen, auch vor dem CTA. Kanten werden per Pegel verfeinert, wie bei KI-Zertifikate.
+- Kunstpause „Was … falsch ist.“ bleibt wie gesprochen (keepInner).
+- Harte Kanten (hardStart/hardEnd) nur da, wo das verworfene Nachbarwort ohne hörbare Stille anschließt (107,36 · 155,20 · 173,03 · 175,50 · 224,33 · 236,27 · 288,33 · 348,77). Diese Werte liegen auf dem 1/30-s-Raster.
+
+## Ende
+
+- Letzter Bereich `cta` 438,34–439,75 mit hardEnd und endHold (festgelegt): „Folgen nicht vergessen“ 438,37–438,95 s, danach Lächeln, ab 439,14 s E-Reader im Bild, ab 439,4 s lächelnd hochgehalten. Schluss 0,8 s nach dem letzten Wort, bevor die Geste endet.
+- „… aber ich bin ganz nah dran.“ geht ohne lange Pause in „Folgen nicht vergessen“ über (Pause 437,5–438,37 s wird gekürzt).
+
+## Hinweise
+
+- Titel und Autoren nur für Kapitel/H2, gesprochen bleibt, wie es ist: Abi sagt „The Myth of Being Normal“, der Buchtitel lautet „The Myth of Normal“ (Gabor Maté). Der Autor von „Reconciliation“ (Thich Nhat Hanh) wird nicht genannt, passt als H2 zum Witz „keine Ahnung, wie man das ausspricht“.
+- Hook: Abi steht in Anlauf 3 links im Bild, der E-Reader ist rechts. Die H1 im ersten Bild darf das Gesicht nicht verdecken. Zwischen Hook (29,6 s) und Intro (34,0 s) gibt es einen sichtbaren Positionssprung, der ist bei Abis Aufnahmen normal.
+- Bewusst behalten (Abis Stil): „Hokuspokus“, „Reconciliation, Reconciliation. Ich kann es nicht aussprechen.“, „ey Bro, bisschen weird, dass du das gerade sagst“, „keine Sorge an alle meine Ungläubigen“, „Kann auch sein, dass du heulen musst … Habe ich auch gemacht.“, „Ich bin auch nicht ganz drüber, aber ich bin ganz nah dran.“
+- Wörtlich gesprochen und so gelassen: „den restlichen 60 % musst du selbst machen“, „ist man immer um sich“, „Und genau so geht er im Buch an“. Nichts ergänzt.
+- Keine Umstellung nötig; Reihenfolge wie aufgenommen.
+- Zeilen mit hardStart/hardEnd liegen auf dem 1/30-s-Raster (z. B. 173.0334, 236.2667, 288.3334, 348.7667), damit die Rundung in plan-edl.py nicht in das verworfene Nachbarwort schiebt.
+- Planung (Notion) nennt Judith Herman/„drei Phasen“; Abi erklärt Heilen frei (Sicherheit, erinnern und heulen, gehalten werden, erkennen, dass alles gut ist). Gesprochenes bleibt maßgeblich, nichts hinzugefügt.
+
+Rohsumme der Bereiche: 315.6 s (vor der automatischen Pausenkürzung).

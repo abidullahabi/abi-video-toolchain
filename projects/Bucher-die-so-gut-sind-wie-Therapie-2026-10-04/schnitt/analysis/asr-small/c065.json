@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,520"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3520
+			},
+			"text": " Er zeigt, wie Stress, Trauma und Krankheit so miteinander zusammenhängen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997917,
+					"t_dtw": -1
+				},
+				{
+					"text": " Er",
+					"timestamps": {
+						"from": "00:00:00,110",
+						"to": "00:00:00,110"
+					},
+					"offsets": {
+						"from": 110,
+						"to": 110
+					},
+					"id": 3300,
+					"p": 0.979793,
+					"t_dtw": 22
+				},
+				{
+					"text": " zeigt",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,380"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 380
+					},
+					"id": 29250,
+					"p": 0.935242,
+					"t_dtw": 40
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,380",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 380,
+						"to": 460
+					},
+					"id": 11,
+					"p": 0.620662,
+					"t_dtw": 52
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:00,640"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 640
+					},
+					"id": 3355,
+					"p": 0.998291,
+					"t_dtw": 58
+				},
+				{
+					"text": " Stress",
+					"timestamps": {
+						"from": "00:00:00,640",
+						"to": "00:00:00,920"
+					},
+					"offsets": {
+						"from": 640,
+						"to": 920
+					},
+					"id": 38258,
+					"p": 0.962291,
+					"t_dtw": 86
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,920",
+						"to": "00:00:00,990"
+					},
+					"offsets": {
+						"from": 920,
+						"to": 990
+					},
+					"id": 11,
+					"p": 0.97174,
+					"t_dtw": 118
+				},
+				{
+					"text": " Tra",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,250"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1250
+					},
+					"id": 5403,
+					"p": 0.994218,
+					"t_dtw": 128
+				},
+				{
+					"text": "uma",
+					"timestamps": {
+						"from": "00:00:01,250",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1250,
+						"to": 1440
+					},
+					"id": 5544,
+					"p": 0.980692,
+					"t_dtw": 144
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:01,440",
+						"to": "00:00:01,580"
+					},
+					"offsets": {
+						"from": 1440,
+						"to": 1580
+					},
+					"id": 674,
+					"p": 0.921034,
+					"t_dtw": 164
+				},
+				{
+					"text": " Krank",
+					"timestamps": {
+						"from": "00:00:01,580",
+						"to": "00:00:01,810"
+					},
+					"offsets": {
+						"from": 1580,
+						"to": 1810
+					},
+					"id": 48896,
+					"p": 0.98967,
+					"t_dtw": 184
+				},
+				{
+					"text": "heit",
+					"timestamps": {
+						"from": "00:00:01,810",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1810,
+						"to": 2000
+					},
+					"id": 8480,
+					"p": 0.981089,
+					"t_dtw": 214
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,100"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2100
+					},
+					"id": 370,
+					"p": 0.586533,
+					"t_dtw": 240
+				},
+				{
+					"text": " miteinander",
+					"timestamps": {
+						"from": "00:00:02,100",
+						"to": "00:00:02,650"
+					},
+					"offsets": {
+						"from": 2100,
+						"to": 2650
+					},
+					"id": 43127,
+					"p": 0.973966,
+					"t_dtw": 264
+				},
+				{
+					"text": " zusammen",
+					"timestamps": {
+						"from": "00:00:02,650",
+						"to": "00:00:03,050"
+					},
+					"offsets": {
+						"from": 2650,
+						"to": 3050
+					},
+					"id": 14311,
+					"p": 0.986416,
+					"t_dtw": 310
+				},
+				{
+					"text": "häng",
+					"timestamps": {
+						"from": "00:00:03,050",
+						"to": "00:00:03,230"
+					},
+					"offsets": {
+						"from": 3050,
+						"to": 3230
+					},
+					"id": 34591,
+					"p": 0.979671,
+					"t_dtw": 324
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:03,250",
+						"to": "00:00:03,340"
+					},
+					"offsets": {
+						"from": 3250,
+						"to": 3340
+					},
+					"id": 268,
+					"p": 0.999064,
+					"t_dtw": 338
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,340",
+						"to": "00:00:03,420"
+					},
+					"offsets": {
+						"from": 3340,
+						"to": 3420
+					},
+					"id": 13,
+					"p": 0.769814,
+					"t_dtw": 350
+				},
+				{
+					"text": "[_TT_176]",
+					"timestamps": {
+						"from": "00:00:03,520",
+						"to": "00:00:03,520"
+					},
+					"offsets": {
+						"from": 3520,
+						"to": 3520
+					},
+					"id": 50540,
+					"p": 0.0812627,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

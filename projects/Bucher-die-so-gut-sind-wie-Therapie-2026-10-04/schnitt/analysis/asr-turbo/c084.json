@@ -1,0 +1,451 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,300"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4300
+			},
+			"text": " Dann machst du in deiner Therapie, dass du dich halt daran erinnerst und dann heulst du einfach ganz viel.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.852173,
+					"t_dtw": -1
+				},
+				{
+					"text": " Dann",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 160
+					},
+					"id": 7455,
+					"p": 0.946947,
+					"t_dtw": 30
+				},
+				{
+					"text": " machst",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 400
+					},
+					"id": 43350,
+					"p": 0.970065,
+					"t_dtw": 50
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 450
+					},
+					"id": 1581,
+					"p": 0.976992,
+					"t_dtw": 60
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 560
+					},
+					"id": 294,
+					"p": 0.926793,
+					"t_dtw": 72
+				},
+				{
+					"text": " de",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,640"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 640
+					},
+					"id": 368,
+					"p": 0.846535,
+					"t_dtw": 74
+				},
+				{
+					"text": "iner",
+					"timestamps": {
+						"from": "00:00:00,640",
+						"to": "00:00:00,800"
+					},
+					"offsets": {
+						"from": 640,
+						"to": 800
+					},
+					"id": 4564,
+					"p": 0.999777,
+					"t_dtw": 80
+				},
+				{
+					"text": " Therap",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:01,040"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 1040
+					},
+					"id": 36812,
+					"p": 0.996904,
+					"t_dtw": 112
+				},
+				{
+					"text": "ie",
+					"timestamps": {
+						"from": "00:00:01,040",
+						"to": "00:00:01,090"
+					},
+					"offsets": {
+						"from": 1040,
+						"to": 1090
+					},
+					"id": 414,
+					"p": 0.999727,
+					"t_dtw": 120
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1240
+					},
+					"id": 11,
+					"p": 0.950394,
+					"t_dtw": 126
+				},
+				{
+					"text": " dass",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,390"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1390
+					},
+					"id": 2658,
+					"p": 0.870978,
+					"t_dtw": 132
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:01,390",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1390,
+						"to": 1460
+					},
+					"id": 1581,
+					"p": 0.971216,
+					"t_dtw": 140
+				},
+				{
+					"text": " dich",
+					"timestamps": {
+						"from": "00:00:01,460",
+						"to": "00:00:01,610"
+					},
+					"offsets": {
+						"from": 1460,
+						"to": 1610
+					},
+					"id": 10390,
+					"p": 0.985887,
+					"t_dtw": 150
+				},
+				{
+					"text": " halt",
+					"timestamps": {
+						"from": "00:00:01,610",
+						"to": "00:00:01,760"
+					},
+					"offsets": {
+						"from": 1610,
+						"to": 1760
+					},
+					"id": 12479,
+					"p": 0.906438,
+					"t_dtw": 160
+				},
+				{
+					"text": " daran",
+					"timestamps": {
+						"from": "00:00:01,760",
+						"to": "00:00:01,940"
+					},
+					"offsets": {
+						"from": 1760,
+						"to": 1940
+					},
+					"id": 24520,
+					"p": 0.974585,
+					"t_dtw": 178
+				},
+				{
+					"text": " er",
+					"timestamps": {
+						"from": "00:00:01,940",
+						"to": "00:00:02,020"
+					},
+					"offsets": {
+						"from": 1940,
+						"to": 2020
+					},
+					"id": 1189,
+					"p": 0.991214,
+					"t_dtw": 194
+				},
+				{
+					"text": "inner",
+					"timestamps": {
+						"from": "00:00:02,020",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 2020,
+						"to": 2180
+					},
+					"id": 19166,
+					"p": 0.995382,
+					"t_dtw": 210
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:02,210",
+						"to": "00:00:02,220"
+					},
+					"offsets": {
+						"from": 2210,
+						"to": 2220
+					},
+					"id": 372,
+					"p": 0.998454,
+					"t_dtw": 228
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:02,400",
+						"to": "00:00:02,500"
+					},
+					"offsets": {
+						"from": 2400,
+						"to": 2500
+					},
+					"id": 674,
+					"p": 0.334045,
+					"t_dtw": 244
+				},
+				{
+					"text": " dann",
+					"timestamps": {
+						"from": "00:00:02,500",
+						"to": "00:00:02,680"
+					},
+					"offsets": {
+						"from": 2500,
+						"to": 2680
+					},
+					"id": 3594,
+					"p": 0.949333,
+					"t_dtw": 262
+				},
+				{
+					"text": " he",
+					"timestamps": {
+						"from": "00:00:03,040",
+						"to": "00:00:03,040"
+					},
+					"offsets": {
+						"from": 3040,
+						"to": 3040
+					},
+					"id": 415,
+					"p": 0.637249,
+					"t_dtw": 316
+				},
+				{
+					"text": "ul",
+					"timestamps": {
+						"from": "00:00:03,080",
+						"to": "00:00:03,160"
+					},
+					"offsets": {
+						"from": 3080,
+						"to": 3160
+					},
+					"id": 425,
+					"p": 0.907532,
+					"t_dtw": 320
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:03,160",
+						"to": "00:00:03,260"
+					},
+					"offsets": {
+						"from": 3160,
+						"to": 3260
+					},
+					"id": 372,
+					"p": 0.99548,
+					"t_dtw": 330
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:03,310",
+						"to": "00:00:03,380"
+					},
+					"offsets": {
+						"from": 3310,
+						"to": 3380
+					},
+					"id": 1581,
+					"p": 0.875959,
+					"t_dtw": 336
+				},
+				{
+					"text": " einfach",
+					"timestamps": {
+						"from": "00:00:03,380",
+						"to": "00:00:03,600"
+					},
+					"offsets": {
+						"from": 3380,
+						"to": 3600
+					},
+					"id": 7281,
+					"p": 0.892707,
+					"t_dtw": 358
+				},
+				{
+					"text": " ganz",
+					"timestamps": {
+						"from": "00:00:03,650",
+						"to": "00:00:03,870"
+					},
+					"offsets": {
+						"from": 3650,
+						"to": 3870
+					},
+					"id": 6312,
+					"p": 0.956307,
+					"t_dtw": 380
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:03,870",
+						"to": "00:00:04,120"
+					},
+					"offsets": {
+						"from": 3870,
+						"to": 4120
+					},
+					"id": 5891,
+					"p": 0.99245,
+					"t_dtw": 404
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:04,120",
+						"to": "00:00:04,290"
+					},
+					"offsets": {
+						"from": 4120,
+						"to": 4290
+					},
+					"id": 13,
+					"p": 0.976382,
+					"t_dtw": 426
+				},
+				{
+					"text": "[_TT_215]",
+					"timestamps": {
+						"from": "00:00:04,300",
+						"to": "00:00:04,300"
+					},
+					"offsets": {
+						"from": 4300,
+						"to": 4300
+					},
+					"id": 50580,
+					"p": 0.811122,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

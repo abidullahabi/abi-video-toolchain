@@ -1,0 +1,129 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,680"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1680
+			},
+			"text": " Das erste Buch ist",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.814891,
+					"t_dtw": -1
+				},
+				{
+					"text": " Das",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 330
+					},
+					"id": 2846,
+					"p": 0.974531,
+					"t_dtw": 26
+				},
+				{
+					"text": " erste",
+					"timestamps": {
+						"from": "00:00:00,330",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 330,
+						"to": 720
+					},
+					"id": 20951,
+					"p": 0.938887,
+					"t_dtw": 50
+				},
+				{
+					"text": " Buch",
+					"timestamps": {
+						"from": "00:00:00,930",
+						"to": "00:00:01,230"
+					},
+					"offsets": {
+						"from": 930,
+						"to": 1230
+					},
+					"id": 25818,
+					"p": 0.998235,
+					"t_dtw": 76
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,270",
+						"to": "00:00:01,660"
+					},
+					"offsets": {
+						"from": 1270,
+						"to": 1660
+					},
+					"id": 1418,
+					"p": 0.994723,
+					"t_dtw": 138
+				},
+				{
+					"text": "[_TT_84]",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1680
+					},
+					"id": 50449,
+					"p": 0.521381,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

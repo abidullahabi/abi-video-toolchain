@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,260"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2260
+			},
+			"text": " Dass sie einfach vor sich hin leben.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.772077,
+					"t_dtw": -1
+				},
+				{
+					"text": " Dass",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,310"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 310
+					},
+					"id": 22306,
+					"p": 0.847246,
+					"t_dtw": 20
+				},
+				{
+					"text": " sie",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 540
+					},
+					"id": 2804,
+					"p": 0.842393,
+					"t_dtw": 30
+				},
+				{
+					"text": " einfach",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,620"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 620
+					},
+					"id": 7281,
+					"p": 0.994399,
+					"t_dtw": 52
+				},
+				{
+					"text": " vor",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,310"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1310
+					},
+					"id": 4245,
+					"p": 0.899174,
+					"t_dtw": 122
+				},
+				{
+					"text": " sich",
+					"timestamps": {
+						"from": "00:00:01,310",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1310,
+						"to": 1620
+					},
+					"id": 3041,
+					"p": 0.997512,
+					"t_dtw": 138
+				},
+				{
+					"text": " hin",
+					"timestamps": {
+						"from": "00:00:01,620",
+						"to": "00:00:01,850"
+					},
+					"offsets": {
+						"from": 1620,
+						"to": 1850
+					},
+					"id": 14102,
+					"p": 0.994763,
+					"t_dtw": 154
+				},
+				{
+					"text": " leben",
+					"timestamps": {
+						"from": "00:00:01,850",
+						"to": "00:00:02,010"
+					},
+					"offsets": {
+						"from": 1850,
+						"to": 2010
+					},
+					"id": 26392,
+					"p": 0.937205,
+					"t_dtw": 186
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,240",
+						"to": "00:00:02,250"
+					},
+					"offsets": {
+						"from": 2240,
+						"to": 2250
+					},
+					"id": 13,
+					"p": 0.45334,
+					"t_dtw": 202
+				},
+				{
+					"text": "[_TT_113]",
+					"timestamps": {
+						"from": "00:00:02,260",
+						"to": "00:00:02,260"
+					},
+					"offsets": {
+						"from": 2260,
+						"to": 2260
+					},
+					"id": 50478,
+					"p": 0.934678,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

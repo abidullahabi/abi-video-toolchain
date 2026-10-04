@@ -1,0 +1,394 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Er sagt quasi, diese Stimme ist quasi so ein...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.990541,
+					"t_dtw": -1
+				},
+				{
+					"text": " Er",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 100
+					},
+					"id": 3300,
+					"p": 0.768126,
+					"t_dtw": 22
+				},
+				{
+					"text": " sagt",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,310"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 310
+					},
+					"id": 15764,
+					"p": 0.976882,
+					"t_dtw": 36
+				},
+				{
+					"text": " quasi",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 580
+					},
+					"id": 20954,
+					"p": 0.949137,
+					"t_dtw": 62
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,580",
+						"to": "00:00:00,680"
+					},
+					"offsets": {
+						"from": 580,
+						"to": 680
+					},
+					"id": 11,
+					"p": 0.805402,
+					"t_dtw": 72
+				},
+				{
+					"text": " diese",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,930"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 930
+					},
+					"id": 6705,
+					"p": 0.940474,
+					"t_dtw": 82
+				},
+				{
+					"text": " St",
+					"timestamps": {
+						"from": "00:00:00,980",
+						"to": "00:00:01,050"
+					},
+					"offsets": {
+						"from": 980,
+						"to": 1050
+					},
+					"id": 745,
+					"p": 0.993703,
+					"t_dtw": 100
+				},
+				{
+					"text": "imme",
+					"timestamps": {
+						"from": "00:00:01,050",
+						"to": "00:00:01,230"
+					},
+					"offsets": {
+						"from": 1050,
+						"to": 1230
+					},
+					"id": 20380,
+					"p": 0.986489,
+					"t_dtw": 108
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,300",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 1300,
+						"to": 1420
+					},
+					"id": 1418,
+					"p": 0.973864,
+					"t_dtw": 124
+				},
+				{
+					"text": " quasi",
+					"timestamps": {
+						"from": "00:00:01,420",
+						"to": "00:00:01,690"
+					},
+					"offsets": {
+						"from": 1420,
+						"to": 1690
+					},
+					"id": 20954,
+					"p": 0.97704,
+					"t_dtw": 142
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:01,690",
+						"to": "00:00:01,790"
+					},
+					"offsets": {
+						"from": 1690,
+						"to": 1790
+					},
+					"id": 370,
+					"p": 0.887026,
+					"t_dtw": 168
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:01,790",
+						"to": "00:00:01,950"
+					},
+					"offsets": {
+						"from": 1790,
+						"to": 1950
+					},
+					"id": 1343,
+					"p": 0.375994,
+					"t_dtw": 180
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:01,990",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1990,
+						"to": 2000
+					},
+					"id": 485,
+					"p": 0.277695,
+					"t_dtw": 196
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.0317086,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,000",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 2000,
+				"to": 3000
+			},
+			"text": " Stimmen vor, die Schimme wird...",
+			"tokens": [
+				{
+					"text": " St",
+					"timestamps": {
+						"from": "00:00:02,050",
+						"to": "00:00:02,050"
+					},
+					"offsets": {
+						"from": 2050,
+						"to": 2050
+					},
+					"id": 745,
+					"p": 0.432656,
+					"t_dtw": 202
+				},
+				{
+					"text": "immen",
+					"timestamps": {
+						"from": "00:00:02,150",
+						"to": "00:00:02,190"
+					},
+					"offsets": {
+						"from": 2150,
+						"to": 2190
+					},
+					"id": 32076,
+					"p": 0.24461,
+					"t_dtw": 208
+				},
+				{
+					"text": " vor",
+					"timestamps": {
+						"from": "00:00:02,190",
+						"to": "00:00:02,270"
+					},
+					"offsets": {
+						"from": 2190,
+						"to": 2270
+					},
+					"id": 4245,
+					"p": 0.956149,
+					"t_dtw": 226
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,270",
+						"to": "00:00:02,320"
+					},
+					"offsets": {
+						"from": 2270,
+						"to": 2320
+					},
+					"id": 11,
+					"p": 0.684405,
+					"t_dtw": 234
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:02,320",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2320,
+						"to": 2370
+					},
+					"id": 978,
+					"p": 0.660218,
+					"t_dtw": 238
+				},
+				{
+					"text": " Sch",
+					"timestamps": {
+						"from": "00:00:02,470",
+						"to": "00:00:02,480"
+					},
+					"offsets": {
+						"from": 2470,
+						"to": 2480
+					},
+					"id": 2065,
+					"p": 0.47985,
+					"t_dtw": 254
+				},
+				{
+					"text": "imme",
+					"timestamps": {
+						"from": "00:00:02,480",
+						"to": "00:00:02,590"
+					},
+					"offsets": {
+						"from": 2480,
+						"to": 2590
+					},
+					"id": 20380,
+					"p": 0.762924,
+					"t_dtw": 262
+				},
+				{
+					"text": " wird",
+					"timestamps": {
+						"from": "00:00:02,590",
+						"to": "00:00:02,700"
+					},
+					"offsets": {
+						"from": 2590,
+						"to": 2700
+					},
+					"id": 4578,
+					"p": 0.39872,
+					"t_dtw": 280
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:02,700",
+						"to": "00:00:03,000"
+					},
+					"offsets": {
+						"from": 2700,
+						"to": 3000
+					},
+					"id": 485,
+					"p": 0.570993,
+					"t_dtw": 298
+				},
+				{
+					"text": "[_TT_150]",
+					"timestamps": {
+						"from": "00:00:03,000",
+						"to": "00:00:03,000"
+					},
+					"offsets": {
+						"from": 3000,
+						"to": 3000
+					},
+					"id": 50514,
+					"p": 0.12651,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

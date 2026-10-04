@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1000
+			},
+			"text": " (Lautes Klopfen)",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.98702,
+					"t_dtw": -1
+				},
+				{
+					"text": " (",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,060"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 60
+					},
+					"id": 522,
+					"p": 0.0247005,
+					"t_dtw": 50
+				},
+				{
+					"text": "L",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 120
+					},
+					"id": 43,
+					"p": 0.0454028,
+					"t_dtw": 50
+				},
+				{
+					"text": "aut",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,310"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 310
+					},
+					"id": 1375,
+					"p": 0.515058,
+					"t_dtw": 50
+				},
+				{
+					"text": "es",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 420
+					},
+					"id": 279,
+					"p": 0.607336,
+					"t_dtw": 50
+				},
+				{
+					"text": " Kl",
+					"timestamps": {
+						"from": "00:00:00,430",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 430,
+						"to": 510
+					},
+					"id": 16053,
+					"p": 0.403911,
+					"t_dtw": 50
+				},
+				{
+					"text": "op",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 520
+					},
+					"id": 404,
+					"p": 0.718122,
+					"t_dtw": 50
+				},
+				{
+					"text": "fen",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 520
+					},
+					"id": 6570,
+					"p": 0.976905,
+					"t_dtw": 50
+				},
+				{
+					"text": ")",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 520
+					},
+					"id": 8,
+					"p": 0.827775,
+					"t_dtw": 50
+				},
+				{
+					"text": "[_TT_50]",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1000
+					},
+					"id": 50414,
+					"p": 0.250867,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

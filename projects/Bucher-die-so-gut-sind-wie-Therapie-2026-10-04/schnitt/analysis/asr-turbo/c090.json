@@ -1,0 +1,129 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,680"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 680
+			},
+			"text": " Voll nicht vergessen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.514105,
+					"t_dtw": -1
+				},
+				{
+					"text": " Voll",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 120
+					},
+					"id": 39602,
+					"p": 0.378766,
+					"t_dtw": 24
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 280
+					},
+					"id": 1979,
+					"p": 0.962784,
+					"t_dtw": 36
+				},
+				{
+					"text": " vergessen",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,570"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 570
+					},
+					"id": 42418,
+					"p": 0.998927,
+					"t_dtw": 66
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,570",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 570,
+						"to": 630
+					},
+					"id": 13,
+					"p": 0.777142,
+					"t_dtw": 66
+				},
+				{
+					"text": "[_TT_34]",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,680"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 680
+					},
+					"id": 50399,
+					"p": 0.129252,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,680"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3680
+			},
+			"text": " Und jedes Mal bedeutet der Satz was Neues für mich. Macht echt Spaß.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.7674,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 170
+					},
+					"id": 2719,
+					"p": 0.969193,
+					"t_dtw": 26
+				},
+				{
+					"text": " jedes",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 450
+					},
+					"id": 36119,
+					"p": 0.963132,
+					"t_dtw": 58
+				},
+				{
+					"text": " Mal",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 610
+					},
+					"id": 5746,
+					"p": 0.956214,
+					"t_dtw": 90
+				},
+				{
+					"text": " bedeutet",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:01,050"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 1050
+					},
+					"id": 27018,
+					"p": 0.990057,
+					"t_dtw": 138
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1240
+					},
+					"id": 1163,
+					"p": 0.99241,
+					"t_dtw": 156
+				},
+				{
+					"text": " Sat",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1410
+					},
+					"id": 5344,
+					"p": 0.869589,
+					"t_dtw": 174
+				},
+				{
+					"text": "z",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1460
+					},
+					"id": 89,
+					"p": 0.999352,
+					"t_dtw": 182
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:01,460",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1460,
+						"to": 1620
+					},
+					"id": 390,
+					"p": 0.848828,
+					"t_dtw": 196
+				},
+				{
+					"text": " Ne",
+					"timestamps": {
+						"from": "00:00:01,630",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1630,
+						"to": 1740
+					},
+					"id": 1734,
+					"p": 0.992356,
+					"t_dtw": 210
+				},
+				{
+					"text": "ues",
+					"timestamps": {
+						"from": "00:00:01,740",
+						"to": "00:00:01,910"
+					},
+					"offsets": {
+						"from": 1740,
+						"to": 1910
+					},
+					"id": 1247,
+					"p": 0.999716,
+					"t_dtw": 220
+				},
+				{
+					"text": " für",
+					"timestamps": {
+						"from": "00:00:01,910",
+						"to": "00:00:02,080"
+					},
+					"offsets": {
+						"from": 1910,
+						"to": 2080
+					},
+					"id": 2959,
+					"p": 0.998037,
+					"t_dtw": 232
+				},
+				{
+					"text": " mich",
+					"timestamps": {
+						"from": "00:00:02,080",
+						"to": "00:00:02,300"
+					},
+					"offsets": {
+						"from": 2080,
+						"to": 2300
+					},
+					"id": 6031,
+					"p": 0.995989,
+					"t_dtw": 250
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,300",
+						"to": "00:00:02,520"
+					},
+					"offsets": {
+						"from": 2300,
+						"to": 2520
+					},
+					"id": 13,
+					"p": 0.974418,
+					"t_dtw": 312
+				},
+				{
+					"text": " Macht",
+					"timestamps": {
+						"from": "00:00:02,520",
+						"to": "00:00:02,860"
+					},
+					"offsets": {
+						"from": 2520,
+						"to": 2860
+					},
+					"id": 40873,
+					"p": 0.553632,
+					"t_dtw": 328
+				},
+				{
+					"text": " echt",
+					"timestamps": {
+						"from": "00:00:02,900",
+						"to": "00:00:03,160"
+					},
+					"offsets": {
+						"from": 2900,
+						"to": 3160
+					},
+					"id": 13972,
+					"p": 0.989417,
+					"t_dtw": 342
+				},
+				{
+					"text": " Spaß",
+					"timestamps": {
+						"from": "00:00:03,180",
+						"to": "00:00:03,460"
+					},
+					"offsets": {
+						"from": 3180,
+						"to": 3460
+					},
+					"id": 27460,
+					"p": 0.96573,
+					"t_dtw": 362
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,460",
+						"to": "00:00:03,670"
+					},
+					"offsets": {
+						"from": 3460,
+						"to": 3670
+					},
+					"id": 13,
+					"p": 0.840576,
+					"t_dtw": 366
+				},
+				{
+					"text": "[_TT_184]",
+					"timestamps": {
+						"from": "00:00:03,680",
+						"to": "00:00:03,680"
+					},
+					"offsets": {
+						"from": 3680,
+						"to": 3680
+					},
+					"id": 50549,
+					"p": 0.101117,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

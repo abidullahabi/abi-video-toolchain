@@ -1,0 +1,339 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3120
+			},
+			"text": " Wir fangen mit dem ersten Buch an, Anthony DeMello, The Way to Love.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.838615,
+					"t_dtw": -1
+				},
+				{
+					"text": " Wir",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 150
+					},
+					"id": 4347,
+					"p": 0.944713,
+					"t_dtw": 20
+				},
+				{
+					"text": " f",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 200
+					},
+					"id": 283,
+					"p": 0.965293,
+					"t_dtw": 34
+				},
+				{
+					"text": "angen",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 450
+					},
+					"id": 10784,
+					"p": 0.998951,
+					"t_dtw": 34
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 600
+					},
+					"id": 2194,
+					"p": 0.858274,
+					"t_dtw": 44
+				},
+				{
+					"text": " dem",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 750
+					},
+					"id": 1371,
+					"p": 0.959232,
+					"t_dtw": 52
+				},
+				{
+					"text": " ersten",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 1060
+					},
+					"id": 17324,
+					"p": 0.895825,
+					"t_dtw": 74
+				},
+				{
+					"text": " Buch",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,220"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1220
+					},
+					"id": 25818,
+					"p": 0.997214,
+					"t_dtw": 94
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:01,350",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1350,
+						"to": 1360
+					},
+					"id": 364,
+					"p": 0.997491,
+					"t_dtw": 118
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1450
+					},
+					"id": 11,
+					"p": 0.488456,
+					"t_dtw": 134
+				},
+				{
+					"text": " Anthony",
+					"timestamps": {
+						"from": "00:00:01,470",
+						"to": "00:00:01,820"
+					},
+					"offsets": {
+						"from": 1470,
+						"to": 1820
+					},
+					"id": 15853,
+					"p": 0.897773,
+					"t_dtw": 158
+				},
+				{
+					"text": " De",
+					"timestamps": {
+						"from": "00:00:01,820",
+						"to": "00:00:01,920"
+					},
+					"offsets": {
+						"from": 1820,
+						"to": 1920
+					},
+					"id": 1346,
+					"p": 0.389983,
+					"t_dtw": 176
+				},
+				{
+					"text": "M",
+					"timestamps": {
+						"from": "00:00:01,920",
+						"to": "00:00:01,970"
+					},
+					"offsets": {
+						"from": 1920,
+						"to": 1970
+					},
+					"id": 44,
+					"p": 0.868728,
+					"t_dtw": 184
+				},
+				{
+					"text": "ello",
+					"timestamps": {
+						"from": "00:00:01,970",
+						"to": "00:00:02,100"
+					},
+					"offsets": {
+						"from": 1970,
+						"to": 2100
+					},
+					"id": 11216,
+					"p": 0.915852,
+					"t_dtw": 200
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,170",
+						"to": "00:00:02,270"
+					},
+					"offsets": {
+						"from": 2170,
+						"to": 2270
+					},
+					"id": 11,
+					"p": 0.566051,
+					"t_dtw": 212
+				},
+				{
+					"text": " The",
+					"timestamps": {
+						"from": "00:00:02,270",
+						"to": "00:00:02,420"
+					},
+					"offsets": {
+						"from": 2270,
+						"to": 2420
+					},
+					"id": 440,
+					"p": 0.904816,
+					"t_dtw": 222
+				},
+				{
+					"text": " Way",
+					"timestamps": {
+						"from": "00:00:02,420",
+						"to": "00:00:02,570"
+					},
+					"offsets": {
+						"from": 2420,
+						"to": 2570
+					},
+					"id": 9558,
+					"p": 0.995281,
+					"t_dtw": 238
+				},
+				{
+					"text": " to",
+					"timestamps": {
+						"from": "00:00:02,570",
+						"to": "00:00:02,670"
+					},
+					"offsets": {
+						"from": 2570,
+						"to": 2670
+					},
+					"id": 281,
+					"p": 0.725655,
+					"t_dtw": 254
+				},
+				{
+					"text": " Love",
+					"timestamps": {
+						"from": "00:00:02,670",
+						"to": "00:00:02,770"
+					},
+					"offsets": {
+						"from": 2670,
+						"to": 2770
+					},
+					"id": 5956,
+					"p": 0.997938,
+					"t_dtw": 284
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,860",
+						"to": "00:00:03,100"
+					},
+					"offsets": {
+						"from": 2860,
+						"to": 3100
+					},
+					"id": 13,
+					"p": 0.987069,
+					"t_dtw": 308
+				},
+				{
+					"text": "[_TT_156]",
+					"timestamps": {
+						"from": "00:00:03,120",
+						"to": "00:00:03,120"
+					},
+					"offsets": {
+						"from": 3120,
+						"to": 3120
+					},
+					"id": 50521,
+					"p": 0.721225,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

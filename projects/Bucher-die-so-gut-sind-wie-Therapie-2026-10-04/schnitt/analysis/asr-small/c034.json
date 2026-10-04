@@ -1,0 +1,604 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,280"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3280
+			},
+			"text": " Wenn du möchtest, ich glaube, ich würde auch empfehlen, ein bisschen Pause dazwischen zu machen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.972951,
+					"t_dtw": -1
+				},
+				{
+					"text": " Wenn",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 220
+					},
+					"id": 7899,
+					"p": 0.475877,
+					"t_dtw": 24
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 330
+					},
+					"id": 1581,
+					"p": 0.876456,
+					"t_dtw": 28
+				},
+				{
+					"text": " mö",
+					"timestamps": {
+						"from": "00:00:00,330",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 330,
+						"to": 430
+					},
+					"id": 7667,
+					"p": 0.976885,
+					"t_dtw": 42
+				},
+				{
+					"text": "cht",
+					"timestamps": {
+						"from": "00:00:00,430",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 430,
+						"to": 600
+					},
+					"id": 4701,
+					"p": 0.999802,
+					"t_dtw": 54
+				},
+				{
+					"text": "est",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 750
+					},
+					"id": 377,
+					"p": 0.99964,
+					"t_dtw": 74
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 770
+					},
+					"id": 11,
+					"p": 0.855238,
+					"t_dtw": 94
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1020
+					},
+					"id": 1893,
+					"p": 0.846013,
+					"t_dtw": 102
+				},
+				{
+					"text": " glaube",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,270"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1270
+					},
+					"id": 13756,
+					"p": 0.39001,
+					"t_dtw": 120
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,270",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1270,
+						"to": 1360
+					},
+					"id": 11,
+					"p": 0.599721,
+					"t_dtw": 134
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1450
+					},
+					"id": 1893,
+					"p": 0.975614,
+					"t_dtw": 138
+				},
+				{
+					"text": " würde",
+					"timestamps": {
+						"from": "00:00:01,450",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1450,
+						"to": 1600
+					},
+					"id": 11942,
+					"p": 0.654106,
+					"t_dtw": 144
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,720"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1720
+					},
+					"id": 2168,
+					"p": 0.779057,
+					"t_dtw": 158
+				},
+				{
+					"text": " emp",
+					"timestamps": {
+						"from": "00:00:01,720",
+						"to": "00:00:01,810"
+					},
+					"offsets": {
+						"from": 1720,
+						"to": 1810
+					},
+					"id": 4012,
+					"p": 0.864548,
+					"t_dtw": 168
+				},
+				{
+					"text": "feh",
+					"timestamps": {
+						"from": "00:00:01,810",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1810,
+						"to": 1900
+					},
+					"id": 33865,
+					"p": 0.999277,
+					"t_dtw": 182
+				},
+				{
+					"text": "len",
+					"timestamps": {
+						"from": "00:00:01,900",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1900,
+						"to": 2000
+					},
+					"id": 6698,
+					"p": 0.997702,
+					"t_dtw": 184
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,050"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2050
+					},
+					"id": 11,
+					"p": 0.840857,
+					"t_dtw": 192
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:02,050",
+						"to": "00:00:02,110"
+					},
+					"offsets": {
+						"from": 2050,
+						"to": 2110
+					},
+					"id": 1343,
+					"p": 0.591106,
+					"t_dtw": 194
+				},
+				{
+					"text": " bisschen",
+					"timestamps": {
+						"from": "00:00:02,120",
+						"to": "00:00:02,310"
+					},
+					"offsets": {
+						"from": 2120,
+						"to": 2310
+					},
+					"id": 10763,
+					"p": 0.696151,
+					"t_dtw": 202
+				},
+				{
+					"text": " Pause",
+					"timestamps": {
+						"from": "00:00:02,310",
+						"to": "00:00:02,440"
+					},
+					"offsets": {
+						"from": 2310,
+						"to": 2440
+					},
+					"id": 31973,
+					"p": 0.971759,
+					"t_dtw": 230
+				},
+				{
+					"text": " d",
+					"timestamps": {
+						"from": "00:00:02,440",
+						"to": "00:00:02,460"
+					},
+					"offsets": {
+						"from": 2440,
+						"to": 2460
+					},
+					"id": 274,
+					"p": 0.894127,
+					"t_dtw": 242
+				},
+				{
+					"text": "az",
+					"timestamps": {
+						"from": "00:00:02,460",
+						"to": "00:00:02,500"
+					},
+					"offsets": {
+						"from": 2460,
+						"to": 2500
+					},
+					"id": 921,
+					"p": 0.99906,
+					"t_dtw": 250
+				},
+				{
+					"text": "w",
+					"timestamps": {
+						"from": "00:00:02,530",
+						"to": "00:00:02,530"
+					},
+					"offsets": {
+						"from": 2530,
+						"to": 2530
+					},
+					"id": 86,
+					"p": 0.941512,
+					"t_dtw": 254
+				},
+				{
+					"text": "ischen",
+					"timestamps": {
+						"from": "00:00:02,530",
+						"to": "00:00:02,720"
+					},
+					"offsets": {
+						"from": 2530,
+						"to": 2720
+					},
+					"id": 6282,
+					"p": 0.999804,
+					"t_dtw": 262
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:02,720",
+						"to": "00:00:02,760"
+					},
+					"offsets": {
+						"from": 2720,
+						"to": 2760
+					},
+					"id": 2164,
+					"p": 0.741637,
+					"t_dtw": 280
+				},
+				{
+					"text": " machen",
+					"timestamps": {
+						"from": "00:00:02,760",
+						"to": "00:00:03,150"
+					},
+					"offsets": {
+						"from": 2760,
+						"to": 3150
+					},
+					"id": 7069,
+					"p": 0.946869,
+					"t_dtw": 300
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,180",
+						"to": "00:00:03,270"
+					},
+					"offsets": {
+						"from": 3180,
+						"to": 3270
+					},
+					"id": 13,
+					"p": 0.503985,
+					"t_dtw": 324
+				},
+				{
+					"text": "[_TT_164]",
+					"timestamps": {
+						"from": "00:00:03,280",
+						"to": "00:00:03,280"
+					},
+					"offsets": {
+						"from": 3280,
+						"to": 3280
+					},
+					"id": 50528,
+					"p": 0.081125,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,280",
+				"to": "00:00:05,100"
+			},
+			"offsets": {
+				"from": 3280,
+				"to": 5100
+			},
+			"text": " Und es ist auch ein sehr praktisches Buch.",
+			"tokens": [
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:03,430",
+						"to": "00:00:03,430"
+					},
+					"offsets": {
+						"from": 3430,
+						"to": 3430
+					},
+					"id": 2719,
+					"p": 0.960087,
+					"t_dtw": 352
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:03,430",
+						"to": "00:00:03,530"
+					},
+					"offsets": {
+						"from": 3430,
+						"to": 3530
+					},
+					"id": 785,
+					"p": 0.867808,
+					"t_dtw": 364
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:03,530",
+						"to": "00:00:03,680"
+					},
+					"offsets": {
+						"from": 3530,
+						"to": 3680
+					},
+					"id": 1418,
+					"p": 0.997822,
+					"t_dtw": 374
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:03,680",
+						"to": "00:00:03,880"
+					},
+					"offsets": {
+						"from": 3680,
+						"to": 3880
+					},
+					"id": 2168,
+					"p": 0.993568,
+					"t_dtw": 386
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:03,880",
+						"to": "00:00:04,030"
+					},
+					"offsets": {
+						"from": 3880,
+						"to": 4030
+					},
+					"id": 1343,
+					"p": 0.995545,
+					"t_dtw": 396
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:04,030",
+						"to": "00:00:04,220"
+					},
+					"offsets": {
+						"from": 4030,
+						"to": 4220
+					},
+					"id": 5499,
+					"p": 0.998751,
+					"t_dtw": 406
+				},
+				{
+					"text": " prakt",
+					"timestamps": {
+						"from": "00:00:04,230",
+						"to": "00:00:04,480"
+					},
+					"offsets": {
+						"from": 4230,
+						"to": 4480
+					},
+					"id": 33721,
+					"p": 0.7884,
+					"t_dtw": 428
+				},
+				{
+					"text": "isches",
+					"timestamps": {
+						"from": "00:00:04,480",
+						"to": "00:00:04,780"
+					},
+					"offsets": {
+						"from": 4480,
+						"to": 4780
+					},
+					"id": 35889,
+					"p": 0.998146,
+					"t_dtw": 450
+				},
+				{
+					"text": " Buch",
+					"timestamps": {
+						"from": "00:00:04,780",
+						"to": "00:00:05,000"
+					},
+					"offsets": {
+						"from": 4780,
+						"to": 5000
+					},
+					"id": 25818,
+					"p": 0.99404,
+					"t_dtw": 478
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:05,040",
+						"to": "00:00:05,100"
+					},
+					"offsets": {
+						"from": 5040,
+						"to": 5100
+					},
+					"id": 13,
+					"p": 0.827266,
+					"t_dtw": 506
+				},
+				{
+					"text": "[_TT_255]",
+					"timestamps": {
+						"from": "00:00:05,100",
+						"to": "00:00:05,100"
+					},
+					"offsets": {
+						"from": 5100,
+						"to": 5100
+					},
+					"id": 50619,
+					"p": 0.0641697,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,269 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,200"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3200
+			},
+			"text": " Und zielt eher darauf ab, wenn du das besser verstehen willst.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997415,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 180
+					},
+					"id": 2719,
+					"p": 0.945747,
+					"t_dtw": 24
+				},
+				{
+					"text": " z",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,240"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 240
+					},
+					"id": 710,
+					"p": 0.893659,
+					"t_dtw": 58
+				},
+				{
+					"text": "ielt",
+					"timestamps": {
+						"from": "00:00:00,240",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 240,
+						"to": 360
+					},
+					"id": 18940,
+					"p": 0.546974,
+					"t_dtw": 64
+				},
+				{
+					"text": " eher",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,710"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 710
+					},
+					"id": 24332,
+					"p": 0.59369,
+					"t_dtw": 82
+				},
+				{
+					"text": " darauf",
+					"timestamps": {
+						"from": "00:00:00,710",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 710,
+						"to": 1060
+					},
+					"id": 18654,
+					"p": 0.979241,
+					"t_dtw": 110
+				},
+				{
+					"text": " ab",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1180
+					},
+					"id": 410,
+					"p": 0.996381,
+					"t_dtw": 124
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,180",
+						"to": "00:00:01,320"
+					},
+					"offsets": {
+						"from": 1180,
+						"to": 1320
+					},
+					"id": 11,
+					"p": 0.987526,
+					"t_dtw": 136
+				},
+				{
+					"text": " wenn",
+					"timestamps": {
+						"from": "00:00:01,320",
+						"to": "00:00:01,540"
+					},
+					"offsets": {
+						"from": 1320,
+						"to": 1540
+					},
+					"id": 4797,
+					"p": 0.861489,
+					"t_dtw": 140
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:01,540",
+						"to": "00:00:01,640"
+					},
+					"offsets": {
+						"from": 1540,
+						"to": 1640
+					},
+					"id": 1581,
+					"p": 0.977407,
+					"t_dtw": 146
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 1740
+					},
+					"id": 1482,
+					"p": 0.966475,
+					"t_dtw": 162
+				},
+				{
+					"text": " besser",
+					"timestamps": {
+						"from": "00:00:01,820",
+						"to": "00:00:02,160"
+					},
+					"offsets": {
+						"from": 1820,
+						"to": 2160
+					},
+					"id": 18021,
+					"p": 0.349172,
+					"t_dtw": 224
+				},
+				{
+					"text": " verstehen",
+					"timestamps": {
+						"from": "00:00:02,160",
+						"to": "00:00:02,670"
+					},
+					"offsets": {
+						"from": 2160,
+						"to": 2670
+					},
+					"id": 37352,
+					"p": 0.979626,
+					"t_dtw": 268
+				},
+				{
+					"text": " willst",
+					"timestamps": {
+						"from": "00:00:02,670",
+						"to": "00:00:02,940"
+					},
+					"offsets": {
+						"from": 2670,
+						"to": 2940
+					},
+					"id": 48355,
+					"p": 0.992225,
+					"t_dtw": 302
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,940",
+						"to": "00:00:03,190"
+					},
+					"offsets": {
+						"from": 2940,
+						"to": 3190
+					},
+					"id": 13,
+					"p": 0.973831,
+					"t_dtw": 318
+				},
+				{
+					"text": "[_TT_160]",
+					"timestamps": {
+						"from": "00:00:03,200",
+						"to": "00:00:03,200"
+					},
+					"offsets": {
+						"from": 3200,
+						"to": 3200
+					},
+					"id": 50524,
+					"p": 0.0870858,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

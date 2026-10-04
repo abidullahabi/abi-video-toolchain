@@ -1,0 +1,353 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,920"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3920
+			},
+			"text": " Von Gabor Mate, den Typ ich liebe, da kannst du jeden Podcast von ihm anhören.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.825453,
+					"t_dtw": -1
+				},
+				{
+					"text": " Von",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 250
+					},
+					"id": 20700,
+					"p": 0.830162,
+					"t_dtw": 24
+				},
+				{
+					"text": " G",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 320
+					},
+					"id": 460,
+					"p": 0.955018,
+					"t_dtw": 42
+				},
+				{
+					"text": "abor",
+					"timestamps": {
+						"from": "00:00:00,330",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 330,
+						"to": 670
+					},
+					"id": 3816,
+					"p": 0.998321,
+					"t_dtw": 60
+				},
+				{
+					"text": " Mate",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:01,010"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 1010
+					},
+					"id": 27594,
+					"p": 0.444905,
+					"t_dtw": 96
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,010",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1010,
+						"to": 1180
+					},
+					"id": 11,
+					"p": 0.768998,
+					"t_dtw": 124
+				},
+				{
+					"text": " den",
+					"timestamps": {
+						"from": "00:00:01,290",
+						"to": "00:00:01,350"
+					},
+					"offsets": {
+						"from": 1290,
+						"to": 1350
+					},
+					"id": 1441,
+					"p": 0.940726,
+					"t_dtw": 140
+				},
+				{
+					"text": " Typ",
+					"timestamps": {
+						"from": "00:00:01,350",
+						"to": "00:00:01,490"
+					},
+					"offsets": {
+						"from": 1350,
+						"to": 1490
+					},
+					"id": 17722,
+					"p": 0.947837,
+					"t_dtw": 158
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:01,510",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 1510,
+						"to": 1650
+					},
+					"id": 1893,
+					"p": 0.805048,
+					"t_dtw": 172
+				},
+				{
+					"text": " liebe",
+					"timestamps": {
+						"from": "00:00:01,650",
+						"to": "00:00:01,880"
+					},
+					"offsets": {
+						"from": 1650,
+						"to": 1880
+					},
+					"id": 31623,
+					"p": 0.979502,
+					"t_dtw": 192
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,890",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1890,
+						"to": 2000
+					},
+					"id": 11,
+					"p": 0.566242,
+					"t_dtw": 210
+				},
+				{
+					"text": " da",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,100"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2100
+					},
+					"id": 1120,
+					"p": 0.463115,
+					"t_dtw": 222
+				},
+				{
+					"text": " kannst",
+					"timestamps": {
+						"from": "00:00:02,100",
+						"to": "00:00:02,400"
+					},
+					"offsets": {
+						"from": 2100,
+						"to": 2400
+					},
+					"id": 20853,
+					"p": 0.853642,
+					"t_dtw": 236
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:02,400",
+						"to": "00:00:02,500"
+					},
+					"offsets": {
+						"from": 2400,
+						"to": 2500
+					},
+					"id": 1581,
+					"p": 0.850433,
+					"t_dtw": 244
+				},
+				{
+					"text": " jeden",
+					"timestamps": {
+						"from": "00:00:02,500",
+						"to": "00:00:02,750"
+					},
+					"offsets": {
+						"from": 2500,
+						"to": 2750
+					},
+					"id": 12906,
+					"p": 0.963406,
+					"t_dtw": 258
+				},
+				{
+					"text": " Podcast",
+					"timestamps": {
+						"from": "00:00:02,750",
+						"to": "00:00:03,100"
+					},
+					"offsets": {
+						"from": 2750,
+						"to": 3100
+					},
+					"id": 29972,
+					"p": 0.688893,
+					"t_dtw": 286
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:03,100",
+						"to": "00:00:03,250"
+					},
+					"offsets": {
+						"from": 3100,
+						"to": 3250
+					},
+					"id": 2957,
+					"p": 0.970573,
+					"t_dtw": 314
+				},
+				{
+					"text": " ihm",
+					"timestamps": {
+						"from": "00:00:03,250",
+						"to": "00:00:03,400"
+					},
+					"offsets": {
+						"from": 3250,
+						"to": 3400
+					},
+					"id": 16021,
+					"p": 0.788899,
+					"t_dtw": 324
+				},
+				{
+					"text": " anh",
+					"timestamps": {
+						"from": "00:00:03,400",
+						"to": "00:00:03,550"
+					},
+					"offsets": {
+						"from": 3400,
+						"to": 3550
+					},
+					"id": 18931,
+					"p": 0.995339,
+					"t_dtw": 348
+				},
+				{
+					"text": "ören",
+					"timestamps": {
+						"from": "00:00:03,550",
+						"to": "00:00:03,630"
+					},
+					"offsets": {
+						"from": 3550,
+						"to": 3630
+					},
+					"id": 26377,
+					"p": 0.999664,
+					"t_dtw": 360
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,710",
+						"to": "00:00:03,910"
+					},
+					"offsets": {
+						"from": 3710,
+						"to": 3910
+					},
+					"id": 13,
+					"p": 0.914037,
+					"t_dtw": 380
+				},
+				{
+					"text": "[_TT_196]",
+					"timestamps": {
+						"from": "00:00:03,920",
+						"to": "00:00:03,920"
+					},
+					"offsets": {
+						"from": 3920,
+						"to": 3920
+					},
+					"id": 50561,
+					"p": 0.58275,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,040"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2040
+			},
+			"text": " Aber, Therapie alleine reicht nicht.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.619519,
+					"t_dtw": -1
+				},
+				{
+					"text": " Aber",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,230"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 230
+					},
+					"id": 5992,
+					"p": 0.974518,
+					"t_dtw": 34
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,230",
+						"to": "00:00:00,340"
+					},
+					"offsets": {
+						"from": 230,
+						"to": 340
+					},
+					"id": 11,
+					"p": 0.533624,
+					"t_dtw": 36
+				},
+				{
+					"text": " Therap",
+					"timestamps": {
+						"from": "00:00:00,340",
+						"to": "00:00:00,440"
+					},
+					"offsets": {
+						"from": 340,
+						"to": 440
+					},
+					"id": 36812,
+					"p": 0.964005,
+					"t_dtw": 84
+				},
+				{
+					"text": "ie",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,790"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 790
+					},
+					"id": 414,
+					"p": 0.996318,
+					"t_dtw": 102
+				},
+				{
+					"text": " alleine",
+					"timestamps": {
+						"from": "00:00:00,790",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 790,
+						"to": 1190
+					},
+					"id": 37780,
+					"p": 0.981317,
+					"t_dtw": 128
+				},
+				{
+					"text": " reicht",
+					"timestamps": {
+						"from": "00:00:01,190",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 1190,
+						"to": 1410
+					},
+					"id": 47000,
+					"p": 0.885113,
+					"t_dtw": 182
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:01,630",
+						"to": "00:00:01,820"
+					},
+					"offsets": {
+						"from": 1630,
+						"to": 1820
+					},
+					"id": 1979,
+					"p": 0.997919,
+					"t_dtw": 202
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,820",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1820,
+						"to": 1990
+					},
+					"id": 13,
+					"p": 0.977519,
+					"t_dtw": 202
+				},
+				{
+					"text": "[_TT_102]",
+					"timestamps": {
+						"from": "00:00:02,040",
+						"to": "00:00:02,040"
+					},
+					"offsets": {
+						"from": 2040,
+						"to": 2040
+					},
+					"id": 50467,
+					"p": 0.207144,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,269 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,240",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 240,
+				"to": 2000
+			},
+			"text": " Ich habe das, glaube ich, in Altzug gelesen, dauert",
+			"tokens": [
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,240",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 240,
+						"to": 130
+					},
+					"id": 3141,
+					"p": 0.999127,
+					"t_dtw": 34
+				},
+				{
+					"text": " habe",
+					"timestamps": {
+						"from": "00:00:00,240",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 240,
+						"to": 300
+					},
+					"id": 6015,
+					"p": 0.998993,
+					"t_dtw": 44
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 360
+					},
+					"id": 1482,
+					"p": 0.92585,
+					"t_dtw": 54
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 510
+					},
+					"id": 11,
+					"p": 0.99791,
+					"t_dtw": 60
+				},
+				{
+					"text": " glaube",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 770
+					},
+					"id": 13756,
+					"p": 0.99962,
+					"t_dtw": 66
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,770",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 770,
+						"to": 900
+					},
+					"id": 1893,
+					"p": 0.999584,
+					"t_dtw": 74
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 980
+					},
+					"id": 11,
+					"p": 0.99951,
+					"t_dtw": 76
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:00,980",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 980,
+						"to": 1060
+					},
+					"id": 294,
+					"p": 0.987103,
+					"t_dtw": 84
+				},
+				{
+					"text": " Alt",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1190
+					},
+					"id": 15992,
+					"p": 0.223943,
+					"t_dtw": 102
+				},
+				{
+					"text": "zug",
+					"timestamps": {
+						"from": "00:00:01,190",
+						"to": "00:00:01,300"
+					},
+					"offsets": {
+						"from": 1190,
+						"to": 1300
+					},
+					"id": 29742,
+					"p": 0.95727,
+					"t_dtw": 116
+				},
+				{
+					"text": " gel",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1450
+					},
+					"id": 4087,
+					"p": 0.980843,
+					"t_dtw": 136
+				},
+				{
+					"text": "esen",
+					"timestamps": {
+						"from": "00:00:01,450",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1450,
+						"to": 1620
+					},
+					"id": 17403,
+					"p": 0.999893,
+					"t_dtw": 150
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,620",
+						"to": "00:00:01,690"
+					},
+					"offsets": {
+						"from": 1620,
+						"to": 1690
+					},
+					"id": 11,
+					"p": 0.580414,
+					"t_dtw": 168
+				},
+				{
+					"text": " dau",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:01,830"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 1830
+					},
+					"id": 37359,
+					"p": 0.964305,
+					"t_dtw": 188
+				},
+				{
+					"text": "ert",
+					"timestamps": {
+						"from": "00:00:01,830",
+						"to": "00:00:01,950"
+					},
+					"offsets": {
+						"from": 1830,
+						"to": 1950
+					},
+					"id": 911,
+					"p": 0.968621,
+					"t_dtw": 196
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50465,
+					"p": 0.941043,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

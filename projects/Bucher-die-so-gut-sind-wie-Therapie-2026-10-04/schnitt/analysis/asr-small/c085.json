@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,600"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4600
+			},
+			"text": " Wir heilen, wenn wir ganz viel geheult haben und uns gehalten haben.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.99778,
+					"t_dtw": -1
+				},
+				{
+					"text": " Wir",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 220
+					},
+					"id": 4347,
+					"p": 0.972146,
+					"t_dtw": 28
+				},
+				{
+					"text": " he",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 370
+					},
+					"id": 415,
+					"p": 0.880209,
+					"t_dtw": 72
+				},
+				{
+					"text": "ilen",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 670
+					},
+					"id": 17471,
+					"p": 0.984481,
+					"t_dtw": 84
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:00,820"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 820
+					},
+					"id": 11,
+					"p": 0.955237,
+					"t_dtw": 102
+				},
+				{
+					"text": " wenn",
+					"timestamps": {
+						"from": "00:00:00,820",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 820,
+						"to": 1120
+					},
+					"id": 4797,
+					"p": 0.994841,
+					"t_dtw": 114
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1340
+					},
+					"id": 1987,
+					"p": 0.998163,
+					"t_dtw": 132
+				},
+				{
+					"text": " ganz",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,640"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1640
+					},
+					"id": 6312,
+					"p": 0.987905,
+					"t_dtw": 168
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:01,640",
+						"to": "00:00:01,940"
+					},
+					"offsets": {
+						"from": 1640,
+						"to": 1940
+					},
+					"id": 5891,
+					"p": 0.99426,
+					"t_dtw": 200
+				},
+				{
+					"text": " gehe",
+					"timestamps": {
+						"from": "00:00:01,940",
+						"to": "00:00:02,240"
+					},
+					"offsets": {
+						"from": 1940,
+						"to": 2240
+					},
+					"id": 34252,
+					"p": 0.342704,
+					"t_dtw": 222
+				},
+				{
+					"text": "ult",
+					"timestamps": {
+						"from": "00:00:02,240",
+						"to": "00:00:02,460"
+					},
+					"offsets": {
+						"from": 2240,
+						"to": 2460
+					},
+					"id": 723,
+					"p": 0.98641,
+					"t_dtw": 234
+				},
+				{
+					"text": " haben",
+					"timestamps": {
+						"from": "00:00:02,460",
+						"to": "00:00:02,760"
+					},
+					"offsets": {
+						"from": 2460,
+						"to": 2760
+					},
+					"id": 3084,
+					"p": 0.995273,
+					"t_dtw": 260
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:03,110",
+						"to": "00:00:03,110"
+					},
+					"offsets": {
+						"from": 3110,
+						"to": 3110
+					},
+					"id": 674,
+					"p": 0.33467,
+					"t_dtw": 318
+				},
+				{
+					"text": " uns",
+					"timestamps": {
+						"from": "00:00:03,120",
+						"to": "00:00:03,340"
+					},
+					"offsets": {
+						"from": 3120,
+						"to": 3340
+					},
+					"id": 2693,
+					"p": 0.988561,
+					"t_dtw": 334
+				},
+				{
+					"text": " ge",
+					"timestamps": {
+						"from": "00:00:03,340",
+						"to": "00:00:03,490"
+					},
+					"offsets": {
+						"from": 3340,
+						"to": 3490
+					},
+					"id": 1519,
+					"p": 0.993851,
+					"t_dtw": 348
+				},
+				{
+					"text": "halten",
+					"timestamps": {
+						"from": "00:00:03,490",
+						"to": "00:00:03,900"
+					},
+					"offsets": {
+						"from": 3490,
+						"to": 3900
+					},
+					"id": 15022,
+					"p": 0.999401,
+					"t_dtw": 364
+				},
+				{
+					"text": " haben",
+					"timestamps": {
+						"from": "00:00:03,900",
+						"to": "00:00:04,320"
+					},
+					"offsets": {
+						"from": 3900,
+						"to": 4320
+					},
+					"id": 3084,
+					"p": 0.993828,
+					"t_dtw": 390
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:04,340",
+						"to": "00:00:04,600"
+					},
+					"offsets": {
+						"from": 4340,
+						"to": 4600
+					},
+					"id": 13,
+					"p": 0.939802,
+					"t_dtw": 430
+				},
+				{
+					"text": "[_TT_230]",
+					"timestamps": {
+						"from": "00:00:04,600",
+						"to": "00:00:04,600"
+					},
+					"offsets": {
+						"from": 4600,
+						"to": 4600
+					},
+					"id": 50594,
+					"p": 0.0318893,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

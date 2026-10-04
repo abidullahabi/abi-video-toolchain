@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3080
+			},
+			"text": " Es gibt rein das Thema inneres Kämpf.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997206,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 220
+					},
+					"id": 2313,
+					"p": 0.968557,
+					"t_dtw": 24
+				},
+				{
+					"text": " gibt",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,660"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 660
+					},
+					"id": 6089,
+					"p": 0.997466,
+					"t_dtw": 50
+				},
+				{
+					"text": " rein",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 1080
+					},
+					"id": 6561,
+					"p": 0.644045,
+					"t_dtw": 84
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,430"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1430
+					},
+					"id": 1482,
+					"p": 0.319853,
+					"t_dtw": 108
+				},
+				{
+					"text": " Thema",
+					"timestamps": {
+						"from": "00:00:01,430",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1430,
+						"to": 1680
+					},
+					"id": 16306,
+					"p": 0.997288,
+					"t_dtw": 140
+				},
+				{
+					"text": " inner",
+					"timestamps": {
+						"from": "00:00:02,300",
+						"to": "00:00:02,410"
+					},
+					"offsets": {
+						"from": 2300,
+						"to": 2410
+					},
+					"id": 7284,
+					"p": 0.368631,
+					"t_dtw": 242
+				},
+				{
+					"text": "es",
+					"timestamps": {
+						"from": "00:00:02,410",
+						"to": "00:00:02,570"
+					},
+					"offsets": {
+						"from": 2410,
+						"to": 2570
+					},
+					"id": 279,
+					"p": 0.934019,
+					"t_dtw": 258
+				},
+				{
+					"text": " Kä",
+					"timestamps": {
+						"from": "00:00:02,570",
+						"to": "00:00:02,720"
+					},
+					"offsets": {
+						"from": 2570,
+						"to": 2720
+					},
+					"id": 40502,
+					"p": 0.162,
+					"t_dtw": 272
+				},
+				{
+					"text": "mp",
+					"timestamps": {
+						"from": "00:00:02,720",
+						"to": "00:00:02,880"
+					},
+					"offsets": {
+						"from": 2720,
+						"to": 2880
+					},
+					"id": 2455,
+					"p": 0.912087,
+					"t_dtw": 280
+				},
+				{
+					"text": "f",
+					"timestamps": {
+						"from": "00:00:02,880",
+						"to": "00:00:02,980"
+					},
+					"offsets": {
+						"from": 2880,
+						"to": 2980
+					},
+					"id": 69,
+					"p": 0.779907,
+					"t_dtw": 290
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,990",
+						"to": "00:00:03,060"
+					},
+					"offsets": {
+						"from": 2990,
+						"to": 3060
+					},
+					"id": 13,
+					"p": 0.902596,
+					"t_dtw": 302
+				},
+				{
+					"text": "[_TT_154]",
+					"timestamps": {
+						"from": "00:00:03,080",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 3080,
+						"to": 3080
+					},
+					"id": 50518,
+					"p": 0.090299,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

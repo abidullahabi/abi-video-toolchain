@@ -1,0 +1,283 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,760"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2760
+			},
+			"text": " Ich bin auch nicht ganz drüber, aber ich bin ganz nah dran.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.811806,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 150
+					},
+					"id": 3141,
+					"p": 0.97236,
+					"t_dtw": 24
+				},
+				{
+					"text": " bin",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 300
+					},
+					"id": 5171,
+					"p": 0.995361,
+					"t_dtw": 36
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 500
+					},
+					"id": 2168,
+					"p": 0.982602,
+					"t_dtw": 48
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 750
+					},
+					"id": 1979,
+					"p": 0.990817,
+					"t_dtw": 60
+				},
+				{
+					"text": " ganz",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 950
+					},
+					"id": 6312,
+					"p": 0.987298,
+					"t_dtw": 78
+				},
+				{
+					"text": " dr",
+					"timestamps": {
+						"from": "00:00:00,950",
+						"to": "00:00:01,050"
+					},
+					"offsets": {
+						"from": 950,
+						"to": 1050
+					},
+					"id": 1224,
+					"p": 0.927876,
+					"t_dtw": 94
+				},
+				{
+					"text": "über",
+					"timestamps": {
+						"from": "00:00:01,050",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1050,
+						"to": 1200
+					},
+					"id": 12670,
+					"p": 0.999188,
+					"t_dtw": 106
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,310"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1310
+					},
+					"id": 11,
+					"p": 0.899633,
+					"t_dtw": 132
+				},
+				{
+					"text": " aber",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1440
+					},
+					"id": 4340,
+					"p": 0.960552,
+					"t_dtw": 180
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,780"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1780
+					},
+					"id": 1893,
+					"p": 0.980706,
+					"t_dtw": 188
+				},
+				{
+					"text": " bin",
+					"timestamps": {
+						"from": "00:00:01,780",
+						"to": "00:00:01,950"
+					},
+					"offsets": {
+						"from": 1780,
+						"to": 1950
+					},
+					"id": 5171,
+					"p": 0.995808,
+					"t_dtw": 196
+				},
+				{
+					"text": " ganz",
+					"timestamps": {
+						"from": "00:00:01,950",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 1950,
+						"to": 2180
+					},
+					"id": 6312,
+					"p": 0.991223,
+					"t_dtw": 214
+				},
+				{
+					"text": " nah",
+					"timestamps": {
+						"from": "00:00:02,180",
+						"to": "00:00:02,340"
+					},
+					"offsets": {
+						"from": 2180,
+						"to": 2340
+					},
+					"id": 17170,
+					"p": 0.998889,
+					"t_dtw": 226
+				},
+				{
+					"text": " dran",
+					"timestamps": {
+						"from": "00:00:02,340",
+						"to": "00:00:02,530"
+					},
+					"offsets": {
+						"from": 2340,
+						"to": 2530
+					},
+					"id": 32801,
+					"p": 0.995995,
+					"t_dtw": 244
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,570",
+						"to": "00:00:02,700"
+					},
+					"offsets": {
+						"from": 2570,
+						"to": 2700
+					},
+					"id": 13,
+					"p": 0.977453,
+					"t_dtw": 274
+				},
+				{
+					"text": "[_TT_138]",
+					"timestamps": {
+						"from": "00:00:02,760",
+						"to": "00:00:02,760"
+					},
+					"offsets": {
+						"from": 2760,
+						"to": 2760
+					},
+					"id": 50503,
+					"p": 0.124053,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

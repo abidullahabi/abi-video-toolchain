@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Die 40% die Leute ...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.99361,
+					"t_dtw": -1
+				},
+				{
+					"text": " Die",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 330
+					},
+					"id": 3229,
+					"p": 0.727002,
+					"t_dtw": 20
+				},
+				{
+					"text": " 40",
+					"timestamps": {
+						"from": "00:00:00,330",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 330,
+						"to": 980
+					},
+					"id": 3356,
+					"p": 0.932922,
+					"t_dtw": 44
+				},
+				{
+					"text": "%",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 1100
+					},
+					"id": 4,
+					"p": 0.461473,
+					"t_dtw": 80
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,250"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1250
+					},
+					"id": 978,
+					"p": 0.302442,
+					"t_dtw": 100
+				},
+				{
+					"text": " Leute",
+					"timestamps": {
+						"from": "00:00:01,420",
+						"to": "00:00:01,510"
+					},
+					"offsets": {
+						"from": 1420,
+						"to": 1510
+					},
+					"id": 13495,
+					"p": 0.169579,
+					"t_dtw": 112
+				},
+				{
+					"text": " ...",
+					"timestamps": {
+						"from": "00:00:01,510",
+						"to": "00:00:01,510"
+					},
+					"offsets": {
+						"from": 1510,
+						"to": 1510
+					},
+					"id": 1097,
+					"p": 0.2076,
+					"t_dtw": 140
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.0832429,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

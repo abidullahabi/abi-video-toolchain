@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,580"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1580
+			},
+			"text": " Und diese Bücher haben mir dabei geholfen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.591297,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 120
+					},
+					"id": 2719,
+					"p": 0.873343,
+					"t_dtw": 18
+				},
+				{
+					"text": " diese",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 320
+					},
+					"id": 6705,
+					"p": 0.951591,
+					"t_dtw": 34
+				},
+				{
+					"text": " Bü",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 400
+					},
+					"id": 37186,
+					"p": 0.985788,
+					"t_dtw": 50
+				},
+				{
+					"text": "cher",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 560
+					},
+					"id": 6759,
+					"p": 0.984254,
+					"t_dtw": 56
+				},
+				{
+					"text": " haben",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,760"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 760
+					},
+					"id": 3084,
+					"p": 0.942506,
+					"t_dtw": 68
+				},
+				{
+					"text": " mir",
+					"timestamps": {
+						"from": "00:00:00,760",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 760,
+						"to": 880
+					},
+					"id": 3149,
+					"p": 0.718176,
+					"t_dtw": 76
+				},
+				{
+					"text": " dabei",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:01,070"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 1070
+					},
+					"id": 14967,
+					"p": 0.968702,
+					"t_dtw": 90
+				},
+				{
+					"text": " ge",
+					"timestamps": {
+						"from": "00:00:01,070",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 1070,
+						"to": 1140
+					},
+					"id": 1519,
+					"p": 0.764697,
+					"t_dtw": 102
+				},
+				{
+					"text": "hol",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1280
+					},
+					"id": 5449,
+					"p": 0.986967,
+					"t_dtw": 110
+				},
+				{
+					"text": "fen",
+					"timestamps": {
+						"from": "00:00:01,280",
+						"to": "00:00:01,370"
+					},
+					"offsets": {
+						"from": 1280,
+						"to": 1370
+					},
+					"id": 6570,
+					"p": 0.998763,
+					"t_dtw": 122
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,570"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1570
+					},
+					"id": 13,
+					"p": 0.977196,
+					"t_dtw": 144
+				},
+				{
+					"text": "[_TT_79]",
+					"timestamps": {
+						"from": "00:00:01,580",
+						"to": "00:00:01,580"
+					},
+					"offsets": {
+						"from": 1580,
+						"to": 1580
+					},
+					"id": 50444,
+					"p": 0.464142,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

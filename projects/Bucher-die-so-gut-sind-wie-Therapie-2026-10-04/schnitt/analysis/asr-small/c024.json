@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,880"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 880
+			},
+			"text": " Also, ich penn nicht.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.996801,
+					"t_dtw": -1
+				},
+				{
+					"text": " Also",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 160
+					},
+					"id": 2743,
+					"p": 0.930467,
+					"t_dtw": 26
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,240"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 240
+					},
+					"id": 11,
+					"p": 0.660972,
+					"t_dtw": 30
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,240",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 240,
+						"to": 360
+					},
+					"id": 1893,
+					"p": 0.6922,
+					"t_dtw": 40
+				},
+				{
+					"text": " penn",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 520
+					},
+					"id": 34911,
+					"p": 0.500033,
+					"t_dtw": 48
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,680"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 680
+					},
+					"id": 1979,
+					"p": 0.582444,
+					"t_dtw": 72
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 870
+					},
+					"id": 13,
+					"p": 0.918553,
+					"t_dtw": 86
+				},
+				{
+					"text": "[_TT_44]",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 880
+					},
+					"id": 50408,
+					"p": 0.0567599,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

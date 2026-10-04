@@ -1,0 +1,451 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:07,400"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 7400
+			},
+			"text": " Der war auf einer Insel und er erzählt so ein sehr poetischer Sprache über Liebe, Familie, Freunde, Eigentum.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.991616,
+					"t_dtw": -1
+				},
+				{
+					"text": " Der",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 170
+					},
+					"id": 5618,
+					"p": 0.856921,
+					"t_dtw": 28
+				},
+				{
+					"text": " war",
+					"timestamps": {
+						"from": "00:00:00,190",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 190,
+						"to": 360
+					},
+					"id": 1516,
+					"p": 0.976274,
+					"t_dtw": 38
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 540
+					},
+					"id": 2501,
+					"p": 0.992309,
+					"t_dtw": 50
+				},
+				{
+					"text": " einer",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 840
+					},
+					"id": 6850,
+					"p": 0.490382,
+					"t_dtw": 60
+				},
+				{
+					"text": " In",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,960"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 960
+					},
+					"id": 682,
+					"p": 0.989104,
+					"t_dtw": 76
+				},
+				{
+					"text": "sel",
+					"timestamps": {
+						"from": "00:00:00,960",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 960,
+						"to": 1140
+					},
+					"id": 790,
+					"p": 0.997569,
+					"t_dtw": 88
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1280
+					},
+					"id": 674,
+					"p": 0.916656,
+					"t_dtw": 108
+				},
+				{
+					"text": " er",
+					"timestamps": {
+						"from": "00:00:01,350",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1350,
+						"to": 1440
+					},
+					"id": 1189,
+					"p": 0.904235,
+					"t_dtw": 122
+				},
+				{
+					"text": " erzählt",
+					"timestamps": {
+						"from": "00:00:01,540",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1540,
+						"to": 1860
+					},
+					"id": 47110,
+					"p": 0.48768,
+					"t_dtw": 162
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:01,960"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 1960
+					},
+					"id": 370,
+					"p": 0.931813,
+					"t_dtw": 194
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:02,030",
+						"to": "00:00:02,220"
+					},
+					"offsets": {
+						"from": 2030,
+						"to": 2220
+					},
+					"id": 1343,
+					"p": 0.22439,
+					"t_dtw": 254
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:02,440",
+						"to": "00:00:02,870"
+					},
+					"offsets": {
+						"from": 2440,
+						"to": 2870
+					},
+					"id": 5499,
+					"p": 0.775371,
+					"t_dtw": 282
+				},
+				{
+					"text": " poet",
+					"timestamps": {
+						"from": "00:00:03,010",
+						"to": "00:00:03,170"
+					},
+					"offsets": {
+						"from": 3010,
+						"to": 3170
+					},
+					"id": 20874,
+					"p": 0.595408,
+					"t_dtw": 312
+				},
+				{
+					"text": "ischer",
+					"timestamps": {
+						"from": "00:00:03,180",
+						"to": "00:00:03,520"
+					},
+					"offsets": {
+						"from": 3180,
+						"to": 3520
+					},
+					"id": 19674,
+					"p": 0.6686,
+					"t_dtw": 338
+				},
+				{
+					"text": " Spr",
+					"timestamps": {
+						"from": "00:00:03,650",
+						"to": "00:00:03,850"
+					},
+					"offsets": {
+						"from": 3650,
+						"to": 3850
+					},
+					"id": 7702,
+					"p": 0.987473,
+					"t_dtw": 368
+				},
+				{
+					"text": "ache",
+					"timestamps": {
+						"from": "00:00:03,850",
+						"to": "00:00:04,160"
+					},
+					"offsets": {
+						"from": 3850,
+						"to": 4160
+					},
+					"id": 6000,
+					"p": 0.997739,
+					"t_dtw": 396
+				},
+				{
+					"text": " über",
+					"timestamps": {
+						"from": "00:00:04,160",
+						"to": "00:00:04,460"
+					},
+					"offsets": {
+						"from": 4160,
+						"to": 4460
+					},
+					"id": 4502,
+					"p": 0.682263,
+					"t_dtw": 442
+				},
+				{
+					"text": " Liebe",
+					"timestamps": {
+						"from": "00:00:04,460",
+						"to": "00:00:04,840"
+					},
+					"offsets": {
+						"from": 4460,
+						"to": 4840
+					},
+					"id": 28790,
+					"p": 0.973249,
+					"t_dtw": 472
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:04,840",
+						"to": "00:00:04,960"
+					},
+					"offsets": {
+						"from": 4840,
+						"to": 4960
+					},
+					"id": 11,
+					"p": 0.988238,
+					"t_dtw": 532
+				},
+				{
+					"text": " Familie",
+					"timestamps": {
+						"from": "00:00:05,070",
+						"to": "00:00:05,460"
+					},
+					"offsets": {
+						"from": 5070,
+						"to": 5460
+					},
+					"id": 26021,
+					"p": 0.899384,
+					"t_dtw": 532
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:05,460",
+						"to": "00:00:05,590"
+					},
+					"offsets": {
+						"from": 5460,
+						"to": 5590
+					},
+					"id": 11,
+					"p": 0.995636,
+					"t_dtw": 576
+				},
+				{
+					"text": " Freunde",
+					"timestamps": {
+						"from": "00:00:05,600",
+						"to": "00:00:06,260"
+					},
+					"offsets": {
+						"from": 5600,
+						"to": 6260
+					},
+					"id": 40016,
+					"p": 0.956629,
+					"t_dtw": 606
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:06,260",
+						"to": "00:00:06,370"
+					},
+					"offsets": {
+						"from": 6260,
+						"to": 6370
+					},
+					"id": 11,
+					"p": 0.962823,
+					"t_dtw": 658
+				},
+				{
+					"text": " E",
+					"timestamps": {
+						"from": "00:00:06,510",
+						"to": "00:00:06,570"
+					},
+					"offsets": {
+						"from": 6510,
+						"to": 6570
+					},
+					"id": 462,
+					"p": 0.881218,
+					"t_dtw": 664
+				},
+				{
+					"text": "igent",
+					"timestamps": {
+						"from": "00:00:06,570",
+						"to": "00:00:07,130"
+					},
+					"offsets": {
+						"from": 6570,
+						"to": 7130
+					},
+					"id": 25002,
+					"p": 0.994463,
+					"t_dtw": 678
+				},
+				{
+					"text": "um",
+					"timestamps": {
+						"from": "00:00:07,130",
+						"to": "00:00:07,270"
+					},
+					"offsets": {
+						"from": 7130,
+						"to": 7270
+					},
+					"id": 449,
+					"p": 0.955921,
+					"t_dtw": 702
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:07,360",
+						"to": "00:00:07,400"
+					},
+					"offsets": {
+						"from": 7360,
+						"to": 7400
+					},
+					"id": 13,
+					"p": 0.834488,
+					"t_dtw": 734
+				},
+				{
+					"text": "[_TT_370]",
+					"timestamps": {
+						"from": "00:00:07,400",
+						"to": "00:00:07,400"
+					},
+					"offsets": {
+						"from": 7400,
+						"to": 7400
+					},
+					"id": 50734,
+					"p": 0.0941237,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

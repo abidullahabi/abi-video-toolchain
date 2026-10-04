@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,300"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1300
+			},
+			"text": " Heilen ist ein Prozess.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.803803,
+					"t_dtw": -1
+				},
+				{
+					"text": " He",
+					"timestamps": {
+						"from": "00:00:00,110",
+						"to": "00:00:00,110"
+					},
+					"offsets": {
+						"from": 110,
+						"to": 110
+					},
+					"id": 634,
+					"p": 0.68836,
+					"t_dtw": 24
+				},
+				{
+					"text": "ilen",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,340"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 340
+					},
+					"id": 17471,
+					"p": 0.979277,
+					"t_dtw": 38
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,340",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 340,
+						"to": 500
+					},
+					"id": 1418,
+					"p": 0.986903,
+					"t_dtw": 52
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,680"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 680
+					},
+					"id": 1343,
+					"p": 0.789253,
+					"t_dtw": 60
+				},
+				{
+					"text": " Pro",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 850
+					},
+					"id": 1705,
+					"p": 0.993874,
+					"t_dtw": 76
+				},
+				{
+					"text": "zess",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 980
+					},
+					"id": 37575,
+					"p": 0.997957,
+					"t_dtw": 98
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,980",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 980,
+						"to": 1280
+					},
+					"id": 13,
+					"p": 0.884915,
+					"t_dtw": 126
+				},
+				{
+					"text": "[_TT_65]",
+					"timestamps": {
+						"from": "00:00:01,300",
+						"to": "00:00:01,300"
+					},
+					"offsets": {
+						"from": 1300,
+						"to": 1300
+					},
+					"id": 50430,
+					"p": 0.359576,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

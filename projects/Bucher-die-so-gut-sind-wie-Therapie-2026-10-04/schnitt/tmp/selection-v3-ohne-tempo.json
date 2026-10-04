@@ -1,0 +1,817 @@
+{
+ "basis": "Rohzeit IMG_2012.MOV (SHA-256 d8343ccf…), Sekunden",
+ "regel": "Nur Anläufe, die von Anfang bis Ende flüssig sind. Kein Flicken mitten im Satz. Reihenfolge wie aufgenommen. Pausen ab 150 ms werden in plan-edl.py automatisch gekürzt (auch innerhalb eines Bereichs). Bereiche werden nur geteilt, wenn dazwischen etwas wegfällt, außer bei keepInner und beim CTA.",
+ "ranges": [
+  {
+   "id": "hook",
+   "a": 26.42,
+   "b": 29.63,
+   "text": "Diese fünf Bücher waren genauso gut wie meine fünfjährige Therapie.",
+   "warum": "Dritter Hook-Anlauf. Flüssig, „waren“ wie geplant, gleichmäßig laut. Blick vom ersten Bild an in die Kamera, E-Reader dreht sich ins Bild (gutes Vorschaubild). Anlauf 1 (9,57 s) beginnt mit zusammengekniffenem Auge und Grimasse, Anlauf 2 (18,14 s) sagt „sind“ statt „waren“."
+  },
+  {
+   "id": "intro",
+   "a": 33.97,
+   "b": 45.86,
+   "text": "Ich glaub, Therapie ist das Beste, was ich jemals gemacht habe. Aber Therapie alleine reicht nicht. Für den richtigen Prozess sind das gerade mal 40 % und den restlichen 60 % musst du selbst machen. Und diese Bücher haben mir dabei geholfen.",
+   "warum": "Einziger Anlauf, flüssig. Denkpausen darin werden automatisch gekürzt."
+  },
+  {
+   "id": "b1-1",
+   "a": 54.06,
+   "b": 56.9,
+   "text": "Wir fangen mit dem ersten Buch an, Anthony de Mello, The Way to Love.",
+   "warum": "Dritter Anlauf, der erste vollständige. Raus: „Das erste Buch ist“ (48,3 s) und „Das Buch hat …“ (51,9 s)."
+  },
+  {
+   "id": "b1-2",
+   "a": 59.5667,
+   "b": 61.28,
+   "text": "es geht um Liebe, aber",
+   "warum": "v3: „Und wie der Titel schon verrät,“ (58,4–59,5 s) raus, Überleitungsphrase. Anfang hart bei 59,57 s in der Stille vor „es“ (59,47–59,58 s unter -45 dB). Das „aber“ bleibt, weil es in „das Buch ist gerade so auf dieser Schwelle …“ übergeht. (hardStart)",
+   "hardStart": true
+  },
+  {
+   "id": "b1-3",
+   "a": 66.53,
+   "b": 71.01,
+   "text": "das Buch ist gerade so auf dieser Schwelle von super hilfreich und ein bisschen Hokuspokus.",
+   "warum": "Zweiter Anlauf. Raus: „Ich find’s gut, das Buch ist genauso, ist gerade …“ (62,0–66,2 s). „Hokuspokus“ bleibt."
+  },
+  {
+   "id": "b1-4",
+   "a": 73.12,
+   "b": 92.95,
+   "text": "Der redet um nicht nur Liebe, sondern generell Beziehung, Beziehung zu sich selbst. Was das Gegenteil von Liebe ist, worum die meisten davon ausgeben, das ist Liebe. Und es war eine Challenge zu lesen, weil es hat alles verändert, was ich gedacht hab darüber,",
+   "warum": "Einziger Anlauf. Lange Denkpause (80,8–87,4 s) und die Pause vor „verändert“ werden automatisch gekürzt. Endet vor dem angehängten „aber …“ (93,5 s), Schnitt in der Stille."
+  },
+  {
+   "id": "b1-5",
+   "a": 95.2,
+   "b": 96.7,
+   "text": "Aber es ist auf einem sehr positiven Weg.",
+   "warum": "Das doppelte „aber … Aber“ ist auf eins reduziert; dieses ist der vollständige Satz."
+  },
+  {
+   "id": "b2-1",
+   "a": 98.11,
+   "b": 107.36,
+   "text": "Das zweite Buch, auch wieder von Anthony de Mello, Awareness. Bei Awareness geht es um das Thema Achtsamkeit. Und der sagt, dass viele Menschen einfach nur schlafen im Leben,",
+   "warum": "Einziger Anlauf. Ende hart nach „Leben,“, weil das verworfene „dass sie einfach da sich …“ schon bei 107,39 s beginnt.",
+   "hardEnd": true
+  },
+  {
+   "id": "b2-2",
+   "a": 113.85,
+   "b": 115.36,
+   "text": "und gar nicht wirklich aufwachen.",
+   "warum": "v3: Von der dreifachen Umschreibung („schlafen im Leben“, „vor sich hin leben“, „ich penn nicht“) bleibt „schlafen im Leben und gar nicht wirklich aufwachen“. „dass sie einfach vor sich hin leben“ (110,2–112,1 s) und „Also, ich penn nicht.“ (116,6–117,3 s) raus; Schnitte in der Stille. Gegenprobe der Verbindung: „… dass viele Menschen einfach nur schlafen im Leben und gar nicht wirklich aufwachen. Der zeigt …“"
+  },
+  {
+   "id": "b2-2b",
+   "a": 120.95,
+   "b": 130.4333,
+   "text": "Der zeigt, wie man seine Gedanken beobachtet, was die Gefühle sind, was sie sagen und ich hatte zum Beispiel viel gestruggelt mit meinen Gefühlen, weil ich nicht wusste, was das ist, wie ich damit umzugehen habe.",
+   "warum": "v3: Kern der Gefühle-Passage bleibt (Gedanken und Gefühle beobachten, Abi hat mit seinen Gefühlen gestruggelt, wusste nicht, was sie sind und wie er damit umgehen soll). Endet nach „umzugehen habe.“ in der Stille (130,2–130,9 s). Pausen darin werden gekürzt. Prüfung 3 (B3): Ende hart bei 130,4333 s (Raster), „habe.“ klingt bei ca. 130,35 s aus; danach nur Rausch-/Atemspitzen von −49 bis −45 dB, an denen straffen2 hängen blieb (Restpause vorher 0,3–0,6 s). (hardEnd)",
+   "hardEnd": true
+  },
+  {
+   "id": "b2-2c",
+   "a": 137.9,
+   "b": 141.54,
+   "text": "Und vor allem dachte ich immer, wenn ich meine Gefühle alle weg mache, dann bin ich glücklich.",
+   "warum": "v3: „Und, dass sie auch normal sind.“ (130,9–132,4 s) davor raus, dritter Grund in Folge. Anfang in der Stille (137,5–138,0 s). Abis Kernsatz bleibt vollständig."
+  },
+  {
+   "id": "b2-3",
+   "a": 142.5,
+   "b": 143.71,
+   "text": "Was falsch ist.",
+   "warum": "Pointe. Kurze Kunstpause zwischen „Was“ und „falsch ist“ (ca. 0,35 s) bleibt wie gesprochen; die Pause davor wird gekürzt.",
+   "keepInner": true
+  },
+  {
+   "id": "b3-1",
+   "a": 147.84,
+   "b": 150.5666,
+   "text": "Das nächste Buch habe ich erst vor ein paar Tagen durchgelesen, das heißt",
+   "warum": "v3: Ende hart bei 150,57 s in der Lücke nach „heißt“ (150,52–150,58 s), das erste, abgesetzte „Reconciliation,“ fällt weg (Abis Entscheidung: auf einmal kürzen). (hardEnd)",
+   "hardEnd": true
+  },
+  {
+   "id": "b3-1b",
+   "a": 152.1334,
+   "b": 153.2,
+   "text": "Reconciliation.",
+   "warum": "v3: Das zweite „Reconciliation.“ (fallend, Satzende). Anfang hart bei 152,10 s in der Verschlusslücke vor dem „R“ (152,09–152,14 s unter -42 dB). „Ich kann es nicht aussprechen.“ (154,3–155,2 s) danach raus (Abis Entscheidung). Gegenprobe: „das heißt Reconciliation. Und der Autor, keine Ahnung, wie man das ausspricht …“ (hardStart) Prüfung 3 (B7): Anfang auf 152,1333 s (Raster, Mulde −47,6 dB bei 152,125 s), damit der Rest vom ersten „Reconciliation“ (152,10–152,12 s, −42 bis −38 dB) nicht mitkommt; das „R“ setzt bei 152,14 s ein.",
+   "hardStart": true
+  },
+  {
+   "id": "b3-2",
+   "a": 158.63,
+   "b": 167.4,
+   "text": "Und der Autor, keine Ahnung, wie man das ausspricht. Das war ein sehr angenehmes Buch zum Lesen.",
+   "warum": "Zweite Fassung des Autor-Satzes (bleibt, Abis Entscheidung). v3: Endet nach „zum Lesen.“ in der Stille (167,27–167,50 s). Lesedauer, „in einem Zug gelesen“ und die widersprüchliche Pause-Empfehlung danach raus."
+  },
+  {
+   "id": "b3-4a",
+   "a": 177.67,
+   "b": 180.6333,
+   "text": "Es geht rein in das Thema inneres Kind.",
+   "warum": "v3: Endet nach „inneres Kind.“ in der Stille (180,5–181,1 s); „Und ich find’s ganz gut,“ danach raus. Prüfung 3 (Restpausen): Ende hart bei 180,6333 s (Raster), „Kind.“ klingt bei ca. 180,53 s aus (Restpause vorher 310 ms); danach nur Atem-/Rauschspitzen, an denen straffen2 hängen blieb. (hardEnd)",
+   "hardEnd": true
+  },
+  {
+   "id": "b3-4a2",
+   "a": 182.5334,
+   "b": 186.7666,
+   "text": "bei dem Buch war das so, dass man nicht nur auf sich geschaut hat.",
+   "warum": "v3: Anfang hart bei 182,53 s im Pegelloch vor „bei“ (−45 dB), „gut,“ endet davor. Endet nach „geschaut hat.“ in der Stille (186,6–187,2 s). Gegenprobe: „Es geht rein in das Thema inneres Kind. Bei dem Buch war es so, dass man nicht nur auf sich geschaut hat.“ (hardStart) Prüfung 3 (Restpausen): Ende hart bei 186,7667 s (Raster), „geschaut hat.“ klingt bei ca. 186,66 s aus (Restpause vorher 290 ms); danach nur Atem-/Rauschspitzen, an denen straffen2 hängen blieb. (hardEnd)",
+   "hardStart": true,
+   "hardEnd": true
+  },
+  {
+   "id": "b3-4b",
+   "a": 197.25,
+   "b": 203.1,
+   "text": "es gibt ja auch das Umfeld und deine Herkunft. Und das steckt ja auch in dir drin.",
+   "warum": "v3: Die Abschweifung zu westlichen psychologischen Ansätzen (187,2–196,6 s) ist raus; Anfang in der Stille vor „es“ (196,75–197,34 s). Der Kern bleibt: nicht nur auf sich schauen, sondern auch Umfeld und Herkunft. Gegenprobe: „… dass man nicht nur auf sich geschaut hat. Es gibt ja auch das Umfeld und deine Herkunft. Und das steckt ja auch in dir drin.“"
+  },
+  {
+   "id": "b3-5a",
+   "a": 207.17,
+   "b": 208.45,
+   "text": "Hat mir da auch ein bisschen die Augen geöffnet.",
+   "warum": "Zweiter Anlauf („hat mir echt b…“ bei 205,3 s bricht ab). v3: endet nach „geöffnet.“ in der Stille (208,36–208,73 s)."
+  },
+  {
+   "id": "b3-5b",
+   "a": 210.0667,
+   "b": 220.0,
+   "text": "Am Ende gibt’s richtig gute Übungen, wie man anwenden kann. Kann auch sein, dass du ein bisschen heulen musst beim Buch. Habe ich auch gemacht.",
+   "warum": "v3: „Und es ist sehr praktisch.“ (209,2–210,0 s) davor raus, die Übungen sagen es konkreter. Anfang hart bei 210,07 s im Pegelloch vor „Am“ (210,07–210,10 s, −41 dB). „anwenden kann“ ist schnell gesprochen, im Zusammenhang erkannt. Pointe „Kann auch sein … Habe ich auch gemacht.“ bleibt. (hardStart)",
+   "hardStart": true
+  },
+  {
+   "id": "b4-1",
+   "a": 222.5,
+   "b": 224.33,
+   "text": "Dann Buch Nummer vier,",
+   "warum": "Einziger Anlauf. Ende hart nach „vier“, das direkt angehängte „äh, äh“ (ab 224,35 s) raus.",
+   "hardEnd": true
+  },
+  {
+   "id": "b4-2",
+   "a": 225.84,
+   "b": 227.7,
+   "text": "The Untethered Soul von",
+   "warum": "Einziger Anlauf des Titels."
+  },
+  {
+   "id": "b4-3",
+   "a": 229.34,
+   "b": 236.2666,
+   "text": "Michael Singer. Es geht hier primär um die Stimme in deinem Kopf",
+   "warum": "Zweites „Michael“; das erste „Michael.“ (228,0–228,8 s) mit Absetzen raus. Ende hart nach „Kopf“, weil das verworfene „und dass wir diese Stimme nicht blind gehören“ bei 236,30 s ohne Pause anschließt.",
+   "hardEnd": true
+  },
+  {
+   "id": "b4-4",
+   "a": 239.55,
+   "b": 241.79,
+   "text": "und dass wir diese Stimme nicht blind zuhören müssen.",
+   "warum": "Zweiter Anlauf der Satzhälfte. Der erste (236,3–238,9 s) endet mit dem Versprecher „nicht blind gehören“."
+  },
+  {
+   "id": "b4-5",
+   "a": 250.4,
+   "b": 258.6,
+   "text": "stell dir vor, diese Stimme wäre dein Mitbewohner und der würde einfach rausklappern, was er so sagt. Dem würdest du auch sagen, ey Bro, bisschen weird, dass du das gerade sagst.",
+   "warum": "Zweiter Anlauf des Bildes. v3: „Er meint so,“ raus, Anfang hart bei 250,40 s im Pegelloch vor „stell“ (250,37–250,44 s). Endet nach „gerade sagst.“ in der Stille (258,52–259,03 s); „Und genau so geht er im Buch an. Geht natürlich auch viel um Liebe.“ raus. Mitbewohner-Vergleich und „ey Bro, bisschen weird“ bleiben. (hardStart) Prüfung 3 (Restpausen): Ende hart bei 258,6 s (Raster), „sagst.“ klingt bei ca. 258,53 s aus (Restpause vorher 260 ms); danach nur Atem-/Rauschspitzen, an denen straffen2 hängen blieb. (hardEnd)",
+   "hardStart": true,
+   "hardEnd": true
+  },
+  {
+   "id": "b4-6",
+   "a": 268.75,
+   "b": 272.03,
+   "text": "ist ein bisschen zäh zu lesen, aber hat mir auch sehr geholfen.",
+   "warum": "v3: „(hm) Ankommen, etc. Ist ein sehr schönes Buch,“ raus; Anfang in der Stille vor „ist“ (268,55–268,83 s). Gegenprobe: „… dass du das gerade sagst. Ist ein bisschen zäh zu lesen, aber hat mir auch sehr geholfen.“"
+  },
+  {
+   "id": "b5-1a",
+   "a": 281.34,
+   "b": 283.1333,
+   "text": "Und das letzte Buch, was ich immer noch lese,",
+   "warum": "Dritter Anlauf. v3: Ende hart bei 282,07 s im Pegelloch nach „Buch,“ (282,05–282,10 s); „was ich immer noch lese,“ raus. (hardEnd) Prüfung 3 (B5): „was ich immer noch lese,“ wieder aufgenommen, damit Buch 5 wie die anderen einen persönlichen Satz hat. Ende hart bei 283,1333 s, „lese,“ klingt bei ca. 283,10 s aus; bis „Von“ (/f/ ab 283,83 s) bleibt eine kurze natürliche Pause. Damit entfällt die harte Kante 282,0667 mitten im durchgehenden „Buch, was“ (−33 dB, B6). (hardEnd)",
+   "hardEnd": true
+  },
+  {
+   "id": "b5-1b",
+   "a": 283.85,
+   "b": 284.9666,
+   "text": "von Gabor Maté,",
+   "warum": "v3: Anfang in der Stille vor „von“ (283,07–283,88 s). Ende hart bei 284,97 s in der Stille nach „Maté,“ (284,91–285,01 s): „den Typ ich liebe, da kannst du jeden Podcast von ihm anhören.“ raus. Gegenprobe: „Und das letzte Buch von Gabor Maté, The Myth of Being Normal.“ (hardEnd)",
+   "hardEnd": true
+  },
+  {
+   "id": "b5-2",
+   "a": 288.3334,
+   "b": 313.4666,
+   "text": "The Myth of Being Normal. Er sagt, vieles, was wir normal nennen, ist nicht wirklich normal. Und macht uns sogar krank. Er zeigt, wie Stress, Trauma und Krankheit so miteinander zusammenhängen. Also, ist auch sehr theoretisch.",
+   "warum": "Einziger Anlauf. „Ähm“ vor dem Titel raus (Anfang hart, „The“ setzt bei 288,36 s ein). „Und macht uns sogar krank“ (301,0–301,8 s) ist undeutlich, siehe Gegenhören. Lange Pausen darin werden gekürzt. (hardStart) Prüfung 3 (B3): Ende hart bei 313,4667 s (Raster), „theoretisch.“ klingt bei ca. 313,43 s aus; danach nur Rausch-/Atemspitzen von −49 bis −45 dB, an denen straffen2 hängen blieb (Restpause vorher 0,3–0,6 s). (hardEnd)",
+   "hardStart": true,
+   "hardEnd": true
+  },
+  {
+   "id": "b5-3",
+   "a": 324.61,
+   "b": 328.9,
+   "text": "Und zielt eher darauf ab, wenn du besser verstehen willst, wieso du gerade so bist, wie du bist.",
+   "warum": "Zweiter Anlauf, der vollständige mit „für wen“. Der erste („… wenn du das bisschen besser verstehen willst.“, 317,7 s) ist Dopplung."
+  },
+  {
+   "id": "bonus-1a",
+   "a": 333.3,
+   "b": 334.5333,
+   "text": "Und ein weiteres Bonusbuch,",
+   "warum": "Dritter Anlauf des Satzanfangs. v3: Ende hart bei 334,53 s im Pegelloch nach „Bonusbuch,“ (334,49–334,57 s). (hardEnd)",
+   "hardEnd": true
+  },
+  {
+   "id": "bonus-1a2",
+   "a": 335.2667,
+   "b": 337.3,
+   "text": "ist von Khalil Gibran, Der Prophet.",
+   "warum": "v3: „das ich habe,“ raus. Anfang hart bei 335,27 s im Pegelloch vor „ist“ (335,25–335,28 s), „habe“ endet davor. Endet nach „Der Prophet.“ in der Stille. Gegenprobe: „Und ein weiteres Bonusbuch ist von Khalil Gibran, Der Prophet.“ (hardStart) Prüfung 3 (B3): Ende hart bei 337,3 s (Raster), „Prophet.“ klingt bei ca. 337,16 s aus; danach nur Rausch-/Atemspitzen von −49 bis −45 dB, an denen straffen2 hängen blieb (Restpause vorher 0,3–0,6 s). (hardEnd)",
+   "hardStart": true,
+   "hardEnd": true
+  },
+  {
+   "id": "bonus-1b",
+   "a": 344.3,
+   "b": 348.7666,
+   "text": "Es ist immer wieder schön zu lesen. Es gibt so einen Typen, der Prophet ist, und",
+   "warum": "v3: „Es ist jetzt kein Fachbuch in diesem Sinne, aber“ (337,9–342,6 s) raus; Anfang in der Stille vor „Es“ (342,61–344,41 s). Ende hart nach dem gedehnten „und“, weil das verworfene „keine Sorge an, aber“ bei 348,89 s beginnt. (hardEnd)",
+   "hardEnd": true
+  },
+  {
+   "id": "bonus-2",
+   "a": 349.86,
+   "b": 354.8,
+   "text": "keine Sorge an alle meine Ungläubigen. Auch ihr könnt das lesen,",
+   "warum": "Zweiter Anlauf. Raus: „keine Sorge an, aber“ (348,9–349,75 s). Abis Witz bleibt. Das „ähm“ danach (355,1 s) raus."
+  },
+  {
+   "id": "bonus-3a",
+   "a": 356.13,
+   "b": 363.4333,
+   "text": "Der war auf einer Insel und er erzählt so in sehr poetischer Sprache über Liebe, Familie, Freunde, Eigentum.",
+   "warum": "Einziger Anlauf. v3: endet nach „Eigentum.“ in der Stille (363,31–363,78 s). Prüfung 3 (B3): Ende hart bei 363,4333 s (Raster), „Eigentum.“ klingt bei ca. 363,31 s aus; danach nur Rausch-/Atemspitzen von −49 bis −45 dB, an denen straffen2 hängen blieb (Restpause vorher 0,3–0,6 s). (hardEnd)",
+   "hardEnd": true
+  },
+  {
+   "id": "bonus-3a2",
+   "a": 365.4,
+   "b": 372.2666,
+   "text": "Und ich lese das, glaube ich, seit fast zehn Jahren immer wieder neu. Und jedes Mal bedeutet der Satz was Neues für mich.",
+   "warum": "v3: „Ist ein sehr schönes Buch zum Lesen“ davor raus (Dopplung zu „immer wieder schön zu lesen“). Anfang in der Stille vor „und“ (365,30–365,45 s). Endet nach „für mich.“ in der Stille; „Macht echt Spaß.“ danach raus. Prüfung 3 (B3): Ende hart bei 372,2667 s (Raster), „für mich.“ klingt bei ca. 372,14 s aus; danach nur Rausch-/Atemspitzen von −49 bis −45 dB, an denen straffen2 hängen blieb (Restpause vorher 0,3–0,6 s). (hardEnd)",
+   "hardEnd": true
+  },
+  {
+   "id": "bonus-3b",
+   "a": 377.85,
+   "b": 382.59,
+   "text": "Und generell zu dem Thema Heilen. Heilen ist ein Prozess.",
+   "warum": "Zweites „Und“. Das erste „Und“ (377,12–377,36 s) setzt ab, nach 0,5 s Stille kommt „Und generell …“ neu; nach der Pausenkürzung wäre ein „Und, und“ zu hören. Anfang in der Stille 377,45–377,83 s. Überleitung zum Abschluss."
+  },
+  {
+   "id": "schluss-1a",
+   "a": 395.0,
+   "b": 396.8,
+   "text": "Damit du heilst, brauchst du erstmal Sicherheit.",
+   "warum": "v3: Die Wiederholung der 40 % aus dem Intro („Die 40 %, die du in deiner Therapie machst, ist schon ziemlich gut … Aber das ist nicht genug.“, 385,9–392,3 s) ist raus. Anfang in der Stille vor „Damit“ (392,2–395,1 s). Endet nach „Sicherheit.“ in der Stille (396,71–396,92 s). Prüfung 3 (B2): Ende hart bei 396,80 s (Raster), „Sicherheit.“ klingt bei ca. 396,72 s aus; vorher rundete plan-edl auf 396,933 und nahm den Einsatz des verworfenen „Also“ (ab 396,92 s) mit. (hardEnd)",
+   "hardEnd": true
+  },
+  {
+   "id": "schluss-1b",
+   "a": 401.3,
+   "b": 409.9666,
+   "text": "Dann machst du in deiner Therapie, dass du dich halt daran erinnerst und dann heulst du einfach ganz viel. Wir heilen, wenn wir ganz viel geheult haben und uns gehalten haben.",
+   "warum": "v3: „Also, du kannst nicht in einer komischen Situation heilen.“ (397,0–398,8 s) davor raus; Anfang in der Stille (399,3–401,5 s). Erinnern und heulen, gehalten werden, checken bleiben. Ende hart nach „hast“ (417,53 s, Pegelloch 417,47–417,52 s), Variante B aus v2: „oder die Schmerzen, die du,“ fällt weg. Gegenprobe: „… die du gemacht hast oder die Sorgen, die du jetzt hast …“ (hardEnd) Prüfung 3 (B4): geteilt. Ende hart bei 409,9667 s, „haben.“ klingt bei ca. 409,85 s aus; das Geräusch (Schmatzer/Atem, −46 bis −42 dB) bei 410,43–410,60 s fällt weg. (hardEnd)",
+   "hardEnd": true
+  },
+  {
+   "id": "schluss-1c",
+   "a": 415.5,
+   "b": 417.5,
+   "text": "Und dann checkst du meistens die Dinge, die du gemacht hast",
+   "warum": "Prüfung 3 (B1, B4): aus schluss-1b abgeteilt. Ende hart bei 417,50 s (Raster) nach dem „st“ von „hast“ (bis 417,51 s), vor dem Vokal des verworfenen ersten „oder“ (ab 417,515 s); vorher 417,533 nahm ca. 15–20 ms „o…“ mit. (hardEnd)",
+   "hardEnd": true
+  },
+  {
+   "id": "schluss-2",
+   "a": 419.0,
+   "b": 423.2,
+   "text": "oder die Sorgen, die du jetzt hast,",
+   "warum": "Abis Selbstkorrektur „oder die Sorgen, die du jetzt hast“, Anfang in der Stille (418,57–419,03 s). v3: schließt direkt an „die du gemacht hast“ an (Variante B). Die Pause vor dem CTA wird gekürzt. Prüfung 3 (B3): geteilt. Ende hart bei 434,0667 s, „musst.“ klingt bei ca. 433,95 s aus; danach nur Rauschspitzen (−49 bis −45 dB), an denen straffen2 hängen blieb (Restpause vorher 355 ms). (hardEnd) Prüfung 3 (Restpausen): nochmals geteilt. Ende hart bei 423,20 s (−58 dB), „hast,“ klingt bei ca. 423,13 s aus; die Atempause bis „dass“ (423,72 s) blieb vorher bei 350 ms. (hardEnd)",
+   "hardEnd": true
+  },
+  {
+   "id": "schluss-2b",
+   "a": 423.6,
+   "b": 434.0666,
+   "hardEnd": true,
+   "text": "dass sie aktuell gar nicht mehr relevant sind, weil du ein erwachsener Mensch geworden bist und dass alles gut ist. Und das sind die letzten 60 %, die du halt selber aufbringen musst.",
+   "warum": "Prüfung 3: aus schluss-2 abgeteilt (Anfang vor „dass“, Einsatz ca. 423,72 s). Ende hart bei 434,0667 s, „musst.“ klingt bei ca. 433,95 s aus; danach nur Rauschspitzen (Restpause vorher 355 ms). (hardEnd)"
+  },
+  {
+   "id": "schluss-3",
+   "a": 434.95,
+   "b": 437.5,
+   "text": "Ich bin auch nicht ganz drüber, aber ich bin ganz nah dran.",
+   "warum": "Prüfung 3 (B3): aus schluss-2 abgeteilt, Anfang vor „Ich“ (Einsatz ca. 434,91 s); plan-edl und straffen2 setzen den Vorlauf."
+  },
+  {
+   "id": "cta",
+   "a": 438.34,
+   "b": 439.75,
+   "text": "Folgen nicht vergessen.",
+   "warum": "Festgelegtes Ende: „Folgen nicht vergessen“ 438,37–438,95 s, danach Lächeln, ab 439,14 s kommt der E-Reader ins Bild, ab 439,4 s hält Abi ihn lächelnd hoch. Schluss 0,8 s nach dem letzten Wort, bevor die Geste endet.",
+   "hardEnd": true,
+   "endHold": true
+  }
+ ],
+ "entfernt": [
+  {
+   "von": 0.0,
+   "bis": 26.42,
+   "text": "„Ja.“ (1,9 s), Hook-Anlauf 1 (9,57 s) und Hook-Anlauf 2 (18,14 s, „sind“)",
+   "warum": "Bester Hook ist Anlauf 3. Kein „Ja.“ davor.",
+   "art": "anlauf"
+  },
+  {
+   "von": 29.63,
+   "bis": 33.97,
+   "text": "(Stille, Positionswechsel)",
+   "warum": "Pause nach dem Hook.",
+   "art": "pause"
+  },
+  {
+   "von": 48.29,
+   "bis": 52.61,
+   "text": "Das erste Buch ist … Das Buch hat …",
+   "warum": "Zwei abgebrochene Anläufe vor „Wir fangen mit dem ersten Buch an“.",
+   "art": "anlauf"
+  },
+  {
+   "von": 58.42,
+   "bis": 59.5667,
+   "text": "Und wie der Titel schon verrät,",
+   "warum": "Überleitungsphrase; der Titel steht groß im Bild.",
+   "art": "straffung"
+  },
+  {
+   "von": 62.02,
+   "bis": 66.24,
+   "text": "Ich find’s gut, das Buch ist genauso, ist gerade …",
+   "warum": "Abgebrochener Anlauf, danach sauber neu: „Das Buch ist gerade so auf dieser Schwelle …“.",
+   "art": "anlauf"
+  },
+  {
+   "von": 93.48,
+   "bis": 94.05,
+   "text": "aber …",
+   "warum": "Doppeltes „aber … Aber“; das zweite steht im vollständigen Satz.",
+   "art": "dopplung"
+  },
+  {
+   "von": 107.39,
+   "bis": 108.93,
+   "text": "dass sie einfach da sich …",
+   "warum": "Abgebrochener Anlauf, gleich danach „dass sie einfach vor sich hin leben“.",
+   "art": "anlauf"
+  },
+  {
+   "von": 110.15,
+   "bis": 113.85,
+   "text": "dass sie einfach vor sich hin leben",
+   "warum": "Zweite Umschreibung von „schlafen im Leben“; es bleibt „schlafen im Leben und gar nicht wirklich aufwachen“.",
+   "art": "straffung"
+  },
+  {
+   "von": 115.36,
+   "bis": 120.95,
+   "text": "Also, ich penn nicht.",
+   "warum": "Dritte Umschreibung, kurzer Einschub ohne neuen Inhalt.",
+   "art": "straffung"
+  },
+  {
+   "von": 130.6,
+   "bis": 137.9,
+   "text": "Und, dass sie auch normal sind.",
+   "warum": "Gefühle-Passage gestrafft (dritter Grund in Folge); der Kern bleibt: beobachten, gestruggelt, nicht gewusst, wie damit umgehen, „alle Gefühle weg = glücklich … was falsch ist“.",
+   "art": "straffung"
+  },
+  {
+   "von": 150.5666,
+   "bis": 152.1,
+   "text": "Reconciliation,",
+   "warum": "Doppeltes „Reconciliation“ auf einmal gekürzt (Abis Entscheidung); das zweite, fallende bleibt.",
+   "art": "straffung"
+  },
+  {
+   "von": 153.2,
+   "bis": 155.27,
+   "text": "Ich kann es nicht aussprechen.",
+   "warum": "Running Gag gekürzt (Abis Entscheidung); „keine Ahnung, wie man das ausspricht“ beim Autor bleibt.",
+   "art": "straffung"
+  },
+  {
+   "von": 155.27,
+   "bis": 157.12,
+   "text": "Und der Autor, keine Ahnung, wie der heißt,",
+   "warum": "Dopplung. Abi wiederholt den Satz selbst mit „wie man das ausspricht“ (158,7 s). Zum Zurückholen: b3-2 ab 155,27 statt 158,63 beginnen lassen und bei 157,12 enden lassen.",
+   "art": "dopplung"
+  },
+  {
+   "von": 167.4,
+   "bis": 172.29,
+   "text": "Ich habe das, glaube ich, in einem Zug gelesen. Dauert, glaube ich, drei bis fünf Stunden.",
+   "warum": "Lesedauer-Nebenbemerkung; „in einem Zug gelesen“ widerspricht der Pause-Empfehlung. „gelesen. Dauert“ geht ohne Pause ineinander über, deshalb beides raus.",
+   "art": "straffung"
+  },
+  {
+   "von": 172.29,
+   "bis": 172.99,
+   "text": "Wenn du möchtest,",
+   "warum": "Abgebrochener Satzanfang, Abi setzt mit „ich glaube, ich würde auch empfehlen …“ neu an.",
+   "art": "anlauf"
+  },
+  {
+   "von": 172.99,
+   "bis": 175.56,
+   "text": "Ich glaube, ich würde auch empfehlen, ein bisschen Pause dazwischen zu machen.",
+   "warum": "Widerspricht „in einem Zug gelesen“, Nebenbemerkung ohne Buchinhalt.",
+   "art": "straffung"
+  },
+  {
+   "von": 175.56,
+   "bis": 177.12,
+   "text": "Und es ist auch ein sehr praktisches Buch.",
+   "warum": "Inhaltliche Dopplung mit „Und es ist sehr praktisch. Am Ende gibt’s richtig gute Übungen …“ (209,2 s), das konkreter ist.",
+   "art": "dopplung"
+  },
+  {
+   "von": 180.7,
+   "bis": 182.5334,
+   "text": "Und ich find’s ganz gut,",
+   "warum": "Füllphrase vor „bei dem Buch war das so …“.",
+   "art": "straffung"
+  },
+  {
+   "von": 186.75,
+   "bis": 197.25,
+   "text": "Bei meiner Therapie oder generell finde ich bei diesen westlichen psychologischen Ansätzen ist man immer um sich, aber",
+   "warum": "Abschweifung über westliche Ansätze; die Aussage steckt schon in „dass man nicht nur auf sich geschaut hat“ und „es gibt ja auch das Umfeld und deine Herkunft“.",
+   "art": "straffung"
+  },
+  {
+   "von": 192.75,
+   "bis": 192.89,
+   "text": "(kurzes gesummtes „m“ vor „psychologischen“)",
+   "warum": "Kein Wort, stimmhafter Summlaut nach der Denkpause; klänge nach der Kürzung wie ein „äh“.",
+   "art": "versprecher"
+  },
+  {
+   "von": 203.39,
+   "bis": 206.66,
+   "text": "Und das Buch fand ich ziemlich gut zu lesen, hat mir echt b…",
+   "warum": "Satz bricht ab („hat mir echt b…“); Abi setzt mit „Hat mir da auch ein bisschen die Augen geöffnet“ neu an. Zwischen „lesen,“ und „hat“ gibt es keine Pause, ein sauberer Schnitt nach „lesen“ ist nicht möglich. „Gut zu lesen“ steht schon in „Das war ein sehr angenehmes Buch zum Lesen“.",
+   "art": "anlauf"
+  },
+  {
+   "von": 208.45,
+   "bis": 210.0667,
+   "text": "Und es ist sehr praktisch.",
+   "warum": "Dopplung; „Am Ende gibt’s richtig gute Übungen“ sagt es konkreter.",
+   "art": "straffung"
+  },
+  {
+   "von": 224.35,
+   "bis": 225.47,
+   "text": "äh, äh",
+   "warum": "Füllwörter vor dem Titel.",
+   "art": "versprecher"
+  },
+  {
+   "von": 228.0,
+   "bis": 228.8,
+   "text": "Michael.",
+   "warum": "Erstes „Michael“ mit Absetzen, danach sauber „Michael Singer“.",
+   "art": "anlauf"
+  },
+  {
+   "von": 236.3,
+   "bis": 238.91,
+   "text": "und dass wir diese Stimme nicht blind gehören.",
+   "warum": "Versprecher („gehören“), gleich danach korrekt „… nicht blind zuhören müssen“.",
+   "art": "versprecher"
+  },
+  {
+   "von": 245.95,
+   "bis": 249.38,
+   "text": "Er sagt quasi, diese Stimme ist quasi so ein … Stell dir mal vor, diese Stimme wäre …",
+   "warum": "Abgebrochener Anlauf des Mitbewohner-Vergleichs.",
+   "art": "anlauf"
+  },
+  {
+   "von": 249.83,
+   "bis": 250.4,
+   "text": "Er meint so,",
+   "warum": "Überleitung; „Stell dir vor …“ steht für sich.",
+   "art": "straffung"
+  },
+  {
+   "von": 258.6,
+   "bis": 262.9,
+   "text": "Und genau so geht er im Buch an. Geht natürlich auch viel um Liebe.",
+   "warum": "Nebensatz ohne neuen Inhalt; Liebe ist schon Thema der Bücher 1 und Bonus.",
+   "art": "straffung"
+  },
+  {
+   "von": 262.9,
+   "bis": 266.08,
+   "text": "(hm, Blick zur Seite)",
+   "warum": "Denklaut und Denkpause vor „Ankommen, etc.“; eine kurze Pause nach „Liebe.“ bleibt.",
+   "art": "pause"
+  },
+  {
+   "von": 266.08,
+   "bis": 268.75,
+   "text": "Ankommen, etc. Ist ein sehr schönes Buch,",
+   "warum": "Rest der Aufzählung und allgemeines Lob; „zäh zu lesen, aber hat mir sehr geholfen“ bleibt.",
+   "art": "straffung"
+  },
+  {
+   "von": 273.89,
+   "bis": 278.78,
+   "text": "Und das letzte Buch, wo ich immer noch ein bisschen dran zu nagen habe, aber es ist ziemlich gut.",
+   "warum": "Erste Fassung des Satzes, Abi setzt zweimal neu an. Die behaltene Fassung („was ich immer noch lese“) führt direkt zum Autor. Inhaltliche Kürzung: Es fehlen „wo ich immer noch ein bisschen dran zu nagen habe“ (das Buch ist schwer verdaulich) und „aber es ist ziemlich gut“. Rückholweg: Diese Fassung 273,89–278,78 als eigener Bereich und b5-1 erst bei „von Gabor Maté“ (283,87 s, in der Stille) beginnen lassen; dann fällt „Und das letzte Buch, was ich immer noch lese,“ weg und „Und das letzte Buch“ kommt nicht doppelt. Nur die Fassung davorzusetzen ergäbe zweimal „Und das letzte Buch …“. Nur den Rest ab „wo ich …“ zu nehmen geht nicht sauber: „Buch,“ geht ohne Pause in „wo“ über (274,88–274,94 s nur Pegeldelle).",
+   "art": "inhaltliche Kürzung"
+  },
+  {
+   "von": 279.84,
+   "bis": 281.1,
+   "text": "Und das letzte Buch, was,",
+   "warum": "Abgebrochener Anlauf, gleich danach komplett.",
+   "art": "anlauf"
+  },
+  {
+   "von": 282.0666,
+   "bis": 283.85,
+   "text": "was ich immer noch lese,",
+   "warum": "Nebensatz; führt jetzt direkt zum Autor.",
+   "art": "straffung"
+  },
+  {
+   "von": 284.9666,
+   "bis": 287.98,
+   "text": "den Typ ich liebe, da kannst du jeden Podcast von ihm anhören.",
+   "warum": "Abschweifung über den Autor, nichts zum Buch.",
+   "art": "straffung"
+  },
+  {
+   "von": 288.0,
+   "bis": 288.3,
+   "text": "Ähm,",
+   "warum": "Füllwort vor dem Titel.",
+   "art": "versprecher"
+  },
+  {
+   "von": 317.7,
+   "bis": 320.7,
+   "text": "Und zielt eher darauf ab, wenn du das bisschen besser verstehen willst.",
+   "warum": "Dopplung, die zweite Fassung (324,6 s) ist vollständiger („wieso du gerade so bist, wie du bist“).",
+   "art": "dopplung"
+  },
+  {
+   "von": 331.9,
+   "bis": 333.18,
+   "text": "Und ein, und ein,",
+   "warum": "Zwei abgebrochene Anläufe.",
+   "art": "anlauf"
+  },
+  {
+   "von": 334.5333,
+   "bis": 335.2667,
+   "text": "das ich habe,",
+   "warum": "Füll-Nebensatz.",
+   "art": "straffung"
+  },
+  {
+   "von": 337.5,
+   "bis": 344.3,
+   "text": "Es ist jetzt kein Fachbuch in diesem Sinne, aber",
+   "warum": "Nebensatz; „Es ist immer wieder schön zu lesen“ steht für sich.",
+   "art": "straffung"
+  },
+  {
+   "von": 348.89,
+   "bis": 349.75,
+   "text": "keine Sorge an, aber",
+   "warum": "Erster Anlauf, gleich danach „keine Sorge an alle meine Ungläubigen“.",
+   "art": "anlauf"
+  },
+  {
+   "von": 355.09,
+   "bis": 355.84,
+   "text": "ähm",
+   "warum": "Füllwort.",
+   "art": "versprecher"
+  },
+  {
+   "von": 363.5,
+   "bis": 365.4,
+   "text": "Ist ein sehr schönes Buch zum Lesen",
+   "warum": "Dopplung zu „Es ist immer wieder schön zu lesen“.",
+   "art": "straffung"
+  },
+  {
+   "von": 372.4,
+   "bis": 377.12,
+   "text": "Macht echt Spaß.",
+   "warum": "Nachsatz ohne neuen Inhalt, danach 3,7 s Pause.",
+   "art": "straffung"
+  },
+  {
+   "von": 377.12,
+   "bis": 377.44,
+   "text": "Und,",
+   "warum": "Erster Anlauf von „Und generell …“, setzt ab; nach der Pausenkürzung hörte man „Und, und generell“.",
+   "art": "anlauf"
+  },
+  {
+   "von": 384.29,
+   "bis": 385.5,
+   "text": "Die 40 %, die du",
+   "warum": "Abgebrochener Anlauf, danach vollständig.",
+   "art": "anlauf"
+  },
+  {
+   "von": 385.5,
+   "bis": 395.0,
+   "text": "Die 40 %, die du in deiner Therapie machst, ist schon ziemlich gut und solltest du durchziehen. Aber das ist nicht genug.",
+   "warum": "Wiederholung aus dem Intro („Therapie alleine reicht nicht … 40 %“). „die letzten 60 %“ am Ende bezieht sich weiter auf das Intro.",
+   "art": "straffung"
+  },
+  {
+   "von": 396.8,
+   "bis": 401.3,
+   "text": "Also, du kannst nicht in einer komischen Situation heilen.",
+   "warum": "Erläuterung zu „Sicherheit“, die der Satz davor schon trägt.",
+   "art": "straffung"
+  },
+  {
+   "von": 417.5333,
+   "bis": 418.11,
+   "text": "oder die Schmerzen,",
+   "warum": "Variante B aus v2: Abi korrigiert selbst zu „oder die Sorgen, die du jetzt hast“; so kein „Schmerzen, oder die Sorgen“.",
+   "art": "straffung"
+  },
+  {
+   "von": 418.11,
+   "bis": 418.57,
+   "text": "die du,",
+   "warum": "Abgebrochener Halbsatz („die Schmerzen, die du,“), Abi korrigiert nach 0,45 s Stille zu „oder die Sorgen, die du jetzt hast“.",
+   "art": "versprecher"
+  },
+  {
+   "von": 439.75,
+   "bis": 442.7,
+   "text": "(Schlusspose ausklingend, „Hm.“ 441,8 s)",
+   "warum": "Festgelegtes Ende 439,75 s.",
+   "art": "pause"
+  }
+ ],
+ "gegenhoeren": [
+  {
+   "zeit": 26.42,
+   "was": "Hook-Wahl: Anlauf 3 (unverändert aus v2)."
+  },
+  {
+   "zeit": 59.57,
+   "was": "v3: Anfang hart bei „es geht um Liebe, aber“ nach entferntem „Und wie der Titel schon verrät“. Klingt der Einstieg nicht zu abrupt nach dem Titel?"
+  },
+  {
+   "zeit": 61.0,
+   "was": "„es geht um Liebe, aber | das Buch ist gerade so …“: gedehntes „aber“ (aus v2)."
+  },
+  {
+   "zeit": 107.36,
+   "was": "v3: „schlafen im Leben, | und gar nicht wirklich aufwachen.“ Das „Leben,“ ist steigend gesprochen, „und gar nicht …“ setzt den Satz fort; Gegenprobe erkennt einen durchgehenden Satz."
+  },
+  {
+   "zeit": 130.6,
+   "was": "v3: „wie ich damit umzugehen habe. | Und vor allem dachte ich immer …“ (ohne „und dass sie auch normal sind“)."
+  },
+  {
+   "zeit": 142.9,
+   "was": "Kunstpause „Was … falsch ist.“ bleibt (keepInner, ca. 0,55 s). Falls zu lang: keepInner entfernen spart ca. 0,4 s."
+  },
+  {
+   "zeit": 150.57,
+   "was": "v3: „das heißt | Reconciliation.“ Nur das zweite, fallende „Reconciliation“ bleibt (harte Kanten 150,57 und 152,10 s, beide in Pegellöchern). Prüfen, dass vom ersten „R…“ nichts mitkommt."
+  },
+  {
+   "zeit": 153.2,
+   "was": "v3: „Reconciliation. | Und der Autor, keine Ahnung, wie man das ausspricht.“ (ohne „Ich kann es nicht aussprechen“)."
+  },
+  {
+   "zeit": 167.4,
+   "was": "v3: „Das war ein sehr angenehmes Buch zum Lesen. | Es geht rein in das Thema inneres Kind.“ Lesedauer und Pause-Empfehlung sind raus."
+  },
+  {
+   "zeit": 182.53,
+   "was": "v3: Harter Anfang bei „bei dem Buch“ direkt nach „Kind.“; „Und ich find’s ganz gut,“ raus. Darauf achten, dass vom „gut“ kein „t“ mitkommt."
+  },
+  {
+   "zeit": 186.75,
+   "was": "v3: „dass man nicht nur auf sich geschaut hat. | Es gibt ja auch das Umfeld und deine Herkunft.“ Der Satz über westliche psychologische Ansätze ist raus (größte Kürzung, ca. 8 s). Zum Zurückholen: b3-4a2 bis 191,12 und b3-4b ab 192,90 (hardStart) wie in v2."
+  },
+  {
+   "zeit": 210.07,
+   "was": "v3: „die Augen geöffnet. | Am Ende gibt’s richtig gute Übungen …“, harter Anfang vor „Am“. Ohne „Und es ist sehr praktisch“."
+  },
+  {
+   "zeit": 214.2,
+   "was": "„wie man [Achselzucken] anwenden kann“: schnell gemurmelt (aus v2)."
+  },
+  {
+   "zeit": 218.3,
+   "was": "Pointe „… heulen musst beim Buch. | Habe ich auch gemacht.“ (aus v2)."
+  },
+  {
+   "zeit": 236.27,
+   "was": "Hartes Ende nach „Kopf“ (aus v2), jetzt 236,2666, damit die Rundung nicht in das verworfene „und“ (236,30 s) schiebt."
+  },
+  {
+   "zeit": 250.4,
+   "was": "v3: „nicht blind zuhören müssen. | Stell dir vor, diese Stimme wäre dein Mitbewohner …“ (ohne „Er meint so,“), harter Anfang im Pegelloch vor „stell“."
+  },
+  {
+   "zeit": 258.6,
+   "was": "v3: „dass du das gerade sagst. | Ist ein bisschen zäh zu lesen, aber hat mir auch sehr geholfen.“ (ohne „Und genau so geht er im Buch an. Geht natürlich auch viel um Liebe. Ankommen, etc. Ist ein sehr schönes Buch,“)."
+  },
+  {
+   "zeit": 282.07,
+   "was": "v3: „Und das letzte Buch, | von Gabor Maté, | The Myth of Being Normal.“ Zwei harte Kanten (282,07 und 284,97 s). „was ich immer noch lese“ und „den Typ ich liebe, da kannst du jeden Podcast …“ sind raus. Klingt die Ansage zusammenhängend?"
+  },
+  {
+   "zeit": 288.33,
+   "was": "Harter Anfang bei „The Myth“ (aus v2)."
+  },
+  {
+   "zeit": 301.2,
+   "was": "„Und macht uns sogar krank“ ist von Abi bestätigt."
+  },
+  {
+   "zeit": 334.53,
+   "was": "v3: „Und ein weiteres Bonusbuch | ist von Khalil Gibran, Der Prophet.“ Harte Kanten 334,53 und 335,27 s, „das ich habe,“ raus. Gegenprobe erkennt den Satz durchgehend; bitte auf den Anschluss „Bonusbuch | ist“ hören."
+  },
+  {
+   "zeit": 337.5,
+   "was": "v3: „Der Prophet. | Es ist immer wieder schön zu lesen.“ (ohne „Es ist jetzt kein Fachbuch in diesem Sinne, aber“)."
+  },
+  {
+   "zeit": 348.4,
+   "was": "Gedehntes „und“ vor „keine Sorge an alle meine Ungläubigen“ (aus v2), Ende jetzt 348,7666."
+  },
+  {
+   "zeit": 365.4,
+   "was": "v3: „Eigentum. | Und ich lese das, glaube ich, seit fast zehn Jahren immer wieder neu.“"
+  },
+  {
+   "zeit": 372.4,
+   "was": "v3: „was Neues für mich. | Und generell zu dem Thema Heilen.“ (ohne „Macht echt Spaß.“)."
+  },
+  {
+   "zeit": 382.59,
+   "was": "v3: „Heilen ist ein Prozess. | Damit du heilst, brauchst du erstmal Sicherheit. | Dann machst du in deiner Therapie …“ Die 40-%-Wiederholung und „Also, du kannst nicht in einer komischen Situation heilen“ sind raus."
+  },
+  {
+   "zeit": 417.53,
+   "was": "v3: Variante B umgesetzt: „die du gemacht hast | oder die Sorgen, die du jetzt hast“. Hartes Ende nach „hast“, „oder“ schließt im Original direkt an; Gegenprobe erkennt den Satz sauber. „Schmerzen“ fällt weg."
+  }
+ ],
+ "hinweise": [
+  "Titel und Autoren nur für Kapitel/H2, gesprochen bleibt, wie es ist: Abi sagt „The Myth of Being Normal“, der Buchtitel lautet „The Myth of Normal“ (Gabor Maté). Der Autor von „Reconciliation“ (Thich Nhat Hanh) wird nicht genannt, passt als H2 zum Witz „keine Ahnung, wie man das ausspricht“.",
+  "Hook: Abi steht in Anlauf 3 links im Bild, der E-Reader ist rechts. Die H1 im ersten Bild darf das Gesicht nicht verdecken. Zwischen Hook (29,6 s) und Intro (34,0 s) gibt es einen sichtbaren Positionssprung, der ist bei Abis Aufnahmen normal.",
+  "Bewusst behalten (Abis Stil): „Hokuspokus“, „keine Ahnung, wie man das ausspricht“ (Autor von Reconciliation), „ey Bro, bisschen weird, dass du das gerade sagst“, „keine Sorge an alle meine Ungläubigen“, „Kann auch sein, dass du heulen musst … Habe ich auch gemacht.“, „Ich bin auch nicht ganz drüber, aber ich bin ganz nah dran.“ In v3 raus (Abis Entscheidung): „Ich kann es nicht aussprechen“ und das erste „Reconciliation“.",
+  "Wörtlich gesprochen und so gelassen: „den restlichen 60 % musst du selbst machen“. Nichts ergänzt.",
+  "Keine Umstellung nötig; Reihenfolge wie aufgenommen.",
+  "Zeilen mit hardStart/hardEnd liegen auf dem 1/30-s-Raster, bei Bedarf mit 0,0001 s nach innen versetzt (z. B. 150.5666, 182.5334, 236.2666, 282.0666, 284.9666, 288.3334, 348.7666), damit die Rundung in plan-edl.py (Anfang abrunden, Ende aufrunden) nicht in das verworfene Nachbarwort schiebt.",
+  "Planung (Notion) nennt Judith Herman/„drei Phasen“; Abi erklärt Heilen frei (Sicherheit, erinnern und heulen, gehalten werden, erkennen, dass alles gut ist). Gesprochenes bleibt maßgeblich, nichts hinzugefügt.",
+  "Schnitt v3 (04.10.2026, Abis Rückmeldung „≤ 3:00, straffer“): 23 Straffungen (art „straffung“), Inhalt je Buch erhalten; Dauer nach plan-edl.py + straffen2.py siehe review/SCHNITTLISTE.md. Fassung v2 liegt in schnitt/tmp/selection-v2-planer.json."
+ ]
+}

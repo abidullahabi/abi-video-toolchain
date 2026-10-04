@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,700"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1700
+			},
+			"text": " Und, dass sie auch normal sind.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.843801,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,190"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 190
+					},
+					"id": 2719,
+					"p": 0.865686,
+					"t_dtw": 34
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,190",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 190,
+						"to": 320
+					},
+					"id": 11,
+					"p": 0.534411,
+					"t_dtw": 58
+				},
+				{
+					"text": " dass",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 580
+					},
+					"id": 2658,
+					"p": 0.912751,
+					"t_dtw": 60
+				},
+				{
+					"text": " sie",
+					"timestamps": {
+						"from": "00:00:00,580",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 580,
+						"to": 770
+					},
+					"id": 2804,
+					"p": 0.844326,
+					"t_dtw": 72
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,770",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 770,
+						"to": 1030
+					},
+					"id": 2168,
+					"p": 0.994222,
+					"t_dtw": 86
+				},
+				{
+					"text": " normal",
+					"timestamps": {
+						"from": "00:00:01,030",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 1030,
+						"to": 1410
+					},
+					"id": 2710,
+					"p": 0.972442,
+					"t_dtw": 114
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,540"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1540
+					},
+					"id": 3290,
+					"p": 0.998405,
+					"t_dtw": 144
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1700
+					},
+					"id": 13,
+					"p": 0.615566,
+					"t_dtw": 156
+				},
+				{
+					"text": "[_TT_85]",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 1700
+					},
+					"id": 50450,
+					"p": 0.664552,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

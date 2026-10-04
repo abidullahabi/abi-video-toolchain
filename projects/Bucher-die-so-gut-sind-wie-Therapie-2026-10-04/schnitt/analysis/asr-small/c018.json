@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,780"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1780
+			},
+			"text": " Aber es hoffen sehr positiven Weg.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.998264,
+					"t_dtw": -1
+				},
+				{
+					"text": " Aber",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 220
+					},
+					"id": 5992,
+					"p": 0.955013,
+					"t_dtw": 30
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 330
+					},
+					"id": 785,
+					"p": 0.837781,
+					"t_dtw": 44
+				},
+				{
+					"text": " ho",
+					"timestamps": {
+						"from": "00:00:00,330",
+						"to": "00:00:00,410"
+					},
+					"offsets": {
+						"from": 330,
+						"to": 410
+					},
+					"id": 1106,
+					"p": 0.614331,
+					"t_dtw": 54
+				},
+				{
+					"text": "ffen",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,660"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 660
+					},
+					"id": 15945,
+					"p": 0.883775,
+					"t_dtw": 60
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 840
+					},
+					"id": 5499,
+					"p": 0.821514,
+					"t_dtw": 80
+				},
+				{
+					"text": " posit",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:01,160"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 1160
+					},
+					"id": 11218,
+					"p": 0.704518,
+					"t_dtw": 106
+				},
+				{
+					"text": "iven",
+					"timestamps": {
+						"from": "00:00:01,160",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1160,
+						"to": 1380
+					},
+					"id": 5709,
+					"p": 0.994622,
+					"t_dtw": 128
+				},
+				{
+					"text": " Weg",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,530"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1530
+					},
+					"id": 18919,
+					"p": 0.932379,
+					"t_dtw": 146
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,530",
+						"to": "00:00:01,760"
+					},
+					"offsets": {
+						"from": 1530,
+						"to": 1760
+					},
+					"id": 13,
+					"p": 0.900155,
+					"t_dtw": 174
+				},
+				{
+					"text": "[_TT_89]",
+					"timestamps": {
+						"from": "00:00:01,780",
+						"to": "00:00:01,780"
+					},
+					"offsets": {
+						"from": 1780,
+						"to": 1780
+					},
+					"id": 50453,
+					"p": 0.0322345,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

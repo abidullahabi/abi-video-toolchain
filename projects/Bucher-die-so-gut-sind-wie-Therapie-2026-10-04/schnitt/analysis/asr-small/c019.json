@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3080
+			},
+			"text": " Das zweite Buch, auch wieder von Anthony de Mello, \"Avenus\".",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.996635,
+					"t_dtw": -1
+				},
+				{
+					"text": " Das",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 160
+					},
+					"id": 2846,
+					"p": 0.797653,
+					"t_dtw": 20
+				},
+				{
+					"text": " zweite",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,490"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 490
+					},
+					"id": 37456,
+					"p": 0.843843,
+					"t_dtw": 38
+				},
+				{
+					"text": " Buch",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:00,710"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 710
+					},
+					"id": 25818,
+					"p": 0.975748,
+					"t_dtw": 66
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,710",
+						"to": "00:00:00,740"
+					},
+					"offsets": {
+						"from": 710,
+						"to": 740
+					},
+					"id": 11,
+					"p": 0.678582,
+					"t_dtw": 92
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 1030
+					},
+					"id": 2168,
+					"p": 0.971263,
+					"t_dtw": 102
+				},
+				{
+					"text": " wieder",
+					"timestamps": {
+						"from": "00:00:01,050",
+						"to": "00:00:01,370"
+					},
+					"offsets": {
+						"from": 1050,
+						"to": 1370
+					},
+					"id": 6216,
+					"p": 0.981521,
+					"t_dtw": 120
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:01,370",
+						"to": "00:00:01,530"
+					},
+					"offsets": {
+						"from": 1370,
+						"to": 1530
+					},
+					"id": 2957,
+					"p": 0.953221,
+					"t_dtw": 136
+				},
+				{
+					"text": " Anthony",
+					"timestamps": {
+						"from": "00:00:01,530",
+						"to": "00:00:01,920"
+					},
+					"offsets": {
+						"from": 1530,
+						"to": 1920
+					},
+					"id": 15853,
+					"p": 0.718265,
+					"t_dtw": 166
+				},
+				{
+					"text": " de",
+					"timestamps": {
+						"from": "00:00:01,920",
+						"to": "00:00:02,030"
+					},
+					"offsets": {
+						"from": 1920,
+						"to": 2030
+					},
+					"id": 368,
+					"p": 0.497433,
+					"t_dtw": 184
+				},
+				{
+					"text": " M",
+					"timestamps": {
+						"from": "00:00:02,030",
+						"to": "00:00:02,080"
+					},
+					"offsets": {
+						"from": 2030,
+						"to": 2080
+					},
+					"id": 376,
+					"p": 0.489241,
+					"t_dtw": 192
+				},
+				{
+					"text": "ello",
+					"timestamps": {
+						"from": "00:00:02,080",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 2080,
+						"to": 2180
+					},
+					"id": 11216,
+					"p": 0.670502,
+					"t_dtw": 206
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,390",
+						"to": "00:00:02,410"
+					},
+					"offsets": {
+						"from": 2390,
+						"to": 2410
+					},
+					"id": 11,
+					"p": 0.696724,
+					"t_dtw": 240
+				},
+				{
+					"text": " \"",
+					"timestamps": {
+						"from": "00:00:02,410",
+						"to": "00:00:02,460"
+					},
+					"offsets": {
+						"from": 2410,
+						"to": 2460
+					},
+					"id": 503,
+					"p": 0.53052,
+					"t_dtw": 246
+				},
+				{
+					"text": "A",
+					"timestamps": {
+						"from": "00:00:02,460",
+						"to": "00:00:02,510"
+					},
+					"offsets": {
+						"from": 2460,
+						"to": 2510
+					},
+					"id": 32,
+					"p": 0.926567,
+					"t_dtw": 246
+				},
+				{
+					"text": "ven",
+					"timestamps": {
+						"from": "00:00:02,510",
+						"to": "00:00:02,660"
+					},
+					"offsets": {
+						"from": 2510,
+						"to": 2660
+					},
+					"id": 553,
+					"p": 0.542165,
+					"t_dtw": 264
+				},
+				{
+					"text": "us",
+					"timestamps": {
+						"from": "00:00:02,660",
+						"to": "00:00:02,760"
+					},
+					"offsets": {
+						"from": 2660,
+						"to": 2760
+					},
+					"id": 301,
+					"p": 0.443659,
+					"t_dtw": 284
+				},
+				{
+					"text": "\".",
+					"timestamps": {
+						"from": "00:00:02,760",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 2760,
+						"to": 3080
+					},
+					"id": 1883,
+					"p": 0.876301,
+					"t_dtw": 306
+				},
+				{
+					"text": "[_TT_154]",
+					"timestamps": {
+						"from": "00:00:03,080",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 3080,
+						"to": 3080
+					},
+					"id": 50518,
+					"p": 0.0982503,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

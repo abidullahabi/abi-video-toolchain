@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,720"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1720
+			},
+			"text": " Und genau so geht der am Buch an.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.987023,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 180
+					},
+					"id": 2719,
+					"p": 0.769023,
+					"t_dtw": 20
+				},
+				{
+					"text": " genau",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 480
+					},
+					"id": 12535,
+					"p": 0.463699,
+					"t_dtw": 46
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 600
+					},
+					"id": 370,
+					"p": 0.981759,
+					"t_dtw": 66
+				},
+				{
+					"text": " geht",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,830"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 830
+					},
+					"id": 7095,
+					"p": 0.995429,
+					"t_dtw": 84
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 1020
+					},
+					"id": 1163,
+					"p": 0.719961,
+					"t_dtw": 94
+				},
+				{
+					"text": " am",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,130"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1130
+					},
+					"id": 669,
+					"p": 0.327414,
+					"t_dtw": 106
+				},
+				{
+					"text": " Buch",
+					"timestamps": {
+						"from": "00:00:01,130",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1130,
+						"to": 1380
+					},
+					"id": 25818,
+					"p": 0.99235,
+					"t_dtw": 118
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1450
+					},
+					"id": 364,
+					"p": 0.992468,
+					"t_dtw": 138
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,490",
+						"to": "00:00:01,720"
+					},
+					"offsets": {
+						"from": 1490,
+						"to": 1720
+					},
+					"id": 13,
+					"p": 0.902292,
+					"t_dtw": 170
+				},
+				{
+					"text": "[_TT_86]",
+					"timestamps": {
+						"from": "00:00:01,720",
+						"to": "00:00:01,720"
+					},
+					"offsets": {
+						"from": 1720,
+						"to": 1720
+					},
+					"id": 50450,
+					"p": 0.0513062,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

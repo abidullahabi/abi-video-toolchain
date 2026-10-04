@@ -1,0 +1,493 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:06,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 6080
+			},
+			"text": " Ankommen, etc., ist ein sehr schönes Buch, ist ein bisschen zäh zu lesen, aber hat mir auch sehr geholfen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.99534,
+					"t_dtw": -1
+				},
+				{
+					"text": " An",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 150
+					},
+					"id": 1107,
+					"p": 0.62094,
+					"t_dtw": 26
+				},
+				{
+					"text": "kommen",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 610
+					},
+					"id": 13675,
+					"p": 0.990333,
+					"t_dtw": 54
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,730"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 730
+					},
+					"id": 11,
+					"p": 0.632894,
+					"t_dtw": 70
+				},
+				{
+					"text": " etc",
+					"timestamps": {
+						"from": "00:00:00,820",
+						"to": "00:00:00,990"
+					},
+					"offsets": {
+						"from": 820,
+						"to": 990
+					},
+					"id": 5183,
+					"p": 0.891523,
+					"t_dtw": 86
+				},
+				{
+					"text": ".,",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 1180
+					},
+					"id": 7933,
+					"p": 0.29338,
+					"t_dtw": 140
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,500",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1500,
+						"to": 1560
+					},
+					"id": 1418,
+					"p": 0.923673,
+					"t_dtw": 162
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,720"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1720
+					},
+					"id": 1343,
+					"p": 0.967242,
+					"t_dtw": 178
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:01,720",
+						"to": "00:00:01,930"
+					},
+					"offsets": {
+						"from": 1720,
+						"to": 1930
+					},
+					"id": 5499,
+					"p": 0.987116,
+					"t_dtw": 184
+				},
+				{
+					"text": " schön",
+					"timestamps": {
+						"from": "00:00:01,930",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 1930,
+						"to": 2180
+					},
+					"id": 13527,
+					"p": 0.991673,
+					"t_dtw": 206
+				},
+				{
+					"text": "es",
+					"timestamps": {
+						"from": "00:00:02,190",
+						"to": "00:00:02,290"
+					},
+					"offsets": {
+						"from": 2190,
+						"to": 2290
+					},
+					"id": 279,
+					"p": 0.999907,
+					"t_dtw": 222
+				},
+				{
+					"text": " Buch",
+					"timestamps": {
+						"from": "00:00:02,290",
+						"to": "00:00:02,500"
+					},
+					"offsets": {
+						"from": 2290,
+						"to": 2500
+					},
+					"id": 25818,
+					"p": 0.996664,
+					"t_dtw": 242
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,500",
+						"to": "00:00:02,570"
+					},
+					"offsets": {
+						"from": 2500,
+						"to": 2570
+					},
+					"id": 11,
+					"p": 0.537998,
+					"t_dtw": 282
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:02,570",
+						"to": "00:00:02,720"
+					},
+					"offsets": {
+						"from": 2570,
+						"to": 2720
+					},
+					"id": 1418,
+					"p": 0.617346,
+					"t_dtw": 296
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:02,820",
+						"to": "00:00:02,820"
+					},
+					"offsets": {
+						"from": 2820,
+						"to": 2820
+					},
+					"id": 1343,
+					"p": 0.479639,
+					"t_dtw": 314
+				},
+				{
+					"text": " bisschen",
+					"timestamps": {
+						"from": "00:00:02,870",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 2870,
+						"to": 3080
+					},
+					"id": 10763,
+					"p": 0.708226,
+					"t_dtw": 318
+				},
+				{
+					"text": " z",
+					"timestamps": {
+						"from": "00:00:03,080",
+						"to": "00:00:03,130"
+					},
+					"offsets": {
+						"from": 3080,
+						"to": 3130
+					},
+					"id": 710,
+					"p": 0.215648,
+					"t_dtw": 334
+				},
+				{
+					"text": "äh",
+					"timestamps": {
+						"from": "00:00:03,150",
+						"to": "00:00:03,280"
+					},
+					"offsets": {
+						"from": 3150,
+						"to": 3280
+					},
+					"id": 6860,
+					"p": 0.888618,
+					"t_dtw": 336
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:03,280",
+						"to": "00:00:03,420"
+					},
+					"offsets": {
+						"from": 3280,
+						"to": 3420
+					},
+					"id": 2164,
+					"p": 0.225174,
+					"t_dtw": 350
+				},
+				{
+					"text": " les",
+					"timestamps": {
+						"from": "00:00:03,490",
+						"to": "00:00:03,630"
+					},
+					"offsets": {
+						"from": 3490,
+						"to": 3630
+					},
+					"id": 1512,
+					"p": 0.970514,
+					"t_dtw": 370
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:03,630",
+						"to": "00:00:03,760"
+					},
+					"offsets": {
+						"from": 3630,
+						"to": 3760
+					},
+					"id": 268,
+					"p": 0.999966,
+					"t_dtw": 394
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:03,760",
+						"to": "00:00:03,910"
+					},
+					"offsets": {
+						"from": 3760,
+						"to": 3910
+					},
+					"id": 11,
+					"p": 0.758452,
+					"t_dtw": 404
+				},
+				{
+					"text": " aber",
+					"timestamps": {
+						"from": "00:00:04,060",
+						"to": "00:00:04,450"
+					},
+					"offsets": {
+						"from": 4060,
+						"to": 4450
+					},
+					"id": 4340,
+					"p": 0.901017,
+					"t_dtw": 426
+				},
+				{
+					"text": " hat",
+					"timestamps": {
+						"from": "00:00:04,620",
+						"to": "00:00:04,990"
+					},
+					"offsets": {
+						"from": 4620,
+						"to": 4990
+					},
+					"id": 2385,
+					"p": 0.686966,
+					"t_dtw": 528
+				},
+				{
+					"text": " mir",
+					"timestamps": {
+						"from": "00:00:05,210",
+						"to": "00:00:05,360"
+					},
+					"offsets": {
+						"from": 5210,
+						"to": 5360
+					},
+					"id": 3149,
+					"p": 0.967738,
+					"t_dtw": 538
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:05,360",
+						"to": "00:00:05,530"
+					},
+					"offsets": {
+						"from": 5360,
+						"to": 5530
+					},
+					"id": 2168,
+					"p": 0.734706,
+					"t_dtw": 550
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:05,570",
+						"to": "00:00:05,690"
+					},
+					"offsets": {
+						"from": 5570,
+						"to": 5690
+					},
+					"id": 5499,
+					"p": 0.970865,
+					"t_dtw": 568
+				},
+				{
+					"text": " ge",
+					"timestamps": {
+						"from": "00:00:05,690",
+						"to": "00:00:05,750"
+					},
+					"offsets": {
+						"from": 5690,
+						"to": 5750
+					},
+					"id": 1519,
+					"p": 0.889782,
+					"t_dtw": 582
+				},
+				{
+					"text": "hol",
+					"timestamps": {
+						"from": "00:00:05,750",
+						"to": "00:00:05,850"
+					},
+					"offsets": {
+						"from": 5750,
+						"to": 5850
+					},
+					"id": 5449,
+					"p": 0.941022,
+					"t_dtw": 590
+				},
+				{
+					"text": "fen",
+					"timestamps": {
+						"from": "00:00:05,850",
+						"to": "00:00:05,900"
+					},
+					"offsets": {
+						"from": 5850,
+						"to": 5900
+					},
+					"id": 6570,
+					"p": 0.999617,
+					"t_dtw": 598
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:05,940",
+						"to": "00:00:06,030"
+					},
+					"offsets": {
+						"from": 5940,
+						"to": 6030
+					},
+					"id": 13,
+					"p": 0.976291,
+					"t_dtw": 606
+				},
+				{
+					"text": "[_TT_304]",
+					"timestamps": {
+						"from": "00:00:06,080",
+						"to": "00:00:06,080"
+					},
+					"offsets": {
+						"from": 6080,
+						"to": 6080
+					},
+					"id": 50668,
+					"p": 0.0635373,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,560"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1560
+			},
+			"text": " Dass man nicht nur auf sich geschaut hat.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.998289,
+					"t_dtw": -1
+				},
+				{
+					"text": " Dass",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 170
+					},
+					"id": 22306,
+					"p": 0.448601,
+					"t_dtw": 20
+				},
+				{
+					"text": " man",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 300
+					},
+					"id": 587,
+					"p": 0.945415,
+					"t_dtw": 32
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,440"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 440
+					},
+					"id": 1979,
+					"p": 0.965736,
+					"t_dtw": 48
+				},
+				{
+					"text": " nur",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,640"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 640
+					},
+					"id": 4343,
+					"p": 0.996225,
+					"t_dtw": 60
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:00,640",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 640,
+						"to": 770
+					},
+					"id": 2501,
+					"p": 0.989157,
+					"t_dtw": 66
+				},
+				{
+					"text": " sich",
+					"timestamps": {
+						"from": "00:00:00,770",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 770,
+						"to": 940
+					},
+					"id": 3041,
+					"p": 0.974384,
+					"t_dtw": 76
+				},
+				{
+					"text": " gesch",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1140
+					},
+					"id": 13511,
+					"p": 0.984399,
+					"t_dtw": 98
+				},
+				{
+					"text": "aut",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1260
+					},
+					"id": 1375,
+					"p": 0.994732,
+					"t_dtw": 112
+				},
+				{
+					"text": " hat",
+					"timestamps": {
+						"from": "00:00:01,270",
+						"to": "00:00:01,390"
+					},
+					"offsets": {
+						"from": 1270,
+						"to": 1390
+					},
+					"id": 2385,
+					"p": 0.999081,
+					"t_dtw": 130
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,390",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1390,
+						"to": 1560
+					},
+					"id": 13,
+					"p": 0.910901,
+					"t_dtw": 154
+				},
+				{
+					"text": "[_TT_78]",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1560
+					},
+					"id": 50442,
+					"p": 0.052355,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

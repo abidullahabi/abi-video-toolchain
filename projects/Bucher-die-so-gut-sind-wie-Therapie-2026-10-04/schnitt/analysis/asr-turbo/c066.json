@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,520"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1520
+			},
+			"text": " Also, ist auch sehr theoretisch.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.778988,
+					"t_dtw": -1
+				},
+				{
+					"text": " Also",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 210
+					},
+					"id": 2743,
+					"p": 0.824323,
+					"t_dtw": 24
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,310"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 310
+					},
+					"id": 11,
+					"p": 0.598964,
+					"t_dtw": 26
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 470
+					},
+					"id": 1418,
+					"p": 0.5693,
+					"t_dtw": 34
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 670
+					},
+					"id": 2168,
+					"p": 0.978797,
+					"t_dtw": 46
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:00,710",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 710,
+						"to": 890
+					},
+					"id": 5499,
+					"p": 0.993102,
+					"t_dtw": 58
+				},
+				{
+					"text": " theoret",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 1240
+					},
+					"id": 14308,
+					"p": 0.999485,
+					"t_dtw": 94
+				},
+				{
+					"text": "isch",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,310"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1310
+					},
+					"id": 5494,
+					"p": 0.99992,
+					"t_dtw": 120
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,510",
+						"to": "00:00:01,510"
+					},
+					"offsets": {
+						"from": 1510,
+						"to": 1510
+					},
+					"id": 13,
+					"p": 0.838873,
+					"t_dtw": 140
+				},
+				{
+					"text": "[_TT_76]",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1520
+					},
+					"id": 50441,
+					"p": 0.987616,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,880"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 880
+			},
+			"text": " Habe ich auch gemacht.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.723486,
+					"t_dtw": -1
+				},
+				{
+					"text": " H",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 389,
+					"p": 0.46032,
+					"t_dtw": 18
+				},
+				{
+					"text": "abe",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 180
+					},
+					"id": 4488,
+					"p": 0.99127,
+					"t_dtw": 22
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 320
+					},
+					"id": 1893,
+					"p": 0.991893,
+					"t_dtw": 32
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 510
+					},
+					"id": 2168,
+					"p": 0.909165,
+					"t_dtw": 42
+				},
+				{
+					"text": " gemacht",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 850
+					},
+					"id": 12293,
+					"p": 0.997691,
+					"t_dtw": 68
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,870",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 870,
+						"to": 870
+					},
+					"id": 13,
+					"p": 0.950411,
+					"t_dtw": 84
+				},
+				{
+					"text": "[_TT_44]",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 880
+					},
+					"id": 50409,
+					"p": 0.337978,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3120
+			},
+			"text": " Es gibt rein in das Thema inneres Kind.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.852125,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 200
+					},
+					"id": 2313,
+					"p": 0.911967,
+					"t_dtw": 26
+				},
+				{
+					"text": " gibt",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,590"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 590
+					},
+					"id": 6089,
+					"p": 0.515324,
+					"t_dtw": 48
+				},
+				{
+					"text": " rein",
+					"timestamps": {
+						"from": "00:00:00,590",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 590,
+						"to": 980
+					},
+					"id": 6561,
+					"p": 0.941911,
+					"t_dtw": 84
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:00,980",
+						"to": "00:00:01,090"
+					},
+					"offsets": {
+						"from": 980,
+						"to": 1090
+					},
+					"id": 294,
+					"p": 0.391224,
+					"t_dtw": 102
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,480"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1480
+					},
+					"id": 1482,
+					"p": 0.992004,
+					"t_dtw": 110
+				},
+				{
+					"text": " Thema",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1680
+					},
+					"id": 16306,
+					"p": 0.995089,
+					"t_dtw": 144
+				},
+				{
+					"text": " inner",
+					"timestamps": {
+						"from": "00:00:02,300",
+						"to": "00:00:02,400"
+					},
+					"offsets": {
+						"from": 2300,
+						"to": 2400
+					},
+					"id": 7284,
+					"p": 0.34334,
+					"t_dtw": 240
+				},
+				{
+					"text": "es",
+					"timestamps": {
+						"from": "00:00:02,400",
+						"to": "00:00:02,540"
+					},
+					"offsets": {
+						"from": 2400,
+						"to": 2540
+					},
+					"id": 279,
+					"p": 0.994558,
+					"t_dtw": 258
+				},
+				{
+					"text": " Kind",
+					"timestamps": {
+						"from": "00:00:02,540",
+						"to": "00:00:02,850"
+					},
+					"offsets": {
+						"from": 2540,
+						"to": 2850
+					},
+					"id": 9242,
+					"p": 0.902703,
+					"t_dtw": 276
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,860",
+						"to": "00:00:02,960"
+					},
+					"offsets": {
+						"from": 2860,
+						"to": 2960
+					},
+					"id": 13,
+					"p": 0.916716,
+					"t_dtw": 296
+				},
+				{
+					"text": "[_TT_156]",
+					"timestamps": {
+						"from": "00:00:03,120",
+						"to": "00:00:03,120"
+					},
+					"offsets": {
+						"from": 3120,
+						"to": 3120
+					},
+					"id": 50521,
+					"p": 0.884731,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

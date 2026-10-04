@@ -1,0 +1,255 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,340"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2340
+			},
+			"text": " Bei Awareness geht es um das Thema Achtsamkeit.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.881961,
+					"t_dtw": -1
+				},
+				{
+					"text": " Bei",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 160
+					},
+					"id": 16188,
+					"p": 0.968782,
+					"t_dtw": 22
+				},
+				{
+					"text": " Aware",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 430
+					},
+					"id": 43949,
+					"p": 0.8873,
+					"t_dtw": 42
+				},
+				{
+					"text": "ness",
+					"timestamps": {
+						"from": "00:00:00,430",
+						"to": "00:00:00,590"
+					},
+					"offsets": {
+						"from": 430,
+						"to": 590
+					},
+					"id": 1287,
+					"p": 0.999655,
+					"t_dtw": 62
+				},
+				{
+					"text": " geht",
+					"timestamps": {
+						"from": "00:00:00,710",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 710,
+						"to": 870
+					},
+					"id": 7095,
+					"p": 0.988238,
+					"t_dtw": 78
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:00,870",
+						"to": "00:00:00,960"
+					},
+					"offsets": {
+						"from": 870,
+						"to": 960
+					},
+					"id": 785,
+					"p": 0.934319,
+					"t_dtw": 92
+				},
+				{
+					"text": " um",
+					"timestamps": {
+						"from": "00:00:00,980",
+						"to": "00:00:01,090"
+					},
+					"offsets": {
+						"from": 980,
+						"to": 1090
+					},
+					"id": 1105,
+					"p": 0.993508,
+					"t_dtw": 108
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1240
+					},
+					"id": 1482,
+					"p": 0.992051,
+					"t_dtw": 120
+				},
+				{
+					"text": " Thema",
+					"timestamps": {
+						"from": "00:00:01,330",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1330,
+						"to": 1520
+					},
+					"id": 16306,
+					"p": 0.996606,
+					"t_dtw": 148
+				},
+				{
+					"text": " Ach",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,660"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1660
+					},
+					"id": 15847,
+					"p": 0.955005,
+					"t_dtw": 166
+				},
+				{
+					"text": "ts",
+					"timestamps": {
+						"from": "00:00:01,670",
+						"to": "00:00:01,790"
+					},
+					"offsets": {
+						"from": 1670,
+						"to": 1790
+					},
+					"id": 1373,
+					"p": 0.998468,
+					"t_dtw": 176
+				},
+				{
+					"text": "am",
+					"timestamps": {
+						"from": "00:00:01,790",
+						"to": "00:00:01,890"
+					},
+					"offsets": {
+						"from": 1790,
+						"to": 1890
+					},
+					"id": 335,
+					"p": 0.998807,
+					"t_dtw": 184
+				},
+				{
+					"text": "keit",
+					"timestamps": {
+						"from": "00:00:01,890",
+						"to": "00:00:02,090"
+					},
+					"offsets": {
+						"from": 1890,
+						"to": 2090
+					},
+					"id": 9238,
+					"p": 0.999361,
+					"t_dtw": 208
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,090",
+						"to": "00:00:02,340"
+					},
+					"offsets": {
+						"from": 2090,
+						"to": 2340
+					},
+					"id": 13,
+					"p": 0.961439,
+					"t_dtw": 232
+				},
+				{
+					"text": "[_TT_117]",
+					"timestamps": {
+						"from": "00:00:02,340",
+						"to": "00:00:02,340"
+					},
+					"offsets": {
+						"from": 2340,
+						"to": 2340
+					},
+					"id": 50482,
+					"p": 0.940604,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

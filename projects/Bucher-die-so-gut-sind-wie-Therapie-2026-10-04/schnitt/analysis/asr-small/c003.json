@@ -1,0 +1,283 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,360"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3360
+			},
+			"text": " Diese fünf Bücher waren genauso gut wie meine fünfjährige Therapie.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997217,
+					"t_dtw": -1
+				},
+				{
+					"text": " Diese",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 270
+					},
+					"id": 18993,
+					"p": 0.937498,
+					"t_dtw": 28
+				},
+				{
+					"text": " fünf",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 500
+					},
+					"id": 28723,
+					"p": 0.693567,
+					"t_dtw": 52
+				},
+				{
+					"text": " Bü",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 580
+					},
+					"id": 37186,
+					"p": 0.998291,
+					"t_dtw": 70
+				},
+				{
+					"text": "cher",
+					"timestamps": {
+						"from": "00:00:00,630",
+						"to": "00:00:00,830"
+					},
+					"offsets": {
+						"from": 630,
+						"to": 830
+					},
+					"id": 6759,
+					"p": 0.99504,
+					"t_dtw": 80
+				},
+				{
+					"text": " waren",
+					"timestamps": {
+						"from": "00:00:00,830",
+						"to": "00:00:01,110"
+					},
+					"offsets": {
+						"from": 830,
+						"to": 1110
+					},
+					"id": 11931,
+					"p": 0.994137,
+					"t_dtw": 102
+				},
+				{
+					"text": " genauso",
+					"timestamps": {
+						"from": "00:00:01,110",
+						"to": "00:00:01,490"
+					},
+					"offsets": {
+						"from": 1110,
+						"to": 1490
+					},
+					"id": 37694,
+					"p": 0.948209,
+					"t_dtw": 132
+				},
+				{
+					"text": " gut",
+					"timestamps": {
+						"from": "00:00:01,490",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 1490,
+						"to": 1650
+					},
+					"id": 5228,
+					"p": 0.996563,
+					"t_dtw": 170
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:01,660",
+						"to": "00:00:01,820"
+					},
+					"offsets": {
+						"from": 1660,
+						"to": 1820
+					},
+					"id": 3355,
+					"p": 0.445239,
+					"t_dtw": 182
+				},
+				{
+					"text": " meine",
+					"timestamps": {
+						"from": "00:00:01,820",
+						"to": "00:00:02,100"
+					},
+					"offsets": {
+						"from": 1820,
+						"to": 2100
+					},
+					"id": 10946,
+					"p": 0.609582,
+					"t_dtw": 192
+				},
+				{
+					"text": " fünf",
+					"timestamps": {
+						"from": "00:00:02,100",
+						"to": "00:00:02,320"
+					},
+					"offsets": {
+						"from": 2100,
+						"to": 2320
+					},
+					"id": 28723,
+					"p": 0.798786,
+					"t_dtw": 220
+				},
+				{
+					"text": "jähr",
+					"timestamps": {
+						"from": "00:00:02,320",
+						"to": "00:00:02,540"
+					},
+					"offsets": {
+						"from": 2320,
+						"to": 2540
+					},
+					"id": 49418,
+					"p": 0.991004,
+					"t_dtw": 244
+				},
+				{
+					"text": "ige",
+					"timestamps": {
+						"from": "00:00:02,540",
+						"to": "00:00:02,670"
+					},
+					"offsets": {
+						"from": 2540,
+						"to": 2670
+					},
+					"id": 3969,
+					"p": 0.982075,
+					"t_dtw": 258
+				},
+				{
+					"text": " Therap",
+					"timestamps": {
+						"from": "00:00:02,730",
+						"to": "00:00:02,950"
+					},
+					"offsets": {
+						"from": 2730,
+						"to": 2950
+					},
+					"id": 36812,
+					"p": 0.993697,
+					"t_dtw": 296
+				},
+				{
+					"text": "ie",
+					"timestamps": {
+						"from": "00:00:03,010",
+						"to": "00:00:03,140"
+					},
+					"offsets": {
+						"from": 3010,
+						"to": 3140
+					},
+					"id": 414,
+					"p": 0.998652,
+					"t_dtw": 316
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,140",
+						"to": "00:00:03,290"
+					},
+					"offsets": {
+						"from": 3140,
+						"to": 3290
+					},
+					"id": 13,
+					"p": 0.980561,
+					"t_dtw": 334
+				},
+				{
+					"text": "[_TT_168]",
+					"timestamps": {
+						"from": "00:00:03,360",
+						"to": "00:00:03,360"
+					},
+					"offsets": {
+						"from": 3360,
+						"to": 3360
+					},
+					"id": 50532,
+					"p": 0.0599305,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

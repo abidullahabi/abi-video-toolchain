@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,520"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4520
+			},
+			"text": " \"Anterazol\" von Michael, Michael Singer.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.991573,
+					"t_dtw": -1
+				},
+				{
+					"text": " \"",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 140
+					},
+					"id": 503,
+					"p": 0.319985,
+					"t_dtw": 18
+				},
+				{
+					"text": "An",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 390
+					},
+					"id": 7828,
+					"p": 0.30977,
+					"t_dtw": 30
+				},
+				{
+					"text": "ter",
+					"timestamps": {
+						"from": "00:00:00,440",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 440,
+						"to": 840
+					},
+					"id": 391,
+					"p": 0.741714,
+					"t_dtw": 54
+				},
+				{
+					"text": "az",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:01,110"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 1110
+					},
+					"id": 921,
+					"p": 0.704379,
+					"t_dtw": 74
+				},
+				{
+					"text": "ol",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1400
+					},
+					"id": 401,
+					"p": 0.481563,
+					"t_dtw": 104
+				},
+				{
+					"text": "\"",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,540"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1540
+					},
+					"id": 1,
+					"p": 0.618605,
+					"t_dtw": 152
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:01,540",
+						"to": "00:00:01,820"
+					},
+					"offsets": {
+						"from": 1540,
+						"to": 1820
+					},
+					"id": 2957,
+					"p": 0.994918,
+					"t_dtw": 152
+				},
+				{
+					"text": " Michael",
+					"timestamps": {
+						"from": "00:00:02,250",
+						"to": "00:00:02,970"
+					},
+					"offsets": {
+						"from": 2250,
+						"to": 2970
+					},
+					"id": 5116,
+					"p": 0.247992,
+					"t_dtw": 276
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:03,010",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 3010,
+						"to": 3080
+					},
+					"id": 11,
+					"p": 0.162377,
+					"t_dtw": 336
+				},
+				{
+					"text": " Michael",
+					"timestamps": {
+						"from": "00:00:03,320",
+						"to": "00:00:03,850"
+					},
+					"offsets": {
+						"from": 3320,
+						"to": 3850
+					},
+					"id": 5116,
+					"p": 0.849357,
+					"t_dtw": 390
+				},
+				{
+					"text": " Singer",
+					"timestamps": {
+						"from": "00:00:03,850",
+						"to": "00:00:04,320"
+					},
+					"offsets": {
+						"from": 3850,
+						"to": 4320
+					},
+					"id": 44184,
+					"p": 0.57771,
+					"t_dtw": 422
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:04,520",
+						"to": "00:00:04,520"
+					},
+					"offsets": {
+						"from": 4520,
+						"to": 4520
+					},
+					"id": 13,
+					"p": 0.90694,
+					"t_dtw": 450
+				},
+				{
+					"text": "[_TT_226]",
+					"timestamps": {
+						"from": "00:00:04,520",
+						"to": "00:00:04,520"
+					},
+					"offsets": {
+						"from": 4520,
+						"to": 4520
+					},
+					"id": 50590,
+					"p": 0.114385,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

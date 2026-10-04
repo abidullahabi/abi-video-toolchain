@@ -1,0 +1,283 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,300"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3300
+			},
+			"text": " Und das sind die letzten 60%, die du halt selber aufbringen musst.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.882737,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 140
+					},
+					"id": 2719,
+					"p": 0.944415,
+					"t_dtw": 20
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 280
+					},
+					"id": 1482,
+					"p": 0.946653,
+					"t_dtw": 34
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 470
+					},
+					"id": 3290,
+					"p": 0.99144,
+					"t_dtw": 46
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 610
+					},
+					"id": 978,
+					"p": 0.996595,
+					"t_dtw": 56
+				},
+				{
+					"text": " letzten",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 940
+					},
+					"id": 18226,
+					"p": 0.97036,
+					"t_dtw": 78
+				},
+				{
+					"text": " 60",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,220"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1220
+					},
+					"id": 4060,
+					"p": 0.988003,
+					"t_dtw": 110
+				},
+				{
+					"text": "%,",
+					"timestamps": {
+						"from": "00:00:01,220",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1220,
+						"to": 1400
+					},
+					"id": 8923,
+					"p": 0.792977,
+					"t_dtw": 132
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,570"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1570
+					},
+					"id": 978,
+					"p": 0.964653,
+					"t_dtw": 154
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:01,570",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1570,
+						"to": 1680
+					},
+					"id": 1581,
+					"p": 0.893816,
+					"t_dtw": 162
+				},
+				{
+					"text": " halt",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,910"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1910
+					},
+					"id": 12479,
+					"p": 0.957236,
+					"t_dtw": 176
+				},
+				{
+					"text": " selber",
+					"timestamps": {
+						"from": "00:00:01,910",
+						"to": "00:00:02,250"
+					},
+					"offsets": {
+						"from": 1910,
+						"to": 2250
+					},
+					"id": 23888,
+					"p": 0.950652,
+					"t_dtw": 208
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:02,250",
+						"to": "00:00:02,320"
+					},
+					"offsets": {
+						"from": 2250,
+						"to": 2320
+					},
+					"id": 2501,
+					"p": 0.966221,
+					"t_dtw": 260
+				},
+				{
+					"text": "bringen",
+					"timestamps": {
+						"from": "00:00:02,470",
+						"to": "00:00:02,820"
+					},
+					"offsets": {
+						"from": 2470,
+						"to": 2820
+					},
+					"id": 39455,
+					"p": 0.997619,
+					"t_dtw": 278
+				},
+				{
+					"text": " musst",
+					"timestamps": {
+						"from": "00:00:02,820",
+						"to": "00:00:02,980"
+					},
+					"offsets": {
+						"from": 2820,
+						"to": 2980
+					},
+					"id": 31716,
+					"p": 0.964593,
+					"t_dtw": 302
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,080",
+						"to": "00:00:03,300"
+					},
+					"offsets": {
+						"from": 3080,
+						"to": 3300
+					},
+					"id": 13,
+					"p": 0.982038,
+					"t_dtw": 328
+				},
+				{
+					"text": "[_TT_165]",
+					"timestamps": {
+						"from": "00:00:03,300",
+						"to": "00:00:03,300"
+					},
+					"offsets": {
+						"from": 3300,
+						"to": 3300
+					},
+					"id": 50530,
+					"p": 0.616763,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

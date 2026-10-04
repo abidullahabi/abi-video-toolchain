@@ -1,0 +1,255 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,600"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1600
+			},
+			"text": " Ich bin so gut, als du das Karazakst.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.994474,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,110",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 110,
+						"to": 140
+					},
+					"id": 3141,
+					"p": 0.0680778,
+					"t_dtw": 26
+				},
+				{
+					"text": " bin",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 270
+					},
+					"id": 5171,
+					"p": 0.340647,
+					"t_dtw": 26
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 370
+					},
+					"id": 370,
+					"p": 0.18882,
+					"t_dtw": 38
+				},
+				{
+					"text": " gut",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 510
+					},
+					"id": 5228,
+					"p": 0.414122,
+					"t_dtw": 52
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 600
+					},
+					"id": 11,
+					"p": 0.556865,
+					"t_dtw": 56
+				},
+				{
+					"text": " als",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,740"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 740
+					},
+					"id": 3907,
+					"p": 0.831883,
+					"t_dtw": 66
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,740",
+						"to": "00:00:00,830"
+					},
+					"offsets": {
+						"from": 740,
+						"to": 830
+					},
+					"id": 1581,
+					"p": 0.141007,
+					"t_dtw": 74
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,830",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 830,
+						"to": 970
+					},
+					"id": 1482,
+					"p": 0.797794,
+					"t_dtw": 86
+				},
+				{
+					"text": " Kar",
+					"timestamps": {
+						"from": "00:00:00,970",
+						"to": "00:00:01,110"
+					},
+					"offsets": {
+						"from": 970,
+						"to": 1110
+					},
+					"id": 8009,
+					"p": 0.0489625,
+					"t_dtw": 100
+				},
+				{
+					"text": "az",
+					"timestamps": {
+						"from": "00:00:01,110",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1110,
+						"to": 1200
+					},
+					"id": 921,
+					"p": 0.727619,
+					"t_dtw": 110
+				},
+				{
+					"text": "ak",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1260
+					},
+					"id": 514,
+					"p": 0.231377,
+					"t_dtw": 124
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:01,260",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1260,
+						"to": 1380
+					},
+					"id": 372,
+					"p": 0.909101,
+					"t_dtw": 140
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,570"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1570
+					},
+					"id": 13,
+					"p": 0.768175,
+					"t_dtw": 150
+				},
+				{
+					"text": "[_TT_80]",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1600
+					},
+					"id": 50444,
+					"p": 0.042655,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

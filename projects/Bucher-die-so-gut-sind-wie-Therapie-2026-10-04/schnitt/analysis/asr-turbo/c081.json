@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,520"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1520
+			},
+			"text": " Die 40%, die du",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.818467,
+					"t_dtw": -1
+				},
+				{
+					"text": " Die",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,260"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 260
+					},
+					"id": 3229,
+					"p": 0.965153,
+					"t_dtw": 20
+				},
+				{
+					"text": " 40",
+					"timestamps": {
+						"from": "00:00:00,260",
+						"to": "00:00:00,790"
+					},
+					"offsets": {
+						"from": 260,
+						"to": 790
+					},
+					"id": 3356,
+					"p": 0.968605,
+					"t_dtw": 50
+				},
+				{
+					"text": "%,",
+					"timestamps": {
+						"from": "00:00:00,790",
+						"to": "00:00:01,050"
+					},
+					"offsets": {
+						"from": 790,
+						"to": 1050
+					},
+					"id": 8923,
+					"p": 0.717805,
+					"t_dtw": 78
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:01,050",
+						"to": "00:00:01,250"
+					},
+					"offsets": {
+						"from": 1050,
+						"to": 1250
+					},
+					"id": 978,
+					"p": 0.988556,
+					"t_dtw": 98
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:01,310",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1310,
+						"to": 1340
+					},
+					"id": 1581,
+					"p": 0.833619,
+					"t_dtw": 112
+				},
+				{
+					"text": "[_TT_76]",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1520
+					},
+					"id": 50441,
+					"p": 0.312573,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,680"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1680
+			},
+			"text": " Und gar nicht wirklich aufwachen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.998108,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 160
+					},
+					"id": 2719,
+					"p": 0.911612,
+					"t_dtw": 22
+				},
+				{
+					"text": " gar",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 320
+					},
+					"id": 3691,
+					"p": 0.989191,
+					"t_dtw": 40
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,590"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 590
+					},
+					"id": 1979,
+					"p": 0.998807,
+					"t_dtw": 56
+				},
+				{
+					"text": " wirklich",
+					"timestamps": {
+						"from": "00:00:00,590",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 590,
+						"to": 950
+					},
+					"id": 9696,
+					"p": 0.992651,
+					"t_dtw": 88
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:01,110",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1110,
+						"to": 1180
+					},
+					"id": 2501,
+					"p": 0.924505,
+					"t_dtw": 128
+				},
+				{
+					"text": "w",
+					"timestamps": {
+						"from": "00:00:01,180",
+						"to": "00:00:01,230"
+					},
+					"offsets": {
+						"from": 1180,
+						"to": 1230
+					},
+					"id": 86,
+					"p": 0.594948,
+					"t_dtw": 148
+				},
+				{
+					"text": "achen",
+					"timestamps": {
+						"from": "00:00:01,230",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1230,
+						"to": 1440
+					},
+					"id": 11646,
+					"p": 0.990985,
+					"t_dtw": 148
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,460",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1460,
+						"to": 1620
+					},
+					"id": 13,
+					"p": 0.879489,
+					"t_dtw": 166
+				},
+				{
+					"text": "[_TT_84]",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1680
+					},
+					"id": 50448,
+					"p": 0.0685642,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

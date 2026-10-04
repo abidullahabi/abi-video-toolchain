@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,380"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1380
+			},
+			"text": " Und das steht ja auch in dir drin.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.780356,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 150
+					},
+					"id": 2719,
+					"p": 0.95967,
+					"t_dtw": 18
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 300
+					},
+					"id": 1482,
+					"p": 0.75494,
+					"t_dtw": 28
+				},
+				{
+					"text": " steht",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 560
+					},
+					"id": 16361,
+					"p": 0.861419,
+					"t_dtw": 44
+				},
+				{
+					"text": " ja",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 650
+					},
+					"id": 2784,
+					"p": 0.944051,
+					"t_dtw": 58
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 860
+					},
+					"id": 2168,
+					"p": 0.997577,
+					"t_dtw": 66
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:00,860",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 860,
+						"to": 940
+					},
+					"id": 294,
+					"p": 0.415162,
+					"t_dtw": 78
+				},
+				{
+					"text": " dir",
+					"timestamps": {
+						"from": "00:00:00,960",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 960,
+						"to": 1120
+					},
+					"id": 4746,
+					"p": 0.686292,
+					"t_dtw": 88
+				},
+				{
+					"text": " drin",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1360
+					},
+					"id": 24534,
+					"p": 0.971404,
+					"t_dtw": 110
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1380
+					},
+					"id": 13,
+					"p": 0.91739,
+					"t_dtw": 126
+				},
+				{
+					"text": "[_TT_69]",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1380
+					},
+					"id": 50434,
+					"p": 0.907784,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

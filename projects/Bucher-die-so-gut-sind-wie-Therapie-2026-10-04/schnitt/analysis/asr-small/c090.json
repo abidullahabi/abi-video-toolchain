@@ -1,0 +1,143 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,900"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 900
+			},
+			"text": " Vor allem nicht vergessen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.998378,
+					"t_dtw": -1
+				},
+				{
+					"text": " Vor",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 100
+					},
+					"id": 12231,
+					"p": 0.66345,
+					"t_dtw": 22
+				},
+				{
+					"text": " allem",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 280
+					},
+					"id": 17585,
+					"p": 0.421419,
+					"t_dtw": 32
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 460
+					},
+					"id": 1979,
+					"p": 0.693742,
+					"t_dtw": 40
+				},
+				{
+					"text": " vergessen",
+					"timestamps": {
+						"from": "00:00:00,460",
+						"to": "00:00:00,760"
+					},
+					"offsets": {
+						"from": 460,
+						"to": 760
+					},
+					"id": 42418,
+					"p": 0.99834,
+					"t_dtw": 60
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 890
+					},
+					"id": 13,
+					"p": 0.791402,
+					"t_dtw": 88
+				},
+				{
+					"text": "[_TT_45]",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 900
+					},
+					"id": 50409,
+					"p": 0.0478535,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

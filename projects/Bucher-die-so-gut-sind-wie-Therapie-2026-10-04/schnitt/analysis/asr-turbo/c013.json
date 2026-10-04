@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,440"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2440
+			},
+			"text": " Das Buch ist gerade so auf dieser Schwelle von",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.837854,
+					"t_dtw": -1
+				},
+				{
+					"text": " Das",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,190"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 190
+					},
+					"id": 2846,
+					"p": 0.941269,
+					"t_dtw": 28
+				},
+				{
+					"text": " Buch",
+					"timestamps": {
+						"from": "00:00:00,190",
+						"to": "00:00:00,440"
+					},
+					"offsets": {
+						"from": 190,
+						"to": 440
+					},
+					"id": 25818,
+					"p": 0.997465,
+					"t_dtw": 42
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,440",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 440,
+						"to": 580
+					},
+					"id": 1418,
+					"p": 0.995439,
+					"t_dtw": 58
+				},
+				{
+					"text": " gerade",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:01,010"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 1010
+					},
+					"id": 12117,
+					"p": 0.696303,
+					"t_dtw": 82
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:01,010",
+						"to": "00:00:01,130"
+					},
+					"offsets": {
+						"from": 1010,
+						"to": 1130
+					},
+					"id": 370,
+					"p": 0.979578,
+					"t_dtw": 102
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:01,130",
+						"to": "00:00:01,320"
+					},
+					"offsets": {
+						"from": 1130,
+						"to": 1320
+					},
+					"id": 2501,
+					"p": 0.940661,
+					"t_dtw": 124
+				},
+				{
+					"text": " dieser",
+					"timestamps": {
+						"from": "00:00:01,320",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1320,
+						"to": 1700
+					},
+					"id": 9053,
+					"p": 0.981049,
+					"t_dtw": 144
+				},
+				{
+					"text": " Schwe",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:02,010"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 2010
+					},
+					"id": 24343,
+					"p": 0.992026,
+					"t_dtw": 162
+				},
+				{
+					"text": "lle",
+					"timestamps": {
+						"from": "00:00:02,010",
+						"to": "00:00:02,170"
+					},
+					"offsets": {
+						"from": 2010,
+						"to": 2170
+					},
+					"id": 2447,
+					"p": 0.998643,
+					"t_dtw": 174
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:02,210",
+						"to": "00:00:02,300"
+					},
+					"offsets": {
+						"from": 2210,
+						"to": 2300
+					},
+					"id": 2957,
+					"p": 0.995919,
+					"t_dtw": 208
+				},
+				{
+					"text": "[_TT_122]",
+					"timestamps": {
+						"from": "00:00:02,440",
+						"to": "00:00:02,440"
+					},
+					"offsets": {
+						"from": 2440,
+						"to": 2440
+					},
+					"id": 50487,
+					"p": 0.298393,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

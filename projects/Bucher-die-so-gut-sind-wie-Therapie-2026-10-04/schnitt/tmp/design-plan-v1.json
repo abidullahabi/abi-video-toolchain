@@ -1,0 +1,190 @@
+{
+ "_quelle": "planentwurf.mjs 04.10.2026 19:28, überarbeitet vom Planer Gestaltung 04.10.2026 nach DESIGN.md 2.4 und Abis Testauftrag Buchcover (DESIGN.md 17 B-Roll, 04.10.2026). Zeiten an Wortanfängen der korrigierten Wortliste (caption-edit-plan.json, word-review-turbo). Buchtitel/Autoren/deutsche Titel aus assets/buchcover/HERKUNFT.json; Kapitel zeigen den echten Titel („The Myth of Normal“), Untertitel bleiben wortgetreu. 40/60 im Lebensbalken ist Abis eigene Einschätzung (gesprochen 9,6 s und 223,0 s), keine Studienzahl. Zooms leer gelassen: storyboard berechnet sie neu (DESIGN.md 15). Zweite Runde 04.10.2026 nach Prüferbefunden B1–B14 (siehe _entscheidungen).",
+ "_entscheidungen": [
+  "B1 übernommen: k3 deutsch = „Versöhnung mit dem inneren Kind“ (Werkzeug bricht zweizeilig um: „🇩🇪 Versöhnung mit / dem inneren Kind“); k3-Gruppe jetzt y 270–567.",
+  "B2 übernommen: Kurzprüfung word-review-turbo Teil 11 (172,9–176,1 s) hört „Und keine Sorge an alle meine Ungläubigen.“; als reviewReplacement 173,3–175,95 eingetragen, „keine“ ist eigenes Wort (174,02).",
+  "B3 übernommen: vier Langdurchgänge (Beginn 127,5/128,0/128,6/129,0 s) hören „ey Bro, ein bisschen weird“; Korrekturen „bist“→„ein“, „so“→„bisschen“ (ein Wort je Baustein, nichts leer). Kurzausschnitte hören Unsinn („bist du guter“, „das ist weird“), daher Langdurchgang maßgeblich.",
+  "B4 übernommen: H1 „BÜCHER WIE THERAPIE“ (wie Notion-Storyline) → zweizeilig „BÜCHER WIE / THERAPIE“ 100 px statt 62 px. Geprüft auch „BÜCHER SO GUT WIE THERAPIE“: nur 76 px. H2 „nach 5 Jahren Therapie“ bleibt (Glaubwürdigkeit). Frage an Abi.",
+  "B5 übernommen über Planoption lebensbalken[].trenner (im Werkzeugzweig vorhanden): 3-px-Tintenlinie bei 40 % ab 10,89 s, im Storyboard sichtbar. Teil „Beschriftung beginnt bei 340 statt 280 px“ abgelehnt: das Werkzeug zentriert Beschriftungen über ihrem Abschnitt (Mitte 0,7·700=490), so gewollt.",
+  "B6 teilweise übernommen: k5 start 147,30 („The“), grossBis 150,17 („ist“, 2,87 s ≤ 3 s). Damit liegt die kleine Gruppe 150,2–152,6 s (ca. 2,4 s statt 3,9 s) auf Abis Haar in der Nahaufnahme (gemessen: Haar ab y ≈ 330 in der Gruppe x 141–939, y 270–535); ab dem Schnitt 152,63 frei. Weiter schieben geht nicht (3-s-Grenze, Cover soll beim Titel stehen). k3 ehrlich: Autor-Balken (y ≈ 510–567) liegt fast im ganzen Kapitel 74–113 s auf Haarspitzen (20–90 px); tiefer im Text bei Vorbeugen 84,5–85,5 s (Kopf rechts bis in die Titelzeile) und 87,3–89,5 s (Haar bis y ≈ 470, hinter Autor/deutschem Titel); bei 95,5–96,5 s Haar links hinter dem kleinen Cover. k2 nur Schätzung 56,5–59,5 s, im Bild kein Kontakt.",
+  "B7 erledigt: neues Storyboard zeigt „Bonus: The Prophet“ einzeilig (passt jetzt in die Spalte), kein Umbruch nötig.",
+  "B8 teilweise erledigt: „The Way to Love“ steht jetzt einzeilig; „The Untethered / Soul“ und „The Myth / of Normal“ bleiben zweizeilig (Spaltenbreite, nur im Werkzeug änderbar) → Rückmeldung zum Testelement bei Abi.",
+  "B9 übernommen: k5 start 147,30 („The“), Cover erscheint mit dem Titel statt bei „Podcast“ (Schnitt 147,37 direkt danach).",
+  "B10 übernommen: outroStart 223,45 („die“ nach „60 %,“), Standzeit ca. 4,1 s; „die letzten 60 %“ kommt ohne Outro an.",
+  "B11 übernommen als Frage an Abi (große Cover liegen je ca. 2,5–2,9 s über dem Gesicht, bei Awareness über den Augen).",
+  "B12 übernommen als Frage an Abi; Pillen unverändert („Sicherheit · Heulen · Checken“), Alternative „Sicherheit · Heulen · Gehalten werden“ (Breite vor Einsatz messen).",
+  "B13 abgelehnt (hinnehmen): Kurzprüfung 78,9–80,9 s hört auch mit Vorgabe „in Altzug“, liefert also keine Einzelwortzeiten für „in einem Zug“; Baustein mit drei Wörtern bleibt, Abweichung klein.",
+  "B14 zur Kenntnis: schnitt/woerter.mjs ist kaputt (kein Code-/Skriptauftrag hier); Zeiten aus schnitt/tmp/pruefer-woerter.mjs."
+ ],
+ "_offen": [
+  "k3/k5 Kopfkontakt (B6): siehe _entscheidungen; in der Vorschau bei 75, 85, 88, 96 und 151 s ansehen.",
+  "Abi: Bestätigung „macht uns sogar krank“ (151,6 s).",
+  "B13 bewusst hingenommen: „in einem Zug“ als ein Untertitel-Baustein (79,73 s).",
+  "B5-Teilpunkt abgelehnt: Beschriftung „Du selbst 60 %“ ist über dem Abschnitt zentriert (Werkzeugverhalten), kein Fehler.",
+  "Werkzeug (nicht Plan): Titelumbruch „The Untethered / Soul“, „The Myth / of Normal“; woerter.mjs reparieren."
+ ],
+ "einstieg": {
+  "h1": "BÜCHER WIE THERAPIE",
+  "h2": [
+   "nach 5 Jahren Therapie"
+  ],
+  "end": 7.82
+ },
+ "kapitel": [
+  {
+   "id": "k1",
+   "nummer": "1.",
+   "titel": "The Way to Love",
+   "start": 14.86,
+   "end": 39.2,
+   "buch": {
+    "datei": "assets/buchcover/1-the-way-to-love.jpg",
+    "breite": 1052,
+    "hoehe": 1503,
+    "autor": "Anthony de Mello",
+    "deutsch": "Wie ein Fisch im Wasser",
+    "grossBis": 17.39
+   }
+  },
+  {
+   "id": "k2",
+   "nummer": "2.",
+   "titel": "Awareness",
+   "start": 39.82,
+   "end": 67.25,
+   "buch": {
+    "datei": "assets/buchcover/2-awareness.jpg",
+    "breite": 752,
+    "hoehe": 1200,
+    "autor": "Anthony de Mello",
+    "deutsch": "Der springende Punkt",
+    "grossBis": 42.31
+   }
+  },
+  {
+   "id": "k3",
+   "nummer": "3.",
+   "titel": "Reconciliation",
+   "start": 70.19,
+   "end": 113.25,
+   "buch": {
+    "datei": "assets/buchcover/3-reconciliation.jpg",
+    "breite": 1400,
+    "hoehe": 2083,
+    "autor": "Thich Nhat Hanh",
+    "deutsch": "Versöhnung mit dem inneren Kind",
+    "grossBis": 72.81,
+    "autorAb": 74.06
+   }
+  },
+  {
+   "id": "k4",
+   "nummer": "4.",
+   "titel": "The Untethered Soul",
+   "start": 114.01,
+   "end": 141.51,
+   "buch": {
+    "datei": "assets/buchcover/4-the-untethered-soul.jpg",
+    "breite": 800,
+    "hoehe": 1200,
+    "autor": "Michael A. Singer",
+    "deutsch": "Die Seele will frei sein",
+    "grossBis": 116.51,
+    "autorAb": 117.59
+   }
+  },
+  {
+   "id": "k5",
+   "nummer": "5.",
+   "titel": "The Myth of Normal",
+   "start": 147.3,
+   "end": 161.92,
+   "buch": {
+    "datei": "assets/buchcover/5-the-myth-of-normal.jpg",
+    "breite": 1800,
+    "hoehe": 2700,
+    "autor": "Gabor Maté",
+    "deutsch": "Vom Mythos des Normalen",
+    "grossBis": 150.17
+   }
+  },
+  {
+   "id": "k6",
+   "nummer": null,
+   "titel": "Bonus: The Prophet",
+   "start": 163.55,
+   "end": 193.12,
+   "buch": {
+    "datei": "assets/buchcover/6-the-prophet.jpg",
+    "breite": 800,
+    "hoehe": 1200,
+    "autor": "Khalil Gibran",
+    "deutsch": "Der Prophet",
+    "grossBis": 166.04
+   }
+  },
+  {
+   "id": "schluss",
+   "nummer": null,
+   "titel": "Heilen ist ein Prozess",
+   "start": 194.63,
+   "end": 222.41
+  }
+ ],
+ "h1": [],
+ "h2": [],
+ "pillen": [
+  {
+   "id": "p-heilen",
+   "kapitel": "schluss",
+   "nummeriert": false,
+   "anordnung": "nebeneinander",
+   "punkt": true,
+   "items": [
+    {
+     "text": "Sicherheit",
+     "at": 203.45
+    },
+    {
+     "text": "Heulen",
+     "at": 208.87
+    },
+    {
+     "text": "Checken",
+     "at": 214.44
+    }
+   ],
+   "end": 222.41
+  }
+ ],
+ "akronyme": [],
+ "schlagworte": [],
+ "grafiken": [],
+ "randnotizen": [],
+ "lebensbalken": [
+  {
+   "id": "lb-therapie",
+   "start": 8.08,
+   "end": 14.04,
+   "abschnitte": [
+    {
+     "von": 0,
+     "bis": 0.4,
+     "beschriftung": "Therapie 40 %",
+     "at": 9.62
+    },
+    {
+     "von": 0.4,
+     "bis": 1,
+     "beschriftung": "Du selbst 60 %",
+     "at": 10.89
+    }
+   ],
+   "trenner": true
+  }
+ ],
+ "logos": [],
+ "sprechblasen": [],
+ "outroStart": 223.45,
+ "nahaufnahmeAbBreite": 420
+}

@@ -1,0 +1,339 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,320"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3320
+			},
+			"text": " Und es ist sehr praktisch, am Ende gibt es richtig gute Übungen wie man.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997046,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 160
+					},
+					"id": 2719,
+					"p": 0.982634,
+					"t_dtw": 24
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 270
+					},
+					"id": 785,
+					"p": 0.954502,
+					"t_dtw": 40
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 400
+					},
+					"id": 1418,
+					"p": 0.998399,
+					"t_dtw": 52
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:00,440",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 440,
+						"to": 630
+					},
+					"id": 5499,
+					"p": 0.817583,
+					"t_dtw": 60
+				},
+				{
+					"text": " prakt",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:00,930"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 930
+					},
+					"id": 33721,
+					"p": 0.997014,
+					"t_dtw": 80
+				},
+				{
+					"text": "isch",
+					"timestamps": {
+						"from": "00:00:00,930",
+						"to": "00:00:01,150"
+					},
+					"offsets": {
+						"from": 930,
+						"to": 1150
+					},
+					"id": 5494,
+					"p": 0.993447,
+					"t_dtw": 98
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1260
+					},
+					"id": 11,
+					"p": 0.452117,
+					"t_dtw": 108
+				},
+				{
+					"text": " am",
+					"timestamps": {
+						"from": "00:00:01,260",
+						"to": "00:00:01,370"
+					},
+					"offsets": {
+						"from": 1260,
+						"to": 1370
+					},
+					"id": 669,
+					"p": 0.654201,
+					"t_dtw": 114
+				},
+				{
+					"text": " Ende",
+					"timestamps": {
+						"from": "00:00:01,370",
+						"to": "00:00:01,590"
+					},
+					"offsets": {
+						"from": 1370,
+						"to": 1590
+					},
+					"id": 15152,
+					"p": 0.986037,
+					"t_dtw": 126
+				},
+				{
+					"text": " gibt",
+					"timestamps": {
+						"from": "00:00:01,590",
+						"to": "00:00:01,810"
+					},
+					"offsets": {
+						"from": 1590,
+						"to": 1810
+					},
+					"id": 6089,
+					"p": 0.948623,
+					"t_dtw": 142
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:01,810",
+						"to": "00:00:01,920"
+					},
+					"offsets": {
+						"from": 1810,
+						"to": 1920
+					},
+					"id": 785,
+					"p": 0.687355,
+					"t_dtw": 156
+				},
+				{
+					"text": " richtig",
+					"timestamps": {
+						"from": "00:00:01,920",
+						"to": "00:00:02,310"
+					},
+					"offsets": {
+						"from": 1920,
+						"to": 2310
+					},
+					"id": 13129,
+					"p": 0.8424,
+					"t_dtw": 184
+				},
+				{
+					"text": " gute",
+					"timestamps": {
+						"from": "00:00:02,310",
+						"to": "00:00:02,530"
+					},
+					"offsets": {
+						"from": 2310,
+						"to": 2530
+					},
+					"id": 21476,
+					"p": 0.986666,
+					"t_dtw": 228
+				},
+				{
+					"text": " Ü",
+					"timestamps": {
+						"from": "00:00:02,530",
+						"to": "00:00:02,580"
+					},
+					"offsets": {
+						"from": 2530,
+						"to": 2580
+					},
+					"id": 10713,
+					"p": 0.988011,
+					"t_dtw": 256
+				},
+				{
+					"text": "b",
+					"timestamps": {
+						"from": "00:00:02,580",
+						"to": "00:00:02,630"
+					},
+					"offsets": {
+						"from": 2580,
+						"to": 2630
+					},
+					"id": 65,
+					"p": 0.995429,
+					"t_dtw": 262
+				},
+				{
+					"text": "ungen",
+					"timestamps": {
+						"from": "00:00:02,630",
+						"to": "00:00:02,910"
+					},
+					"offsets": {
+						"from": 2630,
+						"to": 2910
+					},
+					"id": 5084,
+					"p": 0.997373,
+					"t_dtw": 274
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:02,910",
+						"to": "00:00:03,060"
+					},
+					"offsets": {
+						"from": 2910,
+						"to": 3060
+					},
+					"id": 3355,
+					"p": 0.471213,
+					"t_dtw": 290
+				},
+				{
+					"text": " man",
+					"timestamps": {
+						"from": "00:00:03,060",
+						"to": "00:00:03,310"
+					},
+					"offsets": {
+						"from": 3060,
+						"to": 3310
+					},
+					"id": 587,
+					"p": 0.956255,
+					"t_dtw": 308
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,310",
+						"to": "00:00:03,320"
+					},
+					"offsets": {
+						"from": 3310,
+						"to": 3320
+					},
+					"id": 13,
+					"p": 0.42769,
+					"t_dtw": 330
+				},
+				{
+					"text": "[_TT_166]",
+					"timestamps": {
+						"from": "00:00:03,320",
+						"to": "00:00:03,320"
+					},
+					"offsets": {
+						"from": 3320,
+						"to": 3320
+					},
+					"id": 50530,
+					"p": 0.0802235,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

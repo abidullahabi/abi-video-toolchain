@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,520"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1520
+			},
+			"text": " Aber es ist auf einem sehr positiven Weg.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.811279,
+					"t_dtw": -1
+				},
+				{
+					"text": " Aber",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 160
+					},
+					"id": 5992,
+					"p": 0.957197,
+					"t_dtw": 32
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,240"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 240
+					},
+					"id": 785,
+					"p": 0.760905,
+					"t_dtw": 44
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,240",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 240,
+						"to": 360
+					},
+					"id": 1418,
+					"p": 0.409347,
+					"t_dtw": 52
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 480
+					},
+					"id": 2501,
+					"p": 0.984667,
+					"t_dtw": 58
+				},
+				{
+					"text": " einem",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,690"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 690
+					},
+					"id": 6827,
+					"p": 0.528221,
+					"t_dtw": 66
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 840
+					},
+					"id": 5499,
+					"p": 0.997381,
+					"t_dtw": 80
+				},
+				{
+					"text": " posit",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 1060
+					},
+					"id": 11218,
+					"p": 0.995214,
+					"t_dtw": 110
+				},
+				{
+					"text": "iven",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,210"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1210
+					},
+					"id": 5709,
+					"p": 0.999104,
+					"t_dtw": 126
+				},
+				{
+					"text": " Weg",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1340
+					},
+					"id": 18919,
+					"p": 0.991959,
+					"t_dtw": 150
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,500"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1500
+					},
+					"id": 13,
+					"p": 0.975282,
+					"t_dtw": 150
+				},
+				{
+					"text": "[_TT_76]",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1520
+					},
+					"id": 50441,
+					"p": 0.27273,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

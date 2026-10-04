@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,840"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2840
+			},
+			"text": " Und generell zu dem Thema \"Heilen\".",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.989659,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 250
+					},
+					"id": 2719,
+					"p": 0.895348,
+					"t_dtw": 26
+				},
+				{
+					"text": " genere",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 430
+					},
+					"id": 41553,
+					"p": 0.596486,
+					"t_dtw": 122
+				},
+				{
+					"text": "ll",
+					"timestamps": {
+						"from": "00:00:00,920",
+						"to": "00:00:00,960"
+					},
+					"offsets": {
+						"from": 920,
+						"to": 960
+					},
+					"id": 285,
+					"p": 0.999344,
+					"t_dtw": 142
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:00,960",
+						"to": "00:00:01,130"
+					},
+					"offsets": {
+						"from": 960,
+						"to": 1130
+					},
+					"id": 2164,
+					"p": 0.928362,
+					"t_dtw": 154
+				},
+				{
+					"text": " dem",
+					"timestamps": {
+						"from": "00:00:01,130",
+						"to": "00:00:01,390"
+					},
+					"offsets": {
+						"from": 1130,
+						"to": 1390
+					},
+					"id": 1371,
+					"p": 0.960407,
+					"t_dtw": 164
+				},
+				{
+					"text": " Thema",
+					"timestamps": {
+						"from": "00:00:01,390",
+						"to": "00:00:01,830"
+					},
+					"offsets": {
+						"from": 1390,
+						"to": 1830
+					},
+					"id": 16306,
+					"p": 0.9936,
+					"t_dtw": 198
+				},
+				{
+					"text": " \"",
+					"timestamps": {
+						"from": "00:00:01,830",
+						"to": "00:00:01,910"
+					},
+					"offsets": {
+						"from": 1830,
+						"to": 1910
+					},
+					"id": 503,
+					"p": 0.363212,
+					"t_dtw": 226
+				},
+				{
+					"text": "He",
+					"timestamps": {
+						"from": "00:00:01,910",
+						"to": "00:00:02,080"
+					},
+					"offsets": {
+						"from": 1910,
+						"to": 2080
+					},
+					"id": 5205,
+					"p": 0.844033,
+					"t_dtw": 238
+				},
+				{
+					"text": "ilen",
+					"timestamps": {
+						"from": "00:00:02,080",
+						"to": "00:00:02,430"
+					},
+					"offsets": {
+						"from": 2080,
+						"to": 2430
+					},
+					"id": 17471,
+					"p": 0.977437,
+					"t_dtw": 254
+				},
+				{
+					"text": "\".",
+					"timestamps": {
+						"from": "00:00:02,430",
+						"to": "00:00:02,600"
+					},
+					"offsets": {
+						"from": 2430,
+						"to": 2600
+					},
+					"id": 1883,
+					"p": 0.858937,
+					"t_dtw": 280
+				},
+				{
+					"text": "[_TT_142]",
+					"timestamps": {
+						"from": "00:00:02,840",
+						"to": "00:00:02,840"
+					},
+					"offsets": {
+						"from": 2840,
+						"to": 2840
+					},
+					"id": 50506,
+					"p": 0.0691357,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

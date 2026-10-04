@@ -1,0 +1,83 @@
+{
+  "mode": "cut-and-design",
+  "title": "Bücher die so gut sind wie Therapie",
+  "designVersion": "2.2",
+  "source": "/Users/abi/Library/Application Support/Google/DriveFS/canceled_uploads/107775308938735523322/IMG_2012.MOV",
+  "sourceSha256": "d8343ccf53ba96c1c374efb9d11446b4d5025d500f9a906a6ad1065053b416a4",
+  "sourceBytes": 1860209817,
+  "sourceDuration": 442.705,
+  "sourceVideo": {
+    "width": 2160,
+    "height": 3840,
+    "fps": "2655600/88541",
+    "codec": "hevc",
+    "transfer": "bt709",
+    "hdr": false
+  },
+  "farbkorrektur": "A",
+  "renderMaster": "mp4",
+  "masterColorMatrix": "bt601",
+  "createdAt": "2026-10-04T16:47:41.542Z",
+  "bearbeitung": {
+    "agent": "claude",
+    "aufgabe": "Schnitt und Gestaltung Bücher die so gut sind wie Therapie",
+    "begonnen": "2026-10-04T16:47:41.542Z",
+    "status": "fertig",
+    "beendet": "2026-10-04T20:49:45.316Z"
+  },
+  "designGelesen": {
+    "datei": "Content_Creation/Anleitung/DESIGN.md",
+    "version": "2.4",
+    "stand": "28.09.2026",
+    "geprueft": "2026-10-04T16:50:00Z"
+  },
+  "notion": {
+    "url": "https://app.notion.com/p/3ed8cb917b3b81e78fbbd87422f63b1d",
+    "titel": "Bücher die so gut sind wie Therapie"
+  },
+  "sourceUrspruenglich": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/IMG_2012.MOV",
+  "sourceHinweis": "04.10.2026 19:10: Google Drive hat den Upload abgebrochen und die Datei aus 01_Rohvideos genommen (canceled_uploads). SHA-256 d8343ccf… unverändert geprüft 19:16. Datei dort nicht verschieben, bis sie wieder sicher im Drive liegt.",
+  "cutDuration": 175.4,
+  "media": {
+    "datei": "media.mp4",
+    "farbkorrektur": "A",
+    "schnitt": true,
+    "tempo": 1.1
+  },
+  "latestExport": "/Users/abi/Projekte/abi-video-toolchain/projects/Bucher-die-so-gut-sind-wie-Therapie-2026-10-04/exports/upload.mp4",
+  "renderedExport": "/Users/abi/Projekte/abi-video-toolchain/projects/Bucher-die-so-gut-sind-wie-Therapie-2026-10-04/exports/master.mp4",
+  "status": "complete",
+  "exportedAt": "2026-10-04T20:35:01.891Z",
+  "audioHandling": "Original audio re-encoded once as AAC-LC at 120 kbit/s and 48 kHz, without tempo or level changes.",
+  "deliveryProfile": "Zernio/Buffer: H264 (medium), 1080x1920p30, BT709, 12000k video target (max. 12M, 300-MB-Grenze) / 14M VBV, AAC-LC 120k, faststart",
+  "layoutVersion": "tiktok-safe-v1",
+  "aktuell": {
+    "datei": "/Users/abi/Projekte/abi-video-toolchain/projects/Bucher-die-so-gut-sind-wie-Therapie-2026-10-04/exports/upload.mp4",
+    "sha256": "d8ed8ffcae1b789f180032f8f2424e20a62399419a33087c17e05279d1d9b4f8",
+    "bytes": 266034361,
+    "erzeugt": "2026-10-04T20:37:59Z",
+    "gesetztAm": "2026-10-04T20:37:59Z"
+  },
+  "tempo": 1.1,
+  "tempoGrund": "Abi 04.10.2026: „lieber auch die Geschwindigkeit auf 1,1 erhöhen, wenn du sonst zu viel rausschneidest“ (Kamerabild und Ton im selben Durchgang, Gestaltung in normaler Geschwindigkeit)",
+  "postingFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/04_Gepostet/2026-10-04 - Bücher die so gut sind wie Therapie.mp4",
+  "postingSha256": "d8ed8ffcae1b789f180032f8f2424e20a62399419a33087c17e05279d1d9b4f8",
+  "postingDate": "2026-10-04",
+  "zernio": {
+    "upload": {
+      "publicUrl": "https://media.zernio.com/temp/1791146787526_gwr5sxt1_2026-10-04---Bucher-die-so-gut-sind-wie-Therapie.mp4",
+      "sha256": "d8ed8ffcae1b789f180032f8f2424e20a62399419a33087c17e05279d1d9b4f8",
+      "am": "2026-10-04T20:49:34.123Z"
+    },
+    "requestId": "497a0542-4de1-4e05-820b-efae4d0836ab",
+    "geplantFuer": "2026-10-04T23:00:00+02:00",
+    "postId": "6ac2bbe61fab65082623e599",
+    "eingeplantAm": "2026-10-04T20:49:43.330Z"
+  },
+  "videomaterialVerschoben": {
+    "am": "2026-10-04",
+    "nach": "/Users/abi/Löschbar/2026-10-04 - Bücher die so gut sind wie Therapie",
+    "bytes": 2805304285,
+    "zurueck": "node aufraeumen.mjs --zurueck \"2026-10-04 - Bücher die so gut sind wie Therapie\" \"Bucher-die-so-gut-sind-wie-Therapie-2026-10-04\""
+  }
+}

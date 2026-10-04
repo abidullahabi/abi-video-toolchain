@@ -1,0 +1,129 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1000
+			},
+			"text": " And then come.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.995429,
+					"t_dtw": -1
+				},
+				{
+					"text": " And",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 210
+					},
+					"id": 400,
+					"p": 0.118523,
+					"t_dtw": 28
+				},
+				{
+					"text": " then",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 480
+					},
+					"id": 550,
+					"p": 0.475566,
+					"t_dtw": 38
+				},
+				{
+					"text": " come",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 750
+					},
+					"id": 808,
+					"p": 0.809978,
+					"t_dtw": 62
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,760",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 760,
+						"to": 900
+					},
+					"id": 13,
+					"p": 0.810152,
+					"t_dtw": 88
+				},
+				{
+					"text": "[_TT_50]",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1000
+					},
+					"id": 50414,
+					"p": 0.0536568,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

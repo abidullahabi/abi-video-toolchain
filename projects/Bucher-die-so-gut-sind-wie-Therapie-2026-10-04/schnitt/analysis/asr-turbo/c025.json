@@ -1,0 +1,381 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4080
+			},
+			"text": " Der zeigt, wie man seine Gedanken beobachtet, was die Gefühle sind, was sie sagen und",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.813344,
+					"t_dtw": -1
+				},
+				{
+					"text": " Der",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 140
+					},
+					"id": 5618,
+					"p": 0.918778,
+					"t_dtw": 20
+				},
+				{
+					"text": " zeigt",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,380"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 380
+					},
+					"id": 29250,
+					"p": 0.994877,
+					"t_dtw": 40
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,380",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 380,
+						"to": 470
+					},
+					"id": 11,
+					"p": 0.911576,
+					"t_dtw": 52
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 610
+					},
+					"id": 3355,
+					"p": 0.991855,
+					"t_dtw": 52
+				},
+				{
+					"text": " man",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 750
+					},
+					"id": 587,
+					"p": 0.978105,
+					"t_dtw": 58
+				},
+				{
+					"text": " seine",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:00,990"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 990
+					},
+					"id": 15925,
+					"p": 0.905714,
+					"t_dtw": 78
+				},
+				{
+					"text": " Gedanken",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 1380
+					},
+					"id": 44612,
+					"p": 0.995535,
+					"t_dtw": 108
+				},
+				{
+					"text": " be",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1450
+					},
+					"id": 312,
+					"p": 0.997805,
+					"t_dtw": 126
+				},
+				{
+					"text": "ob",
+					"timestamps": {
+						"from": "00:00:01,470",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1470,
+						"to": 1560
+					},
+					"id": 996,
+					"p": 0.999933,
+					"t_dtw": 138
+				},
+				{
+					"text": "achtet",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,850"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1850
+					},
+					"id": 48833,
+					"p": 0.992901,
+					"t_dtw": 156
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,850",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1850,
+						"to": 2000
+					},
+					"id": 11,
+					"p": 0.941117,
+					"t_dtw": 170
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:02,080",
+						"to": "00:00:02,120"
+					},
+					"offsets": {
+						"from": 2080,
+						"to": 2120
+					},
+					"id": 390,
+					"p": 0.725383,
+					"t_dtw": 176
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:02,120",
+						"to": "00:00:02,240"
+					},
+					"offsets": {
+						"from": 2120,
+						"to": 2240
+					},
+					"id": 978,
+					"p": 0.975967,
+					"t_dtw": 188
+				},
+				{
+					"text": " Gef",
+					"timestamps": {
+						"from": "00:00:02,240",
+						"to": "00:00:02,350"
+					},
+					"offsets": {
+						"from": 2240,
+						"to": 2350
+					},
+					"id": 17873,
+					"p": 0.980735,
+					"t_dtw": 208
+				},
+				{
+					"text": "üh",
+					"timestamps": {
+						"from": "00:00:02,360",
+						"to": "00:00:02,440"
+					},
+					"offsets": {
+						"from": 2360,
+						"to": 2440
+					},
+					"id": 7254,
+					"p": 0.993297,
+					"t_dtw": 216
+				},
+				{
+					"text": "le",
+					"timestamps": {
+						"from": "00:00:02,440",
+						"to": "00:00:02,520"
+					},
+					"offsets": {
+						"from": 2440,
+						"to": 2520
+					},
+					"id": 306,
+					"p": 0.999399,
+					"t_dtw": 224
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:02,520",
+						"to": "00:00:02,680"
+					},
+					"offsets": {
+						"from": 2520,
+						"to": 2680
+					},
+					"id": 3290,
+					"p": 0.991394,
+					"t_dtw": 254
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,680",
+						"to": "00:00:02,800"
+					},
+					"offsets": {
+						"from": 2680,
+						"to": 2800
+					},
+					"id": 11,
+					"p": 0.984804,
+					"t_dtw": 272
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:02,800",
+						"to": "00:00:03,140"
+					},
+					"offsets": {
+						"from": 2800,
+						"to": 3140
+					},
+					"id": 390,
+					"p": 0.859554,
+					"t_dtw": 278
+				},
+				{
+					"text": " sie",
+					"timestamps": {
+						"from": "00:00:03,140",
+						"to": "00:00:03,410"
+					},
+					"offsets": {
+						"from": 3140,
+						"to": 3410
+					},
+					"id": 2804,
+					"p": 0.953841,
+					"t_dtw": 290
+				},
+				{
+					"text": " sagen",
+					"timestamps": {
+						"from": "00:00:03,490",
+						"to": "00:00:03,780"
+					},
+					"offsets": {
+						"from": 3490,
+						"to": 3780
+					},
+					"id": 8360,
+					"p": 0.986978,
+					"t_dtw": 328
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:04,070",
+						"to": "00:00:04,070"
+					},
+					"offsets": {
+						"from": 4070,
+						"to": 4070
+					},
+					"id": 674,
+					"p": 0.715479,
+					"t_dtw": 376
+				},
+				{
+					"text": "[_TT_204]",
+					"timestamps": {
+						"from": "00:00:04,080",
+						"to": "00:00:04,080"
+					},
+					"offsets": {
+						"from": 4080,
+						"to": 4080
+					},
+					"id": 50569,
+					"p": 0.418219,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

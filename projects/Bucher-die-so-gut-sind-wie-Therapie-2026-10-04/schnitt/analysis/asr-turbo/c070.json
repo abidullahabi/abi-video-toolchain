@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,540"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2540
+			},
+			"text": " Es ist jetzt kein Fachbuch,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.608596,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 120
+					},
+					"id": 2313,
+					"p": 0.938999,
+					"t_dtw": 24
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 300
+					},
+					"id": 1418,
+					"p": 0.999123,
+					"t_dtw": 36
+				},
+				{
+					"text": " jetzt",
+					"timestamps": {
+						"from": "00:00:00,350",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 350,
+						"to": 610
+					},
+					"id": 4354,
+					"p": 0.98338,
+					"t_dtw": 48
+				},
+				{
+					"text": " kein",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 880
+					},
+					"id": 13424,
+					"p": 0.993798,
+					"t_dtw": 78
+				},
+				{
+					"text": " Fach",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:01,710"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 1710
+					},
+					"id": 38213,
+					"p": 0.739564,
+					"t_dtw": 184
+				},
+				{
+					"text": "buch",
+					"timestamps": {
+						"from": "00:00:01,710",
+						"to": "00:00:02,290"
+					},
+					"offsets": {
+						"from": 1710,
+						"to": 2290
+					},
+					"id": 39742,
+					"p": 0.998195,
+					"t_dtw": 216
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,500",
+						"to": "00:00:02,530"
+					},
+					"offsets": {
+						"from": 2500,
+						"to": 2530
+					},
+					"id": 11,
+					"p": 0.348137,
+					"t_dtw": 236
+				},
+				{
+					"text": "[_TT_127]",
+					"timestamps": {
+						"from": "00:00:02,540",
+						"to": "00:00:02,540"
+					},
+					"offsets": {
+						"from": 2540,
+						"to": 2540
+					},
+					"id": 50492,
+					"p": 0.166403,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

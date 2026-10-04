@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,400"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1400
+			},
+			"text": " Und macht du so 'ne Krank?",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997092,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 180
+					},
+					"id": 2719,
+					"p": 0.932103,
+					"t_dtw": 24
+				},
+				{
+					"text": " macht",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 480
+					},
+					"id": 10857,
+					"p": 0.700761,
+					"t_dtw": 52
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,590"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 590
+					},
+					"id": 1581,
+					"p": 0.751759,
+					"t_dtw": 64
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 720
+					},
+					"id": 370,
+					"p": 0.695998,
+					"t_dtw": 76
+				},
+				{
+					"text": " '",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 780
+					},
+					"id": 922,
+					"p": 0.269696,
+					"t_dtw": 82
+				},
+				{
+					"text": "ne",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 900
+					},
+					"id": 716,
+					"p": 0.490008,
+					"t_dtw": 88
+				},
+				{
+					"text": " Krank",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 1190
+					},
+					"id": 48896,
+					"p": 0.673395,
+					"t_dtw": 112
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:01,190",
+						"to": "00:00:01,290"
+					},
+					"offsets": {
+						"from": 1190,
+						"to": 1290
+					},
+					"id": 30,
+					"p": 0.773477,
+					"t_dtw": 138
+				},
+				{
+					"text": "[_TT_70]",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1400
+					},
+					"id": 50434,
+					"p": 0.0692481,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

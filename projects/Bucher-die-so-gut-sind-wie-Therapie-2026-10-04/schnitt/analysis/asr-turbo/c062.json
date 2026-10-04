@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,940"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1940
+			},
+			"text": " Ähm, the myth of being normal.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.791339,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ä",
+					"timestamps": {
+						"from": "00:00:00,070",
+						"to": "00:00:00,070"
+					},
+					"offsets": {
+						"from": 70,
+						"to": 70
+					},
+					"id": 13700,
+					"p": 0.568424,
+					"t_dtw": 22
+				},
+				{
+					"text": "hm",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 220
+					},
+					"id": 8587,
+					"p": 0.318784,
+					"t_dtw": 32
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 370
+					},
+					"id": 11,
+					"p": 0.927756,
+					"t_dtw": 50
+				},
+				{
+					"text": " the",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 600
+					},
+					"id": 264,
+					"p": 0.362573,
+					"t_dtw": 60
+				},
+				{
+					"text": " myth",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,790"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 790
+					},
+					"id": 9474,
+					"p": 0.942797,
+					"t_dtw": 84
+				},
+				{
+					"text": " of",
+					"timestamps": {
+						"from": "00:00:00,920",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 920,
+						"to": 1060
+					},
+					"id": 295,
+					"p": 0.99135,
+					"t_dtw": 102
+				},
+				{
+					"text": " being",
+					"timestamps": {
+						"from": "00:00:01,110",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1110,
+						"to": 1440
+					},
+					"id": 885,
+					"p": 0.985065,
+					"t_dtw": 126
+				},
+				{
+					"text": " normal",
+					"timestamps": {
+						"from": "00:00:01,440",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1440,
+						"to": 1680
+					},
+					"id": 2710,
+					"p": 0.9656,
+					"t_dtw": 164
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,930",
+						"to": "00:00:01,930"
+					},
+					"offsets": {
+						"from": 1930,
+						"to": 1930
+					},
+					"id": 13,
+					"p": 0.899308,
+					"t_dtw": 186
+				},
+				{
+					"text": "[_TT_97]",
+					"timestamps": {
+						"from": "00:00:01,940",
+						"to": "00:00:01,940"
+					},
+					"offsets": {
+						"from": 1940,
+						"to": 1940
+					},
+					"id": 50462,
+					"p": 0.70763,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

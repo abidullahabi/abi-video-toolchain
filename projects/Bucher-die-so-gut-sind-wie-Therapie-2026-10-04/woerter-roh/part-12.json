@@ -1,0 +1,826 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,520"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1520
+			},
+			"text": " The Myth of Being Normal.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.967829,
+					"t_dtw": -1
+				},
+				{
+					"text": " The",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 220
+					},
+					"id": 440,
+					"p": 0.664694,
+					"t_dtw": 48
+				},
+				{
+					"text": " Myth",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 520
+					},
+					"id": 26371,
+					"p": 0.915407,
+					"t_dtw": 68
+				},
+				{
+					"text": " of",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,640"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 640
+					},
+					"id": 295,
+					"p": 0.942935,
+					"t_dtw": 88
+				},
+				{
+					"text": " Being",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:01,040"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 1040
+					},
+					"id": 8891,
+					"p": 0.894225,
+					"t_dtw": 112
+				},
+				{
+					"text": " Normal",
+					"timestamps": {
+						"from": "00:00:01,040",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1040,
+						"to": 1460
+					},
+					"id": 21277,
+					"p": 0.993629,
+					"t_dtw": 146
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,510",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1510,
+						"to": 1520
+					},
+					"id": 13,
+					"p": 0.909009,
+					"t_dtw": 180
+				},
+				{
+					"text": "[_TT_76]",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1520
+					},
+					"id": 50441,
+					"p": 0.153952,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,220",
+				"to": "00:00:07,880"
+			},
+			"offsets": {
+				"from": 5220,
+				"to": 7880
+			},
+			"text": " Er sagt, vieles, was wir normal nennen, ist nicht wirklich normal.",
+			"tokens": [
+				{
+					"text": " Er",
+					"timestamps": {
+						"from": "00:00:05,220",
+						"to": "00:00:05,220"
+					},
+					"offsets": {
+						"from": 5220,
+						"to": 5220
+					},
+					"id": 3300,
+					"p": 0.999083,
+					"t_dtw": 566
+				},
+				{
+					"text": " sagt",
+					"timestamps": {
+						"from": "00:00:05,220",
+						"to": "00:00:05,220"
+					},
+					"offsets": {
+						"from": 5220,
+						"to": 5220
+					},
+					"id": 15764,
+					"p": 0.99931,
+					"t_dtw": 584
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:05,220",
+						"to": "00:00:05,220"
+					},
+					"offsets": {
+						"from": 5220,
+						"to": 5220
+					},
+					"id": 11,
+					"p": 0.94255,
+					"t_dtw": 592
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:05,220",
+						"to": "00:00:05,220"
+					},
+					"offsets": {
+						"from": 5220,
+						"to": 5220
+					},
+					"id": 5891,
+					"p": 0.987437,
+					"t_dtw": 604
+				},
+				{
+					"text": "es",
+					"timestamps": {
+						"from": "00:00:05,220",
+						"to": "00:00:05,220"
+					},
+					"offsets": {
+						"from": 5220,
+						"to": 5220
+					},
+					"id": 279,
+					"p": 0.998639,
+					"t_dtw": 612
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:05,220",
+						"to": "00:00:05,220"
+					},
+					"offsets": {
+						"from": 5220,
+						"to": 5220
+					},
+					"id": 11,
+					"p": 0.892671,
+					"t_dtw": 616
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:05,220",
+						"to": "00:00:05,220"
+					},
+					"offsets": {
+						"from": 5220,
+						"to": 5220
+					},
+					"id": 390,
+					"p": 0.99867,
+					"t_dtw": 620
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:05,220",
+						"to": "00:00:05,220"
+					},
+					"offsets": {
+						"from": 5220,
+						"to": 5220
+					},
+					"id": 1987,
+					"p": 0.983637,
+					"t_dtw": 630
+				},
+				{
+					"text": " normal",
+					"timestamps": {
+						"from": "00:00:05,220",
+						"to": "00:00:05,220"
+					},
+					"offsets": {
+						"from": 5220,
+						"to": 5220
+					},
+					"id": 2710,
+					"p": 0.697184,
+					"t_dtw": 658
+				},
+				{
+					"text": " n",
+					"timestamps": {
+						"from": "00:00:05,220",
+						"to": "00:00:05,220"
+					},
+					"offsets": {
+						"from": 5220,
+						"to": 5220
+					},
+					"id": 297,
+					"p": 0.901168,
+					"t_dtw": 676
+				},
+				{
+					"text": "ennen",
+					"timestamps": {
+						"from": "00:00:05,220",
+						"to": "00:00:05,220"
+					},
+					"offsets": {
+						"from": 5220,
+						"to": 5220
+					},
+					"id": 16043,
+					"p": 0.999636,
+					"t_dtw": 684
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:05,220",
+						"to": "00:00:05,220"
+					},
+					"offsets": {
+						"from": 5220,
+						"to": 5220
+					},
+					"id": 11,
+					"p": 0.999733,
+					"t_dtw": 696
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:05,220",
+						"to": "00:00:05,510"
+					},
+					"offsets": {
+						"from": 5220,
+						"to": 5510
+					},
+					"id": 1418,
+					"p": 0.999887,
+					"t_dtw": 716
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:05,510",
+						"to": "00:00:06,030"
+					},
+					"offsets": {
+						"from": 5510,
+						"to": 6030
+					},
+					"id": 1979,
+					"p": 0.999905,
+					"t_dtw": 730
+				},
+				{
+					"text": " wirklich",
+					"timestamps": {
+						"from": "00:00:06,030",
+						"to": "00:00:06,750"
+					},
+					"offsets": {
+						"from": 6030,
+						"to": 6750
+					},
+					"id": 9696,
+					"p": 0.999874,
+					"t_dtw": 750
+				},
+				{
+					"text": " normal",
+					"timestamps": {
+						"from": "00:00:06,750",
+						"to": "00:00:07,480"
+					},
+					"offsets": {
+						"from": 6750,
+						"to": 7480
+					},
+					"id": 2710,
+					"p": 0.999558,
+					"t_dtw": 784
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:07,480",
+						"to": "00:00:07,870"
+					},
+					"offsets": {
+						"from": 7480,
+						"to": 7870
+					},
+					"id": 13,
+					"p": 0.985436,
+					"t_dtw": 848
+				},
+				{
+					"text": "[_TT_394]",
+					"timestamps": {
+						"from": "00:00:07,880",
+						"to": "00:00:07,880"
+					},
+					"offsets": {
+						"from": 7880,
+						"to": 7880
+					},
+					"id": 50759,
+					"p": 0.375793,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,360",
+				"to": "00:00:13,760"
+			},
+			"offsets": {
+				"from": 12360,
+				"to": 13760
+			},
+			"text": " Und macht den Songer krank.",
+			"tokens": [
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:12,360",
+						"to": "00:00:12,360"
+					},
+					"offsets": {
+						"from": 12360,
+						"to": 12360
+					},
+					"id": 2719,
+					"p": 0.998862,
+					"t_dtw": 1278
+				},
+				{
+					"text": " macht",
+					"timestamps": {
+						"from": "00:00:12,360",
+						"to": "00:00:12,360"
+					},
+					"offsets": {
+						"from": 12360,
+						"to": 12360
+					},
+					"id": 10857,
+					"p": 0.936664,
+					"t_dtw": 1300
+				},
+				{
+					"text": " den",
+					"timestamps": {
+						"from": "00:00:12,360",
+						"to": "00:00:12,360"
+					},
+					"offsets": {
+						"from": 12360,
+						"to": 12360
+					},
+					"id": 1441,
+					"p": 0.209214,
+					"t_dtw": 1312
+				},
+				{
+					"text": " Song",
+					"timestamps": {
+						"from": "00:00:12,360",
+						"to": "00:00:12,360"
+					},
+					"offsets": {
+						"from": 12360,
+						"to": 12360
+					},
+					"id": 11862,
+					"p": 0.814511,
+					"t_dtw": 1330
+				},
+				{
+					"text": "er",
+					"timestamps": {
+						"from": "00:00:12,360",
+						"to": "00:00:12,360"
+					},
+					"offsets": {
+						"from": 12360,
+						"to": 12360
+					},
+					"id": 260,
+					"p": 0.459439,
+					"t_dtw": 1338
+				},
+				{
+					"text": " kr",
+					"timestamps": {
+						"from": "00:00:12,360",
+						"to": "00:00:12,360"
+					},
+					"offsets": {
+						"from": 12360,
+						"to": 12360
+					},
+					"id": 15913,
+					"p": 0.999176,
+					"t_dtw": 1356
+				},
+				{
+					"text": "ank",
+					"timestamps": {
+						"from": "00:00:12,360",
+						"to": "00:00:13,000"
+					},
+					"offsets": {
+						"from": 12360,
+						"to": 13000
+					},
+					"id": 657,
+					"p": 0.999697,
+					"t_dtw": 1374
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:13,140",
+						"to": "00:00:13,750"
+					},
+					"offsets": {
+						"from": 13140,
+						"to": 13750
+					},
+					"id": 13,
+					"p": 0.866723,
+					"t_dtw": 1474
+				},
+				{
+					"text": "[_TT_688]",
+					"timestamps": {
+						"from": "00:00:13,760",
+						"to": "00:00:13,760"
+					},
+					"offsets": {
+						"from": 13760,
+						"to": 13760
+					},
+					"id": 51053,
+					"p": 0.484178,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,300",
+				"to": "00:00:24,000"
+			},
+			"offsets": {
+				"from": 20300,
+				"to": 24000
+			},
+			"text": " Er zeigt, wie Stress, Trauma und Krankheit so miteinander zusammenhängen.",
+			"tokens": [
+				{
+					"text": " Er",
+					"timestamps": {
+						"from": "00:00:20,300",
+						"to": "00:00:20,300"
+					},
+					"offsets": {
+						"from": 20300,
+						"to": 20300
+					},
+					"id": 3300,
+					"p": 0.999081,
+					"t_dtw": 2072
+				},
+				{
+					"text": " zeigt",
+					"timestamps": {
+						"from": "00:00:20,300",
+						"to": "00:00:20,300"
+					},
+					"offsets": {
+						"from": 20300,
+						"to": 20300
+					},
+					"id": 29250,
+					"p": 0.999443,
+					"t_dtw": 2096
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:20,300",
+						"to": "00:00:20,300"
+					},
+					"offsets": {
+						"from": 20300,
+						"to": 20300
+					},
+					"id": 11,
+					"p": 0.999033,
+					"t_dtw": 2104
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:20,300",
+						"to": "00:00:20,300"
+					},
+					"offsets": {
+						"from": 20300,
+						"to": 20300
+					},
+					"id": 3355,
+					"p": 0.999907,
+					"t_dtw": 2110
+				},
+				{
+					"text": " Stress",
+					"timestamps": {
+						"from": "00:00:20,300",
+						"to": "00:00:20,300"
+					},
+					"offsets": {
+						"from": 20300,
+						"to": 20300
+					},
+					"id": 38258,
+					"p": 0.999575,
+					"t_dtw": 2138
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:20,300",
+						"to": "00:00:20,300"
+					},
+					"offsets": {
+						"from": 20300,
+						"to": 20300
+					},
+					"id": 11,
+					"p": 0.999914,
+					"t_dtw": 2164
+				},
+				{
+					"text": " Tra",
+					"timestamps": {
+						"from": "00:00:20,300",
+						"to": "00:00:20,300"
+					},
+					"offsets": {
+						"from": 20300,
+						"to": 20300
+					},
+					"id": 5403,
+					"p": 0.998822,
+					"t_dtw": 2178
+				},
+				{
+					"text": "uma",
+					"timestamps": {
+						"from": "00:00:20,300",
+						"to": "00:00:20,300"
+					},
+					"offsets": {
+						"from": 20300,
+						"to": 20300
+					},
+					"id": 5544,
+					"p": 0.999296,
+					"t_dtw": 2200
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:20,300",
+						"to": "00:00:20,300"
+					},
+					"offsets": {
+						"from": 20300,
+						"to": 20300
+					},
+					"id": 674,
+					"p": 0.999784,
+					"t_dtw": 2216
+				},
+				{
+					"text": " Krank",
+					"timestamps": {
+						"from": "00:00:20,300",
+						"to": "00:00:20,300"
+					},
+					"offsets": {
+						"from": 20300,
+						"to": 20300
+					},
+					"id": 48896,
+					"p": 0.999844,
+					"t_dtw": 2236
+				},
+				{
+					"text": "heit",
+					"timestamps": {
+						"from": "00:00:20,300",
+						"to": "00:00:20,300"
+					},
+					"offsets": {
+						"from": 20300,
+						"to": 20300
+					},
+					"id": 8480,
+					"p": 0.969309,
+					"t_dtw": 2266
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:20,300",
+						"to": "00:00:20,300"
+					},
+					"offsets": {
+						"from": 20300,
+						"to": 20300
+					},
+					"id": 370,
+					"p": 0.917576,
+					"t_dtw": 2290
+				},
+				{
+					"text": " miteinander",
+					"timestamps": {
+						"from": "00:00:20,300",
+						"to": "00:00:21,410"
+					},
+					"offsets": {
+						"from": 20300,
+						"to": 21410
+					},
+					"id": 43127,
+					"p": 0.997676,
+					"t_dtw": 2318
+				},
+				{
+					"text": " zusammen",
+					"timestamps": {
+						"from": "00:00:21,410",
+						"to": "00:00:21,830"
+					},
+					"offsets": {
+						"from": 21410,
+						"to": 21830
+					},
+					"id": 14311,
+					"p": 0.998114,
+					"t_dtw": 2354
+				},
+				{
+					"text": "häng",
+					"timestamps": {
+						"from": "00:00:22,570",
+						"to": "00:00:23,210"
+					},
+					"offsets": {
+						"from": 22570,
+						"to": 23210
+					},
+					"id": 34591,
+					"p": 0.99336,
+					"t_dtw": 2374
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:23,210",
+						"to": "00:00:23,510"
+					},
+					"offsets": {
+						"from": 23210,
+						"to": 23510
+					},
+					"id": 268,
+					"p": 0.999712,
+					"t_dtw": 2390
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:23,510",
+						"to": "00:00:24,000"
+					},
+					"offsets": {
+						"from": 23510,
+						"to": 24000
+					},
+					"id": 13,
+					"p": 0.988384,
+					"t_dtw": 2396
+				},
+				{
+					"text": "[_TT_1200]",
+					"timestamps": {
+						"from": "00:00:24,000",
+						"to": "00:00:24,000"
+					},
+					"offsets": {
+						"from": 24000,
+						"to": 24000
+					},
+					"id": 51565,
+					"p": 0.995437,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,562 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,180"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3180
+			},
+			"text": " Das war ein sehr angenehmes Buch zum Lesen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.978116,
+					"t_dtw": -1
+				},
+				{
+					"text": " Das",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 270
+					},
+					"id": 2846,
+					"p": 0.84164,
+					"t_dtw": 24
+				},
+				{
+					"text": " war",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 540
+					},
+					"id": 1516,
+					"p": 0.98987,
+					"t_dtw": 46
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 810
+					},
+					"id": 1343,
+					"p": 0.987707,
+					"t_dtw": 90
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:01,170"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 1170
+					},
+					"id": 5499,
+					"p": 0.970936,
+					"t_dtw": 132
+				},
+				{
+					"text": " ang",
+					"timestamps": {
+						"from": "00:00:01,170",
+						"to": "00:00:01,430"
+					},
+					"offsets": {
+						"from": 1170,
+						"to": 1430
+					},
+					"id": 2562,
+					"p": 0.991771,
+					"t_dtw": 176
+				},
+				{
+					"text": "ene",
+					"timestamps": {
+						"from": "00:00:01,440",
+						"to": "00:00:01,710"
+					},
+					"offsets": {
+						"from": 1440,
+						"to": 1710
+					},
+					"id": 1450,
+					"p": 0.997586,
+					"t_dtw": 188
+				},
+				{
+					"text": "h",
+					"timestamps": {
+						"from": "00:00:01,710",
+						"to": "00:00:01,800"
+					},
+					"offsets": {
+						"from": 1710,
+						"to": 1800
+					},
+					"id": 71,
+					"p": 0.950925,
+					"t_dtw": 194
+				},
+				{
+					"text": "mes",
+					"timestamps": {
+						"from": "00:00:01,800",
+						"to": "00:00:02,070"
+					},
+					"offsets": {
+						"from": 1800,
+						"to": 2070
+					},
+					"id": 5814,
+					"p": 0.95711,
+					"t_dtw": 216
+				},
+				{
+					"text": " Buch",
+					"timestamps": {
+						"from": "00:00:02,070",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 2070,
+						"to": 2180
+					},
+					"id": 25818,
+					"p": 0.976192,
+					"t_dtw": 254
+				},
+				{
+					"text": " zum",
+					"timestamps": {
+						"from": "00:00:02,430",
+						"to": "00:00:02,700"
+					},
+					"offsets": {
+						"from": 2430,
+						"to": 2700
+					},
+					"id": 5919,
+					"p": 0.8481,
+					"t_dtw": 274
+				},
+				{
+					"text": " Les",
+					"timestamps": {
+						"from": "00:00:02,700",
+						"to": "00:00:02,970"
+					},
+					"offsets": {
+						"from": 2700,
+						"to": 2970
+					},
+					"id": 6965,
+					"p": 0.964069,
+					"t_dtw": 290
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:02,970",
+						"to": "00:00:03,070"
+					},
+					"offsets": {
+						"from": 2970,
+						"to": 3070
+					},
+					"id": 268,
+					"p": 0.999954,
+					"t_dtw": 304
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,160",
+						"to": "00:00:03,170"
+					},
+					"offsets": {
+						"from": 3160,
+						"to": 3170
+					},
+					"id": 13,
+					"p": 0.84749,
+					"t_dtw": 330
+				},
+				{
+					"text": "[_TT_159]",
+					"timestamps": {
+						"from": "00:00:03,180",
+						"to": "00:00:03,180"
+					},
+					"offsets": {
+						"from": 3180,
+						"to": 3180
+					},
+					"id": 50523,
+					"p": 0.0380514,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,180",
+				"to": "00:00:06,520"
+			},
+			"offsets": {
+				"from": 3180,
+				"to": 6520
+			},
+			"text": " Ich habe das glaube ich in Einzug lesen, dauert glaube ich 3 bis 5 Stunden.",
+			"tokens": [
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:03,320",
+						"to": "00:00:03,320"
+					},
+					"offsets": {
+						"from": 3320,
+						"to": 3320
+					},
+					"id": 3141,
+					"p": 0.993276,
+					"t_dtw": 340
+				},
+				{
+					"text": " habe",
+					"timestamps": {
+						"from": "00:00:03,330",
+						"to": "00:00:03,500"
+					},
+					"offsets": {
+						"from": 3330,
+						"to": 3500
+					},
+					"id": 6015,
+					"p": 0.660394,
+					"t_dtw": 348
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:03,530",
+						"to": "00:00:03,640"
+					},
+					"offsets": {
+						"from": 3530,
+						"to": 3640
+					},
+					"id": 1482,
+					"p": 0.845641,
+					"t_dtw": 360
+				},
+				{
+					"text": " glaube",
+					"timestamps": {
+						"from": "00:00:03,640",
+						"to": "00:00:03,920"
+					},
+					"offsets": {
+						"from": 3640,
+						"to": 3920
+					},
+					"id": 13756,
+					"p": 0.624089,
+					"t_dtw": 370
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:03,920",
+						"to": "00:00:04,060"
+					},
+					"offsets": {
+						"from": 3920,
+						"to": 4060
+					},
+					"id": 1893,
+					"p": 0.996818,
+					"t_dtw": 380
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:04,060",
+						"to": "00:00:04,090"
+					},
+					"offsets": {
+						"from": 4060,
+						"to": 4090
+					},
+					"id": 294,
+					"p": 0.604954,
+					"t_dtw": 388
+				},
+				{
+					"text": " Ein",
+					"timestamps": {
+						"from": "00:00:04,210",
+						"to": "00:00:04,290"
+					},
+					"offsets": {
+						"from": 4210,
+						"to": 4290
+					},
+					"id": 6391,
+					"p": 0.560467,
+					"t_dtw": 404
+				},
+				{
+					"text": "zug",
+					"timestamps": {
+						"from": "00:00:04,290",
+						"to": "00:00:04,430"
+					},
+					"offsets": {
+						"from": 4290,
+						"to": 4430
+					},
+					"id": 29742,
+					"p": 0.997763,
+					"t_dtw": 418
+				},
+				{
+					"text": " les",
+					"timestamps": {
+						"from": "00:00:04,430",
+						"to": "00:00:04,570"
+					},
+					"offsets": {
+						"from": 4430,
+						"to": 4570
+					},
+					"id": 1512,
+					"p": 0.456273,
+					"t_dtw": 444
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:04,570",
+						"to": "00:00:04,620"
+					},
+					"offsets": {
+						"from": 4570,
+						"to": 4620
+					},
+					"id": 268,
+					"p": 0.999825,
+					"t_dtw": 460
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:04,710",
+						"to": "00:00:04,790"
+					},
+					"offsets": {
+						"from": 4710,
+						"to": 4790
+					},
+					"id": 11,
+					"p": 0.516399,
+					"t_dtw": 476
+				},
+				{
+					"text": " dau",
+					"timestamps": {
+						"from": "00:00:04,790",
+						"to": "00:00:04,950"
+					},
+					"offsets": {
+						"from": 4790,
+						"to": 4950
+					},
+					"id": 37359,
+					"p": 0.489024,
+					"t_dtw": 494
+				},
+				{
+					"text": "ert",
+					"timestamps": {
+						"from": "00:00:04,950",
+						"to": "00:00:05,110"
+					},
+					"offsets": {
+						"from": 4950,
+						"to": 5110
+					},
+					"id": 911,
+					"p": 0.997992,
+					"t_dtw": 506
+				},
+				{
+					"text": " glaube",
+					"timestamps": {
+						"from": "00:00:05,110",
+						"to": "00:00:05,350"
+					},
+					"offsets": {
+						"from": 5110,
+						"to": 5350
+					},
+					"id": 13756,
+					"p": 0.752417,
+					"t_dtw": 516
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:05,600",
+						"to": "00:00:05,600"
+					},
+					"offsets": {
+						"from": 5600,
+						"to": 5600
+					},
+					"id": 1893,
+					"p": 0.983886,
+					"t_dtw": 530
+				},
+				{
+					"text": " 3",
+					"timestamps": {
+						"from": "00:00:05,610",
+						"to": "00:00:05,760"
+					},
+					"offsets": {
+						"from": 5610,
+						"to": 5760
+					},
+					"id": 805,
+					"p": 0.614279,
+					"t_dtw": 552
+				},
+				{
+					"text": " bis",
+					"timestamps": {
+						"from": "00:00:05,880",
+						"to": "00:00:05,920"
+					},
+					"offsets": {
+						"from": 5880,
+						"to": 5920
+					},
+					"id": 7393,
+					"p": 0.44743,
+					"t_dtw": 568
+				},
+				{
+					"text": " 5",
+					"timestamps": {
+						"from": "00:00:05,920",
+						"to": "00:00:06,080"
+					},
+					"offsets": {
+						"from": 5920,
+						"to": 6080
+					},
+					"id": 1025,
+					"p": 0.991183,
+					"t_dtw": 594
+				},
+				{
+					"text": " Stunden",
+					"timestamps": {
+						"from": "00:00:06,080",
+						"to": "00:00:06,520"
+					},
+					"offsets": {
+						"from": 6080,
+						"to": 6520
+					},
+					"id": 30496,
+					"p": 0.98682,
+					"t_dtw": 618
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:06,520",
+						"to": "00:00:06,520"
+					},
+					"offsets": {
+						"from": 6520,
+						"to": 6520
+					},
+					"id": 13,
+					"p": 0.880935,
+					"t_dtw": 644
+				},
+				{
+					"text": "[_TT_326]",
+					"timestamps": {
+						"from": "00:00:06,520",
+						"to": "00:00:06,520"
+					},
+					"offsets": {
+						"from": 6520,
+						"to": 6520
+					},
+					"id": 50690,
+					"p": 0.0954786,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

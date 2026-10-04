@@ -1,0 +1,702 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,160"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4160
+			},
+			"text": " Der redet um nicht nur Liebe, sondern generell Beziehungen, Beziehungen zu sich selbst.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.967985,
+					"t_dtw": -1
+				},
+				{
+					"text": " Der",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 180
+					},
+					"id": 5618,
+					"p": 0.490407,
+					"t_dtw": 24
+				},
+				{
+					"text": " red",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 360
+					},
+					"id": 2182,
+					"p": 0.664065,
+					"t_dtw": 34
+				},
+				{
+					"text": "et",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 480
+					},
+					"id": 302,
+					"p": 0.99771,
+					"t_dtw": 52
+				},
+				{
+					"text": " um",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 600
+					},
+					"id": 1105,
+					"p": 0.59452,
+					"t_dtw": 76
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,820"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 820
+					},
+					"id": 1979,
+					"p": 0.708275,
+					"t_dtw": 104
+				},
+				{
+					"text": " nur",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:01,070"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 1070
+					},
+					"id": 4343,
+					"p": 0.986666,
+					"t_dtw": 116
+				},
+				{
+					"text": " Liebe",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1340
+					},
+					"id": 28790,
+					"p": 0.986233,
+					"t_dtw": 138
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1520
+					},
+					"id": 11,
+					"p": 0.9194,
+					"t_dtw": 154
+				},
+				{
+					"text": " sondern",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1740
+					},
+					"id": 11465,
+					"p": 0.953984,
+					"t_dtw": 158
+				},
+				{
+					"text": " genere",
+					"timestamps": {
+						"from": "00:00:01,740",
+						"to": "00:00:01,930"
+					},
+					"offsets": {
+						"from": 1740,
+						"to": 1930
+					},
+					"id": 41553,
+					"p": 0.878425,
+					"t_dtw": 184
+				},
+				{
+					"text": "ll",
+					"timestamps": {
+						"from": "00:00:01,930",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1930,
+						"to": 2000
+					},
+					"id": 285,
+					"p": 0.99059,
+					"t_dtw": 198
+				},
+				{
+					"text": " Be",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,140"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2140
+					},
+					"id": 879,
+					"p": 0.781985,
+					"t_dtw": 222
+				},
+				{
+					"text": "zieh",
+					"timestamps": {
+						"from": "00:00:02,140",
+						"to": "00:00:02,430"
+					},
+					"offsets": {
+						"from": 2140,
+						"to": 2430
+					},
+					"id": 28213,
+					"p": 0.998757,
+					"t_dtw": 236
+				},
+				{
+					"text": "ungen",
+					"timestamps": {
+						"from": "00:00:02,430",
+						"to": "00:00:02,750"
+					},
+					"offsets": {
+						"from": 2430,
+						"to": 2750
+					},
+					"id": 5084,
+					"p": 0.339669,
+					"t_dtw": 270
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,790",
+						"to": "00:00:02,820"
+					},
+					"offsets": {
+						"from": 2790,
+						"to": 2820
+					},
+					"id": 11,
+					"p": 0.424803,
+					"t_dtw": 288
+				},
+				{
+					"text": " Be",
+					"timestamps": {
+						"from": "00:00:02,920",
+						"to": "00:00:02,980"
+					},
+					"offsets": {
+						"from": 2920,
+						"to": 2980
+					},
+					"id": 879,
+					"p": 0.399294,
+					"t_dtw": 310
+				},
+				{
+					"text": "zieh",
+					"timestamps": {
+						"from": "00:00:02,980",
+						"to": "00:00:03,130"
+					},
+					"offsets": {
+						"from": 2980,
+						"to": 3130
+					},
+					"id": 28213,
+					"p": 0.955587,
+					"t_dtw": 320
+				},
+				{
+					"text": "ungen",
+					"timestamps": {
+						"from": "00:00:03,170",
+						"to": "00:00:03,410"
+					},
+					"offsets": {
+						"from": 3170,
+						"to": 3410
+					},
+					"id": 5084,
+					"p": 0.667035,
+					"t_dtw": 332
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:03,410",
+						"to": "00:00:03,500"
+					},
+					"offsets": {
+						"from": 3410,
+						"to": 3500
+					},
+					"id": 2164,
+					"p": 0.964743,
+					"t_dtw": 342
+				},
+				{
+					"text": " sich",
+					"timestamps": {
+						"from": "00:00:03,500",
+						"to": "00:00:03,690"
+					},
+					"offsets": {
+						"from": 3500,
+						"to": 3690
+					},
+					"id": 3041,
+					"p": 0.753642,
+					"t_dtw": 356
+				},
+				{
+					"text": " selbst",
+					"timestamps": {
+						"from": "00:00:03,690",
+						"to": "00:00:03,910"
+					},
+					"offsets": {
+						"from": 3690,
+						"to": 3910
+					},
+					"id": 13053,
+					"p": 0.98105,
+					"t_dtw": 398
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,910",
+						"to": "00:00:04,120"
+					},
+					"offsets": {
+						"from": 3910,
+						"to": 4120
+					},
+					"id": 13,
+					"p": 0.641073,
+					"t_dtw": 438
+				},
+				{
+					"text": "[_TT_208]",
+					"timestamps": {
+						"from": "00:00:04,160",
+						"to": "00:00:04,160"
+					},
+					"offsets": {
+						"from": 4160,
+						"to": 4160
+					},
+					"id": 50572,
+					"p": 0.0640223,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,160",
+				"to": "00:00:07,840"
+			},
+			"offsets": {
+				"from": 4160,
+				"to": 7840
+			},
+			"text": " Und was das Gegenteil von Liebe ist, wo die meisten davon ausgeben, das ist Liebe.",
+			"tokens": [
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:04,300",
+						"to": "00:00:04,300"
+					},
+					"offsets": {
+						"from": 4300,
+						"to": 4300
+					},
+					"id": 2719,
+					"p": 0.46798,
+					"t_dtw": 440
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:04,310",
+						"to": "00:00:04,440"
+					},
+					"offsets": {
+						"from": 4310,
+						"to": 4440
+					},
+					"id": 390,
+					"p": 0.978922,
+					"t_dtw": 456
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:04,440",
+						"to": "00:00:04,580"
+					},
+					"offsets": {
+						"from": 4440,
+						"to": 4580
+					},
+					"id": 1482,
+					"p": 0.981504,
+					"t_dtw": 474
+				},
+				{
+					"text": " Geg",
+					"timestamps": {
+						"from": "00:00:04,580",
+						"to": "00:00:04,630"
+					},
+					"offsets": {
+						"from": 4580,
+						"to": 4630
+					},
+					"id": 27826,
+					"p": 0.967028,
+					"t_dtw": 494
+				},
+				{
+					"text": "ente",
+					"timestamps": {
+						"from": "00:00:04,720",
+						"to": "00:00:04,910"
+					},
+					"offsets": {
+						"from": 4720,
+						"to": 4910
+					},
+					"id": 1576,
+					"p": 0.720252,
+					"t_dtw": 504
+				},
+				{
+					"text": "il",
+					"timestamps": {
+						"from": "00:00:04,910",
+						"to": "00:00:04,990"
+					},
+					"offsets": {
+						"from": 4910,
+						"to": 4990
+					},
+					"id": 388,
+					"p": 0.99677,
+					"t_dtw": 516
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:05,000",
+						"to": "00:00:05,140"
+					},
+					"offsets": {
+						"from": 5000,
+						"to": 5140
+					},
+					"id": 2957,
+					"p": 0.652791,
+					"t_dtw": 526
+				},
+				{
+					"text": " Liebe",
+					"timestamps": {
+						"from": "00:00:05,140",
+						"to": "00:00:05,380"
+					},
+					"offsets": {
+						"from": 5140,
+						"to": 5380
+					},
+					"id": 28790,
+					"p": 0.982448,
+					"t_dtw": 544
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:05,380",
+						"to": "00:00:05,500"
+					},
+					"offsets": {
+						"from": 5380,
+						"to": 5500
+					},
+					"id": 1418,
+					"p": 0.995139,
+					"t_dtw": 570
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:05,540",
+						"to": "00:00:05,610"
+					},
+					"offsets": {
+						"from": 5540,
+						"to": 5610
+					},
+					"id": 11,
+					"p": 0.91692,
+					"t_dtw": 578
+				},
+				{
+					"text": " wo",
+					"timestamps": {
+						"from": "00:00:05,610",
+						"to": "00:00:05,700"
+					},
+					"offsets": {
+						"from": 5610,
+						"to": 5700
+					},
+					"id": 6020,
+					"p": 0.812517,
+					"t_dtw": 584
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:05,700",
+						"to": "00:00:05,840"
+					},
+					"offsets": {
+						"from": 5700,
+						"to": 5840
+					},
+					"id": 978,
+					"p": 0.94112,
+					"t_dtw": 600
+				},
+				{
+					"text": " meisten",
+					"timestamps": {
+						"from": "00:00:05,840",
+						"to": "00:00:06,170"
+					},
+					"offsets": {
+						"from": 5840,
+						"to": 6170
+					},
+					"id": 29708,
+					"p": 0.995549,
+					"t_dtw": 626
+				},
+				{
+					"text": " davon",
+					"timestamps": {
+						"from": "00:00:06,170",
+						"to": "00:00:06,340"
+					},
+					"offsets": {
+						"from": 6170,
+						"to": 6340
+					},
+					"id": 18574,
+					"p": 0.998799,
+					"t_dtw": 648
+				},
+				{
+					"text": " aus",
+					"timestamps": {
+						"from": "00:00:06,470",
+						"to": "00:00:06,550"
+					},
+					"offsets": {
+						"from": 6470,
+						"to": 6550
+					},
+					"id": 3437,
+					"p": 0.953808,
+					"t_dtw": 672
+				},
+				{
+					"text": "geben",
+					"timestamps": {
+						"from": "00:00:06,550",
+						"to": "00:00:06,790"
+					},
+					"offsets": {
+						"from": 6550,
+						"to": 6790
+					},
+					"id": 16702,
+					"p": 0.851194,
+					"t_dtw": 688
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:06,790",
+						"to": "00:00:06,920"
+					},
+					"offsets": {
+						"from": 6790,
+						"to": 6920
+					},
+					"id": 11,
+					"p": 0.920369,
+					"t_dtw": 700
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:06,950",
+						"to": "00:00:07,140"
+					},
+					"offsets": {
+						"from": 6950,
+						"to": 7140
+					},
+					"id": 1482,
+					"p": 0.912193,
+					"t_dtw": 708
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:07,140",
+						"to": "00:00:07,300"
+					},
+					"offsets": {
+						"from": 7140,
+						"to": 7300
+					},
+					"id": 1418,
+					"p": 0.997061,
+					"t_dtw": 724
+				},
+				{
+					"text": " Liebe",
+					"timestamps": {
+						"from": "00:00:07,330",
+						"to": "00:00:07,630"
+					},
+					"offsets": {
+						"from": 7330,
+						"to": 7630
+					},
+					"id": 28790,
+					"p": 0.995328,
+					"t_dtw": 748
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:07,630",
+						"to": "00:00:07,840"
+					},
+					"offsets": {
+						"from": 7630,
+						"to": 7840
+					},
+					"id": 13,
+					"p": 0.93166,
+					"t_dtw": 780
+				},
+				{
+					"text": "[_TT_392]",
+					"timestamps": {
+						"from": "00:00:07,840",
+						"to": "00:00:07,840"
+					},
+					"offsets": {
+						"from": 7840,
+						"to": 7840
+					},
+					"id": 50756,
+					"p": 0.0848511,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

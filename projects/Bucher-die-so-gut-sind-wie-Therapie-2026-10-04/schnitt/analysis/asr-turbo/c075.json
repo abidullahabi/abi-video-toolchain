@@ -1,0 +1,451 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:07,500"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 7500
+			},
+			"text": " Der war auf einer Insel und er erzählt so in sehr poetischer Sprache über Liebe, Familie, Freunde, Eigentum.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.945502,
+					"t_dtw": -1
+				},
+				{
+					"text": " Der",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 170
+					},
+					"id": 5618,
+					"p": 0.865187,
+					"t_dtw": 26
+				},
+				{
+					"text": " war",
+					"timestamps": {
+						"from": "00:00:00,190",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 190,
+						"to": 360
+					},
+					"id": 1516,
+					"p": 0.988467,
+					"t_dtw": 38
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 540
+					},
+					"id": 2501,
+					"p": 0.98799,
+					"t_dtw": 52
+				},
+				{
+					"text": " einer",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 840
+					},
+					"id": 6850,
+					"p": 0.720349,
+					"t_dtw": 60
+				},
+				{
+					"text": " In",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,960"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 960
+					},
+					"id": 682,
+					"p": 0.997622,
+					"t_dtw": 76
+				},
+				{
+					"text": "sel",
+					"timestamps": {
+						"from": "00:00:00,960",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 960,
+						"to": 1140
+					},
+					"id": 790,
+					"p": 0.999104,
+					"t_dtw": 92
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1280
+					},
+					"id": 674,
+					"p": 0.87395,
+					"t_dtw": 108
+				},
+				{
+					"text": " er",
+					"timestamps": {
+						"from": "00:00:01,350",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1350,
+						"to": 1440
+					},
+					"id": 1189,
+					"p": 0.662507,
+					"t_dtw": 126
+				},
+				{
+					"text": " erzählt",
+					"timestamps": {
+						"from": "00:00:01,540",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1540,
+						"to": 1860
+					},
+					"id": 47110,
+					"p": 0.937269,
+					"t_dtw": 164
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:01,960"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 1960
+					},
+					"id": 370,
+					"p": 0.910828,
+					"t_dtw": 184
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:02,030",
+						"to": "00:00:02,190"
+					},
+					"offsets": {
+						"from": 2030,
+						"to": 2190
+					},
+					"id": 294,
+					"p": 0.778734,
+					"t_dtw": 252
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:02,190",
+						"to": "00:00:02,570"
+					},
+					"offsets": {
+						"from": 2190,
+						"to": 2570
+					},
+					"id": 5499,
+					"p": 0.908065,
+					"t_dtw": 282
+				},
+				{
+					"text": " poet",
+					"timestamps": {
+						"from": "00:00:02,570",
+						"to": "00:00:02,860"
+					},
+					"offsets": {
+						"from": 2570,
+						"to": 2860
+					},
+					"id": 20874,
+					"p": 0.992917,
+					"t_dtw": 322
+				},
+				{
+					"text": "ischer",
+					"timestamps": {
+						"from": "00:00:03,000",
+						"to": "00:00:03,520"
+					},
+					"offsets": {
+						"from": 3000,
+						"to": 3520
+					},
+					"id": 19674,
+					"p": 0.99289,
+					"t_dtw": 342
+				},
+				{
+					"text": " Spr",
+					"timestamps": {
+						"from": "00:00:03,520",
+						"to": "00:00:03,800"
+					},
+					"offsets": {
+						"from": 3520,
+						"to": 3800
+					},
+					"id": 7702,
+					"p": 0.995898,
+					"t_dtw": 370
+				},
+				{
+					"text": "ache",
+					"timestamps": {
+						"from": "00:00:03,800",
+						"to": "00:00:04,190"
+					},
+					"offsets": {
+						"from": 3800,
+						"to": 4190
+					},
+					"id": 6000,
+					"p": 0.997836,
+					"t_dtw": 400
+				},
+				{
+					"text": " über",
+					"timestamps": {
+						"from": "00:00:04,290",
+						"to": "00:00:04,500"
+					},
+					"offsets": {
+						"from": 4290,
+						"to": 4500
+					},
+					"id": 4502,
+					"p": 0.722565,
+					"t_dtw": 444
+				},
+				{
+					"text": " Liebe",
+					"timestamps": {
+						"from": "00:00:04,500",
+						"to": "00:00:04,820"
+					},
+					"offsets": {
+						"from": 4500,
+						"to": 4820
+					},
+					"id": 28790,
+					"p": 0.967485,
+					"t_dtw": 476
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:04,820",
+						"to": "00:00:04,960"
+					},
+					"offsets": {
+						"from": 4820,
+						"to": 4960
+					},
+					"id": 11,
+					"p": 0.991749,
+					"t_dtw": 498
+				},
+				{
+					"text": " Familie",
+					"timestamps": {
+						"from": "00:00:04,960",
+						"to": "00:00:05,560"
+					},
+					"offsets": {
+						"from": 4960,
+						"to": 5560
+					},
+					"id": 26021,
+					"p": 0.893474,
+					"t_dtw": 542
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:05,560",
+						"to": "00:00:05,600"
+					},
+					"offsets": {
+						"from": 5560,
+						"to": 5600
+					},
+					"id": 11,
+					"p": 0.99771,
+					"t_dtw": 566
+				},
+				{
+					"text": " Freunde",
+					"timestamps": {
+						"from": "00:00:05,800",
+						"to": "00:00:06,360"
+					},
+					"offsets": {
+						"from": 5800,
+						"to": 6360
+					},
+					"id": 40016,
+					"p": 0.978539,
+					"t_dtw": 608
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:06,510",
+						"to": "00:00:06,660"
+					},
+					"offsets": {
+						"from": 6510,
+						"to": 6660
+					},
+					"id": 11,
+					"p": 0.992402,
+					"t_dtw": 644
+				},
+				{
+					"text": " E",
+					"timestamps": {
+						"from": "00:00:06,660",
+						"to": "00:00:06,760"
+					},
+					"offsets": {
+						"from": 6660,
+						"to": 6760
+					},
+					"id": 462,
+					"p": 0.984758,
+					"t_dtw": 660
+				},
+				{
+					"text": "igent",
+					"timestamps": {
+						"from": "00:00:06,760",
+						"to": "00:00:07,260"
+					},
+					"offsets": {
+						"from": 6760,
+						"to": 7260
+					},
+					"id": 25002,
+					"p": 0.999912,
+					"t_dtw": 678
+				},
+				{
+					"text": "um",
+					"timestamps": {
+						"from": "00:00:07,260",
+						"to": "00:00:07,360"
+					},
+					"offsets": {
+						"from": 7260,
+						"to": 7360
+					},
+					"id": 449,
+					"p": 0.997063,
+					"t_dtw": 712
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:07,490",
+						"to": "00:00:07,490"
+					},
+					"offsets": {
+						"from": 7490,
+						"to": 7490
+					},
+					"id": 13,
+					"p": 0.458689,
+					"t_dtw": 730
+				},
+				{
+					"text": "[_TT_375]",
+					"timestamps": {
+						"from": "00:00:07,500",
+						"to": "00:00:07,500"
+					},
+					"offsets": {
+						"from": 7500,
+						"to": 7500
+					},
+					"id": 50740,
+					"p": 0.98007,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

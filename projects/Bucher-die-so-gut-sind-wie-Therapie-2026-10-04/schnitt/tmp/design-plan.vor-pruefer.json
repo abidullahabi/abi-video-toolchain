@@ -1,0 +1,102 @@
+{
+ "_quelle": "planentwurf.mjs 04.10.2026 19:28, überarbeitet vom Planer Gestaltung 04.10.2026 nach DESIGN.md 2.4 und Abis Testauftrag Buchcover (DESIGN.md 17 B-Roll, 04.10.2026). Zeiten an Wortanfängen der korrigierten Wortliste (caption-edit-plan.json, word-review-turbo). Buchtitel/Autoren/deutsche Titel aus assets/buchcover/HERKUNFT.json; Kapitel zeigen den echten Titel („The Myth of Normal“), Untertitel bleiben wortgetreu. 40/60 im Lebensbalken ist Abis eigene Einschätzung (gesprochen 9,6 s und 223,0 s), keine Studienzahl. Zooms leer gelassen: storyboard berechnet sie neu (DESIGN.md 15).",
+ "_offen": [],
+ "einstieg": {
+  "h1": "BÜCHER DIE SO GUT SIND WIE THERAPIE",
+  "h2": ["nach 5 Jahren Therapie"],
+  "end": 7.82
+ },
+ "kapitel": [
+  {
+   "id": "k1",
+   "nummer": "1.",
+   "titel": "The Way to Love",
+   "start": 14.86,
+   "end": 39.2,
+   "buch": { "datei": "assets/buchcover/1-the-way-to-love.jpg", "breite": 1052, "hoehe": 1503, "autor": "Anthony de Mello", "deutsch": "Wie ein Fisch im Wasser", "grossBis": 17.39 }
+  },
+  {
+   "id": "k2",
+   "nummer": "2.",
+   "titel": "Awareness",
+   "start": 39.82,
+   "end": 67.25,
+   "buch": { "datei": "assets/buchcover/2-awareness.jpg", "breite": 752, "hoehe": 1200, "autor": "Anthony de Mello", "deutsch": "Der springende Punkt", "grossBis": 42.31 }
+  },
+  {
+   "id": "k3",
+   "nummer": "3.",
+   "titel": "Reconciliation",
+   "start": 70.19,
+   "end": 113.25,
+   "buch": { "datei": "assets/buchcover/3-reconciliation.jpg", "breite": 1400, "hoehe": 2083, "autor": "Thich Nhat Hanh", "deutsch": "Versöhnung mit d. inn. Kind", "grossBis": 72.81, "autorAb": 74.06 }
+  },
+  {
+   "id": "k4",
+   "nummer": "4.",
+   "titel": "The Untethered Soul",
+   "start": 114.01,
+   "end": 141.51,
+   "buch": { "datei": "assets/buchcover/4-the-untethered-soul.jpg", "breite": 800, "hoehe": 1200, "autor": "Michael A. Singer", "deutsch": "Die Seele will frei sein", "grossBis": 116.51, "autorAb": 117.59 }
+  },
+  {
+   "id": "k5",
+   "nummer": "5.",
+   "titel": "The Myth of Normal",
+   "start": 146.12,
+   "end": 161.92,
+   "buch": { "datei": "assets/buchcover/5-the-myth-of-normal.jpg", "breite": 1800, "hoehe": 2700, "autor": "Gabor Maté", "deutsch": "Vom Mythos des Normalen", "grossBis": 148.65 }
+  },
+  {
+   "id": "k6",
+   "nummer": null,
+   "titel": "Bonus: The Prophet",
+   "start": 163.55,
+   "end": 193.12,
+   "buch": { "datei": "assets/buchcover/6-the-prophet.jpg", "breite": 800, "hoehe": 1200, "autor": "Khalil Gibran", "deutsch": "Der Prophet", "grossBis": 166.04 }
+  },
+  {
+   "id": "schluss",
+   "nummer": null,
+   "titel": "Heilen ist ein Prozess",
+   "start": 194.63,
+   "end": 222.41
+  }
+ ],
+ "h1": [],
+ "h2": [],
+ "pillen": [
+  {
+   "id": "p-heilen",
+   "kapitel": "schluss",
+   "nummeriert": false,
+   "anordnung": "nebeneinander",
+   "punkt": true,
+   "items": [
+    { "text": "Sicherheit", "at": 203.45 },
+    { "text": "Heulen", "at": 208.87 },
+    { "text": "Checken", "at": 214.44 }
+   ],
+   "end": 222.41
+  }
+ ],
+ "akronyme": [],
+ "schlagworte": [],
+ "grafiken": [],
+ "randnotizen": [],
+ "lebensbalken": [
+  {
+   "id": "lb-therapie",
+   "start": 8.08,
+   "end": 14.04,
+   "abschnitte": [
+    { "von": 0, "bis": 0.4, "beschriftung": "Therapie 40 %", "at": 9.62 },
+    { "von": 0.4, "bis": 1, "beschriftung": "Du selbst 60 %", "at": 10.89 }
+   ]
+  }
+ ],
+ "logos": [],
+ "sprechblasen": [],
+ "outroStart": 222.61,
+ "nahaufnahmeAbBreite": 420
+}

@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Umfeld und deine Herkunft.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.921298,
+					"t_dtw": -1
+				},
+				{
+					"text": " Um",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 180
+					},
+					"id": 3301,
+					"p": 0.632493,
+					"t_dtw": 28
+				},
+				{
+					"text": "feld",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 540
+					},
+					"id": 25115,
+					"p": 0.994474,
+					"t_dtw": 62
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 630
+					},
+					"id": 674,
+					"p": 0.915824,
+					"t_dtw": 102
+				},
+				{
+					"text": " deine",
+					"timestamps": {
+						"from": "00:00:00,920",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 920,
+						"to": 1260
+					},
+					"id": 28395,
+					"p": 0.777633,
+					"t_dtw": 126
+				},
+				{
+					"text": " Her",
+					"timestamps": {
+						"from": "00:00:01,260",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1260,
+						"to": 1520
+					},
+					"id": 3204,
+					"p": 0.990926,
+					"t_dtw": 144
+				},
+				{
+					"text": "k",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1620
+					},
+					"id": 74,
+					"p": 0.998369,
+					"t_dtw": 158
+				},
+				{
+					"text": "unft",
+					"timestamps": {
+						"from": "00:00:01,620",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1620,
+						"to": 1990
+					},
+					"id": 19333,
+					"p": 0.999643,
+					"t_dtw": 178
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,990",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1990,
+						"to": 1990
+					},
+					"id": 13,
+					"p": 0.838155,
+					"t_dtw": 196
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50465,
+					"p": 0.952265,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

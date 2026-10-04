@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,920"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2920
+			},
+			"text": " Verändert, was ich gedacht hab darüber, aber ...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.764978,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ver",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 150
+					},
+					"id": 4281,
+					"p": 0.33677,
+					"t_dtw": 22
+				},
+				{
+					"text": "ändert",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 460
+					},
+					"id": 34945,
+					"p": 0.941286,
+					"t_dtw": 36
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,460",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 460,
+						"to": 560
+					},
+					"id": 11,
+					"p": 0.718255,
+					"t_dtw": 48
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,680"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 680
+					},
+					"id": 390,
+					"p": 0.993076,
+					"t_dtw": 54
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,710",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 710,
+						"to": 860
+					},
+					"id": 1893,
+					"p": 0.994465,
+					"t_dtw": 66
+				},
+				{
+					"text": " gedacht",
+					"timestamps": {
+						"from": "00:00:00,860",
+						"to": "00:00:01,220"
+					},
+					"offsets": {
+						"from": 860,
+						"to": 1220
+					},
+					"id": 33296,
+					"p": 0.959265,
+					"t_dtw": 90
+				},
+				{
+					"text": " hab",
+					"timestamps": {
+						"from": "00:00:01,220",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1220,
+						"to": 1360
+					},
+					"id": 3025,
+					"p": 0.704836,
+					"t_dtw": 110
+				},
+				{
+					"text": " darüber",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1600
+					},
+					"id": 21737,
+					"p": 0.663831,
+					"t_dtw": 140
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 1900
+					},
+					"id": 11,
+					"p": 0.352552,
+					"t_dtw": 184
+				},
+				{
+					"text": " aber",
+					"timestamps": {
+						"from": "00:00:02,210",
+						"to": "00:00:02,680"
+					},
+					"offsets": {
+						"from": 2210,
+						"to": 2680
+					},
+					"id": 4340,
+					"p": 0.92484,
+					"t_dtw": 244
+				},
+				{
+					"text": " ...",
+					"timestamps": {
+						"from": "00:00:02,910",
+						"to": "00:00:02,920"
+					},
+					"offsets": {
+						"from": 2910,
+						"to": 2920
+					},
+					"id": 1097,
+					"p": 0.684934,
+					"t_dtw": 270
+				},
+				{
+					"text": "[_TT_146]",
+					"timestamps": {
+						"from": "00:00:02,920",
+						"to": "00:00:02,920"
+					},
+					"offsets": {
+						"from": 2920,
+						"to": 2920
+					},
+					"id": 50511,
+					"p": 0.958768,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

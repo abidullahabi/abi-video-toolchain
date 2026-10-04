@@ -1,0 +1,269 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3120
+			},
+			"text": " Das zweite Buch, auch wieder von Anthony Demelo, Awareness.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.849396,
+					"t_dtw": -1
+				},
+				{
+					"text": " Das",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 180
+					},
+					"id": 2846,
+					"p": 0.493618,
+					"t_dtw": 22
+				},
+				{
+					"text": " zweite",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 500
+					},
+					"id": 37456,
+					"p": 0.869404,
+					"t_dtw": 40
+				},
+				{
+					"text": " Buch",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,740"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 740
+					},
+					"id": 25818,
+					"p": 0.928604,
+					"t_dtw": 72
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 880
+					},
+					"id": 11,
+					"p": 0.877012,
+					"t_dtw": 86
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 1120
+					},
+					"id": 2168,
+					"p": 0.795316,
+					"t_dtw": 106
+				},
+				{
+					"text": " wieder",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,470"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1470
+					},
+					"id": 6216,
+					"p": 0.964544,
+					"t_dtw": 122
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:01,470",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 1470,
+						"to": 1650
+					},
+					"id": 2957,
+					"p": 0.966912,
+					"t_dtw": 136
+				},
+				{
+					"text": " Anthony",
+					"timestamps": {
+						"from": "00:00:01,650",
+						"to": "00:00:02,060"
+					},
+					"offsets": {
+						"from": 1650,
+						"to": 2060
+					},
+					"id": 15853,
+					"p": 0.945597,
+					"t_dtw": 168
+				},
+				{
+					"text": " Dem",
+					"timestamps": {
+						"from": "00:00:02,060",
+						"to": "00:00:02,170"
+					},
+					"offsets": {
+						"from": 2060,
+						"to": 2170
+					},
+					"id": 4686,
+					"p": 0.339767,
+					"t_dtw": 188
+				},
+				{
+					"text": "elo",
+					"timestamps": {
+						"from": "00:00:02,390",
+						"to": "00:00:02,410"
+					},
+					"offsets": {
+						"from": 2390,
+						"to": 2410
+					},
+					"id": 10590,
+					"p": 0.452076,
+					"t_dtw": 206
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,410",
+						"to": "00:00:02,520"
+					},
+					"offsets": {
+						"from": 2410,
+						"to": 2520
+					},
+					"id": 11,
+					"p": 0.832304,
+					"t_dtw": 228
+				},
+				{
+					"text": " Aware",
+					"timestamps": {
+						"from": "00:00:02,520",
+						"to": "00:00:02,710"
+					},
+					"offsets": {
+						"from": 2520,
+						"to": 2710
+					},
+					"id": 43949,
+					"p": 0.790098,
+					"t_dtw": 254
+				},
+				{
+					"text": "ness",
+					"timestamps": {
+						"from": "00:00:02,710",
+						"to": "00:00:03,110"
+					},
+					"offsets": {
+						"from": 2710,
+						"to": 3110
+					},
+					"id": 1287,
+					"p": 0.998437,
+					"t_dtw": 284
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,110",
+						"to": "00:00:03,110"
+					},
+					"offsets": {
+						"from": 3110,
+						"to": 3110
+					},
+					"id": 13,
+					"p": 0.92283,
+					"t_dtw": 304
+				},
+				{
+					"text": "[_TT_156]",
+					"timestamps": {
+						"from": "00:00:03,120",
+						"to": "00:00:03,120"
+					},
+					"offsets": {
+						"from": 3120,
+						"to": 3120
+					},
+					"id": 50521,
+					"p": 0.840792,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

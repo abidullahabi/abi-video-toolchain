@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,640"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2640
+			},
+			"text": " Er sagt, vieles, was wir normal nennen, ist nicht wirklich normal.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.803783,
+					"t_dtw": -1
+				},
+				{
+					"text": " Er",
+					"timestamps": {
+						"from": "00:00:00,080",
+						"to": "00:00:00,080"
+					},
+					"offsets": {
+						"from": 80,
+						"to": 80
+					},
+					"id": 3300,
+					"p": 0.974529,
+					"t_dtw": 20
+				},
+				{
+					"text": " sagt",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,240"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 240
+					},
+					"id": 15764,
+					"p": 0.995668,
+					"t_dtw": 36
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,240",
+						"to": "00:00:00,310"
+					},
+					"offsets": {
+						"from": 240,
+						"to": 310
+					},
+					"id": 11,
+					"p": 0.7275,
+					"t_dtw": 44
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 320
+					},
+					"id": 5891,
+					"p": 0.875734,
+					"t_dtw": 54
+				},
+				{
+					"text": "es",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 540
+					},
+					"id": 279,
+					"p": 0.990698,
+					"t_dtw": 64
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 610
+					},
+					"id": 11,
+					"p": 0.821056,
+					"t_dtw": 68
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 720
+					},
+					"id": 390,
+					"p": 0.994782,
+					"t_dtw": 74
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:00,730",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 730,
+						"to": 850
+					},
+					"id": 1987,
+					"p": 0.989289,
+					"t_dtw": 84
+				},
+				{
+					"text": " normal",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 1080
+					},
+					"id": 2710,
+					"p": 0.640281,
+					"t_dtw": 112
+				},
+				{
+					"text": " n",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1120
+					},
+					"id": 297,
+					"p": 0.964727,
+					"t_dtw": 126
+				},
+				{
+					"text": "ennen",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,310"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1310
+					},
+					"id": 16043,
+					"p": 0.999226,
+					"t_dtw": 136
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,310",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 1310,
+						"to": 1410
+					},
+					"id": 11,
+					"p": 0.954372,
+					"t_dtw": 156
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,540",
+						"to": "00:00:01,580"
+					},
+					"offsets": {
+						"from": 1540,
+						"to": 1580
+					},
+					"id": 1418,
+					"p": 0.958442,
+					"t_dtw": 168
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:01,580",
+						"to": "00:00:01,820"
+					},
+					"offsets": {
+						"from": 1580,
+						"to": 1820
+					},
+					"id": 1979,
+					"p": 0.996206,
+					"t_dtw": 182
+				},
+				{
+					"text": " wirklich",
+					"timestamps": {
+						"from": "00:00:01,820",
+						"to": "00:00:02,200"
+					},
+					"offsets": {
+						"from": 1820,
+						"to": 2200
+					},
+					"id": 9696,
+					"p": 0.994922,
+					"t_dtw": 202
+				},
+				{
+					"text": " normal",
+					"timestamps": {
+						"from": "00:00:02,200",
+						"to": "00:00:02,430"
+					},
+					"offsets": {
+						"from": 2200,
+						"to": 2430
+					},
+					"id": 2710,
+					"p": 0.99419,
+					"t_dtw": 234
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,460",
+						"to": "00:00:02,630"
+					},
+					"offsets": {
+						"from": 2460,
+						"to": 2630
+					},
+					"id": 13,
+					"p": 0.979768,
+					"t_dtw": 260
+				},
+				{
+					"text": "[_TT_132]",
+					"timestamps": {
+						"from": "00:00:02,640",
+						"to": "00:00:02,640"
+					},
+					"offsets": {
+						"from": 2640,
+						"to": 2640
+					},
+					"id": 50497,
+					"p": 0.44837,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

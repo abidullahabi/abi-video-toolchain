@@ -1,0 +1,469 @@
+{
+ "basis": "Rohzeit IMG_2012.MOV (SHA-256 d8343ccf…), Sekunden",
+ "regel": "Nur Anläufe, die von Anfang bis Ende flüssig sind. Kein Flicken mitten im Satz. Reihenfolge wie aufgenommen. Pausen ab 150 ms werden in plan-edl.py automatisch gekürzt (auch innerhalb eines Bereichs). Bereiche werden nur geteilt, wenn dazwischen etwas wegfällt, außer bei keepInner und beim CTA.",
+ "ranges": [
+  {
+   "id": "hook",
+   "a": 26.42,
+   "b": 29.63,
+   "text": "Diese fünf Bücher waren genauso gut wie meine fünfjährige Therapie.",
+   "warum": "Dritter Hook-Anlauf. Flüssig, „waren“ wie geplant, gleichmäßig laut. Blick vom ersten Bild an in die Kamera, E-Reader dreht sich ins Bild (gutes Vorschaubild). Anlauf 1 (9,57 s) beginnt mit zusammengekniffenem Auge und Grimasse, Anlauf 2 (18,14 s) sagt „sind“ statt „waren“."
+  },
+  {
+   "id": "intro",
+   "a": 33.97,
+   "b": 45.86,
+   "text": "Ich glaub, Therapie ist das Beste, was ich jemals gemacht habe. Aber Therapie alleine reicht nicht. Für den richtigen Prozess sind das gerade mal 40 % und den restlichen 60 % musst du selbst machen. Und diese Bücher haben mir dabei geholfen.",
+   "warum": "Einziger Anlauf, flüssig. Denkpausen darin werden automatisch gekürzt."
+  },
+  {
+   "id": "b1-1",
+   "a": 54.06,
+   "b": 56.9,
+   "text": "Wir fangen mit dem ersten Buch an, Anthony de Mello, The Way to Love.",
+   "warum": "Dritter Anlauf, der erste vollständige. Raus: „Das erste Buch ist“ (48,3 s) und „Das Buch hat …“ (51,9 s)."
+  },
+  {
+   "id": "b1-2",
+   "a": 58.42,
+   "b": 61.28,
+   "text": "Und wie der Titel schon verrät, es geht um Liebe, aber",
+   "warum": "Einziger Anlauf. Das „aber“ bleibt, weil es direkt in „das Buch ist gerade so auf dieser Schwelle …“ übergeht (Gegenprobe der Verbindung: „Es geht um Liebe. Aber das Buch ist gerade so …“)."
+  },
+  {
+   "id": "b1-3",
+   "a": 66.53,
+   "b": 71.01,
+   "text": "das Buch ist gerade so auf dieser Schwelle von super hilfreich und ein bisschen Hokuspokus.",
+   "warum": "Zweiter Anlauf. Raus: „Ich find’s gut, das Buch ist genauso, ist gerade …“ (62,0–66,2 s). „Hokuspokus“ bleibt."
+  },
+  {
+   "id": "b1-4",
+   "a": 73.12,
+   "b": 92.95,
+   "text": "Der redet um nicht nur Liebe, sondern generell Beziehung, Beziehung zu sich selbst. Was das Gegenteil von Liebe ist, worum die meisten davon ausgeben, das ist Liebe. Und es war eine Challenge zu lesen, weil es hat alles verändert, was ich gedacht hab darüber,",
+   "warum": "Einziger Anlauf. Lange Denkpause (80,8–87,4 s) und die Pause vor „verändert“ werden automatisch gekürzt. Endet vor dem angehängten „aber …“ (93,5 s), Schnitt in der Stille."
+  },
+  {
+   "id": "b1-5",
+   "a": 95.2,
+   "b": 96.7,
+   "text": "Aber es ist auf einem sehr positiven Weg.",
+   "warum": "Das doppelte „aber … Aber“ ist auf eins reduziert; dieses ist der vollständige Satz."
+  },
+  {
+   "id": "b2-1",
+   "a": 98.11,
+   "b": 107.36,
+   "hardEnd": true,
+   "text": "Das zweite Buch, auch wieder von Anthony de Mello, Awareness. Bei Awareness geht es um das Thema Achtsamkeit. Und der sagt, dass viele Menschen einfach nur schlafen im Leben,",
+   "warum": "Einziger Anlauf. Ende hart nach „Leben,“, weil das verworfene „dass sie einfach da sich …“ schon bei 107,39 s beginnt."
+  },
+  {
+   "id": "b2-2",
+   "a": 110.15,
+   "b": 141.54,
+   "text": "dass sie einfach vor sich hin leben und gar nicht wirklich aufwachen. Also, ich penn nicht. Der zeigt, wie man seine Gedanken beobachtet, was die Gefühle sind, was sie sagen und ich hatte zum Beispiel viel gestruggelt mit meinen Gefühlen, weil ich nicht wusste, was das ist, wie ich damit umzugehen habe, und dass sie auch normal sind. Und vor allem dachte ich immer, wenn ich meine Gefühle alle weg mache, dann bin ich glücklich.",
+   "warum": "Zweiter Anlauf der Satzhälfte („dass sie einfach da sich …“, 107,4 s, raus). Danach flüssig; Abis persönlicher Satz zum Buch bleibt vollständig. Pausen darin (bis 5,7 s) werden automatisch gekürzt."
+  },
+  {
+   "id": "b2-3",
+   "a": 142.5,
+   "b": 143.71,
+   "keepInner": true,
+   "text": "Was falsch ist.",
+   "warum": "Pointe. Kurze Kunstpause zwischen „Was“ und „falsch ist“ (ca. 0,35 s) bleibt wie gesprochen; die Pause davor wird gekürzt."
+  },
+  {
+   "id": "b3-1",
+   "a": 147.84,
+   "b": 155.2,
+   "hardEnd": true,
+   "text": "Das nächste Buch habe ich erst vor ein paar Tagen durchgelesen, das heißt Reconciliation, Reconciliation. Ich kann es nicht aussprechen.",
+   "warum": "Einziger Anlauf. Doppeltes „Reconciliation“ plus „Ich kann es nicht aussprechen“ ist Abis Witz und bleibt. Ende hart vor dem ersten „Und der Autor“ (ab 155,27 s)."
+  },
+  {
+   "id": "b3-2",
+   "a": 158.63,
+   "b": 170.62,
+   "text": "Und der Autor, keine Ahnung, wie man das ausspricht. Das war ein sehr angenehmes Buch zum Lesen. Ich habe das, glaube ich, in einem Zug gelesen. Dauert, glaube ich, drei bis fünf Stunden.",
+   "warum": "Zweite Fassung des Autor-Satzes; Abi hat „wie der heißt“ selbst zu „wie man das ausspricht“ korrigiert (der Name steht ja im Kapitel). Danach flüssig."
+  },
+  {
+   "id": "b3-3",
+   "a": 173.0334,
+   "b": 175.5,
+   "hardStart": true,
+   "hardEnd": true,
+   "text": "Ich glaube, ich würde auch empfehlen, ein bisschen Pause dazwischen zu machen.",
+   "warum": "Abgebrochenes „Wenn du möchtest,“ (172,3 s) davor raus, Schnitt in der Stille vor „ich“. Ende hart vor „Und es ist auch ein sehr praktisches Buch“ (ab 175,56 s)."
+  },
+  {
+   "id": "b3-4",
+   "a": 177.67,
+   "b": 203.1,
+   "text": "Es geht rein in das Thema inneres Kind. Und ich find’s ganz gut, bei dem Buch war das so, dass man nicht nur auf sich geschaut hat. Bei meiner Therapie oder generell finde ich bei diesen westlichen psychologischen Ansätzen ist man immer um sich, aber es gibt ja auch das Umfeld und deine Herkunft. Und das steckt ja auch in dir drin.",
+   "warum": "Einziger Anlauf, Abis persönlicher Gedanke zum Buch bleibt vollständig. Pausen darin werden automatisch gekürzt."
+  },
+  {
+   "id": "b3-5",
+   "a": 207.17,
+   "b": 220.0,
+   "text": "Hat mir da auch ein bisschen die Augen geöffnet. Und es ist sehr praktisch. Am Ende gibt’s richtig gute Übungen, wie man anwenden kann. Kann auch sein, dass du ein bisschen heulen musst beim Buch. Habe ich auch gemacht.",
+   "warum": "Zweiter Anlauf („hat mir echt b…“ bei 205,3 s bricht ab). „anwenden kann“ (214,2–214,8 s) ist schnell und mit Achselzucken gesprochen; beide Modelle erkennen es im Zusammenhang. „Kann auch sein … Habe ich auch gemacht.“ bleibt."
+  },
+  {
+   "id": "b4-1",
+   "a": 222.5,
+   "b": 224.33,
+   "hardEnd": true,
+   "text": "Dann Buch Nummer vier,",
+   "warum": "Einziger Anlauf. Ende hart nach „vier“, das direkt angehängte „äh, äh“ (ab 224,35 s) raus."
+  },
+  {
+   "id": "b4-2",
+   "a": 225.84,
+   "b": 227.7,
+   "text": "The Untethered Soul von",
+   "warum": "Einziger Anlauf des Titels."
+  },
+  {
+   "id": "b4-3",
+   "a": 229.34,
+   "b": 236.2667,
+   "hardEnd": true,
+   "text": "Michael Singer. Es geht hier primär um die Stimme in deinem Kopf",
+   "warum": "Zweites „Michael“; das erste „Michael.“ (228,0–228,8 s) mit Absetzen raus. Ende hart nach „Kopf“, weil das verworfene „und dass wir diese Stimme nicht blind gehören“ bei 236,30 s ohne Pause anschließt."
+  },
+  {
+   "id": "b4-4",
+   "a": 239.55,
+   "b": 241.79,
+   "text": "und dass wir diese Stimme nicht blind zuhören müssen.",
+   "warum": "Zweiter Anlauf der Satzhälfte. Der erste (236,3–238,9 s) endet mit dem Versprecher „nicht blind gehören“."
+  },
+  {
+   "id": "b4-5",
+   "a": 249.83,
+   "b": 262.62,
+   "text": "Er meint so, stell dir vor, diese Stimme wäre dein Mitbewohner und der würde einfach rausklappern, was er so sagt. Dem würdest du auch sagen, ey Bro, bisschen weird, dass du das gerade sagst. Und genau so geht er im Buch an. Geht natürlich auch viel um Liebe,",
+   "warum": "Zweiter Anlauf des Bildes. Der erste („Er sagt quasi, diese Stimme ist quasi so ein … Stell dir mal vor, diese Stimme wäre …“, 245,9 s) bricht ab. Mitbewohner-Vergleich bleibt vollständig."
+  },
+  {
+   "id": "b4-6",
+   "a": 266.08,
+   "b": 272.03,
+   "text": "Ankommen, etc. Ist ein sehr schönes Buch, ist ein bisschen zäh zu lesen, aber hat mir auch sehr geholfen.",
+   "warum": "Fortsetzung der Aufzählung („Liebe, Ankommen, etc.“). Denklaut „hm/ja“ mit Blick zur Seite (263,8 s) und 3,5 s Pause davor raus. Pause vor „hat mir“ wird gekürzt."
+  },
+  {
+   "id": "b5-1",
+   "a": 281.34,
+   "b": 287.49,
+   "text": "Und das letzte Buch, was ich immer noch lese, von Gabor Maté, den Typ ich liebe, da kannst du jeden Podcast von ihm anhören.",
+   "warum": "Dritter Anlauf, der einzige, der in den Autor übergeht. Raus: „Und das letzte Buch, wo ich immer noch ein bisschen dran zu nagen habe, aber es ist ziemlich gut.“ (273,9 s) und „Und das letzte Buch, was,“ (279,8 s)."
+  },
+  {
+   "id": "b5-2",
+   "a": 288.3334,
+   "b": 313.47,
+   "hardStart": true,
+   "text": "The Myth of Being Normal. Er sagt, vieles, was wir normal nennen, ist nicht wirklich normal. Und macht uns so krank. Er zeigt, wie Stress, Trauma und Krankheit so miteinander zusammenhängen. Also, ist auch sehr theoretisch.",
+   "warum": "Einziger Anlauf. „Ähm“ vor dem Titel raus (Anfang hart, „The“ setzt bei 288,36 s ein). „macht uns so krank“ ist undeutlich (Whisper hört „macht den Song krank“), siehe Gegenhören. Lange Pausen darin werden gekürzt."
+  },
+  {
+   "id": "b5-3",
+   "a": 324.61,
+   "b": 328.9,
+   "text": "Und zielt eher darauf ab, wenn du besser verstehen willst, wieso du gerade so bist, wie du bist.",
+   "warum": "Zweiter Anlauf, der vollständige mit „für wen“. Der erste („… wenn du das bisschen besser verstehen willst.“, 317,7 s) ist Dopplung."
+  },
+  {
+   "id": "bonus-1",
+   "a": 333.3,
+   "b": 348.7667,
+   "hardEnd": true,
+   "text": "Und ein weiteres Bonusbuch, das ich habe, ist von Khalil Gibran, Der Prophet. Es ist jetzt kein Fachbuch in diesem Sinne, aber es ist immer wieder schön zu lesen. Es gibt so einen Typen, der Prophet ist, und",
+   "warum": "Dritter Anlauf des Satzanfangs. Raus: „Und ein, und ein,“ (331,9–333,2 s). Ende hart nach dem gedehnten „und“, weil das verworfene „keine Sorge an, aber“ bei 348,89 s beginnt."
+  },
+  {
+   "id": "bonus-2",
+   "a": 349.86,
+   "b": 354.8,
+   "text": "keine Sorge an alle meine Ungläubigen. Auch ihr könnt das lesen,",
+   "warum": "Zweiter Anlauf. Raus: „keine Sorge an, aber“ (348,9–349,75 s). Abis Witz bleibt. Das „ähm“ danach (355,1 s) raus."
+  },
+  {
+   "id": "bonus-3",
+   "a": 356.13,
+   "b": 382.59,
+   "text": "Der war auf einer Insel und er erzählt so in sehr poetischer Sprache über Liebe, Familie, Freunde, Eigentum. Ist ein sehr schönes Buch zum Lesen und ich lese das, glaube ich, seit fast zehn Jahren immer wieder neu. Und jedes Mal bedeutet der Satz was Neues für mich. Macht echt Spaß. Und generell zu dem Thema Heilen. Heilen ist ein Prozess.",
+   "warum": "Einziger Anlauf, flüssig, mit Überleitung zum Abschluss. Pausen darin (bis 3,7 s) werden gekürzt."
+  },
+  {
+   "id": "schluss",
+   "a": 385.89,
+   "b": 437.5,
+   "text": "Die 40 %, die du in deiner Therapie machst, ist schon ziemlich gut und solltest du durchziehen. Aber das ist nicht genug. Damit du heilst, brauchst du erstmal Sicherheit. Also, du kannst nicht in einer komischen Situation heilen. Dann machst du in deiner Therapie, dass du dich halt daran erinnerst und dann heulst du einfach ganz viel. Wir heilen, wenn wir ganz viel geheult haben und uns gehalten haben. Und dann checkst du meistens die Dinge, die du gemacht hast oder die Schmerzen, die du, oder die Sorgen, die du jetzt hast, dass sie aktuell gar nicht mehr relevant sind, weil du ein erwachsener Mensch geworden bist und dass alles gut ist. Und das sind die letzten 60 %, die du halt selber aufbringen musst. Ich bin auch nicht ganz drüber, aber ich bin ganz nah dran.",
+   "warum": "Zweiter Anlauf; der erste („Die 40 %, die du“, 384,3 s) bricht ab. Danach flüssig. „oder die Schmerzen, die du, oder die Sorgen“ ist eine gesprochene Aufzählung ohne Pause, ohne sauberen Schnittpunkt, bleibt. Lange Pausen (bis 6,6 s) werden gekürzt, auch die vor dem CTA."
+  },
+  {
+   "id": "cta",
+   "a": 438.34,
+   "b": 439.75,
+   "hardEnd": true,
+   "endHold": true,
+   "text": "Folgen nicht vergessen.",
+   "warum": "Festgelegtes Ende: „Folgen nicht vergessen“ 438,37–438,95 s, danach Lächeln, ab 439,14 s kommt der E-Reader ins Bild, ab 439,4 s hält Abi ihn lächelnd hoch. Schluss 0,8 s nach dem letzten Wort, bevor die Geste endet."
+  }
+ ],
+ "entfernt": [
+  {
+   "von": 0.0,
+   "bis": 26.42,
+   "text": "„Ja.“ (1,9 s), Hook-Anlauf 1 (9,57 s) und Hook-Anlauf 2 (18,14 s, „sind“)",
+   "warum": "Bester Hook ist Anlauf 3. Kein „Ja.“ davor.",
+   "art": "anlauf"
+  },
+  {
+   "von": 29.63,
+   "bis": 33.97,
+   "text": "(Stille, Positionswechsel)",
+   "warum": "Pause nach dem Hook.",
+   "art": "pause"
+  },
+  {
+   "von": 48.29,
+   "bis": 52.61,
+   "text": "Das erste Buch ist … Das Buch hat …",
+   "warum": "Zwei abgebrochene Anläufe vor „Wir fangen mit dem ersten Buch an“.",
+   "art": "anlauf"
+  },
+  {
+   "von": 62.02,
+   "bis": 66.24,
+   "text": "Ich find’s gut, das Buch ist genauso, ist gerade …",
+   "warum": "Abgebrochener Anlauf, danach sauber neu: „Das Buch ist gerade so auf dieser Schwelle …“.",
+   "art": "anlauf"
+  },
+  {
+   "von": 93.48,
+   "bis": 94.05,
+   "text": "aber …",
+   "warum": "Doppeltes „aber … Aber“; das zweite steht im vollständigen Satz.",
+   "art": "dopplung"
+  },
+  {
+   "von": 107.39,
+   "bis": 108.93,
+   "text": "dass sie einfach da sich …",
+   "warum": "Abgebrochener Anlauf, gleich danach „dass sie einfach vor sich hin leben“.",
+   "art": "anlauf"
+  },
+  {
+   "von": 155.27,
+   "bis": 157.12,
+   "text": "Und der Autor, keine Ahnung, wie der heißt,",
+   "warum": "Dopplung. Abi wiederholt den Satz selbst mit „wie man das ausspricht“ (158,7 s). Zum Zurückholen: b3-2 ab 155,27 statt 158,63 beginnen lassen und bei 157,12 enden lassen.",
+   "art": "dopplung"
+  },
+  {
+   "von": 172.29,
+   "bis": 172.99,
+   "text": "Wenn du möchtest,",
+   "warum": "Abgebrochener Satzanfang, Abi setzt mit „ich glaube, ich würde auch empfehlen …“ neu an.",
+   "art": "anlauf"
+  },
+  {
+   "von": 175.56,
+   "bis": 177.12,
+   "text": "Und es ist auch ein sehr praktisches Buch.",
+   "warum": "Inhaltliche Dopplung mit „Und es ist sehr praktisch. Am Ende gibt’s richtig gute Übungen …“ (209,2 s), das konkreter ist.",
+   "art": "dopplung"
+  },
+  {
+   "von": 203.39,
+   "bis": 206.66,
+   "text": "Und das Buch fand ich ziemlich gut zu lesen, hat mir echt b…",
+   "warum": "Satz bricht ab („hat mir echt b…“); Abi setzt mit „Hat mir da auch ein bisschen die Augen geöffnet“ neu an. Zwischen „lesen,“ und „hat“ gibt es keine Pause, ein sauberer Schnitt nach „lesen“ ist nicht möglich. „Gut zu lesen“ steht schon in „Das war ein sehr angenehmes Buch zum Lesen“.",
+   "art": "anlauf"
+  },
+  {
+   "von": 224.35,
+   "bis": 225.47,
+   "text": "äh, äh",
+   "warum": "Füllwörter vor dem Titel.",
+   "art": "versprecher"
+  },
+  {
+   "von": 228.0,
+   "bis": 228.8,
+   "text": "Michael.",
+   "warum": "Erstes „Michael“ mit Absetzen, danach sauber „Michael Singer“.",
+   "art": "anlauf"
+  },
+  {
+   "von": 236.3,
+   "bis": 238.91,
+   "text": "und dass wir diese Stimme nicht blind gehören.",
+   "warum": "Versprecher („gehören“), gleich danach korrekt „… nicht blind zuhören müssen“.",
+   "art": "versprecher"
+  },
+  {
+   "von": 245.95,
+   "bis": 249.38,
+   "text": "Er sagt quasi, diese Stimme ist quasi so ein … Stell dir mal vor, diese Stimme wäre …",
+   "warum": "Abgebrochener Anlauf des Mitbewohner-Vergleichs.",
+   "art": "anlauf"
+  },
+  {
+   "von": 262.62,
+   "bis": 266.08,
+   "text": "(hm/ja, Blick zur Seite)",
+   "warum": "Denklaut und Denkpause mitten in der Aufzählung.",
+   "art": "pause"
+  },
+  {
+   "von": 273.89,
+   "bis": 278.78,
+   "text": "Und das letzte Buch, wo ich immer noch ein bisschen dran zu nagen habe, aber es ist ziemlich gut.",
+   "warum": "Erste Fassung des Satzes, Abi setzt zweimal neu an. Die behaltene Fassung („was ich immer noch lese“) führt direkt zum Autor. Verloren geht nur „aber es ist ziemlich gut“; zurückholbar als eigener Bereich 273,86–278,80 vor b5-1.",
+   "art": "dopplung"
+  },
+  {
+   "von": 279.84,
+   "bis": 281.1,
+   "text": "Und das letzte Buch, was,",
+   "warum": "Abgebrochener Anlauf, gleich danach komplett.",
+   "art": "anlauf"
+  },
+  {
+   "von": 288.0,
+   "bis": 288.3,
+   "text": "Ähm,",
+   "warum": "Füllwort vor dem Titel.",
+   "art": "versprecher"
+  },
+  {
+   "von": 317.7,
+   "bis": 320.7,
+   "text": "Und zielt eher darauf ab, wenn du das bisschen besser verstehen willst.",
+   "warum": "Dopplung, die zweite Fassung (324,6 s) ist vollständiger („wieso du gerade so bist, wie du bist“).",
+   "art": "dopplung"
+  },
+  {
+   "von": 331.9,
+   "bis": 333.18,
+   "text": "Und ein, und ein,",
+   "warum": "Zwei abgebrochene Anläufe.",
+   "art": "anlauf"
+  },
+  {
+   "von": 348.89,
+   "bis": 349.75,
+   "text": "keine Sorge an, aber",
+   "warum": "Erster Anlauf, gleich danach „keine Sorge an alle meine Ungläubigen“.",
+   "art": "anlauf"
+  },
+  {
+   "von": 355.09,
+   "bis": 355.84,
+   "text": "ähm",
+   "warum": "Füllwort.",
+   "art": "versprecher"
+  },
+  {
+   "von": 384.29,
+   "bis": 385.5,
+   "text": "Die 40 %, die du",
+   "warum": "Abgebrochener Anlauf, danach vollständig.",
+   "art": "anlauf"
+  },
+  {
+   "von": 439.75,
+   "bis": 442.7,
+   "text": "(Schlusspose ausklingend, „Hm.“ 441,8 s)",
+   "warum": "Festgelegtes Ende 439,75 s.",
+   "art": "pause"
+  }
+ ],
+ "gegenhoeren": [
+  {
+   "zeit": 26.42,
+   "was": "Hook-Wahl: Anlauf 3. Erstes Bild (Vorschaubild) mit Blick in die Kamera, der E-Reader dreht sich gerade ins Bild. Vergleich: Anlauf 2 (18,14 s) ist auch flüssig, sagt aber „sind“."
+  },
+  {
+   "zeit": 61.0,
+   "was": "„es geht um Liebe, aber | das Buch ist gerade so …“: Klingt das gedehnte „aber“ (60,74–61,28 s) im Anschluss natürlich? Sonst b1-2 bei 60,45 enden lassen (ohne „aber“)."
+  },
+  {
+   "zeit": 73.2,
+   "was": "„Der redet um nicht nur Liebe …“ und „worum die meisten davon ausgeben“ (78,8 s): leicht verdreht gesprochen, aber einziger Anlauf. Bleibt."
+  },
+  {
+   "zeit": 107.36,
+   "was": "Harter Schnitt nach „Leben,“: das verworfene „dass“ beginnt 30 ms später (107,39 s). Darauf achten, dass kein Anlaut mitkommt."
+  },
+  {
+   "zeit": 116.7,
+   "was": "„Also, ich penn nicht.“ (oder „die pennen nicht“?): Erkennung unsicher, kurz und schnell gesprochen. Bleibt drin."
+  },
+  {
+   "zeit": 142.9,
+   "was": "Kunstpause „Was … falsch ist.“ bleibt (keepInner). Wenn sie zu lang wirkt, keepInner entfernen."
+  },
+  {
+   "zeit": 154.6,
+   "was": "„Ich kann es nicht aussprechen“ ist genuschelt (Whisper hört „ausfreschen“/„ausbrechen“). Zusammen mit „keine Ahnung, wie man das ausspricht“ kommt „aussprechen“ zweimal; gewollt als Running Gag, sonst Fassung „wie der heißt“ (155,27 s) nehmen."
+  },
+  {
+   "zeit": 173.03,
+   "was": "Einstieg „Ich glaube, ich würde auch empfehlen …“ nach entferntem „Wenn du möchtest,“: Satzmelodie prüfen."
+  },
+  {
+   "zeit": 175.5,
+   "was": "Hartes Ende nach „machen.“: das verworfene „Und“ beginnt bei 175,56 s."
+  },
+  {
+   "zeit": 214.2,
+   "was": "„wie man [Achselzucken] anwenden kann“: „anwenden kann“ ist schnell und undeutlich gemurmelt (214,2–214,8 s). Wenn es nicht verständlich ist, b3-5 aufteilen: 207,17–211,57 („… richtig gute Übungen“ endet ohne Pause in „wie“, daher nur mit hartem Ende) und 216,77–220,00."
+  },
+  {
+   "zeit": 218.3,
+   "was": "Pointe „Kann auch sein, dass du ein bisschen heulen musst beim Buch. | Habe ich auch gemacht.“: Die Pause (1,15 s) wird auf ca. 150 ms gekürzt. Soll der Beat länger bleiben?"
+  },
+  {
+   "zeit": 224.33,
+   "was": "Hartes Ende nach „vier“: das angehängte „äh“ setzt 20 ms später ein (224,35 s)."
+  },
+  {
+   "zeit": 236.27,
+   "was": "Hartes Ende nach „Kopf“: das verworfene „und“ beginnt bei 236,30 s ohne Pause."
+  },
+  {
+   "zeit": 288.33,
+   "was": "Harter Anfang bei „The Myth“: das „Ähm“ endet ca. 30 ms davor (288,30 s) und geht ohne Stille über."
+  },
+  {
+   "zeit": 301.2,
+   "was": "„Und macht uns so krank“: beide Modelle hören „macht den Song krank“. Bitte anhören, was gesagt ist (fürs Untertitel-/Textbild)."
+  },
+  {
+   "zeit": 348.4,
+   "was": "Gedehntes „und“ (348,19–348,75 s) vor „keine Sorge an alle meine Ungläubigen“: Ende hart bei 348,77 s, das verworfene „keine“ beginnt bei 348,89 s."
+  },
+  {
+   "zeit": 417.6,
+   "was": "„oder die Schmerzen, die du, oder die Sorgen, die du jetzt hast“: gesprochene Selbstkorrektur ohne Pause, bleibt. Kein sauberer Schnittpunkt."
+  }
+ ],
+ "hinweise": [
+  "Titel und Autoren nur für Kapitel/H2, gesprochen bleibt, wie es ist: Abi sagt „The Myth of Being Normal“, der Buchtitel lautet „The Myth of Normal“ (Gabor Maté). Der Autor von „Reconciliation“ (Thich Nhat Hanh) wird nicht genannt, passt als H2 zum Witz „keine Ahnung, wie man das ausspricht“.",
+  "Hook: Abi steht in Anlauf 3 links im Bild, der E-Reader ist rechts. Die H1 im ersten Bild darf das Gesicht nicht verdecken. Zwischen Hook (29,6 s) und Intro (34,0 s) gibt es einen sichtbaren Positionssprung, der ist bei Abis Aufnahmen normal.",
+  "Bewusst behalten (Abis Stil): „Hokuspokus“, „Reconciliation, Reconciliation. Ich kann es nicht aussprechen.“, „ey Bro, bisschen weird, dass du das gerade sagst“, „keine Sorge an alle meine Ungläubigen“, „Kann auch sein, dass du heulen musst … Habe ich auch gemacht.“, „Ich bin auch nicht ganz drüber, aber ich bin ganz nah dran.“",
+  "Wörtlich gesprochen und so gelassen: „den restlichen 60 % musst du selbst machen“, „ist man immer um sich“, „Und genau so geht er im Buch an“. Nichts ergänzt.",
+  "Keine Umstellung nötig; Reihenfolge wie aufgenommen.",
+  "Zeilen mit hardStart/hardEnd liegen auf dem 1/30-s-Raster (z. B. 173.0334, 236.2667, 288.3334, 348.7667), damit die Rundung in plan-edl.py nicht in das verworfene Nachbarwort schiebt.",
+  "Planung (Notion) nennt Judith Herman/„drei Phasen“; Abi erklärt Heilen frei (Sicherheit, erinnern und heulen, gehalten werden, erkennen, dass alles gut ist). Gesprochenes bleibt maßgeblich, nichts hinzugefügt."
+ ]
+}

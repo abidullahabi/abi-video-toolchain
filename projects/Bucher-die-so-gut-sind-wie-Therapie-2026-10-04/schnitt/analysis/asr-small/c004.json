@@ -1,0 +1,325 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,320"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2320
+			},
+			"text": " Die Komtherapie ist das Beste, was ich jemals gemacht habe.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.996595,
+					"t_dtw": -1
+				},
+				{
+					"text": " Die",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 120
+					},
+					"id": 3229,
+					"p": 0.253556,
+					"t_dtw": 12
+				},
+				{
+					"text": " Kom",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,240"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 240
+					},
+					"id": 14286,
+					"p": 0.283355,
+					"t_dtw": 38
+				},
+				{
+					"text": "ther",
+					"timestamps": {
+						"from": "00:00:00,240",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 240,
+						"to": 390
+					},
+					"id": 616,
+					"p": 0.191994,
+					"t_dtw": 38
+				},
+				{
+					"text": "ap",
+					"timestamps": {
+						"from": "00:00:00,390",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 390,
+						"to": 460
+					},
+					"id": 569,
+					"p": 0.978866,
+					"t_dtw": 52
+				},
+				{
+					"text": "ie",
+					"timestamps": {
+						"from": "00:00:00,460",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 460,
+						"to": 530
+					},
+					"id": 414,
+					"p": 0.784533,
+					"t_dtw": 58
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 650
+					},
+					"id": 1418,
+					"p": 0.976496,
+					"t_dtw": 66
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 770
+					},
+					"id": 1482,
+					"p": 0.983235,
+					"t_dtw": 76
+				},
+				{
+					"text": " B",
+					"timestamps": {
+						"from": "00:00:00,770",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 770,
+						"to": 810
+					},
+					"id": 363,
+					"p": 0.804789,
+					"t_dtw": 88
+				},
+				{
+					"text": "este",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 950
+					},
+					"id": 8887,
+					"p": 0.998382,
+					"t_dtw": 98
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,950",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 950,
+						"to": 1020
+					},
+					"id": 11,
+					"p": 0.840582,
+					"t_dtw": 102
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:01,030",
+						"to": "00:00:01,150"
+					},
+					"offsets": {
+						"from": 1030,
+						"to": 1150
+					},
+					"id": 390,
+					"p": 0.943965,
+					"t_dtw": 110
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,270"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1270
+					},
+					"id": 1893,
+					"p": 0.995854,
+					"t_dtw": 122
+				},
+				{
+					"text": " j",
+					"timestamps": {
+						"from": "00:00:01,270",
+						"to": "00:00:01,300"
+					},
+					"offsets": {
+						"from": 1270,
+						"to": 1300
+					},
+					"id": 361,
+					"p": 0.823229,
+					"t_dtw": 132
+				},
+				{
+					"text": "em",
+					"timestamps": {
+						"from": "00:00:01,310",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1310,
+						"to": 1380
+					},
+					"id": 443,
+					"p": 0.99501,
+					"t_dtw": 134
+				},
+				{
+					"text": "als",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,470"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1470
+					},
+					"id": 1124,
+					"p": 0.998851,
+					"t_dtw": 144
+				},
+				{
+					"text": " gemacht",
+					"timestamps": {
+						"from": "00:00:01,490",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1490,
+						"to": 1700
+					},
+					"id": 12293,
+					"p": 0.99589,
+					"t_dtw": 164
+				},
+				{
+					"text": " habe",
+					"timestamps": {
+						"from": "00:00:01,800",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1800,
+						"to": 2000
+					},
+					"id": 6015,
+					"p": 0.983245,
+					"t_dtw": 202
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,150"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2150
+					},
+					"id": 13,
+					"p": 0.915732,
+					"t_dtw": 228
+				},
+				{
+					"text": "[_TT_116]",
+					"timestamps": {
+						"from": "00:00:02,320",
+						"to": "00:00:02,320"
+					},
+					"offsets": {
+						"from": 2320,
+						"to": 2320
+					},
+					"id": 50480,
+					"p": 0.0698229,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,880"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2880
+			},
+			"text": " Vielleicht hat was sich gedacht hat darüber, aber ...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.99508,
+					"t_dtw": -1
+				},
+				{
+					"text": " Vielleicht",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 540
+					},
+					"id": 29838,
+					"p": 0.0497377,
+					"t_dtw": 26
+				},
+				{
+					"text": " hat",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,680"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 680
+					},
+					"id": 2385,
+					"p": 0.915978,
+					"t_dtw": 40
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 860
+					},
+					"id": 390,
+					"p": 0.694113,
+					"t_dtw": 54
+				},
+				{
+					"text": " sich",
+					"timestamps": {
+						"from": "00:00:00,860",
+						"to": "00:00:01,070"
+					},
+					"offsets": {
+						"from": 860,
+						"to": 1070
+					},
+					"id": 3041,
+					"p": 0.435956,
+					"t_dtw": 66
+				},
+				{
+					"text": " gedacht",
+					"timestamps": {
+						"from": "00:00:01,070",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1070,
+						"to": 1440
+					},
+					"id": 33296,
+					"p": 0.967327,
+					"t_dtw": 86
+				},
+				{
+					"text": " hat",
+					"timestamps": {
+						"from": "00:00:01,440",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1440,
+						"to": 1600
+					},
+					"id": 2385,
+					"p": 0.918979,
+					"t_dtw": 116
+				},
+				{
+					"text": " darüber",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,930"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1930
+					},
+					"id": 21737,
+					"p": 0.857693,
+					"t_dtw": 132
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,210",
+						"to": "00:00:02,290"
+					},
+					"offsets": {
+						"from": 2210,
+						"to": 2290
+					},
+					"id": 11,
+					"p": 0.510981,
+					"t_dtw": 212
+				},
+				{
+					"text": " aber",
+					"timestamps": {
+						"from": "00:00:02,290",
+						"to": "00:00:02,610"
+					},
+					"offsets": {
+						"from": 2290,
+						"to": 2610
+					},
+					"id": 4340,
+					"p": 0.944296,
+					"t_dtw": 238
+				},
+				{
+					"text": " ...",
+					"timestamps": {
+						"from": "00:00:02,880",
+						"to": "00:00:02,880"
+					},
+					"offsets": {
+						"from": 2880,
+						"to": 2880
+					},
+					"id": 1097,
+					"p": 0.251722,
+					"t_dtw": 286
+				},
+				{
+					"text": "[_TT_144]",
+					"timestamps": {
+						"from": "00:00:02,880",
+						"to": "00:00:02,880"
+					},
+					"offsets": {
+						"from": 2880,
+						"to": 2880
+					},
+					"id": 50508,
+					"p": 0.0591873,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

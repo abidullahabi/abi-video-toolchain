@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Fast zehn Jahre, immer wieder neu.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.995372,
+					"t_dtw": -1
+				},
+				{
+					"text": " Fast",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 250
+					},
+					"id": 15968,
+					"p": 0.957094,
+					"t_dtw": 26
+				},
+				{
+					"text": " zehn",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 500
+					},
+					"id": 33975,
+					"p": 0.896145,
+					"t_dtw": 56
+				},
+				{
+					"text": " Jahre",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 810
+					},
+					"id": 15557,
+					"p": 0.541113,
+					"t_dtw": 78
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:00,910"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 910
+					},
+					"id": 11,
+					"p": 0.473209,
+					"t_dtw": 96
+				},
+				{
+					"text": " immer",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1240
+					},
+					"id": 5578,
+					"p": 0.987667,
+					"t_dtw": 112
+				},
+				{
+					"text": " wieder",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,610"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1610
+					},
+					"id": 6216,
+					"p": 0.993741,
+					"t_dtw": 138
+				},
+				{
+					"text": " neu",
+					"timestamps": {
+						"from": "00:00:01,610",
+						"to": "00:00:01,770"
+					},
+					"offsets": {
+						"from": 1610,
+						"to": 1770
+					},
+					"id": 22510,
+					"p": 0.979649,
+					"t_dtw": 166
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,770",
+						"to": "00:00:01,880"
+					},
+					"offsets": {
+						"from": 1770,
+						"to": 1880
+					},
+					"id": 13,
+					"p": 0.725748,
+					"t_dtw": 194
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.276827,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}
