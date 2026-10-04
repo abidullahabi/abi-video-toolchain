@@ -63,7 +63,7 @@ export function speicherPruefen(meta = {}) {
 export function momente(plan) {
   const m = [], add = (t, art, text) => { if (t >= 0 && t < plan.duration) m.push({ t: Math.round(t * 100) / 100, art, text }); };
   const e = plan.einstieg; add(0, 'Einstieg', [...e.h1.lines, ...(e.h2?.lines || [])].join(' / '));
-  for (const k of plan.kapitel || []) if (k.buch) { add(k.start + 0.6, 'Buchcover groß (Test 17)', k.titel); add(Math.min(k.end - 0.25, k.buch.autorAt + 0.4), 'Kapitel mit Buchcover', `${k.nummer || ''} ${k.titel} / ${k.buch.de || ''} / ${k.buch.autor || ''}`.trim()); }
+  for (const k of plan.kapitel || []) if (k.buch) { add(k.start + 0.6, 'Buchcover groß (Test 17)', k.titel); add(Math.min(k.end - 0.25, k.buch.autorAt + 0.4), 'Kapitel mit Buchcover', `${k.nummer || ''} ${k.titel} / ${[].concat(k.buch.de || []).join(' ')} / ${k.buch.autor || ''}`.trim()); }
     else add(k.start + 0.62, 'Kapitel', `${k.nummer || ''} ${k.titel}`.trim());
   for (const h of plan.h1 || []) add(h.start + 0.3, 'H1', h.lines.join(' '));
   for (const h of plan.h2 || []) add(h.start + 0.4, 'H2', h.lines.join(' / '));

@@ -239,7 +239,7 @@ export function layoutDesign22(input, ctx) {
 const BUCH_CSS = () => `.kap-buch{gap:${BUCH.luecke}px;text-align:left}.buch-slot{display:inline-block;flex:0 0 auto}
 .buch-col{display:inline-flex;flex-direction:column;align-items:flex-start}.buch-row{display:inline-flex;align-items:center;gap:18px}
 .buch-num{font-size:${BUCH.zahl}px}.buch-title{display:inline-block;font-weight:900;font-size:${BUCH.titel}px;line-height:1.05;word-spacing:6px;${stroke(6)}}.buch-title .ln{display:block}
-.buch-de{display:inline-block;margin-top:10px;font-weight:800;font-size:${BUCH.de}px;line-height:1.2;white-space:nowrap;${stroke(4)}}
+.buch-de .ln{display:block}.buch-de{display:inline-block;margin-top:10px;font-weight:800;font-size:${BUCH.de}px;line-height:1.2;white-space:nowrap;${stroke(4)}}
 .buch-autor{display:inline-block;margin-top:16px;background:${C.blue};font-weight:800;font-size:${BUCH.autor}px;line-height:1.12;padding:6px 22px 10px;border-radius:10px;transform:rotate(-2deg);white-space:nowrap}
 .buch-cw{position:absolute;display:block}.buch-cover{display:block;width:100%;height:100%;object-fit:cover;border:4px solid ${C.ink};border-radius:6px;box-shadow:8px 8px 0 ${C.ink};transform:rotate(-3deg)}`;
 const BUCH = { klein: 250, gross: 600, top: 270, luecke: 36, maxW: 850, zahl: 110, titel: 60, de: 40, autor: 44 };
@@ -257,17 +257,27 @@ function buch22(k, { A, G, errors, notes, warnings, hits }) {
   if (rowW(lines) > colMax) {
     const w = k.titel.split(' '); let best = null;
     for (let i = 1; i < w.length; i++) { const l = [w.slice(0, i).join(' '), w.slice(i).join(' ')], m = rowW(l); if (!best || m < best.m) best = { l, m }; }
+    const nachDoppelpunkt = w.findIndex(x => x.endsWith(':')) + 1;   // „Bonus: / The Prophet“ statt „Bonus: The / Prophet“
+    if (nachDoppelpunkt > 0 && nachDoppelpunkt < w.length) { const l = [w.slice(0, nachDoppelpunkt).join(' '), w.slice(nachDoppelpunkt).join(' ')]; if (rowW(l) <= colMax) best = { l, m: rowW(l) }; }
     if (best) lines = best.l;
   }
-  const de = b.deutsch ? '🇩🇪 ' + b.deutsch : null;
-  const titleW = rowW(lines), deW = de ? A(de, BUCH.de, 800) + 4 : 0, autorW = b.autor ? A(b.autor, BUCH.autor, 800) + 44 + 4 : 0;
+  // Deutscher Titel mit 🇩🇪; zu lang für eine Zeile → zwei Zeilen an der ausgewogensten Wortgrenze (Flagge vorn).
+  let deLines = b.deutsch ? ['🇩🇪 ' + b.deutsch] : [];
+  const deMax = l => Math.max(...l.map(x => A(x, BUCH.de, 800) + 4));
+  if (deLines.length && deMax(deLines) > colMax) {
+    const w = deLines[0].split(' '); let best = null;
+    for (let i = 2; i < w.length; i++) { const l = [w.slice(0, i).join(' '), w.slice(i).join(' ')], m = deMax(l); if (!best || m < best.m) best = { l, m }; }
+    if (best) deLines = best.l;
+  }
+  const de = deLines.length ? deLines : null;
+  const titleW = rowW(lines), deW = de ? deMax(de) : 0, autorW = b.autor ? A(b.autor, BUCH.autor, 800) + 44 + 4 : 0;
   if (titleW > colMax) errors.push(`Kapitel ${k.id}: Titel neben dem Cover breiter als ${Math.round(colMax)} px (${Math.round(titleW)}): ${k.titel}`);
   if (deW > colMax) errors.push(`Kapitel ${k.id}: deutscher Titel breiter als ${Math.round(colMax)} px: ${b.deutsch}`);
   if (autorW > colMax) errors.push(`Kapitel ${k.id}: Autor breiter als ${Math.round(colMax)} px: ${b.autor}`);
   const colW = Math.ceil(Math.max(titleW, deW, autorW));
   const groupW = sw + BUCH.luecke + colW;
   const rowH = Math.max(k.nummer ? BUCH.zahl : 0, lines.length * BUCH.titel * 1.05);
-  const colH = rowH + (de ? 10 + BUCH.de * 1.2 : 0) + (b.autor ? 16 + BUCH.autor * 1.12 + 16 : 0);
+  const colH = rowH + (de ? 10 + de.length * BUCH.de * 1.2 : 0) + (b.autor ? 16 + BUCH.autor * 1.12 + 16 : 0);
   const height = Math.round(Math.max(BUCH.klein, colH)), left = (1080 - groupW) / 2;
   const small = { left, top: Math.round((height - BUCH.klein) / 2), w: sw, h: BUCH.klein };
   const big = { left: Math.round(540 - bw / 2), top: 0, w: bw, h: BUCH.gross };
@@ -362,7 +372,7 @@ export function makeDesign22Composition(plan, opts = {}) {
   if (e.h2) top.push(`<div ${clip('einstieg-h2', 0, e.end + 0.06, 3, 'h2', ' data-einstieg="1"')} style="top:${e.h2.top}px;opacity:1"><span class="h2" style="visibility:visible">${lines(e.h2.lines)}</span></div>`);
   // 17: Kapitel mit Buchcover. Platzhalter in der Gruppe hält den Platz des kleinen Covers; das Cover selbst steht absolut und
   // wandert vom großen in den kleinen Zustand.
-  const buchHtml = k => { const b = k.buch; return `<div ${clip(k.id, k.start, k.end, 4, 'kapitel', ' data-buch="1"')} style="top:${k.top}px;height:${k.height}px"><span class="kap kap-buch"><span class="buch-slot" style="width:${b.small.w}px;height:${k.height}px"></span><span class="buch-col" style="width:${b.colW}px"><span class="buch-row" id="${k.id}-title">${k.nummer ? `<span class="kap-num buch-num">${esc(k.nummer)}</span>` : ''}<span class="buch-title">${lines(b.lines)}</span></span>${b.de ? `<span class="buch-de" id="${k.id}-de">${escEmoji(b.de)}</span>` : ''}${b.autor ? `<span class="buch-autor" id="${k.id}-autor">${escEmoji(b.autor)}</span>` : ''}</span></span><span class="buch-cw" id="${k.id}-cw" style="left:${b.small.left}px;top:${b.small.top}px;width:${b.small.w}px;height:${b.small.h}px"><img class="buch-cover" id="${k.id}-cover" src="${esc(b.src)}" alt=""></span></div>`; };
+  const buchHtml = k => { const b = k.buch; return `<div ${clip(k.id, k.start, k.end, 4, 'kapitel', ' data-buch="1"')} style="top:${k.top}px;height:${k.height}px"><span class="kap kap-buch"><span class="buch-slot" style="width:${b.small.w}px;height:${k.height}px"></span><span class="buch-col" style="width:${b.colW}px"><span class="buch-row" id="${k.id}-title">${k.nummer ? `<span class="kap-num buch-num">${esc(k.nummer)}</span>` : ''}<span class="buch-title">${lines(b.lines)}</span></span>${b.de ? `<span class="buch-de" id="${k.id}-de">${(Array.isArray(b.de) ? b.de : [b.de]).map(l => `<span class="ln">${escEmoji(l)}</span>`).join('')}</span>` : ''}${b.autor ? `<span class="buch-autor" id="${k.id}-autor">${escEmoji(b.autor)}</span>` : ''}</span></span><span class="buch-cw" id="${k.id}-cw" style="left:${b.small.left}px;top:${b.small.top}px;width:${b.small.w}px;height:${b.small.h}px"><img class="buch-cover" id="${k.id}-cover" src="${esc(b.src)}" alt=""></span></div>`; };
   for (const k of kapitel) if (k.buch) top.push(buchHtml(k)); else top.push(`<div ${clip(k.id, k.start, k.end, 4, 'kapitel')} style="top:${k.top}px"><span class="kap">${k.nummer ? `<span class="kap-numw" id="${k.id}-num"><span class="kap-num">${esc(k.nummer)}</span></span>` : ''}<span class="kap-title" id="${k.id}-title">${escEmoji(k.titel)}</span></span></div>`);
   for (const h of h1) top.push(`<div ${clip(h.id, h.start, h.end, 2, 'h1')} style="top:250px;font-size:${h.fontSize}px"><span class="h1">${lines(h.lines)}</span></div>`);
   for (const h of h2) top.push(`<div ${clip(h.id, h.start, h.end, 3, 'h2')} style="top:${h.top}px"><span class="h2">${lines(h.lines)}</span></div>`);
