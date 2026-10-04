@@ -249,7 +249,7 @@ const BUCH_CSS = () => `.kap-buch{gap:${BUCH.luecke}px;text-align:left}.buch-slo
 .buch-num{font-size:${BUCH.zahl}px}.buch-title{display:inline-block;font-weight:900;font-size:${BUCH.titel}px;line-height:1.05;word-spacing:6px;${stroke(6)}}.buch-title .ln{display:block}
 .buch-de .ln{display:block}.buch-de{display:inline-block;margin-top:10px;font-weight:800;font-size:${BUCH.de}px;line-height:1.2;white-space:nowrap;${stroke(4)}}
 .buch-autor{display:inline-block;margin-top:16px;background:${C.blue};font-weight:800;font-size:${BUCH.autor}px;line-height:1.12;padding:6px 22px 10px;border-radius:10px;transform:rotate(-2deg);white-space:nowrap}
-.buch-cw{position:absolute;display:block}.buch-cover{display:block;width:100%;height:100%;object-fit:cover;border:4px solid ${C.ink};border-radius:6px;box-shadow:8px 8px 0 ${C.ink};transform:rotate(-3deg)}`;
+.buch-cw{position:absolute;display:block;transform-origin:0 0}.buch-cover{display:block;width:100%;height:100%;object-fit:cover;border-radius:6px;box-shadow:0 0 0 4px ${C.ink},8px 8px 0 4px ${C.ink};transform:rotate(-3deg)}`;
 const BUCH = { klein: 250, gross: 600, top: 270, luecke: 36, maxW: 850, zahl: 110, titel: 60, de: 40, autor: 44 };
 function buch22(k, { A, G, errors, notes, warnings, hits }) {
   const b = k.buch, r = b.breite / b.hoehe;
@@ -467,11 +467,13 @@ ${bubbles}
 
 // 17 Buchcover: Zeitleisten-Teil, nur eingefügt, wenn ein Kapitel ein Cover hat (alte Kompositionen bleiben bytegleich).
 const BUCH_TL = `// 17: Kapitel mit Buchcover. Cover groß Pop 90 → 100 % 0,35 s (wie Grafik), ab grossBis 0,5 s Ausklingen in den kleinen Platz
-// (Rand 6 → 4, Schatten 12 → 8, Drehung −2° → −3°); Titelzeile ab +0,3 s von unten 0,22 s, deutscher Titel 0,1 s später, Autor wischt 0,28 s.
-for(const k of D.k){if(!k.buch)continue;const b=k.buch,cw='#'+k.id+'-cw',cv='#'+k.id+'-cover';show('#'+k.id,k.start,k.end);
- tl.set(cw,{left:b.big.left,top:b.big.top,width:b.big.w,height:b.big.h},0);tl.set(cv,{borderWidth:6,borderRadius:8,boxShadow:'12px 12px 0 ${C.ink}',rotation:-2},0);
- pop(cw,k.start,.9,.35);tl.to(cw,{left:b.small.left,top:b.small.top,width:b.small.w,height:b.small.h,duration:.5,ease:OUT},b.grossBis);
- tl.to(cv,{borderWidth:4,borderRadius:6,boxShadow:'8px 8px 0 ${C.ink}',rotation:-3,duration:.5,ease:OUT},b.grossBis);
+// (Rand 6 → 4, Schatten 12 → 8, Drehung −2° → −3°, nur über Transformationen); Titelzeile ab +0,3 s von unten 0,22 s, deutscher Titel 0,1 s später, Autor wischt 0,28 s.
+for(const k of D.k){if(!k.buch)continue;const b=k.buch,cw='#'+k.id+'-cw',cv='#'+k.id+'-cover',f=b.big.h/b.small.h;show('#'+k.id,k.start,k.end);
+ // Nur Transformationen bewegen (HyperFrames-Lint: left/top rasten auf ganze Pixel). Der Rahmen steht klein am Platzhalter; groß = verschoben
+ // und skaliert (Ursprung oben links). Rand und Schatten als box-shadow, groß durch f geteilt, damit sie sichtbar 6 bzw. 12 px bleiben.
+ tl.set(cw,{x:b.big.left-b.small.left,y:b.big.top-b.small.top,scale:f},0);tl.set(cv,{rotation:-2,borderRadius:8/f,boxShadow:'0 0 0 '+6/f+'px ${C.ink},'+12/f+'px '+12/f+'px 0 '+6/f+'px ${C.ink}'},0);
+ pop(cv,k.start,.9,.35);tl.to(cw,{x:0,y:0,scale:1,duration:.5,ease:OUT},b.grossBis);
+ tl.to(cv,{rotation:-3,borderRadius:6,boxShadow:'0 0 0 4px ${C.ink},8px 8px 0 4px ${C.ink}',duration:.5,ease:OUT},b.grossBis);
  up('#'+k.id+'-title',b.titleAt);if(b.de)up('#'+k.id+'-de',b.deAt);if(b.autor){const au='#'+k.id+'-autor';tl.set(au,{opacity:0},0);tl.set(au,{opacity:1},b.autorAt);wipe(au,b.autorAt,.28,20);}out('#'+k.id,k.end);}
 `;
 function timeline22(plan, abschnitt) {
