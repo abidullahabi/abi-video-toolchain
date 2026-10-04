@@ -31,7 +31,10 @@ export function makeMeasure(root = ROOT) {
   // 3: Emojis so groß wie der umgebende Text; Apple-Emoji ist etwa 1,25 em breit.
   const A = (t, size, w = 800, wd = 100, ws = 0) => { const e = (t.match(EMOJI) || []).length; const r = t.replace(EMOJI, ''); return adv(face(w, wd), r) * size + e * 1.25 * size + ws * (t.split(' ').length - 1); };
   const G = (t, size) => adv(gochi, t) * size;
-  return { A, G };
+  // Oberste Tintenkante einer Zeile (Umlautpunkte, Akzente) relativ zur Zeilenoberkante bei Zeilenhöhe lh.
+  const inkTop = (t, size, lh, w = 900, wd = 125) => { const f = face(w, wd), u = f.unitsPerEm; let y = 0; for (const g of f.layout(t.replace(EMOJI, '')).glyphs) y = Math.max(y, g.bbox.maxY);
+    return (lh * size - (f.ascent - f.descent) / u * size) / 2 + f.ascent / u * size - y / u * size; };
+  return { A, G, inkTop };
 }
 const upper = s => s.replace(/[^\p{Extended_Pictographic}\p{Regional_Indicator}]+/gu, m => m.toLocaleUpperCase('de-DE'));
 const r2 = x => Math.round(x * 100) / 100;
@@ -82,7 +85,7 @@ export function planZooms22({ resets, blocked, faceWidth, closeFrom, duration })
 // ---------- Layout ----------
 // ctx: { measure, heads(a,b) → [{x,y,w,h}], errors, notes, duration, followers }
 export function layoutDesign22(input, ctx) {
-  const { A, G } = ctx.measure, errors = ctx.errors, notes = ctx.notes, heads = ctx.heads;
+  const { A, G, inkTop } = ctx.measure, errors = ctx.errors, notes = ctx.notes, heads = ctx.heads;
   const hits = (b, a, e) => heads(a, e).filter(h => b.x < h.x + h.w && b.x + b.w > h.x && b.y < h.y + h.h && b.y + b.h > h.y);
   // 6: H1 so groß wie möglich, höchstens 160 px, Zeile inkl. Kontur ≤ 864 px; unter 90 px zwei Zeilen gleich groß.
   // H1 im Video startet mit einem Stoß von 112 % (DESIGN.md 15): dann auch im ersten Bild ≤ 864 px, also für 112 % bemessen.
@@ -95,13 +98,18 @@ export function layoutDesign22(input, ctx) {
     return best;
   };
   const h1H = h => h.lines.length * h.fontSize * 1.02;
+  // DESIGN.md 2/5/6: Oberkante 250 ist die sichtbare Kante. Ragen Umlautpunkte samt Kontur (8 px) der ersten Zeile über die Zeilenbox
+  // (z. B. „BÜCHER“ bei 100 px: 12 px über y = 250, Designprüfung 04.10.2026), rückt die H1 um diesen Betrag nach unten
+  // (bei der H1 im Video für den Stoß von 112 %). Ohne Überstand bleibt alles wie bisher (kein Feld, bytegleiche Komposition).
+  const versatz = (h, stoss = 1) => { if (!inkTop) return 0; const d = 8 - inkTop(h.lines[0], h.fontSize, 1.02); return d > 0 ? Math.ceil(d * stoss) + 1 : 0; };
+  const mitVersatz = (h, stoss) => { const v = versatz(h, stoss); return v ? { ...h, versatz: v } : h; };
   const h2Chk = (id, lines) => { if (lines.length > 2) errors.push(`H2 ${id}: mehr als zwei Zeilen`); for (const l of lines) if (A(l, 58, 800) + 56 > 780) errors.push(`H2 ${id} breiter als 780 px: ${l}`); };
   const h2H = lines => lines.length * 58 * 1.12 + 22;
 
   // 5: Einstieg
-  const e = input.einstieg, eh1 = h1Fit(e.h1);
+  const e = input.einstieg, eh1 = mitVersatz(h1Fit(e.h1));
   const einstieg = { h1: eh1, end: e.end };
-  if (e.h2?.length) { h2Chk('einstieg', e.h2); einstieg.h2 = { lines: e.h2, top: Math.round(250 + h1H(eh1) + 24) }; }
+  if (e.h2?.length) { h2Chk('einstieg', e.h2); einstieg.h2 = { lines: e.h2, top: Math.round(250 + (eh1.versatz || 0) + h1H(eh1) + 24) }; }
 
   // 8: Kapitel. Gruppenhöhe = Zahl 140 px (Zeilenhöhe 1). Mit Pillen Oberkante 270, sonst 300.
   const KAP_H = 140;
@@ -116,7 +124,7 @@ export function layoutDesign22(input, ctx) {
   for (let i = 1; i < kapitel.length; i++) if (kapitel[i].start < kapitel[i - 1].end - 1e-6) errors.push(`Kapitel überlappen: ${kapitel[i - 1].id} / ${kapitel[i].id}`);
   const kapById = id => kapitel.find(k => k.id === id);
 
-  const h1 = (input.h1 || []).map(h => ({ id: h.id, ...h1Fit(h.text, 1.12), start: h.start, end: h.end }));
+  const h1 = (input.h1 || []).map(h => ({ id: h.id, ...mitVersatz(h1Fit(h.text, 1.12), 1.12), start: h.start, end: h.end }));
 
   // 9: Pillen. Höhe je Pille: Ring 3 + Rand 5 + 8 + 54 × 1,1 + 10 + Rand 5 + Ring 3 (Zeilenhöhe 1,1: Referenz).
   const PILL = 5 + 8 + 54 * 1.1 + 10 + 5, ROW = 5 + 8 + 42 * 1.1 + 10 + 5, OFFS = [[-44, -2], [40, 1.5], [-16, -1]];
@@ -153,7 +161,7 @@ export function layoutDesign22(input, ctx) {
       const p = pillen.find(p => p.kapitel === k.id && p.end > h.start && p.start < h.end);
       if (p && h.ausnahme) { top = p.bottom + 24; notes.push(`H2 ${h.id} steht als abgenommene Ausnahme unter den Pillen ${p.id}: ${h.ausnahme}`); }
       else if (p) { if (p.start <= h.start) errors.push(`H2 ${h.id} während Pillen ${p.id}`); else { end = r2(Math.min(end, p.start - 0.02)); notes.push(`H2 ${h.id} endet vor Pillen ${p.id} (${end} s)`); } }
-    } else if (u.startsWith('h1:')) top = 250 + h1H(h1.find(x => x.id === u.slice(3))) + 24;
+    } else if (u.startsWith('h1:')) { const x = h1.find(x => x.id === u.slice(3)); top = 250 + (x.versatz || 0) + h1H(x) + 24; }
     else if (kapitel.some(k => k.start < h.end && k.end > h.start)) errors.push(`H2 ${h.id} „allein" bei y 250, während ein Kapitel läuft`);
     const w = Math.max(...h.lines.map(l => A(l, 58, 800))) + 56;
     // H2 allein bei y = 250: Die Drehung um −2° hebt die linke Ecke um (w/2)·sin 2° an; sonst ragte sie in die gesperrte
@@ -186,7 +194,7 @@ export function layoutDesign22(input, ctx) {
   const grafiken = (input.grafiken || []).map(g => chart22(g, { A, errors }));
 
   // 12: Randnotiz.
-  const kapBottom = t => { const k = kapitel.find(k => k.start <= t && t < k.end); const x = h1.find(k => k.start <= t && t < k.end); return k ? k.top + k.height : x ? 250 + h1H(x) : t < einstieg.end ? 250 + h1H(eh1) : 250; };
+  const kapBottom = t => { const k = kapitel.find(k => k.start <= t && t < k.end); const x = h1.find(k => k.start <= t && t < k.end); return k ? k.top + k.height : x ? 250 + (x.versatz || 0) + h1H(x) : t < einstieg.end ? 250 + (eh1.versatz || 0) + h1H(eh1) : 250; };
   const randnotizen = (input.randnotizen || []).map(n => note22(n, { A, G, heads, errors, top0: kapBottom(n.start + 0.01) }));
 
   // 13: Lebensbalken 700 × 26, zentriert, Oberkante 370; Beschriftung 40 px über dem Abschnitt.
@@ -368,13 +376,13 @@ export function makeDesign22Composition(plan, opts = {}) {
     `<div ${clip(g.id, g.start, g.end, 11, 'grafik')} style="left:150px;top:270px;width:780px;height:${g.height}px"><div class="card"><div class="card-title">${escEmoji(g.title)}</div>${g.svg}</div></div>`,
     ...(g.person ? [] : []), g.person ? `<video id="${g.id}-person" class="clip" src="${g.person}" data-start="${lage(g.start, g.end)[0]}" data-duration="${lage(g.start, g.end)[1]}"${mediaStart(g.start)} data-track-index="12" data-volume="0" muted playsinline style="position:absolute;inset:0;width:1080px;height:1920px"></video>` : '');
   const top = [];
-  top.push(`<div ${clip('einstieg-h1', 0, e.end, 2, 'h1', ' data-einstieg="1"')} style="top:250px;font-size:${e.h1.fontSize}px;opacity:1"><span class="h1" style="visibility:visible">${lines(e.h1.lines)}</span></div>`);
+  top.push(`<div ${clip('einstieg-h1', 0, e.end, 2, 'h1', ' data-einstieg="1"')} style="top:${250 + (e.h1.versatz || 0)}px;font-size:${e.h1.fontSize}px;opacity:1"><span class="h1" style="visibility:visible">${lines(e.h1.lines)}</span></div>`);
   if (e.h2) top.push(`<div ${clip('einstieg-h2', 0, e.end + 0.06, 3, 'h2', ' data-einstieg="1"')} style="top:${e.h2.top}px;opacity:1"><span class="h2" style="visibility:visible">${lines(e.h2.lines)}</span></div>`);
   // 17: Kapitel mit Buchcover. Platzhalter in der Gruppe hält den Platz des kleinen Covers; das Cover selbst steht absolut und
   // wandert vom großen in den kleinen Zustand.
   const buchHtml = k => { const b = k.buch; return `<div ${clip(k.id, k.start, k.end, 4, 'kapitel', ' data-buch="1"')} style="top:${k.top}px;height:${k.height}px"><span class="kap kap-buch"><span class="buch-slot" style="width:${b.small.w}px;height:${k.height}px"></span><span class="buch-col" style="width:${b.colW}px"><span class="buch-row" id="${k.id}-title">${k.nummer ? `<span class="kap-num buch-num">${esc(k.nummer)}</span>` : ''}<span class="buch-title">${lines(b.lines)}</span></span>${b.de ? `<span class="buch-de" id="${k.id}-de">${(Array.isArray(b.de) ? b.de : [b.de]).map(l => `<span class="ln">${escEmoji(l)}</span>`).join('')}</span>` : ''}${b.autor ? `<span class="buch-autor" id="${k.id}-autor">${escEmoji(b.autor)}</span>` : ''}</span></span><span class="buch-cw" id="${k.id}-cw" style="left:${b.small.left}px;top:${b.small.top}px;width:${b.small.w}px;height:${b.small.h}px"><img class="buch-cover" id="${k.id}-cover" src="${esc(b.src)}" alt=""></span></div>`; };
   for (const k of kapitel) if (k.buch) top.push(buchHtml(k)); else top.push(`<div ${clip(k.id, k.start, k.end, 4, 'kapitel')} style="top:${k.top}px"><span class="kap">${k.nummer ? `<span class="kap-numw" id="${k.id}-num"><span class="kap-num">${esc(k.nummer)}</span></span>` : ''}<span class="kap-title" id="${k.id}-title">${escEmoji(k.titel)}</span></span></div>`);
-  for (const h of h1) top.push(`<div ${clip(h.id, h.start, h.end, 2, 'h1')} style="top:250px;font-size:${h.fontSize}px"><span class="h1">${lines(h.lines)}</span></div>`);
+  for (const h of h1) top.push(`<div ${clip(h.id, h.start, h.end, 2, 'h1')} style="top:${250 + (h.versatz || 0)}px;font-size:${h.fontSize}px"><span class="h1">${lines(h.lines)}</span></div>`);
   for (const h of h2) top.push(`<div ${clip(h.id, h.start, h.end, 3, 'h2')} style="top:${h.top}px"><span class="h2">${lines(h.lines)}</span></div>`);
   for (const p of pillen) top.push(`<div ${clip(p.id, p.start, p.end, 5, 'pillen', ` data-layout="${p.layout}"`)} style="top:${p.top}px">${p.items.map((it, i) => `<span class="pill-pop" id="${p.id}-${i}"><span class="pill${p.layout === 'row' ? ' pill-row' : ''}" style="${p.layout === 'stack' ? `transform:translateX(${it.dx}px) rotate(${it.rot}deg)` : ''}">${p.layout === 'row' && !p.rowDot ? '' : p.numbered ? `<span class="pill-dot"><span class="pill-no">${i + 1}</span></span>` : '<span class="pill-dot pill-dot-s"></span>'}<span class="pill-text">${escEmoji(it.text)}</span></span></span>`).join('')}</div>`);
   for (const a of akronyme) top.push(`<div ${clip(a.id, a.start, a.end, 6, 'akronym')} style="top:240px"><div class="ak-row">${a.letters.map((l, i) => `<span class="ak-pop" id="${a.id}-p${i}"><span class="ak-letter" id="${a.id}-l${i}" style="transform:rotate(${l.rot}deg)">${esc(l.b)}</span></span>`).join('')}</div><div class="ak-pills" style="top:${a.pillTop - 240}px">${a.letters.map((l, i) => `<span class="ak-pill-pop" id="${a.id}-q${i}"><span class="pill ak-pill"><span class="pill-text">${escEmoji(l.text)}</span></span></span>`).join('')}</div></div>`);

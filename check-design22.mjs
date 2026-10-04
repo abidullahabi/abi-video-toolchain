@@ -128,7 +128,7 @@ export async function checkDesign22(project, { step = 1 } = {}) {
       // 5: Einstieg am ersten Frame vollständig, ohne Animation.
       tl.seek(0, false);
       for (const el of document.querySelectorAll('[data-einstieg]')) { const s = cs(el), m = new DOMMatrix(s.transform); if (cs(el.firstElementChild).visibility !== 'visible' || +s.opacity < 0.999 || Math.abs(m.f) > 0.01 || Math.abs(m.a - 1) > 1e-4) err('einstieg_frame0', { id: el.id }); }
-      const eh1 = R(document.querySelector('#einstieg-h1 .h1')); if (Math.abs(eh1.y - 250) > 1) warn('einstieg_oberkante', { y: eh1.y });
+      const eh1 = R(document.querySelector('#einstieg-h1 .h1')); if (Math.abs(eh1.y - 250 - (plan.einstieg.h1.versatz || 0)) > 1) warn('einstieg_oberkante', { y: eh1.y });   // Versatz: Umlautpunkte samt Kontur unter y = 250
       const eh2 = document.querySelector('#einstieg-h2 .h2'); if (eh2) { const d = document.querySelector('#einstieg-h2').getBoundingClientRect().top - document.querySelector('#einstieg-h1').getBoundingClientRect().bottom; if (Math.abs(d - 24) > 1) err('einstieg_h2_abstand', { d }); }
       // 6/8/9/10: Größen und Breiten.
       for (const el of document.querySelectorAll('.h1 .ln')) { if (parseFloat(cs(el).fontSize) > 160) err('h1_groesse'); if (R(el).w + 16 > 864.5) err('h1_breite', { w: R(el).w + 16 }); }
