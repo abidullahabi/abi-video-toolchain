@@ -25,4 +25,5 @@ if __name__=='__main__':
     print('noise floor p10', np.percentile(db,10), 'speech p90', np.percentile(db,90))
     for arg in sys.argv[2:]:
         a,b=map(float,arg.split(':'))
+        if not 0<=a<b<=len(db)/100: sys.exit(f'Bereich {arg} liegt nicht in der Aufnahme (0 bis {len(db)/100:.2f} s Rohzeit, <von> kleiner als <bis>).')
         print(f'{a:7.2f} |{show(a,b)}| {b:.2f}')

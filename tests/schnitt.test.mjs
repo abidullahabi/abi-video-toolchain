@@ -48,6 +48,14 @@ test('schnitt-plan: Wörter bleiben, verworfener Anlauf fällt weg, Grenzen auf 
   fs.rmSync(P, { recursive: true, force: true });
 });
 
+test('schnitt-pegel: Bereich außerhalb der Aufnahme wird mit Meldung abgewiesen statt mit Python-Fehler', () => {
+  const P = testprojekt();
+  assert.match(py('env.py', [P, '0.9:1.1']), /0\.90 \|.{20}\| 1\.10/);
+  assert.throws(() => py('env.py', [P, '5.9:7']), /liegt nicht in der Aufnahme \(0 bis 6\.00 s/);
+  assert.throws(() => py('env.py', [P, '2:1']), /liegt nicht in der Aufnahme/);
+  fs.rmSync(P, { recursive: true, force: true });
+});
+
 test('vorher.json: Tempo von media.mp4; bleibt stehen, solange die Pläne noch auf den älteren Stand warten', () => {
   const P = fs.mkdtempSync(path.join(os.tmpdir(), 'schnitt-vorher-'));
   fs.mkdirSync(path.join(P, 'schnitt'));
