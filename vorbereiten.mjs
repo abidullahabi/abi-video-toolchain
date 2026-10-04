@@ -11,6 +11,10 @@
 // schnitt.json (nur bei beauftragtem Schnitt): {"behalten": [[start, ende], …]} in Sekunden des Rohvideos.
 // Die Wörter werden dann einmal auf dem ungeschnittenen Ton erkannt und über die Schnittliste in die
 // Schnittzeit umgerechnet, statt ein zweites Mal zu transkribieren.
+//
+// workflow.json "tempo" (z. B. 1.1, nur auf Abis Auftrag, CONTENT_WORKFLOW 8): Kamerabild und Ton werden im selben Durchgang
+// beschleunigt (setpts/atempo, Tonhöhe bleibt), Wörter und Schnittpunkte in die beschleunigte Zeit umgerechnet. Die Gestaltung
+// läuft danach in normaler Geschwindigkeit über dem schnelleren Bild (wie KI-Zertifikate, 27.09.2026). Ohne "tempo" unverändert.
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -111,9 +115,13 @@ export async function vorbereiten(project, opts = {}) {
   const grade = meta.farbkorrektur ? FARBKORREKTUR[meta.farbkorrektur] : null;
   if (meta.farbkorrektur && !grade) throw Error(`Unbekannte Farbkorrektur: ${meta.farbkorrektur}`);
   const erzwingen = !!opts.neu;
+  const tempo = Number(meta.tempo ?? 1);
+  if (!(tempo >= 0.5 && tempo <= 2)) throw Error(`workflow.json: tempo ${meta.tempo} außerhalb 0,5–2`);
+  const mitTempo = tempo !== 1 ? { tempo } : {};   // Cache-Schlüssel alter Projekte bleiben gleich
+  const vTempo = tempo !== 1 ? `setpts=PTS/${tempo},` : '', aTempo = tempo !== 1 ? `atempo=${tempo},` : '';
 
   // 1. Kamerabild: in einem Durchgang aus dem Rohvideo (Schnitt, HDR→SDR, Hochkant, 30 fps, Farbkorrektur).
-  const kb = await schritt(project, 'vorbereiten: kamerabild', { eingaben: [meta.source, ...(keep ? ['schnitt.json'] : [])], werte: { grade: meta.farbkorrektur, KAMERABILD, v: 3 }, ausgaben: ['media.mp4'] }, () => {
+  const kb = await schritt(project, 'vorbereiten: kamerabild', { eingaben: [meta.source, ...(keep ? ['schnitt.json'] : [])], werte: { grade: meta.farbkorrektur, KAMERABILD, v: 3, ...mitTempo }, ausgaben: ['media.mp4'] }, () => {
     const v = [], a = [];
     const hdr = meta.sourceVideo?.hdr ? 'zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,' : '';
     // Hochkant 1080 × 1920 nur, wenn die Aufnahme es nicht schon ist (spart einen Filterdurchgang je Bild).
@@ -125,8 +133,8 @@ export async function vorbereiten(project, opts = {}) {
         v.push(`[0:v:0]trim=start=${s}:end=${e},setpts=PTS-STARTPTS[v${i}]`);
         a.push(`[0:a:0]atrim=start=${s}:end=${e},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=${(e - s - 0.005).toFixed(6)}:d=0.005[a${i}]`);
       });
-      filter = [...v, ...a, `${keep.map((_, i) => `[v${i}][a${i}]`).join('')}concat=n=${keep.length}:v=1:a=1[vc][ac]`, `[vc]${bild}[vout]`, `[ac]aresample=48000[aout]`].join(';\n');
-    } else filter = `[0:v:0]${bild}[vout];[0:a:0]aresample=48000[aout]`;
+      filter = [...v, ...a, `${keep.map((_, i) => `[v${i}][a${i}]`).join('')}concat=n=${keep.length}:v=1:a=1[vc][ac]`, `[vc]${vTempo}${bild}[vout]`, `[ac]${aTempo}aresample=48000[aout]`].join(';\n');
+    } else filter = `[0:v:0]${vTempo}${bild}[vout];[0:a:0]${aTempo}aresample=48000[aout]`;
     fs.writeFileSync(path.join(project, 'logs/kamerabild-filter.txt'), filter);
     const tmp = path.join(project, 'media.unfertig.mp4');
     ff(['-y', '-filter_complex_threads', String(os.cpus().length), '-i', meta.source, '-filter_complex_script', path.join(project, 'logs/kamerabild-filter.txt'), '-map', '[vout]', '-map', '[aout]',
@@ -138,7 +146,7 @@ export async function vorbereiten(project, opts = {}) {
   }, { erzwingen });
   meta = J(metaFile);
   const d = kb.ergebnis?.dauer ?? dauer(path.join(project, 'media.mp4'));
-  if (Math.abs((meta.cutDuration ?? 0) - d) > 1e-6 || meta.mode !== (keep ? 'cut-and-design' : 'design-only')) { meta.cutDuration = d; meta.mode = keep ? 'cut-and-design' : 'design-only'; meta.media = { datei: 'media.mp4', farbkorrektur: meta.farbkorrektur, schnitt: !!keep }; schreibeJson(metaFile, meta); }
+  if (Math.abs((meta.cutDuration ?? 0) - d) > 1e-6 || meta.mode !== (keep ? 'cut-and-design' : 'design-only')) { meta.cutDuration = d; meta.mode = keep ? 'cut-and-design' : 'design-only'; meta.media = { datei: 'media.mp4', farbkorrektur: meta.farbkorrektur, schnitt: !!keep, ...mitTempo }; schreibeJson(metaFile, meta); }
 
   // 2. Tonspur für die Worterkennung. Bei Schnitt: ungeschnittener Ton, damit die Wörter nur einmal erkannt werden.
   const tonQuelle = keep ? meta.source : path.join(project, 'media.mp4');
@@ -150,11 +158,11 @@ export async function vorbereiten(project, opts = {}) {
   const ordner = keep ? 'woerter-roh' : 'word-alignment-turbo';
   const chunks = path.join(project, 'transcription-chunks.json');
   await schritt(project, 'vorbereiten: wörter (ein Durchgang)', { eingaben: ['speech.wav', ...(fs.existsSync(path.join(project, 'transcription-prompt.txt')) ? ['transcription-prompt.txt'] : []), ...(fs.existsSync(chunks) && !keep ? ['transcription-chunks.json'] : [])], werte: { ordner, modell: 'large-v3-turbo-q5_0', v: 1 }, ausgaben: [`${ordner}/chunks.json`] }, () => transkribieren(project, ordner, keep ? meta.sourceDuration : d), { erzwingen });
-  if (keep) await schritt(project, 'vorbereiten: wörter in Schnittzeit', { eingaben: ['woerter-roh/chunks.json', 'schnitt.json'], werte: { v: 1 }, ausgaben: ['word-alignment-turbo/chunks.json'] }, () => woerterUmrechnen(project, keep), { erzwingen });
+  if (keep) await schritt(project, 'vorbereiten: wörter in Schnittzeit', { eingaben: ['woerter-roh/chunks.json', 'schnitt.json'], werte: { v: 1, ...mitTempo }, ausgaben: ['word-alignment-turbo/chunks.json'] }, () => woerterUmrechnen(project, keep, tempo), { erzwingen });
 
   // 4. Gesichter alle 0,5 s (Vision), 5. Schnittpunkte (Bildsprünge und Schnittliste).
   await schritt(project, 'vorbereiten: gesichter', { eingaben: ['media.mp4'], werte: { v: 1 }, ausgaben: ['review/source-faces.json'] }, () => gesichter(project), { erzwingen });
-  await schritt(project, 'vorbereiten: schnittpunkte', { eingaben: ['media.mp4', ...(keep ? ['schnitt.json'] : [])], werte: { v: 1 }, ausgaben: ['review/cut-points.json'] }, () => schnittpunkte(project, keep), { erzwingen });
+  await schritt(project, 'vorbereiten: schnittpunkte', { eingaben: ['media.mp4', ...(keep ? ['schnitt.json'] : [])], werte: { v: 1, ...mitTempo }, ausgaben: ['review/cut-points.json'] }, () => schnittpunkte(project, keep, tempo), { erzwingen });
   console.log(`Vorbereitet: ${project} (${d.toFixed(2)} s)`);
 }
 
@@ -183,7 +191,7 @@ function transkribieren(project, ordner, laenge) {
 
 // Whisper-Tokens aus der Rohzeit in die Schnittzeit umrechnen. Ein Token bleibt, wenn seine Mitte erhalten ist;
 // herausgeschnittene Tokens fallen weg. Ergebnis im selben Format wie word-alignment-turbo (ein Abschnitt ab 0).
-export function woerterUmrechnen(project, keep) {
+export function woerterUmrechnen(project, keep, tempo = 1) {
   const roh = path.join(project, 'woerter-roh'), grenzen = J(path.join(roh, 'chunks.json'));
   const out = path.join(project, 'word-alignment-turbo');
   fs.mkdirSync(out, { recursive: true });
@@ -197,8 +205,8 @@ export function woerterUmrechnen(project, keep) {
         const von = a + t.offsets.from / 1000, bis = a + t.offsets.to / 1000, mitte = t.t_dtw >= 0 ? a + t.t_dtw / 100 : (von + bis) / 2;
         const m = schnittZeit(keep, mitte);
         if (m === null) continue;
-        const dv = m - mitte;   // gleicher Versatz für Anfang, Ende und DTW-Punkt des Tokens
-        tokens.push({ ...t, offsets: { from: Math.max(0, Math.round((von + dv) * 1000)), to: Math.max(0, Math.round((bis + dv) * 1000)) }, t_dtw: t.t_dtw >= 0 ? Math.round(m * 100) : t.t_dtw });
+        const dv = m - mitte;   // gleicher Versatz für Anfang, Ende und DTW-Punkt des Tokens; danach in die beschleunigte Zeit
+        tokens.push({ ...t, offsets: { from: Math.max(0, Math.round((von + dv) / tempo * 1000)), to: Math.max(0, Math.round((bis + dv) / tempo * 1000)) }, t_dtw: t.t_dtw >= 0 ? Math.round(m / tempo * 100) : t.t_dtw });
       }
       // Ein Wort beginnt mit Leerzeichen; fällt der Wortanfang weg, darf der Rest nicht an das vorige Wort anwachsen.
       const lex = tokens.filter(t => !(t.id >= 50257 || t.text.startsWith('[_')));
@@ -207,7 +215,7 @@ export function woerterUmrechnen(project, keep) {
     }
   });
   fs.writeFileSync(path.join(out, 'part-0.json'), JSON.stringify({ transcription: segmente, umgerechnet: 'aus woerter-roh über schnitt.json (vorbereiten.mjs)' }));
-  fs.writeFileSync(path.join(out, 'chunks.json'), JSON.stringify([[0, keep.reduce((s, [a, b]) => s + b - a, 0)]], null, 2));
+  fs.writeFileSync(path.join(out, 'chunks.json'), JSON.stringify([[0, keep.reduce((s, [a, b]) => s + b - a, 0) / tempo]], null, 2));
 }
 
 // ---------- Gesichter ----------
@@ -234,7 +242,7 @@ function gesichter(project) {
 // ---------- Schnittpunkte ----------
 // Bildsprung: mittlere Grauwertdifferenz 90 × 160 zum Vorbild, lokales Maximum, > 3 × lokaler Median und > 6
 // (wie review/cut-points.json bei Fast 30). Bei eigenem Schnitt kommen die Nahtstellen der Schnittliste dazu.
-function schnittpunkte(project, keep) {
+function schnittpunkte(project, keep, tempo = 1) {
   const W = 90, H = 160;
   const r = spawnSync(FF, ['-v', 'error', '-i', path.join(project, 'media.mp4'), '-vf', `scale=${W}:${H},format=gray`, '-f', 'rawvideo', '-'], { maxBuffer: 1 << 30 });
   if (r.status) throw Error('Schnittpunkte: ffmpeg fehlgeschlagen');
@@ -245,7 +253,7 @@ function schnittpunkte(project, keep) {
     const um = [...diff.slice(Math.max(1, i - 15), i), ...diff.slice(i + 1, i + 16)].sort((a, b) => a - b), med = um[um.length >> 1] || 0;
     if (diff[i] > 6 && diff[i] >= diff[i - 1] && diff[i] >= diff[i + 1] && diff[i] > 3 * med) cuts.push({ frame: i, time: Math.round(i / FPS * 1000) / 1000, diff: Math.round(diff[i] * 100) / 100 });
   }
-  if (keep) { let t = 0; for (const [a, b] of keep.slice(0, -1)) { t += b - a; const f = Math.round(t * FPS); if (!cuts.some(c => Math.abs(c.frame - f) <= 1)) cuts.push({ frame: f, time: Math.round(f / FPS * 1000) / 1000, quelle: 'schnitt.json' }); } cuts.sort((a, b) => a.frame - b.frame); }
+  if (keep) { let t = 0; for (const [a, b] of keep.slice(0, -1)) { t += b - a; const f = Math.round(t / tempo * FPS); if (!cuts.some(c => Math.abs(c.frame - f) <= 1)) cuts.push({ frame: f, time: Math.round(f / FPS * 1000) / 1000, quelle: 'schnitt.json' }); } cuts.sort((a, b) => a.frame - b.frame); }
   schreibeJson(path.join(project, 'review/cut-points.json'), { method: 'Bildsprung: mittlere Grauwertdifferenz 90x160 zum Vorbild, lokales Maximum, > 3x lokaler Median, > 6; dazu Nahtstellen aus schnitt.json', cuts });
   return { schnittpunkte: cuts.length };
 }
