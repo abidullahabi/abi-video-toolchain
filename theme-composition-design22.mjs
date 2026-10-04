@@ -31,7 +31,10 @@ export function makeMeasure(root = ROOT) {
   // 3: Emojis so groß wie der umgebende Text; Apple-Emoji ist etwa 1,25 em breit.
   const A = (t, size, w = 800, wd = 100, ws = 0) => { const e = (t.match(EMOJI) || []).length; const r = t.replace(EMOJI, ''); return adv(face(w, wd), r) * size + e * 1.25 * size + ws * (t.split(' ').length - 1); };
   const G = (t, size) => adv(gochi, t) * size;
-  return { A, G };
+  // Oberste Tintenkante einer Zeile (Umlautpunkte, Akzente) relativ zur Zeilenoberkante bei Zeilenhöhe lh.
+  const inkTop = (t, size, lh, w = 900, wd = 125) => { const f = face(w, wd), u = f.unitsPerEm; let y = 0; for (const g of f.layout(t.replace(EMOJI, '')).glyphs) y = Math.max(y, g.bbox.maxY);
+    return (lh * size - (f.ascent - f.descent) / u * size) / 2 + f.ascent / u * size - y / u * size; };
+  return { A, G, inkTop };
 }
 const upper = s => s.replace(/[^\p{Extended_Pictographic}\p{Regional_Indicator}]+/gu, m => m.toLocaleUpperCase('de-DE'));
 const r2 = x => Math.round(x * 100) / 100;
@@ -82,7 +85,7 @@ export function planZooms22({ resets, blocked, faceWidth, closeFrom, duration })
 // ---------- Layout ----------
 // ctx: { measure, heads(a,b) → [{x,y,w,h}], errors, notes, duration, followers }
 export function layoutDesign22(input, ctx) {
-  const { A, G } = ctx.measure, errors = ctx.errors, notes = ctx.notes, heads = ctx.heads;
+  const { A, G, inkTop } = ctx.measure, errors = ctx.errors, notes = ctx.notes, heads = ctx.heads;
   const hits = (b, a, e) => heads(a, e).filter(h => b.x < h.x + h.w && b.x + b.w > h.x && b.y < h.y + h.h && b.y + b.h > h.y);
   // 6: H1 so groß wie möglich, höchstens 160 px, Zeile inkl. Kontur ≤ 864 px; unter 90 px zwei Zeilen gleich groß.
   // H1 im Video startet mit einem Stoß von 112 % (DESIGN.md 15): dann auch im ersten Bild ≤ 864 px, also für 112 % bemessen.
@@ -95,17 +98,23 @@ export function layoutDesign22(input, ctx) {
     return best;
   };
   const h1H = h => h.lines.length * h.fontSize * 1.02;
+  // DESIGN.md 2/5/6: Oberkante 250 ist die sichtbare Kante. Ragen Umlautpunkte samt Kontur (8 px) der ersten Zeile über die Zeilenbox
+  // (z. B. „BÜCHER“ bei 100 px: 12 px über y = 250, Designprüfung 04.10.2026), rückt die H1 um diesen Betrag nach unten
+  // (bei der H1 im Video für den Stoß von 112 %). Ohne Überstand bleibt alles wie bisher (kein Feld, bytegleiche Komposition).
+  const versatz = (h, stoss = 1) => { if (!inkTop) return 0; const d = 8 - inkTop(h.lines[0], h.fontSize, 1.02); return d > 0 ? Math.ceil(d * stoss) + 1 : 0; };
+  const mitVersatz = (h, stoss) => { const v = versatz(h, stoss); return v ? { ...h, versatz: v } : h; };
   const h2Chk = (id, lines) => { if (lines.length > 2) errors.push(`H2 ${id}: mehr als zwei Zeilen`); for (const l of lines) if (A(l, 58, 800) + 56 > 780) errors.push(`H2 ${id} breiter als 780 px: ${l}`); };
   const h2H = lines => lines.length * 58 * 1.12 + 22;
 
   // 5: Einstieg
-  const e = input.einstieg, eh1 = h1Fit(e.h1);
+  const e = input.einstieg, eh1 = mitVersatz(h1Fit(e.h1));
   const einstieg = { h1: eh1, end: e.end };
-  if (e.h2?.length) { h2Chk('einstieg', e.h2); einstieg.h2 = { lines: e.h2, top: Math.round(250 + h1H(eh1) + 24) }; }
+  if (e.h2?.length) { h2Chk('einstieg', e.h2); einstieg.h2 = { lines: e.h2, top: Math.round(250 + (eh1.versatz || 0) + h1H(eh1) + 24) }; }
 
   // 8: Kapitel. Gruppenhöhe = Zahl 140 px (Zeilenhöhe 1). Mit Pillen Oberkante 270, sonst 300.
   const KAP_H = 140;
   const kapitel = (input.kapitel || []).map(k => {
+    if (k.buch) return buch22(k, { A, G, errors, notes, warnings: ctx.warnings, hits });
     const w = (k.nummer ? G(k.nummer, 140) + 14 + 28 : 0) + A(k.titel, 64, 900, 100, 6) + 12;
     if (w > 864) errors.push(`Kapitel ${k.id} breiter als 864 px (${Math.round(w)}): ${k.nummer || ''} ${k.titel}`);
     const pills = (input.pillen || []).some(p => p.kapitel === k.id);
@@ -115,7 +124,7 @@ export function layoutDesign22(input, ctx) {
   for (let i = 1; i < kapitel.length; i++) if (kapitel[i].start < kapitel[i - 1].end - 1e-6) errors.push(`Kapitel überlappen: ${kapitel[i - 1].id} / ${kapitel[i].id}`);
   const kapById = id => kapitel.find(k => k.id === id);
 
-  const h1 = (input.h1 || []).map(h => ({ id: h.id, ...h1Fit(h.text, 1.12), start: h.start, end: h.end }));
+  const h1 = (input.h1 || []).map(h => ({ id: h.id, ...mitVersatz(h1Fit(h.text, 1.12), 1.12), start: h.start, end: h.end }));
 
   // 9: Pillen. Höhe je Pille: Ring 3 + Rand 5 + 8 + 54 × 1,1 + 10 + Rand 5 + Ring 3 (Zeilenhöhe 1,1: Referenz).
   const PILL = 5 + 8 + 54 * 1.1 + 10 + 5, ROW = 5 + 8 + 42 * 1.1 + 10 + 5, OFFS = [[-44, -2], [40, 1.5], [-16, -1]];
@@ -152,7 +161,7 @@ export function layoutDesign22(input, ctx) {
       const p = pillen.find(p => p.kapitel === k.id && p.end > h.start && p.start < h.end);
       if (p && h.ausnahme) { top = p.bottom + 24; notes.push(`H2 ${h.id} steht als abgenommene Ausnahme unter den Pillen ${p.id}: ${h.ausnahme}`); }
       else if (p) { if (p.start <= h.start) errors.push(`H2 ${h.id} während Pillen ${p.id}`); else { end = r2(Math.min(end, p.start - 0.02)); notes.push(`H2 ${h.id} endet vor Pillen ${p.id} (${end} s)`); } }
-    } else if (u.startsWith('h1:')) top = 250 + h1H(h1.find(x => x.id === u.slice(3))) + 24;
+    } else if (u.startsWith('h1:')) { const x = h1.find(x => x.id === u.slice(3)); top = 250 + (x.versatz || 0) + h1H(x) + 24; }
     else if (kapitel.some(k => k.start < h.end && k.end > h.start)) errors.push(`H2 ${h.id} „allein" bei y 250, während ein Kapitel läuft`);
     const w = Math.max(...h.lines.map(l => A(l, 58, 800))) + 56;
     // H2 allein bei y = 250: Die Drehung um −2° hebt die linke Ecke um (w/2)·sin 2° an; sonst ragte sie in die gesperrte
@@ -185,11 +194,11 @@ export function layoutDesign22(input, ctx) {
   const grafiken = (input.grafiken || []).map(g => chart22(g, { A, errors }));
 
   // 12: Randnotiz.
-  const kapBottom = t => { const k = kapitel.find(k => k.start <= t && t < k.end); const x = h1.find(k => k.start <= t && t < k.end); return k ? k.top + k.height : x ? 250 + h1H(x) : t < einstieg.end ? 250 + h1H(eh1) : 250; };
+  const kapBottom = t => { const k = kapitel.find(k => k.start <= t && t < k.end); const x = h1.find(k => k.start <= t && t < k.end); return k ? k.top + k.height : x ? 250 + (x.versatz || 0) + h1H(x) : t < einstieg.end ? 250 + (eh1.versatz || 0) + h1H(eh1) : 250; };
   const randnotizen = (input.randnotizen || []).map(n => note22(n, { A, G, heads, errors, top0: kapBottom(n.start + 0.01) }));
 
   // 13: Lebensbalken 700 × 26, zentriert, Oberkante 370; Beschriftung 40 px über dem Abschnitt.
-  const lebensbalken = (input.lebensbalken || []).map(b => ({ id: b.id, start: b.start, end: b.end, segments: b.abschnitte.map(s => { const w = A(s.beschriftung, 40, 800) + 10, mid = (s.von + s.bis) / 2 * 700; return { from: s.von, to: s.bis, label: s.beschriftung, at: s.at, labelLeft: Math.round(Math.max(0, Math.min(700 - w, mid - w / 2))) }; }) }));
+  const lebensbalken = (input.lebensbalken || []).map(b => ({ id: b.id, start: b.start, end: b.end, segments: b.abschnitte.map(s => { const w = A(s.beschriftung, 40, 800) + 10, mid = (s.von + s.bis) / 2 * 700; return { from: s.von, to: s.bis, label: s.beschriftung, at: s.at, labelLeft: Math.round(Math.max(0, Math.min(700 - w, mid - w / 2))) }; }), ...(b.trenner ? { trenner: true } : {}) }));
 
   // 14: Logo ersetzt die H1 an der H1-Position; eine H2 bleibt stehen.
   // 14: Logo-Einblendung. Standard: allein an der H1-Position und ersetzt die H1. Option `unter: "kapitel:<id>"` (Abdullahs Wunsch
@@ -209,6 +218,15 @@ export function layoutDesign22(input, ctx) {
   const sprechblasen = (input.sprechblasen || []).map((b, i) => ({ id: 'bubble-' + i, text: b.text, start: b.start, top: Math.abs(b.start - input.outroStart) < 2 || b.start >= input.outroStart ? 345 : 300 }));
   for (const b of sprechblasen) if (A(b.text, 36, 800) + 40 + 8 > 620) errors.push('Sprechblase breiter als 620 px');
 
+  // 17 Buchcover: Während der großen Phase (bis grossBis + 0,5 s) reicht das Cover bis y 882. Pillen, H2, Logo und Randnotiz unter
+  // dem Kapitel lägen darunter (Befund Code-Prüfung): erst nach der Verkleinerung erlaubt.
+  for (const k of kapitel.filter(k => k.buch)) {
+    const frei = k.buch.grossBis + 0.5, ueber = x => x.start < frei && x.end > k.start;
+    for (const p of pillen.filter(p => p.kapitel === k.id && p.start < frei)) errors.push(`Pillen ${p.id} beginnen während das Cover von ${k.id} groß steht (erst ab ${r2(frei)} s)`);
+    for (const h of h2.filter(h => (input.h2 || []).find(x => x.id === h.id)?.unter === 'kapitel:' + k.id && h.start < frei)) errors.push(`H2 ${h.id} unter ${k.id} beginnt während das Cover groß steht (erst ab ${r2(frei)} s)`);
+    for (const l of logos.filter(l => l.unter === k.id && l.start < frei)) errors.push(`Logo ${l.id} unter ${k.id} beginnt während das Cover groß steht (erst ab ${r2(frei)} s)`);
+    for (const n of randnotizen.filter(ueber)) errors.push(`Randnotiz ${n.id} läuft, während das Cover von ${k.id} groß steht`);
+  }
   // Ausblenden: 10 Schlagwort blendet H1, H2 und Randnotiz aus; Kapitel und Pillen ebenfalls, weil das Wort an ihrer Stelle steht
   // (in der abgenommenen Branding-Probe so umgesetzt). Grafik: Karte bei y 270 ersetzt alle oberen Textebenen.
   // 14 Logo: H1 blendet 0,1 s vorher aus und 0,1 s danach wieder ein.
@@ -218,6 +236,71 @@ export function layoutDesign22(input, ctx) {
   for (const l of logos.filter(l => !l.unter)) for (const x of [...h1, ...kapitel]) if (x.start < l.end && x.end > l.start) logoH1.push({ sel: '#' + x.id + ' > span', out: l.start - 0.1, in: l.end + 0.1 });
 
   return { designVersion: '2.2', duration: ctx.duration, einstieg, kapitel, h1, h2, pillen, akronyme, schlagworte, grafiken, randnotizen, lebensbalken, logos, sprechblasen, ausblenden, logoH1, outro: { start: input.outroStart, end: ctx.duration, followers: ctx.followers } };
+}
+
+// 17 (In Erprobung, Testauftrag Abdullah 04.10.2026, Video „Bücher die so gut sind wie Therapie“): Kapitel mit Buchcover.
+// Beim Kapitelbeginn steht das Cover groß als B-Roll-Karte in der oberen Zone (Rand und Schatten wie 11, höchstens 3 s),
+// dann verkleinert es sich animiert nach links, rechts daneben erscheinen Nummer und Titel, darunter der deutsche Titel (🇩🇪)
+// und der Autor in der H2-Fläche. Gruppe auf x = 540 zentriert, Oberkante 270, höchstens 840 px breit (gedrehtes Cover samt Rand bleibt rechts von x = 108).
+// Plan: kapitel[].buch = { datei, breite, hoehe (Pixel der Bilddatei), autor, deutsch, grossBis?, autorAb? }.
+// CSS des Buchcovers, nur eingefügt, wenn ein Kapitel ein Cover hat.
+const BUCH_CSS = () => `.kap-buch{gap:${BUCH.luecke}px;text-align:left}.buch-slot{display:inline-block;flex:0 0 auto}
+.buch-col{display:inline-flex;flex-direction:column;align-items:flex-start}.buch-row{display:inline-flex;align-items:center;gap:18px}
+.buch-num{font-size:${BUCH.zahl}px}.buch-title{display:inline-block;font-weight:900;font-size:${BUCH.titel}px;line-height:1.05;word-spacing:6px;${stroke(6)}}.buch-title .ln{display:block}
+.buch-de .ln{display:block}.buch-de{display:inline-block;margin-top:10px;font-weight:800;font-size:${BUCH.de}px;line-height:1.2;white-space:nowrap;${stroke(4)}}
+.buch-autor{display:inline-block;margin-top:16px;background:${C.blue};font-weight:800;font-size:${BUCH.autor}px;line-height:1.12;padding:6px 22px 10px;border-radius:10px;transform:rotate(-2deg);white-space:nowrap}
+.buch-cw{position:absolute;display:block;transform-origin:0 0}.buch-cover{display:block;width:100%;height:100%;object-fit:cover;border-radius:6px;box-shadow:0 0 0 4px ${C.ink},8px 8px 0 4px ${C.ink};transform:rotate(-3deg)}`;
+const BUCH = { klein: 250, gross: 600, top: 270, luecke: 28, maxW: 840, zahl: 110, titel: 60, de: 40, autor: 44 };
+function buch22(k, { A, G, errors, notes, warnings, hits }) {
+  const b = k.buch, r = b.breite / b.hoehe;
+  if (b.datei && (!b.datei.startsWith('assets/') || /\s/.test(b.datei))) errors.push(`Kapitel ${k.id}: buch.datei muss unter assets/ liegen und darf keine Leerzeichen enthalten (Abschnitts-Cache): ${b.datei}`);
+  if (!b.datei || !(r > 0)) { errors.push(`Kapitel ${k.id}: buch.datei, buch.breite und buch.hoehe fehlen`); return { id: k.id, nummer: k.nummer || null, titel: k.titel, start: k.start, end: k.end, top: BUCH.top, height: BUCH.klein }; }
+  const sw = Math.round(BUCH.klein * r), bw = Math.round(BUCH.gross * r);
+  // Breiten wie im Browser (Layoutbreite), rechts Kontur bzw. Drehung als Zuschlag. Die Spaltenbreite wird im HTML ausdrücklich
+  // gesetzt, damit die Gruppe im Browser genau so breit ist wie hier gerechnet und das kleine Cover genau im Platzhalter landet.
+  const zahlW = k.nummer ? G(k.nummer, BUCH.zahl) + 18 : 0;
+  const rowW = l => zahlW + Math.max(...l.map(x => A(x, BUCH.titel, 900, 100, 6))) + 6;
+  const colMax = BUCH.maxW - sw - BUCH.luecke;
+  let lines = [k.titel];
+  if (rowW(lines) > colMax) {
+    const w = k.titel.split(' '); let best = null;
+    for (let i = 1; i < w.length; i++) { const l = [w.slice(0, i).join(' '), w.slice(i).join(' ')], m = rowW(l); if (!best || m < best.m) best = { l, m }; }
+    const nachDoppelpunkt = w.findIndex(x => x.endsWith(':')) + 1;   // „Bonus: / The Prophet“ statt „Bonus: The / Prophet“
+    if (nachDoppelpunkt > 0 && nachDoppelpunkt < w.length) { const l = [w.slice(0, nachDoppelpunkt).join(' '), w.slice(nachDoppelpunkt).join(' ')]; if (rowW(l) <= colMax) best = { l, m: rowW(l) }; }
+    if (best) lines = best.l;
+  }
+  // Deutscher Titel mit 🇩🇪; zu lang für eine Zeile → zwei Zeilen an der ausgewogensten Wortgrenze (Flagge vorn).
+  let deLines = b.deutsch ? ['🇩🇪 ' + b.deutsch] : [];
+  const deMax = l => Math.max(...l.map(x => A(x, BUCH.de, 800) + 4));
+  if (deLines.length && deMax(deLines) > colMax) {
+    const w = deLines[0].split(' '); let best = null;
+    for (let i = 2; i < w.length; i++) { const l = [w.slice(0, i).join(' '), w.slice(i).join(' ')], m = deMax(l); if (!best || m < best.m) best = { l, m }; }
+    if (best) deLines = best.l;
+  }
+  const de = deLines.length ? deLines : null;
+  const titleW = rowW(lines), deW = de ? deMax(de) : 0, autorW = b.autor ? A(b.autor, BUCH.autor, 800) + 44 + 4 : 0;
+  if (titleW > colMax) errors.push(`Kapitel ${k.id}: Titel neben dem Cover breiter als ${Math.round(colMax)} px (${Math.round(titleW)}): ${k.titel}`);
+  if (deW > colMax) errors.push(`Kapitel ${k.id}: deutscher Titel breiter als ${Math.round(colMax)} px: ${b.deutsch}`);
+  if (autorW > colMax) errors.push(`Kapitel ${k.id}: Autor breiter als ${Math.round(colMax)} px: ${b.autor}`);
+  const colW = Math.ceil(Math.max(titleW, deW, autorW));
+  const groupW = sw + BUCH.luecke + colW;
+  const rowH = Math.max(k.nummer ? BUCH.zahl : 0, lines.length * BUCH.titel * 1.05);
+  const colH = rowH + (de ? 10 + de.length * BUCH.de * 1.2 : 0) + (b.autor ? 16 + BUCH.autor * 1.12 + 16 : 0);
+  const height = Math.round(Math.max(BUCH.klein, colH)), left = (1080 - groupW) / 2;
+  const small = { left, top: Math.round((height - BUCH.klein) / 2), w: sw, h: BUCH.klein };
+  const big = { left: Math.round(540 - bw / 2), top: 0, w: bw, h: BUCH.gross };
+  if (BUCH.top + BUCH.gross + 12 > 900 || bw + 12 > 864) errors.push(`Kapitel ${k.id}: großes Cover passt nicht in die obere Zone`);
+  const grossBis = r2(b.grossBis ?? k.start + 2.4);
+  if (grossBis - k.start > 3 + 1e-6) errors.push(`Kapitel ${k.id}: Cover groß ${(grossBis - k.start).toFixed(2)} s (DESIGN.md 17: höchstens 3 s am Stück)`);
+  if (grossBis - k.start < 0.8) errors.push(`Kapitel ${k.id}: Cover groß nur ${(grossBis - k.start).toFixed(2)} s`);
+  const titleAt = r2(grossBis + 0.3), deAt = r2(titleAt + 0.1), autorAt = r2(Math.max(grossBis + 0.5, b.autorAb ?? 0));
+  if (autorAt > k.end - 0.5) errors.push(`Kapitel ${k.id}: Autor erscheint erst kurz vor Kapitelende`);
+  const gb = { x: big.left, y: BUCH.top, w: bw + 12, h: BUCH.gross + 12 };
+  if (hits(gb, k.start, grossBis).length) notes.push(`Kapitel ${k.id}: großes Cover liegt über dem Kopf (DESIGN.md 17 erlaubt „über dem Gesicht“, höchstens 3 s)`);
+  const hk = hits({ x: left, y: BUCH.top, w: groupW, h: height }, grossBis + 0.5, k.end);
+  if (hk.length) warnings.push(`Kapitel ${k.id} mit Cover berührt Kopf/Kappe (${hk.length} Stichproben)`);
+  return { id: k.id, nummer: k.nummer || null, titel: k.titel, start: k.start, end: k.end, top: BUCH.top, height,
+    buch: { src: b.datei, lines, de, autor: b.autor || null, small, big, groupW, colW, grossBis, titleAt, deAt, autorAt } };
 }
 
 // 11: Karte x 150, y 270, Breite 780, Rand 6, Radius 24, Schatten 12, Innenabstand 26/34/22, Titel 34 px, Abstand Titel–Diagramm 12 (Referenz).
@@ -293,15 +376,18 @@ export function makeDesign22Composition(plan, opts = {}) {
     `<div ${clip(g.id, g.start, g.end, 11, 'grafik')} style="left:150px;top:270px;width:780px;height:${g.height}px"><div class="card"><div class="card-title">${escEmoji(g.title)}</div>${g.svg}</div></div>`,
     ...(g.person ? [] : []), g.person ? `<video id="${g.id}-person" class="clip" src="${g.person}" data-start="${lage(g.start, g.end)[0]}" data-duration="${lage(g.start, g.end)[1]}"${mediaStart(g.start)} data-track-index="12" data-volume="0" muted playsinline style="position:absolute;inset:0;width:1080px;height:1920px"></video>` : '');
   const top = [];
-  top.push(`<div ${clip('einstieg-h1', 0, e.end, 2, 'h1', ' data-einstieg="1"')} style="top:250px;font-size:${e.h1.fontSize}px;opacity:1"><span class="h1" style="visibility:visible">${lines(e.h1.lines)}</span></div>`);
+  top.push(`<div ${clip('einstieg-h1', 0, e.end, 2, 'h1', ' data-einstieg="1"')} style="top:${250 + (e.h1.versatz || 0)}px;font-size:${e.h1.fontSize}px;opacity:1"><span class="h1" style="visibility:visible">${lines(e.h1.lines)}</span></div>`);
   if (e.h2) top.push(`<div ${clip('einstieg-h2', 0, e.end + 0.06, 3, 'h2', ' data-einstieg="1"')} style="top:${e.h2.top}px;opacity:1"><span class="h2" style="visibility:visible">${lines(e.h2.lines)}</span></div>`);
-  for (const k of kapitel) top.push(`<div ${clip(k.id, k.start, k.end, 4, 'kapitel')} style="top:${k.top}px"><span class="kap">${k.nummer ? `<span class="kap-numw" id="${k.id}-num"><span class="kap-num">${esc(k.nummer)}</span></span>` : ''}<span class="kap-title" id="${k.id}-title">${escEmoji(k.titel)}</span></span></div>`);
-  for (const h of h1) top.push(`<div ${clip(h.id, h.start, h.end, 2, 'h1')} style="top:250px;font-size:${h.fontSize}px"><span class="h1">${lines(h.lines)}</span></div>`);
+  // 17: Kapitel mit Buchcover. Platzhalter in der Gruppe hält den Platz des kleinen Covers; das Cover selbst steht absolut und
+  // wandert vom großen in den kleinen Zustand.
+  const buchHtml = k => { const b = k.buch; return `<div ${clip(k.id, k.start, k.end, 4, 'kapitel', ' data-buch="1"')} style="top:${k.top}px;height:${k.height}px"><span class="kap kap-buch"><span class="buch-slot" style="width:${b.small.w}px;height:${k.height}px"></span><span class="buch-col" style="width:${b.colW}px"><span class="buch-row" id="${k.id}-title">${k.nummer ? `<span class="kap-num buch-num">${esc(k.nummer)}</span>` : ''}<span class="buch-title">${lines(b.lines)}</span></span>${b.de ? `<span class="buch-de" id="${k.id}-de">${(Array.isArray(b.de) ? b.de : [b.de]).map(l => `<span class="ln">${escEmoji(l)}</span>`).join('')}</span>` : ''}${b.autor ? `<span class="buch-autor" id="${k.id}-autor">${escEmoji(b.autor)}</span>` : ''}</span></span><span class="buch-cw" id="${k.id}-cw" style="left:${b.small.left}px;top:${b.small.top}px;width:${b.small.w}px;height:${b.small.h}px"><img class="buch-cover" id="${k.id}-cover" src="${esc(b.src)}" alt=""></span></div>`; };
+  for (const k of kapitel) if (k.buch) top.push(buchHtml(k)); else top.push(`<div ${clip(k.id, k.start, k.end, 4, 'kapitel')} style="top:${k.top}px"><span class="kap">${k.nummer ? `<span class="kap-numw" id="${k.id}-num"><span class="kap-num">${esc(k.nummer)}</span></span>` : ''}<span class="kap-title" id="${k.id}-title">${escEmoji(k.titel)}</span></span></div>`);
+  for (const h of h1) top.push(`<div ${clip(h.id, h.start, h.end, 2, 'h1')} style="top:${250 + (h.versatz || 0)}px;font-size:${h.fontSize}px"><span class="h1">${lines(h.lines)}</span></div>`);
   for (const h of h2) top.push(`<div ${clip(h.id, h.start, h.end, 3, 'h2')} style="top:${h.top}px"><span class="h2">${lines(h.lines)}</span></div>`);
   for (const p of pillen) top.push(`<div ${clip(p.id, p.start, p.end, 5, 'pillen', ` data-layout="${p.layout}"`)} style="top:${p.top}px">${p.items.map((it, i) => `<span class="pill-pop" id="${p.id}-${i}"><span class="pill${p.layout === 'row' ? ' pill-row' : ''}" style="${p.layout === 'stack' ? `transform:translateX(${it.dx}px) rotate(${it.rot}deg)` : ''}">${p.layout === 'row' && !p.rowDot ? '' : p.numbered ? `<span class="pill-dot"><span class="pill-no">${i + 1}</span></span>` : '<span class="pill-dot pill-dot-s"></span>'}<span class="pill-text">${escEmoji(it.text)}</span></span></span>`).join('')}</div>`);
   for (const a of akronyme) top.push(`<div ${clip(a.id, a.start, a.end, 6, 'akronym')} style="top:240px"><div class="ak-row">${a.letters.map((l, i) => `<span class="ak-pop" id="${a.id}-p${i}"><span class="ak-letter" id="${a.id}-l${i}" style="transform:rotate(${l.rot}deg)">${esc(l.b)}</span></span>`).join('')}</div><div class="ak-pills" style="top:${a.pillTop - 240}px">${a.letters.map((l, i) => `<span class="ak-pill-pop" id="${a.id}-q${i}"><span class="pill ak-pill"><span class="pill-text">${escEmoji(l.text)}</span></span></span>`).join('')}</div></div>`);
   for (const n of randnotizen) top.push(`<div ${clip(n.id, n.start, n.end, 7, 'randnotiz')} style="left:${n.left}px;top:${n.top}px">${n.lines.map((l, j) => `<div class="note-line" id="${n.id}-l${j}" style="margin-top:${l.gapBefore}px">${l.html}${l.strikeAt != null ? `<svg class="note-strike" id="${n.id}-s${j}" height="20" style="left:-8px;top:calc(54% - 10px);width:calc(100% + 16px)" overflow="visible" preserveAspectRatio="none"><path pathLength="1" fill="none" stroke="${C.ink}" stroke-width="11" stroke-linecap="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/><path pathLength="1" fill="none" stroke="${C.pink}" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></svg>` : ''}</div>`).join('')}</div>`);
-  for (const b of lebensbalken) top.push(`<div ${clip(b.id, b.start, b.end, 9, 'balken')} style="left:190px;top:${370 - 58}px;width:700px;height:${58 + 26}px">${b.segments.map((s, i) => `<span class="bal-label" id="${b.id}-l${i}" style="left:${s.labelLeft}px">${escEmoji(s.label)}</span>`).join('')}<div class="bal-bed">${b.segments.map((s, i) => `<div class="bal-fill" id="${b.id}-f${i}" style="left:${s.from * 700}px;width:${(s.to - s.from) * 700}px"></div>`).join('')}</div></div>`);
+  for (const b of lebensbalken) top.push(`<div ${clip(b.id, b.start, b.end, 9, 'balken')} style="left:190px;top:${370 - 58}px;width:700px;height:${58 + 26}px">${b.segments.map((s, i) => `<span class="bal-label" id="${b.id}-l${i}" style="left:${s.labelLeft}px">${escEmoji(s.label)}</span>`).join('')}<div class="bal-bed">${b.segments.map((s, i) => `<div class="bal-fill" id="${b.id}-f${i}" style="left:${s.from * 700}px;width:${(s.to - s.from) * 700}px"></div>`).join('')}${b.trenner ? b.segments.slice(1).map((s, i) => `<div class="bal-sep" id="${b.id}-t${i + 1}" style="left:${s.from * 700 - 1.5}px"></div>`).join('') : ''}</div></div>`);
   for (const l of logos) top.push(`<div ${clip(l.id, l.start, l.end, 13, 'logo')} style="top:${l.top ?? 250}px"><span class="logo">${(l.files || [{ src: l.src, height: l.height, width: l.width }]).map(f => `<img src="${esc(f.src)}" style="height:${f.height}px${f.width ? `;width:${f.width}px` : ''}" alt="">`).join('')}</span></div>`);
   for (const s of schlagworte) top.push(`<div ${clip(s.id, s.start, s.end, 8, 'schlagwort')} style="top:330px"><span class="sw-pop"><span class="sw" style="transform-origin:50% ${(s.fontSize * 1.02 / 2).toFixed(1)}px"><span class="sw-word" style="font-size:${s.fontSize}px">${esc(s.text)}</span><svg class="sw-lines" viewBox="0 0 700 70" preserveAspectRatio="none" style="width:${s.width}px;height:70px" overflow="visible">${[['M 14 30 C 150 12, 300 40, 450 22 S 640 30, 688 16', 22, 12], ['M 60 54 C 210 40, 380 62, 560 46 S 650 50, 672 46', 20, 10]].map(([d, wi, wp], j) => `<path id="${s.id}-u${j}i" d="${d}" pathLength="1" fill="none" stroke="${C.ink}" stroke-width="${wi}" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/><path id="${s.id}-u${j}p" d="${d}" pathLength="1" fill="none" stroke="${C.pink}" stroke-width="${wp}" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>`).join('')}</svg></span></span></div>`);
   const caps = captions.map((c, i) => `<div ${clip('cap-' + i, c.start, c.end, 20, 'caption')} style="top:1280px"><span class="cap-line">${c.words.map((w, j) => `<span id="w-${i}-${j}">${escEmoji(w.text)}</span>`).join(' ')}</span></div>`).join('');
@@ -329,7 +415,7 @@ export function makeDesign22Composition(plan, opts = {}) {
 .h2{display:inline-block;background:${C.blue};font-weight:800;font-size:58px;line-height:1.12;padding:8px 28px 14px;border-radius:12px;transform:rotate(-2deg);white-space:nowrap}
 .kap{display:inline-flex;align-items:center;gap:28px;white-space:nowrap}
 .kap-numw{display:inline-block}.kap-num{display:inline-block;font-family:"ABI Gochi";font-size:140px;line-height:1;color:${C.blue};${stroke(7)};transform:rotate(-4deg)}
-.kap-title{display:inline-block;font-weight:900;font-size:64px;line-height:1.1;word-spacing:6px;${stroke(6)}}
+.kap-title{display:inline-block;font-weight:900;font-size:64px;line-height:1.1;word-spacing:6px;${stroke(6)}}${kapitel.some(k => k.buch) ? '\n' + BUCH_CSS() : ''}${lebensbalken.some(b => b.trenner) ? `\n.bal-sep{position:absolute;top:0;width:3px;height:100%;background:${C.ink};opacity:0}` : ''}
 [data-kind=pillen]{display:flex;flex-direction:column;align-items:center;gap:20px}[data-kind=pillen][data-layout=row]{flex-direction:row;justify-content:center;gap:16px}
 .pill-pop{display:inline-block}
 .pill{display:inline-flex;align-items:center;gap:14px;padding:8px 32px 10px 12px;border:5px solid ${C.white};border-radius:999px;box-shadow:0 0 0 3px ${C.ink},inset 0 0 0 3px ${C.ink};white-space:nowrap}
@@ -379,7 +465,19 @@ ${bubbles}
 </main><script>${timeline22(plan, opts.abschnitt)}</script></body></html>`;
 }
 
+// 17 Buchcover: Zeitleisten-Teil, nur eingefügt, wenn ein Kapitel ein Cover hat (alte Kompositionen bleiben bytegleich).
+const BUCH_TL = `// 17: Kapitel mit Buchcover. Cover groß Pop 90 → 100 % 0,35 s (wie Grafik), ab grossBis 0,5 s Ausklingen in den kleinen Platz
+// (Rand 6 → 4, Schatten 12 → 8, Drehung −2° → −3°, nur über Transformationen); Titelzeile ab +0,3 s von unten 0,22 s, deutscher Titel 0,1 s später, Autor wischt 0,28 s.
+for(const k of D.k){if(!k.buch)continue;const b=k.buch,cw='#'+k.id+'-cw',cv='#'+k.id+'-cover',f=b.big.h/b.small.h;show('#'+k.id,k.start,k.end);
+ // Nur Transformationen bewegen (HyperFrames-Lint: left/top rasten auf ganze Pixel). Der Rahmen steht klein am Platzhalter; groß = verschoben
+ // und skaliert (Ursprung oben links). Rand und Schatten als box-shadow, groß durch f geteilt, damit sie sichtbar 6 bzw. 12 px bleiben.
+ tl.set(cw,{x:b.big.left-b.small.left,y:b.big.top-b.small.top,scale:f},0);tl.set(cv,{rotation:-2,borderRadius:8/f,boxShadow:'0 0 0 '+6/f+'px ${C.ink},'+12/f+'px '+12/f+'px 0 '+6/f+'px ${C.ink}'},0);
+ pop(cv,k.start,.9,.35);tl.to(cw,{x:0,y:0,scale:1,duration:.5,ease:OUT},b.grossBis);
+ tl.to(cv,{rotation:-3,borderRadius:6,boxShadow:'0 0 0 4px ${C.ink},8px 8px 0 4px ${C.ink}',duration:.5,ease:OUT},b.grossBis);
+ up('#'+k.id+'-title',b.titleAt);if(b.de)up('#'+k.id+'-de',b.deAt);if(b.autor){const au='#'+k.id+'-autor';tl.set(au,{opacity:0},0);tl.set(au,{opacity:1},b.autorAt);wipe(au,b.autorAt,.28,20);}out('#'+k.id,k.end);}
+`;
 function timeline22(plan, abschnitt) {
+  const hatBuch = (plan.kapitel || []).some(k => k.buch);
   const D = { e: plan.einstieg, k: plan.kapitel || [], h1: plan.h1 || [], h2: plan.h2 || [], p: plan.pillen || [], a: plan.akronyme || [], s: plan.schlagworte || [], g: plan.grafiken || [], n: plan.randnotizen || [], b: plan.lebensbalken || [], l: plan.logos || [], sb: plan.sprechblasen || [], c: plan.captions || [], z: plan.zooms || [], o: plan.outro, hide: plan.ausblenden || [], logoH1: plan.logoH1 || [] };
   return `
 function bezier(x1,y1,x2,y2){const f=(s,a,b)=>3*(1-s)*(1-s)*s*a+3*(1-s)*s*s*b+s*s*s;return x=>{if(x<=0)return 0;if(x>=1)return 1;let lo=0,hi=1;for(let i=0;i<30;i++){const m=(lo+hi)/2;if(f(m,x1,x2)<x)lo=m;else hi=m;}return f((lo+hi)/2,y1,y2);};}
@@ -404,7 +502,7 @@ for(const h of D.h1){show('#'+h.id,h.start,h.end);tl.set('#'+h.id+' .h1',{opacit
 // 15: H2 wischt in 0,28 s von links auf; 0,06 s nach einer gleichzeitig beginnenden H1.
 for(const h of D.h2){const at=h.start+(D.h1.some(x=>Math.abs(x.start-h.start)<.01)?.06:0);show('#'+h.id,h.start,h.end);wipe('#'+h.id+' .h2',at,.28,20);out('#'+h.id,h.end);}
 // 15: Kapitel. Zahl schreibt sich von links (Maske) 0,40 s, Titel ab 0,35 s von unten 0,22 s.
-for(const k of D.k){show('#'+k.id,k.start,k.end);if(k.nummer)wipe('#'+k.id+'-num',k.start,.4,40);up('#'+k.id+'-title',k.start+(k.nummer?.35:0));out('#'+k.id,k.end);}
+${hatBuch ? BUCH_TL : ''}for(const k of D.k){${hatBuch ? 'if(k.buch)continue;' : ''}show('#'+k.id,k.start,k.end);if(k.nummer)wipe('#'+k.id+'-num',k.start,.4,40);up('#'+k.id+'-title',k.start+(k.nummer?.35:0));out('#'+k.id,k.end);}
 // 15: Pillen einzeln am Wort, Pop 80 → 100 %, 0,30 s, Abfedern; bleiben bis Kapitelende.
 for(const p of D.p){show('#'+p.id,p.start,p.end);p.items.forEach((it,i)=>pop('#'+p.id+'-'+i,it.at,.8,.3));out('#'+p.id,p.end);}
 // 15: Akronym. Buchstaben Pop 55 → 100 %, 0,30 s, je 0,08 s versetzt; aktiver Buchstabe hart blau; neue Pille Pop 0,30 s, alte vorher 0,10 s aus.
@@ -415,7 +513,9 @@ function strikePaths(){document.querySelectorAll('.note-strike').forEach(svg=>{c
 strikePaths();if(document.fonts)document.fonts.ready.then(strikePaths);
 for(const n of D.n){show('#'+n.id,n.start,n.end);let k=0;n.lines.forEach((l,j)=>{up('#'+n.id+'-l'+j,l.at);if(l.strikeAt!=null)draw('#'+n.id+'-s'+j+' path',l.strikeAt+.1*k++,.28);});out('#'+n.id,n.end);}
 // 15: Lebensbalken. Abschnitt füllt sich in 1,0 s; Beschriftung wie Randnotiz-Zeile.
-for(const b of D.b){show('#'+b.id,b.start,b.end);up('#'+b.id+' .bal-bed',b.start);b.segments.forEach((s,i)=>{up('#'+b.id+'-l'+i,s.at);tl.to('#'+b.id+'-f'+i,{scaleX:1,duration:1,ease:OUT},s.at);});out('#'+b.id,b.end);}
+${(plan.lebensbalken || []).some(b => b.trenner) ? `// 13: Trennlinie in Tinte an der Abschnittsgrenze (Planoption trenner, Befund 04.10.2026: zwei blaue Abschnitte verschmelzen sonst).
+for(const b of D.b){if(b.trenner)b.segments.forEach((s,i)=>{if(i){tl.set('#'+b.id+'-t'+i,{opacity:0},0);tl.set('#'+b.id+'-t'+i,{opacity:1},s.at);}});}
+` : ''}for(const b of D.b){show('#'+b.id,b.start,b.end);up('#'+b.id+' .bal-bed',b.start);b.segments.forEach((s,i)=>{up('#'+b.id+'-l'+i,s.at);tl.to('#'+b.id+'-f'+i,{scaleX:1,duration:1,ease:OUT},s.at);});out('#'+b.id,b.end);}
 // 15: Logo. Wischblende von links 0,28 s, Ausblenden 0,22 s in gleicher Richtung; H1/Kapitel 0,1 s vorher aus, 0,1 s danach wieder an.
 for(const l of D.l){show('#'+l.id,l.start,l.end);wipe('#'+l.id+' .logo',l.start,.28,0);tl.to('#'+l.id+' .logo',{clipPath:()=>'inset(-0px -0px -0px '+document.querySelector('#'+l.id+' .logo').offsetWidth+'px)',duration:.22,ease:LIN},l.end-.22);}
 for(const x of D.logoH1){tl.to(x.sel,{opacity:0,duration:.1,ease:LIN},x.out);tl.to(x.sel,{opacity:1,duration:.1,ease:LIN},x.in);}
