@@ -75,6 +75,7 @@ Standard seit 04.10.2026 (Vorbild „Bücher die so gut sind wie Therapie“). A
 2. **Ein Planer** schreibt `schnitt/selection.json` (welche Anläufe bleiben, Reihenfolge wie aufgenommen), **ein Prüfer** prüft. Hilfen: `node workflow.mjs schnitt-woerter "<P>" <von> <bis> [turbo|small]` (Wörter mit Zeit), `schnitt-pegel "<P>" <von>:<bis>` (Pegelverlauf), `schnitt-naht "<P>" <a1> <b1> <a2> <b2>` (zwei Stücke zusammengesetzt erkennen lassen).
 3. `node workflow.mjs schnitt-plan "<P>"`: `schnitt.json` mit gekürzten Pausen und gestrafften Nähten, `schnitt/edl.json`, `schnitt/straffen2-bericht.json`. Nennt die Dauer bei Tempo 1 und beim Tempo aus `workflow.json`, den Median der Restpausen und Nähte über 300 ms. Die bisherige `schnitt.json` wird als `schnitt/vorher.json` gesichert.
 4. Weiter mit `vorbereiten` (Punkt 3).
+5. Gab es schon Pläne (Schnitt- oder Tempoänderung): nach `vorbereiten` `node workflow.mjs schnitt-umstellen "<P>"`. Rechnet `design-plan.json` und `caption-edit-plan.json` von `schnitt/vorher.json` auf die neue Fassung um (Sicherung in `schnitt/umstellen-sicherung-*`), erkennt `word-review-turbo` neu (Vorgaben je Teil in `word-review-turbo/prompts.json`), nennt Entfallenes und an herausgeschnittene Stellen gerückte Elemente, gibt die Ankerliste aus und prüft die Wortkorrekturen. Die genannten Stellen prüft der Planer von Hand.
 
 ## 3. Plan (≈ 6 min: Entwurf, ein Planer, ein Prüfer)
 
