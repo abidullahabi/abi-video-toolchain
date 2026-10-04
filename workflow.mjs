@@ -245,6 +245,16 @@ try {
     else if (action === 'preview-cut') previewCut(existingProject(target), { ROOT, HF, run });
     else await exportCut(existingProject(target), { ROOT, BIN, MODEL, run, probe, opts });
   }
+  else if (['schnitt-analyse', 'schnitt-woerter', 'schnitt-pegel', 'schnitt-naht', 'schnitt-plan'].includes(action)) {
+    // Schnitt nach Auftrag (Standard seit 04.10.2026, ABLAUF_KURZ.md „Schnitt“): Rohzeit-Analyse, Hilfen für Planer/Prüfer, schnitt.json.
+    const sc = await import('./schnitt.mjs');
+    const P = existingProject(target), rest = positionals.slice(2);
+    if (action === 'schnitt-analyse') await sc.schnittAnalyse(P, { BIN, run });
+    else if (action === 'schnitt-woerter') sc.schnittWoerter(P, rest[0], rest[1], rest[2]);
+    else if (action === 'schnitt-pegel') sc.schnittPegel(P, rest);
+    else if (action === 'schnitt-naht') sc.schnittNaht(P, rest);
+    else await sc.schnittPlan(P);
+  }
   else if (action === 'anlegen') { const { anlegen } = await import('./vorbereiten.mjs'); await anlegen(target, opts); }
   else if (action === 'vorbereiten') { const { vorbereiten } = await import('./vorbereiten.mjs'); await vorbereiten(existingProject(target), opts); }
   else if (action === 'planentwurf') { const { planentwurf } = await import('./planentwurf.mjs'); const P = existingProject(target), { zeit } = await import('./projekte.mjs'); console.log(JSON.stringify(await zeit(P, 'planentwurf', () => planentwurf(P)), null, 1)); }
@@ -279,7 +289,7 @@ try {
     buildComposition(p);
     console.log(run(process.execPath, [HF, 'preview', p, '--background', '--no-open']));
   } else {
-    console.log('Verwendung:\n  node workflow.mjs doctor\n  node workflow.mjs anlegen "/Pfad/Rohvideo.mp4" --title "Titel" [--farbkorrektur A] [--datum JJJJ-MM-TT]\n  node workflow.mjs vorbereiten "<Projekt>" [--neu]\n  node workflow.mjs kopfprofil "<Projekt>"\n  node workflow.mjs planentwurf "<Projekt>"\n  node workflow.mjs prepare "/Pfad/Video.mov" --title "Deine Überschrift"\n  node workflow.mjs preview "/Pfad/Projekt"\n  node workflow.mjs render "/Pfad/Projekt"\n  node workflow.mjs render-html "/Pfad/Projekt"\n  node workflow.mjs green-screen "/Pfad/Projekt" [--review]\n  node workflow.mjs storyboard "/Pfad/Projekt"\n  node workflow.mjs vorschau "/Pfad/Projekt"\n  node workflow.mjs build "/Pfad/Projekt"\n\nOptionen für prepare: --language de --threshold 3 --margin 0.25 --cpu --no-cut --no-normalize\nOption für render: --draft');
+    console.log('Verwendung:\n  node workflow.mjs doctor\n  node workflow.mjs anlegen "/Pfad/Rohvideo.mp4" --title "Titel" [--farbkorrektur A] [--datum JJJJ-MM-TT]\n  node workflow.mjs vorbereiten "<Projekt>" [--neu]\n  node workflow.mjs kopfprofil "<Projekt>"\n  node workflow.mjs planentwurf "<Projekt>"\n  node workflow.mjs prepare "/Pfad/Video.mov" --title "Deine Überschrift"\n  node workflow.mjs preview "/Pfad/Projekt"\n  node workflow.mjs render "/Pfad/Projekt"\n  node workflow.mjs render-html "/Pfad/Projekt"\n  node workflow.mjs green-screen "/Pfad/Projekt" [--review]\n  node workflow.mjs storyboard "/Pfad/Projekt"\n  node workflow.mjs vorschau "/Pfad/Projekt"\n  node workflow.mjs build "/Pfad/Projekt"\n\nSchnitt (nur bei Auftrag, Rohzeit in Sekunden):\n  node workflow.mjs schnitt-analyse "<Projekt>"\n  node workflow.mjs schnitt-woerter "<Projekt>" <von> <bis> [turbo|small]\n  node workflow.mjs schnitt-pegel "<Projekt>" <von>:<bis> [<von>:<bis> …]\n  node workflow.mjs schnitt-naht "<Projekt>" <a1> <b1> <a2> <b2>\n  node workflow.mjs schnitt-plan "<Projekt>"\n\nOptionen für prepare: --language de --threshold 3 --margin 0.25 --cpu --no-cut --no-normalize\nOption für render: --draft');
     if (action) process.exitCode = 1;
   }
 } catch (error) {
