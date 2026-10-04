@@ -55,7 +55,7 @@ export async function checkDesign22(project, { step = 1 } = {}) {
           case 'h2': return R(q('.h2'));
           case 'kapitel': {
             // 17 (Test Buchcover): Cover samt Schatten (12 px im großen Zustand) und die schon sichtbaren Textteile.
-            if (el.dataset.buch) { const c = R(q('.buch-cover')), rs = [{ x: c.x - 6, y: c.y - 6, w: c.w + 24, h: c.h + 24 }]   // Rand (box-shadow-Spreizung) 6 und Schatten 12, t = vis(el.querySelectorAll('.buch-row,.buch-de'));
+            if (el.dataset.buch) { const c = R(q('.buch-cover')), rs = [{ x: c.x - 6, y: c.y - 6, w: c.w + 24, h: c.h + 24 }], t = vis(el.querySelectorAll('.buch-row,.buch-de'));   // Cover: Rand (box-shadow-Spreizung) 6, Schatten 12
               if (t.length) rs.push(UT(t, 7)); const a = q('.buch-autor'); if (a) rs.push(R(a));   // Autor zählt immer (steht an seinem Platz, auch solange die Blende ihn verdeckt)
               const x = Math.min(...rs.map(b => b.x)), y = Math.min(...rs.map(b => b.y)); return { x, y, w: Math.max(...rs.map(b => b.x + b.w)) - x, h: Math.max(...rs.map(b => b.y + b.h)) - y }; }
             return UT([...el.querySelectorAll('.kap-num,.kap-title')], 7);
