@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
-import { py, vorherSichern, tempoVonMedia } from '../schnitt.mjs';
+import { py, vorherSichern, vorherOhnePlaene, schreibeVorher, tempoVonMedia } from '../schnitt.mjs';
 
 // Künstliche Aufnahme: 6 s Rauschboden −60 dB, drei „Wörter“ (Ton −20 dB) bei 1,0–1,6 / 2,4–3,0 / 4,0–4,6 s.
 function testprojekt() {
@@ -48,6 +48,19 @@ test('schnitt-plan: Wörter bleiben, verworfener Anlauf fällt weg, Grenzen auf 
   fs.rmSync(P, { recursive: true, force: true });
 });
 
+test('schnitt-plan: kantenFest nach außen aufs Raster (Anfang abrunden, Ende aufrunden), nie nach innen', () => {
+  const P = testprojekt();
+  const sel = JSON.parse(fs.readFileSync(path.join(P, 'schnitt/selection.json'), 'utf8'));
+  // Messwerte zwischen zwei Bildern: gerundet lägen sie innen (1,6667 bzw. 3,9333) und würden übergangen
+  sel.kantenFest = { ende: [1.68], anfang: [3.92] };
+  fs.writeFileSync(path.join(P, 'schnitt/selection.json'), JSON.stringify(sel));
+  py('plan-edl.py', [P]); py('straffen2.py', [P]);
+  const [[, b1], [a2]] = JSON.parse(fs.readFileSync(path.join(P, 'schnitt.json'), 'utf8')).behalten;
+  assert.ok(b1 >= 1.68 && Math.abs(b1 * 30 - Math.round(b1 * 30)) < 1e-4, `Ende ${b1}`);
+  assert.ok(a2 <= 3.92 && Math.abs(a2 * 30 - Math.round(a2 * 30)) < 1e-4, `Anfang ${a2}`);
+  fs.rmSync(P, { recursive: true, force: true });
+});
+
 test('schnitt-pegel: Bereich außerhalb der Aufnahme wird mit Meldung abgewiesen statt mit Python-Fehler', () => {
   const P = testprojekt();
   assert.match(py('env.py', [P, '0.9:1.1']), /0\.90 \|.{20}\| 1\.10/);
@@ -66,13 +79,19 @@ test('vorher.json: Tempo von media.mp4; bleibt stehen, solange die Pläne noch a
   assert.equal(tempoVonMedia({ tempo: 1.1 }), 1.1);
   assert.equal(tempoVonMedia({ media: { datei: 'media.mp4' }, tempo: 1.1 }), 1);
   assert.match(vorherSichern(P, meta), /erster Schnitt/);
-  // ohne Pläne: immer der bisherige Stand
-  schnitt([[1, 2], [3, 4]]); vorherSichern(P, meta);
-  assert.deepEqual(lies().behalten, [[1, 2], [3, 4]]); assert.equal(lies().tempo, 1.1);
-  schnitt([[1, 2], [3, 5]]); vorherSichern(P, meta);
+  // ohne Pläne, Reihenfolge wie schnitt-plan (vorher sichern, plan-edl/straffen2 schreiben schnitt.json, danach vorherOhnePlaene):
+  // vorher.json ist nach jedem Lauf die NEUE Fassung mit dem Tempo aus workflow.json (Prüfung 05.10.2026: nicht der vorletzte Lauf)
+  const lauf = b => { const m = vorherSichern(P, meta); schnitt(b); vorherOhnePlaene(P, meta); return m; };
+  lauf([[1, 2], [3, 4]]);
+  assert.deepEqual(lies().behalten, [[1, 2], [3, 4]]); assert.equal(lies().tempo, 1.2);
+  assert.match(lauf([[1, 2], [3, 5]]), /noch keine Pläne/);
   assert.deepEqual(lies().behalten, [[1, 2], [3, 5]]);
-  // Pläne gibt es: Sie passen zu [[1,2],[3,5]]. Neuer Schnitt, noch nicht umgerechnet → vorher.json bleibt beim Planstand.
+  // Pläne entstehen auf [[1,2],[3,5]] (vorbereiten lief mit Tempo 1,1: planentwurf schreibt den tatsächlichen Stand).
   fs.writeFileSync(path.join(P, 'design-plan.json'), JSON.stringify({ _umgerechnet: [] }));
+  schreibeVorher(P, [[1, 2], [3, 5]], tempoVonMedia(meta));
+  assert.equal(lies().tempo, 1.1);
+  // Neuer Schnitt, noch nicht umgerechnet → vorher.json bleibt beim Planstand, vorherOhnePlaene tut nichts.
+  assert.equal(vorherOhnePlaene(P, meta), null);
   schnitt([[1, 2], [3, 5]]); vorherSichern(P, meta);   // gleicher Stand: auffrischen
   schnitt([[1, 2]]);
   assert.match(vorherSichern(P, meta), /bleibt/);

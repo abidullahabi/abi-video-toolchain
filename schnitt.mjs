@@ -124,19 +124,30 @@ export function schreibeVorher(P, behalten, tempo, extra = {}) {
   fs.writeFileSync(path.join(P, 'schnitt/vorher.json'), JSON.stringify({ _quelle: 'Stand, zu dem die Pläne passen (schnitt.json und Tempo von media.mp4); für node workflow.mjs schnitt-umstellen', gesichert: new Date().toISOString(),
     tempo, sha256: pruefsumme(f), umgerechnet: umgerechnetZahl(P), ...extra, behalten }, null, 1) + '\n');
 }
-// Vor schnitt-plan: bisherige schnitt.json sichern. Stehen Pläne auf einem älteren Stand, der noch nicht umgerechnet ist
-// (vorher.json weicht ab und design-plan.json hat seitdem keinen neuen Umrechnungsvermerk), bleibt vorher.json stehen.
+// Vor schnitt-plan: bisherige schnitt.json sichern, wenn es Pläne gibt. Stehen sie auf einem älteren Stand, der noch nicht
+// umgerechnet ist (vorher.json weicht ab und design-plan.json hat seitdem keinen neuen Umrechnungsvermerk), bleibt vorher.json stehen.
+// Ohne Pläne nichts sichern: Dann schreibt schnitt-plan vorher.json nach dem Lauf aus der neuen schnitt.json (vorherOhnePlaene),
+// denn die Pläne entstehen erst auf dieser Fassung. Sonst rechnete schnitt-umstellen später vom vorletzten Lauf um (Prüfung 05.10.2026).
 export function vorherSichern(P, meta) {
   const f = path.join(P, 'schnitt.json'), ziel = path.join(P, 'schnitt/vorher.json');
   if (!fs.existsSync(f)) return 'keine bisherige schnitt.json (erster Schnitt), nichts gesichert';
+  if (!fs.existsSync(path.join(P, 'design-plan.json'))) return 'noch keine Pläne: schnitt/vorher.json folgt nach dem Lauf aus der neuen schnitt.json';
   const tempo = tempoVonMedia(meta);
-  if (fs.existsSync(ziel) && fs.existsSync(path.join(P, 'design-plan.json'))) {
+  if (fs.existsSync(ziel)) {
     const v = J(ziel);
     const gleich = v.sha256 === pruefsumme(f) && Number(v.tempo) === tempo;
     if (!gleich && umgerechnetZahl(P) <= (v.umgerechnet ?? 0)) return `schnitt/vorher.json bleibt: Die Pläne passen noch zum Stand vom ${v.gesichert} (Tempo ${komma(Number(v.tempo), 1)}); schnitt-umstellen steht aus.`;
   }
   schreibeVorher(P, J(f).behalten, tempo, { vorbereitet: vorbereitetMit(P, tempo) });
   return `bisherige schnitt.json mit Tempo ${komma(tempo, 1)} als schnitt/vorher.json gesichert`;
+}
+// Ohne Pläne: Die Pläne entstehen auf der neuen schnitt.json, bei dem Tempo, mit dem vorbereiten media.mp4 als Nächstes baut
+// (workflow.json „tempo“). planentwurf schreibt beim Anlegen von design-plan.json noch einmal den tatsächlichen Stand.
+export function vorherOhnePlaene(P, meta) {
+  if (fs.existsSync(path.join(P, 'design-plan.json'))) return null;
+  const tempo = Number(meta.tempo ?? 1);
+  schreibeVorher(P, J(path.join(P, 'schnitt.json')).behalten, tempo, { vorbereitet: false });
+  return `schnitt/vorher.json = neue schnitt.json mit Tempo ${komma(tempo, 1)} (noch keine Pläne)`;
 }
 
 export async function schnittPlan(P) {
@@ -146,6 +157,7 @@ export async function schnittPlan(P) {
     console.log(vorherSichern(P, meta));
     console.log(py('plan-edl.py', [P]).trim());
     console.log(py('straffen2.py', [P]).trim());
+    const ohne = vorherOhnePlaene(P, meta); if (ohne) console.log(ohne);
     const k = J(path.join(P, 'schnitt.json')).behalten.map(([a, b]) => [R(a), R(b)]);
     const dauer = k.reduce((s, [a, b]) => s + b - a, 0), tempo = Number(meta.tempo ?? 1);
     console.log(`Dauer ${komma(dauer)} s bei Tempo 1` + (tempo !== 1 ? `, ${komma(dauer / tempo, 1)} s bei Tempo ${komma(tempo, 1)} (workflow.json)` : '') + `; ${k.length} Stücke.`);
