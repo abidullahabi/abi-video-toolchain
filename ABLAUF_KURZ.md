@@ -62,10 +62,20 @@ Die Regeln gelten, wenn der Befehl im Hauptordner `~/Projekte/abi-video-toolchai
 ## 2. Vorbereiten (≈ 1–2 min Rechner, dann Transkript prüfen)
 
 1. `transcription-prompt.txt` nur mit Begriffen aus dieser Aufnahme.
-2. Nur bei beauftragtem Schnitt: `schnitt.json` `{"behalten": [[start, ende], …]}` in Sekunden des Rohvideos im selben Projekt. Ende nach Abschnitt 0: keine Stille vor dem CTA, Schluss vor dem Ende der Geste.
+2. Nur bei beauftragtem Schnitt: `schnitt.json` `{"behalten": [[start, ende], …]}` in Sekunden des Rohvideos im selben Projekt, erzeugt nach „Schnitt (nur bei Auftrag)“ unten. Ende nach Abschnitt 0: keine Stille vor dem CTA, Schluss vor dem Ende der Geste.
 3. `node workflow.mjs vorbereiten "<P>"`: Kamerabild `media.mp4` in einem Durchgang aus dem Rohvideo (Schnitt, Farbkorrektur), `speech.wav`, Wörter in **einem** Whisper-Durchgang mit Wortzeiten (bei Schnitt auf dem ungeschnittenen Ton, dann in die Schnittzeit umgerechnet), Gesichter, Schnittpunkte. Jeder Schritt merkt sich die Prüfsummen seiner Eingaben (`logs/cache.json`) und überspringt sich, wenn nichts geändert ist. Nach einer Schnittänderung also einfach erneut aufrufen.
 4. Transkript prüfen; Korrekturen und Abmilderungen in `caption-edit-plan.json`.
 5. Followerstand: Zernio `accounts_get_follower_stats` (TikTok `6aa6efb9726ebfe037e60cc6`) → `follower-source.json` `{"wert": …, "lastUpdated": …}`.
+
+### Schnitt (nur bei Auftrag)
+
+Standard seit 04.10.2026 (Vorbild „Bücher die so gut sind wie Therapie“). Alle Zeiten in Sekunden des Rohvideos, Arbeitsdateien in `<P>/schnitt/`. Regeln für die Auswahl: CONTENT_WORKFLOW.md Abschnitt 5.
+
+1. `node workflow.mjs schnitt-analyse "<P>"` (im Hintergrund starten): Ton 16 kHz, Bildzeitstempel, Silero, Whisper über den ganzen Ton (wörtlich) und je Sprechstück mit Füllwort-Vorgabe (turbo und small, `analysis/asr-turbo.log`, `asr-small.log`). Unveränderte Schritte werden übersprungen.
+2. **Ein Planer** schreibt `schnitt/selection.json` (welche Anläufe bleiben, Reihenfolge wie aufgenommen), **ein Prüfer** prüft. Hilfen: `node workflow.mjs schnitt-woerter "<P>" <von> <bis> [turbo|small]` (Wörter mit Zeit), `schnitt-pegel "<P>" <von>:<bis>` (Pegelverlauf), `schnitt-naht "<P>" <a1> <b1> <a2> <b2>` (zwei Stücke zusammengesetzt erkennen lassen).
+3. `node workflow.mjs schnitt-plan "<P>"`: `schnitt.json` mit gekürzten Pausen und gestrafften Nähten, `schnitt/edl.json`, `schnitt/straffen2-bericht.json`. Nennt die Dauer bei Tempo 1 und beim Tempo aus `workflow.json`, den Median der Restpausen und Nähte über 300 ms. Die bisherige `schnitt.json` wird als `schnitt/vorher.json` gesichert.
+4. Weiter mit `vorbereiten` (Punkt 3).
+5. Gab es schon Pläne (Schnitt- oder Tempoänderung): nach `vorbereiten` `node workflow.mjs schnitt-umstellen "<P>"`. Rechnet `design-plan.json` und `caption-edit-plan.json` von `schnitt/vorher.json` auf die neue Fassung um (Sicherung in `schnitt/umstellen-sicherung-*`), erkennt `word-review-turbo` neu (Vorgaben je Teil in `word-review-turbo/prompts.json`), nennt Entfallenes und an herausgeschnittene Stellen gerückte Elemente, gibt die Ankerliste aus und prüft die Wortkorrekturen. Die genannten Stellen prüft der Planer von Hand.
 
 ## 3. Plan (≈ 6 min: Entwurf, ein Planer, ein Prüfer)
 
