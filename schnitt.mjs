@@ -122,7 +122,7 @@ const umgerechnetZahl = P => { try { return (J(path.join(P, 'design-plan.json'))
 export function schreibeVorher(P, behalten, tempo, extra = {}) {
   const f = path.join(P, 'schnitt.json');
   fs.writeFileSync(path.join(P, 'schnitt/vorher.json'), JSON.stringify({ _quelle: 'Stand, zu dem die Pläne passen (schnitt.json und Tempo von media.mp4); für node workflow.mjs schnitt-umstellen', gesichert: new Date().toISOString(),
-    tempo, sha256: pruefsumme(f), umgerechnet: umgerechnetZahl(P), ...extra, behalten }, null, 1) + '\n');
+    tempo, sha256: fs.existsSync(f) ? pruefsumme(f) : null, umgerechnet: umgerechnetZahl(P), ...extra, behalten }, null, 1) + '\n');
 }
 // Vor schnitt-plan: bisherige schnitt.json sichern, wenn es Pläne gibt. Stehen sie auf einem älteren Stand, der noch nicht
 // umgerechnet ist (vorher.json weicht ab und design-plan.json hat seitdem keinen neuen Umrechnungsvermerk), bleibt vorher.json stehen.
@@ -130,7 +130,14 @@ export function schreibeVorher(P, behalten, tempo, extra = {}) {
 // denn die Pläne entstehen erst auf dieser Fassung. Sonst rechnete schnitt-umstellen später vom vorletzten Lauf um (Prüfung 05.10.2026).
 export function vorherSichern(P, meta) {
   const f = path.join(P, 'schnitt.json'), ziel = path.join(P, 'schnitt/vorher.json');
-  if (!fs.existsSync(f)) return 'keine bisherige schnitt.json (erster Schnitt), nichts gesichert';
+  if (!fs.existsSync(f)) {
+    // Erster Schnitt, die Pläne stehen schon auf der ungeschnittenen Aufnahme: diesen Stand festhalten, damit schnitt-umstellen umrechnen kann.
+    if (fs.existsSync(path.join(P, 'design-plan.json')) && !fs.existsSync(ziel) && Number.isFinite(Number(meta.sourceDuration))) {
+      schreibeVorher(P, [[0, Number(meta.sourceDuration)]], tempoVonMedia(meta), { vorbereitet: true, ungeschnitten: true });
+      return `erster Schnitt nach bestehenden Plänen: ungeschnittener Stand (0 bis ${komma(Number(meta.sourceDuration))} s, Tempo ${komma(tempoVonMedia(meta), 1)}) als schnitt/vorher.json festgehalten`;
+    }
+    return 'keine bisherige schnitt.json (erster Schnitt), nichts gesichert';
+  }
   if (!fs.existsSync(path.join(P, 'design-plan.json'))) return 'noch keine Pläne: schnitt/vorher.json folgt nach dem Lauf aus der neuen schnitt.json';
   const tempo = tempoVonMedia(meta);
   if (fs.existsSync(ziel)) {

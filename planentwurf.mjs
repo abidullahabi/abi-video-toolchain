@@ -61,6 +61,9 @@ function titelAb(w, i, max = 4) {
 
 export function planentwurf(project) {
   const meta = J(path.join(project, 'workflow.json')), duration = meta.cutDuration;
+  // Bei Schnitt: Wörter und media.mp4 müssen zur jetzigen schnitt.json passen, sonst entstünde der Plan auf dem vorigen Schnitt
+  // und schnitt/vorher.json hielte trotzdem den neuen fest (Prüfung 05.10.2026).
+  if (fs.existsSync(path.join(project, 'schnitt.json')) && !vorbereitetMit(project, tempoVonMedia(meta))) throw Error(`Die Wörter passen nicht zur jetzigen schnitt.json: erst node workflow.mjs vorbereiten "${project}", dann planentwurf.`);
   const { timed: w } = readTimedWords(project, duration);
   const offen = [];
   const cutFile = path.join(project, 'review/cut-points.json'), cuts = fs.existsSync(cutFile) ? J(cutFile).cuts.map(c => c.time) : [];
