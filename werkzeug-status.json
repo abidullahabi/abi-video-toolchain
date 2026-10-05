@@ -1,8 +1,8 @@
 {
   "status": "frei",
   "agent": "claude",
-  "zweig": "claude/schnitt-standard",
-  "seit": "2026-10-04T21:16:00Z",
-  "aufgabe": "Schnitt-Befehle 1–3 (schnitt-analyse, schnitt-woerter/-pegel/-naht, schnitt-plan) auf claude/schnitt-standard committet, nicht in main. schnitt-umstellen (Punkt 4) liegt getestet, aber uncommittet im Arbeitsordner ../abi-video-toolchain-schnitt und wartet auf Abdullahs Freigabe.",
+  "zweig": "main",
+  "seit": "2026-10-05T06:10:00Z",
+  "aufgabe": "Schnitt-Standard (claude/schnitt-standard) nach Abdullahs Freigabe vom 05.10.2026 in main gemergt (05d0e5c), 20 von 20 Tests. Arbeitsordner ../abi-video-toolchain-schnitt und ../abi-video-toolchain-buchcover nach ~/Löschbar verschoben, Zweige bleiben.",
   "hinweis": "Vor jeder Änderung am Werkzeugcode lesen und setzen (status in_arbeit/frei, agent, zweig, seit). Nie löschen, nur überschreiben."
 }
