@@ -13,6 +13,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { readTimedWords } from './assemble-full-video.mjs';
 import { planZooms22 } from './theme-composition-design22.mjs';
+import { schreibeVorher, tempoVonMedia, vorbereitetMit } from './schnitt.mjs';
 
 const J = f => JSON.parse(fs.readFileSync(f, 'utf8'));
 const r2 = x => Math.round(x * 100) / 100;
@@ -160,5 +161,11 @@ export function planentwurf(project) {
   };
   const ziel2 = fs.existsSync(path.join(project, 'design-plan.json')) ? 'design-plan.entwurf.json' : 'design-plan.json';
   fs.writeFileSync(path.join(project, ziel2), JSON.stringify(plan, null, 1) + '\n');
+  // Neuer Plan auf einer Schnittfassung: Planstand (schnitt.json, Tempo von media.mp4) für schnitt-umstellen festhalten.
+  if (ziel2 === 'design-plan.json' && fs.existsSync(path.join(project, 'schnitt.json'))) {
+    fs.mkdirSync(path.join(project, 'schnitt'), { recursive: true });
+    const t = tempoVonMedia(meta);
+    schreibeVorher(project, JSON.parse(fs.readFileSync(path.join(project, 'schnitt.json'), 'utf8')).behalten, t, { vorbereitet: vorbereitetMit(project, t), angelegtVon: 'planentwurf' });
+  }
   return { datei: path.join(project, ziel2), kapitel: kapitel.length, pillen: pillen.length, zooms: zooms.length, sprechblasen: sprechblasen.length, outroStart, offen };
 }

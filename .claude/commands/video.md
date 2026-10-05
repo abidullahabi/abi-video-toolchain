@@ -87,7 +87,7 @@ Melde: Ablageort, Notion-Link, Zernio-ID, geplante Zeit, frei gewordene GB. Mehr
 
 ## Schritt 7: Testprotokoll
 
-Solange dieser Ablauf in der Erprobung ist, hänge nach jedem Durchlauf an `DRIVE/TESTPROTOKOLL.md` einen Block an:
+Solange dieser Ablauf in der Erprobung ist, hänge nach jedem Durchlauf an `DRIVE/Anleitung/Belege/TESTPROTOKOLL.md` einen Block an:
 
 ```
 ## JJJJ-MM-TT - Titel

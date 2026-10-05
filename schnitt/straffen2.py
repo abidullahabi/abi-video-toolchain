@@ -8,7 +8,7 @@ Bei „Bücher die so gut sind wie Therapie“ (Rauschboden −55 dB) ergibt das
 Ende = letzter 5-ms-Abschnitt über der Ende-Schwelle, dessen Vorgänger ebenfalls darüber liegt, Anfang = erster Abschnitt, ab dem es 15 ms über der Anfang-Schwelle bleibt. Danach 60 ms Nachlauf und
 40 ms Vorlauf (≈ 100 ms hörbare Pause wie Abis eigener Schnitt bei Fast 30). Nur kürzen, nie verlängern; erster Anfang (Einstieg)
 und letztes Ende (festgelegter Schluss) bleiben. Raster 1/30 s nach außen gerundet (vorbereiten.mjs rundet).
-Geprüfte Kanten aus selection.json "kantenFest": {"anfang": [...], "ende": [...]} (Rohzeit) setzt das Skript danach wieder, nur nach außen
+Geprüfte Kanten aus selection.json "kantenFest": {"anfang": [...], "ende": [...]} (Rohzeit, aufs Raster nach außen gelegt) setzt das Skript danach wieder, nur nach außen
 und nie in das Nachbarstück (vorher ein Projekt-Skript im Blindtest 05.10.2026).
 python3 schnitt/straffen2.py <Projektordner> [--nachlauf 0.06] [--vorlauf 0.04] [--ende-db -49] [--anfang-db -46]"""
 import json, wave, os, sys, math, statistics
@@ -44,15 +44,17 @@ for j in range(len(k) - 1):
     rest.append((j, e0, s1, None if we is None or ws is None else (ne - we) + (ws - ns)))   # hörbare Pause an der Naht (nur Ausgabe)
 # Geprüfte Kanten (selection.json "kantenFest") wieder setzen: nur nach außen, nie in das Nachbarstück.
 sel = json.load(open('selection.json')) if os.path.exists('selection.json') else {}
-kf = sel.get('kantenFest') or {}; r30 = lambda t: round(t * 30) / 30; fest = []
+kf = sel.get('kantenFest') or {}; fest = []
+r30a = lambda t: math.floor(t * 30 + 1e-6) / 30   # Anfang aufs Raster nach außen (früher), sonst rückt ein leiser Anlaut bis 16 ms nach innen
+r30e = lambda t: math.ceil(t * 30 - 1e-6) / 30    # Ende aufs Raster nach außen (später)
 for t in kf.get('anfang', []):   # Stück, dessen Anfang nahe t liegt; liegt er schon bei oder vor t, bleibt er
-    t = r30(t); j = next((j for j, (a, b) in enumerate(k) if t - 0.25 <= a <= t + 0.25), None)
+    t = r30a(t); j = next((j for j, (a, b) in enumerate(k) if t - 0.25 <= a <= t + 0.25), None)
     if j is None: fest.append(f'Anfang {t:.3f}: kein Stück in der Nähe'); continue
     if k[j][0] <= t + 1e-6: continue
     if j > 0 and k[j - 1][1] > t + 1e-6: fest.append(f'Anfang {t:.3f}: Nachbarstück endet {k[j - 1][1]:.3f}, nicht gesetzt'); continue
     fest.append(f'Anfang {k[j][0]:.3f} → {t:.3f}'); k[j][0] = t
 for t in kf.get('ende', []):   # Stück, dessen Ende nahe t liegt; liegt es schon bei oder nach t, bleibt es
-    t = r30(t); j = next((j for j, (a, b) in enumerate(k) if t - 0.25 <= b <= t + 0.25), None)
+    t = r30e(t); j = next((j for j, (a, b) in enumerate(k) if t - 0.25 <= b <= t + 0.25), None)
     if j is None: fest.append(f'Ende {t:.3f}: kein Stück in der Nähe'); continue
     if k[j][1] >= t - 1e-6: continue
     if j + 1 < len(k) and k[j + 1][0] < t - 1e-6: fest.append(f'Ende {t:.3f}: Nachbarstück beginnt {k[j + 1][0]:.3f}, nicht gesetzt'); continue
