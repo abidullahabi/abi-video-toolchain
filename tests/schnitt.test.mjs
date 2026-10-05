@@ -7,6 +7,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { py, vorherSichern, vorherOhnePlaene, schreibeVorher, tempoVonMedia } from '../schnitt.mjs';
+import { planentwurf } from '../planentwurf.mjs';
 
 // Künstliche Aufnahme: 6 s Rauschboden −60 dB, drei „Wörter“ (Ton −20 dB) bei 1,0–1,6 / 2,4–3,0 / 4,0–4,6 s.
 function testprojekt() {
@@ -100,5 +101,30 @@ test('vorher.json: Tempo von media.mp4; bleibt stehen, solange die Pläne noch a
   fs.writeFileSync(path.join(P, 'design-plan.json'), JSON.stringify({ _umgerechnet: ['umgerechnet'] }));
   vorherSichern(P, meta);
   assert.deepEqual(lies().behalten, [[1, 2]]); assert.equal(lies().umgerechnet, 1);
+  fs.rmSync(P, { recursive: true, force: true });
+});
+
+test('erster Schnitt nach Plänen auf der ungeschnittenen Aufnahme: vorher.json = ganze Aufnahme mit Tempo von media.mp4', () => {
+  const P = fs.mkdtempSync(path.join(os.tmpdir(), 'schnitt-erst-'));
+  fs.mkdirSync(path.join(P, 'schnitt'));
+  fs.writeFileSync(path.join(P, 'design-plan.json'), JSON.stringify({ _umgerechnet: [] }));
+  const meta = { sourceDuration: 6, media: { datei: 'media.mp4', tempo: 1.1 } };
+  assert.match(vorherSichern(P, meta), /ungeschnittener Stand/);
+  const v = JSON.parse(fs.readFileSync(path.join(P, 'schnitt/vorher.json'), 'utf8'));
+  assert.deepEqual(v.behalten, [[0, 6]]); assert.equal(v.tempo, 1.1); assert.equal(v.sha256, null);
+  // ein zweiter Lauf vor dem Umrechnen überschreibt diesen Stand nicht
+  fs.writeFileSync(path.join(P, 'schnitt.json'), JSON.stringify({ behalten: [[1, 2]] }));
+  assert.match(vorherSichern(P, meta), /bleibt/);
+  assert.deepEqual(JSON.parse(fs.readFileSync(path.join(P, 'schnitt/vorher.json'), 'utf8')).behalten, [[0, 6]]);
+  fs.rmSync(P, { recursive: true, force: true });
+});
+
+test('planentwurf bricht ab, wenn die Wörter nicht zur jetzigen schnitt.json passen (vorbereiten fehlt)', () => {
+  const P = fs.mkdtempSync(path.join(os.tmpdir(), 'schnitt-plan-'));
+  fs.mkdirSync(path.join(P, 'schnitt'));
+  fs.writeFileSync(path.join(P, 'workflow.json'), JSON.stringify({ title: 'Test', cutDuration: 10 }));
+  fs.writeFileSync(path.join(P, 'schnitt.json'), JSON.stringify({ behalten: [[0, 10]] }));
+  assert.throws(() => planentwurf(P), /erst node workflow\.mjs vorbereiten/);
+  assert.ok(!fs.existsSync(path.join(P, 'design-plan.json')) && !fs.existsSync(path.join(P, 'schnitt/vorher.json')));
   fs.rmSync(P, { recursive: true, force: true });
 });
