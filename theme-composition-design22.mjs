@@ -58,8 +58,9 @@ export function groupCaptions22(words, { A }, duration) {
   const out = [];
   for (let i = 0; i < n; i += pick[i]) {
     const sl = words.slice(i, i + pick[i]);
-    const end = Math.min(words[i + sl.length]?.start ?? duration, sl.at(-1).end + 0.07);
-    out.push({ start: sl[0].start, end: Math.round(end * 1000) / 1000, words: sl.map(({ text, start, end }) => ({ text, start, end })), width: Math.round(W(sl.map(w => w.text).join(' '))) });
+    // DESIGN.md 7: Das letzte Wort bleibt bis zur nächsten Gruppe bzw. bis zum Videoende blau.
+    const end = words[i + sl.length]?.start ?? duration;
+    out.push({ start: sl[0].start, end, words: sl.map(({ text, start, end }) => ({ text, start, end })), width: Math.round(W(sl.map(w => w.text).join(' '))) });
   }
   return out;
 }
