@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Das die bestimmte Berufserfahrung fehlen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.998174,
+					"t_dtw": -1
+				},
+				{
+					"text": " Das",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 150
+					},
+					"id": 2846,
+					"p": 0.620808,
+					"t_dtw": 24
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 270
+					},
+					"id": 978,
+					"p": 0.493801,
+					"t_dtw": 38
+				},
+				{
+					"text": " bestimm",
+					"timestamps": {
+						"from": "00:00:00,350",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 350,
+						"to": 650
+					},
+					"id": 35180,
+					"p": 0.992483,
+					"t_dtw": 62
+				},
+				{
+					"text": "te",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 750
+					},
+					"id": 975,
+					"p": 0.990271,
+					"t_dtw": 74
+				},
+				{
+					"text": " Beruf",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 980
+					},
+					"id": 36688,
+					"p": 0.947603,
+					"t_dtw": 94
+				},
+				{
+					"text": "ser",
+					"timestamps": {
+						"from": "00:00:01,050",
+						"to": "00:00:01,130"
+					},
+					"offsets": {
+						"from": 1050,
+						"to": 1130
+					},
+					"id": 12484,
+					"p": 0.958923,
+					"t_dtw": 112
+				},
+				{
+					"text": "fahr",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1340
+					},
+					"id": 20868,
+					"p": 0.838613,
+					"t_dtw": 120
+				},
+				{
+					"text": "ung",
+					"timestamps": {
+						"from": "00:00:01,350",
+						"to": "00:00:01,500"
+					},
+					"offsets": {
+						"from": 1350,
+						"to": 1500
+					},
+					"id": 1063,
+					"p": 0.980522,
+					"t_dtw": 136
+				},
+				{
+					"text": " feh",
+					"timestamps": {
+						"from": "00:00:01,500",
+						"to": "00:00:01,640"
+					},
+					"offsets": {
+						"from": 1500,
+						"to": 1640
+					},
+					"id": 34741,
+					"p": 0.854993,
+					"t_dtw": 156
+				},
+				{
+					"text": "len",
+					"timestamps": {
+						"from": "00:00:01,640",
+						"to": "00:00:01,690"
+					},
+					"offsets": {
+						"from": 1640,
+						"to": 1690
+					},
+					"id": 6698,
+					"p": 0.997916,
+					"t_dtw": 170
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,930",
+						"to": "00:00:01,930"
+					},
+					"offsets": {
+						"from": 1930,
+						"to": 1930
+					},
+					"id": 13,
+					"p": 0.924711,
+					"t_dtw": 190
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.10592,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

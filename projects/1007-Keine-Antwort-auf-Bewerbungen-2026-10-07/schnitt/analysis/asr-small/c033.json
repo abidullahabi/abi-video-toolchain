@@ -1,0 +1,297 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3120
+			},
+			"text": " Und ich hatte nicht mal, und ich hatte nicht mal Google Ads Erfahrung vorher.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997337,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 140
+					},
+					"id": 2719,
+					"p": 0.974648,
+					"t_dtw": 20
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 280
+					},
+					"id": 1893,
+					"p": 0.992574,
+					"t_dtw": 32
+				},
+				{
+					"text": " hatte",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 510
+					},
+					"id": 13299,
+					"p": 0.996158,
+					"t_dtw": 46
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,740"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 740
+					},
+					"id": 1979,
+					"p": 0.614784,
+					"t_dtw": 58
+				},
+				{
+					"text": " mal",
+					"timestamps": {
+						"from": "00:00:00,740",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 740,
+						"to": 870
+					},
+					"id": 2806,
+					"p": 0.97133,
+					"t_dtw": 74
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 890
+					},
+					"id": 11,
+					"p": 0.63234,
+					"t_dtw": 82
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 1080
+					},
+					"id": 674,
+					"p": 0.757496,
+					"t_dtw": 138
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:01,300",
+						"to": "00:00:01,300"
+					},
+					"offsets": {
+						"from": 1300,
+						"to": 1300
+					},
+					"id": 1893,
+					"p": 0.998671,
+					"t_dtw": 148
+				},
+				{
+					"text": " hatte",
+					"timestamps": {
+						"from": "00:00:01,320",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1320,
+						"to": 1560
+					},
+					"id": 13299,
+					"p": 0.993045,
+					"t_dtw": 160
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,790"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1790
+					},
+					"id": 1979,
+					"p": 0.940448,
+					"t_dtw": 176
+				},
+				{
+					"text": " mal",
+					"timestamps": {
+						"from": "00:00:01,820",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1820,
+						"to": 2000
+					},
+					"id": 2806,
+					"p": 0.989581,
+					"t_dtw": 190
+				},
+				{
+					"text": " Google",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,150"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2150
+					},
+					"id": 3329,
+					"p": 0.851944,
+					"t_dtw": 206
+				},
+				{
+					"text": " Ads",
+					"timestamps": {
+						"from": "00:00:02,150",
+						"to": "00:00:02,240"
+					},
+					"offsets": {
+						"from": 2150,
+						"to": 2240
+					},
+					"id": 44325,
+					"p": 0.960359,
+					"t_dtw": 224
+				},
+				{
+					"text": " Erfahrung",
+					"timestamps": {
+						"from": "00:00:02,240",
+						"to": "00:00:02,600"
+					},
+					"offsets": {
+						"from": 2240,
+						"to": 2600
+					},
+					"id": 49318,
+					"p": 0.52633,
+					"t_dtw": 258
+				},
+				{
+					"text": " vorher",
+					"timestamps": {
+						"from": "00:00:02,710",
+						"to": "00:00:02,900"
+					},
+					"offsets": {
+						"from": 2710,
+						"to": 2900
+					},
+					"id": 29195,
+					"p": 0.960517,
+					"t_dtw": 284
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,110",
+						"to": "00:00:03,110"
+					},
+					"offsets": {
+						"from": 3110,
+						"to": 3110
+					},
+					"id": 13,
+					"p": 0.953379,
+					"t_dtw": 308
+				},
+				{
+					"text": "[_TT_156]",
+					"timestamps": {
+						"from": "00:00:03,120",
+						"to": "00:00:03,120"
+					},
+					"offsets": {
+						"from": 3120,
+						"to": 3120
+					},
+					"id": 50520,
+					"p": 0.0474419,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

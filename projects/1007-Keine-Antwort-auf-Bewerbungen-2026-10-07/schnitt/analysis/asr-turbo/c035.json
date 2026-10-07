@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,720"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1720
+			},
+			"text": " Und das vierte, was du machst, ist,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.761699,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 170
+					},
+					"id": 2719,
+					"p": 0.963908,
+					"t_dtw": 20
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 320
+					},
+					"id": 1482,
+					"p": 0.957711,
+					"t_dtw": 32
+				},
+				{
+					"text": " vier",
+					"timestamps": {
+						"from": "00:00:00,410",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 410,
+						"to": 560
+					},
+					"id": 17634,
+					"p": 0.672458,
+					"t_dtw": 48
+				},
+				{
+					"text": "te",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 670
+					},
+					"id": 975,
+					"p": 0.998576,
+					"t_dtw": 62
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:00,740"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 740
+					},
+					"id": 11,
+					"p": 0.940882,
+					"t_dtw": 68
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 950
+					},
+					"id": 390,
+					"p": 0.992627,
+					"t_dtw": 74
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,950",
+						"to": "00:00:01,050"
+					},
+					"offsets": {
+						"from": 950,
+						"to": 1050
+					},
+					"id": 1581,
+					"p": 0.957099,
+					"t_dtw": 84
+				},
+				{
+					"text": " machst",
+					"timestamps": {
+						"from": "00:00:01,050",
+						"to": "00:00:01,390"
+					},
+					"offsets": {
+						"from": 1050,
+						"to": 1390
+					},
+					"id": 43350,
+					"p": 0.996248,
+					"t_dtw": 106
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,390",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 1390,
+						"to": 1420
+					},
+					"id": 11,
+					"p": 0.74997,
+					"t_dtw": 128
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,420",
+						"to": "00:00:01,510"
+					},
+					"offsets": {
+						"from": 1420,
+						"to": 1510
+					},
+					"id": 1418,
+					"p": 0.996898,
+					"t_dtw": 150
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 1700
+					},
+					"id": 11,
+					"p": 0.60396,
+					"t_dtw": 160
+				},
+				{
+					"text": "[_TT_86]",
+					"timestamps": {
+						"from": "00:00:01,720",
+						"to": "00:00:01,720"
+					},
+					"offsets": {
+						"from": 1720,
+						"to": 1720
+					},
+					"id": 50451,
+					"p": 0.567743,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

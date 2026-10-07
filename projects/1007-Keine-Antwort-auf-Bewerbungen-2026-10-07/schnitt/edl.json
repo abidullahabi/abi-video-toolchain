@@ -1,0 +1,998 @@
+{
+  "basis": {
+    "quelle": "01_Rohvideos/1007.mp4",
+    "notion": "https://app.notion.com/p/3f18cb917b3b81728729f41cebeedd3f",
+    "auftrag": "Vollständige Storyline und einzigartige verständliche Aussagen erhalten, eindeutige Fehlstarts/Dopplungen entfernen, sehr knappe individuelle Übergänge nach freigegebener IMG2031-Referenz. Keine starre Längengrenze.",
+    "tempo": 1.0,
+    "anleitungen": "AGENTS.md und ABLAUF_KURZ.md der Toolchain vollständig gelesen. CONTENT_WORKFLOW.md 1.33 vom 07.10.2026 vollständig gelesen.",
+    "analyse": "Voll-ASR und alle echten 60 Turbo-/Small-Sprechstücke gelesen. Zusätzliche Kontext-ASR von Root geprüft. c060 ist ein künstlicher Containerrest von 18 Mikrosekunden ohne Sprachinhalt.",
+    "zeiten": "Alle Grenzen in Rohsekunden. VAD-basierte äußere Grenzen sind Baseline für schnitt-plan. Harte Innenkanten wurden anhand Wortankern und Pegeltälern geprüft.",
+    "textstatus": "Textfelder sind ASR-Arbeitstext, kein abgenommener Untertiteltext. Unsichere Wortlaute nicht als erwiesene Versprecher behandeln.",
+    "hoerpruefung": "Keine tatsächliche Hörprüfung durch den Planer erfolgt. ASR und Pegel sind kein Ersatz.",
+    "pruefstatus": "Root-Inhaltskorrekturen eingearbeitet. Auswahl bereit für schnitt-plan und finale Nahtprüfung. Kein Export gebaut.",
+    "schluss": "Root-Sichtprüfung: Ende 312,70 s vor dem Absinken der Hand. hardEnd/endHold gesetzt.",
+    "erstellt": "2026-10-07T21:32:09.257158+00:00",
+    "aktualisiert": "2026-10-07T21:34:35.047489+00:00"
+  },
+  "fassung": 2,
+  "rule": {
+    "minGap": 0.15,
+    "lead": 0.08,
+    "tail": 0.07,
+    "wortgrenzeDbfs": -52.0,
+    "neighbourMargin": 0.02,
+    "frames": "echte Bildzeitstempel"
+  },
+  "pieces": [
+    {
+      "range": "c000",
+      "start": 1.033333,
+      "end": 4.3,
+      "speech": [
+        1.155,
+        4.215
+      ]
+    },
+    {
+      "range": "c002",
+      "start": 11.633333,
+      "end": 13.466667,
+      "speech": [
+        11.705,
+        13.385
+      ]
+    },
+    {
+      "range": "c003",
+      "start": 13.733333,
+      "end": 17.233333,
+      "speech": [
+        13.81,
+        17.15
+      ]
+    },
+    {
+      "range": "c004",
+      "start": 18.433333,
+      "end": 21.133333,
+      "speech": [
+        18.52,
+        21.065
+      ]
+    },
+    {
+      "range": "c010",
+      "start": 41.533333,
+      "end": 45.6,
+      "speech": [
+        41.59,
+        45.525
+      ]
+    },
+    {
+      "range": "c010",
+      "start": 45.7,
+      "end": 46.633333,
+      "speech": [
+        45.785,
+        46.555
+      ]
+    },
+    {
+      "range": "c011",
+      "start": 48.233333,
+      "end": 52.033333,
+      "speech": [
+        48.315,
+        51.95
+      ]
+    },
+    {
+      "range": "c012",
+      "start": 52.233333,
+      "end": 54.466667,
+      "speech": [
+        52.305,
+        54.395
+      ]
+    },
+    {
+      "range": "c013",
+      "start": 55.633333,
+      "end": 59.233333,
+      "speech": [
+        55.7,
+        59.16
+      ]
+    },
+    {
+      "range": "c014",
+      "start": 59.6,
+      "end": 60.266667,
+      "speech": [
+        59.665,
+        60.185
+      ]
+    },
+    {
+      "range": "c014",
+      "start": 60.333333,
+      "end": 63.2,
+      "speech": [
+        60.405,
+        63.105
+      ]
+    },
+    {
+      "range": "c015",
+      "start": 63.6,
+      "end": 65.433333,
+      "speech": [
+        63.68,
+        65.37
+      ]
+    },
+    {
+      "range": "c015",
+      "start": 65.533333,
+      "end": 68.733333,
+      "speech": [
+        65.595,
+        68.65
+      ]
+    },
+    {
+      "range": "c015",
+      "start": 68.766667,
+      "end": 71.2,
+      "speech": [
+        68.835,
+        71.125
+      ]
+    },
+    {
+      "range": "c018",
+      "start": 81.0,
+      "end": 84.3,
+      "speech": [
+        81.065,
+        84.215
+      ]
+    },
+    {
+      "range": "c019",
+      "start": 93.666667,
+      "end": 100.6,
+      "speech": [
+        93.735,
+        100.51
+      ]
+    },
+    {
+      "range": "c020",
+      "start": 100.9,
+      "end": 104.1,
+      "speech": [
+        100.98,
+        104.02
+      ]
+    },
+    {
+      "range": "c021",
+      "start": 104.933333,
+      "end": 108.266667,
+      "speech": [
+        105.0,
+        108.18
+      ]
+    },
+    {
+      "range": "c022",
+      "start": 117.866667,
+      "end": 122.366667,
+      "speech": [
+        117.935,
+        122.275
+      ]
+    },
+    {
+      "range": "c023",
+      "start": 123.3,
+      "end": 125.233333,
+      "speech": [
+        123.355,
+        125.16
+      ]
+    },
+    {
+      "range": "c024",
+      "start": 125.766667,
+      "end": 127.366667,
+      "speech": [
+        125.835,
+        127.295
+      ]
+    },
+    {
+      "range": "c025",
+      "start": 128.766667,
+      "end": 131.566667,
+      "speech": [
+        128.85,
+        131.485
+      ]
+    },
+    {
+      "range": "c026",
+      "start": 133.933333,
+      "end": 135.7,
+      "speech": [
+        133.99,
+        135.7
+      ]
+    },
+    {
+      "range": "c027",
+      "start": 137.233333,
+      "end": 140.1,
+      "speech": [
+        137.32,
+        140.005
+      ]
+    },
+    {
+      "range": "c029",
+      "start": 147.966667,
+      "end": 148.8,
+      "speech": [
+        147.967,
+        148.715
+      ]
+    },
+    {
+      "range": "c029",
+      "start": 148.866667,
+      "end": 149.966667,
+      "speech": [
+        148.925,
+        149.88
+      ]
+    },
+    {
+      "range": "c030",
+      "start": 150.366667,
+      "end": 152.133333,
+      "speech": [
+        150.42,
+        152.05
+      ]
+    },
+    {
+      "range": "c031",
+      "start": 163.8,
+      "end": 169.166667,
+      "speech": [
+        163.86,
+        169.1
+      ]
+    },
+    {
+      "range": "c031",
+      "start": 169.333333,
+      "end": 171.466667,
+      "speech": [
+        169.41,
+        171.38
+      ]
+    },
+    {
+      "range": "c032",
+      "start": 172.466667,
+      "end": 175.4,
+      "speech": [
+        172.52,
+        175.32
+      ]
+    },
+    {
+      "range": "c032",
+      "start": 175.566667,
+      "end": 176.533333,
+      "speech": [
+        175.64,
+        176.465
+      ]
+    },
+    {
+      "range": "c032",
+      "start": 176.7,
+      "end": 178.5,
+      "speech": [
+        176.785,
+        178.41
+      ]
+    },
+    {
+      "range": "c032",
+      "start": 178.6,
+      "end": 180.1,
+      "speech": [
+        178.655,
+        180.01
+      ]
+    },
+    {
+      "range": "c033",
+      "start": 185.366667,
+      "end": 187.1,
+      "speech": [
+        185.367,
+        187.005
+      ]
+    },
+    {
+      "range": "c035",
+      "start": 196.033333,
+      "end": 197.533333,
+      "speech": [
+        196.09,
+        197.465
+      ]
+    },
+    {
+      "range": "c036",
+      "start": 198.0,
+      "end": 201.833333,
+      "speech": [
+        198.085,
+        201.74
+      ]
+    },
+    {
+      "range": "c037",
+      "start": 202.7,
+      "end": 206.933333,
+      "speech": [
+        202.77,
+        206.845
+      ]
+    },
+    {
+      "range": "c039",
+      "start": 213.8,
+      "end": 219.133333,
+      "speech": [
+        213.865,
+        219.05
+      ]
+    },
+    {
+      "range": "c040a",
+      "start": 220.033333,
+      "end": 221.3,
+      "speech": [
+        220.095,
+        221.3
+      ]
+    },
+    {
+      "range": "c040b",
+      "start": 222.866667,
+      "end": 224.333333,
+      "speech": [
+        222.867,
+        224.333
+      ]
+    },
+    {
+      "range": "c041",
+      "start": 225.633333,
+      "end": 228.533333,
+      "speech": [
+        225.71,
+        228.445
+      ]
+    },
+    {
+      "range": "c042",
+      "start": 228.933333,
+      "end": 231.466667,
+      "speech": [
+        229.005,
+        231.39
+      ]
+    },
+    {
+      "range": "c043",
+      "start": 232.066667,
+      "end": 234.466667,
+      "speech": [
+        232.125,
+        234.375
+      ]
+    },
+    {
+      "range": "c044",
+      "start": 240.4,
+      "end": 241.266667,
+      "speech": [
+        240.47,
+        241.195
+      ]
+    },
+    {
+      "range": "c044",
+      "start": 241.733333,
+      "end": 243.766667,
+      "speech": [
+        241.8,
+        243.675
+      ]
+    },
+    {
+      "range": "c049",
+      "start": 271.7,
+      "end": 272.566667,
+      "speech": [
+        271.7,
+        272.495
+      ]
+    },
+    {
+      "range": "c050",
+      "start": 272.8,
+      "end": 274.4,
+      "speech": [
+        272.86,
+        274.32
+      ]
+    },
+    {
+      "range": "c051",
+      "start": 276.233333,
+      "end": 278.566667,
+      "speech": [
+        276.233,
+        278.49
+      ]
+    },
+    {
+      "range": "c051",
+      "start": 278.733333,
+      "end": 280.566667,
+      "speech": [
+        278.795,
+        280.49
+      ]
+    },
+    {
+      "range": "c052",
+      "start": 280.966667,
+      "end": 283.666667,
+      "speech": [
+        281.03,
+        283.575
+      ]
+    },
+    {
+      "range": "c053",
+      "start": 283.9,
+      "end": 288.3,
+      "speech": [
+        283.975,
+        288.225
+      ]
+    },
+    {
+      "range": "c054",
+      "start": 288.866667,
+      "end": 290.1,
+      "speech": [
+        288.92,
+        290.1
+      ]
+    },
+    {
+      "range": "c057",
+      "start": 297.533333,
+      "end": 300.266667,
+      "speech": [
+        297.62,
+        300.2
+      ]
+    },
+    {
+      "range": "c057",
+      "start": 300.666667,
+      "end": 301.833333,
+      "speech": [
+        300.74,
+        301.765
+      ]
+    },
+    {
+      "range": "c058",
+      "start": 305.433333,
+      "end": 307.0,
+      "speech": [
+        305.433,
+        306.92
+      ]
+    },
+    {
+      "range": "c059",
+      "start": 307.9,
+      "end": 311.4,
+      "speech": [
+        307.965,
+        311.315
+      ]
+    },
+    {
+      "range": "c059",
+      "start": 311.4,
+      "end": 312.7,
+      "speech": [
+        311.465,
+        312.7
+      ]
+    }
+  ],
+  "keep": [
+    {
+      "start": 1.0,
+      "end": 4.3,
+      "ranges": [
+        "c000"
+      ]
+    },
+    {
+      "start": 11.6,
+      "end": 13.5,
+      "ranges": [
+        "c002"
+      ]
+    },
+    {
+      "start": 13.7,
+      "end": 17.233333333333334,
+      "ranges": [
+        "c003"
+      ]
+    },
+    {
+      "start": 18.4,
+      "end": 21.133333333333333,
+      "ranges": [
+        "c004"
+      ]
+    },
+    {
+      "start": 41.5,
+      "end": 45.6,
+      "ranges": [
+        "c010"
+      ]
+    },
+    {
+      "start": 45.7,
+      "end": 46.63333333333333,
+      "ranges": [
+        "c010"
+      ]
+    },
+    {
+      "start": 48.2,
+      "end": 52.03333333333333,
+      "ranges": [
+        "c011"
+      ]
+    },
+    {
+      "start": 52.2,
+      "end": 54.5,
+      "ranges": [
+        "c012"
+      ]
+    },
+    {
+      "start": 55.6,
+      "end": 59.233333333333334,
+      "ranges": [
+        "c013"
+      ]
+    },
+    {
+      "start": 59.6,
+      "end": 60.3,
+      "ranges": [
+        "c014"
+      ]
+    },
+    {
+      "start": 60.3,
+      "end": 63.2,
+      "ranges": [
+        "c014"
+      ]
+    },
+    {
+      "start": 63.6,
+      "end": 65.43333333333334,
+      "ranges": [
+        "c015"
+      ]
+    },
+    {
+      "start": 65.5,
+      "end": 68.73333333333333,
+      "ranges": [
+        "c015"
+      ]
+    },
+    {
+      "start": 68.76666666666667,
+      "end": 71.2,
+      "ranges": [
+        "c015"
+      ]
+    },
+    {
+      "start": 81.0,
+      "end": 84.3,
+      "ranges": [
+        "c018"
+      ]
+    },
+    {
+      "start": 93.66666666666667,
+      "end": 100.6,
+      "ranges": [
+        "c019"
+      ]
+    },
+    {
+      "start": 100.9,
+      "end": 104.1,
+      "ranges": [
+        "c020"
+      ]
+    },
+    {
+      "start": 104.9,
+      "end": 108.3,
+      "ranges": [
+        "c021"
+      ]
+    },
+    {
+      "start": 117.86666666666666,
+      "end": 122.4,
+      "ranges": [
+        "c022"
+      ]
+    },
+    {
+      "start": 123.3,
+      "end": 125.23333333333333,
+      "ranges": [
+        "c023"
+      ]
+    },
+    {
+      "start": 125.76666666666667,
+      "end": 127.4,
+      "ranges": [
+        "c024"
+      ]
+    },
+    {
+      "start": 128.76666666666668,
+      "end": 131.6,
+      "ranges": [
+        "c025"
+      ]
+    },
+    {
+      "start": 133.9,
+      "end": 135.7,
+      "ranges": [
+        "c026"
+      ]
+    },
+    {
+      "start": 137.2,
+      "end": 140.1,
+      "ranges": [
+        "c027"
+      ]
+    },
+    {
+      "start": 147.96666666666667,
+      "end": 148.8,
+      "ranges": [
+        "c029"
+      ]
+    },
+    {
+      "start": 148.86666666666667,
+      "end": 150.0,
+      "ranges": [
+        "c029"
+      ]
+    },
+    {
+      "start": 150.36666666666667,
+      "end": 152.13333333333333,
+      "ranges": [
+        "c030"
+      ]
+    },
+    {
+      "start": 163.8,
+      "end": 169.2,
+      "ranges": [
+        "c031"
+      ]
+    },
+    {
+      "start": 169.3,
+      "end": 171.5,
+      "ranges": [
+        "c031"
+      ]
+    },
+    {
+      "start": 172.46666666666667,
+      "end": 175.4,
+      "ranges": [
+        "c032"
+      ]
+    },
+    {
+      "start": 175.56666666666666,
+      "end": 176.53333333333333,
+      "ranges": [
+        "c032"
+      ]
+    },
+    {
+      "start": 176.7,
+      "end": 178.5,
+      "ranges": [
+        "c032"
+      ]
+    },
+    {
+      "start": 178.6,
+      "end": 180.1,
+      "ranges": [
+        "c032"
+      ]
+    },
+    {
+      "start": 185.36666666666667,
+      "end": 187.1,
+      "ranges": [
+        "c033"
+      ]
+    },
+    {
+      "start": 196.0,
+      "end": 197.53333333333333,
+      "ranges": [
+        "c035"
+      ]
+    },
+    {
+      "start": 198.0,
+      "end": 201.83333333333334,
+      "ranges": [
+        "c036"
+      ]
+    },
+    {
+      "start": 202.7,
+      "end": 206.93333333333334,
+      "ranges": [
+        "c037"
+      ]
+    },
+    {
+      "start": 213.8,
+      "end": 219.13333333333333,
+      "ranges": [
+        "c039"
+      ]
+    },
+    {
+      "start": 220.0,
+      "end": 221.3,
+      "ranges": [
+        "c040a"
+      ]
+    },
+    {
+      "start": 222.86666666666667,
+      "end": 224.33333333333334,
+      "ranges": [
+        "c040b"
+      ]
+    },
+    {
+      "start": 225.6,
+      "end": 228.53333333333333,
+      "ranges": [
+        "c041"
+      ]
+    },
+    {
+      "start": 228.9,
+      "end": 231.5,
+      "ranges": [
+        "c042"
+      ]
+    },
+    {
+      "start": 232.06666666666666,
+      "end": 234.5,
+      "ranges": [
+        "c043"
+      ]
+    },
+    {
+      "start": 240.4,
+      "end": 241.3,
+      "ranges": [
+        "c044"
+      ]
+    },
+    {
+      "start": 241.7,
+      "end": 243.8,
+      "ranges": [
+        "c044"
+      ]
+    },
+    {
+      "start": 271.7,
+      "end": 272.6,
+      "ranges": [
+        "c049"
+      ]
+    },
+    {
+      "start": 272.8,
+      "end": 274.4,
+      "ranges": [
+        "c050"
+      ]
+    },
+    {
+      "start": 276.2,
+      "end": 278.6,
+      "ranges": [
+        "c051"
+      ]
+    },
+    {
+      "start": 278.7,
+      "end": 280.6,
+      "ranges": [
+        "c051"
+      ]
+    },
+    {
+      "start": 280.96666666666664,
+      "end": 283.7,
+      "ranges": [
+        "c052"
+      ]
+    },
+    {
+      "start": 283.9,
+      "end": 288.3,
+      "ranges": [
+        "c053"
+      ]
+    },
+    {
+      "start": 288.8666666666667,
+      "end": 290.1,
+      "ranges": [
+        "c054"
+      ]
+    },
+    {
+      "start": 297.5,
+      "end": 300.3,
+      "ranges": [
+        "c057"
+      ]
+    },
+    {
+      "start": 300.6666666666667,
+      "end": 301.8333333333333,
+      "ranges": [
+        "c057"
+      ]
+    },
+    {
+      "start": 305.4,
+      "end": 307.0,
+      "ranges": [
+        "c058"
+      ]
+    },
+    {
+      "start": 307.9,
+      "end": 312.7,
+      "ranges": [
+        "c059",
+        "c059"
+      ]
+    }
+  ],
+  "plannedResidualGaps": [
+    0.157,
+    0.158,
+    0.17,
+    0.125,
+    0.16,
+    0.16,
+    0.155,
+    0.138,
+    0.138,
+    0.153,
+    0.175,
+    0.125,
+    0.152,
+    0.14,
+    0.153,
+    0.17,
+    0.147,
+    0.155,
+    0.147,
+    0.142,
+    0.155,
+    0.138,
+    0.087,
+    0.095,
+    0.143,
+    0.14,
+    0.143,
+    0.143,
+    0.14,
+    0.153,
+    0.153,
+    0.145,
+    0.09,
+    0.152,
+    0.153,
+    0.163,
+    0.153,
+    0.145,
+    0.0,
+    0.077,
+    0.16,
+    0.135,
+    0.162,
+    0.138,
+    0.092,
+    0.132,
+    0.08,
+    0.138,
+    0.14,
+    0.167,
+    0.128,
+    0.087,
+    0.14,
+    0.068,
+    0.145,
+    0.15
+  ],
+  "cutDuration": 144.3,
+  "stage": "Baseline vor abschließendem akustischem Feinschnitt",
+  "finalTimeline": "../review/timeline-final.json",
+  "finalDuration": 139.133333
+}

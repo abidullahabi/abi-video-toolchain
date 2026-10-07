@@ -1,0 +1,339 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,420"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4420
+			},
+			"text": " Es sollten mindestens 20 Bewerbungen rausgeschickt werden für eine Einladung.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.998049,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,090",
+						"to": "00:00:00,090"
+					},
+					"offsets": {
+						"from": 90,
+						"to": 90
+					},
+					"id": 2313,
+					"p": 0.895941,
+					"t_dtw": 22
+				},
+				{
+					"text": " sollten",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 400
+					},
+					"id": 29096,
+					"p": 0.980353,
+					"t_dtw": 50
+				},
+				{
+					"text": " mind",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 580
+					},
+					"id": 1575,
+					"p": 0.879144,
+					"t_dtw": 66
+				},
+				{
+					"text": "estens",
+					"timestamps": {
+						"from": "00:00:00,580",
+						"to": "00:00:00,760"
+					},
+					"offsets": {
+						"from": 580,
+						"to": 760
+					},
+					"id": 42624,
+					"p": 0.993816,
+					"t_dtw": 90
+				},
+				{
+					"text": " 20",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 1120
+					},
+					"id": 945,
+					"p": 0.930445,
+					"t_dtw": 128
+				},
+				{
+					"text": " Be",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,210"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1210
+					},
+					"id": 879,
+					"p": 0.906221,
+					"t_dtw": 148
+				},
+				{
+					"text": "wer",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1280
+					},
+					"id": 1554,
+					"p": 0.989812,
+					"t_dtw": 156
+				},
+				{
+					"text": "b",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1380
+					},
+					"id": 65,
+					"p": 0.647822,
+					"t_dtw": 160
+				},
+				{
+					"text": "ungen",
+					"timestamps": {
+						"from": "00:00:01,390",
+						"to": "00:00:01,640"
+					},
+					"offsets": {
+						"from": 1390,
+						"to": 1640
+					},
+					"id": 5084,
+					"p": 0.96852,
+					"t_dtw": 168
+				},
+				{
+					"text": " raus",
+					"timestamps": {
+						"from": "00:00:01,640",
+						"to": "00:00:01,940"
+					},
+					"offsets": {
+						"from": 1640,
+						"to": 1940
+					},
+					"id": 17202,
+					"p": 0.860781,
+					"t_dtw": 182
+				},
+				{
+					"text": "gesch",
+					"timestamps": {
+						"from": "00:00:01,940",
+						"to": "00:00:02,310"
+					},
+					"offsets": {
+						"from": 1940,
+						"to": 2310
+					},
+					"id": 23378,
+					"p": 0.916377,
+					"t_dtw": 204
+				},
+				{
+					"text": "ickt",
+					"timestamps": {
+						"from": "00:00:02,310",
+						"to": "00:00:02,470"
+					},
+					"offsets": {
+						"from": 2310,
+						"to": 2470
+					},
+					"id": 40522,
+					"p": 0.991546,
+					"t_dtw": 210
+				},
+				{
+					"text": " werden",
+					"timestamps": {
+						"from": "00:00:02,470",
+						"to": "00:00:02,730"
+					},
+					"offsets": {
+						"from": 2470,
+						"to": 2730
+					},
+					"id": 4604,
+					"p": 0.997562,
+					"t_dtw": 240
+				},
+				{
+					"text": " für",
+					"timestamps": {
+						"from": "00:00:03,290",
+						"to": "00:00:03,290"
+					},
+					"offsets": {
+						"from": 3290,
+						"to": 3290
+					},
+					"id": 2959,
+					"p": 0.336949,
+					"t_dtw": 340
+				},
+				{
+					"text": " eine",
+					"timestamps": {
+						"from": "00:00:03,360",
+						"to": "00:00:03,570"
+					},
+					"offsets": {
+						"from": 3360,
+						"to": 3570
+					},
+					"id": 3018,
+					"p": 0.989189,
+					"t_dtw": 368
+				},
+				{
+					"text": " Ein",
+					"timestamps": {
+						"from": "00:00:03,570",
+						"to": "00:00:03,780"
+					},
+					"offsets": {
+						"from": 3570,
+						"to": 3780
+					},
+					"id": 6391,
+					"p": 0.996089,
+					"t_dtw": 392
+				},
+				{
+					"text": "lad",
+					"timestamps": {
+						"from": "00:00:03,780",
+						"to": "00:00:03,990"
+					},
+					"offsets": {
+						"from": 3780,
+						"to": 3990
+					},
+					"id": 9290,
+					"p": 0.987598,
+					"t_dtw": 406
+				},
+				{
+					"text": "ung",
+					"timestamps": {
+						"from": "00:00:03,990",
+						"to": "00:00:04,130"
+					},
+					"offsets": {
+						"from": 3990,
+						"to": 4130
+					},
+					"id": 1063,
+					"p": 0.999802,
+					"t_dtw": 422
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:04,190",
+						"to": "00:00:04,260"
+					},
+					"offsets": {
+						"from": 4190,
+						"to": 4260
+					},
+					"id": 13,
+					"p": 0.952254,
+					"t_dtw": 436
+				},
+				{
+					"text": "[_TT_221]",
+					"timestamps": {
+						"from": "00:00:04,420",
+						"to": "00:00:04,420"
+					},
+					"offsets": {
+						"from": 4420,
+						"to": 4420
+					},
+					"id": 50585,
+					"p": 0.0388565,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

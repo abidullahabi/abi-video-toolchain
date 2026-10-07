@@ -1,0 +1,325 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,600"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3600
+			},
+			"text": " Hast solidere Referenzen, gute Noten, aber es kommt einfach keine Antwort.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997681,
+					"t_dtw": -1
+				},
+				{
+					"text": " Hast",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 220
+					},
+					"id": 30987,
+					"p": 0.931987,
+					"t_dtw": 24
+				},
+				{
+					"text": " solid",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 500
+					},
+					"id": 5100,
+					"p": 0.123354,
+					"t_dtw": 46
+				},
+				{
+					"text": "ere",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 670
+					},
+					"id": 323,
+					"p": 0.875978,
+					"t_dtw": 70
+				},
+				{
+					"text": " Refer",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 950
+					},
+					"id": 36889,
+					"p": 0.904521,
+					"t_dtw": 82
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:00,950",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 950,
+						"to": 980
+					},
+					"id": 268,
+					"p": 0.844523,
+					"t_dtw": 96
+				},
+				{
+					"text": "zen",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,230"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1230
+					},
+					"id": 2904,
+					"p": 0.999024,
+					"t_dtw": 110
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,230",
+						"to": "00:00:01,320"
+					},
+					"offsets": {
+						"from": 1230,
+						"to": 1320
+					},
+					"id": 11,
+					"p": 0.828517,
+					"t_dtw": 132
+				},
+				{
+					"text": " gute",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1560
+					},
+					"id": 21476,
+					"p": 0.993688,
+					"t_dtw": 152
+				},
+				{
+					"text": " Not",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,730"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1730
+					},
+					"id": 1726,
+					"p": 0.985213,
+					"t_dtw": 176
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:01,730",
+						"to": "00:00:01,770"
+					},
+					"offsets": {
+						"from": 1730,
+						"to": 1770
+					},
+					"id": 268,
+					"p": 0.999828,
+					"t_dtw": 192
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,840",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1840,
+						"to": 1990
+					},
+					"id": 11,
+					"p": 0.850408,
+					"t_dtw": 208
+				},
+				{
+					"text": " aber",
+					"timestamps": {
+						"from": "00:00:02,090",
+						"to": "00:00:02,190"
+					},
+					"offsets": {
+						"from": 2090,
+						"to": 2190
+					},
+					"id": 4340,
+					"p": 0.956932,
+					"t_dtw": 230
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:02,190",
+						"to": "00:00:02,280"
+					},
+					"offsets": {
+						"from": 2190,
+						"to": 2280
+					},
+					"id": 785,
+					"p": 0.987911,
+					"t_dtw": 246
+				},
+				{
+					"text": " kommt",
+					"timestamps": {
+						"from": "00:00:02,280",
+						"to": "00:00:02,410"
+					},
+					"offsets": {
+						"from": 2280,
+						"to": 2410
+					},
+					"id": 10047,
+					"p": 0.992061,
+					"t_dtw": 260
+				},
+				{
+					"text": " einfach",
+					"timestamps": {
+						"from": "00:00:02,530",
+						"to": "00:00:02,830"
+					},
+					"offsets": {
+						"from": 2530,
+						"to": 2830
+					},
+					"id": 7281,
+					"p": 0.967647,
+					"t_dtw": 280
+				},
+				{
+					"text": " keine",
+					"timestamps": {
+						"from": "00:00:02,880",
+						"to": "00:00:03,090"
+					},
+					"offsets": {
+						"from": 2880,
+						"to": 3090
+					},
+					"id": 9252,
+					"p": 0.9762,
+					"t_dtw": 302
+				},
+				{
+					"text": " Antwort",
+					"timestamps": {
+						"from": "00:00:03,090",
+						"to": "00:00:03,330"
+					},
+					"offsets": {
+						"from": 3090,
+						"to": 3330
+					},
+					"id": 34693,
+					"p": 0.993915,
+					"t_dtw": 332
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,410",
+						"to": "00:00:03,470"
+					},
+					"offsets": {
+						"from": 3410,
+						"to": 3470
+					},
+					"id": 13,
+					"p": 0.926376,
+					"t_dtw": 358
+				},
+				{
+					"text": "[_TT_180]",
+					"timestamps": {
+						"from": "00:00:03,600",
+						"to": "00:00:03,600"
+					},
+					"offsets": {
+						"from": 3600,
+						"to": 3600
+					},
+					"id": 50544,
+					"p": 0.0553057,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

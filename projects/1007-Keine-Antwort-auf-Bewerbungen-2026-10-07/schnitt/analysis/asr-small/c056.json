@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,480"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1480
+			},
+			"text": " Mindestens 20 Bewerben.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.99328,
+					"t_dtw": -1
+				},
+				{
+					"text": " Mind",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 210
+					},
+					"id": 13719,
+					"p": 0.660376,
+					"t_dtw": 38
+				},
+				{
+					"text": "estens",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 470
+					},
+					"id": 42624,
+					"p": 0.991753,
+					"t_dtw": 54
+				},
+				{
+					"text": " 20",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 840
+					},
+					"id": 945,
+					"p": 0.962751,
+					"t_dtw": 88
+				},
+				{
+					"text": " Be",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:00,960"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 960
+					},
+					"id": 879,
+					"p": 0.896624,
+					"t_dtw": 102
+				},
+				{
+					"text": "wer",
+					"timestamps": {
+						"from": "00:00:00,960",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 960,
+						"to": 1120
+					},
+					"id": 1554,
+					"p": 0.753406,
+					"t_dtw": 120
+				},
+				{
+					"text": "ben",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1280
+					},
+					"id": 1799,
+					"p": 0.270112,
+					"t_dtw": 138
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,280",
+						"to": "00:00:01,310"
+					},
+					"offsets": {
+						"from": 1280,
+						"to": 1310
+					},
+					"id": 13,
+					"p": 0.763071,
+					"t_dtw": 146
+				},
+				{
+					"text": "[_TT_74]",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,480"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1480
+					},
+					"id": 50438,
+					"p": 0.0437308,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

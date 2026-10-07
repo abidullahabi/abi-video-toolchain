@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,600"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2600
+			},
+			"text": " Und dieses Software, und dieses Software Suchtach.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997499,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 170
+					},
+					"id": 2719,
+					"p": 0.971823,
+					"t_dtw": 22
+				},
+				{
+					"text": " dieses",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 510
+					},
+					"id": 12113,
+					"p": 0.974455,
+					"t_dtw": 40
+				},
+				{
+					"text": " Software",
+					"timestamps": {
+						"from": "00:00:00,590",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 590,
+						"to": 970
+					},
+					"id": 27428,
+					"p": 0.855819,
+					"t_dtw": 92
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,970",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 970,
+						"to": 1080
+					},
+					"id": 11,
+					"p": 0.473148,
+					"t_dtw": 102
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1140
+					},
+					"id": 674,
+					"p": 0.804326,
+					"t_dtw": 132
+				},
+				{
+					"text": " dieses",
+					"timestamps": {
+						"from": "00:00:01,250",
+						"to": "00:00:01,590"
+					},
+					"offsets": {
+						"from": 1250,
+						"to": 1590
+					},
+					"id": 12113,
+					"p": 0.99329,
+					"t_dtw": 150
+				},
+				{
+					"text": " Software",
+					"timestamps": {
+						"from": "00:00:01,590",
+						"to": "00:00:02,050"
+					},
+					"offsets": {
+						"from": 1590,
+						"to": 2050
+					},
+					"id": 27428,
+					"p": 0.956417,
+					"t_dtw": 186
+				},
+				{
+					"text": " Such",
+					"timestamps": {
+						"from": "00:00:02,050",
+						"to": "00:00:02,190"
+					},
+					"offsets": {
+						"from": 2050,
+						"to": 2190
+					},
+					"id": 9653,
+					"p": 0.253563,
+					"t_dtw": 212
+				},
+				{
+					"text": "t",
+					"timestamps": {
+						"from": "00:00:02,270",
+						"to": "00:00:02,330"
+					},
+					"offsets": {
+						"from": 2270,
+						"to": 2330
+					},
+					"id": 83,
+					"p": 0.746045,
+					"t_dtw": 230
+				},
+				{
+					"text": "ach",
+					"timestamps": {
+						"from": "00:00:02,330",
+						"to": "00:00:02,500"
+					},
+					"offsets": {
+						"from": 2330,
+						"to": 2500
+					},
+					"id": 608,
+					"p": 0.374237,
+					"t_dtw": 244
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,600",
+						"to": "00:00:02,600"
+					},
+					"offsets": {
+						"from": 2600,
+						"to": 2600
+					},
+					"id": 13,
+					"p": 0.672029,
+					"t_dtw": 258
+				},
+				{
+					"text": "[_TT_130]",
+					"timestamps": {
+						"from": "00:00:02,600",
+						"to": "00:00:02,600"
+					},
+					"offsets": {
+						"from": 2600,
+						"to": 2600
+					},
+					"id": 50494,
+					"p": 0.0470311,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

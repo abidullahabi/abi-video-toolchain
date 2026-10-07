@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,400"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1400
+			},
+			"text": " Meistens heißt es ein...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.763557,
+					"t_dtw": -1
+				},
+				{
+					"text": " Me",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 150
+					},
+					"id": 1923,
+					"p": 0.977322,
+					"t_dtw": 28
+				},
+				{
+					"text": "ist",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 370
+					},
+					"id": 468,
+					"p": 0.984271,
+					"t_dtw": 42
+				},
+				{
+					"text": "ens",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 610
+					},
+					"id": 694,
+					"p": 0.991452,
+					"t_dtw": 54
+				},
+				{
+					"text": " heißt",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,990"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 990
+					},
+					"id": 13139,
+					"p": 0.9918,
+					"t_dtw": 80
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 1140
+					},
+					"id": 785,
+					"p": 0.542284,
+					"t_dtw": 92
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1190
+					},
+					"id": 1343,
+					"p": 0.488754,
+					"t_dtw": 112
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1380
+					},
+					"id": 485,
+					"p": 0.715984,
+					"t_dtw": 136
+				},
+				{
+					"text": "[_TT_70]",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1400
+					},
+					"id": 50435,
+					"p": 0.288253,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

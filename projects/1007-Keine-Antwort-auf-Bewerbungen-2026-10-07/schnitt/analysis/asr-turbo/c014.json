@@ -1,0 +1,339 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,760"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3760
+			},
+			"text": " Warum? Sogenannte ATS-Softwaren werden von Unternehmen benutzt.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.805943,
+					"t_dtw": -1
+				},
+				{
+					"text": " Warum",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,490"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 490
+					},
+					"id": 25541,
+					"p": 0.940918,
+					"t_dtw": 36
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 1000
+					},
+					"id": 30,
+					"p": 0.889178,
+					"t_dtw": 72
+				},
+				{
+					"text": " So",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,130"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1130
+					},
+					"id": 407,
+					"p": 0.934649,
+					"t_dtw": 100
+				},
+				{
+					"text": "gen",
+					"timestamps": {
+						"from": "00:00:01,130",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1130,
+						"to": 1240
+					},
+					"id": 1766,
+					"p": 0.969201,
+					"t_dtw": 114
+				},
+				{
+					"text": "an",
+					"timestamps": {
+						"from": "00:00:01,310",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1310,
+						"to": 1450
+					},
+					"id": 282,
+					"p": 0.996386,
+					"t_dtw": 122
+				},
+				{
+					"text": "nte",
+					"timestamps": {
+						"from": "00:00:01,450",
+						"to": "00:00:01,640"
+					},
+					"offsets": {
+						"from": 1450,
+						"to": 1640
+					},
+					"id": 9358,
+					"p": 0.999418,
+					"t_dtw": 138
+				},
+				{
+					"text": " A",
+					"timestamps": {
+						"from": "00:00:01,640",
+						"to": "00:00:01,670"
+					},
+					"offsets": {
+						"from": 1640,
+						"to": 1670
+					},
+					"id": 316,
+					"p": 0.93957,
+					"t_dtw": 172
+				},
+				{
+					"text": "TS",
+					"timestamps": {
+						"from": "00:00:01,710",
+						"to": "00:00:01,820"
+					},
+					"offsets": {
+						"from": 1710,
+						"to": 1820
+					},
+					"id": 7327,
+					"p": 0.995676,
+					"t_dtw": 198
+				},
+				{
+					"text": "-",
+					"timestamps": {
+						"from": "00:00:01,850",
+						"to": "00:00:01,890"
+					},
+					"offsets": {
+						"from": 1850,
+						"to": 1890
+					},
+					"id": 12,
+					"p": 0.84932,
+					"t_dtw": 204
+				},
+				{
+					"text": "So",
+					"timestamps": {
+						"from": "00:00:01,890",
+						"to": "00:00:02,010"
+					},
+					"offsets": {
+						"from": 1890,
+						"to": 2010
+					},
+					"id": 6455,
+					"p": 0.991474,
+					"t_dtw": 218
+				},
+				{
+					"text": "ft",
+					"timestamps": {
+						"from": "00:00:02,020",
+						"to": "00:00:02,150"
+					},
+					"offsets": {
+						"from": 2020,
+						"to": 2150
+					},
+					"id": 844,
+					"p": 0.999746,
+					"t_dtw": 230
+				},
+				{
+					"text": "ware",
+					"timestamps": {
+						"from": "00:00:02,150",
+						"to": "00:00:02,410"
+					},
+					"offsets": {
+						"from": 2150,
+						"to": 2410
+					},
+					"id": 3039,
+					"p": 0.992085,
+					"t_dtw": 240
+				},
+				{
+					"text": "n",
+					"timestamps": {
+						"from": "00:00:02,410",
+						"to": "00:00:02,510"
+					},
+					"offsets": {
+						"from": 2410,
+						"to": 2510
+					},
+					"id": 77,
+					"p": 0.995243,
+					"t_dtw": 248
+				},
+				{
+					"text": " werden",
+					"timestamps": {
+						"from": "00:00:02,520",
+						"to": "00:00:02,690"
+					},
+					"offsets": {
+						"from": 2520,
+						"to": 2690
+					},
+					"id": 4604,
+					"p": 0.95188,
+					"t_dtw": 266
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:02,780",
+						"to": "00:00:02,880"
+					},
+					"offsets": {
+						"from": 2780,
+						"to": 2880
+					},
+					"id": 2957,
+					"p": 0.959075,
+					"t_dtw": 282
+				},
+				{
+					"text": " Unternehmen",
+					"timestamps": {
+						"from": "00:00:02,880",
+						"to": "00:00:03,330"
+					},
+					"offsets": {
+						"from": 2880,
+						"to": 3330
+					},
+					"id": 27577,
+					"p": 0.973728,
+					"t_dtw": 308
+				},
+				{
+					"text": " benut",
+					"timestamps": {
+						"from": "00:00:03,330",
+						"to": "00:00:03,470"
+					},
+					"offsets": {
+						"from": 3330,
+						"to": 3470
+					},
+					"id": 38424,
+					"p": 0.986624,
+					"t_dtw": 334
+				},
+				{
+					"text": "zt",
+					"timestamps": {
+						"from": "00:00:03,550",
+						"to": "00:00:03,570"
+					},
+					"offsets": {
+						"from": 3550,
+						"to": 3570
+					},
+					"id": 2682,
+					"p": 0.999861,
+					"t_dtw": 356
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,600",
+						"to": "00:00:03,740"
+					},
+					"offsets": {
+						"from": 3600,
+						"to": 3740
+					},
+					"id": 13,
+					"p": 0.961186,
+					"t_dtw": 372
+				},
+				{
+					"text": "[_TT_188]",
+					"timestamps": {
+						"from": "00:00:03,760",
+						"to": "00:00:03,760"
+					},
+					"offsets": {
+						"from": 3760,
+						"to": 3760
+					},
+					"id": 50553,
+					"p": 0.777632,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

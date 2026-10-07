@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3000
+			},
+			"text": " Irgendwelche Tipps. Hier ist meine CV. Bitte hilf mir.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997097,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ir",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 100
+					},
+					"id": 9151,
+					"p": 0.189619,
+					"t_dtw": 26
+				},
+				{
+					"text": "gend",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,290"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 290
+					},
+					"id": 9395,
+					"p": 0.953181,
+					"t_dtw": 28
+				},
+				{
+					"text": "wel",
+					"timestamps": {
+						"from": "00:00:00,290",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 290,
+						"to": 430
+					},
+					"id": 45512,
+					"p": 0.819157,
+					"t_dtw": 38
+				},
+				{
+					"text": "che",
+					"timestamps": {
+						"from": "00:00:00,430",
+						"to": "00:00:00,570"
+					},
+					"offsets": {
+						"from": 430,
+						"to": 570
+					},
+					"id": 1876,
+					"p": 0.996502,
+					"t_dtw": 40
+				},
+				{
+					"text": " Tipp",
+					"timestamps": {
+						"from": "00:00:00,570",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 570,
+						"to": 700
+					},
+					"id": 42102,
+					"p": 0.923264,
+					"t_dtw": 62
+				},
+				{
+					"text": "s",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 810
+					},
+					"id": 82,
+					"p": 0.995342,
+					"t_dtw": 84
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:00,830"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 830
+					},
+					"id": 13,
+					"p": 0.469176,
+					"t_dtw": 104
+				},
+				{
+					"text": " Hier",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,230"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1230
+					},
+					"id": 10886,
+					"p": 0.650933,
+					"t_dtw": 128
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,230",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1230,
+						"to": 1400
+					},
+					"id": 1418,
+					"p": 0.994808,
+					"t_dtw": 136
+				},
+				{
+					"text": " meine",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,690"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1690
+					},
+					"id": 10946,
+					"p": 0.904064,
+					"t_dtw": 150
+				},
+				{
+					"text": " CV",
+					"timestamps": {
+						"from": "00:00:01,690",
+						"to": "00:00:01,800"
+					},
+					"offsets": {
+						"from": 1690,
+						"to": 1800
+					},
+					"id": 22995,
+					"p": 0.57471,
+					"t_dtw": 180
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,800",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1800,
+						"to": 2000
+					},
+					"id": 13,
+					"p": 0.736891,
+					"t_dtw": 232
+				},
+				{
+					"text": " Bitte",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,020"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2020
+					},
+					"id": 42890,
+					"p": 0.84464,
+					"t_dtw": 248
+				},
+				{
+					"text": " hil",
+					"timestamps": {
+						"from": "00:00:02,380",
+						"to": "00:00:02,530"
+					},
+					"offsets": {
+						"from": 2380,
+						"to": 2530
+					},
+					"id": 28315,
+					"p": 0.449286,
+					"t_dtw": 266
+				},
+				{
+					"text": "f",
+					"timestamps": {
+						"from": "00:00:02,530",
+						"to": "00:00:02,590"
+					},
+					"offsets": {
+						"from": 2530,
+						"to": 2590
+					},
+					"id": 69,
+					"p": 0.989985,
+					"t_dtw": 272
+				},
+				{
+					"text": " mir",
+					"timestamps": {
+						"from": "00:00:02,590",
+						"to": "00:00:02,790"
+					},
+					"offsets": {
+						"from": 2590,
+						"to": 2790
+					},
+					"id": 3149,
+					"p": 0.972327,
+					"t_dtw": 288
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,790",
+						"to": "00:00:02,920"
+					},
+					"offsets": {
+						"from": 2790,
+						"to": 2920
+					},
+					"id": 13,
+					"p": 0.701233,
+					"t_dtw": 298
+				},
+				{
+					"text": "[_TT_150]",
+					"timestamps": {
+						"from": "00:00:03,000",
+						"to": "00:00:03,000"
+					},
+					"offsets": {
+						"from": 3000,
+						"to": 3000
+					},
+					"id": 50514,
+					"p": 0.0488147,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

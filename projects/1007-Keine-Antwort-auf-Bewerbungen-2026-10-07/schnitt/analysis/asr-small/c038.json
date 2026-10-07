@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Kannst du direkt ein Follow dalassen?",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.993887,
+					"t_dtw": -1
+				},
+				{
+					"text": " Kann",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,230"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 230
+					},
+					"id": 29074,
+					"p": 0.189098,
+					"t_dtw": 22
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:00,230",
+						"to": "00:00:00,340"
+					},
+					"offsets": {
+						"from": 230,
+						"to": 340
+					},
+					"id": 372,
+					"p": 0.925673,
+					"t_dtw": 28
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,340",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 340,
+						"to": 450
+					},
+					"id": 1581,
+					"p": 0.887857,
+					"t_dtw": 30
+				},
+				{
+					"text": " direkt",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,800"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 800
+					},
+					"id": 20315,
+					"p": 0.057287,
+					"t_dtw": 48
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 970
+					},
+					"id": 1343,
+					"p": 0.440902,
+					"t_dtw": 56
+				},
+				{
+					"text": " F",
+					"timestamps": {
+						"from": "00:00:00,970",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 970,
+						"to": 1020
+					},
+					"id": 479,
+					"p": 0.284842,
+					"t_dtw": 66
+				},
+				{
+					"text": "oll",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1190
+					},
+					"id": 1833,
+					"p": 0.63449,
+					"t_dtw": 70
+				},
+				{
+					"text": "ow",
+					"timestamps": {
+						"from": "00:00:01,190",
+						"to": "00:00:01,250"
+					},
+					"offsets": {
+						"from": 1190,
+						"to": 1250
+					},
+					"id": 305,
+					"p": 0.606886,
+					"t_dtw": 78
+				},
+				{
+					"text": " dal",
+					"timestamps": {
+						"from": "00:00:01,470",
+						"to": "00:00:01,470"
+					},
+					"offsets": {
+						"from": 1470,
+						"to": 1470
+					},
+					"id": 11702,
+					"p": 0.767754,
+					"t_dtw": 92
+				},
+				{
+					"text": "assen",
+					"timestamps": {
+						"from": "00:00:01,470",
+						"to": "00:00:01,470"
+					},
+					"offsets": {
+						"from": 1470,
+						"to": 1470
+					},
+					"id": 8356,
+					"p": 0.993455,
+					"t_dtw": 110
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,480"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1480
+					},
+					"id": 30,
+					"p": 0.946729,
+					"t_dtw": 146
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.100987,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

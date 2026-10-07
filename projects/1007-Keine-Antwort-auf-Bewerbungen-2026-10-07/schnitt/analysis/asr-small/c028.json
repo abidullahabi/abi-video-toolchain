@@ -1,0 +1,115 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Äh.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.984433,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ä",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,290"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 290
+					},
+					"id": 13700,
+					"p": 0.38659,
+					"t_dtw": 22
+				},
+				{
+					"text": "h",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 360
+					},
+					"id": 71,
+					"p": 0.878225,
+					"t_dtw": 34
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 360
+					},
+					"id": 13,
+					"p": 0.55805,
+					"t_dtw": 34
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.196896,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

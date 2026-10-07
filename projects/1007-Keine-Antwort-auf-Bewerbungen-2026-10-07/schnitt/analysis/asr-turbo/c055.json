@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,140"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1140
+			},
+			"text": " Neue Angebote kommen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.817615,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ne",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 100
+					},
+					"id": 1734,
+					"p": 0.887899,
+					"t_dtw": 36
+				},
+				{
+					"text": "ue",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 200
+					},
+					"id": 622,
+					"p": 0.956258,
+					"t_dtw": 44
+				},
+				{
+					"text": " Angeb",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 470
+					},
+					"id": 44301,
+					"p": 0.997813,
+					"t_dtw": 70
+				},
+				{
+					"text": "ote",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 630
+					},
+					"id": 1370,
+					"p": 0.999255,
+					"t_dtw": 86
+				},
+				{
+					"text": " kommen",
+					"timestamps": {
+						"from": "00:00:00,630",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 630,
+						"to": 870
+					},
+					"id": 11729,
+					"p": 0.988145,
+					"t_dtw": 112
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,920",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 920,
+						"to": 1140
+					},
+					"id": 13,
+					"p": 0.940351,
+					"t_dtw": 112
+				},
+				{
+					"text": "[_TT_57]",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1140
+					},
+					"id": 50422,
+					"p": 0.318626,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

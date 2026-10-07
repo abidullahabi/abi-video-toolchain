@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Ein 1,7-Maß an BWL.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.995097,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ein",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 300
+					},
+					"id": 6391,
+					"p": 0.626299,
+					"t_dtw": 24
+				},
+				{
+					"text": " 1",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 600
+					},
+					"id": 502,
+					"p": 0.817557,
+					"t_dtw": 42
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,790"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 790
+					},
+					"id": 11,
+					"p": 0.885888,
+					"t_dtw": 54
+				},
+				{
+					"text": "7",
+					"timestamps": {
+						"from": "00:00:00,790",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 790,
+						"to": 1080
+					},
+					"id": 22,
+					"p": 0.969801,
+					"t_dtw": 74
+				},
+				{
+					"text": "-",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,170"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1170
+					},
+					"id": 12,
+					"p": 0.428143,
+					"t_dtw": 92
+				},
+				{
+					"text": "Ma",
+					"timestamps": {
+						"from": "00:00:01,170",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1170,
+						"to": 1360
+					},
+					"id": 30290,
+					"p": 0.116356,
+					"t_dtw": 92
+				},
+				{
+					"text": "ß",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1450
+					},
+					"id": 2536,
+					"p": 0.856028,
+					"t_dtw": 104
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:01,450",
+						"to": "00:00:01,540"
+					},
+					"offsets": {
+						"from": 1450,
+						"to": 1540
+					},
+					"id": 364,
+					"p": 0.590771,
+					"t_dtw": 116
+				},
+				{
+					"text": " B",
+					"timestamps": {
+						"from": "00:00:01,750",
+						"to": "00:00:01,750"
+					},
+					"offsets": {
+						"from": 1750,
+						"to": 1750
+					},
+					"id": 363,
+					"p": 0.687658,
+					"t_dtw": 126
+				},
+				{
+					"text": "W",
+					"timestamps": {
+						"from": "00:00:01,750",
+						"to": "00:00:01,770"
+					},
+					"offsets": {
+						"from": 1750,
+						"to": 1770
+					},
+					"id": 54,
+					"p": 0.721288,
+					"t_dtw": 134
+				},
+				{
+					"text": "L",
+					"timestamps": {
+						"from": "00:00:01,770",
+						"to": "00:00:01,770"
+					},
+					"offsets": {
+						"from": 1770,
+						"to": 1770
+					},
+					"id": 43,
+					"p": 0.998479,
+					"t_dtw": 150
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,770",
+						"to": "00:00:01,770"
+					},
+					"offsets": {
+						"from": 1770,
+						"to": 1770
+					},
+					"id": 13,
+					"p": 0.857439,
+					"t_dtw": 174
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.101369,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

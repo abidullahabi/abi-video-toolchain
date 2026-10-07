@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,620"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2620
+			},
+			"text": " Meistens bedeutet keine Antwort zu bekommen, als",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.927413,
+					"t_dtw": -1
+				},
+				{
+					"text": " Me",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 130
+					},
+					"id": 1923,
+					"p": 0.946568,
+					"t_dtw": 26
+				},
+				{
+					"text": "ist",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 320
+					},
+					"id": 468,
+					"p": 0.986017,
+					"t_dtw": 40
+				},
+				{
+					"text": "ens",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 480
+					},
+					"id": 694,
+					"p": 0.994169,
+					"t_dtw": 52
+				},
+				{
+					"text": " bedeutet",
+					"timestamps": {
+						"from": "00:00:00,590",
+						"to": "00:00:00,920"
+					},
+					"offsets": {
+						"from": 590,
+						"to": 920
+					},
+					"id": 27018,
+					"p": 0.984063,
+					"t_dtw": 80
+				},
+				{
+					"text": " keine",
+					"timestamps": {
+						"from": "00:00:01,050",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1050,
+						"to": 1340
+					},
+					"id": 9252,
+					"p": 0.761287,
+					"t_dtw": 116
+				},
+				{
+					"text": " Antwort",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1700
+					},
+					"id": 34693,
+					"p": 0.716419,
+					"t_dtw": 144
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:01,810",
+						"to": "00:00:01,930"
+					},
+					"offsets": {
+						"from": 1810,
+						"to": 1930
+					},
+					"id": 2164,
+					"p": 0.982627,
+					"t_dtw": 160
+				},
+				{
+					"text": " bekommen",
+					"timestamps": {
+						"from": "00:00:01,930",
+						"to": "00:00:02,290"
+					},
+					"offsets": {
+						"from": 1930,
+						"to": 2290
+					},
+					"id": 19256,
+					"p": 0.99417,
+					"t_dtw": 198
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,440",
+						"to": "00:00:02,450"
+					},
+					"offsets": {
+						"from": 2440,
+						"to": 2450
+					},
+					"id": 11,
+					"p": 0.649845,
+					"t_dtw": 202
+				},
+				{
+					"text": " als",
+					"timestamps": {
+						"from": "00:00:02,610",
+						"to": "00:00:02,620"
+					},
+					"offsets": {
+						"from": 2610,
+						"to": 2620
+					},
+					"id": 3907,
+					"p": 0.915085,
+					"t_dtw": 238
+				},
+				{
+					"text": "[_TT_131]",
+					"timestamps": {
+						"from": "00:00:02,620",
+						"to": "00:00:02,620"
+					},
+					"offsets": {
+						"from": 2620,
+						"to": 2620
+					},
+					"id": 50496,
+					"p": 0.254103,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

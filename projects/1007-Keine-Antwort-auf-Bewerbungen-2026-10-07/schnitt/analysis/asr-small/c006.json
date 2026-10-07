@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,560"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2560
+			},
+			"text": " Meistens bedeutet, keine Antwort zu bekommen als...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.996708,
+					"t_dtw": -1
+				},
+				{
+					"text": " Me",
+					"timestamps": {
+						"from": "00:00:00,090",
+						"to": "00:00:00,090"
+					},
+					"offsets": {
+						"from": 90,
+						"to": 90
+					},
+					"id": 1923,
+					"p": 0.89211,
+					"t_dtw": 26
+				},
+				{
+					"text": "ist",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 220
+					},
+					"id": 468,
+					"p": 0.970362,
+					"t_dtw": 42
+				},
+				{
+					"text": "ens",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,340"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 340
+					},
+					"id": 694,
+					"p": 0.997175,
+					"t_dtw": 54
+				},
+				{
+					"text": " bedeutet",
+					"timestamps": {
+						"from": "00:00:00,350",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 350,
+						"to": 720
+					},
+					"id": 27018,
+					"p": 0.982435,
+					"t_dtw": 74
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 810
+					},
+					"id": 11,
+					"p": 0.397482,
+					"t_dtw": 100
+				},
+				{
+					"text": " keine",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 900
+					},
+					"id": 9252,
+					"p": 0.911529,
+					"t_dtw": 114
+				},
+				{
+					"text": " Antwort",
+					"timestamps": {
+						"from": "00:00:01,050",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1050,
+						"to": 1360
+					},
+					"id": 34693,
+					"p": 0.809156,
+					"t_dtw": 144
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1450
+					},
+					"id": 2164,
+					"p": 0.99815,
+					"t_dtw": 160
+				},
+				{
+					"text": " bekommen",
+					"timestamps": {
+						"from": "00:00:01,450",
+						"to": "00:00:01,820"
+					},
+					"offsets": {
+						"from": 1450,
+						"to": 1820
+					},
+					"id": 19256,
+					"p": 0.978679,
+					"t_dtw": 194
+				},
+				{
+					"text": " als",
+					"timestamps": {
+						"from": "00:00:01,820",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1820,
+						"to": 1990
+					},
+					"id": 3907,
+					"p": 0.630726,
+					"t_dtw": 230
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,300"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2300
+					},
+					"id": 485,
+					"p": 0.309631,
+					"t_dtw": 250
+				},
+				{
+					"text": "[_TT_128]",
+					"timestamps": {
+						"from": "00:00:02,560",
+						"to": "00:00:02,560"
+					},
+					"offsets": {
+						"from": 2560,
+						"to": 2560
+					},
+					"id": 50492,
+					"p": 0.035102,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,98 @@
+{
+  "export": "/Users/abi/Projekte/abi-video-toolchain/projects/1007-Keine-Antwort-auf-Bewerbungen-2026-10-07/exports/vorschau.mp4",
+  "sha256": "6440735683ca4f8c6c5c5b7ad9d410349b9dd8ae1ae08c364083a72bceade814",
+  "bytes": 178321441,
+  "expectedFrames": 4174,
+  "decodedFrames": 4174,
+  "duration": 139.133333,
+  "audioDuration": 139.133,
+  "fullDecode": true,
+  "audioSynchronization": [
+    {
+      "time": 1,
+      "lagMs": 0.0,
+      "correlationAtZeroLag": 0.999991786024062
+    },
+    {
+      "time": 15,
+      "lagMs": 0.0,
+      "correlationAtZeroLag": 0.9999320837072925
+    },
+    {
+      "time": 35,
+      "lagMs": 0.0,
+      "correlationAtZeroLag": 0.9999600238698678
+    },
+    {
+      "time": 55,
+      "lagMs": 0.0,
+      "correlationAtZeroLag": 0.9999960501223162
+    },
+    {
+      "time": 75,
+      "lagMs": 0.0,
+      "correlationAtZeroLag": 0.9999930163362902
+    },
+    {
+      "time": 95,
+      "lagMs": 0.0,
+      "correlationAtZeroLag": 0.999912982393031
+    },
+    {
+      "time": 115,
+      "lagMs": 0.0,
+      "correlationAtZeroLag": 0.9999657828460772
+    },
+    {
+      "time": 135,
+      "lagMs": 0.0,
+      "correlationAtZeroLag": 0.9999925627773801
+    }
+  ],
+  "mappedFrames": [
+    {
+      "outputTime": 0.0,
+      "sourceTime": 1.0,
+      "sourceFrame": 30,
+      "meanAbsolutePixelError": 0.9591750502586365
+    },
+    {
+      "outputTime": 30.0,
+      "sourceTime": 64.9,
+      "sourceFrame": 1947,
+      "meanAbsolutePixelError": 1.1309009790420532
+    },
+    {
+      "outputTime": 60.0,
+      "sourceTime": 127.03333333333333,
+      "sourceFrame": 3811,
+      "meanAbsolutePixelError": 1.4559872150421143
+    },
+    {
+      "outputTime": 90.0,
+      "sourceTime": 199.7,
+      "sourceFrame": 5991,
+      "meanAbsolutePixelError": 1.1394680738449097
+    },
+    {
+      "outputTime": 115.0,
+      "sourceTime": 272.23333333333335,
+      "sourceFrame": 8167,
+      "meanAbsolutePixelError": 1.3400572538375854
+    },
+    {
+      "outputTime": 135.0,
+      "sourceTime": 308.56666666666666,
+      "sourceFrame": 9257,
+      "meanAbsolutePixelError": 1.38258957862854
+    },
+    {
+      "outputTime": 139.1,
+      "sourceTime": 312.6666666666667,
+      "sourceFrame": 9380,
+      "meanAbsolutePixelError": 1.4464877843856812
+    }
+  ],
+  "actualListening": false,
+  "limits": "ASR, Decodierung und numerische A/V-Abgleiche ersetzen keine tatsächliche Hörprüfung. Bildabgleich und Audiovergleich belegen Übertragung/Synchronität, nicht Zuschauerqualität."
+}

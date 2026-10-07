@@ -1,0 +1,339 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,400"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4400
+			},
+			"text": " Es gibt so was Schönes, es nennt sich LinkedIn. Bitte folgen auf LinkedIn.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.46843,
+					"t_dtw": -1
+				},
+				{
+					"text": " Es",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 120
+					},
+					"id": 2313,
+					"p": 0.934313,
+					"t_dtw": 88
+				},
+				{
+					"text": " gibt",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 360
+					},
+					"id": 6089,
+					"p": 0.981325,
+					"t_dtw": 102
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 460
+					},
+					"id": 370,
+					"p": 0.56596,
+					"t_dtw": 112
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:00,460",
+						"to": "00:00:00,660"
+					},
+					"offsets": {
+						"from": 460,
+						"to": 660
+					},
+					"id": 390,
+					"p": 0.80421,
+					"t_dtw": 126
+				},
+				{
+					"text": " Schön",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,960"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 960
+					},
+					"id": 41060,
+					"p": 0.688955,
+					"t_dtw": 136
+				},
+				{
+					"text": "es",
+					"timestamps": {
+						"from": "00:00:00,960",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 960,
+						"to": 1080
+					},
+					"id": 279,
+					"p": 0.992841,
+					"t_dtw": 150
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1200
+					},
+					"id": 11,
+					"p": 0.894386,
+					"t_dtw": 154
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,320"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1320
+					},
+					"id": 785,
+					"p": 0.759566,
+					"t_dtw": 166
+				},
+				{
+					"text": " nen",
+					"timestamps": {
+						"from": "00:00:01,320",
+						"to": "00:00:01,500"
+					},
+					"offsets": {
+						"from": 1320,
+						"to": 1500
+					},
+					"id": 16399,
+					"p": 0.982906,
+					"t_dtw": 186
+				},
+				{
+					"text": "nt",
+					"timestamps": {
+						"from": "00:00:01,500",
+						"to": "00:00:01,610"
+					},
+					"offsets": {
+						"from": 1500,
+						"to": 1610
+					},
+					"id": 580,
+					"p": 0.999872,
+					"t_dtw": 192
+				},
+				{
+					"text": " sich",
+					"timestamps": {
+						"from": "00:00:01,610",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1610,
+						"to": 1860
+					},
+					"id": 3041,
+					"p": 0.998349,
+					"t_dtw": 204
+				},
+				{
+					"text": " LinkedIn",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:02,330"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 2330
+					},
+					"id": 20657,
+					"p": 0.860293,
+					"t_dtw": 240
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,370",
+						"to": "00:00:02,580"
+					},
+					"offsets": {
+						"from": 2370,
+						"to": 2580
+					},
+					"id": 13,
+					"p": 0.66407,
+					"t_dtw": 298
+				},
+				{
+					"text": " Bitte",
+					"timestamps": {
+						"from": "00:00:02,580",
+						"to": "00:00:02,650"
+					},
+					"offsets": {
+						"from": 2580,
+						"to": 2650
+					},
+					"id": 42890,
+					"p": 0.513967,
+					"t_dtw": 340
+				},
+				{
+					"text": " fol",
+					"timestamps": {
+						"from": "00:00:03,240",
+						"to": "00:00:03,240"
+					},
+					"offsets": {
+						"from": 3240,
+						"to": 3240
+					},
+					"id": 3339,
+					"p": 0.869462,
+					"t_dtw": 360
+				},
+				{
+					"text": "gen",
+					"timestamps": {
+						"from": "00:00:03,300",
+						"to": "00:00:03,430"
+					},
+					"offsets": {
+						"from": 3300,
+						"to": 3430
+					},
+					"id": 1766,
+					"p": 0.904387,
+					"t_dtw": 368
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:03,510",
+						"to": "00:00:03,720"
+					},
+					"offsets": {
+						"from": 3510,
+						"to": 3720
+					},
+					"id": 2501,
+					"p": 0.985731,
+					"t_dtw": 380
+				},
+				{
+					"text": " LinkedIn",
+					"timestamps": {
+						"from": "00:00:03,720",
+						"to": "00:00:04,130"
+					},
+					"offsets": {
+						"from": 3720,
+						"to": 4130
+					},
+					"id": 20657,
+					"p": 0.99027,
+					"t_dtw": 398
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:04,390",
+						"to": "00:00:04,390"
+					},
+					"offsets": {
+						"from": 4390,
+						"to": 4390
+					},
+					"id": 13,
+					"p": 0.946164,
+					"t_dtw": 436
+				},
+				{
+					"text": "[_TT_220]",
+					"timestamps": {
+						"from": "00:00:04,400",
+						"to": "00:00:04,400"
+					},
+					"offsets": {
+						"from": 4400,
+						"to": 4400
+					},
+					"id": 50585,
+					"p": 0.783821,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

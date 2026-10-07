@@ -1,0 +1,423 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,240"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3240
+			},
+			"text": " Der Grund, warum du keine, der Grund, warum du keine, der Grund, warum du keine Antwort auf deine TV-",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.919616,
+					"t_dtw": -1
+				},
+				{
+					"text": " Der",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 130
+					},
+					"id": 5618,
+					"p": 0.941687,
+					"t_dtw": 22
+				},
+				{
+					"text": " Grund",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,350"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 350
+					},
+					"id": 13941,
+					"p": 0.994078,
+					"t_dtw": 40
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,350",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 350,
+						"to": 430
+					},
+					"id": 11,
+					"p": 0.980441,
+					"t_dtw": 58
+				},
+				{
+					"text": " warum",
+					"timestamps": {
+						"from": "00:00:00,440",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 440,
+						"to": 650
+					},
+					"id": 24331,
+					"p": 0.995494,
+					"t_dtw": 62
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,730"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 730
+					},
+					"id": 1581,
+					"p": 0.976858,
+					"t_dtw": 74
+				},
+				{
+					"text": " keine",
+					"timestamps": {
+						"from": "00:00:00,740",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 740,
+						"to": 1000
+					},
+					"id": 9252,
+					"p": 0.988597,
+					"t_dtw": 96
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,040"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1040
+					},
+					"id": 11,
+					"p": 0.831251,
+					"t_dtw": 108
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:01,040",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 1040,
+						"to": 1120
+					},
+					"id": 1163,
+					"p": 0.773001,
+					"t_dtw": 146
+				},
+				{
+					"text": " Grund",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,470"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1470
+					},
+					"id": 13941,
+					"p": 0.99697,
+					"t_dtw": 166
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,470",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1470,
+						"to": 1560
+					},
+					"id": 11,
+					"p": 0.992101,
+					"t_dtw": 172
+				},
+				{
+					"text": " warum",
+					"timestamps": {
+						"from": "00:00:01,570",
+						"to": "00:00:01,840"
+					},
+					"offsets": {
+						"from": 1570,
+						"to": 1840
+					},
+					"id": 24331,
+					"p": 0.986059,
+					"t_dtw": 188
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:01,840",
+						"to": "00:00:01,940"
+					},
+					"offsets": {
+						"from": 1840,
+						"to": 1940
+					},
+					"id": 1581,
+					"p": 0.993386,
+					"t_dtw": 202
+				},
+				{
+					"text": " keine",
+					"timestamps": {
+						"from": "00:00:01,940",
+						"to": "00:00:02,240"
+					},
+					"offsets": {
+						"from": 1940,
+						"to": 2240
+					},
+					"id": 9252,
+					"p": 0.971329,
+					"t_dtw": 222
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,240",
+						"to": "00:00:02,250"
+					},
+					"offsets": {
+						"from": 2240,
+						"to": 2250
+					},
+					"id": 11,
+					"p": 0.555498,
+					"t_dtw": 244
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:02,250",
+						"to": "00:00:02,260"
+					},
+					"offsets": {
+						"from": 2250,
+						"to": 2260
+					},
+					"id": 1163,
+					"p": 0.727648,
+					"t_dtw": 244
+				},
+				{
+					"text": " Grund",
+					"timestamps": {
+						"from": "00:00:02,260",
+						"to": "00:00:02,290"
+					},
+					"offsets": {
+						"from": 2260,
+						"to": 2290
+					},
+					"id": 13941,
+					"p": 0.992416,
+					"t_dtw": 244
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,290",
+						"to": "00:00:02,300"
+					},
+					"offsets": {
+						"from": 2290,
+						"to": 2300
+					},
+					"id": 11,
+					"p": 0.993369,
+					"t_dtw": 244
+				},
+				{
+					"text": " warum",
+					"timestamps": {
+						"from": "00:00:02,300",
+						"to": "00:00:02,330"
+					},
+					"offsets": {
+						"from": 2300,
+						"to": 2330
+					},
+					"id": 24331,
+					"p": 0.990941,
+					"t_dtw": 244
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:02,330",
+						"to": "00:00:02,340"
+					},
+					"offsets": {
+						"from": 2330,
+						"to": 2340
+					},
+					"id": 1581,
+					"p": 0.993639,
+					"t_dtw": 244
+				},
+				{
+					"text": " keine",
+					"timestamps": {
+						"from": "00:00:02,340",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2340,
+						"to": 2370
+					},
+					"id": 9252,
+					"p": 0.968455,
+					"t_dtw": 244
+				},
+				{
+					"text": " Antwort",
+					"timestamps": {
+						"from": "00:00:02,370",
+						"to": "00:00:02,430"
+					},
+					"offsets": {
+						"from": 2370,
+						"to": 2430
+					},
+					"id": 34693,
+					"p": 0.594775,
+					"t_dtw": 244
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:02,460",
+						"to": "00:00:02,550"
+					},
+					"offsets": {
+						"from": 2460,
+						"to": 2550
+					},
+					"id": 2501,
+					"p": 0.968376,
+					"t_dtw": 258
+				},
+				{
+					"text": " deine",
+					"timestamps": {
+						"from": "00:00:02,610",
+						"to": "00:00:02,740"
+					},
+					"offsets": {
+						"from": 2610,
+						"to": 2740
+					},
+					"id": 28395,
+					"p": 0.957268,
+					"t_dtw": 272
+				},
+				{
+					"text": " TV",
+					"timestamps": {
+						"from": "00:00:02,740",
+						"to": "00:00:03,030"
+					},
+					"offsets": {
+						"from": 2740,
+						"to": 3030
+					},
+					"id": 3558,
+					"p": 0.0088253,
+					"t_dtw": 290
+				},
+				{
+					"text": "-",
+					"timestamps": {
+						"from": "00:00:03,210",
+						"to": "00:00:03,240"
+					},
+					"offsets": {
+						"from": 3210,
+						"to": 3240
+					},
+					"id": 12,
+					"p": 0.458961,
+					"t_dtw": 322
+				},
+				{
+					"text": "[_TT_162]",
+					"timestamps": {
+						"from": "00:00:03,240",
+						"to": "00:00:03,240"
+					},
+					"offsets": {
+						"from": 3240,
+						"to": 3240
+					},
+					"id": 50527,
+					"p": 0.0420365,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

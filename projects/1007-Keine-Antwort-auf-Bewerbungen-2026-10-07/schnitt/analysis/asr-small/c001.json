@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Angenommen, du hast ein solides ...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.995089,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ang",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,210"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 210
+					},
+					"id": 4521,
+					"p": 0.428498,
+					"t_dtw": 26
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:00,210",
+						"to": "00:00:00,350"
+					},
+					"offsets": {
+						"from": 210,
+						"to": 350
+					},
+					"id": 268,
+					"p": 0.959007,
+					"t_dtw": 38
+				},
+				{
+					"text": "ommen",
+					"timestamps": {
+						"from": "00:00:00,350",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 350,
+						"to": 520
+					},
+					"id": 5132,
+					"p": 0.992583,
+					"t_dtw": 50
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 840
+					},
+					"id": 11,
+					"p": 0.600806,
+					"t_dtw": 72
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 970
+					},
+					"id": 1581,
+					"p": 0.920358,
+					"t_dtw": 80
+				},
+				{
+					"text": " hast",
+					"timestamps": {
+						"from": "00:00:00,980",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 980,
+						"to": 1260
+					},
+					"id": 6581,
+					"p": 0.98006,
+					"t_dtw": 92
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:01,260",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1260,
+						"to": 1460
+					},
+					"id": 1343,
+					"p": 0.711217,
+					"t_dtw": 102
+				},
+				{
+					"text": " sol",
+					"timestamps": {
+						"from": "00:00:01,460",
+						"to": "00:00:01,610"
+					},
+					"offsets": {
+						"from": 1460,
+						"to": 1610
+					},
+					"id": 1404,
+					"p": 0.725072,
+					"t_dtw": 118
+				},
+				{
+					"text": "ides",
+					"timestamps": {
+						"from": "00:00:01,610",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1610,
+						"to": 1740
+					},
+					"id": 1875,
+					"p": 0.95444,
+					"t_dtw": 138
+				},
+				{
+					"text": " ...",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 1860
+					},
+					"id": 1097,
+					"p": 0.342589,
+					"t_dtw": 184
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.190265,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}
