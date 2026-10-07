@@ -1,0 +1,325 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,380"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2380
+			},
+			"text": " Schreiben wir einen Kommentar oder DM, vielleicht machen wir dort so online ein Video.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.995921,
+					"t_dtw": -1
+				},
+				{
+					"text": " Sch",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 100
+					},
+					"id": 2065,
+					"p": 0.984431,
+					"t_dtw": 18
+				},
+				{
+					"text": "reiben",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,310"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 310
+					},
+					"id": 25946,
+					"p": 0.760159,
+					"t_dtw": 28
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 360
+					},
+					"id": 1987,
+					"p": 0.978459,
+					"t_dtw": 38
+				},
+				{
+					"text": " einen",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,570"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 570
+					},
+					"id": 4891,
+					"p": 0.660766,
+					"t_dtw": 38
+				},
+				{
+					"text": " Komment",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 810
+					},
+					"id": 33708,
+					"p": 0.989113,
+					"t_dtw": 54
+				},
+				{
+					"text": "ar",
+					"timestamps": {
+						"from": "00:00:00,820",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 820,
+						"to": 890
+					},
+					"id": 289,
+					"p": 0.958535,
+					"t_dtw": 68
+				},
+				{
+					"text": " oder",
+					"timestamps": {
+						"from": "00:00:00,890",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 890,
+						"to": 1030
+					},
+					"id": 4513,
+					"p": 0.88638,
+					"t_dtw": 80
+				},
+				{
+					"text": " DM",
+					"timestamps": {
+						"from": "00:00:01,030",
+						"to": "00:00:01,100"
+					},
+					"offsets": {
+						"from": 1030,
+						"to": 1100
+					},
+					"id": 15322,
+					"p": 0.149579,
+					"t_dtw": 98
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1120
+					},
+					"id": 11,
+					"p": 0.61475,
+					"t_dtw": 118
+				},
+				{
+					"text": " vielleicht",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,480"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1480
+					},
+					"id": 12547,
+					"p": 0.955725,
+					"t_dtw": 130
+				},
+				{
+					"text": " machen",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,590"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1590
+					},
+					"id": 7069,
+					"p": 0.702447,
+					"t_dtw": 146
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:01,640",
+						"to": "00:00:01,720"
+					},
+					"offsets": {
+						"from": 1640,
+						"to": 1720
+					},
+					"id": 1987,
+					"p": 0.99393,
+					"t_dtw": 156
+				},
+				{
+					"text": " dort",
+					"timestamps": {
+						"from": "00:00:01,720",
+						"to": "00:00:01,830"
+					},
+					"offsets": {
+						"from": 1720,
+						"to": 1830
+					},
+					"id": 15775,
+					"p": 0.385169,
+					"t_dtw": 162
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:01,830",
+						"to": "00:00:01,880"
+					},
+					"offsets": {
+						"from": 1830,
+						"to": 1880
+					},
+					"id": 370,
+					"p": 0.589312,
+					"t_dtw": 172
+				},
+				{
+					"text": " online",
+					"timestamps": {
+						"from": "00:00:01,880",
+						"to": "00:00:02,030"
+					},
+					"offsets": {
+						"from": 1880,
+						"to": 2030
+					},
+					"id": 2950,
+					"p": 0.677667,
+					"t_dtw": 186
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:02,030",
+						"to": "00:00:02,120"
+					},
+					"offsets": {
+						"from": 2030,
+						"to": 2120
+					},
+					"id": 1343,
+					"p": 0.328678,
+					"t_dtw": 206
+				},
+				{
+					"text": " Video",
+					"timestamps": {
+						"from": "00:00:02,120",
+						"to": "00:00:02,250"
+					},
+					"offsets": {
+						"from": 2120,
+						"to": 2250
+					},
+					"id": 9777,
+					"p": 0.988124,
+					"t_dtw": 214
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,250",
+						"to": "00:00:02,260"
+					},
+					"offsets": {
+						"from": 2250,
+						"to": 2260
+					},
+					"id": 13,
+					"p": 0.929741,
+					"t_dtw": 236
+				},
+				{
+					"text": "[_TT_119]",
+					"timestamps": {
+						"from": "00:00:02,380",
+						"to": "00:00:02,380"
+					},
+					"offsets": {
+						"from": 2380,
+						"to": 2380
+					},
+					"id": 50483,
+					"p": 0.0384813,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

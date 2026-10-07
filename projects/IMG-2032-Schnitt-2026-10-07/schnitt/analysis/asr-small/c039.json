@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,640"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1640
+			},
+			"text": " Kein einziges bisschen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.995034,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ke",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 140
+					},
+					"id": 3189,
+					"p": 0.957342,
+					"t_dtw": 32
+				},
+				{
+					"text": "in",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 280
+					},
+					"id": 259,
+					"p": 0.995522,
+					"t_dtw": 46
+				},
+				{
+					"text": " einz",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 480
+					},
+					"id": 21586,
+					"p": 0.935886,
+					"t_dtw": 80
+				},
+				{
+					"text": "iges",
+					"timestamps": {
+						"from": "00:00:00,620",
+						"to": "00:00:00,820"
+					},
+					"offsets": {
+						"from": 620,
+						"to": 820
+					},
+					"id": 20609,
+					"p": 0.998624,
+					"t_dtw": 102
+				},
+				{
+					"text": " bisschen",
+					"timestamps": {
+						"from": "00:00:00,860",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 860,
+						"to": 1410
+					},
+					"id": 10763,
+					"p": 0.94871,
+					"t_dtw": 142
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1560
+					},
+					"id": 13,
+					"p": 0.830363,
+					"t_dtw": 162
+				},
+				{
+					"text": "[_TT_82]",
+					"timestamps": {
+						"from": "00:00:01,640",
+						"to": "00:00:01,640"
+					},
+					"offsets": {
+						"from": 1640,
+						"to": 1640
+					},
+					"id": 50446,
+					"p": 0.0584289,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

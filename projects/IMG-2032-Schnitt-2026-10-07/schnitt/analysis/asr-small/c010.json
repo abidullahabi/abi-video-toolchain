@@ -1,0 +1,255 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,360"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2360
+			},
+			"text": " Wenn du auch so gute Noten schreiben willst, gib's ...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.998009,
+					"t_dtw": -1
+				},
+				{
+					"text": " Wenn",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 180
+					},
+					"id": 7899,
+					"p": 0.964198,
+					"t_dtw": 22
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 270
+					},
+					"id": 1581,
+					"p": 0.929358,
+					"t_dtw": 34
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 450
+					},
+					"id": 2168,
+					"p": 0.987992,
+					"t_dtw": 48
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 500
+					},
+					"id": 370,
+					"p": 0.982373,
+					"t_dtw": 58
+				},
+				{
+					"text": " gute",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 720
+					},
+					"id": 21476,
+					"p": 0.978427,
+					"t_dtw": 84
+				},
+				{
+					"text": " Not",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 850
+					},
+					"id": 1726,
+					"p": 0.931188,
+					"t_dtw": 100
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 940
+					},
+					"id": 268,
+					"p": 0.988678,
+					"t_dtw": 110
+				},
+				{
+					"text": " schreiben",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,350"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1350
+					},
+					"id": 48546,
+					"p": 0.966538,
+					"t_dtw": 128
+				},
+				{
+					"text": " willst",
+					"timestamps": {
+						"from": "00:00:01,350",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1350,
+						"to": 1620
+					},
+					"id": 48355,
+					"p": 0.99364,
+					"t_dtw": 158
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,620",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 1620,
+						"to": 1650
+					},
+					"id": 11,
+					"p": 0.871167,
+					"t_dtw": 184
+				},
+				{
+					"text": " gib",
+					"timestamps": {
+						"from": "00:00:01,840",
+						"to": "00:00:01,840"
+					},
+					"offsets": {
+						"from": 1840,
+						"to": 1840
+					},
+					"id": 4553,
+					"p": 0.889287,
+					"t_dtw": 200
+				},
+				{
+					"text": "'s",
+					"timestamps": {
+						"from": "00:00:01,910",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1910,
+						"to": 2000
+					},
+					"id": 311,
+					"p": 0.655287,
+					"t_dtw": 214
+				},
+				{
+					"text": " ...",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,100"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2100
+					},
+					"id": 1097,
+					"p": 0.166034,
+					"t_dtw": 234
+				},
+				{
+					"text": "[_TT_118]",
+					"timestamps": {
+						"from": "00:00:02,360",
+						"to": "00:00:02,360"
+					},
+					"offsets": {
+						"from": 2360,
+						"to": 2360
+					},
+					"id": 50482,
+					"p": 0.0244318,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

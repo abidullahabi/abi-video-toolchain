@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Ist das wichtigste Schritt dafür?",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.995408,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ist",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,190"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 190
+					},
+					"id": 12810,
+					"p": 0.894916,
+					"t_dtw": 24
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,190",
+						"to": "00:00:00,380"
+					},
+					"offsets": {
+						"from": 190,
+						"to": 380
+					},
+					"id": 1482,
+					"p": 0.620902,
+					"t_dtw": 36
+				},
+				{
+					"text": " wichtig",
+					"timestamps": {
+						"from": "00:00:00,380",
+						"to": "00:00:00,740"
+					},
+					"offsets": {
+						"from": 380,
+						"to": 740
+					},
+					"id": 13621,
+					"p": 0.743151,
+					"t_dtw": 60
+				},
+				{
+					"text": "ste",
+					"timestamps": {
+						"from": "00:00:00,820",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 820,
+						"to": 1020
+					},
+					"id": 2941,
+					"p": 0.939254,
+					"t_dtw": 86
+				},
+				{
+					"text": " Schritt",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,390"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1390
+					},
+					"id": 33062,
+					"p": 0.997668,
+					"t_dtw": 122
+				},
+				{
+					"text": " dafür",
+					"timestamps": {
+						"from": "00:00:01,490",
+						"to": "00:00:01,690"
+					},
+					"offsets": {
+						"from": 1490,
+						"to": 1690
+					},
+					"id": 13747,
+					"p": 0.993799,
+					"t_dtw": 154
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:01,770",
+						"to": "00:00:01,850"
+					},
+					"offsets": {
+						"from": 1770,
+						"to": 1850
+					},
+					"id": 30,
+					"p": 0.94539,
+					"t_dtw": 196
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.228296,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

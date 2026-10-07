@@ -1,0 +1,437 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,800"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4800
+			},
+			"text": " Einer der Bereiche des Lebens unter Leidung, ob es Freunde sind, du selber oder auch deine Beziehung.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997683,
+					"t_dtw": -1
+				},
+				{
+					"text": " E",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,060"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 60
+					},
+					"id": 462,
+					"p": 0.824856,
+					"t_dtw": 26
+				},
+				{
+					"text": "iner",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 320
+					},
+					"id": 4564,
+					"p": 0.996533,
+					"t_dtw": 34
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 510
+					},
+					"id": 1163,
+					"p": 0.991754,
+					"t_dtw": 46
+				},
+				{
+					"text": " Bere",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 770
+					},
+					"id": 17684,
+					"p": 0.989508,
+					"t_dtw": 64
+				},
+				{
+					"text": "iche",
+					"timestamps": {
+						"from": "00:00:00,770",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 770,
+						"to": 1030
+					},
+					"id": 9304,
+					"p": 0.836962,
+					"t_dtw": 76
+				},
+				{
+					"text": " des",
+					"timestamps": {
+						"from": "00:00:01,030",
+						"to": "00:00:01,210"
+					},
+					"offsets": {
+						"from": 1030,
+						"to": 1210
+					},
+					"id": 730,
+					"p": 0.666613,
+					"t_dtw": 90
+				},
+				{
+					"text": " Lebens",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1400
+					},
+					"id": 21530,
+					"p": 0.997474,
+					"t_dtw": 120
+				},
+				{
+					"text": " unter",
+					"timestamps": {
+						"from": "00:00:01,750",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1750,
+						"to": 1900
+					},
+					"id": 8662,
+					"p": 0.395625,
+					"t_dtw": 188
+				},
+				{
+					"text": " Le",
+					"timestamps": {
+						"from": "00:00:01,900",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1900,
+						"to": 2000
+					},
+					"id": 1456,
+					"p": 0.722774,
+					"t_dtw": 208
+				},
+				{
+					"text": "id",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,100"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2100
+					},
+					"id": 327,
+					"p": 0.974641,
+					"t_dtw": 214
+				},
+				{
+					"text": "ung",
+					"timestamps": {
+						"from": "00:00:02,100",
+						"to": "00:00:02,270"
+					},
+					"offsets": {
+						"from": 2100,
+						"to": 2270
+					},
+					"id": 1063,
+					"p": 0.98815,
+					"t_dtw": 224
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,270",
+						"to": "00:00:02,350"
+					},
+					"offsets": {
+						"from": 2270,
+						"to": 2350
+					},
+					"id": 11,
+					"p": 0.433867,
+					"t_dtw": 230
+				},
+				{
+					"text": " ob",
+					"timestamps": {
+						"from": "00:00:02,350",
+						"to": "00:00:02,420"
+					},
+					"offsets": {
+						"from": 2350,
+						"to": 2420
+					},
+					"id": 1111,
+					"p": 0.677792,
+					"t_dtw": 236
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:02,510",
+						"to": "00:00:02,510"
+					},
+					"offsets": {
+						"from": 2510,
+						"to": 2510
+					},
+					"id": 785,
+					"p": 0.81003,
+					"t_dtw": 248
+				},
+				{
+					"text": " Freunde",
+					"timestamps": {
+						"from": "00:00:02,550",
+						"to": "00:00:02,780"
+					},
+					"offsets": {
+						"from": 2550,
+						"to": 2780
+					},
+					"id": 40016,
+					"p": 0.989499,
+					"t_dtw": 270
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:02,780",
+						"to": "00:00:02,940"
+					},
+					"offsets": {
+						"from": 2780,
+						"to": 2940
+					},
+					"id": 3290,
+					"p": 0.998281,
+					"t_dtw": 296
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,940",
+						"to": "00:00:03,020"
+					},
+					"offsets": {
+						"from": 2940,
+						"to": 3020
+					},
+					"id": 11,
+					"p": 0.976714,
+					"t_dtw": 320
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:03,140",
+						"to": "00:00:03,220"
+					},
+					"offsets": {
+						"from": 3140,
+						"to": 3220
+					},
+					"id": 1581,
+					"p": 0.739026,
+					"t_dtw": 320
+				},
+				{
+					"text": " selber",
+					"timestamps": {
+						"from": "00:00:03,280",
+						"to": "00:00:03,680"
+					},
+					"offsets": {
+						"from": 3280,
+						"to": 3680
+					},
+					"id": 23888,
+					"p": 0.943535,
+					"t_dtw": 350
+				},
+				{
+					"text": " oder",
+					"timestamps": {
+						"from": "00:00:03,850",
+						"to": "00:00:03,940"
+					},
+					"offsets": {
+						"from": 3850,
+						"to": 3940
+					},
+					"id": 4513,
+					"p": 0.794263,
+					"t_dtw": 398
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:03,950",
+						"to": "00:00:04,100"
+					},
+					"offsets": {
+						"from": 3950,
+						"to": 4100
+					},
+					"id": 2168,
+					"p": 0.981686,
+					"t_dtw": 412
+				},
+				{
+					"text": " deine",
+					"timestamps": {
+						"from": "00:00:04,100",
+						"to": "00:00:04,290"
+					},
+					"offsets": {
+						"from": 4100,
+						"to": 4290
+					},
+					"id": 28395,
+					"p": 0.962834,
+					"t_dtw": 430
+				},
+				{
+					"text": " Be",
+					"timestamps": {
+						"from": "00:00:04,290",
+						"to": "00:00:04,400"
+					},
+					"offsets": {
+						"from": 4290,
+						"to": 4400
+					},
+					"id": 879,
+					"p": 0.971872,
+					"t_dtw": 448
+				},
+				{
+					"text": "zieh",
+					"timestamps": {
+						"from": "00:00:04,400",
+						"to": "00:00:04,630"
+					},
+					"offsets": {
+						"from": 4400,
+						"to": 4630
+					},
+					"id": 28213,
+					"p": 0.999523,
+					"t_dtw": 458
+				},
+				{
+					"text": "ung",
+					"timestamps": {
+						"from": "00:00:04,630",
+						"to": "00:00:04,720"
+					},
+					"offsets": {
+						"from": 4630,
+						"to": 4720
+					},
+					"id": 1063,
+					"p": 0.989776,
+					"t_dtw": 478
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:04,800",
+						"to": "00:00:04,800"
+					},
+					"offsets": {
+						"from": 4800,
+						"to": 4800
+					},
+					"id": 13,
+					"p": 0.97153,
+					"t_dtw": 478
+				},
+				{
+					"text": "[_TT_240]",
+					"timestamps": {
+						"from": "00:00:04,800",
+						"to": "00:00:04,800"
+					},
+					"offsets": {
+						"from": 4800,
+						"to": 4800
+					},
+					"id": 50604,
+					"p": 0.0596717,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

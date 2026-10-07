@@ -1,0 +1,325 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,800"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3800
+			},
+			"text": " Wie viel musst du eigentlich lernen für eine 1,0 in deiner Klausur?",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.893013,
+					"t_dtw": -1
+				},
+				{
+					"text": " Wie",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 130
+					},
+					"id": 9233,
+					"p": 0.686351,
+					"t_dtw": 28
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,310"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 310
+					},
+					"id": 5891,
+					"p": 0.902683,
+					"t_dtw": 42
+				},
+				{
+					"text": " musst",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 540
+					},
+					"id": 31716,
+					"p": 0.972895,
+					"t_dtw": 62
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,590"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 590
+					},
+					"id": 1581,
+					"p": 0.92004,
+					"t_dtw": 70
+				},
+				{
+					"text": " eigentlich",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 1030
+					},
+					"id": 10926,
+					"p": 0.997063,
+					"t_dtw": 94
+				},
+				{
+					"text": " lernen",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1380
+					},
+					"id": 36082,
+					"p": 0.986844,
+					"t_dtw": 136
+				},
+				{
+					"text": " für",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1600
+					},
+					"id": 2959,
+					"p": 0.817616,
+					"t_dtw": 158
+				},
+				{
+					"text": " eine",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,850"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1850
+					},
+					"id": 3018,
+					"p": 0.81771,
+					"t_dtw": 178
+				},
+				{
+					"text": " 1",
+					"timestamps": {
+						"from": "00:00:01,960",
+						"to": "00:00:02,110"
+					},
+					"offsets": {
+						"from": 1960,
+						"to": 2110
+					},
+					"id": 502,
+					"p": 0.985403,
+					"t_dtw": 220
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,110",
+						"to": "00:00:02,220"
+					},
+					"offsets": {
+						"from": 2110,
+						"to": 2220
+					},
+					"id": 11,
+					"p": 0.995099,
+					"t_dtw": 238
+				},
+				{
+					"text": "0",
+					"timestamps": {
+						"from": "00:00:02,290",
+						"to": "00:00:02,460"
+					},
+					"offsets": {
+						"from": 2290,
+						"to": 2460
+					},
+					"id": 15,
+					"p": 0.994101,
+					"t_dtw": 268
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:02,460",
+						"to": "00:00:02,600"
+					},
+					"offsets": {
+						"from": 2460,
+						"to": 2600
+					},
+					"id": 294,
+					"p": 0.991447,
+					"t_dtw": 288
+				},
+				{
+					"text": " de",
+					"timestamps": {
+						"from": "00:00:02,600",
+						"to": "00:00:02,720"
+					},
+					"offsets": {
+						"from": 2600,
+						"to": 2720
+					},
+					"id": 368,
+					"p": 0.978725,
+					"t_dtw": 298
+				},
+				{
+					"text": "iner",
+					"timestamps": {
+						"from": "00:00:02,770",
+						"to": "00:00:03,030"
+					},
+					"offsets": {
+						"from": 2770,
+						"to": 3030
+					},
+					"id": 4564,
+					"p": 0.99983,
+					"t_dtw": 306
+				},
+				{
+					"text": " K",
+					"timestamps": {
+						"from": "00:00:03,030",
+						"to": "00:00:03,100"
+					},
+					"offsets": {
+						"from": 3030,
+						"to": 3100
+					},
+					"id": 591,
+					"p": 0.99946,
+					"t_dtw": 324
+				},
+				{
+					"text": "laus",
+					"timestamps": {
+						"from": "00:00:03,100",
+						"to": "00:00:03,330"
+					},
+					"offsets": {
+						"from": 3100,
+						"to": 3330
+					},
+					"id": 22590,
+					"p": 0.99976,
+					"t_dtw": 340
+				},
+				{
+					"text": "ur",
+					"timestamps": {
+						"from": "00:00:03,390",
+						"to": "00:00:03,530"
+					},
+					"offsets": {
+						"from": 3390,
+						"to": 3530
+					},
+					"id": 374,
+					"p": 0.998616,
+					"t_dtw": 354
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:03,530",
+						"to": "00:00:03,540"
+					},
+					"offsets": {
+						"from": 3530,
+						"to": 3540
+					},
+					"id": 30,
+					"p": 0.958418,
+					"t_dtw": 376
+				},
+				{
+					"text": "[_TT_190]",
+					"timestamps": {
+						"from": "00:00:03,800",
+						"to": "00:00:03,800"
+					},
+					"offsets": {
+						"from": 3800,
+						"to": 3800
+					},
+					"id": 50555,
+					"p": 0.207181,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

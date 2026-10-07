@@ -1,0 +1,325 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,960"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3960
+			},
+			"text": " Wenn du versuchst, die ganze Zeit zu performen, wird am Ende eins,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.928562,
+					"t_dtw": -1
+				},
+				{
+					"text": " Wenn",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,190"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 190
+					},
+					"id": 7899,
+					"p": 0.943498,
+					"t_dtw": 26
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,190",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 190,
+						"to": 280
+					},
+					"id": 1581,
+					"p": 0.955717,
+					"t_dtw": 36
+				},
+				{
+					"text": " vers",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 470
+					},
+					"id": 1774,
+					"p": 0.98929,
+					"t_dtw": 54
+				},
+				{
+					"text": "uch",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 610
+					},
+					"id": 625,
+					"p": 0.999592,
+					"t_dtw": 62
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,640"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 640
+					},
+					"id": 372,
+					"p": 0.99935,
+					"t_dtw": 68
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 770
+					},
+					"id": 11,
+					"p": 0.767347,
+					"t_dtw": 74
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,790",
+						"to": "00:00:00,930"
+					},
+					"offsets": {
+						"from": 790,
+						"to": 930
+					},
+					"id": 978,
+					"p": 0.994931,
+					"t_dtw": 76
+				},
+				{
+					"text": " ganze",
+					"timestamps": {
+						"from": "00:00:00,930",
+						"to": "00:00:01,170"
+					},
+					"offsets": {
+						"from": 930,
+						"to": 1170
+					},
+					"id": 18898,
+					"p": 0.98353,
+					"t_dtw": 92
+				},
+				{
+					"text": " Zeit",
+					"timestamps": {
+						"from": "00:00:01,170",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1170,
+						"to": 1340
+					},
+					"id": 9394,
+					"p": 0.743909,
+					"t_dtw": 110
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:01,390",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1390,
+						"to": 1450
+					},
+					"id": 2164,
+					"p": 0.977499,
+					"t_dtw": 134
+				},
+				{
+					"text": " perform",
+					"timestamps": {
+						"from": "00:00:01,450",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1450,
+						"to": 1740
+					},
+					"id": 2042,
+					"p": 0.935161,
+					"t_dtw": 162
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:01,780",
+						"to": "00:00:01,850"
+					},
+					"offsets": {
+						"from": 1780,
+						"to": 1850
+					},
+					"id": 268,
+					"p": 0.966918,
+					"t_dtw": 180
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,850",
+						"to": "00:00:01,910"
+					},
+					"offsets": {
+						"from": 1850,
+						"to": 1910
+					},
+					"id": 11,
+					"p": 0.988638,
+					"t_dtw": 216
+				},
+				{
+					"text": " wird",
+					"timestamps": {
+						"from": "00:00:02,220",
+						"to": "00:00:02,400"
+					},
+					"offsets": {
+						"from": 2220,
+						"to": 2400
+					},
+					"id": 4578,
+					"p": 0.816603,
+					"t_dtw": 242
+				},
+				{
+					"text": " am",
+					"timestamps": {
+						"from": "00:00:02,640",
+						"to": "00:00:02,940"
+					},
+					"offsets": {
+						"from": 2640,
+						"to": 2940
+					},
+					"id": 669,
+					"p": 0.967502,
+					"t_dtw": 274
+				},
+				{
+					"text": " Ende",
+					"timestamps": {
+						"from": "00:00:02,940",
+						"to": "00:00:03,750"
+					},
+					"offsets": {
+						"from": 2940,
+						"to": 3750
+					},
+					"id": 15152,
+					"p": 0.990189,
+					"t_dtw": 306
+				},
+				{
+					"text": " eins",
+					"timestamps": {
+						"from": "00:00:03,960",
+						"to": "00:00:03,960"
+					},
+					"offsets": {
+						"from": 3960,
+						"to": 3960
+					},
+					"id": 21889,
+					"p": 0.767189,
+					"t_dtw": 366
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:03,960",
+						"to": "00:00:03,960"
+					},
+					"offsets": {
+						"from": 3960,
+						"to": 3960
+					},
+					"id": 11,
+					"p": 0.362734,
+					"t_dtw": 376
+				},
+				{
+					"text": "[_TT_198]",
+					"timestamps": {
+						"from": "00:00:03,960",
+						"to": "00:00:03,960"
+					},
+					"offsets": {
+						"from": 3960,
+						"to": 3960
+					},
+					"id": 50563,
+					"p": 0.293328,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

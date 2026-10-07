@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2080
+			},
+			"text": " Ich habe meinen Masterabschluss in BWL",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.823764,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 180
+					},
+					"id": 3141,
+					"p": 0.973741,
+					"t_dtw": 20
+				},
+				{
+					"text": " habe",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 430
+					},
+					"id": 6015,
+					"p": 0.761005,
+					"t_dtw": 32
+				},
+				{
+					"text": " meinen",
+					"timestamps": {
+						"from": "00:00:00,430",
+						"to": "00:00:00,800"
+					},
+					"offsets": {
+						"from": 430,
+						"to": 800
+					},
+					"id": 22738,
+					"p": 0.73609,
+					"t_dtw": 52
+				},
+				{
+					"text": " Master",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:01,160"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 1160
+					},
+					"id": 6140,
+					"p": 0.987115,
+					"t_dtw": 78
+				},
+				{
+					"text": "ab",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,290"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1290
+					},
+					"id": 455,
+					"p": 0.703964,
+					"t_dtw": 94
+				},
+				{
+					"text": "sch",
+					"timestamps": {
+						"from": "00:00:01,290",
+						"to": "00:00:01,470"
+					},
+					"offsets": {
+						"from": 1290,
+						"to": 1470
+					},
+					"id": 6145,
+					"p": 0.99747,
+					"t_dtw": 106
+				},
+				{
+					"text": "l",
+					"timestamps": {
+						"from": "00:00:01,470",
+						"to": "00:00:01,530"
+					},
+					"offsets": {
+						"from": 1470,
+						"to": 1530
+					},
+					"id": 75,
+					"p": 0.979454,
+					"t_dtw": 110
+				},
+				{
+					"text": "uss",
+					"timestamps": {
+						"from": "00:00:01,530",
+						"to": "00:00:01,710"
+					},
+					"offsets": {
+						"from": 1530,
+						"to": 1710
+					},
+					"id": 2023,
+					"p": 0.998292,
+					"t_dtw": 116
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:01,710",
+						"to": "00:00:01,810"
+					},
+					"offsets": {
+						"from": 1710,
+						"to": 1810
+					},
+					"id": 294,
+					"p": 0.35143,
+					"t_dtw": 126
+				},
+				{
+					"text": " B",
+					"timestamps": {
+						"from": "00:00:01,830",
+						"to": "00:00:01,850"
+					},
+					"offsets": {
+						"from": 1830,
+						"to": 1850
+					},
+					"id": 363,
+					"p": 0.986225,
+					"t_dtw": 138
+				},
+				{
+					"text": "W",
+					"timestamps": {
+						"from": "00:00:01,950",
+						"to": "00:00:01,950"
+					},
+					"offsets": {
+						"from": 1950,
+						"to": 1950
+					},
+					"id": 54,
+					"p": 0.984584,
+					"t_dtw": 154
+				},
+				{
+					"text": "L",
+					"timestamps": {
+						"from": "00:00:02,080",
+						"to": "00:00:02,080"
+					},
+					"offsets": {
+						"from": 2080,
+						"to": 2080
+					},
+					"id": 43,
+					"p": 0.999704,
+					"t_dtw": 176
+				},
+				{
+					"text": "[_TT_104]",
+					"timestamps": {
+						"from": "00:00:02,080",
+						"to": "00:00:02,080"
+					},
+					"offsets": {
+						"from": 2080,
+						"to": 2080
+					},
+					"id": 50469,
+					"p": 0.215888,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

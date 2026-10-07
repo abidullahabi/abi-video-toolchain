@@ -1,0 +1,115 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1000
+			},
+			"text": " Ähm.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.993521,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ä",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 300
+					},
+					"id": 13700,
+					"p": 0.121519,
+					"t_dtw": 26
+				},
+				{
+					"text": "hm",
+					"timestamps": {
+						"from": "00:00:00,340",
+						"to": "00:00:00,350"
+					},
+					"offsets": {
+						"from": 340,
+						"to": 350
+					},
+					"id": 8587,
+					"p": 0.8441,
+					"t_dtw": 26
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,580",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 580,
+						"to": 580
+					},
+					"id": 13,
+					"p": 0.44022,
+					"t_dtw": 54
+				},
+				{
+					"text": "[_TT_50]",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1000
+					},
+					"id": 50414,
+					"p": 0.153841,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

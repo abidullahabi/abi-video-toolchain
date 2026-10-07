@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Aber ob mich das erfüllt hat?",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997126,
+					"t_dtw": -1
+				},
+				{
+					"text": " Aber",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,340"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 340
+					},
+					"id": 5992,
+					"p": 0.973983,
+					"t_dtw": 26
+				},
+				{
+					"text": " ob",
+					"timestamps": {
+						"from": "00:00:00,340",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 340,
+						"to": 510
+					},
+					"id": 1111,
+					"p": 0.9322,
+					"t_dtw": 40
+				},
+				{
+					"text": " mich",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,760"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 760
+					},
+					"id": 6031,
+					"p": 0.65963,
+					"t_dtw": 54
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:01,110"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 1110
+					},
+					"id": 1482,
+					"p": 0.997196,
+					"t_dtw": 68
+				},
+				{
+					"text": " erf",
+					"timestamps": {
+						"from": "00:00:01,110",
+						"to": "00:00:01,230"
+					},
+					"offsets": {
+						"from": 1110,
+						"to": 1230
+					},
+					"id": 20228,
+					"p": 0.998182,
+					"t_dtw": 88
+				},
+				{
+					"text": "üllt",
+					"timestamps": {
+						"from": "00:00:01,230",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1230,
+						"to": 1380
+					},
+					"id": 49976,
+					"p": 0.99712,
+					"t_dtw": 98
+				},
+				{
+					"text": " hat",
+					"timestamps": {
+						"from": "00:00:01,570",
+						"to": "00:00:01,570"
+					},
+					"offsets": {
+						"from": 1570,
+						"to": 1570
+					},
+					"id": 2385,
+					"p": 0.998508,
+					"t_dtw": 126
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:01,570",
+						"to": "00:00:01,570"
+					},
+					"offsets": {
+						"from": 1570,
+						"to": 1570
+					},
+					"id": 30,
+					"p": 0.608686,
+					"t_dtw": 148
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.0889574,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

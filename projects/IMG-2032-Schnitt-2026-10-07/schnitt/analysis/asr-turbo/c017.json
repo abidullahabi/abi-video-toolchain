@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,740"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1740
+			},
+			"text": " Weil einfach die schiere Masse",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.832083,
+					"t_dtw": -1
+				},
+				{
+					"text": " Weil",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,260"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 260
+					},
+					"id": 18665,
+					"p": 0.945478,
+					"t_dtw": 24
+				},
+				{
+					"text": " einfach",
+					"timestamps": {
+						"from": "00:00:00,260",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 260,
+						"to": 720
+					},
+					"id": 7281,
+					"p": 0.914646,
+					"t_dtw": 48
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,920"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 920
+					},
+					"id": 978,
+					"p": 0.975759,
+					"t_dtw": 66
+				},
+				{
+					"text": " sch",
+					"timestamps": {
+						"from": "00:00:00,920",
+						"to": "00:00:01,110"
+					},
+					"offsets": {
+						"from": 920,
+						"to": 1110
+					},
+					"id": 956,
+					"p": 0.928152,
+					"t_dtw": 80
+				},
+				{
+					"text": "iere",
+					"timestamps": {
+						"from": "00:00:01,110",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1110,
+						"to": 1380
+					},
+					"id": 14412,
+					"p": 0.977696,
+					"t_dtw": 92
+				},
+				{
+					"text": " Mas",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1440
+					},
+					"id": 5224,
+					"p": 0.993537,
+					"t_dtw": 118
+				},
+				{
+					"text": "se",
+					"timestamps": {
+						"from": "00:00:01,440",
+						"to": "00:00:01,590"
+					},
+					"offsets": {
+						"from": 1440,
+						"to": 1590
+					},
+					"id": 405,
+					"p": 0.999678,
+					"t_dtw": 136
+				},
+				{
+					"text": "[_TT_87]",
+					"timestamps": {
+						"from": "00:00:01,740",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1740,
+						"to": 1740
+					},
+					"id": 50452,
+					"p": 0.596962,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

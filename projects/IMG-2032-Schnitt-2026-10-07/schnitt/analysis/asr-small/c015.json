@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Ich bin das nicht und Sie sind das auch nicht.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997834,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 150
+					},
+					"id": 3141,
+					"p": 0.975238,
+					"t_dtw": 24
+				},
+				{
+					"text": " bin",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 270
+					},
+					"id": 5171,
+					"p": 0.992101,
+					"t_dtw": 42
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,340",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 340,
+						"to": 450
+					},
+					"id": 1482,
+					"p": 0.926176,
+					"t_dtw": 56
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 700
+					},
+					"id": 1979,
+					"p": 0.990482,
+					"t_dtw": 78
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 780
+					},
+					"id": 674,
+					"p": 0.635956,
+					"t_dtw": 108
+				},
+				{
+					"text": " Sie",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 1000
+					},
+					"id": 3559,
+					"p": 0.765924,
+					"t_dtw": 118
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1200
+					},
+					"id": 3290,
+					"p": 0.937927,
+					"t_dtw": 134
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,350"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1350
+					},
+					"id": 1482,
+					"p": 0.949412,
+					"t_dtw": 148
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:01,350",
+						"to": "00:00:01,550"
+					},
+					"offsets": {
+						"from": 1350,
+						"to": 1550
+					},
+					"id": 2168,
+					"p": 0.678878,
+					"t_dtw": 162
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:01,550",
+						"to": "00:00:01,750"
+					},
+					"offsets": {
+						"from": 1550,
+						"to": 1750
+					},
+					"id": 1979,
+					"p": 0.999234,
+					"t_dtw": 180
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,750",
+						"to": "00:00:01,820"
+					},
+					"offsets": {
+						"from": 1750,
+						"to": 1820
+					},
+					"id": 13,
+					"p": 0.88615,
+					"t_dtw": 198
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.202094,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,920"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2920
+			},
+			"text": " Eine 1,0 ist für jeden High Performer der feuchte Traum.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.846468,
+					"t_dtw": -1
+				},
+				{
+					"text": " Eine",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 220
+					},
+					"id": 17664,
+					"p": 0.91732,
+					"t_dtw": 26
+				},
+				{
+					"text": " 1",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 390
+					},
+					"id": 502,
+					"p": 0.981168,
+					"t_dtw": 46
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,390",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 390,
+						"to": 500
+					},
+					"id": 11,
+					"p": 0.960197,
+					"t_dtw": 54
+				},
+				{
+					"text": "0",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 670
+					},
+					"id": 15,
+					"p": 0.989329,
+					"t_dtw": 74
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 840
+					},
+					"id": 1418,
+					"p": 0.978283,
+					"t_dtw": 92
+				},
+				{
+					"text": " für",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 900
+					},
+					"id": 2959,
+					"p": 0.978332,
+					"t_dtw": 118
+				},
+				{
+					"text": " jeden",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,290"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1290
+					},
+					"id": 12906,
+					"p": 0.980181,
+					"t_dtw": 142
+				},
+				{
+					"text": " High",
+					"timestamps": {
+						"from": "00:00:01,290",
+						"to": "00:00:01,510"
+					},
+					"offsets": {
+						"from": 1290,
+						"to": 1510
+					},
+					"id": 5229,
+					"p": 0.993055,
+					"t_dtw": 156
+				},
+				{
+					"text": " Perform",
+					"timestamps": {
+						"from": "00:00:01,510",
+						"to": "00:00:01,910"
+					},
+					"offsets": {
+						"from": 1510,
+						"to": 1910
+					},
+					"id": 19351,
+					"p": 0.605424,
+					"t_dtw": 180
+				},
+				{
+					"text": "er",
+					"timestamps": {
+						"from": "00:00:01,910",
+						"to": "00:00:02,020"
+					},
+					"offsets": {
+						"from": 1910,
+						"to": 2020
+					},
+					"id": 260,
+					"p": 0.995028,
+					"t_dtw": 196
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:02,020",
+						"to": "00:00:02,190"
+					},
+					"offsets": {
+						"from": 2020,
+						"to": 2190
+					},
+					"id": 1163,
+					"p": 0.935569,
+					"t_dtw": 206
+				},
+				{
+					"text": " fe",
+					"timestamps": {
+						"from": "00:00:02,190",
+						"to": "00:00:02,250"
+					},
+					"offsets": {
+						"from": 2190,
+						"to": 2250
+					},
+					"id": 579,
+					"p": 0.717967,
+					"t_dtw": 220
+				},
+				{
+					"text": "uch",
+					"timestamps": {
+						"from": "00:00:02,320",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2320,
+						"to": 2370
+					},
+					"id": 625,
+					"p": 0.956484,
+					"t_dtw": 228
+				},
+				{
+					"text": "te",
+					"timestamps": {
+						"from": "00:00:02,480",
+						"to": "00:00:02,580"
+					},
+					"offsets": {
+						"from": 2480,
+						"to": 2580
+					},
+					"id": 975,
+					"p": 0.999193,
+					"t_dtw": 236
+				},
+				{
+					"text": " Tra",
+					"timestamps": {
+						"from": "00:00:02,580",
+						"to": "00:00:02,660"
+					},
+					"offsets": {
+						"from": 2580,
+						"to": 2660
+					},
+					"id": 5403,
+					"p": 0.997864,
+					"t_dtw": 256
+				},
+				{
+					"text": "um",
+					"timestamps": {
+						"from": "00:00:02,920",
+						"to": "00:00:02,920"
+					},
+					"offsets": {
+						"from": 2920,
+						"to": 2920
+					},
+					"id": 449,
+					"p": 0.99415,
+					"t_dtw": 266
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,920",
+						"to": "00:00:02,920"
+					},
+					"offsets": {
+						"from": 2920,
+						"to": 2920
+					},
+					"id": 13,
+					"p": 0.812731,
+					"t_dtw": 278
+				},
+				{
+					"text": "[_TT_146]",
+					"timestamps": {
+						"from": "00:00:02,920",
+						"to": "00:00:02,920"
+					},
+					"offsets": {
+						"from": 2920,
+						"to": 2920
+					},
+					"id": 50511,
+					"p": 0.181202,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

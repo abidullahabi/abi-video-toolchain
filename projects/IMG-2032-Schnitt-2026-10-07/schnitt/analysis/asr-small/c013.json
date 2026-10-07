@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " So früh anzufangen, wie es nur geht.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997293,
+					"t_dtw": -1
+				},
+				{
+					"text": " So",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 120
+					},
+					"id": 407,
+					"p": 0.928667,
+					"t_dtw": 22
+				},
+				{
+					"text": " früh",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 280
+					},
+					"id": 45029,
+					"p": 0.962579,
+					"t_dtw": 44
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 480
+					},
+					"id": 364,
+					"p": 0.908876,
+					"t_dtw": 62
+				},
+				{
+					"text": "zuf",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 650
+					},
+					"id": 39467,
+					"p": 0.989221,
+					"t_dtw": 82
+				},
+				{
+					"text": "angen",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,960"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 960
+					},
+					"id": 10784,
+					"p": 0.998835,
+					"t_dtw": 94
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,960",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 960,
+						"to": 1080
+					},
+					"id": 11,
+					"p": 0.76706,
+					"t_dtw": 94
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1240
+					},
+					"id": 3355,
+					"p": 0.988966,
+					"t_dtw": 108
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:01,270",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1270,
+						"to": 1380
+					},
+					"id": 785,
+					"p": 0.745821,
+					"t_dtw": 114
+				},
+				{
+					"text": " nur",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1420
+					},
+					"id": 4343,
+					"p": 0.582951,
+					"t_dtw": 124
+				},
+				{
+					"text": " geht",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 1700
+					},
+					"id": 7095,
+					"p": 0.99659,
+					"t_dtw": 138
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 1700
+					},
+					"id": 13,
+					"p": 0.901643,
+					"t_dtw": 166
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.0887014,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

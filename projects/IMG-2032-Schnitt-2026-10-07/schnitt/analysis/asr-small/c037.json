@@ -1,0 +1,339 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3080
+			},
+			"text": " Und noch eine Sache, gute Noten sind wichtig, vollen bei Bewerbungen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.998447,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 150
+					},
+					"id": 2719,
+					"p": 0.973819,
+					"t_dtw": 18
+				},
+				{
+					"text": " noch",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 360
+					},
+					"id": 3514,
+					"p": 0.982234,
+					"t_dtw": 32
+				},
+				{
+					"text": " eine",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,570"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 570
+					},
+					"id": 3018,
+					"p": 0.981899,
+					"t_dtw": 50
+				},
+				{
+					"text": " Sache",
+					"timestamps": {
+						"from": "00:00:00,570",
+						"to": "00:00:00,830"
+					},
+					"offsets": {
+						"from": 570,
+						"to": 830
+					},
+					"id": 31452,
+					"p": 0.999155,
+					"t_dtw": 68
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,830",
+						"to": "00:00:00,930"
+					},
+					"offsets": {
+						"from": 830,
+						"to": 930
+					},
+					"id": 11,
+					"p": 0.51359,
+					"t_dtw": 90
+				},
+				{
+					"text": " gute",
+					"timestamps": {
+						"from": "00:00:00,930",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 930,
+						"to": 1140
+					},
+					"id": 21476,
+					"p": 0.961229,
+					"t_dtw": 104
+				},
+				{
+					"text": " Not",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1280
+					},
+					"id": 1726,
+					"p": 0.981519,
+					"t_dtw": 124
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:01,390",
+						"to": "00:00:01,390"
+					},
+					"offsets": {
+						"from": 1390,
+						"to": 1390
+					},
+					"id": 268,
+					"p": 0.996862,
+					"t_dtw": 138
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:01,390",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1390,
+						"to": 1600
+					},
+					"id": 3290,
+					"p": 0.992672,
+					"t_dtw": 148
+				},
+				{
+					"text": " wichtig",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,890"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1890
+					},
+					"id": 13621,
+					"p": 0.983611,
+					"t_dtw": 190
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,080",
+						"to": "00:00:02,080"
+					},
+					"offsets": {
+						"from": 2080,
+						"to": 2080
+					},
+					"id": 11,
+					"p": 0.667166,
+					"t_dtw": 206
+				},
+				{
+					"text": " voll",
+					"timestamps": {
+						"from": "00:00:02,120",
+						"to": "00:00:02,250"
+					},
+					"offsets": {
+						"from": 2120,
+						"to": 2250
+					},
+					"id": 15593,
+					"p": 0.460019,
+					"t_dtw": 220
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:02,250",
+						"to": "00:00:02,330"
+					},
+					"offsets": {
+						"from": 2250,
+						"to": 2330
+					},
+					"id": 268,
+					"p": 0.84481,
+					"t_dtw": 230
+				},
+				{
+					"text": " bei",
+					"timestamps": {
+						"from": "00:00:02,330",
+						"to": "00:00:02,440"
+					},
+					"offsets": {
+						"from": 2330,
+						"to": 2440
+					},
+					"id": 4643,
+					"p": 0.936983,
+					"t_dtw": 240
+				},
+				{
+					"text": " Be",
+					"timestamps": {
+						"from": "00:00:02,450",
+						"to": "00:00:02,520"
+					},
+					"offsets": {
+						"from": 2450,
+						"to": 2520
+					},
+					"id": 879,
+					"p": 0.973702,
+					"t_dtw": 254
+				},
+				{
+					"text": "wer",
+					"timestamps": {
+						"from": "00:00:02,530",
+						"to": "00:00:02,650"
+					},
+					"offsets": {
+						"from": 2530,
+						"to": 2650
+					},
+					"id": 1554,
+					"p": 0.998035,
+					"t_dtw": 268
+				},
+				{
+					"text": "b",
+					"timestamps": {
+						"from": "00:00:02,650",
+						"to": "00:00:02,690"
+					},
+					"offsets": {
+						"from": 2650,
+						"to": 2690
+					},
+					"id": 65,
+					"p": 0.988457,
+					"t_dtw": 276
+				},
+				{
+					"text": "ungen",
+					"timestamps": {
+						"from": "00:00:02,690",
+						"to": "00:00:02,800"
+					},
+					"offsets": {
+						"from": 2690,
+						"to": 2800
+					},
+					"id": 5084,
+					"p": 0.99814,
+					"t_dtw": 290
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,890",
+						"to": "00:00:02,940"
+					},
+					"offsets": {
+						"from": 2890,
+						"to": 2940
+					},
+					"id": 13,
+					"p": 0.941293,
+					"t_dtw": 302
+				},
+				{
+					"text": "[_TT_154]",
+					"timestamps": {
+						"from": "00:00:03,080",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 3080,
+						"to": 3080
+					},
+					"id": 50518,
+					"p": 0.0520818,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

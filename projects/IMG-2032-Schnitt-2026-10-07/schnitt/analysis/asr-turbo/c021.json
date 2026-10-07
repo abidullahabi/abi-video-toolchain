@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,680"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1680
+			},
+			"text": " Und direkt mit Aufgaben lernen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.828926,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 170
+					},
+					"id": 2719,
+					"p": 0.920643,
+					"t_dtw": 30
+				},
+				{
+					"text": " direkt",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 510
+					},
+					"id": 20315,
+					"p": 0.932611,
+					"t_dtw": 66
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 630
+					},
+					"id": 2194,
+					"p": 0.988042,
+					"t_dtw": 86
+				},
+				{
+					"text": " Aufg",
+					"timestamps": {
+						"from": "00:00:00,730",
+						"to": "00:00:00,790"
+					},
+					"offsets": {
+						"from": 730,
+						"to": 790
+					},
+					"id": 29648,
+					"p": 0.95035,
+					"t_dtw": 114
+				},
+				{
+					"text": "aben",
+					"timestamps": {
+						"from": "00:00:00,910",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 910,
+						"to": 1140
+					},
+					"id": 25071,
+					"p": 0.995885,
+					"t_dtw": 128
+				},
+				{
+					"text": " lernen",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1440
+					},
+					"id": 36082,
+					"p": 0.84196,
+					"t_dtw": 146
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,670",
+						"to": "00:00:01,670"
+					},
+					"offsets": {
+						"from": 1670,
+						"to": 1670
+					},
+					"id": 13,
+					"p": 0.946797,
+					"t_dtw": 164
+				},
+				{
+					"text": "[_TT_84]",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1680
+					},
+					"id": 50449,
+					"p": 0.718373,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

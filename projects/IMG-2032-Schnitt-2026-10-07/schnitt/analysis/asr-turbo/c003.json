@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,460"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1460
+			},
+			"text": " Ich hab so ein paar davon geschrieben.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.774529,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 140
+					},
+					"id": 3141,
+					"p": 0.94858,
+					"t_dtw": 18
+				},
+				{
+					"text": " hab",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 280
+					},
+					"id": 3025,
+					"p": 0.603468,
+					"t_dtw": 24
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 330
+					},
+					"id": 370,
+					"p": 0.860485,
+					"t_dtw": 36
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:00,380",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 380,
+						"to": 500
+					},
+					"id": 1343,
+					"p": 0.727364,
+					"t_dtw": 44
+				},
+				{
+					"text": " paar",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,690"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 690
+					},
+					"id": 16509,
+					"p": 0.951985,
+					"t_dtw": 46
+				},
+				{
+					"text": " davon",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 870
+					},
+					"id": 18574,
+					"p": 0.99671,
+					"t_dtw": 70
+				},
+				{
+					"text": " geschrieben",
+					"timestamps": {
+						"from": "00:00:00,920",
+						"to": "00:00:01,210"
+					},
+					"offsets": {
+						"from": 920,
+						"to": 1210
+					},
+					"id": 47397,
+					"p": 0.99457,
+					"t_dtw": 106
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,450",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1450,
+						"to": 1450
+					},
+					"id": 13,
+					"p": 0.688927,
+					"t_dtw": 142
+				},
+				{
+					"text": "[_TT_73]",
+					"timestamps": {
+						"from": "00:00:01,460",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1460,
+						"to": 1460
+					},
+					"id": 50438,
+					"p": 0.0751402,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

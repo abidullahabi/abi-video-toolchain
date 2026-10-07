@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3000
+			},
+			"text": " Wenn ihr auch so gute Noten schreiben willst, ist das wichtigste Schritt dafür.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.996924,
+					"t_dtw": -1
+				},
+				{
+					"text": " Wenn",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 140
+					},
+					"id": 7899,
+					"p": 0.969625,
+					"t_dtw": 22
+				},
+				{
+					"text": " ihr",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 250
+					},
+					"id": 5553,
+					"p": 0.533943,
+					"t_dtw": 32
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 390
+					},
+					"id": 2168,
+					"p": 0.961617,
+					"t_dtw": 46
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:00,390",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 390,
+						"to": 450
+					},
+					"id": 370,
+					"p": 0.981732,
+					"t_dtw": 54
+				},
+				{
+					"text": " gute",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 600
+					},
+					"id": 21476,
+					"p": 0.44452,
+					"t_dtw": 72
+				},
+				{
+					"text": " Not",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 700
+					},
+					"id": 1726,
+					"p": 0.849445,
+					"t_dtw": 86
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:00,710",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 710,
+						"to": 780
+					},
+					"id": 268,
+					"p": 0.989644,
+					"t_dtw": 94
+				},
+				{
+					"text": " schreiben",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:01,110"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 1110
+					},
+					"id": 48546,
+					"p": 0.878265,
+					"t_dtw": 114
+				},
+				{
+					"text": " willst",
+					"timestamps": {
+						"from": "00:00:01,110",
+						"to": "00:00:01,330"
+					},
+					"offsets": {
+						"from": 1110,
+						"to": 1330
+					},
+					"id": 48355,
+					"p": 0.827717,
+					"t_dtw": 140
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,330",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 1330,
+						"to": 1420
+					},
+					"id": 11,
+					"p": 0.950835,
+					"t_dtw": 148
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1620
+					},
+					"id": 1418,
+					"p": 0.913496,
+					"t_dtw": 158
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:01,620",
+						"to": "00:00:01,780"
+					},
+					"offsets": {
+						"from": 1620,
+						"to": 1780
+					},
+					"id": 1482,
+					"p": 0.515392,
+					"t_dtw": 166
+				},
+				{
+					"text": " wichtig",
+					"timestamps": {
+						"from": "00:00:01,780",
+						"to": "00:00:02,150"
+					},
+					"offsets": {
+						"from": 1780,
+						"to": 2150
+					},
+					"id": 13621,
+					"p": 0.788053,
+					"t_dtw": 184
+				},
+				{
+					"text": "ste",
+					"timestamps": {
+						"from": "00:00:02,200",
+						"to": "00:00:02,260"
+					},
+					"offsets": {
+						"from": 2200,
+						"to": 2260
+					},
+					"id": 2941,
+					"p": 0.997716,
+					"t_dtw": 208
+				},
+				{
+					"text": " Schritt",
+					"timestamps": {
+						"from": "00:00:02,340",
+						"to": "00:00:02,700"
+					},
+					"offsets": {
+						"from": 2340,
+						"to": 2700
+					},
+					"id": 33062,
+					"p": 0.998258,
+					"t_dtw": 228
+				},
+				{
+					"text": " dafür",
+					"timestamps": {
+						"from": "00:00:02,700",
+						"to": "00:00:02,760"
+					},
+					"offsets": {
+						"from": 2700,
+						"to": 2760
+					},
+					"id": 13747,
+					"p": 0.991535,
+					"t_dtw": 256
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,990",
+						"to": "00:00:03,000"
+					},
+					"offsets": {
+						"from": 2990,
+						"to": 3000
+					},
+					"id": 13,
+					"p": 0.885675,
+					"t_dtw": 298
+				},
+				{
+					"text": "[_TT_150]",
+					"timestamps": {
+						"from": "00:00:03,000",
+						"to": "00:00:03,000"
+					},
+					"offsets": {
+						"from": 3000,
+						"to": 3000
+					},
+					"id": 50514,
+					"p": 0.0587045,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,040"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1040
+			},
+			"text": " Sollte immer so sein.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.99489,
+					"t_dtw": -1
+				},
+				{
+					"text": " So",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 100
+					},
+					"id": 407,
+					"p": 0.801816,
+					"t_dtw": 22
+				},
+				{
+					"text": "ll",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 200
+					},
+					"id": 285,
+					"p": 0.986431,
+					"t_dtw": 22
+				},
+				{
+					"text": "te",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 300
+					},
+					"id": 975,
+					"p": 0.928856,
+					"t_dtw": 32
+				},
+				{
+					"text": " immer",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 560
+					},
+					"id": 5578,
+					"p": 0.974931,
+					"t_dtw": 48
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 630
+					},
+					"id": 370,
+					"p": 0.975632,
+					"t_dtw": 62
+				},
+				{
+					"text": " sein",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 860
+					},
+					"id": 6195,
+					"p": 0.996632,
+					"t_dtw": 86
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,860",
+						"to": "00:00:00,920"
+					},
+					"offsets": {
+						"from": 860,
+						"to": 920
+					},
+					"id": 13,
+					"p": 0.781582,
+					"t_dtw": 102
+				},
+				{
+					"text": "[_TT_52]",
+					"timestamps": {
+						"from": "00:00:01,040",
+						"to": "00:00:01,040"
+					},
+					"offsets": {
+						"from": 1040,
+						"to": 1040
+					},
+					"id": 50416,
+					"p": 0.0197541,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

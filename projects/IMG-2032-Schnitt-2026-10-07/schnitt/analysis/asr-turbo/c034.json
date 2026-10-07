@@ -1,0 +1,423 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,360"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5360
+			},
+			"text": " Und eine letzte Sache noch, gute Noten sind wichtig. Berufserfahrungen sind ein bisschen wichtiger, meiner Meinung nach.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.899055,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 180
+					},
+					"id": 2719,
+					"p": 0.972414,
+					"t_dtw": 22
+				},
+				{
+					"text": " eine",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 420
+					},
+					"id": 3018,
+					"p": 0.7313,
+					"t_dtw": 38
+				},
+				{
+					"text": " letzte",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 770
+					},
+					"id": 35236,
+					"p": 0.985408,
+					"t_dtw": 60
+				},
+				{
+					"text": " Sache",
+					"timestamps": {
+						"from": "00:00:00,770",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 770,
+						"to": 1060
+					},
+					"id": 31452,
+					"p": 0.998015,
+					"t_dtw": 86
+				},
+				{
+					"text": " noch",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,110"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1110
+					},
+					"id": 3514,
+					"p": 0.998807,
+					"t_dtw": 114
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,440",
+						"to": "00:00:01,440"
+					},
+					"offsets": {
+						"from": 1440,
+						"to": 1440
+					},
+					"id": 11,
+					"p": 0.58663,
+					"t_dtw": 152
+				},
+				{
+					"text": " gute",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,670"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1670
+					},
+					"id": 21476,
+					"p": 0.748668,
+					"t_dtw": 198
+				},
+				{
+					"text": " Not",
+					"timestamps": {
+						"from": "00:00:01,670",
+						"to": "00:00:01,840"
+					},
+					"offsets": {
+						"from": 1670,
+						"to": 1840
+					},
+					"id": 1726,
+					"p": 0.997883,
+					"t_dtw": 222
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:01,840",
+						"to": "00:00:01,920"
+					},
+					"offsets": {
+						"from": 1840,
+						"to": 1920
+					},
+					"id": 268,
+					"p": 0.999969,
+					"t_dtw": 228
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:01,980",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 1980,
+						"to": 2180
+					},
+					"id": 3290,
+					"p": 0.997676,
+					"t_dtw": 240
+				},
+				{
+					"text": " wichtig",
+					"timestamps": {
+						"from": "00:00:02,180",
+						"to": "00:00:02,530"
+					},
+					"offsets": {
+						"from": 2180,
+						"to": 2530
+					},
+					"id": 13621,
+					"p": 0.997333,
+					"t_dtw": 272
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,530",
+						"to": "00:00:02,720"
+					},
+					"offsets": {
+						"from": 2530,
+						"to": 2720
+					},
+					"id": 13,
+					"p": 0.777228,
+					"t_dtw": 304
+				},
+				{
+					"text": " Beruf",
+					"timestamps": {
+						"from": "00:00:02,720",
+						"to": "00:00:02,840"
+					},
+					"offsets": {
+						"from": 2720,
+						"to": 2840
+					},
+					"id": 36688,
+					"p": 0.908168,
+					"t_dtw": 332
+				},
+				{
+					"text": "ser",
+					"timestamps": {
+						"from": "00:00:03,090",
+						"to": "00:00:03,090"
+					},
+					"offsets": {
+						"from": 3090,
+						"to": 3090
+					},
+					"id": 12484,
+					"p": 0.995222,
+					"t_dtw": 350
+				},
+				{
+					"text": "fahr",
+					"timestamps": {
+						"from": "00:00:03,150",
+						"to": "00:00:03,230"
+					},
+					"offsets": {
+						"from": 3150,
+						"to": 3230
+					},
+					"id": 20868,
+					"p": 0.997788,
+					"t_dtw": 362
+				},
+				{
+					"text": "ungen",
+					"timestamps": {
+						"from": "00:00:03,230",
+						"to": "00:00:03,410"
+					},
+					"offsets": {
+						"from": 3230,
+						"to": 3410
+					},
+					"id": 5084,
+					"p": 0.779823,
+					"t_dtw": 370
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:03,410",
+						"to": "00:00:03,560"
+					},
+					"offsets": {
+						"from": 3410,
+						"to": 3560
+					},
+					"id": 3290,
+					"p": 0.958054,
+					"t_dtw": 380
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:03,560",
+						"to": "00:00:03,670"
+					},
+					"offsets": {
+						"from": 3560,
+						"to": 3670
+					},
+					"id": 1343,
+					"p": 0.959329,
+					"t_dtw": 388
+				},
+				{
+					"text": " bisschen",
+					"timestamps": {
+						"from": "00:00:03,670",
+						"to": "00:00:03,990"
+					},
+					"offsets": {
+						"from": 3670,
+						"to": 3990
+					},
+					"id": 10763,
+					"p": 0.97894,
+					"t_dtw": 398
+				},
+				{
+					"text": " wichtiger",
+					"timestamps": {
+						"from": "00:00:03,990",
+						"to": "00:00:04,290"
+					},
+					"offsets": {
+						"from": 3990,
+						"to": 4290
+					},
+					"id": 48840,
+					"p": 0.967423,
+					"t_dtw": 434
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:04,290",
+						"to": "00:00:04,360"
+					},
+					"offsets": {
+						"from": 4290,
+						"to": 4360
+					},
+					"id": 11,
+					"p": 0.735897,
+					"t_dtw": 436
+				},
+				{
+					"text": " meiner",
+					"timestamps": {
+						"from": "00:00:04,360",
+						"to": "00:00:04,660"
+					},
+					"offsets": {
+						"from": 4360,
+						"to": 4660
+					},
+					"id": 20529,
+					"p": 0.753915,
+					"t_dtw": 456
+				},
+				{
+					"text": " Meinung",
+					"timestamps": {
+						"from": "00:00:04,660",
+						"to": "00:00:04,980"
+					},
+					"offsets": {
+						"from": 4660,
+						"to": 4980
+					},
+					"id": 36519,
+					"p": 0.98392,
+					"t_dtw": 472
+				},
+				{
+					"text": " nach",
+					"timestamps": {
+						"from": "00:00:04,980",
+						"to": "00:00:05,100"
+					},
+					"offsets": {
+						"from": 4980,
+						"to": 5100
+					},
+					"id": 5168,
+					"p": 0.99821,
+					"t_dtw": 504
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:05,100",
+						"to": "00:00:05,250"
+					},
+					"offsets": {
+						"from": 5100,
+						"to": 5250
+					},
+					"id": 13,
+					"p": 0.928166,
+					"t_dtw": 532
+				},
+				{
+					"text": "[_TT_268]",
+					"timestamps": {
+						"from": "00:00:05,360",
+						"to": "00:00:05,360"
+					},
+					"offsets": {
+						"from": 5360,
+						"to": 5360
+					},
+					"id": 50633,
+					"p": 0.470181,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

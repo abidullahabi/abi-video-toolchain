@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,560"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1560
+			},
+			"text": " Er steckt so viel Arbeit dahinter.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997362,
+					"t_dtw": -1
+				},
+				{
+					"text": " Er",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 100
+					},
+					"id": 3300,
+					"p": 0.172974,
+					"t_dtw": 22
+				},
+				{
+					"text": " ste",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 250
+					},
+					"id": 2126,
+					"p": 0.967597,
+					"t_dtw": 40
+				},
+				{
+					"text": "ckt",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 400
+					},
+					"id": 19951,
+					"p": 0.975614,
+					"t_dtw": 50
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,490"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 490
+					},
+					"id": 370,
+					"p": 0.661175,
+					"t_dtw": 66
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 700
+					},
+					"id": 5891,
+					"p": 0.781445,
+					"t_dtw": 88
+				},
+				{
+					"text": " Arbeit",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 1000
+					},
+					"id": 18604,
+					"p": 0.875224,
+					"t_dtw": 106
+				},
+				{
+					"text": " dah",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,150"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1150
+					},
+					"id": 16800,
+					"p": 0.99186,
+					"t_dtw": 122
+				},
+				{
+					"text": "inter",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1400
+					},
+					"id": 5106,
+					"p": 0.998576,
+					"t_dtw": 134
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1460
+					},
+					"id": 13,
+					"p": 0.823755,
+					"t_dtw": 154
+				},
+				{
+					"text": "[_TT_78]",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1560
+					},
+					"id": 50442,
+					"p": 0.0610196,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,600"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2600
+			},
+			"text": " Ich habe immer mindestens 40 Tage vorher angefangen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.996894,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 160
+					},
+					"id": 3141,
+					"p": 0.988797,
+					"t_dtw": 24
+				},
+				{
+					"text": " habe",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 370
+					},
+					"id": 6015,
+					"p": 0.519279,
+					"t_dtw": 36
+				},
+				{
+					"text": " immer",
+					"timestamps": {
+						"from": "00:00:00,390",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 390,
+						"to": 630
+					},
+					"id": 5578,
+					"p": 0.971779,
+					"t_dtw": 58
+				},
+				{
+					"text": " mind",
+					"timestamps": {
+						"from": "00:00:00,630",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 630,
+						"to": 840
+					},
+					"id": 1575,
+					"p": 0.986336,
+					"t_dtw": 80
+				},
+				{
+					"text": "estens",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 1080
+					},
+					"id": 42624,
+					"p": 0.969313,
+					"t_dtw": 106
+				},
+				{
+					"text": " 40",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1420
+					},
+					"id": 3356,
+					"p": 0.473722,
+					"t_dtw": 128
+				},
+				{
+					"text": " Tage",
+					"timestamps": {
+						"from": "00:00:01,490",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 1490,
+						"to": 1650
+					},
+					"id": 29724,
+					"p": 0.994033,
+					"t_dtw": 162
+				},
+				{
+					"text": " vorher",
+					"timestamps": {
+						"from": "00:00:01,740",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1740,
+						"to": 2000
+					},
+					"id": 29195,
+					"p": 0.648959,
+					"t_dtw": 180
+				},
+				{
+					"text": " angef",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,260"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2260
+					},
+					"id": 43907,
+					"p": 0.99504,
+					"t_dtw": 210
+				},
+				{
+					"text": "angen",
+					"timestamps": {
+						"from": "00:00:02,260",
+						"to": "00:00:02,380"
+					},
+					"offsets": {
+						"from": 2260,
+						"to": 2380
+					},
+					"id": 10784,
+					"p": 0.999756,
+					"t_dtw": 228
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,560",
+						"to": "00:00:02,560"
+					},
+					"offsets": {
+						"from": 2560,
+						"to": 2560
+					},
+					"id": 13,
+					"p": 0.850869,
+					"t_dtw": 258
+				},
+				{
+					"text": "[_TT_130]",
+					"timestamps": {
+						"from": "00:00:02,600",
+						"to": "00:00:02,600"
+					},
+					"offsets": {
+						"from": 2600,
+						"to": 2600
+					},
+					"id": 50494,
+					"p": 0.0390276,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

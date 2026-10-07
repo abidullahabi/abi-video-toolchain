@@ -1,0 +1,269 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Schaut euch dann alle, die wir mit so einem gelernt haben.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.995697,
+					"t_dtw": -1
+				},
+				{
+					"text": " Sch",
+					"timestamps": {
+						"from": "00:00:00,110",
+						"to": "00:00:00,110"
+					},
+					"offsets": {
+						"from": 110,
+						"to": 110
+					},
+					"id": 2065,
+					"p": 0.942214,
+					"t_dtw": 22
+				},
+				{
+					"text": "aut",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 220
+					},
+					"id": 1375,
+					"p": 0.394469,
+					"t_dtw": 28
+				},
+				{
+					"text": " euch",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,340"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 340
+					},
+					"id": 10403,
+					"p": 0.21919,
+					"t_dtw": 44
+				},
+				{
+					"text": " dann",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 510
+					},
+					"id": 3594,
+					"p": 0.542479,
+					"t_dtw": 44
+				},
+				{
+					"text": " alle",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 670
+					},
+					"id": 5430,
+					"p": 0.936274,
+					"t_dtw": 64
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:00,740"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 740
+					},
+					"id": 11,
+					"p": 0.857487,
+					"t_dtw": 68
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,740",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 740,
+						"to": 850
+					},
+					"id": 978,
+					"p": 0.987332,
+					"t_dtw": 78
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:00,960"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 960
+					},
+					"id": 1987,
+					"p": 0.535423,
+					"t_dtw": 86
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:00,960",
+						"to": "00:00:01,010"
+					},
+					"offsets": {
+						"from": 960,
+						"to": 1010
+					},
+					"id": 2194,
+					"p": 0.799131,
+					"t_dtw": 104
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:01,070",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 1070,
+						"to": 1140
+					},
+					"id": 370,
+					"p": 0.122791,
+					"t_dtw": 112
+				},
+				{
+					"text": " einem",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,330"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1330
+					},
+					"id": 6827,
+					"p": 0.606452,
+					"t_dtw": 120
+				},
+				{
+					"text": " gelernt",
+					"timestamps": {
+						"from": "00:00:01,330",
+						"to": "00:00:01,580"
+					},
+					"offsets": {
+						"from": 1330,
+						"to": 1580
+					},
+					"id": 49224,
+					"p": 0.978831,
+					"t_dtw": 140
+				},
+				{
+					"text": " haben",
+					"timestamps": {
+						"from": "00:00:01,580",
+						"to": "00:00:01,690"
+					},
+					"offsets": {
+						"from": 1580,
+						"to": 1690
+					},
+					"id": 3084,
+					"p": 0.994419,
+					"t_dtw": 160
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,930",
+						"to": "00:00:01,930"
+					},
+					"offsets": {
+						"from": 1930,
+						"to": 1930
+					},
+					"id": 13,
+					"p": 0.646499,
+					"t_dtw": 190
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.150486,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

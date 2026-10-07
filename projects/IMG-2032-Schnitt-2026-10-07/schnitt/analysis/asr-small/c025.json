@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,440"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2440
+			},
+			"text": " Mit AI war Studieren noch nie einfacher.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.998157,
+					"t_dtw": -1
+				},
+				{
+					"text": " Mit",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 200
+					},
+					"id": 10821,
+					"p": 0.983564,
+					"t_dtw": 28
+				},
+				{
+					"text": " AI",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,330"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 330
+					},
+					"id": 7318,
+					"p": 0.911605,
+					"t_dtw": 54
+				},
+				{
+					"text": " war",
+					"timestamps": {
+						"from": "00:00:00,330",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 330,
+						"to": 530
+					},
+					"id": 1516,
+					"p": 0.852497,
+					"t_dtw": 80
+				},
+				{
+					"text": " Stud",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,800"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 800
+					},
+					"id": 4541,
+					"p": 0.573938,
+					"t_dtw": 102
+				},
+				{
+					"text": "ieren",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:01,130"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 1130
+					},
+					"id": 5695,
+					"p": 0.486772,
+					"t_dtw": 124
+				},
+				{
+					"text": " noch",
+					"timestamps": {
+						"from": "00:00:01,130",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1130,
+						"to": 1400
+					},
+					"id": 3514,
+					"p": 0.993519,
+					"t_dtw": 146
+				},
+				{
+					"text": " nie",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1600
+					},
+					"id": 2838,
+					"p": 0.99069,
+					"t_dtw": 162
+				},
+				{
+					"text": " einf",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1860
+					},
+					"id": 38627,
+					"p": 0.984215,
+					"t_dtw": 194
+				},
+				{
+					"text": "acher",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:02,150"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 2150
+					},
+					"id": 4062,
+					"p": 0.999685,
+					"t_dtw": 208
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,200",
+						"to": "00:00:02,210"
+					},
+					"offsets": {
+						"from": 2200,
+						"to": 2210
+					},
+					"id": 13,
+					"p": 0.906968,
+					"t_dtw": 238
+				},
+				{
+					"text": "[_TT_122]",
+					"timestamps": {
+						"from": "00:00:02,440",
+						"to": "00:00:02,440"
+					},
+					"offsets": {
+						"from": 2440,
+						"to": 2440
+					},
+					"id": 50486,
+					"p": 0.0348147,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

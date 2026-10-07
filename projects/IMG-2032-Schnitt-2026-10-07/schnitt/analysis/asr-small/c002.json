@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3000
+			},
+			"text": " Eine 1,0 ist für jeden Hyperformer der feuchte Traum.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.99621,
+					"t_dtw": -1
+				},
+				{
+					"text": " Eine",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,220"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 220
+					},
+					"id": 17664,
+					"p": 0.965657,
+					"t_dtw": 26
+				},
+				{
+					"text": " 1",
+					"timestamps": {
+						"from": "00:00:00,220",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 220,
+						"to": 390
+					},
+					"id": 502,
+					"p": 0.953003,
+					"t_dtw": 44
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,390",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 390,
+						"to": 500
+					},
+					"id": 11,
+					"p": 0.806803,
+					"t_dtw": 56
+				},
+				{
+					"text": "0",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 670
+					},
+					"id": 15,
+					"p": 0.940446,
+					"t_dtw": 74
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:00,840"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 840
+					},
+					"id": 1418,
+					"p": 0.982248,
+					"t_dtw": 92
+				},
+				{
+					"text": " für",
+					"timestamps": {
+						"from": "00:00:00,840",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 840,
+						"to": 900
+					},
+					"id": 2959,
+					"p": 0.972617,
+					"t_dtw": 118
+				},
+				{
+					"text": " jeden",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,290"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1290
+					},
+					"id": 12906,
+					"p": 0.729464,
+					"t_dtw": 136
+				},
+				{
+					"text": " Hyper",
+					"timestamps": {
+						"from": "00:00:01,290",
+						"to": "00:00:01,570"
+					},
+					"offsets": {
+						"from": 1290,
+						"to": 1570
+					},
+					"id": 29592,
+					"p": 0.0980775,
+					"t_dtw": 168
+				},
+				{
+					"text": "form",
+					"timestamps": {
+						"from": "00:00:01,570",
+						"to": "00:00:01,790"
+					},
+					"offsets": {
+						"from": 1570,
+						"to": 1790
+					},
+					"id": 837,
+					"p": 0.798933,
+					"t_dtw": 186
+				},
+				{
+					"text": "er",
+					"timestamps": {
+						"from": "00:00:01,790",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1790,
+						"to": 1900
+					},
+					"id": 260,
+					"p": 0.76259,
+					"t_dtw": 198
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:01,900",
+						"to": "00:00:02,050"
+					},
+					"offsets": {
+						"from": 1900,
+						"to": 2050
+					},
+					"id": 1163,
+					"p": 0.968994,
+					"t_dtw": 208
+				},
+				{
+					"text": " fe",
+					"timestamps": {
+						"from": "00:00:02,060",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 2060,
+						"to": 2180
+					},
+					"id": 579,
+					"p": 0.618545,
+					"t_dtw": 220
+				},
+				{
+					"text": "uch",
+					"timestamps": {
+						"from": "00:00:02,180",
+						"to": "00:00:02,350"
+					},
+					"offsets": {
+						"from": 2180,
+						"to": 2350
+					},
+					"id": 625,
+					"p": 0.95446,
+					"t_dtw": 228
+				},
+				{
+					"text": "te",
+					"timestamps": {
+						"from": "00:00:02,350",
+						"to": "00:00:02,370"
+					},
+					"offsets": {
+						"from": 2350,
+						"to": 2370
+					},
+					"id": 975,
+					"p": 0.772528,
+					"t_dtw": 236
+				},
+				{
+					"text": " Tra",
+					"timestamps": {
+						"from": "00:00:02,480",
+						"to": "00:00:02,630"
+					},
+					"offsets": {
+						"from": 2480,
+						"to": 2630
+					},
+					"id": 5403,
+					"p": 0.991675,
+					"t_dtw": 254
+				},
+				{
+					"text": "um",
+					"timestamps": {
+						"from": "00:00:02,630",
+						"to": "00:00:02,660"
+					},
+					"offsets": {
+						"from": 2630,
+						"to": 2660
+					},
+					"id": 449,
+					"p": 0.994529,
+					"t_dtw": 264
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,920",
+						"to": "00:00:02,920"
+					},
+					"offsets": {
+						"from": 2920,
+						"to": 2920
+					},
+					"id": 13,
+					"p": 0.91169,
+					"t_dtw": 290
+				},
+				{
+					"text": "[_TT_150]",
+					"timestamps": {
+						"from": "00:00:03,000",
+						"to": "00:00:03,000"
+					},
+					"offsets": {
+						"from": 3000,
+						"to": 3000
+					},
+					"id": 50514,
+					"p": 0.0429498,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

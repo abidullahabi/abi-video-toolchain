@@ -1,0 +1,479 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,500"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5500
+			},
+			"text": " Damit wirklich nur eins nur schreibt, so einfach eine sehr, sehr gute Note musste die Inhalte wirklich verstehen, anwenden können.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.995044,
+					"t_dtw": -1
+				},
+				{
+					"text": " Damit",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,190"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 190
+					},
+					"id": 24495,
+					"p": 0.915566,
+					"t_dtw": 22
+				},
+				{
+					"text": " wirklich",
+					"timestamps": {
+						"from": "00:00:00,190",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 190,
+						"to": 460
+					},
+					"id": 9696,
+					"p": 0.774037,
+					"t_dtw": 58
+				},
+				{
+					"text": " nur",
+					"timestamps": {
+						"from": "00:00:00,520",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 520,
+						"to": 600
+					},
+					"id": 4343,
+					"p": 0.742015,
+					"t_dtw": 72
+				},
+				{
+					"text": " eins",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:00,740"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 740
+					},
+					"id": 21889,
+					"p": 0.507462,
+					"t_dtw": 86
+				},
+				{
+					"text": " nur",
+					"timestamps": {
+						"from": "00:00:00,740",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 740,
+						"to": 860
+					},
+					"id": 4343,
+					"p": 0.215745,
+					"t_dtw": 104
+				},
+				{
+					"text": " sch",
+					"timestamps": {
+						"from": "00:00:00,960",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 960,
+						"to": 970
+					},
+					"id": 956,
+					"p": 0.918731,
+					"t_dtw": 120
+				},
+				{
+					"text": "reibt",
+					"timestamps": {
+						"from": "00:00:00,970",
+						"to": "00:00:01,130"
+					},
+					"offsets": {
+						"from": 970,
+						"to": 1130
+					},
+					"id": 31174,
+					"p": 0.868934,
+					"t_dtw": 128
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,170",
+						"to": "00:00:01,230"
+					},
+					"offsets": {
+						"from": 1170,
+						"to": 1230
+					},
+					"id": 11,
+					"p": 0.491704,
+					"t_dtw": 132
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:01,230",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 1230,
+						"to": 1280
+					},
+					"id": 370,
+					"p": 0.766432,
+					"t_dtw": 140
+				},
+				{
+					"text": " einfach",
+					"timestamps": {
+						"from": "00:00:01,350",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1350,
+						"to": 1560
+					},
+					"id": 7281,
+					"p": 0.933654,
+					"t_dtw": 158
+				},
+				{
+					"text": " eine",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1700
+					},
+					"id": 3018,
+					"p": 0.69641,
+					"t_dtw": 168
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:01,730",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1730,
+						"to": 1860
+					},
+					"id": 5499,
+					"p": 0.994264,
+					"t_dtw": 184
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 1990
+					},
+					"id": 11,
+					"p": 0.903316,
+					"t_dtw": 184
+				},
+				{
+					"text": " sehr",
+					"timestamps": {
+						"from": "00:00:01,990",
+						"to": "00:00:02,250"
+					},
+					"offsets": {
+						"from": 1990,
+						"to": 2250
+					},
+					"id": 5499,
+					"p": 0.964006,
+					"t_dtw": 194
+				},
+				{
+					"text": " gute",
+					"timestamps": {
+						"from": "00:00:02,250",
+						"to": "00:00:02,480"
+					},
+					"offsets": {
+						"from": 2250,
+						"to": 2480
+					},
+					"id": 21476,
+					"p": 0.990972,
+					"t_dtw": 212
+				},
+				{
+					"text": " Note",
+					"timestamps": {
+						"from": "00:00:02,490",
+						"to": "00:00:02,520"
+					},
+					"offsets": {
+						"from": 2490,
+						"to": 2520
+					},
+					"id": 11633,
+					"p": 0.929564,
+					"t_dtw": 238
+				},
+				{
+					"text": " musste",
+					"timestamps": {
+						"from": "00:00:02,810",
+						"to": "00:00:03,060"
+					},
+					"offsets": {
+						"from": 2810,
+						"to": 3060
+					},
+					"id": 34497,
+					"p": 0.0445515,
+					"t_dtw": 296
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:03,060",
+						"to": "00:00:03,180"
+					},
+					"offsets": {
+						"from": 3060,
+						"to": 3180
+					},
+					"id": 978,
+					"p": 0.77268,
+					"t_dtw": 318
+				},
+				{
+					"text": " In",
+					"timestamps": {
+						"from": "00:00:03,180",
+						"to": "00:00:03,260"
+					},
+					"offsets": {
+						"from": 3180,
+						"to": 3260
+					},
+					"id": 682,
+					"p": 0.685827,
+					"t_dtw": 330
+				},
+				{
+					"text": "hal",
+					"timestamps": {
+						"from": "00:00:03,270",
+						"to": "00:00:03,390"
+					},
+					"offsets": {
+						"from": 3270,
+						"to": 3390
+					},
+					"id": 4947,
+					"p": 0.992809,
+					"t_dtw": 336
+				},
+				{
+					"text": "te",
+					"timestamps": {
+						"from": "00:00:03,450",
+						"to": "00:00:03,500"
+					},
+					"offsets": {
+						"from": 3450,
+						"to": 3500
+					},
+					"id": 975,
+					"p": 0.99647,
+					"t_dtw": 344
+				},
+				{
+					"text": " wirklich",
+					"timestamps": {
+						"from": "00:00:03,510",
+						"to": "00:00:03,900"
+					},
+					"offsets": {
+						"from": 3510,
+						"to": 3900
+					},
+					"id": 9696,
+					"p": 0.931071,
+					"t_dtw": 362
+				},
+				{
+					"text": " verstehen",
+					"timestamps": {
+						"from": "00:00:03,990",
+						"to": "00:00:04,220"
+					},
+					"offsets": {
+						"from": 3990,
+						"to": 4220
+					},
+					"id": 37352,
+					"p": 0.948865,
+					"t_dtw": 410
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:04,420",
+						"to": "00:00:04,460"
+					},
+					"offsets": {
+						"from": 4420,
+						"to": 4460
+					},
+					"id": 11,
+					"p": 0.817638,
+					"t_dtw": 462
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:04,620",
+						"to": "00:00:04,620"
+					},
+					"offsets": {
+						"from": 4620,
+						"to": 4620
+					},
+					"id": 364,
+					"p": 0.763178,
+					"t_dtw": 480
+				},
+				{
+					"text": "w",
+					"timestamps": {
+						"from": "00:00:04,650",
+						"to": "00:00:04,690"
+					},
+					"offsets": {
+						"from": 4650,
+						"to": 4690
+					},
+					"id": 86,
+					"p": 0.938688,
+					"t_dtw": 494
+				},
+				{
+					"text": "enden",
+					"timestamps": {
+						"from": "00:00:04,690",
+						"to": "00:00:05,040"
+					},
+					"offsets": {
+						"from": 4690,
+						"to": 5040
+					},
+					"id": 8896,
+					"p": 0.997877,
+					"t_dtw": 500
+				},
+				{
+					"text": " können",
+					"timestamps": {
+						"from": "00:00:05,040",
+						"to": "00:00:05,430"
+					},
+					"offsets": {
+						"from": 5040,
+						"to": 5430
+					},
+					"id": 6310,
+					"p": 0.987615,
+					"t_dtw": 532
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:05,500",
+						"to": "00:00:05,500"
+					},
+					"offsets": {
+						"from": 5500,
+						"to": 5500
+					},
+					"id": 13,
+					"p": 0.720574,
+					"t_dtw": 548
+				},
+				{
+					"text": "[_TT_275]",
+					"timestamps": {
+						"from": "00:00:05,500",
+						"to": "00:00:05,500"
+					},
+					"offsets": {
+						"from": 5500,
+						"to": 5500
+					},
+					"id": 50639,
+					"p": 0.0357272,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

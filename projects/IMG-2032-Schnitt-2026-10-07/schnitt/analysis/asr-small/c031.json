@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,500"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1500
+			},
+			"text": " Denen das beizubringen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997156,
+					"t_dtw": -1
+				},
+				{
+					"text": " Den",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,190"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 190
+					},
+					"id": 6458,
+					"p": 0.59314,
+					"t_dtw": 38
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:00,260",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 260,
+						"to": 320
+					},
+					"id": 268,
+					"p": 0.98679,
+					"t_dtw": 52
+				},
+				{
+					"text": " das",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 510
+					},
+					"id": 1482,
+					"p": 0.851108,
+					"t_dtw": 68
+				},
+				{
+					"text": " be",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 610
+					},
+					"id": 312,
+					"p": 0.964518,
+					"t_dtw": 82
+				},
+				{
+					"text": "iz",
+					"timestamps": {
+						"from": "00:00:00,740",
+						"to": "00:00:00,770"
+					},
+					"offsets": {
+						"from": 740,
+						"to": 770
+					},
+					"id": 590,
+					"p": 0.988016,
+					"t_dtw": 94
+				},
+				{
+					"text": "ub",
+					"timestamps": {
+						"from": "00:00:00,770",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 770,
+						"to": 870
+					},
+					"id": 836,
+					"p": 0.984023,
+					"t_dtw": 104
+				},
+				{
+					"text": "ring",
+					"timestamps": {
+						"from": "00:00:00,930",
+						"to": "00:00:01,160"
+					},
+					"offsets": {
+						"from": 930,
+						"to": 1160
+					},
+					"id": 2937,
+					"p": 0.943101,
+					"t_dtw": 116
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:01,160",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1160,
+						"to": 1200
+					},
+					"id": 268,
+					"p": 0.993257,
+					"t_dtw": 128
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1410
+					},
+					"id": 13,
+					"p": 0.840238,
+					"t_dtw": 138
+				},
+				{
+					"text": "[_TT_75]",
+					"timestamps": {
+						"from": "00:00:01,500",
+						"to": "00:00:01,500"
+					},
+					"offsets": {
+						"from": 1500,
+						"to": 1500
+					},
+					"id": 50439,
+					"p": 0.0134738,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

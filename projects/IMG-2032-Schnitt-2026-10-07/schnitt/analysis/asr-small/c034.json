@@ -1,0 +1,450 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,040"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3040
+			},
+			"text": " Und alle letzte Sachen noch, gute Noten sind wichtig.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.9946,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 170
+					},
+					"id": 2719,
+					"p": 0.975576,
+					"t_dtw": 20
+				},
+				{
+					"text": " alle",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 400
+					},
+					"id": 5430,
+					"p": 0.85597,
+					"t_dtw": 40
+				},
+				{
+					"text": " letzte",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 750
+					},
+					"id": 35236,
+					"p": 0.578665,
+					"t_dtw": 60
+				},
+				{
+					"text": " Sachen",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 1080
+					},
+					"id": 26074,
+					"p": 0.986425,
+					"t_dtw": 88
+				},
+				{
+					"text": " noch",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1140
+					},
+					"id": 3514,
+					"p": 0.951824,
+					"t_dtw": 128
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,480"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1480
+					},
+					"id": 11,
+					"p": 0.558495,
+					"t_dtw": 152
+				},
+				{
+					"text": " gute",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1740
+					},
+					"id": 21476,
+					"p": 0.476555,
+					"t_dtw": 196
+				},
+				{
+					"text": " Not",
+					"timestamps": {
+						"from": "00:00:01,750",
+						"to": "00:00:01,920"
+					},
+					"offsets": {
+						"from": 1750,
+						"to": 1920
+					},
+					"id": 1726,
+					"p": 0.970395,
+					"t_dtw": 220
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:01,980",
+						"to": "00:00:02,080"
+					},
+					"offsets": {
+						"from": 1980,
+						"to": 2080
+					},
+					"id": 268,
+					"p": 0.999754,
+					"t_dtw": 230
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:02,080",
+						"to": "00:00:02,350"
+					},
+					"offsets": {
+						"from": 2080,
+						"to": 2350
+					},
+					"id": 3290,
+					"p": 0.996077,
+					"t_dtw": 240
+				},
+				{
+					"text": " wichtig",
+					"timestamps": {
+						"from": "00:00:02,350",
+						"to": "00:00:02,690"
+					},
+					"offsets": {
+						"from": 2350,
+						"to": 2690
+					},
+					"id": 13621,
+					"p": 0.996335,
+					"t_dtw": 272
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,690",
+						"to": "00:00:02,840"
+					},
+					"offsets": {
+						"from": 2690,
+						"to": 2840
+					},
+					"id": 13,
+					"p": 0.79837,
+					"t_dtw": 318
+				},
+				{
+					"text": "[_TT_152]",
+					"timestamps": {
+						"from": "00:00:03,040",
+						"to": "00:00:03,040"
+					},
+					"offsets": {
+						"from": 3040,
+						"to": 3040
+					},
+					"id": 50516,
+					"p": 0.0527832,
+					"t_dtw": -1
+				}
+			]
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,040",
+				"to": "00:00:05,340"
+			},
+			"offsets": {
+				"from": 3040,
+				"to": 5340
+			},
+			"text": " Berufserfahrungen sind ein bisschen wichtiger, meine Meinung nach.",
+			"tokens": [
+				{
+					"text": " Beruf",
+					"timestamps": {
+						"from": "00:00:03,090",
+						"to": "00:00:03,200"
+					},
+					"offsets": {
+						"from": 3090,
+						"to": 3200
+					},
+					"id": 36688,
+					"p": 0.982928,
+					"t_dtw": 330
+				},
+				{
+					"text": "ser",
+					"timestamps": {
+						"from": "00:00:03,200",
+						"to": "00:00:03,300"
+					},
+					"offsets": {
+						"from": 3200,
+						"to": 3300
+					},
+					"id": 12484,
+					"p": 0.775739,
+					"t_dtw": 348
+				},
+				{
+					"text": "fahr",
+					"timestamps": {
+						"from": "00:00:03,300",
+						"to": "00:00:03,430"
+					},
+					"offsets": {
+						"from": 3300,
+						"to": 3430
+					},
+					"id": 20868,
+					"p": 0.971274,
+					"t_dtw": 358
+				},
+				{
+					"text": "ungen",
+					"timestamps": {
+						"from": "00:00:03,430",
+						"to": "00:00:03,590"
+					},
+					"offsets": {
+						"from": 3430,
+						"to": 3590
+					},
+					"id": 5084,
+					"p": 0.820598,
+					"t_dtw": 370
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:03,590",
+						"to": "00:00:03,690"
+					},
+					"offsets": {
+						"from": 3590,
+						"to": 3690
+					},
+					"id": 3290,
+					"p": 0.988165,
+					"t_dtw": 382
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:03,720",
+						"to": "00:00:03,820"
+					},
+					"offsets": {
+						"from": 3720,
+						"to": 3820
+					},
+					"id": 1343,
+					"p": 0.931401,
+					"t_dtw": 384
+				},
+				{
+					"text": " bisschen",
+					"timestamps": {
+						"from": "00:00:03,820",
+						"to": "00:00:04,080"
+					},
+					"offsets": {
+						"from": 3820,
+						"to": 4080
+					},
+					"id": 10763,
+					"p": 0.985658,
+					"t_dtw": 396
+				},
+				{
+					"text": " wichtiger",
+					"timestamps": {
+						"from": "00:00:04,080",
+						"to": "00:00:04,160"
+					},
+					"offsets": {
+						"from": 4080,
+						"to": 4160
+					},
+					"id": 48840,
+					"p": 0.986451,
+					"t_dtw": 432
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:04,480",
+						"to": "00:00:04,480"
+					},
+					"offsets": {
+						"from": 4480,
+						"to": 4480
+					},
+					"id": 11,
+					"p": 0.745476,
+					"t_dtw": 442
+				},
+				{
+					"text": " meine",
+					"timestamps": {
+						"from": "00:00:04,560",
+						"to": "00:00:04,700"
+					},
+					"offsets": {
+						"from": 4560,
+						"to": 4700
+					},
+					"id": 10946,
+					"p": 0.593038,
+					"t_dtw": 456
+				},
+				{
+					"text": " Meinung",
+					"timestamps": {
+						"from": "00:00:04,700",
+						"to": "00:00:04,960"
+					},
+					"offsets": {
+						"from": 4700,
+						"to": 4960
+					},
+					"id": 36519,
+					"p": 0.581895,
+					"t_dtw": 476
+				},
+				{
+					"text": " nach",
+					"timestamps": {
+						"from": "00:00:05,020",
+						"to": "00:00:05,190"
+					},
+					"offsets": {
+						"from": 5020,
+						"to": 5190
+					},
+					"id": 5168,
+					"p": 0.999729,
+					"t_dtw": 502
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:05,190",
+						"to": "00:00:05,270"
+					},
+					"offsets": {
+						"from": 5190,
+						"to": 5270
+					},
+					"id": 13,
+					"p": 0.969562,
+					"t_dtw": 528
+				},
+				{
+					"text": "[_TT_267]",
+					"timestamps": {
+						"from": "00:00:05,340",
+						"to": "00:00:05,340"
+					},
+					"offsets": {
+						"from": 5340,
+						"to": 5340
+					},
+					"id": 50631,
+					"p": 0.0456273,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

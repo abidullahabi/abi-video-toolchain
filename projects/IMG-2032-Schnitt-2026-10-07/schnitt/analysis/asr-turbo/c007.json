@@ -1,0 +1,353 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,980"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3980
+			},
+			"text": " Und jetzt die Frage, wie viel Arbeit ist da, wie viel Arbeit steckt da wirklich hinter?",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.846289,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 160
+					},
+					"id": 2719,
+					"p": 0.765409,
+					"t_dtw": 22
+				},
+				{
+					"text": " jetzt",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 420
+					},
+					"id": 4354,
+					"p": 0.994482,
+					"t_dtw": 30
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:00,590"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 590
+					},
+					"id": 978,
+					"p": 0.985193,
+					"t_dtw": 40
+				},
+				{
+					"text": " Frage",
+					"timestamps": {
+						"from": "00:00:00,590",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 590,
+						"to": 850
+					},
+					"id": 13685,
+					"p": 0.995486,
+					"t_dtw": 68
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,850",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 850,
+						"to": 890
+					},
+					"id": 11,
+					"p": 0.820797,
+					"t_dtw": 98
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,130"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1130
+					},
+					"id": 3355,
+					"p": 0.973596,
+					"t_dtw": 122
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:01,130",
+						"to": "00:00:01,350"
+					},
+					"offsets": {
+						"from": 1130,
+						"to": 1350
+					},
+					"id": 5891,
+					"p": 0.917664,
+					"t_dtw": 138
+				},
+				{
+					"text": " Arbeit",
+					"timestamps": {
+						"from": "00:00:01,350",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1350,
+						"to": 1680
+					},
+					"id": 18604,
+					"p": 0.999174,
+					"t_dtw": 168
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,840"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1840
+					},
+					"id": 1418,
+					"p": 0.994207,
+					"t_dtw": 186
+				},
+				{
+					"text": " da",
+					"timestamps": {
+						"from": "00:00:01,840",
+						"to": "00:00:01,950"
+					},
+					"offsets": {
+						"from": 1840,
+						"to": 1950
+					},
+					"id": 1120,
+					"p": 0.992118,
+					"t_dtw": 210
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,950",
+						"to": "00:00:02,120"
+					},
+					"offsets": {
+						"from": 1950,
+						"to": 2120
+					},
+					"id": 11,
+					"p": 0.878136,
+					"t_dtw": 234
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:02,120",
+						"to": "00:00:02,190"
+					},
+					"offsets": {
+						"from": 2120,
+						"to": 2190
+					},
+					"id": 3355,
+					"p": 0.951178,
+					"t_dtw": 254
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:02,430",
+						"to": "00:00:02,430"
+					},
+					"offsets": {
+						"from": 2430,
+						"to": 2430
+					},
+					"id": 5891,
+					"p": 0.990898,
+					"t_dtw": 268
+				},
+				{
+					"text": " Arbeit",
+					"timestamps": {
+						"from": "00:00:02,460",
+						"to": "00:00:02,700"
+					},
+					"offsets": {
+						"from": 2460,
+						"to": 2700
+					},
+					"id": 18604,
+					"p": 0.994732,
+					"t_dtw": 288
+				},
+				{
+					"text": " ste",
+					"timestamps": {
+						"from": "00:00:02,700",
+						"to": "00:00:02,830"
+					},
+					"offsets": {
+						"from": 2700,
+						"to": 2830
+					},
+					"id": 2126,
+					"p": 0.990345,
+					"t_dtw": 306
+				},
+				{
+					"text": "ckt",
+					"timestamps": {
+						"from": "00:00:02,830",
+						"to": "00:00:02,880"
+					},
+					"offsets": {
+						"from": 2830,
+						"to": 2880
+					},
+					"id": 19951,
+					"p": 0.999415,
+					"t_dtw": 314
+				},
+				{
+					"text": " da",
+					"timestamps": {
+						"from": "00:00:02,950",
+						"to": "00:00:03,050"
+					},
+					"offsets": {
+						"from": 2950,
+						"to": 3050
+					},
+					"id": 1120,
+					"p": 0.986935,
+					"t_dtw": 322
+				},
+				{
+					"text": " wirklich",
+					"timestamps": {
+						"from": "00:00:03,050",
+						"to": "00:00:03,430"
+					},
+					"offsets": {
+						"from": 3050,
+						"to": 3430
+					},
+					"id": 9696,
+					"p": 0.99329,
+					"t_dtw": 342
+				},
+				{
+					"text": " hinter",
+					"timestamps": {
+						"from": "00:00:03,430",
+						"to": "00:00:03,750"
+					},
+					"offsets": {
+						"from": 3430,
+						"to": 3750
+					},
+					"id": 23219,
+					"p": 0.957931,
+					"t_dtw": 368
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:03,970",
+						"to": "00:00:03,970"
+					},
+					"offsets": {
+						"from": 3970,
+						"to": 3970
+					},
+					"id": 30,
+					"p": 0.819342,
+					"t_dtw": 390
+				},
+				{
+					"text": "[_TT_199]",
+					"timestamps": {
+						"from": "00:00:03,980",
+						"to": "00:00:03,980"
+					},
+					"offsets": {
+						"from": 3980,
+						"to": 3980
+					},
+					"id": 50564,
+					"p": 0.153613,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

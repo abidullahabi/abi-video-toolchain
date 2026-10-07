@@ -1,0 +1,101 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:00,580"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 580
+			},
+			"text": " Und...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.819718,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,350"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 350
+					},
+					"id": 2719,
+					"p": 0.774308,
+					"t_dtw": 24
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 580
+					},
+					"id": 485,
+					"p": 0.270654,
+					"t_dtw": 54
+				},
+				{
+					"text": "[_TT_29]",
+					"timestamps": {
+						"from": "00:00:00,580",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 580,
+						"to": 580
+					},
+					"id": 50394,
+					"p": 0.389059,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,240"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1240
+			},
+			"text": " Sonst nicht Bärbel war.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.860842,
+					"t_dtw": -1
+				},
+				{
+					"text": " S",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,050"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 50
+					},
+					"id": 318,
+					"p": 0.804181,
+					"t_dtw": 24
+				},
+				{
+					"text": "onst",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 270
+					},
+					"id": 4068,
+					"p": 0.998466,
+					"t_dtw": 36
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 540
+					},
+					"id": 1979,
+					"p": 0.981596,
+					"t_dtw": 58
+				},
+				{
+					"text": " B",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,590"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 590
+					},
+					"id": 363,
+					"p": 0.549646,
+					"t_dtw": 80
+				},
+				{
+					"text": "är",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,680"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 680
+					},
+					"id": 2713,
+					"p": 0.69174,
+					"t_dtw": 90
+				},
+				{
+					"text": "bel",
+					"timestamps": {
+						"from": "00:00:00,730",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 730,
+						"to": 870
+					},
+					"id": 5390,
+					"p": 0.983937,
+					"t_dtw": 104
+				},
+				{
+					"text": " war",
+					"timestamps": {
+						"from": "00:00:00,870",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 870,
+						"to": 1030
+					},
+					"id": 1516,
+					"p": 0.979185,
+					"t_dtw": 122
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,030",
+						"to": "00:00:01,190"
+					},
+					"offsets": {
+						"from": 1030,
+						"to": 1190
+					},
+					"id": 13,
+					"p": 0.949056,
+					"t_dtw": 122
+				},
+				{
+					"text": "[_TT_62]",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1240
+					},
+					"id": 50427,
+					"p": 0.09445,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}
