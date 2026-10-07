@@ -20,10 +20,10 @@
   "createdAt": "2026-10-07T19:55:25.363Z",
   "bearbeitung": {
     "agent": "codex",
-    "aufgabe": "Vollständiges Design mit freigegebener statischer Leistungsübersicht, Schnitt unverändert",
-    "begonnen": "2026-10-07T20:59:38.600Z",
-    "status": "angehalten",
-    "stand": "Vollständige Design-Vorschau fertig und im Videoordner. Freigabe der Gesamtgestaltung ausstehend."
+    "aufgabe": "Nur zwei H1 an Hook und Aussage anpassen, final lokal ablegen",
+    "begonnen": "2026-10-07T21:45:13.351Z",
+    "status": "fertig",
+    "beendet": "2026-10-07T21:54:59.152185+00:00"
   },
   "tempo": 1,
   "notionPage": "https://app.notion.com/p/3f18cb917b3b80f3a43fc587d3da43b7",
@@ -36,9 +36,9 @@
     "tempo": 1,
     "farbkorrektur": null
   },
-  "status": "design_zur_abnahme",
-  "previewFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Wie viel lernen für eine 1,0 - Design.mp4",
-  "previewSha256": "2bea81c6806fe272c1e297e683b1918730602141bea3fe8d61edacc408a2414f",
+  "status": "final_lokal_abgelegt",
+  "previewFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/03_Bereit_zum_Posten/Datum offen - Wie viel lernen für eine 1,0.mp4",
+  "previewSha256": "2009324f4382f356669fe9f10775d9b2e9a817327cd44a0701baf52a7e75a67a",
   "latestExport": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2032-Schnitt-2026-10-07/exports/upload.mp4",
   "designPending": false,
   "actualListening": false,
@@ -124,18 +124,33 @@
   "toolWorktree": "/Users/abi/Projekte/abi-video-toolchain-img2032-design",
   "designRulesVersion": "2.4",
   "renderedExport": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2032-Schnitt-2026-10-07/exports/master.mp4",
-  "exportedAt": "2026-10-07T21:29:36.220Z",
+  "exportedAt": "2026-10-07T21:51:37.674Z",
   "audioHandling": "Original audio re-encoded once as AAC-LC at 120 kbit/s and 48 kHz, without tempo or level changes.",
   "deliveryProfile": "Zernio/Buffer: H264 (medium), 1080x1920p30, BT709, 12000k video target (max. 12M, 300-MB-Grenze) / 14M VBV, AAC-LC 120k, faststart",
   "layoutVersion": "tiktok-safe-v1",
   "aktuell": {
     "datei": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2032-Schnitt-2026-10-07/exports/upload.mp4",
-    "sha256": "2bea81c6806fe272c1e297e683b1918730602141bea3fe8d61edacc408a2414f",
-    "bytes": 130176383,
-    "erzeugt": "2026-10-07T21:31:44Z",
-    "gesetztAm": "2026-10-07T21:31:44Z"
+    "sha256": "2009324f4382f356669fe9f10775d9b2e9a817327cd44a0701baf52a7e75a67a",
+    "bytes": 130168737,
+    "erzeugt": "2026-10-07T21:52:51Z",
+    "gesetztAm": "2026-10-07T21:52:51Z"
   },
-  "fullDesignApproval": "ausstehend",
-  "toolCommit": "b68a9dd",
-  "designQa": "review/design-export-qa.json"
+  "fullDesignApproval": "freigegeben",
+  "toolCommit": "e43aa29",
+  "designQa": "review/final-h1-export-qa.json",
+  "finalFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/03_Bereit_zum_Posten/Datum offen - Wie viel lernen für eine 1,0.mp4",
+  "finalSha256": "2009324f4382f356669fe9f10775d9b2e9a817327cd44a0701baf52a7e75a67a",
+  "previousDesignArchive": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Archiv/Vorversionen/Datum offen - Wie viel lernen für eine 1,0 - Design vor finalen H1.mp4",
+  "uploaded": false,
+  "scheduled": false,
+  "postingBy": "user",
+  "deliveredAt": "2026-10-07T21:54:59.152185+00:00",
+  "finalApproval": {
+    "source": "Letzte Nutzeranweisung: finale Ausgabe und nur in den Ordner verlegen.",
+    "headings": {
+      "intro": "WIE VIEL LERNEN FÜR EINE 1,0?",
+      "second": "MACHT EINE 1,0 GLÜCKLICH?"
+    },
+    "otherDesignUnchanged": true
+  }
 }
