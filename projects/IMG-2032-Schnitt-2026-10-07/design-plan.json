@@ -1,0 +1,149 @@
+{
+  "_quelle": "DESIGN.md2.4, freigegebener85.933s-Feinschnitt, Notion-Briefing und ausdrückliche Freigabe der korrigierten statischen Leistungsübersicht.",
+  "_offen": [],
+  "_entscheidungen": [
+    "Freigegebener Schnitt und Tempo1.0 unverändert.",
+    "Statische Leistungsübersicht ab erstem Bild bis zur letzten eigenen Noten-Aussage. Keine Animation, kein Green Screen, keine Einzelnoten-Detailansicht.",
+    "Alle zehn Noten strikt unter2.0 aus der tatsächlichen PDF markiert. Persönlicher Kopf und Fuß vollständig ausgeschlossen. Prüfungsdaten sichtbar.",
+    "Karte um6.25Prozent proportional kleiner und bei y1360, damit Untertitelkontur vollständig frei bleibt.",
+    "Vier Lerntipps fortlaufend nummeriert, entsprechend Nutzerwunsch für Folgevideo.",
+    "Lernsystem ausdrücklich als Teaser beschriftet.",
+    "ASR-Zweifelsstellen dokumentiert. Originalton bleibt vollständig unverändert.",
+    "Drei Pillen sind zu breit und berühren die Kappe. Lernprinzip deshalb als zweizeilige H2 nach dem Kapitelkopf, Originalwortlaut bleibt in Untertiteln.",
+    "K2 endet vor der Nahaufnahme33.27, damit die Nummer die Kappe nicht berührt.",
+    "Codierter Frame0: zweizeiliger Einstieg überlagerte die Kappe trotz automatischer Prüfung. Einzeiliger Hook FÜR DEINE1,0 hält den Kopf frei.",
+    "Themenwechsel64.13: H1 auf NOTEN verkürzt. Zweizeiliges GUTE NOTEN berührte die Kappe im codierten Bild."
+  ],
+  "einstieg": {
+    "h1": "FÜR DEINE 1,0",
+    "end": 5.7
+  },
+  "dokumente": [
+    {
+      "id": "leistungsuebersicht",
+      "start": 0,
+      "end": 12.433333,
+      "datei": "assets/leistungsuebersicht/karte.png",
+      "left": 185.625,
+      "top": 1360,
+      "width": 720,
+      "height": 300
+    }
+  ],
+  "kapitel": [
+    {
+      "id": "k1",
+      "nummer": "1.",
+      "titel": "Früh anfangen",
+      "start": 12.433333,
+      "end": 21.96
+    },
+    {
+      "id": "k2",
+      "nummer": "2.",
+      "titel": "Mit System",
+      "start": 24.566667,
+      "end": 33.03
+    },
+    {
+      "id": "k3",
+      "nummer": "3.",
+      "titel": "KI nutzen",
+      "start": 44.133333,
+      "end": 54.46
+    },
+    {
+      "id": "k4",
+      "nummer": "4.",
+      "titel": "Mit Freunden",
+      "start": 54.7,
+      "end": 63.89
+    }
+  ],
+  "h1": [
+    {
+      "id": "h1-noten",
+      "text": "NOTEN",
+      "start": 64.133333,
+      "end": 66.69
+    }
+  ],
+  "h2": [
+    {
+      "id": "h2-40tage",
+      "unter": "allein",
+      "lines": [
+        "40 Tage vorher"
+      ],
+      "start": 22.2,
+      "end": 24.31
+    },
+    {
+      "id": "h2-lernsystem",
+      "unter": "allein",
+      "lines": [
+        "Mein Lernsystem"
+      ],
+      "start": 40.266667,
+      "end": 43.9
+    },
+    {
+      "id": "h2-erfuellung",
+      "unter": "allein",
+      "lines": [
+        "Noten ≠ Erfüllung"
+      ],
+      "start": 66.91,
+      "end": 74.59
+    },
+    {
+      "id": "h2-lernprinzip",
+      "unter": "allein",
+      "lines": [
+        "Verstehen & anwenden",
+        "Mit Aufgaben lernen"
+      ],
+      "start": 37.13,
+      "end": 40.03
+    }
+  ],
+  "pillen": [],
+  "logos": [
+    {
+      "id": "logos-ki",
+      "unter": "kapitel:k3",
+      "start": 46.33,
+      "end": 48.55,
+      "dateien": [
+        {
+          "datei": "assets/logos/claude.png",
+          "hoehe": 54,
+          "breite": 247
+        },
+        {
+          "datei": "assets/logos/notebook.png",
+          "hoehe": 56,
+          "breite": 56
+        },
+        {
+          "datei": "assets/logos/chatgpt.png",
+          "hoehe": 56,
+          "breite": 56
+        }
+      ]
+    }
+  ],
+  "akronyme": [],
+  "schlagworte": [],
+  "grafiken": [],
+  "randnotizen": [],
+  "lebensbalken": [],
+  "sprechblasen": [
+    {
+      "start": 81.68333333333334,
+      "text": "Wie lernst du genau?"
+    }
+  ],
+  "outroStart": 79.7,
+  "nahaufnahmeAbBreite": 420
+}
