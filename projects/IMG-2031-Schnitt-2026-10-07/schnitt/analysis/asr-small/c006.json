@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,140"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1140
+			},
+			"text": " Das machst du folgenderweise.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.995858,
+					"t_dtw": -1
+				},
+				{
+					"text": " Das",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 120
+					},
+					"id": 2846,
+					"p": 0.976412,
+					"t_dtw": 22
+				},
+				{
+					"text": " machst",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 360
+					},
+					"id": 43350,
+					"p": 0.952886,
+					"t_dtw": 38
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 390
+					},
+					"id": 1581,
+					"p": 0.924193,
+					"t_dtw": 50
+				},
+				{
+					"text": " fol",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,490"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 490
+					},
+					"id": 3339,
+					"p": 0.94987,
+					"t_dtw": 68
+				},
+				{
+					"text": "gender",
+					"timestamps": {
+						"from": "00:00:00,580",
+						"to": "00:00:00,800"
+					},
+					"offsets": {
+						"from": 580,
+						"to": 800
+					},
+					"id": 22174,
+					"p": 0.427905,
+					"t_dtw": 78
+				},
+				{
+					"text": "weise",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 970
+					},
+					"id": 13109,
+					"p": 0.960455,
+					"t_dtw": 102
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:01,090"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 1090
+					},
+					"id": 13,
+					"p": 0.86138,
+					"t_dtw": 112
+				},
+				{
+					"text": "[_TT_57]",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1140
+					},
+					"id": 50421,
+					"p": 0.0163863,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

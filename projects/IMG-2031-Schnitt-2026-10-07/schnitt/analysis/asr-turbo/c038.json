@@ -1,0 +1,507 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:06,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 6120
+			},
+			"text": " Versuch, dass dieses Unternehmen in dich rein investiert und dass die teilweise von dir abhängig werden, wie in einer toxischen Beziehung.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.960726,
+					"t_dtw": -1
+				},
+				{
+					"text": " Vers",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 170
+					},
+					"id": 12226,
+					"p": 0.946499,
+					"t_dtw": 30
+				},
+				{
+					"text": "uch",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 300
+					},
+					"id": 625,
+					"p": 0.621673,
+					"t_dtw": 44
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,380"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 380
+					},
+					"id": 11,
+					"p": 0.986935,
+					"t_dtw": 52
+				},
+				{
+					"text": " dass",
+					"timestamps": {
+						"from": "00:00:00,380",
+						"to": "00:00:00,550"
+					},
+					"offsets": {
+						"from": 380,
+						"to": 550
+					},
+					"id": 2658,
+					"p": 0.992303,
+					"t_dtw": 62
+				},
+				{
+					"text": " dieses",
+					"timestamps": {
+						"from": "00:00:00,550",
+						"to": "00:00:00,810"
+					},
+					"offsets": {
+						"from": 550,
+						"to": 810
+					},
+					"id": 12113,
+					"p": 0.786513,
+					"t_dtw": 92
+				},
+				{
+					"text": " Unternehmen",
+					"timestamps": {
+						"from": "00:00:00,810",
+						"to": "00:00:01,320"
+					},
+					"offsets": {
+						"from": 810,
+						"to": 1320
+					},
+					"id": 27577,
+					"p": 0.996867,
+					"t_dtw": 130
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:01,320",
+						"to": "00:00:01,430"
+					},
+					"offsets": {
+						"from": 1320,
+						"to": 1430
+					},
+					"id": 294,
+					"p": 0.98089,
+					"t_dtw": 148
+				},
+				{
+					"text": " dich",
+					"timestamps": {
+						"from": "00:00:01,430",
+						"to": "00:00:01,640"
+					},
+					"offsets": {
+						"from": 1430,
+						"to": 1640
+					},
+					"id": 10390,
+					"p": 0.976423,
+					"t_dtw": 162
+				},
+				{
+					"text": " rein",
+					"timestamps": {
+						"from": "00:00:01,690",
+						"to": "00:00:01,870"
+					},
+					"offsets": {
+						"from": 1690,
+						"to": 1870
+					},
+					"id": 6561,
+					"p": 0.99859,
+					"t_dtw": 186
+				},
+				{
+					"text": " invest",
+					"timestamps": {
+						"from": "00:00:01,870",
+						"to": "00:00:02,120"
+					},
+					"offsets": {
+						"from": 1870,
+						"to": 2120
+					},
+					"id": 1963,
+					"p": 0.493823,
+					"t_dtw": 216
+				},
+				{
+					"text": "iert",
+					"timestamps": {
+						"from": "00:00:02,260",
+						"to": "00:00:02,420"
+					},
+					"offsets": {
+						"from": 2260,
+						"to": 2420
+					},
+					"id": 4859,
+					"p": 0.991338,
+					"t_dtw": 238
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:02,420",
+						"to": "00:00:02,570"
+					},
+					"offsets": {
+						"from": 2420,
+						"to": 2570
+					},
+					"id": 674,
+					"p": 0.787466,
+					"t_dtw": 262
+				},
+				{
+					"text": " dass",
+					"timestamps": {
+						"from": "00:00:02,570",
+						"to": "00:00:02,780"
+					},
+					"offsets": {
+						"from": 2570,
+						"to": 2780
+					},
+					"id": 2658,
+					"p": 0.986963,
+					"t_dtw": 280
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:02,780",
+						"to": "00:00:02,920"
+					},
+					"offsets": {
+						"from": 2780,
+						"to": 2920
+					},
+					"id": 978,
+					"p": 0.977849,
+					"t_dtw": 304
+				},
+				{
+					"text": " teilweise",
+					"timestamps": {
+						"from": "00:00:02,930",
+						"to": "00:00:03,390"
+					},
+					"offsets": {
+						"from": 2930,
+						"to": 3390
+					},
+					"id": 46748,
+					"p": 0.99357,
+					"t_dtw": 368
+				},
+				{
+					"text": " von",
+					"timestamps": {
+						"from": "00:00:03,410",
+						"to": "00:00:03,550"
+					},
+					"offsets": {
+						"from": 3410,
+						"to": 3550
+					},
+					"id": 2957,
+					"p": 0.992723,
+					"t_dtw": 386
+				},
+				{
+					"text": " dir",
+					"timestamps": {
+						"from": "00:00:03,550",
+						"to": "00:00:03,670"
+					},
+					"offsets": {
+						"from": 3550,
+						"to": 3670
+					},
+					"id": 4746,
+					"p": 0.932593,
+					"t_dtw": 396
+				},
+				{
+					"text": " ab",
+					"timestamps": {
+						"from": "00:00:03,700",
+						"to": "00:00:03,740"
+					},
+					"offsets": {
+						"from": 3700,
+						"to": 3740
+					},
+					"id": 410,
+					"p": 0.995953,
+					"t_dtw": 412
+				},
+				{
+					"text": "häng",
+					"timestamps": {
+						"from": "00:00:03,820",
+						"to": "00:00:04,010"
+					},
+					"offsets": {
+						"from": 3820,
+						"to": 4010
+					},
+					"id": 34591,
+					"p": 0.999457,
+					"t_dtw": 424
+				},
+				{
+					"text": "ig",
+					"timestamps": {
+						"from": "00:00:04,010",
+						"to": "00:00:04,070"
+					},
+					"offsets": {
+						"from": 4010,
+						"to": 4070
+					},
+					"id": 328,
+					"p": 0.995427,
+					"t_dtw": 434
+				},
+				{
+					"text": " werden",
+					"timestamps": {
+						"from": "00:00:04,130",
+						"to": "00:00:04,420"
+					},
+					"offsets": {
+						"from": 4130,
+						"to": 4420
+					},
+					"id": 4604,
+					"p": 0.997954,
+					"t_dtw": 458
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:04,420",
+						"to": "00:00:04,600"
+					},
+					"offsets": {
+						"from": 4420,
+						"to": 4600
+					},
+					"id": 11,
+					"p": 0.810698,
+					"t_dtw": 478
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:04,600",
+						"to": "00:00:04,630"
+					},
+					"offsets": {
+						"from": 4600,
+						"to": 4630
+					},
+					"id": 3355,
+					"p": 0.792127,
+					"t_dtw": 486
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:04,800",
+						"to": "00:00:04,830"
+					},
+					"offsets": {
+						"from": 4800,
+						"to": 4830
+					},
+					"id": 294,
+					"p": 0.999752,
+					"t_dtw": 496
+				},
+				{
+					"text": " einer",
+					"timestamps": {
+						"from": "00:00:04,830",
+						"to": "00:00:05,070"
+					},
+					"offsets": {
+						"from": 4830,
+						"to": 5070
+					},
+					"id": 6850,
+					"p": 0.998578,
+					"t_dtw": 508
+				},
+				{
+					"text": " tox",
+					"timestamps": {
+						"from": "00:00:05,070",
+						"to": "00:00:05,210"
+					},
+					"offsets": {
+						"from": 5070,
+						"to": 5210
+					},
+					"id": 10357,
+					"p": 0.995268,
+					"t_dtw": 528
+				},
+				{
+					"text": "ischen",
+					"timestamps": {
+						"from": "00:00:05,210",
+						"to": "00:00:05,500"
+					},
+					"offsets": {
+						"from": 5210,
+						"to": 5500
+					},
+					"id": 6282,
+					"p": 0.999489,
+					"t_dtw": 546
+				},
+				{
+					"text": " Be",
+					"timestamps": {
+						"from": "00:00:05,500",
+						"to": "00:00:05,570"
+					},
+					"offsets": {
+						"from": 5500,
+						"to": 5570
+					},
+					"id": 879,
+					"p": 0.999767,
+					"t_dtw": 564
+				},
+				{
+					"text": "zieh",
+					"timestamps": {
+						"from": "00:00:05,630",
+						"to": "00:00:05,780"
+					},
+					"offsets": {
+						"from": 5630,
+						"to": 5780
+					},
+					"id": 28213,
+					"p": 0.999907,
+					"t_dtw": 576
+				},
+				{
+					"text": "ung",
+					"timestamps": {
+						"from": "00:00:05,780",
+						"to": "00:00:05,850"
+					},
+					"offsets": {
+						"from": 5780,
+						"to": 5850
+					},
+					"id": 1063,
+					"p": 0.99999,
+					"t_dtw": 588
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:06,120",
+						"to": "00:00:06,120"
+					},
+					"offsets": {
+						"from": 6120,
+						"to": 6120
+					},
+					"id": 13,
+					"p": 0.995535,
+					"t_dtw": 610
+				},
+				{
+					"text": "[_TT_306]",
+					"timestamps": {
+						"from": "00:00:06,120",
+						"to": "00:00:06,120"
+					},
+					"offsets": {
+						"from": 6120,
+						"to": 6120
+					},
+					"id": 50671,
+					"p": 0.852915,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

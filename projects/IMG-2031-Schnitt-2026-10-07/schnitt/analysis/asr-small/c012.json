@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Deswegen sei ein guter Zuhörer.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997832,
+					"t_dtw": -1
+				},
+				{
+					"text": " Deswegen",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,550"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 550
+					},
+					"id": 24864,
+					"p": 0.904563,
+					"t_dtw": 40
+				},
+				{
+					"text": " sei",
+					"timestamps": {
+						"from": "00:00:00,550",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 550,
+						"to": 750
+					},
+					"id": 10842,
+					"p": 0.949613,
+					"t_dtw": 86
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 950
+					},
+					"id": 1343,
+					"p": 0.976885,
+					"t_dtw": 108
+				},
+				{
+					"text": " gut",
+					"timestamps": {
+						"from": "00:00:00,950",
+						"to": "00:00:01,150"
+					},
+					"offsets": {
+						"from": 950,
+						"to": 1150
+					},
+					"id": 5228,
+					"p": 0.997305,
+					"t_dtw": 122
+				},
+				{
+					"text": "er",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1280
+					},
+					"id": 260,
+					"p": 0.999977,
+					"t_dtw": 132
+				},
+				{
+					"text": " Z",
+					"timestamps": {
+						"from": "00:00:01,280",
+						"to": "00:00:01,320"
+					},
+					"offsets": {
+						"from": 1280,
+						"to": 1320
+					},
+					"id": 1176,
+					"p": 0.971362,
+					"t_dtw": 150
+				},
+				{
+					"text": "uh",
+					"timestamps": {
+						"from": "00:00:01,390",
+						"to": "00:00:01,470"
+					},
+					"offsets": {
+						"from": 1390,
+						"to": 1470
+					},
+					"id": 3232,
+					"p": 0.998923,
+					"t_dtw": 156
+				},
+				{
+					"text": "ör",
+					"timestamps": {
+						"from": "00:00:01,470",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1470,
+						"to": 1600
+					},
+					"id": 2311,
+					"p": 0.940953,
+					"t_dtw": 166
+				},
+				{
+					"text": "er",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,720"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1720
+					},
+					"id": 260,
+					"p": 0.999884,
+					"t_dtw": 180
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,720",
+						"to": "00:00:01,780"
+					},
+					"offsets": {
+						"from": 1720,
+						"to": 1780
+					},
+					"id": 13,
+					"p": 0.898731,
+					"t_dtw": 198
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.146317,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

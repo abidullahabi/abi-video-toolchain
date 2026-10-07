@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,340"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1340
+			},
+			"text": " Und wirkst direkt professioneller.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.827167,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 120
+					},
+					"id": 2719,
+					"p": 0.753689,
+					"t_dtw": 24
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,240"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 240
+					},
+					"id": 1987,
+					"p": 0.967415,
+					"t_dtw": 40
+				},
+				{
+					"text": "k",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 280
+					},
+					"id": 74,
+					"p": 0.672415,
+					"t_dtw": 50
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 360
+					},
+					"id": 372,
+					"p": 0.583449,
+					"t_dtw": 54
+				},
+				{
+					"text": " direkt",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,600"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 600
+					},
+					"id": 20315,
+					"p": 0.991313,
+					"t_dtw": 70
+				},
+				{
+					"text": " profession",
+					"timestamps": {
+						"from": "00:00:00,600",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 600,
+						"to": 1000
+					},
+					"id": 7032,
+					"p": 0.994325,
+					"t_dtw": 106
+				},
+				{
+					"text": "eller",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1200
+					},
+					"id": 14983,
+					"p": 0.990316,
+					"t_dtw": 132
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1340
+					},
+					"id": 13,
+					"p": 0.966162,
+					"t_dtw": 132
+				},
+				{
+					"text": "[_TT_67]",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1340
+					},
+					"id": 50432,
+					"p": 0.288023,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

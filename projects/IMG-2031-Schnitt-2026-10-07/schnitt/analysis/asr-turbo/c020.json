@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,880"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1880
+			},
+			"text": " Du wirst ab jetzt immer an deinem ersten...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.755687,
+					"t_dtw": -1
+				},
+				{
+					"text": " Du",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 130
+					},
+					"id": 5153,
+					"p": 0.984172,
+					"t_dtw": 18
+				},
+				{
+					"text": " w",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 180
+					},
+					"id": 261,
+					"p": 0.994474,
+					"t_dtw": 30
+				},
+				{
+					"text": "irst",
+					"timestamps": {
+						"from": "00:00:00,190",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 190,
+						"to": 460
+					},
+					"id": 653,
+					"p": 0.998759,
+					"t_dtw": 38
+				},
+				{
+					"text": " ab",
+					"timestamps": {
+						"from": "00:00:00,460",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 460,
+						"to": 520
+					},
+					"id": 410,
+					"p": 0.992657,
+					"t_dtw": 58
+				},
+				{
+					"text": " jetzt",
+					"timestamps": {
+						"from": "00:00:00,590",
+						"to": "00:00:00,930"
+					},
+					"offsets": {
+						"from": 590,
+						"to": 930
+					},
+					"id": 4354,
+					"p": 0.997822,
+					"t_dtw": 78
+				},
+				{
+					"text": " immer",
+					"timestamps": {
+						"from": "00:00:00,930",
+						"to": "00:00:01,270"
+					},
+					"offsets": {
+						"from": 930,
+						"to": 1270
+					},
+					"id": 5578,
+					"p": 0.997752,
+					"t_dtw": 108
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:01,270",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1270,
+						"to": 1400
+					},
+					"id": 364,
+					"p": 0.992402,
+					"t_dtw": 128
+				},
+				{
+					"text": " dein",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,590"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1590
+					},
+					"id": 25641,
+					"p": 0.402162,
+					"t_dtw": 140
+				},
+				{
+					"text": "em",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 1860
+					},
+					"id": 443,
+					"p": 0.755183,
+					"t_dtw": 146
+				},
+				{
+					"text": " ersten",
+					"timestamps": {
+						"from": "00:00:01,860",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1860,
+						"to": 1860
+					},
+					"id": 17324,
+					"p": 0.836106,
+					"t_dtw": 170
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:01,880",
+						"to": "00:00:01,880"
+					},
+					"offsets": {
+						"from": 1880,
+						"to": 1880
+					},
+					"id": 485,
+					"p": 0.422352,
+					"t_dtw": 182
+				},
+				{
+					"text": "[_TT_94]",
+					"timestamps": {
+						"from": "00:00:01,880",
+						"to": "00:00:01,880"
+					},
+					"offsets": {
+						"from": 1880,
+						"to": 1880
+					},
+					"id": 50459,
+					"p": 0.116848,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

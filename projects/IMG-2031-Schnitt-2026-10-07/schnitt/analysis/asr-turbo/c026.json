@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,900"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1900
+			},
+			"text": " Wo soll ich in den nächsten 6 Monaten sein?",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.711674,
+					"t_dtw": -1
+				},
+				{
+					"text": " Wo",
+					"timestamps": {
+						"from": "00:00:00,090",
+						"to": "00:00:00,090"
+					},
+					"offsets": {
+						"from": 90,
+						"to": 90
+					},
+					"id": 6622,
+					"p": 0.97644,
+					"t_dtw": 34
+				},
+				{
+					"text": " soll",
+					"timestamps": {
+						"from": "00:00:00,230",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 230,
+						"to": 280
+					},
+					"id": 7114,
+					"p": 0.996004,
+					"t_dtw": 56
+				},
+				{
+					"text": " ich",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 420
+					},
+					"id": 1893,
+					"p": 0.995961,
+					"t_dtw": 68
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 510
+					},
+					"id": 294,
+					"p": 0.904866,
+					"t_dtw": 80
+				},
+				{
+					"text": " den",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 630
+					},
+					"id": 1441,
+					"p": 0.98288,
+					"t_dtw": 82
+				},
+				{
+					"text": " nächsten",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:01,010"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 1010
+					},
+					"id": 19101,
+					"p": 0.969885,
+					"t_dtw": 104
+				},
+				{
+					"text": " 6",
+					"timestamps": {
+						"from": "00:00:01,050",
+						"to": "00:00:01,170"
+					},
+					"offsets": {
+						"from": 1050,
+						"to": 1170
+					},
+					"id": 1386,
+					"p": 0.770417,
+					"t_dtw": 130
+				},
+				{
+					"text": " Monaten",
+					"timestamps": {
+						"from": "00:00:01,170",
+						"to": "00:00:01,510"
+					},
+					"offsets": {
+						"from": 1170,
+						"to": 1510
+					},
+					"id": 46193,
+					"p": 0.993918,
+					"t_dtw": 154
+				},
+				{
+					"text": " sein",
+					"timestamps": {
+						"from": "00:00:01,510",
+						"to": "00:00:01,670"
+					},
+					"offsets": {
+						"from": 1510,
+						"to": 1670
+					},
+					"id": 6195,
+					"p": 0.994262,
+					"t_dtw": 188
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:01,690",
+						"to": "00:00:01,860"
+					},
+					"offsets": {
+						"from": 1690,
+						"to": 1860
+					},
+					"id": 30,
+					"p": 0.954716,
+					"t_dtw": 188
+				},
+				{
+					"text": "[_TT_95]",
+					"timestamps": {
+						"from": "00:00:01,900",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1900,
+						"to": 1900
+					},
+					"id": 50460,
+					"p": 0.176808,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

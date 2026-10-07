@@ -1,0 +1,297 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3080
+			},
+			"text": " Als erstes, du redest mit so vielen Leuten, wie du möglich.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.998091,
+					"t_dtw": -1
+				},
+				{
+					"text": " Als",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 180
+					},
+					"id": 12948,
+					"p": 0.980699,
+					"t_dtw": 24
+				},
+				{
+					"text": " erst",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 430
+					},
+					"id": 11301,
+					"p": 0.541368,
+					"t_dtw": 48
+				},
+				{
+					"text": "es",
+					"timestamps": {
+						"from": "00:00:00,430",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 430,
+						"to": 540
+					},
+					"id": 279,
+					"p": 0.99984,
+					"t_dtw": 78
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 670
+					},
+					"id": 11,
+					"p": 0.628971,
+					"t_dtw": 102
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 720
+					},
+					"id": 1581,
+					"p": 0.93209,
+					"t_dtw": 118
+				},
+				{
+					"text": " red",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,790"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 790
+					},
+					"id": 2182,
+					"p": 0.941421,
+					"t_dtw": 134
+				},
+				{
+					"text": "est",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,150"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1150
+					},
+					"id": 377,
+					"p": 0.999422,
+					"t_dtw": 154
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,330"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1330
+					},
+					"id": 2194,
+					"p": 0.953181,
+					"t_dtw": 172
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:01,330",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1330,
+						"to": 1450
+					},
+					"id": 370,
+					"p": 0.997798,
+					"t_dtw": 186
+				},
+				{
+					"text": " vielen",
+					"timestamps": {
+						"from": "00:00:01,450",
+						"to": "00:00:01,820"
+					},
+					"offsets": {
+						"from": 1450,
+						"to": 1820
+					},
+					"id": 19885,
+					"p": 0.975625,
+					"t_dtw": 204
+				},
+				{
+					"text": " Leuten",
+					"timestamps": {
+						"from": "00:00:01,820",
+						"to": "00:00:02,190"
+					},
+					"offsets": {
+						"from": 1820,
+						"to": 2190
+					},
+					"id": 42301,
+					"p": 0.998403,
+					"t_dtw": 230
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,190",
+						"to": "00:00:02,390"
+					},
+					"offsets": {
+						"from": 2190,
+						"to": 2390
+					},
+					"id": 11,
+					"p": 0.412307,
+					"t_dtw": 230
+				},
+				{
+					"text": " wie",
+					"timestamps": {
+						"from": "00:00:02,390",
+						"to": "00:00:02,530"
+					},
+					"offsets": {
+						"from": 2390,
+						"to": 2530
+					},
+					"id": 3355,
+					"p": 0.686278,
+					"t_dtw": 248
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:02,530",
+						"to": "00:00:02,620"
+					},
+					"offsets": {
+						"from": 2530,
+						"to": 2620
+					},
+					"id": 1581,
+					"p": 0.379126,
+					"t_dtw": 254
+				},
+				{
+					"text": " möglich",
+					"timestamps": {
+						"from": "00:00:02,620",
+						"to": "00:00:02,890"
+					},
+					"offsets": {
+						"from": 2620,
+						"to": 2890
+					},
+					"id": 16294,
+					"p": 0.856975,
+					"t_dtw": 288
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,920",
+						"to": "00:00:03,010"
+					},
+					"offsets": {
+						"from": 2920,
+						"to": 3010
+					},
+					"id": 13,
+					"p": 0.866534,
+					"t_dtw": 306
+				},
+				{
+					"text": "[_TT_154]",
+					"timestamps": {
+						"from": "00:00:03,080",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 3080,
+						"to": 3080
+					},
+					"id": 50518,
+					"p": 0.0513267,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

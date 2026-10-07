@@ -1,0 +1,24 @@
+{
+ "werkzeug": "Robust Video Matting v1.0.0 (rvm_mobilenetv3_fp32.onnx)",
+ "modellSha256": "88d4531297118f595bf2fd60f6f566aec2e559393802d1f436c380f0cbbd2828",
+ "onnxruntime": "1.30.0",
+ "downsample_ratio": 0.25,
+ "vorlaufBilder": 20,
+ "kontur_px": 6,
+ "grundlage": "DESIGN.md 2.2 Abschnitt 11",
+ "abschnitte": [
+  {
+   "id": "g-einsatz",
+   "datei": "assets/person-einsatz.mov",
+   "sha256": "ac91b0d72fb17d392b49ebe69564f51d9e2eb062d8a0041a9164eb6f6a78f0bc",
+   "erstesBild": 623,
+   "bilder": 206,
+   "start": 20.766666666666666,
+   "ende": 27.633333333333333,
+   "vorlauf": 20,
+   "sekunden": 46.3,
+   "deckungMittel": 0.4684,
+   "deckungSprungMittel": 0.00234
+  }
+ ]
+}

@@ -1,0 +1,157 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,220"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1220
+			},
+			"text": " Und der letzte Tipp ist,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.763177,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,190"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 190
+					},
+					"id": 2719,
+					"p": 0.961121,
+					"t_dtw": 20
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:00,190",
+						"to": "00:00:00,380"
+					},
+					"offsets": {
+						"from": 190,
+						"to": 380
+					},
+					"id": 1163,
+					"p": 0.989746,
+					"t_dtw": 30
+				},
+				{
+					"text": " letzte",
+					"timestamps": {
+						"from": "00:00:00,380",
+						"to": "00:00:00,760"
+					},
+					"offsets": {
+						"from": 380,
+						"to": 760
+					},
+					"id": 35236,
+					"p": 0.991278,
+					"t_dtw": 46
+				},
+				{
+					"text": " Tipp",
+					"timestamps": {
+						"from": "00:00:00,760",
+						"to": "00:00:00,890"
+					},
+					"offsets": {
+						"from": 760,
+						"to": 890
+					},
+					"id": 42102,
+					"p": 0.997913,
+					"t_dtw": 68
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,220",
+						"to": "00:00:01,220"
+					},
+					"offsets": {
+						"from": 1220,
+						"to": 1220
+					},
+					"id": 1418,
+					"p": 0.99732,
+					"t_dtw": 94
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,220",
+						"to": "00:00:01,220"
+					},
+					"offsets": {
+						"from": 1220,
+						"to": 1220
+					},
+					"id": 11,
+					"p": 0.65761,
+					"t_dtw": 120
+				},
+				{
+					"text": "[_TT_61]",
+					"timestamps": {
+						"from": "00:00:01,220",
+						"to": "00:00:01,220"
+					},
+					"offsets": {
+						"from": 1220,
+						"to": 1220
+					},
+					"id": 50426,
+					"p": 0.348511,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

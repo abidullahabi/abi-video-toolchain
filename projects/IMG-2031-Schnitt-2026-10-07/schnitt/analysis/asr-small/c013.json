@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2100
+			},
+			"text": " Im zweiten Schritt bietest du deine Hilfe an.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.998043,
+					"t_dtw": -1
+				},
+				{
+					"text": " Im",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 100
+					},
+					"id": 4331,
+					"p": 0.655588,
+					"t_dtw": 18
+				},
+				{
+					"text": " zweiten",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 460
+					},
+					"id": 39943,
+					"p": 0.97875,
+					"t_dtw": 38
+				},
+				{
+					"text": " Schritt",
+					"timestamps": {
+						"from": "00:00:00,460",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 460,
+						"to": 720
+					},
+					"id": 33062,
+					"p": 0.998515,
+					"t_dtw": 70
+				},
+				{
+					"text": " b",
+					"timestamps": {
+						"from": "00:00:00,820",
+						"to": "00:00:00,820"
+					},
+					"offsets": {
+						"from": 820,
+						"to": 820
+					},
+					"id": 272,
+					"p": 0.975252,
+					"t_dtw": 114
+				},
+				{
+					"text": "iet",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1020
+					},
+					"id": 1684,
+					"p": 0.77263,
+					"t_dtw": 118
+				},
+				{
+					"text": "est",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,170"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1170
+					},
+					"id": 377,
+					"p": 0.834416,
+					"t_dtw": 130
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:01,170",
+						"to": "00:00:01,270"
+					},
+					"offsets": {
+						"from": 1170,
+						"to": 1270
+					},
+					"id": 1581,
+					"p": 0.913945,
+					"t_dtw": 140
+				},
+				{
+					"text": " deine",
+					"timestamps": {
+						"from": "00:00:01,270",
+						"to": "00:00:01,530"
+					},
+					"offsets": {
+						"from": 1270,
+						"to": 1530
+					},
+					"id": 28395,
+					"p": 0.771169,
+					"t_dtw": 154
+				},
+				{
+					"text": " Hilfe",
+					"timestamps": {
+						"from": "00:00:01,530",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1530,
+						"to": 1740
+					},
+					"id": 37448,
+					"p": 0.971597,
+					"t_dtw": 178
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:01,800",
+						"to": "00:00:01,880"
+					},
+					"offsets": {
+						"from": 1800,
+						"to": 1880
+					},
+					"id": 364,
+					"p": 0.889926,
+					"t_dtw": 200
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,880",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1880,
+						"to": 1990
+					},
+					"id": 13,
+					"p": 0.94088,
+					"t_dtw": 208
+				},
+				{
+					"text": "[_TT_105]",
+					"timestamps": {
+						"from": "00:00:02,100",
+						"to": "00:00:02,100"
+					},
+					"offsets": {
+						"from": 2100,
+						"to": 2100
+					},
+					"id": 50469,
+					"p": 0.0433656,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

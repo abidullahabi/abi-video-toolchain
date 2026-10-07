@@ -1,0 +1,423 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,460"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5460
+			},
+			"text": " Denn dadurch wirst du einfach weniger ersetzbar und kannst viel einfacher und besser verhandeln und sagen, ey,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.905448,
+					"t_dtw": -1
+				},
+				{
+					"text": " Denn",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,230"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 230
+					},
+					"id": 19027,
+					"p": 0.893762,
+					"t_dtw": 22
+				},
+				{
+					"text": " dadurch",
+					"timestamps": {
+						"from": "00:00:00,230",
+						"to": "00:00:00,580"
+					},
+					"offsets": {
+						"from": 230,
+						"to": 580
+					},
+					"id": 35472,
+					"p": 0.969886,
+					"t_dtw": 60
+				},
+				{
+					"text": " w",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,680"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 680
+					},
+					"id": 261,
+					"p": 0.955574,
+					"t_dtw": 84
+				},
+				{
+					"text": "irst",
+					"timestamps": {
+						"from": "00:00:00,730",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 730,
+						"to": 860
+					},
+					"id": 653,
+					"p": 0.998572,
+					"t_dtw": 84
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,910",
+						"to": "00:00:01,010"
+					},
+					"offsets": {
+						"from": 910,
+						"to": 1010
+					},
+					"id": 1581,
+					"p": 0.939874,
+					"t_dtw": 94
+				},
+				{
+					"text": " einfach",
+					"timestamps": {
+						"from": "00:00:01,010",
+						"to": "00:00:01,410"
+					},
+					"offsets": {
+						"from": 1010,
+						"to": 1410
+					},
+					"id": 7281,
+					"p": 0.980024,
+					"t_dtw": 112
+				},
+				{
+					"text": " weniger",
+					"timestamps": {
+						"from": "00:00:01,410",
+						"to": "00:00:01,760"
+					},
+					"offsets": {
+						"from": 1410,
+						"to": 1760
+					},
+					"id": 23224,
+					"p": 0.979417,
+					"t_dtw": 148
+				},
+				{
+					"text": " ers",
+					"timestamps": {
+						"from": "00:00:01,840",
+						"to": "00:00:01,980"
+					},
+					"offsets": {
+						"from": 1840,
+						"to": 1980
+					},
+					"id": 33743,
+					"p": 0.980586,
+					"t_dtw": 170
+				},
+				{
+					"text": "etz",
+					"timestamps": {
+						"from": "00:00:01,980",
+						"to": "00:00:02,120"
+					},
+					"offsets": {
+						"from": 1980,
+						"to": 2120
+					},
+					"id": 10074,
+					"p": 0.993998,
+					"t_dtw": 184
+				},
+				{
+					"text": "bar",
+					"timestamps": {
+						"from": "00:00:02,140",
+						"to": "00:00:02,170"
+					},
+					"offsets": {
+						"from": 2140,
+						"to": 2170
+					},
+					"id": 5356,
+					"p": 0.999348,
+					"t_dtw": 206
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:02,560",
+						"to": "00:00:02,790"
+					},
+					"offsets": {
+						"from": 2560,
+						"to": 2790
+					},
+					"id": 674,
+					"p": 0.709426,
+					"t_dtw": 274
+				},
+				{
+					"text": " kannst",
+					"timestamps": {
+						"from": "00:00:02,790",
+						"to": "00:00:03,130"
+					},
+					"offsets": {
+						"from": 2790,
+						"to": 3130
+					},
+					"id": 20853,
+					"p": 0.918597,
+					"t_dtw": 314
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:03,130",
+						"to": "00:00:03,350"
+					},
+					"offsets": {
+						"from": 3130,
+						"to": 3350
+					},
+					"id": 5891,
+					"p": 0.982375,
+					"t_dtw": 340
+				},
+				{
+					"text": " einf",
+					"timestamps": {
+						"from": "00:00:03,350",
+						"to": "00:00:03,570"
+					},
+					"offsets": {
+						"from": 3350,
+						"to": 3570
+					},
+					"id": 38627,
+					"p": 0.96095,
+					"t_dtw": 376
+				},
+				{
+					"text": "acher",
+					"timestamps": {
+						"from": "00:00:03,570",
+						"to": "00:00:03,860"
+					},
+					"offsets": {
+						"from": 3570,
+						"to": 3860
+					},
+					"id": 4062,
+					"p": 0.998222,
+					"t_dtw": 386
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:03,860",
+						"to": "00:00:04,000"
+					},
+					"offsets": {
+						"from": 3860,
+						"to": 4000
+					},
+					"id": 674,
+					"p": 0.778712,
+					"t_dtw": 398
+				},
+				{
+					"text": " besser",
+					"timestamps": {
+						"from": "00:00:04,000",
+						"to": "00:00:04,180"
+					},
+					"offsets": {
+						"from": 4000,
+						"to": 4180
+					},
+					"id": 18021,
+					"p": 0.96178,
+					"t_dtw": 418
+				},
+				{
+					"text": " ver",
+					"timestamps": {
+						"from": "00:00:04,180",
+						"to": "00:00:04,310"
+					},
+					"offsets": {
+						"from": 4180,
+						"to": 4310
+					},
+					"id": 1306,
+					"p": 0.929911,
+					"t_dtw": 438
+				},
+				{
+					"text": "hand",
+					"timestamps": {
+						"from": "00:00:04,310",
+						"to": "00:00:04,490"
+					},
+					"offsets": {
+						"from": 4310,
+						"to": 4490
+					},
+					"id": 5543,
+					"p": 0.998753,
+					"t_dtw": 454
+				},
+				{
+					"text": "eln",
+					"timestamps": {
+						"from": "00:00:04,490",
+						"to": "00:00:04,640"
+					},
+					"offsets": {
+						"from": 4490,
+						"to": 4640
+					},
+					"id": 9878,
+					"p": 0.992735,
+					"t_dtw": 464
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:04,640",
+						"to": "00:00:04,710"
+					},
+					"offsets": {
+						"from": 4640,
+						"to": 4710
+					},
+					"id": 674,
+					"p": 0.841438,
+					"t_dtw": 474
+				},
+				{
+					"text": " sagen",
+					"timestamps": {
+						"from": "00:00:04,710",
+						"to": "00:00:04,830"
+					},
+					"offsets": {
+						"from": 4710,
+						"to": 4830
+					},
+					"id": 8360,
+					"p": 0.982406,
+					"t_dtw": 486
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:04,830",
+						"to": "00:00:04,870"
+					},
+					"offsets": {
+						"from": 4830,
+						"to": 4870
+					},
+					"id": 11,
+					"p": 0.829502,
+					"t_dtw": 496
+				},
+				{
+					"text": " ey",
+					"timestamps": {
+						"from": "00:00:04,960",
+						"to": "00:00:05,160"
+					},
+					"offsets": {
+						"from": 4960,
+						"to": 5160
+					},
+					"id": 9817,
+					"p": 0.941019,
+					"t_dtw": 510
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:05,160",
+						"to": "00:00:05,180"
+					},
+					"offsets": {
+						"from": 5160,
+						"to": 5180
+					},
+					"id": 11,
+					"p": 0.904168,
+					"t_dtw": 542
+				},
+				{
+					"text": "[_TT_273]",
+					"timestamps": {
+						"from": "00:00:05,460",
+						"to": "00:00:05,460"
+					},
+					"offsets": {
+						"from": 5460,
+						"to": 5460
+					},
+					"id": 50638,
+					"p": 0.129998,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

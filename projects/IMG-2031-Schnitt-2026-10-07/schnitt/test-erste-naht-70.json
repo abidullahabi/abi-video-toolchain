@@ -1,0 +1,37 @@
+{
+  "auftrag": "Erste Pause nach Job um weitere etwa 70 Prozent kürzen. Kurzer Test, nur erste Naht.",
+  "basisSchnittSha256": "15dfa3dc5b8e0679aad19d1a6eed65e4912a550b42613c1262dcbed19162caa9",
+  "previousTestBoundary": [
+    6.4,
+    21.5
+  ],
+  "testFirstBoundary": [
+    6.366666666666666,
+    21.5
+  ],
+  "additionalRemovedSeconds": 0.03333333333333333,
+  "previousPauseMs": 45,
+  "newPauseMs": 11.666666666666664,
+  "additionalReductionPercent": 74.07407407407408,
+  "rounding": "Weitere 70 Prozent angefordert, auf 30-fps-Raster entspricht ein Frame 74.07 Prozent der zuletzt gemessenen Restpause.",
+  "measuredSpeechEnd": 6.37,
+  "measuredSpeechStart": 21.515,
+  "scope": "Nur erste Naht. Zweiter Übergang und vollständiger Schnitt unverändert.",
+  "review": "Endkante und 5-ms-Fade liegen im stark abgefallenen Ausklang. Kein neuer Pegelimpuls nach der Schnittkante. Tatsächliches Anhören nicht verfügbar.",
+  "tempo": 1,
+  "keep": [
+    [
+      3,
+      6.366666666666666
+    ],
+    [
+      21.5,
+      25.633333333333333
+    ],
+    [
+      26.166666666666668,
+      26.9
+    ]
+  ],
+  "actualListening": false
+}

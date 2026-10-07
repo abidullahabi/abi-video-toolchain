@@ -1,0 +1,171 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,780"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1780
+			},
+			"text": " Nicht für alles, sondern auf die",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.825905,
+					"t_dtw": -1
+				},
+				{
+					"text": " Nicht",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,290"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 290
+					},
+					"id": 22629,
+					"p": 0.976723,
+					"t_dtw": 30
+				},
+				{
+					"text": " für",
+					"timestamps": {
+						"from": "00:00:00,380",
+						"to": "00:00:00,500"
+					},
+					"offsets": {
+						"from": 380,
+						"to": 500
+					},
+					"id": 2959,
+					"p": 0.970571,
+					"t_dtw": 44
+				},
+				{
+					"text": " alles",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 670
+					},
+					"id": 7874,
+					"p": 0.976131,
+					"t_dtw": 74
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,920",
+						"to": "00:00:00,930"
+					},
+					"offsets": {
+						"from": 920,
+						"to": 930
+					},
+					"id": 11,
+					"p": 0.968442,
+					"t_dtw": 88
+				},
+				{
+					"text": " sondern",
+					"timestamps": {
+						"from": "00:00:00,930",
+						"to": "00:00:01,250"
+					},
+					"offsets": {
+						"from": 930,
+						"to": 1250
+					},
+					"id": 11465,
+					"p": 0.99126,
+					"t_dtw": 104
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1560
+					},
+					"id": 2501,
+					"p": 0.960657,
+					"t_dtw": 130
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1560
+					},
+					"id": 978,
+					"p": 0.988943,
+					"t_dtw": 148
+				},
+				{
+					"text": "[_TT_89]",
+					"timestamps": {
+						"from": "00:00:01,780",
+						"to": "00:00:01,780"
+					},
+					"offsets": {
+						"from": 1780,
+						"to": 1780
+					},
+					"id": 50454,
+					"p": 0.0649978,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3080
+			},
+			"text": " Du schreibst auf, jede Woche, Freitag, Nachmittag,",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.830876,
+					"t_dtw": -1
+				},
+				{
+					"text": " Du",
+					"timestamps": {
+						"from": "00:00:00,100",
+						"to": "00:00:00,100"
+					},
+					"offsets": {
+						"from": 100,
+						"to": 100
+					},
+					"id": 5153,
+					"p": 0.963783,
+					"t_dtw": 20
+				},
+				{
+					"text": " sch",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 250
+					},
+					"id": 956,
+					"p": 0.99628,
+					"t_dtw": 34
+				},
+				{
+					"text": "reib",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 450
+					},
+					"id": 38606,
+					"p": 0.99858,
+					"t_dtw": 44
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:00,550",
+						"to": "00:00:00,550"
+					},
+					"offsets": {
+						"from": 550,
+						"to": 550
+					},
+					"id": 372,
+					"p": 0.857341,
+					"t_dtw": 54
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:00,590",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 590,
+						"to": 700
+					},
+					"id": 2501,
+					"p": 0.997628,
+					"t_dtw": 82
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,790"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 790
+					},
+					"id": 11,
+					"p": 0.67971,
+					"t_dtw": 100
+				},
+				{
+					"text": " jede",
+					"timestamps": {
+						"from": "00:00:00,950",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 950,
+						"to": 1030
+					},
+					"id": 34039,
+					"p": 0.948117,
+					"t_dtw": 108
+				},
+				{
+					"text": " Woche",
+					"timestamps": {
+						"from": "00:00:01,030",
+						"to": "00:00:01,250"
+					},
+					"offsets": {
+						"from": 1030,
+						"to": 1250
+					},
+					"id": 24511,
+					"p": 0.99481,
+					"t_dtw": 132
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,280",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1280,
+						"to": 1380
+					},
+					"id": 11,
+					"p": 0.974912,
+					"t_dtw": 168
+				},
+				{
+					"text": " Fre",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,500"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1500
+					},
+					"id": 6142,
+					"p": 0.970668,
+					"t_dtw": 176
+				},
+				{
+					"text": "it",
+					"timestamps": {
+						"from": "00:00:01,720",
+						"to": "00:00:01,810"
+					},
+					"offsets": {
+						"from": 1720,
+						"to": 1810
+					},
+					"id": 270,
+					"p": 0.999907,
+					"t_dtw": 196
+				},
+				{
+					"text": "ag",
+					"timestamps": {
+						"from": "00:00:01,810",
+						"to": "00:00:01,980"
+					},
+					"offsets": {
+						"from": 1810,
+						"to": 1980
+					},
+					"id": 559,
+					"p": 0.902242,
+					"t_dtw": 216
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,980",
+						"to": "00:00:02,090"
+					},
+					"offsets": {
+						"from": 1980,
+						"to": 2090
+					},
+					"id": 11,
+					"p": 0.960186,
+					"t_dtw": 228
+				},
+				{
+					"text": " Nach",
+					"timestamps": {
+						"from": "00:00:02,290",
+						"to": "00:00:02,520"
+					},
+					"offsets": {
+						"from": 2290,
+						"to": 2520
+					},
+					"id": 11815,
+					"p": 0.977277,
+					"t_dtw": 244
+				},
+				{
+					"text": "mitt",
+					"timestamps": {
+						"from": "00:00:02,520",
+						"to": "00:00:02,800"
+					},
+					"offsets": {
+						"from": 2520,
+						"to": 2800
+					},
+					"id": 15548,
+					"p": 0.999788,
+					"t_dtw": 262
+				},
+				{
+					"text": "ag",
+					"timestamps": {
+						"from": "00:00:03,080",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 3080,
+						"to": 3080
+					},
+					"id": 559,
+					"p": 0.999701,
+					"t_dtw": 284
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:03,080",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 3080,
+						"to": 3080
+					},
+					"id": 11,
+					"p": 0.605445,
+					"t_dtw": 306
+				},
+				{
+					"text": "[_TT_154]",
+					"timestamps": {
+						"from": "00:00:03,080",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 3080,
+						"to": 3080
+					},
+					"id": 50519,
+					"p": 0.242088,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

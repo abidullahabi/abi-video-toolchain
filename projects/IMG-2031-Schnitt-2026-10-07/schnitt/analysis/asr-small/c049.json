@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,240"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2240
+			},
+			"text": " Und wir extrem professionell in den ersten Arbeitstag.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.998312,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 130
+					},
+					"id": 2719,
+					"p": 0.955996,
+					"t_dtw": 22
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 250
+					},
+					"id": 1987,
+					"p": 0.936803,
+					"t_dtw": 36
+				},
+				{
+					"text": " extrem",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 530
+					},
+					"id": 4040,
+					"p": 0.380772,
+					"t_dtw": 54
+				},
+				{
+					"text": " profession",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,950"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 950
+					},
+					"id": 7032,
+					"p": 0.67288,
+					"t_dtw": 94
+				},
+				{
+					"text": "ell",
+					"timestamps": {
+						"from": "00:00:01,050",
+						"to": "00:00:01,110"
+					},
+					"offsets": {
+						"from": 1050,
+						"to": 1110
+					},
+					"id": 898,
+					"p": 0.955527,
+					"t_dtw": 118
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:01,110",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1110,
+						"to": 1200
+					},
+					"id": 294,
+					"p": 0.564844,
+					"t_dtw": 128
+				},
+				{
+					"text": " den",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,330"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1330
+					},
+					"id": 1441,
+					"p": 0.648439,
+					"t_dtw": 134
+				},
+				{
+					"text": " ersten",
+					"timestamps": {
+						"from": "00:00:01,330",
+						"to": "00:00:01,510"
+					},
+					"offsets": {
+						"from": 1330,
+						"to": 1510
+					},
+					"id": 17324,
+					"p": 0.952497,
+					"t_dtw": 156
+				},
+				{
+					"text": " Arbeits",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,910"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1910
+					},
+					"id": 23262,
+					"p": 0.687245,
+					"t_dtw": 184
+				},
+				{
+					"text": "tag",
+					"timestamps": {
+						"from": "00:00:01,910",
+						"to": "00:00:02,040"
+					},
+					"offsets": {
+						"from": 1910,
+						"to": 2040
+					},
+					"id": 25030,
+					"p": 0.340688,
+					"t_dtw": 210
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,040",
+						"to": "00:00:02,170"
+					},
+					"offsets": {
+						"from": 2040,
+						"to": 2170
+					},
+					"id": 13,
+					"p": 0.799856,
+					"t_dtw": 222
+				},
+				{
+					"text": "[_TT_112]",
+					"timestamps": {
+						"from": "00:00:02,240",
+						"to": "00:00:02,240"
+					},
+					"offsets": {
+						"from": 2240,
+						"to": 2240
+					},
+					"id": 50476,
+					"p": 0.0504267,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

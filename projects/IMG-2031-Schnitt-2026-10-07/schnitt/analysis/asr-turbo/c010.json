@@ -1,0 +1,409 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,920"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4920
+			},
+			"text": " Stell dich nicht nur vor, also laber selber nicht so viel, sondern fragt aktiv nach und zeigt Interesse.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.942931,
+					"t_dtw": -1
+				},
+				{
+					"text": " Stell",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 200
+					},
+					"id": 37364,
+					"p": 0.966957,
+					"t_dtw": 28
+				},
+				{
+					"text": " dich",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,360"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 360
+					},
+					"id": 10390,
+					"p": 0.943293,
+					"t_dtw": 40
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,360",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 360,
+						"to": 560
+					},
+					"id": 1979,
+					"p": 0.454934,
+					"t_dtw": 52
+				},
+				{
+					"text": " nur",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 670
+					},
+					"id": 4343,
+					"p": 0.942157,
+					"t_dtw": 66
+				},
+				{
+					"text": " vor",
+					"timestamps": {
+						"from": "00:00:00,760",
+						"to": "00:00:00,800"
+					},
+					"offsets": {
+						"from": 760,
+						"to": 800
+					},
+					"id": 4245,
+					"p": 0.993434,
+					"t_dtw": 88
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 880
+					},
+					"id": 11,
+					"p": 0.990877,
+					"t_dtw": 102
+				},
+				{
+					"text": " also",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:01,040"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 1040
+					},
+					"id": 611,
+					"p": 0.986833,
+					"t_dtw": 112
+				},
+				{
+					"text": " lab",
+					"timestamps": {
+						"from": "00:00:01,040",
+						"to": "00:00:01,160"
+					},
+					"offsets": {
+						"from": 1040,
+						"to": 1160
+					},
+					"id": 2715,
+					"p": 0.743017,
+					"t_dtw": 132
+				},
+				{
+					"text": "er",
+					"timestamps": {
+						"from": "00:00:01,160",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1160,
+						"to": 1240
+					},
+					"id": 260,
+					"p": 0.496175,
+					"t_dtw": 136
+				},
+				{
+					"text": " selber",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,480"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1480
+					},
+					"id": 23888,
+					"p": 0.960405,
+					"t_dtw": 154
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:01,480",
+						"to": "00:00:01,680"
+					},
+					"offsets": {
+						"from": 1480,
+						"to": 1680
+					},
+					"id": 1979,
+					"p": 0.994958,
+					"t_dtw": 170
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:01,680",
+						"to": "00:00:01,730"
+					},
+					"offsets": {
+						"from": 1680,
+						"to": 1730
+					},
+					"id": 370,
+					"p": 0.996136,
+					"t_dtw": 182
+				},
+				{
+					"text": " viel",
+					"timestamps": {
+						"from": "00:00:01,780",
+						"to": "00:00:01,910"
+					},
+					"offsets": {
+						"from": 1780,
+						"to": 1910
+					},
+					"id": 5891,
+					"p": 0.980482,
+					"t_dtw": 204
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,910",
+						"to": "00:00:02,060"
+					},
+					"offsets": {
+						"from": 1910,
+						"to": 2060
+					},
+					"id": 11,
+					"p": 0.993203,
+					"t_dtw": 220
+				},
+				{
+					"text": " sondern",
+					"timestamps": {
+						"from": "00:00:02,060",
+						"to": "00:00:02,540"
+					},
+					"offsets": {
+						"from": 2060,
+						"to": 2540
+					},
+					"id": 11465,
+					"p": 0.896961,
+					"t_dtw": 248
+				},
+				{
+					"text": " frag",
+					"timestamps": {
+						"from": "00:00:02,540",
+						"to": "00:00:02,590"
+					},
+					"offsets": {
+						"from": 2540,
+						"to": 2590
+					},
+					"id": 9241,
+					"p": 0.931228,
+					"t_dtw": 310
+				},
+				{
+					"text": "t",
+					"timestamps": {
+						"from": "00:00:02,870",
+						"to": "00:00:02,870"
+					},
+					"offsets": {
+						"from": 2870,
+						"to": 2870
+					},
+					"id": 83,
+					"p": 0.417748,
+					"t_dtw": 324
+				},
+				{
+					"text": " aktiv",
+					"timestamps": {
+						"from": "00:00:02,950",
+						"to": "00:00:03,210"
+					},
+					"offsets": {
+						"from": 2950,
+						"to": 3210
+					},
+					"id": 31658,
+					"p": 0.997326,
+					"t_dtw": 350
+				},
+				{
+					"text": " nach",
+					"timestamps": {
+						"from": "00:00:03,210",
+						"to": "00:00:03,460"
+					},
+					"offsets": {
+						"from": 3210,
+						"to": 3460
+					},
+					"id": 5168,
+					"p": 0.995619,
+					"t_dtw": 380
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:03,560",
+						"to": "00:00:03,680"
+					},
+					"offsets": {
+						"from": 3560,
+						"to": 3680
+					},
+					"id": 674,
+					"p": 0.988321,
+					"t_dtw": 396
+				},
+				{
+					"text": " zeigt",
+					"timestamps": {
+						"from": "00:00:03,680",
+						"to": "00:00:03,960"
+					},
+					"offsets": {
+						"from": 3680,
+						"to": 3960
+					},
+					"id": 29250,
+					"p": 0.945621,
+					"t_dtw": 424
+				},
+				{
+					"text": " Inter",
+					"timestamps": {
+						"from": "00:00:04,010",
+						"to": "00:00:04,360"
+					},
+					"offsets": {
+						"from": 4010,
+						"to": 4360
+					},
+					"id": 5751,
+					"p": 0.997324,
+					"t_dtw": 448
+				},
+				{
+					"text": "esse",
+					"timestamps": {
+						"from": "00:00:04,360",
+						"to": "00:00:04,630"
+					},
+					"offsets": {
+						"from": 4360,
+						"to": 4630
+					},
+					"id": 7357,
+					"p": 0.999849,
+					"t_dtw": 470
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:04,630",
+						"to": "00:00:04,700"
+					},
+					"offsets": {
+						"from": 4630,
+						"to": 4700
+					},
+					"id": 13,
+					"p": 0.993131,
+					"t_dtw": 490
+				},
+				{
+					"text": "[_TT_246]",
+					"timestamps": {
+						"from": "00:00:04,920",
+						"to": "00:00:04,920"
+					},
+					"offsets": {
+						"from": 4920,
+						"to": 4920
+					},
+					"id": 50611,
+					"p": 0.0859245,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

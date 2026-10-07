@@ -1,0 +1,409 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,960"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4960
+			},
+			"text": " Rede mit allen Leuten aus deinem Team, rede mit allen Leuten aus anderen Teams und auch mit anderen Abteilungen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.841795,
+					"t_dtw": -1
+				},
+				{
+					"text": " Rede",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 160
+					},
+					"id": 39056,
+					"p": 0.951239,
+					"t_dtw": 28
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 280
+					},
+					"id": 2194,
+					"p": 0.995928,
+					"t_dtw": 42
+				},
+				{
+					"text": " allen",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,490"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 490
+					},
+					"id": 18440,
+					"p": 0.9828,
+					"t_dtw": 58
+				},
+				{
+					"text": " Leuten",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:00,740"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 740
+					},
+					"id": 42301,
+					"p": 0.989619,
+					"t_dtw": 78
+				},
+				{
+					"text": " aus",
+					"timestamps": {
+						"from": "00:00:00,740",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 740,
+						"to": 860
+					},
+					"id": 3437,
+					"p": 0.994084,
+					"t_dtw": 92
+				},
+				{
+					"text": " dein",
+					"timestamps": {
+						"from": "00:00:00,860",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 860,
+						"to": 1020
+					},
+					"id": 25641,
+					"p": 0.803995,
+					"t_dtw": 106
+				},
+				{
+					"text": "em",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,080"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1080
+					},
+					"id": 443,
+					"p": 0.997446,
+					"t_dtw": 116
+				},
+				{
+					"text": " Team",
+					"timestamps": {
+						"from": "00:00:01,100",
+						"to": "00:00:01,260"
+					},
+					"offsets": {
+						"from": 1100,
+						"to": 1260
+					},
+					"id": 7606,
+					"p": 0.998274,
+					"t_dtw": 136
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,260",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1260,
+						"to": 1400
+					},
+					"id": 11,
+					"p": 0.940883,
+					"t_dtw": 158
+				},
+				{
+					"text": " rede",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1600
+					},
+					"id": 14328,
+					"p": 0.810845,
+					"t_dtw": 172
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,750"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1750
+					},
+					"id": 2194,
+					"p": 0.998281,
+					"t_dtw": 186
+				},
+				{
+					"text": " allen",
+					"timestamps": {
+						"from": "00:00:01,750",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1750,
+						"to": 2000
+					},
+					"id": 18440,
+					"p": 0.996538,
+					"t_dtw": 204
+				},
+				{
+					"text": " Leuten",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,300"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2300
+					},
+					"id": 42301,
+					"p": 0.996812,
+					"t_dtw": 226
+				},
+				{
+					"text": " aus",
+					"timestamps": {
+						"from": "00:00:02,300",
+						"to": "00:00:02,440"
+					},
+					"offsets": {
+						"from": 2300,
+						"to": 2440
+					},
+					"id": 3437,
+					"p": 0.995674,
+					"t_dtw": 242
+				},
+				{
+					"text": " anderen",
+					"timestamps": {
+						"from": "00:00:02,440",
+						"to": "00:00:02,790"
+					},
+					"offsets": {
+						"from": 2440,
+						"to": 2790
+					},
+					"id": 11122,
+					"p": 0.934507,
+					"t_dtw": 270
+				},
+				{
+					"text": " Teams",
+					"timestamps": {
+						"from": "00:00:02,790",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 2790,
+						"to": 3080
+					},
+					"id": 24702,
+					"p": 0.992488,
+					"t_dtw": 304
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:03,080",
+						"to": "00:00:03,440"
+					},
+					"offsets": {
+						"from": 3080,
+						"to": 3440
+					},
+					"id": 674,
+					"p": 0.920839,
+					"t_dtw": 346
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:03,630",
+						"to": "00:00:03,760"
+					},
+					"offsets": {
+						"from": 3630,
+						"to": 3760
+					},
+					"id": 2168,
+					"p": 0.976697,
+					"t_dtw": 374
+				},
+				{
+					"text": " mit",
+					"timestamps": {
+						"from": "00:00:03,760",
+						"to": "00:00:03,890"
+					},
+					"offsets": {
+						"from": 3760,
+						"to": 3890
+					},
+					"id": 2194,
+					"p": 0.988125,
+					"t_dtw": 392
+				},
+				{
+					"text": " anderen",
+					"timestamps": {
+						"from": "00:00:04,040",
+						"to": "00:00:04,260"
+					},
+					"offsets": {
+						"from": 4040,
+						"to": 4260
+					},
+					"id": 11122,
+					"p": 0.995761,
+					"t_dtw": 422
+				},
+				{
+					"text": " Ab",
+					"timestamps": {
+						"from": "00:00:04,260",
+						"to": "00:00:04,350"
+					},
+					"offsets": {
+						"from": 4260,
+						"to": 4350
+					},
+					"id": 2847,
+					"p": 0.998883,
+					"t_dtw": 442
+				},
+				{
+					"text": "teil",
+					"timestamps": {
+						"from": "00:00:04,470",
+						"to": "00:00:04,550"
+					},
+					"offsets": {
+						"from": 4470,
+						"to": 4550
+					},
+					"id": 30766,
+					"p": 0.999865,
+					"t_dtw": 458
+				},
+				{
+					"text": "ungen",
+					"timestamps": {
+						"from": "00:00:04,550",
+						"to": "00:00:04,700"
+					},
+					"offsets": {
+						"from": 4550,
+						"to": 4700
+					},
+					"id": 5084,
+					"p": 0.99625,
+					"t_dtw": 474
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:04,960",
+						"to": "00:00:04,960"
+					},
+					"offsets": {
+						"from": 4960,
+						"to": 4960
+					},
+					"id": 13,
+					"p": 0.978213,
+					"t_dtw": 494
+				},
+				{
+					"text": "[_TT_248]",
+					"timestamps": {
+						"from": "00:00:04,960",
+						"to": "00:00:04,960"
+					},
+					"offsets": {
+						"from": 4960,
+						"to": 4960
+					},
+					"id": 50613,
+					"p": 0.267578,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

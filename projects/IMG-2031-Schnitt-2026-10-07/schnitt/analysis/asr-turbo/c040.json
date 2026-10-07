@@ -1,0 +1,269 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,560"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2560
+			},
+			"text": " Ich will mehr Patte haben oder befördert mich endlich mal.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.755501,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,150"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 150
+					},
+					"id": 3141,
+					"p": 0.959875,
+					"t_dtw": 20
+				},
+				{
+					"text": " will",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,350"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 350
+					},
+					"id": 486,
+					"p": 0.991285,
+					"t_dtw": 28
+				},
+				{
+					"text": " mehr",
+					"timestamps": {
+						"from": "00:00:00,350",
+						"to": "00:00:00,550"
+					},
+					"offsets": {
+						"from": 350,
+						"to": 550
+					},
+					"id": 5417,
+					"p": 0.78974,
+					"t_dtw": 42
+				},
+				{
+					"text": " Pat",
+					"timestamps": {
+						"from": "00:00:00,550",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 550,
+						"to": 700
+					},
+					"id": 4379,
+					"p": 0.739208,
+					"t_dtw": 62
+				},
+				{
+					"text": "te",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,800"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 800
+					},
+					"id": 975,
+					"p": 0.970199,
+					"t_dtw": 68
+				},
+				{
+					"text": " haben",
+					"timestamps": {
+						"from": "00:00:00,800",
+						"to": "00:00:00,960"
+					},
+					"offsets": {
+						"from": 800,
+						"to": 960
+					},
+					"id": 3084,
+					"p": 0.974856,
+					"t_dtw": 92
+				},
+				{
+					"text": " oder",
+					"timestamps": {
+						"from": "00:00:01,250",
+						"to": "00:00:01,250"
+					},
+					"offsets": {
+						"from": 1250,
+						"to": 1250
+					},
+					"id": 4513,
+					"p": 0.732094,
+					"t_dtw": 140
+				},
+				{
+					"text": " be",
+					"timestamps": {
+						"from": "00:00:01,330",
+						"to": "00:00:01,350"
+					},
+					"offsets": {
+						"from": 1330,
+						"to": 1350
+					},
+					"id": 312,
+					"p": 0.968271,
+					"t_dtw": 156
+				},
+				{
+					"text": "för",
+					"timestamps": {
+						"from": "00:00:01,350",
+						"to": "00:00:01,500"
+					},
+					"offsets": {
+						"from": 1350,
+						"to": 1500
+					},
+					"id": 15610,
+					"p": 0.998717,
+					"t_dtw": 166
+				},
+				{
+					"text": "dert",
+					"timestamps": {
+						"from": "00:00:01,500",
+						"to": "00:00:01,700"
+					},
+					"offsets": {
+						"from": 1500,
+						"to": 1700
+					},
+					"id": 49799,
+					"p": 0.98515,
+					"t_dtw": 178
+				},
+				{
+					"text": " mich",
+					"timestamps": {
+						"from": "00:00:01,700",
+						"to": "00:00:01,840"
+					},
+					"offsets": {
+						"from": 1700,
+						"to": 1840
+					},
+					"id": 6031,
+					"p": 0.994931,
+					"t_dtw": 190
+				},
+				{
+					"text": " endlich",
+					"timestamps": {
+						"from": "00:00:01,900",
+						"to": "00:00:02,250"
+					},
+					"offsets": {
+						"from": 1900,
+						"to": 2250
+					},
+					"id": 32574,
+					"p": 0.97206,
+					"t_dtw": 208
+				},
+				{
+					"text": " mal",
+					"timestamps": {
+						"from": "00:00:02,250",
+						"to": "00:00:02,330"
+					},
+					"offsets": {
+						"from": 2250,
+						"to": 2330
+					},
+					"id": 2806,
+					"p": 0.978806,
+					"t_dtw": 230
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,530",
+						"to": "00:00:02,530"
+					},
+					"offsets": {
+						"from": 2530,
+						"to": 2530
+					},
+					"id": 13,
+					"p": 0.886845,
+					"t_dtw": 250
+				},
+				{
+					"text": "[_TT_128]",
+					"timestamps": {
+						"from": "00:00:02,560",
+						"to": "00:00:02,560"
+					},
+					"offsets": {
+						"from": 2560,
+						"to": 2560
+					},
+					"id": 50493,
+					"p": 0.100794,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

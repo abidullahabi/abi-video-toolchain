@@ -1,0 +1,451 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,380"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4380
+			},
+			"text": " Sorg dafür, dass deine E-Mail-Signatur passt und pflege deinen Kalender. Auch am Anfang.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.934906,
+					"t_dtw": -1
+				},
+				{
+					"text": " S",
+					"timestamps": {
+						"from": "00:00:00,040",
+						"to": "00:00:00,040"
+					},
+					"offsets": {
+						"from": 40,
+						"to": 40
+					},
+					"id": 318,
+					"p": 0.939367,
+					"t_dtw": 34
+				},
+				{
+					"text": "org",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 180
+					},
+					"id": 4646,
+					"p": 0.920432,
+					"t_dtw": 44
+				},
+				{
+					"text": " dafür",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,420"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 420
+					},
+					"id": 13747,
+					"p": 0.988395,
+					"t_dtw": 66
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,420",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 420,
+						"to": 510
+					},
+					"id": 11,
+					"p": 0.996789,
+					"t_dtw": 72
+				},
+				{
+					"text": " dass",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 700
+					},
+					"id": 2658,
+					"p": 0.980803,
+					"t_dtw": 82
+				},
+				{
+					"text": " deine",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,940"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 940
+					},
+					"id": 28395,
+					"p": 0.872524,
+					"t_dtw": 98
+				},
+				{
+					"text": " E",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 980
+					},
+					"id": 462,
+					"p": 0.959551,
+					"t_dtw": 112
+				},
+				{
+					"text": "-",
+					"timestamps": {
+						"from": "00:00:00,980",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 980,
+						"to": 1020
+					},
+					"id": 12,
+					"p": 0.988558,
+					"t_dtw": 112
+				},
+				{
+					"text": "M",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1060
+					},
+					"id": 44,
+					"p": 0.972076,
+					"t_dtw": 118
+				},
+				{
+					"text": "ail",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,200"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1200
+					},
+					"id": 864,
+					"p": 0.987317,
+					"t_dtw": 122
+				},
+				{
+					"text": "-",
+					"timestamps": {
+						"from": "00:00:01,200",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1200,
+						"to": 1240
+					},
+					"id": 12,
+					"p": 0.960417,
+					"t_dtw": 130
+				},
+				{
+					"text": "S",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1280
+					},
+					"id": 50,
+					"p": 0.998908,
+					"t_dtw": 130
+				},
+				{
+					"text": "ign",
+					"timestamps": {
+						"from": "00:00:01,280",
+						"to": "00:00:01,420"
+					},
+					"offsets": {
+						"from": 1280,
+						"to": 1420
+					},
+					"id": 788,
+					"p": 0.999277,
+					"t_dtw": 136
+				},
+				{
+					"text": "atur",
+					"timestamps": {
+						"from": "00:00:01,420",
+						"to": "00:00:01,610"
+					},
+					"offsets": {
+						"from": 1420,
+						"to": 1610
+					},
+					"id": 19493,
+					"p": 0.998209,
+					"t_dtw": 158
+				},
+				{
+					"text": " passt",
+					"timestamps": {
+						"from": "00:00:01,610",
+						"to": "00:00:01,880"
+					},
+					"offsets": {
+						"from": 1610,
+						"to": 1880
+					},
+					"id": 37154,
+					"p": 0.997071,
+					"t_dtw": 190
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:02,090",
+						"to": "00:00:02,090"
+					},
+					"offsets": {
+						"from": 2090,
+						"to": 2090
+					},
+					"id": 674,
+					"p": 0.898005,
+					"t_dtw": 238
+				},
+				{
+					"text": " p",
+					"timestamps": {
+						"from": "00:00:02,140",
+						"to": "00:00:02,140"
+					},
+					"offsets": {
+						"from": 2140,
+						"to": 2140
+					},
+					"id": 280,
+					"p": 0.951337,
+					"t_dtw": 262
+				},
+				{
+					"text": "f",
+					"timestamps": {
+						"from": "00:00:02,190",
+						"to": "00:00:02,190"
+					},
+					"offsets": {
+						"from": 2190,
+						"to": 2190
+					},
+					"id": 69,
+					"p": 0.998209,
+					"t_dtw": 264
+				},
+				{
+					"text": "lege",
+					"timestamps": {
+						"from": "00:00:02,250",
+						"to": "00:00:02,420"
+					},
+					"offsets": {
+						"from": 2250,
+						"to": 2420
+					},
+					"id": 35754,
+					"p": 0.998485,
+					"t_dtw": 282
+				},
+				{
+					"text": " deinen",
+					"timestamps": {
+						"from": "00:00:02,590",
+						"to": "00:00:02,760"
+					},
+					"offsets": {
+						"from": 2590,
+						"to": 2760
+					},
+					"id": 49362,
+					"p": 0.818526,
+					"t_dtw": 302
+				},
+				{
+					"text": " Kal",
+					"timestamps": {
+						"from": "00:00:02,760",
+						"to": "00:00:02,930"
+					},
+					"offsets": {
+						"from": 2760,
+						"to": 2930
+					},
+					"id": 12655,
+					"p": 0.990595,
+					"t_dtw": 320
+				},
+				{
+					"text": "ender",
+					"timestamps": {
+						"from": "00:00:02,930",
+						"to": "00:00:03,210"
+					},
+					"offsets": {
+						"from": 2930,
+						"to": 3210
+					},
+					"id": 3216,
+					"p": 0.999813,
+					"t_dtw": 342
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,210",
+						"to": "00:00:03,400"
+					},
+					"offsets": {
+						"from": 3210,
+						"to": 3400
+					},
+					"id": 13,
+					"p": 0.533119,
+					"t_dtw": 360
+				},
+				{
+					"text": " Auch",
+					"timestamps": {
+						"from": "00:00:03,400",
+						"to": "00:00:03,470"
+					},
+					"offsets": {
+						"from": 3400,
+						"to": 3470
+					},
+					"id": 13382,
+					"p": 0.905119,
+					"t_dtw": 394
+				},
+				{
+					"text": " am",
+					"timestamps": {
+						"from": "00:00:03,790",
+						"to": "00:00:03,790"
+					},
+					"offsets": {
+						"from": 3790,
+						"to": 3790
+					},
+					"id": 669,
+					"p": 0.945974,
+					"t_dtw": 406
+				},
+				{
+					"text": " Anfang",
+					"timestamps": {
+						"from": "00:00:03,830",
+						"to": "00:00:04,170"
+					},
+					"offsets": {
+						"from": 3830,
+						"to": 4170
+					},
+					"id": 25856,
+					"p": 0.99979,
+					"t_dtw": 436
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:04,170",
+						"to": "00:00:04,360"
+					},
+					"offsets": {
+						"from": 4170,
+						"to": 4360
+					},
+					"id": 13,
+					"p": 0.992443,
+					"t_dtw": 436
+				},
+				{
+					"text": "[_TT_219]",
+					"timestamps": {
+						"from": "00:00:04,380",
+						"to": "00:00:04,380"
+					},
+					"offsets": {
+						"from": 4380,
+						"to": 4380
+					},
+					"id": 50584,
+					"p": 0.0998949,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

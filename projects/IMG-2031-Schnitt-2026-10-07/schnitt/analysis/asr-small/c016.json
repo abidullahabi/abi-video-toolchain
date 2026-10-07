@@ -1,0 +1,185 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2100
+			},
+			"text": " Dann deliverst du, aber nicht.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997438,
+					"t_dtw": -1
+				},
+				{
+					"text": " Dann",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 300
+					},
+					"id": 7455,
+					"p": 0.978187,
+					"t_dtw": 36
+				},
+				{
+					"text": " deliver",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,830"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 830
+					},
+					"id": 4239,
+					"p": 0.479467,
+					"t_dtw": 92
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:00,830",
+						"to": "00:00:00,980"
+					},
+					"offsets": {
+						"from": 830,
+						"to": 980
+					},
+					"id": 372,
+					"p": 0.997056,
+					"t_dtw": 116
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,980",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 980,
+						"to": 1030
+					},
+					"id": 1581,
+					"p": 0.893261,
+					"t_dtw": 128
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,160",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 1160,
+						"to": 1280
+					},
+					"id": 11,
+					"p": 0.560068,
+					"t_dtw": 146
+				},
+				{
+					"text": " aber",
+					"timestamps": {
+						"from": "00:00:01,280",
+						"to": "00:00:01,580"
+					},
+					"offsets": {
+						"from": 1280,
+						"to": 1580
+					},
+					"id": 4340,
+					"p": 0.995879,
+					"t_dtw": 166
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:01,580",
+						"to": "00:00:01,890"
+					},
+					"offsets": {
+						"from": 1580,
+						"to": 1890
+					},
+					"id": 1979,
+					"p": 0.993379,
+					"t_dtw": 192
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,980",
+						"to": "00:00:02,030"
+					},
+					"offsets": {
+						"from": 1980,
+						"to": 2030
+					},
+					"id": 13,
+					"p": 0.453504,
+					"t_dtw": 208
+				},
+				{
+					"text": "[_TT_105]",
+					"timestamps": {
+						"from": "00:00:02,100",
+						"to": "00:00:02,100"
+					},
+					"offsets": {
+						"from": 2100,
+						"to": 2100
+					},
+					"id": 50469,
+					"p": 0.0545296,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

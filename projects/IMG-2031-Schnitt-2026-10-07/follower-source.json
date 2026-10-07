@@ -1,0 +1,47 @@
+{
+  "wert": 4283,
+  "lastUpdated": "2026-10-07",
+  "fetchedAt": "2026-10-07T19:06:31.444Z",
+  "accountId": "6aa6efb9726ebfe037e60cc6",
+  "platform": "tiktok",
+  "username": "abidullahabi",
+  "source": "Zernio GET /v1/accounts/follower-stats",
+  "documentation": "https://docs.zernio.com/accounts/get-follower-stats",
+  "response": {
+    "accounts": [
+      {
+        "_id": "6aa6efb9726ebfe037e60cc6",
+        "profileId": "6aa6e6f5708590bc2fe8beb3",
+        "isActive": true,
+        "platform": "tiktok",
+        "username": "abidullahabi",
+        "displayName": "Abi 🌊",
+        "profilePicture": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/5700cfc93ca7b234c25d4b0864c970ad~tplv-tiktokx-cropcenter:168:168.jpeg?dr=10397&refresh_token=18a52601&x-expires=1791522000&x-signature=ZZIQnwoAesghlUjPfr%2FhgUXdY4c%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=8aecc5ac&idc=useast2b",
+        "currentFollowers": 4283,
+        "lastUpdated": "2026-10-07T05:07:44.002Z",
+        "growth": 0,
+        "growthPercentage": 0,
+        "dataPoints": 1,
+        "accountStats": {
+          "likesCount": 154246,
+          "videoCount": 409,
+          "followingCount": 0,
+          "isBusinessAccount": false
+        }
+      }
+    ],
+    "stats": {
+      "6aa6efb9726ebfe037e60cc6": [
+        {
+          "date": "2026-10-07",
+          "followers": 4283
+        }
+      ]
+    },
+    "dateRange": {
+      "from": "2026-10-07T00:00:00.000Z",
+      "to": "2026-10-07T23:59:59.999Z"
+    },
+    "granularity": "daily"
+  }
+}

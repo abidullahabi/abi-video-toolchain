@@ -1,0 +1,283 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,500"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3500
+			},
+			"text": " Diese Dinge machst du in deinen ersten 99 Tagen in deinem neuen Job.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997499,
+					"t_dtw": -1
+				},
+				{
+					"text": " Diese",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,260"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 260
+					},
+					"id": 18993,
+					"p": 0.724463,
+					"t_dtw": 42
+				},
+				{
+					"text": " Dinge",
+					"timestamps": {
+						"from": "00:00:00,260",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 260,
+						"to": 520
+					},
+					"id": 25102,
+					"p": 0.95217,
+					"t_dtw": 66
+				},
+				{
+					"text": " machst",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,830"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 830
+					},
+					"id": 43350,
+					"p": 0.99842,
+					"t_dtw": 88
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,830",
+						"to": "00:00:00,860"
+					},
+					"offsets": {
+						"from": 830,
+						"to": 860
+					},
+					"id": 1581,
+					"p": 0.886832,
+					"t_dtw": 102
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:00,980",
+						"to": "00:00:01,030"
+					},
+					"offsets": {
+						"from": 980,
+						"to": 1030
+					},
+					"id": 294,
+					"p": 0.970584,
+					"t_dtw": 118
+				},
+				{
+					"text": " deinen",
+					"timestamps": {
+						"from": "00:00:01,030",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1030,
+						"to": 1340
+					},
+					"id": 49362,
+					"p": 0.985911,
+					"t_dtw": 120
+				},
+				{
+					"text": " ersten",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1650
+					},
+					"id": 17324,
+					"p": 0.991223,
+					"t_dtw": 156
+				},
+				{
+					"text": " 99",
+					"timestamps": {
+						"from": "00:00:01,650",
+						"to": "00:00:01,960"
+					},
+					"offsets": {
+						"from": 1650,
+						"to": 1960
+					},
+					"id": 11803,
+					"p": 0.874709,
+					"t_dtw": 188
+				},
+				{
+					"text": " Tagen",
+					"timestamps": {
+						"from": "00:00:01,960",
+						"to": "00:00:02,280"
+					},
+					"offsets": {
+						"from": 1960,
+						"to": 2280
+					},
+					"id": 41721,
+					"p": 0.988216,
+					"t_dtw": 228
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:02,280",
+						"to": "00:00:02,340"
+					},
+					"offsets": {
+						"from": 2280,
+						"to": 2340
+					},
+					"id": 294,
+					"p": 0.808952,
+					"t_dtw": 250
+				},
+				{
+					"text": " dein",
+					"timestamps": {
+						"from": "00:00:02,420",
+						"to": "00:00:02,650"
+					},
+					"offsets": {
+						"from": 2420,
+						"to": 2650
+					},
+					"id": 25641,
+					"p": 0.735378,
+					"t_dtw": 262
+				},
+				{
+					"text": "em",
+					"timestamps": {
+						"from": "00:00:02,650",
+						"to": "00:00:02,770"
+					},
+					"offsets": {
+						"from": 2650,
+						"to": 2770
+					},
+					"id": 443,
+					"p": 0.989195,
+					"t_dtw": 286
+				},
+				{
+					"text": " neuen",
+					"timestamps": {
+						"from": "00:00:02,770",
+						"to": "00:00:03,090"
+					},
+					"offsets": {
+						"from": 2770,
+						"to": 3090
+					},
+					"id": 21387,
+					"p": 0.997896,
+					"t_dtw": 286
+				},
+				{
+					"text": " Job",
+					"timestamps": {
+						"from": "00:00:03,090",
+						"to": "00:00:03,200"
+					},
+					"offsets": {
+						"from": 3090,
+						"to": 3200
+					},
+					"id": 18602,
+					"p": 0.996987,
+					"t_dtw": 316
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,400",
+						"to": "00:00:03,400"
+					},
+					"offsets": {
+						"from": 3400,
+						"to": 3400
+					},
+					"id": 13,
+					"p": 0.923809,
+					"t_dtw": 338
+				},
+				{
+					"text": "[_TT_175]",
+					"timestamps": {
+						"from": "00:00:03,500",
+						"to": "00:00:03,500"
+					},
+					"offsets": {
+						"from": 3500,
+						"to": 3500
+					},
+					"id": 50539,
+					"p": 0.0368515,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,980"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2980
+			},
+			"text": " Und der letzte Tipp ist, organisatorisch.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.832242,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 270
+					},
+					"id": 2719,
+					"p": 0.88383,
+					"t_dtw": 20
+				},
+				{
+					"text": " der",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 470
+					},
+					"id": 1163,
+					"p": 0.962278,
+					"t_dtw": 28
+				},
+				{
+					"text": " letzte",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:01,090"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 1090
+					},
+					"id": 35236,
+					"p": 0.98313,
+					"t_dtw": 46
+				},
+				{
+					"text": " Tipp",
+					"timestamps": {
+						"from": "00:00:01,090",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1090,
+						"to": 1460
+					},
+					"id": 42102,
+					"p": 0.99196,
+					"t_dtw": 66
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,460",
+						"to": "00:00:01,710"
+					},
+					"offsets": {
+						"from": 1460,
+						"to": 1710
+					},
+					"id": 1418,
+					"p": 0.855211,
+					"t_dtw": 174
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,750",
+						"to": "00:00:01,760"
+					},
+					"offsets": {
+						"from": 1750,
+						"to": 1760
+					},
+					"id": 11,
+					"p": 0.572459,
+					"t_dtw": 210
+				},
+				{
+					"text": " organis",
+					"timestamps": {
+						"from": "00:00:01,990",
+						"to": "00:00:02,350"
+					},
+					"offsets": {
+						"from": 1990,
+						"to": 2350
+					},
+					"id": 15223,
+					"p": 0.688868,
+					"t_dtw": 218
+				},
+				{
+					"text": "ator",
+					"timestamps": {
+						"from": "00:00:02,400",
+						"to": "00:00:02,680"
+					},
+					"offsets": {
+						"from": 2400,
+						"to": 2680
+					},
+					"id": 1639,
+					"p": 0.998797,
+					"t_dtw": 248
+				},
+				{
+					"text": "isch",
+					"timestamps": {
+						"from": "00:00:02,680",
+						"to": "00:00:02,730"
+					},
+					"offsets": {
+						"from": 2680,
+						"to": 2730
+					},
+					"id": 5494,
+					"p": 0.998967,
+					"t_dtw": 268
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,730",
+						"to": "00:00:02,980"
+					},
+					"offsets": {
+						"from": 2730,
+						"to": 2980
+					},
+					"id": 13,
+					"p": 0.93934,
+					"t_dtw": 296
+				},
+				{
+					"text": "[_TT_149]",
+					"timestamps": {
+						"from": "00:00:02,980",
+						"to": "00:00:02,980"
+					},
+					"offsets": {
+						"from": 2980,
+						"to": 2980
+					},
+					"id": 50514,
+					"p": 0.0766539,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

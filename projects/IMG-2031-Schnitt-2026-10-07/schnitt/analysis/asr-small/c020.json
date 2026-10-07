@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Du wirst ab jetzt immer an dein erst...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.996772,
+					"t_dtw": -1
+				},
+				{
+					"text": " Du",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 130
+					},
+					"id": 5153,
+					"p": 0.927746,
+					"t_dtw": 22
+				},
+				{
+					"text": " w",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,180"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 180
+					},
+					"id": 261,
+					"p": 0.918104,
+					"t_dtw": 30
+				},
+				{
+					"text": "irst",
+					"timestamps": {
+						"from": "00:00:00,190",
+						"to": "00:00:00,460"
+					},
+					"offsets": {
+						"from": 190,
+						"to": 460
+					},
+					"id": 653,
+					"p": 0.996575,
+					"t_dtw": 34
+				},
+				{
+					"text": " ab",
+					"timestamps": {
+						"from": "00:00:00,460",
+						"to": "00:00:00,520"
+					},
+					"offsets": {
+						"from": 460,
+						"to": 520
+					},
+					"id": 410,
+					"p": 0.935094,
+					"t_dtw": 56
+				},
+				{
+					"text": " jetzt",
+					"timestamps": {
+						"from": "00:00:00,590",
+						"to": "00:00:00,930"
+					},
+					"offsets": {
+						"from": 590,
+						"to": 930
+					},
+					"id": 4354,
+					"p": 0.986141,
+					"t_dtw": 74
+				},
+				{
+					"text": " immer",
+					"timestamps": {
+						"from": "00:00:00,930",
+						"to": "00:00:01,270"
+					},
+					"offsets": {
+						"from": 930,
+						"to": 1270
+					},
+					"id": 5578,
+					"p": 0.983198,
+					"t_dtw": 108
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:01,270",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1270,
+						"to": 1400
+					},
+					"id": 364,
+					"p": 0.976891,
+					"t_dtw": 128
+				},
+				{
+					"text": " dein",
+					"timestamps": {
+						"from": "00:00:01,400",
+						"to": "00:00:01,590"
+					},
+					"offsets": {
+						"from": 1400,
+						"to": 1590
+					},
+					"id": 25641,
+					"p": 0.456504,
+					"t_dtw": 138
+				},
+				{
+					"text": " erst",
+					"timestamps": {
+						"from": "00:00:01,930",
+						"to": "00:00:01,930"
+					},
+					"offsets": {
+						"from": 1930,
+						"to": 1930
+					},
+					"id": 11301,
+					"p": 0.654287,
+					"t_dtw": 166
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:01,930",
+						"to": "00:00:01,930"
+					},
+					"offsets": {
+						"from": 1930,
+						"to": 1930
+					},
+					"id": 485,
+					"p": 0.503406,
+					"t_dtw": 188
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.174916,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

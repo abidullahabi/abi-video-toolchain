@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,240"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2240
+			},
+			"text": " Nächste Tipp, bring dich intern ein.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997421,
+					"t_dtw": -1
+				},
+				{
+					"text": " N",
+					"timestamps": {
+						"from": "00:00:00,060",
+						"to": "00:00:00,060"
+					},
+					"offsets": {
+						"from": 60,
+						"to": 60
+					},
+					"id": 426,
+					"p": 0.948051,
+					"t_dtw": 18
+				},
+				{
+					"text": "äch",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,250"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 250
+					},
+					"id": 10168,
+					"p": 0.989187,
+					"t_dtw": 30
+				},
+				{
+					"text": "ste",
+					"timestamps": {
+						"from": "00:00:00,250",
+						"to": "00:00:00,350"
+					},
+					"offsets": {
+						"from": 250,
+						"to": 350
+					},
+					"id": 2941,
+					"p": 0.907509,
+					"t_dtw": 36
+				},
+				{
+					"text": " Tipp",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,630"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 630
+					},
+					"id": 42102,
+					"p": 0.954554,
+					"t_dtw": 58
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,730",
+						"to": "00:00:00,730"
+					},
+					"offsets": {
+						"from": 730,
+						"to": 730
+					},
+					"id": 11,
+					"p": 0.460497,
+					"t_dtw": 104
+				},
+				{
+					"text": " bring",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,150"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1150
+					},
+					"id": 1565,
+					"p": 0.775207,
+					"t_dtw": 118
+				},
+				{
+					"text": " dich",
+					"timestamps": {
+						"from": "00:00:01,150",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1150,
+						"to": 1360
+					},
+					"id": 10390,
+					"p": 0.94502,
+					"t_dtw": 136
+				},
+				{
+					"text": " intern",
+					"timestamps": {
+						"from": "00:00:01,460",
+						"to": "00:00:01,800"
+					},
+					"offsets": {
+						"from": 1460,
+						"to": 1800
+					},
+					"id": 2154,
+					"p": 0.99107,
+					"t_dtw": 174
+				},
+				{
+					"text": " ein",
+					"timestamps": {
+						"from": "00:00:01,800",
+						"to": "00:00:01,980"
+					},
+					"offsets": {
+						"from": 1800,
+						"to": 1980
+					},
+					"id": 1343,
+					"p": 0.984729,
+					"t_dtw": 202
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,980",
+						"to": "00:00:02,110"
+					},
+					"offsets": {
+						"from": 1980,
+						"to": 2110
+					},
+					"id": 13,
+					"p": 0.734654,
+					"t_dtw": 222
+				},
+				{
+					"text": "[_TT_112]",
+					"timestamps": {
+						"from": "00:00:02,240",
+						"to": "00:00:02,240"
+					},
+					"offsets": {
+						"from": 2240,
+						"to": 2240
+					},
+					"id": 50476,
+					"p": 0.0533991,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

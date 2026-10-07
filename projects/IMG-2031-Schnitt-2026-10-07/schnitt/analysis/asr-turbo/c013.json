@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,220"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2220
+			},
+			"text": " Im zweiten Schritt bietest du deine Hilfe an.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.830999,
+					"t_dtw": -1
+				},
+				{
+					"text": " Im",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 120
+					},
+					"id": 4331,
+					"p": 0.959359,
+					"t_dtw": 22
+				},
+				{
+					"text": " zweiten",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 530
+					},
+					"id": 39943,
+					"p": 0.867806,
+					"t_dtw": 42
+				},
+				{
+					"text": " Schritt",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,760"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 760
+					},
+					"id": 33062,
+					"p": 0.995758,
+					"t_dtw": 68
+				},
+				{
+					"text": " b",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1000
+					},
+					"id": 272,
+					"p": 0.883656,
+					"t_dtw": 112
+				},
+				{
+					"text": "iet",
+					"timestamps": {
+						"from": "00:00:01,080",
+						"to": "00:00:01,170"
+					},
+					"offsets": {
+						"from": 1080,
+						"to": 1170
+					},
+					"id": 1684,
+					"p": 0.823941,
+					"t_dtw": 122
+				},
+				{
+					"text": "est",
+					"timestamps": {
+						"from": "00:00:01,170",
+						"to": "00:00:01,320"
+					},
+					"offsets": {
+						"from": 1170,
+						"to": 1320
+					},
+					"id": 377,
+					"p": 0.997116,
+					"t_dtw": 130
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:01,430",
+						"to": "00:00:01,460"
+					},
+					"offsets": {
+						"from": 1430,
+						"to": 1460
+					},
+					"id": 1581,
+					"p": 0.826055,
+					"t_dtw": 134
+				},
+				{
+					"text": " deine",
+					"timestamps": {
+						"from": "00:00:01,460",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1460,
+						"to": 1740
+					},
+					"id": 28395,
+					"p": 0.558125,
+					"t_dtw": 154
+				},
+				{
+					"text": " Hilfe",
+					"timestamps": {
+						"from": "00:00:01,750",
+						"to": "00:00:01,940"
+					},
+					"offsets": {
+						"from": 1750,
+						"to": 1940
+					},
+					"id": 37448,
+					"p": 0.998538,
+					"t_dtw": 180
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:02,010",
+						"to": "00:00:02,060"
+					},
+					"offsets": {
+						"from": 2010,
+						"to": 2060
+					},
+					"id": 364,
+					"p": 0.983819,
+					"t_dtw": 200
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,210",
+						"to": "00:00:02,210"
+					},
+					"offsets": {
+						"from": 2210,
+						"to": 2210
+					},
+					"id": 13,
+					"p": 0.895147,
+					"t_dtw": 218
+				},
+				{
+					"text": "[_TT_111]",
+					"timestamps": {
+						"from": "00:00:02,220",
+						"to": "00:00:02,220"
+					},
+					"offsets": {
+						"from": 2220,
+						"to": 2220
+					},
+					"id": 50476,
+					"p": 0.960938,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

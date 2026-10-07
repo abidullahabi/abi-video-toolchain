@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,180"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2180
+			},
+			"text": " Leute lieben es, über sich zu sprechen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.874224,
+					"t_dtw": -1
+				},
+				{
+					"text": " Leute",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 300
+					},
+					"id": 13495,
+					"p": 0.94961,
+					"t_dtw": 38
+				},
+				{
+					"text": " lie",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 470
+					},
+					"id": 4544,
+					"p": 0.994364,
+					"t_dtw": 64
+				},
+				{
+					"text": "ben",
+					"timestamps": {
+						"from": "00:00:00,480",
+						"to": "00:00:00,660"
+					},
+					"offsets": {
+						"from": 480,
+						"to": 660
+					},
+					"id": 1799,
+					"p": 0.999533,
+					"t_dtw": 76
+				},
+				{
+					"text": " es",
+					"timestamps": {
+						"from": "00:00:00,660",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 660,
+						"to": 780
+					},
+					"id": 785,
+					"p": 0.998635,
+					"t_dtw": 94
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 900
+					},
+					"id": 11,
+					"p": 0.953173,
+					"t_dtw": 106
+				},
+				{
+					"text": " über",
+					"timestamps": {
+						"from": "00:00:00,900",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 900,
+						"to": 1140
+					},
+					"id": 4502,
+					"p": 0.982726,
+					"t_dtw": 114
+				},
+				{
+					"text": " sich",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1360
+					},
+					"id": 3041,
+					"p": 0.996022,
+					"t_dtw": 136
+				},
+				{
+					"text": " zu",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,490"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1490
+					},
+					"id": 2164,
+					"p": 0.997862,
+					"t_dtw": 152
+				},
+				{
+					"text": " sprechen",
+					"timestamps": {
+						"from": "00:00:01,490",
+						"to": "00:00:01,890"
+					},
+					"offsets": {
+						"from": 1490,
+						"to": 1890
+					},
+					"id": 27853,
+					"p": 0.996282,
+					"t_dtw": 186
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,180",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 2180,
+						"to": 2180
+					},
+					"id": 13,
+					"p": 0.97345,
+					"t_dtw": 216
+				},
+				{
+					"text": "[_TT_109]",
+					"timestamps": {
+						"from": "00:00:02,180",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 2180,
+						"to": 2180
+					},
+					"id": 50474,
+					"p": 0.073831,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

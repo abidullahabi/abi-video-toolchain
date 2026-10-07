@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,200"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2200
+			},
+			"text": " Genau für die Dinge, in denen du richtig gut bist.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.99798,
+					"t_dtw": -1
+				},
+				{
+					"text": " Genau",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,240"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 240
+					},
+					"id": 22340,
+					"p": 0.938185,
+					"t_dtw": 28
+				},
+				{
+					"text": " für",
+					"timestamps": {
+						"from": "00:00:00,240",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 240,
+						"to": 390
+					},
+					"id": 2959,
+					"p": 0.995826,
+					"t_dtw": 44
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,390",
+						"to": "00:00:00,540"
+					},
+					"offsets": {
+						"from": 390,
+						"to": 540
+					},
+					"id": 978,
+					"p": 0.914079,
+					"t_dtw": 58
+				},
+				{
+					"text": " Dinge",
+					"timestamps": {
+						"from": "00:00:00,540",
+						"to": "00:00:00,780"
+					},
+					"offsets": {
+						"from": 540,
+						"to": 780
+					},
+					"id": 25102,
+					"p": 0.987121,
+					"t_dtw": 78
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,780",
+						"to": "00:00:00,850"
+					},
+					"offsets": {
+						"from": 780,
+						"to": 850
+					},
+					"id": 11,
+					"p": 0.874818,
+					"t_dtw": 78
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:00,870",
+						"to": "00:00:00,970"
+					},
+					"offsets": {
+						"from": 870,
+						"to": 970
+					},
+					"id": 294,
+					"p": 0.95579,
+					"t_dtw": 94
+				},
+				{
+					"text": " denen",
+					"timestamps": {
+						"from": "00:00:00,970",
+						"to": "00:00:01,210"
+					},
+					"offsets": {
+						"from": 970,
+						"to": 1210
+					},
+					"id": 19998,
+					"p": 0.983899,
+					"t_dtw": 102
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1240
+					},
+					"id": 1581,
+					"p": 0.928518,
+					"t_dtw": 114
+				},
+				{
+					"text": " richtig",
+					"timestamps": {
+						"from": "00:00:01,300",
+						"to": "00:00:01,650"
+					},
+					"offsets": {
+						"from": 1300,
+						"to": 1650
+					},
+					"id": 13129,
+					"p": 0.99612,
+					"t_dtw": 132
+				},
+				{
+					"text": " gut",
+					"timestamps": {
+						"from": "00:00:01,650",
+						"to": "00:00:01,780"
+					},
+					"offsets": {
+						"from": 1650,
+						"to": 1780
+					},
+					"id": 5228,
+					"p": 0.996942,
+					"t_dtw": 156
+				},
+				{
+					"text": " bist",
+					"timestamps": {
+						"from": "00:00:01,780",
+						"to": "00:00:01,810"
+					},
+					"offsets": {
+						"from": 1780,
+						"to": 1810
+					},
+					"id": 18209,
+					"p": 0.99922,
+					"t_dtw": 180
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,970",
+						"to": "00:00:02,050"
+					},
+					"offsets": {
+						"from": 1970,
+						"to": 2050
+					},
+					"id": 13,
+					"p": 0.924561,
+					"t_dtw": 202
+				},
+				{
+					"text": "[_TT_110]",
+					"timestamps": {
+						"from": "00:00:02,200",
+						"to": "00:00:02,200"
+					},
+					"offsets": {
+						"from": 2200,
+						"to": 2200
+					},
+					"id": 50474,
+					"p": 0.0168994,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

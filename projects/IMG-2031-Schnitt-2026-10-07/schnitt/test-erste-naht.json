@@ -1,0 +1,35 @@
+{
+  "auftrag": "Nur erste Naht nach in deinem neuen Job, vom Nutzer bestätigt. Etwa30Prozent weniger verbleibende Pause.",
+  "basisSchnittSha256": "15dfa3dc5b8e0679aad19d1a6eed65e4912a550b42613c1262dcbed19162caa9",
+  "baselineFirstBoundary": [
+    6.433333,
+    21.466667
+  ],
+  "testFirstBoundary": [
+    6.4,
+    21.466667
+  ],
+  "removedSeconds": 0.03333333333333333,
+  "measuredSpeechEnd": 6.37,
+  "measuredSpeechStart": 21.515,
+  "oldPauseMs": 111.666,
+  "newPauseMs": 78.333,
+  "reductionPercent": 29.85,
+  "tempo": 1,
+  "keep": [
+    [
+      3.0,
+      6.4
+    ],
+    [
+      21.466667,
+      25.633333
+    ],
+    [
+      26.166667,
+      26.9
+    ]
+  ],
+  "scope": "Kurzer Testausschnitt aus Original, nur erste Naht geändert. Angenommene Gesamtfassung unverändert.",
+  "measurementLimit": "Rauschbodenbezogene Pegelmessung wie CONTENT_WORKFLOW1.32, kein Ersatz für Hörprüfung."
+}

@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,600"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1600
+			},
+			"text": " Und wirksteil-professionär.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997385,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,170"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 170
+					},
+					"id": 2719,
+					"p": 0.764661,
+					"t_dtw": 24
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:00,170",
+						"to": "00:00:00,340"
+					},
+					"offsets": {
+						"from": 170,
+						"to": 340
+					},
+					"id": 1987,
+					"p": 0.888142,
+					"t_dtw": 38
+				},
+				{
+					"text": "k",
+					"timestamps": {
+						"from": "00:00:00,340",
+						"to": "00:00:00,390"
+					},
+					"offsets": {
+						"from": 340,
+						"to": 390
+					},
+					"id": 74,
+					"p": 0.629537,
+					"t_dtw": 48
+				},
+				{
+					"text": "ste",
+					"timestamps": {
+						"from": "00:00:00,390",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 390,
+						"to": 430
+					},
+					"id": 2941,
+					"p": 0.381373,
+					"t_dtw": 62
+				},
+				{
+					"text": "il",
+					"timestamps": {
+						"from": "00:00:00,570",
+						"to": "00:00:00,670"
+					},
+					"offsets": {
+						"from": 570,
+						"to": 670
+					},
+					"id": 388,
+					"p": 0.692211,
+					"t_dtw": 72
+				},
+				{
+					"text": "-",
+					"timestamps": {
+						"from": "00:00:00,670",
+						"to": "00:00:00,720"
+					},
+					"offsets": {
+						"from": 670,
+						"to": 720
+					},
+					"id": 12,
+					"p": 0.280616,
+					"t_dtw": 90
+				},
+				{
+					"text": "prof",
+					"timestamps": {
+						"from": "00:00:00,720",
+						"to": "00:00:00,900"
+					},
+					"offsets": {
+						"from": 720,
+						"to": 900
+					},
+					"id": 29175,
+					"p": 0.831245,
+					"t_dtw": 90
+				},
+				{
+					"text": "ession",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1280
+					},
+					"id": 4311,
+					"p": 0.910022,
+					"t_dtw": 114
+				},
+				{
+					"text": "är",
+					"timestamps": {
+						"from": "00:00:01,280",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 1280,
+						"to": 1360
+					},
+					"id": 2713,
+					"p": 0.261267,
+					"t_dtw": 128
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,370",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1370,
+						"to": 1400
+					},
+					"id": 13,
+					"p": 0.637191,
+					"t_dtw": 154
+				},
+				{
+					"text": "[_TT_80]",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1600
+					},
+					"id": 50444,
+					"p": 0.0480552,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

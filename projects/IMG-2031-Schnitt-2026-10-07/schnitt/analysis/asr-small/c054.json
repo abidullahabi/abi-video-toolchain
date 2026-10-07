@@ -1,0 +1,269 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3000
+			},
+			"text": " Guten starten, einen neuen Job. Und, wollen nicht vergessen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997149,
+					"t_dtw": -1
+				},
+				{
+					"text": " Guten",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,350"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 350
+					},
+					"id": 42833,
+					"p": 0.877708,
+					"t_dtw": 26
+				},
+				{
+					"text": " start",
+					"timestamps": {
+						"from": "00:00:00,410",
+						"to": "00:00:00,730"
+					},
+					"offsets": {
+						"from": 410,
+						"to": 730
+					},
+					"id": 722,
+					"p": 0.27639,
+					"t_dtw": 50
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:00,740",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 740,
+						"to": 880
+					},
+					"id": 268,
+					"p": 0.975357,
+					"t_dtw": 66
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 1020
+					},
+					"id": 11,
+					"p": 0.505899,
+					"t_dtw": 68
+				},
+				{
+					"text": " einen",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,390"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1390
+					},
+					"id": 4891,
+					"p": 0.258418,
+					"t_dtw": 72
+				},
+				{
+					"text": " neuen",
+					"timestamps": {
+						"from": "00:00:01,390",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1390,
+						"to": 1520
+					},
+					"id": 21387,
+					"p": 0.999529,
+					"t_dtw": 86
+				},
+				{
+					"text": " Job",
+					"timestamps": {
+						"from": "00:00:01,520",
+						"to": "00:00:01,770"
+					},
+					"offsets": {
+						"from": 1520,
+						"to": 1770
+					},
+					"id": 18602,
+					"p": 0.996124,
+					"t_dtw": 116
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,090",
+						"to": "00:00:02,090"
+					},
+					"offsets": {
+						"from": 2090,
+						"to": 2090
+					},
+					"id": 13,
+					"p": 0.177996,
+					"t_dtw": 140
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:02,170",
+						"to": "00:00:02,180"
+					},
+					"offsets": {
+						"from": 2170,
+						"to": 2180
+					},
+					"id": 2719,
+					"p": 0.788156,
+					"t_dtw": 150
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:02,180",
+						"to": "00:00:02,240"
+					},
+					"offsets": {
+						"from": 2180,
+						"to": 2240
+					},
+					"id": 11,
+					"p": 0.23945,
+					"t_dtw": 202
+				},
+				{
+					"text": " wollen",
+					"timestamps": {
+						"from": "00:00:02,240",
+						"to": "00:00:02,360"
+					},
+					"offsets": {
+						"from": 2240,
+						"to": 2360
+					},
+					"id": 11253,
+					"p": 0.0900065,
+					"t_dtw": 228
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:02,460",
+						"to": "00:00:02,590"
+					},
+					"offsets": {
+						"from": 2460,
+						"to": 2590
+					},
+					"id": 1979,
+					"p": 0.530942,
+					"t_dtw": 240
+				},
+				{
+					"text": " vergessen",
+					"timestamps": {
+						"from": "00:00:02,590",
+						"to": "00:00:02,760"
+					},
+					"offsets": {
+						"from": 2590,
+						"to": 2760
+					},
+					"id": 42418,
+					"p": 0.998631,
+					"t_dtw": 264
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,000",
+						"to": "00:00:03,000"
+					},
+					"offsets": {
+						"from": 3000,
+						"to": 3000
+					},
+					"id": 13,
+					"p": 0.754321,
+					"t_dtw": 298
+				},
+				{
+					"text": "[_TT_150]",
+					"timestamps": {
+						"from": "00:00:03,000",
+						"to": "00:00:03,000"
+					},
+					"offsets": {
+						"from": 3000,
+						"to": 3000
+					},
+					"id": 50514,
+					"p": 0.0711111,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

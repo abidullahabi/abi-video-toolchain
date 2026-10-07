@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,440"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2440
+			},
+			"text": " Am besten sind die Ziele gut quantifiziert.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.996909,
+					"t_dtw": -1
+				},
+				{
+					"text": " Am",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,130"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 130
+					},
+					"id": 2012,
+					"p": 0.985131,
+					"t_dtw": 20
+				},
+				{
+					"text": " besten",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,530"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 530
+					},
+					"id": 30930,
+					"p": 0.981133,
+					"t_dtw": 44
+				},
+				{
+					"text": " sind",
+					"timestamps": {
+						"from": "00:00:00,530",
+						"to": "00:00:00,790"
+					},
+					"offsets": {
+						"from": 530,
+						"to": 790
+					},
+					"id": 3290,
+					"p": 0.983269,
+					"t_dtw": 66
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,000"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1000
+					},
+					"id": 978,
+					"p": 0.969546,
+					"t_dtw": 80
+				},
+				{
+					"text": " Z",
+					"timestamps": {
+						"from": "00:00:01,000",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 1000,
+						"to": 1060
+					},
+					"id": 1176,
+					"p": 0.991554,
+					"t_dtw": 96
+				},
+				{
+					"text": "iele",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,330"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1330
+					},
+					"id": 15949,
+					"p": 0.998936,
+					"t_dtw": 104
+				},
+				{
+					"text": " gut",
+					"timestamps": {
+						"from": "00:00:01,330",
+						"to": "00:00:01,400"
+					},
+					"offsets": {
+						"from": 1330,
+						"to": 1400
+					},
+					"id": 5228,
+					"p": 0.990932,
+					"t_dtw": 142
+				},
+				{
+					"text": " quant",
+					"timestamps": {
+						"from": "00:00:01,530",
+						"to": "00:00:01,850"
+					},
+					"offsets": {
+						"from": 1530,
+						"to": 1850
+					},
+					"id": 4426,
+					"p": 0.932207,
+					"t_dtw": 164
+				},
+				{
+					"text": "if",
+					"timestamps": {
+						"from": "00:00:01,960",
+						"to": "00:00:01,990"
+					},
+					"offsets": {
+						"from": 1960,
+						"to": 1990
+					},
+					"id": 351,
+					"p": 0.990622,
+					"t_dtw": 178
+				},
+				{
+					"text": "iziert",
+					"timestamps": {
+						"from": "00:00:01,990",
+						"to": "00:00:02,190"
+					},
+					"offsets": {
+						"from": 1990,
+						"to": 2190
+					},
+					"id": 43590,
+					"p": 0.996664,
+					"t_dtw": 212
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,440",
+						"to": "00:00:02,440"
+					},
+					"offsets": {
+						"from": 2440,
+						"to": 2440
+					},
+					"id": 13,
+					"p": 0.723516,
+					"t_dtw": 242
+				},
+				{
+					"text": "[_TT_122]",
+					"timestamps": {
+						"from": "00:00:02,440",
+						"to": "00:00:02,440"
+					},
+					"offsets": {
+						"from": 2440,
+						"to": 2440
+					},
+					"id": 50486,
+					"p": 0.0440217,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

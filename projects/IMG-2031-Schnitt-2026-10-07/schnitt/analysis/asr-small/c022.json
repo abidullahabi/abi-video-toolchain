@@ -1,0 +1,241 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Sobald du deine erste Ergebnisse lieferst...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997132,
+					"t_dtw": -1
+				},
+				{
+					"text": " So",
+					"timestamps": {
+						"from": "00:00:00,110",
+						"to": "00:00:00,110"
+					},
+					"offsets": {
+						"from": 110,
+						"to": 110
+					},
+					"id": 407,
+					"p": 0.931004,
+					"t_dtw": 22
+				},
+				{
+					"text": "bal",
+					"timestamps": {
+						"from": "00:00:00,180",
+						"to": "00:00:00,270"
+					},
+					"offsets": {
+						"from": 180,
+						"to": 270
+					},
+					"id": 2645,
+					"p": 0.999622,
+					"t_dtw": 38
+				},
+				{
+					"text": "d",
+					"timestamps": {
+						"from": "00:00:00,270",
+						"to": "00:00:00,320"
+					},
+					"offsets": {
+						"from": 270,
+						"to": 320
+					},
+					"id": 67,
+					"p": 0.89292,
+					"t_dtw": 46
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,320",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 320,
+						"to": 430
+					},
+					"id": 1581,
+					"p": 0.872826,
+					"t_dtw": 52
+				},
+				{
+					"text": " deine",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 700
+					},
+					"id": 28395,
+					"p": 0.929362,
+					"t_dtw": 68
+				},
+				{
+					"text": " erste",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,910"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 910
+					},
+					"id": 20951,
+					"p": 0.842399,
+					"t_dtw": 96
+				},
+				{
+					"text": " Ergeb",
+					"timestamps": {
+						"from": "00:00:00,990",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 990,
+						"to": 1240
+					},
+					"id": 34657,
+					"p": 0.903509,
+					"t_dtw": 128
+				},
+				{
+					"text": "nisse",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,510"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1510
+					},
+					"id": 31481,
+					"p": 0.997153,
+					"t_dtw": 144
+				},
+				{
+					"text": " lie",
+					"timestamps": {
+						"from": "00:00:01,510",
+						"to": "00:00:01,670"
+					},
+					"offsets": {
+						"from": 1510,
+						"to": 1670
+					},
+					"id": 4544,
+					"p": 0.975264,
+					"t_dtw": 166
+				},
+				{
+					"text": "fer",
+					"timestamps": {
+						"from": "00:00:01,670",
+						"to": "00:00:01,810"
+					},
+					"offsets": {
+						"from": 1670,
+						"to": 1810
+					},
+					"id": 612,
+					"p": 0.580851,
+					"t_dtw": 176
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:01,830",
+						"to": "00:00:01,840"
+					},
+					"offsets": {
+						"from": 1830,
+						"to": 1840
+					},
+					"id": 372,
+					"p": 0.999037,
+					"t_dtw": 198
+				},
+				{
+					"text": "...",
+					"timestamps": {
+						"from": "00:00:01,840",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1840,
+						"to": 2000
+					},
+					"id": 485,
+					"p": 0.154565,
+					"t_dtw": 198
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.213274,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

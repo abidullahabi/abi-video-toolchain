@@ -1,0 +1,227 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2000
+			},
+			"text": " Und wirks direkt professionell in deinem ersten ...",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997605,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,130",
+						"to": "00:00:00,140"
+					},
+					"offsets": {
+						"from": 130,
+						"to": 140
+					},
+					"id": 2719,
+					"p": 0.564248,
+					"t_dtw": 20
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 280
+					},
+					"id": 1987,
+					"p": 0.855854,
+					"t_dtw": 36
+				},
+				{
+					"text": "ks",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,370"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 370
+					},
+					"id": 1694,
+					"p": 0.102966,
+					"t_dtw": 48
+				},
+				{
+					"text": " direkt",
+					"timestamps": {
+						"from": "00:00:00,370",
+						"to": "00:00:00,650"
+					},
+					"offsets": {
+						"from": 370,
+						"to": 650
+					},
+					"id": 20315,
+					"p": 0.915344,
+					"t_dtw": 62
+				},
+				{
+					"text": " profession",
+					"timestamps": {
+						"from": "00:00:00,650",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 650,
+						"to": 1140
+					},
+					"id": 7032,
+					"p": 0.497473,
+					"t_dtw": 94
+				},
+				{
+					"text": "ell",
+					"timestamps": {
+						"from": "00:00:01,140",
+						"to": "00:00:01,280"
+					},
+					"offsets": {
+						"from": 1140,
+						"to": 1280
+					},
+					"id": 898,
+					"p": 0.961804,
+					"t_dtw": 118
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:01,280",
+						"to": "00:00:01,370"
+					},
+					"offsets": {
+						"from": 1280,
+						"to": 1370
+					},
+					"id": 294,
+					"p": 0.289666,
+					"t_dtw": 128
+				},
+				{
+					"text": " dein",
+					"timestamps": {
+						"from": "00:00:01,370",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1370,
+						"to": 1560
+					},
+					"id": 25641,
+					"p": 0.407809,
+					"t_dtw": 136
+				},
+				{
+					"text": "em",
+					"timestamps": {
+						"from": "00:00:01,560",
+						"to": "00:00:01,620"
+					},
+					"offsets": {
+						"from": 1560,
+						"to": 1620
+					},
+					"id": 443,
+					"p": 0.981982,
+					"t_dtw": 172
+				},
+				{
+					"text": " ersten",
+					"timestamps": {
+						"from": "00:00:01,620",
+						"to": "00:00:01,900"
+					},
+					"offsets": {
+						"from": 1620,
+						"to": 1900
+					},
+					"id": 17324,
+					"p": 0.865434,
+					"t_dtw": 172
+				},
+				{
+					"text": " ...",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 1097,
+					"p": 0.227915,
+					"t_dtw": 198
+				},
+				{
+					"text": "[_TT_100]",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2000
+					},
+					"id": 50464,
+					"p": 0.193568,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

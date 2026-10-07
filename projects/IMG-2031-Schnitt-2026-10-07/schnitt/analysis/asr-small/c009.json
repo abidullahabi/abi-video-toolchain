@@ -1,0 +1,353 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": true,
+		"vocab": 51865,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-small.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,280"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3280
+			},
+			"text": " Zeig, dass du Interesse hast eines Unternehmen und an die Leute und was die halt machen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50364,
+					"p": 0.997729,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ze",
+					"timestamps": {
+						"from": "00:00:00,080",
+						"to": "00:00:00,080"
+					},
+					"offsets": {
+						"from": 80,
+						"to": 80
+					},
+					"id": 4853,
+					"p": 0.808527,
+					"t_dtw": 24
+				},
+				{
+					"text": "ig",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 160
+					},
+					"id": 328,
+					"p": 0.646506,
+					"t_dtw": 32
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,190",
+						"to": "00:00:00,240"
+					},
+					"offsets": {
+						"from": 190,
+						"to": 240
+					},
+					"id": 11,
+					"p": 0.604425,
+					"t_dtw": 34
+				},
+				{
+					"text": " dass",
+					"timestamps": {
+						"from": "00:00:00,240",
+						"to": "00:00:00,400"
+					},
+					"offsets": {
+						"from": 240,
+						"to": 400
+					},
+					"id": 2658,
+					"p": 0.601527,
+					"t_dtw": 42
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,400",
+						"to": "00:00:00,490"
+					},
+					"offsets": {
+						"from": 400,
+						"to": 490
+					},
+					"id": 1581,
+					"p": 0.931241,
+					"t_dtw": 50
+				},
+				{
+					"text": " Inter",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:00,700"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 700
+					},
+					"id": 5751,
+					"p": 0.973452,
+					"t_dtw": 66
+				},
+				{
+					"text": "esse",
+					"timestamps": {
+						"from": "00:00:00,700",
+						"to": "00:00:00,870"
+					},
+					"offsets": {
+						"from": 700,
+						"to": 870
+					},
+					"id": 7357,
+					"p": 0.99659,
+					"t_dtw": 84
+				},
+				{
+					"text": " hast",
+					"timestamps": {
+						"from": "00:00:00,870",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 870,
+						"to": 1020
+					},
+					"id": 6581,
+					"p": 0.964288,
+					"t_dtw": 100
+				},
+				{
+					"text": " eines",
+					"timestamps": {
+						"from": "00:00:01,070",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1070,
+						"to": 1240
+					},
+					"id": 18599,
+					"p": 0.755613,
+					"t_dtw": 120
+				},
+				{
+					"text": " Unternehmen",
+					"timestamps": {
+						"from": "00:00:01,310",
+						"to": "00:00:01,780"
+					},
+					"offsets": {
+						"from": 1310,
+						"to": 1780
+					},
+					"id": 27577,
+					"p": 0.846323,
+					"t_dtw": 158
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:01,800",
+						"to": "00:00:01,920"
+					},
+					"offsets": {
+						"from": 1800,
+						"to": 1920
+					},
+					"id": 674,
+					"p": 0.855446,
+					"t_dtw": 190
+				},
+				{
+					"text": " an",
+					"timestamps": {
+						"from": "00:00:01,920",
+						"to": "00:00:02,000"
+					},
+					"offsets": {
+						"from": 1920,
+						"to": 2000
+					},
+					"id": 364,
+					"p": 0.939346,
+					"t_dtw": 200
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:02,000",
+						"to": "00:00:02,120"
+					},
+					"offsets": {
+						"from": 2000,
+						"to": 2120
+					},
+					"id": 978,
+					"p": 0.977362,
+					"t_dtw": 210
+				},
+				{
+					"text": " Leute",
+					"timestamps": {
+						"from": "00:00:02,120",
+						"to": "00:00:02,270"
+					},
+					"offsets": {
+						"from": 2120,
+						"to": 2270
+					},
+					"id": 13495,
+					"p": 0.99221,
+					"t_dtw": 228
+				},
+				{
+					"text": " und",
+					"timestamps": {
+						"from": "00:00:02,340",
+						"to": "00:00:02,450"
+					},
+					"offsets": {
+						"from": 2340,
+						"to": 2450
+					},
+					"id": 674,
+					"p": 0.709059,
+					"t_dtw": 246
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:02,450",
+						"to": "00:00:02,570"
+					},
+					"offsets": {
+						"from": 2450,
+						"to": 2570
+					},
+					"id": 390,
+					"p": 0.969361,
+					"t_dtw": 260
+				},
+				{
+					"text": " die",
+					"timestamps": {
+						"from": "00:00:02,660",
+						"to": "00:00:02,710"
+					},
+					"offsets": {
+						"from": 2660,
+						"to": 2710
+					},
+					"id": 978,
+					"p": 0.791036,
+					"t_dtw": 270
+				},
+				{
+					"text": " halt",
+					"timestamps": {
+						"from": "00:00:02,710",
+						"to": "00:00:02,820"
+					},
+					"offsets": {
+						"from": 2710,
+						"to": 2820
+					},
+					"id": 12479,
+					"p": 0.962914,
+					"t_dtw": 282
+				},
+				{
+					"text": " machen",
+					"timestamps": {
+						"from": "00:00:02,920",
+						"to": "00:00:03,080"
+					},
+					"offsets": {
+						"from": 2920,
+						"to": 3080
+					},
+					"id": 7069,
+					"p": 0.993235,
+					"t_dtw": 310
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,130",
+						"to": "00:00:03,140"
+					},
+					"offsets": {
+						"from": 3130,
+						"to": 3140
+					},
+					"id": 13,
+					"p": 0.963777,
+					"t_dtw": 326
+				},
+				{
+					"text": "[_TT_164]",
+					"timestamps": {
+						"from": "00:00:03,280",
+						"to": "00:00:03,280"
+					},
+					"offsets": {
+						"from": 3280,
+						"to": 3280
+					},
+					"id": 50528,
+					"p": 0.0628879,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

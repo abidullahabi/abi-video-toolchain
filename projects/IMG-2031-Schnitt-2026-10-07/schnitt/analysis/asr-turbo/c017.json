@@ -1,0 +1,311 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,340"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4340
+			},
+			"text": " Übertriebene 200%, sondern du machst immer solide 100% gute Arbeit.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.834744,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ü",
+					"timestamps": {
+						"from": "00:00:00,050",
+						"to": "00:00:00,050"
+					},
+					"offsets": {
+						"from": 50,
+						"to": 50
+					},
+					"id": 10713,
+					"p": 0.918243,
+					"t_dtw": 24
+				},
+				{
+					"text": "bert",
+					"timestamps": {
+						"from": "00:00:00,150",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 150,
+						"to": 280
+					},
+					"id": 4290,
+					"p": 0.992559,
+					"t_dtw": 36
+				},
+				{
+					"text": "rieb",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,510"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 510
+					},
+					"id": 31775,
+					"p": 0.711279,
+					"t_dtw": 52
+				},
+				{
+					"text": "ene",
+					"timestamps": {
+						"from": "00:00:00,510",
+						"to": "00:00:00,660"
+					},
+					"offsets": {
+						"from": 510,
+						"to": 660
+					},
+					"id": 1450,
+					"p": 0.999914,
+					"t_dtw": 62
+				},
+				{
+					"text": " 200",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:01,210"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 1210
+					},
+					"id": 2331,
+					"p": 0.950662,
+					"t_dtw": 92
+				},
+				{
+					"text": "%,",
+					"timestamps": {
+						"from": "00:00:01,210",
+						"to": "00:00:01,380"
+					},
+					"offsets": {
+						"from": 1210,
+						"to": 1380
+					},
+					"id": 8923,
+					"p": 0.884927,
+					"t_dtw": 128
+				},
+				{
+					"text": " sondern",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,770"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1770
+					},
+					"id": 11465,
+					"p": 0.962469,
+					"t_dtw": 152
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:01,890",
+						"to": "00:00:01,890"
+					},
+					"offsets": {
+						"from": 1890,
+						"to": 1890
+					},
+					"id": 1581,
+					"p": 0.886647,
+					"t_dtw": 164
+				},
+				{
+					"text": " machst",
+					"timestamps": {
+						"from": "00:00:01,900",
+						"to": "00:00:02,250"
+					},
+					"offsets": {
+						"from": 1900,
+						"to": 2250
+					},
+					"id": 43350,
+					"p": 0.995213,
+					"t_dtw": 180
+				},
+				{
+					"text": " immer",
+					"timestamps": {
+						"from": "00:00:02,250",
+						"to": "00:00:02,540"
+					},
+					"offsets": {
+						"from": 2250,
+						"to": 2540
+					},
+					"id": 5578,
+					"p": 0.996805,
+					"t_dtw": 200
+				},
+				{
+					"text": " sol",
+					"timestamps": {
+						"from": "00:00:02,540",
+						"to": "00:00:02,620"
+					},
+					"offsets": {
+						"from": 2540,
+						"to": 2620
+					},
+					"id": 1404,
+					"p": 0.985481,
+					"t_dtw": 228
+				},
+				{
+					"text": "ide",
+					"timestamps": {
+						"from": "00:00:02,710",
+						"to": "00:00:02,880"
+					},
+					"offsets": {
+						"from": 2710,
+						"to": 2880
+					},
+					"id": 482,
+					"p": 0.99984,
+					"t_dtw": 254
+				},
+				{
+					"text": " 100",
+					"timestamps": {
+						"from": "00:00:02,880",
+						"to": "00:00:03,410"
+					},
+					"offsets": {
+						"from": 2880,
+						"to": 3410
+					},
+					"id": 2319,
+					"p": 0.753121,
+					"t_dtw": 302
+				},
+				{
+					"text": "%",
+					"timestamps": {
+						"from": "00:00:03,410",
+						"to": "00:00:03,460"
+					},
+					"offsets": {
+						"from": 3410,
+						"to": 3460
+					},
+					"id": 4,
+					"p": 0.993047,
+					"t_dtw": 336
+				},
+				{
+					"text": " gute",
+					"timestamps": {
+						"from": "00:00:03,460",
+						"to": "00:00:03,550"
+					},
+					"offsets": {
+						"from": 3460,
+						"to": 3550
+					},
+					"id": 21476,
+					"p": 0.993762,
+					"t_dtw": 386
+				},
+				{
+					"text": " Arbeit",
+					"timestamps": {
+						"from": "00:00:03,690",
+						"to": "00:00:03,980"
+					},
+					"offsets": {
+						"from": 3690,
+						"to": 3980
+					},
+					"id": 18604,
+					"p": 0.998117,
+					"t_dtw": 432
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:04,070",
+						"to": "00:00:04,310"
+					},
+					"offsets": {
+						"from": 4070,
+						"to": 4310
+					},
+					"id": 13,
+					"p": 0.991363,
+					"t_dtw": 432
+				},
+				{
+					"text": "[_TT_217]",
+					"timestamps": {
+						"from": "00:00:04,340",
+						"to": "00:00:04,340"
+					},
+					"offsets": {
+						"from": 4340,
+						"to": 4340
+					},
+					"id": 50582,
+					"p": 0.150905,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

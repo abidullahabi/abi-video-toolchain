@@ -1,0 +1,199 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1120
+			},
+			"text": " Und wo du auch Pausen machst.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.740125,
+					"t_dtw": -1
+				},
+				{
+					"text": " Und",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 120
+					},
+					"id": 2719,
+					"p": 0.925462,
+					"t_dtw": 22
+				},
+				{
+					"text": " wo",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,200"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 200
+					},
+					"id": 6020,
+					"p": 0.967178,
+					"t_dtw": 34
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,200",
+						"to": "00:00:00,280"
+					},
+					"offsets": {
+						"from": 200,
+						"to": 280
+					},
+					"id": 1581,
+					"p": 0.981628,
+					"t_dtw": 38
+				},
+				{
+					"text": " auch",
+					"timestamps": {
+						"from": "00:00:00,280",
+						"to": "00:00:00,450"
+					},
+					"offsets": {
+						"from": 280,
+						"to": 450
+					},
+					"id": 2168,
+					"p": 0.998788,
+					"t_dtw": 52
+				},
+				{
+					"text": " Pa",
+					"timestamps": {
+						"from": "00:00:00,450",
+						"to": "00:00:00,480"
+					},
+					"offsets": {
+						"from": 450,
+						"to": 480
+					},
+					"id": 3426,
+					"p": 0.982247,
+					"t_dtw": 72
+				},
+				{
+					"text": "us",
+					"timestamps": {
+						"from": "00:00:00,610",
+						"to": "00:00:00,610"
+					},
+					"offsets": {
+						"from": 610,
+						"to": 610
+					},
+					"id": 301,
+					"p": 0.99903,
+					"t_dtw": 82
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:00,620",
+						"to": "00:00:00,690"
+					},
+					"offsets": {
+						"from": 620,
+						"to": 690
+					},
+					"id": 268,
+					"p": 0.999746,
+					"t_dtw": 86
+				},
+				{
+					"text": " machst",
+					"timestamps": {
+						"from": "00:00:00,690",
+						"to": "00:00:00,910"
+					},
+					"offsets": {
+						"from": 690,
+						"to": 910
+					},
+					"id": 43350,
+					"p": 0.940467,
+					"t_dtw": 110
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:00,910",
+						"to": "00:00:01,060"
+					},
+					"offsets": {
+						"from": 910,
+						"to": 1060
+					},
+					"id": 13,
+					"p": 0.971594,
+					"t_dtw": 110
+				},
+				{
+					"text": "[_TT_56]",
+					"timestamps": {
+						"from": "00:00:01,120",
+						"to": "00:00:01,120"
+					},
+					"offsets": {
+						"from": 1120,
+						"to": 1120
+					},
+					"id": 50421,
+					"p": 0.33338,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}
