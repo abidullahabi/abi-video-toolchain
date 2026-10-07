@@ -20,16 +20,16 @@
   "createdAt": "2026-10-07T19:55:25.363Z",
   "bearbeitung": {
     "agent": "codex",
-    "aufgabe": "IMG_2032: Nur Schnitt nach der freigegebenen IMG_2031-Referenz, dann Vorschau. Kein Upload.",
-    "begonnen": "2026-10-07T19:55:25.363Z",
+    "aufgabe": "IMG_2032 Schnittkorrektur: Pausen enger, Lernsystem-Teaser zurück, Klopapier-Clip raus. Design erst danach.",
+    "begonnen": "2026-10-07T20:20:30.363517+00:00",
     "status": "fertig",
-    "fertig": "2026-10-07T20:13:44.793322+00:00"
+    "beendet": "2026-10-07T20:34:30.114683+00:00"
   },
   "tempo": 1,
   "notionPage": "https://app.notion.com/p/3f18cb917b3b80f3a43fc587d3da43b7",
   "cutReference": "IMG-2031-Schnitt-2026-10-07",
   "uploadAuthorized": false,
-  "cutDuration": 88.86666666666667,
+  "cutDuration": 85.93333333333334,
   "media": {
     "datei": "media.mp4",
     "schnitt": true,
@@ -37,9 +37,35 @@
     "farbkorrektur": null
   },
   "status": "schnitt_zur_abnahme",
-  "previewFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Wie viel lernen für eine 1,0 - Schnitt.mp4",
-  "previewSha256": "356f998aaeb898bad536e4d9abc4d6de4f0d11fb0ec7243234f7657aa2334327",
+  "previewFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Wie viel lernen für eine 1,0 - Feinschnitt.mp4",
+  "previewSha256": "3d0217739fc95c1d9325b1b92c488c5f40dc56dd265eabd385ab0018b423571c",
   "latestExport": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2032-Schnitt-2026-10-07/exports/vorschau.mp4",
   "designPending": true,
-  "actualListening": false
+  "actualListening": false,
+  "designFeedback": {
+    "pdfSource": "/Users/abi/Downloads/LÜ_3638013.pdf",
+    "accessVerified": true,
+    "nextStepOnly": true,
+    "redact": [
+      "Geburtsdatum",
+      "Matrikelnummer",
+      "sonstige persönliche Identifikatoren"
+    ],
+    "visuals": "Leistungsübersicht als Hintergrund, Einsen hervorheben, optional Hook/Wiederholung",
+    "h2Option": "Masterzeugnis als Klopapier als H2 erwägen, gesprochenen Clip entfernen",
+    "teaser": "Eigenes Lernsystem-Video anteasern"
+  },
+  "previousPreviewArchive": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Archiv/Vorversionen/Datum offen - Wie viel lernen für eine 1,0 - Schnitt vor Feedback 2026-10-07.mp4",
+  "feedbackCut": {
+    "planSha256": "f43839bc2b56d1f99fb3867ec4f3991990b1e86e4f543b9ae06db5e383901308",
+    "durationSeconds": 85.944,
+    "seams": 49,
+    "innerPausesShortened": 16,
+    "restoredLearningSystemTeaser": true,
+    "removedToiletPaperClip": true,
+    "technicalQa": "review/cut-export-check-feedback.json",
+    "independentQa": "review/pruefer-nahtqa-feedback.json",
+    "actualListening": false,
+    "userApproval": "offen"
+  }
 }
