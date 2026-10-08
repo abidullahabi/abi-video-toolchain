@@ -1,0 +1,240 @@
+{
+  "mode": "cut-only",
+  "title": "Freunde kennenlernen im Studium",
+  "designVersion": "2.4",
+  "source": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/IMG_2033.MOV",
+  "sourceSha256": "e72671596b29733440cfb681ff681ea7ea23dc246214137dafd0c09c56578113",
+  "sourceBytes": 579345185,
+  "sourceDuration": 187.278333,
+  "sourceVideo": {
+    "width": 2160,
+    "height": 3840,
+    "fps": "3370200/112367",
+    "codec": "hevc",
+    "transfer": "bt709",
+    "hdr": false
+  },
+  "farbkorrektur": null,
+  "renderMaster": "mp4",
+  "masterColorMatrix": "bt709",
+  "createdAt": "2026-10-07T19:42:11.339Z",
+  "bearbeitung": {
+    "agent": "codex",
+    "aufgabe": "Nur Einstiegs-H1 zu Freunde finden im Studium ändern. Restvideo und Ton unverändert.",
+    "begonnen": "2026-10-08T10:12:42.269Z",
+    "status": "fertig",
+    "beendet": "2026-10-08T10:18:47.960402+00:00",
+    "stand": "Nur H1 geändert. Lokale Postingdatei geprüft und ersetzt. Vorfassung archiviert. Kein Upload."
+  },
+  "tempo": 1.1,
+  "pruefgrundlage": {
+    "workflow": "1.33",
+    "skript": "3.0",
+    "design": "2.4",
+    "umfang": "IMG_2033: freigegebenen Schnitt und Gestaltung erhalten, beide Meme-Einblendungen entfernt, manuelle Postingdatei datiert.",
+    "referenzDatei": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Checkliste erster Monat arbeiten - Schnitt unter 90 Sekunden.mp4",
+    "referenzSha256": "c87e422b764b597252dc6d73744f99b72ab26f5a32cfd5d464183640b6607e0d"
+  },
+  "notionPage": "https://app.notion.com/p/1018cb917b3b80a89f7df66ddcdfe606",
+  "schnittEntwurf": {
+    "status": "vom_nutzer_zurueckgestellt_nicht_umsetzen",
+    "basis": "schnitt/analysis/asr-turbo/summary.json",
+    "behalteneChunks": [
+      1,
+      3,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      17,
+      18,
+      21,
+      22,
+      23,
+      24,
+      25,
+      27,
+      29,
+      30,
+      32
+    ],
+    "ungepruefteDauerSchaetzungSekunden": [
+      55,
+      65
+    ],
+    "vadDauerTempo1": 58.592,
+    "actualListening": false,
+    "offen": [
+      "Beruhigung Roh32-35s: beide Modelle erkennen nicht statt moeglicherweise dich. Nicht als Versprecher belegt.",
+      "CTA Roh182-185s: beide Modelle erkennen voll statt moeglicherweise Folgen. Nicht als Versprecher belegt.",
+      "Sprachkurs Roh129s: Modellabweichung.",
+      "Saemtliche Exportkanten, Nähte, Synchronitaet, Decodierung und Schlussgeste noch zu pruefen."
+    ]
+  },
+  "schnittAuftrag": {
+    "stand": "2026-10-07T19:51:26.607104+00:00",
+    "nutzer": "Erstmal Video einmal schneiden und keine Clips wegmachen. Storyline und Inhalt vor Laenge.",
+    "umsetzung": "Nur Pausen und Uebergaenge. Alle gesprochenen Passagen und Anlaeufe erhalten. Keine Zielkuerzung auf60oder90Sekunden.",
+    "tempo": 1.1,
+    "gestaltung": false,
+    "veroeffentlichung": false
+  },
+  "schnittVorschauDrive": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Freunde kennenlernen im Studium - Schnitt IMG_2033 V2.mp4",
+  "latestExport": {
+    "file": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2033-Schnitt-2026-10-07/exports/design-v3-h1-studium.mp4",
+    "deliveredFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/03_Bereit_zum_Posten/2026-10-08 - Freunde kennenlernen im Studium.mp4",
+    "sha256": "6c972b53cfe22d4d9e24382133339586a50864b507ead64fb2567fbd30a75c96",
+    "bytes": 101549979,
+    "duration": 60.333333,
+    "tempo": 1.1,
+    "designRevision": 3,
+    "qaReport": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2033-Schnitt-2026-10-07/review/h1-revision-v3/qa.json",
+    "changeAuthorized": true,
+    "deliveryAuthorized": true,
+    "userApproved": false,
+    "approvalBasis": "Direkter Nutzerauftrag: ausschliesslich Einstiegs-H1 Freunde finden im Studium, dann in Ready to Post ablegen. Vorherige Fassung war freigegeben.",
+    "actualListening": false
+  },
+  "revision2": {
+    "auftrag": "Doppelte Aussagen und eindeutige Versprecher entfernen, einige Pausen noch enger. Keine Laengenvorgabe.",
+    "basisExportSha256": "f7dfb38009f7c1363f786fef790076e65bb63b15a865bfa934fdf13b3f224111",
+    "originaleUndAusgelieferteDateienErhalten": true,
+    "status": "vorgelegt",
+    "activeCutPlan": "schnitt.json",
+    "cutPlanSha256": "5ca5cb6b10458046616fd82ac4b028646823a6adfa2ca21e1112b80285234fc4",
+    "selection": "schnitt/selection.json",
+    "actualListening": false
+  },
+  "previousExport": {
+    "file": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2033-Schnitt-2026-10-07/exports/vorschau.mp4",
+    "deliveredFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Freunde kennenlernen im Studium - Schnitt IMG_2033.mp4",
+    "sha256": "f7dfb38009f7c1363f786fef790076e65bb63b15a865bfa934fdf13b3f224111",
+    "bytes": 134493646,
+    "duration": 80.9,
+    "tempo": 1.1,
+    "allSpeechSectionsKept": true,
+    "qaReport": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2033-Schnitt-2026-10-07/review/EXPORT_PRUEFUNG.json",
+    "actualListening": false,
+    "userApproved": false
+  },
+  "designAuftrag": {
+    "approvedCut": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2033-Schnitt-2026-10-07/exports/vorschau-v2.mp4",
+    "approvedCutSha256": "e1d94836ccec3fc739c0eb0356a4a808ed3b6da1c0280ffd8fcfeba2fa745d66",
+    "cutApproved": true,
+    "cutAndTempoLocked": true,
+    "reuseEncodedVideo": true,
+    "experimentsAuthorized": true,
+    "friendLabels": [
+      "Team Pedro",
+      "Istanbul Trio",
+      "All the White Chicks",
+      "Econometrics Gang",
+      "Ocean",
+      "Team Never Ready Always Done"
+    ],
+    "friendLabelsSimultaneous": true,
+    "noPublication": true,
+    "renderScale": 1,
+    "frameCache": "off",
+    "completed": true,
+    "delivered": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/03_Bereit_zum_Posten/2026-10-08 - Freunde kennenlernen im Studium.mp4",
+    "localTemplateCommit": "61e0534",
+    "memesRemovedOnUserRequest": true
+  },
+  "cutDuration": 60.333333333333336,
+  "media": {
+    "datei": "media.mp4",
+    "source": "exports/vorschau-v2.mp4",
+    "byteIdentical": true,
+    "tempoAlreadyApplied": 1.1
+  },
+  "latestCutExport": {
+    "file": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2033-Schnitt-2026-10-07/exports/vorschau-v2.mp4",
+    "deliveredFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Freunde kennenlernen im Studium - Schnitt IMG_2033 V2.mp4",
+    "sha256": "e1d94836ccec3fc739c0eb0356a4a808ed3b6da1c0280ffd8fcfeba2fa745d66",
+    "bytes": 99754667,
+    "duration": 60.333333,
+    "tempo": 1.1,
+    "revision": 2,
+    "cutPlanSha256": "5ca5cb6b10458046616fd82ac4b028646823a6adfa2ca21e1112b80285234fc4",
+    "qaReport": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2033-Schnitt-2026-10-07/review/EXPORT_PRUEFUNG_V2.json",
+    "actualListening": false,
+    "userApproved": true
+  },
+  "latestDesignExport": {
+    "file": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2033-Schnitt-2026-10-07/exports/design-v3-h1-studium.mp4",
+    "deliveredFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/03_Bereit_zum_Posten/2026-10-08 - Freunde kennenlernen im Studium.mp4",
+    "sha256": "6c972b53cfe22d4d9e24382133339586a50864b507ead64fb2567fbd30a75c96",
+    "bytes": 101549979,
+    "duration": 60.333333,
+    "tempo": 1.1,
+    "designRevision": 3,
+    "qaReport": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2033-Schnitt-2026-10-07/review/h1-revision-v3/qa.json",
+    "changeAuthorized": true,
+    "deliveryAuthorized": true,
+    "userApproved": false,
+    "approvalBasis": "Direkter Nutzerauftrag: ausschliesslich Einstiegs-H1 Freunde finden im Studium, dann in Ready to Post ablegen. Vorherige Fassung war freigegeben.",
+    "actualListening": false
+  },
+  "previousDesignExport": {
+    "file": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2033-Schnitt-2026-10-07/exports/design-v1-final.mp4",
+    "deliveredFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Freunde kennenlernen im Studium - Design IMG_2033 V1.mp4",
+    "sha256": "606914192cde55a5a19ff975cd6f8941d2c00965c5afdee555fd678264dcfe60",
+    "bytes": 101691700,
+    "duration": 60.333333,
+    "tempo": 1.1,
+    "designRevision": 1,
+    "qaReport": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2033-Schnitt-2026-10-07/review/DESIGN_EXPORT_PRUEFUNG.json",
+    "actualListening": false,
+    "userApproved": false
+  },
+  "posting": {
+    "date": "2026-10-08",
+    "timeHint": "morgens",
+    "timezone": "Europe/Berlin",
+    "method": "manualByUser",
+    "file": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/03_Bereit_zum_Posten/2026-10-08 - Freunde kennenlernen im Studium.mp4",
+    "published": false,
+    "automaticallyScheduled": false
+  },
+  "finalUserApproval": {
+    "approvedAt": "2026-10-07T21:14:34.554329+00:00",
+    "statement": "Dieses Video finde ich eigentlich ganz gut und kann so final bleiben.",
+    "file": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/03_Bereit_zum_Posten/2026-10-08 - Freunde kennenlernen im Studium.mp4",
+    "sha256": "75bb738a3ef7f5d4519b29240639b1f90855b19a4b2a014d07cf8a05781dbf7f"
+  },
+  "previousDesignExports": [
+    {
+      "file": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2033-Schnitt-2026-10-07/exports/design-v2-no-memes.mp4",
+      "deliveredFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/03_Bereit_zum_Posten/2026-10-08 - Freunde kennenlernen im Studium.mp4",
+      "sha256": "75bb738a3ef7f5d4519b29240639b1f90855b19a4b2a014d07cf8a05781dbf7f",
+      "bytes": 101575715,
+      "duration": 60.333333,
+      "tempo": 1.1,
+      "designRevision": 2,
+      "qaReport": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2033-Schnitt-2026-10-07/review/DESIGN_EXPORT_PRUEFUNG_V2.json",
+      "userApproved": true,
+      "approvalBasis": "Nutzerfreigabe: alles gut, nur beide Memes entfernen. Danach bereit zum manuellen Posten.",
+      "actualListening": false
+    }
+  ],
+  "designH1Revision": {
+    "requestedText": "Freunde finden im Studium",
+    "renderedLines": [
+      "FREUNDE FINDEN",
+      "IM STUDIUM"
+    ],
+    "scope": "Nur H1 am Anfang. Bisherige H2 ist in dieser H1 enthalten.",
+    "baseSha256": "75bb738a3ef7f5d4519b29240639b1f90855b19a4b2a014d07cf8a05781dbf7f",
+    "changedPlanFields": [
+      "einstieg"
+    ],
+    "copiedVideoFromFrame": 148,
+    "allAudioPacketsCopied": true,
+    "allTimestampsUnchanged": true,
+    "archive": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Archiv/Vorversionen/2026-10-08 - Freunde finden im Studium - vor H1-Korrektur/2026-10-08 - Freunde kennenlernen im Studium.mp4"
+  }
+}
