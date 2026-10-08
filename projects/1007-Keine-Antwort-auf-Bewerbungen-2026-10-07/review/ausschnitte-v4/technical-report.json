@@ -1,0 +1,98 @@
+{
+  "clips": [
+    {
+      "name": "einstieg",
+      "duration": 12.033333,
+      "frames": 361,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "fullDecode": true,
+      "anchors": [
+        {
+          "time": 0,
+          "sourceTime": 1.0,
+          "rgbMAE": 0.4592335390946502
+        },
+        {
+          "time": 6.016666666666667,
+          "sourceTime": 15.4,
+          "rgbMAE": 0.5129655349794239
+        },
+        {
+          "time": 11.033333333333333,
+          "sourceTime": 45.266666666666666,
+          "rgbMAE": 0.6249974279835391
+        }
+      ],
+      "audioSync": [
+        {
+          "time": 1,
+          "lagMs": 0.0,
+          "correlation": 0.9999807827866614
+        },
+        {
+          "time": 6.016666666666667,
+          "lagMs": 0.0,
+          "correlation": 0.9999445709120702
+        },
+        {
+          "time": 9.033333333333333,
+          "lagMs": 0.0,
+          "correlation": 0.9998419650588979
+        }
+      ],
+      "actualListening": false,
+      "sha256": "96eefd9d56ca1a3143f0f9f96191d2077b1f83f6e13594a7a47b1a2fc59f8339"
+    },
+    {
+      "name": "linkedin",
+      "duration": 14.333333,
+      "frames": 430,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "fullDecode": true,
+      "anchors": [
+        {
+          "time": 0,
+          "sourceTime": 198.06666666666666,
+          "rgbMAE": 0.4599922839506173
+        },
+        {
+          "time": 7.166666666666667,
+          "sourceTime": 252.86666666666667,
+          "rgbMAE": 0.6485159465020576
+        },
+        {
+          "time": 13.333333333333334,
+          "sourceTime": 259.96666666666664,
+          "rgbMAE": 0.5526774691358025
+        }
+      ],
+      "audioSync": [
+        {
+          "time": 1,
+          "lagMs": 0.0,
+          "correlation": 0.9999631915142979
+        },
+        {
+          "time": 7.166666666666667,
+          "lagMs": 0.0,
+          "correlation": 0.9999473057780802
+        },
+        {
+          "time": 11.333333333333334,
+          "lagMs": 0.0,
+          "correlation": 0.9999898484915191
+        }
+      ],
+      "actualListening": false,
+      "sha256": "0c9a6ead4cc3e80012e9bf4f7cda867312e268b51e8428f84129080321f2e77f"
+    }
+  ],
+  "previousFullVideoUnchanged": true,
+  "previousFullVideoSHA256": "834d89b15ef6257b2deb39c566d4a0d9e6ef74ae22d26d35bd6c7dd30c51a452"
+}

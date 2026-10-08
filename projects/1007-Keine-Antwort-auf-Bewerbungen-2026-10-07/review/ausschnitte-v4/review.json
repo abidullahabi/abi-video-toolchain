@@ -1,0 +1,53 @@
+{
+  "scope": "Zwei isolierte Prüfausschnitte, keine Änderung des Gesamtvideos",
+  "tempo": 1.1,
+  "fullVideoUnchanged": true,
+  "design": false,
+  "subtitles": false,
+  "actualListening": false,
+  "visualStillReview": 6,
+  "deliveries": [
+    {
+      "name": "einstieg",
+      "file": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Pruefausschnitte 1007 - 2026-10-08/01 - Einstieg.mp4",
+      "sha256": "96eefd9d56ca1a3143f0f9f96191d2077b1f83f6e13594a7a47b1a2fc59f8339"
+    },
+    {
+      "name": "linkedin",
+      "file": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Pruefausschnitte 1007 - 2026-10-08/02 - LinkedIn.mp4",
+      "sha256": "0c9a6ead4cc3e80012e9bf4f7cda867312e268b51e8428f84129080321f2e77f"
+    }
+  ],
+  "sourceChanges": {
+    "restoreIntro": [
+      [
+        11.666666666666666,
+        13.433333333333334
+      ],
+      [
+        13.766666666666667,
+        17.2
+      ]
+    ],
+    "replaceLinkedIn": [
+      [
+        203.4,
+        205.33333333333334
+      ],
+      [
+        205.9,
+        206.86666666666667
+      ]
+    ]
+  },
+  "approval": "pending",
+  "independentReviewer": {
+    "seamsReviewed": 8,
+    "models": [
+      "turbo",
+      "small"
+    ],
+    "result": "Kein ASR-belegbarer neuer Wortverlust. Originalformulierungen und Reihenfolge erhalten. LinkedIn-Grenzen entsprechen dem geprüften Vorschlag.",
+    "actualListening": false
+  }
+}

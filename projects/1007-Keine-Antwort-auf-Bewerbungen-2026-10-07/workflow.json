@@ -20,11 +20,11 @@
   "createdAt": "2026-10-07T21:18:53.486Z",
   "bearbeitung": {
     "agent": "codex",
-    "aufgabe": "1007 V3: Clipauswahl nach Nutzerfeedback, fehlende Begründungen und LinkedIn zurück, Versprecher entfernen, engere Pausen. Nur Schnitt, kein Design.",
-    "begonnen": "2026-10-08T06:49:22.149464+00:00",
+    "aufgabe": "Nur zwei korrigierte Ausschnitte zur Nutzerfreigabe: Einstieg wiederherstellen, LinkedIn-Pausen straffen. Kein Gesamtrender, kein Design.",
+    "begonnen": "2026-10-08T08:42:57.586865+00:00",
     "status": "fertig",
-    "fertig": "2026-10-08T07:07:24.076Z",
-    "stand": "1007 V3 Schnitt89.1s,1.1x. CV-Grund, Marktpassagen und LinkedIn-Follow wiederhergestellt, beanstandeten CV-Anlauf entfernt. KeinDesign. TechnischeQA und36Nähte/ZweiModellASR geprüft. TatsächlicheHörprüfung undNutzerabnahme offen."
+    "fertig": "2026-10-08T08:53:27.696Z",
+    "stand": "Nur zwei korrigierte Ausschnitte ausgeliefert. Gesamtschnitt V3 und persönliches Ende unverändert. Wartet auf Nutzerfreigabe der Ausschnitte, danach gesonderter Auftrag für Gesamtschnitt/Design."
   },
   "tempo": 1.1,
   "designGuidelineRead": {
@@ -95,5 +95,28 @@
     "uploaded": false,
     "posted": false
   },
-  "designPlansStale": true
+  "designPlansStale": true,
+  "pendingRevision": {
+    "revision": "V4 Ausschnitte",
+    "fullVideoRenderAuthorized": false,
+    "designAuthorized": false,
+    "maximumSeconds": null,
+    "contentPriority": true,
+    "preservePersonalExperienceAndEnding": true,
+    "userApproved": false,
+    "clipDeliveries": [
+      {
+        "name": "einstieg",
+        "file": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Pruefausschnitte 1007 - 2026-10-08/01 - Einstieg.mp4",
+        "sha256": "96eefd9d56ca1a3143f0f9f96191d2077b1f83f6e13594a7a47b1a2fc59f8339"
+      },
+      {
+        "name": "linkedin",
+        "file": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Pruefausschnitte 1007 - 2026-10-08/02 - LinkedIn.mp4",
+        "sha256": "0c9a6ead4cc3e80012e9bf4f7cda867312e268b51e8428f84129080321f2e77f"
+      }
+    ],
+    "expectedFullDuration": 92.7,
+    "actualListening": false
+  }
 }

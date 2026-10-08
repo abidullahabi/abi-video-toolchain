@@ -1,0 +1,99 @@
+{
+  "mode": "cut-only",
+  "title": "Keine Antwort auf Bewerbungen",
+  "designVersion": "2.2",
+  "source": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/1007.mp4",
+  "sourceSha256": "0e77e2a140a979fd142087ed440f6c31522dfd81dbe0afbab4fd11b4cd4206d6",
+  "sourceBytes": 1025421232,
+  "sourceDuration": 313.562268,
+  "sourceVideo": {
+    "width": 2160,
+    "height": 3840,
+    "fps": "30/1",
+    "codec": "h264",
+    "transfer": "bt709",
+    "hdr": false
+  },
+  "farbkorrektur": null,
+  "renderMaster": "mp4",
+  "masterColorMatrix": "bt709",
+  "createdAt": "2026-10-07T21:18:53.486Z",
+  "bearbeitung": {
+    "agent": "codex",
+    "aufgabe": "1007 V3: Clipauswahl nach Nutzerfeedback, fehlende Begründungen und LinkedIn zurück, Versprecher entfernen, engere Pausen. Nur Schnitt, kein Design.",
+    "begonnen": "2026-10-08T06:49:22.149464+00:00",
+    "status": "fertig",
+    "fertig": "2026-10-08T07:07:24.076Z",
+    "stand": "1007 V3 Schnitt89.1s,1.1x. CV-Grund, Marktpassagen und LinkedIn-Follow wiederhergestellt, beanstandeten CV-Anlauf entfernt. KeinDesign. TechnischeQA und36Nähte/ZweiModellASR geprüft. TatsächlicheHörprüfung undNutzerabnahme offen."
+  },
+  "tempo": 1.1,
+  "designGuidelineRead": {
+    "version": "2.4",
+    "readAt": "2026-10-07T21:22:43.034708+00:00",
+    "applied": true
+  },
+  "contentWorkflowVersion": "1.33",
+  "notionAssignmentVerified": true,
+  "scope": {
+    "source": "1007.mp4",
+    "revision": "V3",
+    "cutOnly": true,
+    "design": false,
+    "subtitles": false,
+    "tempo": 1.1,
+    "maximumSeconds": 90,
+    "noUpload": true,
+    "actualListening": false
+  },
+  "notionUrl": "https://app.notion.com/p/3f18cb917b3b81728729f41cebeedd3f",
+  "assignmentEvidence": "Volltext der Quelle: keine Antworten auf Bewerbungen, CV anpassen, Testbewerbungen, Zertifikate/Google Ads, LinkedIn-Kontakte und eigener 60-Bewerbungen-Fall. Passt eindeutig zur Notion-Seite.",
+  "cutDuration": 89.1,
+  "removedSeconds": 174.366667,
+  "previewFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Keine Antwort auf Bewerbungen - Design unter 90 Sekunden.mp4",
+  "previewSha256": "2feb61146efdf1c0ec247e4f4fa455731d509be416c86466df27d18ed7938b4b",
+  "aktuell": {
+    "datei": "/Users/abi/Projekte/abi-video-toolchain/projects/1007-Keine-Antwort-auf-Bewerbungen-2026-10-07/exports/upload.mp4",
+    "sha256": "2feb61146efdf1c0ec247e4f4fa455731d509be416c86466df27d18ed7938b4b",
+    "bytes": 131598593,
+    "erzeugt": "2026-10-08T06:25:12Z",
+    "gesetztAm": "2026-10-08T06:25:12Z"
+  },
+  "latestExport": "/Users/abi/Projekte/abi-video-toolchain/projects/1007-Keine-Antwort-auf-Bewerbungen-2026-10-07/media.mp4",
+  "qa": {
+    "report": "review/v3/technical-report.json",
+    "seams": "review/v3/seam-review.json",
+    "fullDecode": true,
+    "actualListening": false,
+    "continuousViewing": false,
+    "userApproved": false
+  },
+  "media": {
+    "datei": "media.mp4",
+    "schnitt": true,
+    "tempo": 1.1,
+    "farbkorrektur": null
+  },
+  "renderedExport": "/Users/abi/Projekte/abi-video-toolchain/projects/1007-Keine-Antwort-auf-Bewerbungen-2026-10-07/exports/master-v2.mp4",
+  "status": "complete",
+  "audioHandling": "GleicheQuellschnitte fürBild/Ton. Tempo1.1 mit atempo und erhaltenerTonhöhe. Finalton ausbeschleunigtermedia.mp4,0mszusätzlicherVersatz an3Prüfstellen.",
+  "deliveryProfile": "Zernio/Buffer: H264 (medium), 1080x1920p30, BT709, 12000k video target (max. 12M, 300-MB-Grenze) / 14M VBV, AAC-LC 120k, faststart",
+  "layoutVersion": "tiktok-safe-v1",
+  "colorVerification": {
+    "source": "actual encoded3-frame test",
+    "frameExtraction": "jpg",
+    "cameraFirstFrameRGBmae": 1.5525247668997668,
+    "incorrectPngExtractionRGBmae": 9.175118006993007,
+    "additional601Conversion": false
+  },
+  "previewDuration": 87.168,
+  "userApproved": false,
+  "delivery": {
+    "file": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Keine Antwort auf Bewerbungen - Schnitt korrigiert.mp4",
+    "sha256": "834d89b15ef6257b2deb39c566d4a0d9e6ef74ae22d26d35bd6c7dd30c51a452",
+    "duration": 89.1,
+    "userApproved": false,
+    "uploaded": false,
+    "posted": false
+  },
+  "designPlansStale": true
+}
