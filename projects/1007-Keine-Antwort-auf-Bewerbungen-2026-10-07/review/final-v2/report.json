@@ -1,0 +1,87 @@
+{
+  "duration": 87.168,
+  "videoFrames": 2615,
+  "fullyDecodedVideoAndAudio": true,
+  "sourceSha256Unchanged": "0e77e2a140a979fd142087ed440f6c31522dfd81dbe0afbab4fd11b4cd4206d6",
+  "firstFrame": {
+    "sourceSeconds": 1,
+    "sourceToCameraMAE": 0.9238073593073594,
+    "cameraToFinalMAE": 1.4797483766233765,
+    "sourceToFinalMAE": 1.6610914502164502,
+    "method": "RGB pixel comparison outside overlay zones at the actual encoded first frame"
+  },
+  "videoFrameMatches": [
+    {
+      "time": 0,
+      "bestReferenceFrameOffset": 0,
+      "mae": 1.4797483766233765
+    },
+    {
+      "time": 12.7,
+      "bestReferenceFrameOffset": 0,
+      "mae": 1.7846433982683982
+    },
+    {
+      "time": 35.7,
+      "bestReferenceFrameOffset": 0,
+      "mae": 1.6715248917748917
+    },
+    {
+      "time": 42.1,
+      "bestReferenceFrameOffset": 0,
+      "mae": 1.8081309523809523
+    },
+    {
+      "time": 64.75,
+      "bestReferenceFrameOffset": 0,
+      "mae": 1.7487581168831168
+    },
+    {
+      "time": 77.2,
+      "bestReferenceFrameOffset": 0,
+      "mae": 1.6856185064935065
+    },
+    {
+      "time": 85.5,
+      "bestReferenceFrameOffset": 0,
+      "mae": 1.7424778138528139
+    },
+    {
+      "time": 87.1,
+      "bestReferenceFrameOffset": 0,
+      "mae": 1.928176406926407
+    }
+  ],
+  "encodedVisualSamples": [
+    0,
+    12.05,
+    12.7,
+    21.0,
+    30.9,
+    35.7,
+    41.35,
+    42.1,
+    51.95,
+    64.75,
+    73.5,
+    77.2,
+    78.5,
+    81.2,
+    81.7,
+    82.5,
+    85.5,
+    87.1
+  ],
+  "actualListening": false,
+  "sourceFileUnchanged": true,
+  "outputSha256": "2feb61146efdf1c0ec247e4f4fa455731d509be416c86466df27d18ed7938b4b",
+  "visualSampleReview": {
+    "reviewed": true,
+    "count": 18,
+    "firstFrameMatches": true,
+    "blockingFindings": 0,
+    "layoutWarnings": "Konservative Kopf-Boxen teils überlappend, Stichproben zeigen Text oberhalb von Kappe/Gesicht.",
+    "animationStatesReviewed": true,
+    "actualListening": false
+  }
+}

@@ -1,0 +1,283 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,340"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3340
+			},
+			"text": " Da stecken wir gerade, in so einer Zeit stecken gerade fest.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.785506,
+					"t_dtw": -1
+				},
+				{
+					"text": " Da",
+					"timestamps": {
+						"from": "00:00:00,120",
+						"to": "00:00:00,120"
+					},
+					"offsets": {
+						"from": 120,
+						"to": 120
+					},
+					"id": 3933,
+					"p": 0.972348,
+					"t_dtw": 24
+				},
+				{
+					"text": " ste",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 300
+					},
+					"id": 2126,
+					"p": 0.990966,
+					"t_dtw": 44
+				},
+				{
+					"text": "cken",
+					"timestamps": {
+						"from": "00:00:00,310",
+						"to": "00:00:00,550"
+					},
+					"offsets": {
+						"from": 310,
+						"to": 550
+					},
+					"id": 13029,
+					"p": 0.990382,
+					"t_dtw": 54
+				},
+				{
+					"text": " wir",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,750"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 750
+					},
+					"id": 1987,
+					"p": 0.99444,
+					"t_dtw": 64
+				},
+				{
+					"text": " gerade",
+					"timestamps": {
+						"from": "00:00:00,750",
+						"to": "00:00:01,020"
+					},
+					"offsets": {
+						"from": 750,
+						"to": 1020
+					},
+					"id": 12117,
+					"p": 0.899161,
+					"t_dtw": 84
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,020",
+						"to": "00:00:01,140"
+					},
+					"offsets": {
+						"from": 1020,
+						"to": 1140
+					},
+					"id": 11,
+					"p": 0.203232,
+					"t_dtw": 102
+				},
+				{
+					"text": " in",
+					"timestamps": {
+						"from": "00:00:01,260",
+						"to": "00:00:01,370"
+					},
+					"offsets": {
+						"from": 1260,
+						"to": 1370
+					},
+					"id": 294,
+					"p": 0.745835,
+					"t_dtw": 172
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:01,380",
+						"to": "00:00:01,520"
+					},
+					"offsets": {
+						"from": 1380,
+						"to": 1520
+					},
+					"id": 370,
+					"p": 0.970393,
+					"t_dtw": 190
+				},
+				{
+					"text": " einer",
+					"timestamps": {
+						"from": "00:00:01,650",
+						"to": "00:00:01,830"
+					},
+					"offsets": {
+						"from": 1650,
+						"to": 1830
+					},
+					"id": 6850,
+					"p": 0.975743,
+					"t_dtw": 204
+				},
+				{
+					"text": " Zeit",
+					"timestamps": {
+						"from": "00:00:01,830",
+						"to": "00:00:02,050"
+					},
+					"offsets": {
+						"from": 1830,
+						"to": 2050
+					},
+					"id": 9394,
+					"p": 0.986113,
+					"t_dtw": 224
+				},
+				{
+					"text": " ste",
+					"timestamps": {
+						"from": "00:00:02,070",
+						"to": "00:00:02,250"
+					},
+					"offsets": {
+						"from": 2070,
+						"to": 2250
+					},
+					"id": 2126,
+					"p": 0.916624,
+					"t_dtw": 242
+				},
+				{
+					"text": "cken",
+					"timestamps": {
+						"from": "00:00:02,250",
+						"to": "00:00:02,450"
+					},
+					"offsets": {
+						"from": 2250,
+						"to": 2450
+					},
+					"id": 13029,
+					"p": 0.95434,
+					"t_dtw": 250
+				},
+				{
+					"text": " gerade",
+					"timestamps": {
+						"from": "00:00:02,490",
+						"to": "00:00:02,770"
+					},
+					"offsets": {
+						"from": 2490,
+						"to": 2770
+					},
+					"id": 12117,
+					"p": 0.476053,
+					"t_dtw": 270
+				},
+				{
+					"text": " fest",
+					"timestamps": {
+						"from": "00:00:02,870",
+						"to": "00:00:03,020"
+					},
+					"offsets": {
+						"from": 2870,
+						"to": 3020
+					},
+					"id": 6633,
+					"p": 0.981358,
+					"t_dtw": 300
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:03,070",
+						"to": "00:00:03,120"
+					},
+					"offsets": {
+						"from": 3070,
+						"to": 3120
+					},
+					"id": 13,
+					"p": 0.96609,
+					"t_dtw": 330
+				},
+				{
+					"text": "[_TT_167]",
+					"timestamps": {
+						"from": "00:00:03,340",
+						"to": "00:00:03,340"
+					},
+					"offsets": {
+						"from": 3340,
+						"to": 3340
+					},
+					"id": 50532,
+					"p": 0.347341,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,213 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,780"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1780
+			},
+			"text": " Ein 1,7 Master im BWL.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.755912,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ein",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,240"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 240
+					},
+					"id": 6391,
+					"p": 0.449822,
+					"t_dtw": 24
+				},
+				{
+					"text": " 1",
+					"timestamps": {
+						"from": "00:00:00,240",
+						"to": "00:00:00,430"
+					},
+					"offsets": {
+						"from": 240,
+						"to": 430
+					},
+					"id": 502,
+					"p": 0.973947,
+					"t_dtw": 46
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,500",
+						"to": "00:00:00,640"
+					},
+					"offsets": {
+						"from": 500,
+						"to": 640
+					},
+					"id": 11,
+					"p": 0.969416,
+					"t_dtw": 56
+				},
+				{
+					"text": "7",
+					"timestamps": {
+						"from": "00:00:00,640",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 640,
+						"to": 880
+					},
+					"id": 22,
+					"p": 0.994824,
+					"t_dtw": 76
+				},
+				{
+					"text": " Master",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:01,360"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 1360
+					},
+					"id": 6140,
+					"p": 0.565058,
+					"t_dtw": 102
+				},
+				{
+					"text": " im",
+					"timestamps": {
+						"from": "00:00:01,360",
+						"to": "00:00:01,510"
+					},
+					"offsets": {
+						"from": 1360,
+						"to": 1510
+					},
+					"id": 566,
+					"p": 0.508519,
+					"t_dtw": 116
+				},
+				{
+					"text": " B",
+					"timestamps": {
+						"from": "00:00:01,510",
+						"to": "00:00:01,560"
+					},
+					"offsets": {
+						"from": 1510,
+						"to": 1560
+					},
+					"id": 363,
+					"p": 0.936635,
+					"t_dtw": 126
+				},
+				{
+					"text": "W",
+					"timestamps": {
+						"from": "00:00:01,590",
+						"to": "00:00:01,600"
+					},
+					"offsets": {
+						"from": 1590,
+						"to": 1600
+					},
+					"id": 54,
+					"p": 0.692337,
+					"t_dtw": 134
+				},
+				{
+					"text": "L",
+					"timestamps": {
+						"from": "00:00:01,770",
+						"to": "00:00:01,770"
+					},
+					"offsets": {
+						"from": 1770,
+						"to": 1770
+					},
+					"id": 43,
+					"p": 0.998944,
+					"t_dtw": 150
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:01,770",
+						"to": "00:00:01,770"
+					},
+					"offsets": {
+						"from": 1770,
+						"to": 1770
+					},
+					"id": 13,
+					"p": 0.912567,
+					"t_dtw": 174
+				},
+				{
+					"text": "[_TT_89]",
+					"timestamps": {
+						"from": "00:00:01,780",
+						"to": "00:00:01,780"
+					},
+					"offsets": {
+						"from": 1780,
+						"to": 1780
+					},
+					"id": 50454,
+					"p": 0.493533,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

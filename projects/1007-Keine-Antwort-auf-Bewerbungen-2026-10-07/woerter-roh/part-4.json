@@ -1,0 +1,325 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,860"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2860
+			},
+			"text": " Ich sagte schon, was du nicht machen wirst, ist einfach so weitermachen.",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.808713,
+					"t_dtw": -1
+				},
+				{
+					"text": " Ich",
+					"timestamps": {
+						"from": "00:00:00,110",
+						"to": "00:00:00,110"
+					},
+					"offsets": {
+						"from": 110,
+						"to": 110
+					},
+					"id": 3141,
+					"p": 0.97214,
+					"t_dtw": 22
+				},
+				{
+					"text": " sagte",
+					"timestamps": {
+						"from": "00:00:00,140",
+						"to": "00:00:00,300"
+					},
+					"offsets": {
+						"from": 140,
+						"to": 300
+					},
+					"id": 36771,
+					"p": 0.650251,
+					"t_dtw": 36
+				},
+				{
+					"text": " schon",
+					"timestamps": {
+						"from": "00:00:00,300",
+						"to": "00:00:00,490"
+					},
+					"offsets": {
+						"from": 300,
+						"to": 490
+					},
+					"id": 4981,
+					"p": 0.988591,
+					"t_dtw": 50
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,490",
+						"to": "00:00:00,560"
+					},
+					"offsets": {
+						"from": 490,
+						"to": 560
+					},
+					"id": 11,
+					"p": 0.922421,
+					"t_dtw": 56
+				},
+				{
+					"text": " was",
+					"timestamps": {
+						"from": "00:00:00,560",
+						"to": "00:00:00,660"
+					},
+					"offsets": {
+						"from": 560,
+						"to": 660
+					},
+					"id": 390,
+					"p": 0.994682,
+					"t_dtw": 66
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,730",
+						"to": "00:00:00,730"
+					},
+					"offsets": {
+						"from": 730,
+						"to": 730
+					},
+					"id": 1581,
+					"p": 0.979744,
+					"t_dtw": 76
+				},
+				{
+					"text": " nicht",
+					"timestamps": {
+						"from": "00:00:00,730",
+						"to": "00:00:00,910"
+					},
+					"offsets": {
+						"from": 730,
+						"to": 910
+					},
+					"id": 1979,
+					"p": 0.997642,
+					"t_dtw": 92
+				},
+				{
+					"text": " machen",
+					"timestamps": {
+						"from": "00:00:00,940",
+						"to": "00:00:01,160"
+					},
+					"offsets": {
+						"from": 940,
+						"to": 1160
+					},
+					"id": 7069,
+					"p": 0.997609,
+					"t_dtw": 116
+				},
+				{
+					"text": " w",
+					"timestamps": {
+						"from": "00:00:01,160",
+						"to": "00:00:01,180"
+					},
+					"offsets": {
+						"from": 1160,
+						"to": 1180
+					},
+					"id": 261,
+					"p": 0.980137,
+					"t_dtw": 132
+				},
+				{
+					"text": "irst",
+					"timestamps": {
+						"from": "00:00:01,190",
+						"to": "00:00:01,340"
+					},
+					"offsets": {
+						"from": 1190,
+						"to": 1340
+					},
+					"id": 653,
+					"p": 0.99938,
+					"t_dtw": 146
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:01,340",
+						"to": "00:00:01,450"
+					},
+					"offsets": {
+						"from": 1340,
+						"to": 1450
+					},
+					"id": 11,
+					"p": 0.978163,
+					"t_dtw": 162
+				},
+				{
+					"text": " ist",
+					"timestamps": {
+						"from": "00:00:01,600",
+						"to": "00:00:01,610"
+					},
+					"offsets": {
+						"from": 1600,
+						"to": 1610
+					},
+					"id": 1418,
+					"p": 0.936079,
+					"t_dtw": 174
+				},
+				{
+					"text": " einfach",
+					"timestamps": {
+						"from": "00:00:01,610",
+						"to": "00:00:01,970"
+					},
+					"offsets": {
+						"from": 1610,
+						"to": 1970
+					},
+					"id": 7281,
+					"p": 0.598263,
+					"t_dtw": 206
+				},
+				{
+					"text": " so",
+					"timestamps": {
+						"from": "00:00:01,970",
+						"to": "00:00:02,070"
+					},
+					"offsets": {
+						"from": 1970,
+						"to": 2070
+					},
+					"id": 370,
+					"p": 0.994647,
+					"t_dtw": 220
+				},
+				{
+					"text": " weit",
+					"timestamps": {
+						"from": "00:00:02,070",
+						"to": "00:00:02,270"
+					},
+					"offsets": {
+						"from": 2070,
+						"to": 2270
+					},
+					"id": 15306,
+					"p": 0.975159,
+					"t_dtw": 234
+				},
+				{
+					"text": "erm",
+					"timestamps": {
+						"from": "00:00:02,270",
+						"to": "00:00:02,420"
+					},
+					"offsets": {
+						"from": 2270,
+						"to": 2420
+					},
+					"id": 966,
+					"p": 0.999365,
+					"t_dtw": 248
+				},
+				{
+					"text": "achen",
+					"timestamps": {
+						"from": "00:00:02,420",
+						"to": "00:00:02,550"
+					},
+					"offsets": {
+						"from": 2420,
+						"to": 2550
+					},
+					"id": 11646,
+					"p": 0.99926,
+					"t_dtw": 262
+				},
+				{
+					"text": ".",
+					"timestamps": {
+						"from": "00:00:02,550",
+						"to": "00:00:02,680"
+					},
+					"offsets": {
+						"from": 2550,
+						"to": 2680
+					},
+					"id": 13,
+					"p": 0.949476,
+					"t_dtw": 274
+				},
+				{
+					"text": "[_TT_143]",
+					"timestamps": {
+						"from": "00:00:02,860",
+						"to": "00:00:02,860"
+					},
+					"offsets": {
+						"from": 2860,
+						"to": 2860
+					},
+					"id": 50508,
+					"p": 0.843579,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}

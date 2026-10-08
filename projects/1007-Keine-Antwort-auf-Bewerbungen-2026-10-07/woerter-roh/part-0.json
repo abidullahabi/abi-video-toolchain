@@ -1,0 +1,325 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | SME2 = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "/Users/abi/Projekte/abi-video-toolchain/tools/models/ggml-large-v3-turbo-q5_0.bin",
+		"language": "de",
+		"translate": false
+	},
+	"result": {
+		"language": "de"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,400"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3400
+			},
+			"text": " Was machst du, wenn du keine Antworten auf deine Bewerbung bekommst?",
+			"tokens": [
+				{
+					"text": "[_BEG_]",
+					"timestamps": {
+						"from": "00:00:00,000",
+						"to": "00:00:00,000"
+					},
+					"offsets": {
+						"from": 0,
+						"to": 0
+					},
+					"id": 50365,
+					"p": 0.84789,
+					"t_dtw": -1
+				},
+				{
+					"text": " Was",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,160"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 160
+					},
+					"id": 3027,
+					"p": 0.975913,
+					"t_dtw": 36
+				},
+				{
+					"text": " machst",
+					"timestamps": {
+						"from": "00:00:00,160",
+						"to": "00:00:00,470"
+					},
+					"offsets": {
+						"from": 160,
+						"to": 470
+					},
+					"id": 43350,
+					"p": 0.995827,
+					"t_dtw": 58
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,470",
+						"to": "00:00:00,570"
+					},
+					"offsets": {
+						"from": 470,
+						"to": 570
+					},
+					"id": 1581,
+					"p": 0.982201,
+					"t_dtw": 72
+				},
+				{
+					"text": ",",
+					"timestamps": {
+						"from": "00:00:00,570",
+						"to": "00:00:00,570"
+					},
+					"offsets": {
+						"from": 570,
+						"to": 570
+					},
+					"id": 11,
+					"p": 0.986664,
+					"t_dtw": 86
+				},
+				{
+					"text": " wenn",
+					"timestamps": {
+						"from": "00:00:00,680",
+						"to": "00:00:00,880"
+					},
+					"offsets": {
+						"from": 680,
+						"to": 880
+					},
+					"id": 4797,
+					"p": 0.993299,
+					"t_dtw": 86
+				},
+				{
+					"text": " du",
+					"timestamps": {
+						"from": "00:00:00,880",
+						"to": "00:00:00,960"
+					},
+					"offsets": {
+						"from": 880,
+						"to": 960
+					},
+					"id": 1581,
+					"p": 0.998519,
+					"t_dtw": 96
+				},
+				{
+					"text": " keine",
+					"timestamps": {
+						"from": "00:00:01,060",
+						"to": "00:00:01,240"
+					},
+					"offsets": {
+						"from": 1060,
+						"to": 1240
+					},
+					"id": 9252,
+					"p": 0.995414,
+					"t_dtw": 124
+				},
+				{
+					"text": " Antwort",
+					"timestamps": {
+						"from": "00:00:01,240",
+						"to": "00:00:01,610"
+					},
+					"offsets": {
+						"from": 1240,
+						"to": 1610
+					},
+					"id": 34693,
+					"p": 0.995548,
+					"t_dtw": 156
+				},
+				{
+					"text": "en",
+					"timestamps": {
+						"from": "00:00:01,610",
+						"to": "00:00:01,740"
+					},
+					"offsets": {
+						"from": 1610,
+						"to": 1740
+					},
+					"id": 268,
+					"p": 0.996441,
+					"t_dtw": 172
+				},
+				{
+					"text": " auf",
+					"timestamps": {
+						"from": "00:00:01,760",
+						"to": "00:00:01,840"
+					},
+					"offsets": {
+						"from": 1760,
+						"to": 1840
+					},
+					"id": 2501,
+					"p": 0.963893,
+					"t_dtw": 188
+				},
+				{
+					"text": " deine",
+					"timestamps": {
+						"from": "00:00:01,940",
+						"to": "00:00:02,220"
+					},
+					"offsets": {
+						"from": 1940,
+						"to": 2220
+					},
+					"id": 28395,
+					"p": 0.994793,
+					"t_dtw": 212
+				},
+				{
+					"text": " Be",
+					"timestamps": {
+						"from": "00:00:02,220",
+						"to": "00:00:02,330"
+					},
+					"offsets": {
+						"from": 2220,
+						"to": 2330
+					},
+					"id": 879,
+					"p": 0.997795,
+					"t_dtw": 230
+				},
+				{
+					"text": "wer",
+					"timestamps": {
+						"from": "00:00:02,330",
+						"to": "00:00:02,500"
+					},
+					"offsets": {
+						"from": 2330,
+						"to": 2500
+					},
+					"id": 1554,
+					"p": 0.998951,
+					"t_dtw": 240
+				},
+				{
+					"text": "bung",
+					"timestamps": {
+						"from": "00:00:02,500",
+						"to": "00:00:02,730"
+					},
+					"offsets": {
+						"from": 2500,
+						"to": 2730
+					},
+					"id": 36776,
+					"p": 0.728316,
+					"t_dtw": 258
+				},
+				{
+					"text": " bek",
+					"timestamps": {
+						"from": "00:00:02,730",
+						"to": "00:00:02,900"
+					},
+					"offsets": {
+						"from": 2730,
+						"to": 2900
+					},
+					"id": 9393,
+					"p": 0.99449,
+					"t_dtw": 286
+				},
+				{
+					"text": "omm",
+					"timestamps": {
+						"from": "00:00:02,900",
+						"to": "00:00:02,990"
+					},
+					"offsets": {
+						"from": 2900,
+						"to": 2990
+					},
+					"id": 1204,
+					"p": 0.999895,
+					"t_dtw": 300
+				},
+				{
+					"text": "st",
+					"timestamps": {
+						"from": "00:00:03,050",
+						"to": "00:00:03,130"
+					},
+					"offsets": {
+						"from": 3050,
+						"to": 3130
+					},
+					"id": 372,
+					"p": 0.999813,
+					"t_dtw": 318
+				},
+				{
+					"text": "?",
+					"timestamps": {
+						"from": "00:00:03,180",
+						"to": "00:00:03,360"
+					},
+					"offsets": {
+						"from": 3180,
+						"to": 3360
+					},
+					"id": 30,
+					"p": 0.989836,
+					"t_dtw": 330
+				},
+				{
+					"text": "[_TT_170]",
+					"timestamps": {
+						"from": "00:00:03,400",
+						"to": "00:00:03,400"
+					},
+					"offsets": {
+						"from": 3400,
+						"to": 3400
+					},
+					"id": 50535,
+					"p": 0.322378,
+					"t_dtw": -1
+				}
+			]
+		}
+	]
+}
