@@ -2,555 +2,523 @@
   "basis": {
     "quelle": "01_Rohvideos/1007.mp4",
     "notion": "https://app.notion.com/p/3f18cb917b3b81728729f41cebeedd3f",
-    "auftrag": "Vollständige Storyline und einzigartige verständliche Aussagen erhalten, eindeutige Fehlstarts/Dopplungen entfernen, sehr knappe individuelle Übergänge nach freigegebener IMG2031-Referenz. Keine starre Längengrenze.",
-    "tempo": 1.0,
-    "anleitungen": "AGENTS.md und ABLAUF_KURZ.md der Toolchain vollständig gelesen. CONTENT_WORKFLOW.md 1.33 vom 07.10.2026 vollständig gelesen.",
-    "analyse": "Voll-ASR und alle echten 60 Turbo-/Small-Sprechstücke gelesen. Zusätzliche Kontext-ASR von Root geprüft. c060 ist ein künstlicher Containerrest von 18 Mikrosekunden ohne Sprachinhalt.",
-    "zeiten": "Alle Grenzen in Rohsekunden. VAD-basierte äußere Grenzen sind Baseline für schnitt-plan. Harte Innenkanten wurden anhand Wortankern und Pegeltälern geprüft.",
-    "textstatus": "Textfelder sind ASR-Arbeitstext, kein abgenommener Untertiteltext. Unsichere Wortlaute nicht als erwiesene Versprecher behandeln.",
-    "hoerpruefung": "Keine tatsächliche Hörprüfung durch den Planer erfolgt. ASR und Pegel sind kein Ersatz.",
-    "pruefstatus": "Root-Inhaltskorrekturen eingearbeitet. Auswahl bereit für schnitt-plan und finale Nahtprüfung. Kein Export gebaut.",
-    "schluss": "Root-Sichtprüfung: Ende 312,70 s vor dem Absinken der Hand. hardEnd/endHold gesetzt.",
-    "erstellt": "2026-10-07T21:32:09.257158+00:00",
-    "aktualisiert": "2026-10-07T21:34:35.047489+00:00"
+    "revision": "V3",
+    "auftrag": "Nur Schnitt nach Nutzerfeedback. CV-Grund, beide Marktpassagen und LinkedIn-Follow zurück. Beanstandeten CV-Test-Anlauf entfernt. Kein Design, keine Untertitel.",
+    "tempo": 1.1,
+    "actualListening": false,
+    "sourceOrderPreserved": true,
+    "timeline": "review/timeline-v3.json"
   },
   "ranges": [
     {
-      "id": "c000",
-      "a": 1.1520000000000001,
-      "b": 4.256,
+      "id": "v3_000",
+      "a": 1.0,
+      "b": 4.233333333333333,
       "text": "Was machst du, wenn du keine Antworten auf deine Bewerbung bekommst?",
-      "warum": "Vollständige Hook mit Zielproblem."
-    },
-    {
-      "id": "c002",
-      "a": 11.712,
-      "b": 13.408,
-      "text": "Angenommen, du schickst ZIP-Bewerbung raus,",
-      "warum": "Vollständiger neuer Anlauf der Ausgangssituation, Anschluss mit c003."
-    },
-    {
-      "id": "c003",
-      "a": 13.824,
-      "b": 17.216,
-      "text": "Hast solide Referenzen, gute Noten, aber es kommt einfach keine Antwort.",
-      "warum": "Referenzen, gute Noten und ausbleibende Antwort erhalten."
-    },
-    {
-      "id": "c004",
-      "a": 18.528,
-      "b": 21.088,
-      "text": "Ich sagte schon, was du nicht machen wirst, ist einfach so weitermachen.",
-      "warum": "Übergang: Vorgehen ändern statt unverändert weitermachen."
-    },
-    {
-      "id": "c010",
-      "a": 41.6,
-      "b": 46.592,
-      "text": "Deine CV wird aussortiert, weil sie einfach nicht relevant ist oder einfach nicht auf die Stelle ausgerichtet ist.",
-      "warum": "Klare CV-Begründung mit konkretem Stellenbezug. Ersetzt die doppelte, akustisch unklare Begründung c009."
-    },
-    {
-      "id": "c011",
-      "a": 48.32,
-      "b": 51.936,
-      "text": "Damit du das ändernst, machst du folgendes. Erstens, du schaust dir deine CV an.",
-      "warum": "Erster Handlungsschritt einschließlich Hinführung und CV."
-    },
-    {
-      "id": "c012",
-      "a": 52.32,
-      "b": 54.432,
-      "text": "Und die Stellenausschreibung, auf die du dich bewirbst.",
-      "warum": "Stellenausschreibung als Vergleichsgrundlage."
-    },
-    {
-      "id": "c013",
-      "a": 55.712,
-      "b": 59.2,
-      "text": "In den Stellenausschreibungen stehen bestimmte Stichwörter, die auch in den SCV rein müssen.",
-      "warum": "Stichwörter aus der Stellenausschreibung."
-    },
-    {
-      "id": "c014",
-      "a": 59.68,
-      "b": 63.136,
-      "text": "Warum? Sogenannte ATS-Softwaren werden von Unternehmen benutzt.",
-      "warum": "ATS-Erklärung und Bezeichnung erhalten."
-    },
-    {
-      "id": "c015",
-      "a": 63.68,
-      "b": 71.2,
-      "text": "Unternehmen nutzen das um die massige Anzahl von CVs einfach zu filtern um zu gucken wer passt eher zu uns wer passt weniger zu uns.",
-      "warum": "Funktionsbeschreibung der Filterung vollständig erhalten."
-    },
-    {
-      "id": "c018",
-      "a": 81.12,
-      "b": 84.288,
-      "text": "Und dieses Software sucht genau diese Begriffe, die in der Stellaufschreibung stehen.",
-      "warum": "Bester vollständiger Abschluss der Software-Erklärung statt c016/c017."
-    },
-    {
-      "id": "c019",
-      "a": 93.76,
-      "b": 100.57600000000001,
-      "text": "Wenn du dein neues CV hast, machst du im zweiten Schritt folgendes. Du schickst 10 bis 15 Bewerbungen erstmal als Test raus.",
-      "warum": "Zweiter Schritt: 10 bis 15 Testbewerbungen."
-    },
-    {
-      "id": "c020",
-      "a": 100.992,
-      "b": 104.096,
-      "text": "Guck mal, wie die Resonanz ist und ob diese Änderung etwas bewirkt hat.",
-      "warum": "Resonanz und Wirkung der Änderung prüfen."
-    },
-    {
-      "id": "c021",
-      "a": 104.992,
-      "b": 108.256,
-      "text": "Wenn du immer noch keine Antwort bekommst, musst du leider weiter deine CV verbessern.",
-      "warum": "Bei ausbleibender Antwort weiter verbessern."
-    },
-    {
-      "id": "c022",
-      "a": 118.016,
-      "b": 122.336,
-      "text": "Drittens, du wirst dich aber auch auf Stellen bewerben, die nicht 100% das sind, was du willst.",
-      "warum": "Dritter Schritt: auch ohne vollständige Passung bewerben."
-    },
-    {
-      "id": "c023",
-      "a": 123.36,
-      "b": 125.152,
-      "text": "Ich weiß, das klingt beschissen, aber...",
-      "warum": "Kurzer persönlicher Einschub mit Humor erhalten."
-    },
-    {
-      "id": "c024",
-      "a": 125.824,
-      "b": 127.328,
-      "text": "Wir können das natürlich aussuchen, aktuell, Digga.",
-      "warum": "Persönlicher Anschluss erhalten. Negation/Wortlaut bleibt ungeklärt, keine angenommene Korrektur.",
-      "keepInner": true
-    },
-    {
-      "id": "c025",
-      "a": 128.864,
-      "b": 131.488,
-      "text": "Such dir Stellen aus, die so 80-60% zu dir passen.",
-      "warum": "60 bis 80 Prozent Passung, gesprochen in umgekehrter Reihenfolge, erhalten."
-    },
-    {
-      "id": "c026",
-      "a": 133.984,
-      "b": 135.7,
-      "text": "Weil vieles kannst du heutzutage auch erlernen.",
-      "warum": "Einzigartige Begründung: vieles lässt sich erlernen. Nachfolgender Fehlanlauf entfällt.",
-      "hardEnd": true
-    },
-    {
-      "id": "c027",
-      "a": 137.312,
-      "b": 140.064,
-      "text": "Wichtig heutzutage ist eher, dass die Persönlichkeit zu dem Unternehmen passt.",
-      "warum": "Vollständiger korrigierter Satz zur Persönlichkeit."
-    },
-    {
-      "id": "c029",
-      "a": 147.96666666666667,
-      "b": 149.92000000000002,
-      "text": "Und als nächstes, wenn du weißt,",
-      "warum": "Korrigierte Hinführung zu fehlender Berufserfahrung.",
-      "hardStart": true
-    },
-    {
-      "id": "c030",
-      "a": 150.43200000000002,
-      "b": 152.064,
-      "text": "Dass dir bestimmte Berufserfahrungen fehlen.",
-      "warum": "Fehlende Berufserfahrung als Bedingung erhalten."
-    },
-    {
-      "id": "c031",
-      "a": 163.872,
-      "b": 171.45600000000002,
-      "text": "Dann würde ich an deiner Stelle irgendwelche Zertifikate raussuchen, die wirklich anerkannt sind und relevant sind für die Stelle oder die Branche, auf die du bewirbst.",
-      "warum": "Anerkannte und relevante Zertifikate, Stelle und Branche erhalten."
-    },
-    {
-      "id": "c032",
-      "a": 172.512,
-      "b": 180.12800000000001,
-      "text": "Ich habe es damals mit Google Ads versucht und habe die Zertifikate gemacht. Es hat funktioniert. Es hat mich von den 100 Bewerbern einfach ein bisschen rausstechen lassen.",
-      "warum": "Persönliches Google-Ads-Beispiel einschließlich Ergebnis vollständig erhalten."
-    },
-    {
-      "id": "c033",
-      "a": 185.36666666666667,
-      "b": 187.04,
-      "text": "Und ich hatte nicht mal Google Ads Erfahrung vorher.",
-      "warum": "Beste vollständige Wiederholung der Aussage: vorher keine Google-Ads-Erfahrung.",
-      "hardStart": true
-    },
-    {
-      "id": "c035",
-      "a": 196.096,
-      "b": 197.504,
-      "text": "Und das vierte, was du machst, ist,",
-      "warum": "Vollständiger korrigierter Anlauf des vierten Schritts."
-    },
-    {
-      "id": "c036",
-      "a": 198.08,
-      "b": 201.824,
-      "text": "Du kommst in Kontakt mit Leuten, die den Beruf machen, die du unbedingt machen möchtest.",
-      "warum": "Kontakt mit Menschen im gewünschten Beruf."
-    },
-    {
-      "id": "c037",
-      "a": 202.784,
-      "b": 206.88,
-      "text": "Es gibt so was Schönes, es nennt sich LinkedIn. Bitte folgen auf LinkedIn.",
-      "warum": "LinkedIn-Hinweis und erster vollständiger Follow-Joke erhalten. Root-Prüfung: innere Pausen des LinkedIn-Jokes bleiben bewusst erhalten, damit der gespielte Aufbau nicht in Miniclips zerfällt.",
-      "keepInner": true
-    },
-    {
-      "id": "c039",
-      "a": 213.888,
-      "b": 219.104,
-      "text": "Dort kannst du gucken, was andere Leute in ihrem Berufsleben gemacht haben, die schon die Stelle haben, die du haben möchtest.",
-      "warum": "Berufswege der Personen im Zieljob recherchieren."
-    },
-    {
-      "id": "c040a",
-      "a": 220.096,
-      "b": 221.3,
-      "text": "Du kannst ja auch direkt anschreiben,",
-      "warum": "Saubere vollständige Handlungsaufforderung vor dem CV-Fehlanlauf.",
-      "hardEnd": true,
-      "keepInner": true
-    },
-    {
-      "id": "c040b",
-      "a": 222.86666666666667,
-      "b": 224.33333333333334,
-      "text": "schickst vielleicht denen dein CV,",
-      "warum": "Korrigierte Richtung des CV-Versands. Abgebrochenes nachfolgendes sagst ihnen entfällt zugunsten c041.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
       "hardStart": true,
       "hardEnd": true,
       "keepInner": true
     },
     {
-      "id": "c041",
-      "a": 225.792,
-      "b": 228.512,
-      "text": "Stellst ihm konkrete Fragen, ey, was hast du gemacht, wie bist du da hingekommen?",
-      "warum": "Vollständiger Fragen-Anlauf mit konkreten Beispielfragen."
+      "id": "v3_001",
+      "a": 41.56666666666667,
+      "b": 45.53333333333333,
+      "text": "Deine CV wird aussortiert, weil sie einfach nicht relevant ist oder einfach nicht auf die Stelle ausgerichtet ist.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Nutzer fordert Wiederaufnahme",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
     },
     {
-      "id": "c042",
-      "a": 229.024,
-      "b": 231.45600000000002,
-      "text": "Um einfach hier vielleicht auch Insider-Tipps zu bekommen.",
-      "warum": "Insider-Tipps als Nutzen der Kontaktaufnahme."
+      "id": "v3_002",
+      "a": 45.766666666666666,
+      "b": 46.6,
+      "text": "Deine CV wird aussortiert, weil sie einfach nicht relevant ist oder einfach nicht auf die Stelle ausgerichtet ist.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Nutzer fordert Wiederaufnahme",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
     },
     {
-      "id": "c043",
-      "a": 232.12800000000001,
-      "b": 234.4,
-      "text": "Und wer weiß, was daraus alles entstehen kann.",
-      "warum": "Offener persönlicher Abschluss des Kontaktteils."
+      "id": "v3_003",
+      "a": 48.3,
+      "b": 51.96666666666667,
+      "text": "Damit du das ändernst, machst du folgendes. Erstens, du schaust dir deine CV an.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
     },
     {
-      "id": "c044",
-      "a": 240.48000000000002,
-      "b": 243.648,
-      "text": "Und als Letztes, einmal, um das mal in die Perspektive zu packen,",
-      "warum": "Vollständige Hinführung zur persönlichen Erfahrung. Root-Prüfentscheidung: als Übergang bewahren, danach direkt den vollständigen späteren Master-Anlauf."
+      "id": "v3_004",
+      "a": 52.266666666666666,
+      "b": 54.43333333333333,
+      "text": "Und die Stellenausschreibung, auf die du dich bewirbst.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
     },
     {
-      "id": "c049",
+      "id": "v3_005",
+      "a": 55.666666666666664,
+      "b": 59.2,
+      "text": "In den Stellenausschreibungen stehen bestimmte Stichwörter, die auch in den SCV rein müssen.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_006",
+      "a": 97.4,
+      "b": 100.53333333333333,
+      "text": "Du schickst 10 bis 15 Bewerbungen erst mal als Test raus.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Beanstandeten Anlauf komplett entfernt. Einstieg mit Du schickst.",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_007",
+      "a": 100.96666666666667,
+      "b": 104.06666666666666,
+      "text": "Guck mal, wie die Resonanz ist und ob diese Änderung etwas bewirkt hat.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_008",
+      "a": 104.96666666666667,
+      "b": 108.2,
+      "text": "Wenn du immer noch keine Antwort bekommst, musst du leider weiter deine CV verbessern.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_009",
+      "a": 117.86666666666666,
+      "b": 122.3,
+      "text": "Drittens, du wirst dich aber auch auf Stellen bewerben, die nicht 100% das sind, was du willst.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_010",
+      "a": 123.33333333333333,
+      "b": 125.2,
+      "text": "Ich weiß, das klingt beschissen, aber...",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Nutzer fordert Wiederaufnahme",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_011",
+      "a": 125.8,
+      "b": 127.33333333333333,
+      "text": "Wir können das [Negation zwischen Modellen uneindeutig] aussuchen aktuell, Digga.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Nutzer fordert Wiederaufnahme",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_012",
+      "a": 128.83333333333334,
+      "b": 131.53333333333333,
+      "text": "Such dir Stellen aus, die so 80-60% zu dir passen.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_013",
+      "a": 133.96666666666667,
+      "b": 135.7,
+      "text": "Weil vieles kannst du heutzutage auch erlernen.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_014",
+      "a": 137.3,
+      "b": 140.03333333333333,
+      "text": "Wichtig heutzutage ist eher, dass die Persönlichkeit zu dem Unternehmen passt.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_015",
+      "a": 147.96666666666667,
+      "b": 148.73333333333332,
+      "text": "Und als nächstes, wenn du weißt,",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_016",
+      "a": 148.9,
+      "b": 149.93333333333334,
+      "text": "Und als nächstes, wenn du weißt,",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_017",
+      "a": 150.4,
+      "b": 152.1,
+      "text": "Dass dir bestimmte Berufserfahrungen fehlen.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_018",
+      "a": 163.83333333333334,
+      "b": 169.13333333333333,
+      "text": "Dann würde ich an deiner Stelle irgendwelche Zertifikate raussuchen, die wirklich anerkannt sind und relevant sind für die Stelle oder die Branche, auf die du bewirbst.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_019",
+      "a": 169.4,
+      "b": 171.4,
+      "text": "Dann würde ich an deiner Stelle irgendwelche Zertifikate raussuchen, die wirklich anerkannt sind und relevant sind für die Stelle oder die Branche, auf die du bewirbst.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_020",
+      "a": 172.5,
+      "b": 175.36666666666667,
+      "text": "Ich habe es damals mit Google Ads versucht und habe die Zertifikate gemacht. Es hat funktioniert. Es hat mich von den 100 Bewerbern einfach ein bisschen rausstechen lassen.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_021",
+      "a": 175.6,
+      "b": 176.5,
+      "text": "Ich habe es damals mit Google Ads versucht und habe die Zertifikate gemacht. Es hat funktioniert. Es hat mich von den 100 Bewerbern einfach ein bisschen rausstechen lassen.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_022",
+      "a": 176.8,
+      "b": 178.43333333333334,
+      "text": "Ich habe es damals mit Google Ads versucht und habe die Zertifikate gemacht. Es hat funktioniert. Es hat mich von den 100 Bewerbern einfach ein bisschen rausstechen lassen.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_023",
+      "a": 178.63333333333333,
+      "b": 180.06666666666666,
+      "text": "Ich habe es damals mit Google Ads versucht und habe die Zertifikate gemacht. Es hat funktioniert. Es hat mich von den 100 Bewerbern einfach ein bisschen rausstechen lassen.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_024",
+      "a": 185.36666666666667,
+      "b": 187.03333333333333,
+      "text": "Und ich hatte nicht mal Google Ads Erfahrung vorher.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_025",
+      "a": 198.06666666666666,
+      "b": 201.76666666666668,
+      "text": "Du kommst in Kontakt mit Leuten, die den Beruf machen, die du unbedingt machen möchtest.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_026",
+      "a": 202.73333333333332,
+      "b": 206.86666666666667,
+      "text": "Es gibt so was Schönes, es nennt sich LinkedIn. Bitte folgen auf LinkedIn.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Nutzer fordert Wiederaufnahme",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_027",
+      "a": 251.56666666666666,
+      "b": 257.26666666666665,
+      "text": "Du kannst direkt Leute auf LinkedIn schreiben, gucken was sie gemacht haben, oder schreibst sie einfach an und sagst: Wie hast du es geschafft?",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_028",
+      "a": 257.6,
+      "b": 261.06666666666666,
+      "text": "Irgendwelche Tipps, hier ist meine CV, bitte hilf mir.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_029",
+      "a": 268.3666666666667,
+      "b": 271.53333333333336,
+      "text": "Und ich will immer noch mal kurz sagen, wie [Adjektiv unbestätigt] gerade der Jobmarkt ist.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Vollständiger Originalsatz zum Jobmarkt. Adjektiv akustisch unbestätigt, kein Audio umgeschrieben.",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
+    },
+    {
+      "id": "v3_030",
       "a": 271.7,
-      "b": 272.48,
+      "b": 272.53333333333336,
       "text": "Ich habe",
-      "warum": "Sauberer Beginn des vollständigen späten Master-Anlaufs. Unklarer allgemeiner Vorsatz entfällt, persönliche Erfahrung bleibt vollständig.",
-      "keepInner": true,
-      "hardStart": true
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
     },
     {
-      "id": "c050",
-      "a": 272.86400000000003,
-      "b": 274.336,
+      "id": "v3_031",
+      "a": 272.8333333333333,
+      "b": 274.3333333333333,
       "text": "Ein 1,7 Master im BWL.",
-      "warum": "Eigener Masterabschluss1,7 in BWL."
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
     },
     {
-      "id": "c051",
+      "id": "v3_032",
       "a": 276.23333333333335,
-      "b": 280.544,
+      "b": 278.53333333333336,
       "text": "Ich habe über zwei bis drei Jahre Berufserfahrung, ich habe ein Referenzschreiben vom Prof bekommen.",
-      "warum": "Vollständiger korrigierter Berufserfahrungsanlauf und Referenzschreiben.",
-      "hardStart": true
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
     },
     {
-      "id": "c052",
-      "a": 281.024,
-      "b": 283.648,
-      "text": "Ich habe eine solide Bewerbungsmappe.",
-      "warum": "Solide Bewerbungsmappe als Teil der persönlichen Ausgangslage."
+      "id": "v3_033",
+      "a": 278.76666666666665,
+      "b": 280.5,
+      "text": "Ich habe über zwei bis drei Jahre Berufserfahrung, ich habe ein Referenzschreiben vom Prof bekommen.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
     },
     {
-      "id": "c053",
-      "a": 283.968,
-      "b": 288.25600000000003,
+      "id": "v3_034",
+      "a": 283.93333333333334,
+      "b": 288.26666666666665,
       "text": "Ich muss über 60 Bewerbungen abschicken, um publige 2-3 Angebote zu bekommen.",
-      "warum": "Eigene über60 Bewerbungen und zwei bis drei Angebote."
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
     },
     {
-      "id": "c054",
-      "a": 288.928,
+      "id": "v3_035",
+      "a": 288.9,
       "b": 290.1,
       "text": "Es ist tough da draußen.",
-      "warum": "Vollständiger kurzer Einordnungssatz. Danach sichere Pause. Keine riskante Reparatur des gebundenen Dranbleiben-/Erwartungssatzes.",
-      "keepInner": true,
-      "hardEnd": true
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
+      "hardEnd": true,
+      "keepInner": true
     },
     {
-      "id": "c057",
-      "a": 297.632,
-      "b": 301.728,
-      "text": "Es sollten mindestens 20 Bewerbungen rausgeschickt werden für eine Einladung.",
-      "warum": "Vollständige Aussage zu mindestens20 Bewerbungen pro Einladung. Kein zusätzlicher Faktencheck durch Schnitt."
-    },
-    {
-      "id": "c058",
-      "a": 305.43333333333334,
-      "b": 307.008,
-      "text": "In so einer Zeit stecken wir gerade fest.",
-      "warum": "Bester vollständiger Abschluss der Arbeitsmarkt-Einordnung.",
-      "hardStart": true
-    },
-    {
-      "id": "c059",
-      "a": 307.968,
+      "id": "v3_036",
+      "a": 307.93333333333334,
       "b": 312.7,
       "text": "Wenn du irgendwelche Fragen hast oder nicht weiter weißt, schreib mir einen Kommentar oder DM, ansonsten voll nicht vergessen.",
-      "warum": "Vollständiger Kommentar/DM/Follow-CTA und sichtbare Schlussgeste.",
+      "textScope": "ASR-Kontext des Quellsatzes, bei geteilten Sätzen kein exakter Teilclip-Untertitel",
+      "warum": "Inhalt aus V2 erhalten, individuelle Wortkanten geprüft",
+      "hardStart": true,
       "hardEnd": true,
+      "keepInner": true,
       "endHold": true
     }
   ],
   "entfernt": [
     {
-      "a": 8.352,
-      "b": 9.92,
-      "text": "Angenommen, du hast ein solides",
-      "warum": "Abgebrochene Ausgangssituation ohne vollständige Aussage.",
-      "alternative": "c002+c003",
-      "typ": "Anlauf oder Dopplung"
+      "a": 11.666667,
+      "b": 17.2,
+      "warum": "Doppelte Problemschilderung, Hook benennt Problem bereits."
     },
     {
-      "a": 22.656,
-      "b": 35.552,
-      "text": "Meistens heißt ... / meistens bedeutet ... / Der Grund ... auf deine CV ...",
-      "warum": "Vier abgebrochene Begründungsanläufe.",
-      "alternative": "c010 erklärt den konkreten CV-/Stellenbezug vollständig.",
-      "typ": "Anlauf oder Dopplung"
+      "a": 18.5,
+      "b": 21.1,
+      "warum": "Allgemeine Einleitung, direkte Begründung und konkrete Tipps bleiben."
     },
     {
-      "a": 36.448,
-      "b": 39.744,
-      "text": "Der Grund, warum du keinen Antrag auf deine Bewerbung bekommst, liegt meistens an deine CV.",
-      "warum": "Doppelte Begründung. Beide Chunkmodelle erkennen zentrale Wörter fehlerhaft. Kein belegter Versprecher. Root-Prüfentscheidung: klarere konkrete Begründung c010 erhalten.",
-      "alternative": "c010",
-      "typ": "Anlauf oder Dopplung"
+      "a": 93.7,
+      "b": 97.4,
+      "warum": "Vom Nutzer beanstandeter CV-Test-Anlauf, vollständiger Folgesatz bleibt."
     },
     {
-      "a": 72.32000000000001,
-      "b": 79.456,
-      "text": "Und diese Software ... / Und diese Software sucht genau diese Begriffe ...",
-      "warum": "Wiederholter Software-Anlauf und vollständige Alternative desselben Gedankens.",
-      "alternative": "c018",
-      "typ": "Anlauf oder Dopplung"
-    },
-    {
-      "a": 135.7,
-      "b": 136.864,
-      "text": "Wichtiger ist, glaube ich,",
-      "warum": "Abgebrochener Anlauf vor vollständiger Wiederholung.",
-      "alternative": "c027",
-      "typ": "Anlauf oder Dopplung"
-    },
-    {
-      "a": 142.08,
-      "b": 142.144,
-      "text": "Äh.",
-      "warum": "Isolierter Fülllaut zwischen abgeschlossener Aussage und neuem Abschnitt, beide Modelle erkennen äh.",
-      "alternative": "Keine einzigartige Aussage.",
-      "typ": "Fülllaut"
-    },
-    {
-      "a": 146.976,
-      "b": 147.96666666666667,
-      "text": "Und dann,",
-      "warum": "Abgebrochene Überleitung.",
-      "alternative": "Korrigiertes Und als nächstes in c029",
-      "typ": "Anlauf oder Dopplung"
-    },
-    {
-      "a": 184.22400000000002,
-      "b": 185.36666666666667,
-      "text": "Und ich hatte nicht mal,",
-      "warum": "Verdeckter Doppelanlauf, von Turbo und Small erkannt.",
-      "alternative": "Zweiter vollständiger Anlauf in c033",
-      "typ": "Anlauf oder Dopplung"
-    },
-    {
-      "a": 194.528,
-      "b": 195.744,
-      "text": "Und der vierte Schritt, oder...",
-      "warum": "Abgebrochener Anlauf zum vierten Schritt.",
-      "alternative": "c035+c036",
-      "typ": "Anlauf oder Dopplung"
-    },
-    {
-      "a": 210.17600000000002,
-      "b": 211.36,
-      "text": "Kannst du mir direkt ein Follow da lassen?",
-      "warum": "Zweiter direkter LinkedIn-Follow-Aufruf ohne neue Aussage.",
-      "alternative": "c037 erhält den LinkedIn-Joke und Bitte folgen auf LinkedIn.",
-      "typ": "Anlauf oder Dopplung"
-    },
-    {
-      "a": 221.3,
-      "b": 222.86666666666667,
-      "text": "schickst dir vielleicht deren/deinen CV,",
-      "warum": "Selbstkorrektur der Richtung des CV-Versands. Saubere Pegeltäler an beiden Grenzen.",
-      "alternative": "c040b schickt den eigenen CV an die angesprochene Person.",
-      "typ": "Anlauf oder Dopplung"
-    },
-    {
-      "a": 224.33333333333334,
-      "b": 225.216,
-      "text": "sagst ihnen,",
-      "warum": "Abgebrochene Verbform vor dem vollständigen Fragen-Anlauf.",
-      "alternative": "c041 Stellst ... konkrete Fragen",
-      "typ": "Anlauf oder Dopplung"
-    },
-    {
-      "a": 244.704,
-      "b": 251.04,
-      "text": "Erster Master-/Referenzen-/Berufserfahrungsdurchgang",
-      "warum": "Wiederholte persönliche Fakten aus dem ersten Durchgang. Der Übergang c044 bleibt erhalten.",
-      "alternative": "c049 bis c053 mit vollständiger persönlicher Erfahrung und Bewerbungszahlen",
-      "typ": "Anlauf oder Dopplung"
-    },
-    {
-      "a": 251.584,
-      "b": 261.056,
-      "text": "Erneuter LinkedIn-Ratschlag, Fragen und eigener CV",
-      "warum": "Alternativer Nachdreh desselben Kontakt-Ratschlags.",
-      "alternative": "c039 bis c043, CV-Selbstkorrektur bereinigt.",
-      "typ": "Anlauf oder Dopplung"
-    },
-    {
-      "a": 268.416,
-      "b": 271.7,
-      "text": "Und ich will ... sagen, wie [unklar] gerade der Jobmarkt ist.",
-      "warum": "Entbehrlicher allgemeiner Vorsatz. Beide Modelle bleiben auch im größeren Kontext unklar. Kein erwiesener Versprecher und keine behauptete falsche Aussage. Root-Prüfentscheidung: direkt den persönlichen Fall nach c044 anschließen.",
-      "alternative": "c044 als Hinführung, anschließend Ich habe ein 1,7 Master ... und Bewerbungszahlen vollständig.",
-      "typ": "Unklarer entbehrlicher Vorsatz"
-    },
-    {
-      "a": 274.72,
-      "b": 276.23333333333335,
-      "text": "Ich habe über zwei bis drei,",
-      "warum": "Abgebrochene Wiederholung vor vollständiger Berufserfahrungsangabe. Turbo zeigt den Anlauf, Small/Voll-ASR lassen ihn aus. Pegeltal vor zweitem Ich geprüft.",
-      "alternative": "Zweiter vollständiger Anlauf in c051",
-      "typ": "Anlauf oder Dopplung"
-    },
-    {
-      "a": 290.1,
-      "b": 295.648,
-      "text": "Deswegen musst du dranbleiben. Du darfst [unklar] erwarten, dass nach zehn Bewerbungen neun/neue Angebote kommen.",
-      "warum": "Der Erwartungssatz bleibt mit beiden Modellen auch im größeren Kontext grammatisch unklar. Zwischen dranbleiben und dem folgenden Du gibt es kein sicheres Pegeltal unter etwa −40 dB. Deshalb die beiden gebundenen Aussagen gemeinsam entfernen, statt eine Negation zu erraten oder mitten im Signal zu schneiden. Kein bewiesener Versprecher. Root-Prüfentscheidung vom selben Durchlauf.",
-      "alternative": "Iteratives Bewerben ist in c019 bis c021 enthalten. c057 vermittelt den Erwartungspunkt konkreter mit mindestens 20 Bewerbungen für eine Einladung.",
-      "typ": "Unklarer inhaltlich doppelter Satz samt gebundenem Anschluss"
-    },
-    {
-      "a": 296,
-      "b": 297.248,
-      "text": "Mindestens 20 Bewerben.",
-      "warum": "Abgebrochener Zahl-/Bewerbungsanlauf.",
-      "alternative": "c057 vollständiger Satz",
-      "typ": "Anlauf oder Dopplung"
-    },
-    {
-      "a": 303.968,
-      "b": 305.43333333333334,
-      "text": "Da stecken wir gerade [fest],",
-      "warum": "Doppelte bzw. abgebrochene Schlussformulierung.",
-      "alternative": "Zweiter vollständiger Satz in c058",
-      "typ": "Anlauf oder Dopplung"
-    },
-    {
-      "a": 312.7,
-      "b": 313.562268,
-      "text": "Rest nach Schlussgeste",
-      "warum": "Root-Sichtprüfung: Daumen und Lächeln312,2/312,5. Ab312,8 sinkt die Hand. Ende312,70 liegt davor.",
-      "alternative": "Schlussgeste bis312,70 erhalten.",
-      "typ": "Schlussrest"
+      "a": 196.066667,
+      "b": 197.5,
+      "warum": "Falsche vierte Zählung. Vollständiger Kontakttipp beginnt mit Du kommst."
     }
   ],
   "kantenFest": {
     "anfang": [
+      1.0,
+      41.56666666666667,
+      45.766666666666666,
+      48.3,
+      52.266666666666666,
+      55.666666666666664,
+      97.4,
+      100.96666666666667,
+      104.96666666666667,
+      117.86666666666666,
+      123.33333333333333,
+      125.8,
+      128.83333333333334,
+      133.96666666666667,
+      137.3,
       147.96666666666667,
+      148.9,
+      150.4,
+      163.83333333333334,
+      169.4,
+      172.5,
+      175.6,
+      176.8,
+      178.63333333333333,
       185.36666666666667,
-      222.86666666666667,
+      198.06666666666666,
+      202.73333333333332,
+      251.56666666666666,
+      257.6,
+      268.3666666666667,
       271.7,
+      272.8333333333333,
       276.23333333333335,
-      305.43333333333334
+      278.76666666666665,
+      283.93333333333334,
+      288.9,
+      307.93333333333334
     ],
     "ende": [
+      4.233333333333333,
+      45.53333333333333,
+      46.6,
+      51.96666666666667,
+      54.43333333333333,
+      59.2,
+      100.53333333333333,
+      104.06666666666666,
+      108.2,
+      122.3,
+      125.2,
+      127.33333333333333,
+      131.53333333333333,
       135.7,
-      221.3,
-      224.33333333333334,
+      140.03333333333333,
+      148.73333333333332,
+      149.93333333333334,
+      152.1,
+      169.13333333333333,
+      171.4,
+      175.36666666666667,
+      176.5,
+      178.43333333333334,
+      180.06666666666666,
+      187.03333333333333,
+      201.76666666666668,
+      206.86666666666667,
+      257.26666666666665,
+      261.06666666666666,
+      271.53333333333336,
+      272.53333333333336,
+      274.3333333333333,
+      278.53333333333336,
+      280.5,
+      288.26666666666665,
       290.1,
       312.7
     ]
-  },
-  "ungeklaert": [
-    {
-      "bereich": [
-        11.712,
-        13.408
-      ],
-      "stelle": "c002: zig/Zipp Bewerbungen",
-      "stand": "Beide Chunkmodelle lesen Zipp. Vollständige Aussage behalten, keine Tonänderung."
-    },
-    {
-      "bereich": [
-        125.824,
-        127.328
-      ],
-      "stelle": "c024: nicht/natürlich ... aussuchen",
-      "stand": "Zusätzlicher größerer Kontext: Turbo erkennt wir können das nicht aussuchen aktuell, Digga. Small bleibt abweichend. Gesamte Stelle erhalten, kein Ton-/Wortumbau."
-    },
-    {
-      "bereich": [
-        310.76,
-        312.032
-      ],
-      "stelle": "c059: Follow-CTA",
-      "stand": "Turbo liest voll nicht vergessen, Small folge ich vergessen. Keine Audioänderung, Kontextgegenprüfung offen."
-    }
-  ],
-  "rootReview": {
-    "reviewer": "Root als unabhängiger Prüfer des Planer-Entwurfs",
-    "actualListening": false,
-    "decision": "Alle44Bereiche inhaltlich geprüft. Kritische Selbstkorrekturen an geprüften harten Wortkanten. LinkedIn-Joke innen ungekürzt. Export und ASR-Prüfung aller Nähte folgen.",
-    "plannerSelectionSha256": "933d6890c6fb108926fb122fa46eb063ef5955af0928cf26aaa12e752d26b371"
   }
 }
