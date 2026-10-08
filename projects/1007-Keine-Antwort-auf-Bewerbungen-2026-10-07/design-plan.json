@@ -1,51 +1,77 @@
 {
   "einstieg": {
-    "h1": "FUNKSTILLE?",
-    "end": 11.68
+    "h1": "20 Bewerbungen keine Antwort?",
+    "end": 7.427
   },
   "kapitel": [
     {
       "id": "k1",
       "nummer": "1.",
       "titel": "CV anpassen",
-      "start": 11.94,
-      "end": 18.45
+      "start": 7.667,
+      "end": 20.305
     },
     {
       "id": "k2",
       "nummer": "2.",
       "titel": "CV testen",
-      "start": 18.65,
-      "end": 30.47
+      "start": 20.545,
+      "end": 28.912
     },
     {
       "id": "k3",
       "nummer": "3.",
       "titel": "Passende Stellen",
-      "start": 30.69,
-      "end": 41.05
+      "start": 29.152,
+      "end": 34.3
+    },
+    {
+      "id": "k3b",
+      "nummer": "3.",
+      "titel": "Passende Stellen",
+      "start": 36.5,
+      "end": 42.548
     },
     {
       "id": "zertifikate",
+      "nummer": "4.",
       "titel": "Zertifikate",
-      "start": 41.27,
-      "end": 58.64
+      "start": 42.788,
+      "end": 60.093
     },
     {
-      "id": "k4",
-      "nummer": "4.",
+      "id": "k5a",
+      "nummer": "5.",
       "titel": "Kontakte nutzen",
-      "start": 58.85,
-      "end": 71.6
+      "start": 60.333,
+      "end": 65.215
+    },
+    {
+      "id": "k5b",
+      "nummer": "5.",
+      "titel": "Kontakte nutzen",
+      "start": 68.695,
+      "end": 74.427
     },
     {
       "id": "erfahrung",
       "titel": "Meine Erfahrung",
-      "start": 71.91,
-      "end": 80.85
+      "start": 74.667,
+      "end": 86.46
     }
   ],
-  "h2": [],
+  "h2": [
+    {
+      "id": "linkedin-name",
+      "unter": "allein",
+      "lines": [
+        "Mein LinkedIn:",
+        "Abdullah Bachtari"
+      ],
+      "start": 65.455,
+      "end": 68.455
+    }
+  ],
   "pillen": [
     {
       "id": "basis",
@@ -53,19 +79,19 @@
       "nummeriert": false,
       "punkt": true,
       "anordnung": "nebeneinander",
-      "end": 77.62,
+      "end": 83.3,
       "items": [
         {
           "text": "1,7 Master",
-          "at": 72.91
+          "at": 78.53
         },
         {
           "text": "2–3 J.",
-          "at": 74.6
+          "at": 80.12
         },
         {
           "text": "Referenz",
-          "at": 76.53
+          "at": 82.24
         }
       ]
     }
@@ -74,20 +100,20 @@
     {
       "id": "ads1",
       "datei": "assets/google-ads.svg",
-      "hoehe": 56,
-      "breite": 56,
+      "hoehe": 96,
+      "breite": 96,
       "unter": "kapitel:zertifikate",
-      "start": 51.82,
-      "end": 52.49
+      "start": 53.3,
+      "end": 58.58
     },
     {
       "id": "linkedin",
       "datei": "assets/linkedin.png",
       "hoehe": 56,
       "breite": 65.85185185185185,
-      "unter": "kapitel:k4",
-      "start": 64.49,
-      "end": 65.12
+      "unter": "kapitel:k5a",
+      "start": 63.8,
+      "end": 65.195
     }
   ],
   "h1": [],
@@ -97,7 +123,17 @@
   "randnotizen": [],
   "lebensbalken": [],
   "sprechblasen": [],
-  "outroStart": 81.1,
+  "outroStart": 86.7,
   "_offen": [],
-  "editorialRationale": "Vier Schritte, Zertifikate als Unterpunkt3, persönliche Erfahrung alsBeispiel. Keine Memes/Musik/SFX. ErsteH1einzeilig wegenKopfposition. KeinIndeed-Screenshot, da der belegteSatznichtgesprochenist. Zertifikate als Unterpunkt3. ZweiteLogonennung und optionaleBeispielsprechblase weggelassen, um Kopf/Kappe frei zu halten."
+  "editorialRationale": "Freigegebene Ausschnitte exakt integriert. Klarer kompakter Bewerbungs-Hook, fünf nummerierte Schritte. GoogleAds größer/länger. LinkedIn-Name allein oben statt Kopf überdecken. Ende und persönliches Beispiel unverändert. Kein Upload. Kapitel3 während Quell-Nahaufnahme34.3–36.5ausgeblendet, restliche Standzeit unverändert.",
+  "layoutOverrides": {
+    "k3": {
+      "top": 260,
+      "reason": "Gezielte Positionskorrektur um 40 px wegen Kappenkollision bei35.3s. 10px Abstand zur Safe-Zone-Grenze für Eintrittsanimation."
+    },
+    "k3b": {
+      "top": 260,
+      "reason": "Gezielte Positionskorrektur um 40 px wegen Kappenkollision bei35.3s. 10px Abstand zur Safe-Zone-Grenze für Eintrittsanimation."
+    }
+  }
 }

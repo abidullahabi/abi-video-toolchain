@@ -1,0 +1,436 @@
+{
+ "grundlage": "RVM-Personenmaske (DESIGN.md 11/12), Schwelle 0,5; Box = oberster Maskenpunkt \u00fcber dem Gesicht bis Gesichtsunterkante, seitlich die Maske in diesem Band",
+ "mediaSha256": "d32134c04cdb90c1b1c28c523c13f30d69bdf1d451af14eee2f88fc13551881e",
+ "einstellungen": {
+  "halb": "schnell",
+  "schwelle": 0.5,
+  "ratio": 0.25,
+  "vorlauf": 20
+ },
+ "bereiche": [
+  [
+   46.12,
+   50.9
+  ],
+  [
+   51.82,
+   52.49
+  ],
+  [
+   57.97,
+   58.61
+  ],
+  [
+   64.49,
+   65.12
+  ],
+  [
+   72.91,
+   77.62
+  ],
+  [
+   82.8,
+   87.05
+  ]
+ ],
+ "sekunden": 8.6,
+ "bilderGerechnet": 414,
+ "proben": [
+  {
+   "time": 46,
+   "faces": [
+    {
+     "x": 204,
+     "y": 508,
+     "width": 570,
+     "height": 564
+    }
+   ]
+  },
+  {
+   "time": 46.5,
+   "faces": [
+    {
+     "x": 170,
+     "y": 504,
+     "width": 700,
+     "height": 622
+    }
+   ]
+  },
+  {
+   "time": 47,
+   "faces": [
+    {
+     "x": 206,
+     "y": 494,
+     "width": 666,
+     "height": 620
+    }
+   ]
+  },
+  {
+   "time": 47.5,
+   "faces": [
+    {
+     "x": 304,
+     "y": 488,
+     "width": 520,
+     "height": 576
+    }
+   ]
+  },
+  {
+   "time": 48,
+   "faces": [
+    {
+     "x": 336,
+     "y": 508,
+     "width": 484,
+     "height": 588
+    }
+   ]
+  },
+  {
+   "time": 48.5,
+   "faces": [
+    {
+     "x": 308,
+     "y": 502,
+     "width": 442,
+     "height": 548
+    }
+   ]
+  },
+  {
+   "time": 49,
+   "faces": [
+    {
+     "x": 282,
+     "y": 546,
+     "width": 420,
+     "height": 518
+    }
+   ]
+  },
+  {
+   "time": 49.5,
+   "faces": [
+    {
+     "x": 220,
+     "y": 546,
+     "width": 494,
+     "height": 538
+    }
+   ]
+  },
+  {
+   "time": 50,
+   "faces": [
+    {
+     "x": 338,
+     "y": 556,
+     "width": 472,
+     "height": 522
+    }
+   ]
+  },
+  {
+   "time": 50.5,
+   "faces": [
+    {
+     "x": 342,
+     "y": 526,
+     "width": 438,
+     "height": 574
+    }
+   ]
+  },
+  {
+   "time": 51,
+   "faces": [
+    {
+     "x": 332,
+     "y": 494,
+     "width": 470,
+     "height": 602
+    }
+   ]
+  },
+  {
+   "time": 51.5,
+   "faces": [
+    {
+     "x": 232,
+     "y": 582,
+     "width": 412,
+     "height": 484
+    }
+   ]
+  },
+  {
+   "time": 52,
+   "faces": [
+    {
+     "x": 334,
+     "y": 618,
+     "width": 364,
+     "height": 458
+    }
+   ]
+  },
+  {
+   "time": 52.5,
+   "faces": [
+    {
+     "x": 110,
+     "y": 588,
+     "width": 424,
+     "height": 508
+    }
+   ]
+  },
+  {
+   "time": 58,
+   "faces": [
+    {
+     "x": 134,
+     "y": 450,
+     "width": 568,
+     "height": 664
+    }
+   ]
+  },
+  {
+   "time": 58.5,
+   "faces": [
+    {
+     "x": 156,
+     "y": 438,
+     "width": 584,
+     "height": 666
+    }
+   ]
+  },
+  {
+   "time": 64.5,
+   "faces": [
+    {
+     "x": 242,
+     "y": 568,
+     "width": 456,
+     "height": 520
+    }
+   ]
+  },
+  {
+   "time": 65,
+   "faces": [
+    {
+     "x": 236,
+     "y": 578,
+     "width": 468,
+     "height": 488
+    }
+   ]
+  },
+  {
+   "time": 73,
+   "faces": [
+    {
+     "x": 250,
+     "y": 628,
+     "width": 360,
+     "height": 452
+    }
+   ]
+  },
+  {
+   "time": 73.5,
+   "faces": [
+    {
+     "x": 268,
+     "y": 628,
+     "width": 362,
+     "height": 452
+    }
+   ]
+  },
+  {
+   "time": 74,
+   "faces": [
+    {
+     "x": 254,
+     "y": 626,
+     "width": 396,
+     "height": 464
+    }
+   ]
+  },
+  {
+   "time": 74.5,
+   "faces": [
+    {
+     "x": 194,
+     "y": 622,
+     "width": 508,
+     "height": 456
+    }
+   ]
+  },
+  {
+   "time": 75,
+   "faces": [
+    {
+     "x": 212,
+     "y": 628,
+     "width": 378,
+     "height": 466
+    }
+   ]
+  },
+  {
+   "time": 75.5,
+   "faces": [
+    {
+     "x": 216,
+     "y": 618,
+     "width": 422,
+     "height": 454
+    }
+   ]
+  },
+  {
+   "time": 76,
+   "faces": [
+    {
+     "x": 278,
+     "y": 582,
+     "width": 396,
+     "height": 510
+    }
+   ]
+  },
+  {
+   "time": 76.5,
+   "faces": [
+    {
+     "x": 454,
+     "y": 508,
+     "width": 626,
+     "height": 556
+    }
+   ]
+  },
+  {
+   "time": 77,
+   "faces": [
+    {
+     "x": 366,
+     "y": 476,
+     "width": 470,
+     "height": 602
+    }
+   ]
+  },
+  {
+   "time": 77.5,
+   "faces": [
+    {
+     "x": 80,
+     "y": 478,
+     "width": 616,
+     "height": 650
+    }
+   ]
+  },
+  {
+   "time": 83,
+   "faces": [
+    {
+     "x": 182,
+     "y": 490,
+     "width": 498,
+     "height": 580
+    }
+   ]
+  },
+  {
+   "time": 83.5,
+   "faces": [
+    {
+     "x": 202,
+     "y": 510,
+     "width": 494,
+     "height": 562
+    }
+   ]
+  },
+  {
+   "time": 84,
+   "faces": [
+    {
+     "x": 194,
+     "y": 520,
+     "width": 524,
+     "height": 562
+    }
+   ]
+  },
+  {
+   "time": 84.5,
+   "faces": [
+    {
+     "x": 182,
+     "y": 524,
+     "width": 486,
+     "height": 544
+    }
+   ]
+  },
+  {
+   "time": 85,
+   "faces": [
+    {
+     "x": 178,
+     "y": 516,
+     "width": 490,
+     "height": 558
+    }
+   ]
+  },
+  {
+   "time": 85.5,
+   "faces": [
+    {
+     "x": 164,
+     "y": 450,
+     "width": 506,
+     "height": 578
+    }
+   ]
+  },
+  {
+   "time": 86,
+   "faces": [
+    {
+     "x": 204,
+     "y": 492,
+     "width": 546,
+     "height": 626
+    }
+   ]
+  },
+  {
+   "time": 86.5,
+   "faces": [
+    {
+     "x": 208,
+     "y": 490,
+     "width": 536,
+     "height": 616
+    }
+   ]
+  }
+ ]
+}

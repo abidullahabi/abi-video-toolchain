@@ -1,5 +1,5 @@
 {
-  "mode": "cut-only",
+  "mode": "cut-and-design",
   "title": "Keine Antwort auf Bewerbungen",
   "designVersion": "2.2",
   "source": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/01_Rohvideos/1007.mp4",
@@ -20,11 +20,11 @@
   "createdAt": "2026-10-07T21:18:53.486Z",
   "bearbeitung": {
     "agent": "codex",
-    "aufgabe": "Nur zwei korrigierte Ausschnitte zur Nutzerfreigabe: Einstieg wiederherstellen, LinkedIn-Pausen straffen. Kein Gesamtrender, kein Design.",
-    "begonnen": "2026-10-08T08:42:57.586865+00:00",
+    "aufgabe": "V4 final: exakt freigegebene Ausschnitte integrieren, Designkorrekturen, gesamtes Video lokal liefern. Kein Upload.",
+    "begonnen": "2026-10-08T09:37:22.832459+00:00",
     "status": "fertig",
-    "fertig": "2026-10-08T08:53:27.696Z",
-    "stand": "Nur zwei korrigierte Ausschnitte ausgeliefert. Gesamtschnitt V3 und persönliches Ende unverändert. Wartet auf Nutzerfreigabe der Ausschnitte, danach gesonderter Auftrag für Gesamtschnitt/Design."
+    "stand": "V4 lokal ausgeliefert. Freigegebene Ausschnitte exakt übernommen. Kein Upload. Technische und stichprobenartige Bildprüfung erfolgt, keine durchgehende Hörprüfung.",
+    "beendet": "2026-10-08T11:03:54.441964+00:00"
   },
   "tempo": 1.1,
   "designGuidelineRead": {
@@ -36,36 +36,43 @@
   "notionAssignmentVerified": true,
   "scope": {
     "source": "1007.mp4",
-    "revision": "V3",
-    "cutOnly": true,
-    "design": false,
-    "subtitles": false,
+    "revision": "V4 final",
+    "cutOnly": false,
+    "design": true,
+    "subtitles": true,
     "tempo": 1.1,
-    "maximumSeconds": 90,
+    "maximumSeconds": null,
     "noUpload": true,
     "actualListening": false
   },
   "notionUrl": "https://app.notion.com/p/3f18cb917b3b81728729f41cebeedd3f",
   "assignmentEvidence": "Volltext der Quelle: keine Antworten auf Bewerbungen, CV anpassen, Testbewerbungen, Zertifikate/Google Ads, LinkedIn-Kontakte und eigener 60-Bewerbungen-Fall. Passt eindeutig zur Notion-Seite.",
-  "cutDuration": 89.1,
-  "removedSeconds": 174.366667,
-  "previewFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Keine Antwort auf Bewerbungen - Design unter 90 Sekunden.mp4",
-  "previewSha256": "2feb61146efdf1c0ec247e4f4fa455731d509be416c86466df27d18ed7938b4b",
+  "cutDuration": 92.7,
+  "removedSeconds": 211.59560133333335,
+  "previewFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Keine Antwort auf Bewerbungen - Finale Version.mp4",
+  "previewSha256": "1abaa113b468b33b0e052e75242ccb5da2408708e8fcee115a4a7b18250e2096",
   "aktuell": {
     "datei": "/Users/abi/Projekte/abi-video-toolchain/projects/1007-Keine-Antwort-auf-Bewerbungen-2026-10-07/exports/upload.mp4",
-    "sha256": "2feb61146efdf1c0ec247e4f4fa455731d509be416c86466df27d18ed7938b4b",
-    "bytes": 131598593,
-    "erzeugt": "2026-10-08T06:25:12Z",
-    "gesetztAm": "2026-10-08T06:25:12Z"
+    "sha256": "1abaa113b468b33b0e052e75242ccb5da2408708e8fcee115a4a7b18250e2096",
+    "bytes": 140114226,
+    "erzeugt": "2026-10-08T10:22:16Z",
+    "gesetztAm": "2026-10-08T10:22:16Z"
   },
-  "latestExport": "/Users/abi/Projekte/abi-video-toolchain/projects/1007-Keine-Antwort-auf-Bewerbungen-2026-10-07/media.mp4",
+  "latestExport": "/Users/abi/Projekte/abi-video-toolchain/projects/1007-Keine-Antwort-auf-Bewerbungen-2026-10-07/exports/upload.mp4",
   "qa": {
-    "report": "review/v3/technical-report.json",
-    "seams": "review/v3/seam-review.json",
+    "cameraReport": "review/final-v4/camera-technical-report.json",
+    "exportReport": "review/final-export-check.json",
+    "encodedVisualReport": "review/final-v4/encoded-visual-report.json",
+    "layoutReport": "review/layout-check.json",
     "fullDecode": true,
+    "videoFrames": 2781,
+    "audioAlignmentMs": 0,
+    "firstEncodedFrameCurrentSource": true,
+    "minorVisualFinding": "Kurze stark transparente Kapitelkante an Kappe im Ausblendeframe34.2667s. Dauerhafte Kollision behoben.",
     "actualListening": false,
     "continuousViewing": false,
-    "userApproved": false
+    "userApprovedCutExcerpts": true,
+    "finalUserApproval": false
   },
   "media": {
     "datei": "media.mp4",
@@ -73,37 +80,41 @@
     "tempo": 1.1,
     "farbkorrektur": null
   },
-  "renderedExport": "/Users/abi/Projekte/abi-video-toolchain/projects/1007-Keine-Antwort-auf-Bewerbungen-2026-10-07/exports/master-v2.mp4",
+  "renderedExport": "/Users/abi/Projekte/abi-video-toolchain/projects/1007-Keine-Antwort-auf-Bewerbungen-2026-10-07/exports/master.mp4",
   "status": "complete",
-  "audioHandling": "GleicheQuellschnitte fürBild/Ton. Tempo1.1 mit atempo und erhaltenerTonhöhe. Finalton ausbeschleunigtermedia.mp4,0mszusätzlicherVersatz an3Prüfstellen.",
+  "audioHandling": "Bild und Ton gemeinsam auf1.1x. Tonhöhe durch atempo erhalten. Finale MP4 nutzt den geprüften Ton aus media.mp4, als AAC-LC120k48kHzStereo codiert.",
   "deliveryProfile": "Zernio/Buffer: H264 (medium), 1080x1920p30, BT709, 12000k video target (max. 12M, 300-MB-Grenze) / 14M VBV, AAC-LC 120k, faststart",
   "layoutVersion": "tiktok-safe-v1",
   "colorVerification": {
-    "source": "actual encoded3-frame test",
+    "report": "review/final-v4/encoded-visual-report.json",
     "frameExtraction": "jpg",
-    "cameraFirstFrameRGBmae": 1.5525247668997668,
-    "incorrectPngExtractionRGBmae": 9.175118006993007,
-    "additional601Conversion": false
+    "additional601Conversion": false,
+    "bt709": true,
+    "firstFrameConfirmed": true
   },
-  "previewDuration": 87.168,
+  "previewDuration": 92.714,
   "userApproved": false,
   "delivery": {
-    "file": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Keine Antwort auf Bewerbungen - Schnitt korrigiert.mp4",
-    "sha256": "834d89b15ef6257b2deb39c566d4a0d9e6ef74ae22d26d35bd6c7dd30c51a452",
-    "duration": 89.1,
+    "file": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Keine Antwort auf Bewerbungen - Finale Version.mp4",
+    "sha256": "1abaa113b468b33b0e052e75242ccb5da2408708e8fcee115a4a7b18250e2096",
+    "sizeBytes": 140114226,
+    "videoDuration": 92.7,
+    "containerDuration": 92.714,
     "userApproved": false,
+    "approvedCutExcerpts": true,
     "uploaded": false,
-    "posted": false
+    "posted": false,
+    "deliveredAt": "2026-10-08T11:03:54.441964+00:00"
   },
-  "designPlansStale": true,
+  "designPlansStale": false,
   "pendingRevision": {
     "revision": "V4 Ausschnitte",
-    "fullVideoRenderAuthorized": false,
-    "designAuthorized": false,
+    "fullVideoRenderAuthorized": true,
+    "designAuthorized": true,
     "maximumSeconds": null,
     "contentPriority": true,
     "preservePersonalExperienceAndEnding": true,
-    "userApproved": false,
+    "userApproved": true,
     "clipDeliveries": [
       {
         "name": "einstieg",
@@ -117,6 +128,55 @@
       }
     ],
     "expectedFullDuration": 92.7,
-    "actualListening": false
-  }
+    "actualListening": false,
+    "completedAt": "2026-10-08T11:03:54.441964+00:00",
+    "completedRevision": "V4 final"
+  },
+  "approvedCutExcerpts": {
+    "einstieg": true,
+    "linkedin": true,
+    "userFeedback": "Diese beiden Schnitte sind genau das, was ich meine."
+  },
+  "pendingFinalRender": {
+    "required": false,
+    "reason": "k3 head collision corrected in composition after previous render",
+    "memoryFreeGB": 4.1,
+    "memoryRequiredForTwoGB": 4.5,
+    "oneWorkerAuthorization": true,
+    "userChoicePending": false,
+    "nativeResolution": [
+      1080,
+      1920
+    ],
+    "frameCache": false,
+    "chapterCorrection": {
+      "top": 260,
+      "hidden": [
+        34.3,
+        36.5
+      ]
+    },
+    "duration": 92.7,
+    "completedAt": "2026-10-08T11:03:54.441964+00:00"
+  },
+  "captionUserConfirmations": {
+    "confirmed": [
+      "nicht aussuchen",
+      "cooked"
+    ],
+    "source": "explicit user answer in current turn",
+    "audioUnchanged": true
+  },
+  "renderEinProzess": true,
+  "renderWorkers": 1,
+  "deliveryHistory": [
+    {
+      "file": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Keine Antwort auf Bewerbungen - Schnitt korrigiert.mp4",
+      "sha256": "834d89b15ef6257b2deb39c566d4a0d9e6ef74ae22d26d35bd6c7dd30c51a452",
+      "duration": 89.1,
+      "userApproved": false,
+      "uploaded": false,
+      "posted": false
+    }
+  ]
 }

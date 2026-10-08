@@ -1,0 +1,136 @@
+{
+  "nativeResolution": [
+    1080,
+    1920
+  ],
+  "checks": [
+    {
+      "id": "k1",
+      "art": "Kapitel",
+      "text": "1. CV anpassen",
+      "mitte": 7.867,
+      "ende": 8.287,
+      "changedPixels": 868,
+      "animationMoves": true
+    },
+    {
+      "id": "k2",
+      "art": "Kapitel",
+      "text": "2. CV testen",
+      "mitte": 20.745,
+      "ende": 21.165,
+      "changedPixels": 647,
+      "animationMoves": true
+    },
+    {
+      "id": "k3",
+      "art": "Kapitel",
+      "text": "3. Passende Stellen",
+      "mitte": 29.352,
+      "ende": 29.772,
+      "changedPixels": 1192,
+      "animationMoves": true
+    },
+    {
+      "id": "zertifikate",
+      "art": "Kapitel",
+      "text": "4. Zertifikate",
+      "mitte": 42.988,
+      "ende": 43.408,
+      "changedPixels": 793,
+      "animationMoves": true
+    },
+    {
+      "id": "ads1",
+      "art": "Logo",
+      "text": "google-ads.svg",
+      "mitte": 53.4,
+      "ende": 53.65,
+      "changedPixels": 0,
+      "animationMoves": false
+    },
+    {
+      "id": "k5a",
+      "art": "Kapitel",
+      "text": "5. Kontakte nutzen",
+      "mitte": 60.533,
+      "ende": 60.953,
+      "changedPixels": 1125,
+      "animationMoves": true
+    },
+    {
+      "id": "linkedin",
+      "art": "Logo",
+      "text": "linkedin.png",
+      "mitte": 63.9,
+      "ende": 64.15,
+      "changedPixels": 0,
+      "animationMoves": false
+    },
+    {
+      "id": "linkedin-name",
+      "art": "H2",
+      "text": "Mein LinkedIn: / Abdullah Bachtari",
+      "mitte": 65.515,
+      "ende": 65.855,
+      "changedPixels": 1610,
+      "animationMoves": true
+    },
+    {
+      "id": "k5b",
+      "art": "Kapitel",
+      "text": "5. Kontakte nutzen",
+      "mitte": 68.895,
+      "ende": 69.315,
+      "changedPixels": 1125,
+      "animationMoves": true
+    },
+    {
+      "id": "erfahrung",
+      "art": "Kapitel",
+      "text": "Meine Erfahrung",
+      "mitte": 74.727,
+      "ende": 74.967,
+      "changedPixels": 1190,
+      "animationMoves": true
+    },
+    {
+      "id": "basis",
+      "art": "Pille 1",
+      "text": "1,7 Master",
+      "mitte": 78.61,
+      "ende": 78.88,
+      "changedPixels": 573,
+      "animationMoves": true
+    },
+    {
+      "id": "basis",
+      "art": "Pille 2",
+      "text": "2–3 J.",
+      "mitte": 80.2,
+      "ende": 80.47,
+      "changedPixels": 366,
+      "animationMoves": true
+    },
+    {
+      "id": "basis",
+      "art": "Pille 3",
+      "text": "Referenz",
+      "mitte": 82.32,
+      "ende": 82.59,
+      "changedPixels": 526,
+      "animationMoves": true
+    },
+    {
+      "id": "outro-card",
+      "art": "Outro (Karte, Zähler)",
+      "text": "4287",
+      "mitte": 87,
+      "ende": 88.7,
+      "changedPixels": 1707,
+      "animationMoves": true
+    }
+  ],
+  "passed": true,
+  "logoFollowup": "logo-animation-check.json: monotone clipPath interpolation verified from hidden at start to visible at end. Fast ease means no pixel difference at +0.1s for small logos."
+}

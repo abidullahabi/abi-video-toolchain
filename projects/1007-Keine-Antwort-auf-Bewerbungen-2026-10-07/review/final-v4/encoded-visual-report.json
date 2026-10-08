@@ -1,0 +1,373 @@
+{
+  "status": "passed-with-minor-visual-finding",
+  "checkedAt": "2026-10-08T10:58:54.880989+00:00",
+  "export": "/Users/abi/Projekte/abi-video-toolchain/projects/1007-Keine-Antwort-auf-Bewerbungen-2026-10-07/exports/upload.mp4",
+  "exportSHA256": "1abaa113b468b33b0e052e75242ccb5da2408708e8fcee115a4a7b18250e2096",
+  "cameraSHA256": "88b2e935aa70d8583a5c6373df8197d84a3136244e4966f546eb85f70965f5af",
+  "sourceSHA256": "0e77e2a140a979fd142087ed440f6c31522dfd81dbe0afbab4fd11b4cd4206d6",
+  "timelineSHA256": "b0a4a59d5136d585e76aa8a3aafe50f5a976a2a6ed3af239e7d6563c979c877d",
+  "themeSHA256": "e984c6668ffb74b4abd8d807b6faf3aa9bb3f57e71e17ba0ad03c97ed96e4a5c",
+  "sameCameraAndSourceAsApprovedQA": true,
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "frames": 2781,
+    "videoDuration": 92.7,
+    "containerDuration": 92.714,
+    "audioDuration": 92.714,
+    "colorSpace": "bt709",
+    "colorTransfer": "bt709",
+    "colorPrimaries": "bt709"
+  },
+  "firstFrameSourceFrame": 30,
+  "pixelROI": [
+    150,
+    600,
+    930,
+    1180
+  ],
+  "pixelROINote": "Native 1080x1920 comparison rectangle below all upper design and above subtitles. No design zoom at selected anchors. Source resized with Lanczos.",
+  "anchors": [
+    {
+      "requestedTime": 0,
+      "actualOutputTime": 0.0,
+      "outputFrame": 0,
+      "sourceFrame": 30,
+      "outsideDesignZooms": true,
+      "cameraToExport": {
+        "rgbMAE": 1.697581786030062,
+        "correlation": 0.9990577008090292
+      },
+      "sourceToExport": {
+        "rgbMAE": 1.8933753315649868,
+        "correlation": 0.9988333665818169
+      },
+      "sourceToCamera": {
+        "rgbMAE": 1.0515097259062776,
+        "correlation": 0.9995737409815224
+      },
+      "cameraOffsetsCompared": [
+        0,
+        1
+      ],
+      "cameraOffsetRGBMAE": [
+        1.697581786030062,
+        6.936938549955792
+      ],
+      "bestCameraOffset": 0
+    },
+    {
+      "requestedTime": 19.3,
+      "actualOutputTime": 19.3,
+      "outputFrame": 579,
+      "sourceFrame": 1735,
+      "outsideDesignZooms": true,
+      "cameraToExport": {
+        "rgbMAE": 2.2608782788093134,
+        "correlation": 0.9980590252528522
+      },
+      "sourceToExport": {
+        "rgbMAE": 2.4975353669319187,
+        "correlation": 0.9976120720827137
+      },
+      "sourceToCamera": {
+        "rgbMAE": 1.562096227527262,
+        "correlation": 0.9990160055613099
+      },
+      "cameraOffsetsCompared": [
+        -1,
+        0,
+        1
+      ],
+      "cameraOffsetRGBMAE": [
+        5.87592175066313,
+        2.2608782788093134,
+        6.20818818155025
+      ],
+      "bestCameraOffset": 0
+    },
+    {
+      "requestedTime": 35.3,
+      "actualOutputTime": 35.3,
+      "outputFrame": 1059,
+      "sourceFrame": 3788,
+      "outsideDesignZooms": true,
+      "cameraToExport": {
+        "rgbMAE": 2.0202681992337164,
+        "correlation": 0.9988300025831442
+      },
+      "sourceToExport": {
+        "rgbMAE": 2.240136310050103,
+        "correlation": 0.9985428256491135
+      },
+      "sourceToCamera": {
+        "rgbMAE": 1.3811501620984379,
+        "correlation": 0.9993966691761252
+      },
+      "cameraOffsetsCompared": [
+        -1,
+        0,
+        1
+      ],
+      "cameraOffsetRGBMAE": [
+        8.608904361921603,
+        2.0202681992337164,
+        6.300473769525493
+      ],
+      "bestCameraOffset": 0
+    },
+    {
+      "requestedTime": 59.3,
+      "actualOutputTime": 59.3,
+      "outputFrame": 1779,
+      "sourceFrame": 5577,
+      "outsideDesignZooms": true,
+      "cameraToExport": {
+        "rgbMAE": 2.1204988211022693,
+        "correlation": 0.9984647238917094
+      },
+      "sourceToExport": {
+        "rgbMAE": 2.341003536693192,
+        "correlation": 0.998080547881639
+      },
+      "sourceToCamera": {
+        "rgbMAE": 1.4224218980253462,
+        "correlation": 0.9992424232152278
+      },
+      "cameraOffsetsCompared": [
+        -1,
+        0,
+        1
+      ],
+      "cameraOffsetRGBMAE": [
+        5.500357353374595,
+        2.1204988211022693,
+        5.452678308281756
+      ],
+      "bestCameraOffset": 0
+    },
+    {
+      "requestedTime": 64.3,
+      "actualOutputTime": 64.3,
+      "outputFrame": 1929,
+      "sourceFrame": 6122,
+      "outsideDesignZooms": true,
+      "cameraToExport": {
+        "rgbMAE": 1.9601495726495726,
+        "correlation": 0.9985972309223096
+      },
+      "sourceToExport": {
+        "rgbMAE": 2.2170623342175064,
+        "correlation": 0.9981813957322145
+      },
+      "sourceToCamera": {
+        "rgbMAE": 1.4565428824049513,
+        "correlation": 0.9991658444649897
+      },
+      "cameraOffsetsCompared": [
+        -1,
+        0,
+        1
+      ],
+      "cameraOffsetRGBMAE": [
+        6.755246831712349,
+        1.9601495726495726,
+        6.541896551724138
+      ],
+      "bestCameraOffset": 0
+    },
+    {
+      "requestedTime": 75.5,
+      "actualOutputTime": 75.5,
+      "outputFrame": 2265,
+      "sourceFrame": 8079,
+      "outsideDesignZooms": true,
+      "cameraToExport": {
+        "rgbMAE": 1.8004988211022694,
+        "correlation": 0.9985723330280838
+      },
+      "sourceToExport": {
+        "rgbMAE": 1.9997597995873857,
+        "correlation": 0.9982219620921465
+      },
+      "sourceToCamera": {
+        "rgbMAE": 1.2659777483053345,
+        "correlation": 0.9992033953940563
+      },
+      "cameraOffsetsCompared": [
+        -1,
+        0,
+        1
+      ],
+      "cameraOffsetRGBMAE": [
+        10.924125405246095,
+        1.8004988211022694,
+        6.8305997642204535
+      ],
+      "bestCameraOffset": 0
+    },
+    {
+      "requestedTime": 82.8,
+      "actualOutputTime": 82.8,
+      "outputFrame": 2484,
+      "sourceFrame": 8397,
+      "outsideDesignZooms": true,
+      "cameraToExport": {
+        "rgbMAE": 1.9260109048040082,
+        "correlation": 0.9988340076666882
+      },
+      "sourceToExport": {
+        "rgbMAE": 2.1327077807250223,
+        "correlation": 0.9985519095094928
+      },
+      "sourceToCamera": {
+        "rgbMAE": 1.3481513409961685,
+        "correlation": 0.9993588294124697
+      },
+      "cameraOffsetsCompared": [
+        -1,
+        0,
+        1
+      ],
+      "cameraOffsetRGBMAE": [
+        10.131816976127322,
+        1.9260109048040082,
+        15.52559755378721
+      ],
+      "bestCameraOffset": 0
+    },
+    {
+      "requestedTime": 90,
+      "actualOutputTime": 90.0,
+      "outputFrame": 2700,
+      "sourceFrame": 9292,
+      "outsideDesignZooms": true,
+      "cameraToExport": {
+        "rgbMAE": 1.9794702328323017,
+        "correlation": 0.9986672430984879
+      },
+      "sourceToExport": {
+        "rgbMAE": 2.1923600058944888,
+        "correlation": 0.9983345735377286
+      },
+      "sourceToCamera": {
+        "rgbMAE": 1.3149204244031831,
+        "correlation": 0.9993342941117986
+      },
+      "cameraOffsetsCompared": [
+        -1,
+        0,
+        1
+      ],
+      "cameraOffsetRGBMAE": [
+        3.6332920719127615,
+        1.9794702328323017,
+        4.1354214559386975
+      ],
+      "bestCameraOffset": 0
+    }
+  ],
+  "finalizerReport": {
+    "path": "/Users/abi/Projekte/abi-video-toolchain/projects/1007-Keine-Antwort-auf-Bewerbungen-2026-10-07/review/final-export-check.json",
+    "shaMatches": true,
+    "fullyDecoded": true,
+    "audioAlignmentChecks": [
+      {
+        "startSeconds": 1,
+        "durationSeconds": 5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.999822326730225
+      },
+      {
+        "startSeconds": 43.85,
+        "durationSeconds": 5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9998884868208138
+      },
+      {
+        "startSeconds": 86.7,
+        "durationSeconds": 5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9998334896987707
+      }
+    ],
+    "vmafMeanVsMaster": 99.010022,
+    "vmafMinVsMaster": 96.916368
+  },
+  "contactSheet": "/tmp/1007-v4-encoded-visual/encoded-contact.jpg",
+  "contactSheetTimes": [
+    0,
+    8.4,
+    21.2,
+    34.25,
+    34.8,
+    36.85,
+    53.65,
+    57.9,
+    66.1,
+    75.5,
+    82.8,
+    90
+  ],
+  "k3TransitionTimes": [
+    34.25,
+    34.8,
+    36.5,
+    36.85
+  ],
+  "actualListening": false,
+  "continuousViewing": false,
+  "visualReview": {
+    "contactSheetActuallyViewed": true,
+    "contactSheetFrames": 12,
+    "nativeFramesActuallyViewed": [
+      0,
+      34.266666666666666,
+      34.8,
+      36.5,
+      36.86666666666667
+    ],
+    "firstCodedFrame": {
+      "headlineFullyVisible": true,
+      "currentCameraImageConfirmed": true,
+      "blackOrStaleFrame": false
+    },
+    "k3Transitions": [
+      {
+        "requestedTime": 34.25,
+        "codedTime": 34.266666666666666,
+        "state": "Fade-out nearly complete. Small transient contact between highly transparent text bottom and cap top remains.",
+        "severity": "minor"
+      },
+      {
+        "requestedTime": 34.8,
+        "codedTime": 34.8,
+        "state": "Chapter fully hidden. Former sustained collision resolved."
+      },
+      {
+        "requestedTime": 36.5,
+        "codedTime": 36.5,
+        "state": "Chapter not yet visible at re-entry start. Cap clear."
+      },
+      {
+        "requestedTime": 36.85,
+        "codedTime": 36.86666666666667,
+        "state": "Chapter reappears above cap with visible clearance."
+      }
+    ],
+    "otherSampleFindings": "Headline, chapter numbering, Google Ads logo, LinkedIn name overlay, experience pills and outro present. No black frame, foreign image, clipped subtitle or further clear cap collision in inspected contact samples.",
+    "findings": [
+      {
+        "type": "transient_cap_touch",
+        "severity": "minor",
+        "codedTime": 34.266666666666666,
+        "file": "/tmp/1007-v4-encoded-visual/encoded-34.25.png",
+        "description": "The almost faded chapter text bottom briefly reaches the top of the cap. The earlier sustained overlap at 34.8 s is fixed. This is not described as completely collision-free."
+      }
+    ],
+    "continuousViewing": false,
+    "actualListening": false
+  },
+  "limits": "Full decoding and final audio checks read from hash-bound finalizer report. Own checks are source/camera identity, color metadata, sampled coded-frame pixel/temporal comparisons and visual review. No listening occurred."
+}

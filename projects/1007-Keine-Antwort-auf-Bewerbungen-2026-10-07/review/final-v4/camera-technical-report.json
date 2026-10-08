@@ -1,0 +1,787 @@
+{
+  "status": "passed",
+  "checkedAt": "2026-10-08T09:54:39.423973+00:00",
+  "media": "/Users/abi/Projekte/abi-video-toolchain/projects/1007-Keine-Antwort-auf-Bewerbungen-2026-10-07/media.mp4",
+  "mediaSHA256": "88b2e935aa70d8583a5c6373df8197d84a3136244e4966f546eb85f70965f5af",
+  "sourceSHA256": "0e77e2a140a979fd142087ed440f6c31522dfd81dbe0afbab4fd11b4cd4206d6",
+  "timelineSHA256": "b0a4a59d5136d585e76aa8a3aafe50f5a976a2a6ed3af239e7d6563c979c877d",
+  "sourceFileUnchanged": true,
+  "mediaStableDuringCheck": true,
+  "timelineStableDuringCheck": true,
+  "planConformance": {
+    "approvedIntroductionIntervalsExact": true,
+    "approvedLinkedInIntervalsExact": true,
+    "remainingV3IntervalsUnchanged": true,
+    "schnittJsonMatches": true,
+    "clipCount": 40,
+    "seamCount": 39,
+    "sourceFrames": 3059,
+    "expectedFrames": 2781,
+    "expectedDuration": 92.7,
+    "tempo": 1.1,
+    "approvedLinkedInOutputStart": 60.333333333333336
+  },
+  "video": {
+    "duration": 92.7,
+    "containerDuration": 92.7,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "codec": "h264",
+    "reportedFrames": 2781,
+    "decodedFrames": 2781,
+    "pixelFormat": "yuv420p",
+    "colorSpace": "bt709",
+    "colorTransfer": "bt709",
+    "colorPrimaries": "bt709",
+    "fullyDecoded": true
+  },
+  "audio": {
+    "codec": "aac",
+    "duration": 92.7,
+    "sampleRate": "48000",
+    "channels": 2,
+    "independentReconstruction": "Original source decoded separately at 48 kHz. Timeline source sample intervals, each with 5 ms fade in/out, concatenated and atempo=1.1 once, 16 kHz mono only for correlation. No source audio altered.",
+    "mainSync": [
+      {
+        "windowStart": 1,
+        "windowDuration": 2,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.999980054090358,
+        "correlationAtZeroLag": 0.999980054090358
+      },
+      {
+        "windowStart": 46.35,
+        "windowDuration": 2,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999954749861975,
+        "correlationAtZeroLag": 0.9999954749861975
+      },
+      {
+        "windowStart": 89.7,
+        "windowDuration": 2,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9998948475541711,
+        "correlationAtZeroLag": 0.9998948475541711
+      }
+    ]
+  },
+  "seams": [
+    {
+      "seam": 1,
+      "outputSeconds": 2.9393939393939394,
+      "leftSourceEnd": 4.233333333333333,
+      "rightSourceStart": 11.666666666666666,
+      "newComparedWithV3": true,
+      "audioSync": {
+        "windowStart": 2.1893939393939394,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999953163784341,
+        "correlationAtZeroLag": 0.9999953163784341
+      }
+    },
+    {
+      "seam": 2,
+      "outputSeconds": 4.545454545454546,
+      "leftSourceEnd": 13.433333333333334,
+      "rightSourceStart": 13.766666666666667,
+      "newComparedWithV3": true,
+      "audioSync": {
+        "windowStart": 3.795454545454546,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.999979023642208,
+        "correlationAtZeroLag": 0.999979023642208
+      }
+    },
+    {
+      "seam": 3,
+      "outputSeconds": 7.666666666666667,
+      "leftSourceEnd": 17.2,
+      "rightSourceStart": 41.56666666666667,
+      "newComparedWithV3": true,
+      "audioSync": {
+        "windowStart": 6.916666666666667,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.999980079221705,
+        "correlationAtZeroLag": 0.999980079221705
+      }
+    },
+    {
+      "seam": 4,
+      "outputSeconds": 11.272727272727273,
+      "leftSourceEnd": 45.53333333333333,
+      "rightSourceStart": 45.766666666666666,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 10.522727272727273,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999890121539805,
+        "correlationAtZeroLag": 0.9999890121539805
+      }
+    },
+    {
+      "seam": 5,
+      "outputSeconds": 12.030303030303031,
+      "leftSourceEnd": 46.6,
+      "rightSourceStart": 48.3,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 11.280303030303031,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999960660629147,
+        "correlationAtZeroLag": 0.9999960660629147
+      }
+    },
+    {
+      "seam": 6,
+      "outputSeconds": 15.363636363636363,
+      "leftSourceEnd": 51.96666666666667,
+      "rightSourceStart": 52.266666666666666,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 14.613636363636363,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999918460634779,
+        "correlationAtZeroLag": 0.9999918460634779
+      }
+    },
+    {
+      "seam": 7,
+      "outputSeconds": 17.333333333333332,
+      "leftSourceEnd": 54.43333333333333,
+      "rightSourceStart": 55.666666666666664,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 16.583333333333332,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999968938730618,
+        "correlationAtZeroLag": 0.9999968938730618
+      }
+    },
+    {
+      "seam": 8,
+      "outputSeconds": 20.545454545454547,
+      "leftSourceEnd": 59.2,
+      "rightSourceStart": 97.4,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 19.795454545454547,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999907072130354,
+        "correlationAtZeroLag": 0.9999907072130354
+      }
+    },
+    {
+      "seam": 9,
+      "outputSeconds": 23.393939393939394,
+      "leftSourceEnd": 100.53333333333333,
+      "rightSourceStart": 100.96666666666667,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 22.643939393939394,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999486381128762,
+        "correlationAtZeroLag": 0.9999486381128762
+      }
+    },
+    {
+      "seam": 10,
+      "outputSeconds": 26.21212121212121,
+      "leftSourceEnd": 104.06666666666666,
+      "rightSourceStart": 104.96666666666667,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 25.46212121212121,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999962769993812,
+        "correlationAtZeroLag": 0.9999962769993812
+      }
+    },
+    {
+      "seam": 11,
+      "outputSeconds": 29.151515151515152,
+      "leftSourceEnd": 108.2,
+      "rightSourceStart": 117.86666666666666,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 28.401515151515152,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.999985992053947,
+        "correlationAtZeroLag": 0.999985992053947
+      }
+    },
+    {
+      "seam": 12,
+      "outputSeconds": 33.18181818181818,
+      "leftSourceEnd": 122.3,
+      "rightSourceStart": 123.33333333333333,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 32.43181818181818,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999940914675901,
+        "correlationAtZeroLag": 0.9999940914675901
+      }
+    },
+    {
+      "seam": 13,
+      "outputSeconds": 34.878787878787875,
+      "leftSourceEnd": 125.2,
+      "rightSourceStart": 125.8,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 34.128787878787875,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999965603662743,
+        "correlationAtZeroLag": 0.9999965603662743
+      }
+    },
+    {
+      "seam": 14,
+      "outputSeconds": 36.27272727272727,
+      "leftSourceEnd": 127.33333333333333,
+      "rightSourceStart": 128.83333333333334,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 35.52272727272727,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999950279552396,
+        "correlationAtZeroLag": 0.9999950279552396
+      }
+    },
+    {
+      "seam": 15,
+      "outputSeconds": 38.72727272727273,
+      "leftSourceEnd": 131.53333333333333,
+      "rightSourceStart": 133.96666666666667,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 37.97727272727273,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999933616813587,
+        "correlationAtZeroLag": 0.9999933616813587
+      }
+    },
+    {
+      "seam": 16,
+      "outputSeconds": 40.303030303030305,
+      "leftSourceEnd": 135.7,
+      "rightSourceStart": 137.3,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 39.553030303030305,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999450614966662,
+        "correlationAtZeroLag": 0.9999450614966662
+      }
+    },
+    {
+      "seam": 17,
+      "outputSeconds": 42.78787878787879,
+      "leftSourceEnd": 140.03333333333333,
+      "rightSourceStart": 147.96666666666667,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 42.03787878787879,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.999985201577007,
+        "correlationAtZeroLag": 0.999985201577007
+      }
+    },
+    {
+      "seam": 18,
+      "outputSeconds": 43.484848484848484,
+      "leftSourceEnd": 148.73333333333332,
+      "rightSourceStart": 148.9,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 42.734848484848484,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999679009189094,
+        "correlationAtZeroLag": 0.9999679009189094
+      }
+    },
+    {
+      "seam": 19,
+      "outputSeconds": 44.42424242424242,
+      "leftSourceEnd": 149.93333333333334,
+      "rightSourceStart": 150.4,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 43.67424242424242,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999902918796935,
+        "correlationAtZeroLag": 0.9999902918796935
+      }
+    },
+    {
+      "seam": 20,
+      "outputSeconds": 45.96969696969697,
+      "leftSourceEnd": 152.1,
+      "rightSourceStart": 163.83333333333334,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 45.21969696969697,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.999983828300187,
+        "correlationAtZeroLag": 0.999983828300187
+      }
+    },
+    {
+      "seam": 21,
+      "outputSeconds": 50.78787878787879,
+      "leftSourceEnd": 169.13333333333333,
+      "rightSourceStart": 169.4,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 50.03787878787879,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999852474569618,
+        "correlationAtZeroLag": 0.9999852474569618
+      }
+    },
+    {
+      "seam": 22,
+      "outputSeconds": 52.60606060606061,
+      "leftSourceEnd": 171.4,
+      "rightSourceStart": 172.5,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 51.85606060606061,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999959510164631,
+        "correlationAtZeroLag": 0.9999959510164631
+      }
+    },
+    {
+      "seam": 23,
+      "outputSeconds": 55.21212121212121,
+      "leftSourceEnd": 175.36666666666667,
+      "rightSourceStart": 175.6,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 54.46212121212121,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999358041882694,
+        "correlationAtZeroLag": 0.9999358041882694
+      }
+    },
+    {
+      "seam": 24,
+      "outputSeconds": 56.03030303030303,
+      "leftSourceEnd": 176.5,
+      "rightSourceStart": 176.8,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 55.28030303030303,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999889672060065,
+        "correlationAtZeroLag": 0.9999889672060065
+      }
+    },
+    {
+      "seam": 25,
+      "outputSeconds": 57.515151515151516,
+      "leftSourceEnd": 178.43333333333334,
+      "rightSourceStart": 178.63333333333333,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 56.765151515151516,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999884291310864,
+        "correlationAtZeroLag": 0.9999884291310864
+      }
+    },
+    {
+      "seam": 26,
+      "outputSeconds": 58.81818181818182,
+      "leftSourceEnd": 180.06666666666666,
+      "rightSourceStart": 185.36666666666667,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 58.06818181818182,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999722710697032,
+        "correlationAtZeroLag": 0.9999722710697032
+      }
+    },
+    {
+      "seam": 27,
+      "outputSeconds": 60.333333333333336,
+      "leftSourceEnd": 187.03333333333333,
+      "rightSourceStart": 198.06666666666666,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 59.583333333333336,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999922304465947,
+        "correlationAtZeroLag": 0.9999922304465947
+      }
+    },
+    {
+      "seam": 28,
+      "outputSeconds": 63.696969696969695,
+      "leftSourceEnd": 201.76666666666668,
+      "rightSourceStart": 203.4,
+      "newComparedWithV3": true,
+      "audioSync": {
+        "windowStart": 62.946969696969695,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999884940769613,
+        "correlationAtZeroLag": 0.9999884940769613
+      }
+    },
+    {
+      "seam": 29,
+      "outputSeconds": 65.45454545454545,
+      "leftSourceEnd": 205.33333333333334,
+      "rightSourceStart": 205.9,
+      "newComparedWithV3": true,
+      "audioSync": {
+        "windowStart": 64.70454545454545,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999889421841855,
+        "correlationAtZeroLag": 0.9999889421841855
+      }
+    },
+    {
+      "seam": 30,
+      "outputSeconds": 66.33333333333333,
+      "leftSourceEnd": 206.86666666666667,
+      "rightSourceStart": 251.56666666666666,
+      "newComparedWithV3": true,
+      "audioSync": {
+        "windowStart": 65.58333333333333,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.999994875512402,
+        "correlationAtZeroLag": 0.999994875512402
+      }
+    },
+    {
+      "seam": 31,
+      "outputSeconds": 71.51515151515152,
+      "leftSourceEnd": 257.26666666666665,
+      "rightSourceStart": 257.6,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 70.76515151515152,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999650082036593,
+        "correlationAtZeroLag": 0.9999650082036593
+      }
+    },
+    {
+      "seam": 32,
+      "outputSeconds": 74.66666666666667,
+      "leftSourceEnd": 261.06666666666666,
+      "rightSourceStart": 268.3666666666667,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 73.91666666666667,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999968897024267,
+        "correlationAtZeroLag": 0.9999968897024267
+      }
+    },
+    {
+      "seam": 33,
+      "outputSeconds": 77.54545454545455,
+      "leftSourceEnd": 271.53333333333336,
+      "rightSourceStart": 271.7,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 76.79545454545455,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999938093131447,
+        "correlationAtZeroLag": 0.9999938093131447
+      }
+    },
+    {
+      "seam": 34,
+      "outputSeconds": 78.3030303030303,
+      "leftSourceEnd": 272.53333333333336,
+      "rightSourceStart": 272.8333333333333,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 77.5530303030303,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999732859939023,
+        "correlationAtZeroLag": 0.9999732859939023
+      }
+    },
+    {
+      "seam": 35,
+      "outputSeconds": 79.66666666666667,
+      "leftSourceEnd": 274.3333333333333,
+      "rightSourceStart": 276.23333333333335,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 78.91666666666667,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.999991590601692,
+        "correlationAtZeroLag": 0.999991590601692
+      }
+    },
+    {
+      "seam": 36,
+      "outputSeconds": 81.75757575757575,
+      "leftSourceEnd": 278.53333333333336,
+      "rightSourceStart": 278.76666666666665,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 81.00757575757575,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999894232871093,
+        "correlationAtZeroLag": 0.9999894232871093
+      }
+    },
+    {
+      "seam": 37,
+      "outputSeconds": 83.33333333333333,
+      "leftSourceEnd": 280.5,
+      "rightSourceStart": 283.93333333333334,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 82.58333333333333,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999947621589973,
+        "correlationAtZeroLag": 0.9999947621589973
+      }
+    },
+    {
+      "seam": 38,
+      "outputSeconds": 87.27272727272727,
+      "leftSourceEnd": 288.26666666666665,
+      "rightSourceStart": 288.9,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 86.52272727272727,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999898866885178,
+        "correlationAtZeroLag": 0.9999898866885178
+      }
+    },
+    {
+      "seam": 39,
+      "outputSeconds": 88.36363636363636,
+      "leftSourceEnd": 290.1,
+      "rightSourceStart": 307.93333333333334,
+      "newComparedWithV3": false,
+      "audioSync": {
+        "windowStart": 87.61363636363636,
+        "windowDuration": 1.5,
+        "bestLagMilliseconds": 0.0,
+        "correlation": 0.9999960922161183,
+        "correlationAtZeroLag": 0.9999960922161183
+      }
+    }
+  ],
+  "visualAnchors": [
+    {
+      "outputFrame": 0,
+      "outputTime": 0.0,
+      "expectedSourceFrame": 30,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        4.579189814814815,
+        0.30975051440329215,
+        4.05369341563786
+      ],
+      "bestOffset": 0
+    },
+    {
+      "outputFrame": 88,
+      "outputTime": 2.933333333333333,
+      "expectedSourceFrame": 350,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        5.0369675925925925,
+        0.217445987654321,
+        5.851715534979424
+      ],
+      "bestOffset": 0
+    },
+    {
+      "outputFrame": 89,
+      "outputTime": 2.966666666666667,
+      "expectedSourceFrame": 351,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        5.831990740740741,
+        0.3266769547325103,
+        6.596208847736626
+      ],
+      "bestOffset": 0
+    },
+    {
+      "outputFrame": 136,
+      "outputTime": 4.533333333333333,
+      "expectedSourceFrame": 413,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        4.0176388888888885,
+        0.3228317901234568,
+        3.930298353909465
+      ],
+      "bestOffset": 0
+    },
+    {
+      "outputFrame": 137,
+      "outputTime": 4.566666666666666,
+      "expectedSourceFrame": 414,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        3.8896707818930043,
+        0.4178317901234568,
+        3.526738683127572
+      ],
+      "bestOffset": 0
+    },
+    {
+      "outputFrame": 229,
+      "outputTime": 7.633333333333334,
+      "expectedSourceFrame": 515,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        3.788827160493827,
+        0.43670267489711934,
+        4.381098251028806
+      ],
+      "bestOffset": 0
+    },
+    {
+      "outputFrame": 230,
+      "outputTime": 7.666666666666667,
+      "expectedSourceFrame": 1247,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        5.049266975308642,
+        0.2138991769547325,
+        4.601509773662552
+      ],
+      "bestOffset": 0
+    },
+    {
+      "outputFrame": 1390,
+      "outputTime": 46.333333333333336,
+      "expectedSourceFrame": 4927,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        5.015020576131687,
+        0.40350051440329215,
+        4.5026774691358025
+      ],
+      "bestOffset": 0
+    },
+    {
+      "outputFrame": 1910,
+      "outputTime": 63.666666666666664,
+      "expectedSourceFrame": 6052,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        3.695622427983539,
+        0.4631893004115226,
+        4.605344650205761
+      ],
+      "bestOffset": 0
+    },
+    {
+      "outputFrame": 1911,
+      "outputTime": 63.7,
+      "expectedSourceFrame": 6102,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        3.811440329218107,
+        0.4219547325102881,
+        4.247502572016461
+      ],
+      "bestOffset": 0
+    },
+    {
+      "outputFrame": 1963,
+      "outputTime": 65.43333333333334,
+      "expectedSourceFrame": 6159,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        6.295005144032922,
+        0.3688451646090535,
+        5.821298868312757
+      ],
+      "bestOffset": 0
+    },
+    {
+      "outputFrame": 1964,
+      "outputTime": 65.46666666666667,
+      "expectedSourceFrame": 6177,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        2.5617798353909467,
+        0.4764891975308642,
+        2.18997170781893
+      ],
+      "bestOffset": 0
+    },
+    {
+      "outputFrame": 1989,
+      "outputTime": 66.3,
+      "expectedSourceFrame": 6205,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        5.4740689300411525,
+        0.41630915637860083,
+        5.13522890946502
+      ],
+      "bestOffset": 0
+    },
+    {
+      "outputFrame": 1990,
+      "outputTime": 66.33333333333333,
+      "expectedSourceFrame": 7547,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        4.38712962962963,
+        0.21679783950617285,
+        4.619580761316873
+      ],
+      "bestOffset": 0
+    },
+    {
+      "outputFrame": 2780,
+      "outputTime": 92.66666666666667,
+      "expectedSourceFrame": 9380,
+      "rgbMAEOffsetsMinus1ZeroPlus1": [
+        1.5495524691358025,
+        0.5174922839506173,
+        1.8471836419753087
+      ],
+      "bestOffset": 0
+    }
+  ],
+  "actualListening": false,
+  "continuousViewing": false,
+  "limits": "Numeric decoding, PCM and sampled frame comparison only. Does not confirm perceived pacing, intelligibility or listening quality. Earlier ASR uncertainties c024 negation and c049 adjective remain separate."
+}

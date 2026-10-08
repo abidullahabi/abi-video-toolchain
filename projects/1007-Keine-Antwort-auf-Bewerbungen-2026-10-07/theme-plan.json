@@ -1,22 +1,23 @@
 {
   "designVersion": "2.2",
-  "duration": 87.16666666666667,
+  "duration": 92.7,
   "einstieg": {
     "h1": {
       "lines": [
-        "FUNKSTILLE?"
+        "20 BEWERBUNGEN",
+        "KEINE ANTWORT?"
       ],
-      "fontSize": 92
+      "fontSize": 67
     },
-    "end": 11.68
+    "end": 7.427
   },
   "kapitel": [
     {
       "id": "k1",
       "nummer": "1.",
       "titel": "CV anpassen",
-      "start": 11.94,
-      "end": 18.45,
+      "start": 7.667,
+      "end": 20.305,
       "top": 300,
       "height": 140
     },
@@ -24,8 +25,8 @@
       "id": "k2",
       "nummer": "2.",
       "titel": "CV testen",
-      "start": 18.65,
-      "end": 30.47,
+      "start": 20.545,
+      "end": 28.912,
       "top": 300,
       "height": 140
     },
@@ -33,26 +34,44 @@
       "id": "k3",
       "nummer": "3.",
       "titel": "Passende Stellen",
-      "start": 30.69,
-      "end": 41.05,
-      "top": 300,
+      "start": 29.152,
+      "end": 34.3,
+      "top": 260,
+      "height": 140
+    },
+    {
+      "id": "k3b",
+      "nummer": "3.",
+      "titel": "Passende Stellen",
+      "start": 36.5,
+      "end": 42.548,
+      "top": 260,
       "height": 140
     },
     {
       "id": "zertifikate",
-      "nummer": null,
+      "nummer": "4.",
       "titel": "Zertifikate",
-      "start": 41.27,
-      "end": 58.64,
+      "start": 42.788,
+      "end": 60.093,
       "top": 300,
-      "height": 70
+      "height": 140
     },
     {
-      "id": "k4",
-      "nummer": "4.",
+      "id": "k5a",
+      "nummer": "5.",
       "titel": "Kontakte nutzen",
-      "start": 58.85,
-      "end": 71.6,
+      "start": 60.333,
+      "end": 65.215,
+      "top": 300,
+      "height": 140
+    },
+    {
+      "id": "k5b",
+      "nummer": "5.",
+      "titel": "Kontakte nutzen",
+      "start": 68.695,
+      "end": 74.427,
       "top": 300,
       "height": 140
     },
@@ -60,14 +79,25 @@
       "id": "erfahrung",
       "nummer": null,
       "titel": "Meine Erfahrung",
-      "start": 71.91,
-      "end": 80.85,
+      "start": 74.667,
+      "end": 86.46,
       "top": 270,
       "height": 70
     }
   ],
   "h1": [],
-  "h2": [],
+  "h2": [
+    {
+      "id": "linkedin-name",
+      "lines": [
+        "Mein LinkedIn:",
+        "Abdullah Bachtari"
+      ],
+      "start": 65.455,
+      "end": 68.455,
+      "top": 261
+    }
+  ],
   "pillen": [
     {
       "id": "basis",
@@ -77,24 +107,24 @@
       "layout": "row",
       "top": 374,
       "bottom": 448,
-      "start": 72.91,
-      "end": 77.62,
+      "start": 78.53,
+      "end": 83.3,
       "items": [
         {
           "text": "1,7 Master",
-          "at": 72.91,
+          "at": 78.53,
           "dx": -44,
           "rot": -2
         },
         {
           "text": "2–3 J.",
-          "at": 74.6,
+          "at": 80.12,
           "dx": 40,
           "rot": 1.5
         },
         {
           "text": "Referenz",
-          "at": 76.53,
+          "at": 82.24,
           "dx": -16,
           "rot": -1
         }
@@ -112,14 +142,14 @@
       "files": [
         {
           "src": "assets/google-ads.svg",
-          "height": 56,
-          "width": 56
+          "height": 96,
+          "width": 96
         }
       ],
-      "top": 394,
+      "top": 464,
       "unter": "zertifikate",
-      "start": 51.82,
-      "end": 52.49
+      "start": 53.3,
+      "end": 58.58
     },
     {
       "id": "linkedin",
@@ -131,39 +161,39 @@
         }
       ],
       "top": 464,
-      "unter": "k4",
-      "start": 64.49,
-      "end": 65.12
+      "unter": "k5a",
+      "start": 63.8,
+      "end": 65.195
     }
   ],
   "sprechblasen": [],
   "ausblenden": [],
   "logoH1": [],
   "outro": {
-    "start": 81.1,
-    "end": 87.16666666666667,
-    "followers": 4283
+    "start": 86.7,
+    "end": 92.7,
+    "followers": 4287
   },
   "title": "Keine Antwort auf Bewerbungen",
-  "kopfQuelle": "Personenmaske an 36 Proben (review/kopf-profil.json), sonst Schätzung aus review/source-faces.json",
+  "kopfQuelle": "Personenmaske an 32 Proben (review/kopf-profil.json), sonst Schätzung aus review/source-faces.json",
   "captions": [
     {
-      "start": 0.21,
+      "start": 0.209,
       "end": 0.72,
       "words": [
         {
           "text": "Was",
-          "start": 0.21,
-          "end": 0.43
+          "start": 0.209,
+          "end": 0.429
         },
         {
           "text": "machst",
-          "start": 0.43,
-          "end": 0.595
+          "start": 0.429,
+          "end": 0.593
         },
         {
           "text": "du,",
-          "start": 0.595,
+          "start": 0.593,
           "end": 0.72
         }
       ],
@@ -176,16 +206,16 @@
         {
           "text": "wenn",
           "start": 0.72,
-          "end": 0.825
+          "end": 0.829
         },
         {
           "text": "du",
-          "start": 0.825,
-          "end": 1
+          "start": 0.829,
+          "end": 1.002
         },
         {
           "text": "keine",
-          "start": 1,
+          "start": 1.002,
           "end": 1.275
         }
       ],
@@ -193,2784 +223,3015 @@
     },
     {
       "start": 1.275,
-      "end": 2.01,
+      "end": 2.011,
       "words": [
         {
           "text": "Antworten",
           "start": 1.275,
-          "end": 1.64
+          "end": 1.638
         },
         {
           "text": "auf",
-          "start": 1.64,
+          "start": 1.638,
           "end": 1.82
         },
         {
           "text": "deine",
           "start": 1.82,
-          "end": 2.01
+          "end": 2.011
         }
       ],
       "width": 656
     },
     {
-      "start": 2.01,
-      "end": 3.035,
+      "start": 2.011,
+      "end": 3.023,
       "words": [
         {
           "text": "Bewerbung",
-          "start": 2.01,
+          "start": 2.011,
           "end": 2.475
         },
         {
-          "text": "bekommst",
+          "text": "bekommst?",
           "start": 2.475,
-          "end": 3.035
+          "end": 3.023
         }
       ],
-      "width": 735
+      "width": 774
     },
     {
-      "start": 3.035,
-      "end": 3.395,
+      "start": 3.023,
+      "end": 3.362,
       "words": [
         {
           "text": "Angenommen,",
-          "start": 3.035,
-          "end": 3.395
+          "start": 3.023,
+          "end": 3.362
         }
       ],
       "width": 481
     },
     {
-      "start": 3.395,
-      "end": 3.745,
+      "start": 3.362,
+      "end": 3.717,
       "words": [
         {
           "text": "du",
-          "start": 3.395,
-          "end": 3.485
+          "start": 3.362,
+          "end": 3.453
         },
         {
           "text": "schickst",
-          "start": 3.485,
-          "end": 3.745
+          "start": 3.453,
+          "end": 3.717
         }
       ],
       "width": 380
     },
     {
-      "start": 3.745,
-      "end": 4.575,
+      "start": 3.717,
+      "end": 4.544,
       "words": [
         {
           "text": "zig Bewerbungen",
-          "start": 3.745,
-          "end": 4.305
+          "start": 3.717,
+          "end": 4.272
         },
         {
           "text": "raus,",
-          "start": 4.305,
-          "end": 4.575
+          "start": 4.272,
+          "end": 4.544
         }
       ],
       "width": 742
     },
     {
-      "start": 4.575,
-      "end": 5.71,
+      "start": 4.544,
+      "end": 5.681,
       "words": [
         {
-          "text": "Hast",
-          "start": 4.575,
-          "end": 4.82
+          "text": "hast",
+          "start": 4.544,
+          "end": 4.788
         },
         {
           "text": "solide",
-          "start": 4.82,
-          "end": 5.11
+          "start": 4.788,
+          "end": 5.079
         },
         {
           "text": "Referenzen,",
-          "start": 5.11,
-          "end": 5.69
+          "start": 5.079,
+          "end": 5.659
         }
       ],
-      "width": 772
+      "width": 762
     },
     {
-      "start": 5.71,
-      "end": 6.4,
+      "start": 5.681,
+      "end": 6.37,
       "words": [
         {
           "text": "gute",
-          "start": 5.71,
-          "end": 6.01
+          "start": 5.681,
+          "end": 5.979
         },
         {
           "text": "Noten,",
-          "start": 6.01,
-          "end": 6.4
+          "start": 5.979,
+          "end": 6.37
         }
       ],
       "width": 385
     },
     {
-      "start": 6.4,
-      "end": 6.965,
+      "start": 6.37,
+      "end": 6.934,
       "words": [
         {
           "text": "aber",
-          "start": 6.4,
-          "end": 6.645
+          "start": 6.37,
+          "end": 6.616
         },
         {
           "text": "es",
-          "start": 6.645,
-          "end": 6.8
+          "start": 6.616,
+          "end": 6.77
         },
         {
           "text": "kommt",
-          "start": 6.8,
-          "end": 6.965
+          "start": 6.77,
+          "end": 6.934
         }
       ],
       "width": 483
     },
     {
-      "start": 6.965,
-      "end": 7.66,
+      "start": 6.934,
+      "end": 7.62,
       "words": [
         {
           "text": "einfach",
-          "start": 6.965,
-          "end": 7.16
+          "start": 6.934,
+          "end": 7.125
         },
         {
           "text": "keine",
-          "start": 7.16,
-          "end": 7.395
+          "start": 7.125,
+          "end": 7.361
         },
         {
           "text": "Antwort.",
-          "start": 7.395,
-          "end": 7.66
+          "start": 7.361,
+          "end": 7.62
         }
       ],
       "width": 732
     },
     {
-      "start": 7.66,
-      "end": 8.115,
+      "start": 7.62,
+      "end": 8.088,
       "words": [
         {
-          "text": "Ich",
-          "start": 7.66,
-          "end": 7.85
+          "text": "Deine",
+          "start": 7.62,
+          "end": 7.897
         },
         {
-          "text": "sag dir",
-          "start": 7.85,
-          "end": 7.975
-        },
-        {
-          "text": "schon,",
-          "start": 7.975,
-          "end": 8.115
+          "text": "CV",
+          "start": 7.897,
+          "end": 8.088
         }
       ],
-      "width": 569
+      "width": 305
     },
     {
-      "start": 8.115,
-      "end": 8.35,
+      "start": 8.088,
+      "end": 8.633,
       "words": [
         {
-          "text": "was",
-          "start": 8.115,
-          "end": 8.235
+          "text": "wird",
+          "start": 8.088,
+          "end": 8.27
         },
         {
-          "text": "du",
-          "start": 8.235,
-          "end": 8.35
+          "text": "aussortiert,",
+          "start": 8.27,
+          "end": 8.633
         }
       ],
-      "width": 236
+      "width": 538
     },
     {
-      "start": 8.35,
-      "end": 9.04,
+      "start": 8.633,
+      "end": 8.942,
       "words": [
         {
-          "text": "nicht",
-          "start": 8.35,
-          "end": 8.53
+          "text": "weil",
+          "start": 8.633,
+          "end": 8.733
         },
         {
-          "text": "machen",
-          "start": 8.53,
-          "end": 8.715
-        },
-        {
-          "text": "wirst,",
-          "start": 8.715,
-          "end": 9.04
-        }
-      ],
-      "width": 639
-    },
-    {
-      "start": 9.04,
-      "end": 9.525,
-      "words": [
-        {
-          "text": "ist",
-          "start": 9.04,
-          "end": 9.315
+          "text": "sie",
+          "start": 8.733,
+          "end": 8.833
         },
         {
           "text": "einfach",
-          "start": 9.315,
-          "end": 9.525
+          "start": 8.833,
+          "end": 8.942
         }
       ],
-      "width": 344
+      "width": 503
     },
     {
-      "start": 9.525,
-      "end": 10.285,
+      "start": 8.942,
+      "end": 9.724,
       "words": [
-        {
-          "text": "so",
-          "start": 9.525,
-          "end": 9.65
-        },
-        {
-          "text": "weitermachen",
-          "start": 9.65,
-          "end": 10.11
-        },
-        {
-          "text": "Damit",
-          "start": 10.11,
-          "end": 10.285
-        }
-      ],
-      "width": 767
-    },
-    {
-      "start": 10.285,
-      "end": 10.995,
-      "words": [
-        {
-          "text": "du",
-          "start": 10.285,
-          "end": 10.375
-        },
-        {
-          "text": "das",
-          "start": 10.375,
-          "end": 10.52
-        },
-        {
-          "text": "änderst,",
-          "start": 10.52,
-          "end": 10.995
-        }
-      ],
-      "width": 502
-    },
-    {
-      "start": 10.995,
-      "end": 11.9,
-      "words": [
-        {
-          "text": "machst",
-          "start": 10.995,
-          "end": 11.195
-        },
-        {
-          "text": "du",
-          "start": 11.195,
-          "end": 11.33
-        },
-        {
-          "text": "folgendes.",
-          "start": 11.33,
-          "end": 11.83
-        }
-      ],
-      "width": 697
-    },
-    {
-      "start": 11.94,
-      "end": 12.355,
-      "words": [
-        {
-          "text": "Erstens,",
-          "start": 11.94,
-          "end": 12.355
-        }
-      ],
-      "width": 282
-    },
-    {
-      "start": 12.355,
-      "end": 12.715,
-      "words": [
-        {
-          "text": "du",
-          "start": 12.355,
-          "end": 12.49
-        },
-        {
-          "text": "schaust",
-          "start": 12.49,
-          "end": 12.715
-        }
-      ],
-      "width": 363
-    },
-    {
-      "start": 12.715,
-      "end": 13.255,
-      "words": [
-        {
-          "text": "dir",
-          "start": 12.715,
-          "end": 12.815
-        },
-        {
-          "text": "deine",
-          "start": 12.815,
-          "end": 13.01
-        },
-        {
-          "text": "CV",
-          "start": 13.01,
-          "end": 13.255
-        }
-      ],
-      "width": 394
-    },
-    {
-      "start": 13.255,
-      "end": 13.83,
-      "words": [
-        {
-          "text": "an",
-          "start": 13.255,
-          "end": 13.485
-        },
-        {
-          "text": "und",
-          "start": 13.485,
-          "end": 13.675
-        },
-        {
-          "text": "die",
-          "start": 13.675,
-          "end": 13.83
-        }
-      ],
-      "width": 335
-    },
-    {
-      "start": 13.83,
-      "end": 14.475,
-      "words": [
-        {
-          "text": "Stellenausschreibung,",
-          "start": 13.83,
-          "end": 14.475
-        }
-      ],
-      "width": 737
-    },
-    {
-      "start": 14.475,
-      "end": 14.815,
-      "words": [
-        {
-          "text": "auf",
-          "start": 14.475,
-          "end": 14.595
-        },
-        {
-          "text": "die",
-          "start": 14.595,
-          "end": 14.695
-        },
-        {
-          "text": "du",
-          "start": 14.695,
-          "end": 14.815
-        }
-      ],
-      "width": 318
-    },
-    {
-      "start": 14.815,
-      "end": 15.42,
-      "words": [
-        {
-          "text": "dich",
-          "start": 14.815,
-          "end": 14.98
-        },
-        {
-          "text": "bewirbst.",
-          "start": 14.98,
-          "end": 15.42
-        }
-      ],
-      "width": 465
-    },
-    {
-      "start": 15.42,
-      "end": 16.35,
-      "words": [
-        {
-          "text": "In",
-          "start": 15.42,
-          "end": 15.6
-        },
-        {
-          "text": "den",
-          "start": 15.6,
-          "end": 15.725
-        },
-        {
-          "text": "Stellenanzeigen",
-          "start": 15.725,
-          "end": 16.35
-        }
-      ],
-      "width": 736
-    },
-    {
-      "start": 16.35,
-      "end": 16.905,
-      "words": [
-        {
-          "text": "stehen",
-          "start": 16.35,
-          "end": 16.555
-        },
-        {
-          "text": "bestimmte",
-          "start": 16.555,
-          "end": 16.905
-        }
-      ],
-      "width": 590
-    },
-    {
-      "start": 16.905,
-      "end": 17.38,
-      "words": [
-        {
-          "text": "Stichwörter,",
-          "start": 16.905,
-          "end": 17.38
-        }
-      ],
-      "width": 411
-    },
-    {
-      "start": 17.38,
-      "end": 17.715,
-      "words": [
-        {
-          "text": "die",
-          "start": 17.38,
-          "end": 17.565
-        },
-        {
-          "text": "auch",
-          "start": 17.565,
-          "end": 17.715
-        }
-      ],
-      "width": 282
-    },
-    {
-      "start": 17.715,
-      "end": 18.18,
-      "words": [
-        {
-          "text": "in",
-          "start": 17.715,
-          "end": 17.775
-        },
-        {
-          "text": "deine",
-          "start": 17.775,
-          "end": 17.875
-        },
-        {
-          "text": "CV",
-          "start": 17.875,
-          "end": 18.18
-        }
-      ],
-      "width": 368
-    },
-    {
-      "start": 18.18,
-      "end": 18.65,
-      "words": [
-        {
-          "text": "rein",
-          "start": 18.18,
-          "end": 18.39
-        },
-        {
-          "text": "müssen.",
-          "start": 18.39,
-          "end": 18.65
-        }
-      ],
-      "width": 423
-    },
-    {
-      "start": 18.65,
-      "end": 19.28,
-      "words": [
-        {
-          "text": "Wenn",
-          "start": 18.65,
-          "end": 18.825
-        },
-        {
-          "text": "du",
-          "start": 18.825,
-          "end": 18.945
-        },
-        {
-          "text": "dein",
-          "start": 18.945,
-          "end": 19.21
-        }
-      ],
-      "width": 439
-    },
-    {
-      "start": 20.03,
-      "end": 20.8,
-      "words": [
-        {
-          "text": "neues",
-          "start": 20.03,
-          "end": 20.33
-        },
-        {
-          "text": "CV",
-          "start": 20.33,
-          "end": 20.575
-        },
-        {
-          "text": "hast,",
-          "start": 20.575,
-          "end": 20.8
-        }
-      ],
-      "width": 489
-    },
-    {
-      "start": 20.8,
-      "end": 21.035,
-      "words": [
-        {
-          "text": "machst",
-          "start": 20.8,
-          "end": 20.955
-        },
-        {
-          "text": "du",
-          "start": 20.955,
-          "end": 21.035
-        }
-      ],
-      "width": 345
-    },
-    {
-      "start": 21.035,
-      "end": 21.36,
-      "words": [
-        {
-          "text": "im",
-          "start": 21.035,
-          "end": 21.16
-        },
-        {
-          "text": "zweiten",
-          "start": 21.16,
-          "end": 21.36
-        }
-      ],
-      "width": 354
-    },
-    {
-      "start": 21.36,
-      "end": 21.98,
-      "words": [
-        {
-          "text": "Schritt",
-          "start": 21.36,
-          "end": 21.555
-        },
-        {
-          "text": "folgendes.",
-          "start": 21.555,
-          "end": 21.98
-        }
-      ],
-      "width": 581
-    },
-    {
-      "start": 21.98,
-      "end": 22.6,
-      "words": [
-        {
-          "text": "Du",
-          "start": 21.98,
-          "end": 22.145
-        },
-        {
-          "text": "schickst",
-          "start": 22.145,
-          "end": 22.6
-        }
-      ],
-      "width": 388
-    },
-    {
-      "start": 22.6,
-      "end": 23.26,
-      "words": [
-        {
-          "text": "10",
-          "start": 22.6,
-          "end": 22.825
-        },
-        {
-          "text": "bis",
-          "start": 22.825,
-          "end": 23.025
-        },
-        {
-          "text": "15",
-          "start": 23.025,
-          "end": 23.26
-        }
-      ],
-      "width": 292
-    },
-    {
-      "start": 23.26,
-      "end": 23.99,
-      "words": [
-        {
-          "text": "Bewerbungen",
-          "start": 23.26,
-          "end": 23.745
-        },
-        {
-          "text": "erstmal",
-          "start": 23.745,
-          "end": 23.99
-        }
-      ],
-      "width": 718
-    },
-    {
-      "start": 23.99,
-      "end": 24.845,
-      "words": [
-        {
-          "text": "als",
-          "start": 23.99,
-          "end": 24.255
-        },
-        {
-          "text": "Test",
-          "start": 24.255,
-          "end": 24.565
-        },
-        {
-          "text": "raus.",
-          "start": 24.565,
-          "end": 24.845
-        }
-      ],
-      "width": 439
-    },
-    {
-      "start": 24.845,
-      "end": 25.11,
-      "words": [
-        {
-          "text": "Guck",
-          "start": 24.845,
-          "end": 25.035
-        },
-        {
-          "text": "mal,",
-          "start": 25.035,
-          "end": 25.11
-        }
-      ],
-      "width": 333
-    },
-    {
-      "start": 25.11,
-      "end": 25.72,
-      "words": [
-        {
-          "text": "wie",
-          "start": 25.11,
-          "end": 25.185
-        },
-        {
-          "text": "die",
-          "start": 25.185,
-          "end": 25.295
-        },
-        {
-          "text": "Resonanz",
-          "start": 25.295,
-          "end": 25.72
-        }
-      ],
-      "width": 567
-    },
-    {
-      "start": 25.72,
-      "end": 26.23,
-      "words": [
-        {
-          "text": "ist",
-          "start": 25.72,
-          "end": 25.91
-        },
-        {
-          "text": "und",
-          "start": 25.91,
-          "end": 26.065
-        },
-        {
-          "text": "ob",
-          "start": 26.065,
-          "end": 26.23
-        }
-      ],
-      "width": 319
-    },
-    {
-      "start": 26.23,
-      "end": 26.91,
-      "words": [
-        {
-          "text": "diese",
-          "start": 26.23,
-          "end": 26.4
-        },
-        {
-          "text": "Änderung",
-          "start": 26.4,
-          "end": 26.91
-        }
-      ],
-      "width": 514
-    },
-    {
-      "start": 26.91,
-      "end": 27.7,
-      "words": [
-        {
-          "text": "etwas",
-          "start": 26.91,
-          "end": 27.21
-        },
-        {
-          "text": "bewirkt",
-          "start": 27.21,
-          "end": 27.54
-        },
-        {
-          "text": "hat.",
-          "start": 27.54,
-          "end": 27.7
-        }
-      ],
-      "width": 600
-    },
-    {
-      "start": 27.7,
-      "end": 28.035,
-      "words": [
-        {
-          "text": "Wenn",
-          "start": 27.7,
-          "end": 27.82
-        },
-        {
-          "text": "du",
-          "start": 27.82,
-          "end": 27.92
-        },
-        {
-          "text": "immer",
-          "start": 27.92,
-          "end": 28.035
-        }
-      ],
-      "width": 504
-    },
-    {
-      "start": 28.035,
-      "end": 28.52,
-      "words": [
-        {
-          "text": "noch",
-          "start": 28.035,
-          "end": 28.175
-        },
-        {
-          "text": "keine",
-          "start": 28.175,
-          "end": 28.34
-        },
-        {
-          "text": "Antwort",
-          "start": 28.34,
-          "end": 28.52
-        }
-      ],
-      "width": 633
-    },
-    {
-      "start": 28.52,
-      "end": 28.975,
-      "words": [
-        {
-          "text": "bekommst,",
-          "start": 28.52,
-          "end": 28.975
-        }
-      ],
-      "width": 374
-    },
-    {
-      "start": 28.975,
-      "end": 29.4,
-      "words": [
-        {
-          "text": "musst",
-          "start": 28.975,
-          "end": 29.2
-        },
-        {
-          "text": "du",
-          "start": 29.2,
-          "end": 29.4
-        }
-      ],
-      "width": 304
-    },
-    {
-      "start": 29.4,
-      "end": 29.89,
-      "words": [
-        {
-          "text": "leider",
-          "start": 29.4,
-          "end": 29.665
-        },
-        {
-          "text": "weiter",
-          "start": 29.665,
-          "end": 29.89
-        }
-      ],
-      "width": 410
-    },
-    {
-      "start": 29.89,
-      "end": 30.67,
-      "words": [
-        {
-          "text": "deine",
-          "start": 29.89,
-          "end": 30.09
-        },
-        {
-          "text": "CV",
-          "start": 30.09,
-          "end": 30.31
-        },
-        {
-          "text": "verbessern.",
-          "start": 30.31,
-          "end": 30.6
-        }
-      ],
-      "width": 692
-    },
-    {
-      "start": 30.69,
-      "end": 31.245,
-      "words": [
-        {
-          "text": "Drittens,",
-          "start": 30.69,
-          "end": 31.245
-        }
-      ],
-      "width": 291
-    },
-    {
-      "start": 31.245,
-      "end": 31.755,
-      "words": [
-        {
-          "text": "du",
-          "start": 31.245,
-          "end": 31.425
-        },
-        {
-          "text": "wirst",
-          "start": 31.425,
-          "end": 31.605
-        },
-        {
-          "text": "dich",
-          "start": 31.605,
-          "end": 31.755
-        }
-      ],
-      "width": 416
-    },
-    {
-      "start": 31.755,
-      "end": 32.02,
-      "words": [
-        {
-          "text": "aber",
-          "start": 31.755,
-          "end": 31.92
-        },
-        {
-          "text": "auch",
-          "start": 31.92,
-          "end": 32.02
-        }
-      ],
-      "width": 329
-    },
-    {
-      "start": 32.02,
-      "end": 32.71,
-      "words": [
-        {
-          "text": "auf",
-          "start": 32.02,
-          "end": 32.14
-        },
-        {
-          "text": "Stellen",
-          "start": 32.14,
-          "end": 32.32
-        },
-        {
-          "text": "bewerben,",
-          "start": 32.32,
-          "end": 32.71
-        }
-      ],
-      "width": 705
-    },
-    {
-      "start": 32.71,
-      "end": 33.1,
-      "words": [
-        {
-          "text": "die",
-          "start": 32.71,
-          "end": 32.87
-        },
         {
           "text": "nicht",
-          "start": 32.87,
-          "end": 33.1
-        }
-      ],
-      "width": 285
-    },
-    {
-      "start": 33.1,
-      "end": 34.08,
-      "words": [
-        {
-          "text": "100%",
-          "start": 33.1,
-          "end": 33.42
-        },
-        {
-          "text": "das",
-          "start": 33.69,
-          "end": 33.945
-        },
-        {
-          "text": "sind,",
-          "start": 33.945,
-          "end": 34.08
-        }
-      ],
-      "width": 493
-    },
-    {
-      "start": 34.08,
-      "end": 34.71,
-      "words": [
-        {
-          "text": "was",
-          "start": 34.08,
-          "end": 34.195
-        },
-        {
-          "text": "du",
-          "start": 34.195,
-          "end": 34.405
-        },
-        {
-          "text": "willst.",
-          "start": 34.405,
-          "end": 34.71
-        }
-      ],
-      "width": 441
-    },
-    {
-      "start": 34.71,
-      "end": 34.905,
-      "words": [
-        {
-          "text": "Such",
-          "start": 34.71,
-          "end": 34.905
-        }
-      ],
-      "width": 176
-    },
-    {
-      "start": 34.905,
-      "end": 35.405,
-      "words": [
-        {
-          "text": "dir",
-          "start": 34.905,
-          "end": 35.05
-        },
-        {
-          "text": "Stellen",
-          "start": 35.05,
-          "end": 35.26
-        },
-        {
-          "text": "aus,",
-          "start": 35.26,
-          "end": 35.405
-        }
-      ],
-      "width": 484
-    },
-    {
-      "start": 35.405,
-      "end": 36.38,
-      "words": [
-        {
-          "text": "die",
-          "start": 35.405,
-          "end": 35.495
-        },
-        {
-          "text": "so",
-          "start": 35.495,
-          "end": 35.66
-        },
-        {
-          "text": "80 bis 60 %",
-          "start": 35.66,
-          "end": 36.38
-        }
-      ],
-      "width": 568
-    },
-    {
-      "start": 36.38,
-      "end": 37.1,
-      "words": [
-        {
-          "text": "zu",
-          "start": 36.38,
-          "end": 36.595
-        },
-        {
-          "text": "dir",
-          "start": 36.595,
-          "end": 36.75
-        },
-        {
-          "text": "passen.",
-          "start": 36.75,
-          "end": 37.1
-        }
-      ],
-      "width": 450
-    },
-    {
-      "start": 37.1,
-      "end": 37.575,
-      "words": [
-        {
-          "text": "Weil",
-          "start": 37.1,
-          "end": 37.34
-        },
-        {
-          "text": "vieles",
-          "start": 37.34,
-          "end": 37.575
-        }
-      ],
-      "width": 353
-    },
-    {
-      "start": 37.575,
-      "end": 38.14,
-      "words": [
-        {
-          "text": "kannst",
-          "start": 37.575,
-          "end": 37.685
-        },
-        {
-          "text": "du",
-          "start": 37.685,
-          "end": 37.785
-        },
-        {
-          "text": "heutzutage",
-          "start": 37.785,
-          "end": 38.14
-        }
-      ],
-      "width": 701
-    },
-    {
-      "start": 38.14,
-      "end": 38.715,
-      "words": [
-        {
-          "text": "auch",
-          "start": 38.14,
-          "end": 38.265
-        },
-        {
-          "text": "erlernen.",
-          "start": 38.265,
-          "end": 38.715
-        }
-      ],
-      "width": 473
-    },
-    {
-      "start": 38.715,
-      "end": 39.515,
-      "words": [
-        {
-          "text": "Wichtiger",
-          "start": 38.715,
-          "end": 39.06
-        },
-        {
-          "text": "heutzutage",
-          "start": 39.06,
-          "end": 39.515
-        }
-      ],
-      "width": 697
-    },
-    {
-      "start": 39.515,
-      "end": 39.805,
-      "words": [
-        {
-          "text": "ist",
-          "start": 39.515,
-          "end": 39.66
-        },
-        {
-          "text": "eher,",
-          "start": 39.66,
-          "end": 39.805
-        }
-      ],
-      "width": 270
-    },
-    {
-      "start": 39.805,
-      "end": 40.47,
-      "words": [
-        {
-          "text": "dass",
-          "start": 39.805,
-          "end": 39.925
-        },
-        {
-          "text": "die",
-          "start": 39.925,
-          "end": 40.08
-        },
-        {
-          "text": "Persönlichkeit",
-          "start": 40.08,
-          "end": 40.47
-        }
-      ],
-      "width": 755
-    },
-    {
-      "start": 40.47,
-      "end": 41.035,
-      "words": [
-        {
-          "text": "zu",
-          "start": 40.47,
-          "end": 40.585
-        },
-        {
-          "text": "dem",
-          "start": 40.585,
-          "end": 40.76
-        },
-        {
-          "text": "Unternehmen",
-          "start": 40.76,
-          "end": 41.035
-        }
-      ],
-      "width": 691
-    },
-    {
-      "start": 41.035,
-      "end": 41.265,
-      "words": [
-        {
-          "text": "passt.",
-          "start": 41.035,
-          "end": 41.265
-        }
-      ],
-      "width": 211
-    },
-    {
-      "start": 41.265,
-      "end": 42,
-      "words": [
-        {
-          "text": "Und",
-          "start": 41.265,
-          "end": 41.415
-        },
-        {
-          "text": "als",
-          "start": 41.415,
-          "end": 41.535
-        },
-        {
-          "text": "Nächstes,",
-          "start": 41.535,
-          "end": 41.95
-        }
-      ],
-      "width": 590
-    },
-    {
-      "start": 42,
-      "end": 42.91,
-      "words": [
-        {
-          "text": "wenn",
-          "start": 42,
-          "end": 42.25
-        },
-        {
-          "text": "du",
-          "start": 42.25,
-          "end": 42.42
-        },
-        {
-          "text": "weißt,",
-          "start": 42.42,
-          "end": 42.91
-        }
-      ],
-      "width": 491
-    },
-    {
-      "start": 42.91,
-      "end": 43.57,
-      "words": [
-        {
-          "text": "dass",
-          "start": 42.91,
-          "end": 43.105
-        },
-        {
-          "text": "dir",
-          "start": 43.105,
-          "end": 43.27
-        },
-        {
-          "text": "bestimmte",
-          "start": 43.27,
-          "end": 43.57
-        }
-      ],
-      "width": 620
-    },
-    {
-      "start": 43.57,
-      "end": 44.13,
-      "words": [
-        {
-          "text": "Berufserfahrungen",
-          "start": 43.57,
-          "end": 44.13
-        }
-      ],
-      "width": 620
-    },
-    {
-      "start": 44.13,
-      "end": 44.46,
-      "words": [
-        {
-          "text": "fehlen,",
-          "start": 44.13,
-          "end": 44.46
-        }
-      ],
-      "width": 233
-    },
-    {
-      "start": 44.46,
-      "end": 44.795,
-      "words": [
-        {
-          "text": "dann",
-          "start": 44.46,
-          "end": 44.615
-        },
-        {
-          "text": "würde",
-          "start": 44.615,
-          "end": 44.705
-        },
-        {
-          "text": "ich",
-          "start": 44.705,
-          "end": 44.795
-        }
-      ],
-      "width": 496
-    },
-    {
-      "start": 44.795,
-      "end": 45.49,
-      "words": [
-        {
-          "text": "an",
-          "start": 44.795,
-          "end": 44.89
-        },
-        {
-          "text": "deiner",
-          "start": 44.89,
-          "end": 45.14
-        },
-        {
-          "text": "Stelle",
-          "start": 45.14,
-          "end": 45.42
-        }
-      ],
-      "width": 506
-    },
-    {
-      "start": 45.52,
-      "end": 46.115,
-      "words": [
-        {
-          "text": "irgendwelche",
-          "start": 45.52,
-          "end": 46.115
-        }
-      ],
-      "width": 449
-    },
-    {
-      "start": 46.115,
-      "end": 47.345,
-      "words": [
-        {
-          "text": "Zertifikate",
-          "start": 46.115,
-          "end": 46.91
-        },
-        {
-          "text": "raussuchen,",
-          "start": 46.91,
-          "end": 47.345
-        }
-      ],
-      "width": 760
-    },
-    {
-      "start": 47.345,
-      "end": 47.915,
-      "words": [
-        {
-          "text": "die",
-          "start": 47.345,
-          "end": 47.61
-        },
-        {
-          "text": "wirklich",
-          "start": 47.61,
-          "end": 47.915
-        }
-      ],
-      "width": 378
-    },
-    {
-      "start": 47.915,
-      "end": 48.505,
-      "words": [
-        {
-          "text": "anerkannt",
-          "start": 47.915,
-          "end": 48.36
-        },
-        {
-          "text": "sind",
-          "start": 48.36,
-          "end": 48.505
-        }
-      ],
-      "width": 489
-    },
-    {
-      "start": 48.505,
-      "end": 49.295,
-      "words": [
-        {
-          "text": "und",
-          "start": 48.505,
-          "end": 48.725
+          "start": 8.942,
+          "end": 9.106
         },
         {
           "text": "relevant",
-          "start": 48.725,
-          "end": 49.035
+          "start": 9.106,
+          "end": 9.395
         },
         {
-          "text": "sind",
-          "start": 49.035,
-          "end": 49.295
+          "text": "ist",
+          "start": 9.417,
+          "end": 9.724
         }
       ],
-      "width": 558
+      "width": 544
     },
     {
-      "start": 49.295,
-      "end": 49.84,
-      "words": [
-        {
-          "text": "für",
-          "start": 49.295,
-          "end": 49.46
-        },
-        {
-          "text": "die",
-          "start": 49.46,
-          "end": 49.64
-        },
-        {
-          "text": "Stelle",
-          "start": 49.64,
-          "end": 49.84
-        }
-      ],
-      "width": 409
-    },
-    {
-      "start": 49.84,
-      "end": 50.365,
+      "start": 9.724,
+      "end": 10.588,
       "words": [
         {
           "text": "oder",
-          "start": 49.84,
-          "end": 49.975
+          "start": 9.724,
+          "end": 10.032
         },
         {
-          "text": "die",
-          "start": 49.975,
-          "end": 50.085
+          "text": "einfach",
+          "start": 10.09,
+          "end": 10.379
         },
         {
-          "text": "Branche,",
-          "start": 50.085,
-          "end": 50.365
+          "text": "nicht",
+          "start": 10.379,
+          "end": 10.588
         }
       ],
-      "width": 574
+      "width": 585
     },
     {
-      "start": 50.365,
-      "end": 50.54,
+      "start": 10.588,
+      "end": 11.245,
       "words": [
         {
           "text": "auf",
-          "start": 50.365,
-          "end": 50.465
+          "start": 10.588,
+          "end": 10.742
         },
         {
           "text": "die",
-          "start": 50.465,
-          "end": 50.54
+          "start": 10.742,
+          "end": 10.933
+        },
+        {
+          "text": "Stelle",
+          "start": 10.933,
+          "end": 11.245
         }
       ],
-      "width": 225
+      "width": 422
     },
     {
-      "start": 50.54,
-      "end": 51.12,
+      "start": 11.245,
+      "end": 12.067,
       "words": [
         {
-          "text": "du",
-          "start": 50.54,
-          "end": 50.715
+          "text": "ausgerichtet",
+          "start": 11.245,
+          "end": 11.821
         },
         {
-          "text": "bewirbst.",
-          "start": 50.715,
-          "end": 51.12
-        }
-      ],
-      "width": 407
-    },
-    {
-      "start": 51.12,
-      "end": 51.35,
-      "words": [
-        {
-          "text": "Ich",
-          "start": 51.12,
-          "end": 51.265
-        },
-        {
-          "text": "habe",
-          "start": 51.265,
-          "end": 51.35
-        }
-      ],
-      "width": 284
-    },
-    {
-      "start": 51.35,
-      "end": 51.65,
-      "words": [
-        {
-          "text": "es",
-          "start": 51.35,
-          "end": 51.47
-        },
-        {
-          "text": "damals",
-          "start": 51.47,
-          "end": 51.65
-        }
-      ],
-      "width": 336
-    },
-    {
-      "start": 51.65,
-      "end": 52.265,
-      "words": [
-        {
-          "text": "mit",
-          "start": 51.65,
-          "end": 51.83
-        },
-        {
-          "text": "Google",
-          "start": 51.83,
-          "end": 52.01
-        },
-        {
-          "text": "Ads",
-          "start": 52.01,
-          "end": 52.265
-        }
-      ],
-      "width": 497
-    },
-    {
-      "start": 52.265,
-      "end": 52.775,
-      "words": [
-        {
-          "text": "versucht",
-          "start": 52.265,
-          "end": 52.53
-        },
-        {
-          "text": "und",
-          "start": 52.53,
-          "end": 52.675
-        },
-        {
-          "text": "habe",
-          "start": 52.675,
-          "end": 52.775
-        }
-      ],
-      "width": 601
-    },
-    {
-      "start": 52.775,
-      "end": 53.735,
-      "words": [
-        {
-          "text": "die",
-          "start": 52.775,
-          "end": 52.885
-        },
-        {
-          "text": "Zertifikate",
-          "start": 52.885,
-          "end": 53.475
-        },
-        {
-          "text": "gemacht.",
-          "start": 53.475,
-          "end": 53.735
-        }
-      ],
-      "width": 775
-    },
-    {
-      "start": 53.735,
-      "end": 54.495,
-      "words": [
-        {
-          "text": "Es",
-          "start": 53.735,
-          "end": 53.92
-        },
-        {
-          "text": "hat",
-          "start": 53.92,
-          "end": 54.155
-        },
-        {
-          "text": "funktioniert.",
-          "start": 54.155,
-          "end": 54.495
-        }
-      ],
-      "width": 617
-    },
-    {
-      "start": 54.495,
-      "end": 54.945,
-      "words": [
-        {
-          "text": "Es",
-          "start": 54.495,
-          "end": 54.715
-        },
-        {
-          "text": "hat",
-          "start": 54.715,
-          "end": 54.82
-        },
-        {
-          "text": "mich",
-          "start": 54.82,
-          "end": 54.945
-        }
-      ],
-      "width": 380
-    },
-    {
-      "start": 54.945,
-      "end": 55.43,
-      "words": [
-        {
-          "text": "von",
-          "start": 54.945,
-          "end": 55.085
-        },
-        {
-          "text": "den",
-          "start": 55.085,
-          "end": 55.25
-        },
-        {
-          "text": "100",
-          "start": 55.25,
-          "end": 55.43
-        }
-      ],
-      "width": 394
-    },
-    {
-      "start": 55.43,
-      "end": 56.09,
-      "words": [
-        {
-          "text": "Bewerbern",
-          "start": 55.43,
-          "end": 56.02
-        }
-      ],
-      "width": 366
-    },
-    {
-      "start": 56.09,
-      "end": 56.66,
-      "words": [
-        {
-          "text": "einfach",
-          "start": 56.09,
-          "end": 56.345
-        },
-        {
-          "text": "ein",
-          "start": 56.345,
-          "end": 56.485
-        },
-        {
-          "text": "bisschen",
-          "start": 56.485,
-          "end": 56.66
-        }
-      ],
-      "width": 667
-    },
-    {
-      "start": 56.66,
-      "end": 57.325,
-      "words": [
-        {
-          "text": "rausstechen",
-          "start": 56.66,
-          "end": 57.16
-        },
-        {
-          "text": "lassen.",
-          "start": 57.16,
-          "end": 57.325
-        }
-      ],
-      "width": 660
-    },
-    {
-      "start": 57.325,
-      "end": 57.705,
-      "words": [
-        {
-          "text": "Und",
-          "start": 57.325,
-          "end": 57.445
-        },
-        {
-          "text": "ich",
-          "start": 57.445,
-          "end": 57.565
-        },
-        {
-          "text": "hatte",
-          "start": 57.565,
-          "end": 57.705
-        }
-      ],
-      "width": 434
-    },
-    {
-      "start": 57.705,
-      "end": 58.14,
-      "words": [
-        {
-          "text": "nicht",
-          "start": 57.705,
-          "end": 57.84
-        },
-        {
-          "text": "mal",
-          "start": 57.84,
-          "end": 57.975
-        },
-        {
-          "text": "Google",
-          "start": 57.975,
-          "end": 58.14
-        }
-      ],
-      "width": 549
-    },
-    {
-      "start": 58.14,
-      "end": 58.85,
-      "words": [
-        {
-          "text": "Ads",
-          "start": 58.14,
-          "end": 58.35
-        },
-        {
-          "text": "Erfahrung",
-          "start": 58.35,
-          "end": 58.625
-        },
-        {
-          "text": "vorher.",
-          "start": 58.625,
-          "end": 58.85
-        }
-      ],
-      "width": 711
-    },
-    {
-      "start": 58.85,
-      "end": 59.355,
-      "words": [
-        {
-          "text": "Und",
-          "start": 58.85,
-          "end": 58.975
-        },
-        {
-          "text": "das",
-          "start": 58.975,
-          "end": 59.105
-        },
-        {
-          "text": "vierte,",
-          "start": 59.105,
-          "end": 59.355
-        }
-      ],
-      "width": 489
-    },
-    {
-      "start": 59.355,
-      "end": 59.92,
-      "words": [
-        {
-          "text": "was",
-          "start": 59.355,
-          "end": 59.455
-        },
-        {
-          "text": "du",
-          "start": 59.455,
-          "end": 59.6
-        },
-        {
-          "text": "machst,",
-          "start": 59.6,
-          "end": 59.88
-        }
-      ],
-      "width": 509
-    },
-    {
-      "start": 59.92,
-      "end": 60.19,
-      "words": [
-        {
-          "text": "ist:",
-          "start": 59.92,
-          "end": 60.19
-        }
-      ],
-      "width": 114
-    },
-    {
-      "start": 60.19,
-      "end": 60.885,
-      "words": [
-        {
-          "text": "Du",
-          "start": 60.19,
-          "end": 60.405
-        },
-        {
-          "text": "kommst",
-          "start": 60.405,
-          "end": 60.665
-        },
-        {
-          "text": "in",
-          "start": 60.665,
-          "end": 60.885
-        }
-      ],
-      "width": 445
-    },
-    {
-      "start": 60.885,
-      "end": 61.63,
-      "words": [
-        {
-          "text": "Kontakt",
-          "start": 60.885,
-          "end": 61.17
-        },
-        {
-          "text": "mit",
-          "start": 61.17,
-          "end": 61.425
-        },
-        {
-          "text": "Leuten,",
-          "start": 61.425,
-          "end": 61.63
-        }
-      ],
-      "width": 642
-    },
-    {
-      "start": 61.63,
-      "end": 62.215,
-      "words": [
-        {
-          "text": "die",
-          "start": 61.63,
-          "end": 61.745
-        },
-        {
-          "text": "den",
-          "start": 61.745,
-          "end": 61.94
-        },
-        {
-          "text": "Beruf",
-          "start": 61.94,
-          "end": 62.215
-        }
-      ],
-      "width": 431
-    },
-    {
-      "start": 62.215,
-      "end": 62.405,
-      "words": [
-        {
-          "text": "machen,",
-          "start": 62.215,
-          "end": 62.405
-        }
-      ],
-      "width": 291
-    },
-    {
-      "start": 62.405,
-      "end": 62.91,
-      "words": [
-        {
-          "text": "die",
-          "start": 62.405,
-          "end": 62.505
-        },
-        {
-          "text": "du",
-          "start": 62.505,
-          "end": 62.675
-        },
-        {
-          "text": "unbedingt",
-          "start": 62.675,
-          "end": 62.91
-        }
-      ],
-      "width": 540
-    },
-    {
-      "start": 62.91,
-      "end": 63.535,
-      "words": [
-        {
-          "text": "machen",
-          "start": 62.91,
-          "end": 63.11
-        },
-        {
-          "text": "möchtest.",
-          "start": 63.11,
-          "end": 63.535
-        }
-      ],
-      "width": 609
-    },
-    {
-      "start": 63.535,
-      "end": 64.015,
-      "words": [
-        {
-          "text": "Du",
-          "start": 63.535,
-          "end": 63.68
-        },
-        {
-          "text": "kannst",
-          "start": 63.68,
-          "end": 63.86
-        },
-        {
-          "text": "direkt",
-          "start": 63.86,
-          "end": 64.015
+          "text": "ist.",
+          "start": 11.821,
+          "end": 12.067
         }
       ],
       "width": 534
     },
     {
-      "start": 64.015,
-      "end": 64.5,
+      "start": 12.067,
+      "end": 12.312,
       "words": [
         {
-          "text": "die",
-          "start": 64.015,
-          "end": 64.15
+          "text": "Damit",
+          "start": 12.067,
+          "end": 12.221
         },
         {
-          "text": "Leuten",
-          "start": 64.15,
-          "end": 64.325
-        },
-        {
-          "text": "auf",
-          "start": 64.325,
-          "end": 64.5
+          "text": "du",
+          "start": 12.221,
+          "end": 12.312
         }
       ],
-      "width": 461
+      "width": 296
     },
     {
-      "start": 64.5,
-      "end": 65.24,
+      "start": 12.312,
+      "end": 12.93,
       "words": [
         {
-          "text": "LinkedIn",
-          "start": 64.5,
-          "end": 64.77
+          "text": "das",
+          "start": 12.312,
+          "end": 12.458
         },
         {
-          "text": "schreiben,",
-          "start": 64.81,
-          "end": 65.17
+          "text": "änderst,",
+          "start": 12.458,
+          "end": 12.93
         }
       ],
-      "width": 644
+      "width": 409
     },
     {
-      "start": 65.26,
-      "end": 65.515,
+      "start": 12.93,
+      "end": 13.835,
       "words": [
         {
-          "text": "gucken,",
-          "start": 65.26,
-          "end": 65.515
-        }
-      ],
-      "width": 271
-    },
-    {
-      "start": 65.515,
-      "end": 65.81,
-      "words": [
-        {
-          "text": "was",
-          "start": 65.515,
-          "end": 65.645
+          "text": "machst",
+          "start": 12.93,
+          "end": 13.13
         },
         {
-          "text": "sie",
-          "start": 65.645,
-          "end": 65.81
-        }
-      ],
-      "width": 251
-    },
-    {
-      "start": 65.81,
-      "end": 66.305,
-      "words": [
-        {
-          "text": "gemacht",
-          "start": 65.81,
-          "end": 66.035
+          "text": "du",
+          "start": 13.13,
+          "end": 13.267
         },
         {
-          "text": "haben,",
-          "start": 66.035,
-          "end": 66.305
+          "text": "folgendes.",
+          "start": 13.267,
+          "end": 13.765
         }
       ],
-      "width": 528
+      "width": 697
     },
     {
-      "start": 66.305,
-      "end": 66.86,
+      "start": 13.878,
+      "end": 14.294,
       "words": [
         {
-          "text": "oder",
-          "start": 66.305,
-          "end": 66.57
-        },
-        {
-          "text": "schreibst",
-          "start": 66.57,
-          "end": 66.86
+          "text": "Erstens,",
+          "start": 13.878,
+          "end": 14.294
         }
       ],
-      "width": 474
+      "width": 282
     },
     {
-      "start": 66.86,
-      "end": 67.095,
+      "start": 14.294,
+      "end": 14.758,
       "words": [
         {
-          "text": "sie",
-          "start": 66.86,
-          "end": 66.94
+          "text": "du",
+          "start": 14.294,
+          "end": 14.43
         },
         {
-          "text": "einfach",
-          "start": 66.94,
-          "end": 67.095
+          "text": "schaust",
+          "start": 14.43,
+          "end": 14.658
+        },
+        {
+          "text": "dir",
+          "start": 14.658,
+          "end": 14.758
         }
       ],
-      "width": 359
+      "width": 460
     },
     {
-      "start": 67.095,
-      "end": 67.505,
+      "start": 14.758,
+      "end": 15.412,
       "words": [
         {
-          "text": "an",
-          "start": 67.095,
-          "end": 67.205
+          "text": "deine",
+          "start": 14.758,
+          "end": 14.948
         },
+        {
+          "text": "CV",
+          "start": 14.948,
+          "end": 15.194
+        },
+        {
+          "text": "an.",
+          "start": 15.194,
+          "end": 15.412
+        }
+      ],
+      "width": 409
+    },
+    {
+      "start": 15.412,
+      "end": 15.739,
+      "words": [
         {
           "text": "und",
-          "start": 67.205,
-          "end": 67.285
+          "start": 15.412,
+          "end": 15.585
         },
         {
-          "text": "sagst,",
-          "start": 67.285,
-          "end": 67.505
+          "text": "die",
+          "start": 15.585,
+          "end": 15.739
         }
       ],
-      "width": 436
+      "width": 244
     },
     {
-      "start": 67.505,
-      "end": 67.84,
+      "start": 15.739,
+      "end": 16.385,
       "words": [
         {
-          "text": "ey,",
-          "start": 67.505,
-          "end": 67.77
-        }
-      ],
-      "width": 109
-    },
-    {
-      "start": 67.88,
-      "end": 68.235,
-      "words": [
-        {
-          "text": "wie",
-          "start": 67.88,
-          "end": 68.115
-        },
-        {
-          "text": "hast",
-          "start": 68.115,
-          "end": 68.235
-        }
-      ],
-      "width": 279
-    },
-    {
-      "start": 68.235,
-      "end": 68.76,
-      "words": [
-        {
-          "text": "du",
-          "start": 68.235,
-          "end": 68.335
-        },
-        {
-          "text": "es",
-          "start": 68.335,
-          "end": 68.515
-        },
-        {
-          "text": "geschafft?",
-          "start": 68.515,
-          "end": 68.76
-        }
-      ],
-      "width": 537
-    },
-    {
-      "start": 68.76,
-      "end": 69.65,
-      "words": [
-        {
-          "text": "Irgendwelche",
-          "start": 68.76,
-          "end": 69.15
-        },
-        {
-          "text": "Tipps,",
-          "start": 69.15,
-          "end": 69.61
-        }
-      ],
-      "width": 664
-    },
-    {
-      "start": 69.65,
-      "end": 70,
-      "words": [
-        {
-          "text": "hier",
-          "start": 69.65,
-          "end": 69.875
-        },
-        {
-          "text": "ist",
-          "start": 69.875,
-          "end": 70
-        }
-      ],
-      "width": 229
-    },
-    {
-      "start": 70,
-      "end": 70.59,
-      "words": [
-        {
-          "text": "meine",
-          "start": 70,
-          "end": 70.21
-        },
-        {
-          "text": "CV,",
-          "start": 70.21,
-          "end": 70.52
-        }
-      ],
-      "width": 337
-    },
-    {
-      "start": 70.77,
-      "end": 71.53,
-      "words": [
-        {
-          "text": "bitte",
-          "start": 70.77,
-          "end": 71.035
-        },
-        {
-          "text": "hilf",
-          "start": 71.035,
-          "end": 71.215
-        },
-        {
-          "text": "mir.",
-          "start": 71.215,
-          "end": 71.46
-        }
-      ],
-      "width": 408
-    },
-    {
-      "start": 71.87,
-      "end": 72.63,
-      "words": [
-        {
-          "text": "Ich",
-          "start": 71.87,
-          "end": 72.215
-        },
-        {
-          "text": "habe",
-          "start": 72.215,
-          "end": 72.56
-        }
-      ],
-      "width": 284
-    },
-    {
-      "start": 72.63,
-      "end": 73.4,
-      "words": [
-        {
-          "text": "ein",
-          "start": 72.63,
-          "end": 72.91
-        },
-        {
-          "text": "1,7",
-          "start": 72.91,
-          "end": 73.4
-        }
-      ],
-      "width": 223
-    },
-    {
-      "start": 73.4,
-      "end": 74.045,
-      "words": [
-        {
-          "text": "Master",
-          "start": 73.4,
-          "end": 73.58
-        },
-        {
-          "text": "im",
-          "start": 73.58,
-          "end": 73.685
-        },
-        {
-          "text": "BWL.",
-          "start": 73.685,
-          "end": 74.045
-        }
-      ],
-      "width": 510
-    },
-    {
-      "start": 74.045,
-      "end": 74.6,
-      "words": [
-        {
-          "text": "Ich",
-          "start": 74.045,
-          "end": 74.205
-        },
-        {
-          "text": "habe",
-          "start": 74.205,
-          "end": 74.38
-        },
-        {
-          "text": "über",
-          "start": 74.38,
-          "end": 74.6
-        }
-      ],
-      "width": 443
-    },
-    {
-      "start": 74.6,
-      "end": 75.26,
-      "words": [
-        {
-          "text": "zwei",
-          "start": 74.6,
-          "end": 74.81
-        },
-        {
-          "text": "bis",
-          "start": 74.81,
-          "end": 75.025
-        },
-        {
-          "text": "drei",
-          "start": 75.025,
-          "end": 75.26
-        }
-      ],
-      "width": 404
-    },
-    {
-      "start": 75.26,
-      "end": 76.165,
-      "words": [
-        {
-          "text": "Jahre",
-          "start": 75.26,
-          "end": 75.525
-        },
-        {
-          "text": "Berufserfahrung.",
-          "start": 75.525,
-          "end": 76.165
-        }
-      ],
-      "width": 758
-    },
-    {
-      "start": 76.165,
-      "end": 76.53,
-      "words": [
-        {
-          "text": "Ich",
-          "start": 76.165,
-          "end": 76.25
-        },
-        {
-          "text": "habe",
-          "start": 76.25,
-          "end": 76.35
-        },
-        {
-          "text": "einen",
-          "start": 76.35,
-          "end": 76.53
-        }
-      ],
-      "width": 475
-    },
-    {
-      "start": 76.53,
-      "end": 77.3,
-      "words": [
-        {
-          "text": "Referenzschreiben",
-          "start": 76.53,
-          "end": 77.13
-        },
-        {
-          "text": "vom",
-          "start": 77.13,
-          "end": 77.3
-        }
-      ],
-      "width": 772
-    },
-    {
-      "start": 77.3,
-      "end": 77.805,
-      "words": [
-        {
-          "text": "Prof",
-          "start": 77.3,
-          "end": 77.555
-        },
-        {
-          "text": "bekommen.",
-          "start": 77.555,
-          "end": 77.805
-        }
-      ],
-      "width": 538
-    },
-    {
-      "start": 77.805,
-      "end": 78.29,
-      "words": [
-        {
-          "text": "Ich",
-          "start": 77.805,
-          "end": 77.975
-        },
-        {
-          "text": "musste",
-          "start": 77.975,
-          "end": 78.11
-        },
-        {
-          "text": "über",
-          "start": 78.11,
-          "end": 78.29
-        }
-      ],
-      "width": 522
-    },
-    {
-      "start": 78.29,
-      "end": 78.965,
-      "words": [
-        {
-          "text": "60",
-          "start": 78.29,
-          "end": 78.52
-        },
-        {
-          "text": "Bewerbungen",
-          "start": 78.52,
-          "end": 78.965
-        }
-      ],
-      "width": 553
-    },
-    {
-      "start": 78.965,
-      "end": 79.5,
-      "words": [
-        {
-          "text": "abschicken,",
-          "start": 78.965,
-          "end": 79.5
-        }
-      ],
-      "width": 405
-    },
-    {
-      "start": 79.5,
-      "end": 80.28,
-      "words": [
-        {
-          "text": "um",
-          "start": 79.5,
-          "end": 79.845
-        },
-        {
-          "text": "popelige",
-          "start": 79.845,
-          "end": 80.28
-        }
-      ],
-      "width": 402
-    },
-    {
-      "start": 80.28,
-      "end": 81.255,
-      "words": [
-        {
-          "text": "2 bis 3",
-          "start": 80.28,
-          "end": 80.865
-        },
-        {
-          "text": "Angebote",
-          "start": 80.865,
-          "end": 81.255
-        }
-      ],
-      "width": 538
-    },
-    {
-      "start": 81.255,
-      "end": 81.73,
-      "words": [
-        {
-          "text": "zu",
-          "start": 81.255,
-          "end": 81.455
-        },
-        {
-          "text": "bekommen.",
-          "start": 81.455,
-          "end": 81.73
-        }
-      ],
-      "width": 478
-    },
-    {
-      "start": 81.73,
-      "end": 82.335,
-      "words": [
-        {
-          "text": "Es",
-          "start": 81.73,
-          "end": 81.935
-        },
-        {
-          "text": "ist",
-          "start": 81.935,
-          "end": 82.135
-        },
-        {
-          "text": "tough",
-          "start": 82.135,
-          "end": 82.335
-        }
-      ],
-      "width": 384
-    },
-    {
-      "start": 82.335,
-      "end": 82.79,
-      "words": [
-        {
-          "text": "da",
-          "start": 82.335,
-          "end": 82.535
-        },
-        {
-          "text": "draußen.",
-          "start": 82.535,
-          "end": 82.79
-        }
-      ],
-      "width": 392
-    },
-    {
-      "start": 82.79,
-      "end": 83.24,
-      "words": [
-        {
-          "text": "Wenn",
-          "start": 82.79,
-          "end": 82.91
-        },
-        {
-          "text": "du",
-          "start": 82.91,
-          "end": 82.965
-        },
-        {
-          "text": "irgendwelche",
-          "start": 82.965,
-          "end": 83.24
+          "text": "Stellenausschreibung,",
+          "start": 15.739,
+          "end": 16.385
         }
       ],
       "width": 737
     },
     {
-      "start": 83.24,
-      "end": 83.665,
+      "start": 16.385,
+      "end": 16.721,
       "words": [
         {
-          "text": "Fragen",
-          "start": 83.24,
-          "end": 83.43
+          "text": "auf",
+          "start": 16.385,
+          "end": 16.503
         },
         {
-          "text": "hast",
-          "start": 83.43,
-          "end": 83.555
+          "text": "die",
+          "start": 16.503,
+          "end": 16.603
         },
         {
-          "text": "oder",
-          "start": 83.555,
-          "end": 83.665
+          "text": "du",
+          "start": 16.603,
+          "end": 16.721
         }
       ],
-      "width": 551
+      "width": 318
     },
     {
-      "start": 83.665,
-      "end": 84.235,
+      "start": 16.721,
+      "end": 17.33,
       "words": [
         {
-          "text": "nicht",
-          "start": 83.665,
-          "end": 83.84
+          "text": "dich",
+          "start": 16.721,
+          "end": 16.885
+        },
+        {
+          "text": "bewirbst.",
+          "start": 16.885,
+          "end": 17.33
+        }
+      ],
+      "width": 465
+    },
+    {
+      "start": 17.33,
+      "end": 18.256,
+      "words": [
+        {
+          "text": "In",
+          "start": 17.33,
+          "end": 17.511
+        },
+        {
+          "text": "den",
+          "start": 17.511,
+          "end": 17.638
+        },
+        {
+          "text": "Stellenanzeigen",
+          "start": 17.638,
+          "end": 18.256
+        }
+      ],
+      "width": 736
+    },
+    {
+      "start": 18.256,
+      "end": 18.811,
+      "words": [
+        {
+          "text": "stehen",
+          "start": 18.256,
+          "end": 18.465
+        },
+        {
+          "text": "bestimmte",
+          "start": 18.465,
+          "end": 18.811
+        }
+      ],
+      "width": 590
+    },
+    {
+      "start": 18.811,
+      "end": 19.293,
+      "words": [
+        {
+          "text": "Stichwörter,",
+          "start": 18.811,
+          "end": 19.293
+        }
+      ],
+      "width": 411
+    },
+    {
+      "start": 19.293,
+      "end": 19.62,
+      "words": [
+        {
+          "text": "die",
+          "start": 19.293,
+          "end": 19.475
+        },
+        {
+          "text": "auch",
+          "start": 19.475,
+          "end": 19.62
+        }
+      ],
+      "width": 282
+    },
+    {
+      "start": 19.62,
+      "end": 19.784,
+      "words": [
+        {
+          "text": "in",
+          "start": 19.62,
+          "end": 19.684
+        },
+        {
+          "text": "deine",
+          "start": 19.684,
+          "end": 19.784
+        }
+      ],
+      "width": 261
+    },
+    {
+      "start": 19.784,
+      "end": 20.524,
+      "words": [
+        {
+          "text": "CV",
+          "start": 19.784,
+          "end": 20.093
+        },
+        {
+          "text": "rein",
+          "start": 20.093,
+          "end": 20.302
+        },
+        {
+          "text": "müssen.",
+          "start": 20.302,
+          "end": 20.524
+        }
+      ],
+      "width": 530
+    },
+    {
+      "start": 20.524,
+      "end": 21.145,
+      "words": [
+        {
+          "text": "Du",
+          "start": 20.524,
+          "end": 20.691
+        },
+        {
+          "text": "schickst",
+          "start": 20.691,
+          "end": 21.145
+        }
+      ],
+      "width": 388
+    },
+    {
+      "start": 21.145,
+      "end": 21.809,
+      "words": [
+        {
+          "text": "10",
+          "start": 21.145,
+          "end": 21.373
+        },
+        {
+          "text": "bis",
+          "start": 21.373,
+          "end": 21.573
+        },
+        {
+          "text": "15",
+          "start": 21.573,
+          "end": 21.809
+        }
+      ],
+      "width": 292
+    },
+    {
+      "start": 21.809,
+      "end": 22.536,
+      "words": [
+        {
+          "text": "Bewerbungen",
+          "start": 21.809,
+          "end": 22.291
+        },
+        {
+          "text": "erstmal",
+          "start": 22.291,
+          "end": 22.536
+        }
+      ],
+      "width": 718
+    },
+    {
+      "start": 22.536,
+      "end": 23.372,
+      "words": [
+        {
+          "text": "als",
+          "start": 22.536,
+          "end": 22.8
+        },
+        {
+          "text": "Test",
+          "start": 22.8,
+          "end": 23.109
+        },
+        {
+          "text": "raus.",
+          "start": 23.109,
+          "end": 23.372
+        }
+      ],
+      "width": 439
+    },
+    {
+      "start": 23.372,
+      "end": 23.626,
+      "words": [
+        {
+          "text": "Guck",
+          "start": 23.372,
+          "end": 23.553
+        },
+        {
+          "text": "mal,",
+          "start": 23.553,
+          "end": 23.626
+        }
+      ],
+      "width": 333
+    },
+    {
+      "start": 23.626,
+      "end": 24.235,
+      "words": [
+        {
+          "text": "wie",
+          "start": 23.626,
+          "end": 23.699
+        },
+        {
+          "text": "die",
+          "start": 23.699,
+          "end": 23.808
+        },
+        {
+          "text": "Resonanz",
+          "start": 23.808,
+          "end": 24.235
+        }
+      ],
+      "width": 567
+    },
+    {
+      "start": 24.235,
+      "end": 24.744,
+      "words": [
+        {
+          "text": "ist",
+          "start": 24.235,
+          "end": 24.426
+        },
+        {
+          "text": "und",
+          "start": 24.426,
+          "end": 24.581
+        },
+        {
+          "text": "ob",
+          "start": 24.581,
+          "end": 24.744
+        }
+      ],
+      "width": 319
+    },
+    {
+      "start": 24.744,
+      "end": 25.428,
+      "words": [
+        {
+          "text": "diese",
+          "start": 24.744,
+          "end": 24.917
+        },
+        {
+          "text": "Änderung",
+          "start": 24.917,
+          "end": 25.424
+        }
+      ],
+      "width": 514
+    },
+    {
+      "start": 25.428,
+      "end": 26.217,
+      "words": [
+        {
+          "text": "etwas",
+          "start": 25.428,
+          "end": 25.726
+        },
+        {
+          "text": "bewirkt",
+          "start": 25.726,
+          "end": 26.053
+        },
+        {
+          "text": "hat.",
+          "start": 26.053,
+          "end": 26.217
+        }
+      ],
+      "width": 600
+    },
+    {
+      "start": 26.217,
+      "end": 26.553,
+      "words": [
+        {
+          "text": "Wenn",
+          "start": 26.217,
+          "end": 26.335
+        },
+        {
+          "text": "du",
+          "start": 26.335,
+          "end": 26.435
+        },
+        {
+          "text": "immer",
+          "start": 26.435,
+          "end": 26.553
+        }
+      ],
+      "width": 504
+    },
+    {
+      "start": 26.553,
+      "end": 27.035,
+      "words": [
+        {
+          "text": "noch",
+          "start": 26.553,
+          "end": 26.69
+        },
+        {
+          "text": "keine",
+          "start": 26.69,
+          "end": 26.853
+        },
+        {
+          "text": "Antwort",
+          "start": 26.853,
+          "end": 27.035
+        }
+      ],
+      "width": 633
+    },
+    {
+      "start": 27.035,
+      "end": 27.49,
+      "words": [
+        {
+          "text": "bekommst,",
+          "start": 27.035,
+          "end": 27.49
+        }
+      ],
+      "width": 374
+    },
+    {
+      "start": 27.49,
+      "end": 27.917,
+      "words": [
+        {
+          "text": "musst",
+          "start": 27.49,
+          "end": 27.717
+        },
+        {
+          "text": "du",
+          "start": 27.717,
+          "end": 27.917
+        }
+      ],
+      "width": 304
+    },
+    {
+      "start": 27.917,
+      "end": 28.408,
+      "words": [
+        {
+          "text": "leider",
+          "start": 27.917,
+          "end": 28.181
         },
         {
           "text": "weiter",
-          "start": 83.84,
-          "end": 84.015
-        },
-        {
-          "text": "weißt,",
-          "start": 84.015,
-          "end": 84.235
+          "start": 28.181,
+          "end": 28.408
         }
       ],
-      "width": 602
+      "width": 410
     },
     {
-      "start": 84.235,
-      "end": 84.55,
+      "start": 28.408,
+      "end": 29.269,
       "words": [
         {
-          "text": "schreib",
-          "start": 84.235,
-          "end": 84.375
+          "text": "deine",
+          "start": 28.408,
+          "end": 28.608
         },
         {
-          "text": "mir",
-          "start": 84.375,
-          "end": 84.45
+          "text": "CV",
+          "start": 28.608,
+          "end": 28.826
         },
         {
-          "text": "einen",
-          "start": 84.45,
-          "end": 84.55
+          "text": "verbessern.",
+          "start": 28.826,
+          "end": 29.269
         }
       ],
-      "width": 560
+      "width": 692
     },
     {
-      "start": 84.55,
-      "end": 85.32,
+      "start": 29.269,
+      "end": 29.76,
       "words": [
         {
-          "text": "Kommentar",
-          "start": 84.55,
-          "end": 84.805
+          "text": "Drittens,",
+          "start": 29.269,
+          "end": 29.76
+        }
+      ],
+      "width": 291
+    },
+    {
+      "start": 29.76,
+      "end": 30.269,
+      "words": [
+        {
+          "text": "du",
+          "start": 29.76,
+          "end": 29.942
         },
         {
-          "text": "oder",
-          "start": 84.805,
-          "end": 84.98
+          "text": "wirst",
+          "start": 29.942,
+          "end": 30.124
         },
         {
-          "text": "DM,",
-          "start": 84.98,
-          "end": 85.28
+          "text": "dich",
+          "start": 30.124,
+          "end": 30.269
+        }
+      ],
+      "width": 416
+    },
+    {
+      "start": 30.269,
+      "end": 30.533,
+      "words": [
+        {
+          "text": "aber",
+          "start": 30.269,
+          "end": 30.433
+        },
+        {
+          "text": "auch",
+          "start": 30.433,
+          "end": 30.533
+        }
+      ],
+      "width": 329
+    },
+    {
+      "start": 30.533,
+      "end": 31.224,
+      "words": [
+        {
+          "text": "auf",
+          "start": 30.533,
+          "end": 30.651
+        },
+        {
+          "text": "Stellen",
+          "start": 30.651,
+          "end": 30.833
+        },
+        {
+          "text": "bewerben,",
+          "start": 30.833,
+          "end": 31.224
+        }
+      ],
+      "width": 705
+    },
+    {
+      "start": 31.224,
+      "end": 31.615,
+      "words": [
+        {
+          "text": "die",
+          "start": 31.224,
+          "end": 31.387
+        },
+        {
+          "text": "nicht",
+          "start": 31.387,
+          "end": 31.615
+        }
+      ],
+      "width": 285
+    },
+    {
+      "start": 31.615,
+      "end": 32.596,
+      "words": [
+        {
+          "text": "100%",
+          "start": 31.615,
+          "end": 31.931
+        },
+        {
+          "text": "das",
+          "start": 32.207,
+          "end": 32.46
+        },
+        {
+          "text": "sind,",
+          "start": 32.46,
+          "end": 32.596
+        }
+      ],
+      "width": 493
+    },
+    {
+      "start": 32.596,
+      "end": 33.174,
+      "words": [
+        {
+          "text": "was",
+          "start": 32.596,
+          "end": 32.715
+        },
+        {
+          "text": "du",
+          "start": 32.715,
+          "end": 32.924
+        },
+        {
+          "text": "willst.",
+          "start": 32.924,
+          "end": 33.174
+        }
+      ],
+      "width": 441
+    },
+    {
+      "start": 33.174,
+      "end": 33.561,
+      "words": [
+        {
+          "text": "Ich",
+          "start": 33.174,
+          "end": 33.37
+        },
+        {
+          "text": "weiß,",
+          "start": 33.37,
+          "end": 33.561
+        }
+      ],
+      "width": 299
+    },
+    {
+      "start": 33.561,
+      "end": 34.447,
+      "words": [
+        {
+          "text": "das",
+          "start": 33.561,
+          "end": 33.697
+        },
+        {
+          "text": "klingt",
+          "start": 33.697,
+          "end": 33.888
+        },
+        {
+          "text": "übel,",
+          "start": 33.888,
+          "end": 34.377
+        }
+      ],
+      "width": 494
+    },
+    {
+      "start": 34.453,
+      "end": 34.799,
+      "words": [
+        {
+          "text": "aber...",
+          "start": 34.453,
+          "end": 34.799
+        }
+      ],
+      "width": 219
+    },
+    {
+      "start": 34.799,
+      "end": 35.128,
+      "words": [
+        {
+          "text": "Wir",
+          "start": 34.799,
+          "end": 35.028
+        },
+        {
+          "text": "können",
+          "start": 35.028,
+          "end": 35.128
+        }
+      ],
+      "width": 371
+    },
+    {
+      "start": 35.128,
+      "end": 35.773,
+      "words": [
+        {
+          "text": "das",
+          "start": 35.128,
+          "end": 35.246
+        },
+        {
+          "text": "nicht",
+          "start": 35.246,
+          "end": 35.41
+        },
+        {
+          "text": "aussuchen,",
+          "start": 35.41,
+          "end": 35.773
         }
       ],
       "width": 690
     },
     {
-      "start": 85.32,
-      "end": 86.165,
+      "start": 35.773,
+      "end": 35.982,
       "words": [
         {
-          "text": "ansonsten",
-          "start": 85.32,
-          "end": 85.965
+          "text": "aktuell,",
+          "start": 35.773,
+          "end": 35.982
+        }
+      ],
+      "width": 252
+    },
+    {
+      "start": 35.982,
+      "end": 36.292,
+      "words": [
+        {
+          "text": "Digga.",
+          "start": 35.982,
+          "end": 36.292
+        }
+      ],
+      "width": 219
+    },
+    {
+      "start": 36.292,
+      "end": 36.482,
+      "words": [
+        {
+          "text": "Such",
+          "start": 36.292,
+          "end": 36.482
+        }
+      ],
+      "width": 176
+    },
+    {
+      "start": 36.482,
+      "end": 36.982,
+      "words": [
+        {
+          "text": "dir",
+          "start": 36.482,
+          "end": 36.628
+        },
+        {
+          "text": "Stellen",
+          "start": 36.628,
+          "end": 36.837
+        },
+        {
+          "text": "aus,",
+          "start": 36.837,
+          "end": 36.982
+        }
+      ],
+      "width": 484
+    },
+    {
+      "start": 36.982,
+      "end": 37.955,
+      "words": [
+        {
+          "text": "die",
+          "start": 36.982,
+          "end": 37.073
+        },
+        {
+          "text": "so",
+          "start": 37.073,
+          "end": 37.237
+        },
+        {
+          "text": "80 bis 60 %",
+          "start": 37.237,
+          "end": 37.955
+        }
+      ],
+      "width": 568
+    },
+    {
+      "start": 37.955,
+      "end": 38.676,
+      "words": [
+        {
+          "text": "zu",
+          "start": 37.955,
+          "end": 38.173
+        },
+        {
+          "text": "dir",
+          "start": 38.173,
+          "end": 38.328
+        },
+        {
+          "text": "passen.",
+          "start": 38.328,
+          "end": 38.676
+        }
+      ],
+      "width": 450
+    },
+    {
+      "start": 38.676,
+      "end": 39.152,
+      "words": [
+        {
+          "text": "Weil",
+          "start": 38.676,
+          "end": 38.916
+        },
+        {
+          "text": "vieles",
+          "start": 38.916,
+          "end": 39.152
+        }
+      ],
+      "width": 353
+    },
+    {
+      "start": 39.152,
+      "end": 39.716,
+      "words": [
+        {
+          "text": "kannst",
+          "start": 39.152,
+          "end": 39.261
+        },
+        {
+          "text": "du",
+          "start": 39.261,
+          "end": 39.361
+        },
+        {
+          "text": "heutzutage",
+          "start": 39.361,
+          "end": 39.716
+        }
+      ],
+      "width": 701
+    },
+    {
+      "start": 39.716,
+      "end": 40.274,
+      "words": [
+        {
+          "text": "auch",
+          "start": 39.716,
+          "end": 39.843
+        },
+        {
+          "text": "erlernen.",
+          "start": 39.843,
+          "end": 40.274
+        }
+      ],
+      "width": 473
+    },
+    {
+      "start": 40.274,
+      "end": 41.059,
+      "words": [
+        {
+          "text": "Wichtiger",
+          "start": 40.274,
+          "end": 40.605
+        },
+        {
+          "text": "heutzutage",
+          "start": 40.605,
+          "end": 41.059
+        }
+      ],
+      "width": 697
+    },
+    {
+      "start": 41.059,
+      "end": 41.35,
+      "words": [
+        {
+          "text": "ist",
+          "start": 41.059,
+          "end": 41.205
+        },
+        {
+          "text": "eher,",
+          "start": 41.205,
+          "end": 41.35
+        }
+      ],
+      "width": 270
+    },
+    {
+      "start": 41.35,
+      "end": 42.014,
+      "words": [
+        {
+          "text": "dass",
+          "start": 41.35,
+          "end": 41.468
+        },
+        {
+          "text": "die",
+          "start": 41.468,
+          "end": 41.623
+        },
+        {
+          "text": "Persönlichkeit",
+          "start": 41.623,
+          "end": 42.014
+        }
+      ],
+      "width": 755
+    },
+    {
+      "start": 42.014,
+      "end": 42.578,
+      "words": [
+        {
+          "text": "zu",
+          "start": 42.014,
+          "end": 42.132
+        },
+        {
+          "text": "dem",
+          "start": 42.132,
+          "end": 42.305
+        },
+        {
+          "text": "Unternehmen",
+          "start": 42.305,
+          "end": 42.578
+        }
+      ],
+      "width": 691
+    },
+    {
+      "start": 42.578,
+      "end": 42.81,
+      "words": [
+        {
+          "text": "passt.",
+          "start": 42.578,
+          "end": 42.81
+        }
+      ],
+      "width": 211
+    },
+    {
+      "start": 42.81,
+      "end": 43.51,
+      "words": [
+        {
+          "text": "Und",
+          "start": 42.81,
+          "end": 42.96
+        },
+        {
+          "text": "als",
+          "start": 42.96,
+          "end": 43.078
+        },
+        {
+          "text": "nächstes,",
+          "start": 43.078,
+          "end": 43.495
+        }
+      ],
+      "width": 580
+    },
+    {
+      "start": 43.51,
+      "end": 44.422,
+      "words": [
+        {
+          "text": "wenn",
+          "start": 43.51,
+          "end": 43.763
+        },
+        {
+          "text": "du",
+          "start": 43.763,
+          "end": 43.936
+        },
+        {
+          "text": "weißt,",
+          "start": 43.936,
+          "end": 44.422
+        }
+      ],
+      "width": 491
+    },
+    {
+      "start": 44.422,
+      "end": 45.09,
+      "words": [
+        {
+          "text": "dass",
+          "start": 44.422,
+          "end": 44.617
+        },
+        {
+          "text": "dir",
+          "start": 44.617,
+          "end": 44.781
+        },
+        {
+          "text": "bestimmte",
+          "start": 44.781,
+          "end": 45.09
+        }
+      ],
+      "width": 620
+    },
+    {
+      "start": 45.09,
+      "end": 45.644,
+      "words": [
+        {
+          "text": "Berufserfahrungen",
+          "start": 45.09,
+          "end": 45.644
+        }
+      ],
+      "width": 620
+    },
+    {
+      "start": 45.644,
+      "end": 45.975,
+      "words": [
+        {
+          "text": "fehlen.",
+          "start": 45.644,
+          "end": 45.975
+        }
+      ],
+      "width": 233
+    },
+    {
+      "start": 45.975,
+      "end": 46.314,
+      "words": [
+        {
+          "text": "dann",
+          "start": 45.975,
+          "end": 46.132
+        },
+        {
+          "text": "würde",
+          "start": 46.132,
+          "end": 46.223
+        },
+        {
+          "text": "ich",
+          "start": 46.223,
+          "end": 46.314
+        }
+      ],
+      "width": 496
+    },
+    {
+      "start": 46.314,
+      "end": 47.009,
+      "words": [
+        {
+          "text": "an",
+          "start": 46.314,
+          "end": 46.405
+        },
+        {
+          "text": "deiner",
+          "start": 46.405,
+          "end": 46.659
+        },
+        {
+          "text": "Stelle",
+          "start": 46.659,
+          "end": 46.939
+        }
+      ],
+      "width": 506
+    },
+    {
+      "start": 47.034,
+      "end": 47.632,
+      "words": [
+        {
+          "text": "irgendwelche",
+          "start": 47.034,
+          "end": 47.632
+        }
+      ],
+      "width": 449
+    },
+    {
+      "start": 47.632,
+      "end": 48.859,
+      "words": [
+        {
+          "text": "Zertifikate",
+          "start": 47.632,
+          "end": 48.423
+        },
+        {
+          "text": "raussuchen,",
+          "start": 48.423,
+          "end": 48.859
+        }
+      ],
+      "width": 760
+    },
+    {
+      "start": 48.859,
+      "end": 49.432,
+      "words": [
+        {
+          "text": "die",
+          "start": 48.859,
+          "end": 49.121
+        },
+        {
+          "text": "wirklich",
+          "start": 49.125,
+          "end": 49.432
+        }
+      ],
+      "width": 378
+    },
+    {
+      "start": 49.432,
+      "end": 50.023,
+      "words": [
+        {
+          "text": "anerkannt",
+          "start": 49.432,
+          "end": 49.878
+        },
+        {
+          "text": "sind",
+          "start": 49.878,
+          "end": 50.023
+        }
+      ],
+      "width": 489
+    },
+    {
+      "start": 50.023,
+      "end": 50.793,
+      "words": [
+        {
+          "text": "und",
+          "start": 50.023,
+          "end": 50.241
+        },
+        {
+          "text": "relevant",
+          "start": 50.241,
+          "end": 50.55
+        },
+        {
+          "text": "sind",
+          "start": 50.55,
+          "end": 50.793
+        }
+      ],
+      "width": 558
+    },
+    {
+      "start": 50.793,
+      "end": 51.326,
+      "words": [
+        {
+          "text": "für",
+          "start": 50.793,
+          "end": 50.944
+        },
+        {
+          "text": "die",
+          "start": 50.944,
+          "end": 51.126
+        },
+        {
+          "text": "Stelle",
+          "start": 51.126,
+          "end": 51.326
+        }
+      ],
+      "width": 409
+    },
+    {
+      "start": 51.326,
+      "end": 51.853,
+      "words": [
+        {
+          "text": "oder",
+          "start": 51.326,
+          "end": 51.462
+        },
+        {
+          "text": "die",
+          "start": 51.462,
+          "end": 51.572
+        },
+        {
+          "text": "Branche,",
+          "start": 51.572,
+          "end": 51.853
+        }
+      ],
+      "width": 574
+    },
+    {
+      "start": 51.853,
+      "end": 52.153,
+      "words": [
+        {
+          "text": "auf",
+          "start": 51.853,
+          "end": 51.953
+        },
+        {
+          "text": "die",
+          "start": 51.953,
+          "end": 52.026
+        },
+        {
+          "text": "du",
+          "start": 52.026,
+          "end": 52.153
+        }
+      ],
+      "width": 318
+    },
+    {
+      "start": 52.153,
+      "end": 52.608,
+      "words": [
+        {
+          "text": "dich",
+          "start": 52.153,
+          "end": 52.29
+        },
+        {
+          "text": "bewirbst.",
+          "start": 52.29,
+          "end": 52.608
+        }
+      ],
+      "width": 465
+    },
+    {
+      "start": 52.608,
+      "end": 52.835,
+      "words": [
+        {
+          "text": "Ich",
+          "start": 52.608,
+          "end": 52.753
+        },
+        {
+          "text": "habe",
+          "start": 52.753,
+          "end": 52.835
+        }
+      ],
+      "width": 284
+    },
+    {
+      "start": 52.835,
+      "end": 53.135,
+      "words": [
+        {
+          "text": "es",
+          "start": 52.835,
+          "end": 52.953
+        },
+        {
+          "text": "damals",
+          "start": 52.953,
+          "end": 53.135
+        }
+      ],
+      "width": 336
+    },
+    {
+      "start": 53.135,
+      "end": 53.753,
+      "words": [
+        {
+          "text": "mit",
+          "start": 53.135,
+          "end": 53.317
+        },
+        {
+          "text": "Google",
+          "start": 53.317,
+          "end": 53.499
+        },
+        {
+          "text": "Ads",
+          "start": 53.499,
+          "end": 53.753
+        }
+      ],
+      "width": 497
+    },
+    {
+      "start": 53.753,
+      "end": 54.262,
+      "words": [
+        {
+          "text": "versucht",
+          "start": 53.753,
+          "end": 54.017
+        },
+        {
+          "text": "und",
+          "start": 54.017,
+          "end": 54.162
+        },
+        {
+          "text": "habe",
+          "start": 54.162,
+          "end": 54.262
+        }
+      ],
+      "width": 601
+    },
+    {
+      "start": 54.262,
+      "end": 55.22,
+      "words": [
+        {
+          "text": "die",
+          "start": 54.262,
+          "end": 54.372
+        },
+        {
+          "text": "Zertifikate",
+          "start": 54.372,
+          "end": 54.962
+        },
+        {
+          "text": "gemacht.",
+          "start": 54.962,
+          "end": 55.22
+        }
+      ],
+      "width": 775
+    },
+    {
+      "start": 55.22,
+      "end": 55.978,
+      "words": [
+        {
+          "text": "Es",
+          "start": 55.22,
+          "end": 55.405
+        },
+        {
+          "text": "hat",
+          "start": 55.405,
+          "end": 55.641
+        },
+        {
+          "text": "funktioniert.",
+          "start": 55.641,
+          "end": 55.978
+        }
+      ],
+      "width": 617
+    },
+    {
+      "start": 55.978,
+      "end": 56.432,
+      "words": [
+        {
+          "text": "Es",
+          "start": 55.978,
+          "end": 56.196
+        },
+        {
+          "text": "hat",
+          "start": 56.196,
+          "end": 56.305
+        },
+        {
+          "text": "mich",
+          "start": 56.305,
+          "end": 56.432
+        }
+      ],
+      "width": 380
+    },
+    {
+      "start": 56.432,
+      "end": 56.914,
+      "words": [
+        {
+          "text": "von",
+          "start": 56.432,
+          "end": 56.568
+        },
+        {
+          "text": "den",
+          "start": 56.568,
+          "end": 56.732
+        },
+        {
+          "text": "100",
+          "start": 56.732,
+          "end": 56.914
+        }
+      ],
+      "width": 394
+    },
+    {
+      "start": 56.914,
+      "end": 57.573,
+      "words": [
+        {
+          "text": "Bewerbern",
+          "start": 56.914,
+          "end": 57.503
+        }
+      ],
+      "width": 366
+    },
+    {
+      "start": 57.579,
+      "end": 58.141,
+      "words": [
+        {
+          "text": "einfach",
+          "start": 57.579,
+          "end": 57.832
+        },
+        {
+          "text": "ein",
+          "start": 57.832,
+          "end": 57.968
+        },
+        {
+          "text": "bisschen",
+          "start": 57.968,
+          "end": 58.141
+        }
+      ],
+      "width": 667
+    },
+    {
+      "start": 58.141,
+      "end": 58.81,
+      "words": [
+        {
+          "text": "rausstechen",
+          "start": 58.141,
+          "end": 58.641
+        },
+        {
+          "text": "lassen.",
+          "start": 58.641,
+          "end": 58.81
+        }
+      ],
+      "width": 660
+    },
+    {
+      "start": 58.81,
+      "end": 59.188,
+      "words": [
+        {
+          "text": "Und",
+          "start": 58.81,
+          "end": 58.934
+        },
+        {
+          "text": "ich",
+          "start": 58.934,
+          "end": 59.052
+        },
+        {
+          "text": "hatte",
+          "start": 59.052,
+          "end": 59.188
+        }
+      ],
+      "width": 434
+    },
+    {
+      "start": 59.188,
+      "end": 59.625,
+      "words": [
+        {
+          "text": "nicht",
+          "start": 59.188,
+          "end": 59.325
+        },
+        {
+          "text": "mal",
+          "start": 59.325,
+          "end": 59.461
+        },
+        {
+          "text": "Google",
+          "start": 59.461,
+          "end": 59.625
+        }
+      ],
+      "width": 549
+    },
+    {
+      "start": 59.625,
+      "end": 60.344,
+      "words": [
+        {
+          "text": "Ads",
+          "start": 59.625,
+          "end": 59.834
+        },
+        {
+          "text": "Erfahrung",
+          "start": 59.834,
+          "end": 60.107
+        },
+        {
+          "text": "vorher.",
+          "start": 60.107,
+          "end": 60.344
+        }
+      ],
+      "width": 711
+    },
+    {
+      "start": 60.344,
+      "end": 61.036,
+      "words": [
+        {
+          "text": "Du",
+          "start": 60.344,
+          "end": 60.555
+        },
+        {
+          "text": "kommst",
+          "start": 60.555,
+          "end": 60.818
+        },
+        {
+          "text": "in",
+          "start": 60.818,
+          "end": 61.036
+        }
+      ],
+      "width": 445
+    },
+    {
+      "start": 61.036,
+      "end": 61.782,
+      "words": [
+        {
+          "text": "Kontakt",
+          "start": 61.036,
+          "end": 61.318
+        },
+        {
+          "text": "mit",
+          "start": 61.318,
+          "end": 61.573
+        },
+        {
+          "text": "Leuten,",
+          "start": 61.573,
+          "end": 61.782
+        }
+      ],
+      "width": 642
+    },
+    {
+      "start": 61.782,
+      "end": 62.364,
+      "words": [
+        {
+          "text": "die",
+          "start": 61.782,
+          "end": 61.9
+        },
+        {
+          "text": "den",
+          "start": 61.9,
+          "end": 62.091
+        },
+        {
+          "text": "Beruf",
+          "start": 62.091,
+          "end": 62.364
+        }
+      ],
+      "width": 431
+    },
+    {
+      "start": 62.364,
+      "end": 62.555,
+      "words": [
+        {
+          "text": "machen,",
+          "start": 62.364,
+          "end": 62.555
+        }
+      ],
+      "width": 291
+    },
+    {
+      "start": 62.555,
+      "end": 63.064,
+      "words": [
+        {
+          "text": "die",
+          "start": 62.555,
+          "end": 62.655
+        },
+        {
+          "text": "du",
+          "start": 62.655,
+          "end": 62.827
+        },
+        {
+          "text": "unbedingt",
+          "start": 62.827,
+          "end": 63.064
+        }
+      ],
+      "width": 540
+    },
+    {
+      "start": 63.064,
+      "end": 63.705,
+      "words": [
+        {
+          "text": "machen",
+          "start": 63.064,
+          "end": 63.264
+        },
+        {
+          "text": "möchtest.",
+          "start": 63.264,
+          "end": 63.705
+        }
+      ],
+      "width": 609
+    },
+    {
+      "start": 63.705,
+      "end": 63.973,
+      "words": [
+        {
+          "text": "Es",
+          "start": 63.705,
+          "end": 63.864
+        },
+        {
+          "text": "gibt",
+          "start": 63.864,
+          "end": 63.973
+        }
+      ],
+      "width": 230
+    },
+    {
+      "start": 63.973,
+      "end": 64.437,
+      "words": [
+        {
+          "text": "so",
+          "start": 63.973,
+          "end": 64.082
+        },
+        {
+          "text": "was",
+          "start": 64.082,
+          "end": 64.192
+        },
+        {
+          "text": "Schönes,",
+          "start": 64.192,
+          "end": 64.437
+        }
+      ],
+      "width": 547
+    },
+    {
+      "start": 64.437,
+      "end": 64.801,
+      "words": [
+        {
+          "text": "es",
+          "start": 64.437,
+          "end": 64.601
+        },
+        {
+          "text": "nennt",
+          "start": 64.601,
+          "end": 64.801
+        }
+      ],
+      "width": 286
+    },
+    {
+      "start": 64.801,
+      "end": 65.396,
+      "words": [
+        {
+          "text": "sich",
+          "start": 64.801,
+          "end": 65.019
+        },
+        {
+          "text": "LinkedIn.",
+          "start": 65.019,
+          "end": 65.362
+        }
+      ],
+      "width": 458
+    },
+    {
+      "start": 65.396,
+      "end": 65.885,
+      "words": [
+        {
+          "text": "Bitte",
+          "start": 65.396,
+          "end": 65.667
         },
         {
           "text": "folgen",
-          "start": 85.965,
-          "end": 86.165
+          "start": 65.667,
+          "end": 65.885
+        }
+      ],
+      "width": 381
+    },
+    {
+      "start": 65.885,
+      "end": 66.249,
+      "words": [
+        {
+          "text": "auf",
+          "start": 65.885,
+          "end": 66.022
+        },
+        {
+          "text": "LinkedIn.",
+          "start": 66.022,
+          "end": 66.249
+        }
+      ],
+      "width": 426
+    },
+    {
+      "start": 66.249,
+      "end": 66.804,
+      "words": [
+        {
+          "text": "Du",
+          "start": 66.249,
+          "end": 66.467
+        },
+        {
+          "text": "kannst",
+          "start": 66.467,
+          "end": 66.649
+        },
+        {
+          "text": "direkt",
+          "start": 66.649,
+          "end": 66.804
+        }
+      ],
+      "width": 534
+    },
+    {
+      "start": 66.804,
+      "end": 67.285,
+      "words": [
+        {
+          "text": "die",
+          "start": 66.804,
+          "end": 66.94
+        },
+        {
+          "text": "Leute",
+          "start": 66.94,
+          "end": 67.113
+        },
+        {
+          "text": "auf",
+          "start": 67.113,
+          "end": 67.285
+        }
+      ],
+      "width": 421
+    },
+    {
+      "start": 67.285,
+      "end": 68.026,
+      "words": [
+        {
+          "text": "LinkedIn",
+          "start": 67.285,
+          "end": 67.556
+        },
+        {
+          "text": "schreiben,",
+          "start": 67.596,
+          "end": 67.956
+        }
+      ],
+      "width": 644
+    },
+    {
+      "start": 68.051,
+      "end": 68.304,
+      "words": [
+        {
+          "text": "gucken,",
+          "start": 68.051,
+          "end": 68.304
+        }
+      ],
+      "width": 271
+    },
+    {
+      "start": 68.304,
+      "end": 68.595,
+      "words": [
+        {
+          "text": "was",
+          "start": 68.304,
+          "end": 68.431
+        },
+        {
+          "text": "sie",
+          "start": 68.431,
+          "end": 68.595
+        }
+      ],
+      "width": 251
+    },
+    {
+      "start": 68.595,
+      "end": 69.095,
+      "words": [
+        {
+          "text": "gemacht",
+          "start": 68.595,
+          "end": 68.822
+        },
+        {
+          "text": "haben,",
+          "start": 68.822,
+          "end": 69.095
+        }
+      ],
+      "width": 528
+    },
+    {
+      "start": 69.095,
+      "end": 69.649,
+      "words": [
+        {
+          "text": "oder",
+          "start": 69.095,
+          "end": 69.358
+        },
+        {
+          "text": "schreibst",
+          "start": 69.358,
+          "end": 69.649
+        }
+      ],
+      "width": 474
+    },
+    {
+      "start": 69.649,
+      "end": 69.885,
+      "words": [
+        {
+          "text": "sie",
+          "start": 69.649,
+          "end": 69.731
+        },
+        {
+          "text": "einfach",
+          "start": 69.731,
+          "end": 69.885
+        }
+      ],
+      "width": 359
+    },
+    {
+      "start": 69.885,
+      "end": 70.295,
+      "words": [
+        {
+          "text": "an",
+          "start": 69.885,
+          "end": 69.995
+        },
+        {
+          "text": "und",
+          "start": 69.995,
+          "end": 70.076
+        },
+        {
+          "text": "sagst,",
+          "start": 70.076,
+          "end": 70.295
+        }
+      ],
+      "width": 436
+    },
+    {
+      "start": 70.295,
+      "end": 70.626,
+      "words": [
+        {
+          "text": "ey,",
+          "start": 70.295,
+          "end": 70.556
+        }
+      ],
+      "width": 109
+    },
+    {
+      "start": 70.669,
+      "end": 71.022,
+      "words": [
+        {
+          "text": "wie",
+          "start": 70.669,
+          "end": 70.904
+        },
+        {
+          "text": "hast",
+          "start": 70.904,
+          "end": 71.022
+        }
+      ],
+      "width": 279
+    },
+    {
+      "start": 71.022,
+      "end": 71.519,
+      "words": [
+        {
+          "text": "du",
+          "start": 71.022,
+          "end": 71.122
+        },
+        {
+          "text": "es",
+          "start": 71.122,
+          "end": 71.304
+        },
+        {
+          "text": "geschafft?",
+          "start": 71.304,
+          "end": 71.519
+        }
+      ],
+      "width": 537
+    },
+    {
+      "start": 71.519,
+      "end": 72.373,
+      "words": [
+        {
+          "text": "Irgendwelche",
+          "start": 71.519,
+          "end": 71.881
+        },
+        {
+          "text": "Tipps,",
+          "start": 71.881,
+          "end": 72.333
+        }
+      ],
+      "width": 664
+    },
+    {
+      "start": 72.373,
+      "end": 72.726,
+      "words": [
+        {
+          "text": "hier",
+          "start": 72.373,
+          "end": 72.599
+        },
+        {
+          "text": "ist",
+          "start": 72.599,
+          "end": 72.726
+        }
+      ],
+      "width": 229
+    },
+    {
+      "start": 72.726,
+      "end": 73.312,
+      "words": [
+        {
+          "text": "meine",
+          "start": 72.726,
+          "end": 72.935
+        },
+        {
+          "text": "CV,",
+          "start": 72.935,
+          "end": 73.242
+        }
+      ],
+      "width": 337
+    },
+    {
+      "start": 73.501,
+      "end": 74.258,
+      "words": [
+        {
+          "text": "bitte",
+          "start": 73.501,
+          "end": 73.762
+        },
+        {
+          "text": "hilf",
+          "start": 73.762,
+          "end": 73.944
+        },
+        {
+          "text": "mir.",
+          "start": 73.944,
+          "end": 74.188
+        }
+      ],
+      "width": 408
+    },
+    {
+      "start": 74.577,
+      "end": 74.884,
+      "words": [
+        {
+          "text": "Und",
+          "start": 74.577,
+          "end": 74.793
+        },
+        {
+          "text": "ich",
+          "start": 74.793,
+          "end": 74.884
+        }
+      ],
+      "width": 253
+    },
+    {
+      "start": 74.884,
+      "end": 75.148,
+      "words": [
+        {
+          "text": "will",
+          "start": 74.884,
+          "end": 74.984
+        },
+        {
+          "text": "immer",
+          "start": 74.984,
+          "end": 75.066
+        },
+        {
+          "text": "noch",
+          "start": 75.066,
+          "end": 75.148
+        }
+      ],
+      "width": 511
+    },
+    {
+      "start": 75.148,
+      "end": 76.084,
+      "words": [
+        {
+          "text": "mal",
+          "start": 75.148,
+          "end": 75.293
+        },
+        {
+          "text": "kurz",
+          "start": 75.293,
+          "end": 75.573
+        },
+        {
+          "text": "sagen,",
+          "start": 75.759,
+          "end": 76.084
+        }
+      ],
+      "width": 511
+    },
+    {
+      "start": 76.084,
+      "end": 76.766,
+      "words": [
+        {
+          "text": "wie",
+          "start": 76.084,
+          "end": 76.321
+        },
+        {
+          "text": "cooked",
+          "start": 76.321,
+          "end": 76.621
+        },
+        {
+          "text": "gerade",
+          "start": 76.621,
+          "end": 76.766
+        }
+      ],
+      "width": 614
+    },
+    {
+      "start": 76.766,
+      "end": 77.536,
+      "words": [
+        {
+          "text": "der",
+          "start": 76.766,
+          "end": 76.912
+        },
+        {
+          "text": "Jobmarkt",
+          "start": 76.912,
+          "end": 77.302
+        },
+        {
+          "text": "ist.",
+          "start": 77.302,
+          "end": 77.536
+        }
+      ],
+      "width": 553
+    },
+    {
+      "start": 77.536,
+      "end": 78.233,
+      "words": [
+        {
+          "text": "Ich",
+          "start": 77.536,
+          "end": 77.824
+        },
+        {
+          "text": "habe",
+          "start": 77.824,
+          "end": 78.167
+        }
+      ],
+      "width": 284
+    },
+    {
+      "start": 78.233,
+      "end": 79.004,
+      "words": [
+        {
+          "text": "ein",
+          "start": 78.233,
+          "end": 78.513
+        },
+        {
+          "text": "1,7",
+          "start": 78.513,
+          "end": 79.004
+        }
+      ],
+      "width": 223
+    },
+    {
+      "start": 79.004,
+      "end": 79.638,
+      "words": [
+        {
+          "text": "Master",
+          "start": 79.004,
+          "end": 79.185
+        },
+        {
+          "text": "im",
+          "start": 79.185,
+          "end": 79.295
+        },
+        {
+          "text": "BWL.",
+          "start": 79.295,
+          "end": 79.638
+        }
+      ],
+      "width": 510
+    },
+    {
+      "start": 79.638,
+      "end": 80.173,
+      "words": [
+        {
+          "text": "Ich",
+          "start": 79.638,
+          "end": 79.782
+        },
+        {
+          "text": "habe",
+          "start": 79.782,
+          "end": 79.955
+        },
+        {
+          "text": "über",
+          "start": 79.955,
+          "end": 80.173
+        }
+      ],
+      "width": 443
+    },
+    {
+      "start": 80.173,
+      "end": 80.836,
+      "words": [
+        {
+          "text": "zwei",
+          "start": 80.173,
+          "end": 80.382
+        },
+        {
+          "text": "bis",
+          "start": 80.382,
+          "end": 80.6
+        },
+        {
+          "text": "drei",
+          "start": 80.6,
+          "end": 80.836
+        }
+      ],
+      "width": 404
+    },
+    {
+      "start": 80.836,
+      "end": 81.739,
+      "words": [
+        {
+          "text": "Jahre",
+          "start": 80.836,
+          "end": 81.1
+        },
+        {
+          "text": "Berufserfahrung,",
+          "start": 81.1,
+          "end": 81.739
+        }
+      ],
+      "width": 758
+    },
+    {
+      "start": 81.739,
+      "end": 82.106,
+      "words": [
+        {
+          "text": "Ich",
+          "start": 81.739,
+          "end": 81.824
+        },
+        {
+          "text": "habe",
+          "start": 81.824,
+          "end": 81.924
+        },
+        {
+          "text": "einen",
+          "start": 81.924,
+          "end": 82.106
+        }
+      ],
+      "width": 475
+    },
+    {
+      "start": 82.106,
+      "end": 82.879,
+      "words": [
+        {
+          "text": "Referenzschreiben",
+          "start": 82.106,
+          "end": 82.706
+        },
+        {
+          "text": "vom",
+          "start": 82.706,
+          "end": 82.879
+        }
+      ],
+      "width": 772
+    },
+    {
+      "start": 82.879,
+      "end": 83.367,
+      "words": [
+        {
+          "text": "Prof",
+          "start": 82.879,
+          "end": 83.133
+        },
+        {
+          "text": "bekommen.",
+          "start": 83.133,
+          "end": 83.367
+        }
+      ],
+      "width": 538
+    },
+    {
+      "start": 83.367,
+      "end": 83.838,
+      "words": [
+        {
+          "text": "Ich",
+          "start": 83.367,
+          "end": 83.519
+        },
+        {
+          "text": "musste",
+          "start": 83.519,
+          "end": 83.656
+        },
+        {
+          "text": "über",
+          "start": 83.656,
+          "end": 83.838
+        }
+      ],
+      "width": 522
+    },
+    {
+      "start": 83.838,
+      "end": 84.51,
+      "words": [
+        {
+          "text": "60",
+          "start": 83.838,
+          "end": 84.065
+        },
+        {
+          "text": "Bewerbungen",
+          "start": 84.065,
+          "end": 84.51
+        }
+      ],
+      "width": 553
+    },
+    {
+      "start": 84.51,
+      "end": 85.048,
+      "words": [
+        {
+          "text": "abschicken,",
+          "start": 84.51,
+          "end": 85.045
+        }
+      ],
+      "width": 405
+    },
+    {
+      "start": 85.048,
+      "end": 85.828,
+      "words": [
+        {
+          "text": "um",
+          "start": 85.048,
+          "end": 85.392
+        },
+        {
+          "text": "popelige",
+          "start": 85.392,
+          "end": 85.828
+        }
+      ],
+      "width": 402
+    },
+    {
+      "start": 85.828,
+      "end": 86.801,
+      "words": [
+        {
+          "text": "2 bis 3",
+          "start": 85.828,
+          "end": 86.41
+        },
+        {
+          "text": "Angebote",
+          "start": 86.41,
+          "end": 86.801
+        }
+      ],
+      "width": 538
+    },
+    {
+      "start": 86.801,
+      "end": 87.277,
+      "words": [
+        {
+          "text": "zu",
+          "start": 86.801,
+          "end": 87.001
+        },
+        {
+          "text": "bekommen.",
+          "start": 87.001,
+          "end": 87.277
+        }
+      ],
+      "width": 478
+    },
+    {
+      "start": 87.277,
+      "end": 87.88,
+      "words": [
+        {
+          "text": "Es",
+          "start": 87.277,
+          "end": 87.48
+        },
+        {
+          "text": "ist",
+          "start": 87.48,
+          "end": 87.68
+        },
+        {
+          "text": "tough",
+          "start": 87.68,
+          "end": 87.88
+        }
+      ],
+      "width": 384
+    },
+    {
+      "start": 87.88,
+      "end": 88.338,
+      "words": [
+        {
+          "text": "da",
+          "start": 87.88,
+          "end": 88.08
+        },
+        {
+          "text": "draußen,",
+          "start": 88.08,
+          "end": 88.338
+        }
+      ],
+      "width": 392
+    },
+    {
+      "start": 88.338,
+      "end": 88.786,
+      "words": [
+        {
+          "text": "Wenn",
+          "start": 88.338,
+          "end": 88.459
+        },
+        {
+          "text": "du",
+          "start": 88.459,
+          "end": 88.513
+        },
+        {
+          "text": "irgendwelche",
+          "start": 88.513,
+          "end": 88.786
+        }
+      ],
+      "width": 737
+    },
+    {
+      "start": 88.786,
+      "end": 89.213,
+      "words": [
+        {
+          "text": "Fragen",
+          "start": 88.786,
+          "end": 88.977
+        },
+        {
+          "text": "hast",
+          "start": 88.977,
+          "end": 89.104
+        },
+        {
+          "text": "oder",
+          "start": 89.104,
+          "end": 89.213
+        }
+      ],
+      "width": 551
+    },
+    {
+      "start": 89.213,
+      "end": 89.777,
+      "words": [
+        {
+          "text": "nicht",
+          "start": 89.213,
+          "end": 89.386
+        },
+        {
+          "text": "weiter",
+          "start": 89.386,
+          "end": 89.559
+        },
+        {
+          "text": "weißt,",
+          "start": 89.559,
+          "end": 89.777
+        }
+      ],
+      "width": 602
+    },
+    {
+      "start": 89.777,
+      "end": 90.095,
+      "words": [
+        {
+          "text": "schreib",
+          "start": 89.777,
+          "end": 89.922
+        },
+        {
+          "text": "mir",
+          "start": 89.922,
+          "end": 89.995
+        },
+        {
+          "text": "einen",
+          "start": 89.995,
+          "end": 90.095
+        }
+      ],
+      "width": 560
+    },
+    {
+      "start": 90.095,
+      "end": 90.861,
+      "words": [
+        {
+          "text": "Kommentar",
+          "start": 90.095,
+          "end": 90.35
+        },
+        {
+          "text": "oder",
+          "start": 90.35,
+          "end": 90.522
+        },
+        {
+          "text": "DM,",
+          "start": 90.522,
+          "end": 90.821
+        }
+      ],
+      "width": 690
+    },
+    {
+      "start": 90.861,
+      "end": 91.713,
+      "words": [
+        {
+          "text": "ansonsten",
+          "start": 90.861,
+          "end": 91.513
+        },
+        {
+          "text": "folgen",
+          "start": 91.513,
+          "end": 91.713
         }
       ],
       "width": 565
     },
     {
-      "start": 86.165,
-      "end": 86.7,
+      "start": 91.713,
+      "end": 92.242,
       "words": [
         {
           "text": "nicht",
-          "start": 86.165,
-          "end": 86.35
+          "start": 91.713,
+          "end": 91.895
         },
         {
           "text": "vergessen.",
-          "start": 86.35,
-          "end": 86.63
+          "start": 91.895,
+          "end": 92.172
         }
       ],
       "width": 544
@@ -2978,43 +3239,57 @@
   ],
   "zooms": [
     {
-      "start": 4.77,
-      "end": 7.7,
+      "start": 4.75,
+      "end": 7.67,
       "scale": 1.06
     },
     {
-      "start": 20.83,
-      "end": 24.83,
+      "start": 12.23,
+      "end": 15.36,
       "scale": 1.05
     },
     {
-      "start": 27.9,
-      "end": 30.63,
+      "start": 23.59,
+      "end": 26.21,
       "scale": 1.07
     },
     {
-      "start": 45.27,
-      "end": 49.27,
+      "start": 29.35,
+      "end": 33.18,
       "scale": 1.06
     },
     {
-      "start": 51.33,
-      "end": 53.73,
+      "start": 46.79,
+      "end": 50.79,
       "scale": 1.05
     },
     {
-      "start": 60.37,
-      "end": 63.53,
+      "start": 52.81,
+      "end": 55.21,
       "scale": 1.07
     },
     {
-      "start": 68.97,
-      "end": 71.91,
+      "start": 60.53,
+      "end": 63.7,
       "scale": 1.06
+    },
+    {
+      "start": 66.53,
+      "end": 68.69,
+      "scale": 1.05
+    },
+    {
+      "start": 71.72,
+      "end": 74.67,
+      "scale": 1.07
     }
   ],
   "hinweise": {
-    "warnings": [],
-    "notes": []
+    "warnings": [
+      "Logos linkedin berühren Kopf/Kappe (1 Stichproben)"
+    ],
+    "notes": [
+      "Projektbezogene Layoutkorrektur: k3.top=260 aus design-plan.layoutOverrides. Bei erneutem assemble erneut anwenden."
+    ]
   }
 }
