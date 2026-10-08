@@ -20,25 +20,25 @@
   "createdAt": "2026-10-07T19:55:25.363Z",
   "bearbeitung": {
     "agent": "codex",
-    "aufgabe": "Nur zwei H1 an Hook und Aussage anpassen, final lokal ablegen",
-    "begonnen": "2026-10-07T21:45:13.351Z",
+    "aufgabe": "Freigegebene Fassung auf Exporttempo 1,1 setzen und lokal ablegen",
+    "begonnen": "2026-10-08T04:00:56.650229+00:00",
     "status": "fertig",
-    "beendet": "2026-10-07T21:54:59.152185+00:00"
+    "beendet": "2026-10-08T06:22:16.792724+00:00"
   },
-  "tempo": 1,
+  "tempo": 1.1,
   "notionPage": "https://app.notion.com/p/3f18cb917b3b80f3a43fc587d3da43b7",
   "cutReference": "IMG-2031-Schnitt-2026-10-07",
   "uploadAuthorized": false,
-  "cutDuration": 85.93333333333334,
+  "cutDuration": 78.13333333333334,
   "media": {
     "datei": "media.mp4",
     "schnitt": true,
-    "tempo": 1,
+    "tempo": 1.1,
     "farbkorrektur": null
   },
   "status": "final_lokal_abgelegt",
   "previewFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/03_Bereit_zum_Posten/Datum offen - Wie viel lernen für eine 1,0.mp4",
-  "previewSha256": "2009324f4382f356669fe9f10775d9b2e9a817327cd44a0701baf52a7e75a67a",
+  "previewSha256": "8f7e0baeb981cd177fa7b773d9d5ad4b3e58a94646a09c91d7aba90a41b66756",
   "latestExport": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2032-Schnitt-2026-10-07/exports/upload.mp4",
   "designPending": false,
   "actualListening": false,
@@ -125,26 +125,27 @@
   "designRulesVersion": "2.4",
   "renderedExport": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2032-Schnitt-2026-10-07/exports/master.mp4",
   "exportedAt": "2026-10-07T21:51:37.674Z",
-  "audioHandling": "Original audio re-encoded once as AAC-LC at 120 kbit/s and 48 kHz, without tempo or level changes.",
+  "audioHandling": "Kamerabild und Ton auf ausdrücklichen Auftrag von1.0 auf1.1 beschleunigt, Tonhöhe erhalten. Upload-Export ohne weitere Beschleunigung, AAC-LC120k/48kHz.",
   "deliveryProfile": "Zernio/Buffer: H264 (medium), 1080x1920p30, BT709, 12000k video target (max. 12M, 300-MB-Grenze) / 14M VBV, AAC-LC 120k, faststart",
   "layoutVersion": "tiktok-safe-v1",
   "aktuell": {
     "datei": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2032-Schnitt-2026-10-07/exports/upload.mp4",
-    "sha256": "2009324f4382f356669fe9f10775d9b2e9a817327cd44a0701baf52a7e75a67a",
-    "bytes": 130168737,
-    "erzeugt": "2026-10-07T21:52:51Z",
-    "gesetztAm": "2026-10-07T21:52:51Z"
+    "sha256": "8f7e0baeb981cd177fa7b773d9d5ad4b3e58a94646a09c91d7aba90a41b66756",
+    "bytes": 118279680,
+    "erzeugt": "2026-10-08T06:22:16.792724+00:00",
+    "gesetztAm": "2026-10-08T06:22:16.792724+00:00",
+    "tempo": 1.1
   },
   "fullDesignApproval": "freigegeben",
   "toolCommit": "e43aa29",
-  "designQa": "review/final-h1-export-qa.json",
+  "designQa": "review/tempo-1_1-final-qa.json",
   "finalFile": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/03_Bereit_zum_Posten/Datum offen - Wie viel lernen für eine 1,0.mp4",
-  "finalSha256": "2009324f4382f356669fe9f10775d9b2e9a817327cd44a0701baf52a7e75a67a",
+  "finalSha256": "8f7e0baeb981cd177fa7b773d9d5ad4b3e58a94646a09c91d7aba90a41b66756",
   "previousDesignArchive": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Archiv/Vorversionen/Datum offen - Wie viel lernen für eine 1,0 - Design vor finalen H1.mp4",
   "uploaded": false,
   "scheduled": false,
   "postingBy": "user",
-  "deliveredAt": "2026-10-07T21:54:59.152185+00:00",
+  "deliveredAt": "2026-10-08T06:22:16.792724+00:00",
   "finalApproval": {
     "source": "Letzte Nutzeranweisung: finale Ausgabe und nur in den Ordner verlegen.",
     "headings": {
@@ -152,5 +153,15 @@
       "second": "MACHT EINE 1,0 GLÜCKLICH?"
     },
     "otherDesignUnchanged": true
-  }
+  },
+  "speedRequest": {
+    "rate": 1.1,
+    "basis": "Nutzerauftrag 2026-10-08: falls noch nicht 1,1, zuerst umsetzen und im Ordner hinterlegen.",
+    "sourceTimelineTempo": 1.0,
+    "applyTo": "Kamera und Ton. Zeitanker neu. Abgenommene Texte und138Caption-Gruppen erhalten.",
+    "targetTimelineTempo": 1.1,
+    "animationTempo": 1.0,
+    "fulfilled": true
+  },
+  "previousTempoArchive": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Archiv/Vorversionen/Datum offen - Wie viel lernen für eine 1,0 - Tempo 1,0 vor Korrektur 2026-10-08.mp4"
 }

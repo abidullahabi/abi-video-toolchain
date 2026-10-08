@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-08T06:15:35.560387+00:00",
+  "method": "Freigegebenes Kamerabild vor Gestaltung direkt mit setpts/atempo1.1. Schnittinhalt und Wortlaut bleiben erhalten. Gestaltung wird bei normalem Animationstempo neu aufgebaut.",
+  "rate": 1.1,
+  "oldVideoDuration": 85.93333333333334,
+  "newVideoDuration": 78.13333333333334,
+  "newContainerDuration": 78.148,
+  "frames": 2344,
+  "sourceSha256": "ebf946219a8a0ca185c4858aedc4ca21b0189cf4b7cb554ac9a98ccd5548e939",
+  "outputSha256": "27b1ef3deb556dbb7ff2d0800ec3787ff221cd74b7b9e65c77a1f4f96547159e",
+  "audioChecks": [
+    {
+      "time": 1,
+      "lagMs": 0.0,
+      "correlation": 0.9999893910091303
+    },
+    {
+      "time": 36.56666666666667,
+      "lagMs": 0.0,
+      "correlation": 0.9999949867499294
+    },
+    {
+      "time": 72.13333333333334,
+      "lagMs": 0.0,
+      "correlation": 0.999994917098874
+    }
+  ],
+  "pitchPreserved": true,
+  "fullyDecoded": true,
+  "filterVideo": "setpts=(PTS-STARTPTS)/1.1,fps=30",
+  "filterAudio": "atempo=1.1,asetpts=PTS-STARTPTS",
+  "sourceCutPlanSha256": "f43839bc2b56d1f99fb3867ec4f3991990b1e86e4f543b9ae06db5e383901308",
+  "wordTimingMethod": "Vorhandene freigegebene Wortdaten werden linear umgerechnet. Keine neue ASR-Inhaltsauswahl."
+}

@@ -1,0 +1,223 @@
+{
+  "started": "2026-10-08T06:18:04.131Z",
+  "method": "Freigegebene Caption-Gruppen und Gestaltung mit Faktor1.1 umgerechnet. Gleiche Vorlage, normale Animationsdauern.",
+  "planPreflight": {
+    "rate": 1.1,
+    "inputDuration": 85.93333333333334,
+    "expectedDuration": 78.13333333333334,
+    "captionWords": 334,
+    "captionGroups": 138,
+    "captionTextAndGroupingIdentical": true,
+    "allCaptionTimesExactlyDivided": true,
+    "graphicsAndHeadlinesUnchanged": true,
+    "zoomCount": 8,
+    "zoomAdjustment": [
+      {
+        "oldStart": 20.36363636363636,
+        "newStart": 20.336363636363636
+      }
+    ],
+    "outroStandSeconds": 4.383333333333335,
+    "bubbleSeconds": 4.25,
+    "originalProjectMediaUnchanged": true,
+    "stagingOnly": true
+  },
+  "camera": {
+    "date": "2026-10-08T06:15:35.560387+00:00",
+    "method": "Freigegebenes Kamerabild vor Gestaltung direkt mit setpts/atempo1.1. Schnittinhalt und Wortlaut bleiben erhalten. Gestaltung wird bei normalem Animationstempo neu aufgebaut.",
+    "rate": 1.1,
+    "oldVideoDuration": 85.93333333333334,
+    "newVideoDuration": 78.13333333333334,
+    "newContainerDuration": 78.148,
+    "frames": 2344,
+    "sourceSha256": "ebf946219a8a0ca185c4858aedc4ca21b0189cf4b7cb554ac9a98ccd5548e939",
+    "outputSha256": "27b1ef3deb556dbb7ff2d0800ec3787ff221cd74b7b9e65c77a1f4f96547159e",
+    "audioChecks": [
+      {
+        "time": 1,
+        "lagMs": 0,
+        "correlation": 0.9999893910091303
+      },
+      {
+        "time": 36.56666666666667,
+        "lagMs": 0,
+        "correlation": 0.9999949867499294
+      },
+      {
+        "time": 72.13333333333334,
+        "lagMs": 0,
+        "correlation": 0.999994917098874
+      }
+    ],
+    "pitchPreserved": true,
+    "fullyDecoded": true,
+    "filterVideo": "setpts=(PTS-STARTPTS)/1.1,fps=30",
+    "filterAudio": "atempo=1.1,asetpts=PTS-STARTPTS",
+    "sourceCutPlanSha256": "f43839bc2b56d1f99fb3867ec4f3991990b1e86e4f543b9ae06db5e383901308",
+    "wordTimingMethod": "Vorhandene freigegebene Wortdaten werden linear umgerechnet. Keine neue ASR-Inhaltsauswahl."
+  },
+  "profile": {
+    "kerne": 10,
+    "arbeitsspeicherGB": 16,
+    "freiGB": 6.9,
+    "workers": 3,
+    "lowMemory": false,
+    "reichtFuerZwei": true
+  },
+  "layout": {
+    "designVersion": "2.2",
+    "kopfQuelle": "Personenmaske",
+    "framesChecked": 2344,
+    "step": 1,
+    "maxLayers": 2,
+    "capFrames": 2340,
+    "errors": [],
+    "warnings": [
+      {
+        "type": "kopf_beruehrt",
+        "id": "logos-ki",
+        "t": 42.13,
+        "kopfOben": 510,
+        "unten": 520
+      }
+    ],
+    "blocking": 0,
+    "checkedAt": "2026-10-08T06:18:11.277Z",
+    "themePlan": "2026-10-08T06:11:51.776Z",
+    "indexHtml": "2026-10-08T06:11:52.045Z"
+  },
+  "visualWarningReview": {
+    "type": "kopf_beruehrt",
+    "id": "logos-ki",
+    "time": 42.13,
+    "result": "Zwei tatsächliche Kamerabilder bei42.133333und42.433333 visuell geprüft. Logos enden bei520px, sichtbare Kappe beginnt darunter. Keine sichtbare Überdeckung. RVM-Maskenhinweis wird als geprüfter Hinweis erhalten."
+  },
+  "render": {
+    "abschnitte": 8,
+    "neu": [
+      "a00",
+      "a01",
+      "a02",
+      "a03",
+      "a04",
+      "a05",
+      "a06",
+      "a07"
+    ],
+    "uebernommen": [],
+    "parallel": 3,
+    "renderSekunden": 117.7,
+    "jeAbschnitt": {
+      "a00": 40.9,
+      "a01": 43.9,
+      "a02": 45.4,
+      "a03": 46.5,
+      "a04": 47.4,
+      "a05": 46.4,
+      "a07": 26.2,
+      "a06": 30.2
+    },
+    "naehte": {
+      "bilder": 2344,
+      "soll": 2344,
+      "naehte": [
+        {
+          "bild": 300,
+          "vorher": 1.33,
+          "naht": 1.8,
+          "nachher": 0.93
+        },
+        {
+          "bild": 600,
+          "vorher": 1.61,
+          "naht": 1.9,
+          "nachher": 2.53
+        },
+        {
+          "bild": 900,
+          "vorher": 3.84,
+          "naht": 3.29,
+          "nachher": 2.95
+        },
+        {
+          "bild": 1200,
+          "vorher": 3.78,
+          "naht": 4.92,
+          "nachher": 4.58
+        },
+        {
+          "bild": 1500,
+          "vorher": 2.62,
+          "naht": 1.68,
+          "nachher": 1.42
+        },
+        {
+          "bild": 1800,
+          "vorher": 3.86,
+          "naht": 5.59,
+          "nachher": 11.23
+        },
+        {
+          "bild": 2100,
+          "vorher": 2.43,
+          "naht": 2.53,
+          "nachher": 2.49
+        }
+      ],
+      "befunde": []
+    },
+    "sekunden": 119.2
+  },
+  "export": {
+    "file": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2032-Schnitt-2026-10-07/exports/upload.mp4",
+    "renderedMaster": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2032-Schnitt-2026-10-07/exports/master.mp4",
+    "duration": 78.165,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 2344,
+    "videoBitrate": 11982740,
+    "audioBitrate": 119350,
+    "sizeBytes": 118279680,
+    "encoderPreset": "medium",
+    "vmafMeanVsRenderedMaster": 99.186674,
+    "vmafMinVsRenderedMaster": 96.680881,
+    "vmafStichproben": {
+      "fensterSekunden": [
+        0,
+        13.022,
+        26.044,
+        39.067,
+        52.089,
+        65.111
+      ],
+      "bilder": 179
+    },
+    "fullyDecoded": true,
+    "audioAlignmentChecks": [
+      {
+        "startSeconds": 1,
+        "durationSeconds": 5,
+        "bestLagMilliseconds": 0,
+        "correlation": 0.9996994066601744
+      },
+      {
+        "startSeconds": 36.56666666666667,
+        "durationSeconds": 5,
+        "bestLagMilliseconds": 0,
+        "correlation": 0.9997994502040168
+      },
+      {
+        "startSeconds": 72.13333333333334,
+        "durationSeconds": 5,
+        "bestLagMilliseconds": 0,
+        "correlation": 0.9998280948352503
+      }
+    ],
+    "audioHandling": "Original audio re-encoded once as AAC-LC at 120 kbit/s and 48 kHz, without tempo or level changes.",
+    "captionMaxWords": 3,
+    "sha256": "8f7e0baeb981cd177fa7b773d9d5ad4b3e58a94646a09c91d7aba90a41b66756",
+    "bufferProfilePassed": true
+  },
+  "finished": "2026-10-08T06:21:19.512Z"
+}

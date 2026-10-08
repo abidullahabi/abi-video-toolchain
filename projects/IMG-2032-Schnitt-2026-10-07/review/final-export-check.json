@@ -1,0 +1,54 @@
+{
+  "file": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2032-Schnitt-2026-10-07/exports/upload.mp4",
+  "renderedMaster": "/Users/abi/Projekte/abi-video-toolchain/projects/IMG-2032-Schnitt-2026-10-07/exports/master.mp4",
+  "duration": 78.165,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 2344,
+  "videoBitrate": 11982740,
+  "audioBitrate": 119350,
+  "sizeBytes": 118279680,
+  "encoderPreset": "medium",
+  "vmafMeanVsRenderedMaster": 99.186674,
+  "vmafMinVsRenderedMaster": 96.680881,
+  "vmafStichproben": {
+    "fensterSekunden": [
+      0.0,
+      13.022,
+      26.044,
+      39.067,
+      52.089,
+      65.111
+    ],
+    "bilder": 179
+  },
+  "fullyDecoded": true,
+  "audioAlignmentChecks": [
+    {
+      "startSeconds": 1,
+      "durationSeconds": 5,
+      "bestLagMilliseconds": 0.0,
+      "correlation": 0.9996994066601744
+    },
+    {
+      "startSeconds": 36.56666666666667,
+      "durationSeconds": 5,
+      "bestLagMilliseconds": 0.0,
+      "correlation": 0.9997994502040168
+    },
+    {
+      "startSeconds": 72.13333333333334,
+      "durationSeconds": 5,
+      "bestLagMilliseconds": 0.0,
+      "correlation": 0.9998280948352503
+    }
+  ],
+  "audioHandling": "Kamerabild und Ton auf ausdrücklichen Auftrag von1.0 auf1.1 beschleunigt, Tonhöhe erhalten. Upload-Export ohne weitere Beschleunigung, AAC-LC120k/48kHz.",
+  "captionMaxWords": 3,
+  "sha256": "8f7e0baeb981cd177fa7b773d9d5ad4b3e58a94646a09c91d7aba90a41b66756",
+  "bufferProfilePassed": true,
+  "effectiveTempo": 1.1,
+  "cameraTempo": 1.1,
+  "exportAdditionalTempo": 1.0
+}

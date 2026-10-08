@@ -13,18 +13,19 @@
     "K2 endet vor der Nahaufnahme33.27, damit die Nummer die Kappe nicht berührt.",
     "Codierter Frame0: zweizeiliger Einstieg überlagerte die Kappe trotz automatischer Prüfung. Einzeiliger Hook FÜR DEINE1,0 hält den Kopf frei.",
     "Themenwechsel64.13: H1 auf NOTEN verkürzt. Zweizeiliges GUTE NOTEN berührte die Kappe im codierten Bild.",
-    "Finalfreigabe: Einstieg fragt konkret nach Lernaufwand für1,0. ZweiteH1 fragt nach Glück durch1,0. Nur diese zwei Texte angepasst. Einstieg max56px für zweizeiligen Hook bei unveränderter Kamera und freier Kappe. Nutzer übernimmt Posting, Ablage nur03."
+    "Finalfreigabe: Einstieg fragt konkret nach Lernaufwand für1,0. ZweiteH1 fragt nach Glück durch1,0. Nur diese zwei Texte angepasst. Einstieg max56px für zweizeiligen Hook bei unveränderter Kamera und freier Kappe. Nutzer übernimmt Posting, Ablage nur03.",
+    "Nutzerauftrag08.10.2026: Tempo1.1. Nur Zeitbasis geändert. Abgenommene334Wörter und138Caption-Gruppen exakt erhalten. Animationstempo sowie Outro-Standzeit erhalten. Ein Zoomstart um0.027s vorgezogen, damit2sMindestdauer erreicht."
   ],
   "einstieg": {
     "h1": "WIE VIEL LERNEN FÜR EINE 1,0?",
-    "end": 5.7,
+    "end": 5.181818181818182,
     "maxFontSize": 56
   },
   "dokumente": [
     {
       "id": "leistungsuebersicht",
-      "start": 0,
-      "end": 12.433333,
+      "start": 0.0,
+      "end": 11.303029999999998,
       "datei": "assets/leistungsuebersicht/karte.png",
       "left": 185.625,
       "top": 1360,
@@ -37,37 +38,37 @@
       "id": "k1",
       "nummer": "1.",
       "titel": "Früh anfangen",
-      "start": 12.433333,
-      "end": 21.96
+      "start": 11.303029999999998,
+      "end": 19.96363636363636
     },
     {
       "id": "k2",
       "nummer": "2.",
       "titel": "Mit System",
-      "start": 24.566667,
-      "end": 33.03
+      "start": 22.333333636363633,
+      "end": 30.027272727272727
     },
     {
       "id": "k3",
       "nummer": "3.",
       "titel": "KI nutzen",
-      "start": 44.133333,
-      "end": 54.46
+      "start": 40.12121181818181,
+      "end": 49.50909090909091
     },
     {
       "id": "k4",
       "nummer": "4.",
       "titel": "Mit Freunden",
-      "start": 54.7,
-      "end": 63.89
+      "start": 49.72727272727273,
+      "end": 58.08181818181818
     }
   ],
   "h1": [
     {
       "id": "h1-noten",
       "text": "MACHT EINE 1,0 GLÜCKLICH?",
-      "start": 64.133333,
-      "end": 66.69
+      "start": 58.30302999999999,
+      "end": 60.62727272727272
     }
   ],
   "h2": [
@@ -77,8 +78,8 @@
       "lines": [
         "40 Tage vorher"
       ],
-      "start": 22.2,
-      "end": 24.31
+      "start": 20.18181818181818,
+      "end": 22.099999999999998
     },
     {
       "id": "h2-lernsystem",
@@ -86,8 +87,8 @@
       "lines": [
         "Mein Lernsystem"
       ],
-      "start": 40.266667,
-      "end": 43.9
+      "start": 36.60606090909091,
+      "end": 39.90909090909091
     },
     {
       "id": "h2-erfuellung",
@@ -95,8 +96,8 @@
       "lines": [
         "Noten ≠ Erfüllung"
       ],
-      "start": 66.91,
-      "end": 74.59
+      "start": 60.82727272727272,
+      "end": 67.80909090909091
     },
     {
       "id": "h2-lernprinzip",
@@ -105,8 +106,8 @@
         "Verstehen & anwenden",
         "Mit Aufgaben lernen"
       ],
-      "start": 37.13,
-      "end": 40.03
+      "start": 33.75454545454546,
+      "end": 36.39090909090909
     }
   ],
   "pillen": [],
@@ -114,8 +115,8 @@
     {
       "id": "logos-ki",
       "unter": "kapitel:k3",
-      "start": 46.33,
-      "end": 48.55,
+      "start": 42.11818181818181,
+      "end": 44.13636363636363,
       "dateien": [
         {
           "datei": "assets/logos/claude.png",
@@ -142,10 +143,55 @@
   "lebensbalken": [],
   "sprechblasen": [
     {
-      "start": 81.68333333333334,
+      "start": 73.88333333333334,
       "text": "Wie lernst du genau?"
     }
   ],
-  "outroStart": 79.7,
-  "nahaufnahmeAbBreite": 420
+  "outroStart": 71.9,
+  "nahaufnahmeAbBreite": 420,
+  "zooms": [
+    {
+      "start": 3.2090909090909085,
+      "end": 5.390909090909091,
+      "scale": 1.06
+    },
+    {
+      "start": 11.481818181818182,
+      "end": 13.754545454545454,
+      "scale": 1.05
+    },
+    {
+      "start": 20.336363636363636,
+      "end": 22.336363636363636,
+      "scale": 1.07
+    },
+    {
+      "start": 26.27272727272727,
+      "end": 29.20909090909091,
+      "scale": 1.06
+    },
+    {
+      "start": 30.97272727272727,
+      "end": 33.027272727272724,
+      "scale": 1.05
+    },
+    {
+      "start": 46.090909090909086,
+      "end": 49.72727272727273,
+      "scale": 1.07
+    },
+    {
+      "start": 51.699999999999996,
+      "end": 55.18181818181818,
+      "scale": 1.06
+    },
+    {
+      "start": 63.63636363636363,
+      "end": 65.69999999999999,
+      "scale": 1.05
+    }
+  ],
+  "_umgerechnet": [
+    "08.10.2026: freigegebene Zeitbasis1.0 auf1.1 umgerechnet, identischer Schnitt. Caption-Gruppen direkt aus freigegebenem Themenplan skaliert."
+  ]
 }
