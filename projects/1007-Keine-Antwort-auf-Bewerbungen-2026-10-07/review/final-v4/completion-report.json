@@ -6,11 +6,12 @@
     "sizeBytes": 140114226,
     "videoDuration": 92.7,
     "containerDuration": 92.714,
-    "userApproved": false,
+    "userApproved": true,
     "approvedCutExcerpts": true,
     "uploaded": false,
     "posted": false,
-    "deliveredAt": "2026-10-08T11:03:54.441964+00:00"
+    "deliveredAt": "2026-10-08T11:03:54.441964+00:00",
+    "approvedAt": "2026-10-08T12:03:51.266929+00:00"
   },
   "checks": {
     "cameraReport": "review/final-v4/camera-technical-report.json",
@@ -25,7 +26,7 @@
     "actualListening": false,
     "continuousViewing": false,
     "userApprovedCutExcerpts": true,
-    "finalUserApproval": false
+    "finalUserApproval": true
   },
   "preservation": [
     {
@@ -48,5 +49,60 @@
   "themeSha256": "e984c6668ffb74b4abd8d807b6faf3aa9bb3f57e71e17ba0ad03c97ed96e4a5c",
   "htmlSha256": "be5219360983720502b9d4946d164b9e599024566011d1ef56eb4ae517bce724",
   "noUpload": true,
-  "actualListening": false
+  "actualListening": false,
+  "approval": {
+    "approvedAt": "2026-10-08T12:03:51.266929+00:00",
+    "userFeedback": "Ok, freigegeben, bitte. Einmal gucken, ob du den Skill und alles andere korrekt ausgeführt hast. Dann ist deine Arbeit mit erledigt.",
+    "file": "/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/02_Bearbeitete_Videos/Datum offen - Keine Antwort auf Bewerbungen - Finale Version.mp4",
+    "sha256": "1abaa113b468b33b0e052e75242ccb5da2408708e8fcee115a4a7b18250e2096",
+    "scope": "Final video content and design, no publication authorization"
+  },
+  "completionAudit": {
+    "checkedAt": "2026-10-08T12:03:51.266929+00:00",
+    "basis": [
+      "/Users/abi/Projekte/abi-video-toolchain/.claude/commands/video.md",
+      "/Users/abi/Projekte/abi-video-toolchain/ABLAUF_KURZ.md",
+      "CONTENT_WORKFLOW.md1.33",
+      "DESIGN.md2.4",
+      "existing export, camera, visual and layout reports"
+    ],
+    "videoApproved": true,
+    "approvedSHA256": "1abaa113b468b33b0e052e75242ccb5da2408708e8fcee115a4a7b18250e2096",
+    "videoUnchanged": true,
+    "standardWorkflowFullyCompleted": false,
+    "lintCorrection": {
+      "historicalError": "multiple_root_compositions caused by probe-jpg.html",
+      "archivedAs": "review/revision-v2/probe-jpg.html.txt",
+      "currentErrors": 0,
+      "currentWarnings": 3,
+      "warnings": [
+        "gsap_function_value_hazard for static logo width",
+        "timeline_track_too_dense chapter track",
+        "timeline_track_too_dense caption track"
+      ]
+    },
+    "limits": [
+      "No continuous listening or viewing by agent",
+      "Minor transparent cap contact at34.2667s remains in approved export",
+      "Standard build report absent, equivalent evidence distributed across individual reports",
+      "Step timing log incomplete, no reliable total production time",
+      "Manual timeline and layout orchestration instead of complete standard build route"
+    ],
+    "postingPackage": {
+      "descriptionLocalExists": false,
+      "notionDescriptionEmpty": true,
+      "notionStatus": "✂️ Schneiden",
+      "notionPostingDate": "2026-10-13",
+      "deliveredToUserRequestedFolder": "02_Bearbeitete_Videos",
+      "filenameStillDateOpen": true,
+      "noUploadOrScheduling": true,
+      "notionUnchanged": true
+    },
+    "versionControl": {
+      "localCommitBeforeAudit": "8d449af",
+      "pushed": false,
+      "reason": "Prior automatic approval rejection for private project/transcript upload. Not retried."
+    },
+    "skillAvailability": "Claude /video command found and audited. Separate abi-videodesign SKILL.md not available in searched local skill directories. CONTENT_WORKFLOW says it is authoritative over that skill."
+  }
 }
