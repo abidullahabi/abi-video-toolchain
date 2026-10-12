@@ -1,0 +1,279 @@
+{
+  "projekt": "/Users/abi/Projekte/abi-video-toolchain/projects/HHU-Rating-Urkunde-2026-10-12",
+  "begonnen": "2026-10-12T15:06:05.733Z",
+  "schritte": [
+    {
+      "schritt": "kopfprofil (Einblendungsstellen, halbe Auflösung) (unverändert, übersprungen)",
+      "sekunden": 0
+    },
+    {
+      "schritt": "build: zusammensetzen",
+      "sekunden": 0.5
+    },
+    {
+      "schritt": "build: designprüfung (jedes Bild)",
+      "sekunden": 2.2
+    },
+    {
+      "schritt": "build: lint",
+      "sekunden": 0.9
+    },
+    {
+      "schritt": "build: rendern in Abschnitten (mp4, 2 parallel)",
+      "sekunden": 327.6
+    },
+    {
+      "schritt": "build: master decodieren",
+      "sekunden": 8.9
+    },
+    {
+      "schritt": "build: upload-export (Abschnitt 10) + VMAF-Stichproben + Ton",
+      "sekunden": 5720
+    },
+    {
+      "schritt": "build: kontaktblatt (≤ 12)",
+      "sekunden": 3
+    }
+  ],
+  "designpruefung": {
+    "bilder": 5366,
+    "blockierend": 0,
+    "maxEbenen": 2,
+    "hinweise": 0
+  },
+  "render": {
+    "abschnitte": 18,
+    "neu": [
+      "a00",
+      "a01",
+      "a02",
+      "a03",
+      "a04",
+      "a05",
+      "a06",
+      "a07",
+      "a08",
+      "a09",
+      "a10",
+      "a11",
+      "a12",
+      "a13",
+      "a14",
+      "a15",
+      "a16",
+      "a17"
+    ],
+    "uebernommen": [],
+    "parallel": 2,
+    "renderSekunden": 324.1,
+    "jeAbschnitt": {
+      "a00": 23.6,
+      "a01": 24.6,
+      "a02": 24.5,
+      "a03": 23.7,
+      "a05": 24.8,
+      "a04": 25.1,
+      "a06": 31.1,
+      "a07": 31.1,
+      "a09": 40.7,
+      "a08": 40.8,
+      "a10": 49,
+      "a11": 49,
+      "a13": 50.5,
+      "a12": 51.2,
+      "a14": 43.3,
+      "a15": 42.7,
+      "a17": 33.8,
+      "a16": 36
+    },
+    "naehte": {
+      "bilder": 5366,
+      "soll": 5366,
+      "naehte": [
+        {
+          "bild": 300,
+          "vorher": 0.52,
+          "naht": 0.78,
+          "nachher": 0.46
+        },
+        {
+          "bild": 600,
+          "vorher": 0.59,
+          "naht": 1.62,
+          "nachher": 1.49
+        },
+        {
+          "bild": 900,
+          "vorher": 1.98,
+          "naht": 2.56,
+          "nachher": 2.21
+        },
+        {
+          "bild": 1200,
+          "vorher": 4.77,
+          "naht": 2.79,
+          "nachher": 1.97
+        },
+        {
+          "bild": 1500,
+          "vorher": 1.8,
+          "naht": 1.82,
+          "nachher": 1.5
+        },
+        {
+          "bild": 1800,
+          "vorher": 1.16,
+          "naht": 0.94,
+          "nachher": 0.9
+        },
+        {
+          "bild": 2100,
+          "vorher": 2.3,
+          "naht": 1.77,
+          "nachher": 1.33
+        },
+        {
+          "bild": 2400,
+          "vorher": 0.77,
+          "naht": 0.87,
+          "nachher": 0.97
+        },
+        {
+          "bild": 2700,
+          "vorher": 0.51,
+          "naht": 0.69,
+          "nachher": 0.83
+        },
+        {
+          "bild": 3000,
+          "vorher": 1.67,
+          "naht": 1.75,
+          "nachher": 1.35
+        },
+        {
+          "bild": 3300,
+          "vorher": 2.03,
+          "naht": 1.72,
+          "nachher": 0.75
+        },
+        {
+          "bild": 3600,
+          "vorher": 2.87,
+          "naht": 3.5,
+          "nachher": 3.85
+        },
+        {
+          "bild": 3900,
+          "vorher": 0.38,
+          "naht": 0.62,
+          "nachher": 0.56
+        },
+        {
+          "bild": 4200,
+          "vorher": 0.39,
+          "naht": 0.68,
+          "nachher": 0.43
+        },
+        {
+          "bild": 4500,
+          "vorher": 1.11,
+          "naht": 1.18,
+          "nachher": 1.2
+        },
+        {
+          "bild": 4800,
+          "vorher": 5.87,
+          "naht": 5.62,
+          "nachher": 5.84
+        },
+        {
+          "bild": 5100,
+          "vorher": 3.58,
+          "naht": 2.01,
+          "nachher": 1.37
+        }
+      ],
+      "befunde": []
+    },
+    "sekunden": 327.6,
+    "profil": {
+      "kerne": 10,
+      "arbeitsspeicherGB": 16,
+      "freiGB": 5.4,
+      "workers": 2,
+      "lowMemory": false,
+      "reichtFuerZwei": true
+    }
+  },
+  "export": {
+    "datei": "/Users/abi/Projekte/abi-video-toolchain/projects/HHU-Rating-Urkunde-2026-10-12/exports/upload.mp4",
+    "mb": 271.8,
+    "videoKbit": 12028,
+    "voreinstellung": "medium",
+    "vmaf": 98.3,
+    "vmafMin": 97,
+    "vmafBilder": 180,
+    "tonVersatzMs": [
+      0,
+      0,
+      0
+    ],
+    "sha256": "fac76595b4a2705af8df91a23217edf010bcad3c3d985b991528d52caa1a51e9"
+  },
+  "pruefliste20": [
+    {
+      "punkt": "1 Einstieg am ersten codierten Frame vollständig, ohne Animation",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "2 Zentrierte Elemente auf x = 540",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "3 Nichts in gesperrten Zonen (inkl. Kontur, Schatten, Animation)",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "4 Breitengrenzen, Untertitel einzeilig",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "5 Genau ein Wort blau im Untertitel",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "6 Pink nur Schlagwort und Durchstreichen (Emojis ausgenommen)",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "7 Gochi Hand nur für Zahlen und Akronyme",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "8 Höchstens zwei Textebenen zusätzlich zum Untertitel",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "9 Green Screen mit Robust Video Matting",
+      "ergebnis": "bestanden"
+    },
+    {
+      "punkt": "10 Followerstand aus aktuellem Zernio-Abruf",
+      "ergebnis": "bestanden",
+      "notiz": "4301, Stand 2026-10-12T05:38:25.695000Z"
+    },
+    {
+      "punkt": "11 Nichts aus Abschnitt 17 ohne Testauftrag, nichts aus 18",
+      "ergebnis": "bestanden",
+      "notiz": "Vorlage enthält keine Soundeffekte, B-Roll, Memes, Musik, Sticker"
+    },
+    {
+      "punkt": "12 Fertiges Video einmal vollständig angesehen (Handy)",
+      "ergebnis": "offen",
+      "notiz": "offen: Abdullah"
+    }
+  ],
+  "dauerSekunden": 6063,
+  "kontaktblatt": "/Users/abi/Projekte/abi-video-toolchain/projects/HHU-Rating-Urkunde-2026-10-12/review/kontaktblatt.jpg",
+  "fertig": "2026-10-12T16:47:08.910Z"
+}

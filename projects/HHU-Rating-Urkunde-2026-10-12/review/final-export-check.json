@@ -1,0 +1,51 @@
+{
+  "file": "/Users/abi/Projekte/abi-video-toolchain/projects/HHU-Rating-Urkunde-2026-10-12/exports/upload.mp4",
+  "renderedMaster": "/Users/abi/Projekte/abi-video-toolchain/projects/HHU-Rating-Urkunde-2026-10-12/exports/master.mp4",
+  "duration": 178.944,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 5366,
+  "videoBitrate": 12028219,
+  "audioBitrate": 119799,
+  "sizeBytes": 271796390,
+  "encoderPreset": "medium",
+  "vmafMeanVsRenderedMaster": 98.257315,
+  "vmafMinVsRenderedMaster": 96.990054,
+  "vmafStichproben": {
+    "fensterSekunden": [
+      0.0,
+      29.811,
+      59.622,
+      89.433,
+      119.244,
+      149.056
+    ],
+    "bilder": 180
+  },
+  "fullyDecoded": true,
+  "audioAlignmentChecks": [
+    {
+      "startSeconds": 1,
+      "durationSeconds": 5,
+      "bestLagMilliseconds": 0.0,
+      "correlation": 0.9994819112988038
+    },
+    {
+      "startSeconds": 86.93333333333334,
+      "durationSeconds": 5,
+      "bestLagMilliseconds": 0.0,
+      "correlation": 0.999464632944883
+    },
+    {
+      "startSeconds": 172.86666666666667,
+      "durationSeconds": 5,
+      "bestLagMilliseconds": 0.0,
+      "correlation": 0.9994852650426475
+    }
+  ],
+  "audioHandling": "Mix with sound effects (ton-mix.wav, review/ton-mix.json) re-encoded once as AAC-LC at 120 kbit/s and 48 kHz, voice enhanced in media.mp4 (workflow.json ton: klar, logs/ton.json).",
+  "captionMaxWords": 3,
+  "sha256": "fac76595b4a2705af8df91a23217edf010bcad3c3d985b991528d52caa1a51e9",
+  "bufferProfilePassed": true
+}

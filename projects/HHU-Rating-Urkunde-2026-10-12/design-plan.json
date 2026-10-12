@@ -1,0 +1,296 @@
+{
+ "_quelle": "Planer 12.10.2026 (Claude) nach Abdullahs Abstimmung im Chat: Einstieg „Masterurkunde Unboxing“ + „Rating“ mit HHU-Logo, Bewertungskarte mit Bibliothek 4/5 und Lehrstuhl 2/5, Betreuer-Emoji, Shoutouts, Dr. Abdullah Bachtari. Grundlage planentwurf.mjs.",
+ "_offen": [],
+ "_entscheidungen": [
+  "Tonverbesserung workflow.json ton: klar (Abdullahs Auftrag), Soundeffekte als Test nach DESIGN.md 17 (Auftrag „vllt sogar soundeffect“): Pop je Kapitelwechsel, Einschlag je Schlagwort, −11 dB unter der Stimme.",
+  "Bewertungskarte ohne Green Screen (hintergrund false) über dem Kamerabild; Werte Bibliothek 4/5 und Lehrstuhl 2/5 von Abdullah im Chat, im Video nicht gesprochen.",
+  "HHU-Logo aus dem Briefkopf des offiziellen HHU-Bescheids (PDF, Vektor) freigestellt, Farbe unverändert #036AB2, Seitenverhältnis unverändert (assets/logos/HERKUNFT.md).",
+  "Schlagworte: STINKNORMAL (84 px) und BODENLOS (114 px) passen nicht in 120–160 px (DESIGN.md 10). Gekürzt auf NORMAL. Mensa: Randnotiz hat neben dem Kopf keinen Platz (Kopf mittig, x 264–800), deshalb H2 „⭐ 1 von 5“ → „⭐ 0 von 5 💀“.",
+  "Menschen 5/5 (Abdullah im Chat): Zeile erscheint bei „persönlicher Highlight“ (153,69 s), Karte bis 156,2 s verlängert.",
+  "Abi 12.10.2026 zu V1: 2:16 ist „Vielleicht zu den Personen …“ → Kapitel 5. Die Menschen (136,0–146,7 s) mit Grüße-H2 und ⭐ 5 von 5; „Dr. Abdullah Bachtari?“ schon mit der H1; „Kreatin, Digga“ statt „Kreativ“.",
+  "Abi 12.10.2026: Soundeffekt beim Schlagwort raus, Pop bei Kapitelwechseln bleibt.",
+  "Abi 12.10.2026 zu V2: Schlagwort NORMAL samt Stoßzoom raus („das Springen wirkt nicht gut“), H2 „Mein Betreuer“ raus, H2 „Bildung = Privileg“ bei „dieses Privileg nutzen“ (168,72–171,85 s). Alles andere freigegeben."
+ ],
+ "einstieg": {
+  "h1": "MASTERURKUNDE UNBOXING",
+  "h2": [
+   "Rating"
+  ],
+  "logo": {
+   "datei": "assets/logos/hhu-logo-64.png",
+   "hoehe": 64,
+   "breite": 238,
+   "karte": true
+  },
+  "end": 7.45
+ },
+ "kapitel": [
+  {
+   "id": "k1",
+   "nummer": "1.",
+   "titel": "Die Stadt",
+   "start": 18.02,
+   "end": 34.2
+  },
+  {
+   "id": "k2",
+   "nummer": "2.",
+   "titel": "Das Studium",
+   "start": 34.26,
+   "end": 62.2
+  },
+  {
+   "id": "k3",
+   "nummer": "3.",
+   "titel": "Die Mensa",
+   "start": 78.96,
+   "end": 98.55
+  },
+  {
+   "id": "k4",
+   "nummer": "4.",
+   "titel": "Als Kanake",
+   "start": 98.62,
+   "end": 119.8
+  },
+  {
+   "id": "k5",
+   "nummer": "5.",
+   "titel": "Die Menschen",
+   "start": 136.0,
+   "end": 146.7
+  }
+ ],
+ "h1": [
+  {
+   "id": "h1-promotion",
+   "text": "NEXT: PROMOTION",
+   "start": 128.35,
+   "end": 134.2
+  }
+ ],
+ "h2": [
+  {
+   "id": "h2-intro",
+   "unter": "allein",
+   "lines": [
+    "Master BWL · 3 Semester"
+   ],
+   "start": 7.51,
+   "end": 12.4
+  },
+  {
+   "id": "h2-stadt",
+   "unter": "kapitel:k1",
+   "lines": [
+    "⭐ 3 von 5"
+   ],
+   "start": 32.86,
+   "end": 34.2
+  },
+  {
+   "id": "h2-studium",
+   "unter": "kapitel:k2",
+   "lines": [
+    "⭐ 2,5 von 5"
+   ],
+   "start": 59.85,
+   "end": 62.2
+  },
+  {
+   "id": "h2-monate",
+   "unter": "allein",
+   "lines": [
+    "4. Mai → 10.10.",
+    "5 Monate warten 🤯"
+   ],
+   "start": 73.33,
+   "end": 78.9
+  },
+  {
+   "id": "h2-mensa1",
+   "unter": "kapitel:k3",
+   "lines": [
+    "⭐ 1 von 5"
+   ],
+   "start": 95.08,
+   "end": 96.7
+  },
+  {
+   "id": "h2-mensa0",
+   "unter": "kapitel:k3",
+   "lines": [
+    "⭐ 0 von 5 💀"
+   ],
+   "start": 96.79,
+   "end": 98.55
+  },
+  {
+   "id": "h2-whitechicks",
+   "unter": "kapitel:k4",
+   "lines": [
+    "Shoutout an alle",
+    "White Chicks 🤍"
+   ],
+   "start": 107.29,
+   "end": 109.29
+  },
+  {
+   "id": "h2-chancen",
+   "unter": "kapitel:k4",
+   "lines": [
+    "Keine",
+    "Chancengleichheit"
+   ],
+   "start": 115.02,
+   "end": 119.5
+  },
+  {
+   "id": "h2-note",
+   "unter": "allein",
+   "lines": [
+    "Note: 1,7 😤"
+   ],
+   "start": 125.24,
+   "end": 127.75
+  },
+  {
+   "id": "h2-dr",
+   "unter": "h1:h1-promotion",
+   "lines": [
+    "Dr. Abdullah Bachtari?"
+   ],
+   "start": 128.35,
+   "end": 134.2
+  },
+  {
+   "id": "h2-gruesse",
+   "unter": "kapitel:k5",
+   "lines": [
+    "Grüße an alle,",
+    "die mich kennen 👋"
+   ],
+   "start": 141.98,
+   "end": 144.95
+  },
+  {
+   "id": "h2-menschen",
+   "unter": "kapitel:k5",
+   "lines": [
+    "⭐ 5 von 5"
+   ],
+   "start": 145.07,
+   "end": 146.7
+  },
+  {
+   "id": "h2-papier",
+   "unter": "allein",
+   "lines": [
+    "Am Ende nur",
+    "ein Stück Papier 📄"
+   ],
+   "start": 156.39,
+   "end": 158.6
+  },
+  {
+   "id": "h2-privileg",
+   "unter": "allein",
+   "lines": [
+    "Bildung = Privileg"
+   ],
+   "start": 168.72,
+   "end": 171.85
+  }
+ ],
+ "pillen": [],
+ "akronyme": [],
+ "schlagworte": [],
+ "grafiken": [
+  {
+   "id": "g-rating",
+   "start": 148.67,
+   "end": 156.2,
+   "hintergrund": false,
+   "kreisAb": 151.96,
+   "karte": {
+    "art": "bewertung",
+    "skala": 5,
+    "zeilen": [
+     {
+      "text": "🏙️ Stadt",
+      "wert": 3
+     },
+     {
+      "text": "📚 Studium",
+      "wert": 2.5
+     },
+     {
+      "text": "🏛️ Lehrstuhl",
+      "wert": 2
+     },
+     {
+      "text": "📖 Bibliothek",
+      "wert": 4,
+      "notiz": "Bitte mehr Steckdosen! 🔌"
+     },
+     {
+      "text": "🍝 Mensa",
+      "wert": 0
+     },
+     {
+      "text": "🫶 Menschen",
+      "wert": 5,
+      "at": 153.69
+     }
+    ],
+    "gesamt": {
+     "text": "⭐ Gesamt",
+     "wert": 3
+    }
+   }
+  }
+ ],
+ "randnotizen": [],
+ "lebensbalken": [],
+ "logos": [],
+ "sprechblasen": [
+  {
+   "text": "Yo, lohnt sich die HHU?",
+   "start": 172.72
+  }
+ ],
+ "outroStart": 172.42,
+ "nahaufnahmeAbBreite": 420,
+ "sounds": [
+  {
+   "datei": "assets/sounds/B04_Pop.mp3",
+   "at": 18.02,
+   "db": -11,
+   "zweck": "Kapitel 1"
+  },
+  {
+   "datei": "assets/sounds/B04_Pop.mp3",
+   "at": 34.26,
+   "db": -11,
+   "zweck": "Kapitel 2"
+  },
+  {
+   "datei": "assets/sounds/B04_Pop.mp3",
+   "at": 78.96,
+   "db": -11,
+   "zweck": "Kapitel 3"
+  },
+  {
+   "datei": "assets/sounds/B04_Pop.mp3",
+   "at": 98.62,
+   "db": -11,
+   "zweck": "Kapitel 4"
+  },
+  {
+   "datei": "assets/sounds/B04_Pop.mp3",
+   "at": 136.0,
+   "db": -11,
+   "zweck": "Kapitel 5"
+  }
+ ]
+}
