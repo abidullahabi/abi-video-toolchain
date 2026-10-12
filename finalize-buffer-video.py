@@ -17,6 +17,9 @@ root = Path(__file__).resolve().parent
 ff = str(root / 'tools/bin/ffmpeg'); probe = str(root / 'tools/bin/ffprobe')
 m = json.loads((p / 'workflow.json').read_text()); plan = json.loads((p / 'theme-plan.json').read_text())
 master = Path(m['renderedExport'] if m.get('renderedExport') and Path(m['renderedExport']).exists() else m['latestExport']); source = p / 'media.mp4'
+# Tonspur: media.mp4 oder, wenn der Plan Soundeffekte hat, die fertige Mischung (ton-mix.py, DESIGN.md 17).
+ton = p / plan['tonQuelle'] if plan.get('tonQuelle') else source
+assert ton.exists(), ('Tonspur fehlt', str(ton))
 (p / 'exports').mkdir(parents=True, exist_ok=True)
 out = p / 'exports' / 'upload.mp4'
 tmp = p / 'exports' / 'upload.unfertig.mp4'
@@ -27,7 +30,7 @@ assert abs(source_duration - plan['duration']) < .1, 'Dieses Hilfsskript setzt u
 conv = 'scale=in_color_matrix=bt601:in_range=tv:out_color_matrix=bt709:out_range=tv,format=yuv420p,setsar=1' if m.get('masterColorMatrix') == 'bt601' else None
 # Ziel 12 Mbit/s, aber nie über die 300-MB-Grenze des Zernio-Wegs (Abschnitt 10). 3 % Reserve, Ton 120 kbit/s.
 vb = min(12000, int((300e6 * 0.97 * 8 / plan['duration'] - 120e3) / 1000))
-args = [ff, '-v', 'error', '-y', '-i', str(master), '-i', str(source), '-map', '0:v:0', '-map', '1:a:0'] + (['-vf', conv] if conv else []) + [
+args = [ff, '-v', 'error', '-y', '-i', str(master), '-i', str(ton), '-map', '0:v:0', '-map', '1:a:0'] + (['-vf', conv] if conv else []) + [
     '-c:v', 'libx264', '-preset', EXPORT_PRESET, '-threads', '0', '-b:v', f'{vb}k', '-maxrate', '14M', '-bufsize', '28M', '-profile:v', 'high', '-level:v', '4.1',
     '-g', '60', '-bf', '2', '-pix_fmt', 'yuv420p', '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709',
     '-c:a', 'aac', '-b:a', '120k', '-ar', '48000', '-ac', '2', '-map_metadata', '-1', '-movflags', '+faststart', str(tmp)]
@@ -59,7 +62,7 @@ print('Buffer-Profil, vollständige Decodierung und VMAF-Stichproben geprüft.',
 def samples(f):
     data = subprocess.check_output([ff, '-v', 'error', '-i', str(f), '-vn', '-ac', '1', '-ar', '8000', '-c:a', 'pcm_s16le', '-f', 's16le', '-'])
     return np.frombuffer(data, dtype=np.int16).astype(np.float64)
-original = samples(source); encoded = samples(tmp); checks = []
+original = samples(ton); encoded = samples(tmp); checks = []
 for sec in [1, max(1, d / 2 - 2.5), d - 6]:
     st = int(sec * 8000); x = original[st:st + 40000]; x = x - x.mean()
     best = None
@@ -78,7 +81,7 @@ report = {'file': str(out), 'renderedMaster': str(master), 'duration': float(inf
           'videoBitrate': int(v['bit_rate']), 'audioBitrate': int(a['bit_rate']), 'sizeBytes': out.stat().st_size, 'encoderPreset': EXPORT_PRESET,
           'vmafMeanVsRenderedMaster': vmaf, 'vmafMinVsRenderedMaster': vmaf_min, 'vmafStichproben': {'fensterSekunden': fenster, 'bilder': n_vmaf},
           'fullyDecoded': True, 'audioAlignmentChecks': checks,
-          'audioHandling': 'Original audio re-encoded once as AAC-LC at 120 kbit/s and 48 kHz, without tempo or level changes.',
+          'audioHandling': ('Mix with sound effects (' + plan['tonQuelle'] + ', review/ton-mix.json)' if plan.get('tonQuelle') else 'Audio of media.mp4') + ' re-encoded once as AAC-LC at 120 kbit/s and 48 kHz' + (', voice enhanced in media.mp4 (workflow.json ton: ' + m['ton'] + ', logs/ton.json)' if m.get('ton') else ', without tempo or level changes') + '.',
           'captionMaxWords': max(len(c['words']) for c in plan['captions']), 'sha256': sha.hexdigest(), 'bufferProfilePassed': True}
 (p / 'review/final-export-check.json').write_text(json.dumps(report, indent=2) + '\n')
 jetzt = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')

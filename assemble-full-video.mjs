@@ -1,5 +1,6 @@
 import { SOCIAL_LAYOUT, layoutFor } from './social-layout.mjs';
 import fs from 'node:fs';
+import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 import * as fontkit from 'fontkit';
 import { makeThemeComposition } from './theme-composition.mjs';
@@ -114,6 +115,14 @@ export function readTimedWords(project, duration) {
     const matches=words.filter(w=>center(w)>=correction.from&&center(w)<correction.to&&w.text===correction.before);
     if(matches.length!==1)throw Error('Wortkorrektur nicht eindeutig: '+correction.before);
     const w=matches[0];corrections.push({time:center(w),before:w.text,after:correction.after,basis:correction.basis});w.text=correction.after;
+    // Seit 12.10.2026: Ein Leerzeichen in „after“ teilt das Wort in mehrere Untertitelwörter (DESIGN.md 7: ein Wort, das einzeilig
+    // breiter als 780 px ist, etwa „Heinrich-Heine-Universität“ → „Heinrich-Heine- Universität“). Die Zeit wird nach Zeichen geteilt.
+    const teile=correction.after.split(' ').filter(Boolean);
+    if(teile.length>1){
+      const a0=w.centers[0]??w.rawStart,a1=w.centers.at(-1)??w.rawEnd,r0=w.rawStart,r1=w.rawEnd,n=teile.reduce((x,t)=>x+t.length,0);let k=0;
+      const neu=teile.map(t=>{const f0=k/n,f1=(k+=t.length)/n;return {...w,text:t,rawStart:r0+(r1-r0)*f0,rawEnd:r0+(r1-r0)*f1,centers:[a0+(a1-a0)*f0,a0+(a1-a0)*f1]};});
+      words.splice(words.indexOf(w),1,...neu);
+    }
   }
   words=words.filter(w=>w.text);
   let timed=timeWords(words,duration);
@@ -182,6 +191,9 @@ export function assembleDesign22(project,meta,opts={}) {
   plan.zooms=input.zooms??planZooms22({resets:[...cuts,...plan.kapitel.map(k=>k.start),...plan.h1.map(h=>h.start),plan.outro.start],blocked:[...plan.schlagworte.map(s=>[s.start-.3,s.end+.3]),...plan.grafiken.map(g=>[g.start,g.end]),[plan.outro.start,duration],...(input.zoomSperren||[])],faceWidth,closeFrom:input.nahaufnahmeAbBreite??420,duration});
   plan.hinweise={warnings,notes};
   if(errors.length)throw Error('DESIGN.md 2.2:\n- '+errors.join('\n- '));
+  // Soundeffekte (DESIGN.md 17, nur auf Testauftrag, seit 12.10.2026): in ton-mix.wav mischen; Komposition und Upload-Export
+  // nehmen dann diese Tonspur statt des Tons von media.mp4. Ohne "sounds" bleibt alles wie bisher.
+  if((input.sounds||[]).length){const r=spawnSync('python3',[path.join(ROOT,'ton-mix.py'),project],{encoding:'utf8'});if(r.status)throw Error('ton-mix.py:\n'+(r.stderr||r.stdout));plan.tonQuelle='ton-mix.wav';}
   // HyperFrames lädt nur Dateien im Projekt: Schriften, Profil-Icons und GSAP aus templates/ kopieren.
   fs.mkdirSync(path.join(project,'assets/fonts'),{recursive:true});fs.mkdirSync(path.join(project,'vendor'),{recursive:true});
   for(const f of fs.readdirSync(path.join(ROOT,'templates/fonts')))fs.copyFileSync(path.join(ROOT,'templates/fonts',f),path.join(project,'assets/fonts',f));

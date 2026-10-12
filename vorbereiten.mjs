@@ -44,6 +44,15 @@ const FARBKORREKTUR = {
 // damit Standbilder, Gesichtserkennung und Abschnitts-Render schnell springen können. Messung siehe Testprotokoll.
 export const KAMERABILD = { crf: 10, preset: 'fast', gop: 30, audio: '320k' };
 
+// workflow.json "ton": "klar" (Abdullahs Auftrag 12.10.2026, Video HHU Rating: „crispiger, aber natürlich“). Im selben Durchgang
+// wie das Kamerabild: Trittschall weg (Hochpass 80 Hz), weniger Dröhnen (250 Hz −2,5 dB), Präsenz (3,8 kHz +3 dB), Luft
+// (Kuhschwanz ab 9 kHz +3 dB), leichter De-Esser, sanfte Kompression (3:1 ab −28 dB). Danach Pegel auf −14 LUFS (gemessen
+// in einem reinen Tondurchgang derselben Kette) und Begrenzer bei −2,5 dBFS (nach AAC 120k Spitze ≤ −1,5 dBTP).
+// Kein Entrauschen: Abdullahs Aufnahmen haben in Pausen −70 bis −83 dB. Ohne "ton" bleibt der Ton unverändert.
+export const TON = {
+  klar: { kette: 'highpass=f=80:poles=2,equalizer=f=250:t=q:w=1.0:g=-2.5,equalizer=f=3800:t=q:w=1.0:g=3,highshelf=f=9000:t=q:w=0.7:g=3,deesser=i=0.35:m=0.5:f=0.5:s=o,acompressor=threshold=-28dB:ratio=3:attack=6:release=120:knee=6', lufs: -14, grenze: 0.75 },
+};
+
 // ---------- anlegen ----------
 export async function anlegen(roh, opts = {}) {
   if (!roh) throw Error('Bitte den Pfad zum Rohvideo angeben.');
@@ -119,22 +128,43 @@ export async function vorbereiten(project, opts = {}) {
   if (!(tempo >= 0.5 && tempo <= 2)) throw Error(`workflow.json: tempo ${meta.tempo} außerhalb 0,5–2`);
   const mitTempo = tempo !== 1 ? { tempo } : {};   // Cache-Schlüssel alter Projekte bleiben gleich
   const vTempo = tempo !== 1 ? `setpts=PTS/${tempo},` : '', aTempo = tempo !== 1 ? `atempo=${tempo},` : '';
+  const ton = meta.ton ? TON[meta.ton] : null;
+  if (meta.ton && !ton) throw Error(`Unbekannte Tonverbesserung: ${meta.ton} (bekannt: ${Object.keys(TON).join(', ')})`);
+  // Ebenso: ohne "ton" gleicher Cache-Schlüssel wie bisher. tonV 2: Lautheit aus der letzten ebur128-Zusammenfassung (12.10.2026).
+  const mitTon = ton ? { ton: meta.ton, TON: ton, tonV: 2 } : {};
 
-  // 1. Kamerabild: in einem Durchgang aus dem Rohvideo (Schnitt, HDR→SDR, Hochkant, 30 fps, Farbkorrektur).
-  const kb = await schritt(project, 'vorbereiten: kamerabild', { eingaben: [meta.source, ...(keep ? ['schnitt.json'] : [])], werte: { grade: meta.farbkorrektur, KAMERABILD, v: 3, ...mitTempo }, ausgaben: ['media.mp4'] }, () => {
+  // 1. Kamerabild: in einem Durchgang aus dem Rohvideo (Schnitt, HDR→SDR, Hochkant, 30 fps, Farbkorrektur, Tonverbesserung).
+  const kb = await schritt(project, 'vorbereiten: kamerabild', { eingaben: [meta.source, ...(keep ? ['schnitt.json'] : [])], werte: { grade: meta.farbkorrektur, KAMERABILD, v: 3, ...mitTempo, ...mitTon }, ausgaben: ['media.mp4'] }, () => {
     const v = [], a = [];
     const hdr = meta.sourceVideo?.hdr ? 'zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,' : '';
     // Hochkant 1080 × 1920 nur, wenn die Aufnahme es nicht schon ist (spart einen Filterdurchgang je Bild).
     const sv = meta.sourceVideo || {}, passt = sv.width === 1080 && sv.height === 1920;
     const bild = `${hdr}${passt ? '' : 'scale=1080:1920:force_original_aspect_ratio=decrease:force_divisible_by=2,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,'}setsar=1,fps=${FPS}${grade ? ',' + grade : ',format=yuv420p'}`;
-    let filter;
+    let filter, tonGraph = null;
     if (keep) {
       keep.forEach(([s, e], i) => {
         v.push(`[0:v:0]trim=start=${s}:end=${e},setpts=PTS-STARTPTS[v${i}]`);
         a.push(`[0:a:0]atrim=start=${s}:end=${e},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=${(e - s - 0.005).toFixed(6)}:d=0.005[a${i}]`);
       });
-      filter = [...v, ...a, `${keep.map((_, i) => `[v${i}][a${i}]`).join('')}concat=n=${keep.length}:v=1:a=1[vc][ac]`, `[vc]${vTempo}${bild}[vout]`, `[ac]${aTempo}aresample=48000[aout]`].join(';\n');
-    } else filter = `[0:v:0]${vTempo}${bild}[vout];[0:a:0]${aTempo}aresample=48000[aout]`;
+      if (ton) tonGraph = k => [...a, `${keep.map((_, i) => `[a${i}]`).join('')}concat=n=${keep.length}:v=0:a=1[ac]`, `[ac]${aTempo}${k}[aout]`].join(';\n');
+      filter = [...v, ...a, `${keep.map((_, i) => `[v${i}][a${i}]`).join('')}concat=n=${keep.length}:v=1:a=1[vc][ac]`, `[vc]${vTempo}${bild}[vout]`, `[ac]${aTempo}<TON>aresample=48000[aout]`].join(';\n');
+    } else {
+      if (ton) tonGraph = k => `[0:a:0]${aTempo}${k}[aout]`;
+      filter = `[0:v:0]${vTempo}${bild}[vout];[0:a:0]${aTempo}<TON>aresample=48000[aout]`;
+    }
+    // Tonverbesserung: erst die Kette allein messen (integrierte Lautheit), dann Pegel und Begrenzer in den eigentlichen Durchgang.
+    let tonText = '';
+    if (ton) {
+      fs.writeFileSync(path.join(project, 'logs/ton-mess-filter.txt'), tonGraph(`${ton.kette},ebur128=framelog=quiet`));
+      const r = spawnSync(FF, ['-hide_banner', '-nostdin', '-i', meta.source, '-filter_complex_script', path.join(project, 'logs/ton-mess-filter.txt'), '-map', '[aout]', '-f', 'null', '-'], { cwd: project, encoding: 'utf8', maxBuffer: 1 << 26 });
+      // ffmpeg baut den Graphen zweimal; die erste Zusammenfassung stammt vom verworfenen ersten Aufbau (−70 LUFS, Stille). Die letzte gilt.
+      const I = Number([...(r.stderr || '').matchAll(/Integrated loudness:\s*\n\s*I:\s*(-?[\d.]+) LUFS/g)].at(-1)?.[1]);
+      if (r.status || !Number.isFinite(I)) throw Error('Tonverbesserung: Lautheit nicht messbar:\n' + (r.stderr || '').slice(-1500));
+      const gain = +(ton.lufs - I).toFixed(2);
+      tonText = `${ton.kette},volume=${gain}dB,alimiter=limit=${ton.grenze}:attack=3:release=60:level=disabled,`;
+      fs.writeFileSync(path.join(project, 'logs/ton.json'), JSON.stringify({ ton: meta.ton, kette: ton.kette, gemessenLufs: I, zielLufs: ton.lufs, verstaerkungDb: gain, grenze: ton.grenze }, null, 2) + '\n');
+    }
+    filter = filter.replace('<TON>', tonText);
     fs.writeFileSync(path.join(project, 'logs/kamerabild-filter.txt'), filter);
     const tmp = path.join(project, 'media.unfertig.mp4');
     ff(['-y', '-filter_complex_threads', String(os.cpus().length), '-i', meta.source, '-filter_complex_script', path.join(project, 'logs/kamerabild-filter.txt'), '-map', '[vout]', '-map', '[aout]',
@@ -146,7 +176,7 @@ export async function vorbereiten(project, opts = {}) {
   }, { erzwingen });
   meta = J(metaFile);
   const d = kb.ergebnis?.dauer ?? dauer(path.join(project, 'media.mp4'));
-  if (Math.abs((meta.cutDuration ?? 0) - d) > 1e-6 || meta.mode !== (keep ? 'cut-and-design' : 'design-only')) { meta.cutDuration = d; meta.mode = keep ? 'cut-and-design' : 'design-only'; meta.media = { datei: 'media.mp4', farbkorrektur: meta.farbkorrektur, schnitt: !!keep, ...mitTempo }; schreibeJson(metaFile, meta); }
+  if (Math.abs((meta.cutDuration ?? 0) - d) > 1e-6 || meta.mode !== (keep ? 'cut-and-design' : 'design-only') || (meta.media?.ton ?? null) !== (meta.ton ?? null)) { meta.cutDuration = d; meta.mode = keep ? 'cut-and-design' : 'design-only'; meta.media = { datei: 'media.mp4', farbkorrektur: meta.farbkorrektur, schnitt: !!keep, ...mitTempo, ...(meta.ton ? { ton: meta.ton } : {}) }; schreibeJson(metaFile, meta); }
 
   // 2. Tonspur für die Worterkennung. Bei Schnitt: ungeschnittener Ton, damit die Wörter nur einmal erkannt werden.
   const tonQuelle = keep ? meta.source : path.join(project, 'media.mp4');
@@ -267,6 +297,9 @@ export function kopfBereiche(plan) {
   for (const p of plan.pillen || []) add(p.items?.[0]?.at, p.end ?? kapEnde(p.kapitel));
   for (const x of [...(plan.h2 || []), ...(plan.randnotizen || []), ...(plan.lebensbalken || []), ...(plan.akronyme || []), ...(plan.schlagworte || []), ...(plan.logos || [])]) add(x.start ?? x.zeilen?.[0]?.at, x.end);
   for (const s of plan.sprechblasen || []) add(s.start, s.start + 4.25);
+  // Seit 12.10.2026: Einstiegslogo und Grafik ohne Green Screen liegen über dem Kamerabild und dürfen den Kopf nicht berühren.
+  if (plan.einstieg?.logo) add(0, plan.einstieg.end);
+  for (const g of plan.grafiken || []) if (g.hintergrund === false && !g.person) add(g.start, g.end);
   b.sort((x, y) => x[0] - y[0]);
   const m = [];
   for (const [a, e] of b) { if (m.length && a <= m.at(-1)[1] + 0.5) m.at(-1)[1] = Math.max(m.at(-1)[1], e); else m.push([a, e]); }
