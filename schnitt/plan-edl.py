@@ -29,6 +29,8 @@ LEAD_MIN, TAIL_MIN, START_TAIL, NEIGHBOUR = 0.024, 0.040, 0.100, 0.020
 TH, TH_END, STEP = -52.0, -58.0, 0.005
 
 sel = json.load(open('selection.json'))
+# selection.json "pauseAb" (Vlog, 19.10.2026): Pausen im Bereich erst ab dieser Länge kürzen (Standard 0,15 s; im Vlog wirkte jeder Bildsprung mitten im Satz hart).
+MIN_GAP = float(sel.get('pauseAb', MIN_GAP))
 ADJ = json.load(open('adjust.json')) if os.path.exists('adjust.json') else {'lead': {}, 'tail': {}}
 gaps = [(g['start'], g['end']) for g in json.load(open('analysis/speech-boundaries.json'))['candidates']]
 frames = [float(v) for v in open('analysis/video-pts.txt') if v.strip()]
