@@ -116,6 +116,9 @@ export async function vorbereiten(project, opts = {}) {
   let meta = J(metaFile);
   if (!meta.source || !fs.existsSync(meta.source)) throw Error('workflow.json: source fehlt oder ist nicht lesbar.');
   const keep = behalten(project, meta);
+  // selection.json "bildHalten": [[von, bis], …] in Rohzeit (Vlog Wiesbaden, 19.10.2026): Über einen Aussetzer im Rohvideo
+  // (Clipwechsel mit Fremdbild) bleibt das letzte Bild davor stehen, der Ton läuft weiter. Nur innerhalb behaltener Bereiche.
+  const halten = (() => { const f = path.join(project, 'schnitt/selection.json'); return keep && fs.existsSync(f) ? (J(f).bildHalten || []) : []; })();
   const grade = meta.farbkorrektur ? FARBKORREKTUR[meta.farbkorrektur] : null;
   if (meta.farbkorrektur && !grade) throw Error(`Unbekannte Farbkorrektur: ${meta.farbkorrektur}`);
   const erzwingen = !!opts.neu;
@@ -125,7 +128,7 @@ export async function vorbereiten(project, opts = {}) {
   const vTempo = tempo !== 1 ? `setpts=PTS/${tempo},` : '', aTempo = tempo !== 1 ? `atempo=${tempo},` : '';
 
   // 1. Kamerabild: in einem Durchgang aus dem Rohvideo (Schnitt, HDR→SDR, Hochkant, 30 fps, Farbkorrektur).
-  const kb = await schritt(project, 'vorbereiten: kamerabild', { eingaben: [meta.source, ...(keep ? ['schnitt.json'] : [])], werte: { grade: meta.farbkorrektur, KAMERABILD, v: 3, ...mitTempo, ...(keep && umgestellt(keep) ? { umgestellt: 1 } : {}) }, ausgaben: ['media.mp4'] }, () => {
+  const kb = await schritt(project, 'vorbereiten: kamerabild', { eingaben: [meta.source, ...(keep ? ['schnitt.json'] : [])], werte: { grade: meta.farbkorrektur, KAMERABILD, v: 3, ...mitTempo, ...(keep && umgestellt(keep) ? { umgestellt: 1 } : {}), ...(halten.length ? { halten } : {}) }, ausgaben: ['media.mp4'] }, () => {
     const v = [], a = []; let eingaenge = 1;
     const hdr = meta.sourceVideo?.hdr ? 'zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,' : '';
     // Hochkant 1080 × 1920 nur, wenn die Aufnahme es nicht schon ist (spart einen Filterdurchgang je Bild).
@@ -139,7 +142,9 @@ export async function vorbereiten(project, opts = {}) {
     eingaenge = keep ? lauf.at(-1) + 1 : 1;
     if (keep) {
       keep.forEach(([s, e], i) => {
-        v.push(`[${lauf[i]}:v:0]trim=start=${s}:end=${e},setpts=PTS-STARTPTS[v${i}]`);
+        const h = halten.find(([x, y]) => x > s && y < e);
+        if (h) v.push(`[${lauf[i]}:v:0]trim=start=${s}:end=${h[0]},setpts=PTS-STARTPTS,tpad=stop_mode=clone:stop_duration=${(h[1] - h[0]).toFixed(6)}[v${i}a]`, `[${lauf[i]}:v:0]trim=start=${h[1]}:end=${e},setpts=PTS-STARTPTS[v${i}b]`, `[v${i}a][v${i}b]concat=n=2:v=1:a=0[v${i}]`);
+        else v.push(`[${lauf[i]}:v:0]trim=start=${s}:end=${e},setpts=PTS-STARTPTS[v${i}]`);
         a.push(`[${lauf[i]}:a:0]atrim=start=${s}:end=${e},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=${(e - s - 0.005).toFixed(6)}:d=0.005[a${i}]`);
       });
       filter = [...v, ...a, `${keep.map((_, i) => `[v${i}][a${i}]`).join('')}concat=n=${keep.length}:v=1:a=1[vc][ac]`, `[vc]${vTempo}${bild}[vout]`, `[ac]${aTempo}aresample=48000[aout]`].join(';\n');
