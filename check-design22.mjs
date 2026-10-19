@@ -154,7 +154,7 @@ export async function checkDesign22(project, { step = 1 } = {}) {
       // 3: Emojis ohne Kontur, so groß wie der umgebende Text.
       for (const e of document.querySelectorAll('.emoji')) { if (parseFloat(cs(e).webkitTextStrokeWidth) > 0) err('emoji_kontur'); if (Math.abs(parseFloat(cs(e).fontSize) - parseFloat(cs(e.parentElement).fontSize)) > 0.5) err('emoji_groesse'); }
       // 4: Gochi Hand nur für Zahlen im Inhalt und Akronym-Buchstaben.
-      for (const el of document.querySelectorAll('#root *')) if (cs(el).fontFamily.includes('Gochi') && !el.children.length && el.textContent.trim() && !el.classList.contains('ak-letter') && !/^[\d.,+−%\s-]+$/.test(el.textContent.trim())) err('gochi_nicht_zahl', { text: el.textContent });
+      for (const el of document.querySelectorAll('#root *')) if (cs(el).fontFamily.includes('Gochi') && !el.children.length && el.textContent.trim() && !el.classList.contains('ak-letter') && !/^[\d.,+−%\s-]+$/.test(el.textContent.trim()) && !(el.classList.contains('tp-zeit') && /^\d{1,2}(:\d{2})?( ?(h|min))?$/.test(el.textContent.trim()))) err('gochi_nicht_zahl', { text: el.textContent });   // 17 (Test Tagesplan): Uhrzeit/Dauer „06:00“, „2 h“
       // 14: Outro.
       const o = plan.outro; tl.seek(Math.min(o.start + 2, plan.duration - 0.05), false);
       const card = document.getElementById('outro-card'), cb = R(card);
