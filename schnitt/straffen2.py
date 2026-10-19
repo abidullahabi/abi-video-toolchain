@@ -31,6 +31,8 @@ def anfang(t0, t1):
         if db[i] >= TS and db[min(i + 1, n - 1)] >= TS and db[min(i + 2, n - 1)] >= TS: return i * 0.005
     return None
 s = json.load(open('../schnitt.json')); k = [list(v) for v in s['behalten']]
+# selection.json "straffen2": false (Vlog, 19.10.2026): Nähte bleiben bei den ~150 ms aus plan-edl; im Vlog wirkten ~50 ms gehetzt.
+NAEHTE = (json.load(open('selection.json')).get('straffen2', True) if os.path.exists('selection.json') else True)
 alt = sum(b - a for a, b in k); bericht = []; rest = []
 for j in range(len(k) - 1):
     a0, e0 = k[j]; s1, e1 = k[j + 1]
@@ -39,6 +41,7 @@ for j in range(len(k) - 1):
     ns = s1 if ws is None else max(s1, math.floor((ws - LEAD) * 30 + 1e-6) / 30)
     if ne - a0 < 0.1: ne = e0
     if e1 - ns < 0.1: ns = s1
+    if not NAEHTE: ne, ns = e0, s1
     bericht.append({'naht': j, 'ende': [round(e0, 3), round(ne, 3)], 'anfang': [round(s1, 3), round(ns, 3)], 'gespart_ms': round((e0 - ne + ns - s1) * 1000)})
     k[j][1] = ne; k[j + 1][0] = ns
     rest.append((j, e0, s1, None if we is None or ws is None else (ne - we) + (ws - ns)))   # hörbare Pause an der Naht (nur Ausgabe)
