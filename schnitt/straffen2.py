@@ -15,7 +15,9 @@ import json, wave, os, sys, math, statistics
 import numpy as np
 os.chdir(os.path.join(os.path.abspath(sys.argv[1]), 'schnitt'))
 arg = lambda k, d: float(sys.argv[sys.argv.index(k) + 1]) if k in sys.argv else d
-TAIL, LEAD = arg('--nachlauf', 0.06), arg('--vorlauf', 0.04)
+_sel = json.load(open('selection.json')) if os.path.exists('selection.json') else {}
+# selection.json "nahtNachlauf"/"nahtVorlauf" (Vlog Wiesbaden, 19.10.2026): eigener Nach-/Vorlauf je Projekt; die Kommandozeile geht vor.
+TAIL, LEAD = arg('--nachlauf', float(_sel.get('nahtNachlauf', 0.06))), arg('--vorlauf', float(_sel.get('nahtVorlauf', 0.04)))
 w = wave.open('speech.wav'); sr = w.getframerate(); x = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
 hop = int(sr * 0.005); n = len(x) // hop; db = 20 * np.log10(np.sqrt(np.mean(x[:n * hop].reshape(n, hop) ** 2, axis=1)) + 1e-9)
 leben = db[db > -120]
