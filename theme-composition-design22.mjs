@@ -144,7 +144,15 @@ export function layoutDesign22(input, ctx) {
   for (let i = 1; i < kapitel.length; i++) if (kapitel[i].start < kapitel[i - 1].end - 1e-6) errors.push(`Kapitel überlappen: ${kapitel[i - 1].id} / ${kapitel[i].id}`);
   const kapById = id => kapitel.find(k => k.id === id);
 
-  const h1 = (input.h1 || []).map(h => ({ id: h.id, ...mitVersatz(h1Fit(h.text, 1.12), 1.12), start: h.start, end: h.end }));
+  // 17 (Test, Abi 19.10.2026): Selbstkommentar im Vlog. Gestalt wie die H1 (Archivo 900, 125 %, Großbuchstaben, Weiß mit Tintenkontur),
+  // aber in H2-Größe 58 px und Kontur 5 px; höchstens zwei Zeilen (zeilen im Plan), jede Zeile samt Kontur ≤ 864 px.
+  const h1 = (input.h1 || []).map(h => {
+    if (!h.groesse) return { id: h.id, ...mitVersatz(h1Fit(h.text, 1.12), 1.12), start: h.start, end: h.end };
+    const lines = (h.zeilen || [h.text]).map(upper);
+    if (lines.length > 2) errors.push(`Kommentar ${h.id}: höchstens zwei Zeilen`);
+    for (const l of lines) if (A(l, h.groesse, 900, 125) * 1.12 + 10 > 864) errors.push(`Kommentar ${h.id} breiter als 864 px: ${l}`);
+    return { id: h.id, lines, fontSize: h.groesse, klein: true, start: h.start, end: h.end };
+  });
 
   // 9: Pillen. Höhe je Pille: Ring 3 + Rand 5 + 8 + 54 × 1,1 + 10 + Rand 5 + Ring 3 (Zeilenhöhe 1,1: Referenz).
   const PILL = 5 + 8 + 54 * 1.1 + 10 + 5, ROW = 5 + 8 + 42 * 1.1 + 10 + 5, OFFS = [[-44, -2], [40, 1.5], [-16, -1]];
@@ -242,6 +250,13 @@ export function layoutDesign22(input, ctx) {
   const sprechblasen = (input.sprechblasen || []).map((b, i) => ({ id: 'bubble-' + i, text: b.text, start: b.start, top: Math.abs(b.start - input.outroStart) < 2 || b.start >= input.outroStart ? 345 : 300 }));
   for (const b of sprechblasen) if (A(b.text, 36, 800) + 40 + 8 > 620) errors.push('Sprechblase breiter als 620 px');
 
+  // 17 (Test): B-Roll-Fotokarten in der oberen Zone, auch über dem Gesicht. Nicht während des Einstiegs (er ist das Vorschaubild).
+  const bilder = (input.bilder || []).map(b => bilder22(b, { errors, notes, hits }));
+  // 17 (Test, Abi 19.10.2026): Tagesplan-Karte statt Lebensbalken für einen Tagesablauf mit Uhrzeiten.
+  const tagesplaene = (input.tagesplaene || []).map(t => tagesplan22(t, { A, G, errors, notes, hits }));
+  for (let i = 1; i < bilder.length; i++) if (bilder[i].start < bilder[i - 1].end - 1e-6) errors.push(`Bilder überlappen: ${bilder[i - 1].id} / ${bilder[i].id}`);
+  for (const b of bilder) if (b.start < einstieg.end + 0.06) errors.push(`Bilder ${b.id} beginnen vor dem Ende des Einstiegs (${einstieg.end} s)`);
+
   // 17 Buchcover: Während der großen Phase (bis grossBis + 0,5 s) reicht das Cover bis y 882. Pillen, H2, Logo und Randnotiz unter
   // dem Kapitel lägen darunter (Befund Code-Prüfung): erst nach der Verkleinerung erlaubt.
   for (const k of kapitel.filter(k => k.buch)) {
@@ -252,14 +267,72 @@ export function layoutDesign22(input, ctx) {
     for (const n of randnotizen.filter(ueber)) errors.push(`Randnotiz ${n.id} läuft, während das Cover von ${k.id} groß steht`);
   }
   // Ausblenden: 10 Schlagwort blendet H1, H2 und Randnotiz aus; Kapitel und Pillen ebenfalls, weil das Wort an ihrer Stelle steht
-  // (in der abgenommenen Branding-Probe so umgesetzt). Grafik: Karte bei y 270 ersetzt alle oberen Textebenen.
+  // (in der abgenommenen Branding-Probe so umgesetzt). Grafik und B-Roll-Karte (17) ersetzen alle oberen Textebenen.
   // 14 Logo: H1 blendet 0,1 s vorher aus und 0,1 s danach wieder ein.
   const ausblenden = [], oben = [...kapitel, ...h1, ...h2, ...pillen, ...randnotizen, ...lebensbalken, ...akronyme];
-  for (const w of [...schlagworte, ...grafiken]) for (const x of oben) if (x.start < w.end && x.end > w.start) ausblenden.push({ sel: '#' + x.id, from: Math.max(x.start, w.start), to: x.end > w.end + 0.25 ? w.end : null });
+  for (const w of [...schlagworte, ...grafiken, ...bilder, ...tagesplaene]) for (const x of oben) if (x.start < w.end && x.end > w.start) ausblenden.push({ sel: '#' + x.id, from: Math.max(x.start, w.start), to: x.end > w.end + 0.25 ? w.end : null });
   const logoH1 = [];
   for (const l of logos.filter(l => !l.unter)) for (const x of [...h1, ...kapitel]) if (x.start < l.end && x.end > l.start) logoH1.push({ sel: '#' + x.id + ' > span', out: l.start - 0.1, in: l.end + 0.1 });
 
-  return { designVersion: '2.2', duration: ctx.duration, einstieg, kapitel, h1, h2, pillen, akronyme, schlagworte, grafiken, randnotizen, lebensbalken, logos, sprechblasen, ausblenden, logoH1, outro: { start: input.outroStart, end: ctx.duration, followers: ctx.followers } };
+  return { designVersion: '2.2', duration: ctx.duration, einstieg, kapitel, h1, h2, pillen, akronyme, schlagworte, grafiken, randnotizen, lebensbalken, logos, sprechblasen, ...(bilder.length ? { bilder } : {}), ...(tagesplaene.length ? { tagesplaene } : {}), ausblenden, logoH1, outro: { start: input.outroStart, end: ctx.duration, followers: ctx.followers } };
+}
+
+// 17 (In Erprobung, Testauftrag Abdullah 19.10.2026, Vlog „Geschäftsreise Wiesbaden“): B-Roll-Fotokarten.
+// Eigene Fotos als Karte in der oberen Zone (Rand 6 und harter Schatten 12 wie 11), Hochformat 3 : 4, 600 × 800 px, Oberkante 300,
+// auf x = 540 zentriert; darf über dem Gesicht stehen, Untertitel laufen weiter. Eine Gruppe steht höchstens 3 s (DESIGN.md 17)
+// und zeigt 1–3 Fotos, die nacheinander auf den Stapel fallen (je leicht versetzt und gedreht wie die Pillen). Optional ein Ort
+// als blaue Marke (H2-Fläche, 40 px, −2°) über der Unterkante der Karte; es steht immer nur die Marke des obersten Fotos.
+// Plan: bilder[] = { id, start, end, fotos: [{ datei (unter assets/), at, fokus? (object-position, z. B. "50% 40%"), ort? }] }.
+const BILD = { w: 600, h: 800, top: 300, ortTop: 300 + 800 - 34, lagen: [[0, 0, -3], [24, 14, 2.5], [-18, -10, -1.5]] };
+function bilder22(b, { errors, notes, hits }) {
+  if (b.anordnung === 'collage') return collage22(b, { errors, notes, hits });
+  const d = b.end - b.start, fotos = b.fotos || [];
+  if (d > 3 + 1e-6) errors.push(`Bilder ${b.id}: ${d.toFixed(2)} s am Stück (DESIGN.md 17: höchstens 3 s)`);
+  if (!fotos.length || fotos.length > 3) errors.push(`Bilder ${b.id}: 1 bis 3 Fotos je Gruppe`);
+  fotos.forEach((f, i) => {
+    if (!f.datei?.startsWith('assets/') || /\s/.test(f.datei)) errors.push(`Bilder ${b.id}: datei muss unter assets/ liegen und darf keine Leerzeichen enthalten (Abschnitts-Cache): ${f.datei}`);
+    const next = fotos[i + 1]?.at ?? b.end;
+    if (i === 0 && Math.abs(f.at - b.start) > 1e-6) errors.push(`Bilder ${b.id}: das erste Foto beginnt mit der Gruppe`);
+    if (next - f.at < 0.6 - 1e-6) errors.push(`Bilder ${b.id}-${i}: steht nur ${(next - f.at).toFixed(2)} s (mindestens 0,6 s)`);
+    if (f.fokus && !/^\d{1,3}% \d{1,3}%$/.test(f.fokus)) errors.push(`Bilder ${b.id}-${i}: fokus als „x% y%“ angeben`);
+  });
+  if (hits({ x: 540 - BILD.w / 2, y: BILD.top, w: BILD.w, h: BILD.h }, b.start, b.end).length) notes.push(`Bilder ${b.id} stehen über dem Kopf (DESIGN.md 17 erlaubt „über dem Gesicht“, höchstens 3 s)`);
+  return { id: b.id, start: b.start, end: b.end, fotos: fotos.map((f, i) => ({ src: f.datei, at: f.at, fokus: f.fokus || '50% 50%', ort: f.ort || null, dx: BILD.lagen[i][0], dy: BILD.lagen[i][1], rot: BILD.lagen[i][2] })) };
+}
+
+// 17 (Test, Abi 19.10.2026: „alle auf einmal, nebeneinander, wie eine kleine Collage“): bilder[].anordnung = "collage".
+// 2–6 Fotos gleichzeitig im Raster (3 Spalten), Karten 232 × 310 mit Rand 5 und Schatten 8, leicht gedreht; sie ploppen
+// nacheinander auf (je 0,15 s versetzt). Raster auf x = 540 zentriert, Oberkante 300; die Orts-Marke steht unter dem Raster.
+const COLL = { w: 232, h: 310, gap: 20, top: 300, rot: [-2.5, 1.5, -1, 2, -1.5, 2.5] };
+function collage22(b, { errors, notes, hits }) {
+  // Option raster: { spalten, breite } (Abi 19.10.2026: Bilder größer, damit man sie erkennt), Höhe im Verhältnis 3 : 4.
+  const sp = b.raster?.spalten || 3, cw = b.raster?.breite || COLL.w, ch = Math.round(cw * 4 / 3);
+  const d = b.end - b.start, fotos = b.fotos || [], n = fotos.length, spalten = Math.min(sp, n), zeilen = Math.ceil(n / sp);
+  if (d > 3 + 1e-6) errors.push(`Collage ${b.id}: ${d.toFixed(2)} s am Stück (DESIGN.md 17: höchstens 3 s)`);
+  if (n < 2 || n > 6) errors.push(`Collage ${b.id}: 2 bis 6 Fotos`);
+  for (const f of fotos) if (!f.datei?.startsWith('assets/') || /\s/.test(f.datei)) errors.push(`Collage ${b.id}: datei unter assets/ ohne Leerzeichen: ${f.datei}`);
+  const breite = spalten * cw + (spalten - 1) * COLL.gap, links = 540 - breite / 2, hoehe = zeilen * ch + (zeilen - 1) * COLL.gap;
+  // Unterkante samt Schatten 8 und Fallbewegung 70 px (BILD_TL) muss über den Untertiteln (1280) bleiben (Befund Build V6, 19.10.2026).
+  if (COLL.top + hoehe + 8 + 70 > 1270) errors.push(`Collage ${b.id}: reicht beim Einfallen bis y ${COLL.top + hoehe + 78} (Untertitel ab 1280)`);
+  if (hits({ x: links, y: COLL.top, w: breite, h: hoehe }, b.start, b.end).length) notes.push(`Collage ${b.id} steht über dem Kopf (DESIGN.md 17 erlaubt „über dem Gesicht“, höchstens 3 s)`);
+  return { id: b.id, start: b.start, end: b.end, collage: true, kw: cw, kh: ch, ortTop: COLL.top + hoehe - 26, fotos: fotos.map((f, i) => {
+    const z = Math.floor(i / sp), inZeile = Math.min(sp, n - z * sp), lz = 540 - (inZeile * cw + (inZeile - 1) * COLL.gap) / 2;
+    return { src: f.datei, at: b.start + 0.15 * i, fokus: f.fokus || '50% 50%', ort: i === n - 1 ? (b.ort || null) : null, x: Math.round(lz + (i % sp) * (cw + COLL.gap)), y: COLL.top + z * (ch + COLL.gap), rot: COLL.rot[i] };
+  }) };
+}
+
+// 17 (Test, Abi 19.10.2026): Tagesplan-Karte. Karte wie 11 (Weiß, Rand 6, Radius 24, Schatten 12), x = 150, Oberkante 270, 780 breit.
+// Titel Archivo 800 40 px Tinte; je Zeile Uhrzeit/Dauer in Gochi Hand 58 px Blau mit Tintenkontur 2, daneben Archivo 800 48 px Tinte.
+// Zeilen erscheinen am gesprochenen Wort (14 px von unten, 0,22 s). Plan: tagesplaene[] = { id, start, end, titel, zeilen: [{ zeit, text, at }] }.
+const PLAN = { top: 270, w: 780, pad: [26, 34, 24], titel: 40, zeile: 66, zeitW: 180, text: 48, zeit: 58 };
+function tagesplan22(t, { A, G, errors, notes, hits }) {
+  const z = t.zeilen || [];
+  if (!z.length || z.length > 6) errors.push(`Tagesplan ${t.id}: 1 bis 6 Zeilen`);
+  for (const r of z) { const w = PLAN.pad[1] * 2 + PLAN.zeitW + A(r.text, PLAN.text, 800); if (w > PLAN.w) errors.push(`Tagesplan ${t.id}: Zeile zu breit (${Math.round(w)} px): ${r.text}`); if (r.at < t.start || r.at >= t.end) errors.push(`Tagesplan ${t.id}: Zeile außerhalb der Karte: ${r.text}`); }
+  const h = PLAN.pad[0] + Math.round(PLAN.titel * 1.2) + 10 + z.length * PLAN.zeile + PLAN.pad[2];
+  if (PLAN.top + h + 12 > 900) errors.push(`Tagesplan ${t.id}: reicht bis y ${PLAN.top + h + 12} (obere Zone bis 900)`);
+  if (hits({ x: 150, y: PLAN.top, w: PLAN.w, h }, t.start, t.end).length) notes.push(`Tagesplan ${t.id} berührt den Kopf`);
+  return { id: t.id, start: t.start, end: t.end, titel: t.titel, height: h, zeilen: z.map(r => ({ zeit: r.zeit || '', text: r.text, at: r.at })) };
 }
 
 // 17 (In Erprobung, Testauftrag Abdullah 04.10.2026, Video „Bücher die so gut sind wie Therapie“): Kapitel mit Buchcover.
@@ -442,13 +515,16 @@ export function makeDesign22Composition(plan, opts = {}) {
   // wandert vom großen in den kleinen Zustand.
   const buchHtml = k => { const b = k.buch; return `<div ${clip(k.id, k.start, k.end, 4, 'kapitel', ' data-buch="1"')} style="top:${k.top}px;height:${k.height}px"><span class="kap kap-buch"><span class="buch-slot" style="width:${b.small.w}px;height:${k.height}px"></span><span class="buch-col" style="width:${b.colW}px"><span class="buch-row" id="${k.id}-title">${k.nummer ? `<span class="kap-num buch-num">${esc(k.nummer)}</span>` : ''}<span class="buch-title">${lines(b.lines)}</span></span>${b.de ? `<span class="buch-de" id="${k.id}-de">${(Array.isArray(b.de) ? b.de : [b.de]).map(l => `<span class="ln">${escEmoji(l)}</span>`).join('')}</span>` : ''}${b.autor ? `<span class="buch-autor" id="${k.id}-autor">${escEmoji(b.autor)}</span>` : ''}</span></span><span class="buch-cw" id="${k.id}-cw" style="left:${b.small.left}px;top:${b.small.top}px;width:${b.small.w}px;height:${b.small.h}px"><img class="buch-cover" id="${k.id}-cover" src="${esc(b.src)}" alt=""></span></div>`; };
   for (const k of kapitel) if (k.buch) top.push(buchHtml(k)); else top.push(`<div ${clip(k.id, k.start, k.end, 4, 'kapitel')} style="top:${k.top}px"><span class="kap">${k.nummer ? `<span class="kap-numw" id="${k.id}-num"><span class="kap-num">${esc(k.nummer)}</span></span>` : ''}<span class="kap-title" id="${k.id}-title">${escEmoji(k.titel)}</span></span></div>`);
-  for (const h of h1) top.push(`<div ${clip(h.id, h.start, h.end, 2, 'h1')} style="top:${250 + (h.versatz || 0)}px;font-size:${h.fontSize}px"><span class="h1">${lines(h.lines)}</span></div>`);
+  for (const h of h1) top.push(`<div ${clip(h.id, h.start, h.end, 2, 'h1')} style="top:${250 + (h.versatz || 0)}px;font-size:${h.fontSize}px"><span class="h1${h.klein ? ' h1-klein' : ''}">${lines(h.lines)}</span></div>`);
   for (const h of h2) top.push(`<div ${clip(h.id, h.start, h.end, 3, 'h2')} style="top:${h.top}px"><span class="h2">${lines(h.lines)}</span></div>`);
   for (const p of pillen) top.push(`<div ${clip(p.id, p.start, p.end, 5, 'pillen', ` data-layout="${p.layout}"`)} style="top:${p.top}px">${p.items.map((it, i) => `<span class="pill-pop" id="${p.id}-${i}"><span class="pill${p.layout === 'row' ? ' pill-row' : ''}" style="${p.layout === 'stack' ? `transform:translateX(${it.dx}px) rotate(${it.rot}deg)` : ''}">${p.layout === 'row' && !p.rowDot ? '' : p.numbered ? `<span class="pill-dot"><span class="pill-no">${i + 1}</span></span>` : '<span class="pill-dot pill-dot-s"></span>'}<span class="pill-text">${escEmoji(it.text)}</span></span></span>`).join('')}</div>`);
   for (const a of akronyme) top.push(`<div ${clip(a.id, a.start, a.end, 6, 'akronym')} style="top:240px"><div class="ak-row">${a.letters.map((l, i) => `<span class="ak-pop" id="${a.id}-p${i}"><span class="ak-letter" id="${a.id}-l${i}" style="transform:rotate(${l.rot}deg)">${esc(l.b)}</span></span>`).join('')}</div><div class="ak-pills" style="top:${a.pillTop - 240}px">${a.letters.map((l, i) => `<span class="ak-pill-pop" id="${a.id}-q${i}"><span class="pill ak-pill"><span class="pill-text">${escEmoji(l.text)}</span></span></span>`).join('')}</div></div>`);
   for (const n of randnotizen) top.push(`<div ${clip(n.id, n.start, n.end, 7, 'randnotiz')} style="left:${n.left}px;top:${n.top}px">${n.lines.map((l, j) => `<div class="note-line" id="${n.id}-l${j}" style="margin-top:${l.gapBefore}px">${l.html}${l.strikeAt != null ? `<svg class="note-strike" id="${n.id}-s${j}" height="20" style="left:-8px;top:calc(54% - 10px);width:calc(100% + 16px)" overflow="visible" preserveAspectRatio="none"><path pathLength="1" fill="none" stroke="${C.ink}" stroke-width="11" stroke-linecap="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/><path pathLength="1" fill="none" stroke="${C.pink}" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></svg>` : ''}</div>`).join('')}</div>`);
   for (const b of lebensbalken) top.push(`<div ${clip(b.id, b.start, b.end, 9, 'balken')} style="left:190px;top:${370 - 58}px;width:700px;height:${58 + 26}px">${b.segments.map((s, i) => `<span class="bal-label" id="${b.id}-l${i}" style="left:${s.labelLeft}px">${escEmoji(s.label)}</span>`).join('')}<div class="bal-bed">${b.segments.map((s, i) => `<div class="bal-fill" id="${b.id}-f${i}" style="left:${s.from * 700}px;width:${(s.to - s.from) * 700}px"></div>`).join('')}${b.trenner ? b.segments.slice(1).map((s, i) => `<div class="bal-sep" id="${b.id}-t${i + 1}" style="left:${s.from * 700 - 1.5}px"></div>`).join('') : ''}</div></div>`);
   for (const l of logos) top.push(`<div ${clip(l.id, l.start, l.end, 13, 'logo')} style="top:${l.top ?? 250}px"><span class="logo">${(l.files || [{ src: l.src, height: l.height, width: l.width }]).map(f => `<img src="${esc(f.src)}" style="height:${f.height}px${f.width ? `;width:${f.width}px` : ''}" alt="">`).join('')}</span></div>`);
+  // 17 (Test): B-Roll-Fotokarten; die Orts-Marke steht als eigene Zeile auf x = 540 (nicht mit dem Versatz der Karte).
+  for (const b of plan.bilder || []) top.push(`<div ${clip(b.id, b.start, b.end, 14, 'bilder')} style="left:0;top:0;width:1080px;height:1920px">${b.fotos.map((f, i) => `<div class="bild-lage${b.collage ? ' bild-klein' : ''}" id="${b.id}-${i}" style="left:${b.collage ? f.x : 540 - BILD.w / 2 + f.dx}px;top:${b.collage ? f.y : BILD.top + f.dy}px${b.collage && b.kw !== COLL.w ? `;width:${b.kw}px;height:${b.kh}px` : ''}"><div class="bild-karte" style="transform:rotate(${f.rot}deg)"><img class="bild-foto" id="${b.id}-${i}-img" src="${esc(f.src)}" style="object-position:${f.fokus}" alt=""></div></div>`).join('')}${b.fotos.map((f, i) => f.ort ? `<div class="bild-ortw" style="top:${b.collage ? b.ortTop : BILD.ortTop}px"><span class="bild-ort" id="${b.id}-${i}-ort">${escEmoji(f.ort)}</span></div>` : '').join('')}</div>`);
+  for (const t of plan.tagesplaene || []) top.push(`<div ${clip(t.id, t.start, t.end, 15, 'tagesplan')} style="left:150px;top:${PLAN.top}px;width:${PLAN.w}px;height:${t.height}px"><div class="tp-karte"><div class="tp-titel">${escEmoji(t.titel)}</div>${t.zeilen.map((r, j) => `<div class="tp-zeile" id="${t.id}-z${j}"><span class="tp-zeit">${esc(r.zeit)}</span><span class="tp-text">${escEmoji(r.text)}</span></div>`).join('')}</div></div>`);
   for (const s of schlagworte) top.push(`<div ${clip(s.id, s.start, s.end, 8, 'schlagwort')} style="top:330px"><span class="sw-pop"><span class="sw" style="transform-origin:50% ${(s.fontSize * 1.02 / 2).toFixed(1)}px"><span class="sw-word" style="font-size:${s.fontSize}px">${esc(s.text)}</span><svg class="sw-lines" viewBox="0 0 700 70" preserveAspectRatio="none" style="width:${s.width}px;height:70px" overflow="visible">${[['M 14 30 C 150 12, 300 40, 450 22 S 640 30, 688 16', 22, 12], ['M 60 54 C 210 40, 380 62, 560 46 S 650 50, 672 46', 20, 10]].map(([d, wi, wp], j) => `<path id="${s.id}-u${j}i" d="${d}" pathLength="1" fill="none" stroke="${C.ink}" stroke-width="${wi}" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/><path id="${s.id}-u${j}p" d="${d}" pathLength="1" fill="none" stroke="${C.pink}" stroke-width="${wp}" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>`).join('')}</svg></span></span></div>`);
   const caps = captions.map((c, i) => `<div ${clip('cap-' + i, c.start, c.end, 20, 'caption')} style="top:1280px"><span class="cap-line">${c.words.map((w, j) => `<span id="w-${i}-${j}">${escEmoji(w.text)}</span>`).join(' ')}</span></div>`).join('');
   const bubbles = sprechblasen.map(b => `<div ${clip(b.id, b.start, b.start + 4.25, 22, 'bubble')} style="left:90px;top:${b.top}px"><div class="grp" id="${b.id}-grp"><div class="msg-pop" id="${b.id}-msg"><div class="msg">${escEmoji(b.text)}</div></div><div class="ind-slide" id="${b.id}-slide"><div class="ind-pop" id="${b.id}-ind"><div class="ind">${[0, 1, 2].map(k => `<i id="${b.id}-d${k}"></i>`).join('')}</div></div></div></div></div>`).join('');
@@ -475,7 +551,7 @@ export function makeDesign22Composition(plan, opts = {}) {
 .h2{display:inline-block;background:${C.blue};font-weight:800;font-size:58px;line-height:1.12;padding:8px 28px 14px;border-radius:12px;transform:rotate(-2deg);white-space:nowrap}
 .kap{display:inline-flex;align-items:center;gap:28px;white-space:nowrap}
 .kap-numw{display:inline-block}.kap-num{display:inline-block;font-family:"ABI Gochi";font-size:140px;line-height:1;color:${C.blue};${stroke(7)};transform:rotate(-4deg)}
-.kap-title{display:inline-block;font-weight:900;font-size:64px;line-height:1.1;word-spacing:6px;${stroke(6)}}${kapitel.some(k => k.buch) ? '\n' + BUCH_CSS() : ''}${lebensbalken.some(b => b.trenner) ? `\n.bal-sep{position:absolute;top:0;width:3px;height:100%;background:${C.ink};opacity:0}` : ''}
+.kap-title{display:inline-block;font-weight:900;font-size:64px;line-height:1.1;word-spacing:6px;${stroke(6)}}${kapitel.some(k => k.buch) ? '\n' + BUCH_CSS() : ''}${(plan.bilder || []).length ? '\n' + BILD_CSS : ''}${(plan.tagesplaene || []).length ? '\n' + PLAN_CSS : ''}${h1.some(h => h.klein) ? `\n.h1-klein{${stroke(5)};line-height:1.12}` : ''}${lebensbalken.some(b => b.trenner) ? `\n.bal-sep{position:absolute;top:0;width:3px;height:100%;background:${C.ink};opacity:0}` : ''}
 [data-kind=pillen]{display:flex;flex-direction:column;align-items:center;gap:20px}[data-kind=pillen][data-layout=row]{flex-direction:row;justify-content:center;gap:16px}
 .pill-pop{display:inline-block}
 .pill{display:inline-flex;align-items:center;gap:14px;padding:8px 32px 10px 12px;border:5px solid ${C.white};border-radius:999px;box-shadow:0 0 0 3px ${C.ink},inset 0 0 0 3px ${C.ink};white-space:nowrap}
@@ -531,6 +607,25 @@ ${bubbles}
 </main><script>${timeline22(plan, opts.abschnitt)}</script></body></html>`;
 }
 
+// 17 (Test): CSS und Zeitleiste der B-Roll-Fotokarten, nur eingefügt, wenn der Plan Bilder hat (alte Kompositionen bleiben bytegleich).
+const BILD_CSS = `.bild-lage{position:absolute;width:${BILD.w}px;height:${BILD.h}px;transform-origin:50% 60%}.bild-karte{width:100%;height:100%;border:6px solid ${C.ink};border-radius:24px;box-shadow:12px 12px 0 ${C.ink};overflow:hidden;background:${C.ink}}.bild-foto{display:block;width:100%;height:100%;object-fit:cover}
+.bild-ortw{position:absolute;left:0;width:1080px;text-align:center;line-height:0}.bild-ort{display:inline-block;background:${C.blue};border:4px solid ${C.ink};box-shadow:6px 6px 0 ${C.ink};font-weight:800;font-size:40px;line-height:1.12;padding:6px 22px 10px;border-radius:12px;transform:rotate(-2deg);white-space:nowrap}`;
+const PLAN_CSS = `[data-kind=tagesplan]{transform-origin:50% 0}.tp-karte{width:${PLAN.w}px;height:100%;padding:${PLAN.pad[0]}px ${PLAN.pad[1]}px ${PLAN.pad[2]}px;background:${C.white};border:6px solid ${C.ink};border-radius:24px;box-shadow:12px 12px 0 ${C.ink};color:${C.ink}}
+.tp-titel{font-weight:800;font-size:${PLAN.titel}px;line-height:1.2;margin-bottom:10px;white-space:nowrap}.tp-zeile{display:flex;align-items:center;height:${PLAN.zeile}px;white-space:nowrap}
+.tp-zeit{width:${PLAN.zeitW}px;flex:0 0 ${PLAN.zeitW}px;font-family:"ABI Gochi";font-size:${PLAN.zeit}px;line-height:1;color:${C.blue};-webkit-text-stroke:4px ${C.ink};paint-order:stroke fill}.tp-text{font-weight:800;font-size:${PLAN.text}px;line-height:1.1}
+.bild-klein{width:${COLL.w}px;height:${COLL.h}px}.bild-klein .bild-karte{border-width:5px;border-radius:18px;box-shadow:8px 8px 0 ${C.ink}}`;
+const PLAN_TL = `// 17 (Test): Tagesplan-Karte. Karte Pop 90 → 100 % 0,35 s (wie Grafik); Zeilen am Wort 14 px von unten 0,22 s; Ausblenden 0,18 s, 8 px nach oben.
+for(const t of D.tp){show('#'+t.id,t.start,t.end);pop('#'+t.id,t.start,.9,.35);t.zeilen.forEach((r,j)=>up('#'+t.id+'-z'+j,r.at));out('#'+t.id,t.end);}
+`;
+const BILD_TL = `// 17 (Test): B-Roll. Jedes Foto fällt auf den Stapel: aus 70 px tiefer, 6° stärker gedreht und 90 % in 0,40 s Abfedern, Deckkraft 0,12 s
+// Ausklingen; darin ein ruhiger Zug 100 → 108 % (linear bis zum Gruppenende). Ort wischt ab +0,18 s in 0,28 s von links, die vorige Marke
+// geht 0,10 s vor dem nächsten Foto aus. Die Gruppe blendet in 0,22 s linear aus und steigt dabei 16 px.
+for(const b of D.bi){show('#'+b.id,b.start,b.end);b.fotos.forEach((f,i)=>{const s='#'+b.id+'-'+i,r=b.collage?(i%2?4:-4):(i%2?6:-6);
+ tl.set(s,{opacity:0,y:70,rotation:r,scale:.9},0);tl.fromTo(s,{opacity:0},{opacity:1,duration:.12,ease:OUT,immediateRender:false},f.at);tl.fromTo(s,{y:70,rotation:r,scale:.9},{y:0,rotation:0,scale:1,duration:.4,ease:BACK,immediateRender:false},f.at);
+ tl.set(s+'-img',{scale:1},0);tl.fromTo(s+'-img',{scale:1},{scale:1.08,duration:b.end-f.at,ease:LIN,immediateRender:false},f.at);
+ if(f.ort){const o=s+'-ort',n=b.fotos[i+1];tl.set(o,{opacity:0},0);tl.set(o,{opacity:1},f.at+.18);wipe(o,f.at+.18,.28,20);if(n)tl.to(o,{opacity:0,duration:.1,ease:LIN},n.at-.1);}});
+ tl.to('#'+b.id,{opacity:0,y:-16,duration:.22,ease:LIN},b.end-.22);}
+`;
 // 17 Buchcover: Zeitleisten-Teil, nur eingefügt, wenn ein Kapitel ein Cover hat (alte Kompositionen bleiben bytegleich).
 const BUCH_TL = `// 17: Kapitel mit Buchcover. Cover groß Pop 90 → 100 % 0,35 s (wie Grafik), ab grossBis 0,5 s Ausklingen in den kleinen Platz
 // (Rand 6 → 4, Schatten 12 → 8, Drehung −2° → −3°, nur über Transformationen); Titelzeile ab +0,3 s von unten 0,22 s, deutscher Titel 0,1 s später, Autor wischt 0,28 s.
@@ -544,7 +639,7 @@ for(const k of D.k){if(!k.buch)continue;const b=k.buch,cw='#'+k.id+'-cw',cv='#'+
 `;
 function timeline22(plan, abschnitt) {
   const hatBuch = (plan.kapitel || []).some(k => k.buch);
-  const D = { e: plan.einstieg, k: plan.kapitel || [], h1: plan.h1 || [], h2: plan.h2 || [], p: plan.pillen || [], a: plan.akronyme || [], s: plan.schlagworte || [], g: plan.grafiken || [], n: plan.randnotizen || [], b: plan.lebensbalken || [], l: plan.logos || [], sb: plan.sprechblasen || [], c: plan.captions || [], z: plan.zooms || [], o: plan.outro, hide: plan.ausblenden || [], logoH1: plan.logoH1 || [] };
+  const D = { ...((plan.bilder || []).length ? { bi: plan.bilder } : {}), ...((plan.tagesplaene || []).length ? { tp: plan.tagesplaene } : {}), e: plan.einstieg, k: plan.kapitel || [], h1: plan.h1 || [], h2: plan.h2 || [], p: plan.pillen || [], a: plan.akronyme || [], s: plan.schlagworte || [], g: plan.grafiken || [], n: plan.randnotizen || [], b: plan.lebensbalken || [], l: plan.logos || [], sb: plan.sprechblasen || [], c: plan.captions || [], z: plan.zooms || [], o: plan.outro, hide: plan.ausblenden || [], logoH1: plan.logoH1 || [] };
   return `
 function bezier(x1,y1,x2,y2){const f=(s,a,b)=>3*(1-s)*(1-s)*s*a+3*(1-s)*s*s*b+s*s*s;return x=>{if(x<=0)return 0;if(x>=1)return 1;let lo=0,hi=1;for(let i=0;i<30;i++){const m=(lo+hi)/2;if(f(m,x1,x2)<x)lo=m;else hi=m;}return f((lo+hi)/2,y1,y2);};}
 const OUT=bezier(${EASE.out}),BACK=bezier(${EASE.back}),LIN='none',D=${JSON.stringify(D)};
@@ -591,7 +686,7 @@ for(const s of D.s){show('#'+s.id,s.start,s.end);pop('#'+s.id+' .sw-pop',s.start
 for(const h of D.hide){tl.set(h.sel+' > *',{visibility:'hidden'},h.from);if(h.to!=null)tl.set(h.sel+' > *',{visibility:'visible'},h.to);}
 // 15: Grafik. Karte Pop 90 → 100 % 0,35 s; Hauptlinie 1,0 s; Vergleichslinie blendet 0,30 s ein; Kreis danach 0,30 s.
 for(const g of D.g){if(!g.ohneHintergrund)show('#'+g.id+'-bg',g.start,g.end);show('#'+g.id,g.start,g.end);pop('#'+g.id,g.start,.9,.35);draw('#'+g.id+' .main-line',g.drawAt,1);tl.set('#'+g.id+' .cmp-line',{opacity:0},0);tl.to('#'+g.id+' .cmp-line',{opacity:1,duration:.3,ease:OUT},g.cmpAt);draw('#'+g.id+' .hl-circle',g.circleAt,.3);for(const x of g.labels){tl.set('#'+x.id,{opacity:0},0);tl.to('#'+x.id,{opacity:1,duration:.22,ease:OUT},x.at);}for(const z of g.spaet||[]){up('#'+z.id,z.at);draw('#'+z.id+' .late-line',z.at+.1,1);}}
-// 7: Untertitel hart; genau ein Wort blau; das letzte bleibt blau, bis die nächste Gruppe beginnt.
+${(plan.bilder || []).length ? BILD_TL : ''}${(plan.tagesplaene || []).length ? PLAN_TL : ''}// 7: Untertitel hart; genau ein Wort blau; das letzte bleibt blau, bis die nächste Gruppe beginnt.
 D.c.forEach((c,i)=>{show('#cap-'+i,c.start,c.end);c.words.forEach((w,j)=>{const on=j?w.start:c.start,off=j<c.words.length-1?c.words[j+1].start:c.end;tl.set('#w-'+i+'-'+j,{color:'${C.blue}'},on);tl.set('#w-'+i+'-'+j,{color:'${C.white}'},off);});});
 // 15: Zoomfahrten, nur Videoebene, linear, harter Rücksprung.
 for(const z of D.z){tl.set('#footage',{scale:1},z.start);tl.to('#footage',{scale:z.scale,duration:z.end-z.start,ease:LIN},z.start);tl.set('#footage',{scale:1},z.end);}

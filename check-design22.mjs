@@ -66,6 +66,11 @@ export async function checkDesign22(project, { step = 1 } = {}) {
           case 'randnotiz': { const l = vis(el.querySelectorAll('.note-line')); return l.length ? UT(l, 8) : null; }
           case 'balken': return UT([...vis(el.querySelectorAll('.bal-label')), q('.bal-bed')], 5);
           case 'logo': return R(q('.logo'));
+          // 17 (Test B-Roll): sichtbare Fotokarten samt Rand und Schatten (12 px) und die gerade sichtbare Orts-Marke (Schatten 6 px).
+          case 'bilder': { const rs = vis(el.querySelectorAll('.bild-lage')).map(x => { const c = R(x.firstElementChild); return { x: c.x, y: c.y, w: c.w + 12, h: c.h + 12 }; });
+            for (const o of vis(el.querySelectorAll('.bild-ort'))) { const c = R(o); rs.push({ x: c.x, y: c.y, w: c.w + 6, h: c.h + 6 }); }
+            if (!rs.length) return null; const x = Math.min(...rs.map(b => b.x)), y = Math.min(...rs.map(b => b.y)); return { x, y, w: Math.max(...rs.map(b => b.x + b.w)) - x, h: Math.max(...rs.map(b => b.y + b.h)) - y }; }
+          case 'tagesplan': { const b = R(q('.tp-karte')); return { x: b.x, y: b.y, w: b.w + 12, h: b.h + 12 }; }   // 17 (Test): Karte samt Schatten 12
           case 'grafik': { const b = R(q('.card')); return { x: b.x, y: b.y, w: b.w + 12, h: b.h + 12 }; }
           case 'caption': return T(q('.cap-line'), 6);
           case 'follow': return INK([q('.follow')], 5);
@@ -74,7 +79,7 @@ export async function checkDesign22(project, { step = 1 } = {}) {
         }
         return null;
       };
-      const LAYER = new Set(['h1', 'h2', 'kapitel', 'pillen', 'akronym', 'schlagwort', 'randnotiz', 'balken', 'logo', 'grafik', 'follow', 'outro-card', 'bubble']);
+      const LAYER = new Set(['h1', 'h2', 'kapitel', 'pillen', 'akronym', 'schlagwort', 'randnotiz', 'balken', 'logo', 'grafik', 'follow', 'outro-card', 'bubble', 'bilder', 'tagesplan']);
       const CENTER = { h1: '.h1', h2: '.h2', kapitel: '.kap', schlagwort: '.sw-word', caption: '.cap-line', follow: '.follow', logo: '.logo', akronym: '.ak-row' };
       const BLUE = 'rgb(94, 170, 238)', WHITE = 'rgb(255, 255, 255)';
       // Wie die Vorlage: Oberkante aus der Maske, seitlich Gesicht ± 30 % (Krempe).
@@ -151,7 +156,7 @@ export async function checkDesign22(project, { step = 1 } = {}) {
       // 3: Emojis ohne Kontur, so groß wie der umgebende Text.
       for (const e of document.querySelectorAll('.emoji')) { if (parseFloat(cs(e).webkitTextStrokeWidth) > 0) err('emoji_kontur'); if (Math.abs(parseFloat(cs(e).fontSize) - parseFloat(cs(e.parentElement).fontSize)) > 0.5) err('emoji_groesse'); }
       // 4: Gochi Hand nur für Zahlen im Inhalt und Akronym-Buchstaben.
-      for (const el of document.querySelectorAll('#root *')) if (cs(el).fontFamily.includes('Gochi') && !el.children.length && el.textContent.trim() && !el.classList.contains('ak-letter') && !/^[\d.,+−%\s-]+$/.test(el.textContent.trim())) err('gochi_nicht_zahl', { text: el.textContent });
+      for (const el of document.querySelectorAll('#root *')) if (cs(el).fontFamily.includes('Gochi') && !el.children.length && el.textContent.trim() && !el.classList.contains('ak-letter') && !/^[\d.,+−%\s-]+$/.test(el.textContent.trim()) && !(el.classList.contains('tp-zeit') && /^\d{1,2}(:\d{2})?( ?(h|min))?$/.test(el.textContent.trim()))) err('gochi_nicht_zahl', { text: el.textContent });   // 17 (Test Tagesplan): Uhrzeit/Dauer „06:00“, „2 h“
       // 14: Outro.
       const o = plan.outro; tl.seek(Math.min(o.start + 2, plan.duration - 0.05), false);
       const card = document.getElementById('outro-card'), cb = R(card);

@@ -75,6 +75,8 @@ export function momente(plan) {
   for (const b of plan.lebensbalken || []) add(Math.min(b.end - 0.25, b.segments.at(-1).at + 1.05), 'Lebensbalken', b.segments.map(s => s.label).join(' | '));
   for (const l of plan.logos || []) add(l.start + 0.35, 'Logo', (l.files || [{ src: l.src }]).map(f => path.basename(f.src)).join(' · '));
   for (const b of plan.sprechblasen || []) add(b.start + 2.7, 'Sprechblase', b.text);
+  for (const t of plan.tagesplaene || []) add(Math.min(t.end - 0.25, t.zeilen.at(-1).at + 0.35), 'Tagesplan (Test 17)', t.zeilen.map(r => `${r.zeit} ${r.text}`.trim()).join(' | '));
+  for (const b of plan.bilder || []) b.fotos.forEach((f, i) => add(Math.min((b.fotos[i + 1]?.at ?? b.end) - 0.12, f.at + 0.6), 'B-Roll (Test 17)', `${path.basename(f.src)}${f.ort ? ' · ' + f.ort : ''}`));
   add(plan.outro.start + 2, 'Outro', `Folgen nicht vergessen · ${plan.outro.followers.toLocaleString('de-DE')}`);
   return m.sort((a, b) => a.t - b.t);
 }
@@ -102,6 +104,8 @@ export function animationen(plan) {
   for (const b of plan.lebensbalken || []) b.segments.forEach((sg, i) => add(b.id, `Lebensbalken ${i + 1}`, sg.label, sg.at + 0.3, Math.min(b.end - 0.2, sg.at + 1.05)));
   for (const l of plan.logos || []) add(l.id, 'Logo', path.basename(l.src), l.start + 0.1, l.start + 0.35);
   for (const b of plan.sprechblasen || []) add(b.id, 'Sprechblase', b.text, b.start + 1.95, b.start + 2.7);
+  for (const t of plan.tagesplaene || []) { add(t.id, 'Tagesplan (Karte)', t.titel, t.start + 0.1, Math.min(t.end - 0.2, t.start + 0.4)); t.zeilen.forEach((r, j) => add(t.id, `Tagesplan Zeile ${j + 1}`, r.text, r.at + 0.03, Math.min(t.end - 0.2, r.at + 0.3))); }
+  for (const b of plan.bilder || []) b.fotos.forEach((f, i) => add(b.id, `B-Roll ${i + 1} (fällt auf den Stapel)`, path.basename(f.src), f.at + 0.12, Math.min((b.fotos[i + 1]?.at ?? b.end) - 0.12, f.at + 0.5)));
   add('outro-card', 'Outro (Karte, Zähler)', `${plan.outro.followers}`, plan.outro.start + 0.3, plan.outro.start + 2);
   return a.sort((x, y) => x.mitte - y.mitte);
 }

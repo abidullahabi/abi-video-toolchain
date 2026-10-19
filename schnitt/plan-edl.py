@@ -29,6 +29,8 @@ LEAD_MIN, TAIL_MIN, START_TAIL, NEIGHBOUR = 0.024, 0.040, 0.100, 0.020
 TH, TH_END, STEP = -52.0, -58.0, 0.005
 
 sel = json.load(open('selection.json'))
+# selection.json "pauseAb" (Vlog, 19.10.2026): Pausen im Bereich erst ab dieser Länge kürzen (Standard 0,15 s; im Vlog wirkte jeder Bildsprung mitten im Satz hart).
+MIN_GAP = float(sel.get('pauseAb', MIN_GAP))
 ADJ = json.load(open('adjust.json')) if os.path.exists('adjust.json') else {'lead': {}, 'tail': {}}
 gaps = [(g['start'], g['end']) for g in json.load(open('analysis/speech-boundaries.json'))['candidates']]
 frames = [float(v) for v in open('analysis/video-pts.txt') if v.strip()]
@@ -142,7 +144,8 @@ for i, p in enumerate(pieces):
 
 merged = []
 for k in keeps:
-    if merged and k['start'] <= merged[-1]['end'] + 1e-6:
+    # Nur vorwaerts zusammenlegen: steht ein Bereich bewusst frueher in der Rohzeit (umgestellt, z. B. CTA ans Ende), bleibt er eigenes Stueck.
+    if merged and merged[-1]['start'] <= k['start'] <= merged[-1]['end'] + 1e-6:
         merged[-1]['end'] = max(merged[-1]['end'], k['end']); merged[-1]['ranges'].append(k['range'])
         for x in ('fadeOut', 'audioEnd', 'stretch'):
             if x in k: merged[-1][x] = k[x]
@@ -151,7 +154,7 @@ for k in keeps:
 for m in merged:
     m['start'] = math.floor(m['start'] * 30 + 1e-6) / 30; m['end'] = math.ceil(m['end'] * 30 - 1e-6) / 30
 for a, b in zip(merged, merged[1:]):
-    if b['start'] < a['end']: b['start'] = a['end']
+    if a['start'] <= b['start'] < a['end']: b['start'] = a['end']
 dur = sum(m['end'] - m['start'] for m in merged)
 res = [round((keeps[i]['end'] - keeps[i]['speech'][1]) + (keeps[i + 1]['speech'][0] - keeps[i + 1]['start']), 3) for i in range(len(keeps) - 1)]
 json.dump({'basis': sel['basis'], 'fassung': 2,

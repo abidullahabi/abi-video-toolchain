@@ -15,7 +15,9 @@ import json, wave, os, sys, math, statistics
 import numpy as np
 os.chdir(os.path.join(os.path.abspath(sys.argv[1]), 'schnitt'))
 arg = lambda k, d: float(sys.argv[sys.argv.index(k) + 1]) if k in sys.argv else d
-TAIL, LEAD = arg('--nachlauf', 0.06), arg('--vorlauf', 0.04)
+_sel = json.load(open('selection.json')) if os.path.exists('selection.json') else {}
+# selection.json "nahtNachlauf"/"nahtVorlauf" (Vlog Wiesbaden, 19.10.2026): eigener Nach-/Vorlauf je Projekt; die Kommandozeile geht vor.
+TAIL, LEAD = arg('--nachlauf', float(_sel.get('nahtNachlauf', 0.06))), arg('--vorlauf', float(_sel.get('nahtVorlauf', 0.04)))
 w = wave.open('speech.wav'); sr = w.getframerate(); x = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
 hop = int(sr * 0.005); n = len(x) // hop; db = 20 * np.log10(np.sqrt(np.mean(x[:n * hop].reshape(n, hop) ** 2, axis=1)) + 1e-9)
 leben = db[db > -120]
@@ -31,6 +33,8 @@ def anfang(t0, t1):
         if db[i] >= TS and db[min(i + 1, n - 1)] >= TS and db[min(i + 2, n - 1)] >= TS: return i * 0.005
     return None
 s = json.load(open('../schnitt.json')); k = [list(v) for v in s['behalten']]
+# selection.json "straffen2": false (Vlog, 19.10.2026): Nähte bleiben bei den ~150 ms aus plan-edl; im Vlog wirkten ~50 ms gehetzt.
+NAEHTE = (json.load(open('selection.json')).get('straffen2', True) if os.path.exists('selection.json') else True)
 alt = sum(b - a for a, b in k); bericht = []; rest = []
 for j in range(len(k) - 1):
     a0, e0 = k[j]; s1, e1 = k[j + 1]
@@ -39,6 +43,7 @@ for j in range(len(k) - 1):
     ns = s1 if ws is None else max(s1, math.floor((ws - LEAD) * 30 + 1e-6) / 30)
     if ne - a0 < 0.1: ne = e0
     if e1 - ns < 0.1: ns = s1
+    if not NAEHTE: ne, ns = e0, s1
     bericht.append({'naht': j, 'ende': [round(e0, 3), round(ne, 3)], 'anfang': [round(s1, 3), round(ns, 3)], 'gespart_ms': round((e0 - ne + ns - s1) * 1000)})
     k[j][1] = ne; k[j + 1][0] = ns
     rest.append((j, e0, s1, None if we is None or ws is None else (ne - we) + (ws - ns)))   # hörbare Pause an der Naht (nur Ausgabe)

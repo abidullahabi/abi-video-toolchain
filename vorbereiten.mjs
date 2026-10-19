@@ -8,7 +8,8 @@
 //        Tonspur speech.wav, Wörter (ein Whisper-Durchgang mit Wortzeiten), Gesichter, Schnittpunkte.
 //        Jeder Schritt überspringt sich, wenn seine Eingaben gleich geblieben sind (logs/cache.json).
 //
-// schnitt.json (nur bei beauftragtem Schnitt): {"behalten": [[start, ende], …]} in Sekunden des Rohvideos.
+// schnitt.json (nur bei beauftragtem Schnitt): {"behalten": [[start, ende], …]} in Sekunden des Rohvideos. Die Bereiche laufen in der
+// Reihenfolge der Liste; meist aufsteigend, umgestellt (Abdullahs Freigabe, etwa CTA ans Ende) nur ohne Überlappung (19.10.2026).
 // Die Wörter werden dann einmal auf dem ungeschnittenen Ton erkannt und über die Schnittliste in die
 // Schnittzeit umgerechnet, statt ein zweites Mal zu transkribieren.
 //
@@ -105,15 +106,18 @@ export function behalten(project, meta) {
   if (!fs.existsSync(f)) return null;
   const s = J(f), d = meta.sourceDuration ?? Infinity;
   const k = (s.behalten || []).map(([a, b]) => [Math.round(a * FPS) / FPS, Math.round(b * FPS) / FPS]);
-  if (!k.length || k.some(([a, b], i) => !(a >= 0 && b > a && b <= d + 0.05 && (i === 0 || a >= k[i - 1][1])))) throw Error('schnitt.json: behalten muss aufsteigende, nicht überlappende Bereiche [start, ende] in Sekunden des Rohvideos enthalten.');
+  const sortiert = [...k].sort((x, y) => x[0] - y[0]);
+  if (!k.length || k.some(([a, b]) => !(a >= 0 && b > a && b <= d + 0.05)) || sortiert.some(([a], i) => i && a < sortiert[i - 1][1])) throw Error('schnitt.json: behalten muss nicht überlappende Bereiche [start, ende] in Sekunden des Rohvideos enthalten.');
   return k;
 }
-// Rohzeit → Schnittzeit (null, wenn die Stelle herausgeschnitten ist).
+// Rohzeit → Schnittzeit (null, wenn die Stelle herausgeschnitten ist). Sucht den Bereich, der t enthält, auch bei umgestellten Bereichen.
 export function schnittZeit(keep, t) {
   let vorher = 0;
-  for (const [a, b] of keep) { if (t < a) return null; if (t <= b) return vorher + (t - a); vorher += b - a; }
+  for (const [a, b] of keep) { if (t >= a && t <= b) return vorher + (t - a); vorher += b - a; }
   return null;
 }
+const bereichVon = (keep, t) => keep.findIndex(([a, b]) => t >= a && t <= b);
+export const umgestellt = keep => keep.some(([a], i) => i && a < keep[i - 1][1]);
 
 // ---------- vorbereiten ----------
 export async function vorbereiten(project, opts = {}) {
@@ -121,6 +125,9 @@ export async function vorbereiten(project, opts = {}) {
   let meta = J(metaFile);
   if (!meta.source || !fs.existsSync(meta.source)) throw Error('workflow.json: source fehlt oder ist nicht lesbar.');
   const keep = behalten(project, meta);
+  // selection.json "bildHalten": [[von, bis], …] in Rohzeit (Vlog Wiesbaden, 19.10.2026): Über einen Aussetzer im Rohvideo
+  // (Clipwechsel mit Fremdbild) bleibt das letzte Bild davor stehen, der Ton läuft weiter. Nur innerhalb behaltener Bereiche.
+  const halten = (() => { const f = path.join(project, 'schnitt/selection.json'); return keep && fs.existsSync(f) ? (J(f).bildHalten || []) : []; })();
   const grade = meta.farbkorrektur ? FARBKORREKTUR[meta.farbkorrektur] : null;
   if (meta.farbkorrektur && !grade) throw Error(`Unbekannte Farbkorrektur: ${meta.farbkorrektur}`);
   const erzwingen = !!opts.neu;
@@ -134,17 +141,24 @@ export async function vorbereiten(project, opts = {}) {
   const mitTon = ton ? { ton: meta.ton, TON: ton, tonV: 2 } : {};
 
   // 1. Kamerabild: in einem Durchgang aus dem Rohvideo (Schnitt, HDR→SDR, Hochkant, 30 fps, Farbkorrektur, Tonverbesserung).
-  const kb = await schritt(project, 'vorbereiten: kamerabild', { eingaben: [meta.source, ...(keep ? ['schnitt.json'] : [])], werte: { grade: meta.farbkorrektur, KAMERABILD, v: 3, ...mitTempo, ...mitTon }, ausgaben: ['media.mp4'] }, () => {
-    const v = [], a = [];
+  const kb = await schritt(project, 'vorbereiten: kamerabild', { eingaben: [meta.source, ...(keep ? ['schnitt.json'] : [])], werte: { grade: meta.farbkorrektur, KAMERABILD, v: 3, ...mitTempo, ...mitTon, ...(keep && umgestellt(keep) ? { umgestellt: 1 } : {}), ...(halten.length ? { halten } : {}) }, ausgaben: ['media.mp4'] }, () => {
+    const v = [], a = []; let eingaenge = 1;
     const hdr = meta.sourceVideo?.hdr ? 'zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,' : '';
     // Hochkant 1080 × 1920 nur, wenn die Aufnahme es nicht schon ist (spart einen Filterdurchgang je Bild).
     const sv = meta.sourceVideo || {}, passt = sv.width === 1080 && sv.height === 1920;
     const bild = `${hdr}${passt ? '' : 'scale=1080:1920:force_original_aspect_ratio=decrease:force_divisible_by=2,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,'}setsar=1,fps=${FPS}${grade ? ',' + grade : ',format=yuv420p'}`;
     let filter, tonGraph = null;
+    // Umgestellte Bereiche: Liest ein trim früher in der Rohzeit als das vorige, liefert ffmpeg aus demselben Eingang ein Bild
+    // mit Zeitsprung (fps füllte im Wiesbaden-Vlog 160 s auf, 19.10.2026). Jede aufsteigende Folge bekommt deshalb ihren
+    // eigenen Eingang; ohne Umstellung bleibt es bei einem Eingang (gleicher Befehl wie bisher).
+    const lauf = []; if (keep) keep.forEach(([s], i) => lauf.push(i && s < keep[i - 1][1] ? lauf[i - 1] + 1 : (lauf[i - 1] ?? 0)));
+    eingaenge = keep ? lauf.at(-1) + 1 : 1;
     if (keep) {
       keep.forEach(([s, e], i) => {
-        v.push(`[0:v:0]trim=start=${s}:end=${e},setpts=PTS-STARTPTS[v${i}]`);
-        a.push(`[0:a:0]atrim=start=${s}:end=${e},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=${(e - s - 0.005).toFixed(6)}:d=0.005[a${i}]`);
+        const h = halten.find(([x, y]) => x > s && y < e);
+        if (h) v.push(`[${lauf[i]}:v:0]trim=start=${s}:end=${h[0]},setpts=PTS-STARTPTS,tpad=stop_mode=clone:stop_duration=${(h[1] - h[0]).toFixed(6)}[v${i}a]`, `[${lauf[i]}:v:0]trim=start=${h[1]}:end=${e},setpts=PTS-STARTPTS[v${i}b]`, `[v${i}a][v${i}b]concat=n=2:v=1:a=0[v${i}]`);
+        else v.push(`[${lauf[i]}:v:0]trim=start=${s}:end=${e},setpts=PTS-STARTPTS[v${i}]`);
+        a.push(`[${lauf[i]}:a:0]atrim=start=${s}:end=${e},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=${(e - s - 0.005).toFixed(6)}:d=0.005[a${i}]`);
       });
       if (ton) tonGraph = k => [...a, `${keep.map((_, i) => `[a${i}]`).join('')}concat=n=${keep.length}:v=0:a=1[ac]`, `[ac]${aTempo}${k}[aout]`].join(';\n');
       filter = [...v, ...a, `${keep.map((_, i) => `[v${i}][a${i}]`).join('')}concat=n=${keep.length}:v=1:a=1[vc][ac]`, `[vc]${vTempo}${bild}[vout]`, `[ac]${aTempo}<TON>aresample=48000[aout]`].join(';\n');
@@ -156,7 +170,7 @@ export async function vorbereiten(project, opts = {}) {
     let tonText = '';
     if (ton) {
       fs.writeFileSync(path.join(project, 'logs/ton-mess-filter.txt'), tonGraph(`${ton.kette},ebur128=framelog=quiet`));
-      const r = spawnSync(FF, ['-hide_banner', '-nostdin', '-i', meta.source, '-filter_complex_script', path.join(project, 'logs/ton-mess-filter.txt'), '-map', '[aout]', '-f', 'null', '-'], { cwd: project, encoding: 'utf8', maxBuffer: 1 << 26 });
+      const r = spawnSync(FF, ['-hide_banner', '-nostdin', ...Array.from({ length: eingaenge }, () => ['-i', meta.source]).flat(), '-filter_complex_script', path.join(project, 'logs/ton-mess-filter.txt'), '-map', '[aout]', '-f', 'null', '-'], { cwd: project, encoding: 'utf8', maxBuffer: 1 << 26 });
       // ffmpeg baut den Graphen zweimal; die erste Zusammenfassung stammt vom verworfenen ersten Aufbau (−70 LUFS, Stille). Die letzte gilt.
       const I = Number([...(r.stderr || '').matchAll(/Integrated loudness:\s*\n\s*I:\s*(-?[\d.]+) LUFS/g)].at(-1)?.[1]);
       if (r.status || !Number.isFinite(I)) throw Error('Tonverbesserung: Lautheit nicht messbar:\n' + (r.stderr || '').slice(-1500));
@@ -167,7 +181,7 @@ export async function vorbereiten(project, opts = {}) {
     filter = filter.replace('<TON>', tonText);
     fs.writeFileSync(path.join(project, 'logs/kamerabild-filter.txt'), filter);
     const tmp = path.join(project, 'media.unfertig.mp4');
-    ff(['-y', '-filter_complex_threads', String(os.cpus().length), '-i', meta.source, '-filter_complex_script', path.join(project, 'logs/kamerabild-filter.txt'), '-map', '[vout]', '-map', '[aout]',
+    ff(['-y', '-filter_complex_threads', String(os.cpus().length), ...Array.from({ length: eingaenge }, () => ['-i', meta.source]).flat(), '-filter_complex_script', path.join(project, 'logs/kamerabild-filter.txt'), '-map', '[vout]', '-map', '[aout]',
       '-c:v', 'libx264', '-preset', KAMERABILD.preset, '-crf', String(KAMERABILD.crf), '-g', String(KAMERABILD.gop), '-profile:v', 'high', '-pix_fmt', 'yuv420p',
       '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-color_range', 'tv',
       '-c:a', 'aac', '-b:a', KAMERABILD.audio, '-ar', '48000', '-map_metadata', '-1', '-movflags', '+faststart', tmp], project, path.join(project, 'logs/kamerabild.log'));
@@ -225,7 +239,7 @@ export function woerterUmrechnen(project, keep, tempo = 1) {
   const roh = path.join(project, 'woerter-roh'), grenzen = J(path.join(roh, 'chunks.json'));
   const out = path.join(project, 'word-alignment-turbo');
   fs.mkdirSync(out, { recursive: true });
-  const segmente = [];
+  const segmente = [], bereich = new Map();   // Token → Index des Bereichs in keep (nur für umgestellte Bereiche gebraucht)
   grenzen.forEach(([a], i) => {
     const data = J(path.join(roh, `part-${i}.json`));
     for (const seg of data.transcription) {
@@ -237,13 +251,24 @@ export function woerterUmrechnen(project, keep, tempo = 1) {
         if (m === null) continue;
         const dv = m - mitte;   // gleicher Versatz für Anfang, Ende und DTW-Punkt des Tokens; danach in die beschleunigte Zeit
         tokens.push({ ...t, offsets: { from: Math.max(0, Math.round((von + dv) / tempo * 1000)), to: Math.max(0, Math.round((bis + dv) / tempo * 1000)) }, t_dtw: t.t_dtw >= 0 ? Math.round(m / tempo * 100) : t.t_dtw });
+        bereich.set(tokens.at(-1), bereichVon(keep, mitte));
       }
       // Ein Wort beginnt mit Leerzeichen; fällt der Wortanfang weg, darf der Rest nicht an das vorige Wort anwachsen.
-      const lex = tokens.filter(t => !(t.id >= 50257 || t.text.startsWith('[_')));
-      if (lex.length && !/^\s/.test(lex[0].text)) lex[0].text = ' ' + lex[0].text;
-      if (lex.length) segmente.push({ ...seg, tokens });
+      // Umgestellte Bereiche: ein Whisper-Segment kann zwei Bereiche berühren, die jetzt an verschiedenen Stellen stehen.
+      // Dann je Bereich ein eigenes Segment; unten nach Schnittzeit sortiert.
+      const teile = [];
+      if (umgestellt(keep)) for (const t of tokens) { const sonder = !bereich.has(t), r = sonder ? teile.at(-1)?.r : bereich.get(t);
+        if (!teile.length || (!sonder && r !== teile.at(-1).r)) teile.push({ r, tokens: [] }); teile.at(-1).tokens.push(t); }
+      for (const tt of teile.length ? teile.map(x => x.tokens) : [tokens]) {
+        const lex = tt.filter(t => !(t.id >= 50257 || t.text.startsWith('[_')));
+        if (lex.length && !/^\s/.test(lex[0].text)) lex[0].text = ' ' + lex[0].text;
+        if (lex.length) segmente.push({ ...seg, tokens: tt });
+      }
     }
   });
+  // Sortiert nach dem DTW-Zeitpunkt des ersten Wortes: offsets.from liegt bei Whisper oft Sekunden daneben (Wiesbaden-Vlog 19.10.2026).
+  const erstes = s => { const t = s.tokens.find(t => !(t.id >= 50257 || t.text.startsWith('[_'))); return t.t_dtw >= 0 ? t.t_dtw * 10 : t.offsets.from; };
+  if (umgestellt(keep)) segmente.sort((x, y) => erstes(x) - erstes(y));
   fs.writeFileSync(path.join(out, 'part-0.json'), JSON.stringify({ transcription: segmente, umgerechnet: 'aus woerter-roh über schnitt.json (vorbereiten.mjs)' }));
   fs.writeFileSync(path.join(out, 'chunks.json'), JSON.stringify([[0, keep.reduce((s, [a, b]) => s + b - a, 0) / tempo]], null, 2));
 }
