@@ -288,7 +288,8 @@ function collage22(b, { errors, notes, hits }) {
   if (n < 2 || n > 6) errors.push(`Collage ${b.id}: 2 bis 6 Fotos`);
   for (const f of fotos) if (!f.datei?.startsWith('assets/') || /\s/.test(f.datei)) errors.push(`Collage ${b.id}: datei unter assets/ ohne Leerzeichen: ${f.datei}`);
   const breite = spalten * cw + (spalten - 1) * COLL.gap, links = 540 - breite / 2, hoehe = zeilen * ch + (zeilen - 1) * COLL.gap;
-  if (COLL.top + hoehe + 8 > 1270) errors.push(`Collage ${b.id}: reicht bis y ${COLL.top + hoehe + 8} (Untertitel ab 1280)`);
+  // Unterkante samt Schatten 8 und Fallbewegung 70 px (BILD_TL) muss über den Untertiteln (1280) bleiben (Befund Build V6, 19.10.2026).
+  if (COLL.top + hoehe + 8 + 70 > 1270) errors.push(`Collage ${b.id}: reicht beim Einfallen bis y ${COLL.top + hoehe + 78} (Untertitel ab 1280)`);
   if (hits({ x: links, y: COLL.top, w: breite, h: hoehe }, b.start, b.end).length) notes.push(`Collage ${b.id} steht über dem Kopf (DESIGN.md 17 erlaubt „über dem Gesicht“, höchstens 3 s)`);
   return { id: b.id, start: b.start, end: b.end, collage: true, kw: cw, kh: ch, ortTop: COLL.top + hoehe - 26, fotos: fotos.map((f, i) => {
     const z = Math.floor(i / sp), inZeile = Math.min(sp, n - z * sp), lz = 540 - (inZeile * cw + (inZeile - 1) * COLL.gap) / 2;
