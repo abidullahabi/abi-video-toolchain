@@ -41,6 +41,7 @@ export function planFuer(plan, a, b) {
   q.randnotizen = (plan.randnotizen || []).filter(n => ov(n.start, n.end));
   q.lebensbalken = (plan.lebensbalken || []).filter(x => ov(x.start, x.end));
   q.logos = (plan.logos || []).filter(l => ov(l.start, l.end));
+  if (plan.bilder) q.bilder = plan.bilder.filter(b => ov(b.start, b.end));
   q.sprechblasen = (plan.sprechblasen || []).filter(s => ov(s.start, s.start + 4.25));
   q.captions = (plan.captions || []).filter(c => ov(c.start, c.end));
   q.zooms = (plan.zooms || []).filter(z => ov(z.start, z.end));

@@ -8,7 +8,8 @@
 //        Tonspur speech.wav, Wörter (ein Whisper-Durchgang mit Wortzeiten), Gesichter, Schnittpunkte.
 //        Jeder Schritt überspringt sich, wenn seine Eingaben gleich geblieben sind (logs/cache.json).
 //
-// schnitt.json (nur bei beauftragtem Schnitt): {"behalten": [[start, ende], …]} in Sekunden des Rohvideos.
+// schnitt.json (nur bei beauftragtem Schnitt): {"behalten": [[start, ende], …]} in Sekunden des Rohvideos. Die Bereiche laufen in der
+// Reihenfolge der Liste; meist aufsteigend, umgestellt (Abdullahs Freigabe, etwa CTA ans Ende) nur ohne Überlappung (19.10.2026).
 // Die Wörter werden dann einmal auf dem ungeschnittenen Ton erkannt und über die Schnittliste in die
 // Schnittzeit umgerechnet, statt ein zweites Mal zu transkribieren.
 //
@@ -96,15 +97,18 @@ export function behalten(project, meta) {
   if (!fs.existsSync(f)) return null;
   const s = J(f), d = meta.sourceDuration ?? Infinity;
   const k = (s.behalten || []).map(([a, b]) => [Math.round(a * FPS) / FPS, Math.round(b * FPS) / FPS]);
-  if (!k.length || k.some(([a, b], i) => !(a >= 0 && b > a && b <= d + 0.05 && (i === 0 || a >= k[i - 1][1])))) throw Error('schnitt.json: behalten muss aufsteigende, nicht überlappende Bereiche [start, ende] in Sekunden des Rohvideos enthalten.');
+  const sortiert = [...k].sort((x, y) => x[0] - y[0]);
+  if (!k.length || k.some(([a, b]) => !(a >= 0 && b > a && b <= d + 0.05)) || sortiert.some(([a], i) => i && a < sortiert[i - 1][1])) throw Error('schnitt.json: behalten muss nicht überlappende Bereiche [start, ende] in Sekunden des Rohvideos enthalten.');
   return k;
 }
-// Rohzeit → Schnittzeit (null, wenn die Stelle herausgeschnitten ist).
+// Rohzeit → Schnittzeit (null, wenn die Stelle herausgeschnitten ist). Sucht den Bereich, der t enthält, auch bei umgestellten Bereichen.
 export function schnittZeit(keep, t) {
   let vorher = 0;
-  for (const [a, b] of keep) { if (t < a) return null; if (t <= b) return vorher + (t - a); vorher += b - a; }
+  for (const [a, b] of keep) { if (t >= a && t <= b) return vorher + (t - a); vorher += b - a; }
   return null;
 }
+const bereichVon = (keep, t) => keep.findIndex(([a, b]) => t >= a && t <= b);
+export const umgestellt = keep => keep.some(([a], i) => i && a < keep[i - 1][1]);
 
 // ---------- vorbereiten ----------
 export async function vorbereiten(project, opts = {}) {
@@ -195,7 +199,7 @@ export function woerterUmrechnen(project, keep, tempo = 1) {
   const roh = path.join(project, 'woerter-roh'), grenzen = J(path.join(roh, 'chunks.json'));
   const out = path.join(project, 'word-alignment-turbo');
   fs.mkdirSync(out, { recursive: true });
-  const segmente = [];
+  const segmente = [], bereich = new Map();   // Token → Index des Bereichs in keep (nur für umgestellte Bereiche gebraucht)
   grenzen.forEach(([a], i) => {
     const data = J(path.join(roh, `part-${i}.json`));
     for (const seg of data.transcription) {
@@ -207,13 +211,24 @@ export function woerterUmrechnen(project, keep, tempo = 1) {
         if (m === null) continue;
         const dv = m - mitte;   // gleicher Versatz für Anfang, Ende und DTW-Punkt des Tokens; danach in die beschleunigte Zeit
         tokens.push({ ...t, offsets: { from: Math.max(0, Math.round((von + dv) / tempo * 1000)), to: Math.max(0, Math.round((bis + dv) / tempo * 1000)) }, t_dtw: t.t_dtw >= 0 ? Math.round(m / tempo * 100) : t.t_dtw });
+        bereich.set(tokens.at(-1), bereichVon(keep, mitte));
       }
       // Ein Wort beginnt mit Leerzeichen; fällt der Wortanfang weg, darf der Rest nicht an das vorige Wort anwachsen.
-      const lex = tokens.filter(t => !(t.id >= 50257 || t.text.startsWith('[_')));
-      if (lex.length && !/^\s/.test(lex[0].text)) lex[0].text = ' ' + lex[0].text;
-      if (lex.length) segmente.push({ ...seg, tokens });
+      // Umgestellte Bereiche: ein Whisper-Segment kann zwei Bereiche berühren, die jetzt an verschiedenen Stellen stehen.
+      // Dann je Bereich ein eigenes Segment; unten nach Schnittzeit sortiert.
+      const teile = [];
+      if (umgestellt(keep)) for (const t of tokens) { const sonder = !bereich.has(t), r = sonder ? teile.at(-1)?.r : bereich.get(t);
+        if (!teile.length || (!sonder && r !== teile.at(-1).r)) teile.push({ r, tokens: [] }); teile.at(-1).tokens.push(t); }
+      for (const tt of teile.length ? teile.map(x => x.tokens) : [tokens]) {
+        const lex = tt.filter(t => !(t.id >= 50257 || t.text.startsWith('[_')));
+        if (lex.length && !/^\s/.test(lex[0].text)) lex[0].text = ' ' + lex[0].text;
+        if (lex.length) segmente.push({ ...seg, tokens: tt });
+      }
     }
   });
+  // Sortiert nach dem DTW-Zeitpunkt des ersten Wortes: offsets.from liegt bei Whisper oft Sekunden daneben (Wiesbaden-Vlog 19.10.2026).
+  const erstes = s => { const t = s.tokens.find(t => !(t.id >= 50257 || t.text.startsWith('[_'))); return t.t_dtw >= 0 ? t.t_dtw * 10 : t.offsets.from; };
+  if (umgestellt(keep)) segmente.sort((x, y) => erstes(x) - erstes(y));
   fs.writeFileSync(path.join(out, 'part-0.json'), JSON.stringify({ transcription: segmente, umgerechnet: 'aus woerter-roh über schnitt.json (vorbereiten.mjs)' }));
   fs.writeFileSync(path.join(out, 'chunks.json'), JSON.stringify([[0, keep.reduce((s, [a, b]) => s + b - a, 0) / tempo]], null, 2));
 }
