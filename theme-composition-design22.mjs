@@ -82,6 +82,9 @@ export function planZooms22({ resets, blocked, faceWidth, closeFrom, duration })
   return zooms;
 }
 
+// 15: Höchster Maßstab beim Pop des Schlagworts (55 → 100 %, Abfedern): 0,55 + 0,45 · max y(Kurve) ≈ 1,045, mit Reserve für die Drehung −3°.
+const SW_UEBERSCHWINGEN = 1.06;
+
 // ---------- Layout ----------
 // ctx: { measure, heads(a,b) → [{x,y,w,h}], errors, notes, duration, followers }
 export function layoutDesign22(input, ctx) {
@@ -110,6 +113,23 @@ export function layoutDesign22(input, ctx) {
   const e = input.einstieg, eh1 = mitVersatz(h1Fit(e.h1));
   const einstieg = { h1: eh1, end: e.end };
   if (e.h2?.length) { h2Chk('einstieg', e.h2); einstieg.h2 = { lines: e.h2, top: Math.round(250 + (eh1.versatz || 0) + h1H(eh1) + 24) }; }
+  // Plan-Option einstieg.logo {datei, hoehe, breite, karte} (Abdullahs Wunsch 12.10.2026, HHU Rating: „Rating HHU, aber wirklich
+  // das Logo rein“): Logo neben der Einstiegs-H2 in einer Reihe (Abstand 24 px), die Reihe als Gruppe auf x = 540. Ohne H2 steht
+  // es 24 px unter der H1. karte: true setzt es auf eine weiße Fläche mit Rand und hartem Schatten wie die Sprechblase
+  // (Rand Tinte 4, Radius 12, Schatten 6, Innenabstand 6/12), damit ein farbiges Logo auf unruhigem Hintergrund lesbar bleibt.
+  if (e.logo) {
+    const l = e.logo, kw = l.karte ? 2 * (12 + 4) : 0, kh = l.karte ? 2 * (6 + 4) : 0;
+    if (!l.datei?.startsWith('assets/') || /\s/.test(l.datei)) errors.push(`Einstiegslogo: datei muss unter assets/ liegen und darf keine Leerzeichen enthalten: ${l.datei}`);
+    const boxW = l.breite + kw, boxH = l.hoehe + kh, h2w = einstieg.h2 ? Math.max(...e.h2.map(t => A(t, 58, 800))) + 56 : 0;
+    const rowW = (einstieg.h2 ? h2w + 24 : 0) + boxW + (l.karte ? 6 : 0);
+    if (rowW > 864) errors.push(`Einstieg: H2 und Logo zusammen breiter als 864 px (${Math.round(rowW)})`);
+    const rowTop = einstieg.h2 ? einstieg.h2.top : Math.round(250 + (eh1.versatz || 0) + h1H(eh1) + 24);
+    const rowH = Math.max(einstieg.h2 ? h2H(e.h2) : 0, boxH);
+    const dy = einstieg.h2 ? Math.round((h2H(e.h2) - boxH) / 2) : 0;
+    const hb = hits({ x: 540 - rowW / 2, y: rowTop, w: rowW, h: rowH + (l.karte ? 6 : 0) }, 0, e.end);
+    if (hb.length) ctx.warnings.push(`Einstiegslogo berührt Kopf/Kappe (${hb.length} Stichproben)`);
+    einstieg.logo = { src: l.datei, height: l.hoehe, width: l.breite, karte: !!l.karte, top: rowTop, dy };
+  }
 
   // 8: Kapitel. Gruppenhöhe = Zahl 140 px (Zeilenhöhe 1). Mit Pillen Oberkante 270, sonst 300.
   const KAP_H = 140;
@@ -183,7 +203,9 @@ export function layoutDesign22(input, ctx) {
 
   // 10: Schlagwort 120–160 px, ≤ 864 px inkl. Kontur 9, Standzeit 0,8–1,3 s, höchstens zweimal.
   const schlagworte = (input.schlagworte || []).map(s => {
-    const t = upper(s.wort), size = Math.min(160, Math.floor((864 - 18) / A(t, 1, 900, 125)));
+    // Pop 55 → 100 % mit Abfedern schwingt auf etwa 104,5 % über (Kurve 0,34/1,56/0,64/1); DESIGN.md 2 gilt auch während der Animation.
+    // Seit 12.10.2026 deshalb für den Höchststand bemessen (Befund HHU Rating: „NORMAL“ 893 px breit und links bei x 87).
+    const t = upper(s.wort), size = Math.min(160, Math.floor((864 - 18) / SW_UEBERSCHWINGEN / A(t, 1, 900, 125)));
     if (size < 120) errors.push(`Schlagwort zu lang für 120 px: ${t}`);
     const d = s.end - s.start; if (d < 0.8 - 1e-6 || d > 1.3 + 1e-6) errors.push(`Schlagwort ${s.id}: Standzeit ${d.toFixed(2)} s`);
     return { id: s.id, text: t, fontSize: size, width: Math.round(A(t, size, 900, 125)), start: s.start, end: s.end };
@@ -191,7 +213,9 @@ export function layoutDesign22(input, ctx) {
   if (schlagworte.length > 2) errors.push('Schlagwort höchstens zweimal pro Video (DESIGN.md 1)');
 
   // 11: Grafik mit Green Screen.
-  const grafiken = (input.grafiken || []).map(g => chart22(g, { A, errors }));
+  const grafiken = (input.grafiken || []).map(g => g.karte?.art === 'bewertung' ? bewertung22(g, { A, errors }) : chart22(g, { A, errors }));
+  // Grafik ohne Green Screen (hintergrund: false, ohne person): Karte über dem Kamerabild, darf Kopf und Kappe nicht berühren.
+  for (const g of grafiken.filter(g => g.ohneHintergrund && !g.person)) { const hb = hits({ x: 150, y: 270, w: 792, h: g.height + 12 }, g.start, g.end); if (hb.length) errors.push(`Grafik ${g.id} ohne Green Screen verdeckt Kopf/Kappe (Kopf ab y ${Math.round(Math.min(...hb.map(h => h.y)))}): Karte kürzen oder person setzen`); }
 
   // 12: Randnotiz.
   const kapBottom = t => { const k = kapitel.find(k => k.start <= t && t < k.end); const x = h1.find(k => k.start <= t && t < k.end); return k ? k.top + k.height : x ? 250 + (x.versatz || 0) + h1H(x) : t < einstieg.end ? 250 + (eh1.versatz || 0) + h1H(eh1) : 250; };
@@ -329,6 +353,39 @@ ${legend}${labels}</svg>`;
   return { id: g.id, start: g.start, end: g.end, drawAt, cmpAt: g.vergleichAb ?? drawAt, circleAt: g.kreisAb ?? r2(drawAt + 1), title: c.titel, height, svg, person: g.person, labels: (c.beschriftungen || []).map((l, i) => ({ id: `${g.id}-b${i}`, at: l.at })).filter(l => l.at != null) };
 }
 
+// Bewertungskarte (Plan-Option karte.art "bewertung", Abdullahs Wunsch 12.10.2026, Video HHU Rating): je Zeile Beschriftung, Spur
+// und Wert. Formen aus DESIGN.md 11: die volle Skala als Vergleichslinie (Tinte 6, gepunktet), der Wert als Hauptlinie (Blau 9 auf
+// Tinte 15, runde Enden), Gesamtzeile unter einer Linie (Tinte 4) mit handgezeichnetem Kreis um den Wert. Karte, Zeiten und Kurven
+// wie die Liniengrafik; titel ist hier optional (ohne Titel ist die Karte 53 px kürzer). zeilen[].notiz: kleine Zeile darunter.
+// zeilen[].at: die Zeile erscheint erst am gesprochenen Wort (14 px von unten, 0,22 s) und zeichnet ihre Linie 0,1 s danach in 1,0 s.
+// hintergrund: false lässt Off-White und Seigaiha weg (Karte über dem Kamerabild, ohne person darf sie den Kopf nicht berühren).
+// Zeilenmaße so knapp, dass sieben Zeilen samt Notiz ohne Titel über dem Kopf bleiben (HHU Rating: Karte bis y 620, Kopf ab 634).
+const BW = { zeile: 34, schrift: 26, notiz: 18, notizH: 20, gesamt: 42, gesamtSchrift: 32, trenner: 12, spalte: 16 };
+function bewertung22(g, { A, errors }) {
+  const c = g.karte, max = c.skala ?? 5, W = 700, rows = c.zeilen || [], ges = c.gesamt;
+  const fmt = v => String(v).replace('.', ',') + '/' + max;
+  const labW = Math.ceil(Math.max(...rows.map(r => A(r.text, BW.schrift, 800)), ges ? A(ges.text, BW.gesamtSchrift, 800) : 0)) + 4;
+  const valW = Math.ceil(Math.max(...rows.map(r => A(fmt(r.wert), BW.schrift, 800)), ges ? A(fmt(ges.wert), BW.gesamtSchrift, 800) : 0)) + 4;
+  const T = W - labW - valW - 2 * BW.spalte;
+  if (T < 200) errors.push(`Grafik ${g.id}: Spur nur ${Math.round(T)} px breit (Beschriftungen kürzen)`);
+  for (const r of [...rows, ...(ges ? [ges] : [])]) if (!(r.wert >= 0 && r.wert <= max)) errors.push(`Grafik ${g.id}: Wert ${r.wert} außerhalb 0–${max}`);
+  for (const r of rows) if (r.notiz && A(r.notiz, BW.notiz, 700) > W) errors.push(`Grafik ${g.id}: Notiz breiter als 700 px: ${r.notiz}`);
+  if (c.titel && A(c.titel, 34, 800) > W) errors.push(`Grafik ${g.id}: Titel breiter als 700 px`);
+  const spur = (v, cls = 'main-line') => { const x0 = 9, x1 = T - 9, xv = Math.max(x0 + 0.01, x0 + (x1 - x0) * v / max).toFixed(1);
+    return `<svg class="bw-track" width="${T}" height="30" viewBox="0 0 ${T} 30" overflow="visible"><path class="cmp-line" d="M ${x0} 15 L ${x1} 15" fill="none" stroke="${C.ink}" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 12"/>`
+      + [[C.ink, 15], [C.blue, 9]].map(([s, w]) => `<path class="${cls}" d="M ${x0} 15 L ${xv} 15" pathLength="1" fill="none" stroke="${s}" stroke-width="${w}" stroke-linecap="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>`).join('') + '</svg>'; };
+  const zeile = (r, h, cls = '', id = '') => `<div class="bw-row${cls}"${id ? ` id="${id}"` : ''} style="height:${h}px"><span class="bw-lab" style="width:${labW}px">${escEmoji(r.text)}</span>${spur(r.wert, id ? 'late-line' : 'main-line')}<span class="bw-val" style="width:${valW}px">${esc(fmt(r.wert))}${cls ? kreis : ''}</span></div>`;
+  // Handgezeichneter Kreis wie bei der Liniengrafik, auf die Breite des Werts gezogen.
+  const sx = (valW / 2 + 18) / 42, sy = 0.82, P = (x, y) => `${(x * sx).toFixed(1)} ${(y * sy).toFixed(1)}`;
+  const kreis = `<svg class="bw-kreis" width="2" height="2" viewBox="-1 -1 2 2" overflow="visible"><path class="hl-circle" d="M ${P(-32, 25)} C ${P(-46, -3)} ${P(-20, -29)} ${P(6, -27)} C ${P(34, -25)} ${P(46, 3)} ${P(34, 25)} C ${P(22, 45)} ${P(-12, 43)} ${P(-26, 27)} C ${P(-34, 17)} ${P(-28, 1)} ${P(-14, -7)}" pathLength="1" fill="none" stroke="${C.ink}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/></svg>`;
+  const html = `<div class="bw">${rows.map((r, i) => zeile(r, BW.zeile, '', r.at != null ? `${g.id}-z${i}` : '') + (r.notiz ? `<div class="bw-notiz" style="height:${BW.notizH}px;padding-left:${labW + BW.spalte}px">${escEmoji(r.notiz)}</div>` : '')).join('')}${ges ? `<div class="bw-sep"></div>${zeile(ges, BW.gesamt, ' bw-ges')}` : ''}</div>`;
+  const inhalt = rows.length * BW.zeile + rows.filter(r => r.notiz).length * BW.notizH + (ges ? BW.trenner + BW.gesamt : 0);
+  const height = Math.round(6 + 26 + (c.titel ? 34 * 1.2 + 12 : 0) + inhalt + 22 + 6);
+  if (270 + height + 12 > 900) errors.push(`Grafik ${g.id}: Karte samt Schatten bis y ${270 + height + 12} (rechts ab x 930 unter y 900 gesperrt)`);
+  const drawAt = g.zeichnenAb ?? r2(g.start + 0.3);
+  return { id: g.id, start: g.start, end: g.end, drawAt, cmpAt: g.vergleichAb ?? drawAt, circleAt: g.kreisAb ?? r2(drawAt + 1), title: c.titel || null, height, svg: html, person: g.person, labels: [], spaet: rows.map((r, i) => r.at != null ? { id: `${g.id}-z${i}`, at: r.at } : null).filter(Boolean), ...(g.hintergrund === false ? { ohneHintergrund: true } : {}) };
+}
+
 // 12: Randnotiz. Archivo 800 46 px, Zeilenhöhe 1,3, Kontur 4, Wortabstand +4; Durchstreichen Pink 5 auf Tinte 11, Mitte 54 %,
 // 8 px Überstand; alt zu neu 22 px; Zahlen der neuen Zeile Gochi Hand 58 px Blau Kontur 5; Oberkante ≥ 60 px unter der Überschrift, Regel 430.
 function note22(n, { A, G, heads, errors, top0 }) {
@@ -372,12 +429,15 @@ export function makeDesign22Composition(plan, opts = {}) {
   const html = [];
   // Grafik: Hintergrund (Off-White + Seigaiha), Karte, Person (eigene Alpha-Ebene) — unter den oberen Texten und Untertiteln.
   const seig = `<svg width="1080" height="1920" style="position:absolute;inset:0"><defs><pattern id="seigaiha" width="80" height="40" patternUnits="userSpaceOnUse"><g fill="${C.off}" stroke="${C.ink}" stroke-width="2.5">${[[40, 0], [0, 20], [80, 20], [40, 40]].map(([x, y]) => [40, 31, 22, 13, 5].map(r => `<circle cx="${x}" cy="${y}" r="${r}"/>`).join('')).join('')}</g></pattern></defs><rect width="1080" height="1920" fill="${C.off}"/><rect width="1080" height="1920" fill="url(#seigaiha)" opacity="0.12"/></svg>`;
-  for (const g of grafiken) html.push(`<div ${clip(g.id + '-bg', g.start, g.end, 10, 'gs-bg')} style="inset:0">${seig}</div>`,
-    `<div ${clip(g.id, g.start, g.end, 11, 'grafik')} style="left:150px;top:270px;width:780px;height:${g.height}px"><div class="card"><div class="card-title">${escEmoji(g.title)}</div>${g.svg}</div></div>`,
+  for (const g of grafiken) html.push(g.ohneHintergrund ? '' : `<div ${clip(g.id + '-bg', g.start, g.end, 10, 'gs-bg')} style="inset:0">${seig}</div>`,
+    `<div ${clip(g.id, g.start, g.end, 11, 'grafik')} style="left:150px;top:270px;width:780px;height:${g.height}px"><div class="card">${g.title ? `<div class="card-title">${escEmoji(g.title)}</div>` : ''}${g.svg}</div></div>`,
     ...(g.person ? [] : []), g.person ? `<video id="${g.id}-person" class="clip" src="${g.person}" data-start="${lage(g.start, g.end)[0]}" data-duration="${lage(g.start, g.end)[1]}"${mediaStart(g.start)} data-track-index="12" data-volume="0" muted playsinline style="position:absolute;inset:0;width:1080px;height:1920px"></video>` : '');
   const top = [];
   top.push(`<div ${clip('einstieg-h1', 0, e.end, 2, 'h1', ' data-einstieg="1"')} style="top:${250 + (e.h1.versatz || 0)}px;font-size:${e.h1.fontSize}px;opacity:1"><span class="h1" style="visibility:visible">${lines(e.h1.lines)}</span></div>`);
-  if (e.h2) top.push(`<div ${clip('einstieg-h2', 0, e.end + 0.06, 3, 'h2', ' data-einstieg="1"')} style="top:${e.h2.top}px;opacity:1"><span class="h2" style="visibility:visible">${lines(e.h2.lines)}</span></div>`);
+  // Einstiegslogo neben der H2 (gleiches Element, blendet mit ihr aus) oder allein unter der H1.
+  const eLogo = l => `<span class="e-logo${l.karte ? ' e-logo-karte' : ''}" style="visibility:visible;margin-top:${l.dy}px"><img src="${esc(l.src)}" style="height:${l.height}px;width:${l.width}px" alt=""></span>`;
+  if (e.h2) top.push(`<div ${clip('einstieg-h2', 0, e.end + 0.06, 3, 'h2', ' data-einstieg="1"')} style="top:${e.h2.top}px;opacity:1"><span class="h2" style="visibility:visible">${lines(e.h2.lines)}</span>${e.logo ? eLogo(e.logo) : ''}</div>`);
+  else if (e.logo) top.push(`<div ${clip('einstieg-h2', 0, e.end + 0.06, 3, 'h2', ' data-einstieg="1"')} style="top:${e.logo.top}px;opacity:1">${eLogo(e.logo)}</div>`);
   // 17: Kapitel mit Buchcover. Platzhalter in der Gruppe hält den Platz des kleinen Covers; das Cover selbst steht absolut und
   // wandert vom großen in den kleinen Zustand.
   const buchHtml = k => { const b = k.buch; return `<div ${clip(k.id, k.start, k.end, 4, 'kapitel', ' data-buch="1"')} style="top:${k.top}px;height:${k.height}px"><span class="kap kap-buch"><span class="buch-slot" style="width:${b.small.w}px;height:${k.height}px"></span><span class="buch-col" style="width:${b.colW}px"><span class="buch-row" id="${k.id}-title">${k.nummer ? `<span class="kap-num buch-num">${esc(k.nummer)}</span>` : ''}<span class="buch-title">${lines(b.lines)}</span></span>${b.de ? `<span class="buch-de" id="${k.id}-de">${(Array.isArray(b.de) ? b.de : [b.de]).map(l => `<span class="ln">${escEmoji(l)}</span>`).join('')}</span>` : ''}${b.autor ? `<span class="buch-autor" id="${k.id}-autor">${escEmoji(b.autor)}</span>` : ''}</span></span><span class="buch-cw" id="${k.id}-cw" style="left:${b.small.left}px;top:${b.small.top}px;width:${b.small.w}px;height:${b.small.h}px"><img class="buch-cover" id="${k.id}-cover" src="${esc(b.src)}" alt=""></span></div>`; };
@@ -433,11 +493,17 @@ export function makeDesign22Composition(plan, opts = {}) {
 .bal-bed{position:absolute;left:0;top:58px;width:700px;height:26px;border-radius:13px;background:${C.off};box-shadow:0 0 0 3px ${C.ink};overflow:hidden}
 .bal-fill{position:absolute;top:0;height:100%;background:${C.blue};transform-origin:0 50%;transform:scaleX(0)}
 .bal-label{position:absolute;top:0;font-weight:800;font-size:40px;line-height:1.2;${stroke(5)};white-space:nowrap}
-.logo{display:inline-flex;align-items:center;gap:32px}.logo img{display:block}
+.logo{display:inline-flex;align-items:center;gap:32px}.logo img{display:block}${e.logo ? `
+.e-logo{display:inline-block;margin-left:${e.h2 ? 24 : 0}px}.e-logo img{display:block}
+.e-logo-karte{padding:6px 12px;background:${C.white};border:4px solid ${C.ink};border-radius:12px;box-shadow:6px 6px 0 ${C.ink};transform:rotate(-2deg)}` : ''}
 [data-kind=grafik]{transform-origin:50% 50%}
 .card{width:780px;height:100%;padding:26px 34px 22px;background:${C.white};border:6px solid ${C.ink};border-radius:24px;box-shadow:12px 12px 0 ${C.ink};color:${C.ink};display:flex;flex-direction:column;gap:12px}
 .card-title{font-weight:800;font-size:34px;line-height:1.2;white-space:nowrap}
-.card text{font-family:"ABI Archivo";font-weight:700;font-size:24px;fill:${C.ink}}
+.card text{font-family:"ABI Archivo";font-weight:700;font-size:24px;fill:${C.ink}}${grafiken.some(g => /class="bw"/.test(g.svg)) ? `
+.bw{display:flex;flex-direction:column}.bw-row{display:flex;align-items:center;gap:${BW.spalte}px;font-weight:800;font-size:${BW.schrift}px;line-height:1;white-space:nowrap}
+.bw-lab,.bw-val,.bw-track{flex:none;display:block}.bw-lab .emoji{margin-right:.25em}.bw-val{position:relative;text-align:right}.bw-ges{font-size:${BW.gesamtSchrift}px}
+.bw-notiz{font-weight:700;font-size:${BW.notiz}px;line-height:1;white-space:nowrap;margin-top:-4px}
+.bw-sep{height:4px;margin:4px 0;border-radius:2px;background:${C.ink}}.bw-kreis{position:absolute;left:50%;top:50%}` : ''}
 .cap-line{display:inline-block;font-weight:800;font-size:64px;line-height:1.12;white-space:nowrap;${stroke(6)}}.cap-line>span{color:${C.white}}
 .follow{display:inline-block;font-weight:800;font-size:50px;line-height:1.15;white-space:nowrap;${stroke(5)}}
 [data-kind=outro-card]{transform-origin:0 100%}
@@ -456,7 +522,7 @@ export function makeDesign22Composition(plan, opts = {}) {
   return `<!doctype html><html lang="de"><head><meta charset="utf-8"><title>${esc(plan.title || 'Video')}</title><style>${css}</style><script src="vendor/gsap.min.js"></script></head><body>
 <main id="root" data-composition-id="root" data-width="${opts.vorschau ? 540 : 1080}" data-height="${opts.vorschau ? 960 : 1920}" data-fps="30" data-duration="${opts.abschnitt ? LEN : duration}"${opts.vorschau ? ' style="zoom:.5"' : ''}>
 <video id="footage" class="clip" src="media.mp4" data-start="0" data-duration="${opts.abschnitt ? LEN : duration}"${T0 ? ` data-media-start="${+T0.toFixed(4)}"` : ''} data-track-index="0" data-volume="0" muted playsinline></video>
-${opts.abschnitt ? '' : `<audio id="voice" class="clip" src="media.mp4" data-start="0" data-duration="${duration}" data-track-index="1" data-volume="1"></audio>`}
+${opts.abschnitt ? '' : `<audio id="voice" class="clip" src="${plan.tonQuelle || 'media.mp4'}" data-start="0" data-duration="${duration}" data-track-index="1" data-volume="1"></audio>`}
 ${html.join('\n')}
 <div id="top">${top.join('\n')}</div>
 ${caps}
@@ -496,7 +562,7 @@ const wipe=(s,at,dur,m)=>{const vis='inset(-'+m+'px -'+m+'px -'+m+'px -'+m+'px)'
 // sprang jede Linie dadurch von unsichtbar auf fertig (Fast 30, 27.09.2026: Durchstreichen und ETF-Linie „zu schnell“).
 const draw=(s,at,dur)=>tl.to(s,{attr:{'stroke-dashoffset':0},duration:dur,ease:OUT},at);
 // 5: Einstieg steht ab dem ersten Bild; H1 blendet aus, H2 0,06 s später.
-show('#einstieg-h1',0,D.e.end);out('#einstieg-h1',D.e.end);if(D.e.h2){show('#einstieg-h2',0,D.e.end+.06);out('#einstieg-h2',D.e.end+.06);}
+show('#einstieg-h1',0,D.e.end);out('#einstieg-h1',D.e.end);if(D.e.h2||D.e.logo){show('#einstieg-h2',0,D.e.end+.06);out('#einstieg-h2',D.e.end+.06);}
 // 15: H1 im Video Stoß 112 → 100 %, 0,22 s (Referenz h1in: zugleich Deckkraft 0 → 1).
 for(const h of D.h1){show('#'+h.id,h.start,h.end);tl.set('#'+h.id+' .h1',{opacity:0,scale:1.12},0);tl.fromTo('#'+h.id+' .h1',{opacity:0,scale:1.12},{opacity:1,scale:1,duration:.22,ease:OUT,immediateRender:false},h.start);out('#'+h.id,h.end);}
 // 15: H2 wischt in 0,28 s von links auf; 0,06 s nach einer gleichzeitig beginnenden H1.
@@ -524,7 +590,7 @@ for(const s of D.s){show('#'+s.id,s.start,s.end);pop('#'+s.id+' .sw-pop',s.start
 // Ausblenden anderer oberer Ebenen während Schlagwort und Grafik (über die Sichtbarkeit, Deckkraft-Animationen bleiben unberührt).
 for(const h of D.hide){tl.set(h.sel+' > *',{visibility:'hidden'},h.from);if(h.to!=null)tl.set(h.sel+' > *',{visibility:'visible'},h.to);}
 // 15: Grafik. Karte Pop 90 → 100 % 0,35 s; Hauptlinie 1,0 s; Vergleichslinie blendet 0,30 s ein; Kreis danach 0,30 s.
-for(const g of D.g){show('#'+g.id+'-bg',g.start,g.end);show('#'+g.id,g.start,g.end);pop('#'+g.id,g.start,.9,.35);draw('#'+g.id+' .main-line',g.drawAt,1);tl.set('#'+g.id+' .cmp-line',{opacity:0},0);tl.to('#'+g.id+' .cmp-line',{opacity:1,duration:.3,ease:OUT},g.cmpAt);draw('#'+g.id+' .hl-circle',g.circleAt,.3);for(const x of g.labels){tl.set('#'+x.id,{opacity:0},0);tl.to('#'+x.id,{opacity:1,duration:.22,ease:OUT},x.at);}}
+for(const g of D.g){if(!g.ohneHintergrund)show('#'+g.id+'-bg',g.start,g.end);show('#'+g.id,g.start,g.end);pop('#'+g.id,g.start,.9,.35);draw('#'+g.id+' .main-line',g.drawAt,1);tl.set('#'+g.id+' .cmp-line',{opacity:0},0);tl.to('#'+g.id+' .cmp-line',{opacity:1,duration:.3,ease:OUT},g.cmpAt);draw('#'+g.id+' .hl-circle',g.circleAt,.3);for(const x of g.labels){tl.set('#'+x.id,{opacity:0},0);tl.to('#'+x.id,{opacity:1,duration:.22,ease:OUT},x.at);}for(const z of g.spaet||[]){up('#'+z.id,z.at);draw('#'+z.id+' .late-line',z.at+.1,1);}}
 // 7: Untertitel hart; genau ein Wort blau; das letzte bleibt blau, bis die nächste Gruppe beginnt.
 D.c.forEach((c,i)=>{show('#cap-'+i,c.start,c.end);c.words.forEach((w,j)=>{const on=j?w.start:c.start,off=j<c.words.length-1?c.words[j+1].start:c.end;tl.set('#w-'+i+'-'+j,{color:'${C.blue}'},on);tl.set('#w-'+i+'-'+j,{color:'${C.white}'},off);});});
 // 15: Zoomfahrten, nur Videoebene, linear, harter Rücksprung.

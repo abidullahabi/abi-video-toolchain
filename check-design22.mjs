@@ -84,7 +84,8 @@ export async function checkDesign22(project, { step = 1 } = {}) {
       const near = (arr, t) => arr?.length ? arr.reduce((b, x) => Math.abs(x.time - t) < Math.abs(b.time - t) ? x : b) : null;
       const schaetzung = q => ({ x: q.x - 0.12 * q.width, y: q.y - 0.5 * q.height, w: 1.24 * q.width, h: 1.5 * q.height });
       const heads = t => { const p = near(profil, t); if (p && Math.abs(p.time - t) <= 0.26) return (p.faces || []).map(q => kopfBox(q, p.time)); const f = near(faces, t); return !f || Math.abs(f.time - t) > 0.26 ? [] : (f.faces || []).map(schaetzung); };
-      const green = t => (plan.grafiken || []).some(g => t >= g.start && t < g.end);
+      // Grafik ohne Green Screen (hintergrund: false, ohne person; seit 12.10.2026) liegt über dem Kamerabild: Kopfprüfung läuft weiter.
+      const green = t => (plan.grafiken || []).some(g => t >= g.start && t < g.end && !(g.ohneHintergrund && !g.person));
       const frames = Math.ceil(plan.duration * 30); let maxLayers = 0, capFrames = 0;
       for (let f = 0; f < frames; f += step) {
         const t = f / 30; tl.seek(t, false);
@@ -103,7 +104,8 @@ export async function checkDesign22(project, { step = 1 } = {}) {
           if ((deck >= 0.2 && !ausblenden && b.y < 249.5) || b.y + b.h > 1660.5 || b.x < 89.5) err('gesperrte_zone', { id: el.id, t: +t.toFixed(2), b });
           if (deck >= 0.2 && b.y + b.h > 900.5 && b.x + b.w > 930.5) err('aktionsleiste', { id: el.id, t: +t.toFixed(2), b });
           if (deck >= 0.2 && b.y < 900 && !['caption', 'outro-card', 'bubble'].includes(k) && (b.x < 107.5 || b.x + b.w > 972.5)) err('obere_zone', { id: el.id, t: +t.toFixed(2), b });
-          if (CENTER[k]) { const c = R(el.querySelector(CENTER[k])); if (Math.abs(c.x + c.w / 2 - 540) > 0.75) err('mittelachse', { id: el.id, mitte: +(c.x + c.w / 2).toFixed(2) }); }
+          // Einstiegslogo neben der H2 (seit 12.10.2026): H2 und Logo stehen als Gruppe auf x = 540, gemessen wird die ganze Reihe.
+          if (CENTER[k]) { const lg = k === 'h2' ? el.querySelector('.e-logo') : null, hb = el.querySelector(CENTER[k]) || lg; let c = R(hb); if (lg && hb !== lg) { const d = R(lg), x0 = Math.min(c.x, d.x), x1 = Math.max(c.x + c.w, d.x + d.w); c = { ...c, x: x0, w: x1 - x0 }; } if (Math.abs(c.x + c.w / 2 - 540) > 0.75) err('mittelachse', { id: el.id, mitte: +(c.x + c.w / 2).toFixed(2) }); }
           if (k === 'pillen' && el.dataset.layout === 'row') { const c = [...el.children], l = Math.min(...c.map(x => x.offsetLeft)), r = Math.max(...c.map(x => x.offsetLeft + x.offsetWidth)); if (Math.abs((l + r) / 2 - 540) > 0.75) err('mittelachse', { id: el.id, mitte: (l + r) / 2 }); }
           if (k === 'caption') {
             capFrames++;
@@ -123,7 +125,7 @@ export async function checkDesign22(project, { step = 1 } = {}) {
         // 8: H2 und Pillen nie gleichzeitig unter einem Kapitel.
         if (act.some(a => a.k === 'h2' && !a.id.startsWith('einstieg')) && act.some(a => a.k === 'pillen') && act.some(a => a.k === 'kapitel')) (ausnahme ? warn : err)(ausnahme ? 'ausnahme_h2_und_pillen' : 'h2_und_pillen', { t: +t.toFixed(2) });
         // 9/12: Pillen und Randnotiz nie über Kopf/Kappe; andere obere Elemente als Hinweis.
-        if (!green(t)) for (const h of heads(t)) for (const a of act) if (meet(a.b, h)) { if (['pillen', 'randnotiz'].includes(a.k)) err('kopf_verdeckt', { id: a.id, t: +t.toFixed(2) }); else if (!['caption', 'follow', 'outro-card', 'h1'].includes(a.k)) warn('kopf_beruehrt', { id: a.id, t: +t.toFixed(2), kopfOben: Math.round(h.y), unten: Math.round(a.b.y + a.b.h) }); }
+        if (!green(t)) for (const h of heads(t)) for (const a of act) if (meet(a.b, h)) { if (['pillen', 'randnotiz', 'grafik'].includes(a.k)) err('kopf_verdeckt', { id: a.id, t: +t.toFixed(2) }); else if (!['caption', 'follow', 'outro-card', 'h1'].includes(a.k)) warn('kopf_beruehrt', { id: a.id, t: +t.toFixed(2), kopfOben: Math.round(h.y), unten: Math.round(a.b.y + a.b.h) }); }
       }
       // 5: Einstieg am ersten Frame vollständig, ohne Animation.
       tl.seek(0, false);
