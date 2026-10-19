@@ -125,23 +125,28 @@ export async function vorbereiten(project, opts = {}) {
   const vTempo = tempo !== 1 ? `setpts=PTS/${tempo},` : '', aTempo = tempo !== 1 ? `atempo=${tempo},` : '';
 
   // 1. Kamerabild: in einem Durchgang aus dem Rohvideo (Schnitt, HDR→SDR, Hochkant, 30 fps, Farbkorrektur).
-  const kb = await schritt(project, 'vorbereiten: kamerabild', { eingaben: [meta.source, ...(keep ? ['schnitt.json'] : [])], werte: { grade: meta.farbkorrektur, KAMERABILD, v: 3, ...mitTempo }, ausgaben: ['media.mp4'] }, () => {
-    const v = [], a = [];
+  const kb = await schritt(project, 'vorbereiten: kamerabild', { eingaben: [meta.source, ...(keep ? ['schnitt.json'] : [])], werte: { grade: meta.farbkorrektur, KAMERABILD, v: 3, ...mitTempo, ...(keep && umgestellt(keep) ? { umgestellt: 1 } : {}) }, ausgaben: ['media.mp4'] }, () => {
+    const v = [], a = []; let eingaenge = 1;
     const hdr = meta.sourceVideo?.hdr ? 'zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,' : '';
     // Hochkant 1080 × 1920 nur, wenn die Aufnahme es nicht schon ist (spart einen Filterdurchgang je Bild).
     const sv = meta.sourceVideo || {}, passt = sv.width === 1080 && sv.height === 1920;
     const bild = `${hdr}${passt ? '' : 'scale=1080:1920:force_original_aspect_ratio=decrease:force_divisible_by=2,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,'}setsar=1,fps=${FPS}${grade ? ',' + grade : ',format=yuv420p'}`;
     let filter;
+    // Umgestellte Bereiche: Liest ein trim früher in der Rohzeit als das vorige, liefert ffmpeg aus demselben Eingang ein Bild
+    // mit Zeitsprung (fps füllte im Wiesbaden-Vlog 160 s auf, 19.10.2026). Jede aufsteigende Folge bekommt deshalb ihren
+    // eigenen Eingang; ohne Umstellung bleibt es bei einem Eingang (gleicher Befehl wie bisher).
+    const lauf = []; if (keep) keep.forEach(([s], i) => lauf.push(i && s < keep[i - 1][1] ? lauf[i - 1] + 1 : (lauf[i - 1] ?? 0)));
+    eingaenge = keep ? lauf.at(-1) + 1 : 1;
     if (keep) {
       keep.forEach(([s, e], i) => {
-        v.push(`[0:v:0]trim=start=${s}:end=${e},setpts=PTS-STARTPTS[v${i}]`);
-        a.push(`[0:a:0]atrim=start=${s}:end=${e},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=${(e - s - 0.005).toFixed(6)}:d=0.005[a${i}]`);
+        v.push(`[${lauf[i]}:v:0]trim=start=${s}:end=${e},setpts=PTS-STARTPTS[v${i}]`);
+        a.push(`[${lauf[i]}:a:0]atrim=start=${s}:end=${e},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,afade=t=out:st=${(e - s - 0.005).toFixed(6)}:d=0.005[a${i}]`);
       });
       filter = [...v, ...a, `${keep.map((_, i) => `[v${i}][a${i}]`).join('')}concat=n=${keep.length}:v=1:a=1[vc][ac]`, `[vc]${vTempo}${bild}[vout]`, `[ac]${aTempo}aresample=48000[aout]`].join(';\n');
     } else filter = `[0:v:0]${vTempo}${bild}[vout];[0:a:0]${aTempo}aresample=48000[aout]`;
     fs.writeFileSync(path.join(project, 'logs/kamerabild-filter.txt'), filter);
     const tmp = path.join(project, 'media.unfertig.mp4');
-    ff(['-y', '-filter_complex_threads', String(os.cpus().length), '-i', meta.source, '-filter_complex_script', path.join(project, 'logs/kamerabild-filter.txt'), '-map', '[vout]', '-map', '[aout]',
+    ff(['-y', '-filter_complex_threads', String(os.cpus().length), ...Array.from({ length: eingaenge }, () => ['-i', meta.source]).flat(), '-filter_complex_script', path.join(project, 'logs/kamerabild-filter.txt'), '-map', '[vout]', '-map', '[aout]',
       '-c:v', 'libx264', '-preset', KAMERABILD.preset, '-crf', String(KAMERABILD.crf), '-g', String(KAMERABILD.gop), '-profile:v', 'high', '-pix_fmt', 'yuv420p',
       '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-color_range', 'tv',
       '-c:a', 'aac', '-b:a', KAMERABILD.audio, '-ar', '48000', '-map_metadata', '-1', '-movflags', '+faststart', tmp], project, path.join(project, 'logs/kamerabild.log'));
