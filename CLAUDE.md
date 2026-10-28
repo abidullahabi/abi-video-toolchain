@@ -60,6 +60,7 @@ Schriften liegen in `templates/fonts/`, Modelle in `tools/models/` mit Herkunfts
 node pruefungen.mjs kollision    "<Quelldatei>"      # arbeitet eine andere Sitzung daran?
 node pruefungen.mjs auslieferung "<Projektordner>"   # liegt ein sauberer Gestaltungsbericht vor?
 node workflow.mjs doctor                             # Werkzeuge und Modelle vorhanden?
+node toolstack.mjs pruefen                           # Werkzeugversionen, Updates, Abstürze (Herkunft und Update-Verfahren: toolstack.json)
 ```
 
 Referenzprojekte aus `CONTENT_WORKFLOW.md` Abschnitt 12 nie ändern und nie darüber rendern.
