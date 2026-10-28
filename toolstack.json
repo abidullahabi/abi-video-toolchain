@@ -1,0 +1,82 @@
+{
+  "stand": "2026-10-28",
+  "werkzeuge": {
+    "whisper-cli": {
+      "pfad": "tools/bin/whisper-cli",
+      "versionArgs": [
+        "--version"
+      ],
+      "versionMuster": "whisper\\.cpp version: (\\S+)",
+      "github": "ggml-org/whisper.cpp",
+      "releaseNotes": "ggml-org/whisper.cpp",
+      "basis": "1.9.5",
+      "quelle": "selbst gebaut aus github.com/ggml-org/whisper.cpp, master-Commit 284029c07012d2000941a08d38a31ffb71f4734e (28.10.2026), Quellen in tools/whisper.cpp-master-284029c",
+      "build": "cmake 4.4.3 (tools/cmake-4.4.3-macos-universal): -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF -DGGML_METAL=ON -DGGML_METAL_EMBED_LIBRARY=ON -DGGML_BLAS=ON -DGGML_BLAS_VENDOR=Apple -DGGML_NATIVE=ON -DWHISPER_BUILD_TESTS=OFF, Ziel whisper-cli",
+      "warum": "Release 1.9.4 stürzte bei -dtw (Wort-Zeitstempel, live-clips) in median_filter ab (5 Absturzberichte am 26.10.2026). Fix: PR #4096, gemergt 19.10.2026, erst nach 1.9.5. Sobald ein Release nach 1.9.5 erscheint, auf dieses Release wechseln.",
+      "sha256": "0096de2e3d15f827d8a349d326e161b5226da1a2a0b560d03101c34ecbc8dc72",
+      "vorher": "tools/bin-alt/whisper-cli-1.9.4",
+      "test": "Live-05 (37,6 s): Text und alle 218 DTW-Token-Zeiten identisch zu 1.9.4, Laufzeit 4,4 s statt 5,4 s (erster Start 10 s wegen Metal-Shader-Kompilierung)",
+      "prozesse": [
+        "whisper-cli"
+      ],
+      "risiko": "gering: gleiche Modelle, Ergebnis gegen alte Version vergleichen"
+    },
+    "auto-editor": {
+      "pfad": "tools/bin/auto-editor",
+      "versionArgs": [
+        "--version"
+      ],
+      "versionMuster": "(\\d+\\.\\d+\\.\\d+)",
+      "github": "WyattBlue/auto-editor",
+      "releaseNotes": "WyattBlue/auto-editor",
+      "quelle": "github.com/WyattBlue/auto-editor Release 31.7.2, Datei auto-editor-macos-arm64",
+      "sha256": "874310a405c88c4d06b9ee7b60b3a4e59ecbb09cfecd56ff54f1bf712b3b776e",
+      "vorher": "tools/bin-alt/auto-editor-31.6.0",
+      "test": "workflow.mjs-Schnittbefehl auf Live-05 mit 3 eingefügten Pausen: Schnittlänge 28,87 s bei 31.6.0 und 31.7.2 identisch, beide decodieren sauber",
+      "prozesse": [
+        "auto-editor"
+      ],
+      "risiko": "gering: bringt eigenes ffmpeg mit, Schnittergebnis gegen alte Version vergleichen"
+    },
+    "hyperframes": {
+      "npm": "hyperframes",
+      "github": "heygen-com/hyperframes",
+      "releaseNotes": "heygen-com/hyperframes",
+      "quelle": "npm hyperframes, Version in package.json festgeschrieben",
+      "prozesse": [
+        "chrome-headless-shell"
+      ],
+      "risiko": "hoch: rendert jedes Video. Nur nach Vergleichsrender eines fertigen Clips (alt gegen neu, SSIM) übernehmen.",
+      "test": "0.8.34 -> 0.8.211: Live-05 (37,7 s) mit live-clips-Renderbefehl (high, 2 Worker, --sdr): Bild SSIM 0,9945 über alle 1130 Frames, optisch identisch; Lautheit -14,1 LUFS / LRA 4,0 bei beiden; Renderzeit 50 s statt 60 s",
+      "vorher": "0.8.34"
+    },
+    "ffmpeg": {
+      "pfad": "tools/bin/ffmpeg",
+      "versionArgs": [
+        "-version"
+      ],
+      "versionMuster": "ffmpeg version (\\S+)",
+      "github": "eugeneware/ffmpeg-static",
+      "basis": "6.1.1",
+      "quelle": "github.com/eugeneware/ffmpeg-static Release b6.1.1 (meldet sich als 6.0), arm64; hyperframes findet es über PATH (tools/bin)",
+      "upstream": {
+        "url": "https://evermeet.cx/ffmpeg/info/ffmpeg/release",
+        "feld": "version"
+      },
+      "sha256": "a90e3db6a3fd35f6074b013f948b1aa45b31c6375489d39e572bea3f18336584",
+      "prozesse": [
+        "ffmpeg",
+        "ffprobe"
+      ],
+      "risiko": "mittel bis hoch: hyperframes kodiert damit jedes Video. Nie allein tauschen, nur zusammen mit einem Vergleichsrender; Abdullah vorher fragen."
+    }
+  },
+  "verfahren": [
+    "1. werkzeug-status.json lesen und setzen (CLAUDE.md, Werkzeugcode). Steht dort in_arbeit mit anderem Agenten: nichts tun, nur berichten.",
+    "2. Nichts austauschen, während ein Render läuft (~/Library/Caches/abi-video-toolchain/render-sperre oder laufende hyperframes/ffmpeg/whisper-cli/auto-editor-Prozesse).",
+    "3. Neue Version neben der alten ablegen (tools/downloads/<name>-<version> bzw. Build-Ordner), Prüfsumme gegen die Release-Angabe prüfen.",
+    "4. Alt gegen neu am selben Material testen, mit den echten Aufrufen aus workflow.mjs bzw. dem live-clips-Skill. Ergebnis muss gleich oder erklärbar besser sein.",
+    "5. Alte Datei nach tools/bin-alt/<name>-<version> kopieren, neue einsetzen, toolstack.json (Quelle, sha256, vorher, test) aktualisieren.",
+    "6. Versionierte Dateien (toolstack.json, package.json, package-lock.json) auf eigenem Zweig committen, Test im Commit nennen, nach main, pushen. werkzeug-status.json wieder auf frei."
+  ]
+}
