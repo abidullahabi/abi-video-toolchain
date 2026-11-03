@@ -487,7 +487,9 @@ const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;'
 const escEmoji = s => esc(s).replace(EMOJI, m => `<span class="emoji">${m}</span>`);
 const stroke = w => `-webkit-text-stroke:${2 * w}px ${C.ink};paint-order:stroke fill`; // 4: sichtbare Außenbreite w
 
-// opts.vorschau: halbe Auflösung (540 × 960) nur für die Sichtung; der Inhalt wird unverändert mit zoom 0,5 gesetzt.
+// opts.vorschau: halbe Auflösung (540 × 960) nur für die Sichtung. #root hat dann 540 × 960, der Inhalt liegt unverändert
+// in einer Bühne mit 1080 × 1920, die transform: scale(.5) von der linken oberen Ecke aus verkleinert. (Früher zoom:.5 auf
+// #root: HyperFrames beschnitt #root vorher auf 540 × 960, im Video stand nur das linke obere Viertel, 12.10.2026.)
 export function makeDesign22Composition(plan, opts = {}) {
   const { duration, einstieg: e, kapitel = [], h1 = [], h2 = [], pillen = [], akronyme = [], schlagworte = [], grafiken = [], randnotizen = [], lebensbalken = [], logos = [], sprechblasen = [], captions = [], outro } = plan;
   if (!outro || !Number.isInteger(outro.followers) || outro.followers < 0) throw Error('Followerstand fehlt (DESIGN.md 14: follower-source.json).');
@@ -596,7 +598,7 @@ export function makeDesign22Composition(plan, opts = {}) {
 .ind i{width:12px;height:12px;border-radius:50%;background:${C.ink};display:block}.ind i:nth-child(2){opacity:.55}.ind i:nth-child(3){opacity:.3}
 `;
   return `<!doctype html><html lang="de"><head><meta charset="utf-8"><title>${esc(plan.title || 'Video')}</title><style>${css}</style><script src="vendor/gsap.min.js"></script></head><body>
-<main id="root" data-composition-id="root" data-width="${opts.vorschau ? 540 : 1080}" data-height="${opts.vorschau ? 960 : 1920}" data-fps="30" data-duration="${opts.abschnitt ? LEN : duration}"${opts.vorschau ? ' style="zoom:.5"' : ''}>
+<main id="root" data-composition-id="root" data-width="${opts.vorschau ? 540 : 1080}" data-height="${opts.vorschau ? 960 : 1920}" data-fps="30" data-duration="${opts.abschnitt ? LEN : duration}"${opts.vorschau ? ' style="width:540px;height:960px"><div id="vorschau-buehne" style="position:absolute;left:0;top:0;width:1080px;height:1920px;transform:scale(.5);transform-origin:0 0"' : ''}>
 <video id="footage" class="clip" src="media.mp4" data-start="0" data-duration="${opts.abschnitt ? LEN : duration}"${T0 ? ` data-media-start="${+T0.toFixed(4)}"` : ''} data-track-index="0" data-volume="0" muted playsinline></video>
 ${opts.abschnitt ? '' : `<audio id="voice" class="clip" src="${plan.tonQuelle || 'media.mp4'}" data-start="0" data-duration="${duration}" data-track-index="1" data-volume="1"></audio>`}
 ${html.join('\n')}
@@ -604,7 +606,7 @@ ${html.join('\n')}
 ${caps}
 ${outroHtml}
 ${bubbles}
-</main><script>${timeline22(plan, opts.abschnitt)}</script></body></html>`;
+${opts.vorschau ? '</div>' : ''}</main><script>${timeline22(plan, opts.abschnitt)}</script></body></html>`;
 }
 
 // 17 (Test): CSS und Zeitleiste der B-Roll-Fotokarten, nur eingefügt, wenn der Plan Bilder hat (alte Kompositionen bleiben bytegleich).
