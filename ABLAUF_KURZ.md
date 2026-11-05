@@ -104,11 +104,11 @@ Pfad zur MP4 (`exports/upload.mp4`), geprüftes Transkript, Beschreibung in `bes
    - Upload mit Längenprobe, Zernio-Prüfung, Einplanung für Instagram und TikTok (ein Beitrag, Europe/Berlin), Status „scheduled“ gegengelesen. Ein Termin in der Vergangenheit wird abgelehnt, weil Zernio sonst sofort veröffentlicht. Die Anfrage-ID steht im Projekt, eine Wiederholung erzeugt keinen Doppelpost.
    - Datei nach `04_Gepostet`, Rohvideo nach `Archiv/Rohvideos` (Zuordnungsprotokoll), Videomaterial nach `~/Löschbar`, `bearbeitung.status: "fertig"`, `git add`/`commit`/`push` des Projekts.
    Vorher prüfen, ohne etwas anzulegen: derselbe Befehl mit `--probe`.
-2. Notion „Master Contentplanung": Beschreibung ablegen, zurücklesen, Status Ready to Post, Post-ID eintragen.
+2. Notion „Master Contentplanung": Beschreibung ablegen, zurücklesen, Status `🚀 POSTED` (eingeplant zählt als gepostet, Abi 05.11.2026), Termin und Post-ID eintragen.
 3. Abdullah melden: Ablageort, Zernio-ID, geplante Zeit, frei gewordene GB. Dauer je Schritt aus `logs/zeiten.json` ins Testprotokoll.
 
 Ohne Schlüssel (Ersatzweg): Upload-Token über `media_generate_upload_link`, `node ausliefern.mjs … --token <token>`, dann `posts_create_post` über `call_tool` mit `review/zernio-post.json` (erst `dry_run`, bei Abbruch erst `posts_list`), dann `node ausliefern.mjs "<P>" --post-id <id>`.
 
 ## Nicht Teil des Durchlaufs
 
-Der Notion-Nachlauf älterer Videos (veröffentlicht? → POSTED, Datei umbenennen) ist eine eigene regelmäßige Aufgabe und gehört nicht mehr in `/video`.
+Den Status-Abgleich von Notion gegen Zernio macht seit 05.11.2026 die Sonntagsanalyse (Skill `content-analyse`, Schritt 3a), er gehört nicht in `/video`.

@@ -14,7 +14,7 @@ Führe die Schritte in dieser Reihenfolge aus. Für einen normalen Durchlauf rei
 - Vor jedem Render prüft das Werkzeug den Arbeitsspeicher. Reicht er nicht für zwei Prozesse, bitte Abi kurz, Programme zu schließen.
 - Fehlen Freigaben für die Standardbefehle, schlag Abi die Liste aus `ABLAUF_KURZ.md` Abschnitt 0 für `/permissions` vor. Trag sie nie selbst ein.
 
-Der Notion-Nachlauf älterer Videos (veröffentlicht? → POSTED) gehört nicht mehr hierher, er ist eine eigene regelmäßige Aufgabe.
+Den Status-Abgleich von Notion gegen Zernio macht die Sonntagsanalyse (Skill `content-analyse`), er gehört nicht hierher.
 
 Kurzform der Ordner: `DRIVE` steht für
 `/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation`
@@ -72,14 +72,14 @@ Liefere immer genau diese fünf Dinge, kurz und ohne Ausschmückung:
 
 Warte hier. Plane nichts ein, bevor Abi freigegeben hat.
 
-Nennt Abi Korrekturen: verschiebe die bisherige Fassung nach `DRIVE/Archiv/Vorversionen`, arbeite die Punkte ein und durchlaufe Schritt 4 und 5 erneut.
+Nennt Abi Korrekturen: Ersetze die bisherige Fassung in `DRIVE/02_Bearbeitete_Videos`, arbeite die Punkte ein und durchlaufe Schritt 4 und 5 erneut. Dauerhaft bleibt nur das Finale in `04_Gepostet` (Abi, 05.11.2026).
 
 ## Schritt 6: Nach der Freigabe, ohne weitere Rückfrage
 
 Nach `ABLAUF_KURZ.md` Schritt 7, in einem Rutsch:
 
 1. `node ausliefern.mjs "<P>" "<Titel>" --datum JJJJ-MM-TT` (Zernio-API-Schlüssel aus dem Schlüsselbund): Drive-Ablage mit SHA-256, Upload, Einplanung Instagram und TikTok 19:00 Europe/Berlin, 04_Gepostet, Rohvideo ins Archiv, ~/Löschbar, Commit.
-2. Notion-Eintrag in „Master Contentplanung": Beschreibung ablegen, zurücklesen, Status Ready to Post, Post-ID.
+2. Notion-Eintrag in „Master Contentplanung": Beschreibung ablegen, zurücklesen, Status `🚀 POSTED` (eingeplant zählt als gepostet, Abi 05.11.2026), Post-ID.
 
 Fehlt der Schlüssel, gilt der Ersatzweg aus `ABLAUF_KURZ.md` Schritt 7 (Upload-Token, `posts_create_post` über MCP, `--post-id`).
 

@@ -164,7 +164,7 @@ export async function stufe2(projekt, postId, { commit = true } = {}) {
   if (!m.postingFile || !fs.existsSync(m.postingFile)) throw Error('Stufe 1 fehlt: postingFile nicht gesetzt oder nicht vorhanden.');
   const r = {};
   m.zernio = { ...(m.zernio || {}), postId, eingeplantAm: new Date().toISOString() }; schreib(p, m);
-  // Abdullahs Festlegung (16.09.2026): nach der Einplanung nach 04_Gepostet; Notion bleibt Ready to Post.
+  // Abdullahs Festlegung (16.09.2026): nach der Einplanung nach 04_Gepostet. Seit 05.11.2026 steht Notion dann auf POSTED.
   if (m.postingFile.includes(`${path.sep}03_Bereit_zum_Posten${path.sep}`)) {
     const nach = path.join(ABLAGE, '04_Gepostet', path.basename(m.postingFile));
     verschiebe(m.postingFile, nach, m.postingSha256);
