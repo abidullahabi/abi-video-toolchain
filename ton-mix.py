@@ -1,6 +1,7 @@
 """Soundeffekte in den Ton von media.mp4 mischen (DESIGN.md 17, nur auf ausdrücklichen Testauftrag; Abdullah 12.10.2026, HHU Rating).
 
 Eingabe: design-plan.json "sounds": [{"datei": "assets/sounds/…", "at": Sekunden, "db": −11, "zweck": "…"}].
+Optional "festDb" statt "db": fester Pegel auf die Datei, für sehr kurze Geräusche außerhalb der Sprache.
 Pegel je Effekt: Effektivwert des Effekts (Bereich bis 40 dB unter seiner Spitze) liegt "db" (Standard −11, DESIGN.md: 10 bis
 12 dB leiser) unter dem Effektivwert der Stimme in 1,5 s um den Einsatz (nur Sprachabschnitte, bis 30 dB unter dem lautesten).
 Ausgabe: ton-mix.wav (48 kHz, Stereo, PCM 24 bit, gleiche Länge wie media.mp4) und review/ton-mix.json mit Zeit und Pegel je
@@ -24,7 +25,13 @@ stimme = lade(p / 'media.mp4'); mix = stimme.copy(); bericht = []
 for s in sounds:
     f = p / s['datei']
     if not s['datei'].startswith('assets/') or not f.exists(): sys.exit(f'Sound fehlt oder liegt nicht unter assets/: {s["datei"]}')
-    fx = lade(f); a = int(round(s['at'] * SR)); db = float(s.get('db', -11))
+    fx = lade(f); a = int(round(s['at'] * SR))
+    # "festDb": fester Pegel statt Vergleich mit der Stimme, für sehr kurze Geräusche außerhalb der Sprache (Abi 05.11.2026, Hitmarker: 20 ms, kein Effektivwert-Vergleich möglich).
+    if 'festDb' in s:
+        g = 10 ** (float(s['festDb']) / 20); seg = fx[: max(0, len(mix) - a)] * g; mix[a: a + len(seg)] += seg
+        bericht.append({'datei': s['datei'], 'at': s['at'], 'zweck': s.get('zweck'), 'festDb': float(s['festDb']), 'dauer': round(len(fx) / SR, 3)})
+        continue
+    db = float(s.get('db', -11))
     if not (-16 <= db <= -10): sys.exit(f'Sound {s["datei"]} bei {s["at"]} s: {db} dB außerhalb −16 bis −10 (DESIGN.md 17)')
     fenster = stimme[max(0, a - int(0.75 * SR)): a + int(0.75 * SR)]
     v = rms_aktiv(fenster, 30); e = rms_aktiv(fx, 40); g = v / e * 10 ** (db / 20)

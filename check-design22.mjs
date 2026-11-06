@@ -51,7 +51,7 @@ export async function checkDesign22(project, { step = 1 } = {}) {
       const box = el => {
         const k = el.dataset.kind, q = s => el.querySelector(s);
         switch (k) {
-          case 'h1': return INK([...el.querySelectorAll('.h1 .ln')], 8);
+          case 'h1': return INK([...el.querySelectorAll('.h1 .ln')], q('.h1-klein') ? 5 : 8);   // Selbstkommentar hat Kontur 5 (17, Test)
           case 'h2': return R(q('.h2'));
           case 'kapitel': {
             // 17 (Test Buchcover): Cover samt Schatten (12 px im großen Zustand) und die schon sichtbaren Textteile.
@@ -70,6 +70,7 @@ export async function checkDesign22(project, { step = 1 } = {}) {
           case 'bilder': { const rs = vis(el.querySelectorAll('.bild-lage')).map(x => { const c = R(x.firstElementChild); return { x: c.x, y: c.y, w: c.w + 12, h: c.h + 12 }; });
             for (const o of vis(el.querySelectorAll('.bild-ort'))) { const c = R(o); rs.push({ x: c.x, y: c.y, w: c.w + 6, h: c.h + 6 }); }
             if (!rs.length) return null; const x = Math.min(...rs.map(b => b.x)), y = Math.min(...rs.map(b => b.y)); return { x, y, w: Math.max(...rs.map(b => b.x + b.w)) - x, h: Math.max(...rs.map(b => b.y + b.h)) - y }; }
+          case 'treffer': return R(q('.treffer-x'));   // 17 (Test): Hitmarker samt Kante
           case 'tagmarke': return INK([q('.tag-marke')], 4);   // 17 (Test): Tag-Marke samt Kontur
           case 'tagesplan': { const b = R(q('.tp-karte')); return { x: b.x, y: b.y, w: b.w + 12, h: b.h + 12 }; }   // 17 (Test): Karte samt Schatten 12
           case 'grafik': { const b = R(q('.card')); return { x: b.x, y: b.y, w: b.w + 12, h: b.h + 12 }; }

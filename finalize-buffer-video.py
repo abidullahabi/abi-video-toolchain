@@ -29,7 +29,7 @@ assert abs(source_duration - plan['duration']) < .1, 'Dieses Hilfsskript setzt u
 # (gemessen 26.09.2026 an der H1-Flaeche #1668b5). Mit masterColorMatrix "bt601" wird echt nach BT.709 umgerechnet.
 conv = 'scale=in_color_matrix=bt601:in_range=tv:out_color_matrix=bt709:out_range=tv,format=yuv420p,setsar=1' if m.get('masterColorMatrix') == 'bt601' else None
 # Ziel 12 Mbit/s, aber nie über die 300-MB-Grenze des Zernio-Wegs (Abschnitt 10). 3 % Reserve, Ton 120 kbit/s.
-vb = min(12000, int((300e6 * 0.97 * 8 / plan['duration'] - 120e3) / 1000))
+vb = min(int(os.environ.get('EXPORT_KBIT', 12000)), int((300e6 * 0.97 * 8 / plan['duration'] - 120e3) / 1000))   # EXPORT_KBIT: höhere Zielrate für einzelne Videos (Vlog München, 05.11.2026)
 args = [ff, '-v', 'error', '-y', '-i', str(master), '-i', str(ton), '-map', '0:v:0', '-map', '1:a:0'] + (['-vf', conv] if conv else []) + [
     '-c:v', 'libx264', '-preset', EXPORT_PRESET, '-threads', '0', '-b:v', f'{vb}k', '-maxrate', '14M', '-bufsize', '28M', '-profile:v', 'high', '-level:v', '4.1',
     '-g', '60', '-bf', '2', '-pix_fmt', 'yuv420p', '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709',

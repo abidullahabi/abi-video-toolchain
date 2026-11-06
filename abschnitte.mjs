@@ -44,6 +44,7 @@ export function planFuer(plan, a, b) {
   if (plan.bilder) q.bilder = plan.bilder.filter(b => ov(b.start, b.end));
   if (plan.tagesplaene) q.tagesplaene = plan.tagesplaene.filter(t => ov(t.start, t.end));
   if (plan.tagmarken) q.tagmarken = plan.tagmarken.filter(t => ov(t.start, t.end));
+  if (plan.treffer) q.treffer = plan.treffer.filter(t => ov(t.at, t.at + 0.3));
   q.sprechblasen = (plan.sprechblasen || []).filter(s => ov(s.start, s.start + 4.25));
   q.captions = (plan.captions || []).filter(c => ov(c.start, c.end));
   q.zooms = (plan.zooms || []).filter(z => ov(z.start, z.end));
