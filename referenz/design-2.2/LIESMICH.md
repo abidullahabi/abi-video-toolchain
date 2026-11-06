@@ -1,6 +1,6 @@
 # Referenzen für DESIGN.md 2.2 („Klar mit Kante")
 
-Maßgeblich bleibt allein `DESIGN.md` im Drive-Ordner `Content_Creation/Anleitung`. Diese Dateien zeigen nur, wie die abgenommenen Entwürfe technisch gebaut waren.
+Maßgeblich bleibt allein `DESIGN.md` im Drive-Ordner `Social Media/80_Anleitung`. Diese Dateien zeigen nur, wie die abgenommenen Entwürfe technisch gebaut waren.
 
 | Datei | Inhalt |
 |---|---|

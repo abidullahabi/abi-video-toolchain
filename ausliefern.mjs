@@ -18,7 +18,7 @@ import { execFileSync } from 'node:child_process';
 import { auslieferung } from './pruefungen.mjs';
 
 // ABI_ABLAGE nur für Tests (Probelauf gegen einen Ersatzordner), sonst immer die Drive-Ablage.
-const ABLAGE = process.env.ABI_ABLAGE ?? '/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation';
+const ABLAGE = process.env.ABI_ABLAGE ?? '/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media';
 const sha = f => crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex');
 
 export function ausliefernNach(projekt, titel, datum, { ziel = '03_Bereit_zum_Posten' } = {}) {
@@ -45,7 +45,7 @@ export function ausliefernNach(projekt, titel, datum, { ziel = '03_Bereit_zum_Po
 
   // 4. Ziel bestimmen und niemals ungeprüft überschreiben.
   const name = `${datum} - ${titel}.mp4`;
-  const zielDatei = path.join(ABLAGE, ziel, name);
+  const zielDatei = path.join(ABLAGE, '10_Videos', ziel, name);
   if (fs.existsSync(zielDatei)) {
     const vorhanden = sha(zielDatei);
     if (vorhanden === istSha) return { schon_da: true, datei: zielDatei, sha256: istSha };
@@ -65,7 +65,7 @@ export function ausliefernNach(projekt, titel, datum, { ziel = '03_Bereit_zum_Po
   m.postingDate = datum;
   fs.writeFileSync(path.join(p, 'workflow.json'), JSON.stringify(m, null, 2) + '\n');
 
-  const protokoll = path.join(ABLAGE, 'Archiv/ZUORDNUNGSPROTOKOLL.md');
+  const protokoll = path.join(ABLAGE, '90_Archiv/ZUORDNUNGSPROTOKOLL.md');
   const zeile = `| \`${path.relative(path.dirname(p), quelle)}\` | \`${ziel}/${name}\` | Auslieferung aus ${path.basename(p)} | \`${istSha.slice(0, 16)}…\` |\n`;
   if (fs.existsSync(protokoll)) fs.appendFileSync(protokoll, zeile);
 
@@ -85,7 +85,7 @@ const KONTEN = [{ platform: 'instagram', accountId: '6aa6efd7726ebfe037e60dd5' }
 const berlin = (datum, zeit) => { const s = new Date(`${datum}T${zeit}:00Z`).toLocaleString('en-US', { timeZone: 'Europe/Berlin', timeZoneName: 'longOffset' }); const m = s.match(/GMT([+-]\d{2}):?(\d{2})?/); return `${datum}T${zeit}:00${m ? `${m[1]}:${m[2] || '00'}` : '+00:00'}`; };
 const lies = p => JSON.parse(fs.readFileSync(path.join(p, 'workflow.json'), 'utf8'));
 const schreib = (p, m) => fs.writeFileSync(path.join(p, 'workflow.json'), JSON.stringify(m, null, 2) + '\n');
-const protokolliere = (von, nach, grund, s) => { const f = path.join(ABLAGE, 'Archiv/ZUORDNUNGSPROTOKOLL.md'); if (fs.existsSync(f)) fs.appendFileSync(f, `| \`${von}\` | \`${nach}\` | ${grund} | \`${s.slice(0, 16)}…\` |\n`); };
+const protokolliere = (von, nach, grund, s) => { const f = path.join(ABLAGE, '90_Archiv/ZUORDNUNGSPROTOKOLL.md'); if (fs.existsSync(f)) fs.appendFileSync(f, `| \`${von}\` | \`${nach}\` | ${grund} | \`${s.slice(0, 16)}…\` |\n`); };
 // Verschieben innerhalb der Drive-Ablage (Umbenennen), mit Prüfsumme vorher und Größe/Inode nachher.
 function verschiebe(von, nach, erwarteteSha) {
   if (fs.existsSync(nach)) throw Error(`Ziel existiert, nichts überschrieben: ${nach}`);
@@ -166,18 +166,18 @@ export async function stufe2(projekt, postId, { commit = true } = {}) {
   m.zernio = { ...(m.zernio || {}), postId, eingeplantAm: new Date().toISOString() }; schreib(p, m);
   // Abdullahs Festlegung (16.09.2026): nach der Einplanung nach 04_Gepostet. Seit 05.11.2026 steht Notion dann auf POSTED.
   if (m.postingFile.includes(`${path.sep}03_Bereit_zum_Posten${path.sep}`)) {
-    const nach = path.join(ABLAGE, '04_Gepostet', path.basename(m.postingFile));
+    const nach = path.join(ABLAGE, '10_Videos', '04_Gepostet', path.basename(m.postingFile));
     verschiebe(m.postingFile, nach, m.postingSha256);
     protokolliere(path.relative(ABLAGE, m.postingFile), path.relative(ABLAGE, nach), `eingeplant, Zernio ${postId}`, m.postingSha256);
     m = lies(p); m.postingFile = nach; schreib(p, m);
   }
   r.postingFile = m.postingFile;
   // Rohvideo ins Archiv, wenn es noch in 01_Rohvideos liegt.
-  if (m.source && m.source.startsWith(path.join(ABLAGE, '01_Rohvideos') + path.sep) && fs.existsSync(m.source)) {
+  if (m.source && m.source.startsWith(path.join(ABLAGE, '10_Videos', '01_Rohvideos') + path.sep) && fs.existsSync(m.source)) {
     const { pruefsumme } = await import('./projekte.mjs');
     const s = pruefsumme(m.source);
     if (m.sourceSha256 && s !== m.sourceSha256) throw Error('Rohvideo weicht von sourceSha256 ab, nicht verschoben.');
-    const nach = path.join(ABLAGE, 'Archiv/Rohvideos', `${m.postingDate} - ${m.title} - Rohvideo${path.extname(m.source)}`);
+    const nach = path.join(ABLAGE, '90_Archiv/Rohvideos', `${m.postingDate} - ${m.title} - Rohvideo${path.extname(m.source)}`);
     verschiebe(m.source, nach, s);
     protokolliere(path.relative(ABLAGE, m.source), path.relative(ABLAGE, nach), 'Rohvideo archiviert', s);
     m = lies(p); m.sourceArchived = nach; m.source = nach; schreib(p, m);

@@ -1,6 +1,6 @@
 # Kurzablauf: Rohvideo → eingeplanter Post (DESIGN.md 2.2)
 
-**Ziel: ein 60-s-Video in etwa 20 min für KI und Rechner zusammen, höchstens 30 min, ohne Abdullahs Prüfzeit.** Diese Seite reicht für einen normalen Durchlauf. Arbeitsort: `~/Projekte/abi-video-toolchain`. `DRIVE` = `…/Social Media/Content_Creation`.
+**Ziel: ein 60-s-Video in etwa 20 min für KI und Rechner zusammen, höchstens 30 min, ohne Abdullahs Prüfzeit.** Diese Seite reicht für einen normalen Durchlauf. Arbeitsort: `~/Projekte/abi-video-toolchain`. `DRIVE` = `…/Social Media`.
 
 Jeder Befehl unten schreibt Start und Ende in `projects/<P>/logs/zeiten.json`.
 
@@ -95,14 +95,14 @@ Beides Abdullah zeigen (bei eigenem Schnitt zusätzlich `node workflow.mjs vorsc
 
 ## 6. Freigabepaket an Abdullah
 
-Pfad zur MP4 (`exports/upload.mp4`), geprüftes Transkript, Beschreibung in `beschreibung.txt` (höchstens 5 Hashtags, einer `#abidullahabi`), Prüfliste aus `build-bericht.json` (DESIGN.md 20), Frage nach Freigabe. Warten. **Eingeplant wird nie vor seinem OK.** Korrekturen: Plan ändern, erneut `build`; nur betroffene Abschnitte werden neu gerendert, die lokale Fassung wird überschrieben (CONTENT_WORKFLOW 1.28). Liegt eine gezeigte Fassung im Drive, kommt sie nach `Archiv/Vorversionen`.
+Pfad zur MP4 (`exports/upload.mp4`), geprüftes Transkript, Beschreibung in `beschreibung.txt` (höchstens 5 Hashtags, einer `#abidullahabi`), Prüfliste aus `build-bericht.json` (DESIGN.md 20), Frage nach Freigabe. Warten. **Eingeplant wird nie vor seinem OK.** Korrekturen: Plan ändern, erneut `build`; nur betroffene Abschnitte werden neu gerendert, die lokale Fassung wird überschrieben (CONTENT_WORKFLOW 1.28). Liegt eine gezeigte Fassung im Drive, kommt sie nach `90_Archiv/Vorversionen`.
 
 ## 7. Nach der Freigabe, ohne Rückfrage (≈ 2 min)
 
 1. `node ausliefern.mjs "<P>" "<Titel>" --datum JJJJ-MM-TT [--zeit 19:00]` erledigt alles in einem Rutsch mit dem Zernio-API-Schlüssel aus dem Schlüsselbund (Eintrag `zernio-api-key`):
    - Auslieferungssperre, Drive-Ablage mit Prüfsumme,
    - Upload mit Längenprobe, Zernio-Prüfung, Einplanung für Instagram und TikTok (ein Beitrag, Europe/Berlin), Status „scheduled“ gegengelesen. Ein Termin in der Vergangenheit wird abgelehnt, weil Zernio sonst sofort veröffentlicht. Die Anfrage-ID steht im Projekt, eine Wiederholung erzeugt keinen Doppelpost.
-   - Datei nach `04_Gepostet`, Rohvideo nach `Archiv/Rohvideos` (Zuordnungsprotokoll), Videomaterial nach `~/Löschbar`, `bearbeitung.status: "fertig"`, `git add`/`commit`/`push` des Projekts.
+   - Datei nach `04_Gepostet`, Rohvideo nach `90_Archiv/Rohvideos` (Zuordnungsprotokoll), Videomaterial nach `~/Löschbar`, `bearbeitung.status: "fertig"`, `git add`/`commit`/`push` des Projekts.
    Vorher prüfen, ohne etwas anzulegen: derselbe Befehl mit `--probe`.
 2. Notion „Master Contentplanung": Beschreibung ablegen, zurücklesen, Status `🚀 POSTED` (eingeplant zählt als gepostet, Abi 05.11.2026), Termin und Post-ID eintragen.
 3. Abdullah melden: Ablageort, Zernio-ID, geplante Zeit, frei gewordene GB. Dauer je Schritt aus `logs/zeiten.json` ins Testprotokoll.

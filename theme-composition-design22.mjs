@@ -1,5 +1,5 @@
 // Standardvorlage für DESIGN.md 2.2 „Klar mit Kante" (27.09.2026), HyperFrames + GSAP.
-// Maßgeblich ist allein DESIGN.md im Drive-Ordner Content_Creation/Anleitung; die Abschnittsnummern stehen am Code.
+// Maßgeblich ist allein DESIGN.md im Drive-Ordner Social Media/80_Anleitung; die Abschnittsnummern stehen am Code.
 // Kurven und Zeiten wie in der abgenommenen Animationsvorschau referenz/design-2.2/animationen/index.html.
 // Werte, die DESIGN.md offenlässt und die der Referenz entnommen sind, sind mit „Referenz" markiert.
 //

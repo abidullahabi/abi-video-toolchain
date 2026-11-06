@@ -1,6 +1,6 @@
 # ABI Content-Workflow
 
-Die maßgebliche Anleitung ist [CONTENT_WORKFLOW.md](</Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation/Anleitung/CONTENT_WORKFLOW.md>).
+Die maßgebliche Anleitung ist [CONTENT_WORKFLOW.md](</Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/80_Anleitung/CONTENT_WORKFLOW.md>).
 
 Sie enthält den am 13.09.2026 angenommenen Schnitt und Textstil, die tatsächlichen Ergebnisse des Referenzvideos, technische Arbeitsschritte, Dateipfade und eine kopierbare Startanweisung für neue Chats. Für neue Aufnahmen diese Anleitung zuerst vollständig lesen.
 

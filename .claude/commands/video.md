@@ -17,7 +17,7 @@ Führe die Schritte in dieser Reihenfolge aus. Für einen normalen Durchlauf rei
 Den Status-Abgleich von Notion gegen Zernio macht die Sonntagsanalyse (Skill `content-analyse`), er gehört nicht hierher.
 
 Kurzform der Ordner: `DRIVE` steht für
-`/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation`
+`/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media`
 
 ## Schritt 1: Auftrag aus dem Dateinamen lesen
 
