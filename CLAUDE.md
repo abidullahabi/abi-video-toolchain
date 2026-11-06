@@ -10,11 +10,11 @@ Dieser Text steht wortgleich in `CLAUDE.md` (liest Claude Code) und `AGENTS.md` 
 |---|---|
 | Werkzeuge, Vorlagen, Projekte (dieses Repo) | `/Users/abi/Projekte/abi-video-toolchain`, Git-Remote `github.com/abidullahabi/abi-video-toolchain` (privat) |
 | Alter Pfad, nur noch Verweis | `~/.codex/.chatgpt-projects/g-p-6aa14d0e0a2c8191a0b34dc2c8f4b18f/content-workflow` ist ein Symlink auf dieses Repo, damit alte absolute Pfade in Projektdateien weiter stimmen. Der Stand vor dem Umzug liegt daneben in `content-workflow.vor-umzug-2026-09-27`. Neue Pfade immer mit dem neuen Ort schreiben. |
-| Videoablage und maßgebliche Anleitung | `/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media/Content_Creation` |
+| Videoablage und maßgebliche Anleitung | `/Users/abi/Library/CloudStorage/GoogleDrive-abdullahbachtari@gmail.com/Meine Ablage/50_Projekte/Social Media` |
 
 Lege keine Projektordner in Google Drive an. Render- und Zwischendateien bleiben in `projects/`.
 
-## Maßgeblich sind zwei Dateien im Drive-Ordner `Content_Creation/Anleitung`
+## Maßgeblich sind zwei Dateien im Drive-Ordner `Social Media/80_Anleitung`
 
 - `CONTENT_WORKFLOW.md`: Verfahren, harte Regeln, Export, Ablage, Posting. **Lies sie vor jeder Arbeit an einem Video.** Die harten Regeln stehen gleich am Anfang.
 - `DESIGN.md`: allein maßgeblich für das Aussehen. Lies sie vor jeder Gestaltung.
@@ -35,7 +35,8 @@ Diese Datei enthält **keine eigenen Gestaltungswerte** und keine Regeln, die do
 1. Vor jeder Änderung `werkzeug-status.json` lesen. Steht dort `"status": "in_arbeit"` mit einem anderen `agent`, nichts ändern und Abdullah fragen.
 2. Dann setzen: `{"status": "in_arbeit", "agent": "claude" | "codex", "zweig": "<Zweig>", "seit": "<ISO-Zeit>", "aufgabe": "<kurz>"}`. Nach Abschluss `"status": "frei"` mit Agent, Zweig und Zeit. Die Datei wird **nie gelöscht**, nur überschrieben.
 3. Geändert wird auf einem eigenen Zweig: `claude/<thema>` oder `codex/<thema>`, **in einem eigenen Arbeitsordner**: `git worktree add ../abi-video-toolchain-<thema> -b claude/<thema>`. Der Hauptordner `~/Projekte/abi-video-toolchain` bleibt auf `main`, denn dort laufen die Videos der anderen Sitzungen. `tools`, `node_modules` und `analysis` im Arbeitsordner sind Verweise auf den Hauptordner. Videoprojekte bleiben im gemeinsamen `projects/` des Hauptordners; die Werkzeuge im Arbeitsordner lesen und schreiben dort.
-4. In `main` kommt eine Änderung erst nach bestandenem Test und wenn kein Video `bearbeitung.status: "in_arbeit"` hat und kein Render läuft; den Test im Commit nennen. Danach kann der Arbeitsordner geschlossen werden (`git worktree remove`, nur wenn alles committet ist; Abdullah entscheidet, wie bei jeder Löschung).
+4. In `main` kommt eine Änderung erst nach bestandenem Test und **nur, solange kein Render läuft** (Render-Sperre `mitRenderSperre` in `projekte.mjs`, Abdullah 06.11.2026). Offene `bearbeitung.status: "in_arbeit"` sperren das Werkzeug nicht mehr; die Warnung bei zwei Sitzungen am selben Rohvideo (`pruefungen.mjs kollision`) bleibt. Den Test im Commit nennen. Danach kann der Arbeitsordner geschlossen werden (`git worktree remove`, nur wenn alles committet ist; Abdullah entscheidet, wie bei jeder Löschung).
+5. **Arbeitskopie kurz halten:** Videos laufen immer aus dem Hauptordner auf `main`. Ein Arbeitsordner entsteht nur für eine Änderung am Werkzeug und wird nach dem Test noch am selben Tag zurückgeführt.
 
 ### Sichern
 
