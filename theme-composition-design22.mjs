@@ -104,8 +104,8 @@ export function layoutDesign22(input, ctx) {
   // DESIGN.md 2/5/6: Oberkante 250 ist die sichtbare Kante. Ragen Umlautpunkte samt Kontur (8 px) der ersten Zeile über die Zeilenbox
   // (z. B. „BÜCHER“ bei 100 px: 12 px über y = 250, Designprüfung 04.10.2026), rückt die H1 um diesen Betrag nach unten
   // (bei der H1 im Video für den Stoß von 112 %). Ohne Überstand bleibt alles wie bisher (kein Feld, bytegleiche Komposition).
-  const versatz = (h, stoss = 1) => { if (!inkTop) return 0; const d = 8 - inkTop(h.lines[0], h.fontSize, 1.02); return d > 0 ? Math.ceil(d * stoss) + 1 : 0; };
-  const mitVersatz = (h, stoss) => { const v = versatz(h, stoss); return v ? { ...h, versatz: v } : h; };
+  const versatz = (h, stoss = 1, kontur = 8, zeilenhoehe = 1.02) => { if (!inkTop) return 0; const d = kontur - inkTop(h.lines[0], h.fontSize, zeilenhoehe); return d > 0 ? Math.ceil(d * stoss) + 1 : 0; };
+  const mitVersatz = (h, stoss, kontur, zeilenhoehe) => { const v = versatz(h, stoss, kontur, zeilenhoehe); return v ? { ...h, versatz: v } : h; };
   const h2Chk = (id, lines) => { if (lines.length > 2) errors.push(`H2 ${id}: mehr als zwei Zeilen`); for (const l of lines) if (A(l, 58, 800) + 56 > 780) errors.push(`H2 ${id} breiter als 780 px: ${l}`); };
   const h2H = lines => lines.length * 58 * 1.12 + 22;
 
@@ -151,7 +151,8 @@ export function layoutDesign22(input, ctx) {
     const lines = (h.zeilen || [h.text]).map(upper);
     if (lines.length > 2) errors.push(`Kommentar ${h.id}: höchstens zwei Zeilen`);
     for (const l of lines) if (A(l, h.groesse, 900, 125) * 1.12 + 10 > 864) errors.push(`Kommentar ${h.id} breiter als 864 px: ${l}`);
-    return { id: h.id, lines, fontSize: h.groesse, klein: true, start: h.start, end: h.end };
+    // Auch hier ist die Oberkante 250 die sichtbare Kante: Umlautpunkte samt Kontur 5 px dürfen nicht darüber („MÜNCHEN =“, 05.11.2026).
+    return { id: h.id, ...mitVersatz({ lines, fontSize: h.groesse, klein: true }, 1.12, 5, 1.12), start: h.start, end: h.end };
   });
 
   // 9: Pillen. Höhe je Pille: Ring 3 + Rand 5 + 8 + 54 × 1,1 + 10 + Rand 5 + Ring 3 (Zeilenhöhe 1,1: Referenz).
@@ -254,6 +255,12 @@ export function layoutDesign22(input, ctx) {
   const bilder = (input.bilder || []).map(b => bilder22(b, { errors, notes, hits }));
   // 17 (Test, Abi 19.10.2026): Tagesplan-Karte statt Lebensbalken für einen Tagesablauf mit Uhrzeiten.
   const tagesplaene = (input.tagesplaene || []).map(t => tagesplan22(t, { A, G, errors, notes, hits }));
+  // 17 (Test, Abi 05.11.2026, Vlog München): Tag-Marke links über dem Profilnamen der Plattform („TAG 1“). Plan: tagmarken[] = { id, text, start, end }.
+  const tagmarken = (input.tagmarken || []).map(t => ({ id: t.id, text: t.text, start: t.start, end: t.end }));
+  for (let i = 1; i < tagmarken.length; i++) if (tagmarken[i].start < tagmarken[i - 1].end - 1e-6) errors.push(`Tag-Marken überlappen: ${tagmarken[i - 1].id} / ${tagmarken[i].id}`);
+  for (const t of tagmarken) { if (t.end > input.outroStart + 1e-6) errors.push(`Tag-Marke ${t.id} läuft ins Outro (Karte steht an derselben Stelle)`); if (t.end - t.start < 0.5) errors.push(`Tag-Marke ${t.id} zu kurz`); }
+  // 17 (Test, Abi 05.11.2026, Vlog München): Hitmarker wie im Spiel (weißes X, das Geräusch steht unter sounds). Plan: treffer[] = { id, at, x, y }, x und y sind die Mitte in 1080 × 1920.
+  const treffer = (input.treffer || []).map(t => ({ id: t.id, at: t.at, x: t.x, y: t.y }));
   for (let i = 1; i < bilder.length; i++) if (bilder[i].start < bilder[i - 1].end - 1e-6) errors.push(`Bilder überlappen: ${bilder[i - 1].id} / ${bilder[i].id}`);
   for (const b of bilder) if (b.start < einstieg.end + 0.06) errors.push(`Bilder ${b.id} beginnen vor dem Ende des Einstiegs (${einstieg.end} s)`);
 
@@ -274,7 +281,7 @@ export function layoutDesign22(input, ctx) {
   const logoH1 = [];
   for (const l of logos.filter(l => !l.unter)) for (const x of [...h1, ...kapitel]) if (x.start < l.end && x.end > l.start) logoH1.push({ sel: '#' + x.id + ' > span', out: l.start - 0.1, in: l.end + 0.1 });
 
-  return { designVersion: '2.2', duration: ctx.duration, einstieg, kapitel, h1, h2, pillen, akronyme, schlagworte, grafiken, randnotizen, lebensbalken, logos, sprechblasen, ...(bilder.length ? { bilder } : {}), ...(tagesplaene.length ? { tagesplaene } : {}), ausblenden, logoH1, outro: { start: input.outroStart, end: ctx.duration, followers: ctx.followers } };
+  return { designVersion: '2.2', duration: ctx.duration, einstieg, kapitel, h1, h2, pillen, akronyme, schlagworte, grafiken, randnotizen, lebensbalken, logos, sprechblasen, ...(bilder.length ? { bilder } : {}), ...(tagesplaene.length ? { tagesplaene } : {}), ...(tagmarken.length ? { tagmarken } : {}), ...(treffer.length ? { treffer } : {}), ausblenden, logoH1, outro: { start: input.outroStart, end: ctx.duration, followers: ctx.followers } };
 }
 
 // 17 (In Erprobung, Testauftrag Abdullah 19.10.2026, Vlog „Geschäftsreise Wiesbaden“): B-Roll-Fotokarten.
@@ -286,6 +293,7 @@ export function layoutDesign22(input, ctx) {
 const BILD = { w: 600, h: 800, top: 300, ortTop: 300 + 800 - 34, lagen: [[0, 0, -3], [24, 14, 2.5], [-18, -10, -1.5]] };
 function bilder22(b, { errors, notes, hits }) {
   if (b.anordnung === 'collage') return collage22(b, { errors, notes, hits });
+  if (b.anordnung === 'banner') return banner22(b, { errors, notes, hits });
   const d = b.end - b.start, fotos = b.fotos || [];
   if (d > 3 + 1e-6) errors.push(`Bilder ${b.id}: ${d.toFixed(2)} s am Stück (DESIGN.md 17: höchstens 3 s)`);
   if (!fotos.length || fotos.length > 3) errors.push(`Bilder ${b.id}: 1 bis 3 Fotos je Gruppe`);
@@ -319,6 +327,21 @@ function collage22(b, { errors, notes, hits }) {
     const z = Math.floor(i / sp), inZeile = Math.min(sp, n - z * sp), lz = 540 - (inZeile * cw + (inZeile - 1) * COLL.gap) / 2;
     return { src: f.datei, at: b.start + 0.15 * i, fokus: f.fokus || '50% 50%', ort: i === n - 1 ? (b.ort || null) : null, x: Math.round(lz + (i % sp) * (cw + COLL.gap)), y: COLL.top + z * (ch + COLL.gap), rot: COLL.rot[i] };
   }) };
+}
+
+// 17 (Test, Abi 05.11.2026, Vlog München): Banner, ein breites Bild wie ein Beleg oder eine Benachrichtigung. Ein Foto, Seitenverhältnis aus
+// breite und hoehe (Pixel der Datei), Oberkante 300, auf x = 540 zentriert, sonst wie die Collage (Rand 5, Schatten 8, Einfallen, höchstens 3 s).
+// Plan: bilder[] = { id, start, end, anordnung: "banner", fotos: [{ datei, breite, hoehe }] }.
+const BANNER = { w: 820, top: 300, rot: -1.5 };
+function banner22(b, { errors, notes, hits }) {
+  const f = (b.fotos || [])[0], d = b.end - b.start;
+  if (!f || b.fotos.length !== 1) { errors.push(`Banner ${b.id}: genau ein Foto`); return { id: b.id, start: b.start, end: b.end, collage: true, kw: BANNER.w, kh: 100, ortTop: 0, fotos: [] }; }
+  if (d > 3 + 1e-6) errors.push(`Banner ${b.id}: ${d.toFixed(2)} s am Stück (DESIGN.md 17: höchstens 3 s)`);
+  if (!f.datei?.startsWith('assets/') || /\s/.test(f.datei)) errors.push(`Banner ${b.id}: datei unter assets/ ohne Leerzeichen: ${f.datei}`);
+  if (!(f.breite > 0 && f.hoehe > 0)) errors.push(`Banner ${b.id}: breite und hoehe der Datei fehlen`);
+  const kh = Math.round(BANNER.w * f.hoehe / f.breite), x = Math.round(540 - BANNER.w / 2);
+  if (hits({ x, y: BANNER.top, w: BANNER.w, h: kh }, b.start, b.end).length) notes.push(`Banner ${b.id} steht über dem Kopf (DESIGN.md 17 erlaubt „über dem Gesicht“, höchstens 3 s)`);
+  return { id: b.id, start: b.start, end: b.end, collage: true, kw: BANNER.w, kh, ortTop: 0, fotos: [{ src: f.datei, at: b.start, fokus: '50% 50%', ort: null, x, y: BANNER.top, rot: BANNER.rot }] };
 }
 
 // 17 (Test, Abi 19.10.2026): Tagesplan-Karte. Karte wie 11 (Weiß, Rand 6, Radius 24, Schatten 12), x = 150, Oberkante 270, 780 breit.
@@ -526,6 +549,8 @@ export function makeDesign22Composition(plan, opts = {}) {
   for (const l of logos) top.push(`<div ${clip(l.id, l.start, l.end, 13, 'logo')} style="top:${l.top ?? 250}px"><span class="logo">${(l.files || [{ src: l.src, height: l.height, width: l.width }]).map(f => `<img src="${esc(f.src)}" style="height:${f.height}px${f.width ? `;width:${f.width}px` : ''}" alt="">`).join('')}</span></div>`);
   // 17 (Test): B-Roll-Fotokarten; die Orts-Marke steht als eigene Zeile auf x = 540 (nicht mit dem Versatz der Karte).
   for (const b of plan.bilder || []) top.push(`<div ${clip(b.id, b.start, b.end, 14, 'bilder')} style="left:0;top:0;width:1080px;height:1920px">${b.fotos.map((f, i) => `<div class="bild-lage${b.collage ? ' bild-klein' : ''}" id="${b.id}-${i}" style="left:${b.collage ? f.x : 540 - BILD.w / 2 + f.dx}px;top:${b.collage ? f.y : BILD.top + f.dy}px${b.collage && b.kw !== COLL.w ? `;width:${b.kw}px;height:${b.kh}px` : ''}"><div class="bild-karte" style="transform:rotate(${f.rot}deg)"><img class="bild-foto" id="${b.id}-${i}-img" src="${esc(f.src)}" style="object-position:${f.fokus}" alt=""></div></div>`).join('')}${b.fotos.map((f, i) => f.ort ? `<div class="bild-ortw" style="top:${b.collage ? b.ortTop : BILD.ortTop}px"><span class="bild-ort" id="${b.id}-${i}-ort">${escEmoji(f.ort)}</span></div>` : '').join('')}</div>`);
+  for (const m of plan.treffer || []) top.push(`<div ${clip(m.id, m.at, m.at + TREFFER.dauer, 17, 'treffer')} style="left:${m.x - TREFFER.halb}px;top:${m.y - TREFFER.halb}px;width:${2 * TREFFER.halb}px;height:${2 * TREFFER.halb}px">${TREFFER_SVG}</div>`);
+  for (const m of plan.tagmarken || []) top.push(`<div ${clip(m.id, m.start, m.end, 16, 'tagmarke')} style="left:${TAGMARKE.left}px;top:${TAGMARKE.top}px;width:auto;text-align:left"><span class="tag-marke">${esc(m.text)}</span></div>`);
   for (const t of plan.tagesplaene || []) top.push(`<div ${clip(t.id, t.start, t.end, 15, 'tagesplan')} style="left:150px;top:${PLAN.top}px;width:${PLAN.w}px;height:${t.height}px"><div class="tp-karte"><div class="tp-titel">${escEmoji(t.titel)}</div>${t.zeilen.map((r, j) => `<div class="tp-zeile" id="${t.id}-z${j}"><span class="tp-zeit">${esc(r.zeit)}</span><span class="tp-text">${escEmoji(r.text)}</span></div>`).join('')}</div></div>`);
   for (const s of schlagworte) top.push(`<div ${clip(s.id, s.start, s.end, 8, 'schlagwort')} style="top:330px"><span class="sw-pop"><span class="sw" style="transform-origin:50% ${(s.fontSize * 1.02 / 2).toFixed(1)}px"><span class="sw-word" style="font-size:${s.fontSize}px">${esc(s.text)}</span><svg class="sw-lines" viewBox="0 0 700 70" preserveAspectRatio="none" style="width:${s.width}px;height:70px" overflow="visible">${[['M 14 30 C 150 12, 300 40, 450 22 S 640 30, 688 16', 22, 12], ['M 60 54 C 210 40, 380 62, 560 46 S 650 50, 672 46', 20, 10]].map(([d, wi, wp], j) => `<path id="${s.id}-u${j}i" d="${d}" pathLength="1" fill="none" stroke="${C.ink}" stroke-width="${wi}" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/><path id="${s.id}-u${j}p" d="${d}" pathLength="1" fill="none" stroke="${C.pink}" stroke-width="${wp}" stroke-linecap="round" vector-effect="non-scaling-stroke" stroke-dasharray="1 1.2" stroke-dashoffset="1.1"/>`).join('')}</svg></span></span></div>`);
   const caps = captions.map((c, i) => `<div ${clip('cap-' + i, c.start, c.end, 20, 'caption')} style="top:1280px"><span class="cap-line">${c.words.map((w, j) => `<span id="w-${i}-${j}">${escEmoji(w.text)}</span>`).join(' ')}</span></div>`).join('');
@@ -553,7 +578,7 @@ export function makeDesign22Composition(plan, opts = {}) {
 .h2{display:inline-block;background:${C.blue};font-weight:800;font-size:58px;line-height:1.12;padding:8px 28px 14px;border-radius:12px;transform:rotate(-2deg);white-space:nowrap}
 .kap{display:inline-flex;align-items:center;gap:28px;white-space:nowrap}
 .kap-numw{display:inline-block}.kap-num{display:inline-block;font-family:"ABI Gochi";font-size:140px;line-height:1;color:${C.blue};${stroke(7)};transform:rotate(-4deg)}
-.kap-title{display:inline-block;font-weight:900;font-size:64px;line-height:1.1;word-spacing:6px;${stroke(6)}}${kapitel.some(k => k.buch) ? '\n' + BUCH_CSS() : ''}${(plan.bilder || []).length ? '\n' + BILD_CSS : ''}${(plan.tagesplaene || []).length ? '\n' + PLAN_CSS : ''}${h1.some(h => h.klein) ? `\n.h1-klein{${stroke(5)};line-height:1.12}` : ''}${lebensbalken.some(b => b.trenner) ? `\n.bal-sep{position:absolute;top:0;width:3px;height:100%;background:${C.ink};opacity:0}` : ''}
+.kap-title{display:inline-block;font-weight:900;font-size:64px;line-height:1.1;word-spacing:6px;${stroke(6)}}${kapitel.some(k => k.buch) ? '\n' + BUCH_CSS() : ''}${(plan.tagmarken || []).length ? '\n' + TAG_CSS : ''}${(plan.bilder || []).length ? '\n' + BILD_CSS : ''}${(plan.tagesplaene || []).length ? '\n' + PLAN_CSS : ''}${h1.some(h => h.klein) ? `\n.h1-klein{${stroke(5)};line-height:1.12}` : ''}${lebensbalken.some(b => b.trenner) ? `\n.bal-sep{position:absolute;top:0;width:3px;height:100%;background:${C.ink};opacity:0}` : ''}
 [data-kind=pillen]{display:flex;flex-direction:column;align-items:center;gap:20px}[data-kind=pillen][data-layout=row]{flex-direction:row;justify-content:center;gap:16px}
 .pill-pop{display:inline-block}
 .pill{display:inline-flex;align-items:center;gap:14px;padding:8px 32px 10px 12px;border:5px solid ${C.white};border-radius:999px;box-shadow:0 0 0 3px ${C.ink},inset 0 0 0 3px ${C.ink};white-space:nowrap}
@@ -619,6 +644,17 @@ const PLAN_CSS = `[data-kind=tagesplan]{transform-origin:50% 0}.tp-karte{width:$
 const PLAN_TL = `// 17 (Test): Tagesplan-Karte. Karte Pop 90 → 100 % 0,35 s (wie Grafik); Zeilen am Wort 14 px von unten 0,22 s; Ausblenden 0,18 s, 8 px nach oben.
 for(const t of D.tp){show('#'+t.id,t.start,t.end);pop('#'+t.id,t.start,.9,.35);t.zeilen.forEach((r,j)=>up('#'+t.id+'-z'+j,r.at));out('#'+t.id,t.end);}
 `;
+// 17 (Test): Tag-Marke. Linke Kante samt Kontur auf x = 90, Unterkante knapp über der gesperrten Zone (y 1660). Erscheint 14 px von unten in 0,22 s; Ausblenden 0,18 s, 8 px nach oben.
+// Hitmarker: vier diagonale Striche mit Lücke in der Mitte, weiß mit dunkler Kante. Steht 0,14 s, blendet in 0,16 s aus (wie die von Abi abgenommene Probe).
+const TREFFER = { halb: 120, dauer: 0.3, steht: 0.14, aus: 0.16 };
+const TREFFER_PFAD = 'M22.6 22.6L70.7 70.7M-22.6 22.6L-70.7 70.7M22.6 -22.6L70.7 -70.7M-22.6 -22.6L-70.7 -70.7';
+const TREFFER_SVG = `<svg class="treffer-x" viewBox="-120 -120 240 240" width="240" height="240" style="display:block" fill="none" stroke-linecap="round"><path d="${TREFFER_PFAD}" stroke="#111111" stroke-opacity=".75" stroke-width="20"/><path d="${TREFFER_PFAD}" stroke="#FFFFFF" stroke-width="13"/></svg>`;
+const TREFFER_TL = `for(const m of D.tr){const s='#'+m.id;show(s,m.at,m.at+${TREFFER.dauer});tl.fromTo(s+' > svg',{opacity:1},{opacity:0,duration:${TREFFER.aus},ease:LIN,immediateRender:false},m.at+${TREFFER.steht});}
+`;
+const TAGMARKE = { left: 94, top: 1590 };
+const TAG_CSS = `.tag-marke{display:inline-block;font-weight:800;font-size:46px;line-height:1.2;white-space:nowrap;word-spacing:4px;${stroke(4)}}`;
+const TAG_TL = `for(const m of D.tm){const s='#'+m.id;show(s,m.start,m.end);tl.fromTo(s+' > span',{y:14,opacity:0},{y:0,opacity:1,duration:.22,ease:OUT,immediateRender:false},m.start);tl.to(s,{opacity:0,y:-8,duration:.18,ease:LIN},m.end-.18);}
+`;
 const BILD_TL = `// 17 (Test): B-Roll. Jedes Foto fällt auf den Stapel: aus 70 px tiefer, 6° stärker gedreht und 90 % in 0,40 s Abfedern, Deckkraft 0,12 s
 // Ausklingen; darin ein ruhiger Zug 100 → 108 % (linear bis zum Gruppenende). Ort wischt ab +0,18 s in 0,28 s von links, die vorige Marke
 // geht 0,10 s vor dem nächsten Foto aus. Die Gruppe blendet in 0,22 s linear aus und steigt dabei 16 px.
@@ -641,7 +677,7 @@ for(const k of D.k){if(!k.buch)continue;const b=k.buch,cw='#'+k.id+'-cw',cv='#'+
 `;
 function timeline22(plan, abschnitt) {
   const hatBuch = (plan.kapitel || []).some(k => k.buch);
-  const D = { ...((plan.bilder || []).length ? { bi: plan.bilder } : {}), ...((plan.tagesplaene || []).length ? { tp: plan.tagesplaene } : {}), e: plan.einstieg, k: plan.kapitel || [], h1: plan.h1 || [], h2: plan.h2 || [], p: plan.pillen || [], a: plan.akronyme || [], s: plan.schlagworte || [], g: plan.grafiken || [], n: plan.randnotizen || [], b: plan.lebensbalken || [], l: plan.logos || [], sb: plan.sprechblasen || [], c: plan.captions || [], z: plan.zooms || [], o: plan.outro, hide: plan.ausblenden || [], logoH1: plan.logoH1 || [] };
+  const D = { ...((plan.treffer || []).length ? { tr: plan.treffer } : {}), ...((plan.tagmarken || []).length ? { tm: plan.tagmarken } : {}), ...((plan.bilder || []).length ? { bi: plan.bilder } : {}), ...((plan.tagesplaene || []).length ? { tp: plan.tagesplaene } : {}), e: plan.einstieg, k: plan.kapitel || [], h1: plan.h1 || [], h2: plan.h2 || [], p: plan.pillen || [], a: plan.akronyme || [], s: plan.schlagworte || [], g: plan.grafiken || [], n: plan.randnotizen || [], b: plan.lebensbalken || [], l: plan.logos || [], sb: plan.sprechblasen || [], c: plan.captions || [], z: plan.zooms || [], o: plan.outro, hide: plan.ausblenden || [], logoH1: plan.logoH1 || [] };
   return `
 function bezier(x1,y1,x2,y2){const f=(s,a,b)=>3*(1-s)*(1-s)*s*a+3*(1-s)*s*s*b+s*s*s;return x=>{if(x<=0)return 0;if(x>=1)return 1;let lo=0,hi=1;for(let i=0;i<30;i++){const m=(lo+hi)/2;if(f(m,x1,x2)<x)lo=m;else hi=m;}return f((lo+hi)/2,y1,y2);};}
 const OUT=bezier(${EASE.out}),BACK=bezier(${EASE.back}),LIN='none',D=${JSON.stringify(D)};
@@ -688,7 +724,7 @@ for(const s of D.s){show('#'+s.id,s.start,s.end);pop('#'+s.id+' .sw-pop',s.start
 for(const h of D.hide){tl.set(h.sel+' > *',{visibility:'hidden'},h.from);if(h.to!=null)tl.set(h.sel+' > *',{visibility:'visible'},h.to);}
 // 15: Grafik. Karte Pop 90 → 100 % 0,35 s; Hauptlinie 1,0 s; Vergleichslinie blendet 0,30 s ein; Kreis danach 0,30 s.
 for(const g of D.g){if(!g.ohneHintergrund)show('#'+g.id+'-bg',g.start,g.end);show('#'+g.id,g.start,g.end);pop('#'+g.id,g.start,.9,.35);draw('#'+g.id+' .main-line',g.drawAt,1);tl.set('#'+g.id+' .cmp-line',{opacity:0},0);tl.to('#'+g.id+' .cmp-line',{opacity:1,duration:.3,ease:OUT},g.cmpAt);draw('#'+g.id+' .hl-circle',g.circleAt,.3);for(const x of g.labels){tl.set('#'+x.id,{opacity:0},0);tl.to('#'+x.id,{opacity:1,duration:.22,ease:OUT},x.at);}for(const z of g.spaet||[]){up('#'+z.id,z.at);draw('#'+z.id+' .late-line',z.at+.1,1);}}
-${(plan.bilder || []).length ? BILD_TL : ''}${(plan.tagesplaene || []).length ? PLAN_TL : ''}// 7: Untertitel hart; genau ein Wort blau; das letzte bleibt blau, bis die nächste Gruppe beginnt.
+${(plan.bilder || []).length ? BILD_TL : ''}${(plan.tagesplaene || []).length ? PLAN_TL : ''}${(plan.tagmarken || []).length ? TAG_TL : ''}${(plan.treffer || []).length ? TREFFER_TL : ''}// 7: Untertitel hart; genau ein Wort blau; das letzte bleibt blau, bis die nächste Gruppe beginnt.
 D.c.forEach((c,i)=>{show('#cap-'+i,c.start,c.end);c.words.forEach((w,j)=>{const on=j?w.start:c.start,off=j<c.words.length-1?c.words[j+1].start:c.end;tl.set('#w-'+i+'-'+j,{color:'${C.blue}'},on);tl.set('#w-'+i+'-'+j,{color:'${C.white}'},off);});});
 // 15: Zoomfahrten, nur Videoebene, linear, harter Rücksprung.
 for(const z of D.z){tl.set('#footage',{scale:1},z.start);tl.to('#footage',{scale:z.scale,duration:z.end-z.start,ease:LIN},z.start);tl.set('#footage',{scale:1},z.end);}
