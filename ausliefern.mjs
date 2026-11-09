@@ -213,5 +213,5 @@ if (process.argv[1]?.endsWith('ausliefern.mjs')) {
       console.error('Aufruf:\n  node ausliefern.mjs "<Projekt>" "<Titel>" --datum JJJJ-MM-TT [--zeit 19:00]            (mit API-Schlüssel: alles in einem Befehl)\n  node ausliefern.mjs "<Projekt>" "<Titel>" --datum JJJJ-MM-TT --probe                   (nur prüfen: Schlüssel, Termin, Inhalt)\n  node ausliefern.mjs "<Projekt>" "<Titel>" --datum JJJJ-MM-TT [--zeit 19:00] --token <upload-token>\n  node ausliefern.mjs "<Projekt>" --post-id <id> [--ohne-commit]\n  node ausliefern.mjs "<Projekt>" "<Titel>" --datum JJJJ-MM-TT --nur-ablage [--ziel 04_Gepostet]');
       process.exit(2);
     }
-  } catch (e) { console.error(e.message); process.exit(1); }
+  } catch (e) { console.error(e.cause ? `${e.message} (Ursache: ${[e.cause.code, e.cause.message].filter(Boolean).join(': ')})` : e.message); process.exit(1); }
 }

@@ -23,6 +23,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
+import http from 'node:http';
+import https from 'node:https';
+import { pipeline } from 'node:stream/promises';
 
 const API = 'https://zernio.com/api/v1';
 
@@ -35,7 +38,7 @@ export function zernioSchluessel() {
 export async function zernioApi(pfad, { method = 'GET', body, headers = {} } = {}) {
   const key = zernioSchluessel();
   if (!key) throw Error('Kein Zernio-API-Schlüssel im Schlüsselbund (Eintrag „zernio-api-key“).');
-  const r = await fetch(`${API}${pfad}`, { method, headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json', ...headers }, body: body ? JSON.stringify(body) : undefined });
+  const r = await mitUrsache(`Zernio ${method} ${pfad}`, () => fetch(`${API}${pfad}`, { method, headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json', ...headers }, body: body ? JSON.stringify(body) : undefined }));
   const text = await r.text();
   let data; try { data = JSON.parse(text); } catch { data = { text: text.slice(0, 500) }; }
   return { status: r.status, ok: r.ok, data };
@@ -43,7 +46,49 @@ export async function zernioApi(pfad, { method = 'GET', body, headers = {} } = {
 
 const CONTENT_TYPES = {'.mp4':'video/mp4','.mov':'video/quicktime','.jpg':'image/jpeg','.jpeg':'image/jpeg','.png':'image/png'};
 
-export async function uploadToZernio(file, token) {
+// „fetch failed“ allein sagt nichts. Die eigentliche Ursache (ECONNRESET, UND_ERR_HEADERS_TIMEOUT …) steht in e.cause.
+export function ursache(e) {
+  const c = e?.cause;
+  return c ? `${e.message} (${[c.code, c.message].filter(Boolean).join(': ')})` : String(e?.message ?? e);
+}
+async function mitUrsache(was, f) {
+  try { return await f(); } catch (e) { throw Error(`${was}: ${ursache(e)}`, { cause: e }); }
+}
+
+// PUT an die vorsignierte URL, gestreamt mit node:https statt fetch (09.11.2026).
+// Grund: Der München-Vlog (233 MB) brach am 09.11. zweimal mit „fetch failed“ ab, einmal nach knapp 5 min.
+// Node-fetch (undici) wartet höchstens 300 s auf die Antwort-Kopfzeilen, und die Zeit läuft schon während des
+// Hochladens; bei langsamer Leitung reicht das für 200 MB und mehr nicht. Außerdem lag die ganze Datei im Speicher.
+// Hier gilt keine Gesamtzeit, nur eine Leerlaufgrenze: Fließen LEERLAUF_MS lang keine Daten, wird abgebrochen.
+const LEERLAUF_MS = Number(process.env.ZERNIO_LEERLAUF_MS) || 120e3;   // Umgebungsvariable nur für Tests
+export function hochladen(url, file, bytes, contentType, fortschritt) {
+  return new Promise((resolve, reject) => {
+    const req = (url.startsWith('http:') ? http : https).request(url, { method: 'PUT', headers: { 'Content-Type': contentType, 'Content-Length': String(bytes) } }, res => {
+      let text = ''; res.setEncoding('utf8');
+      res.on('data', d => { if (text.length < 2000) text += d; });
+      res.on('end', () => resolve({ status: res.statusCode, ok: res.statusCode >= 200 && res.statusCode < 300, text }));
+      res.on('error', reject);
+    });
+    req.setTimeout(LEERLAUF_MS, () => req.destroy(Object.assign(Error(`${LEERLAUF_MS / 1000} s keine Daten übertragen`), { code: 'LEERLAUF' })));
+    req.on('error', reject);
+    const lesen = fs.createReadStream(file, { highWaterMark: 1 << 20 });
+    let gesendet = 0, gemeldet = 0;
+    lesen.on('data', c => { gesendet += c.length; if (fortschritt && gesendet - gemeldet >= bytes / 10) { gemeldet = gesendet; fortschritt(gesendet, bytes); } });
+    pipeline(lesen, req).catch(reject);
+  });
+}
+
+async function presignHolen(token, safeName, contentType, bytes) {
+  const r = token
+    ? await mitUrsache('Presign', () => fetch(`${API}/media/upload/presign?token=${encodeURIComponent(token)}`, { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({filename: safeName, contentType}) }))
+    : await mitUrsache('Presign', () => fetch(`${API}/media/presign`, { method: 'POST', headers: {'Content-Type': 'application/json', Authorization: `Bearer ${zernioSchluessel() ?? ''}`}, body: JSON.stringify({filename: safeName, contentType, size: bytes}) }));
+  if (!r.ok) throw Error(`Presign fehlgeschlagen (${r.status}): ${await r.text()}`);
+  const presign = await r.json();
+  if (!presign.uploadUrl || !presign.publicUrl) throw Error('Presign ohne uploadUrl/publicUrl: ' + JSON.stringify(presign));
+  return presign;
+}
+
+export async function uploadToZernio(file, token, { versuche = 3, fortschritt = (n, g) => console.error(`  Upload ${Math.round(100 * n / g)} %`) } = {}) {
   const bytes = fs.statSync(file).size;
   const ext = path.extname(file).toLowerCase();
   const contentType = CONTENT_TYPES[ext];
@@ -54,31 +99,35 @@ export async function uploadToZernio(file, token) {
   const safeName = path.basename(file, ext).normalize('NFD').replace(/[̀-ͯ]/g, '')
     .replace(/[^A-Za-z0-9._-]+/g, '-').replace(/^-+|-+$/g, '') + ext;
 
-  // Mit Upload-Token (MCP media_generate_upload_link) oder, ohne Token, mit dem API-Schlüssel aus dem Schlüsselbund.
-  const presignResponse = token
-    ? await fetch(`${API}/media/upload/presign?token=${encodeURIComponent(token)}`, { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({filename: safeName, contentType}) })
-    : await fetch(`${API}/media/presign`, { method: 'POST', headers: {'Content-Type': 'application/json', Authorization: `Bearer ${zernioSchluessel() ?? ''}`}, body: JSON.stringify({filename: safeName, contentType, size: bytes}) });
-  if (!presignResponse.ok) throw Error(`Presign fehlgeschlagen (${presignResponse.status}): ${await presignResponse.text()}`);
-  const presign = await presignResponse.json();
-  if (!presign.uploadUrl || !presign.publicUrl) throw Error('Presign ohne uploadUrl/publicUrl: ' + JSON.stringify(presign));
+  // Prüfsumme gestreamt, ohne die Datei ganz in den Speicher zu laden.
+  const h = crypto.createHash('sha256');
+  await pipeline(fs.createReadStream(file), h);
+  const sha256 = h.digest('hex');
 
-  const data = fs.readFileSync(file);
-  const sha256 = crypto.createHash('sha256').update(data).digest('hex');
+  // Bis zu drei Versuche, jeder mit frischer vorsignierter URL. Ein PUT an R2 überschreibt nur das eigene Objekt,
+  // ein abgebrochener Versuch hinterlässt höchstens eine unbenutzte Datei im Zwischenspeicher, keinen Beitrag.
+  const fehler = [];
+  for (let v = 1; v <= versuche; v++) {
+    try {
+      const presign = await presignHolen(token, safeName, contentType, bytes);
+      const t0 = Date.now();
+      const put = await hochladen(presign.uploadUrl, file, bytes, contentType, fortschritt);
+      if (!put.ok) throw Error(`Upload fehlgeschlagen (${put.status}): ${put.text.slice(0, 300)}`);
+      const sekunden = Math.round((Date.now() - t0) / 1000);
 
-  const put = await fetch(presign.uploadUrl, {
-    method: 'PUT',
-    headers: {'Content-Type': contentType, 'Content-Length': String(bytes)},
-    body: data,
-  });
-  if (!put.ok) throw Error(`Upload fehlgeschlagen (${put.status}): ${await put.text()}`);
+      // Gegenprobe: die öffentliche URL muss die Datei in voller Länge ausliefern.
+      const head = await mitUrsache('Gegenprobe', () => fetch(presign.publicUrl, {method: 'HEAD'}));
+      const served = Number(head.headers.get('content-length'));
+      if (!head.ok) throw Error(`Hochgeladene Datei nicht abrufbar (${head.status}).`);
+      if (served !== bytes) throw Error(`Längen weichen ab: hochgeladen ${bytes}, ausgeliefert ${served}.`);
 
-  // Gegenprobe: die öffentliche URL muss die Datei in voller Länge ausliefern.
-  const head = await fetch(presign.publicUrl, {method: 'HEAD'});
-  const served = Number(head.headers.get('content-length'));
-  if (!head.ok) throw Error(`Hochgeladene Datei nicht abrufbar (${head.status}).`);
-  if (served !== bytes) throw Error(`Längen weichen ab: hochgeladen ${bytes}, ausgeliefert ${served}.`);
-
-  return {publicUrl: presign.publicUrl, key: presign.key, filename: safeName, bytes, sha256, contentType, verifiedServedBytes: served};
+      return {publicUrl: presign.publicUrl, key: presign.key, filename: safeName, bytes, sha256, contentType, verifiedServedBytes: served, versuch: v, sekunden};
+    } catch (e) {
+      fehler.push(`Versuch ${v}: ${ursache(e)}`);
+      if (v < versuche) { console.error(`  ${fehler.at(-1)}. Neuer Versuch in ${5 * v} s.`); await new Promise(r => setTimeout(r, 5000 * v)); }
+    }
+  }
+  throw Error(`Upload nach ${versuche} Versuchen gescheitert:\n  ${fehler.join('\n  ')}`);
 }
 
 if (process.argv[1]?.endsWith('zernio-upload.mjs') && process.argv[2] === '--konten') {
