@@ -1,5 +1,5 @@
 {
-  "stand": "2026-10-28",
+  "stand": "2026-11-09",
   "werkzeuge": {
     "whisper-cli": {
       "pfad": "tools/bin/whisper-cli",
@@ -29,10 +29,10 @@
       "versionMuster": "(\\d+\\.\\d+\\.\\d+)",
       "github": "WyattBlue/auto-editor",
       "releaseNotes": "WyattBlue/auto-editor",
-      "quelle": "github.com/WyattBlue/auto-editor Release 31.7.2, Datei auto-editor-macos-arm64",
-      "sha256": "874310a405c88c4d06b9ee7b60b3a4e59ecbb09cfecd56ff54f1bf712b3b776e",
-      "vorher": "tools/bin-alt/auto-editor-31.6.0",
-      "test": "workflow.mjs-Schnittbefehl auf Live-05 mit 3 eingefügten Pausen: Schnittlänge 28,87 s bei 31.6.0 und 31.7.2 identisch, beide decodieren sauber",
+      "quelle": "github.com/WyattBlue/auto-editor Release 31.8.0, Datei auto-editor-macos-arm64",
+      "sha256": "7be4c88c71f5143a0fb5388edfa53cfa39365f674b36c1ae56556a3baba22649",
+      "vorher": "tools/bin-alt/auto-editor-31.7.2",
+      "test": "09.11.2026: testclip/pausen.mp4 mit Schnittbefehl aus workflow.mjs: Schnittlänge 27,63 s bei 31.7.2 und 31.8.0 identisch, beide decodieren sauber",
       "prozesse": [
         "auto-editor"
       ],
@@ -47,8 +47,8 @@
         "chrome-headless-shell"
       ],
       "risiko": "hoch: rendert jedes Video. Nur nach Vergleichsrender eines fertigen Clips (alt gegen neu, SSIM) übernehmen.",
-      "test": "0.8.34 -> 0.8.211: Live-05 (37,7 s) mit live-clips-Renderbefehl (high, 2 Worker, --sdr): Bild SSIM 0,9945 über alle 1130 Frames, optisch identisch; Lautheit -14,1 LUFS / LRA 4,0 bei beiden; Renderzeit 50 s statt 60 s",
-      "vorher": "0.8.34"
+      "test": "0.8.211 -> 0.9.26 (09.11.2026): testclip/render (37,7 s, high, 2 Worker, --sdr): je 1130 Frames, 1080x1920, SSIM gesamt 0,9967, schlechtester Frame 0,9958; Lautheit -14,1 LUFS bei beiden (LRA 4,0 / 4,1); Vergleichsbilder bei 8 s und 25 s optisch identisch; Renderzeit 34 s (alt gemessen 1. Lauf)",
+      "vorher": "0.8.211"
     },
     "ffmpeg": {
       "pfad": "tools/bin/ffmpeg",
