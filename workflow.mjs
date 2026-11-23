@@ -16,6 +16,10 @@ const HF = path.join(ROOT, 'node_modules/hyperframes/bin/hyperframes.mjs');
 const ENV = {
   ...process.env,
   PATH: `${BIN}${path.delimiter}${process.env.PATH || ''}`,
+  // Seit 23.11.2026: HyperFrames (ab 0.9.58) übernimmt aus PATH keine Programme, die im Projektordner liegen, aus dem es
+  // gestartet wird. Wir starten aus ROOT, tools/bin liegt darin. Ohne festen Pfad bricht jeder Render mit „FFmpeg not found“ ab.
+  HYPERFRAMES_FFMPEG_PATH: path.join(BIN, 'ffmpeg'),
+  HYPERFRAMES_FFPROBE_PATH: path.join(BIN, 'ffprobe'),
   HYPERFRAMES_NO_TELEMETRY: '1',
   HYPERFRAMES_NO_UPDATE_CHECK: '1',
   HYPERFRAMES_NO_AUTO_INSTALL: '1',
@@ -65,6 +69,13 @@ function doctor() {
   if (!fs.existsSync(MODEL) || fs.statSync(MODEL).size < 480000000) throw new Error('Das Whisper-Modell fehlt oder ist unvollständig.');
   console.log('Mehrsprachiges Whisper-Modell: OK');
   console.log(`Render-Browser: ${run(process.execPath, [HF, 'browser', 'path']).trim()}`);
+  // Seit 23.11.2026: prüfen, ob HyperFrames selbst FFmpeg/FFprobe findet, so wie es beim Render aufgerufen wird.
+  const hfDoc = spawnSync(process.execPath, [HF, 'doctor'], { cwd: ROOT, env: ENV, encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 });
+  const hfText = `${hfDoc.stdout || ''}\n${hfDoc.stderr || ''}`;
+  for (const name of ['FFmpeg', 'FFprobe']) {
+    if (!new RegExp(`✓\\s+${name}\\b`).test(hfText)) throw new Error(`HyperFrames findet ${name} beim Render nicht (hyperframes doctor aus ${ROOT}).`);
+  }
+  console.log('HyperFrames findet FFmpeg und FFprobe: OK');
   // DESIGN.md 2.2: Schriften (templates/fonts), Freistellungsmodell mit Herkunftsdatei, onnxruntime in tools/venv-rvm.
   for (const f of ['Archivo[wdth,wght].ttf', 'GochiHand-Regular.ttf']) if (!fs.existsSync(path.join(ROOT, 'templates/fonts', f))) throw new Error(`Schrift fehlt: templates/fonts/${f}`);
   console.log('Schriften Archivo und Gochi Hand: OK');
