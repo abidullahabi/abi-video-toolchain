@@ -1,5 +1,5 @@
 {
-  "stand": "2026-11-16",
+  "stand": "2026-11-23",
   "werkzeuge": {
     "whisper-cli": {
       "pfad": "tools/bin/whisper-cli",
@@ -29,10 +29,10 @@
       "versionMuster": "(\\d+\\.\\d+\\.\\d+)",
       "github": "WyattBlue/auto-editor",
       "releaseNotes": "WyattBlue/auto-editor",
-      "quelle": "github.com/WyattBlue/auto-editor Release 31.9.0, Datei auto-editor-macos-arm64",
-      "sha256": "84823f8132a40d1ad072cfaabe432d2a35d1ad022421d7436c51a24bac9e86a5",
-      "vorher": "tools/bin-alt/auto-editor-31.8.0",
-      "test": "16.11.2026: testclip/pausen.mp4 mit Schnittbefehl aus workflow.mjs: Schnittlänge 29,43 s bei 31.8.0 und 31.9.0 identisch, beide decodieren sauber",
+      "quelle": "github.com/WyattBlue/auto-editor Release 31.10.0, Datei auto-editor-macos-arm64",
+      "sha256": "349e351067d10d63eb68cf6e2df541398ed43e6a79cae5d093d178d31c9eee7c",
+      "vorher": "tools/bin-alt/auto-editor-31.9.0",
+      "test": "23.11.2026: testclip/pausen.mp4 mit Schnittbefehl aus workflow.mjs: Schnittlänge 29,43 s bei 31.9.0 und 31.10.0 identisch, beide decodieren sauber",
       "prozesse": [
         "auto-editor"
       ],
@@ -47,8 +47,8 @@
         "chrome-headless-shell"
       ],
       "risiko": "hoch: rendert jedes Video. Nur nach Vergleichsrender eines fertigen Clips (alt gegen neu, SSIM) übernehmen.",
-      "test": "0.9.26 -> 0.9.58 (16.11.2026): testclip/render (37,7 s, high, 2 Worker, --sdr): je 1130 Frames, 1080x1920, SSIM gesamt 1,0000, schlechtester Frame 1,0000 (pixelgleich); Lautheit -14,1 LUFS bei beiden (LRA 4,1); Vergleichsbilder bei 8 s und 25 s identisch; Renderzeit 44 s neu / 50 s alt",
-      "vorher": "0.9.26"
+      "test": "0.9.58 -> 0.9.85 (23.11.2026): testclip/render (37,7 s, high, 2 Worker, --sdr, Arbeitsverzeichnis außerhalb des Repos): je 1130 Frames, 1080x1920, SSIM gesamt 0,9977, schlechtester Frame 0,9962; Lautheit -14,1 LUFS bei beiden (LRA 4,1); Vergleichsbilder bei 8 s und 25 s gleich; Renderzeit 35 s neu / 309 s alt",
+      "vorher": "0.9.58"
     },
     "ffmpeg": {
       "pfad": "tools/bin/ffmpeg",
